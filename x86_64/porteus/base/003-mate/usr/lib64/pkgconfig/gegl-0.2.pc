@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+pluginsdir=/usr/lib64/gegl-0.2
+
+Name: GEGL
+Description: Generic Graphics Library 
+Version: 0.2.0
+Requires: gobject-2.0 gmodule-2.0 gio-2.0 babl
+Libs: -L${libdir} -lgegl-0.2
+Cflags: -I${includedir}/gegl-0.2

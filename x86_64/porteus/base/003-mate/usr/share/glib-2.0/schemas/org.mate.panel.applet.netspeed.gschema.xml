@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="@GETTEXT_PACKAGE@">
+  <schema id="org.mate.panel.applet.netspeed">
+    <key type="s" name="device">
+      <default>''</default>
+      <summary>Device to monitor</summary>
+      <description>The name of the device to monitor</description>
+    </key>
+    <key type="b" name="show-sum">
+      <default>false</default>
+      <summary>Show sum speed</summary>
+      <description>If true, show sum of inbound/outbound speed instead of separated ones.</description>
+    </key>
+    <key type="b" name="show-bits">
+      <default>false</default>
+      <summary>Show bits</summary>
+      <description>If true, show speed in bits instead of bytes.</description>
+    </key>
+    <key type="b" name="show-icon">
+      <default>true</default>
+      <summary>Show icon</summary>
+      <description>If true, show main icon.</description>
+    </key>
+    <key type="b" name="short-unit">
+      <default>false</default>
+      <summary>Short unit legend</summary>
+      <description>If true, shorten unit legend to one letter: lowercase for bits / uppercase for Bytes.</description>
+    </key>
+    <key type="b" name="change-icon">
+      <default>true</default>
+      <summary>Change icon</summary>
+      <description>If true, change the icon due to selected device.</description>
+    </key>
+    <key type="b" name="auto-change-device">
+      <default>true</default>
+      <summary>Auto change device</summary>
+      <description>If true, change automatically the selected device.</description>
+    </key>
+    <key type="s" name="in-color">
+      <default>'#df0028004700'</default>
+      <summary>In color</summary>
+      <description>The color of the graph of the inbound traffic</description>
+    </key>
+    <key type="s" name="out-color">
+      <default>'#37002800df00'</default>
+      <summary>Out color</summary>
+      <description>The color of the graph of the outbound traffic</description>
+    </key>
+    <key type="s" name="up-command">
+      <default>''</default>
+      <summary>Up command</summary>
+      <description>Command the execute to activate the device</description>
+    </key>
+    <key type="s" name="down-command">
+      <default>''</default>
+      <summary>Down command</summary>
+      <description>Command the execute to shut down the device</description>
+    </key>
+  </schema>
+</schemalist>

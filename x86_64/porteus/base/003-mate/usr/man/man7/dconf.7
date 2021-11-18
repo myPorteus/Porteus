@@ -1,0 +1,61 @@
+'\" t
+.\"     Title: dconf
+.\"    Author: Ryan Lortie <desrt@desrt.ca>
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 08/17/2014
+.\"    Manual: Conventions and miscellaneous
+.\"    Source: dconf
+.\"  Language: English
+.\"
+.TH "DCONF" "7" "" "dconf" "Conventions and miscellaneous"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+dconf \- A configuration systen
+.SH "DESCRIPTION"
+.PP
+dconf is a simple key/value storage system that is heavily optimised for reading\&. This makes it an ideal system for storing user preferences (which are read 1000s of times for each time the user changes one)\&. It was created with this usecase in mind\&.
+.PP
+All preferences are stored in a single large binary file\&. Layering of preferences is possible using multiple files (ie: for site defaults)\&. Lock\-down is also supported\&. The binary file for the defaults can optionally be compiled from a set of plain text keyfiles\&.
+.PP
+dconf has a partial client/server architecture\&. It uses D\-Bus\&. The server is only involved in writes (and is not activated in the user session until the user modifies a preference)\&. The service is stateless and can exit freely at any time (and is therefore robust against crashes)\&. The list of paths that each process is watching is stored within the D\-Bus daemon itself (as D\-Bus signal match rules)\&.
+.PP
+Reads are performed by direct access (via mmap) to the on\-disk database which is essentially a hashtable\&. For this reason, dconf reads typically involve zero system calls and are comparable to a hashtable lookup in terms of speed\&. Practically speaking, in simple non\-layered setups, dconf is less than 10 times slower than GHashTable\&.
+.PP
+Writes are assumed only to happen in response to explicit user interaction (like clicking on a checkbox in a preferences dialog) and are therefore not optimised at all\&. On some file systems, dconf\-service will call fsync() for every write, which can introduce a latency of up to 100ms\&. This latency is hidden by the client libraries through a clever "fast" mechanism that records the outstanding changes locally (so they can be read back immediately) until the service signals that a write has completed\&.
+.SH "PORTABILITY"
+.PP
+dconf mostly targets Free Software operating systems\&. It will theoretically run on Mac OS but there isn\*(Aqt much point to that (since Mac OS applications want to store preferences in plist files)\&. It is not possible to use dconf on Windows because of the inability to rename over a file that\*(Aqs still in use (which is what the dconf\-service does on every write)\&.
+.SH "API STABILITY"
+.PP
+The dconf API is not particularly friendly, and is not guaranteed to be stable\&. Because of this and the lack of portability, you almost certainly want to use some sort of wrapper API around it\&. The wrapper API used by GTK+ and GNOME applications is
+\m[blue]\fBGSettings\fR\m[]\&\s-2\u[1]\d\s+2, which is included as part of GLib\&. GSettings has backends for Windows (using the registry) and Mac OS (using property lists) as well as its dconf backend and is the proper API to use for graphical applications\&.
+.SH "SEE ALSO"
+.PP
+\fBdconf-service\fR(1),
+\fBdconf-editor\fR(1),
+\fBdconf\fR(1),
+\m[blue]\fBGSettings\fR\m[]\&\s-2\u[1]\d\s+2
+.SH "NOTES"
+.IP " 1." 4
+GSettings
+.RS 4
+\%http://developer.gnome.org/gio/stable/GSettings.html
+.RE

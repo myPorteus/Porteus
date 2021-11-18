@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries wm_name="Marco" schema="org.mate.Marco.global-keybindings" package="marco" name="Desktop">
+
+	<KeyListEntry name="panel-run-dialog" description="Show the panel's &quot;Run Application&quot; dialog box"></KeyListEntry>
+
+	<KeyListEntry name="panel-main-menu" description="Show the panel's main menu"></KeyListEntry>
+
+	<KeyListEntry name="run-command-screenshot" description="Take a screenshot"></KeyListEntry>
+
+	<KeyListEntry name="run-command-window-screenshot" description="Take a screenshot of a window"></KeyListEntry>
+
+	<KeyListEntry name="run-command-terminal" description="Run a terminal"></KeyListEntry>
+
+</KeyListEntries>

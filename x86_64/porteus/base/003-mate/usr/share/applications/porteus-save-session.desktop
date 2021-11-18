@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Save session
+Comment=Save your current session
+Exec=gksu save-session
+Terminal=false
+Icon=system-users
+Type=Application
+Categories=Porteus;System;
+Version=1.0

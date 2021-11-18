@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.AccessxStatusAppletFactory
+Exec=/usr/libexec/accessx-status-applet

@@ -1,0 +1,820 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: usm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-04 13:28+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: neko\n"
+"Language-Team:Porteus Japan\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: Japan\n"
+
+msgid "  -b: Build from source. \\t <package>"
+msgstr "  -b: ソースからビルド \\t\\t <パッケージ>"
+
+msgid "  -c: Open repo changelog. \\t <distro>"
+msgstr "  -c: リポジトリ更新記録を開く \\t <ディストロ>"
+
+msgid "  -d: Resolve dependencies. \\t </var/log/packages/package-name>"
+msgstr "  -d: 依存関係解析 \\t\\t </var/log/packages/パッケージ名>"
+
+msgid "  -g: Download package. \\t <package>"
+msgstr "  -g: パッケージのダウンロード \\t <パッケージ>"
+
+msgid "  -h: Show this help."
+msgstr "  -h: 当ヘルプ表示"
+
+msgid "  -i: Package information. \\t <package>"
+msgstr "  -i: パッケージ情報 \\t\\t <パッケージ>"
+
+msgid "  -k: Keyword search. \\t\\t <string>"
+msgstr "  -k: キーワード検索 \\t\\t <文字列>"
+
+msgid "  -l: List installed packages. \\t <package>"
+msgstr "  -l: インストール済みパッケージ列挙 <パッケージ>"
+
+msgid "  -s: Package search. \\t\\t <package>"
+msgstr "  -s: パッケージ検索 \\t\\t <パッケージ>"
+
+msgid "  -s: Reverse library search. \\t <library>"
+msgstr "  -s: ライブラリー名でパッケージ逆検索 <ライブラリ>"
+
+msgid "  -u: Update databases. \\t alien|salix|ponce|slackware|slacky|all"
+msgstr "  -u: データベース更新 \\t\\t alien|salix|ponce|slackware|slacky|all"
+
+msgid "  sbo -b: will attempt to build the package from source"
+msgstr "  sbo -b: ソースからパッケージビルド"
+
+msgid "  sbo -l: list sbo categories"
+msgstr "  sbo -l: sboカテゴリ列挙"
+
+msgid "  sbo -l: with a category will list all packages in the category"
+msgstr "  sbo -l: カテゴリ指定で、該当カテゴリ中の全パッケージを列挙"
+
+msgid "  sbo -l: with no argument will show all sbo categories"
+msgstr "  sbo -l: 引数無しで、sboの全カテゴリ表示"
+
+msgid " A new version of USM is available."
+msgstr " USMの新版があります"
+
+msgid " An update is available for the usm database files."
+msgstr " USMのデータベースの新版があります"
+
+msgid " Example: -u is the same as -update, --update or update"
+msgstr " 例: -u は -update, --update 又は update と同じです"
+
+msgid " Installing new version now"
+msgstr " 新版インストール中"
+
+msgid " Multiple packages were detected."
+msgstr " 複数のパッケージが検出されました"
+
+msgid " Please enter a repository. (E.g usm -c slackware)"
+msgstr " リポジトリ名を指定して下さい。(例 usm -c slackware)"
+
+msgid " Please run:"
+msgstr " 実行して下さい:"
+
+msgid " Please run: usm -u all"
+msgstr " 以下のコマンドを実行して下さい: usm -u all"
+
+msgid " Press [r] to remove packages, [q] to quit, or enter to start downloading."
+msgstr " [r]押下でパッケージ削除、[q]押下で終了、enter押下でダウンロードを開始します"
+
+msgid " Single letter options also support entire words."
+msgstr " 一文字オプションでもフル単語をサポートします"
+
+msgid " The changelog will now open. Use your arrow buttons to scroll up and down"
+msgstr " 更新記録を開きます。矢印キーを使用してスクロール上下をして下さい"
+
+msgid " The following items were found."
+msgstr " 以下の検出項目から、項番を指定して選択して下さい"
+
+msgid " Usage: usm <option> [argument]"
+msgstr " 使用法:    usm  <オプション>  [引数]"
+
+msgid " Use example:"
+msgstr " 使用例:"
+
+msgid " Would you like to attempt to build this from source? [y/n]"
+msgstr " ソースからこれをビルドしますか? [y/n]"
+
+msgid " Would you like to create subfolder for the files? [y/n]"
+msgstr " これらのファイル専用に新規サブホルダーを生成しますか? [y/n]"
+
+msgid " Would you like to download it now? [y/n]"
+msgstr " ダウンロードを開始しますか? [y/n]"
+
+msgid " Would you like to install it now? [y/n]"
+msgstr " インストールを開始しますか? [y/n]"
+
+msgid " and press q to quit reading the file. Press any button to continue"
+msgstr " ファイル参照を終了するにはqを押下します。その他のキー押下で継続します。"
+
+msgid " ctrl+c to quit"
+msgstr " ctrl+c で終了します"
+
+msgid " database updated."
+msgstr " データベース更新済み"
+
+msgid " set: Set local storage. \\t /path/to/folder"
+msgstr " set: 収容場所設定 \\t /path/to/folder"
+
+msgid "(to update all databases)"
+msgstr "(全てのデータベースの更新)"
+
+#msgid "++++++++++++++++++++++++++++++"
+#msgstr "++++++++++++++++++++++++++++++"
+
+msgid "1) Enter a search term"
+msgstr "1) 検索キーを入力して下さい"
+
+msgid "2) Choose a search method above (Package, Keyword or Library)"
+msgstr "2) 検索方法を上のボタンで指定して下さい (Package, Keyword or Library)"
+
+msgid "3) Click search"
+msgstr "3) 検索を押下して下さい"
+
+msgid "4) Click on a package for more info"
+msgstr "4) 詳細情報を得るには対象パッケージをクリックして下さい"
+
+msgid "5) Click download to get it"
+msgstr "5) 取得はダウンロードを押下して下さい"
+
+msgid "A fatal error occured"
+msgstr "致命的障害発生"
+
+msgid "About USM"
+msgstr "USM情報"
+
+msgid "Always convert packages to modules"
+msgstr "パッケージをモジュールへ常時変換"
+
+msgid "Are you searching for a library file?"
+msgstr "ライブラリ検索をしていますか?"
+
+msgid "Attempt to build package from sources."
+msgstr "ソースからパッケージをビルドする"
+
+msgid "Avaliable options:"
+msgstr "有効オプション:"
+
+msgid "Cancel"
+msgstr "取り消し"
+
+msgid "Checked:"
+msgstr "チェック済:"
+
+msgid "Checking internet connection"
+msgstr "インターネット接続チェック中"
+
+msgid "Choose a package to download or choose 'None' to neglect"
+msgstr "ダウンロードするパッケージを選択するか、'None'を選んで無視して下さい"
+
+msgid "Choose a slackware package"
+msgstr "slackwareのパッケージを選択して下さい"
+
+msgid "Choose an action (Example: install)"
+msgstr "アクションを指定して下さい (例: インストール)"
+
+msgid "Choose an number to confirm."
+msgstr "確認番号を選んで下さい"
+
+msgid "Clear"
+msgstr "クリアー"
+
+msgid "Clear the data. This is not permanent until saved"
+msgstr "データクリアー。セーブされる迄これは保持されません。"
+
+msgid "Click the Execute button at the bottom"
+msgstr "下部の実行ボタンをクリックして下さい"
+
+msgid "Click the Execute button to choose your package"
+msgstr "指定パッケージに対する実行ボタンをクリックして下さい"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Convert Slackware packages to Porteus modules."
+msgstr "SlackwareパッケージをPorteusモジュールへ変換"
+
+msgid "Convert a folder of slackware packages to modules"
+msgstr "Slackwareパッケージ群収容ホルダーからモジュール群へ変換"
+
+msgid "Convert a slackware package to a module"
+msgstr "Slackwareパッケージをモジュールへ変換"
+
+msgid "Convert to modules"
+msgstr "モジュール変換"
+
+msgid "Converting"
+msgstr "変換中"
+
+msgid "Could not decompress"
+msgstr "圧縮解凍できませんでした"
+
+msgid "Could not decompress:"
+msgstr "圧縮解凍できませんでした:"
+
+msgid "Could not download file:"
+msgstr "ダウンロードできませんでした:"
+
+msgid "Could not find:"
+msgstr "検出できませんでした:"
+
+msgid "Create a module from a folder"
+msgstr "フォルダー内容からモジュール生成"
+
+msgid "Create a subfolder"
+msgstr "サブホルダー生成"
+
+msgid "Creating module"
+msgstr "モジュール生成"
+
+msgid "Current arch:"
+msgstr "アーキテクチャー:"
+
+msgid "Current distros:"
+msgstr "ディストリ:"
+
+msgid "Current storage:"
+msgstr "収容場所:"
+
+msgid "Decompressing"
+msgstr "圧縮解凍中"
+
+msgid "Deselect an item (again to reselect, ENTER when ready):"
+msgstr "選択項目を解除((再選択は受付状態に成ったらエンターキーを押下して下さい):"
+
+msgid "Directories"
+msgstr "ディレクトリ"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Download folder: "
+msgstr "ダウンロードフォルダー: "
+
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+msgid "Downloading: "
+msgstr "ダウンロード中: "
+
+msgid "Edit alien mirror"
+msgstr "alienミラーサイト編集"
+
+msgid "Edit configuration file"
+msgstr "設定ファイル編集"
+
+msgid "Edit ponce mirror"
+msgstr "ponceミラーサイト編集"
+
+msgid "Edit salix mirror"
+msgstr "salixミラーサイト編集"
+
+msgid "Edit slackware mirror"
+msgstr "slackwareミラーサイト編集"
+
+msgid "Edit slacky mirror"
+msgstr "slackyミラーサイト編集"
+
+msgid "Enter search term"
+msgstr "検索キーを入力して下さい"
+
+msgid "Example1: usm sbo -l multimedia"
+msgstr "例1: usm sbo -l multimedia"
+
+msgid "Example2: usm sbo -b cueplayer"
+msgstr "例2: usm sbo -b cueplayer"
+
+msgid "Executables"
+msgstr "実行可能体"
+
+msgid "Execute"
+msgstr "実行"
+
+msgid "Failed to create temporary directory. Fatal."
+msgstr "テンポラリディレクトリの生成に失敗。致命的エラー"
+
+msgid "Fatal error"
+msgstr "致命的エラー"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "File conversion has finished."
+msgstr "ファイル変換完了"
+
+msgid "File editor"
+msgstr "ファイルエディター"
+
+msgid "File list"
+msgstr "ファイル一覧"
+
+msgid "File verificaion is good"
+msgstr "ファイル検証正常"
+
+msgid "File verification was good."
+msgstr "ファイル検証は正常でした"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "For example: ppm -i imagemagick"
+msgstr "例: ppm -i imagemagick"
+
+msgid "For example: usm -b calcoo"
+msgstr "例: usm -b calcoo"
+
+msgid "For example: usm -c slackware"
+msgstr "例: usm -c slackware"
+
+msgid "For example: usm -d"
+msgstr "例: usm -d"
+
+msgid "For example: usm -g imagemagick"
+msgstr "例: usm -g imagemagick"
+
+msgid "For example: usm -i ethtool"
+msgstr "例: usm -i ethtool"
+
+msgid "For example: usm -k lossy compression"
+msgstr "例: usm -k lossy compression"
+
+msgid "For example: usm -s imagemagick"
+msgstr "例: usm -s imagemagick"
+
+msgid "For example: usm -u slackware"
+msgstr "例: usm -u slackware"
+
+msgid "For example: usm install /tmp/mypackage-1.2.3-i486-1.txz"
+msgstr "例: usm install /tmp/mypackage-1.2.3-i486-1.txz"
+
+msgid "For example: usm set /root/usm"
+msgstr "例: usm set /root/usm"
+
+msgid "For more information use:"
+msgstr "使用方法の更なる説明:"
+
+msgid "Future releases may support all versions."
+msgstr "全バージョンのサポートは将来のリリースで予定しています。"
+
+msgid "HOW TO USE THE PACKAGE TOOLS"
+msgstr "パッケージツールの使用方法"
+
+msgid "HOW TO USE THE PROGRAM"
+msgstr "プログラムの使用方法"
+
+msgid "I could not find a program to download files from the internet."
+msgstr "インターネットからファイルをダウンロードするプログラムを検出できませんでした"
+
+msgid "If this information is not correct, you can remove the following file and rerun the script:"
+msgstr "起動不可原因が誤りの場合、以下のファイルを削除すれば再起動することができます:"
+
+msgid "In order to continue you need to install:"
+msgstr "処理継続にインストールが必要なもの:"
+
+msgid "Install a folder of slackware packages"
+msgstr "slackwareパッケージのフォルダーをインストール"
+
+msgid "Install a slackware package"
+msgstr "slackwareパッケージをインストール"
+
+msgid "Installing"
+msgstr "インストール中"
+
+msgid "Installing now"
+msgstr "インストール実行"
+
+msgid "Invalid choice!"
+msgstr "不正選択!"
+
+msgid "Invalid command"
+msgstr "不正コマンド"
+
+msgid "Invalid command."
+msgstr "不正コマンド"
+
+msgid "Keyword "
+msgstr "キーワード "
+
+msgid "Libraries found in system:"
+msgstr "システム提供ライブラリ:"
+
+msgid "Libraries required: "
+msgstr "必要ライブラリ: "
+
+msgid "Libraries to resolve:"
+msgstr "解決ライブラリ:"
+
+msgid "Library "
+msgstr "ライブラリ "
+
+msgid "Links"
+msgstr "リンク"
+
+msgid "List files in a porteus module"
+msgstr "porteusモジュール内ファイル一覧"
+
+msgid "List files in a slackware package"
+msgstr "slackwareパッケージ内ファイル一覧"
+
+msgid "Menu: "
+msgstr "メニュー: "
+
+msgid "Message"
+msgstr "メッセージ"
+
+msgid "Missing database files."
+msgstr "データベースファイル無し"
+
+msgid "Missing dependencies:"
+msgstr "未解決依存関係:"
+
+msgid "Missing dependencies: 0"
+msgstr "未解決依存関係: 0"
+
+msgid "More than one package contains:"
+msgstr "複数パッケージ内に存在:"
+
+msgid "Mount a porteus module for viewing"
+msgstr "内部参照用にporteusモジュールマウント"
+
+msgid "No argument was supplied."
+msgstr "引数がありません"
+
+msgid "No database updates were found."
+msgstr "データベースの更新はありません"
+
+msgid "No internet browser found."
+msgstr "インターネットブラウザーがありません"
+
+msgid "No internet connection found."
+msgstr "インターネット接続がありません"
+
+msgid "Nothing found for"
+msgstr "非検出"
+
+msgid "Nothing found for:"
+msgstr "非検出:"
+
+msgid "Nothing found for: "
+msgstr "非検出: "
+
+msgid "Nothing was found in Slackware but i found this in slackbuilds."
+msgstr "Slackware中では検出できませんでしたが、slackbuilds中に検出しました"
+
+msgid "Optimizing manifest"
+msgstr "マニフェストの最適化中"
+
+msgid "Options \\t\\t\\t Arguments"
+msgstr "オプション \\t\\t\\t 引数"
+
+msgid "Package "
+msgstr "パッケージ "
+
+msgid "Package already in download list."
+msgstr "パッケージは既にダウンロードリスト中にあります"
+
+msgid "Package tools"
+msgstr "パッケージツール"
+
+msgid "Packages found: "
+msgstr "検出パッケージ: "
+
+msgid "Please run: update all"
+msgstr "実行して下さい: update all"
+
+msgid "Porteus module tools"
+msgstr "Porteusモジュールツール"
+
+msgid "Preferences"
+msgstr "環境設定"
+
+msgid "Processing library:"
+msgstr "処理ライブラリ:"
+
+msgid "Processing:"
+msgstr "処理中:"
+
+msgid "Processing: "
+msgstr "処理中: "
+
+msgid "Remove a slackware package"
+msgstr "slackwareパッケージ削除"
+
+msgid "Repo"
+msgstr "リポジトリ"
+
+msgid "Required by:"
+msgstr "必要源:"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Reset the original data"
+msgstr "オリジナルデータをリセット"
+
+msgid "Return"
+msgstr "戻る"
+
+msgid "Save"
+msgstr "セーブ"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Search entire system for missing dependencies."
+msgstr "未解決依存関係を探す為システム全体を検索"
+
+msgid "Search for a package name"
+msgstr "パッケージ名で検索"
+
+msgid "Search for keywords in the description"
+msgstr "パッケージ説明文中をキーワードで検索"
+
+msgid "Search for the parent of a library"
+msgstr "指定ライブラリを収容するパッケージを検索"
+
+msgid "Searching"
+msgstr "検索中"
+
+msgid "Select a folder"
+msgstr "ホルダーを選択して下さい"
+
+msgid "Select a module"
+msgstr "モジュールを選択して下さい"
+
+msgid "Select a package"
+msgstr "パッケージを選択して下さい"
+
+msgid "Select a slackware package"
+msgstr "slackwareパッケージを選択して下さい"
+
+msgid "Settings and Preferences"
+msgstr "環境設定"
+
+msgid "Size"
+msgstr "サイズ"
+
+msgid "Slackbuilds options"
+msgstr "Slackbuilds開始"
+
+msgid "Slackbuilds: "
+msgstr "Slackbuilds: "
+
+msgid "Slackware"
+msgstr "Slackware"
+
+msgid "Slackware package tools"
+msgstr "Slackwareパッケージツール"
+
+msgid "Slackware version error"
+msgstr "Slackwareバージョンエラー"
+
+msgid "Sorry, but while USM is in beta it only supports slackware 14.1."
+msgstr "申し訳ありません。USMベータ版でのサポート対象はSlackware14.1版のみです。"
+
+msgid "Starting"
+msgstr "開始"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Step 1: Select an action"
+msgstr "最初にアクションを選択して下さい"
+
+msgid "Storage directories"
+msgstr "収容ディレクトリ"
+
+msgid "Terminal"
+msgstr "端末"
+
+msgid "The following error broke the application:"
+msgstr "以下のエラーでアプリケーションが中断しました:"
+
+msgid "The following packages are ready to download:"
+msgstr "以下のパッケージのダウンロード準備ができました:"
+
+msgid "The following packages are required."
+msgstr "以下のパッケージが必要です"
+
+msgid "The following programs were not found and are need to continue:"
+msgstr "処理継続に必要な以下のプログラムがありません:"
+
+msgid "The location where slackware packages will be downloaded."
+msgstr "slackwareパッケージダウンロード場所"
+
+msgid "The search returned too many results."
+msgstr "検索結果が多過ぎます"
+
+msgid "The server could not be reached. Please try later."
+msgstr "サーバに到達できません。暫く経ってから再度実行して下さい。"
+
+msgid "The target folder is not writable."
+msgstr "対象フォルダーは書き込み不可です"
+
+msgid "There was a problem downloading the file:"
+msgstr "以下のファイルのダウンロードでエラーがありました:"
+
+msgid "This is not a valid file."
+msgstr "これは不正ファイルです"
+
+msgid "Total size:"
+msgstr "サイズ合計:"
+
+msgid "Type number and press enter to deselect an item (again to reselect, ENTER when ready):"
+msgstr "選択項目を解除するには番号を入力しenterを押下して下さい((再選択は受付状態に成ったらエンターキーを押下して下さい):"
+
+msgid "Type:"
+msgstr "入力:"
+
+msgid "USM - A unified package manager for Slackware Linux"
+msgstr "USM - Slackware Linux 統合パッケージ管理"
+
+msgid "USM was updated successfully"
+msgstr "USMは更新されました"
+
+msgid "Unpack a porteus module"
+msgstr "porteusモジュール解凍"
+
+msgid "Unpack a slackware package"
+msgstr "slackwareパッケージ解凍"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Update USM"
+msgstr "USM更新"
+
+msgid "Update all"
+msgstr "全ディストリ更新"
+
+msgid "Use: "
+msgstr "使用法: "
+
+msgid "Usm is already active."
+msgstr "USMは既に走行しています"
+
+msgid "Various slackware package tools"
+msgstr "各種slackwareパッケージツール"
+
+msgid "WARNING: unresolved dependencies remain."
+msgstr "警告: 未解決依存関係が残っています"
+
+msgid "Waiting ..."
+msgstr "お待ち下さい ..."
+
+msgid "Welcome to the Unified Slackware Package Manager"
+msgstr "Slackware統合パッケージ管理のご利用ありがとうございます"
+
+msgid "Would you like to find the package for it? [y/n]"
+msgstr "それでパッケージ検索をしますか? [y/n]"
+
+msgid "You are missing required database files!"
+msgstr "必要なデータベースファイルがありません!"
+
+msgid "You are using USM version:"
+msgstr "USMバージョン:"
+
+msgid "You can now close this window"
+msgstr "当ウインドウを閉じる事ができます"
+
+msgid "You can update databases using the update menu."
+msgstr "更新メニューを使ってデータベースを更新できます"
+
+msgid "You have the current USM version."
+msgstr "最新のUSMバージョンを使用しています"
+
+msgid "You must enter a library name."
+msgstr "ライブラリ名を入力する必要があります"
+
+msgid "You must enter a search term."
+msgstr "検索する語を入力する必要があります"
+
+msgid "You must enter a valid category."
+msgstr "有効なカテゴリを入力する必要があります"
+
+msgid "You need the following programs to continue: "
+msgstr "処理継続には以下のプログラムが必要です: "
+
+msgid "Your file was created at:"
+msgstr "以下に指定ファイルが生成されました:"
+
+msgid "Your file was decompressed to:"
+msgstr "指定ファイルが以下の様に解凍されました:"
+
+msgid "Your files are ready in"
+msgstr "指定ファイルはここにあります"
+
+msgid "Your files were installed"
+msgstr "指定ファイルがインストールされました"
+
+msgid "Your files will be created in the same folder as the file you chose. Click execute to begin the file conversion."
+msgstr "選択したファイルと同じフォルダ中にファイルが生成されます。ファイル変換を開始するには実行をクリックして下さい"
+
+msgid "Your module will be mounted at /mnt/loop. Click execute to mount the file."
+msgstr "指定モジュールは/mnt/loopにマウントされます。マウントするには実行をクリックして下さい"
+
+msgid "Your request is currently being processed ..."
+msgstr "リクエスト処理中です ..."
+
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+msgid "_Settings"
+msgstr "設定(_S)"
+
+msgid "_Tools"
+msgstr "ツール(_T)"
+
+msgid "_Updates"
+msgstr "更新(_U)"
+
+msgid "already exists"
+msgstr "既に有ります"
+
+msgid "already exists."
+msgstr "既に有ります"
+
+msgid "database"
+msgstr "データベース"
+
+msgid "database update"
+msgstr "データベース更新"
+
+msgid "for more info"
+msgstr "更なる情報"
+
+msgid "found"
+msgstr "検出"
+
+msgid "gtkdialog version 0.8.3 or higher is required."
+msgstr "0.8.3版以上のgtkdialogが必要です"
+
+msgid "gtkdialog version is insufficient"
+msgstr "gtkdialogの版数が不適切です"
+
+msgid "is not a valid file"
+msgstr "不正ファイルです"
+
+msgid "it seems a library."
+msgstr "ライブラリの様です"
+
+msgid "md5sum mismatch for:"
+msgstr "md5sum不一致:"
+
+msgid "md5sum mismatch:"
+msgstr "md5sum不一致:"
+
+msgid "packages."
+msgstr "パッケージ"
+
+msgid "to download"
+msgstr "ダウンロード"
+
+msgid "use:"
+msgstr "使用法:"
+
+#msgid "usm -b"
+#msgstr "usm -b"
+
+msgid "usm -c <distro>"
+msgstr "usm -c <ディストロ>"
+
+#msgid "usm -d"
+#msgstr "usm -d"
+
+msgid "usm -g <package>"
+msgstr "usm -g <パッケージ>"
+
+msgid "usm -i <package>"
+msgstr "usm -i <パッケージ>"
+
+msgid "usm -k <keyword>"
+msgstr "usm -k キーワード>"
+
+msgid "usm -l <package>"
+msgstr "usm -l <パッケージ>"
+
+msgid "usm -s <package>"
+msgstr "usm -s <パッケージ>"
+
+msgid "usm -u <distro>"
+msgstr "usm -u <ディストロ>"
+
+msgid "usm application information"
+msgstr "USMアプリケーション情報"
+
+msgid "usm install <package>"
+msgstr "usm install <パッケージpackage>"
+
+msgid "usm set <storage>"
+msgstr "usm set <収容場所>"
+
+msgid "was found in"
+msgstr "ここに検出されました"

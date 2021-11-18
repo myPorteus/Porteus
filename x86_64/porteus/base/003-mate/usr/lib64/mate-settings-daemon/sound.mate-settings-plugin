@@ -1,0 +1,15 @@
+[MATE Settings Plugin]
+Module=sound
+IAge=0
+Name=Sound
+Name[be@latin]=Huk
+Name[is]=Hljóð
+Name[ne]=ध्वनि
+Name[oc]=Son
+Name[rw]=Ijwi
+Name[si]=ශබ්දය
+Name[wa]=Son
+Description=Sound Sample Cache plugin
+Authors=Lennart Poettering
+Copyright=Copyright © 2008
+Website=

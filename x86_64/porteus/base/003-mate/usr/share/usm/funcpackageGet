@@ -1,0 +1,501 @@
+#!/bin/bash
+
+silent_check_update(){
+if [ ! -e $TMPDIR/checked ]; then
+if [ -e $TMPDIR/vercheck.txt ]; then
+	DBVER1=`awk -F= '/DBVER=/{print$NF}' $VERTXT`
+	DBVER2=`awk -F= '/DBVER=/{print$NF}' $TMPDIR/vercheck.txt` || return
+	USMVER1=`awk -F= '/USMVER=/{print$NF}' $VERTXT`
+	USMVER2=`awk -F= '/USMVER=/{print$NF}' $TMPDIR/vercheck.txt` || return
+	[ $DBVER2 -gt $DBVER1 ] && HAVEUPDATES=0 && DBSTATUS=available || DBSTATUS="not required"
+	[ $USMVER2 -gt $USMVER1 ] && HAVEUPDATES=0 && USMSTATUS=available || USMSTATUS="not required"
+	if [ $HAVEUPDATES ]; then
+		if [ $CLI ]; then
+			echo
+			cyan "`gettext "Updates are available."`" $rst
+			echo " `gettext "Program update: "`" $txtbld "$USMSTATUS" $rst
+			echo " `gettext "Database update:"`" $txtbld "$DBSTATUS" $rst
+			echo -e " `gettext "Please run:"`" $txtgreen "usm -u all" $rst "and/or" $txtgreen "usm -u usm" $rst
+			echo " This message can be disabled in $CONF"
+			red "`gettext "###############################"`"
+			sleep 3
+		else
+			gtk_message "`gettext "Updates are available"`" "Program update: $USMSTATUS --- Database update: $DBSTATUS" \
+			"`gettext "Please run the relevant update from the update menu. This automatic update check can be turned off in the settings/preferences menu."`" gtk-yes 500
+			echo checked > $TMPDIR/checked
+		fi
+	fi
+fi
+fi
+}; export -f silent_check_update
+
+package_get(){
+if [ "`awk -F= '/^AUTOCHECK=/{print$NF}' $CONF`" == "true" ]; then
+	rm $TMPDIR/vercheck.txt 2>/dev/null
+	silent_download $UPDLINK/configs/vercheck.txt $TMPDIR &
+fi
+
+if [ $CLI ]; then
+	find -L $DBDIR -type f -name "LIBS.TXT"|xargs grep -i "^$1.*"|sed 's/ //g' > $TMPDIR/search.tmp
+
+	[ `wc -l < $TMPDIR/search.tmp` -eq 0 ] && { echo; red "`gettext "Nothing found for: "`" "$1"; cleanup; }
+
+	RESULT=`awk -F: '{print$NF}' $TMPDIR/search.tmp|sort -u`
+	menu_from_variable $RESULT
+else
+	CHOICE=$1
+	grep "test-package-name" <<<$CHOICE && return
+fi
+
+ORIGINAL=${CHOICE}
+if [ -z $NODEPS ]; then
+	if [ `awk -F= /RESOLVE/'{print$2}' $CONF` = "true" ]; then
+		resolve_deps $CHOICE
+		[ $GUI ] && kill `pgrep -f GTK_TAILBOXNB`
+	else
+		PKGLIST+=($CHOICE)
+	fi
+	local ORIGSHORT=${ORIGINAL%-*-*-*}
+	EDEPS=`grep -A1 "^#.* $ORIGSHORT" $CONFDIR/extra-deps.txt|tail -n1`
+	if [ "$EDEPS" ]; then
+		for getit in `echo $EDEPS|tr ',' '\n'`; do
+			if [[ ! `ls /var/log/packages|grep "^${getit}-[0-9]"` ]]; then
+				ITEXISTS=`find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep "PACKAGE NAME:.* ${getit}-[0-9]"|awk '{print$NF}'|head -n1`
+				if [ "$ITEXISTS" ]; then
+					PKGLIST+=($ITEXISTS) || UNRES+=($ITEXISTS)
+				fi
+			fi
+		done
+	fi
+else
+	PKGLIST+=($CHOICE)
+fi
+
+## Do one last duplicate removal. It can't hurt.
+PKGLIST=( `printf '%s\n' ${PKGLIST[@]}|sort -u` )
+
+
+if [ ${#UNRES[@]} -gt 0 ]; then
+	echo
+	pink "`gettext "WARNING: unresolved dependencies remain."`" | tee -a $TMPDIR/.stream
+	printf -- '%s\n' ${UNRES[@]}
+fi
+
+declare -i TSIZE=0
+
+[ "$ARCH" = "x86_64" ] && ARCHI="x86_64" || ARCHI="x86" # Make an exception for alien repo
+for pkg in ${PKGLIST[@]}; do
+	local LONG=`find -L $DBDIR -type f -name "OPTIFEST"|xargs grep -i "Package: $pkg"`
+	local DIST=`cut -d':' -f1 <<<$LONG|awk -F/ '{print $(NF-1)}'`
+	local PKGSHORT=${pkg%-*-*-*}
+	local LNKREPO=`grep -m1 -e "^\([a-z]\)" $CONFDIR/mirrors-$DIST.txt`
+	local MID=`grep -A1 "NAME:  $pkg" $DBDIR/$DIST/PACKAGES.TXT|tail -n1|awk '{print$NF}'|sed  's ..  '`
+
+	[ "$DIST" = "slackware" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER
+	[ "$DIST" = "slackwarepatches" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER
+	[ "$DIST" = "slacky" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER
+	[ "$DIST" = "alien" ] && local EXTRA=$SLACKVER/$ARCHI
+	[ "$DIST" = "salix" ] && local EXTRA=$ARCH/$SLACKVER
+	[ "$DIST" = "ponce" ] && { unset EXTRA; local MID="slackware${SLACKSUFFIX}-$SLACKVER/packages"; }
+	local LINK=$LNKREPO/$EXTRA/$MID/$pkg
+	LINKS+=( $LINK )
+	local HSIZE=`grep -A3 "NAME:  $pkg" $DBDIR/$DIST/PACKAGES.TXT|grep -i "(compressed)"|awk -F: '{ gsub (" ", "", $0); print$NF}'`
+	declare -i CSIZE=`tr -d [:alpha:] <<<$HSIZE`
+	let TSIZE=( $TSIZE+$CSIZE )
+	DISP+=( "$pkg [$HSIZE]" )
+done
+
+[ $TSIZE -gt 1024 ] && { TSIZE=$((TSIZE / 10**3)); DSIZE="$TSIZE MB"; } || DSIZE="$TSIZE KB"
+
+[ ${#LINKS[@]} -gt 1 ] && MULTIPKG=true || unset MULTIPKG
+
+TXTREPLINE1="`gettext "The following packages are required."`"
+TXTREPLINE2="`gettext "Total size:"`"
+if [ $CLI ]; then
+	echo
+	echo $txtblue "$TXTREPLINE1" $rst
+	printf -- '%s\n' "${DISP[@]}"
+	echo
+	echo "$TXTREPLINE2" "$DSIZE"
+else
+	local CHKBOXFILE=$TMPDIR/.menudeselect
+	printf '%s\n' ${LINKS[@]}|awk -F/ '{print$NF}' > $CHKBOXFILE
+	gtk_menu_deselect "$TXTREPLINE1 Total size: $DSIZE. Deselect any packages you do not want and click Download."
+	FINALPKGS=`awk -F= /true/'{print$1}' ${CHKBOXFILE}.dmp`
+	MAKESUBFOLDER=`awk -F'"' /chkSubFolder/'{print$2}' ${CHKBOXFILE}.dmp`
+	CONVERTPKGS=`awk -F'"' /chkConvert/'{print$2}' ${CHKBOXFILE}.dmp`
+	rm $CHKBOXFILE*
+fi
+
+[ ${#LINKS[@]} -gt 1 ] && MULTIPKG=true || unset MULTIPKG
+
+if [ $CLI ]; then
+	[ $LINKSONLY ] && { echo && printf '%s\n' ${LINKS[@]}; cleanup; exit; }
+	FINALPKGS=${LINKS[@]}
+fi
+
+if [ $CLI ]; then
+	if [ $MULTIPKG ]; then
+		if [ `awk '/^NOPROMPTS/ && /false/' $CONF` ]; then
+		echo
+			if [ -f /etc/porteus-version ]; then
+			echo "`gettext " Multiple packages were detected."`"
+			read -p "`gettext " Would you like to merge the packages into one module? [y/n]"`" -n 1 -r -s && echo
+				if [[ $REPLY =~ ^[Yy]$ ]]; then
+					MERGE=true
+						else
+					unset MERGE
+					if [ "$SUBFOLDERPROMPT" == "true" ]; then
+						read -p "`gettext " Would you like to create a subfolder for the files? [y/n]"`" -n 1 -r -s && echo
+						[[ $REPLY =~ ^[Yy]$ ]] && MAKESUBFOLDER=true
+					fi
+				fi
+			fi
+		fi
+	fi
+	## Ask if user wants to install the packages after downloading
+	if [ -z $MERGE ] && [ `awk '/^NOPROMPTS/ && /false/' $CONF` ]; then
+		read -p "`gettext " Would you like to install the package/s? (custom paths are supported) [y/n]"`" -n 1 -r -s && echo
+		[[ $REPLY =~ ^[Yy]$ ]] && installpackages=true
+	fi
+fi
+unset REPLY
+
+ORIGLNK=`printf '%s\n' ${LINKS[@]}|grep $ORIGINAL`
+ORIGPKG=${ORIGLNK##*/}
+SHNAME=${ORIGPKG%-*-*}
+
+if [ `awk '/^NOPROMPTS/ && /false/' $CONF` ]; then
+	## If user wants a subfolder then change STORAGE variable for this run
+	if [ "$MAKESUBFOLDER" = "true" ]; then
+		SUBFOLDER="/$SHNAME"
+		[ ! -d "$STORAGE$SUBFOLDER" ] && mkdir -p "$STORAGE$SUBFOLDER"
+		STORAGE="$STORAGE$SUBFOLDER"
+	fi
+fi
+
+if [ $CLI ]; then
+	if [ `awk '/^NOPROMPTS/ && /false/' $CONF` ]; then
+		echo
+		read -p "`gettext " Press [r] to remove packages, [q] to quit, or enter to start downloading."`" -n 1 -r -s && echo
+		[[ $REPLY =~ ^[Qq]$ ]] && cleanup
+		if [[ $REPLY =~ ^[Rr]$ ]]; then 
+			for a in ${LINKS[@]}; do shlink=${a##*/}; tLINKS+=( $shlink ); done
+			if [ ${#tLINKS[@]} -lt 10 ];then
+				frompackageGet=0
+				menu_deselect "${tLINKS[@]}"
+				unset tLINKS
+					else
+				frompackageGet=0
+				menu_deselect_plusten "${tLINKS[@]}"
+			fi
+		fi
+	fi
+fi
+
+## Get the final package links
+unset frompackageGet
+if [ "$FINALPKGS" ]; then
+	for a in $FINALPKGS; do
+		grep -q $a <<<${LINKS[@]} && pLINKS+=( `printf '%s\n' ${LINKS[@]}|grep $a` )
+	done
+	LINKS=("${pLINKS[@]}") && unset pLINKS
+else
+	unset LINKS
+	echo $txtbld "`gettext "Nothing to do. Exiting."`" $rst
+	cleanup
+fi
+
+## Is there more than 1 package?
+[ ${#LINKS[@]} -gt 1 ] && MULTIPKG=true || unset MULTIPKG
+
+## If user wants automatic update checks then do it
+if [ "`awk -F= '/AUTOCHECK=/{print$NF}' $CONF`" == "true" ]; then
+	silent_check_update
+fi
+
+if [ $GUI ]; then
+	echo `basename ${LINKS[0]}` > $TMPDIR/.message
+	gtk_download
+fi
+
+## Download the packages
+for a in ${LINKS[@]}; do
+	local shorty=${a##*/}
+	## The package already exists in the target folder
+	if [ -e $STORAGE/$shorty ]; then
+		## Don't download if it already exists
+		[ $CLI ] && echo "$shorty" "`gettext "already exists"`"
+		continue
+	else
+		## The package already exists elsewhere in storage
+		local itexists=`find $(awk -F= '/STORAGE=/{print$NF}' $CONF) -type f -name "$shorty"`
+		if [ "$itexists" ] && [ `awk -F= '/MAKELINKS=/{print$NF}' $CONF` = "true" ]; then
+			ln -sf $itexists $STORAGE/$shorty
+			echo "`gettext "$shorty exists. Symlink created."`"
+			continue
+		else
+			## No package already exists. Download it.
+			dloadInProgress=$shorty
+			[ $GUI ] && echo $shorty > $TMPDIR/.message && wget $a -o $TMPDIR/.progress -P $STORAGE
+			[ $CLI ] && download $a $STORAGE
+			[ $CLI ] && [ ! -e $STORAGE/$shorty ] && { echo $txtbld "`gettext "There was a problem downloading the file:"`" $rst "$shorty"; continue; }
+			unset dloadInProgress
+		fi
+	fi
+done
+[ -e $TMPDIR/.progress ] && rm $TMPDIR/.progress
+[ -e $TMPDIR/.message ] && rm $TMPDIR/.message
+wait
+
+if [ -e /etc/porteus-version ]; then
+	if [ $GUI ]; then
+		if [ -e $TMPDIR/merge.tmp ] && [ `grep true $TMPDIR/merge.tmp` ]; then
+			rm -rf $TMPDIR/merge 2>/dev/null
+			mkdir $TMPDIR/merge
+			rm -f $TMPDIR/.stream 2>/dev/null
+			touch $TMPDIR/.stream
+			gtk_tailboxnb 400 &
+			for a in ${LINKS[@]}; do
+				local mpkg=${a##*/}
+				echo "Merging: $mpkg" >> $TMPDIR/.stream
+				installpkg --terse -root $TMPDIR/merge $STORAGE/$mpkg
+			done
+			kill `pgrep -f GTK_TAILBOXNB` 2>/dev/null
+			rm $TMPDIR/.stream
+			export STATE=BUILDMODULES
+			touch $TMPDIR/proglock
+			gtk_progress "Merging bundle now"
+			local bundlepkg=${ORIGPKG}
+			local bundlename=${bundlepkg%-*}-bundle.xzm
+			dir2xzm $TMPDIR/merge $STORAGE/$bundlename > $TMPDIR/.progress
+			rm $TMPDIR/proglock
+			sleep 0.4
+			kill_progress 2>/dev/null
+			sleep 1
+		else
+				
+		if [ "$CONVERTPKGS" == "true" ];then
+			export STATE=BUILDMODULES
+			touch $TMPDIR/proglock
+			gtk_progress "Converting"
+			for a in ${LINKS[@]}; do
+				local shorty=${a##*/}
+				echo "$shorty" > $TMPDIR/.message
+				txz2xzm $STORAGE/$shorty > $TMPDIR/.progress
+			done
+			rm $TMPDIR/proglock
+			sleep 0.4
+			kill_progress 2>/dev/null
+			sleep 1
+		fi fi
+	else
+	## CLI post download operations
+		if [ $MULTIPKG ]; then
+			if [ $MERGE ]; then
+				mkdir $STORAGE/merged
+				for a in ${LINKS[@]}; do
+					mpkg=${a##*/}
+					installpkg --terse -root $STORAGE/merged $STORAGE/$mpkg
+				done
+				local bundlepkg=${ORIGPKG}
+				local bundlename=${bundlepkg%-*}-bundle.xzm
+				dir2xzm $STORAGE/merged $STORAGE/$bundlename
+				rm -rf $STORAGE/merged
+				echo
+				echo "$STORAGE/$bundlename is ready."
+			fi
+		fi
+		if [ `awk -F= /MODULES/'{print$2}' $CONF` == "true" ]; then
+			echo
+			bold "Commencing package conversion ..."
+			sleep 2
+			for a in ${LINKS[@]}; do
+				local shorty=${a##*/}
+				txz2xzm $STORAGE/$shorty
+			done
+		fi
+				
+	fi
+fi
+
+## Install the packages if requested
+if [ $installpackages ]; then
+	echo "`gettext " Enter a custom path to install packages to or press enter to install to the system: "`"
+	read -e -p ">" installpath
+	[ "$installpath" == "" ] && installpath=/ && echo "Installing to system" || echo "Installing to: $installpath"
+	[ ! -d $installpath ] && mkdir -p $installpath
+	for a in $FINALPKGS; do
+		local b=${a##*/}
+		installpkg --terse --root $installpath $STORAGE/$b
+	done
+fi
+
+if [ $GUI ]; then
+	if [ `awk '/^NOPROMPTS/ && /false/' $CONF` ]; then
+		gtk_yesno "`gettext "Your files are ready"`" "`gettext "Would you like to open the storage folder now?"`"
+		if [ `grep -o Yes $TMPDIR/.yesno` ]; then dbus-launch $FILEMANAGER $STORAGE; fi
+	fi
+fi
+unset LINKS LINK DISP FINALPKGS STATE MERGE STORAGE installpath
+}
+
+resolve_deps(){
+PKGQ+=( "${1##*/}" )
+
+PKGLIST+=( "${1##*/}" )
+
+if [ $GUI ]; then
+	echo "${PKG[0]}" > $TMPDIR/.stream
+	[ ! `pgrep -f GTK_TAILBOXNB` ] && gtk_tailboxnb 80 &
+fi
+
+# Get the depth of dep resolution
+[ "$DEPTH" ] && dlimit=${DEPTH}
+
+# Set depth loop
+dloop=0
+
+until [ ${#PKGQ[@]} -eq 0 ]; do
+	local PKG=${PKGQ[0]}
+	## If depth argument was supplied by CLI then check it and exit if reached
+	if [ $CLI ] && [ $DEPTH ]; then
+		[ $dloop -eq $dlimit ] && { echo "Depth $dlimit of resolution reached. Exiting."; cleanup; } 
+	fi
+	{ echo; echo "`gettext "Processing: "`" $txtbld "$PKG" $rst; } | tee $TMPDIR/.stream
+	sleep 2
+	## Find distro that has dependency
+	TARGLIB=`find -L $DBDIR -type f -name "LIBS.TXT" | xargs grep -i "^$PKG" | head -n1 | awk -F: '{print$1}'`
+	[ $CLI ] && [ -z $TARGLIB ] && fatality "$SCRIPT $FUNCNAME $LINENO" "`gettext "Brokenman needs to update database. Could not find:"`" "LIBS.TXT"
+	[ $GUI ] && [ -z $TARGLIB ] && { echo "`gettext "Brokenman needs to update database. Could not find:"`" "LIBS.TXT" > $TMPDIR/.stream; gtk_message2 "`gettext "Fatal error"`" "LIBS.TXT"; exit; }
+	## Find mother package
+	HASDEPS=`grep -A1 "$PKG" $TARGLIB|tail -n1|grep -v ".*\.t.z"`
+	if [[ ! -z $HASDEPS ]]; then
+		ALLDEPS=`sed 's@,@@g' <<<$HASDEPS`
+
+		iPKGSHORT=${PKG%-*-*-*}
+		IGDEPS=`grep -A1 "^#.* $iPKGSHORT" $CONFDIR/ignore-deps.txt|tail -n1`
+		echo "Ignored libraries: $IGDEPS"
+		if [ "$IGDEPS" ]; then
+			for ignoreit in `echo $IGDEPS|tr ',' '\n'`; do
+				ALLDEPS2=`echo $ALLDEPS|tr ' ' '\n'|grep -v $ignoreit`
+				ALLDEPS=$ALLDEPS2 && unset ALLDEPS2
+			done
+		fi
+		LIBCNT=`wc -w <<<$ALLDEPS`
+		declare -i RESCNT=0
+		[ $CLI ] && { echo; echo "`gettext "Libraries required: "`" "$LIBCNT"; }
+				
+		for a in $ALLDEPS; do
+			if [[ `grep $a $LOCALDB/libs.txt` ]]; then
+				ALLDEPS=${ALLDEPS/$a/}
+				(( RESCNT++ ))
+			fi
+		done
+		
+		[ $CLI ] && echo "`gettext "Libraries found in system:"`" "$RESCNT"
+		[ $CLI ] && { echo "`gettext "Libraries to resolve:"`" "`wc -w <<<$ALLDEPS`"; echo; }
+
+		for a in $ALLDEPS; do
+			[ $CLI ] && echo "`gettext "Processing library:"`" "$a"
+			local MOTHERPKG=`find -L $DBDIR -name OPTIFEST|xargs tac|sed -n "/$a/,/Package:/p"|awk /Package:/'{print$NF}'`
+			if [[ "$MOTHERPKG" ]]; then
+				if [ ${#PKGLIST[@]} -ne 0 ]; then
+					for HAVEIT in $MOTHERPKG; do
+						if [[ `echo ${PKGLIST[@]}|grep -o $HAVEIT` ]]; then
+							continue 2
+						fi
+					done
+				fi
+				declare -i MPKGCNT=`wc -w <<<$MOTHERPKG`
+				if [ $MPKGCNT -gt 1 ]; then
+					for dup in $MOTHERPKG; do
+						shortv=${dup%-*-*}
+						if [ `grep -c $shortv <<<"$MOTHERPKG"` -gt 1 ]; then
+							REDUCETO1=`grep $shortv <<<"$MOTHERPKG"|sort -V|head -n1`
+							MOTHERPKG2="`tr " " "\n" <<<$MOTHERPKG|sed '/'$shortv'/d'` $REDUCETO1"
+							MOTHERPKG=$MOTHERPKG2
+						fi
+					done
+					if [ `wc -w <<<$MOTHERPKG` -eq 1 ]; then
+						PKGQ+=( "$MOTHERPKG" )
+						PKGLIST+=( "$MOTHERPKG" )
+						continue
+					fi
+					for b in $MOTHERPKG; do
+						MSHORT=${MOTHERPKG%-*-*-*}
+						local SIZELONG=`find -L $DBDIR -name PACKAGES.TXT|xargs grep -A5 $b|awk "/\(compressed/"`
+						[ `wc -c <<<$SIZELONG` -lt 3 ] && local SIZELONG=`find -L $DBDIR -name PACKAGES.TXT|xargs grep -A5 "PACKAGE NAME:  $MSHORT$"|awk "/\(compressed/"`
+						local PKGSIZE=`echo ${SIZELONG##*:}|sed 's/ //g'`
+						local PKGDIST=`echo ${SIZELONG%-*}|awk -F/ '{print $(NF-1)}'`
+						DISPLAYIT+=( "$b $PKGSIZE $PKGDIST" )
+					done
+					export RESULT="$MOTHERPKG"
+					TXTMULTIPKG="`gettext "More than one package contains:"`"
+					if [ $CLI ]; then
+						echo
+						echo $txtcyan "$TXTMULTIPKG" $rst "$a"
+						printf '%s\n' "${DISPLAYIT[@]}"|column -t
+						menu_from_variable $RESULT
+						unset DISPLAYIT
+					else
+						gtk_menu_from_variable "$TXTMULTIPKG $a"
+					fi
+					PKGQ+=( $CHOICE )
+					PKGLIST+=( $CHOICE ) && unset CHOICE
+				else
+					PKGQ+=( "$MOTHERPKG" )
+					PKGLIST+=( "$MOTHERPKG" )
+				fi
+			else
+				UNRES+=( $a )
+			fi
+		done
+		PKGQ=("${PKGQ[@]:1}")
+		
+		PKGQ2=( `printf '%s\n' ${PKGQ[@]}|awk '!x[$0]++'` )
+		PKGQ=("${PKGQ2[@]}") && unset PKGQ2
+		echo
+		(( dloop++ ))
+		continue
+	else
+	PKGQ=("${PKGQ[@]:1}")
+	fi
+	## Increment dep resolution counter
+	(( dloop++ ))
+done # Ends while loop for ${#PKGQ[@]}
+}
+
+function convert_size(){
+declare -i GSIZE=$1
+[ $GSIZE -gt 1024 ] && OSIZE="`echo "scale=2; $GSIZE/1024"|bc` MB" || OSIZE="${GSIZE} KB"
+unset GSIZE
+}
+
+function package_get_link(){
+[ "$ARCH" = "x86_64" ] && ARCHI=x86_64 || ARCHI=x86
+
+declare -i TSIZE=0
+for pkg in $1; do
+    local LONG=`find -L $DBDIR -type f -name "OPTIFEST"|xargs grep -i "Package: $pkg"|head -n1`
+    local DIST=`cut -d':' -f1 <<<$LONG|awk -F/ '{print $(NF-1)}'`
+    local PKGSHORT=${pkg%-*-*-*}
+    
+    local LNKREPO=`grep -m1 -e "^\([a-z]\)" $CONFDIR/mirrors-$DIST.txt`
+    [ "$ARCH" = "x86_64" ] && ARCHI="x86_64" || ARCHI="x86"
+    [ "$DIST" = "slackware" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER
+    [ "$DIST" = "slackwarepatches" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER/patches
+    [ "$DIST" = "slacky" ] && local EXTRA=slackware$SLACKSUFFIX/$SLACKVER
+    [ "$DIST" = "alien" ] && local EXTRA=$SLACKVER/$ARCHI
+    [ "$DIST" = "salix" ] && local EXTRA=$ARCH/$SLACKVER/salix
+    [ "$DIST" = "ponce" ] && local EXTRA=slackware$SLACKSUFFIX-$SLACKVER
+    local MID=`grep -A1 "NAME:  $pkg" $DBDIR/$DIST/PACKAGES.TXT|tail -n1|awk '{print$NF}'|sed  's ..  '`
+    [ "$DIST" = "ponce" ] && local MID=packages
+    local LINK=$LNKREPO/$EXTRA/$MID/$pkg
+    LINKS+=( $LINK )
+    local HSIZE=`grep -A3 "NAME:  $pkg" $DBDIR/$DIST/PACKAGES.TXT|grep "(comp"|awk -F: '{ gsub (" ", "", $0); print$NF}'`
+    declare -i CSIZE=`tr -d [:alpha:] <<<$HSIZE`
+    convert_size $CSIZE # Returns $OSIZE as MB or KB depending on value given in CSIZE
+    DISP+=( "$pkg [$OSIZE]" )
+done
+}

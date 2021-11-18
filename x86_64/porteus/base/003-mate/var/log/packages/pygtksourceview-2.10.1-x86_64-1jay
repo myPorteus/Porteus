@@ -1,0 +1,59 @@
+PACKAGE NAME:     pygtksourceview-2.10.1-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     640K
+PACKAGE LOCATION: PKG64/dep/pygtksourceview-2.10.1-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+pygtksourceview: pygtksourceview (Python bindings for gtksourceview)
+pygtksourceview:
+pygtksourceview: Pygtksourceview provides python bindings for gtksourceview.
+pygtksourceview:
+pygtksourceview: Homepage: http://www.pygtk.org/
+pygtksourceview:
+pygtksourceview:
+pygtksourceview:
+pygtksourceview:
+pygtksourceview:
+pygtksourceview:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/pygtksourceview-2.10.1/
+usr/doc/pygtksourceview-2.10.1/pygtksourceview.SlackBuild
+usr/doc/pygtksourceview-2.10.1/README
+usr/doc/pygtksourceview-2.10.1/NEWS
+usr/doc/pygtksourceview-2.10.1/INSTALL
+usr/doc/pygtksourceview-2.10.1/COPYING
+usr/doc/pygtksourceview-2.10.1/ChangeLog
+usr/doc/pygtksourceview-2.10.1/AUTHORS
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/pygtksourceview-2.0.pc
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/gtksourceview2.so
+usr/lib64/python2.7/site-packages/gtksourceview2.la
+usr/share/
+usr/share/pygtk/
+usr/share/pygtk/2.0/
+usr/share/pygtk/2.0/defs/
+usr/share/pygtk/2.0/defs/gtksourceview2.defs
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/pygtksourceview2/
+usr/share/gtk-doc/html/pygtksourceview2/pygtksourceview2.devhelp
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourceview2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcestyleschememanager2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcestylescheme2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcestyle2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourceprintcompositor2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcemark2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcelanguagemanager2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcelanguage2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcegutter2.html
+usr/share/gtk-doc/html/pygtksourceview2/class-gtksourcebuffer2.html
+usr/share/gtk-doc/html/pygtksourceview2/index.sgml
+usr/share/gtk-doc/html/pygtksourceview2/index.html
+usr/share/gtk-doc/html/pygtksourceview2/style.css

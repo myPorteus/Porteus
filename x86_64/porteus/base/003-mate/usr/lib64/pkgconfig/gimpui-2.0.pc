@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: GIMP UI
+Description: GIMP User Interface Library
+Version: 2.8.6
+Requires: gimp-2.0 >= 2.8 gtk+-2.0 >= 2.24.10
+Libs: -L${libdir} -lgimpui-2.0 -lgimpwidgets-2.0 -lgimpmodule-2.0
+Cflags: -I${includedir}/gimp-2.0

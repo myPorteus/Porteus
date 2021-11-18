@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Session Logout Dialog
+Comment=Prompt the user to log out of their session
+Exec=mate-session-save --logout-dialog
+Terminal=false
+Type=Application
+Icon=system-log-out
+Hidden=true
+Categories=Application;System;
+OnlyShowIn=MATE;

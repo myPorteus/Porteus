@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="mate-settings-daemon">
+  <schema path="/org/mate/desktop/keybindings/" id="org.mate.keybindings">
+    <child schema="org.mate.keybindings.magnifier" name="magnifier"/>
+    <child schema="org.mate.keybindings.screenreader" name="screenreader"/>
+    <child schema="org.mate.keybindings.onscreenkeyboard" name="onscreenkeyboard"/>
+  </schema>
+  <schema path="/org/mate/desktop/keybindings/magnifier/" id="org.mate.keybindings.magnifier">
+    <key type="s" name="binding">
+      <default>''</default>
+      <summary>Toggle magnifier</summary>
+      <description>Binding to toggle the magnifier.</description>
+    </key>
+    <key type="s" name="name">
+      <default l10n="messages" context="name">'Toggle magnifier'</default>
+      <summary>The name of the keyboard shortcut to toggle the magnifier</summary>
+      <description>This is the name of the keyboard shortcut to toggle the magnifier. This name will be shown in the keyboard shortcut preferences dialog.</description>
+    </key>
+    <key type="s" name="action">
+      <default>'mateconftool-2 --toggle /desktop/mate/applications/at/screen_magnifier_enabled'</default>
+      <summary>Toggle magnifier</summary>
+      <description>Command used to turn the magnifier on or off.</description>
+    </key>
+  </schema>
+  <schema path="/org/mate/desktop/keybindings/screenreader/" id="org.mate.keybindings.screenreader">
+    <key type="s" name="binding">
+      <default>''</default>
+      <summary>Toggle screen reader</summary>
+      <description>Binding to toggle the screen reader.</description>
+    </key>
+    <key type="s" name="name">
+      <default l10n="messages" context="name">'Toggle screen reader'</default>
+      <summary>The name of the keyboard shortcut to toggle the screen reader</summary>
+      <description>This is the name of the keyboard shortcut to toggle the screen reader. This name will be shown in the keyboard shortcut preferences dialog.</description>
+    </key>
+    <key type="s" name="action">
+      <default>'mateconftool-2 --toggle /desktop/mate/applications/at/screen_reader_enabled'</default>
+      <summary>Toggle screen reader</summary>
+      <description>Command used to turn the screen reader on or off.</description>
+    </key>
+  </schema>
+  <schema path="/org/mate/desktop/keybindings/onscreenkeyboard/" id="org.mate.keybindings.onscreenkeyboard">
+    <key type="s" name="name">
+      <default l10n="messages" context="name">'Toggle on-screen keyboard'</default>
+      <summary>The name of the keyboard shortcut to toggle the on-screen keyboard</summary>
+      <description>This is the name of the keyboard shortcut to toggle the on-screen keyboard. This name will be shown in the keyboard shortcut preferences dialog.</description>
+    </key>
+    <key type="s" name="binding">
+      <default>''</default>
+      <summary>Toggle on-screen keyboard</summary>
+      <description>Binding to toggle the on-screen keyboard.</description>
+    </key>
+    <key type="s" name="action">
+      <default>'mateconftool-2 --toggle /desktop/mate/applications/at/screen_keyboard_enabled'</default>
+      <summary>Toggle on-screen keyboard</summary>
+      <description>Command used to turn the on-screen keyboard on or off.</description>
+    </key>
+  </schema>
+</schemalist>

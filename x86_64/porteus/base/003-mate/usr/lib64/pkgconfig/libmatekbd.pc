@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libmatekbd
+Description: MATE keyboard shared library
+Version: 1.9.1
+Requires: gmodule-export-2.0 gdk-2.0 >= 2.24 gio-2.0 >= 2.25.0 libxklavier >= 5.0
+Libs: -L${libdir} -lmatekbd
+Cflags: -I${includedir}

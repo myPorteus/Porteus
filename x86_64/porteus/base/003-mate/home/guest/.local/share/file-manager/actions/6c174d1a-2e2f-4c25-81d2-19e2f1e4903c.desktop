@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=cdr
+Icon[en]=cdr
+Icon[C]=cdr
+Tooltip[en_US]=Create a porteus module from a folder
+Tooltip[en]=Create a porteus module from a folder
+Tooltip[C]=Create a porteus module from a folder
+ToolbarLabel[en_US]=Create module
+ToolbarLabel[en]=Create module
+ToolbarLabel[C]=Create module
+Name[en_US]=Create module
+Name[en]=Create module
+Name[C]=Create module
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=/opt/porteus-scripts/context-menu/create-module %f
+Name[en_US]=Create module
+Name[en]=Create module
+Name[C]=Create module

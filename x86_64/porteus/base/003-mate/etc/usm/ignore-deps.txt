@@ -1,0 +1,8 @@
+## This file is searched by funcpackagGet in the resolve_deps
+## function. It will ignore any libraries for a given package.
+## For example the flashplayer-plugin does not requires all the
+## kde and Qt libraries but they are listed as required libs
+## because of the file usr/lib64/kde4/kcm_adobe_flash_player.so
+
+#  flashplayer-plugin
+libkdeui.so,libkutils.so,libkdecore.so,libQt,

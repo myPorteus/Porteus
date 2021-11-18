@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Soundcard Selector
+Exec=gksu gtk-soundcard-select
+Icon=audio-card
+Type=Application
+Categories=System;

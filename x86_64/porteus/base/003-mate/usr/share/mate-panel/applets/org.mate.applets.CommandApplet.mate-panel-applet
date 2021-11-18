@@ -1,0 +1,42 @@
+[Applet Factory]
+Id=CommandAppletFactory
+Location=/usr/libexec/command-applet
+Name=Command Factory
+Description=Command Factory
+
+[CommandApplet]
+Name=Command
+Name[be@latin]=Zahad
+Name[en@shaw]=𐑒𐑩𐑥𐑭𐑯𐑛
+Name[es_GT]=Comando
+Name[es_HN]=Comando
+Name[rw]=Icyo wifuza
+Description=Shows the output of a command
+Description[be]=Паказавае вывад пэўнага загаду
+Description[cs]=Zobrazí výstup příkazu
+Description[da]=Vis resultatet af en kommando
+Description[de]=Zeigt die Ausgabe eines Befehls
+Description[el]=Δείχνει την έξοδο μιας εντολής
+Description[en_AU]=Shows the output of a command
+Description[en_GB]=Display the output of a command
+Description[es]=Muestra la salida de una orden
+Description[fr]=Afficher la sortie d'une ligne de commande
+Description[gl]=Amosar a saída da orde
+Description[hu]=Parancs kimenetének megjelenítése
+Description[id]=Tampilkan hasil keluaran dari perintah
+Description[it]=Mostra l'output di un comando
+Description[ko]=명령 출력을 표시합니다
+Description[mr]=आज्ञेचा प्रतिसाद दाखवते
+Description[ms]=Tunjuk output perintah
+Description[nl]=Toont de uitvoer van een opdracht
+Description[pl]=Wyświetla wynik wyjściowy polecenia
+Description[pt]=Mostra a saída de um comando
+Description[pt_BR]=Exibe a saída de um comando
+Description[ru]=Показывает вывод команды
+Description[sk]=Zobrazí výstup príkazu
+Description[sl]=Pokaži izpis ukaza
+Description[tr]=Bir komutun verdiği çıktıyı görüntüler
+Description[uk]=Показати вивід команди
+Description[zh_CN]=显示命令输出
+Description[zh_TW]=顯示命令的輸出
+Icon=terminal

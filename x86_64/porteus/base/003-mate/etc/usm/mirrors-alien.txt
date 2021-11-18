@@ -1,0 +1,5 @@
+# List of alien Slackware mirrors
+# Structure: $VER/$ARCH
+
+# NETHERLANDS
+http://taper.alienbase.nl/mirrors/people/alien/sbrepos

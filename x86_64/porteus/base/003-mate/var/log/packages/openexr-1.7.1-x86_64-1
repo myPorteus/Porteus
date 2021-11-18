@@ -1,0 +1,116 @@
+PACKAGE NAME:     openexr-1.7.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     2.9M
+UNCOMPRESSED PACKAGE SIZE:     4.1M
+PACKAGE LOCATION: PKG64/app/gimp/openexr-1.7.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+openexr: openexr (HDR Image File Format & Library)
+openexr:
+openexr: OpenEXR is an image file format and library developed by Industrial
+openexr: Light & Magic, and later released to the public.  It provides support
+openexr: for high dynamic range and a 16-bit floating point "half" data type
+openexr: which is compatible with the half data type in the Cg programming
+openexr: language.
+openexr:
+openexr: Homepage: http://www.openexr.org/
+openexr:
+openexr:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/exrenvmap
+usr/bin/exrheader
+usr/bin/exrstdattr
+usr/bin/exr2aces
+usr/bin/exrmultiview
+usr/bin/exrmakepreview
+usr/bin/exrmaketiled
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/openexr.m4
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/OpenEXR.pc
+usr/lib64/libIlmImf.la
+usr/lib64/libIlmImf.so.7.0.0
+usr/include/
+usr/include/OpenEXR/
+usr/include/OpenEXR/ImfPreviewImage.h
+usr/include/OpenEXR/ImfThreading.h
+usr/include/OpenEXR/ImfMultiView.h
+usr/include/OpenEXR/ImfChannelListAttribute.h
+usr/include/OpenEXR/ImfOutputFile.h
+usr/include/OpenEXR/ImfTimeCode.h
+usr/include/OpenEXR/ImfIntAttribute.h
+usr/include/OpenEXR/ImfArray.h
+usr/include/OpenEXR/OpenEXRConfig.h
+usr/include/OpenEXR/ImfMatrixAttribute.h
+usr/include/OpenEXR/ImfRationalAttribute.h
+usr/include/OpenEXR/ImfVecAttribute.h
+usr/include/OpenEXR/ImfEnvmapAttribute.h
+usr/include/OpenEXR/ImfTimeCodeAttribute.h
+usr/include/OpenEXR/ImfPixelType.h
+usr/include/OpenEXR/ImfRgbaFile.h
+usr/include/OpenEXR/ImfTiledInputFile.h
+usr/include/OpenEXR/ImfFramesPerSecond.h
+usr/include/OpenEXR/ImfConvert.h
+usr/include/OpenEXR/ImfHeader.h
+usr/include/OpenEXR/ImfTileDescriptionAttribute.h
+usr/include/OpenEXR/ImfVersion.h
+usr/include/OpenEXR/ImfXdr.h
+usr/include/OpenEXR/ImfDoubleAttribute.h
+usr/include/OpenEXR/ImfKeyCode.h
+usr/include/OpenEXR/ImfRational.h
+usr/include/OpenEXR/ImfStringAttribute.h
+usr/include/OpenEXR/ImfCompression.h
+usr/include/OpenEXR/ImfKeyCodeAttribute.h
+usr/include/OpenEXR/ImfChromaticities.h
+usr/include/OpenEXR/ImfRgba.h
+usr/include/OpenEXR/ImfChromaticitiesAttribute.h
+usr/include/OpenEXR/ImfTiledOutputFile.h
+usr/include/OpenEXR/ImfHuf.h
+usr/include/OpenEXR/ImfFrameBuffer.h
+usr/include/OpenEXR/ImfWav.h
+usr/include/OpenEXR/ImfRgbaYca.h
+usr/include/OpenEXR/ImfInputFile.h
+usr/include/OpenEXR/ImfCRgbaFile.h
+usr/include/OpenEXR/ImfFloatAttribute.h
+usr/include/OpenEXR/ImfOpaqueAttribute.h
+usr/include/OpenEXR/ImfLineOrderAttribute.h
+usr/include/OpenEXR/ImfBoxAttribute.h
+usr/include/OpenEXR/ImfName.h
+usr/include/OpenEXR/ImfTestFile.h
+usr/include/OpenEXR/ImfIO.h
+usr/include/OpenEXR/ImfEnvmap.h
+usr/include/OpenEXR/ImfCompressionAttribute.h
+usr/include/OpenEXR/ImfChannelList.h
+usr/include/OpenEXR/ImfStringVectorAttribute.h
+usr/include/OpenEXR/ImfB44Compressor.h
+usr/include/OpenEXR/ImfTileDescription.h
+usr/include/OpenEXR/ImfLineOrder.h
+usr/include/OpenEXR/ImfLut.h
+usr/include/OpenEXR/ImfTiledRgbaFile.h
+usr/include/OpenEXR/ImfPreviewImageAttribute.h
+usr/include/OpenEXR/ImfStandardAttributes.h
+usr/include/OpenEXR/ImfInt64.h
+usr/include/OpenEXR/ImfAttribute.h
+usr/include/OpenEXR/ImfAcesFile.h
+usr/doc/
+usr/doc/openexr-1.7.1/
+usr/doc/openexr-1.7.1/README.win32
+usr/doc/openexr-1.7.1/AUTHORS
+usr/doc/openexr-1.7.1/ChangeLog
+usr/doc/openexr-1.7.1/COPYING
+usr/doc/openexr-1.7.1/README.OSX
+usr/doc/openexr-1.7.1/LICENSE
+usr/doc/openexr-1.7.1/README
+usr/doc/openexr-1.7.1/ReadingAndWritingImageFiles.pdf
+usr/doc/openexr-1.7.1/OpenEXRFileLayout.pdf
+usr/doc/openexr-1.7.1/README.CVS
+usr/doc/openexr-1.7.1/INSTALL
+usr/doc/openexr-1.7.1/TechnicalIntroduction.pdf
+usr/doc/openexr-1.7.1/NEWS
+usr/doc/openexr-1.7.1/MultiViewOpenEXR.pdf

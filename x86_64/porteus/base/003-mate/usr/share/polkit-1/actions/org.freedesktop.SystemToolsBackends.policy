@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The System Tools Backends Project</vendor>
+  <vendor_url>http://system-tools-backends.freedesktop.org</vendor_url>
+
+  <action id="org.freedesktop.systemtoolsbackends.set">
+    <description>Manage system configuration</description>
+    <description xml:lang="ar">أدِر إعدادات النظام</description>
+    <description xml:lang="bg">Управление на системна конфигурация</description>
+    <description xml:lang="bn_IN">সিস্টেমের কনফিগারেশন পরিচালনা করুন</description>
+    <description xml:lang="ca">Gestiona la configuració del sistema</description>
+    <description xml:lang="cs">Spravovat systémové nastavení</description>
+    <description xml:lang="da">Håndtér systemkonfiguration</description>
+    <description xml:lang="de">Systemkonfiguration verwalten</description>
+    <description xml:lang="el">Διαχείριση ρυθμίσεων συστήματος</description>
+    <description xml:lang="en_GB">Manage system configuration</description>
+    <description xml:lang="es">Gestionar la configuración del sistema</description>
+    <description xml:lang="et">Süsteemi sätete haldamine</description>
+    <description xml:lang="eu">Kudeatu sistemaren konfigurazioa</description>
+    <description xml:lang="fi">Hallitse järjestelmäasetuksia</description>
+    <description xml:lang="fr">Gérer la configuration du système</description>
+    <description xml:lang="gl">Xestionar a configuración do sistema</description>
+    <description xml:lang="gu">સિસ્ટમ રૂપરેખાંકનને સંચાલિત કરો</description>
+    <description xml:lang="he">נהל הגדרות מערכת</description>
+    <description xml:lang="hi">तंत्र विन्यास प्रबंधित करें</description>
+    <description xml:lang="hu">Rendszerbeállítások kezelése</description>
+    <description xml:lang="it">Gestisce la configurazione di sistema</description>
+    <description xml:lang="ja">システム設定の管理</description>
+    <description xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಸಂರಚನೆಯನ್ನು ನಿರ್ವಹಿಸು</description>
+    <description xml:lang="nb">Håndter systemkonfigurasjonen</description>
+    <description xml:lang="nds">Systeminstellens oppassen</description>
+    <description xml:lang="or">ତନ୍ତ୍ର ସଂରଚନାକୁ ପରିଚାଳନ କରନ୍ତୁ</description>
+    <description xml:lang="pa">ਸਿਸਟਮ ਸੰਰਚਨਾ ਪਰਬੰਧ</description>
+    <description xml:lang="pl">Zarządzanie konfiguracją systemu</description>
+    <description xml:lang="pt">Gerir a configuração do sistema</description>
+    <description xml:lang="pt_BR">Gerenciar a configuração do sistema</description>
+    <description xml:lang="ro">Administrează configurația sistemului</description>
+    <description xml:lang="sl">Upravljanje s sistemskimi nastavitvami</description>
+    <description xml:lang="sr">Управља системским подешавањима</description>
+    <description xml:lang="sr@latin">Upravlja sistemskim podešavanjima</description>
+    <description xml:lang="sv">Hantera systemkonfiguration</description>
+    <description xml:lang="ta">கணினி அமைப்பை மாற்றுக</description>
+    <description xml:lang="te">సిస్టమ్ ఆకృతీకరణను నిర్వహించుము</description>
+    <description xml:lang="th">จัดการการตั้งค่าของระบบ</description>
+    <description xml:lang="tr">Sistem ayarlarına bakma</description>
+    <description xml:lang="uk">Керувати налаштуваннями системи</description>
+    <description xml:lang="zh_CN">管理系统配置</description>
+    <description xml:lang="zh_HK">管理系統組態</description>
+    <description xml:lang="zh_TW">管理系統組態</description>
+    <message>You need to authenticate to modify the system configuration</message>
+    <message xml:lang="ar">تحتاج إلى الاستيثاق قبل تغيير إعدادات النظام</message>
+    <message xml:lang="ca">Cal que us autentiqueu per modificar la configuració del sistema</message>
+    <message xml:lang="cs">Systémové nastavení lze upravit pouze po ověření</message>
+    <message xml:lang="de">Sie müssen sich legitimieren, um die Systemeinstellungen zu ändern</message>
+    <message xml:lang="es">Necesita autenticarse para modificar la configuración del sistema</message>
+    <message xml:lang="eu">Autentifikatu egin behar zara sistemako konfigurazioa eraldatzea¡ko</message>
+    <message xml:lang="fr">Vous devez vous authentifier pour modifier la configuration du système</message>
+    <message xml:lang="gl">Debe autenticarse para modificar a configuración do seu sistema</message>
+    <message xml:lang="hu">A rendszerbeállítások módosításához hitelesítenie kell magát</message>
+    <message xml:lang="it">È necessario autenticarsi per modificare la configurazione del sistema</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmodyfikować konfigurację systemu</message>
+    <message xml:lang="pt">Tem de se autenticar para alterar a configuração do sistema</message>
+    <message xml:lang="sl">Sistemska določila zahtevajo overitev pred spreminjanjem nastavitev sistema</message>
+    <message xml:lang="sv">Du måste autentisera dig för att ändra systemkonfigurationen</message>
+    <message xml:lang="zh_CN">您需要认证才能修改系统配置</message>
+    <message xml:lang="zh_HK">你需要經過驗證才能修改系統組態</message>
+    <message xml:lang="zh_TW">您需要經過驗證才能修改系統組態</message>
+    <defaults>
+      <allow_any>auth_admin_keep</allow_any>
+      <allow_inactive>auth_admin_keep</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.systemtoolsbackends.self.set">
+    <description>Change the user's own account configuration</description>
+    <description xml:lang="ar">غيّر إعدادات حساب المستخدم</description>
+    <description xml:lang="ca">Canvia la configuració del compte propi de l'usuari</description>
+    <description xml:lang="cs">Změnit uživatelské nastavení účtu</description>
+    <description xml:lang="de">Einstellungen des eigenen Benutzerkontos ändern</description>
+    <description xml:lang="en_GB">Change the user's own account configuration</description>
+    <description xml:lang="es">Cambiar la configuración de la cuenta propia del usuario</description>
+    <description xml:lang="eu">Aldatu erabiltzailearen kontuaren konfigurazioa</description>
+    <description xml:lang="fr">Modifier la configuration du propre compte de l'utilisateur</description>
+    <description xml:lang="gl">Cambiar o usuario propietario da configuración da conta</description>
+    <description xml:lang="hu">A felhasználó saját fiókbeállításainak módosítása</description>
+    <description xml:lang="it">Cambia la configurazione del proprio account utente</description>
+    <description xml:lang="ja">ユーザのアカウントの設定を変更する</description>
+    <description xml:lang="nb">Endre brukers egen kontoinformasjon</description>
+    <description xml:lang="nds">De eegen Brukertoganginstellens ännern</description>
+    <description xml:lang="pl">Zmiana konfiguracji konta użytkownika</description>
+    <description xml:lang="pt">Alterar a configuração da conta do próprio utilizador</description>
+    <description xml:lang="pt_BR">Alterar a configuração da conta do próprio usuário</description>
+    <description xml:lang="sl">Spremeni nastavitve uporabnikovega računa</description>
+    <description xml:lang="sv">Ändra användarens egna kontokonfiguration</description>
+    <description xml:lang="zh_CN">更改用户自己的账户配置</description>
+    <description xml:lang="zh_HK">改變使用者自己的帳號組態</description>
+    <description xml:lang="zh_TW">改變使用者自己的帳號組態</description>
+    <message>You need to authenticate to modify your user account information</message>
+    <message xml:lang="ar">تحتاج إلى الاستيثاق قبل تغيير معلومات حسابك</message>
+    <message xml:lang="ca">Cal que us autentiqueu per modificar la informació del vostre compte d'usuari</message>
+    <message xml:lang="cs">Informace o vlastním účtu lze upravit pouze po ověření</message>
+    <message xml:lang="de">Sie müssen sich legitimieren, um die Einstellungen Ihres eigenen Benutzerkontos zu ändern</message>
+    <message xml:lang="es">Necesita autenticarse para modificar su información de la cuenta del usuario</message>
+    <message xml:lang="eu">Autentifikatu egin behar zara zure erabiltzailearen kontuko informazioa aldatzeko</message>
+    <message xml:lang="fr">Vous devez vous authentifier pour modifier les informations de votre compte utilisateur</message>
+    <message xml:lang="gl">Debe autenticarse para modificar a información da súa conta de usuario</message>
+    <message xml:lang="hu">A felhasználói fiók információinak módosításához hitelesítenie kell magát</message>
+    <message xml:lang="it">È necessario autenticarsi per modificare le informazioni del proprio account utente</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmodyfikować informacje o koncie użytkownika</message>
+    <message xml:lang="pt">Tem de se autenticar para alterar a informação da sua conta de utilizador</message>
+    <message xml:lang="sl">Sistemska določila zahtevajo overitev pred spreminjanjem podrobnosti računa</message>
+    <message xml:lang="sv">Du måste autentisera dig för att kunna ändra information om ditt användarkonto</message>
+    <message xml:lang="zh_CN">您需要认证才能更改您的帐户信息</message>
+    <message xml:lang="zh_HK">你需要經過驗證才能修改使用者帳號資訊</message>
+    <message xml:lang="zh_TW">您需要經過驗證才能修改使用者帳號資訊</message>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.freedesktop.SystemToolsBackends.HostsConfig
+Exec=/usr/share/system-tools-backends-2.0/scripts/SystemToolsBackends.pl -m HostsConfig
+User=root

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+function changelogs(){
+## Make sure Bob entered a valid repository. He could be drunk again today.
+if [[ ! `grep "$1" <<<$DISTROS` ]] && [ "$1" != "usm" ]; then
+    echo $txtbld "`gettext "Invalid command."`" $rst
+    echo "`gettext " Please enter a repository. (E.g usm -c slackware)"`"
+    cleanup
+fi
+
+## Find Bob's internet browser
+#system_find_browser
+CL=ChangeLog.txt
+
+[ "$1" = "usm" ] && CHLINK="$UPDLINK/$CL"
+[ "$1" = "alien" ] && CHLINK="$REPO_ALIEN/ChangeLog.txt"
+[ "$1" = "slackware" ] && CHLINK="$REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/$CL"
+[ "$1" = "slackwarepatches" ] && CHLINK="$REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/patches/$CL"
+[ "$1" = "slacky" ] && CHLINK="$REPO_SLACKY/slackware${SLACKSUFFIX}-$SLACKVER/$CL"
+[ "$1" = "salix" ] && CHLINK="$REPO_SALIX/$ARCH/$SLACKVER/ChangeLog.txt"
+[ "$1" = "ponce" ] && CHLINK="$REPO_PONCE/slackware${SLACKSUFFIX}-$SLACKVER/packages/$CL"
+
+## Enure Bob has an internet connection
+## or is leaching off his neighbours at least.
+echo "`gettext "Checking internet connection"`"
+is_online http://google.com || { bold "`gettext "No internet connection found."`"; cleanup; }
+
+## If we have a browser then open the changelog, else open it in terminal
+echo && echo "`gettext " The changelog will now open. Use your arrow buttons to scroll up and down"`"
+read -p "`gettext " and press q to quit reading the file. Press any button to continue"`" -n 1 -r -s && echo
+download $CHLINK $TMPDIR
+[ -e $TMPDIR/$CL ]||fatality "$SCRIPT $FUNCNAME $LINENO" "`gettext "Could not download file:"`" "$CL"
+less < $TMPDIR/$CL
+rm $TMPDIR/$CL
+}; export -f changelogs

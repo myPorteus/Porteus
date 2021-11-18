@@ -1,0 +1,281 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH GNOME-MPLAYER 1 "June 06, 2009"
+.SH NAME
+gnome-mplayer \- a simple GUI for MPlayer
+.SH SYNOPSIS
+.B gnome-mplayer
+.RI [ options ] " files" ...
+.br
+.B gnome-mplayer
+.RI [ options ] " cdda://"
+.br
+.B gnome-mplayer
+.RI [ options ] " [dvd|dvdnav]://"
+.br
+.B gnome-mplayer
+.RI [ options ] " [http|mms|rtsp]://"
+.br
+.B gnome-mplayer
+.RI [ options ] " /dev/[sd*|dvd|cdrom]"
+.br
+
+.SH DESCRIPTION
+This manual page documents briefly the
+.B gnome-mplayer
+command.
+.PP
+\fBgnome-mplayer\fP provides a simple and clean interface to MPlayer.
+.br
+GNOME MPlayer has a rich API that is exposed via DBus. 
+.br
+Using DBus you can control a single or multiple instances of GNOME MPlayer
+from a single command.
+.br
+GNOME MPlayer can be used to play media on websites when used in conjunction
+with Gecko Mediaplayer.
+.sp
+Homepage: http://kdekorte.googlepages.com/gnomemplayer
+.SH INTERACTIVE CONTROL
+Many of the keyboard shortcuts in gnome-mplayer are the same as those found in mplayer. Here is
+a list of more of the commonly used shortcuts.
+.SS 
+Keyboard Controls
+.HP
+Media Position
+.br
+Right Arrow - Fast Forward 
+.br 
+Left Arrow - Fast Reverse
+.br 
+Page Up - Seek 10min forward
+.br 
+Page Down - Seek 10min backward
+.br 
+Up Arrow - Seek 1 min forward
+.br
+Down Arrow - Seek 1 min backward
+.br
+Space - Pause
+.br
+p - Pause
+.HP
+Video Adjustment
+.br
+1 - Contrast down 5
+.br
+2 - Contrast up 5
+.br
+3 - Brightness down 5
+.br
+4 - Brightness up 5
+.br
+5 - Hue down 5
+.br
+6 - Hue up 5
+.br
+7 - Saturation down 5
+.br
+8 - Saturation up 5
+.HP
+Playback Adjustment
+.br
+[ - Play 10% slower
+.br
+] - Play 10% faster
+.br
+{ - Half speed playback
+.br
+} - Double speed playback
+.HP
+Volume Adjustement
+.br
+9 - Volume down 10
+.br
+0 - Volume up 10
+.br
+m - Mute
+.HP
+Audio and Subtitle Track Adjustment
+.br
+# - Switch Audio Track
+.br
+j - Subtitle select
+.br
+v - Subtitle visibility
+.br
++ - Increase Audio Delay
+.br
+- - Decreate Audio Delay
+.br
+z - Decrease Subtitle Delay
+.br
+x - Increate Subtitle Delay
+.HP
+Other Options
+.br
+Ctrl-D - Show/Hide file details
+.br
+Ctrl-P - Show/Hide playlist
+.br
+Ctrl-F/F - Un/Fullscreen
+.br
+q - Quit immediately
+
+.SH OPTIONS
+This program follows the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+.PP
+Help Options:
+.TP
+.B \-?, \-\-help
+Show summary of options
+.TP
+.B \-\-help-all
+Show all help options
+.TP
+.B \-\-help-gtk
+Show GTK+ Options
+.PP
+Application Options:
+.TP
+.B \-\-window=WID
+Window to embed in
+.TP
+.B \-w, \-\-width=X
+Width of window to embed in
+.TP
+.B \-h, \-\-height=Y
+Height of window to embed in
+.TP
+.B \-\-controlid=CID
+Unique DBUS controller id
+.TP
+.B \-\-playlist
+File Argument is a playlist
+.TP
+.B \-v, \-\-verbose
+Show more output on the console
+.TP
+.B \-\-reallyverbose
+Show even more output on the console
+.TP
+.B \-\-fullscreen
+Start in fullscreen mode
+.TP
+.B \-\-softvol
+Use mplayer software volume control
+.TP
+.B \-\-mixer=MIXER
+Mixer to use
+.TP
+.B \-\-volume
+Set initial volume percentage
+.TP
+.B \-\-showcontrols=[0|1]
+Show the controls in window
+.TP
+.B \-\-showsubtitles=[0|1]
+Show the subtitles if available, defaults to 1 (yes)
+.TP
+.B \-\-autostart=[0|1]
+Autostart the media. Default is 1, set to 0 to load but don't play
+.TP
+.B \-\-disablecontextmenu
+Disable popup menu on right click
+.TP
+.B \-\-disablefullscreen
+Disable fullscreen options in browser mode
+.TP
+.B \-\-loop
+Play all files on the playlist forever
+.TP
+.B \-q, \-\-quit_on_complete
+Quit application when last file on playlist is played
+.TP
+.B \-\-random
+Play items on playlist in random order
+.TP
+.B \-\-cache
+Set cache size
+.TP
+.B \-\-forcecache
+Force cache usage on streaming sites
+.TP
+.B \-\-disabledeinterlace
+Disable the deinterlace filter
+.TP
+.B \-\-disableframedrop
+Don't skip drawing frames to better keep sync
+.TP
+.B \-\-disableass
+Use the old subtitle rendering system
+.TP
+.B \-\-disableembeddedfonts
+Don't use fonts embedded on matroska files
+.TP
+.B \-\-vertical
+Use Vertical Layout
+.TP
+.B \-\-showplaylist
+Start with playlist open
+.TP
+.B \-\-showdetails
+Start with details visible
+.TP
+.B \-\-rpname=NAME
+Real Player Name
+.TP
+.B \-\-rpconsole=CONSOLE
+Real Player Console ID
+.TP
+.B \-\-rpcontrols=Control Name,...
+Real Player Console Controls
+.TP
+.B \-\-subtitle=FILENAME
+Subtitle file for first media file
+.TP
+.B \-\-tvdevice=DEVICE
+TV device name
+.TP
+.B \-\-tvdriver=DRIVER
+TV driver name (v4l|v4l2)
+.TP
+.B \-\-tvinput=INPUT
+TV input name
+.TP
+.B \-\-tvwidth=WIDTH
+Width of TV input
+.TP
+.B \-\-tvheight=HEIGHT
+Height of TV input
+.TP
+.B \-\-tvfps=FPS
+Frames per second from TV input
+.TP
+.B \-\-single_instance
+Only allow one instance
+.TP
+.B \-\-replace_and_play
+Put single instance mode into replace and play mode
+.TP
+.B \-\-large_buttons
+show interface with bigger icons, useful for touchscreens
+.TP
+.B \-\-always_hide_after_timeout
+control bar will always slide away, useful for small screens
+.TP
+.B \-\-new_instance
+Ignore single instance preference for this instance
+.TP
+.B \-\-keep_on_top
+Keep window on top
+.TP
+.B \-\-disable_cover_art_fetch
+Don't fetch new cover art images
+.TP
+.B \-\-display=DISPLAY
+X display to use
+.br
+.SH AUTHOR
+gnome-mplayer was written by Kevin DeKorte <kdekorte@gmail.com>.

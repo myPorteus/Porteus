@@ -1,0 +1,441 @@
+#!/bin/bash
+
+## ======================================================================
+## update_database_all
+## ----------------------------------------------------------------------
+## Update all database files
+update_all(){
+FROMUPDATEALL=0
+
+## Only update if a manual update wasn't already done today
+NOWTIME=`date +%s`
+TLIMIT=`awk -F= '/SKIPDB/{print$NF}' $CONF`
+for a in alien salix slacky ponce slackware slackwarepatches sbo; do
+	if [ "$a" != "sbo" ]; then
+		THENTIME=`stat -c %X $DBDIR/$a/OPTIFEST 2>/dev/null`
+		if [ $(( NOWTIME - THENTIME )) -lt  $TLIMIT ]; then
+			TIMESINCE=$(( NOWTIME - THENTIME ))
+			echo -e "$a was updated $TIMESINCE seconds ago. Skipping."
+			continue
+		else
+			update_database $a
+		fi
+	else
+		THENTIME=`stat -c %X $DBDIR/$a/SLACKBUILDS.TXT 2>/dev/null`
+		if [ $(( NOWTIME - THENTIME )) -lt $TLIMIT ]; then
+			TIMESINCE=$(( NOWTIME - THENTIME ))
+			SKIPPED=1
+			echo -e "$a was updated $TIMESINCE seconds ago. Skipping."
+			continue
+		else
+			update_database $a
+		fi
+	fi
+done
+
+## Update the extra-deps and ignore-deps
+echo
+NOWTIME=`date +%s`
+for updateme in $CONFDIR/extra-deps.txt $CONFDIR/ignore-deps.txt; do
+PFILE=${updateme##*/}
+if [ -f $updateme ]; then
+	THENTIME=`stat -c %X $updateme 2>/dev/null`
+	TIMESINCE=$(( NOWTIME - THENTIME ))
+	if [ $(( NOWTIME - THENTIME )) -lt $TLIMIT ]; then
+		echo -e "$PFILE was updated $TIMESINCE seconds ago. Skipping."
+		SKIPPED=1
+	else
+		download $UPDLINK/configs/$PFILE /tmp
+		mv /tmp/$PFILE $CONFDIR
+		touch $CONFDIR/$PFILE
+	fi
+else
+		## If the extra-deps.txt file does not exist (bug in older version)
+		## then download it now.
+		download $UPDLINK/configs/$PFILE /tmp
+		cp /tmp/$PFILE $CONFDIR
+		touch $CONFDIR/$PFILE	
+fi
+done
+echo
+[ $SKIPPED ] && echo "You can change the time limit for skipping in: $CONF" && \
+echo "The default is 3 hours"
+unset SKIPPED THENTIME NOWTIME TLIMIT PFILE
+
+## Report close window
+[ $GUI ] && green "`gettext "You can now close this window"`"
+}; export -f update_all
+
+## ======================================================================
+## update_database
+## ----------------------------------------------------------------------
+## Update a given distros database files
+function update_database(){
+## $1=distro 
+[ $CLI ] && bold "`gettext "Starting"`" "$1" "`gettext "database update"`"
+
+## Get online database version file
+if [ ! -e $TMPDIR/isonline ]; then
+	is_online $UPDLINK
+	## Only download vercheck file if it does not exist
+	[ $? -eq 1 ] && { gtk_message1 "`gettext "The server could not be reached. Please try later."`"; return; } || \
+	download $UPDLINK/configs/vercheck.txt $TMPDIR && touch $TMPDIR/isonline
+fi
+
+RDBVER=`awk -F= '/DBVER/{print$NF}' $TMPDIR/vercheck.txt`
+LDBVER=`awk -F= '/DBVER/{print$NF}' $VERTXT`
+
+## Database files to download
+local FILES="$(awk -F: '/distro:'$1'$/ { getline; print $NF }' $DISFILES)"
+local EXTRAS="$(awk -F: '/distro:'$1'$/ { getline; getline; print $NF }' $DISFILES)"
+
+## Setup the gui for downloading
+if [ $CLI ]; then
+	local SDIR=$DBDIR/$1
+	[ ! -d $SDIR ] && mkdir -p $SDIR || rm $SDIR/* 2>/dev/null
+		else
+	export SDIR=$DBDIR/$1
+	[ ! -d $SDIR ] && mkdir -p $SDIR || rm $SDIR/* 2>/dev/null
+	echo "Waiting" > $TMPDIR/.message
+	touch $TMPDIR/.progress
+	[ ! `pgrep -f GTK_DOWNLOAD` ] && gtk_download
+fi
+
+## Set the wget flags
+WFLAGS="--passive-ftp --trust-server-names --no-check-certificate"
+case $1 in
+	sbo )
+	for a in $FILES; do echo $a; download $REPO_SBO/$SLACKVER/$a $SDIR; done
+	LEAVEMANIFEST=0
+	LEAVESUPPLIMENTS=0
+	LEAVEPACKAGES=0
+;;
+	alien )
+	[  "$ARCH" = "x86_64" ] && local ARCHI=x86_64 || local ARCHI=x86
+	for a in $FILES; do 
+		if [ $CLI ]; then
+			download $REPO_ALIEN/$SLACKVER/$ARCHI/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_ALIEN/$SLACKVER/$ARCHI/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then 
+			download $UPDLINK/db/alien/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/alien/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi	
+	done
+	## Files to remove from PACKAGES.TXT so they don't appear in searches
+	local exc=$(awk -F: '/distro:'$1'$/ { getline;getline;getline; print $NF }' $CONFDIR/files.conf|sed 's/ /|/g')
+;;
+	salix )
+	for a in $FILES; do
+		if [ $CLI ]; then
+			download $REPO_SALIX/$ARCH/$SLACKVER/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_SALIX/$ARCH/$SLACKVER/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then
+			download $UPDLINK/db/salix/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/salix/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	## Files to remove from PACKAGES.TXT so they don't appear in searches
+	local exc=$(awk -F: '/distro:'$1'$/ { getline;getline;getline; print $NF }' $CONFDIR/files.conf | \
+	sed -e 's/ / \\\/'$1'\\\//g' -e s'/ /|/g' -e 's/^/\\\/'$1'\\\//')
+	LEAVEMANIFEST=0
+;;
+	slackware )
+	for a in $FILES; do
+		if [ $CLI ]; then
+			download $REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/slackware${SLACKSUFFIX}/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/slackware${SLACKSUFFIX}/$a -P $SDIR
+			sleep 0.4
+		fi		
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then
+			download $UPDLINK/db/slackware/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/slackware/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	## Files to remove from PACKAGES.TXT so they don't appear in searches
+	[ "$ARCH" = "x86_64" ] && local Y=slackware64 || local Y=slackware
+	local exc=$(awk -F: '/distro:'$1'$/ { getline;getline;getline; print $NF }' $CONFDIR/files.conf | \
+	sed -e 's/ / \\\/'$Y'\\\//g' -e '/^$/d' -e 's/ /|/g' -e 's/^/\\\/'$Y'\\\//')
+;;
+	slackwarepatches )
+	for a in $FILES; do
+		if [ $CLI ]; then
+			download $REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/patches/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_SLACKWARE/slackware${SLACKSUFFIX}-$SLACKVER/patches/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then
+			download $UPDLINK/db/slackwarepatches/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/slackwarepatches/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+;;
+slacky )
+	for a in $FILES; do
+		if [ $CLI ]; then
+			download $REPO_SLACKY/slackware${SLACKSUFFIX}-$SLACKVER/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_SLACKY/slackware${SLACKSUFFIX}-$SLACKVER/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then
+			download $UPDLINK/db/slacky/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/slacky/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+;;
+ponce )
+	for a in $FILES; do
+		if [ $CLI ]; then
+			download $REPO_PONCE/slackware${SLACKSUFFIX}-$SLACKVER/packages/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $REPO_PONCE/slackware${SLACKSUFFIX}-$SLACKVER/packages/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+	for a in $EXTRAS; do
+		if [ $CLI ]; then
+			download $UPDLINK/db/ponce/$ARCH/$a $SDIR
+		else
+			echo "$a" > $TMPDIR/.message
+			wget $WFLAGS -o $TMPDIR/.progress $UPDLINK/db/ponce/$ARCH/$a -P $SDIR
+			sleep 0.4
+		fi
+	done
+;;
+esac
+
+## If there is a gzipped checksum file then decompress
+if [ -e $SDIR/CHECKSUMS.md5.gz ]; then
+gunzip $SDIR/CHECKSUMS.md5.gz || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "CHECKSUMS.md5.gz"
+fi
+
+## Check md5sum of important MANIFEST.bz2 file if not salix
+if [ -z $LEAVEMANIFEST ] && [ "$1" != "ponce" ]; then
+local MANSUM=`awk /MANIFEST/'{print$1}' $SDIR/CHECKSUMS.md5`
+if [ "$MANSUM" != "`md5sum $SDIR/MANIFEST.bz2|awk '{print$1}'`" ]; then
+	[ $CLI ] && pink "`gettext "There was a problem downloading the file:"`" "MANIFEST.bz2 for $1"
+	[ $GUI ] && gtk_message1 "`gettext "There was a problem downloading the file:"`"
+	cleanup
+		else
+	[ $CLI ] && echo "`gettext "File verification was good."`"
+	[ $GUI ] && echo "`gettext "File verification was good."`" > $TMPDIR/.message
+fi
+fi
+
+## If there is a compressed MANIFEST file then decompress
+if [ -e $SDIR/MANIFEST.bz2 ]; then
+bunzip2 $SDIR/MANIFEST.bz2 || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "MANIFEST.bz2"
+fi
+
+## If there is a gzipped PACKAGES.TXT file then decompress
+if [ -e $SDIR/PACKAGES.TXT.gz ]; then
+gunzip $SDIR/PACKAGES.TXT.gz || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "PACKAGES.TXT.gz"
+fi
+
+## If there is a gzipped SLACKBUILDS.TXT file then decompress
+if [ -e $SDIR/SLACKBUILDS.TXT.gz ]; then
+gunzip $SDIR/SLACKBUILDS.TXT.gz || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "SLACKBUILDS.TXT.gz"
+touch $SDIR/SLACKBUILDS.TXT
+fi
+
+## If there is a gzipped LIBS.TXT file then decompress
+if [ -e $SDIR/LIBS.TXT.gz ]; then
+gunzip $SDIR/LIBS.TXT.gz || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "LIBS.TXT.gz"
+fi
+
+## If there is a gzipped OPTIFEST file then decompress
+if [ -e $SDIR/OPTIFEST.gz ]; then
+gunzip $SDIR/OPTIFEST.gz || \
+fatality "`basename $0` $FUNCNAME $LINENO" "`gettext "Could not decompress:"`" "OPTIFEST.gz"
+## Update timestamp on OPTIFEST so we can skip this repo when doing
+## -u all if it has already been updated today.
+touch $SDIR/OPTIFEST
+fi
+
+if [ -z $LEAVEMANIFEST ]; then
+## Create an optimized MANIFEST (called OPTIFEST) with only packages and libraries
+[ $CLI ] && echo "`gettext "Optimizing manifest"`" || echo "`gettext "Optimizing manifest"`" > $TMPDIR/.message
+## Last sed inserts 'Package:' at the beginnging of lines ending with txz or tgz
+egrep "Package:|.*\.so|.*\.so\.[0-9].*" $SDIR/MANIFEST|awk -F/ '{print$NF}'| \
+sed '/txz$\|tgz$/ s/^/Package: /' > $SDIR/OPTIFEST
+## Delete heavy weight MANIFEST file (saves over 100Mb)
+rm $SDIR/MANIFEST
+## Remove compat32/skype_static libraries from OPTIFEST so other packages don't tag it
+## as a dependency. It will still be available to search and download.
+[[ `grep -o compat32 $SDIR/OPTIFEST` ]] && sed -i '/compat32/,/.txz/{//!d}' $SDIR/OPTIFEST
+[[ `grep -o "skype_static" $SDIR/OPTIFEST` ]] && sed -i '/skype_static/,/.txz/{//!d}' $SDIR/OPTIFEST
+## Add missing libraries from suppliment-optifest.txt file
+for mypkg in `grep ".*$ARCH.*\.t.z" $SUPPLIMENTOPTI`; do
+	if [ `grep -o $mypkg $SDIR/OPTIFEST` ]; then
+	  for library in `sed -n '/'$mypkg'/,/ENDOF/p' $SUPPLIMENTOPTI|egrep -v "$mypkg|ENDOF"`; do
+		[[ ! `grep -o "$library$" $SDIR/OPTIFEST` ]] && sed -i 's/'$mypkg'/&\n'$library'/' $SDIR/OPTIFEST
+	  done
+	fi
+done
+fi
+
+if [ -z $LEAVESUPPLIMENTS ]; then
+## Insert libraries from suppliment-libs.txt into LIBS.TXT
+for mypkg in `grep ".*$ARCH.*\.t.z" $SUPPLIMENTLIBS`; do
+	LIBSTOINSERT=`grep -A1 $mypkg $SUPPLIMENTLIBS|tail -n1`
+	OLDLIBS=`grep -A1 $mypkg $SDIR/LIBS.TXT|tail -n1`
+	## If the package has no libs then insert a line after it with required libs
+	if [[ -z $OLDLIBS ]]; then
+		sed -i 's/'$mypkg'/&\n'$LIBSTOINSERT'/' $SDIR/LIBS.TXT
+			else # Add to existing required libs
+		NEWLIBS="${OLDLIBS}, $LIBSTOINSERT"
+		sed -i "s/$OLDLIBS/$NEWLIBS/g" $SDIR/LIBS.TXT
+	fi
+done
+fi
+
+if [ -z $LEAVEPACKAGES ]; then
+## Massage PACKAGES.TXT file for distros that require something excluded
+if [ `egrep -ow "alien|salix|slackware" <<<$1` ]; then
+	## Remove excludes from PACKAGES.TXT
+	## Workaround to prevent gawk <4.1.0 from creating a binary file.
+	TTT=`awk -vRS= '$0!~/'$exc'/{print $0RT}' $SDIR/PACKAGES.TXT`
+	printf '%s' "$TTT" > $SDIR/PACKAGES2.TXT
+	mv $SDIR/PACKAGES2.TXT $SDIR/PACKAGES.TXT
+fi
+fi
+
+unset LEAVEMANIFEST LEAVESUPPLIMENTS LEAVEPACKAGES exc SDIR
+[ $CLI ] && bold "$1" "`gettext " database updated."`"
+[ $GUI ] && { echo "$1" "`gettext " database updated."`" > $TMPDIR/.message; sleep 1; rm $TMPDIR/.progress 2>/dev/null; sleep 0.4; }
+[ $GUI ] && [ -z $FROMUPDATEALL ] && echo && green "`gettext "You can now close this window"`"
+echo
+
+## Update the config file
+if [ $FROMUPDATEALL ]; then
+    NOWTIME=`date +%s`
+    TLIMIT=`awk -F= '/SKIPDB/{print$NF}' $CONF`
+    THENTIME=`stat -c %X $CONF 2>/dev/null`
+    if [ $(( NOWTIME - THENTIME )) -gt $TLIMIT ]; then
+	echo "Updating config file" && echo
+	[[ `grep -o $LDBVER $CONF` ]] && sed -i "s/$LDBVER/$RDBVER/g" $VERTXT
+    fi
+fi
+}; export -f update_database
+
+## ======================================================================
+## update_usm
+## ----------------------------------------------------------------------
+## Check for and update USM
+update_usm(){
+## Do quick online check
+is_online $UPDLINK
+[ $? -eq 1 ] && { gtk_message1 "`gettext "The server could not be reached. Please try later."`"; return; }
+## Download the version check file
+download $UPDLINK/configs/vercheck.txt $TMPDIR
+
+echo
+[ ! -e $TMPDIR/vercheck.txt ] && fatality "$SCRIPT $FUNCNAME $LINENO" "`gettext "Could not download file:"`" "vercheck.txt"
+RDBVER=`awk -F"=" /DBVER/'{print$NF}' $TMPDIR/vercheck.txt`
+RUSMVER=`awk -F"=" /USMVER/'{print$NF}' $TMPDIR/vercheck.txt`
+
+if [ $RDBVER -gt $DBVER ]; then
+	if [ $CLI ]; then
+		echo "`gettext " An update is available for the usm database files."`"
+		echo "`gettext " Please run:"`" $txtbld "usm -u all" $rst
+		echo
+	else
+		gtk_message2 "`gettext " An update is available for the usm database files."`" "`gettext "Please run: update all"`"
+	fi
+else
+	[ $CLI ] && { echo "`gettext "No database updates were found."`"; echo; } || \
+	gtk_message1 "`gettext "No database updates were found."`"
+fi
+
+if [ $RUSMVER -gt $USMVER ]; then
+TXTUPDUSM1="`gettext " A new version of USM is available."`"
+TXTUPDUSM2="`gettext " Would you like to download it now? [y/n]"`"
+	if [ $CLI ]; then
+		echo "$TXTUPDUSM1"
+		read -p "$TXTUPDUSM2" -n 1 -r -s && echo
+		if [[ $REPLY =~ ^[Yy]$ ]]; then
+			[ ! -d $STORAGE ] && mkdir $STORAGE
+			find $STORAGE -type f -name "usm-*noarch*.txz"|xargs rm 2>/dev/null
+			download $UPDLINK/$CURRENTUSM $STORAGE
+			read -p "`gettext " Would you like to install it now? [y/n]"`" -n 1 -r -s && echo
+			if [[ $REPLY =~ ^[Yy]$ ]]; then
+				for a in /var/log/packages/usm-*; do removepkg $a 2>/dev/null; done
+				blue "`gettext " Installing new version now"`"
+				installpkg --terse $STORAGE/$CURRENTUSM || { bold "`gettext "Update failed"`"; cleanup; }
+				echo
+				CVER=`awk -F= '/USMVERSION/{print$NF}' $VERTXT`
+				echo "`gettext " USM was updated successfully"`"
+				echo "`gettext " You are currently using:"`"
+				bold "USM-v${CVER}"
+				cleanup
+			fi
+		fi
+	else # GUI code
+		gtk_yesno "$TXTUPDUSM1" "$TXTUPDUSM2"
+		if [ `grep "Yes" $TMPDIR/.yesno` ]; then
+			[ ! -d $STORAGE ] && mkdir $STORAGE
+			find $STORAGE -type f -name "usm-*noarch*.txz"|xargs rm 2>/dev/null
+			echo "Waiting" > $TMPDIR/.message
+			touch $TMPDIR/.progress
+			gtk_download "`gettext "Downloading"`"
+			wget $WGETFLAGS -o $TMPDIR/.progress $UPDLINK/$CURRENTUSM -P $STORAGE
+			echo "`gettext "Installing now"`" > $TMPDIR/.message
+			for a in /var/log/packages/usm-*; do removepkg $a 2>/dev/null; done
+			installpkg $STORAGE/$CURRENTUSM
+			rm $TMPDIR/.progress
+			sleep 1
+			CVER=`awk -F= '/USMVERSION/{print$NF}' $VERTXT`
+			gtk_message "`gettext "USM was updated successfully"`" "`gettext "You are currently using: $CVER"`" "Restart the application to complete the update." gtk-yes 500
+		else # User doesn't want to update
+			return
+		fi
+	fi
+else # No updates available
+		TXTUPDUSM3="`gettext "You have the current USM version."`"
+		[ $CLI ] && echo "$TXTUPDUSM3" || gtk_message1 "$TXTUPDUSM3"
+fi
+}; export -f update_usm

@@ -1,0 +1,31 @@
+PACKAGE NAME:     youtube-dl-2014.08.24.2-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     504K
+UNCOMPRESSED PACKAGE SIZE:     570K
+PACKAGE LOCATION: PKG64/app/youtube-downloader/youtube-dl-2014.08.24.2-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+youtube-dl: YouTube-DL (YouTube.com Videos Downloader)
+youtube-dl:
+youtube-dl: YouTube-DL is a small command-line program to download videos from
+youtube-dl: YouTube.com. It  requires the  Python  interpreter, version 2.4 or
+youtube-dl: later, and it's not platform specific.
+youtube-dl: Use youtube-dl followed by a video URL or identifier.
+youtube-dl: Example: youtube-dl "http://www.youtube.com/watch?v=foobar". The
+youtube-dl: video will be saved to the file foobar.flv in that example.
+youtube-dl:
+youtube-dl:
+youtube-dl:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/youtube-dl-2014.08.24.2/
+usr/doc/youtube-dl-2014.08.24.2/SlackBuild/
+usr/doc/youtube-dl-2014.08.24.2/SlackBuild/youtube-dl.SlackBuild
+usr/doc/youtube-dl-2014.08.24.2/SlackBuild/slack-desc
+usr/man/
+usr/man/man1/
+usr/man/man1/youtube-dl.1.gz
+usr/bin/
+usr/bin/youtube-dl

@@ -1,0 +1,62 @@
+PACKAGE NAME:     mm-common-0.9.6-noarch-1jay
+COMPRESSED PACKAGE SIZE:     524K
+UNCOMPRESSED PACKAGE SIZE:     7.5M
+PACKAGE LOCATION: PKG64/dep/mm-common-0.9.6-noarch-1jay.txz
+PACKAGE DESCRIPTION:
+mm-common: mm-common (build infrastructure and utilities for GNOME C++ bindings)
+mm-common:
+mm-common: The mm-common module provides the build infrastructure and utilities
+mm-common: shared among the GNOME C++ binding libraries. It is only a required
+mm-common: dependency for building the C++ bindings from the gnome.org version
+mm-common: control repository. An installation of mm-common is not required for
+mm-common: building tarball releases, unless configured to use maintainer-mode.
+mm-common:
+mm-common: Homepage: http://www.gtkmm.org/en/
+mm-common:
+mm-common:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/man/
+usr/man/man1/
+usr/man/man1/mm-common-prepare.1.gz
+usr/doc/
+usr/doc/mm-common-0.9.6/
+usr/doc/mm-common-0.9.6/mm-common.SlackBuild
+usr/doc/mm-common-0.9.6/NEWS
+usr/doc/mm-common-0.9.6/ChangeLog
+usr/doc/mm-common-0.9.6/INSTALL
+usr/doc/mm-common-0.9.6/COPYING
+usr/doc/mm-common-0.9.6/AUTHORS
+usr/doc/mm-common-0.9.6/skeletonmm.tar.gz
+usr/doc/mm-common-0.9.6/README
+usr/share/
+usr/share/glibmm-2.4/
+usr/share/pkgconfig/
+usr/share/pkgconfig/mm-common-util.pc
+usr/share/pkgconfig/mm-common-libstdc++.pc
+usr/share/mm-common/
+usr/share/mm-common/doctool/
+usr/share/mm-common/doctool/tagfile-to-devhelp2.xsl
+usr/share/mm-common/doctool/doxygen.css
+usr/share/mm-common/doctool/doc-postprocess.pl
+usr/share/mm-common/doctool/doc-install.pl
+usr/share/mm-common/doctags/
+usr/share/mm-common/doctags/libstdc++.tag
+usr/share/mm-common/build/
+usr/share/mm-common/build/generate-binding.am
+usr/share/mm-common/build/doc-reference.am
+usr/share/mm-common/build/dist-changelog.am
+usr/share/mm-common/build/compile-binding.am
+usr/share/aclocal/
+usr/share/aclocal/mm-warnings.m4
+usr/share/aclocal/mm-pkg.m4
+usr/share/aclocal/mm-module.m4
+usr/share/aclocal/mm-doc.m4
+usr/share/aclocal/mm-dietlib.m4
+usr/share/aclocal/mm-common.m4
+usr/bin/
+usr/bin/mm-common-prepare

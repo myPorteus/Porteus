@@ -1,0 +1,713 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<interface>
+    <object class="GtkListStore" id="model1">
+        <columns>
+            <column type="gchararray"/>
+            <column type="gchararray"/>
+            <column type="gchararray"/>
+        </columns>
+    </object>
+    <object class="GtkUIManager" id="uimanager">
+        <child>
+            <object class="GtkActionGroup" id="DefaultActions">
+                <child>
+                    <object class="GtkAction" id="exit">
+                        <property name="name">exit</property>
+                        <property name="label" translatable="yes">Exit</property>
+                        <property name="stock_id">gtk-quit</property>
+                        <signal handler="quit" name="activate"/>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkAction" id="file">
+                        <property name="name">file</property>
+                        <property name="label" translatable="yes">File</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <ui>
+            <menubar action="menubar" name="menubar">
+                <menu action="file" name="file">
+                    <menuitem action="exit" name="exit"/>
+                </menu>
+            </menubar>
+        </ui>
+    </object>
+    <object class="GtkWindow" id="windowMain">
+        <property name="default_height">350</property>
+        <property name="default_width">600</property>
+        <property name="mnemonics_visible">False</property>
+        <property name="title" translatable="yes">youtube downloader</property>
+        <property name="visible">True</property>
+        <child>
+            <object class="GtkVBox" id="vbox0">
+                <property name="visible">True</property>
+                <child>
+                    <object constructor="uimanager" class="GtkMenuBar" id="menubar">
+                        <property name="visible">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkNotebook" id="notebook">
+                        <property name="is_focus">True</property>
+                        <property name="visible">True</property>
+                        <child>
+                            <object class="GtkVBox" id="vbox1">
+                                <property name="visible">True</property>
+                                <child>
+                                    <object class="GtkHBox" id="hbox1">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblUrl">
+                                                <property name="label" translatable="yes">Url</property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                                <property name="xpad">20</property>
+                                            </object>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkEntry" id="txtUrl">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="is_focus">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Enter / Paste or Drop URL in the text box to be added to the list</property>
+                                                <property name="tooltip_text" translatable="yes">Enter / Paste or Drop URL in the text box to be added to the list</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkButton" id="btnAdd">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="is_focus">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Add URL in the Textbox to the List</property>
+                                                <property name="tooltip_text" translatable="yes">Add URL in the Textbox to the List</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="btnAdd_clicked" name="clicked"/>
+                                                <child>
+                                                    <object class="GtkImage" id="image6">
+                                                        <property name="stock">gtk-add</property>
+                                                        <property name="visible">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="padding">20</property>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="padding">8</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox2">
+                                        <property name="border_width">10</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkScrolledWindow" id="scrolledwindow1">
+                                                <property name="visible">True</property>
+                                                <child>
+                                                    <object class="GtkTreeView" id="listUrl">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="model">model1</property>
+                                                        <property name="search_column">0</property>
+                                                        <property name="tooltip_markup" translatable="yes">List of added urls - use ctrl/shift keys with mouse based selection to select multiple entries</property>
+                                                        <property name="tooltip_text" translatable="yes">List of added urls - use ctrl/shift keys with mouse based selection to select multiple entries</property>
+                                                        <property name="visible">True</property>
+                                                        <child>
+                                                            <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                                                                <property name="title" translatable="yes">Status</property>
+                                                                <child>
+                                                                    <object class="GtkCellRendererText" id="treeviewcolumn1-renderer1"/>
+                                                                    <attributes>
+                                                                        <attribute name="text">0</attribute>
+                                                                    </attributes>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                        <child>
+                                                            <object class="GtkTreeViewColumn" id="treeviewcolumn2">
+                                                                <property name="title" translatable="yes">Url</property>
+                                                                <child>
+                                                                    <object class="GtkCellRendererText" id="treeviewcolumn2-renderer1"/>
+                                                                    <attributes>
+                                                                        <attribute name="text">1</attribute>
+                                                                    </attributes>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                        <child>
+                                                            <object class="GtkTreeViewColumn" id="treeviewcolumn3">
+                                                                <property name="title" translatable="yes">message</property>
+                                                                <child>
+                                                                    <object class="GtkCellRendererText" id="treeviewcolumn3-renderer1"/>
+                                                                    <attributes>
+                                                                        <attribute name="text">2</attribute>
+                                                                    </attributes>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkVBox" id="vboxList">
+                                                <property name="visible">True</property>
+                                                <child>
+                                                    <object class="GtkButton" id="btnReload">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Re-queue selected downloads after an Error or Pause</property>
+                                                        <property name="tooltip_text" translatable="yes">Re-queue selected downloads after an Error or Pause</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnReload_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="image2">
+                                                                <property name="stock">gtk-refresh</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="expand">False</property>
+                                                        <property name="fill">False</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnPause">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Pause selected downloads - re-queue to download them later</property>
+                                                        <property name="tooltip_text" translatable="yes">Pause selected downloads - re-queue to download them later</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnPause_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="image3">
+                                                                <property name="stock">gtk-media-pause</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="expand">False</property>
+                                                        <property name="fill">False</property>
+                                                        <property name="position">1</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnDelete">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Delete selected downloads</property>
+                                                        <property name="tooltip_text" translatable="yes">Delete selected downloads</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnDelete_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="imgReload">
+                                                                <property name="stock">gtk-delete</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="expand">False</property>
+                                                        <property name="fill">False</property>
+                                                        <property name="position">2</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnUp">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Move selected downloads up in the queue</property>
+                                                        <property name="tooltip_text" translatable="yes">Move selected downloads up in the queue</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnUp_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="imageUp">
+                                                                <property name="stock">gtk-go-up</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="fill">False</property>
+                                                        <property name="position">3</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnDown">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Move selected downloads down in the queue</property>
+                                                        <property name="tooltip_text" translatable="yes">Move selected downloads down in the queue</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnDown_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="imageDown">
+                                                                <property name="stock">gtk-go-down</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="position">4</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnClear">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Clear all downloads in the list</property>
+                                                        <property name="tooltip_text" translatable="yes">Clear all downloads in the list</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnClear_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="imageClear">
+                                                                <property name="stock">gtk-clear</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="position">5</property>
+                                                    </packing>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkButton" id="btnDrop">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Show/Hide link drop box</property>
+                                                        <property name="tooltip_text" translatable="yes">Show/Hide link drop box</property>
+                                                        <property name="visible">True</property>
+                                                        <signal handler="btnDrop_clicked" name="clicked"/>
+                                                        <child>
+                                                            <object class="GtkImage" id="imageDrop">
+                                                                <property name="stock">gtk-jump-to</property>
+                                                                <property name="visible">True</property>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="position">6</property>
+                                                    </packing>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="expand">False</property>
+                                                <property name="fill">False</property>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="position">1</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox3">
+                                        <property name="border_width">18</property>
+                                        <property name="spacing">5</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblProgress">
+                                                <property name="label" translatable="yes">Speed: --  ETA: --</property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkProgressBar" id="progressbar">
+                                                <property name="show_text">True</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkButton" id="btnCancel">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="is_focus">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Abort Downloading - can be resumed later</property>
+                                                <property name="tooltip_text" translatable="yes">Abort Downloading - can be resumed later</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="btnCancel_clicked" name="clicked"/>
+                                                <child>
+                                                    <object class="GtkImage" id="image7">
+                                                        <property name="stock">gtk-stop</property>
+                                                        <property name="visible">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="position">2</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkButton" id="btnDownload">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Start Downloading</property>
+                                                <property name="tooltip_text" translatable="yes">Start Downloading</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="btnDownload_clicked" name="clicked"/>
+                                                <child>
+                                                    <object class="GtkImage" id="image8">
+                                                        <property name="stock">gtk-save</property>
+                                                        <property name="visible">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="position">3</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="position">2</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox7">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkStatusbar" id="statusbar">
+                                                <property name="border_width">4</property>
+                                                <property name="spacing">4</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="padding">5</property>
+                                        <property name="position">3</property>
+                                    </packing>
+                                </child>
+                            </object>
+                            <packing>
+                                <property name="tab_label" translatable="yes">Download</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkVBox" id="vbox2">
+                                <property name="visible">True</property>
+                                <child>
+                                    <object class="GtkHBox" id="hbox4">
+                                        <property name="border_width">10</property>
+                                        <property name="homogeneous">True</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblLocation">
+                                                <property name="label" translatable="yes">Download Folder</property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkFileChooserButton" id="folderDownload">
+                                                <property name="action">select-folder</property>
+                                                <property name="has_tooltip">True</property>
+                                                <property name="title" translatable="yes">Select A Folder</property>
+                                                <property name="tooltip_markup" translatable="yes">Download location</property>
+                                                <property name="tooltip_text" translatable="yes">Download location</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="padding">10</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox5">
+                                        <property name="border_width">10</property>
+                                        <property name="homogeneous">True</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblformat">
+                                                <property name="label" translatable="yes">Video Format</property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkComboBox" id="cboFormat">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Choose a video format - mp4 360p is available for most videos (recommended)</property>
+                                                <property name="tooltip_text" translatable="yes">Choose a video format - mp4 360p is available for most videos (recommended)</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="padding">10</property>
+                                        <property name="position">1</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox8">
+                                        <property name="border_width">10</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblProxy">
+                                                <property name="label" translatable="yes">Proxy Address:    </property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkVBox" id="vbox3">
+                                                <property name="visible">True</property>
+                                                <child>
+                                                    <object class="GtkEntry" id="txtProxy">
+                                                        <property name="has_tooltip">True</property>
+                                                        <property name="is_focus">True</property>
+                                                        <property name="tooltip_markup" translatable="yes">Proxy Server details. Leave blank if none. Save and application restart required for setting to take effect</property>
+                                                        <property name="tooltip_text" translatable="yes">Proxy Server details. Leave blank if none. Save and application restart required for setting to take effect</property>
+                                                        <property name="visible">True</property>
+                                                    </object>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkLabel" id="lblProxyEx">
+                                                        <property name="justify">center</property>
+                                                        <property name="label" translatable="yes">eg: 127.0.0.1:8080. Don't use http://. Save &amp; restart</property>
+                                                        <property name="visible">True</property>
+                                                        <property name="xalign">0.0</property>
+                                                    </object>
+                                                    <packing>
+                                                        <property name="position">1</property>
+                                                    </packing>
+                                                </child>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="position">2</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox9">
+                                        <property name="border_width">10</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblProxyUser">
+                                                <property name="label" translatable="yes">Proxy Username:</property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkEntry" id="txtProxyUser">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Username for proxy. Leave blank if none</property>
+                                                <property name="tooltip_text" translatable="yes">Username for proxy. Leave blank if none</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="position">3</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox10">
+                                        <property name="border_width">10</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblProxyPass">
+                                                <property name="label" translatable="yes">Proxy Password:  </property>
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                            </packing>
+                                        </child>
+                                        <child>
+                                            <object class="GtkEntry" id="txtProxyPass">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="tooltip_markup" translatable="yes">Password for proxy. Leave blank if none</property>
+                                                <property name="tooltip_text" translatable="yes">Password for proxy. Leave blank if none</property>
+                                                <property name="visibility">False</property>
+                                                <property name="visible">True</property>
+                                            </object>
+                                            <packing>
+                                                <property name="padding">10</property>
+                                                <property name="position">1</property>
+                                            </packing>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="position">4</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHBox" id="hbox6">
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkLabel" id="lblSpaceHolder">
+                                                <property name="visible">True</property>
+                                                <property name="xalign">0.0</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="position">5</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkHButtonBox" id="hbuttonbox1">
+                                        <property name="border_width">10</property>
+                                        <property name="layout_style">end</property>
+                                        <property name="visible">True</property>
+                                        <child>
+                                            <object class="GtkButton" id="btnSave">
+                                                <property name="has_tooltip">True</property>
+                                                <property name="label" translatable="yes">Save</property>
+                                                <property name="tooltip_markup" translatable="yes">Hit Save if you want to make the changes permanent, else they will be lost on application close</property>
+                                                <property name="tooltip_text" translatable="yes">Hit Save if you want to make the changes permanent, else they will be lost on application close</property>
+                                                <property name="visible">True</property>
+                                                <signal handler="btnSave_clicked" name="clicked"/>
+                                            </object>
+                                        </child>
+                                    </object>
+                                    <packing>
+                                        <property name="expand">False</property>
+                                        <property name="position">6</property>
+                                    </packing>
+                                </child>
+                            </object>
+                            <packing>
+                                <property name="position">1</property>
+                                <property name="tab_label" translatable="yes">Preferences</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkTable" id="table1">
+                                <property name="column_spacing">10</property>
+                                <property name="n_columns">2</property>
+                                <property name="n_rows">2</property>
+                                <property name="row_spacing">10</property>
+                                <property name="visible">True</property>
+                                <child>
+                                    <object class="GtkLabel" id="lblUname">
+                                        <property name="label" translatable="yes">Username</property>
+                                        <property name="visible">True</property>
+                                        <property name="xalign">0.0</property>
+                                    </object>
+                                    <packing>
+                                        <property name="x_padding">20</property>
+                                        <property name="y_options"></property>
+                                        <property name="y_padding">20</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkLabel" id="lblPass">
+                                        <property name="label" translatable="yes">Password</property>
+                                        <property name="visible">True</property>
+                                        <property name="xalign">0.0</property>
+                                    </object>
+                                    <packing>
+                                        <property name="bottom_attach">2</property>
+                                        <property name="top_attach">1</property>
+                                        <property name="x_padding">20</property>
+                                        <property name="y_options"></property>
+                                        <property name="y_padding">20</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkEntry" id="txtUname">
+                                        <property name="is_focus">True</property>
+                                        <property name="visible">True</property>
+                                    </object>
+                                    <packing>
+                                        <property name="left_attach">1</property>
+                                        <property name="right_attach">2</property>
+                                        <property name="x_padding">30</property>
+                                        <property name="y_options"></property>
+                                        <property name="y_padding">20</property>
+                                    </packing>
+                                </child>
+                                <child>
+                                    <object class="GtkEntry" id="txtPass">
+                                        <property name="is_focus">True</property>
+                                        <property name="visibility">False</property>
+                                        <property name="visible">True</property>
+                                    </object>
+                                    <packing>
+                                        <property name="bottom_attach">2</property>
+                                        <property name="left_attach">1</property>
+                                        <property name="right_attach">2</property>
+                                        <property name="top_attach">1</property>
+                                        <property name="x_padding">30</property>
+                                        <property name="y_options"></property>
+                                        <property name="y_padding">20</property>
+                                    </packing>
+                                </child>
+                            </object>
+                            <packing>
+                                <property name="position">2</property>
+                                <property name="tab_fill">False</property>
+                                <property name="tab_label" translatable="yes">Authentication</property>
+                            </packing>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="position">1</property>
+                    </packing>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>

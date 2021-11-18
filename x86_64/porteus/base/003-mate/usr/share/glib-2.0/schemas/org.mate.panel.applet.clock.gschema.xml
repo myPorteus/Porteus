@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="mate-panel">
+  <enum id="org.mate.panel.applet.clock.ClockFormat">
+    <value value="0" nick="invalid"/>
+    <value value="1" nick="12-hour"/>
+    <value value="2" nick="24-hour"/>
+    <value value="3" nick="unix"/>
+    <value value="4" nick="internet"/>
+    <value value="5" nick="custom"/>
+  </enum>
+  <enum id="org.mate.panel.applet.clock.TemperatureUnit">
+    <value value="0" nick="Invalid"/>
+    <value value="1" nick="Default"/>
+    <value value="2" nick="Kelvin"/>
+    <value value="3" nick="Centigrade"/>
+    <value value="4" nick="Fahrenheit"/>
+  </enum>
+  <enum id="org.mate.panel.applet.clock.SpeedUnit">
+    <value value="0" nick="Invalid"/>
+    <value value="1" nick="Default"/>
+    <value value="2" nick="m/s"/>
+    <value value="3" nick="km/h"/>
+    <value value="4" nick="mph"/>
+    <value value="5" nick="knots"/>
+    <value value="6" nick="Beaufort scale"/>
+  </enum>
+  <schema id="org.mate.panel.applet.clock">
+    <key name="format" enum="org.mate.panel.applet.clock.ClockFormat">
+      <default>'24-hour'</default>
+      <summary>Hour format</summary>
+      <description>This key specifies the hour format used by the clock applet. Possible values are "12-hour", "24-hour", "internet", "unix" and "custom". If set to "internet", the clock will display Internet time. The Internet time system divides the day into 1000 ".beats". There are no time zones in this system, so time is the same all over the world. If set to "unix", the clock will display time in seconds since Epoch, i.e. 1970-01-01. If set to "custom", the clock will display time according to the format specified in the custom_format key.</description>
+    </key>
+    <key type="s" name="custom-format">
+      <default>''</default>
+      <summary>Custom format of the clock</summary>
+      <description>This key specifies the format used by the clock applet when the format key is set to "custom". You can use conversion specifiers understood by strftime() to obtain a specific format. See the strftime() manual for more information.</description>
+    </key>
+    <key type="b" name="show-seconds">
+      <default>false</default>
+      <summary>Show time with seconds</summary>
+      <description>If true, display seconds in time.</description>
+    </key>
+    <key type="b" name="show-date">
+      <default>true</default>
+      <summary>Show date in clock</summary>
+      <description>If true, display date in the clock, in addition to time.</description>
+    </key>
+    <key type="b" name="show-tooltip">
+      <default>true</default>
+      <summary>Show date in tooltip</summary>
+      <description>If true, show date in a tooltip when the pointer is over the clock.</description>
+    </key>
+    <key type="b" name="show-weather">
+      <default>true</default>
+      <summary>Show weather in clock</summary>
+      <description>If true, display a weather icon.</description>
+    </key>
+    <key type="b" name="show-temperature">
+      <default>true</default>
+      <summary>Show temperature in clock</summary>
+      <description>If true, show the temperature next to the weather icon.</description>
+    </key>
+    <key type="b" name="show-week-numbers">
+      <default>true</default>
+      <summary>Show week numbers in calendar</summary>
+      <description>If true, show week numbers in the calendar.</description>
+    </key>
+    <key type="b" name="expand-locations">
+      <default>false</default>
+      <summary>Expand list of locations</summary>
+      <description>If true, expand the list of locations in the calendar window.</description>
+    </key>
+    <key type="as" name="cities">
+      <default>[]</default>
+      <summary>List of locations</summary>
+      <description>A list of locations to display in the calendar window.</description>
+    </key>
+    <key name="temperature-unit" enum="org.mate.panel.applet.clock.TemperatureUnit">
+      <default>'Centigrade'</default>
+      <summary>Temperature unit</summary>
+      <description>The unit to use when showing temperatures.</description>
+    </key>
+    <key name="speed-unit" enum="org.mate.panel.applet.clock.SpeedUnit">
+      <default>'m/s'</default>
+      <summary>Speed unit</summary>
+      <description>The unit to use when showing wind speed.</description>
+    </key>
+  </schema>
+</schemalist>

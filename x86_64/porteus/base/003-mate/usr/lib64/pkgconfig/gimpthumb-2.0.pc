@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: GIMP Thumb
+Description: GIMP Thumbnail Library
+Version: 2.8.6
+Requires: gdk-pixbuf-2.0
+Libs: -L${libdir} -lgimpthumb-2.0
+Cflags: -I${includedir}/gimp-2.0

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.97
+Name=Youtube-Downloader
+GenericName=Youtube-Downloader
+Comment=GUI for youtube-dl video downloader
+Exec=/usr/bin/ytd-gtk
+Icon=/usr/share/ytd-gtk/ytdicon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Network;

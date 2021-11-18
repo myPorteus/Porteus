@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=
+libdir=
+includedir=
+
+filessdir=/usr/share/system-tools-backends-2.0/files
+backenddir=/usr/share/system-tools-backends-2.0/scripts
+
+Name: gst-backends
+Description: GNOME System Tools backends
+Version: 2.10.2
+Requires: 
+Libs:
+Cflags:

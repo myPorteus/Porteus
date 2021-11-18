@@ -1,0 +1,10 @@
+[Applet Factory]
+Id=SensorsAppletFactory
+Location=/usr/libexec/mate-sensors-applet
+Name=Sensors Applet Factory
+Description=Sensors Applet Factory
+
+[SensorsApplet]
+Name=Hardware Sensors Monitor
+Description=Displays temperature, fan speed and voltage sensor readings
+Icon=mate-sensors-applet

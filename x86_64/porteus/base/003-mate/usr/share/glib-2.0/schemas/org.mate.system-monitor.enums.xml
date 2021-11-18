@@ -1,0 +1,12 @@
+
+<!-- Generated data (by glib-mkenums) -->
+
+<schemalist>
+  <enum id='org.mate.system-monitor.ProcmanActionType'>
+    <value nick='renice' value='0'/>
+    <value nick='kill' value='1'/>
+  </enum>
+</schemalist>
+
+<!-- Generated data ends here -->
+
