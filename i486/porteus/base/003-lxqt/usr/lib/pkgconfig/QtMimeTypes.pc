@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtMimeTypes
+qt_config=include_source_dir lex yacc warn_on uic resources qt warn_on release incremental link_prl gdb_dwarf_index shared def_files_disabled no_mocdepend release stl qt_no_framework depend_includepath create_pc create_prl no_install_prl create_pc create_prl no_install_prl dll shared moc thread
+
+Name: QtMimeTypes
+Description: A Qt4 backport of the Qt5 mimetypes API
+Version: 1.0.1
+Libs: -L${libdir} -lQtMimeTypes 
+Libs.private: -L/usr/lib/qt/lib  -lQtCore -L/usr/lib/qt/lib -lpthread   
+Cflags:  -I${includedir}
+Requires: QtCore
+

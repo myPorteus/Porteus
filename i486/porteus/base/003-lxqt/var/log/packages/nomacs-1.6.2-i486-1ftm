@@ -1,0 +1,45 @@
+PACKAGE NAME:     nomacs-1.6.2-i486-1ftm
+COMPRESSED PACKAGE SIZE:     848K
+UNCOMPRESSED PACKAGE SIZE:     2.7M
+PACKAGE LOCATION: /var/tmp/binpkgs/nomacs-1.6.2-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+nomacs: Qt4-based image viewer
+nomacs:
+nomacs:
+nomacs:
+nomacs:
+nomacs:
+nomacs:
+nomacs:
+FILE LIST:
+./
+usr/
+usr/man/
+usr/man/man1/
+usr/man/man1/nomacs.1
+usr/bin/
+usr/bin/nomacs
+usr/share/
+usr/share/applications/
+usr/share/applications/nomacs.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/nomacs.png
+usr/share/nomacs/
+usr/share/nomacs/translations/
+usr/share/nomacs/translations/nomacs_als.qm
+usr/share/nomacs/translations/nomacs_az.qm
+usr/share/nomacs/translations/nomacs_cs.qm
+usr/share/nomacs/translations/nomacs_de.qm
+usr/share/nomacs/translations/nomacs_en.qm
+usr/share/nomacs/translations/nomacs_es.qm
+usr/share/nomacs/translations/nomacs_fr.qm
+usr/share/nomacs/translations/nomacs_it.qm
+usr/share/nomacs/translations/nomacs_pl.qm
+usr/share/nomacs/translations/nomacs_pt.qm
+usr/share/nomacs/translations/nomacs_ru.qm
+usr/share/nomacs/translations/nomacs_sk.qm
+usr/share/nomacs/translations/nomacs_sl.qm
+usr/share/nomacs/translations/nomacs_sr.qm
+usr/share/nomacs/translations/nomacs_zh.qm
+install/
+install/slack-desc

@@ -1,0 +1,15 @@
+# $Id$
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+bin_owner=root
+bin_group=
+bin_perm=4755
+
+Name: libstatgrab
+Description: Provides a useful interface to system statistics
+Version: 0.91
+Libs: -L${libdir} -lstatgrab 
+Cflags: -I${includedir}

@@ -1,0 +1,34 @@
+PACKAGE NAME:     qlipper-2.0.2-i486-1ftm
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /tmp/qlipper-2.0.2-i486-1ftm.tgz
+PACKAGE DESCRIPTION:
+qlipper: qlipper (qt clipboard history applet)
+qlipper:
+qlipper: Qlipper is a lightweight and cross-platform clipboard history applet
+qlipper: written in Qt.
+qlipper:
+qlipper: homepage: http://code.google.com/p/qlipper/
+qlipper:
+qlipper:
+qlipper:
+qlipper:
+qlipper:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qlipper-2.0.2/
+usr/doc/qlipper-2.0.2/qlipper.SlackBuild
+usr/doc/qlipper-2.0.2/README
+usr/doc/qlipper-2.0.2/COPYING
+usr/share/
+usr/share/pixmaps/
+usr/share/pixmaps/qlipper.png
+usr/share/applications/
+usr/share/applications/qlipper.desktop
+usr/bin/
+usr/bin/qlipper

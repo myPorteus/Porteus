@@ -1,0 +1,84 @@
+.\" -*- coding: us-ascii -*-
+.if \n(.g .ds T< \\FC
+.if \n(.g .ds T> \\F[\n[.fam]]
+.de URL
+\\$2 \(la\\$1\(ra\\$3
+..
+.if \n(.g .mso www.tmac
+.TH statgrab 1 2013-06-07 i-scream ""
+.SH NAME
+statgrab \- sysctl-style interface to system statistics
+.SH SYNOPSIS
+'nh
+.fi
+.ad l
+\fBstatgrab\fR \kx
+.if (\nx>(\n(.l/2)) .nr x (\n(.l/5)
+'in \n(.iu+\nxu
+[OPTION]\&... [STAT]\&...
+'in \n(.iu-\nxu
+.ad b
+'hy
+.SH DESCRIPTION
+\fBstatgrab\fR provides a sysctl-style interface to all
+the system statistics available through libstatgrab. This is useful
+for applications that don't want to make library calls, but still
+want to access the statistics.
+.PP
+An example of such an application is mrtg, for which scripts are
+provided to generate configuration files.
+.SH OPTIONS
+The following options are supported.
+.TP 
+\*(T<\fB\-l\fR\*(T>
+Linux sysctl-style output (default)
+.TP 
+\*(T<\fB\-b\fR\*(T>
+BSD sysctl-style output
+.TP 
+\*(T<\fB\-m\fR\*(T>
+MRTG-compatible output
+.TP 
+\*(T<\fB\-u\fR\*(T>
+Plain output (only show values)
+.TP 
+\*(T<\fB\-n\fR\*(T>
+Display cumulative stats once (default)
+.TP 
+\*(T<\fB\-s\fR\*(T>
+Display stat differences repeatedly
+.TP 
+\*(T<\fB\-o\fR\*(T>
+Display stat differences once
+.TP 
+\*(T<\fB\-t\fR\*(T> \fIDELAY\fR
+When repeating, wait DELAY seconds between updates (default 1)
+.TP 
+\*(T<\fB\-p\fR\*(T>
+Display CPU usage differences as percentages rather than
+absolute values
+.TP 
+\*(T<\fB\-f\fR\*(T> \fIFACTOR\fR
+Display floating-point values as integers scaled by FACTOR
+.TP 
+\*(T<\fB\-K\fR\*(T>
+Display byte counts in kibibytes
+.TP 
+\*(T<\fB\-M\fR\*(T>
+Display byte counts in mebibytes
+.TP 
+\*(T<\fB\-G\fR\*(T>
+Display byte counts in gibibytes
+.PP
+If no \*(T<\fBSTAT\fR\*(T> options are given, all will be displayed.
+Specify 'STAT.' to display all statistics starting with that prefix.
+.SH "SEE ALSO"
+\fBstatgrab-make-mrtg-config\fR(1)
+\fBstatgrab-make-mrtg-index\fR(1)
+\fBsaidar\fR(1)
+\fBstatgrab\fR(3)
+.SH AUTHORS
+This man page was derived from the man page written by Bartosz
+Fenski for the Debian GNU/Linux distribution.
+.SH WEBSITE
+\(lahttp://www.i-scream.org/libstatgrab/\(ra

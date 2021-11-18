@@ -1,0 +1,86 @@
+### Menu
+
+menu.title.bg: Raised
+menu.title.bg.color: #c1bfbc
+menu.title.bg.colorTo: #e0dddc
+menu.title.bg.border.color: #f7f7f7
+menu.title.text.color: #101010
+menu.title.text.justify: Center
+
+menu.items.bg: raised gradient vertical
+menu.items.bg.color: #e0dddc
+menu.items.bg.colorTo: #c7c1be
+menu.items.text.color: #000000
+menu.items.disable.text.color: #b5b3ac
+
+menu.items.active.bg: sunken gradient diagonal 
+menu.items.active.bg.color: #b9b2ae
+menu.items.active.bg.colorTo: #e0dddc
+menu.items.active.text.color: #101010
+
+menu.separator.width: 1
+menu.separator.padding.width: 80
+menu.separator.padding.height: 6
+menu.separator.color: #c7c1be
+
+
+### Window active
+window.active.title.bg:  Flat Gradient MirrorHorizontal
+window.active.title.bg.color: #dbd8d6
+window.active.title.bg.colorTo: #eceae9
+window.active.title.bg.border.color: #7c0000
+window.active.title.separator.color: #e0dddc
+
+window.active.border.color: #eceae9
+
+window.active.client.color: #e0dddc
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #101010
+
+window.active.handle.bg: Flat Border Solid
+window.active.handle.bg.color: #c8c2bf
+window.active.handle.bg.border.color: #c8c2bf
+
+window.active.grip.bg: Flat Solid
+window.active.grip.bg.color: #c8c2bf
+window.active.grip.bg.border.color: #c8c2bf
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #666666
+window.active.button.hover.image.color: #0077dd
+
+
+### Window inactive
+window.inactive.border.color: #d0cccb
+window.inactive.client.color: #d0cccb
+window.inactive.title.separator.color: #d0cccb
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #999999
+
+window.inactive.title.bg: Flat Solid
+window.inactive.title.bg.color: #d0cccb
+window.inactive.title.bg.colorTo: #c7c1be
+window.inactive.title.bg.border.color: #ffffff
+window.inactive.title.separator.color: #d0cccb
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #777777
+
+window.inactive.grip.bg: Flat Border Solid
+window.inactive.grip.bg.color: #bdc4c7
+window.inactive.grip.bg.border.color: #c7c1be
+
+window.inactive.handle.bg: Flat Border Solid
+window.inactive.handle.bg.color: #bdc4c7
+window.inactive.handle.bg.border.color: #c7c1be
+
+### Everything else
+border.width: 1
+padding.width: 4
+padding.height: 8
+window.handle.width: 0
+window.client.padding.width: 0
+border.color: #c8c2bf
+menu.overlap: 10
+padding.height: 3

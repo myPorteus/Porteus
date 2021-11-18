@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>(Curtis Gedak)</creator>
+    <maintainer>(Curtis Gedak)</maintainer>
+    <title>Εγχειρίδιο GParted</title>
+    <date>Σεπτέμβριος 2008</date>
+    <version identifier="Εγχειρίδιο GParted V0.3.9" date="Σεπτέμβριος 2008"/>
+    <subject category="GNOME|Applications|System Tools"/>
+    <description>
+      Το GParted είναι ένας επεξεργαστής κατάτμησης Gnome για δημιουργία, αναδιοργάνωση και διαγραφή κατατμήσεων δίσκου. Το GParted ενεργοποιεί την αλλαγή της οργάνωσης κατατμήσεων, ενώ διατηρεί τα περιεχόμενα των κατατμήσεων.
+    </description>
+    <type>manual</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/share/gnome/help/gparted/el/gparted.xml"/>
+    <language code="el"/>
+    <relation seriesid="64567bbe-6003-11dd-8e86-848351b2d6c2"/>
+    <rights type="GNU FDL" license.version="1.2" holder="Curtis Gedak"/>
+  </resource>
+</omf>

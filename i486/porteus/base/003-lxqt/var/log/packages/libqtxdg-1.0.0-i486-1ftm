@@ -1,0 +1,87 @@
+PACKAGE NAME:     libqtxdg-1.0.0-i486-1ftm
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     420K
+PACKAGE LOCATION: /var/tmp/binpkgs/libqtxdg-1.0.0-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libqtxdg: A Qt implementation of XDG standards
+libqtxdg:
+libqtxdg:
+libqtxdg:
+libqtxdg:
+libqtxdg:
+libqtxdg:
+libqtxdg:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/libqtxdg/
+usr/share/libqtxdg/libqtxdg_zh_TW.qm
+usr/share/libqtxdg/libqtxdg_zh_CN.qm
+usr/share/libqtxdg/libqtxdg_uk.qm
+usr/share/libqtxdg/libqtxdg_tr.qm
+usr/share/libqtxdg/libqtxdg_th_TH.qm
+usr/share/libqtxdg/libqtxdg_sr_RS.qm
+usr/share/libqtxdg/libqtxdg_sl.qm
+usr/share/libqtxdg/libqtxdg_sk_SK.qm
+usr/share/libqtxdg/libqtxdg_ru_RU.qm
+usr/share/libqtxdg/libqtxdg_ru.qm
+usr/share/libqtxdg/libqtxdg_ro_RO.qm
+usr/share/libqtxdg/libqtxdg_pt_BR.qm
+usr/share/libqtxdg/libqtxdg_pt.qm
+usr/share/libqtxdg/libqtxdg_pl_PL.qm
+usr/share/libqtxdg/libqtxdg_nl.qm
+usr/share/libqtxdg/libqtxdg_lt.qm
+usr/share/libqtxdg/libqtxdg_ja.qm
+usr/share/libqtxdg/libqtxdg_it_IT.qm
+usr/share/libqtxdg/libqtxdg_id_ID.qm
+usr/share/libqtxdg/libqtxdg_hu.qm
+usr/share/libqtxdg/libqtxdg_fr_FR.qm
+usr/share/libqtxdg/libqtxdg_fi.qm
+usr/share/libqtxdg/libqtxdg_eu.qm
+usr/share/libqtxdg/libqtxdg_es_VE.qm
+usr/share/libqtxdg/libqtxdg_es.qm
+usr/share/libqtxdg/libqtxdg_eo.qm
+usr/share/libqtxdg/libqtxdg_el_GR.qm
+usr/share/libqtxdg/libqtxdg_de_DE.qm
+usr/share/libqtxdg/libqtxdg_da_DK.qm
+usr/share/libqtxdg/libqtxdg_da.qm
+usr/share/libqtxdg/libqtxdg_cs_CZ.qm
+usr/share/libqtxdg/libqtxdg_cs.qm
+usr/share/libqtxdg/libqtxdg_ar.qm
+usr/share/cmake/
+usr/share/cmake/qtxdg/
+usr/share/cmake/qtxdg/qtxdg-config.cmake
+usr/share/cmake/qtxdg/qtxdg_use.cmake
+usr/share/doc/
+usr/share/doc/libqtxdg-1.0.0/
+usr/share/doc/libqtxdg-1.0.0/AUTHORS.bz2
+usr/share/doc/libqtxdg-1.0.0/README.bz2
+usr/lib/
+usr/lib/libqtxdg.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/qtxdg.pc
+usr/include/
+usr/include/qtxdg/
+usr/include/qtxdg/xdgaction.h
+usr/include/qtxdg/xdgdesktopfile.h
+usr/include/qtxdg/xdgdirs.h
+usr/include/qtxdg/xdgicon.h
+usr/include/qtxdg/xdgmenu.h
+usr/include/qtxdg/xdgmenuwidget.h
+usr/include/qtxdg/xmlhelper.h
+usr/include/qtxdg/xdgautostart.h
+usr/include/qtxdg/xdgmacros.h
+usr/include/qtxdg/xdgmimetype.h
+usr/include/qtxdg/XdgAction
+usr/include/qtxdg/XdgDesktopFile
+usr/include/qtxdg/XdgDirs
+usr/include/qtxdg/XdgIcon
+usr/include/qtxdg/XdgMenu
+usr/include/qtxdg/XdgMenuWidget
+usr/include/qtxdg/XmlHelper
+usr/include/qtxdg/XdgAutoStart
+usr/include/qtxdg/XdgMimeType
+install/
+install/doinst.sh
+install/slack-desc

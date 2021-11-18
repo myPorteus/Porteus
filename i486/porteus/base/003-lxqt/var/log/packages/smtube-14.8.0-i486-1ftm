@@ -1,0 +1,96 @@
+PACKAGE NAME:     smtube-14.8.0-i486-1ftm
+COMPRESSED PACKAGE SIZE:     536K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /smtube-14.8.0-i486-1ftm.tgz
+PACKAGE DESCRIPTION:
+smtube: smtube (small youtube browser)
+smtube:
+smtube: This is a YouTube browser. It can browse, search, download and play
+smtube: YouTube videos in SMPlayer, MPlayer, VLC, Dragon Player or Totem.
+smtube:
+smtube: Homepage: http://smplayer.sourceforge.net
+smtube:
+smtube:
+smtube:
+smtube:
+smtube:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/smtube-14.8.0/
+usr/doc/smtube-14.8.0/smtube.SlackBuild
+usr/doc/smtube-14.8.0/Release_notes.txt
+usr/doc/smtube-14.8.0/Readme.txt
+usr/doc/smtube-14.8.0/Copying_BSD.txt
+usr/doc/smtube-14.8.0/Copying.txt
+usr/doc/smtube-14.8.0/Changelog
+usr/share/
+usr/share/applications/
+usr/share/applications/smtube.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/smtube.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/smtube.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/smtube.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/smtube.png
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/smtube.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/256x256/apps/smtube.png
+usr/share/smtube/
+usr/share/smtube/translations/
+usr/share/smtube/translations/smtube_zh_TW.qm
+usr/share/smtube/translations/smtube_zh_CN.qm
+usr/share/smtube/translations/smtube_vi.qm
+usr/share/smtube/translations/smtube_uk.qm
+usr/share/smtube/translations/smtube_tr.qm
+usr/share/smtube/translations/smtube_sv.qm
+usr/share/smtube/translations/smtube_sr.qm
+usr/share/smtube/translations/smtube_sq_AL.qm
+usr/share/smtube/translations/smtube_sk.qm
+usr/share/smtube/translations/smtube_ru_RU.qm
+usr/share/smtube/translations/smtube_pt_BR.qm
+usr/share/smtube/translations/smtube_pt.qm
+usr/share/smtube/translations/smtube_pl.qm
+usr/share/smtube/translations/smtube_nqo.qm
+usr/share/smtube/translations/smtube_nn_NO.qm
+usr/share/smtube/translations/smtube_ms_MY.qm
+usr/share/smtube/translations/smtube_lt.qm
+usr/share/smtube/translations/smtube_ko.qm
+usr/share/smtube/translations/smtube_ka.qm
+usr/share/smtube/translations/smtube_ja.qm
+usr/share/smtube/translations/smtube_it.qm
+usr/share/smtube/translations/smtube_id.qm
+usr/share/smtube/translations/smtube_hu.qm
+usr/share/smtube/translations/smtube_hr.qm
+usr/share/smtube/translations/smtube_he_IL.qm
+usr/share/smtube/translations/smtube_gl.qm
+usr/share/smtube/translations/smtube_fr.qm
+usr/share/smtube/translations/smtube_fi.qm
+usr/share/smtube/translations/smtube_eu.qm
+usr/share/smtube/translations/smtube_et.qm
+usr/share/smtube/translations/smtube_es.qm
+usr/share/smtube/translations/smtube_en_GB.qm
+usr/share/smtube/translations/smtube_en.qm
+usr/share/smtube/translations/smtube_el.qm
+usr/share/smtube/translations/smtube_de.qm
+usr/share/smtube/translations/smtube_cs.qm
+usr/share/smtube/translations/smtube_ca.qm
+usr/share/smtube/translations/smtube_bg.qm
+usr/share/smtube/translations/smtube_ar.qm
+usr/bin/
+usr/bin/smtube

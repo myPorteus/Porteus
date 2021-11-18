@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: qmmp
+Description: qmmp core library
+Version: 0.8.2
+Requires: QtCore QtGui
+Libs: -L${libdir} -lqmmp
+Cflags: -I${includedir}

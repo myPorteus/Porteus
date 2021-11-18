@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LxQtPanel/Plugin
+Name=System Statistics
+Comment=System Statistics plugin.
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Qt Configuration
+GenericName=Qt Configuration
+Comment=Configure Qt
+Exec=qtconfig
+TryExec=qtconfig
+Icon=preferences-system
+Categories=DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
+

@@ -1,0 +1,36 @@
+PACKAGE NAME:     rssguard-1.1.2-i486-1ftm
+COMPRESSED PACKAGE SIZE:     256K
+UNCOMPRESSED PACKAGE SIZE:     880K
+PACKAGE LOCATION: /var/tmp/binpkgs/rssguard-1.1.2-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+rssguard: A tiny RSS and Atom feed reader
+rssguard:
+rssguard:
+rssguard:
+rssguard:
+rssguard:
+rssguard:
+rssguard:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/rssguard
+usr/share/
+usr/share/applications/
+usr/share/applications/rssguard.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/rssguard.png
+usr/share/rssguard/
+usr/share/rssguard/l10n/
+usr/share/rssguard/l10n/rssguard_cs.qm
+usr/share/rssguard/l10n/rssguard_da.qm
+usr/share/rssguard/l10n/rssguard_es.qm
+usr/share/rssguard/l10n/rssguard_fr.qm
+usr/share/rssguard/l10n/rssguard_ru.qm
+usr/share/doc/
+usr/share/doc/rssguard-1.1.2/
+usr/share/doc/rssguard-1.1.2/CHANGELOG.bz2
+usr/share/doc/rssguard-1.1.2/AUTHORS.bz2
+install/
+install/slack-desc
