@@ -1,0 +1,37 @@
+PACKAGE NAME:     xf86-video-voodoo-1.2.5-i486-5
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /root/new/xf86-video-voodoo-1.2.5-i486-5.txz
+PACKAGE DESCRIPTION:
+xf86-video-voodoo: xf86-video-voodoo (3DFX Voodoo/Voodoo2 video driver for Xorg)
+xf86-video-voodoo:
+xf86-video-voodoo: xf86-video-voodoo is part of X11.
+xf86-video-voodoo:
+xf86-video-voodoo: For more information about the X.Org Foundation (the providers of the
+xf86-video-voodoo: X.Org implementation of the X Window System), see their website:
+xf86-video-voodoo:
+xf86-video-voodoo: http://www.x.org
+xf86-video-voodoo:
+xf86-video-voodoo:
+xf86-video-voodoo:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/man/
+usr/man/man4/
+usr/man/man4/voodoo.4.gz
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/voodoo_drv.la
+usr/lib/xorg/modules/drivers/voodoo_drv.so
+usr/doc/
+usr/doc/xf86-video-voodoo-1.2.5/
+usr/doc/xf86-video-voodoo-1.2.5/ChangeLog
+usr/doc/xf86-video-voodoo-1.2.5/COPYING
+usr/doc/xf86-video-voodoo-1.2.5/README
+usr/doc/xf86-video-voodoo-1.2.5/INSTALL
+usr/doc/xf86-video-voodoo-1.2.5/TODO

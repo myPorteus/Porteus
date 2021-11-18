@@ -1,0 +1,30 @@
+PACKAGE NAME:     libva-intel-driver-1.4.1-i486-1ftm
+COMPRESSED PACKAGE SIZE:     172K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/NEW-SRC/32/libva-intel-driver-1.4.1-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libva-intel-driver: HW video decode support for Intel integrated graphics
+libva-intel-driver:
+libva-intel-driver: The main motivation for VAAPI (Video Acceleration API) is to enable
+libva-intel-driver: hardware  accelerated  video  decode/encode at various entry-points
+libva-intel-driver: (VLD,  IDCT,  Motion  Compensation etc) for  the  prevailing coding
+libva-intel-driver: standards today (MPEG-2, MPEG-4  ASP/H.263,  MPEG-4  AVC/H.264, and
+libva-intel-driver: VC-1/VMW3).
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver: Homepage: http://www.freedesktop.org/wiki/Software/vaapi
+libva-intel-driver:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libva-intel-driver-1.4.1/
+usr/doc/libva-intel-driver-1.4.1/README
+usr/doc/libva-intel-driver-1.4.1/NEWS
+usr/doc/libva-intel-driver-1.4.1/COPYING
+usr/lib/
+usr/lib/dri/
+usr/lib/dri/i965_drv_video.so
+usr/lib/dri/i965_drv_video.la

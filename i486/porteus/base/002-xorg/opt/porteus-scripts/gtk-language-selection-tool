@@ -1,0 +1,623 @@
+#!/bin/bash
+## Script to download language, locale and man files
+## for your chosen language. This script is called from
+## the Porteus Settings Centre
+
+## Author: Fanthom
+## Adapted to gtkdialog by Brokenman
+## Date: 01 July 2013
+## Email: <admin@porteus.org>
+
+LSTSCRIPT="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+[ ! $DISPLAY ] && echo "$LSTSCRIPT requires an xsession" && exit
+. /usr/lib/librokenman
+
+trap clean_and_bail SIGHUP SIGINT SIGTERM
+exec 2>/dev/null
+
+## Variables
+porteus_desktops="kde mate razorqt xfce lxde"
+porteus_browsers="opera chrome firefox"
+if [ `uname -m` = x86_64 ]; then
+    export arch=x86_64
+    export lib=lib64
+    export build=1ftm
+else
+    export arch=i486
+    export lib=lib
+    export build=1jay
+fi
+export wrk=/tmp/lst_wrk
+log=/var/log/lst.log
+dir=$wrk/build
+repo=http://ponce.cc/porteus
+link=$repo/$arch/testing/packages/Language-Selection-Tool/
+kdelink=$repo/x86_64/current/packages/Language-Selection-Tool/
+nlink=$repo/i486/current/packages/Language-Selection-Tool/
+icons=/usr/share/pixmaps/porteus
+dump=$wrk/.dump
+localeslink=$repo/$arch/testing/packages/Language-Selection-Tool/
+
+## Touch log file
+date > $log && touch $log
+
+## Functions
+silent_check_url(){
+if (wget -q --spider --force-html --inet4-only "$1"); then url=1; fi
+}
+
+check_mloop(){
+if [ -d /mnt/loop ]; then
+  [ `ls -1 /mnt/loop|wc -l` -lt 1 ] && badloop=1
+    else
+  badloop=1
+fi
+[ "$badloop" == "1" ] && { gtk_message "There was a problem with the remote connection. Exiting." 450 gtk-dialog-error; clean_and_bail; }
+}
+
+clean_and_bail(){
+umount /mnt/loop >/dev/null
+umount $wrk/bundle
+[ -d $wrk ] && rm -r $wrk
+[ -f /tmp/.cdload ] && rm /tmp/.cdload
+[ -f /tmp/.message ] && rm /tmp/.message
+exit
+}
+
+logit(){
+echo "$1" >> $log
+}
+
+others_screen(){
+export OTHERS_DIALOG='
+<window window_position="1" title="NonKDE language pack" icon-name="gtk-spell-check">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/language.png</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>NonKDE language selection</span>"</label>
+  </text>
+</hbox>
+  <frame NonKDE language>
+    <vbox>
+    <text use-markup="true">
+      <label>"Choose a language for Non KDE apps"</label>
+    </text>
+    <comboboxtext>
+      <default>Select a language</default>
+      <variable>nonkde</variable>
+      <input file>'$wrk'/others</input>
+    </comboboxtext>
+    </vbox>
+  </frame>
+  <hbox>
+    <button cancel></button>
+    <button ok></button>
+  </hbox>
+</vbox>
+</window>
+'
+gtkdialog -p OTHERS_DIALOG > $wrk/nonkde
+};export -f others_screen
+
+desktops_screen(){
+export DESKTOPS_DIALOG='
+<window window_position="1" title="Desktop environment" icon-name="computer" resizable="false">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/computer-128.png</input>
+  </pixmap>
+  <text use-markup="true" width-request="300">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Miscellaneous locales</span>"</label>
+  </text>
+</hbox>
+  <text use-markup="true">
+    <label>Choose an option below and all language files removed during the creation of this environment will be downloaded from the internet.</label>
+  </text>
+  <hbox>
+  <frame Desktop environments>
+    <vbox>
+    '`chkbox false kde "KDE Desktop"`'</checkbox>
+    '`chkbox false mate "MATE Desktop"`'</checkbox>
+    '`chkbox false razorqt "RazorQT Desktop"`'</checkbox>
+    '`chkbox false xfce "XFCE Desktop"`'</checkbox>
+    '`chkbox false lxde "LXDE Desktop"`'</checkbox>
+    </vbox>
+  </frame>
+  <frame Browsers>
+    <vbox>
+    '`chkbox false firefox "Firefox"`'</checkbox>
+    '`chkbox false opera "Opera"`'</checkbox>
+    '`chkbox false chrome "Chrome"`'</checkbox>
+    </vbox>
+  </frame>
+  </hbox>
+  <frame Miscellaneous>
+    <vbox>
+    '`chkbox false print "Printing locales"`'</checkbox>
+    '`chkbox false devel "Development locales"`'</checkbox>
+    </vbox>
+  </frame>
+  <hbox>
+    <button cancel></button>
+    <button ok></button>
+  </hbox>
+</vbox>
+</window>
+'
+gtkdialog -p DESKTOPS_DIALOG > $wrk/desktops
+if [ `egrep "Cancel|abort" $wrk/desktops` ]; then rm $wrk/desktops; fi
+};export -f desktops_screen
+
+kde_screen(){
+export KDE_DIALOG='
+<window window_position="1" title="KDE4 language pack" icon-name="gtk-spell-check">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/kde.svg</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>KDE4 language selection</span>"</label>
+  </text>
+</hbox>
+  <frame KDE4 language>
+    <vbox>
+    <text use-markup="true">
+      <label>"Choose a language for KDE4"</label>
+    </text>
+    <comboboxtext>
+      <default>Select a language</default>
+      <variable>lang</variable>
+      <input file>'$wrk'/.kde</input>
+    </comboboxtext>
+    </vbox>
+  </frame>
+  <hbox>
+    <button cancel></button>
+    <button ok></button>
+  </hbox>
+</vbox>
+</window>
+'
+gtkdialog -p KDE_DIALOG >$wrk/.kde4
+}; export -f kde_screen
+
+main_screen(){
+export MAIN_DIALOG='
+<window window_position="1" title="Language Selection Tool" icon-name="gtk-spell-check" resizable="false">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/language.png</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Porteus Language Selection Tool</span>"</label>
+  </text>
+</hbox>
+<hbox>
+  <frame System encoding>
+    <vbox>
+    <text use-markup="true">
+      <label>"Choose a system language"</label>
+    </text>
+    <comboboxtext>
+      <default>Select a language</default>
+      <variable>enc</variable>
+      <input>ls /mnt/loop/usr/$lib/locale | grep utf8 | cut -d. -f1</input>
+    </comboboxtext>
+    </vbox>
+  </frame>
+    <frame Libre Office>
+    <vbox>
+    <text use-markup="true">
+      <label>"Libre Office locales"</label>
+    </text>
+    <checkbox tooltip-text="If you are not using Libre Office then you probably do not need this option">
+      <variable>libre</variable>
+      <default>false</default>
+      <label>Include LO language pack</label>
+    </checkbox>
+    </vbox>
+  </frame>
+</hbox>
+    <frame Miscellaneous environments>
+    <vbox>
+    <text use-markup="true" wrap="true" space-fill="true" xalign="0" wrap="true" width-request="400">
+      <label>"Do you want translations for environments such as desktops, browsers, printpack and other applications?"</label>
+    </text>
+    <checkbox>
+      <variable>desktops</variable>
+      <default>false</default>
+      <label>Yes, i want to choose which applications</label>
+    </checkbox>
+    </vbox>
+  </frame>
+      <frame Keyboard setup>
+    <vbox>
+    <text use-markup="true" wrap="true" space-fill="true" xalign="0">
+      <label>"Do you want to change your keyboard setup?"</label>
+    </text>
+    <checkbox>
+      <variable>kbd</variable>
+      <default>false</default>
+      <label>Setup keyboard</label>
+    </checkbox>
+    </vbox>
+  </frame>
+<hbox>
+  <frame Non-latin fonts>
+    <vbox>
+    <checkbox tooltip-text="Download your choice of non-latin based fonts for reading webpages and inputing text">
+      <variable>nonlatin</variable>
+      <default>false</default>
+      <label>Download a non-latin font</label>
+    </checkbox>
+    </vbox>
+  </frame>
+  <frame Scim input>
+    <vbox>
+    <checkbox tooltip-text="Scim offers a user friendly, full featured input method user interface for POSIX-style operating systems">
+      <variable>scim</variable>
+      <default>false</default>
+      <label>Download scim input</label>
+    </checkbox>
+    </vbox>
+  </frame>
+</hbox>
+  <hbox>
+    <button cancel></button>
+    <button ok></button>
+  </hbox>
+</vbox>
+</window>
+'
+}; export -f main_screen
+
+nonlatin_screen(){
+export NONLATIN_DIALOG='
+<window window_position="1" title="Non-latin font pack" icon-name="gtk-spell-check">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/language.png</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Non-latin font pack selection</span>"</label>
+  </text>
+</hbox>
+<text use-markup="true" xalign="0">
+  <label>"Choose a Non-latin font"</label>
+</text>
+  <frame>
+    <vbox>
+    <checkbox tooltip-text="Amharic, Bengali, Gujarati, Hindi, Chhattisgarhi, Malayalam, Marathi, Nepali, Punjabi, Sinhalese, Tamil, Thai">
+      <variable>freefont</variable>
+      <label>freefont-ttf</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Japanese">
+      <variable>IPAfont</variable>
+      <label>IPA_Japanese</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Khmer Cambodian">
+      <variable>KhmerOS</variable>
+      <label>KhmerOS</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Burmese">
+      <variable>Myanmar3</variable>
+      <label>Myanmar3</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Chinese, Japanese">
+      <variable>odosung</variable>
+      <label>odosung</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Persian, Uighur, Urdu">
+      <variable>PakType</variable>
+      <label>PakType</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Japanese">
+      <variable>sazanami</variable>
+      <label>sazanami</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Sinhalese">
+      <variable>sinhala_lklug</variable>
+      <label>sinhala_lklug</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Dzongkha">
+      <variable>tibmachuni</variable>
+      <label>tibmachuni</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Bengali, Gujarati, Hindi, Chhattisgarhi, Kannada, Maithili, Marathi, Nepali, Oriya, Punjabi, Tamil, Telugu">
+      <variable>ttf_indic</variable>
+      <label>ttf_indic</label>
+    </checkbox>
+    <checkbox tooltip-text="Almost all languages are supported. Low quality.">
+      <variable>unifont</variable>
+      <label>unifont</label>
+    </checkbox>
+    <checkbox tooltip-text="Supports: Chinese, Japanese, Korean">
+      <variable>wqy_zenhei</variable>
+      <label>wqy_zenhei</label>
+    </checkbox>
+    </vbox>
+  </frame>
+  <hbox>
+    <button cancel></button>
+    <button ok></button>
+  </hbox>
+</vbox>
+</window>
+'
+gtkdialog -p NONLATIN_DIALOG >$wrk/nonlatin
+}; export -f nonlatin_screen
+
+## Prepare working dir
+if [ -d $wrk ]; then
+  [ `ls -1 $wrk/bundle|wc -l` -gt 0 ] && umount $wrk/bundle
+  rm -r $wrk
+fi
+if [ -d /mnt/loop ]; then
+  [ `ls -1 /mnt/loop|wc -l` -gt 0 ] && umount /mnt/loop
+fi
+mkdir -p $wrk/bundle
+[ ! -d $dir ] && mkdir -p $dir/usr/share/locale
+
+## Requires internet
+if [ "$1" != "test" ]; then ### TESTING
+export STATE=MANUAL
+manual_progress "Checking and processing remote files ..."
+echo "Mounting glibc over httpfs" >/tmp/.message
+silent_check_url $link
+if [ $url -eq 1 ]; then
+  httpfs2 $link/glibc-i18n-$arch-$build.xzm $wrk/bundle >> $log 2>&1
+  mloop $wrk/bundle/glibc-i18n-$arch-$build.xzm && logit "glibc mounted at /mnt/loop"
+  sleep 1
+  kill_manual_progress
+    else
+  kill_manual_progress
+  sleep 1
+  gtk_message "An internet connection is required!" 400 gtk-dialog-error
+  clean_and_bail
+fi
+fi
+
+## Get porteus directory and set target path
+pdir=`grep -A1 "ata found in:" /var/log/porteus-livedbg|tail -n1|sed 's^//^/^g'`
+[ -w $pdir ] && pth=${pdir}/modules || { pth=/tmp/language-files; mkdir -p $pth; }
+yellow "Final module will be placed at $pth"
+
+main_screen
+gtkdialog -p MAIN_DIALOG >$dump
+
+## User cancelled
+[ `egrep -o "Cancel|abort" $dump` ] && yellow "User aborted" && clean_and_bail
+
+########################### Start work here
+## Sanitize answer file
+sed -i 's^"^^g' $dump
+
+## Double check httpfs connection is still good and then start copying required glib and core locales
+check_mloop
+enc=`grep "enc=" $dump|awk -F'=' '{print$NF}'` && logit "Chosen enc:$enc"
+## libreoffice language
+lolang=${enc:0:2} && logit "Short enc:$lolang"
+export STATE=MANUAL
+manual_progress "Preparing files from server. Please wait ..."
+echo "Copying $enc.utf8" >/tmp/.message
+cd /mnt/loop
+cp -a --parents usr/$lib/locale/$enc.utf8 $dir && sleep 1 && logit "Copied $enc.utf8"
+echo "Copying $enc directory" >/tmp/.message
+cp -a --parents usr/share/i18n/charmaps usr/share/i18n/locales/POSIX usr/share/i18n/locales/$enc $dir && sleep 1
+cd -
+echo "Finished copying ..." >/tmp/.message && sleep 1
+umount /mnt/loop && logit "Unmounted loop" || logit "error: nothing mounted at /mnt/loop"
+umount -f $wrk/bundle && logit "Unmounted glib over httpfs2" || logit "error: no glib mounted"
+kill_manual_progress
+download Locales 001-core_locales.xzm $localeslink/001-core_locales.xzm dummy
+export STATE=MANUAL
+manual_progress "Copying core locales. Please wait ..."
+mloop 001-core_locales.xzm && logit "Mounted 001-core_locales.xzm" || logit "error: Cant mount001-core_locales.xzm"
+for a in `find /mnt/loop/locale/$lolang* -type f`; do
+  name=${a##*/}
+  echo "Copying file: $name" > /tmp/.message
+  cp -va --parents $a $dir >> $log && logit "Copied file: $a from 001-core to local locales" || logit "error copying $a"
+done
+sleep 1
+umount /mnt/loop && logit "unmounted core locales from /mnt/loop" || logit "error unmounting core locales from /mnt/loop"
+rm 001-core-locales.xzm
+kill_manual_progress
+echo "Setting up lang.sh" > /tmp/.message
+mkdir -p $dir/etc/profile.d
+cat >> $dir/etc/profile.d/lang.sh << EOF
+#!/bin/bash
+# File generated by Porteus Language-Selection tool
+
+#export LC_ALL=$enc.utf8
+export LANG=$enc.utf8
+export LC_COLLATE=C
+EOF
+chmod +x $dir/etc/profile.d/lang.sh
+sleep 1
+kill_manual_progress
+
+## Start keyboard setup if user chose to
+if [ `grep -o "kbd=true" $dump` ]; then
+  /opt/porteus-scripts/gtk-xkb-select
+  logit "Keyboard setup chosen"
+  kmap=`setxkbmap -print | grep xkb_symbols | cut -d'+' -f2`
+  if [ $kmap != us ]; then
+	# LXDE
+	if [ `ls /mnt/live/memory/images | grep -o lxde.xzm` ]; then
+	    cd /mnt/live/memory/images/*-lxde.xzm >/dev/null; cp -a --parents home/guest/.config/autostart/xkb.desktop root/.config/autostart/xkb.desktop $dir; cd -
+	    sed -i 's/layout us,de,ru/layout '$kmap',us/' $dir/home/guest/.config/autostart/xkb.desktop
+	    sed -i 's/layout us,de,ru/layout '$kmap',us/' $dir/root/.config/autostart/xkb.desktop
+	fi
+	# KDE4
+	if [ `ls /mnt/live/memory/images | grep -o kde.xzm` ]; then
+	    cd /mnt/live/memory/images/*-kde.xzm >/dev/null; cp -a --parents home/guest/.kde4/share/config/kxkbrc root/.kde4/share/config/kxkbrc $dir; cd -
+	    sed -i -r 's/LayoutList=.*$/LayoutList='$kmap',us/' $dir/home/guest/.kde4/share/config/kxkbrc
+	    sed -i -r 's/LayoutList=.*$/LayoutList='$kmap',us/' $dir/root/.kde4/share/config/kxkbrc
+	fi
+	# Razor
+	if [ `ls /mnt/live/memory/images | grep -o razor.xzm` ]; then
+	    cd /mnt/live/memory/images/*-razor.xzm >/dev/null; cp -a --parents home/guest/.config/qxkb.cfg root/.config/qxkb.cfg $dir; cd -
+	    sed -i -r 's/layout=.*$/layout="'$kmap',us"/' $dir/home/guest/.config/qxkb.cfg
+	    sed -i -r 's/layout=.*$/layout="'$kmap',us"/' $dir/root/.config/qxkb.cfg
+	fi
+	# XFCE
+	if [ `ls /mnt/live/memory/images | grep -o xfce.xzm` ]; then
+	    cd /mnt/live/memory/images/*-xfce.xzm >/dev/null; cp -a --parents home/guest/.config/xfce4/panel/xkb-plugin-16.rc root/.config/xfce4/panel/xkb-plugin-16.rc $dir; cd -
+	    sed -i -r 's/layouts=.*$/layouts='$kmap',us/' $dir/home/guest/.config/xfce4/panel/xkb-plugin-16.rc
+	    sed -i -r 's/layouts=.*$/layouts='$kmap',us/' $dir/root/.config/xfce4/panel/xkb-plugin-16.rc
+	fi
+	# Fix perms just in case
+	chown -R 1000:1000 $dir/home/guest 2>/dev/null
+    fi
+fi
+
+## Copy Libre Office files if requested
+if [ `grep -o "libre=true" $dump` ]; then
+  echo "$lorepo" > /tmp/locale-link.txt
+  lorepo=http://www.slackel.gr/repo/$arch/current/slackel/locale
+  echo "Getting language info" >/tmp/.message
+  wget $lorepo -P $wrk
+  export lofile=`grep "libreoffice-l10n-$lolang" $wrk/locale|grep txz|cut -d'"' -f2`
+  lolink=$lorepo/$lofile
+  logit "LO locales chosen"
+  logit "$lolink"
+  rm $wrk/local
+  export STATE=DOWNLOAD
+  manual_progress "Downloading LO file now"
+  echo ${lolink##*/} > /tmp.cdload
+  wget --output-file=/tmp/.message $lolink -P $wrk && logit "LO locales downloaded" || logit "error downloading LO files"
+  locallibre=`find $wrk -name "libreoffice-l10n-$lolang*"`
+  kill_manual_progress
+  installpkg -root $dir $locallibre && logit "Installed $locallibre to $dir" || logit "error installing $locallibre"
+fi
+
+## Show desktops screen if chosen
+if [ `grep -o "desktops=true" $dump` ]; then
+  desktops_screen
+  if [ -f $wrk/desktops ]; then
+    grep true $wrk/desktops|awk -F= '{print$1}' > $wrk/chosen.tmp
+    rm $wrk/desktops
+  fi
+
+  ## Download browser locales (full modules)
+  for a in $porteus_browsers; do
+    if [ `grep -o $a $wrk/chosen.tmp` ]; then
+      download Locales 04-$a\_locales.xzm $localeslink/04-$a\_locales.xzm dummy && logit "Downloaded 04-$a\_locales.xzm"
+      sleep 1
+      export STATE=MANUAL
+      echo "Extracting locales from 04-$a" > /tmp/.message
+      xzm2dir 04-$a\_locales.xzm $dir > /tmp/.message && logit "Extracted 04-$a\_locales.xzm"
+      sleep 1
+      kill_manual_progress
+    fi
+  done
+
+  ## Download desktop modules and get locales
+  for a in $porteus_desktops; do
+    if [ `grep -o $a $wrk/chosen.tmp` ]; then
+    download Locales 003-$a\_locales.xzm $localeslink/003-$a\_locales.xzm dummy && logit "Downloaded 003-$a\_locales.xzm"
+    sleep 1
+    fi
+  done
+  
+  manual_progress "Copying desktop locales now"
+  for a in $porteus_desktops; do
+  if [ `grep -o $a $wrk/chosen.tmp` ]; then
+      export STATE=MANUAL
+      echo "Mounting 003-$a ... please wait" > /tmp/.message
+      mloop 003-$a\_locales.xzm && logit "Mounted 003-$a\_locales.xzm at /mnt/loop" || logit "error: Cant mount 003-$a\_locales.xzm"
+      echo "Copying locales for $a ... please wait" > /tmp/.message
+      [ ! -d $dir/usr/share/locale ] && mkdir -p $dir/usr/share/locale
+      echo "Copying /usr/share/locale" > /tmp/.message
+      sleep 2
+      cp -a /mnt/loop/locale/$lolang* $dir/usr/share/locale/ && logit "Copied locales from 003-$a\_locales.xzm"
+      echo "Copying /usr folder" > /tmp/.message
+      sleep 2
+      [ -f /mnt/loop/usr ] && cp -a /mnt/loop/usr $dir
+      umount /mnt/loop && logit "Unmounted 003-$a\_locales.xzm" || logit "error: Cant unmount 003-$a\_locales.xzm from /mnt/loop"
+  fi
+  done
+  kill_manual_progress
+fi
+
+## Copy KDE4 files if requested
+if [ `grep -o "kde" $wrk/chosen.tmp` ]; then
+  wget -qO- $kdelink | grep kde-l10n | cut -d- -f3 > $wrk/.kde
+  kde_screen
+  echo "KDE: $lang chosen" >> $log
+  rm $wrk/.kde
+  grep "Exit=" $dump|egrep "Cancel|abort" && clean_and_bail
+  lang=`grep "lang" $wrk/.kde4|cut -d'"' -f2`
+  ## Give progress window
+  export STATE=MANUAL
+  echo "Mounting remote KDE4 file ..." > /tmp/.message
+  manual_progress "Copying remote files. Please wait ..."
+  kde4=`wget -qO- $kdelink | grep kde-l10n-$lang- | cut -d'"' -f4`
+  httpfs2 $kdelink/$kde4 $wrk/bundle >> $log 2>&1 && mloop $wrk/bundle/$kde4 >/dev/null
+  echo "Copying remote KDE4 files ..." > /tmp/.message
+  cp -a /mnt/loop/* $dir && logit "Copied locales from $kde4"
+  uloop >/dev/null; umount $wrk/bundle
+  sleep 1
+  kill_manual_progress
+fi
+
+if [ `grep "nonlatin=true" $dump` ]; then
+  ## Get scim version
+  #lynx -dump -nonumbers -listonly $link|grep scim > $wrk/scim
+  #scim64=`grep "x86_64" $wrk/scim`
+  #scim32=`grep "i486" $wrk/scim`
+  lynx -dump -nonumbers -listonly $nlink|grep font > $wrk/fontlinks
+  nonlatin_screen
+  sed -i 's^_^-^g' $wrk/nonlatin
+  sed -i 's^sinhala-lklug^sinhala_lklug^g' $wrk/nonlatin
+  export STATE=DOWNLOAD
+  manual_progress "Downloading ..."
+  for nonlat in `grep "true" $wrk/nonlatin|awk -F'=' '{print$1}'`; do
+    flink=`grep $nonlat $wrk/fontlinks`
+    fname=${flink##*/}
+    echo "$fname" > /tmp/.cdload
+    wget -o /tmp/.message $flink -P $pth
+  done
+  sleep 1
+  kill_manual_progress
+fi
+
+if [ `grep "scim=true" $dump` ]; then
+  scimlink=`lynx -dump -nonumbers -listonly $nlink|grep scim|grep "\-$arch\-"`
+  export STATE=DOWNLOAD
+  nam=${scimlink##*/}
+  echo $nam > /tmp/.cdload
+  manual_progress "Downloading ..."
+  wget -o /tmp/.message $scimlink -P $pth
+  sleep 1
+  kill_manual_progress
+fi
+
+## Create final module
+export STATE=BUILDMODULE
+manual_progress "Building module"
+dir2xzm $dir $pth/locales-$enc.utf8-$arch-1prt.xzm >/tmp/.message
+sleep 1
+kill_manual_progress
+
+## Notify of finished modules
+gtk_message "You language modules are now at: $pth" 500 gtk-yes
+clean_and_bail
+exit

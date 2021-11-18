@@ -1,0 +1,80 @@
+PACKAGE NAME:     dnsmasq-2.57-i486-1
+COMPRESSED PACKAGE SIZE:     224K
+UNCOMPRESSED PACKAGE SIZE:     550K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/dnsmasq-2.57-i486-1.txz
+PACKAGE DESCRIPTION:
+dnsmasq: dnsmasq (small DNS and DHCP server)
+dnsmasq:
+dnsmasq: Dnsmasq is a lightweight, easy to configure DNS forwarder and DHCP
+dnsmasq: server.  It is designed to provide DNS (and optionally DHCP) to a
+dnsmasq: small network, and can serve the names of local machines which are not
+dnsmasq: in the global DNS. 
+dnsmasq:
+dnsmasq: Dnsmasq was written by Simon Kelley.
+dnsmasq:
+dnsmasq:
+dnsmasq:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+etc/
+etc/rc.d/
+etc/rc.d/rc.dnsmasq.new
+etc/dnsmasq.d/
+etc/dnsmasq.conf.new
+var/
+var/state/
+var/state/dnsmasq/
+usr/
+usr/doc/
+usr/doc/dnsmasq-2.57/
+usr/doc/dnsmasq-2.57/COPYING
+usr/doc/dnsmasq-2.57/FAQ
+usr/doc/dnsmasq-2.57/setup.html
+usr/doc/dnsmasq-2.57/doc.html
+usr/doc/dnsmasq-2.57/CHANGELOG
+usr/share/
+usr/share/locale/
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/no/
+usr/share/locale/no/LC_MESSAGES/
+usr/share/locale/no/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/dnsmasq.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/dnsmasq.mo
+usr/sbin/
+usr/sbin/dnsmasq
+usr/man/
+usr/man/man8/
+usr/man/man8/dnsmasq.8.gz
+usr/man/es/
+usr/man/es/man8/
+usr/man/es/man8/dnsmasq.8.gz
+usr/man/fr/
+usr/man/fr/man8/
+usr/man/fr/man8/dnsmasq.8.gz

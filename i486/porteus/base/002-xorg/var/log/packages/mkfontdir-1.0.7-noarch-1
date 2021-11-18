@@ -1,0 +1,36 @@
+PACKAGE NAME:     mkfontdir-1.0.7-noarch-1
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/mkfontdir-1.0.7-noarch-1.txz
+PACKAGE DESCRIPTION:
+mkfontdir: mkfontdir (X11 font utility)
+mkfontdir:
+mkfontdir: mkfontdir creates the fonts.dir files needed by the legacy X server
+mkfontdir: core font system. The current implementation is a simple wrapper
+mkfontdir: script around the mkfontscale program, which must be built and
+mkfontdir: installed first.
+mkfontdir:
+mkfontdir:
+mkfontdir:
+mkfontdir:
+mkfontdir:
+FILE LIST:
+./
+var/
+var/log/
+var/log/setup/
+var/log/setup/setup.04.mkfontdir
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mkfontdir
+usr/man/
+usr/man/man1/
+usr/man/man1/mkfontdir.1.gz
+usr/doc/
+usr/doc/mkfontdir-1.0.7/
+usr/doc/mkfontdir-1.0.7/ChangeLog
+usr/doc/mkfontdir-1.0.7/COPYING
+usr/doc/mkfontdir-1.0.7/README
+usr/doc/mkfontdir-1.0.7/INSTALL

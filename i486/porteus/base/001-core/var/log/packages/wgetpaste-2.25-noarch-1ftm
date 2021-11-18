@@ -1,0 +1,33 @@
+PACKAGE NAME:     wgetpaste-2.25-noarch-1ftm
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/NEW-SRC/32/wgetpaste-2.25-noarch-1ftm.tgz
+PACKAGE DESCRIPTION:
+wgetpaste: wgetpaste (command-line interface to various pastebins)
+wgetpaste:
+wgetpaste: wgetpaste is a command line interface for various pastebins.
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+FILE LIST:
+./
+install/
+install/slack-desc
+etc/
+etc/wgetpaste.conf.sample
+usr/
+usr/share/
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_wgetpaste
+usr/man/
+usr/man/man1/
+usr/man/man1/wgetpaste.1.gz
+usr/bin/
+usr/bin/wgetpaste_info
+usr/bin/wgetpaste

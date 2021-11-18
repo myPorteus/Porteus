@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Porteus FAQ</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Unknown" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+
+<body>
+
+<!--header -->
+<div id="header-wrap"><div id="header">
+
+	<a name="top"></a>
+
+	<h1 id="logo-text"><a href="index.html" title="">Porteus help file</a></h1>
+	<p id="slogan">Porteus help file</p>
+
+	<div  id="nav">
+		<ul>
+			<li id="current"><a href="index.html" title="Frequently asked questions">FAQ</a></li>
+			<li><a href="ppm.html" title="Porteus Package Manager">Package Manager</a></li>
+                        <li><a href="tipsntricks.html" title="Porteus Tips and Tricks">Tips and Tricks</a></li>  
+			<li><a href="http://porteus.org" title="Browse the Porteus website">Website</a></li>
+			<li><a href="http://forum.porteus.org" title="Visit the forum">Forum</a></li>
+			<li><a href="http://build.porteus.org" title="Download Porteus">Download</a></li>
+			<li><a href="http://porteus.org/contact-us.html" title="Contact us">Contact</a></li>
+		</ul>
+	</div>
+
+   <p id="rss" name="website"><a href="http://forum.porteus.org" title="Visit the Porteus forum">Visit the forum</a>
+   </p>
+   <!--/header-->
+</div></div>
+	
+<!-- content-outer -->
+<div id="content-wrap" class="clear" >
+
+	<!-- content -->
+   <div id="content">
+
+   	<!-- main -->
+	   <div id="main">
+
+      	<div class="post">
+
+      		<div class="right">
+
+            	<h2><a href="index.html">Frequently asked questions</a></h2>
+
+               <p class="post-info">Porteus portable linux<a href="index.html"></a></p>
+
+               	<div class="image-section"></div>
+
+               <ol>
+                  <li><strong><a href="#one">What is Porteus?</a></strong></li>
+                  <li><strong><a href="#two">What does Porteus look like?</a></strong></li>
+                  <li><strong><a href="#three">Who would be interested in Porteus?</a></strong></li>
+                  <li><strong><a href="#four">Can I install Porteus to my hard drive?</a></strong></li>
+                  <li><strong><a href="#five">How do I check an md5sum and why is it so important?</a></strong></li>
+                  <li><strong><a href="#six">How to disable Kernel Mode Setting on amd/ati, nvidia and intel GPU's?</a></strong></li>
+                  <li><strong><a href="#eight">Why is the KDE4 desktop missing applications like: konqueror, kontact, kopete etc?</a></strong></li>
+                  <li><strong><a href="#nine">Why aren't my 32 bit modules working in 64 bit Porteus?</a></strong></li>
+                  <li><a href="#ten"><strong>How do I get my wireless card to work?</strong></a></li>
+                  <li><a href="#twelve"><strong>How can I install new programs that are not included in the default Porteus ISO?</strong></a></li>
+                  <li><a href="#thirteen"><strong>How do I setup national language support in Porteus?</strong></a></li>
+                  <li><a href="#fourteen"><strong>How do I report a bug?</strong></a></li>
+                  <li><a href="#sixteen"><strong>What is a cheat code?</strong></a></li>
+                  <li><a href="#seventeen"><strong>How can I find out more about the various cheat codes?</strong></a></li>
+                  <li><a href="#eighteen"><strong>Porteus hangs during xorg/GUI initialization 'starting X11' - how can I fix it?</strong></a></li>
+                  <li><a href="#twenty"><strong>My PC has low memory amount - is there any simple way of increasing it?</strong></a></li>
+                  <li><a href="#twenty2"><strong>How can I customize the Porteus ISO?</strong></a></li>
+                  <li><a href="#twenty3"><strong>I'm using /porteus/rootcopy for adding files to the live filesystem and all of the permissions are messed up.</strong></a></li>
+                  <li><a href="#twenty4"><strong>How can I boot Porteus from the ISO image file?</strong></a></li>
+                  <li><a href="#twenty5"><strong>How can I log in to the desktop as the 'root' user?</strong></a></li>
+                  <li><a href="#twenty6"><strong>How can I change the default passwords for the root and guest users?</strong></a></li>
+                  <li><a href="#twenty7"><strong>How do I remove or replace the firefox add-ons that are included by default in Porteus?</strong></a></li>
+                  <li><a href="#twenty8"><strong>How do I create a module for use in Porteus?</strong></a></li>
+                  <li><a href="#twenty9"><strong>How can I compile software from source code and create a Porteus module from it?</strong></a></li>
+                  <li><a href="#thirty1"><strong>How can I track missing package dependencies?</strong></a></li>
+                  <br />
+                  <br />
+                  <hr />
+                <p><strong><br />
+                    <a name="one" id="one"></a>What is Porteus?</strong></p>
+                  <p>Porteus is a lightning fast and small but powerful Linux operating system that can be installed on a USB flash device, CDROM, MMC/SD card or Hard Drive. Once installed on the storage media of your choice, it can be run on almost any PC, giving you the power and freedom of Linux anywhere you go. In essence, Porteus is a lightweight and portable implementation of the Slackware Linux Operating System that boots directly from your storage media without needing to modify or utilize your existing operating system (your computer doesn't even need a hard drive!). To accomplish this, it makes use of the Linux Live Scripts, which have been heavily modified for much faster boot-up and shutdown times. Unlike a standard Linux installation, Porteus exists in a compressed state on your storage media, with no /root, /bin, /usr, etc. directory structure on the media itself. The familiar Linux file structure is created on the fly (i.e., 'live') in your computer's RAM during the boot process, which only takes about 20-30 seconds to get from pressing the power button to full productivity on a relatively new computer. Porteus is modular in design, which means that extra software comes in the form of 'modules' which can be activated and injected into this live file system. Software does not need to be installed and uninstalled as you may expect with other operating systems which take numerous amounts of clicks and agreements; you simply double click on a module and it is activated and ready for use in a second or two. To remove this software, just double click again and it will be deactivated. It's that simple! <br><br>Porteus started out as a community remix project to keep the Slax OS up to date. It has now come into its own as a fully-fledged Linux distribution. It is available in both 32-bit and 64-bit editions, making it the perfect "on the go" solution whether you're running a netbook, an old pentium or a brand-new power system. We hope you enjoy using Porteus as much as we have enjoyed creating it!</p>
+                  <p><strong><br />
+                    <a name="two" id="two"></a>What does Porteus look like?</strong></p>
+                  <p>Here are a few screenshots:</p>
+                  <p><a href="http://porteus.org/screenshots/porteus32.jpg">Porteus 32 bit desktop</a></p>
+                  <p><a href="http://porteus.org/screenshots/porteus64.jpg">Porteus 64 bit (KDE4) desktop</a></p>
+                  <p><a href="http://porteus.org/screenshots/current-splash.jpg">Porteus Boot menu splash</a></p>
+                  <p><a href="http://porteus.org/info/screens.html" title="Porteus screenshots">See various screenshots here</a></p>
+                  <p><strong><br />
+                    <a name="three" id="three"></a>Who would be interested in Porteus?</strong></p>
+                  <p>Anyone who likes an extremely fast and light operating system that boots in seconds and stays up to date with the latest software and kernel versions. Porteus is also a great way to try out linux from a USB device if you want a taste of linux without having to partition and format a hard drive. <a href="http://porteus.org/faq/49-why-choose-porteus.html">Read more here</a></p>
+                  <p><strong><br />
+                    <a name="four" id="four"></a>Can I install Porteus to my hard drive?</strong></p>
+                  <p>You can run Porteus from your hard drive whether it is an external or internal hard drive. We advise that you run Porteus from these media in its compressed form, commonly referred to as a 'frugal' install. We do not support decompressing Porteus to your system as a regular linux install. You should install Slackware instead.</p>
+                  <p><strong><br />
+                    <a name="five" id="five"></a>How do I check an md5sum and why is it so important?</strong></p>
+                  <p>An md5sum is a way of ensuring that files have not become corrupted while being transferred over the internet. If you download a file to your computer and its md5sum matches the md5sum listed on the server (in the md5sums.txt file, for example), you can be 100% sure that your download was not corrupted. You can check the md5sum on a file by running this command in the console:</p>
+                  <p><em><strong>md5sum your_file</strong></em></p>
+                  <p>If the md5sums do not match, please download the ISO or xzm module once again.</p>
+                  <p><strong><br />
+                    <a name="six" id="six"></a>How to disable Kernel Mode Setting on amd/ati, nvidia and intel GPU's?</strong></p>
+                  <p>Kernel Mode Setting (<em>high resolution in console mode</em>) is enabled by default on all modern GPU's. If you wish to disable it, just add the: 'nomodeset' cheatcode to your /boot/syslinux/porteus.cfg file.<br />
+                    Be aware that intel, opensource radeon and nouveau drivers won't work without KMS in Graphical User Interface mode.</p>
+                  <p><strong><br />
+                    <a name="eight" id="eight"></a>Why is the KDE4 desktop missing applications like: konqueror, kontact, kopete, kuser, etc?</strong></p>
+                  <p>Porteus strives to keep it's file size below 300Mb - that's why the KDE4 module is stripped of all less important applications. If you really need any special KDE4 application, please post a request in the relevant thread on the Porteus forum and we'll try to prepare it for you.</p>
+                  <p><strong><br />
+                    <a name="nine" id="nine"></a>Why aren't my 32 bit modules working in 64 bit Porteus?</strong></p>
+                  <p>If you are running the 64-bit version of Porteus, 32-bit applications wont work until you install the relevant 32-bit libraries. Please use the 32-bit compatibility modules as described in <a href="http://forum.porteus.org/viewtopic.php?f=39&amp;t=134">this</a> forum post.</p>
+                  <p><strong><br />
+                    <a name="ten" id="ten"></a>How do I get my wireless card to work?</strong></p>
+                  <p>Use <em><strong>'Network Manager'</strong></em> or the <em><strong>'pns-tool/xpns-tool'</strong></em> utilities (launched from terminal) to setup your connection in an 'easy way'. Network Manager users may be interested in a few tweaks which help to connect faster: <a href="http://forum.porteus.org/viewtopic.php?f=39&t=1215&sid=ea8c3774395b98f368ad1471cf6d893f">click here</a>. Broadcom owners who prefer open source drivers over broadcom-sta should read this HOWTO: <a href="http://forum.porteus.org/viewtopic.php?f=39&t=1099&sid=ea8c3774395b98f368ad1471cf6d893f">click here</a>.</p> 
+                  <p><strong><br />
+                    <a name="twelve" id="twelve"></a>How can I install new programs that are not included in the default Porteus ISO?</strong></p>
+                  <p>A new program is included with Porteus Version 3.0 and higher, called Unified Slackware package Manager (USM). It can be opened from the desktop menu under the 'System' heading, or run from the command line, as 'usm'.
+                  <p><strong><br />
+                    <a name="thirteen" id="thirteen"></a>How do I setup national language support in Porteus?</strong></p>
+                  <p>Use Language Selection Tool. Launch it through the <em><strong>'Porteus Settings Centre'</strong></em>.</p>
+                  <p><strong><br />
+                    <a name="fourteen" id="fourteen"></a>How do I report a bug?</strong></p>
+                  <p>Try to recreate the bug first: boot Porteus in 'Always Fresh' mode and if you are able to recreate the error, post a bug report on the <a href="http://www.forum.porteus.org/">Porteus forum</a> in the relevant section. Please attach links to screenshots and generate system report through the 'psinfo' utility (run it from command line or through Porteus Settings Centre). For storing log files, please use external sites like pastebin.com and post web links only. Make sure that error was not created by a user mistake, typo, etc. - please save our time!</p>
+                  <p><strong><br />
+                    <a name="sixteen" id="sixteen"></a>What is a cheat code?</strong></p>
+                  <p>A cheat code refers to a command that can be entered at the start of booting (or entered into /boot/syslinux/porteus.cfg for permanence) which passes a value to porteus, such as <em><strong>'nocd'</strong></em> to prevent booting from CD or <em><strong>'acpi=off'</strong></em> to disable advanced configuration and power interface settings. These can be very useful for trouble shooting problem components.</p>
+                  <p><strong><br />
+                    <a name="seventeen" id="seventeen"></a>How can I find out more about the various cheat codes?</strong></p>
+                  <p>You can find an updated cheatcode list in the /boot/docs/cheatcodes.txt file inside the Porteus ISO, or you can go <a target="_blank" href="http://www.porteus.org/tutorials/26-general-info-tutorials/117-cheatcodes-what-they-are-and-how-to-use-them.html">here</a>. Familiarize yourself with the cheat codes as they can come in handy.</p>
+                  <p><strong><br />
+                    <a name="eighteen" id="eighteen"></a>Porteus hangs during xorg/GUI initialization 'starting X11' - how can I fix it?</strong></p>
+                  <p>Try to add the '<strong><em>vmalloc=256MB</em></strong>' cheatcode to your /boot/syslinux/porteus.cfg file under the mode you boot into. If the error still exists, please post a bug report on the Porteus forum in the relevant section.</p>
+                  <p><strong><br />
+                    <a name="twenty" id="twenty"></a>My PC has low memory amount - is there any simple way of increasing it?</strong></p>
+                  <p>Create a <a href="http://en.wikipedia.org/wiki/Special:Search/swap%20file" title="wikipedia: swap file" rel="nofollow" target="wikipedia">swap file</a> on your hard drive which will act as an extra (<em>but slower</em>) memory bank. Run the following command in a console to create and activate a 500MB swap file on the partition 'sda9':</p>
+                  <p><em><strong>mkfileswap /mnt/sda9/Porteus.swap 500</strong></em></p>
+                  <p>If you want to have this swap file activated by default, add following command to your /etc/rc.d/rc.local:</p>
+                  <p><em><strong>swapon /mnt/sda9/Porteus.swap</strong></em></p>
+                  <p>You should replace sda9 with the path of your own partition. You can see your partition setup by typing <strong><em>fdisk -l</em></strong> in a console from any location.</p>
+                    <p></strong><br />
+                    <a name="twenty2" id="twenty2"></a><strong>How can I customize the Porteus ISO?</strong></p>
+                  <p>Make all of your desired changes to the /boot and /porteus folders to make them look exactly how they should appear on your custom ISO. Then run the script /porteus/make_iso.sh which will create a new ISO with a name and location you provide.<br />
+                    <br />
+                    Example of how to run make_iso.sh:</p>
+                  <p><strong><em>cd /mnt/sdXN/porteus/</em></strong><br />
+                    <strong><em>./make_iso.sh</em></strong></p>
+                 <p>where sdXN is the location of your /boot and /porteus folders.</p>
+                  <p><br />
+                    <a name="twenty3" id="twenty3"></a><strong>I'm using /porteus/rootcopy for adding files to the live filesystem and all of the permissions are messed up.</strong></p>
+                  <p>When the /porteus/rootcopy folder is placed on a FAT/NTFS filesystem, all files are given 777 permissions due to Windows filesystem limitations. If you want to keep your original permissions then you must use an xzm module and not /rootcopy.<br /><br />
+                  REMINDER: all of the above applies to FAT/NTFS, you can use /porteus/rootcopy as normal when placed on a supported linux fs.</p>
+                  <p><br />
+                    <a name="twenty4" id="twenty4"></a><strong>How can I boot Porteus from the ISO image file?</strong></p>
+                  <p>In order to boot from the ISO image, your bootloader must boot Porteus from the linux kernel and initrd included in that ISO (otherwise, the kernel version will differ from the version of the kernel modules included in the ISO in /porteus/base/000-kernel.xzm). You need to unpack /boot/syslinux/vmlinuz and /boot/syslinux/initrd.xz and place them somewhere on your hard disk or USB drive. Then, you need to point your bootloader to that kernel and initrd and use the 'from=' cheatcode. For more information on this topic, please read <a href="http://www.porteus.org/component/content/article/10-tutorials/installing/138-howto-use-the-fromiso-cheatcode.html">this article</a>.</p>                  <p><strong><br />
+                    <a name="twenty5" id="twenty5"></a>How can I log in to GUI as the root user?</strong></p>
+                  <p>As of Version 1.0, Porteus will log you in as a non-root user called 'guest' by default. This is done to increase the security of your system. If you would like to boot into your desktop as the root user, just use the 'login=root' cheatcode.</p>
+                  <p><strong><br />
+                    <a name="twenty6" id="twenty6"></a>How can I change the default passwords for the root and guest users?</strong></p>
+                  <p>If you would like to change the default passwords ('toor' for root and 'guest' for guest), this can be done through the <em><strong>'Porteus Settings Centre'</strong></em>. Click the 'Security settings' box and choose the 'Porteus password' button.</p>
+                  <p><strong><br />
+                    <a name="twenty7" id="twenty7"></a>How do I remove or replace the firefox add-ons that are included by default in Porteus?</strong></p>
+                  <p>Add-ons are stored together with the firefox application in the 04-firefox.xzm module in your /porteus/base/ folder. You must extract this module, remove or replace the add-on, then recompress the module.<br />
+                    <br />
+                    For example, in the 32-bit edition, you would perform these actions, as root:<br />
+                    <br />
+                    1) Copy the 04-firefox.xzm module to your desktop<br />
+                    2) Right click on the module and select &quot;Extract xzm module...&quot;<br />
+                    3) Double click on the 04-firefox folder that is now on your desktop<br />
+                    4) Navigate inside this folder to usr/lib/firefox/extensions/<br />
+                    5) Remove or overwrite the randomly named folder that corresponds to the add-on you want to remove or replace (navigate inside each of these randomly named folders and open the 'chrome' folder to find out which folder corresponds to which extension)<br />
+                    6) Go back to your desktop, right click on the 04-firefox folder, and select &quot;create xzm module...&quot;<br />
+                    7) Copy the resulting firefox module back to /mnt/sdXN/porteus/base/ replacing the old one.<br />
+                    <br />
+                    In the 64-bit edition, you would follow the same steps, but the add-on files are located in:<br />
+                    <br />
+                    /usr/lib64/firefox/extensions/<br />
+                    <br />
+                    Be aware that the add-ons stored in /usr/lib (/usr/lib64 in the 64-bit edition) are enabled or disabled globally. If you want to enable add-ons for some users but not others, please place the add-ons in the home folder instead. For example:<br />
+                    04-firefox.xzm/home/fanthom/.mozilla/firefox/6fhu8eso.default/extensions/</p>
+                  <p><strong><br />
+                    <a name="twenty8" id="twenty8"></a>How do I create a module for use in Porteus?</strong></p>
+                  <p>Open your file manager (e.g. caja, thunar, pcmanfm or dolphin), navigate to the location of the folder you want to convert, then right click on it and choose &quot;create xzm module&quot; from the service menu. From the command line, you can use the <em><strong>dir2xzm</strong></em> command. For more information, see <a href="http://www.porteus.org/component/content/article/9-tutorials/modules/56-what-are-porteus-modules.html">this</a> article and <a href="http://www.porteus.org/tutorials/9-modules/121-howto-understanding-module-creation-and-manipulation-two-case-studies.html">this</a> article.</p>
+                  <p><strong><br />
+                    <a name="twenty9" id="twenty9"></a>How can I compile software from source code and create a Porteus module from it?</strong></p>
+                  <p>First of all you should activate development module: 05-devel.xzm (containing necessary utilities, libraries and headers) which can be find <a href="http://dl.porteus.org/i486/current/modules/">here</a> for 32bit and <a href="http://dl.porteus.org/x86_64/current/modules/">here</a> for 64bit architecture.<br />
+                    Next you should follow official Slax documentation from <a href="http://old.slax.org/documentation_create_modules_rules.php">here</a> to create modules in the right way.<br />
+                    <br />
+                    If you want to install all files to a specified directory please use this command: <br />
+                    <em><strong><br />
+                      make install DESTDIR=/tmp/destination</strong></em><br />
+                    <br />
+                    Sometimes the DESTDIR function is not present or does not work. If that's the case, please read this <a href="http://old.slax.org/forum.php?action=view&amp;parentID=69223">thread</a>.<br />
+                    <br />
+                    Or, you can pull out the files that are installed by the compiler using the '<em><strong>changes-time'</strong></em> script, which is included in the default ISO and saves all changes made to the Porteus system within a defined time interval. Simply run the script and enter a number of minutes, and your recently modified files will be placed in a new directory. For example, entering '5' for the number of minutes would save all files added or modified in the last five minutes to /root/changesXXXX/, and you could then create a module from that directory that would contain all of the files installed by 'make install'. It's a good idea to go through the files saved by this script, to make sure it only contains the files you want to go in your module.</p>
+                  <p><strong><br />
+                    <a name="thirty1" id="thirty1"></a>How can I track missing package dependencies?</strong></p>
+                  <p>USM (our package manager) should resolve and download any required dependencies for your packages automatically. However, if you are using packages from another location, you can use the <em><strong>'usm -d'</strong></em> command to download missing libraries. Open a terminal and type <em><strong>'usm -d'</strong></em> to check dependencies globally. If you want to check dependencies only for one specific application then please use the command <em><strong>'usm -d /var/log/packages/application_name'</strong></em>.</p>
+                  <p><strong><br />
+                    <p></p>
+                  <hr />
+                  <p>Thanks for reading this document :)<br />
+                    <br />
+                    Please pay special attention especially to <strong>'How to report a bug?'</strong> question. Please remember - the less time we spend on answering questions that are already answered in this FAQ, the more time we'll have for adding new features to Porteus!</p>
+              </ol>
+                <br />
+      		</div>
+      	</div>
+
+      	<!-- /main -->
+		</div>
+
+      <!-- sidebar -->
+		<div id="sidebar">
+
+      	<div class="about-me">
+
+         	<h3>Screenshots</h3>
+		      <p>
+		      <a href="index.html"><img src="images/gravatar.jpg" width="40" height="40" alt="firefox" class="float-left" /></a>
+            Porteus has the option to boot to one of the supported Desktops selected in the wizard. You can checkout some of the different styles that are used by various users here.<a href="http://porteus.org/info/screens.html" title="Porteus screenshots"> Learn more... </a></p>
+
+         </div>
+
+			<div class="sidemenu">
+
+				<h3>Sidebar Menu</h3>
+            <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ppm.html">PACKAGE MANAGER</a></li>
+					<li><a href="http://www.porteus.org/tutorials/10-installing/114-official-porteus-installation-guide.html">Installation</a></li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/118-howto-find-your-way-around-in-the-porteus-file-structure.html">PORTEUS FILE STRUCTURE</a></li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/116-howto-create-a-savedat-container-and-why-you-need-one.html" title="Porteus Partitions">PORTEUS ON FAT32/NTFS</a></li>
+					<li><a href="http://www.porteus.org/tutorials/9-modules/121-howto-understanding-module-creation-and-manipulation-two-case-studies.html" title="Web Templates">MODULE MANIPULATION</a></li>
+				</ul>
+
+			</div>
+
+			<div class="sidemenu">
+
+				<h3>Other links</h3>
+            <ul>
+					<li><a href="http://www.porteus.org/info/videos.html" title="Video gold!!">PORTEUS VIDEOS <br />
+	            	<span>Various video tutorials</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/features.html" title="Porteus features">PORTEUS FEATURES<br />
+	            	<span>Read about Porteus features</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/docs.html" title="Porteus Documentation">DOCUMENTATION<br />
+	            	<span>Full Porteus Documentation</span></a>
+          </li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/112-howto-use-the-rootcopy-directory.html" title="Cheatcodes">Cheatcodes<br />
+	            	<span>Important cheatcodes for booting</span></a>
+          </li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/112-howto-use-the-rootcopy-directory.html" title="Rootcopy">Rootcopy<br />
+	            	<span>What it is & how to use it</span></a>
+              </li>
+				</ul>
+
+			</div>
+
+         <div class="popular">
+
+				<h3>Porteus Media</h3>
+				<ul>
+			   	<li><a href="http://www.facebook.com/porteus.org" title="Facebook">Facebook</a><span></span>
+					</li>
+               <li><a href="http://twitter.com/#!/porteusOS">Twitter</a></li>
+               <li><a href="http://distrowatch.com/table.php?distribution=porteus">Distrowatch</a></li>
+               <li><a href="http://linux.softpedia.com/get/System/Operating-Systems/Linux-Distributions/Porteus-64578.shtml">Softpedia</a></li>
+               <li><a href="http://en.wikipedia.org/wiki/Porteus_(operating_system)" title="Wikiporteus">Wikipedia</a></li>
+				</ul>
+
+			</div>
+
+      <!-- /sidebar -->
+		</div>
+
+    <!-- content -->
+	</div>
+
+<!-- /content-out -->
+</div>
+		
+<!-- footer-outer -->
+<div id="footer-outer" class="clear"></div>
+
+<!-- footer-bottom -->
+<div id="footer-bottom">
+
+	<p class="bottom-left">
+  &copy; 2014 <strong>Copyright</strong></p>
+
+	<p class="bottom-right">
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
+	   <a href="http://validator.w3.org/check/referer">XHTML</a>	|
+		<a href="index.html">Home</a> |<a href="contact.html">Contact</a> |
+      <strong><a href="#top">Back to Top</a></strong>
+   </p>
+
+<!-- /footer-bottom-->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+PACKAGE NAME:     xhost-1.0.6-i486-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/xhost-1.0.6-i486-1.txz
+PACKAGE DESCRIPTION:
+xhost: xhost (X11 authorization utility)
+xhost:
+xhost: xhost is used to manage the list of host names or user names allowed
+xhost: to make connections to the X server.
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xhost
+usr/man/
+usr/man/man1/
+usr/man/man1/xhost.1.gz
+usr/doc/
+usr/doc/xhost-1.0.6/
+usr/doc/xhost-1.0.6/AUTHORS
+usr/doc/xhost-1.0.6/ChangeLog
+usr/doc/xhost-1.0.6/COPYING
+usr/doc/xhost-1.0.6/README
+usr/doc/xhost-1.0.6/INSTALL

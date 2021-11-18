@@ -1,0 +1,54 @@
+PACKAGE NAME:     readline-5.2-i486-4
+COMPRESSED PACKAGE SIZE:     292K
+UNCOMPRESSED PACKAGE SIZE:     820K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/readline-5.2-i486-4.txz
+PACKAGE DESCRIPTION:
+readline: readline (line input library with editing features)
+readline:
+readline: The GNU Readline library provides a set of functions for use by
+readline: applications that allow users to edit command lines as they are typed
+readline: in.  Both Emacs and vi editing modes are available.  The Readline
+readline: library includes additional functions to maintain a list of previously
+readline: entered command lines, to recall and perhaps edit those lines, and
+readline: perform csh-like history expansion on previous commands.  
+readline:
+readline:
+readline:
+FILE LIST:
+./
+usr/
+usr/doc/
+usr/doc/readline-5.2/
+usr/doc/readline-5.2/MANIFEST
+usr/doc/readline-5.2/COPYING
+usr/doc/readline-5.2/CHANGELOG
+usr/doc/readline-5.2/USAGE
+usr/doc/readline-5.2/INSTALL
+usr/doc/readline-5.2/CHANGES
+usr/doc/readline-5.2/README
+usr/lib/
+usr/lib/libreadline.so.5.2
+usr/lib/libreadline.a
+usr/lib/libhistory.so.5.2
+usr/lib/libhistory.a
+usr/include/
+usr/include/readline/
+usr/include/readline/history.h
+usr/include/readline/readline.h
+usr/include/readline/chardefs.h
+usr/include/readline/rltypedefs.h
+usr/include/readline/keymaps.h
+usr/include/readline/tilde.h
+usr/include/readline/rlconf.h
+usr/include/readline/rlstdc.h
+usr/man/
+usr/man/man3/
+usr/man/man3/history.3.gz
+usr/man/man3/readline.3.gz
+usr/info/
+usr/info/history.info.gz
+usr/info/readline.info.gz
+usr/info/rluserman.info.gz
+install/
+install/doinst.sh
+install/slack-desc

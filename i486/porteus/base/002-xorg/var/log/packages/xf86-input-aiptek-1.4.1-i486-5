@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-input-aiptek-1.4.1-i486-5
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /root/new/xf86-input-aiptek-1.4.1-i486-5.txz
+PACKAGE DESCRIPTION:
+xf86-input-aiptek: xf86-input-aiptek (Aiptek USB Digital Tablet Input Driver for Linux)
+xf86-input-aiptek:
+xf86-input-aiptek: xf86-input-aiptek is part of X11.
+xf86-input-aiptek:
+xf86-input-aiptek: For more information about the X.Org Foundation (the providers of the
+xf86-input-aiptek: X.Org implementation of the X Window System), see their website:
+xf86-input-aiptek:
+xf86-input-aiptek: http://www.x.org
+xf86-input-aiptek:
+xf86-input-aiptek:
+xf86-input-aiptek:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/man/
+usr/man/man4/
+usr/man/man4/aiptek.4.gz
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/aiptek_drv.so
+usr/lib/xorg/modules/input/aiptek_drv.la
+usr/doc/
+usr/doc/xf86-input-aiptek-1.4.1/
+usr/doc/xf86-input-aiptek-1.4.1/ChangeLog
+usr/doc/xf86-input-aiptek-1.4.1/COPYING
+usr/doc/xf86-input-aiptek-1.4.1/README
+usr/doc/xf86-input-aiptek-1.4.1/INSTALL

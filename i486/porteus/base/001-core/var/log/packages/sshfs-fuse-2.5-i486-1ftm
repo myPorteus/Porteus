@@ -1,0 +1,36 @@
+PACKAGE NAME:     sshfs-fuse-2.5-i486-1ftm
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /tmp/sshfs-fuse-2.5-i486-1ftm.tgz
+PACKAGE DESCRIPTION:
+sshfs-fuse: sshfs-fuse (ssh file system module for FUSE)
+sshfs-fuse:
+sshfs-fuse: This is a filesystem client based on the SSH File Transfer
+sshfs-fuse: Protocol. Since most SSH servers already support this protocol it
+sshfs-fuse: is very easy to set up: i.e. on the server side there's nothing
+sshfs-fuse: to do.  On the client side mounting the filesystem is as easy as
+sshfs-fuse: logging into the server with ssh.
+sshfs-fuse:
+sshfs-fuse: 
+sshfs-fuse:
+sshfs-fuse:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/sshfs-fuse-2.5/
+usr/doc/sshfs-fuse-2.5/sshfs-fuse.SlackBuild
+usr/doc/sshfs-fuse-2.5/README
+usr/doc/sshfs-fuse-2.5/NEWS
+usr/doc/sshfs-fuse-2.5/INSTALL
+usr/doc/sshfs-fuse-2.5/FAQ.txt
+usr/doc/sshfs-fuse-2.5/ChangeLog
+usr/doc/sshfs-fuse-2.5/COPYING
+usr/doc/sshfs-fuse-2.5/AUTHORS
+usr/man/
+usr/man/man1/
+usr/man/man1/sshfs.1.gz
+usr/bin/
+usr/bin/sshfs

@@ -1,0 +1,41 @@
+PACKAGE NAME:     rsync-3.1.0-i486-1
+COMPRESSED PACKAGE SIZE:     288K
+UNCOMPRESSED PACKAGE SIZE:     610K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/rsync-3.1.0-i486-1.txz
+PACKAGE DESCRIPTION:
+rsync: rsync (remote file sync)
+rsync:
+rsync: rsync is a replacement for rcp that has many more features.  It
+rsync: uses the "rsync algorithm" which provides a very fast method for
+rsync: bringing remote files into sync.  It does this by sending just the
+rsync: differences in the files across the link, without requiring that both
+rsync: sets of files are present at one of the ends of the link beforehand.
+rsync:
+rsync: rsync was written by Andrew Tridgell and Paul Mackerras.
+rsync:
+rsync:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rsync
+usr/man/
+usr/man/man5/
+usr/man/man5/rsyncd.conf.5.gz
+usr/man/man1/
+usr/man/man1/rsync.1.gz
+usr/doc/
+usr/doc/rsync-3.1.0/
+usr/doc/rsync-3.1.0/tech_report.tex
+usr/doc/rsync-3.1.0/COPYING
+usr/doc/rsync-3.1.0/README
+usr/doc/rsync-3.1.0/INSTALL
+usr/doc/rsync-3.1.0/popt/
+usr/doc/rsync-3.1.0/popt/COPYING
+usr/doc/rsync-3.1.0/popt/CHANGES
+usr/doc/rsync-3.1.0/popt/README
+usr/doc/rsync-3.1.0/popt/README.rsync
+usr/doc/rsync-3.1.0/NEWS
+usr/doc/rsync-3.1.0/TODO

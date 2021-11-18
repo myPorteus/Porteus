@@ -1,0 +1,35 @@
+PACKAGE NAME:     xkbcomp-1.2.4-i486-1
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     260K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/xkbcomp-1.2.4-i486-1.txz
+PACKAGE DESCRIPTION:
+xkbcomp: xkbcomp (X Keyboard Extension)
+xkbcomp:
+xkbcomp: xkbcomp is part of X11.
+xkbcomp:
+xkbcomp: For more information about the X.Org Foundation (the providers of the
+xkbcomp: X.Org implementation of the X Window System), see their website:
+xkbcomp:
+xkbcomp: http://www.x.org
+xkbcomp:
+xkbcomp:
+xkbcomp:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xkbcomp
+usr/man/
+usr/man/man1/
+usr/man/man1/xkbcomp.1.gz
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xkbcomp.pc
+usr/doc/
+usr/doc/xkbcomp-1.2.4/
+usr/doc/xkbcomp-1.2.4/ChangeLog
+usr/doc/xkbcomp-1.2.4/COPYING
+usr/doc/xkbcomp-1.2.4/README
+usr/doc/xkbcomp-1.2.4/INSTALL

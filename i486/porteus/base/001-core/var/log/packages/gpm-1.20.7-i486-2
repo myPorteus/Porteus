@@ -1,0 +1,83 @@
+PACKAGE NAME:     gpm-1.20.7-i486-2
+COMPRESSED PACKAGE SIZE:     164K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/gpm-1.20.7-i486-2.txz
+PACKAGE DESCRIPTION:
+gpm: gpm (general purpose mouse server)
+gpm:
+gpm: The general purpose mouse server, or gpm, allows you to use the mouse
+gpm: to cut and paste text from the screen.  It also acts as a mouse 
+gpm: server for applications running on the Linux console, such as the
+gpm: Midnight Commander file manager. 
+gpm:
+gpm: NOTE:  This program may cause problems when you start X on systems 
+gpm: that use a bus mouse (not common).  If you get an 'unable to open
+gpm: mouse device' error from X, disable /etc/rc.d/rc.gpm.
+gpm:
+FILE LIST:
+./
+var/
+var/log/
+var/log/setup/
+var/log/setup/setup.mouse
+lib/
+lib/libgpm.so.2.1.0
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/inputattach
+usr/bin/mouse-test
+usr/bin/disable-paste
+usr/bin/gpm-root
+usr/bin/hltest
+usr/bin/get-versions
+usr/bin/mev
+usr/bin/display-buttons
+usr/bin/display-coords
+usr/man/
+usr/man/man7/
+usr/man/man7/gpm-types.7.gz
+usr/man/man8/
+usr/man/man8/gpm.8.gz
+usr/man/man1/
+usr/man/man1/gpm-root.1.gz
+usr/man/man1/mev.1.gz
+usr/man/man1/mouse-test.1.gz
+usr/lib/
+usr/lib/libgpm.a
+usr/sbin/
+usr/sbin/mouseconfig
+usr/sbin/gpm
+usr/info/
+usr/info/gpm.info.gz
+usr/share/
+usr/share/emacs/
+usr/share/emacs/site-lisp/
+usr/share/emacs/site-lisp/t-mouse.el
+usr/include/
+usr/include/gpm.h
+usr/doc/
+usr/doc/gpm-1.20.7/
+usr/doc/gpm-1.20.7/README.1.20.2
+usr/doc/gpm-1.20.7/HACK_GPM
+usr/doc/gpm-1.20.7/README.synaptics
+usr/doc/gpm-1.20.7/README.versions
+usr/doc/gpm-1.20.7/README.gpm2
+usr/doc/gpm-1.20.7/FAQ
+usr/doc/gpm-1.20.7/COPYING
+usr/doc/gpm-1.20.7/README.etouch
+usr/doc/gpm-1.20.7/README.gunze
+usr/doc/gpm-1.20.7/README
+usr/doc/gpm-1.20.7/Announce
+usr/doc/gpm-1.20.7/README.twiddler
+usr/doc/gpm-1.20.7/changelog
+usr/doc/gpm-1.20.7/MANIFEST
+usr/doc/gpm-1.20.7/README.microtouch
+usr/doc/gpm-1.20.7/TODO
+etc/
+etc/gpm-syn.conf
+etc/gpm-twiddler.conf
+etc/gpm-root.conf
+etc/rc.d/

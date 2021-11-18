@@ -1,0 +1,148 @@
+#!/bin/sh
+# Activate modules on the fly.
+# Author: fanthom
+
+# Exit if no argument is provided:
+if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "$0 module.xzm"
+    echo "$0 module1.xzm module2.xzm module3.xzm"
+    echo "$0 /folder/with_modules"
+    echo
+    echo "To disable recursive activation of folders run activate with '-o' (one level) flag:"
+    echo "$0 -o /folder/with_modules"
+    exit
+fi
+
+# Arch specific variables:
+if [ `uname -m|grep "x86_64"` ]; then
+    lib=lib64
+else
+    lib=lib
+fi
+
+# Switch to root:
+if [ `whoami` != root ]; then
+    # Enable 'one level' activation if requested:
+    if [ "$1" = "-o" ]; then
+	farg="-maxdepth 1"
+	MODULE=`echo "$*" | sed 's/-o\ //'`
+    else
+	MODULE=$*
+    fi
+    # Get full paths to the modules (needed after switching to root):
+    for x in $MODULE; do
+	if [ -d $x ]; then
+	    for y in `find $x $farg -name "*.xzm"`; do LIST="$LIST `readlink -f $y`"; done
+	else
+	    LIST="$LIST `readlink -f $x`"
+	fi
+    done
+    # Re-execute this script with super user privileges:
+    if [ "$DISPLAY" ]; then
+	/opt/porteus-scripts/xorg/psu "/opt/porteus-scripts/activate $LIST"
+	exit
+    else
+	echo "Please enter root's password below"
+	su -c "/opt/porteus-scripts/activate $LIST"
+	exit
+    fi
+fi
+
+# Clear old cache files if exist:
+CACHES=/mnt/live/tmp/caches
+[ -d $CACHES ] && rm -r $CACHES
+mkdir $CACHES
+
+## Insert module(s) to /union.
+
+# Enable 'one level' activation if requested:
+if [ "$1" = "-o" ]; then
+    farg="-maxdepth 1"
+    MODULE=`echo "$*" | sed 's/-o\ //'`
+else
+    MODULE=$*
+fi
+
+# If we are in GUI then use 'xactivate' as a helper:
+if [ "$DISPLAY" ]; then
+    for x in $MODULE; do
+	if [ -d $x ]; then
+	    for y in `find $x $farg -name "*.xzm"`; do /opt/porteus-scripts/xorg/xactivate `readlink -f $y`; done
+	else
+	    /opt/porteus-scripts/xorg/xactivate `readlink -f $x`
+	fi
+    done
+else
+    for x in $MODULE; do
+	if [ -d $x ]; then
+	    for y in `find $x $farg -name "*.xzm"`; do /opt/porteus-scripts/xorg/aufs-insert `readlink -f $y`; done
+	else
+	    /opt/porteus-scripts/xorg/aufs-insert `readlink -f $x`
+	fi
+    done
+fi
+
+# Rebuild the system configuration cache:
+if [ -e $CACHES/ldconfig ]; then
+    echo "Updating shared library links:  /sbin/ldconfig"
+    /sbin/ldconfig
+else
+    exit 0
+fi
+
+if [ -e $CACHES/mime ]; then
+    echo "Updating MIME database:  /usr/bin/update-mime-database /usr/share/mime"
+    /usr/bin/update-mime-database /usr/share/mime > /dev/null 2>&1
+fi
+
+for x in `cat $CACHES/icons 2>/dev/null`; do
+    echo "Updating icon-theme.cache: /usr/bin/gtk-update-icon-cache -t -f $x"
+    /usr/bin/gtk-update-icon-cache -t -f $x > /dev/null 2>&1
+done
+
+if [ -e $CACHES/fonts ]; then
+    echo "Updating X font indexes:  /usr/bin/fc-cache -f"
+    /usr/bin/fc-cache -f
+fi
+
+if [ -e $CACHES/schemas ]; then
+    echo "Updating glib schemas: /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas"
+    /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas
+fi
+
+if [ -e $CACHES/gio ]; then
+    echo "Updating GIO cache: /usr/bin/gio-querymodules /usr/$lib/gio/modules"
+    /usr/bin/gio-querymodules /usr/$lib/gio/modules
+fi
+
+if [ -e $CACHES/immodules ]; then
+    echo "Updating GTK immodules: /usr/bin/update-gtk-immodules"
+    /usr/bin/update-gtk-immodules
+fi
+
+if [ -e $CACHES/certs ]; then
+    echo "Updating certificates in /etc/ssl/certs: /usr/sbin/update-ca-certificates --fresh"
+    /usr/sbin/update-ca-certificates --fresh >/dev/null 2>&1
+fi
+
+# Multilib support for x86_64 arch:
+if [ $lib = lib64 ]; then
+    if [ -e $CACHES/pixbuf ]; then
+	echo "Updating GDK pixbuf loaders: /usr/bin/update-gdk-pixbuf-loaders"
+	/usr/bin/update-gdk-pixbuf-loaders
+    fi
+    if [ -e $CACHES/pango ]; then
+	echo "Updating Pango querymodules: /usr/bin/update-pango-querymodules"
+	/usr/bin/update-pango-querymodules
+    fi
+fi
+
+# Start services which may be provided by modules:
+for SCRIPT in `cat /mnt/live/tmp/caches/services 2>/dev/null`; do $SCRIPT start; done
+
+# Update desktop menu:
+[ -e $CACHES/desktop-install ] && /opt/porteus-scripts/xorg/update-menu install 2>/dev/null
+[ -e $CACHES/desktop-uninstall ] && /opt/porteus-scripts/xorg/update-menu uninstall 2>/dev/null  # In case when we are deactivating through activation :)
+
+sleep 1

@@ -1,0 +1,48 @@
+PACKAGE NAME:     xf86-input-vmmouse-13.0.0-i486-4
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /root/new/xf86-input-vmmouse-13.0.0-i486-4.txz
+PACKAGE DESCRIPTION:
+xf86-input-vmmouse: xf86-input-vmmouse (support for VMWare's VMMouse guest mouse device)
+xf86-input-vmmouse:
+xf86-input-vmmouse: xf86-input-vmmouse is part of X11.
+xf86-input-vmmouse:
+xf86-input-vmmouse: For more information about the X.Org Foundation (the providers of the
+xf86-input-vmmouse: X.Org implementation of the X Window System), see their website:
+xf86-input-vmmouse:
+xf86-input-vmmouse: http://www.x.org
+xf86-input-vmmouse:
+xf86-input-vmmouse:
+xf86-input-vmmouse:
+FILE LIST:
+./
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/69-xorg-vmmouse.rules
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/vmmouse_detect
+usr/man/
+usr/man/man4/
+usr/man/man4/vmmouse.4.gz
+usr/man/man1/
+usr/man/man1/vmmouse_detect.1.gz
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/vmmouse_drv.la
+usr/lib/xorg/modules/input/vmmouse_drv.so
+usr/share/
+usr/share/X11/
+usr/share/X11/xorg.conf.d/
+usr/share/X11/xorg.conf.d/50-vmmouse.conf
+usr/doc/
+usr/doc/xf86-input-vmmouse-13.0.0/
+usr/doc/xf86-input-vmmouse-13.0.0/ChangeLog
+usr/doc/xf86-input-vmmouse-13.0.0/COPYING
+usr/doc/xf86-input-vmmouse-13.0.0/README
+usr/doc/xf86-input-vmmouse-13.0.0/INSTALL

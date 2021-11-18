@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=uGet
+Comment=Download multiple URLs and apply it to one of setting/queue.
+Exec=uget-gtk %u
+Icon=uget-icon
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer
+

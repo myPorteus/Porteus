@@ -1,0 +1,116 @@
+PACKAGE NAME:     mousepad-0.3.0-i486-1jay
+COMPRESSED PACKAGE SIZE:     148K
+UNCOMPRESSED PACKAGE SIZE:     730K
+PACKAGE LOCATION: git/PKG32/apps/mousepad-0.3.0-i486-1jay.txz
+PACKAGE DESCRIPTION:
+mousepad: mousepad (A simple text editor for Xfce)
+mousepad:
+mousepad: Mousepad is a text editor for Xfce based on Leafpad. The initial
+mousepad: reason for Mousepad was to provide printing support, which would have
+mousepad: been difficult for Leafpad for various reasons.
+mousepad:
+mousepad: http://xfce.org/
+mousepad:
+mousepad:
+mousepad: Packager: brokenman@porteus.org on 08-Aug-2014
+mousepad:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/slack-required
+usr/
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/xfce/
+usr/src/slackbuilds/xfce/mousepad/
+usr/src/slackbuilds/xfce/mousepad/mousepad.SlackBuild
+usr/src/slackbuilds/xfce/mousepad/ChangeLog.SB
+usr/src/slackbuilds/xfce/mousepad/slack-required
+usr/src/slackbuilds/xfce/mousepad/slack-desc
+usr/doc/
+usr/doc/mousepad-0.3.0/
+usr/doc/mousepad-0.3.0/ChangeLog
+usr/doc/mousepad-0.3.0/ChangeLog.SB
+usr/doc/mousepad-0.3.0/README
+usr/doc/mousepad-0.3.0/NEWS
+usr/doc/mousepad-0.3.0/COPYING
+usr/doc/mousepad-0.3.0/AUTHORS
+usr/share/
+usr/share/applications/
+usr/share/applications/mousepad.desktop
+usr/share/locale/
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/mousepad.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/mousepad.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/mousepad.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/mousepad.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/mousepad.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/mousepad.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/mousepad.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/mousepad.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/mousepad.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/mousepad.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/mousepad.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/mousepad.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/mousepad.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/mousepad.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/mousepad.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/mousepad.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/mousepad.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/mousepad.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/mousepad.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/mousepad.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/mousepad.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/mousepad.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/mousepad.mo
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/mousepad.mo
+usr/bin/
+usr/bin/mousepad

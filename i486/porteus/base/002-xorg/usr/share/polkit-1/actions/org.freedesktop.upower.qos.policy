@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The UPower Project</vendor>
+  <vendor_url>http://upower.freedesktop.org/</vendor_url>
+  <icon_name>system-suspend</icon_name>
+
+  <action id="org.freedesktop.upower.qos.request-latency">
+    <description>Set the required latency of an application</description>
+    <description xml:lang="fr">Définir la latence requise d'une application</description>
+    <description xml:lang="it">Imposta la latenza richiesta di un'applicazione</description>
+    <description xml:lang="pl">Ustawienie wymaganego opóźnienia programu</description>
+    <description xml:lang="sv">Ställ in nödvändig fördröjning för ett program</description>
+    <message>Authentication is required to set the required latency of an application</message>
+    <message xml:lang="fr">Vous devez vous identifier pour définir la latence requise d'une application</message>
+    <message xml:lang="it">È richiesto autenticarsi per impostare la latenza richiesta di un'applicazione</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby ustawić wymagane opóźnienie programu</message>
+    <message xml:lang="sv">Autentisering krävs för att ställa in nödvändig fördröjning för ett program</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.upower.qos.request-latency-persistent">
+    <description>Set a persistent latency setting</description>
+    <description xml:lang="fr">Définir une latence persistante</description>
+    <description xml:lang="it">Imposta una impostazione di latenza duratura</description>
+    <description xml:lang="pl">Ustanowienie ustawienia trwałego opóźnienia</description>
+    <description xml:lang="sv">Ställ in en bestående fördröjningsinställning</description>
+    <message>Authentication is required to set a persistent latency setting</message>
+    <message xml:lang="fr">Vous devez vous identifier pour définir de latence persistante</message>
+    <message xml:lang="it">È richiesto autenticarsi per impostare una impostazione di latenza duratura</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby ustanowić trwałe ustawienie opóźnienia</message>
+    <message xml:lang="sv">Autentisering krävs för att ställa in en bestående fördröjningsinställning</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.upower.qos.set-minimum-latency">
+    <description>Set administrator settings for latency control</description>
+    <description xml:lang="fr">Définir les paramètres administrateur pour le contrôle de la latence</description>
+    <description xml:lang="it">Imposta le impostazioni di amministrazione per il controllo della latenza</description>
+    <description xml:lang="pl">Ustanowienie ustawień administratora do kontroli opóźnienia</description>
+    <description xml:lang="sv">Ställ in administratörsinställningar för fördröjningskontroll</description>
+    <message>Authentication is required to set administrator settings for latency control</message>
+    <message xml:lang="fr">Vous devez vous identifier pour définir les paramètres administrateur de contrôle de latence</message>
+    <message xml:lang="it">È richiesto autenticarsi per impostare le impostazioni di amministrazione per il controllo della latenza</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby ustanowić ustawienia administratora do kontroli opóźnienia</message>
+    <message xml:lang="sv">Autentisering krävs för att ställa in administratörsinställningar för fördröjningskontroll</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.upower.qos.cancel-request">
+    <description>Cancel a latency request</description>
+    <description xml:lang="fr">Annuler une demande de latence</description>
+    <description xml:lang="it">Annulla una richiesta di latenza</description>
+    <description xml:lang="pl">Anulowanie żądania opóźnienia</description>
+    <description xml:lang="sv">Avbryt en fördröjningsbegäran</description>
+    <message>Authentication is required to cancel a latency request</message>
+    <message xml:lang="fr">Vous devez vous identifier pour annuler une demande de latence</message>
+    <message xml:lang="it">È richiesto autenticarsi per annullare una richiesta di latenza</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby anulować żądanie opóźnienia</message>
+    <message xml:lang="sv">Autentisering krävs för att avbryta en fördröjningsbegäran</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

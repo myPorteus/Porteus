@@ -1,0 +1,55 @@
+PACKAGE NAME:     lzo-2.03-i486-1
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     360K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/lzo-2.03-i486-1.txz
+PACKAGE DESCRIPTION:
+lzo: lzo (LZO Compression Library)
+lzo:
+lzo: LZO is a portable lossless data compression library written in ANSI C.
+lzo: It offers pretty fast compression and very fast decompression. 
+lzo:
+lzo: Homepage:  http://www.oberhumer.com/opensource/lzo/ 
+lzo:
+lzo:
+lzo:
+lzo:
+lzo:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/lzo/
+usr/include/lzo/lzo2a.h
+usr/include/lzo/lzo1b.h
+usr/include/lzo/lzo1c.h
+usr/include/lzo/lzoutil.h
+usr/include/lzo/lzoconf.h
+usr/include/lzo/lzo_asm.h
+usr/include/lzo/lzodefs.h
+usr/include/lzo/lzo1z.h
+usr/include/lzo/lzo1a.h
+usr/include/lzo/lzo1x.h
+usr/include/lzo/lzo1y.h
+usr/include/lzo/lzo1f.h
+usr/include/lzo/lzo1.h
+usr/doc/
+usr/doc/lzo-2.03/
+usr/doc/lzo-2.03/BUGS
+usr/doc/lzo-2.03/README
+usr/doc/lzo-2.03/THANKS
+usr/doc/lzo-2.03/INSTALL
+usr/doc/lzo-2.03/AUTHORS
+usr/doc/lzo-2.03/doc/
+usr/doc/lzo-2.03/doc/LZO.TXT
+usr/doc/lzo-2.03/doc/LZOAPI.TXT
+usr/doc/lzo-2.03/doc/LZO.FAQ
+usr/doc/lzo-2.03/doc/LZOTEST.TXT
+usr/doc/lzo-2.03/NEWS
+usr/doc/lzo-2.03/COPYING
+usr/doc/lzo-2.03/ChangeLog
+usr/lib/
+usr/lib/liblzo2.la
+usr/lib/liblzo2.so.2.0.0

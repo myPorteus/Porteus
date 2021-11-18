@@ -1,0 +1,37 @@
+PACKAGE NAME:     dmidecode-2.11-i486-1
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/dmidecode-2.11-i486-1.txz
+PACKAGE DESCRIPTION:
+dmidecode: dmidecode (DMI table decoder)
+dmidecode:
+dmidecode: dmidecode is a tool for dumping a computer's DMI table (some say
+dmidecode: SMBIOS) contents in a human-readable format.  This table contains a
+dmidecode: description of the system's hardware components, as well as other
+dmidecode: useful pieces of information such as serial numbers and BIOS
+dmidecode: revision.
+dmidecode:
+dmidecode: dmidecode was written by Alan Cox and Jean Delvare.
+dmidecode:
+dmidecode:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/dmidecode-2.11/
+usr/doc/dmidecode-2.11/AUTHORS
+usr/doc/dmidecode-2.11/README
+usr/doc/dmidecode-2.11/CHANGELOG
+usr/sbin/
+usr/sbin/ownership
+usr/sbin/vpddecode
+usr/sbin/dmidecode
+usr/sbin/biosdecode
+usr/man/
+usr/man/man8/
+usr/man/man8/ownership.8.gz
+usr/man/man8/dmidecode.8.gz
+usr/man/man8/vpddecode.8.gz
+usr/man/man8/biosdecode.8.gz

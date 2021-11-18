@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir = /usr/lib
+includedir = ${prefix}/include
+
+Name: ddjvuapi
+Description: DjVu decoding api.
+Version: 3.5.25
+Requires:
+Conflicts:
+Libs: -L${libdir} -ldjvulibre 
+Libs.private: -ljpeg  -lpthread -lm 
+Cflags: -I${includedir}   -pthread

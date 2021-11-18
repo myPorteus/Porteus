@@ -1,0 +1,35 @@
+PACKAGE NAME:     libnfnetlink-1.0.1-i486-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/libnfnetlink-1.0.1-i486-1.txz
+PACKAGE DESCRIPTION:
+libnfnetlink: libnfnetlink (library for netfilter kernel/userspace comm)
+libnfnetlink: 
+libnfnetlink: libnfnetlink is the low-level library for netfilter related 
+libnfnetlink: kernel/userspace communication.  It provides a generic messaging
+libnfnetlink: infrastructure for in-kernel netfilter subsystems (such as 
+libnfnetlink: nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their 
+libnfnetlink: respective users and/or management tools in userspace.
+libnfnetlink:
+libnfnetlink:
+libnfnetlink:
+libnfnetlink:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libnfnetlink.pc
+usr/lib/libnfnetlink.so.0.2.0
+usr/include/
+usr/include/libnfnetlink/
+usr/include/libnfnetlink/libnfnetlink.h
+usr/include/libnfnetlink/linux_nfnetlink_compat.h
+usr/include/libnfnetlink/linux_nfnetlink.h
+usr/doc/
+usr/doc/libnfnetlink-1.0.1/
+usr/doc/libnfnetlink-1.0.1/COPYING
+usr/doc/libnfnetlink-1.0.1/README

@@ -1,0 +1,387 @@
+#!/bin/bash
+# Script to mount most archives on a loop device
+# Author: Brokenman & Fanthom
+
+# Color definitions
+txtund=$(tput sgr 0 1)          # Underline
+txtbld=$(tput bold)             # Bold
+txtgreen=${txtbld}$(tput setaf 2) #  green
+txtcyan=${txtbld}$(tput setaf 6) #  cyan
+txtred=${txtbld}$(tput setaf 1) #  red
+rst=$(tput sgr0)             # Reset
+
+function green() {
+echo -e $txtgreen "$1" $rst
+}
+
+function cyan() {
+echo -e $txtcyan "$1" $rst
+}
+
+function red() {
+echo -e $txtred "$1" $rst
+}
+
+function sanity_check(){
+for dep in $@; do
+    `which $dep >/dev/null 2>&1` || sanity+=("$dep")
+done
+}
+
+# Switch to root
+if [ `whoami` != "root" ]; then
+    cyan "Please enter root's password below"
+    mod=`readlink -f $1`
+    su - -c "/opt/porteus-scripts/mloop $mod"
+    exit
+fi
+
+# Sanity check
+sanity=""
+sanity_check "httpfs2 archivemount"
+[[ ! -z ${sanity[*]} ]] && { echo -e $txtcyan "mloop requires the following:" $rst "${sanity[*]}"; exit; }
+
+mpoint=/mnt/loop
+tmp=/tmp/mloop
+xfile=$1
+ext=${xfile##*.}
+real=`realpath $1 2>/dev/null`
+termc=`tput cols`
+terml=`tput lines`
+
+# Make sure that we have at least one free loop device
+x=`losetup -a | tail -n1 | cut -d: -f1 | sed s^/dev/loop^^`; let y=x+1
+if [ ! -b /dev/loop$y ]; then
+    echo "Adding new loop device: mknod /dev/loop$y b 7 $y"
+    mknod /dev/loop$y b 7 $y
+else
+    echo "using /dev/loop$y"
+fi
+
+usage() {
+clear
+echo
+echo "##########################"
+echo Usage of $0:
+echo "##########################"
+echo -e $txtbld "`basename $0` /path/to/module.xzm" $rst
+echo -e $txtbld "`basename $0` /path/to/file.iso" $rst
+echo -e $txtbld "`basename $0` /path/to/file.dat" $rst
+echo -e $txtbld "`basename $0` /path/to/file.img" $rst
+echo -e $txtbld "`basename $0` /path/to/initrd.xz" $rst
+echo -e $txtbld "`basename $0` /path/to/file.tar" $rst
+echo -e $txtbld "`basename $0` /path/to/file.tar.gz" $rst
+echo -e $txtbld "`basename $0` /path/to/file.tar.bz2" $rst
+echo -e $txtbld "`basename $0` http://domain.com/file.iso" $rst
+echo
+echo "File given will be mounted on a loop at /mnt/loop"
+echo "You can use uloop to unmout loop."
+echo 
+echo
+}
+
+if [ "$xfile" == "" -o "$xfile" == "--help" -o "$xfile" == "-h" -o "$xfile" == "-help" -o "$xfile" == "help" ]; then
+	usage
+	exit
+fi
+
+#######################
+# Begin mount process
+#######################
+
+# Check for loop mount dir
+if [ ! -d $mpoint ]; then
+	mkdir $mpoint
+		else
+	xls=`ls $mpoint`
+fi
+
+if [ "$xls" != "" ]; then
+	umount $mpoint
+fi
+
+xmodule() {
+mount -t auto -o loop $xfile $mpoint
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your module has been mounted at:" $rst
+echo $mpoint
+echo
+echo " You can unmount it by typing uloop"
+echo
+echo " Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xiso() {
+mount -t iso9660 -o loop $xfile $mpoint
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo "Your image has been mounted at:" $rst
+echo $mpoint
+echo
+echo " You can unmount it by typing uloop"
+echo
+echo " Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xdat() {
+if file $xfile | grep -qo LUKS; then
+    losetup /dev/loop$y $xfile
+    echo "found .dat container encrypted with LUKS..."
+    cryptsetup luksOpen /dev/loop$y mloop-crypt
+    mount /dev/mapper/mloop-crypt $mpoint 2>/dev/null
+else
+    mount -t auto -o loop $xfile $mpoint
+fi
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your data file has been mounted at:" $rst
+echo $mpoint
+echo
+echo "You can unmount it by typing uloop"
+echo
+echo "Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+ximg() {
+mount -t auto -o loop $xfile $mpoint
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo "Your .img file has been mounted at:" $rst
+echo $mpoint
+echo
+echo "You can unmount it by typing uloop"
+echo
+echo "Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xinit() {
+clear
+echo
+echo -e $txtgreen "Backing up initrd ...." $rst
+
+[ ! -d $tmp ] && mkdir $tmp || rm -rf $tmp/* 
+cp $real ${real}.bak
+echo $xfile > $tmp/initrd.txt
+
+# We can not mount this initrd so we will
+# unpack it instead.
+cd $tmp
+xz -d < $real | cpio -i
+cd - >/dev/null
+echo 
+echo "##################################################"
+echo "Your original initrd.xz is still intact"
+echo "and has been backed up as $xfile.bak"
+echo
+echo -e $txtcyan "Your initrd.xz can not be mounted so it has been unpacked to:" $rst
+echo $tmp
+echo
+echo "To repack the initrd move into the directory containing"
+echo "the files and type: " $txtcyan "makeinitrd" $rst
+echo
+echo "Here is a list of the files:"
+ls $tmp
+echo
+exit
+}
+
+xtargz() {
+# Make sure file is gzip
+file $real|grep -o "gzip" >/dev/null || { echo -e $txtcyan "This is not a valid gzip file!"; exit; }
+pkg=${real##*/}
+pkgname=`sed -e 's@\.tar@@g' -e 's@\.gz@@g' <<<$pkg` 
+
+archivemount $real $mpoint 2>/dev/null
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your gzip file has been mounted at:" $rst
+echo $mpoint
+echo
+echo "You can unmount it by typing uloop"
+echo
+echo "Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xtarbz2() {
+# Make sure file is bzip
+file $real|grep -o "bzip2" >/dev/null || { echo -e $txtcyan "This is not a valid bzip2 file!"; exit; }
+pkg=${real##*/}
+pkgname=`sed -e 's@\.tar@@g' -e 's@\.bz2@@g' <<<$pkg`
+
+archivemount $real $mpoint 2>/dev/null
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your bzip file has been mounted at:" $rst
+echo $mpoint
+echo
+echo "You can unmount it by typing uloop"
+echo
+echo "Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xtar() {
+# Make sure file is tar
+file $real|grep -o "tar" >/dev/null || { echo -e $txtcyan "This is not a valid tarball file!"; exit; }
+pkg=${real##*/}
+pkgname=`sed 's@\.tar@@g' <<<$pkg`
+
+archivemount $real $mpoint 2>/dev/null
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your tarball file has been mounted at:" $rst
+echo $mpoint
+echo
+echo "You can unmount it by typing uloop"
+echo
+echo "Here is a list of the files:"
+ls $mpoint
+echo
+exit
+}
+
+xhttpfs2() {
+xname=${xfile##*/}
+
+# Do quick net check
+echo "Checking given link ..."
+wget -q --spider --force-html --inet4-only $xfile >/dev/null 2>&1 && echo "link is good" || \
+{ echo -e $txtred "This link was not found online. Sorry." $rst; exit; }
+
+# Make sure the mount points are ready
+if [ -d /mnt/http ]; then
+    echo "Unmounting"
+    umount /mnt/http && sleep 1 || { echo "Could not unmount"; exit; }
+    echo "Unmounted"
+    rm -rf /mnt/http
+fi
+umount /mnt/loop >/dev/null 2>&1
+mkdir -p /mnt/http >/dev/null 2>&1
+
+echo -e $txtcyan "Connecting to: " $rst "$xname ..."
+httpfs2 $xfile $mpoint || { echo -e $txtred "There was a fatal error mounting: " $rst "$xname."; exit; }
+echo -e $txtcyan "Attemptingto mount: " $rst "$xname ..."
+mount $mpoint/$xname /mnt/http
+
+clear
+echo 
+echo -e $txtcyan "#################################"
+echo " Your online file has been mounted at:" $rst
+echo /mnt/http
+echo
+echo "You can unmount it by typing: umount /mnt/http"
+echo
+echo "Here is a list of the files:"
+ls /mnt/http
+echo
+exit
+}
+
+# write the unloop script
+
+echo
+echo "Please wait while i gather some info ...."
+echo
+
+uloop() {
+cat > /opt/porteus-scripts/uloop << "EOF"
+#!/bin/bash
+
+if [ `whoami` != "root" ]; then
+    su - -c "uloop"
+    exit
+fi
+
+[ -d /mnt/loop ] && mls=`grep /mnt/loop /proc/mounts | wc -l`
+
+if [ "$mls" -gt 0 ]; then
+    umount /mnt/loop
+    [ -b /dev/mapper/mloop-crypt ] && cryptsetup luksClose mloop-crypt
+    echo
+    echo "/mnt/loop has been unmounted"
+    echo
+else
+    echo
+    echo "nothing is mounted in /mnt/loop"
+    echo
+fi
+
+exit
+EOF
+chmod +x /opt/porteus-scripts/uloop
+}
+
+# check for umount loop script
+uloop
+
+# check that file given exists
+if [ `grep -o http <<<$xfile` ]; then
+    xhttpfs2 $xfile && exit
+            else
+    [ ! -f $xfile ] && { echo; echo "Sorry, that file was not found"; exit; }
+fi
+
+case "$ext" in
+        xzm)
+            xmodule
+            ;;
+
+        iso)
+            xiso
+            ;;
+
+        dat)
+            xdat
+            ;;
+
+        xz)
+            xinit
+	    ;;
+
+        img)
+            ximg
+            ;;
+        gz)
+            xtargz
+            ;;
+        bz2)
+            xtarbz2
+            ;;
+        tar)
+            xtar
+            ;;
+        *)
+            echo  "Sorry, no supported file found"
+            ;;
+esac
+
+clear
+echo
+echo  "Sorry, no supported file found"
+exit
+# (wget -q --spider --force-html --inet4-only http://brokenman.porteus.org >/dev/null 2>&1)

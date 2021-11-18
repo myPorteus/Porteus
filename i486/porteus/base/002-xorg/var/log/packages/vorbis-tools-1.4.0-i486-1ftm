@@ -1,0 +1,87 @@
+PACKAGE NAME:     vorbis-tools-1.4.0-i486-1ftm
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: /root/new/vorbis-tools-1.4.0-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+vorbis-tools: vorbis-tools (Ogg Vorbis Tools)
+vorbis-tools:
+vorbis-tools: The vorbis-tools package contains several basic tools for working with
+vorbis-tools: compressed audio files in the Ogg Vorbis (.ogg) format:
+vorbis-tools:
+vorbis-tools:   oggenc (an .ogg encoder), ogg123 (a playback tool), vorbiscomment
+vorbis-tools:   (add comments to vorbis files), ogginfo (show information about an
+vorbis-tools:   ogg file), oggdec (a command line decoder), and vcut (a tool for
+vorbis-tools:   splitting vorbis files).
+vorbis-tools:
+vorbis-tools: These tools require the libao, libogg, and libvorbis libraries.
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/oggenc
+usr/bin/oggdec
+usr/bin/ogginfo
+usr/bin/vcut
+usr/bin/vorbiscomment
+usr/man/
+usr/man/man1/
+usr/man/man1/vorbiscomment.1.gz
+usr/man/man1/vcut.1.gz
+usr/man/man1/ogginfo.1.gz
+usr/man/man1/oggenc.1.gz
+usr/man/man1/oggdec.1.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/vorbis-tools.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/vorbis-tools.mo

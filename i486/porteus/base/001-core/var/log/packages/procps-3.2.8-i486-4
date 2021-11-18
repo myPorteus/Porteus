@@ -1,0 +1,102 @@
+PACKAGE NAME:     procps-3.2.8-i486-4
+COMPRESSED PACKAGE SIZE:     232K
+UNCOMPRESSED PACKAGE SIZE:     670K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/procps-3.2.8-i486-4.txz
+PACKAGE DESCRIPTION:
+procps: procps (utilities for displaying process information)
+procps:
+procps: The procps package provides the classic set of utilities used to
+procps: display information about the processes currently running on the 
+procps: machine.
+procps:
+procps:
+procps:
+procps:
+procps:
+procps:
+FILE LIST:
+./
+bin/
+bin/killall
+bin/ps
+bin/free
+lib/
+lib/libproc-3.2.8.so
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/sysctl
+usr/
+usr/bin/
+usr/bin/w
+usr/bin/pstree
+usr/bin/watch
+usr/bin/vmstat
+usr/bin/procinfo
+usr/bin/pkill
+usr/bin/tload
+usr/bin/uptime
+usr/bin/skill
+usr/bin/lsdev
+usr/bin/socklist
+usr/bin/top
+usr/bin/slabtop
+usr/bin/fuser
+usr/bin/pmap
+usr/man/
+usr/man/man8/
+usr/man/man8/sysctl.8.gz
+usr/man/man8/procinfo.8.gz
+usr/man/man8/lsdev.8.gz
+usr/man/man8/socklist.8.gz
+usr/man/man8/vmstat.8.gz
+usr/man/man5/
+usr/man/man5/sysctl.conf.5.gz
+usr/man/man1/
+usr/man/man1/free.1.gz
+usr/man/man1/pgrep.1.gz
+usr/man/man1/pstree.1.gz
+usr/man/man1/killall.1.gz
+usr/man/man1/top.1.gz
+usr/man/man1/fuser.1.gz
+usr/man/man1/skill.1.gz
+usr/man/man1/ps.1.gz
+usr/man/man1/uptime.1.gz
+usr/man/man1/pkill.1.gz
+usr/man/man1/snice.1.gz
+usr/man/man1/slabtop.1.gz
+usr/man/man1/tload.1.gz
+usr/man/man1/w.1.gz
+usr/man/man1/watch.1.gz
+usr/include/
+usr/include/proc/
+usr/include/proc/alloc.h
+usr/include/proc/devname.h
+usr/include/proc/sig.h
+usr/include/proc/pwcache.h
+usr/include/proc/version.h
+usr/include/proc/escape.h
+usr/include/proc/readproc.h
+usr/include/proc/sysinfo.h
+usr/include/proc/procps.h
+usr/include/proc/whattime.h
+usr/include/proc/slab.h
+usr/include/proc/wchan.h
+usr/doc/
+usr/doc/psmisc-22.13/
+usr/doc/psmisc-22.13/AUTHORS
+usr/doc/psmisc-22.13/ChangeLog
+usr/doc/psmisc-22.13/COPYING
+usr/doc/psmisc-22.13/README
+usr/doc/psmisc-22.13/INSTALL
+usr/doc/psmisc-22.13/NEWS
+usr/doc/procinfo-18/
+usr/doc/procinfo-18/CHANGES
+usr/doc/procinfo-18/README
+usr/doc/procps-3.2.8/
+usr/doc/procps-3.2.8/COPYING
+usr/doc/procps-3.2.8/BUGS
+usr/doc/procps-3.2.8/COPYING.LIB
+usr/doc/procps-3.2.8/NEWS
+usr/doc/procps-3.2.8/TODO

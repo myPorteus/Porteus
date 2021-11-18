@@ -1,0 +1,38 @@
+PACKAGE NAME:     libass-0.11.2-i486-1ftm
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /32/FFMPEG/libass-0.11.2-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libass: LibASS (SSA/ASS Subtitles Rendering Library)
+libass:
+libass: LibASS is an opensource SSA/ASS  library that produces subtitles very
+libass: close   to  the  ones  produced   by  vobsub  and  gabest's  subtitle
+libass: libraries. It's uses freetype and fontconfig.
+libass:
+libass:
+libass:
+libass:
+libass:
+libass:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libass-0.11.2/
+usr/doc/libass-0.11.2/SlackBuild/
+usr/doc/libass-0.11.2/SlackBuild/slack-desc
+usr/doc/libass-0.11.2/SlackBuild/libass.SlackBuild
+usr/doc/libass-0.11.2/Changelog
+usr/doc/libass-0.11.2/COPYING
+usr/include/
+usr/include/ass/
+usr/include/ass/ass_types.h
+usr/include/ass/ass.h
+usr/lib/
+usr/lib/libass.so.5.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libass.pc
+usr/lib/libass.la

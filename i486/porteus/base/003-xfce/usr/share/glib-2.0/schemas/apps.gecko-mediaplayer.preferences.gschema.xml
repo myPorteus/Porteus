@@ -1,0 +1,50 @@
+<schemalist>
+  <schema id="apps.gecko-mediaplayer.preferences" path="/apps/gecko-mediaplayer/preferences/">
+    <key name="disable-qt" type="b">
+      <default>false</default>
+      <summary>Disable QuickTime</summary>
+      <description>Disable QuickTime</description>
+    </key>
+    <key name="disable-real" type="b">
+      <default>false</default>
+      <summary>Disable RealPlayer</summary>
+      <description>Disable RealPlayer</description>
+    </key>
+    <key name="disable-wmp" type="b">
+      <default>false</default>
+      <summary>Disable Windows MediaPlayer</summary>
+      <description>Disable Windows MediaPlayer</description>
+    </key>
+    <key name="disable-dvx" type="b">
+      <default>false</default>
+      <summary>Disable DivX</summary>
+      <description>Disable DiVX</description>
+    </key>
+    <key name="disable-midi" type="b">
+      <default>true</default>
+      <summary>Disable MIDI</summary>
+      <description>Disable MIDI</description>
+    </key>
+    <key name="disable-embedding" type="b">
+      <default>false</default>
+      <summary>Disable Embedded plugin</summary>
+      <description>Disable Embedded plugin</description>
+    </key>
+    <key name="disable-embedded-scaling" type="b">
+      <default>false</default>
+      <summary>Disable Image resizing when embedded</summary>
+      <description>Disable Image resizing when embedded</description>
+    </key>
+    <key name="debug-level" type="i">
+      <default>0</default>
+      <summary>Debug feedback level</summary>
+      <description>Debug feedback level</description>
+    </key>
+    <key name="player-backend" type="s">
+      <default>''</default>
+      <summary>Player engine to use (no value defaults to gnome-mplayer)</summary>
+      <description>Player engine to use (no value defaults to gnome-mplayer)</description>
+    </key>
+
+  </schema>
+</schemalist>

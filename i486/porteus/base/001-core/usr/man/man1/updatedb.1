@@ -1,0 +1,68 @@
+.TH UPDATEDB 1 \" -*- nroff -*-
+.SH NAME
+updatedb \- update the slocate database
+.SH SYNOPSIS
+.B updatedb
+[\-u] [\-U path] [\-e path1,path2,...] [\-f fstype1,...] [\-l [01] ] [\-q] [\-v,\-\-verbose]
+[\-V, \-\-version] [\-h, \-\-help] pattern...
+.SH DESCRIPTION
+This manual page
+documents 
+.BR slocate ,
+a security-enhanced version of locate.
+.BR updatedb
+is simply a link to slocate that implies the -u option.
+.SH OPTIONS
+.TP
+.I "\-u"
+Create slocate database starting at the root directory.
+This is the default behavior when called as
+.B updatedb.
+.TP
+.I "\-U \fIpath\fP"
+Create slocate database starting at path \fIpath\fP.
+.TP
+.I "\-e \fIdirs\fP"
+Exclude directories in the comma-separated list \fIdirs\fP
+from the slocate database.
+.TP
+.I "\-f \fIfstypes\fP"
+Exclude file systems in the comma-separated list \fIdirs\fP
+from the slocate database.
+.TP
+.I "\-l <num>"
+Security level.
+.I \-l 0
+turns security checks off, which will make searches faster. 
+.I \-l 1
+turns security checks on. This is the default.
+.TP
+.I "\-q"
+Quiet mode; error messages are suppressed.
+.TP
+.I "\-v"
+Verbose mode; display files indexed when creating database
+.TP
+.I "\-\-help"
+Print a summary of the options to
+.B slocate
+and exit.
+.TP
+.I "\-\-version"
+Print the version number of
+.B slocate
+and exit.
+.SH CONFIGURATION FILE
+Secure Locate's
+.I updatedb
+will automatically parse GNU Locate's
+.I /etc/updatedb.conf.
+But please be aware that Secure Locate currently
+does NOT support all options provided by GNU Locate's configuration file.
+
+Options currently supported by Secure Locate are
+.B PRUNEFS
+and
+.B PRUNEPATHS
+.SH "SEE ALSO"
+\fBslocate\fP(1)

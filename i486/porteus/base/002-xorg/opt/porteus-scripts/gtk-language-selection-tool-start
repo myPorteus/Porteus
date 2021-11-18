@@ -1,0 +1,64 @@
+#!/bin/bash
+## This script is a starter for the real language tools script.
+## Since the script is reliant on an internet connection. The
+## download of the real script will act as the internet check.
+. /usr/lib/librokenman
+
+trap bail SIGHUP SIGINT SIGTERM
+#exec 2>/dev/null
+set -x
+icons=/usr/share/pixmaps/porteus
+link=http://dl.porteus.org/i486/testing/packages/Language-Selection-Tool/gtk-language-selection-tool
+
+if [ `whoami` != "root" ]; then
+  gtk_message "Only root can run this!" 350 gtk-dialog-error
+  exit
+fi
+
+lets_go(){
+export START_SCREEN='
+<window window_position="1" title="Language Selection Tool" icon-name="language-22">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$icons'/language.png</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Porteus Language Selection Tool</span>"</label>
+  </text>
+</hbox>
+  <frame>
+    <text use-markup="true" xalign="0">
+      <label>"This tool will download language packs so you can use your native language in various desktops and applications."</label>
+    </text>
+    <text><label>""</label></text>
+    <text use-markup="true" xalign="0">
+      <label>"An internet connection is required."</label>
+    </text>
+  </frame>
+<hbox>
+  <button cancel></button>
+  <button ok></button>
+</hbox>
+</vbox>
+</window>
+'
+gtkdialog -p START_SCREEN >/tmp/.lst
+}; export -f lets_go
+
+lets_go
+
+## Check answer
+[ `egrep "Cancel|abort" /tmp/.lst` ] && bail
+
+## Internet check
+if (wget -q --force-html --inet4-only "$link" -P /tmp); then url=1; fi
+[ -z $url ] && { gtk_message "An internet connection was not found. Exiting." 450 gtk-dialog-warning; bail; }
+
+chmod +x /tmp/gtk-language-selection-tool && mv /tmp/gtk-language-selection-tool /opt/porteus-scripts/
+ln -sf /opt/porteus-scripts/gtk-language-selection-tool /usr/bin/gtk-language-selection-tool
+sh /opt/porteus-scripts/gtk-language-selection-tool
+[ -f /tmp/.lst ] && rm /tmp/.lst
+

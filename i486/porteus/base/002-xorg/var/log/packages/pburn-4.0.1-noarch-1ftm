@@ -1,0 +1,77 @@
+PACKAGE NAME:     pburn-4.0.1-noarch-1ftm
+COMPRESSED PACKAGE SIZE:     140K
+UNCOMPRESSED PACKAGE SIZE:     380K
+PACKAGE LOCATION: /tmp/pburn-4.0.1-noarch-1ftm.tgz
+PACKAGE DESCRIPTION:
+pburn: pburn 
+pburn:
+pburn:
+pburn:
+pburn:
+pburn:
+pburn:
+pburn:
+pburn: Package created for Porteus by bigbass
+pburn:
+pburn:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/share/
+usr/share/audio/
+usr/share/audio/k3b_error1.wav
+usr/share/audio/k3b_success1.wav
+usr/share/pixmaps/
+usr/share/pixmaps/pburn2.png
+usr/share/locale/
+usr/share/locale/en/
+usr/share/locale/en/LC_MESSAGES/
+usr/share/doc/
+usr/share/doc/pburn.html
+usr/share/applications/
+usr/share/applications/pburn.desktop
+usr/bin/
+usr/bin/pburn
+usr/local/
+usr/local/bin/
+usr/local/bin/pfilesearch
+usr/local/pfilesearch/
+usr/local/pfilesearch/box_ok
+usr/local/pfilesearch/box_splash
+usr/local/pfilesearch/func
+usr/local/pfilesearch/locals/
+usr/local/pfilesearch/locals/en_US:english
+usr/local/pfilesearch/pfilesearch
+usr/local/pfilesearch/pfilesearchMIMErc
+usr/local/apps/
+usr/local/apps/Pburn/
+usr/local/apps/Pburn/AppInfo.xml
+usr/local/pburn/
+usr/local/pburn/func_gui
+usr/local/pburn/pburnrc
+usr/local/pburn/box_splash
+usr/local/pburn/func
+usr/local/pburn/func_build_command
+usr/local/pburn/pburn
+usr/local/pburn/func_toc_cue
+usr/local/pburn/box_tail
+usr/local/pburn/tv_standard
+usr/local/pburn/func_gui_options
+usr/local/pburn/themes/
+usr/local/pburn/themes/Mini/
+usr/local/pburn/themes/Mini/button-burn.png
+usr/local/pburn/themes/Mini/gtk/
+usr/local/pburn/themes/Mini/gtk/progress_green.png
+usr/local/pburn/themes/Mini/gtk/gtkrc
+usr/local/pburn/themes/Mini/gtk/progress_red.png
+usr/local/pburn/themes/Mini/gtk/pburn20_inactive.png
+usr/local/pburn/func_exec
+usr/local/pburn/box_chooser
+usr/local/pburn/box
+usr/local/pburn/func_man
+usr/local/pburn/box_save
+usr/local/pburn/pburn20.png
+usr/local/pburn/func_burn_options

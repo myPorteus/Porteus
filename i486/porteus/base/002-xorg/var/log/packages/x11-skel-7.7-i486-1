@@ -1,0 +1,38 @@
+PACKAGE NAME:     x11-skel-7.7-i486-1
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/x11-skel-7.7-i486-1.txz
+PACKAGE DESCRIPTION:
+x11-skel: x11-skel (Miscellaneous things required for X)
+x11-skel:
+x11-skel: These are some symlinks needed by X11 after moving some files and
+x11-skel: directories to conform with the Linux FHS.  For example, the fonts
+x11-skel: are now in the /usr/share/fonts directory, and this package makes
+x11-skel: a symlink to there from /usr/lib/X11/fonts (the default location).
+x11-skel: An /etc/xdg directory (the default for XDG_CONFIG_DIRS in the
+x11-skel: XDG Base Directory Specification) is also contained in this package,
+x11-skel: as well as sample xorg.conf files and other scripts.
+x11-skel:
+x11-skel:
+FILE LIST:
+./
+var/
+var/log/
+var/log/setup/
+var/log/setup/setup.xwmconfig
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/xwmconfig
+usr/bin/xorgsetup
+usr/man/
+usr/man/man1/
+usr/man/man1/xwmconfig.1.gz
+usr/lib/
+usr/lib/X11/
+etc/
+etc/X11/
+etc/X11/xorg.conf-vesa
+etc/xdg/

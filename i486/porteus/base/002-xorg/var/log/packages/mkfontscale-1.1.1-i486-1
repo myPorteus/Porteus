@@ -1,0 +1,32 @@
+PACKAGE NAME:     mkfontscale-1.1.1-i486-1
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/mkfontscale-1.1.1-i486-1.txz
+PACKAGE DESCRIPTION:
+mkfontscale: mkfontscale (X11 font utility)
+mkfontscale:
+mkfontscale: mkfontscale creates the fonts.scale and fonts.dir index files used
+mkfontscale: by the legacy X11 font system.
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mkfontscale
+usr/man/
+usr/man/man1/
+usr/man/man1/mkfontscale.1.gz
+usr/doc/
+usr/doc/mkfontscale-1.1.1/
+usr/doc/mkfontscale-1.1.1/ChangeLog
+usr/doc/mkfontscale-1.1.1/COPYING
+usr/doc/mkfontscale-1.1.1/README
+usr/doc/mkfontscale-1.1.1/INSTALL

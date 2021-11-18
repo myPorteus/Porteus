@@ -1,0 +1,78 @@
+PACKAGE NAME:     libva-1.4.1-i486-1ftm
+COMPRESSED PACKAGE SIZE:     376K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/NEW-SRC/32/libva-1.4.1-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libva: LibVA (Video Acceleration Library)
+libva:
+libva: The main motivation for VAAPI (Video Acceleration API) is to enable
+libva: hardware  accelerated  video  decode/encode at various entry-points
+libva: (VLD,  IDCT,  Motion  Compensation etc) for  the  prevailing coding
+libva: standards today (MPEG-2, MPEG-4  ASP/H.263,  MPEG-4  AVC/H.264, and
+libva: VC-1/VMW3).
+libva:
+libva:
+libva: Homepage: http://www.freedesktop.org/wiki/Software/vaapi
+libva:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libva-1.4.1/
+usr/doc/libva-1.4.1/NEWS
+usr/doc/libva-1.4.1/COPYING
+usr/bin/
+usr/bin/mpeg2vldemo
+usr/bin/loadjpeg
+usr/bin/avcenc
+usr/bin/mpeg2vaenc
+usr/bin/h264encode
+usr/bin/vainfo
+usr/bin/putsurface
+usr/lib/
+usr/lib/libva.so.1.3600.0
+usr/lib/libva-tpi.so.1.3600.0
+usr/lib/libva-drm.so.1.3600.0
+usr/lib/libva-x11.so.1.3600.0
+usr/lib/libva-glx.so.1.3600.0
+usr/lib/libva-egl.so.1.3600.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libva-egl.pc
+usr/lib/pkgconfig/libva-glx.pc
+usr/lib/pkgconfig/libva-x11.pc
+usr/lib/pkgconfig/libva-drm.pc
+usr/lib/pkgconfig/libva-tpi.pc
+usr/lib/pkgconfig/libva.pc
+usr/lib/libva-egl.la
+usr/lib/libva-glx.la
+usr/lib/libva-x11.la
+usr/lib/libva-drm.la
+usr/lib/libva-tpi.la
+usr/lib/libva.la
+usr/include/
+usr/include/va/
+usr/include/va/va_x11.h
+usr/include/va/va_vpp.h
+usr/include/va/va_version.h
+usr/include/va/va_tpi.h
+usr/include/va/va_enc_mpeg2.h
+usr/include/va/va_enc_vp8.h
+usr/include/va/va_enc_h264.h
+usr/include/va/va_drmcommon.h
+usr/include/va/va_dec_vp8.h
+usr/include/va/va_dec_jpeg.h
+usr/include/va/va_compat.h
+usr/include/va/va_backend_vpp.h
+usr/include/va/va_backend_tpi.h
+usr/include/va/va_backend.h
+usr/include/va/va.h
+usr/include/va/va_backend_egl.h
+usr/include/va/va_egl.h
+usr/include/va/va_glx.h
+usr/include/va/va_backend_glx.h
+usr/include/va/va_dricommon.h
+usr/include/va/va_dri2.h
+usr/include/va/va_drm.h

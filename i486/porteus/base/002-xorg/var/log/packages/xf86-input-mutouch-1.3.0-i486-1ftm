@@ -1,0 +1,33 @@
+PACKAGE NAME:     xf86-input-mutouch-1.3.0-i486-1ftm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1-32/002/002-ftm/xf86-input-mutouch-1.3.0-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+xf86-input-mutouch: xf86-input-mutouch
+xf86-input-mutouch:
+xf86-input-mutouch: xf86-input-mutouch is part of X11.
+xf86-input-mutouch:
+xf86-input-mutouch: For more information about the X.Org Foundation (the providers of the
+xf86-input-mutouch: X.Org implementation of the X Window System), see their website:
+xf86-input-mutouch:
+xf86-input-mutouch: http://www.x.org
+xf86-input-mutouch:
+xf86-input-mutouch:
+xf86-input-mutouch:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-mutouch-1.3.0/
+usr/doc/xf86-input-mutouch-1.3.0/README
+usr/man/
+usr/man/man4/
+usr/man/man4/mutouch.4.gz
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/mutouch_drv.so
+usr/lib/xorg/modules/input/mutouch_drv.la

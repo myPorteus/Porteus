@@ -1,0 +1,31 @@
+#! /bin/bash
+export pfilesearch_splash='
+<window title="Pfilesearch" icon-name="gtk-find">
+<vbox>
+ <frame>
+  <pixmap icon_size="6"><input file stock="gtk-find"></input></pixmap>
+  <text use-markup="true"><label>"<b>Pfilesearch</b>"</label></text>
+  <text><input file>'"$WORKDIR"'/pfilesearch-splashtext</input></text>
+  <progressbar>
+   <label>Sigmund Berglund,   GPL 2007-2011</label>
+   <input>while [ "$I" != "100" ]; do I=`cat '"$WORKDIR"'/pfilesearch-splash`; echo $I; usleep 500000; done</input>
+   <action type="exit">Ready</action>
+  </progressbar>
+ </frame>
+ <hbox>
+  <button>
+   <label>'"$LOC_CANCEL"'</label>
+   <input file stock="gtk-cancel"></input>
+   <action>EXIT:stop</action>
+  </button> 
+ </hbox>
+</vbox></window>
+'
+I=$IFS; IFS=""
+for STATEMENTS in  $($GTKDIALOG -p pfilesearch_splash --center); do
+	eval $STATEMENTS
+done
+IFS=$I
+if [ "$EXIT" = "stop" ]; then
+	for I in `ps -eo pid,command | grep -i find | grep -vi pfind | awk '{print $1}'`; do kill -9 $I; done
+fi

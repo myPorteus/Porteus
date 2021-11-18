@@ -1,0 +1,35 @@
+PACKAGE NAME:     squashfs-tools-4.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     184K
+UNCOMPRESSED PACKAGE SIZE:     460K
+PACKAGE LOCATION: /squashfs-tools-4.3-i486-1ftm.tgz
+PACKAGE DESCRIPTION:
+squashfs-tools: squashfs-tools (SquashFS userspace tools)
+squashfs-tools:
+squashfs-tools: Squashfs is a compressed read-only filesystem for Linux.  Squashfs
+squashfs-tools: is intended for general read-only filesystem use, for archival use
+squashfs-tools: (i.e. in cases where a .tar.gz file may be used), and in constrained
+squashfs-tools: block device/memory systems (e.g. embedded systems) where low
+squashfs-tools: overhead is needed.
+squashfs-tools:
+squashfs-tools: http://squashfs.sourceforge.net
+squashfs-tools:
+squashfs-tools:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/squashfs-tools-4.3/
+usr/doc/squashfs-tools-4.3/pseudo-file.example
+usr/doc/squashfs-tools-4.3/PERFORMANCE.README
+usr/doc/squashfs-tools-4.3/README-4.3
+usr/doc/squashfs-tools-4.3/README
+usr/doc/squashfs-tools-4.3/INSTALL
+usr/doc/squashfs-tools-4.3/DONATIONS
+usr/doc/squashfs-tools-4.3/COPYING
+usr/doc/squashfs-tools-4.3/CHANGES
+usr/doc/squashfs-tools-4.3/ACKNOWLEDGEMENTS
+usr/bin/
+usr/bin/unsquashfs
+usr/bin/mksquashfs

@@ -1,0 +1,32 @@
+PACKAGE NAME:     xev-1.2.0-i486-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/xev-1.2.0-i486-1.txz
+PACKAGE DESCRIPTION:
+xev: xev (X11 event viewer)
+xev:
+xev: xev creates a window and then asks the X server to send it X11 events
+xev: whenever anything happens to the window (such as it being moved,
+xev: resized, typed in, clicked in, etc.).  You can also attach it to an
+xev: existing window.  It is useful for seeing what causes events to occur
+xev: and to display the information that they contain; it is essentially
+xev: a debugging and development tool, and should not be needed in normal
+xev: usage.
+xev:
+xev:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xev
+usr/man/
+usr/man/man1/
+usr/man/man1/xev.1.gz
+usr/doc/
+usr/doc/xev-1.2.0/
+usr/doc/xev-1.2.0/ChangeLog
+usr/doc/xev-1.2.0/COPYING
+usr/doc/xev-1.2.0/README
+usr/doc/xev-1.2.0/INSTALL

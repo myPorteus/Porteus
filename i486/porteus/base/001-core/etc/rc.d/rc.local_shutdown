@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# rc.local_shutdown
+#
+# This script is executed at shutdown (rc0) and reboot (rc6).
+# You need to make it executable before using.
+#
+# Example:
+# /etc/rc.d/rc.samba stop

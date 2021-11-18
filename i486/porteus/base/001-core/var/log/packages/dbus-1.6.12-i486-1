@@ -1,0 +1,114 @@
+PACKAGE NAME:     dbus-1.6.12-i486-1
+COMPRESSED PACKAGE SIZE:     464K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/dbus-1.6.12-i486-1.txz
+PACKAGE DESCRIPTION:
+dbus: dbus (D-Bus message bus system)
+dbus:
+dbus: D-Bus supplies both a system daemon (for events such as "new hardware
+dbus: device added" or "printer queue changed") and a per user login
+dbus: session daemon (for general IPC needs among user applications).
+dbus: Also, the message bus is built on top of a general one-to-one message
+dbus: passing framework, which can be used by any two apps to communicate
+dbus: directly (without going through the message bus daemon). 
+dbus:
+dbus:
+dbus:
+FILE LIST:
+./
+var/
+var/run/
+var/run/dbus/
+var/lib/
+var/lib/dbus/
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/dbus-uuidgen
+usr/bin/dbus-monitor
+usr/bin/dbus-launch
+usr/bin/dbus-cleanup-sockets
+usr/bin/dbus-daemon
+usr/bin/dbus-send
+usr/man/
+usr/man/man1/
+usr/man/man1/dbus-send.1.gz
+usr/man/man1/dbus-uuidgen.1.gz
+usr/man/man1/dbus-launch.1.gz
+usr/man/man1/dbus-cleanup-sockets.1.gz
+usr/man/man1/dbus-monitor.1.gz
+usr/man/man1/dbus-daemon.1.gz
+usr/lib/
+usr/lib/dbus-1.0/
+usr/lib/dbus-1.0/include/
+usr/lib/dbus-1.0/include/dbus/
+usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/dbus-1.pc
+usr/lib/libdbus-1.la
+usr/lib/libdbus-1.so.3.7.4
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/system-services/
+usr/libexec/
+usr/libexec/dbus-daemon-launch-helper
+usr/include/
+usr/include/dbus-1.0/
+usr/include/dbus-1.0/dbus/
+usr/include/dbus-1.0/dbus/dbus-syntax.h
+usr/include/dbus-1.0/dbus/dbus-errors.h
+usr/include/dbus-1.0/dbus/dbus-macros.h
+usr/include/dbus-1.0/dbus/dbus-connection.h
+usr/include/dbus-1.0/dbus/dbus-message.h
+usr/include/dbus-1.0/dbus/dbus-shared.h
+usr/include/dbus-1.0/dbus/dbus-threads.h
+usr/include/dbus-1.0/dbus/dbus-types.h
+usr/include/dbus-1.0/dbus/dbus.h
+usr/include/dbus-1.0/dbus/dbus-bus.h
+usr/include/dbus-1.0/dbus/dbus-address.h
+usr/include/dbus-1.0/dbus/dbus-memory.h
+usr/include/dbus-1.0/dbus/dbus-misc.h
+usr/include/dbus-1.0/dbus/dbus-server.h
+usr/include/dbus-1.0/dbus/dbus-signature.h
+usr/include/dbus-1.0/dbus/dbus-pending-call.h
+usr/include/dbus-1.0/dbus/dbus-protocol.h
+usr/doc/
+usr/doc/dbus-1.6.12/
+usr/doc/dbus-1.6.12/dbus-launch.1.html
+usr/doc/dbus-1.6.12/dbus-specification.html
+usr/doc/dbus-1.6.12/dbus-tutorial.html
+usr/doc/dbus-1.6.12/system-activation.txt
+usr/doc/dbus-1.6.12/dbus-faq.html
+usr/doc/dbus-1.6.12/AUTHORS
+usr/doc/dbus-1.6.12/dbus-monitor.1.html
+usr/doc/dbus-1.6.12/ChangeLog
+usr/doc/dbus-1.6.12/COPYING
+usr/doc/dbus-1.6.12/README.cygwin
+usr/doc/dbus-1.6.12/README.launchd
+usr/doc/dbus-1.6.12/README.wince
+usr/doc/dbus-1.6.12/README
+usr/doc/dbus-1.6.12/dcop-howto.txt
+usr/doc/dbus-1.6.12/dbus-send.1.html
+usr/doc/dbus-1.6.12/INSTALL
+usr/doc/dbus-1.6.12/dbus-daemon.1.html
+usr/doc/dbus-1.6.12/dbus-uuidgen.1.html
+usr/doc/dbus-1.6.12/diagram.svg
+usr/doc/dbus-1.6.12/diagram.png
+usr/doc/dbus-1.6.12/README.win
+usr/doc/dbus-1.6.12/dbus-cleanup-sockets.1.html
+usr/doc/dbus-1.6.12/busconfig.dtd
+usr/doc/dbus-1.6.12/HACKING
+usr/doc/dbus-1.6.12/NEWS
+usr/doc/dbus-1.6.12/introspect.dtd
+usr/doc/dbus-1.6.12/dbus-test-plan.html
+etc/
+etc/dbus-1/
+etc/dbus-1/system.d/
+etc/dbus-1/session.conf
+etc/dbus-1/system.conf
+etc/dbus-1/session.d/
+etc/rc.d/
+etc/rc.d/rc.messagebus.new

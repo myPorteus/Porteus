@@ -1,0 +1,208 @@
+#!/bin/bash
+## This script will create a gtkdialog window
+## that will act as a front end to the setxkb
+## command to allow users to set their local
+## keymap.
+
+## script by Ahau
+
+. /usr/lib/librokenman
+
+## Switch to root -- uncomment this if we want this application to only run as root.
+#if [ `whoami` != "root" ]; then
+#    gtk_message "Only root can run this application!" 400 gtk-dialog-error
+#    exit
+#fi
+
+exec 2>/dev/null
+
+## Variables
+export XKBSET="/tmp/xkbset_$$"
+export PIXMAPS=/usr/share/pixmaps/porteus
+export keymappath=/usr/share/kbd/keymaps/i386/
+export flagdir=/usr/share/pixmaps/porteus/xkb_flags
+if [ `xmodmap -pp |head -n5|tail -n1|awk '{print$2}'` -eq 1 ]; then 
+  export rmousestate="true"
+    else
+  export lmousestate="true"
+fi
+
+mkdir -p $XKBSET
+	
+## generate keymap list
+cat /usr/share/X11/xkb/rules/base.lst|sed '/! layout/,/! variant/!d'|sed '/^!/d'|sed '/^$/d'|sed 's/^  //g'|sed 's/ * /     /'|sort -k 2 > $XKBSET/.kmap_list
+
+#generate variant list
+cat /usr/share/X11/xkb/rules/base.lst|sed '/! variant/,/! option/!d'|sed '/^!/d'|sed '/^$/d'|sed 's/^  //g'|sed 's/ * / /' > $XKBSET/.kmap_variant_master
+
+## get existing layout
+export fullokmapin=`setxkbmap -query |grep layout:|cut -d " " -f6`
+export okmapin=`echo $fullokmapin |cut -d ',' -f1`
+export okmap=`grep "^$okmapin " $XKBSET/.kmap_list`
+
+#place existing configs in dump to make sure they don't disappear on us now that we've made them defaults
+echo "kmap setting is $okmap" >> $XKBSET/dump
+
+apply_settings()
+{
+# Apply mouse settings
+lmouse=`grep LMOUSE /tmp/.kmap_dump |awk -F'"' '{print$2}'`
+rmouse=`grep RMOUSE /tmp/.kmap_dump |awk -F'"' '{print$2}'`
+[ "$rmouse" == "true" ] && xmodmap -e "pointer = 1 2 3"
+[ "$lmouse" == "true" ] && xmodmap -e "pointer = 3 2 1"
+
+kmapselect=`grep "kmap setting is" $XKBSET/dump|tail -n1|awk '{print$4}'`
+unset kmapvariant
+variant=`cat $XKBSET/dump|grep "kmap variant is"|tail -n 1|grep -v '(none)'|sed 's/kmap variant is //g'|cut -d ' ' -f1`
+if [ $variant ]; then
+  kmapvariant="-variant $variant"
+fi
+setxkbmap -layout $kmapselect,us $kmapvariant -option "grp:alt_shift_toggle" || gtk_message "Some error occurred. Please try again" 450 gtk-yes
+}; export -f apply_settings
+
+get_flag()
+{
+curkmap=`cat $XKBSET/dump|grep 'kmap setting is'|tail -n 1|sed 's/kmap setting is //g' |cut -d ' ' -f1`
+if [ -e $flagdir/$curkmap.png ]; then
+  cp $flagdir/$curkmap.png $XKBSET/current.png
+else
+  cp $flagdir/stock.png $XKBSET/current.png
+fi	
+}; export -f get_flag
+
+get_flag
+
+build_variant_list()
+{
+curkmap=`cat $XKBSET/dump|grep 'kmap setting is'|tail -n 1|sed 's/kmap setting is //g' |cut -d ' ' -f1`	
+grep ' '$curkmap:'' $XKBSET/.kmap_variant_master|cut -d ' ' -f1,3,4,5,6,7,8,9,10,11 |sed '1 i (none)     use defaults'|sed 's/ /     /' > $XKBSET/.kmap_variant_short
+}	; export -f build_variant_list
+
+build_variant_list
+
+export ovariantin=`setxkbmap -query |grep variant:|cut -d " " -f5`
+export savedvariant=$ovariantin
+if [ $ovariantin ]; then 
+  if grep "^$ovariantin " $XKBSET/.kmap_variant_short; then
+    export ovariant=`grep "^$ovariantin " $XKBSET/.kmap_variant_short`
+  else
+    export ovariant='(none)     use defaults'
+    unset ovariantin
+  fi
+else
+  export ovariant='(none)     use defaults'
+fi
+echo "kmap variant is $ovariant" >> $XKBSET/dump
+
+revert_to_original()
+{
+unset variant
+if [ "$savedvariant" ]; then
+  variant="-variant $savedvariant"
+fi
+setxkbmap -layout $fullokmapin $variant -option "grp:alt_shift_toggle"
+}; export -f revert_to_original	
+	
+export XKBCONFIG='
+<window window_position="1" title="Keymap Settings" icon-name="input-keyboard" allow-shrink="false" width-request="500" height-request="460">
+<vbox margin="10">
+  <hbox>
+    <pixmap><height>48</height><width>48</width><input file>/usr/share/pixmaps/porteus/keyboard.png</input></pixmap>
+    '`txtcolor 400 darkred x-large normal "            Porteus keymap settings"`'
+  </hbox>
+    '`hsep`'
+    <frame Choose your keyboard layout>
+      <hbox>
+      <text xalign="0" wrap="true" width-request="450"><label>"
+Please select your desired keyboard layout from the list below.
+      
+Once you press the OK button, your selection will be applied and your keyboard will start using the new mapping.  
+
+Hint: after pressing OK, you can press alt+shift to toggle between your selected keymap and the US keymap.
+"</label>        
+      </text>
+      </hbox>
+      <hseparator></hseparator>
+<hbox>
+<vbox>
+<hbox>
+  <text use-markup="true" xalign="0" wrap="true"><label>"Select locale:"</label></text>
+<comboboxtext focus-on-click="false" width-request="250">
+	<variable>KEYMAPBOX</variable>
+	<input file>'$XKBSET'/.kmap_list</input>
+	<default>'`grep "^$okmapin " $XKBSET/.kmap_list`'</default>
+	<action signal="changed">echo kmap setting is $KEYMAPBOX > $XKBSET/dump</action>
+	<action signal="changed">get_flag</action>
+	<action signal="changed">build_variant_list</action>
+	<action signal="changed">refresh:SHOWFLAG</action>
+	<action signal="changed">refresh:VARIANTBOX</action>
+	<action signal="changed">enable:APPLY</action>
+	<action signal="changed">enable:OKBUT</action>
+</comboboxtext>
+</hbox>
+<hbox>
+  <text use-markup="true" xalign="0" wrap="true"><label>"Select variant:"</label></text>
+<comboboxtext focus-on-click="false" width-request="250">
+	<variable>VARIANTBOX</variable>
+	<input file>'$XKBSET'/.kmap_variant_short</input>
+	<default>'`if [ $ovariantin ]; then grep "^$ovariantin " $XKBSET/.kmap_variant_short; else echo garbage; fi`'</default>
+	<action signal="changed">echo kmap variant is $VARIANTBOX >> $XKBSET/dump</action>
+	<action signal="changed">enable:APPLY</action>
+	<action signal="changed">enable:OKBUT</action>
+</comboboxtext>
+</hbox>
+</vbox>
+<vbox>
+<text width-request="20"><label>""</label></text>
+</vbox>
+<vbox>
+<pixmap><height>48</height><width>48</width>
+<variable>SHOWFLAG</variable>
+<input file>'$XKBSET'/current.png</input></pixmap>
+</vbox>
+</hbox>   
+<hseparator></hseparator>
+<hbox>
+<text width-request="450"><label>"Test your keyboard settings by typing here:"</label></text>
+</hbox>
+<hbox>
+<edit>
+      <variable>EDITOR</variable>
+      <width>350</width><height>40</height>
+      <action signal="focus-in-event">apply_settings</action>
+    </edit>
+</hbox> 
+    </frame>
+<hbox>
+<radiobutton active="'$lmousestate'">
+  <variable>LMOUSE</variable>
+  <label>Left handed mouse</label>
+</radiobutton>
+<radiobutton active="'$rmousestate'">
+  <variable>RMOUSE</variable>
+  <label>Right handed mouse</label>
+</radiobutton>
+</hbox>
+  <hbox>
+      <button cancel>
+    </button>
+    <button ok>
+        <variable>OKBUT</variable>
+    </button>
+
+  </hbox>
+</vbox>
+</window>
+'
+gtkdialog -p XKBCONFIG > /tmp/.kmap_dump
+
+## Did user cancel ?
+[ `egrep -o "Cancel|abort" /tmp/.kmap_dump` ] && revert_to_original && rm -rf $XKBSET && rm /tmp/.kmap_* && exit
+
+apply_settings
+
+gtk_message "Your settings have been applied." 350 gtk-yes
+
+rm -rf $XKBSET
+rm /tmp/.kmap_*
+

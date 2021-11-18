@@ -1,0 +1,9 @@
+## Blended GTK
+## Ported by atrxx
+## Original GTK2/MCITY by ECHM <http://gnome-look.org/content/show.php?content=26050>
+
+title_horizontal_offset=-3
+button_layout=O|HMC
+maximized_offset=4
+active_text_color=#000000
+inactive_text_color=#686868

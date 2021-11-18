@@ -1,0 +1,41 @@
+PACKAGE NAME:     x264-20131101-i486-1ftm
+COMPRESSED PACKAGE SIZE:     776K
+UNCOMPRESSED PACKAGE SIZE:     1.9M
+PACKAGE LOCATION: /tmp/x264-20131101-i486-1ftm.tgz
+PACKAGE DESCRIPTION:
+x264: x264 (free h264/avc encoder)
+x264:
+x264: x264 is a free library for encoding H264/AVC video streams.
+x264: The code is written from scratch by Laurent Aimar, Loren Merritt,
+x264: Eric Petit (OS X), Min Chen (vfw/asm), Justin Clay (vfw), Måns
+x264: Rullgård, Radek Czyz, Christian Heine (asm), Alex Izvorski, and
+x264: Alex Wright. It is released under the terms of the GPL license.
+x264:
+x264: Homepage: http://www.videolan.org/developers/x264.html
+x264:
+x264:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/x264-20131101/
+usr/doc/x264-20131101/x264.SlackBuild
+usr/doc/x264-20131101/vui.txt
+usr/doc/x264-20131101/threads.txt
+usr/doc/x264-20131101/standards.txt
+usr/doc/x264-20131101/regression_test.txt
+usr/doc/x264-20131101/ratecontrol.txt
+usr/doc/x264-20131101/COPYING
+usr/doc/x264-20131101/AUTHORS
+usr/lib/
+usr/lib/libx264.so.138
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/x264.pc
+usr/include/
+usr/include/x264_config.h
+usr/include/x264.h
+usr/bin/
+usr/bin/x264

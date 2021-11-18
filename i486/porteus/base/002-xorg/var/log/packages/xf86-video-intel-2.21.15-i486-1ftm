@@ -1,0 +1,38 @@
+PACKAGE NAME:     xf86-video-intel-2.21.15-i486-1ftm
+COMPRESSED PACKAGE SIZE:     508K
+UNCOMPRESSED PACKAGE SIZE:     1.7M
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1-32/002/002-ftm/xf86-video-intel-2.21.15-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+xf86-video-intel: xf86-video-intel
+xf86-video-intel:
+xf86-video-intel: xf86-video-intel is part of X11.
+xf86-video-intel:
+xf86-video-intel: For more information about the X.Org Foundation (the providers of the
+xf86-video-intel: X.Org implementation of the X Window System), see their website:
+xf86-video-intel:
+xf86-video-intel: http://www.x.org
+xf86-video-intel:
+xf86-video-intel:
+xf86-video-intel:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-intel-2.21.15/
+usr/doc/xf86-video-intel-2.21.15/README
+usr/lib/
+usr/lib/libIntelXvMC.so.1.0.0
+usr/lib/libI810XvMC.so.1.0.0
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/intel_drv.so
+usr/lib/xorg/modules/drivers/intel_drv.la
+usr/lib/libI810XvMC.la
+usr/lib/libIntelXvMC.la
+usr/man/
+usr/man/man4/
+usr/man/man4/intel.4.gz

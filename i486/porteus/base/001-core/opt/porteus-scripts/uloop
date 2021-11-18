@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ `whoami` != "root" ]; then
+    su - -c "uloop"
+    exit
+fi
+
+[ -d /mnt/loop ] && mls=`grep /mnt/loop /proc/mounts | wc -l`
+
+if [ "$mls" -gt 0 ]; then
+    umount /mnt/loop
+    [ -b /dev/mapper/mloop-crypt ] && cryptsetup luksClose mloop-crypt
+    echo
+    echo "/mnt/loop has been unmounted"
+    echo
+else
+    echo
+    echo "nothing is mounted in /mnt/loop"
+    echo
+fi
+
+exit

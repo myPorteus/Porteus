@@ -1,0 +1,35 @@
+PACKAGE NAME:     xf86-video-mach64-6.9.4-i486-4
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /root/new/xf86-video-mach64-6.9.4-i486-4.txz
+PACKAGE DESCRIPTION:
+xf86-video-mach64: xf86-video-mach64 (ATI Mach64 driver for the Xorg X server)
+xf86-video-mach64:
+xf86-video-mach64: xf86-video-mach64 is part of X11.
+xf86-video-mach64:
+xf86-video-mach64: For more information about the X.Org Foundation (the providers of the
+xf86-video-mach64: X.Org implementation of the X Window System), see their website:
+xf86-video-mach64:
+xf86-video-mach64: http://www.x.org
+xf86-video-mach64:
+xf86-video-mach64:
+xf86-video-mach64:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/man/
+usr/man/man4/
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/mach64_drv.so
+usr/lib/xorg/modules/drivers/mach64_drv.la
+usr/doc/
+usr/doc/xf86-video-mach64-6.9.4/
+usr/doc/xf86-video-mach64-6.9.4/ChangeLog
+usr/doc/xf86-video-mach64-6.9.4/COPYING
+usr/doc/xf86-video-mach64-6.9.4/README
+usr/doc/xf86-video-mach64-6.9.4/INSTALL

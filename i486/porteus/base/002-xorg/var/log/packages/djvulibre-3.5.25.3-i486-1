@@ -1,0 +1,127 @@
+PACKAGE NAME:     djvulibre-3.5.25.3-i486-1
+COMPRESSED PACKAGE SIZE:     932K
+UNCOMPRESSED PACKAGE SIZE:     2.9M
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/djvulibre-3.5.25.3-i486-1.txz
+PACKAGE DESCRIPTION:
+djvulibre: djvulibre (web-centric document and image format)
+djvulibre:
+djvulibre: DjVu is a web-centric format and software platform for distributing
+djvulibre: documents and images.  DjVu content downloads faster, displays and 
+djvulibre: renders faster, looks nicer on a screen, and consume less client 
+djvulibre: resources than competing formats.  DjVu was originally developed at
+djvulibre: AT&T Labs-Research by Leon Bottou, Yann LeCun, Patrick Haffner, and
+djvulibre: many others.
+djvulibre:
+djvulibre: Homepage:  http://djvu.sourceforge.net
+djvulibre:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/djvused
+usr/bin/bzz
+usr/bin/djvups
+usr/bin/djvutxt
+usr/bin/djvutoxml
+usr/bin/djvm
+usr/bin/djvuextract
+usr/bin/djvuxmlparser
+usr/bin/c44
+usr/bin/djvmcvt
+usr/bin/djvudump
+usr/bin/djvumake
+usr/bin/csepdjvu
+usr/bin/ddjvu
+usr/bin/djvudigital
+usr/bin/any2djvu
+usr/bin/djvuserve
+usr/bin/cpaldjvu
+usr/bin/cjb2
+usr/man/
+usr/man/man1/
+usr/man/man1/djvudump.1.gz
+usr/man/man1/djvuserve.1.gz
+usr/man/man1/djvmcvt.1.gz
+usr/man/man1/djvuextract.1.gz
+usr/man/man1/csepdjvu.1.gz
+usr/man/man1/djvm.1.gz
+usr/man/man1/djvuxml.1.gz
+usr/man/man1/cpaldjvu.1.gz
+usr/man/man1/djvutoxml.1.gz
+usr/man/man1/djvutxt.1.gz
+usr/man/man1/djvu.1.gz
+usr/man/man1/any2djvu.1.gz
+usr/man/man1/djvused.1.gz
+usr/man/man1/bzz.1.gz
+usr/man/man1/ddjvu.1.gz
+usr/man/man1/djvudigital.1.gz
+usr/man/man1/cjb2.1.gz
+usr/man/man1/c44.1.gz
+usr/man/man1/djvuxmlparser.1.gz
+usr/man/man1/djvups.1.gz
+usr/man/man1/djvumake.1.gz
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/ddjvuapi.pc
+usr/lib/libdjvulibre.so.21.4.0
+usr/lib/libdjvulibre.la
+usr/share/
+usr/share/mime/
+usr/share/mime/packages/
+usr/share/mime/packages/djvulibre-mime.xml
+usr/share/djvu/
+usr/share/djvu/pubtext/
+usr/share/djvu/pubtext/DjVuXML-s.dtd
+usr/share/djvu/pubtext/DjVuOCR.dtd
+usr/share/djvu/pubtext/DjVuMessages.dtd
+usr/share/djvu/osi/
+usr/share/djvu/osi/en/
+usr/share/djvu/osi/en/libdjvu++.xml
+usr/share/djvu/osi/en/djvutools-reference.xml
+usr/share/djvu/osi/en/messages.xml
+usr/share/djvu/osi/cs/
+usr/share/djvu/osi/cs/messages.xml
+usr/share/djvu/osi/languages.xml
+usr/share/djvu/osi/zh/
+usr/share/djvu/osi/zh/libdjvu++.xml
+usr/share/djvu/osi/zh/messages.xml
+usr/share/djvu/osi/de/
+usr/share/djvu/osi/de/libdjvu++.xml
+usr/share/djvu/osi/de/messages.xml
+usr/share/djvu/osi/ja/
+usr/share/djvu/osi/ja/libdjvu++.xml
+usr/share/djvu/osi/ja/messages.xml
+usr/share/djvu/osi/desktop/
+usr/share/djvu/osi/desktop/hi48-djvu.png
+usr/share/djvu/osi/desktop/djvulibre-mime.xml
+usr/share/djvu/osi/desktop/register-djvu-mime
+usr/share/djvu/osi/desktop/hi16-djvu.png
+usr/share/djvu/osi/desktop/hi96-djvu.png
+usr/share/djvu/osi/desktop/hi256-djvu.png
+usr/share/djvu/osi/desktop/hi72-djvu.png
+usr/share/djvu/osi/desktop/hi128-djvu.png
+usr/share/djvu/osi/desktop/hi22-djvu.png
+usr/share/djvu/osi/desktop/hi64-djvu.png
+usr/share/djvu/osi/desktop/hi20-djvu.png
+usr/share/djvu/osi/desktop/hi24-djvu.png
+usr/share/djvu/osi/desktop/hi32-djvu.png
+usr/share/djvu/osi/desktop/hi-djvu.svgz
+usr/share/djvu/osi/fr/
+usr/share/djvu/osi/fr/libdjvu++.xml
+usr/share/djvu/osi/fr/messages.xml
+usr/include/
+usr/include/libdjvu/
+usr/include/libdjvu/ddjvuapi.h
+usr/include/libdjvu/miniexp.h
+usr/doc/
+usr/doc/djvulibre-3.5.25.3/
+usr/doc/djvulibre-3.5.25.3/COPYING
+usr/doc/djvulibre-3.5.25.3/README_win32
+usr/doc/djvulibre-3.5.25.3/README
+usr/doc/djvulibre-3.5.25.3/INSTALL
+usr/doc/djvulibre-3.5.25.3/COPYRIGHT
+usr/doc/djvulibre-3.5.25.3/NEWS
+usr/doc/djvulibre-3.5.25.3/README_macosx

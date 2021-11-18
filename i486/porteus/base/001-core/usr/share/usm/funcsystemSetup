@@ -1,0 +1,183 @@
+#!/bin/bash
+
+update_local_libs(){
+rm $LOCALDB/libs.txt 2>/dev/null
+[ "$ARCH" = "x86_64" ] && local LIBS="/usr/lib /usr/lib64 /lib /lib64 /usr/local/lib64" || local LIBS="/usr/lib /lib /usr/local/lib"
+find $LIBS -regextype "posix-extended" -iregex '.*\.(so|so.[0-9].*)' >> $LOCALDB/libs.txt
+}
+
+system_setup(){
+if [ "`awk '{print$2}' /etc/slackware-version`" != "14.1" ]; then
+	SLACKVERERROR=`gettext "Sorry, but while USM is in beta it only supports slackware 14.1."`
+	if [ $GUI ]; then
+		gtk_message "`gettext "Slackware version error"`" "$SLACKVERERROR" "`gettext "Future releases may support all versions."`" gtk-dialog-error 450
+			else
+		fatality "$SLACKVERERROR" $FUNCNAME $LINENO
+	fi
+	cleanup
+fi
+
+[ "$ARCH" = "" ] && ARCH=`uname -m`
+case $ARCH in
+	i386|i486|i586|i686)
+		export ARCH=i486
+		export SLACKSUFFIX=""
+	;;
+	x86-64|x86_64|X86-64|X86_64)
+		export ARCH=x86_64
+		export SLACKSUFFIX="64"
+	;;
+esac
+
+[ $CLI ] && local required="sed ldd installpkg removepkg awk bash" || \
+local required="sed ldd installpkg removepkg awk bash gtkdialog"
+for a in $required; do
+	! [[ `which $a 2>/dev/null` ]] && nothave+=( $a )
+	shift
+done
+
+if [ ${#nothave[@]} -gt 0 ]; then
+	SANITYERROR=`gettext "You need the following programs to continue: "`
+	if [ $GUI ]; then
+	gtk_message2 "$SANITYERROR" "`printf -- '%s\n' ${nothave[@]}`" gtk-dialog-error 500
+		else
+	echo
+	echo -e $txtbld "$SANITYERROR" $rst 
+	printf -- '%s\n' ${nothave[@]}
+	fi
+	cleanup
+fi
+
+if [ $GUI ]; then
+	GTKVERSION=$(awk '{print$3}' <<<`gtkdialog -v`)
+	GTKV=`printf '%s\n' $GTKDMIN $GTKVERSION | sort -V | tail -n1`
+	if [ "$GTKVERSION" != "$GTKV" ]; then
+		gtk_message2 "`gettext "gtkdialog version is insufficient"`" "`gettext "gtkdialog version 0.8.3 or higher is required."`"
+		cleanup	
+	fi
+fi
+
+[ -z "$SLACKVER" ] && export SLACKVER=`awk '{print$2}' < /etc/slackware-version`
+
+[ -z $RESOLVE ] && export RESOLVE=false
+
+if [ $GUI ]; then
+	FMANAGER="dolphin konqueror krusader thunar Thunar nautilus caja spacefm krusader pcmanfm pcmanfm-qt xfe rox"
+	for a in $FMANAGER; do
+		command -v $a >/dev/null && { export FILEMANAGER=`command -v $a`; break; }
+	done
+fi
+
+if [ -e /var/lock/usm.* ]; then
+	LOCKFILEERROR1=`gettext "Usm is already active."`
+	LOCKFILEERROR2=`gettext "If this information is not correct, you can remove the following file and rerun the script:"`
+	if [ $GUI ];then
+		gtk_message "$LOCKFILEERROR1" "LOCKFILEERROR2" "/var/lock/usm" gtk-dialog-error 500
+			else
+		echo
+		echo -e $txtbld "$LOCKFILEERROR1" $rst
+		echo
+		echo "$LOCKFILEERROR2"
+		echo "/var/lock/usm"
+	fi
+	cleanup
+			else
+	ls /var/lock/usm.* &>/dev/null || \
+	echo 0 > $PIDLOCK
+fi
+
+export DISFILES
+export DISTROS
+for a in $DISTROS; do
+	b=${a^^}
+	export REPO_$b=`grep -m1 -e "^\([a-z]\)" $CONFDIR/mirrors-$a.txt`
+	export DBDIR_$b=${DBDIR}/$a
+	export FILES_$a="`awk -F: '/distro:'$a'/ { getline; print $NF }' $CONFDIR/files.conf`"
+	export EXTRAS_$a="`awk -F: '/distro:'$a'/ { getline;getline; print $NF }' $CONFDIR/files.conf`"
+done
+export REPO_SBO=`grep -m1 -e "^\([a-z]\)" $CONFDIR/mirrors-sbo.txt`
+
+for a in wget curl; do b=`which $a 2>/dev/null`; [ -z $b ] && continue || { DLOADER="$b"; break; }; done
+
+if [ -z $DLOADER ]; then
+	SANITYDOWNLOADER=`gettext "I could not find a program to download files from the internet."`
+	fatality "$SANITYDOWNLOADER" $FUNCNAME $LINENO
+	exit
+else
+	export DLOADER
+fi
+
+if [ "$DLOADER" = "curl" ]; then
+	DLOADER="curl ${CURLFLAGS} -o"
+		else
+	DLOADER="wget ${WGETFLAGS} -O"
+fi
+
+if [ -z $UPDATENOW ]; then
+for a in PACKAGES.TXT LIBS.TXT OPTIFEST; do
+	[ ! -f $DBDIR_SLACKWARE/$a ] && MISSINGDB=1
+	[ ! -f $DBDIR_SLACKY/$a ] && MISSINGDB=1
+	[ ! -f $DBDIR_PONCE/$a ] && MISSINGDB=1
+done
+
+if [ $MISSINGDB ]; then
+	DATABASEERROR1=`gettext "Missing database files."`
+	DATABASEERROR2=`gettext "You are missing required database files!"`
+	if [ $GUI ]; then
+		gtk_message "$DATABASEERROR1" "$DATABASEERROR2" "`gettext "You can update databases using the update menu."`" gtk-dialog-error 500
+	else
+		if [ -z $SYSTEMDEPS ]; then
+			echo && echo $txtbld "$DATABASEERROR2" $rst
+			echo "`gettext " Please run: usm -u all"`"
+			cleanup
+		fi
+	fi
+fi
+unset UPDATENOW
+fi
+
+[ ! -d $STORAGE ] && mkdir -p $STORAGE
+
+[ ! -d $LOCALDB ] && mkdir -p $LOCALDB
+update_local_libs &
+
+cat > $TMPDIR/welcome << EOF
+`gettext "Welcome to the Unified Slackware Package Manager"`
+
+`gettext "HOW TO USE THE PROGRAM"`
+
+`gettext "1) Enter a search term"`
+`gettext "2) Choose a search method above (Package, Keyword or Library)"`
+`gettext "3) Click search"`
+`gettext "4) Click on a package for more info"`
+`gettext "5) Click download to get it"`
+EOF
+
+cat > $TMPDIR/help-pkgtools.tmp <<EOF
+
+Slackware Package Tools
+
+`gettext "HOW TO USE THE PACKAGE TOOLS"`
+
+1) `gettext "Choose an action (Example: install)"`
+2) `gettext "Choose a slackware package"`
+3) `gettext "Click the Execute button at the bottom"`
+
+EOF
+
+if [ -e $DBDIR/sbo/SLACKBUILDS.TXT ]; then
+awk -F/ '/SLACKBUILD LOCATION:/{print$2}' $DBDIR/sbo/SLACKBUILDS.TXT|sort -u > $TMPDIR/sbo-categories.tmp
+fi
+
+echo "Processing ..." > $TMPDIR/.stream
+touch $TMPDIR/sbocategs
+
+cp -a $TMPDIR/welcome{,.bak}
+
+touch $TMPDIR/term1.tmp
+echo "test-package-name-1.2.3-x86_64-1.txz|1023 K|slackware|not installed" >> $TMPDIR/filelist
+
+echo package > "$TMPDIR/searchType"
+
+echo 0 > $PIDLOCK
+}

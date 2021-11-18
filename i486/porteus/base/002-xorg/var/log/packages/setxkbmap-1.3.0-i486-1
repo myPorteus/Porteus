@@ -1,0 +1,32 @@
+PACKAGE NAME:     setxkbmap-1.3.0-i486-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/setxkbmap-1.3.0-i486-1.txz
+PACKAGE DESCRIPTION:
+setxkbmap: setxkbmap (change X11 keyboard layout)
+setxkbmap:
+setxkbmap: setxkbmap is part of X11.
+setxkbmap:
+setxkbmap: For more information about the X.Org Foundation (the providers of the
+setxkbmap: X.Org implementation of the X Window System), see their website:
+setxkbmap:
+setxkbmap: http://www.x.org
+setxkbmap:
+setxkbmap:
+setxkbmap:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/setxkbmap
+usr/man/
+usr/man/man1/
+usr/man/man1/setxkbmap.1.gz
+usr/doc/
+usr/doc/setxkbmap-1.3.0/
+usr/doc/setxkbmap-1.3.0/ChangeLog
+usr/doc/setxkbmap-1.3.0/COPYING
+usr/doc/setxkbmap-1.3.0/README
+usr/doc/setxkbmap-1.3.0/INSTALL

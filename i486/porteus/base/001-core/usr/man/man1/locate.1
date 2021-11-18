@@ -1,0 +1,113 @@
+.TH SLOCATE 1 "January 6, 2006" 
+.SH NAME
+slocate \- Security Enhanced version of the GNU Locate
+.SH SYNOPSIS
+slocate [\-qi] [\-d <path>] [\-\-database=<path>] <search string>
+.br
+slocate [\-i] [\-r <regexp>] [\-\-regexp=<regexp>]
+.br
+slocate [\-qv] [\-o <file>] [\-\-output=<file>]
+slocate [\-e <dir1,dir2,...>] [\-f <fstype1,...>] <[\-l <level>] [\-c] <[\-U <path>] [\-u]>
+.br
+slocate [\-Vh] [\-\-version] [\-\-help]
+.br
+.br
+ 
+.SH DESCRIPTION
+Secure Locate provides a secure way to index and quickly search for all
+files on your system regardless of ownership. It uses incremental encoding
+just like GNU locate to compress its database to make searching faster, but
+it will also check file permissions and ownership before displaying matched
+entries so that users will not see files they do not have access to. Note
+that permissions and ownership are not stored in the database.
+.PP
+This manual page documents
+.BR slocate .
+.B slocate
+Enables system users to search entire filesystems without
+displaying unauthorized files.
+.SS OPTIONS
+.TP
+.I \-u
+Create slocate database starting at path /.
+.TP
+.I \-U <dir>
+Create slocate database starting at path <dir>.
+.TP
+.I \-e <dir1,dir2,...>
+Exclude directories from the slocate database.
+.TP
+.I \-f <fstype1,...>
+Exclude files on specific file systems from the slocate database.
+.TP
+.I \-c
+Parse '/etc/updatedb.conf' when updating the slocate database. (see 
+.SM
+.B CONFIGURATION FILE
+below).
+.TP
+.I \-l <level>
+Security level.
+0 turns security checks off. This will make
+searchs faster.
+1 turns security checks on. This is the default.
+.TP
+.I \-i
+Does a case insensitive search.
+.TP
+.I \-q
+Quiet mode.  Error messages are suppressed.
+.TP
+.I \-n <num>
+Limit the amount of results shown to <num>.
+.TP
+.I \-r <regexp>
+.I \-\-regexp=<regexp>
+Search the database using a basic POSIX regular
+expression.
+.TP
+.I \-o <file>
+.I \-\-output=<file>
+Specfies the database to create.
+.TP
+.I \-d <path>
+.I \-\-database=<path>
+Specfies the path of databases to search in.
+.TP
+.I \-h
+.I \-\-help
+Display this help.
+.TP
+.I \-v
+.I \-\-verbose
+Verbose mode. Display files when creating database.
+.TP
+.I \-V
+.I \-\-version
+Display version.
+.SH ENVIRONMENT
+.TP
+LOCATE_PATH 
+	Colon-separated list of databases to search.
+.SH CONFIGURATION FILE
+Secure Locate will parse GNU Locate's 
+.I /etc/updatedb.conf
+when the 
+.I-c
+argument is provided. But please be aware that Secure Locate currently
+does NOT support all options provided by GNU Locate's configuration file.
+
+Options currently supported by Secure Locate are
+.B PRUNEFS
+and
+.B PRUNEPATHS
+.SH VERSION
+Secure Locate v3.0 beta
+.SH AUTHOR
+Kevin Lindsay - Copyright (c) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+.SH BUG REPORT
+Report bugs to slocate@trakker.ca
+.SH URL
+http://slocate.trakker.ca/
+.SH "SEE ALSO"
+\fBupdatedb\fP(1)

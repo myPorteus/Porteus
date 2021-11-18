@@ -1,0 +1,55 @@
+PACKAGE NAME:     libXrandr-1.4.2-i486-1
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/libXrandr-1.4.2-i486-1.txz
+PACKAGE DESCRIPTION:
+libXrandr: libXrandr (X Resize, Rotate and Reflection extension library)
+libXrandr:
+libXrandr: libXrandr is part of X11.
+libXrandr:
+libXrandr: For more information about the X.Org Foundation (the providers of the
+libXrandr: X.Org implementation of the X Window System), see their website:
+libXrandr:
+libXrandr: http://www.x.org
+libXrandr:
+libXrandr:
+libXrandr:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/man/
+usr/man/man3/
+usr/man/man3/Xrandr.3.gz
+usr/man/man3/XRRConfigSizes.3.gz
+usr/man/man3/XRRConfigCurrentRate.3.gz
+usr/man/man3/XRRQueryExtension.3.gz
+usr/man/man3/XRRSetScreenConfigAndRate.3.gz
+usr/man/man3/XRRSetScreenConfig.3.gz
+usr/man/man3/XRRConfigCurrentConfiguration.3.gz
+usr/man/man3/XRRGetScreenInfo.3.gz
+usr/man/man3/XRRConfigRotations.3.gz
+usr/man/man3/XRRConfigTimes.3.gz
+usr/man/man3/XRRQueryVersion.3.gz
+usr/man/man3/XRRRootToScreen.3.gz
+usr/man/man3/XRRConfigRates.3.gz
+usr/man/man3/XRRSelectInput.3.gz
+usr/man/man3/XRRFreeScreenConfigInfo.3.gz
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xrandr.pc
+usr/lib/libXrandr.so.2.2.0
+usr/lib/libXrandr.la
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/Xrandr.h
+usr/doc/
+usr/doc/libXrandr-1.4.2/
+usr/doc/libXrandr-1.4.2/AUTHORS
+usr/doc/libXrandr-1.4.2/ChangeLog
+usr/doc/libXrandr-1.4.2/COPYING
+usr/doc/libXrandr-1.4.2/README
+usr/doc/libXrandr-1.4.2/INSTALL

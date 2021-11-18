@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/winff">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>WinFF preset file</comment>
+  <comment xml:lang="nl">Winff voorinstellingen bestand</comment>
+  <comment xml:lang="nb">Winff fil med forhåndsinnstillinger</comment>
+  <acronym>WinFF</acronym>
+  <generic-icon name="video-x-generic"/>
+  <sub-class-of type="text/xml"/>
+  <glob pattern="*.wff"/>
+</mime-type>

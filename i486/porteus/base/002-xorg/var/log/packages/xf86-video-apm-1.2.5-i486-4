@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-apm-1.2.5-i486-4
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /root/new/xf86-video-apm-1.2.5-i486-4.txz
+PACKAGE DESCRIPTION:
+xf86-video-apm: xf86-video-apm (driver for Alliance Promotion graphics chipsets)
+xf86-video-apm:
+xf86-video-apm: xf86-video-apm is part of X11.
+xf86-video-apm:
+xf86-video-apm: For more information about the X.Org Foundation (the providers of the
+xf86-video-apm: X.Org implementation of the X Window System), see their website:
+xf86-video-apm:
+xf86-video-apm: http://www.x.org
+xf86-video-apm:
+xf86-video-apm:
+xf86-video-apm:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/man/
+usr/man/man4/
+usr/man/man4/apm.4.gz
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/apm_drv.la
+usr/lib/xorg/modules/drivers/apm_drv.so
+usr/doc/
+usr/doc/xf86-video-apm-1.2.5/
+usr/doc/xf86-video-apm-1.2.5/ChangeLog
+usr/doc/xf86-video-apm-1.2.5/COPYING
+usr/doc/xf86-video-apm-1.2.5/README
+usr/doc/xf86-video-apm-1.2.5/INSTALL

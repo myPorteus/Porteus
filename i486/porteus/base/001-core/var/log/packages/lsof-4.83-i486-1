@@ -1,0 +1,41 @@
+PACKAGE NAME:     lsof-4.83-i486-1
+COMPRESSED PACKAGE SIZE:     268K
+UNCOMPRESSED PACKAGE SIZE:     890K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/lsof-4.83-i486-1.txz
+PACKAGE DESCRIPTION:
+lsof: lsof (list open files)
+lsof:
+lsof: Lsof is a Unix-specific tool.  Its name stands for "LiSt Open Files",
+lsof: and it does just that.  It lists information about files that are open
+lsof: by the processes running on the system.
+lsof:
+lsof: Victor A. Abell of Purdue University is the developer of lsof.
+lsof:
+lsof:
+lsof:
+lsof:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/lsof
+usr/man/
+usr/man/man8/
+usr/man/man8/lsof.8.gz
+usr/doc/
+usr/doc/lsof-4.83/
+usr/doc/lsof-4.83/00QUICKSTART
+usr/doc/lsof-4.83/00MANIFEST
+usr/doc/lsof-4.83/00DCACHE
+usr/doc/lsof-4.83/00XCONFIG
+usr/doc/lsof-4.83/00DIALECTS
+usr/doc/lsof-4.83/00FAQ
+usr/doc/lsof-4.83/00PORTING
+usr/doc/lsof-4.83/00DIST
+usr/doc/lsof-4.83/00.README.FIRST
+usr/doc/lsof-4.83/00README
+usr/doc/lsof-4.83/00TEST
+usr/doc/lsof-4.83/00LSOF-L
+usr/doc/lsof-4.83/00CREDITS
+install/
+install/slack-desc

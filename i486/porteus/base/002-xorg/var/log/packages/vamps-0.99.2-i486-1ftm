@@ -1,0 +1,30 @@
+PACKAGE NAME:     vamps-0.99.2-i486-1ftm
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /root/new/vamps-0.99.2-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+vamps: Vamps (GNU/Linux backups of DVDs)
+vamps:
+vamps: Vamps was written to make cheap backups of DVDs under Linux. Back in
+vamps: 2003 Metakine published the source code of their M2Requantiser module.
+vamps: The idea was to make use of this great piece of software to create a
+vamps: transcoder for Linux for shrinking the content of a DVD9. This would
+vamps: enable backups on cheap single layer DVDRs (double layer burners weren't
+vamps: even available that time). The Metakine requantizer is pretty fast and
+vamps: so Vamps was designed not to break this outstanding performance.
+vamps:
+vamps:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/vamps-0.99.2/
+usr/doc/vamps-0.99.2/vamps.SlackBuild
+usr/doc/vamps-0.99.2/slack-desc
+usr/doc/vamps-0.99.2/INSTALL
+usr/doc/vamps-0.99.2/COPYING
+usr/bin/
+usr/bin/vamps
+usr/bin/play_cell

@@ -1,0 +1,39 @@
+PACKAGE NAME:     gdbm-1.8.3-i486-4
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /root/work/Port14.1-32/001/001/gdbm-1.8.3-i486-4.txz
+PACKAGE DESCRIPTION:
+gdbm: gdbm (GNU database routines)
+gdbm:
+gdbm: GNU dbm is a set of database routines that work similar to the
+gdbm: standard UNIX dbm routines.
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+FILE LIST:
+./
+usr/
+usr/doc/
+usr/doc/gdbm-1.8.3/
+usr/doc/gdbm-1.8.3/NEWS
+usr/doc/gdbm-1.8.3/README
+usr/doc/gdbm-1.8.3/ChangeLog
+usr/doc/gdbm-1.8.3/COPYING
+usr/lib/
+usr/lib/libgdbm.a
+usr/lib/libgdbm.so.3.0.0
+usr/lib/libgdbm.la
+usr/man/
+usr/man/man3/
+usr/man/man3/gdbm.3.gz
+usr/info/
+usr/info/gdbm.info.gz
+usr/include/
+usr/include/gdbm.h
+install/
+install/doinst.sh
+install/slack-desc

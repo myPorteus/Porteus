@@ -1,0 +1,142 @@
+PACKAGE NAME:     xfsprogs-3.2.1-i486-1ftm
+COMPRESSED PACKAGE SIZE:     756K
+UNCOMPRESSED PACKAGE SIZE:     4.3M
+PACKAGE LOCATION: /xfsprogs-3.2.1-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+xfsprogs: xfsprogs (tools to use the XFS filesystem)
+xfsprogs:
+xfsprogs: XFS is a high performance journaling filesystem which originated
+xfsprogs: on the SGI IRIX platform.  It is completely multi-threaded, can
+xfsprogs: support large files and large filesystems, extended attributes,
+xfsprogs: variable block sizes, is extent based, and makes extensive use of
+xfsprogs: Btrees (directories, extents, free space) to aid both performance
+xfsprogs: and scalability.
+xfsprogs:
+xfsprogs:
+xfsprogs:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/lib/
+usr/sbin/
+usr/sbin/xfs_copy
+usr/sbin/xfs_db
+usr/sbin/xfs_estimate
+usr/sbin/xfs_fsr
+usr/sbin/xfs_growfs
+usr/sbin/xfs_io
+usr/sbin/xfs_logprint
+usr/sbin/xfs_mdrestore
+usr/sbin/xfs_quota
+usr/sbin/xfs_rtcp
+usr/sbin/xfs_ncheck
+usr/sbin/xfs_mkfile
+usr/sbin/xfs_metadump
+usr/sbin/xfs_info
+usr/sbin/xfs_freeze
+usr/sbin/xfs_bmap
+usr/sbin/xfs_admin
+usr/doc/
+usr/doc/xfsprogs-3.2.1/
+usr/doc/xfsprogs-3.2.1/CHANGES
+usr/doc/xfsprogs-3.2.1/README
+usr/doc/xfsprogs-3.2.1/COPYING
+usr/doc/xfsprogs-3.2.1/CREDITS
+usr/include/
+usr/include/xfs/
+usr/include/xfs/xfs_trans_space.h
+usr/include/xfs/xfs_trans_resv.h
+usr/include/xfs/xfs_trace.h
+usr/include/xfs/xfs_shared.h
+usr/include/xfs/xfs_sb.h
+usr/include/xfs/xfs_quota_defs.h
+usr/include/xfs/xfs_metadump.h
+usr/include/xfs/xfs_log_recover.h
+usr/include/xfs/xfs_log_format.h
+usr/include/xfs/xfs_inum.h
+usr/include/xfs/xfs_inode_fork.h
+usr/include/xfs/xfs_inode_buf.h
+usr/include/xfs/xfs_ialloc_btree.h
+usr/include/xfs/xfs_ialloc.h
+usr/include/xfs/xfs_format.h
+usr/include/xfs/xfs_dir2.h
+usr/include/xfs/xfs_dinode.h
+usr/include/xfs/xfs_da_format.h
+usr/include/xfs/xfs_da_btree.h
+usr/include/xfs/xfs_cksum.h
+usr/include/xfs/xfs_btree_trace.h
+usr/include/xfs/xfs_attr_remote.h
+usr/include/xfs/xfs_btree.h
+usr/include/xfs/xfs_bmap_btree.h
+usr/include/xfs/xfs_bmap.h
+usr/include/xfs/xfs_bit.h
+usr/include/xfs/xfs_attr_sf.h
+usr/include/xfs/xfs_attr_leaf.h
+usr/include/xfs/xfs_arch.h
+usr/include/xfs/xfs_alloc_btree.h
+usr/include/xfs/xfs_alloc.h
+usr/include/xfs/xfs_ag.h
+usr/include/xfs/swab.h
+usr/include/xfs/radix-tree.h
+usr/include/xfs/parent.h
+usr/include/xfs/hlist.h
+usr/include/xfs/list.h
+usr/include/xfs/kmem.h
+usr/include/xfs/cache.h
+usr/include/xfs/bitops.h
+usr/include/xfs/atomic.h
+usr/include/xfs/libxlog.h
+usr/include/xfs/libxfs.h
+usr/include/xfs/platform_defs.h
+usr/include/xfs/linux.h
+usr/include/xfs/xfs_types.h
+usr/include/xfs/xfs_fs.h
+usr/include/xfs/xfs.h
+usr/include/xfs/xqm.h
+usr/include/xfs/jdm.h
+usr/include/xfs/handle.h
+usr/share/
+usr/share/locale/
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/xfsprogs.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/xfsprogs.mo
+usr/man/
+usr/man/man3/
+usr/man/man3/xfsctl.3
+usr/man/man3/path_to_handle.3
+usr/man/man8/
+usr/man/man8/xfs_rtcp.8
+usr/man/man8/xfs_repair.8
+usr/man/man8/xfs_quota.8
+usr/man/man8/xfs_ncheck.8
+usr/man/man8/xfs_mkfile.8
+usr/man/man8/xfs_metadump.8
+usr/man/man8/xfs_mdrestore.8
+usr/man/man8/xfs_logprint.8
+usr/man/man8/xfs_io.8
+usr/man/man8/xfs_growfs.8
+usr/man/man8/xfs_fsr.8
+usr/man/man8/xfs_freeze.8
+usr/man/man8/xfs_estimate.8
+usr/man/man8/xfs_db.8
+usr/man/man8/xfs_copy.8
+usr/man/man8/xfs_bmap.8
+usr/man/man8/xfs_admin.8
+usr/man/man8/mkfs.xfs.8
+usr/man/man8/fsck.xfs.8
+usr/man/man5/
+usr/man/man5/xfs.5
+usr/man/man5/projid.5
+usr/man/man5/projects.5
+sbin/
+sbin/mkfs.xfs
+sbin/xfs_repair
+sbin/fsck.xfs
+lib/
+lib/libhandle.so.1.0.3

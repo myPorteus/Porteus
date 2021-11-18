@@ -1,0 +1,83 @@
+PACKAGE NAME:     libarchive-3.1.2-i486-1
+COMPRESSED PACKAGE SIZE:     436K
+UNCOMPRESSED PACKAGE SIZE:     1.0M
+PACKAGE LOCATION: /root/work/Port14.1-32/002/002/libarchive-3.1.2-i486-1.txz
+PACKAGE DESCRIPTION:
+libarchive: libarchive (archive reading library)
+libarchive:
+libarchive: Libarchive is a programming library that can create and read
+libarchive: several different streaming archive formats, including most
+libarchive: popular TAR variants and several CPIO formats.  It can also
+libarchive: write SHAR archives.
+libarchive:
+libarchive: Homepage:  http://libarchive.org
+libarchive:
+libarchive:
+libarchive:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/bsdtar
+usr/bin/bsdcpio
+usr/man/
+usr/man/man5/
+usr/man/man5/mtree.5.gz
+usr/man/man5/libarchive-formats.5.gz
+usr/man/man5/cpio.5.gz
+usr/man/man5/tar.5.gz
+usr/man/man3/
+usr/man/man3/libarchive_changes.3.gz
+usr/man/man3/archive_write_open.3.gz
+usr/man/man3/archive_write_set_options.3.gz
+usr/man/man3/archive_write_blocksize.3.gz
+usr/man/man3/archive_write_finish_entry.3.gz
+usr/man/man3/archive_read_data.3.gz
+usr/man/man3/archive_write_filter.3.gz
+usr/man/man3/archive_read_set_options.3.gz
+usr/man/man3/archive_write_header.3.gz
+usr/man/man3/archive_write_free.3.gz
+usr/man/man3/archive_entry_linkify.3.gz
+usr/man/man3/archive_util.3.gz
+usr/man/man3/archive_read_open.3.gz
+usr/man/man3/archive_entry_stat.3.gz
+usr/man/man3/archive_entry.3.gz
+usr/man/man3/archive_read_format.3.gz
+usr/man/man3/archive_entry_paths.3.gz
+usr/man/man3/archive_read.3.gz
+usr/man/man3/archive_write_data.3.gz
+usr/man/man3/archive_read_new.3.gz
+usr/man/man3/archive_write_format.3.gz
+usr/man/man3/archive_write_new.3.gz
+usr/man/man3/archive_read_disk.3.gz
+usr/man/man3/archive_entry_perms.3.gz
+usr/man/man3/archive_read_header.3.gz
+usr/man/man3/archive_read_free.3.gz
+usr/man/man3/archive_entry_acl.3.gz
+usr/man/man3/archive_write.3.gz
+usr/man/man3/archive_read_extract.3.gz
+usr/man/man3/archive_write_disk.3.gz
+usr/man/man3/archive_read_filter.3.gz
+usr/man/man3/libarchive.3.gz
+usr/man/man3/libarchive_internals.3.gz
+usr/man/man3/archive_entry_time.3.gz
+usr/man/man1/
+usr/man/man1/bsdtar.1.gz
+usr/man/man1/bsdcpio.1.gz
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libarchive.pc
+usr/lib/libarchive.la
+usr/lib/libarchive.so.13.1.2
+usr/include/
+usr/include/archive.h
+usr/include/archive_entry.h
+usr/doc/
+usr/doc/libarchive-3.1.2/
+usr/doc/libarchive-3.1.2/COPYING
+usr/doc/libarchive-3.1.2/README
+usr/doc/libarchive-3.1.2/INSTALL
+usr/doc/libarchive-3.1.2/NEWS

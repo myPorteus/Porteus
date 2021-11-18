@@ -1,0 +1,38 @@
+PACKAGE NAME:     xf86-input-evdev-2.8.4-i486-1ftm
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /32/XORG/xf86-input-evdev-2.8.4-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+xf86-input-evdev: xf86-input-evdev (Generic Linux input driver for the Xorg X server)
+xf86-input-evdev:
+xf86-input-evdev: xf86-input-evdev is part of X11.
+xf86-input-evdev:
+xf86-input-evdev: For more information about the X.Org Foundation (the providers of the
+xf86-input-evdev: X.Org implementation of the X Window System), see their website:
+xf86-input-evdev:
+xf86-input-evdev: http://www.x.org
+xf86-input-evdev:
+xf86-input-evdev:
+xf86-input-evdev:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-evdev-2.8.4/
+usr/doc/xf86-input-evdev-2.8.4/README
+usr/include/
+usr/include/xorg/
+usr/include/xorg/evdev-properties.h
+usr/man/
+usr/man/man4/
+usr/man/man4/evdev.4.gz
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xorg-evdev.pc
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/evdev_drv.so
+usr/lib/xorg/modules/input/evdev_drv.la

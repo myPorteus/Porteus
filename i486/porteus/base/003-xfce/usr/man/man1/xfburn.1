@@ -1,0 +1,147 @@
+'\" t
+.\"     Title: xfburn
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: 04/14/2012
+.\"    Manual: [FIXME: manual]
+.\"    Source: [FIXME: source]
+.\"  Language: English
+.\"
+.TH "XFBURN" "1" "04/14/2012" "[FIXME: source]" "[FIXME: manual]"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfburn \- An easy to use burning application
+.SH "SYNOPSIS"
+.HP \w'\fBxfburn\fR\ 'u
+\fBxfburn\fR \-\-burn\-image [IMAGE]
+.HP \w'\fBxfburn\fR\ 'u
+\fBxfburn\fR [options] \-\-data\-composition | \-\-audio\-composition  [[FILE]...]
+.HP \w'\fBxfburn\fR\ 'u
+\fBxfburn\fR \-\-blank
+.HP \w'\fBxfburn\fR\ 'u
+\fBxfburn\fR \-\-transcoder list | basic | gst 
+.SH "DESCRIPTION"
+.PP
+
+\fBxfburn\fR
+is an easy to use burning application based on the libburnia libraries\&. So far it features burning to CD, and DVD, as well as blanking rewritable discs\&. Data and audio compositions can get created from scratch\&. Images in \&.iso format can be burned, or created\&.
+.SH "INVOCATION"
+.PP
+
+\fBxfburn\fR
+can be called with
+\fB\-\-burn\-image\fR
+to immediately show the burn image dialog\&. Optionally the
+\fIimage file\fR
+can be preselected by appending it to the command line\&.
+.PP
+When the
+\fB\-\-data\-composition\fR
+or the
+\fB\-\-audio\-composition\fR
+options is specified, then
+\fBxfburn\fR\*(Aqs main window will open up with the selected composition type instead of the welcome tab\&. The
+\fIfilename(s)\fR
+of the contents of the composition may follow the composition option\&.
+.SS "Options"
+.PP
+\fB\-?\fR, \fB\-\-help\fR
+.RS 4
+Print brief help and exit\&.
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Print version information and exit\&.
+.RE
+.PP
+\fB\-i\fR, \fB\-\-burn\-image\fR [IMAGE]
+.RS 4
+Open the burn image dialog\&. Optionally the image is given as
+\fIIMAGE\fR\&.
+.RE
+.PP
+\fB\-b\fR, \fB\-\-blank\fR
+.RS 4
+Open the blank disc dialog\&.
+.RE
+.PP
+\fB\-d\fR, \fB\-\-data\-composition\fR [FILE(S)]
+.RS 4
+Opens
+\fBxfburn\fR
+with a new data composition\&. Optionally
+\fIFILE(S)\fR
+to be added to the composition follow\&.
+.RE
+.PP
+\fB\-a\fR, \fB\-\-audio\-composition\fR [MUSIC FILE(S)]
+.RS 4
+Opens
+\fBxfburn\fR
+with a new audio composition\&. Optionally
+\fIMUSIC FILE(S)\fR
+to be added to the composition follow\&.
+.RE
+.PP
+\fB\-t\fR, \fB\-\-transcoder\fR [TRANSCODER]
+.RS 4
+Selects the transcoder to use when creating audio compositions\&. Specify
+\fIlist\fR
+to see all available options\&. Currently implemented are the gst and the basic transcoder\&.
+\fBgst\fR
+uses gstreamer, and can allows the use of any gstreamer\-supported media file\&.
+\fBbasic\fR
+only allows using audio files already in CD format: 48khz uncompressed WAV files\&.
+.RE
+.PP
+\fB\-m\fR, \fB\-\-main\fR
+.RS 4
+When the
+\fB\-\-burn\-image\fR
+or the
+\fB\-\-blank\fR
+option is selected, xfburn will quit after the dialog exists, unless the
+\fB\-\-main\fR
+option is given\&. In that case the main
+\fBxfburn\fR
+window is shown after the dialog has been closed\&.
+.RE
+.PP
+\fB\-\-display=DISPLAY\fR
+.RS 4
+Use the specified X
+\fBDISPLAY\fR
+for the user interface\&.
+.RE
+.SH "AUTHOR"
+.PP
+
+\fBxfburn\fR
+was written by David Mohr
+squisher@xfce\&.org
+and Jean\-François Wauthy
+pollux@xfce\&.org\&. A great helper was Mario Danic
+
+mario@libburnia\-project\&.org\&.
+.PP
+This manual page was written by David Mohr
+squisher@xfce\&.org\&. It is based on Benedikt Meurer\*(Aqs Thunar man page\&.
