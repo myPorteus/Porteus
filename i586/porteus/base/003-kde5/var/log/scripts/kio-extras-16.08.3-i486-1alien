@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libmolletnetwork5.so.5 )
+( cd usr/lib ; ln -sf libmolletnetwork5.so.5.3.90 libmolletnetwork5.so.5 )

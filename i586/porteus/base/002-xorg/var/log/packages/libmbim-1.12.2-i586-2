@@ -1,0 +1,68 @@
+PACKAGE NAME:     libmbim-1.12.2-i586-2
+COMPRESSED PACKAGE SIZE:     108K
+UNCOMPRESSED PACKAGE SIZE:     520K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libmbim-1.12.2-i586-2.txz
+PACKAGE DESCRIPTION:
+libmbim: libmbim (MBIM library and utils)
+libmbim:
+libmbim: The Mobile Broadband Interface Model (MBIM) is a new standard to
+libmbim: communicate with mobile broadband modem devices developed by the
+libmbim: USB Implementors Forum.
+libmbim:
+libmbim: Homepage: http://www.freedesktop.org/software/libmbim/
+libmbim:
+libmbim:
+libmbim:
+libmbim:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mbim-network
+usr/bin/mbimcli
+usr/doc/
+usr/doc/libmbim-1.12.2/
+usr/doc/libmbim-1.12.2/AUTHORS
+usr/doc/libmbim-1.12.2/COPYING
+usr/doc/libmbim-1.12.2/COPYING.LIB
+usr/doc/libmbim-1.12.2/ChangeLog
+usr/doc/libmbim-1.12.2/NEWS
+usr/doc/libmbim-1.12.2/README
+usr/include/
+usr/include/libmbim-glib/
+usr/include/libmbim-glib/libmbim-glib.h
+usr/include/libmbim-glib/mbim-auth.h
+usr/include/libmbim-glib/mbim-basic-connect.h
+usr/include/libmbim-glib/mbim-cid.h
+usr/include/libmbim-glib/mbim-compat.h
+usr/include/libmbim-glib/mbim-device.h
+usr/include/libmbim-glib/mbim-dss.h
+usr/include/libmbim-glib/mbim-enum-types.h
+usr/include/libmbim-glib/mbim-enums.h
+usr/include/libmbim-glib/mbim-error-types.h
+usr/include/libmbim-glib/mbim-errors.h
+usr/include/libmbim-glib/mbim-message.h
+usr/include/libmbim-glib/mbim-ms-firmware-id.h
+usr/include/libmbim-glib/mbim-ms-host-shutdown.h
+usr/include/libmbim-glib/mbim-phonebook.h
+usr/include/libmbim-glib/mbim-proxy-control.h
+usr/include/libmbim-glib/mbim-proxy.h
+usr/include/libmbim-glib/mbim-sms.h
+usr/include/libmbim-glib/mbim-stk.h
+usr/include/libmbim-glib/mbim-ussd.h
+usr/include/libmbim-glib/mbim-utils.h
+usr/include/libmbim-glib/mbim-uuid.h
+usr/include/libmbim-glib/mbim-version.h
+usr/lib/
+usr/lib/libmbim-glib.so.4.1.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/mbim-glib.pc
+usr/libexec/
+usr/libexec/mbim-proxy
+usr/man/
+usr/man/man1/
+usr/man/man1/mbim-network.1.gz
+usr/man/man1/mbimcli.1.gz

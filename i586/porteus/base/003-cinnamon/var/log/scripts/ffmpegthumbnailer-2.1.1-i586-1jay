@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libffmpegthumbnailer.so )
+( cd usr/lib ; ln -sf libffmpegthumbnailer.so.4 libffmpegthumbnailer.so )
+( cd usr/lib ; rm -rf libffmpegthumbnailer.so.4 )
+( cd usr/lib ; ln -sf libffmpegthumbnailer.so.4.11.0 libffmpegthumbnailer.so.4 )

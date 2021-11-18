@@ -1,0 +1,47 @@
+PACKAGE NAME:     libvpx-1.5.0-i586-1
+COMPRESSED PACKAGE SIZE:     800K
+UNCOMPRESSED PACKAGE SIZE:     2.6M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libvpx-1.5.0-i586-1.txz
+PACKAGE DESCRIPTION:
+libvpx: libvpx (VP8/VP9 video codec)
+libvpx:
+libvpx: VP8 is an open video codec, originally developed by On2 and released
+libvpx: as open source by Google Inc.  It is the successor of the VP3 codec,
+libvpx: on which the Theora codec was based.
+libvpx:
+libvpx: VP9 is an open and royalty free video compression standard developed
+libvpx: by Google Inc and successor to VP8.
+libvpx:
+libvpx: Homepage: http://www.webmproject.org/
+libvpx:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/vpxdec
+usr/bin/vpxenc
+usr/doc/
+usr/doc/libvpx-1.5.0/
+usr/doc/libvpx-1.5.0/AUTHORS
+usr/doc/libvpx-1.5.0/CHANGELOG
+usr/doc/libvpx-1.5.0/LICENSE
+usr/doc/libvpx-1.5.0/PATENTS
+usr/doc/libvpx-1.5.0/README
+usr/include/
+usr/include/vpx/
+usr/include/vpx/vp8.h
+usr/include/vpx/vp8cx.h
+usr/include/vpx/vp8dx.h
+usr/include/vpx/vpx_codec.h
+usr/include/vpx/vpx_decoder.h
+usr/include/vpx/vpx_encoder.h
+usr/include/vpx/vpx_frame_buffer.h
+usr/include/vpx/vpx_image.h
+usr/include/vpx/vpx_integer.h
+usr/lib/
+usr/lib/libvpx.so.3.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/vpx.pc

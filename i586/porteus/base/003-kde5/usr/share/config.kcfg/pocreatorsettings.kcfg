@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+    <kcfgfile name="pocreatorrc"/>
+    <group name="General">
+        <entry name="TranslatedColor" type="Color">
+            <default code="true">Qt::darkGreen</default>
+        </entry>
+        <entry name="FuzzyColor" type="Color">
+            <default code="true">Qt::blue</default>
+        </entry>
+        <entry name="UntranslatedColor" type="Color">
+            <default code="true">Qt::red</default>
+        </entry>
+        <entry name="ObsoletedColor" type="Color">
+            <default code="true">Qt::yellow</default>
+        </entry>
+    </group>
+</kcfg>

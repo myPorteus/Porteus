@@ -1,0 +1,60 @@
+PACKAGE NAME:     wayland-1.9.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/wayland-1.9.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+wayland: wayland (The Wayland display server)
+wayland:
+wayland: Wayland is a project to define a protocol for a compositor to talk
+wayland: to its clients as well as a library implementation of the protocol.
+wayland: The compositor can be a standalone display server running on Linux
+wayland: kernel modesetting and evdev input devices, an X application, or a
+wayland: wayland client itself. The clients can be traditional applications,
+wayland: X servers (rootless or fullscreen) or other display servers.
+wayland:
+wayland: Homepage: http://wayland.freedesktop.org/
+wayland:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/wayland-scanner
+usr/doc/
+usr/doc/wayland-1.9.0/
+usr/doc/wayland-1.9.0/COPYING
+usr/doc/wayland-1.9.0/README
+usr/doc/wayland-1.9.0/TODO
+usr/include/
+usr/include/wayland-client-core.h
+usr/include/wayland-client-protocol.h
+usr/include/wayland-client.h
+usr/include/wayland-cursor.h
+usr/include/wayland-egl-core.h
+usr/include/wayland-egl.h
+usr/include/wayland-server-core.h
+usr/include/wayland-server-protocol.h
+usr/include/wayland-server.h
+usr/include/wayland-util.h
+usr/include/wayland-version.h
+usr/lib/
+usr/lib/libwayland-client.la
+usr/lib/libwayland-client.so.0.3.0
+usr/lib/libwayland-cursor.la
+usr/lib/libwayland-cursor.so.0.0.0
+usr/lib/libwayland-server.la
+usr/lib/libwayland-server.so.0.1.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/wayland-client.pc
+usr/lib/pkgconfig/wayland-cursor.pc
+usr/lib/pkgconfig/wayland-scanner.pc
+usr/lib/pkgconfig/wayland-server.pc
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/wayland-scanner.m4
+usr/share/wayland/
+usr/share/wayland/wayland-scanner.mk
+usr/share/wayland/wayland.dtd
+usr/share/wayland/wayland.xml

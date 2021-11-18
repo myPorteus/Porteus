@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libqtruby4shared.so.2 )
+( cd usr/lib ; ln -sf libqtruby4shared.so.2.0.0 libqtruby4shared.so.2 )
+( cd usr/lib ; rm -rf libqtruby4shared.so )
+( cd usr/lib ; ln -sf libqtruby4shared.so.2 libqtruby4shared.so )

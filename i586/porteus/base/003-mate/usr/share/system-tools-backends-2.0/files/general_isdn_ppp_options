@@ -1,0 +1,7 @@
+sync
+noauth
+plugin capiplugin.so
+protocol hdlc
+ipcp-accept-local
+ipcp-accept-remote
+/dev/null

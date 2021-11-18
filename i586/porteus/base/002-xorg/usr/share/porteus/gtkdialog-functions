@@ -1,0 +1,406 @@
+## Functions to produce gtkdialog windows
+
+##################################### gtk_yesno
+# Provides a simple yes/no dialog
+# $1=string $2=question
+gtk_yesno(){
+echo '
+<window title="'$(gettext "Message")'" icon-name="gtk-info" allow-resize="false" icon-name="gtk-dialog-question">
+<vbox margin="10">
+	<hseparator></hseparator>
+	<text><label>"'$1'"</label></text>
+	<text><label>""</label></text>
+	<text><label>"'$2'"</label></text>
+	<hbox>
+		<button no></button>
+		<button yes></button>
+	</hbox>
+</vbox>
+</window>
+'
+}; export -f gtk_yesno
+
+##################################### gtk_message1
+# Provides a simple 1 line message dialog
+# that is sized based on string given.
+# $1=string
+gtk_message1(){
+echo '
+<window window_position="1" title="'$(gettext "Message")'" icon-name="gtk-info" allow-resize="false">
+<vbox margin="10">
+	<hseparator></hseparator>
+	<text><label>"'$1'"</label></text>
+	<text><label>""</label></text>
+	<hbox>
+		<button ok></button>
+	</hbox>
+</vbox>
+</window>
+' | gtkdialog -s -c
+}; export -f gtk_message1
+
+##################################### gtk_message2
+# Provides a simple 2 line message dialog
+# that is sized based on string given.
+# $1=string $2 string
+gtk_message2(){
+echo '
+<window window_position="1" title="'$(gettext "Message")'" icon-name="gtk-info" allow-resize="false">
+<vbox margin="10">
+	<hseparator></hseparator>
+	<text><label>"'$1'"</label></text>
+	<text><label>""</label></text>
+	<text><label>"'$2'"</label></text>
+	<hbox>
+		<button ok></button>
+	</hbox>
+</vbox>
+</window>
+' | gtkdialog -s -c
+}; export -f gtk_message2
+
+##################################### gtk_message
+# Provides a detailed message dialog
+# that is given a size.
+# $1=title $2=string $3=string $4=icon $5=width
+gtk_message(){
+let twidth=( $5 - 50 )
+echo '
+<window title="'$(gettext "Message")'" icon-name="gtk-dialog-info" allow-resize="false" width-request="'$5'">
+<vbox margin="10">
+	<hbox>
+		<pixmap icon_size="5">
+			<input file stock="'$4'"></input>
+		</pixmap>
+		<text use-markup="true" width-request="'$(( $5 - 100 ))'">
+			<label>"<span fgcolor='"'red'"' weight='"'bold'"' size='"'x-large'"'> '$1' </span>"</label>
+		</text>
+	</hbox>
+	<hseparator></hseparator>
+	<frame>
+	<text use-markup="true" wrap="true" width-request="'$(( $5 - 30 ))'"><label>"'$2'"</label></text>
+	<text><label>""</label></text>
+	<text use-markup="true" wrap="true" width-request="'$(( $5 - 30 ))'"><label>"'$3'"</label></text>
+	</frame>
+	<text><label>""</label></text>
+	<hbox>
+		<button ok></button>
+	</hbox>
+</vbox>
+<action signal="hide">exit:Exit</action>
+</window>
+' | gtkdialog -s -c
+}
+
+##################################### gtk_message_file
+# Provides a detailed message dialog
+# from a text file
+# $1=title $2=file $3=width $4=time (milliseconds)
+gtk_message_file(){
+let twidth=( $5 - 50 )
+[ -z $4 ] && export POPTIME=`awk -F= '/^POPTIME/{print$NF}' /etc/porteus.conf` || export POPTIME=$4
+echo '
+<window title="'$(gettext "Message")'" icon-name="gtk-dialog-info" allow-resize="false" width-request="'$3'">
+<vbox margin="10">
+	<timer milliseconds="true" interval="'$POPTIME'" visible="false"> 
+	<action>exit:EXIT></action>
+	</timer>
+	<hbox>
+		<pixmap icon_size="5">
+			<input file stock="gtk-dialog-info"></input>
+		</pixmap>
+		<text use-markup="true" width-request="'$(( $3 - 100 ))'">
+			<label>"<span fgcolor='"'red'"' weight='"'bold'"' size='"'x-large'"'> '$1' </span>"</label>
+		</text>
+	</hbox>
+	<hseparator></hseparator>
+	<frame>
+	<text xalign="0"><label>File not found</label>
+	<input file>'$2'</input>
+	</text>
+	</frame>
+	<text><label>""</label></text>
+	<hbox>
+		<button ok></button>
+	</hbox>
+</vbox>
+<action signal="hide">exit:Exit</action>
+</window>
+' | gtkdialog -s -c
+}
+
+##################################### gtk_infobox
+# Provides a simple self closing message
+# that is sized based on string given.
+# $1=string $2=interval in milliseconds
+gtk_infobox(){
+echo '
+<window window_position="1" title="'$(gettext "Message")'" icon-name="gtk-dialog-info" allow-resize="false">
+<vbox>
+	<timer milliseconds="true" interval="'$2'" visible="false">
+		<action function="exit">terminated</action>
+	</timer>
+	<hseparator></hseparator>
+	<hbox>
+		<pixmap icon_size="5">
+			<input file stock="gtk-dialog-info"></input>
+		</pixmap>
+		<text><label>" '$1'"</label></text>
+		<text><label>""</label></text>
+	</hbox>
+</vbox>
+</window>
+' | gtkdialog -s -c
+}; export -f gtk_infobox
+
+##################################### gtk_editFile
+# Provides a window to edit a file
+# $1=file
+gtk_editFile(){
+export EDITFILE='
+<window window_position="1" title="'$(gettext "File editor")'" allow-shrink="false" icon-name="gtk-edit">
+<vbox>
+	<vbox scrollable="true" width="500" height="400">
+		<edit indent="10" sensitive="false">
+			<input file>"'$1'"</input>
+			<output file>"'$1'"</output>
+			<variable>EDITME</variable>
+		</edit>
+	</vbox>
+	<hbox spacing="10">
+		<button image-position="0">
+			<label>"Edit"</label>
+			<input file stock="gtk-edit"></input>
+			<action type="Enable">SAVEME</action>
+			<action type="Enable">CLEARME</action>
+			<action type="Enable">REFRESHME</action>
+			<action type="Enable">EDITME</action>
+		</button>
+		<button image-position="0" tooltip-text="'$(gettext "Clear the data. This is not permanent until saved")'" sensitive="false">
+			<label>'$(gettext "Clear")'</label>
+			<variable>CLEARME</variable>
+			<input file stock="gtk-clear"></input>
+			<action type="clear">EDITME</action>
+		</button>
+		<button image-position="0" tooltip-text="'$(gettext "Reset the original data")'" sensitive="false">
+			<label>'$(gettext "Reset")'</label>
+			<variable>REFRESHME</variable>
+			<input file stock="gtk-refresh"></input>
+			<action type="Refresh">EDITME</action>
+		</button>
+		<button image-position="0" sensitive="false">
+			<label>'$(gettext "Save")'</label>
+			<variable>SAVEME</variable>
+			<input file stock="gtk-save"></input>
+			<action type="save">EDITME</action>
+		</button>
+		<button image-position="0" sensitive="true">
+			<label>'$(gettext "Close")'</label>
+			<variable>CLOSEME</variable>
+			<input file stock="gtk-close"></input>
+			<action type="Exit">CLOSED</action>
+		</button>
+	</hbox>
+</vbox>
+</window>
+'
+gtkdialog -p EDITFILE
+}; export -f gtk_editFile
+
+gtk_download(){
+DFILE=${1##*/}
+echo '
+<window window_position="1" title="'Download'" allow-shrink="false" icon-name="gtk-go-down" width-request="400">
+<vbox>
+	<text><label>'Downloading $DFILE'</label></text>
+	<progressbar> 
+		<label>Starting download</label> 
+		<input>wget --trust-server-names --no-check-certificate "'$1'" 2>&1 | sed -nru "s/.* ([0-9]+%) +([^ ]+).*$/\1\n« \1 downloaded \2 »/p"</input> 
+		<action type="exit">done</action> 
+	</progressbar> 
+	<hbox>
+		<button image-position="0" sensitive="true">
+		<label>'$(gettext "Cancel")'</label>
+		<variable>canceldown</variable>
+		<input file stock="gtk-close"></input>
+		<action>pkill wget</action>
+		<action type="Exit">aborted</action>
+	</button>
+	</hbox>
+</vbox> 
+</window>
+'| gtkdialog -s -c
+}; export -f gtk_download
+
+## Use manual progress update like so:
+## echo "My message goes here" > /tmp/.message
+## manual_progress "My title goes here"
+## sleep 5 (or other code)
+## echo "Second update goes here" > /tmp/.message
+## sleep 3 (or other code)
+## kill_manual_progress
+manual_progress(){
+# Open a window for progress
+export MANUAL_PROGRESS='
+<window title="Porteus message" icon-name="cdr" resizable="false" width-request="400" window_position="1">
+<vbox>
+  <frame>
+    <text use-markup="true" width-request="310">
+      <label>"'$1'"</label>
+      <variable>PROGRESS_TXT</variable>
+    </text>
+    <progressbar visible="true">
+      <variable>PROGRESS_BAR</variable>
+      <label>...</label>
+      <input>prog_counter</input>
+    </progressbar>
+  </frame>
+</vbox>
+</window>
+'
+gtkdialog -c -p MANUAL_PROGRESS 2>/tmp/.progress_trap &
+}; export -f manual_progress
+
+## This is called by the manual_progress function. 
+prog_counter(){
+case $STATE in
+MANUAL )
+while [ A != B ]; do
+    MSG=`cat /tmp/.message`
+    echo $MSG
+    sleep 0.3
+done
+echo "ALL DONE"
+unset STATE
+;;
+DOWNLOAD )
+while [ A != B ]; do
+    if [ -f /tmp/.cdload ]; then M=`cat /tmp/.cdload`; echo "$M"; fi
+    sleep 0.3
+    [ `grep "100%" /tmp/.message` ] && echo 1
+    i=$(grep -o "[^ ]*%[^ ]*" /tmp/.message|sed "s/%//g"|tail -n1)
+    [ "$i" == "100" ] && i=1
+    [ "$i" != "" ] && echo "$i"
+    sleep 0.3
+done
+echo "ALL DONE"
+unset STATE
+;;
+BUILDMODULE )
+while [ A != B ]; do
+    if [ ! -f /tmp/.message ]; then echo "Waiting ..."; fi
+    [ `grep "100%" /tmp/.message` ] && echo Finished
+    i=$(grep -o ...% /tmp/.message|sed -e "s/%//g" -e 's/ //g'|tail -n1)
+    [ "$i" != "" ] && echo "$i"
+    sleep 0.3
+done
+echo "ALL DONE"
+unset STATE
+;;
+* )
+while [ A != B ]; do
+    MSG=`cat /tmp/.message`
+    echo $MSG
+    sleep 0.3
+done
+echo "ALL DONE"
+unset STATE
+;;
+esac
+[ -f /tmp/.cdload ] && rm /tmp/.cdload 2>&-
+[ -f /tmp/.message ] && rm /tmp/.message 2>&-
+}; export -f prog_counter
+
+kill_manual_progress() {
+myself=`ps ax|grep MANUAL_PROGRESS|awk '{print$1}'|head -n1`
+for children in `ps -o pid --ppid $myself|sed '/PID/d'`; do
+kill $children >/dev/null 2>&-
+done
+kill $myself >/dev/null 2>&-
+[ -f /tmp/.message ] && rm /tmp/.message
+[ -f /tmp/.progress_trap ] && rm /tmp/.progress_trap
+}; export -f kill_manual_progress
+
+txtcolor(){
+echo '<text use-markup="true" width-request="'$1'"><label>"<span fgcolor='"'$2'"' size='"'$3'"' weight='"'$4'"'>'$5'</span>"</label></text>'
+}
+
+txtmarkup(){
+echo '<text use-markup="true" width-request="'$1'" selectable="true" can-focus="no"><label>"'$2'"</label></text>'
+}
+
+txtmarkup(){
+echo '<text use-markup="true" width-request="'$1'" selectable="true" can-focus="no"><label>"'$2'"</label></text>'
+}
+
+blankline(){ echo '<text><label>""</label></text>'; }
+
+chkbox(){
+echo '<checkbox active="'$1'"><label>"'$3'"</label><variable>'$2'</variable>'
+}
+
+entry(){
+echo '<entry sensitive="'$1'" tooltip-text="'$2'"><default>"'$3'"</default><variable>'$4'</variable>'
+}
+
+butstock(){
+echo '<button use-underline="true"><variable>'$1'</variable><label>'$2'</label><input file stock="'$3'"></input>'
+}
+
+buticon(){
+echo '<button><variable>'$1'</variable><label>'$2'</label><input file icon="'$3'"></input>'
+}
+
+butok(){
+echo '<button ok></button>'
+}
+
+butcancel(){
+echo '<button cancel></button>'
+}
+
+butyes(){
+echo '<button yes></button>'
+}
+
+butno(){
+echo '<button no></button>'
+}
+
+butreturn(){
+echo '<button tooltip-text="'$1'" use-underline="true"><label>_Return</label><input file stock="gtk-go-back"></input><sensitive>'$2'</sensitive>'
+}
+
+butcustom(){
+echo '<button tooltip-text="'$1'" sensitive="'$6'"><label>'$2'</label><variable>'$3'</variable><input file '$4'="'$5'"></input>'
+}
+
+vsep(){
+echo '<vseparator></vseparator>'
+}
+
+hsep(){
+echo '<hseparator></hseparator>'
+}
+
+start_window(){
+echo '<window window_position="1" title="'$1'" icon-name="'$2'" allow-shrink="false" width-request="'$3'" height-request="'$4'">
+<vbox margin="10">'
+}
+
+end_window(){
+echo '</vbox><action signal="hide">exit:Cancel</action></window>'
+}
+
+pixmapstock(){
+echo '<pixmap><input file stock="'$1'"></input></pixmap>'
+}
+
+pixmapicon(){
+echo '<pixmap><height>'$1'</height><width>'$2'</width><input file icon="'$3'"></input></pixmap>'
+}
+
+pixmapfile(){
+echo '<pixmap><height>'$1'</height><width>'$2'</width><input file>'$3'</input></pixmap>'
+}
+

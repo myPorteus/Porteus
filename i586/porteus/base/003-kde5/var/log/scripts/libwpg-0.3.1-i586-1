@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libwpg-0.3.so.3 )
+( cd usr/lib ; ln -sf libwpg-0.3.so.3.0.1 libwpg-0.3.so.3 )
+( cd usr/lib ; rm -rf libwpg-0.3.so )
+( cd usr/lib ; ln -sf libwpg-0.3.so.3.0.1 libwpg-0.3.so )

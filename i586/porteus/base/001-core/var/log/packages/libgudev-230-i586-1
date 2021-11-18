@@ -1,0 +1,49 @@
+PACKAGE NAME:     libgudev-230-i586-1
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/libgudev-230-i586-1.txz
+PACKAGE DESCRIPTION:
+libgudev: libgudev (udev GObject bindings library)
+libgudev:
+libgudev: This is libgudev, a library providing GObject bindings for libudev.
+libgudev: It used to be part of udev, but it's now a project on its own.
+libgudev:
+libgudev: Homepage: http://wiki.gnome.org/Projects/libgudev
+libgudev:
+libgudev:
+libgudev:
+libgudev:
+libgudev:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/libgudev-1.0.so.0.2.0
+lib/udev/
+usr/
+usr/doc/
+usr/doc/libgudev-230/
+usr/doc/libgudev-230/COPYING
+usr/doc/libgudev-230/README
+usr/include/
+usr/include/gudev-1.0/
+usr/include/gudev-1.0/gudev/
+usr/include/gudev-1.0/gudev/gudev.h
+usr/include/gudev-1.0/gudev/gudevclient.h
+usr/include/gudev-1.0/gudev/gudevdevice.h
+usr/include/gudev-1.0/gudev/gudevenumerator.h
+usr/include/gudev-1.0/gudev/gudevenums.h
+usr/include/gudev-1.0/gudev/gudevenumtypes.h
+usr/include/gudev-1.0/gudev/gudevtypes.h
+usr/lib/
+usr/lib/girepository-1.0/
+usr/lib/girepository-1.0/GUdev-1.0.typelib
+usr/lib/libgudev-1.0.a
+usr/lib/libgudev-1.0.la
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/gudev-1.0.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/GUdev-1.0.gir

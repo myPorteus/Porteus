@@ -1,0 +1,21 @@
+#!/bin/sh
+config() {
+  NEW="$1"
+  OLD="`dirname $NEW`/`basename $NEW .new`"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "`cat $OLD | md5sum`" = "`cat $NEW | md5sum`" ]; then # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+config etc/netconfig.new
+( cd lib ; rm -rf libtirpc.so.3 )
+( cd lib ; ln -sf libtirpc.so.3.0.0 libtirpc.so.3 )
+( cd usr/lib ; rm -rf libtirpc.so.3 )
+( cd usr/lib ; ln -sf libtirpc.so.3.0.0 libtirpc.so.3 )
+( cd usr/lib ; rm -rf libtirpc.so )
+( cd usr/lib ; ln -sf libtirpc.so.3.0.0 libtirpc.so )
+( cd usr/lib ; rm -rf libtirpc.so.3.0.0 )
+( cd usr/lib ; ln -sf ../../lib/libtirpc.so.3.0.0 libtirpc.so.3.0.0 )

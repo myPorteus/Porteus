@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libqmobipocket.so )
+( cd usr/lib ; ln -sf libqmobipocket.so.1 libqmobipocket.so )
+( cd usr/lib ; rm -rf libqmobipocket.so.1 )
+( cd usr/lib ; ln -sf libqmobipocket.so.1.0.0 libqmobipocket.so.1 )

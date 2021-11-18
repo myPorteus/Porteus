@@ -1,0 +1,112 @@
+PACKAGE NAME:     libXaw3dXft-1.6.2d-i586-2
+COMPRESSED PACKAGE SIZE:     180K
+UNCOMPRESSED PACKAGE SIZE:     780K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libXaw3dXft-1.6.2d-i586-2.txz
+PACKAGE DESCRIPTION:
+libXaw3dXft: libXaw3dXft (3D enhanced version of the MIT Athena widget set)
+libXaw3dXft:
+libXaw3dXft: Xaw3dXft is an enhanced version of the MIT Athena Widget set for
+libXaw3dXft: the X Window System.  Xaw3dXft adds a three-dimensional look to
+libXaw3dXft: applications with minimal or no source code changes.
+libXaw3dXft:
+libXaw3dXft: You should install Xaw3dXft if you are using applications which 
+libXaw3dXft: incorporate the MIT Athena widget set and you'd like to 
+libXaw3dXft: incorporate a 3D look into those applications.
+libXaw3dXft:
+libXaw3dXft:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXaw3dXft-1.6.2d/
+usr/doc/libXaw3dXft-1.6.2d/COPYING
+usr/doc/libXaw3dXft-1.6.2d/README
+usr/doc/libXaw3dXft-1.6.2d/README.XAW3D
+usr/doc/libXaw3dXft-1.6.2d/README.xaw3d
+usr/include/
+usr/include/X11/
+usr/include/X11/Xaw3dxft/
+usr/include/X11/Xaw3dxft/AllWidgets.h
+usr/include/X11/Xaw3dxft/AsciiSink.h
+usr/include/X11/Xaw3dxft/AsciiSinkP.h
+usr/include/X11/Xaw3dxft/AsciiSrc.h
+usr/include/X11/Xaw3dxft/AsciiSrcP.h
+usr/include/X11/Xaw3dxft/AsciiText.h
+usr/include/X11/Xaw3dxft/AsciiTextP.h
+usr/include/X11/Xaw3dxft/Box.h
+usr/include/X11/Xaw3dxft/BoxP.h
+usr/include/X11/Xaw3dxft/Cardinals.h
+usr/include/X11/Xaw3dxft/Command.h
+usr/include/X11/Xaw3dxft/CommandP.h
+usr/include/X11/Xaw3dxft/Dialog.h
+usr/include/X11/Xaw3dxft/DialogP.h
+usr/include/X11/Xaw3dxft/Form.h
+usr/include/X11/Xaw3dxft/FormP.h
+usr/include/X11/Xaw3dxft/Grip.h
+usr/include/X11/Xaw3dxft/GripP.h
+usr/include/X11/Xaw3dxft/Label.h
+usr/include/X11/Xaw3dxft/LabelP.h
+usr/include/X11/Xaw3dxft/Layout.h
+usr/include/X11/Xaw3dxft/LayoutP.h
+usr/include/X11/Xaw3dxft/List.h
+usr/include/X11/Xaw3dxft/ListP.h
+usr/include/X11/Xaw3dxft/MenuButtoP.h
+usr/include/X11/Xaw3dxft/MenuButton.h
+usr/include/X11/Xaw3dxft/MultiSink.h
+usr/include/X11/Xaw3dxft/MultiSinkP.h
+usr/include/X11/Xaw3dxft/MultiSrc.h
+usr/include/X11/Xaw3dxft/MultiSrcP.h
+usr/include/X11/Xaw3dxft/Paned.h
+usr/include/X11/Xaw3dxft/PanedP.h
+usr/include/X11/Xaw3dxft/Panner.h
+usr/include/X11/Xaw3dxft/PannerP.h
+usr/include/X11/Xaw3dxft/Porthole.h
+usr/include/X11/Xaw3dxft/PortholeP.h
+usr/include/X11/Xaw3dxft/Repeater.h
+usr/include/X11/Xaw3dxft/RepeaterP.h
+usr/include/X11/Xaw3dxft/Reports.h
+usr/include/X11/Xaw3dxft/Scrollbar.h
+usr/include/X11/Xaw3dxft/ScrollbarP.h
+usr/include/X11/Xaw3dxft/Simple.h
+usr/include/X11/Xaw3dxft/SimpleMenP.h
+usr/include/X11/Xaw3dxft/SimpleMenu.h
+usr/include/X11/Xaw3dxft/SimpleP.h
+usr/include/X11/Xaw3dxft/Sme.h
+usr/include/X11/Xaw3dxft/SmeBSB.h
+usr/include/X11/Xaw3dxft/SmeBSBP.h
+usr/include/X11/Xaw3dxft/SmeLine.h
+usr/include/X11/Xaw3dxft/SmeLineP.h
+usr/include/X11/Xaw3dxft/SmeP.h
+usr/include/X11/Xaw3dxft/SmeThreeD.h
+usr/include/X11/Xaw3dxft/SmeThreeDP.h
+usr/include/X11/Xaw3dxft/StripCharP.h
+usr/include/X11/Xaw3dxft/StripChart.h
+usr/include/X11/Xaw3dxft/Text.h
+usr/include/X11/Xaw3dxft/TextP.h
+usr/include/X11/Xaw3dxft/TextSink.h
+usr/include/X11/Xaw3dxft/TextSinkP.h
+usr/include/X11/Xaw3dxft/TextSrc.h
+usr/include/X11/Xaw3dxft/TextSrcP.h
+usr/include/X11/Xaw3dxft/ThreeD.h
+usr/include/X11/Xaw3dxft/ThreeDP.h
+usr/include/X11/Xaw3dxft/Tip.h
+usr/include/X11/Xaw3dxft/TipP.h
+usr/include/X11/Xaw3dxft/Toggle.h
+usr/include/X11/Xaw3dxft/ToggleP.h
+usr/include/X11/Xaw3dxft/Tree.h
+usr/include/X11/Xaw3dxft/TreeP.h
+usr/include/X11/Xaw3dxft/VendorEP.h
+usr/include/X11/Xaw3dxft/Viewport.h
+usr/include/X11/Xaw3dxft/ViewportP.h
+usr/include/X11/Xaw3dxft/Xaw3dP.h
+usr/include/X11/Xaw3dxft/Xaw3dXft.h
+usr/include/X11/Xaw3dxft/XawImP.h
+usr/include/X11/Xaw3dxft/XawInit.h
+usr/lib/
+usr/lib/libXaw3dxft.la
+usr/lib/libXaw3dxft.so.8.0.3
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libxaw3dxft.pc

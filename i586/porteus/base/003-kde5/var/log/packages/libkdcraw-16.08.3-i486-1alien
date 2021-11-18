@@ -1,0 +1,53 @@
+PACKAGE NAME:     libkdcraw-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/libkdcraw-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+libkdcraw: libkdcraw (library wrapper around dcraw)
+libkdcraw:
+libkdcraw: Libkdcraw is a C++ interface around the dcraw binary program, used
+libkdcraw: to decode RAW picture files.
+libkdcraw:
+libkdcraw: For more information, visit:  http://www.kipi-plugins.org/
+libkdcraw:
+libkdcraw:
+libkdcraw:
+libkdcraw:
+libkdcraw:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkdcraw-16.08.3/
+usr/doc/libkdcraw-16.08.3/AUTHORS
+usr/doc/libkdcraw-16.08.3/COPYING
+usr/doc/libkdcraw-16.08.3/COPYING-CMAKE-SCRIPTS
+usr/doc/libkdcraw-16.08.3/COPYING.LIB
+usr/doc/libkdcraw-16.08.3/README
+usr/doc/libkdcraw-16.08.3/TODO
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KDCRAW/
+usr/include/KF5/KDCRAW/KDCRAW/
+usr/include/KF5/KDCRAW/KDCRAW/DcrawInfoContainer
+usr/include/KF5/KDCRAW/KDCRAW/KDcraw
+usr/include/KF5/KDCRAW/KDCRAW/RawDecodingSettings
+usr/include/KF5/KDCRAW/KDCRAW/RawFiles
+usr/include/KF5/KDCRAW/kdcraw/
+usr/include/KF5/KDCRAW/kdcraw/dcrawinfocontainer.h
+usr/include/KF5/KDCRAW/kdcraw/kdcraw.h
+usr/include/KF5/KDCRAW/kdcraw/libkdcraw_export.h
+usr/include/KF5/KDCRAW/kdcraw/rawdecodingsettings.h
+usr/include/KF5/KDCRAW/kdcraw/rawfiles.h
+usr/include/KF5/libkdcraw_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5KDcraw/
+usr/lib/cmake/KF5KDcraw/KF5KDcrawConfig.cmake
+usr/lib/cmake/KF5KDcraw/KF5KDcrawConfigVersion.cmake
+usr/lib/cmake/KF5KDcraw/KF5KDcrawTargets-release.cmake
+usr/lib/cmake/KF5KDcraw/KF5KDcrawTargets.cmake
+usr/lib/libKF5KDcraw.so.5.0.0

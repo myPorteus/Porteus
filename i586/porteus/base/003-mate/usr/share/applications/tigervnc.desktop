@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TigerVNC
+GenericName=VNCViewer (RFB Client)
+Comment=Connect to remote desktop
+SwallowExec=
+Exec=vncviewer
+MimeType=
+Icon=tigervnc
+Path=
+TerminalOptions=
+Terminal=false
+Type=Application
+Categories=Network;
+StartupWMClass=VNC Viewer: Connection Details

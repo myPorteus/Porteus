@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf liblcms2.so.2 )
+( cd usr/lib ; ln -sf liblcms2.so.2.0.7 liblcms2.so.2 )
+( cd usr/lib ; rm -rf liblcms2.so )
+( cd usr/lib ; ln -sf liblcms2.so.2.0.7 liblcms2.so )

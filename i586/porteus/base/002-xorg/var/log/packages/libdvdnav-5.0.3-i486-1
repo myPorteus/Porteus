@@ -1,0 +1,39 @@
+PACKAGE NAME:     libdvdnav-5.0.3-i486-1
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libdvdnav-5.0.3-i486-1.txz
+PACKAGE DESCRIPTION:
+libdvdnav: libdvdnav (DVD Navigation Library)
+libdvdnav:
+libdvdnav: This is mplayer's fork of libdvdnav. libdvdnav is a library that
+libdvdnav: allows easy use of sophisticated DVD navigation features such as
+libdvdnav: DVD menus, multiangle playback, and even interactive DVD games.
+libdvdnav:
+libdvdnav: Homepage: http://www.mplayerhq.hu/design7/news.html
+libdvdnav:
+libdvdnav:
+libdvdnav:
+libdvdnav:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdvdnav-5.0.3/
+usr/doc/libdvdnav-5.0.3/AUTHORS
+usr/doc/libdvdnav-5.0.3/COPYING
+usr/doc/libdvdnav-5.0.3/ChangeLog
+usr/doc/libdvdnav-5.0.3/README
+usr/doc/libdvdnav-5.0.3/TODO
+usr/include/
+usr/include/dvdnav/
+usr/include/dvdnav/dvd_types.h
+usr/include/dvdnav/dvdnav.h
+usr/include/dvdnav/dvdnav_events.h
+usr/lib/
+usr/lib/libdvdnav.la
+usr/lib/libdvdnav.so.4.2.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/dvdnav.pc

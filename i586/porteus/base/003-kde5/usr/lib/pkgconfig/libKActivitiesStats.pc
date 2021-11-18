@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=bin
+libdir=lib
+includedir=include
+
+Name: libKActivitiesStats
+Description: libKActivitiesStats is a C++ library for using KDE activities
+URL: http://www.kde.org
+Requires:
+Version: 
+Libs: -Llib -lKActivitiesStats
+Cflags: -Iinclude

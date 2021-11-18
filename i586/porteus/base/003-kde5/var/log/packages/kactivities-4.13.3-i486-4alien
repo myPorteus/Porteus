@@ -1,0 +1,109 @@
+PACKAGE NAME:     kactivities-4.13.3-i486-4alien
+COMPRESSED PACKAGE SIZE:     172K
+UNCOMPRESSED PACKAGE SIZE:     800K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kactivities-4.13.3-i486-4alien.txz
+PACKAGE DESCRIPTION:
+kactivities: kactivities (API for using and interacting with Activities)
+kactivities:
+kactivities: API for using and interacting with Activities as a consumer,
+kactivities: application adding information to them or as an activity manager.
+kactivities:
+kactivities: For more information, visit:  http://www.kde.org
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/doc/
+usr/doc/kactivities-4.13.3/
+usr/doc/kactivities-4.13.3/README
+usr/doc/kactivities-4.13.3/README.developers
+usr/doc/kactivities-4.13.3/README.packagers
+usr/doc/kactivities-4.13.3/TODO
+usr/include/
+usr/include/KDE/
+usr/include/KDE/KActivities/
+usr/include/KDE/KActivities/Consumer
+usr/include/KDE/KActivities/Controller
+usr/include/KDE/KActivities/Info
+usr/include/KDE/KActivities/Models/
+usr/include/KDE/KActivities/Models/ActivityModel
+usr/include/KDE/KActivities/Models/ResourceModel
+usr/include/KDE/KActivities/ResourceInstance
+usr/include/KDE/KActivities/Version
+usr/include/kactivities-models/
+usr/include/kactivities-models/activitymodel.h
+usr/include/kactivities-models/kactivities_models_export.h
+usr/include/kactivities-models/resourcemodel.h
+usr/include/kactivities/
+usr/include/kactivities/consumer.h
+usr/include/kactivities/controller.h
+usr/include/kactivities/info.h
+usr/include/kactivities/kactivities_export.h
+usr/include/kactivities/resourceinstance.h
+usr/include/kactivities/version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KActivities-Models/
+usr/lib/cmake/KActivities-Models/KActivities-ModelsConfig.cmake
+usr/lib/cmake/KActivities-Models/KActivities-ModelsConfigVersion.cmake
+usr/lib/cmake/KActivities-Models/KActivitiesModelsLibraryTargets-release.cmake
+usr/lib/cmake/KActivities-Models/KActivitiesModelsLibraryTargets.cmake
+usr/lib/cmake/KActivities/
+usr/lib/cmake/KActivities/KActivitiesConfig.cmake
+usr/lib/cmake/KActivities/KActivitiesConfigVersion.cmake
+usr/lib/cmake/KActivities/KActivitiesLibraryTargets-release.cmake
+usr/lib/cmake/KActivities/KActivitiesLibraryTargets.cmake
+usr/lib/kde4/
+usr/lib/kde4/activitymanager_plugin_activityranking.so
+usr/lib/kde4/activitymanager_plugin_globalshortcuts.so
+usr/lib/kde4/activitymanager_plugin_nepomuk.so
+usr/lib/kde4/activitymanager_plugin_slc.so
+usr/lib/kde4/activitymanager_plugin_sqlite.so
+usr/lib/kde4/activitymanager_plugin_virtualdesktopswitch.so
+usr/lib/kde4/imports/
+usr/lib/kde4/imports/org/
+usr/lib/kde4/imports/org/kde/
+usr/lib/kde4/imports/org/kde/activities/
+usr/lib/kde4/imports/org/kde/activities/models/
+usr/lib/kde4/imports/org/kde/activities/models/libkactivities-models-component-plugin.so
+usr/lib/kde4/imports/org/kde/activities/models/qmldir
+usr/lib/kde4/kactivitymanagerd_fileitem_linking_plugin.so
+usr/lib/kde4/kcm_activities.so
+usr/lib/kde4/kio_activities.so
+usr/lib/libkactivities-models.so.1.0.0
+usr/lib/libkactivities.so.6.2.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libkactivities-models.pc
+usr/lib/pkgconfig/libkactivities.pc
+usr/share/
+usr/share/apps/
+usr/share/apps/activitymanager/
+usr/share/apps/activitymanager/workspace/
+usr/share/apps/activitymanager/workspace/settings/
+usr/share/apps/activitymanager/workspace/settings/BlacklistApplicationView.qml
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/activities.protocol
+usr/share/kde4/services/activitymanager-plugin-activityranking.desktop
+usr/share/kde4/services/activitymanager-plugin-globalshortcuts.desktop
+usr/share/kde4/services/activitymanager-plugin-nepomuk.desktop
+usr/share/kde4/services/activitymanager-plugin-slc.desktop
+usr/share/kde4/services/activitymanager-plugin-sqlite.desktop
+usr/share/kde4/services/activitymanager-plugin-virtualdesktopswitch.desktop
+usr/share/kde4/services/kactivitymanagerd.desktop
+usr/share/kde4/services/kactivitymanagerd_fileitem_linking_plugin.desktop
+usr/share/kde4/services/kcm_activities.desktop
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/activitymanager-plugin.desktop
+usr/share/ontology/
+usr/share/ontology/kde/
+usr/share/ontology/kde/kao.ontology
+usr/share/ontology/kde/kao.trig

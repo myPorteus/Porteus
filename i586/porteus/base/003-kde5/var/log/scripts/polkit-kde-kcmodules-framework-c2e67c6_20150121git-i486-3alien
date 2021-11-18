@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libpolkitkdekcmodulesprivate.so.0 )
+( cd usr/lib ; ln -sf libpolkitkdekcmodulesprivate.so.0.1.0 libpolkitkdekcmodulesprivate.so.0 )
+( cd usr/lib ; rm -rf libpolkitkdekcmodulesprivate.so )
+( cd usr/lib ; ln -sf libpolkitkdekcmodulesprivate.so.0 libpolkitkdekcmodulesprivate.so )

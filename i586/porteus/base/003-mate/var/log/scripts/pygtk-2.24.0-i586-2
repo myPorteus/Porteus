@@ -1,0 +1,2 @@
+( cd usr/doc/pygtk-2.24.0 ; rm -rf html )
+( cd usr/doc/pygtk-2.24.0 ; ln -sf ../../share/gtk-doc/html/pygtk html )

@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libgnomecanvas-2.so )
+( cd usr/lib ; ln -sf libgnomecanvas-2.so.0.3000.3 libgnomecanvas-2.so )
+( cd usr/lib ; rm -rf libgnomecanvas-2.so.0 )
+( cd usr/lib ; ln -sf libgnomecanvas-2.so.0.3000.3 libgnomecanvas-2.so.0 )

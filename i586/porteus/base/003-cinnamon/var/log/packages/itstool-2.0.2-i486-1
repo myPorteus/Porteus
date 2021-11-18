@@ -1,0 +1,44 @@
+PACKAGE NAME:     itstool-2.0.2-i486-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     220K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_cinnamon/itstool-2.0.2-i486-1.txz
+PACKAGE DESCRIPTION:
+itstool: itstool (Translate XML documents with PO files)
+itstool:
+itstool: ITS Tool allows you to translate your XML documents with PO
+itstool: files, using rules from the W3C Internationalization Tag Set
+itstool: (ITS) to determine what to translate and how to separate it
+itstool: into PO file messages.
+itstool:
+itstool: Homepage: http://itstool.org/
+itstool:
+itstool:
+itstool:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/itstool
+usr/doc/
+usr/doc/itstool-2.0.2/
+usr/doc/itstool-2.0.2/AUTHORS
+usr/doc/itstool-2.0.2/COPYING
+usr/doc/itstool-2.0.2/COPYING.GPL3
+usr/doc/itstool-2.0.2/ChangeLog
+usr/doc/itstool-2.0.2/INSTALL
+usr/doc/itstool-2.0.2/NEWS
+usr/doc/itstool-2.0.2/README
+usr/man/
+usr/man/man1/
+usr/man/man1/itstool.1.gz
+usr/share/
+usr/share/itstool/
+usr/share/itstool/its/
+usr/share/itstool/its/docbook.its
+usr/share/itstool/its/docbook5.its
+usr/share/itstool/its/its.its
+usr/share/itstool/its/mallard.its
+usr/share/itstool/its/ttml.its
+usr/share/itstool/its/xhtml.its

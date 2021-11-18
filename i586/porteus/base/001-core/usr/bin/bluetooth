@@ -1,0 +1,56 @@
+#!/bin/sh
+# tlp - switch bluetooth/wifi/wwan on/off
+#
+# Copyright (c) 2015 Thomas Koch <linrunner at gmx.net>
+# This software is licensed under the GPL v2 or later.
+
+# --- Constants
+readonly LIBDIRS="/usr/lib/tlp-pm /usr/lib64/tlp-pm"
+readonly LIBS="tlp-functions tlp-rf-func"
+
+# --- Locate and source libraries
+for libdir in $LIBDIRS; do [ -d $libdir ] && break; done
+[ -d $libdir ] || exit 0
+
+for lib in $LIBS; do
+    [ -f $libdir/$lib ] || exit 0
+    . $libdir/$lib
+done
+
+# --- MAIN
+read_defaults
+add_sbin2path
+self=${0##*/}
+
+case $self in
+    bluetooth|wifi|wwan)
+        case $1 in
+            on)
+                device_switch $self on
+                echo_device_state $self $devs
+                ;;
+
+            off)
+                device_switch $self off
+                echo_device_state $self $devs
+                ;;
+
+            toggle)
+                device_switch $self toggle
+                echo_device_state $self $devs
+                ;;
+
+            *)
+                device_state $self
+                echo_device_state $self $devs
+                ;;
+        esac
+        ;;
+
+    *)
+        echo "Error: unknown device type \"$self\"." 1>&2
+        exit 1
+        ;;
+esac
+
+exit 0

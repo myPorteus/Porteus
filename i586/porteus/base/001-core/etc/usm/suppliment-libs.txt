@@ -1,0 +1,12 @@
+## This file is used to insert libraries in LIBS.TXT (required libraries) when
+## they are not found as being required by usm
+
+# audacious-plugins is required so we insert a library
+# found in audacious-plugins into the audacious LIBS.TXT
+audacious-3.3.4-i486-1.txz
+lyricwiki.so
+ENDOF
+
+audacious-3.3.4-x86_64-1.txz
+lyricwiki.so
+ENDOF

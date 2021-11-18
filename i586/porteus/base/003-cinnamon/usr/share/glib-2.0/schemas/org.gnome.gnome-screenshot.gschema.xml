@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-screenshot">
+ <enum id="org.gnome.gnome-screenshot.file-types">
+    <value value="0" nick="bmp"/>
+    <value value="1" nick="jpg"/>
+    <value value="2" nick="png"/>
+    <value value="3" nick="tiff"/>
+  </enum>
+  <schema path="/org/gnome/gnome-screenshot/" id="org.gnome.gnome-screenshot">
+    <key type="b" name="take-window-shot">
+      <default>false</default>
+      <summary>Window-specific screenshot (deprecated)</summary>
+      <description>Grab just the current window, rather than the whole desktop. This key has been deprecated and it is no longer in use.</description>
+    </key>
+    <key type="i" name="delay">
+      <default>0</default>
+      <summary>Screenshot delay</summary>
+      <description>The number of seconds to wait before taking the screenshot.</description>
+    </key>
+    <key type="s" name="auto-save-directory">
+      <default>''</default>
+      <summary>Screenshot directory</summary>
+      <description>The directory where the screenshots will be saved by default.</description>
+    </key>
+    <key type="s" name="last-save-directory">
+      <default>''</default>
+      <summary>Last save directory</summary>
+      <description>The last directory a screenshot was saved in interactive mode.</description>
+    </key>
+    <key type="b" name="include-border">
+      <default>true</default>
+      <summary>Include Border</summary>
+      <description>Include the window manager border along with the screenshot</description>
+    </key>
+    <key type="b" name="include-pointer">
+      <default>false</default>
+      <summary>Include Pointer</summary>
+      <description>Include the pointer in the screenshot</description>
+    </key>
+    <key type="b" name="include-icc-profile">
+      <default>true</default>
+      <summary>Include ICC Profile</summary>
+      <description>Include the ICC profile of the target in the screenshot file</description>
+    </key>
+    <key type="s" name="border-effect">
+      <default>'none'</default>
+      <summary>Border Effect</summary>
+      <description>Effect to add to the outside of a border. Possible values are "shadow", "none", and "border".</description>
+    </key>
+    <key name="default-file-type" enum="org.gnome.gnome-screenshot.file-types">
+      <default>'png'</default>
+      <summary>Default file type extension</summary>
+      <description>The default file type extension for screenshots.</description>
+    </key>
+  </schema>
+</schemalist>

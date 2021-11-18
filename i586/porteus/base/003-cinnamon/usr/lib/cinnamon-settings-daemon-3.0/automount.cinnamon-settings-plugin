@@ -1,0 +1,14 @@
+[Cinnamon Settings Plugin]
+Module=automount
+IAge=0
+Name=Automount
+Name[bn]=স্বয়ংক্রিয়মাউন্ট
+Name[ml]=Automount
+Name[tr]=Otomatik Bağla
+Description=Automounter plugin
+Description[bn]=অটোমাউন্টার প্লাগ-ইন
+Description[ml]=ഓട്ടോമൌണ്ടര്‍ പ്ലഗിന്‍
+Description[tr]=Otomatik bağlayıcı eklentisi
+Authors=Tomas Bzatek
+Copyright=Copyright © 2010 Red Hat, Inc.
+Website=

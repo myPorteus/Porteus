@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pkcs10">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PKCS#10 Certificate Request</comment>
+  <acronym>PKCS#10</acronym>
+  <glob pattern="*.p10"/>
+  <glob pattern="*.csr"/>
+</mime-type>

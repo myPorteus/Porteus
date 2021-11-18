@@ -1,0 +1,70 @@
+PACKAGE NAME:     spectacle-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     1.1M
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/spectacle-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+spectacle: spectacle (screen capture program)
+spectacle:
+spectacle: A screenshot utility for KDE.
+spectacle:
+spectacle: For more information, visit:  http://www.kde.org
+spectacle:
+spectacle:
+spectacle:
+spectacle:
+spectacle:
+spectacle:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/spectacle
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/spectacle/
+usr/doc/HTML/en/spectacle/MainWindow.png
+usr/doc/HTML/en/spectacle/SaveOptions.png
+usr/doc/HTML/en/spectacle/Spectacle.png
+usr/doc/HTML/en/spectacle/index.cache.bz2
+usr/doc/HTML/en/spectacle/index.docbook
+usr/doc/spectacle-16.08.3/
+usr/doc/spectacle-16.08.3/CONTRIBUTING
+usr/doc/spectacle-16.08.3/COPYING
+usr/doc/spectacle-16.08.3/COPYING.DOC
+usr/doc/spectacle-16.08.3/COPYING.LGPL-2
+usr/doc/spectacle-16.08.3/COPYING.LIB
+usr/doc/spectacle-16.08.3/README
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.spectacle.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.Spectacle.xml
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.Spectacle.service
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/spectacle.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/spectacle.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/spectacle.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/spectacle.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/spectacle.svgz
+usr/share/khotkeys/
+usr/share/khotkeys/spectacle.khotkeys
+usr/share/knotifications5/
+usr/share/knotifications5/spectacle.notifyrc
+usr/share/metainfo/
+usr/share/metainfo/org.kde.spectacle.appdata.xml

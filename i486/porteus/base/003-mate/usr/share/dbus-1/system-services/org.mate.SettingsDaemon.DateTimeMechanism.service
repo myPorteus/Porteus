@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.mate.SettingsDaemon.DateTimeMechanism
-Exec=/usr/bin/msd-datetime-mechanism
-User=root

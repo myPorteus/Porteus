@@ -1,4 +1,0 @@
-#!/bin/sh
-# Use konsole as default terminal:
-
-konsole $*

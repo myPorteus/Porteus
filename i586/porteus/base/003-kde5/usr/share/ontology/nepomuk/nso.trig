@@ -1,0 +1,94 @@
+#
+# Copyright (c) 2009 Leo Sauermann <leo.sauermann@dfki.de>
+# All rights reserved, licensed under either CC-BY or BSD.
+#
+# You are free:
+#  * to Share - to copy, distribute and transmit the work
+#  * to Remix - to adapt the work
+# Under the following conditions:
+#  * Attribution - You must attribute the work in the manner specified by the author
+#    or licensor (but not in any way that suggests that they endorse you or your use 
+#    of the work).
+#
+# Redistribution and use in source and binary forms, with or without modification, 
+# are permitted provided that the following conditions are met:
+#  * Redistributions of source code must retain the above copyright notice, this 
+#    list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice, this 
+#    list of conditions and the following disclaimer in the documentation and/or 
+#    other materials provided with the distribution.
+#  * Neither the names of the authors nor the names of contributors may
+#    be used to endorse or promote products derived from this ontology without 
+#    specific prior written permission.
+#
+# THIS ONTOLOGY IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+# IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+# OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+# NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS ONTOLOGY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nao:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nao#> .
+@prefix nco:     <http://www.semanticdesktop.org/ontologies/2007/03/22/nco#> .
+@prefix nrl:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nso:     <http://www.semanticdesktop.org/ontologies/2009/11/08/nso#> .
+
+nso: {
+    nso:sharedWithContact
+          a       rdf:Property ;
+          rdfs:comment """The subject resource is shared with the object contact. 
+The resource and its subresources are transferred to the receiver.
+An existing sharedWithContact relation implies that updates on the resource should be transferred to the contact. 
+The contact may ask for updates actively, then the sharing party's software should send a new copy of the shared resource to the contact.
+Domain should be either a nie:InformationElement or a pimo:Thing but no DataObject. This includes ncal:Event instances and other resources we find on a desktop.
+DataObjects are the specific binary stream where an Information Element is stored, and can't be shared because the recipient will form a new binary stream to store the data object. 
+As there is no superclass of both nie:InformationElement and pimo:Thing, the domain is rdfs:Resource. 
+One resource can be shared to multiple contacts, the cardinality is 0..n. """;
+          rdfs:domain rdfs:Resource ;
+          rdfs:label "shared with contact" ;
+          rdfs:range nco:Contact .
+          
+    nso:sharedWithGroup 
+          a       rdf:Property ;
+          rdfs:comment """The subject resource is shared with all contacts belonging to the object contact group. 
+The resource and its subresources are transferred to the receivers.
+An existing sharedWithGroup relation implies that updates on the resource should be transferred to the members belonging to the group. 
+The contact may ask for updates actively, then the sharing party's software should send a new copy of the shared resource to the contact.
+Domain should be either a nie:InformationElement or a pimo:Thing but no DataObject. This includes ncal:Event instances and other resources we find on a desktop.
+DataObjects are the specific binary stream where an Information Element is stored, and can't be shared because the recipient will form a new binary stream to store the data object. 
+As there is no superclass of both nie:InformationElement and pimo:Thing, the domain is rdfs:Resource. 
+One resource can be shared to multiple contact groups, the cardinality is 0..n. """;
+          rdfs:domain rdfs:Resource ;
+          rdfs:label "shared with group" ;
+          rdfs:range nco:ContactGroup .
+}
+
+<http://www.semanticdesktop.org/ontologies/2009/11/08/nso/metadata> {
+    <http://www.semanticdesktop.org/ontologies/2009/11/08/nso/metadata>
+          a       nrl:GraphMetadata ;
+          nrl:coreGraphMetadataFor nso: .
+
+
+    nso:
+          a       nrl:Ontology , nrl:DocumentGraph ;
+          nao:hasDefaultNamespace "http://www.semanticdesktop.org/ontologies/2009/11/08/nso#" ;
+          nao:hasDefaultNamespaceAbbreviation "nso" ;
+          nao:lastModified "2009-11-30T18:00:00Z" ;
+          nao:serializationLanguage "TriG" ;
+          nao:status "Unstable" ;
+          nrl:updatable "0" ;
+          nao:version "0.11.0" ;
+          nao:prefLabel "Nepomuk Sharing Ontology" ;
+          nao:description "The Nepomuk Sharing Ontology defines basic classes and properties for defining permissions with respect to sharing information in a network." .
+}
+

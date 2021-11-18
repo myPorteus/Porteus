@@ -1,0 +1,6 @@
+( cd usr/lib ; rm -rf libpyglib-2.0-python.so.0 )
+( cd usr/lib ; ln -sf libpyglib-2.0-python.so.0.0.0 libpyglib-2.0-python.so.0 )
+( cd usr/lib ; rm -rf libpyglib-2.0-python.so )
+( cd usr/lib ; ln -sf libpyglib-2.0-python.so.0.0.0 libpyglib-2.0-python.so )
+( cd usr/doc/pygobject-2.28.6 ; rm -rf html )
+( cd usr/doc/pygobject-2.28.6 ; ln -sf ../../share/gtk-doc/html/pygobject html )

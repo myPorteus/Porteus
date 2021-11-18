@@ -1,0 +1,73 @@
+PACKAGE NAME:     libkeduvocdocument-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     144K
+UNCOMPRESSED PACKAGE SIZE:     610K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/libkeduvocdocument-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+libkeduvocdocument: libkeduvocdocument (library to read and write KVTML files)
+libkeduvocdocument:
+libkeduvocdocument: A library (formerly part of kdeedu) for reading from/writing to
+libkeduvocdocument: the KVTML format (and others too).
+libkeduvocdocument: Currently used by:  kanagram, khangman, parley, kwordquiz.
+libkeduvocdocument:
+libkeduvocdocument:
+libkeduvocdocument:
+libkeduvocdocument:
+libkeduvocdocument: For more information, visit:  http://www.kde.org
+libkeduvocdocument:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkeduvocdocument-16.08.3/
+usr/doc/libkeduvocdocument-16.08.3/AUTHORS
+usr/doc/libkeduvocdocument-16.08.3/COPYING
+usr/doc/libkeduvocdocument-16.08.3/COPYING-CMAKE-SCRIPTS
+usr/doc/libkeduvocdocument-16.08.3/COPYING.LIB
+usr/doc/libkeduvocdocument-16.08.3/README
+usr/include/
+usr/include/libkeduvocdocument/
+usr/include/libkeduvocdocument/KEduVocArticle
+usr/include/libkeduvocdocument/KEduVocConjugation
+usr/include/libkeduvocdocument/KEduVocContainer
+usr/include/libkeduvocdocument/KEduVocDeclension
+usr/include/libkeduvocdocument/KEduVocDocument
+usr/include/libkeduvocdocument/KEduVocExpression
+usr/include/libkeduvocdocument/KEduVocIdentifier
+usr/include/libkeduvocdocument/KEduVocKVTML2Writer
+usr/include/libkeduvocdocument/KEduVocLeitnerBox
+usr/include/libkeduvocdocument/KEduVocLesson
+usr/include/libkeduvocdocument/KEduVocMultipleChoice
+usr/include/libkeduvocdocument/KEduVocPersonalPronoun
+usr/include/libkeduvocdocument/KEduVocText
+usr/include/libkeduvocdocument/KEduVocTranslation
+usr/include/libkeduvocdocument/KEduVocWordFlags
+usr/include/libkeduvocdocument/KEduVocWordtype
+usr/include/libkeduvocdocument/SharedKVTMLFiles
+usr/include/libkeduvocdocument/keduvocarticle.h
+usr/include/libkeduvocdocument/keduvocconjugation.h
+usr/include/libkeduvocdocument/keduvoccontainer.h
+usr/include/libkeduvocdocument/keduvocdeclension.h
+usr/include/libkeduvocdocument/keduvocdocument.h
+usr/include/libkeduvocdocument/keduvocdocument_export.h
+usr/include/libkeduvocdocument/keduvocexpression.h
+usr/include/libkeduvocdocument/keduvocidentifier.h
+usr/include/libkeduvocdocument/keduvockvtml2writer.h
+usr/include/libkeduvocdocument/keduvocleitnerbox.h
+usr/include/libkeduvocdocument/keduvoclesson.h
+usr/include/libkeduvocdocument/keduvocmultiplechoice.h
+usr/include/libkeduvocdocument/keduvocpersonalpronoun.h
+usr/include/libkeduvocdocument/keduvoctext.h
+usr/include/libkeduvocdocument/keduvoctranslation.h
+usr/include/libkeduvocdocument/keduvocwordflags.h
+usr/include/libkeduvocdocument/keduvocwordtype.h
+usr/include/libkeduvocdocument/sharedkvtmlfiles.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/libkeduvocdocument/
+usr/lib/cmake/libkeduvocdocument/LibKEduVocDocumentConfig.cmake
+usr/lib/cmake/libkeduvocdocument/LibKEduVocDocumentTargets-release.cmake
+usr/lib/cmake/libkeduvocdocument/LibKEduVocDocumentTargets.cmake
+usr/lib/libKEduVocDocument.so.5.0.0

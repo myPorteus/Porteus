@@ -1,0 +1,33 @@
+PACKAGE NAME:     kdesdk-thumbnailers-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kdesdk-thumbnailers-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kdesdk-thumbnailers: kdesdk-thumbnailers (thumbnailers for KDE)
+kdesdk-thumbnailers:
+kdesdk-thumbnailers: Thumbnailers for KDE, including gnu gettext po translation
+kdesdk-thumbnailers: files and gettext translation templates.
+kdesdk-thumbnailers:
+kdesdk-thumbnailers:
+kdesdk-thumbnailers:
+kdesdk-thumbnailers:
+kdesdk-thumbnailers:
+kdesdk-thumbnailers: For more information, visit:  http://www.kde.org
+kdesdk-thumbnailers:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kdesdk-thumbnailers-16.08.3/
+usr/doc/kdesdk-thumbnailers-16.08.3/COPYING
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/pothumbnail.so
+usr/share/
+usr/share/config.kcfg/
+usr/share/config.kcfg/pocreatorsettings.kcfg
+usr/share/kservices5/
+usr/share/kservices5/pothumbnail.desktop

@@ -1,0 +1,45 @@
+PACKAGE NAME:     dosfstools-3.0.28-i586-1
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/dosfstools-3.0.28-i586-1.txz
+PACKAGE DESCRIPTION:
+dosfstools: dosfstools (tools for working with FAT filesystems)
+dosfstools:
+dosfstools: Utilities for creating FAT filesystems (mkdosfs), and for checking
+dosfstools: and repairing them (dosfsck).
+dosfstools:
+dosfstools: Homepage:  http://daniel-baumann.ch/software/dosfstools
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/fatlabel
+sbin/fsck.fat
+sbin/mkfs.fat
+usr/
+usr/doc/
+usr/doc/dosfstools-3.0.28/
+usr/doc/dosfstools-3.0.28/ANNOUNCE.mkdosfs
+usr/doc/dosfstools-3.0.28/COPYING
+usr/doc/dosfstools-3.0.28/ChangeLog
+usr/doc/dosfstools-3.0.28/README.dosfsck
+usr/doc/dosfstools-3.0.28/README.dosfstools-2.x
+usr/doc/dosfstools-3.0.28/README.mkdosfs
+usr/doc/dosfstools-3.0.28/TODO.dosfstools-2.x
+usr/man/
+usr/man/de/
+usr/man/de/man8/
+usr/man/de/man8/fatlabel.8.gz
+usr/man/de/man8/fsck.fat.8.gz
+usr/man/de/man8/mkfs.fat.8.gz
+usr/man/man8/
+usr/man/man8/fatlabel.8.gz
+usr/man/man8/fsck.fat.8.gz
+usr/man/man8/mkfs.fat.8.gz

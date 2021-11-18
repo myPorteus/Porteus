@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=application-x-compress-tar
+Icon[en]=application-x-compress-tar
+Icon[C]=application-x-compress-tar
+Tooltip[en_US]=Convert txz to xzm
+Tooltip[en]=Convert txz to xzm
+Tooltip[C]=Convert txz to xzm
+ToolbarLabel[en_US]=txz2xzm
+ToolbarLabel[en]=txz2xzm
+ToolbarLabel[C]=txz2xzm
+Name[en_US]=txz2xzm
+Name[en]=txz2xzm
+Name[C]=txz2xzm
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.txz;*.tgz;
+Exec=/opt/porteus-scripts/context-menu/convert_txz %F
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

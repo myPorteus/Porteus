@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>network-manager-vpnc</id>
+  <project_license>GPL-2.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <extends>nm-connection-editor.desktop</extends>
+  <extends>gnome-control-center.desktop</extends>
+  <name>Legacy Cisco VPNC client</name>
+  <name xml:lang="ca">Client antic Cisco VPNC</name>
+  <name xml:lang="cs">Původní klient Cisco VPNC</name>
+  <name xml:lang="de">VPNC-Client für veraltete Cisco-Systeme</name>
+  <name xml:lang="es">Cliente VPNC heredado de Cisco</name>
+  <name xml:lang="hu">Örökölt Cisco VPNC kliens</name>
+  <name xml:lang="id">Klien legacy Cisco VPNC</name>
+  <name xml:lang="it">Vecchio client VPNC Cisco</name>
+  <name xml:lang="lt">Pasenęs Cisco VPNC klientas</name>
+  <name xml:lang="pl">Przestarzały klient Cisco VPNC</name>
+  <name xml:lang="pt_BR">Cliente legado para Cisco VPNC</name>
+  <name xml:lang="sr">Стари Цисков ВПНЦ клијент</name>
+  <name xml:lang="sr@latin">Stari Ciskov VPNC klijent</name>
+  <name xml:lang="sv">Legacy Cisco VPNC-klient</name>
+  <summary>Client for Cisco IPsec virtual private networks</summary>
+  <summary xml:lang="ca">Client per a xarxes privades virtuals Cisco IPsec</summary>
+  <summary xml:lang="cs">Klient pro virtuální soukromé sítě Cisco IPSec</summary>
+  <summary xml:lang="de">Client für Cisco-IPsec virtuelle private Netze</summary>
+  <summary xml:lang="es">Cliente para redes privadas virtuales IPsec de Cisco</summary>
+  <summary xml:lang="hu">Kliens a Cisco IPsec virtuális magánhálózatokhoz</summary>
+  <summary xml:lang="id">Klien untuk virtual private network IPsec Cisco</summary>
+  <summary xml:lang="it">Client per reti private virtuali IPsec Cisco</summary>
+  <summary xml:lang="lt">Cisco IPsec virtualių privačių tinklų klientas</summary>
+  <summary xml:lang="pl">Klient dla wirtualnych sieci prywatnych IPsec firmy Cisco</summary>
+  <summary xml:lang="pt_BR">Cliente para redes privadas virtuais IPsec da Cisco</summary>
+  <summary xml:lang="sr">Клијент за Цискову ИПсец виртуелну приватну мрежу</summary>
+  <summary xml:lang="sr@latin">Klijent za Ciskovu IPsec virtuelnu privatnu mrežu</summary>
+  <summary xml:lang="sv">Klient för Cisco IPsec virtuella privata nätverk</summary>
+
+  <keywords>
+    <keyword>network</keyword>
+    <keyword>manager</keyword>
+    <keyword>NetworkManager</keyword>
+    <keyword>connection</keyword>
+    <keyword>VPN</keyword>
+    <keyword>VPNC</keyword>
+    <keyword>IPsec</keyword>
+    <keyword>Cisco</keyword>
+  </keywords>
+
+  <description>
+    <p>Support for configuring virtual private networks based on VPNC.</p>
+    <p xml:lang="ca">Suport per configurar xarxes privades virtuals basades en VPNC.</p>
+    <p xml:lang="cs">Podpora nastavení sítí VPN založených na VPNC.</p>
+    <p xml:lang="de">Unterstützung für die Konfiguration virtueller privater Netzverbindungen, die auf VPNC basieren.</p>
+    <p xml:lang="es">Soporte para configurar redes privadas virtuales basadas en VPNC.</p>
+    <p xml:lang="hu">A VPNC alapú virtuális magánhálózatok beállításának támogatása.</p>
+    <p xml:lang="id">Dukungan untuk menata virtual private network berbasis VPNC.</p>
+    <p xml:lang="it">Supporta la configurazione di connessioni private virtuali basate su VPNC.</p>
+    <p xml:lang="lt">VPNC pagrindo virtualių privačių tinklų konfigūracijos palaikymas.</p>
+    <p xml:lang="pl">Obsługa konfigurowania wirtualnych sieci prywatnych opartych na VPNC.</p>
+    <p xml:lang="pt_BR">Suporte a configuração de redes privadas virtuais baseadas em VPNC.</p>
+    <p xml:lang="sr">Подршка за подешавање виртуелних приватних мрежа заснованих на ВПНЦ-у.</p>
+    <p xml:lang="sr@latin">Podrška za podešavanje virtuelnih privatnih mreža zasnovanih na VPNC-u.</p>
+    <p xml:lang="sv">Stöd för att konfigurera virtuella privata nätverk baserade på VPNC.</p>
+    <p>Compatible with Cisco VPN concentrators configured to use IPsec.</p>
+    <p xml:lang="ca">Compatible amb concentradors Cisco VPN configurats per usar IPsec.</p>
+    <p xml:lang="cs">Kompatibilní s koncentrátory Cisco VPN nastavenými pro použití IPsec.</p>
+    <p xml:lang="de">Kompatibel mit Cisco-VPN-Konzentratoren, die für den Einsatz von IPsec konfiguriert sind.</p>
+    <p xml:lang="es">Compatible con concentradores VPN de Cisco configurados para usar IPsec.</p>
+    <p xml:lang="hu">Kompatibilis az IPsec használatára beállított Cisco VPN koncentrátorokkal</p>
+    <p xml:lang="id">Kompatibel dengan konsentrator VPN Cisco yang ditata memakai IPsec.</p>
+    <p xml:lang="it">Compatibile con i concentratori VPN Cisco configurati per utilizzare IPsec.</p>
+    <p xml:lang="lt">Suderinamas su Cisco VPN koncentratoriais, sukonfigūruotas IPsec naudojimui.</p>
+    <p xml:lang="pl">Zgodne z koncentratorami VPN firmy Cisco skonfigurowanymi do używania IPsec.</p>
+    <p xml:lang="pt_BR">Compatível com concentradores VPN da Cisco configurados para usar IPsec.</p>
+    <p xml:lang="sr">Сагласно са Цисковим ВПН концентраторима подешеним за коришћење ИПсец-а</p>
+    <p xml:lang="sr@latin">Saglasno sa Ciskovim VPN koncentratorima podešenim za korišćenje IPsec-a</p>
+    <p xml:lang="sv">Kompatibel med Cisco VPN-koncentratorer konfigurerade att använda IPsec.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image width="800" height="572">https://git.gnome.org/browse/network-manager-vpnc/plain/appdata/vpnc.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The advanced options dialog</caption>
+      <image width="800" height="547">https://git.gnome.org/browse/network-manager-vpnc/plain/appdata/vpnc-advanced.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://wiki.gnome.org/Projects/NetworkManager/VPN</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager</url>
+  <update_contact>networkmanager-maint@gnome.bugs</update_contact>
+  <translation type="gettext">NetworkManager-vpnc</translation>
+  <developer_name>The NetworkManager Developers</developer_name>
+  <developer_name xml:lang="ca">Els desenvolupadors del NetworkManager</developer_name>
+  <developer_name xml:lang="cs">Vývojáři aplikace NetworkManager</developer_name>
+  <developer_name xml:lang="de">Die Entwickler von NetworkManager</developer_name>
+  <developer_name xml:lang="es">Los desarrolladores de NetworkManager</developer_name>
+  <developer_name xml:lang="hu">A Hálózatkezelő fejlesztői</developer_name>
+  <developer_name xml:lang="id">Para Pengembang NetworkManager</developer_name>
+  <developer_name xml:lang="it">Gli sviluppatori di NetworkManager</developer_name>
+  <developer_name xml:lang="lt">NetworkManager kūrėjai</developer_name>
+  <developer_name xml:lang="pl">Programiści projektu NetworkManager</developer_name>
+  <developer_name xml:lang="pt_BR">Os desenvolvedores NetworkManager</developer_name>
+  <developer_name xml:lang="sr">Програмери Управника мреже</developer_name>
+  <developer_name xml:lang="sr@latin">Programeri Upravnika mreže</developer_name>
+  <developer_name xml:lang="sv">Utvecklarna av Nätverkshanteraren</developer_name>
+</component>

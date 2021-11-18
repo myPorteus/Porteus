@@ -1,0 +1,22 @@
+#!/bin/sh
+config() {
+  NEW="$1"
+  OLD="`dirname $NEW`/`basename $NEW .new`"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "`cat $OLD | md5sum`" = "`cat $NEW | md5sum`" ]; then # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+config etc/gamin/gaminrc.new
+
+( cd usr/lib ; rm -rf libfam.so.0 )
+( cd usr/lib ; ln -sf libfam.so.0.0.0 libfam.so.0 )
+( cd usr/lib ; rm -rf libgamin-1.so.0 )
+( cd usr/lib ; ln -sf libgamin-1.so.0.1.10 libgamin-1.so.0 )
+( cd usr/lib ; rm -rf libfam.so )
+( cd usr/lib ; ln -sf libfam.so.0.0.0 libfam.so )
+( cd usr/lib ; rm -rf libgamin-1.so )
+( cd usr/lib ; ln -sf libgamin-1.so.0.1.10 libgamin-1.so )

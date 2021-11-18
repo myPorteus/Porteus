@@ -1,0 +1,101 @@
+PACKAGE NAME:     sip-4.18-i586-1
+COMPRESSED PACKAGE SIZE:     492K
+UNCOMPRESSED PACKAGE SIZE:     2.6M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/sip-4.18-i586-1.txz
+PACKAGE DESCRIPTION:
+sip: SIP (a tool for generating Python bindings)
+sip:
+sip: SIP is a tool that makes it very easy to create Python bindings for
+sip: C and C++ libraries.  It was originally developed to create PyQt,
+sip: the Python bindings for the Qt toolkit, but can be used to create
+sip: bindings for any C or C++ library.
+sip:
+sip: Homepage:  http://www.riverbankcomputing.co.uk/software/sip/
+sip:
+sip:
+sip:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sip
+usr/doc/
+usr/doc/sip-4.18/
+usr/doc/sip-4.18/ChangeLog
+usr/doc/sip-4.18/LICENSE
+usr/doc/sip-4.18/LICENSE-GPL2
+usr/doc/sip-4.18/LICENSE-GPL3
+usr/doc/sip-4.18/NEWS
+usr/doc/sip-4.18/README
+usr/doc/sip-4.18/html/
+usr/doc/sip-4.18/html/_sources/
+usr/doc/sip-4.18/html/_sources/annotations.txt
+usr/doc/sip-4.18/html/_sources/build_system.txt
+usr/doc/sip-4.18/html/_sources/c_api.txt
+usr/doc/sip-4.18/html/_sources/command_line.txt
+usr/doc/sip-4.18/html/_sources/directives.txt
+usr/doc/sip-4.18/html/_sources/distutils.txt
+usr/doc/sip-4.18/html/_sources/embedding.txt
+usr/doc/sip-4.18/html/_sources/incompatibilities.txt
+usr/doc/sip-4.18/html/_sources/index.txt
+usr/doc/sip-4.18/html/_sources/installation.txt
+usr/doc/sip-4.18/html/_sources/introduction.txt
+usr/doc/sip-4.18/html/_sources/python_api.txt
+usr/doc/sip-4.18/html/_sources/specification_files.txt
+usr/doc/sip-4.18/html/_sources/using.txt
+usr/doc/sip-4.18/html/_static/
+usr/doc/sip-4.18/html/_static/ajax-loader.gif
+usr/doc/sip-4.18/html/_static/basic.css
+usr/doc/sip-4.18/html/_static/classic.css
+usr/doc/sip-4.18/html/_static/comment-bright.png
+usr/doc/sip-4.18/html/_static/comment-close.png
+usr/doc/sip-4.18/html/_static/comment.png
+usr/doc/sip-4.18/html/_static/doctools.js
+usr/doc/sip-4.18/html/_static/down-pressed.png
+usr/doc/sip-4.18/html/_static/down.png
+usr/doc/sip-4.18/html/_static/file.png
+usr/doc/sip-4.18/html/_static/jquery-1.11.1.js
+usr/doc/sip-4.18/html/_static/jquery.js
+usr/doc/sip-4.18/html/_static/logo.png
+usr/doc/sip-4.18/html/_static/logo_tn.ico
+usr/doc/sip-4.18/html/_static/minus.png
+usr/doc/sip-4.18/html/_static/plus.png
+usr/doc/sip-4.18/html/_static/pygments.css
+usr/doc/sip-4.18/html/_static/searchtools.js
+usr/doc/sip-4.18/html/_static/sidebar.js
+usr/doc/sip-4.18/html/_static/underscore-1.3.1.js
+usr/doc/sip-4.18/html/_static/underscore.js
+usr/doc/sip-4.18/html/_static/up-pressed.png
+usr/doc/sip-4.18/html/_static/up.png
+usr/doc/sip-4.18/html/_static/websupport.js
+usr/doc/sip-4.18/html/annotations.html
+usr/doc/sip-4.18/html/build_system.html
+usr/doc/sip-4.18/html/c_api.html
+usr/doc/sip-4.18/html/command_line.html
+usr/doc/sip-4.18/html/directives.html
+usr/doc/sip-4.18/html/distutils.html
+usr/doc/sip-4.18/html/embedding.html
+usr/doc/sip-4.18/html/genindex.html
+usr/doc/sip-4.18/html/incompatibilities.html
+usr/doc/sip-4.18/html/index.html
+usr/doc/sip-4.18/html/installation.html
+usr/doc/sip-4.18/html/introduction.html
+usr/doc/sip-4.18/html/objects.inv
+usr/doc/sip-4.18/html/py-modindex.html
+usr/doc/sip-4.18/html/python_api.html
+usr/doc/sip-4.18/html/search.html
+usr/doc/sip-4.18/html/searchindex.js
+usr/doc/sip-4.18/html/specification_files.html
+usr/doc/sip-4.18/html/using.html
+usr/include/
+usr/include/python2.7/
+usr/include/python2.7/sip.h
+usr/lib/
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/sip.pyi
+usr/lib/python2.7/site-packages/sip.so
+usr/lib/python2.7/site-packages/sipconfig.py
+usr/lib/python2.7/site-packages/sipdistutils.py

@@ -1,0 +1,44 @@
+PACKAGE NAME:     gtk-murrine-engine-0.98.2-i586-1jay
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     370K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_xfce4/gtk-murrine-engine-0.98.2-i586-1jay.txz
+PACKAGE DESCRIPTION:
+gtk-murrine-engine: gtk-murrine-engine (Murrine GTK2 engine)
+gtk-murrine-engine:
+gtk-murrine-engine: Murrine is a cairo-based fast gtk2 theme engine.
+gtk-murrine-engine:
+gtk-murrine-engine: http://www.cimitan.com/murrine/
+gtk-murrine-engine:
+gtk-murrine-engine:
+gtk-murrine-engine: Packager: brokenman@porteus.org on 08-Feb-2016
+gtk-murrine-engine:
+gtk-murrine-engine:
+gtk-murrine-engine:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/gtk-murrine-engine-0.98.2/
+usr/doc/gtk-murrine-engine-0.98.2/AUTHORS
+usr/doc/gtk-murrine-engine-0.98.2/COPYING
+usr/doc/gtk-murrine-engine-0.98.2/ChangeLog
+usr/doc/gtk-murrine-engine-0.98.2/ChangeLog.SB
+usr/doc/gtk-murrine-engine-0.98.2/NEWS
+usr/lib/
+usr/lib/gtk-2.0/
+usr/lib/gtk-2.0/2.10.0/
+usr/lib/gtk-2.0/2.10.0/engines/
+usr/lib/gtk-2.0/2.10.0/engines/libmurrine.so
+usr/share/
+usr/share/gtk-engines/
+usr/share/gtk-engines/murrine.xml
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/gtk-murrine-engine/
+usr/src/slackbuilds/gtk-murrine-engine/ChangeLog.SB
+usr/src/slackbuilds/gtk-murrine-engine/gtk-murrine-engine.SlackBuild
+usr/src/slackbuilds/gtk-murrine-engine/slack-desc
+usr/src/slackbuilds/gtk-murrine-engine/slack-required

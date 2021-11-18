@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>network-manager-openvpn</id>
+  <project_license>GPL-2.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <extends>nm-connection-editor.desktop</extends>
+  <extends>gnome-control-center.desktop</extends>
+  <name>OpenVPN client</name>
+  <name xml:lang="cs">Klient OpenVPN</name>
+  <name xml:lang="de">OpenVPN-Client</name>
+  <name xml:lang="el">Πελάτης OpenVPN</name>
+  <name xml:lang="es">Cliente de OpenVPN</name>
+  <name xml:lang="hu">OpenVPN kliens</name>
+  <name xml:lang="id">Klien OpenVPN</name>
+  <name xml:lang="lt">OpenVPN klientas</name>
+  <name xml:lang="pl">Klient OpenVPN</name>
+  <name xml:lang="pt_BR">Cliente OpenVPN</name>
+  <name xml:lang="sr">ОпенВПН клијент</name>
+  <name xml:lang="sr@latin">OpenVPN klijent</name>
+  <name xml:lang="sv">OpenVPN-klient</name>
+  <summary>Client for OpenVPN virtual private networks</summary>
+  <summary xml:lang="cs">Klient pro virtální soukromé sítě OpenVPN</summary>
+  <summary xml:lang="de">Client für virtuelle private OpenVPN-Netzwerke</summary>
+  <summary xml:lang="es">Cliente para redes privadas virtuales OpenVPN</summary>
+  <summary xml:lang="hu">Kliens az OpenVPN virtuális magánhálózatokhoz</summary>
+  <summary xml:lang="id">Klien untuk virtual private network OpenVPN</summary>
+  <summary xml:lang="lt">Klientas OpenVPN virtualiems privatiems tinklams</summary>
+  <summary xml:lang="pl">Klient dla wirtualnych sieci prywatnych OpenVPN</summary>
+  <summary xml:lang="pt_BR">Cliente para redes privadas virtuais OpenVPN</summary>
+  <summary xml:lang="sr">Клијент за виртуелне приватне мреже кроз ОпенВПН</summary>
+  <summary xml:lang="sr@latin">Klijent za virtuelne privatne mreže kroz OpenVPN</summary>
+  <summary xml:lang="sv">Klient för OpenVPN virtuella privata nätverk</summary>
+
+  <keywords>
+    <keyword>network</keyword>
+    <keyword>manager</keyword>
+    <keyword>NetworkManager</keyword>
+    <keyword>connection</keyword>
+    <keyword>VPN</keyword>
+    <keyword>OpenVPN</keyword>
+  </keywords>
+
+  <description>
+    <p>Support for configuring OpenVPN virtual private network connections.</p>
+    <p xml:lang="cs">Podpora nastavení sítí OpenVPN.</p>
+    <p xml:lang="de">Unterstützung für die Einrichtung virtueller privater OpenVPN-Netzwerkverbindungen.</p>
+    <p xml:lang="es">Soporte para configurar conexiones a redes privadas virtuales OpenVPN</p>
+    <p xml:lang="hu">Az OpenVPN virtuális magánhálózati kapcsolatok beállításának támogatása.</p>
+    <p xml:lang="id">Dukungan untuk menata koneksi virtual private network OpenVPN.</p>
+    <p xml:lang="lt">OpenVPN virtualių privačių tinklų ryšių konfigūracijos palaikymas.</p>
+    <p xml:lang="pl">Obsługa konfigurowania połączeń wirtualnych sieci prywatnych OpenVPN.</p>
+    <p xml:lang="pt_BR">Suporte a configuração conexões de rede privada virtual OpenVPN.</p>
+    <p xml:lang="sr">Подршка за подешавање повезивања у виртуелним приватним мрежама кроз ОпенВПН.</p>
+    <p xml:lang="sr@latin">Podrška za podešavanje povezivanja u virtuelnim privatnim mrežama kroz OpenVPN.</p>
+    <p xml:lang="sv">Stöd för att konfigurera OpenVPN virtuella privata nätverksanslutningar.</p>
+    <p>OpenVPN is a popular and flexible free-software VPN solution.</p>
+    <p xml:lang="cs">OpenVPN je populární a flexibilní nekomerční softwarové řešení VPN.</p>
+    <p xml:lang="de">OpenVPN ist eine populäre, flexible und auf freier Software basierende VPN-Lösung.</p>
+    <p xml:lang="es">OpenVPN es una solución VPN flexible y popular, y además es software libre.</p>
+    <p xml:lang="hu">Az OpenVPN egy népszerű és rugalmas, szabad szoftveres VPN megoldás.</p>
+    <p xml:lang="id">OpenVPN adalah sebuah solusi VPN perangkat lunak bebas yang populer dan luwes.</p>
+    <p xml:lang="lt">OpenVPN yra populiarus ir lankstus laisvos programinės įrangos VPN sprendimas.</p>
+    <p xml:lang="pl">OpenVPN to popularne i elastyczne oprogramowanie VPN na wolnej licencji.</p>
+    <p xml:lang="pt_BR">OpenVPN é uma solução VPN popular e flexível de software livre.</p>
+    <p xml:lang="sr">ОпенВПН је популаран, прилагодљив и слободан програм за ВПН.</p>
+    <p xml:lang="sr@latin">OpenVPN je popularan, prilagodljiv i slobodan program za VPN.</p>
+    <p xml:lang="sv">OpenVPN är en populär och flexibel VPN-lösning som är fri programvara.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image width="800" height="658">https://git.gnome.org/browse/network-manager-openvpn/plain/appdata/openvpn.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The advanced options dialog</caption>
+      <image width="800" height="604">https://git.gnome.org/browse/network-manager-openvpn/plain/appdata/openvpn-advanced.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://wiki.gnome.org/Projects/NetworkManager/VPN</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager</url>
+  <update_contact>networkmanager-maint@gnome.bugs</update_contact>
+  <translation type="gettext">NetworkManager-openvpn</translation>
+  <developer_name>The NetworkManager Developers</developer_name>
+  <developer_name xml:lang="cs">Vývojáři aplikace NetworkManager</developer_name>
+  <developer_name xml:lang="de">Die NetworkManager-Entwickler</developer_name>
+  <developer_name xml:lang="el">Οι προγραμματιστές του NetworkManager</developer_name>
+  <developer_name xml:lang="es">Los desarrolladores de NetworkManager</developer_name>
+  <developer_name xml:lang="hu">A Hálózatkezelő fejlesztői</developer_name>
+  <developer_name xml:lang="id">Para Pengembang NetworkManager</developer_name>
+  <developer_name xml:lang="lt">NetworkManager kūrėjai</developer_name>
+  <developer_name xml:lang="pl">Programiści projektu NetworkManager</developer_name>
+  <developer_name xml:lang="pt_BR">Os desenvolvedores NetworkManager</developer_name>
+  <developer_name xml:lang="sr">Развојни тим Управника мреже</developer_name>
+  <developer_name xml:lang="sr@latin">Razvojni tim Upravnika mreže</developer_name>
+  <developer_name xml:lang="sv">Utvecklarna av Nätverkshanteraren</developer_name>
+</component>

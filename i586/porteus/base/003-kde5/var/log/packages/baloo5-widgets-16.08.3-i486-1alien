@@ -1,0 +1,49 @@
+PACKAGE NAME:     baloo5-widgets-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/baloo5-widgets-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+baloo5-widgets: baloo5-widgets (widgets for baloo)
+baloo5-widgets:
+baloo5-widgets: Baloo is a framework for searching and managing metadata.
+baloo5-widgets: Balooo-widgets contains widgets for use with Baloo.
+baloo5-widgets:
+baloo5-widgets:
+baloo5-widgets:
+baloo5-widgets:
+baloo5-widgets:
+baloo5-widgets: For more information, visit:  http://www.kde.org
+baloo5-widgets:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/baloo_filemetadata_temp_extractor
+usr/doc/
+usr/doc/baloo5-widgets-16.08.3/
+usr/doc/baloo5-widgets-16.08.3/COPYING
+usr/doc/baloo5-widgets-16.08.3/COPYING.LIB
+usr/doc/baloo5-widgets-16.08.3/COPYING.README
+usr/include/
+usr/include/KF5/
+usr/include/KF5/BalooWidgets/
+usr/include/KF5/BalooWidgets/Baloo/
+usr/include/KF5/BalooWidgets/Baloo/FileMetaDataConfigWidget
+usr/include/KF5/BalooWidgets/Baloo/FileMetaDataWidget
+usr/include/KF5/BalooWidgets/Baloo/TagWidget
+usr/include/KF5/BalooWidgets/baloo/
+usr/include/KF5/BalooWidgets/baloo/filemetadataconfigwidget.h
+usr/include/KF5/BalooWidgets/baloo/filemetadatawidget.h
+usr/include/KF5/BalooWidgets/baloo/tagwidget.h
+usr/include/KF5/BalooWidgets/baloo/widgets_export.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5BalooWidgets/
+usr/lib/cmake/KF5BalooWidgets/KF5BalooWidgetsConfig.cmake
+usr/lib/cmake/KF5BalooWidgets/KF5BalooWidgetsConfigVersion.cmake
+usr/lib/cmake/KF5BalooWidgets/KF5BalooWidgetsTargets-release.cmake
+usr/lib/cmake/KF5BalooWidgets/KF5BalooWidgetsTargets.cmake
+usr/lib/libKF5BalooWidgets.so.5.0.0

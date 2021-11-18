@@ -1,0 +1,52 @@
+PACKAGE NAME:     libXcomposite-0.4.4-i586-2
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libXcomposite-0.4.4-i586-2.txz
+PACKAGE DESCRIPTION:
+libXcomposite: libXcomposite (client library for the X Composite extension)
+libXcomposite:
+libXcomposite: libXcomposite is part of X11.
+libXcomposite:
+libXcomposite: For more information about the X.Org Foundation (the providers of the
+libXcomposite: X.Org implementation of the X Window System), see their website:
+libXcomposite:
+libXcomposite: http://www.x.org
+libXcomposite:
+libXcomposite:
+libXcomposite:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXcomposite-0.4.4/
+usr/doc/libXcomposite-0.4.4/AUTHORS
+usr/doc/libXcomposite-0.4.4/COPYING
+usr/doc/libXcomposite-0.4.4/ChangeLog
+usr/doc/libXcomposite-0.4.4/INSTALL
+usr/doc/libXcomposite-0.4.4/README
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/Xcomposite.h
+usr/lib/
+usr/lib/libXcomposite.la
+usr/lib/libXcomposite.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xcomposite.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/XCompositeCreateRegionFromBorderClip.3.gz
+usr/man/man3/XCompositeGetOverlayWindow.3.gz
+usr/man/man3/XCompositeNameWindowPixmap.3.gz
+usr/man/man3/XCompositeQueryExtension.3.gz
+usr/man/man3/XCompositeQueryVersion.3.gz
+usr/man/man3/XCompositeRedirectSubwindows.3.gz
+usr/man/man3/XCompositeRedirectWindow.3.gz
+usr/man/man3/XCompositeReleaseOverlayWindow.3.gz
+usr/man/man3/XCompositeUnredirectSubwindows.3.gz
+usr/man/man3/XCompositeUnredirectWindow.3.gz
+usr/man/man3/XCompositeVersion.3.gz
+usr/man/man3/Xcomposite.3.gz

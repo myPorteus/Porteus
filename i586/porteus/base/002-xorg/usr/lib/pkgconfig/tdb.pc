@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/samba-4.0
+
+Name: tdb
+Description: A trivial database
+Version: 1.3.8
+Libs: -Wl,-rpath,/usr/lib -L${libdir} -ltdb
+Cflags: -I${includedir} 
+URL: http://tdb.samba.org/

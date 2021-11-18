@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libkhotkeysprivate.so.5 )
+( cd usr/lib ; ln -sf libkhotkeysprivate.so.5.8.4 libkhotkeysprivate.so.5 )

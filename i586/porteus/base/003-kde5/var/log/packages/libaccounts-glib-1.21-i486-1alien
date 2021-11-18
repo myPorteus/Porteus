@@ -1,0 +1,84 @@
+PACKAGE NAME:     libaccounts-glib-1.21-i486-1alien
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     450K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/libaccounts-glib-1.21-i486-1alien.txz
+PACKAGE DESCRIPTION:
+libaccounts-glib: libaccounts-glib (GLib client library for the accounts database)
+libaccounts-glib:
+libaccounts-glib: This project is a library for managing accounts which can be used
+libaccounts-glib: from GLib applications. It is part of the accounts-sso project.
+libaccounts-glib:
+libaccounts-glib:
+libaccounts-glib:
+libaccounts-glib:
+libaccounts-glib:
+libaccounts-glib: Homepage: https://gitlab.com/accounts-sso/libaccounts-glib
+libaccounts-glib:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ag-backup
+usr/bin/ag-tool
+usr/doc/
+usr/doc/libaccounts-glib-1.21/
+usr/doc/libaccounts-glib-1.21/AUTHORS
+usr/doc/libaccounts-glib-1.21/COPYING
+usr/doc/libaccounts-glib-1.21/ChangeLog
+usr/doc/libaccounts-glib-1.21/NEWS
+usr/doc/libaccounts-glib-1.21/README.md
+usr/include/
+usr/include/libaccounts-glib/
+usr/include/libaccounts-glib/accounts-glib.h
+usr/include/libaccounts-glib/ag-account-service.h
+usr/include/libaccounts-glib/ag-account.h
+usr/include/libaccounts-glib/ag-application.h
+usr/include/libaccounts-glib/ag-auth-data.h
+usr/include/libaccounts-glib/ag-errors.h
+usr/include/libaccounts-glib/ag-manager.h
+usr/include/libaccounts-glib/ag-provider.h
+usr/include/libaccounts-glib/ag-service-type.h
+usr/include/libaccounts-glib/ag-service.h
+usr/include/libaccounts-glib/ag-types.h
+usr/lib/
+usr/lib/girepository-1.0/
+usr/lib/girepository-1.0/Accounts-1.0.typelib
+usr/lib/libaccounts-glib.la
+usr/lib/libaccounts-glib.so.0.1.3
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libaccounts-glib.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/gi/
+usr/lib/python2.7/site-packages/gi/overrides/
+usr/lib/python2.7/site-packages/gi/overrides/Accounts.py
+usr/lib/python2.7/site-packages/gi/overrides/Accounts.pyc
+usr/lib/python2.7/site-packages/gi/overrides/Accounts.pyo
+usr/man/
+usr/man/man1/
+usr/man/man1/ag-backup.1.gz
+usr/man/man1/ag-tool.1.gz
+usr/share/
+usr/share/backup-framework/
+usr/share/backup-framework/applications/
+usr/share/backup-framework/applications/accounts.conf
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/com.google.code.AccountsSSO.Accounts.Manager.xml
+usr/share/gir-1.0/
+usr/share/gir-1.0/Accounts-1.0.gir
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/libaccounts-glib.deps
+usr/share/vala/vapi/libaccounts-glib.vapi
+usr/share/xml/
+usr/share/xml/accounts/
+usr/share/xml/accounts/schema/
+usr/share/xml/accounts/schema/dtd/
+usr/share/xml/accounts/schema/dtd/accounts-application.dtd
+usr/share/xml/accounts/schema/dtd/accounts-provider.dtd
+usr/share/xml/accounts/schema/dtd/accounts-service-type.dtd
+usr/share/xml/accounts/schema/dtd/accounts-service.dtd

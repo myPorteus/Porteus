@@ -1,0 +1,38 @@
+PACKAGE NAME:     libsigsegv-2.10-i486-1
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/libsigsegv-2.10-i486-1.txz
+PACKAGE DESCRIPTION:
+libsigsegv: GNU libsigsegv (user mode page fault handling library)
+libsigsegv:
+libsigsegv: This is a library for handling page faults in user mode.  A page fault
+libsigsegv: occurs when a program tries to access to a region of memory that is
+libsigsegv: currently not available.  Catching and handling a page fault is a
+libsigsegv: useful technique for implementing things such as pageable virtual
+libsigsegv: memory, memory-mapped access to persistent databases, generational
+libsigsegv: garbage collectors, stack overflow handlers, distributed shared
+libsigsegv: memory, and more.
+libsigsegv:
+libsigsegv:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libsigsegv-2.10/
+usr/doc/libsigsegv-2.10/AUTHORS
+usr/doc/libsigsegv-2.10/COPYING
+usr/doc/libsigsegv-2.10/ChangeLog
+usr/doc/libsigsegv-2.10/INSTALL
+usr/doc/libsigsegv-2.10/NEWS
+usr/doc/libsigsegv-2.10/PORTING
+usr/doc/libsigsegv-2.10/README
+usr/doc/libsigsegv-2.10/README.woe32
+usr/include/
+usr/include/sigsegv.h
+usr/lib/
+usr/lib/libsigsegv.a
+usr/lib/libsigsegv.la
+usr/lib/libsigsegv.so.2.0.3

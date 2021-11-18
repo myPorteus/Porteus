@@ -1,0 +1,57 @@
+PACKAGE NAME:     sysklogd-1.5.1-i586-2
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/sysklogd-1.5.1-i586-2.txz
+PACKAGE DESCRIPTION:
+sysklogd: sysklogd (Linux system logging utilities)
+sysklogd:
+sysklogd: Dr. Greg Wettstein and Stephen Tweedie's syslogd/klogd.
+sysklogd:
+sysklogd: This package contains a modified version of syslogd for the Linux
+sysklogd: environment.  An additional utility, klogd, is included which allows
+sysklogd: kernel logging to be directed through the syslogd facility.
+sysklogd: Syslogd and klogd are started when your system boots.
+sysklogd:
+sysklogd:
+sysklogd:
+FILE LIST:
+./
+etc/
+etc/logrotate.d/
+etc/logrotate.d/syslog.new
+etc/rc.d/
+etc/rc.d/rc.syslog.new
+etc/syslog.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/sysklogd-1.5.1/
+usr/doc/sysklogd-1.5.1/ANNOUNCE
+usr/doc/sysklogd-1.5.1/CHANGES
+usr/doc/sysklogd-1.5.1/COPYING
+usr/doc/sysklogd-1.5.1/INSTALL
+usr/doc/sysklogd-1.5.1/MANIFEST
+usr/doc/sysklogd-1.5.1/NEWS
+usr/doc/sysklogd-1.5.1/README.1st
+usr/doc/sysklogd-1.5.1/README.linux
+usr/man/
+usr/man/man5/
+usr/man/man5/syslog.conf.5.gz
+usr/man/man8/
+usr/man/man8/klogd.8.gz
+usr/man/man8/sysklogd.8.gz
+usr/sbin/
+usr/sbin/klogd
+usr/sbin/syslog_tst
+usr/sbin/syslogd
+var/
+var/log/
+var/log/cron.new
+var/log/debug.new
+var/log/maillog.new
+var/log/messages.new
+var/log/secure.new
+var/log/spooler.new
+var/log/syslog.new

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include/atril/1.5.0
+
+Name: Atril View
+Description: MATE document viewer view library
+Version: 1.16.0
+Requires: atril-document-1.5.0 = 1.16.0 gthread-2.0
+Libs: -L${libdir} -latrilview
+Cflags: -I${includedir}

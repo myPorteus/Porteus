@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pkix-cert">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>X.509 Certificate</comment>
+  <glob weight="75" pattern="*.cer"/>
+  <glob weight="55" pattern="*.crt"/>
+  <glob weight="55" pattern="*.cert"/>
+  <alias type="application/x-x509-ca-cert"/>
+  <alias type="application/x-x509-user-cert"/>
+</mime-type>

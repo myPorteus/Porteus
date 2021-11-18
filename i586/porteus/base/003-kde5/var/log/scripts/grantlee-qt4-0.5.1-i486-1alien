@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libgrantlee_gui.so.0 )
+( cd usr/lib ; ln -sf libgrantlee_gui.so.0.5.1 libgrantlee_gui.so.0 )
+( cd usr/lib ; rm -rf libgrantlee_core.so )
+( cd usr/lib ; ln -sf libgrantlee_core.so.0 libgrantlee_core.so )
+( cd usr/lib ; rm -rf libgrantlee_core.so.0 )
+( cd usr/lib ; ln -sf libgrantlee_core.so.0.5.1 libgrantlee_core.so.0 )
+( cd usr/lib ; rm -rf libgrantlee_gui.so )
+( cd usr/lib ; ln -sf libgrantlee_gui.so.0 libgrantlee_gui.so )

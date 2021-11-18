@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libassuan.so )
+( cd usr/lib ; ln -sf libassuan.so.0.7.2 libassuan.so )
+( cd usr/lib ; rm -rf libassuan.so.0 )
+( cd usr/lib ; ln -sf libassuan.so.0.7.2 libassuan.so.0 )

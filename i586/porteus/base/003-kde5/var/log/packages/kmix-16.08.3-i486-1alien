@@ -1,0 +1,121 @@
+PACKAGE NAME:     kmix-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     552K
+UNCOMPRESSED PACKAGE SIZE:     2.0M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kmix-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kmix: kmix (sound mixer)
+kmix:
+kmix: KMix is an application to allow you to change the volume of your
+kmix: sound card.  Though small, it is full-featured, and it supports
+kmix: several platforms and sound drivers.
+kmix:
+kmix:
+kmix:
+kmix:
+kmix: For more information, visit:  http://www.kde.org
+kmix:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kmix
+usr/bin/kmixctrl
+usr/bin/kmixremote
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/kmix/
+usr/doc/HTML/en/kmix/index.cache.bz2
+usr/doc/HTML/en/kmix/index.docbook
+usr/doc/HTML/en/kmix/kmix-configure-general.png
+usr/doc/HTML/en/kmix/kmix-configure-sound-menu.png
+usr/doc/HTML/en/kmix/kmix-configure-start.png
+usr/doc/HTML/en/kmix/kmix-file.png
+usr/doc/HTML/en/kmix/kmix-master.png
+usr/doc/HTML/en/kmix/kmix-options.png
+usr/doc/HTML/en/kmix/kmix.png
+usr/doc/kmix-16.08.3/
+usr/doc/kmix-16.08.3/AUTHORS
+usr/doc/kmix-16.08.3/COPYING
+usr/doc/kmix-16.08.3/COPYING.DOC
+usr/doc/kmix-16.08.3/COPYING.LIB
+usr/doc/kmix-16.08.3/ChangeLog
+usr/doc/kmix-16.08.3/TODO
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kded_kmixd.so
+usr/lib/kde4/plasma_engine_mixer.so
+usr/lib/libkdeinit4_kmix.so
+usr/lib/libkdeinit4_kmixctrl.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/kmix.desktop
+usr/share/apps/
+usr/share/apps/kmix/
+usr/share/apps/kmix/kmixui.rc
+usr/share/apps/kmix/pics/
+usr/share/apps/kmix/pics/kmixdocked.png
+usr/share/apps/kmix/pics/kmixdocked_error.png
+usr/share/apps/kmix/pics/kmixdocked_mute.png
+usr/share/apps/kmix/pics/mixer-ac97.png
+usr/share/apps/kmix/pics/mixer-capture.png
+usr/share/apps/kmix/pics/mixer-cd.png
+usr/share/apps/kmix/pics/mixer-digital.png
+usr/share/apps/kmix/pics/mixer-front.png
+usr/share/apps/kmix/pics/mixer-headset.png
+usr/share/apps/kmix/pics/mixer-lfe.png
+usr/share/apps/kmix/pics/mixer-line.png
+usr/share/apps/kmix/pics/mixer-master.png
+usr/share/apps/kmix/pics/mixer-microphone.png
+usr/share/apps/kmix/pics/mixer-midi.png
+usr/share/apps/kmix/pics/mixer-pcm-default.png
+usr/share/apps/kmix/pics/mixer-pcm.png
+usr/share/apps/kmix/pics/mixer-surround.png
+usr/share/apps/kmix/pics/mixer-video.png
+usr/share/apps/kmix/profiles/
+usr/share/apps/kmix/profiles/ALSA.TerraTec_DMX6Fire.1.default.xml
+usr/share/apps/kmix/profiles/ALSA.capture.xml
+usr/share/apps/kmix/profiles/ALSA.default.xml
+usr/share/apps/kmix/profiles/ALSA.playback.xml
+usr/share/apps/kmix/profiles/MPRIS2.default.xml
+usr/share/apps/kmix/profiles/OSS.default.xml
+usr/share/apps/kmix/profiles/PulseAudio.default.xml
+usr/share/apps/kmix/profiles/SUNAudio.default.xml
+usr/share/apps/plasma/
+usr/share/apps/plasma/services/
+usr/share/apps/plasma/services/mixer.operations
+usr/share/autostart/
+usr/share/autostart/kmix_autostart.desktop
+usr/share/autostart/restore_kmix_volumes.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.kmix.control.xml
+usr/share/dbus-1/interfaces/org.kde.kmix.mixer.xml
+usr/share/dbus-1/interfaces/org.kde.kmix.mixset.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/kmix.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kmix.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kmix.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kmix.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/kmix.png
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/kded/
+usr/share/kde4/services/kded/kmixd.desktop
+usr/share/kde4/services/kmixctrl_restore.desktop
+usr/share/kde4/services/plasma-dataengine-mixer.desktop

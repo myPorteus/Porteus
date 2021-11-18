@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+                                                                       
+Name: libvisio-0.1
+Description: Library for parsing the visio file format structure
+Version: 0.1.5
+Requires: librevenge-0.0
+Libs: -L${libdir} -lvisio-0.1
+Cflags: -I${includedir}/libvisio-0.1
+
+Requires.private: icu-i18n libxml-2.0 zlib

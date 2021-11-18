@@ -1,0 +1,64 @@
+PACKAGE NAME:     speex-1.2rc2-i586-1jay
+COMPRESSED PACKAGE SIZE:     480K
+UNCOMPRESSED PACKAGE SIZE:     660K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/speex-1.2rc2-i586-1jay.txz
+PACKAGE DESCRIPTION:
+speex: speex (A voice compression format)
+speex:
+speex: Speex is a patent-free compression format designed especially for
+speex: speech. It is specialized for voice communications at low bit-rates in
+speex: the 2-45 kbps range. Possible applications include Voice over IP
+speex: (VoIP), Internet audio streaming, audio books, and archiving of speech
+speex: data (e.g. voice mail).
+speex:
+speex: http://www.speex.org/
+speex:
+speex: Packager: brokenman@porteus.org on 07-Feb-2016
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/speexdec
+usr/bin/speexenc
+usr/doc/
+usr/doc/speex-1.2rc2/
+usr/doc/speex-1.2rc2/AUTHORS
+usr/doc/speex-1.2rc2/COPYING
+usr/doc/speex-1.2rc2/ChangeLog
+usr/doc/speex-1.2rc2/ChangeLog.SB
+usr/doc/speex-1.2rc2/NEWS
+usr/doc/speex-1.2rc2/README
+usr/doc/speex-1.2rc2/TODO
+usr/doc/speex-1.2rc2/manual.pdf
+usr/include/
+usr/include/speex/
+usr/include/speex/speex.h
+usr/include/speex/speex_bits.h
+usr/include/speex/speex_callbacks.h
+usr/include/speex/speex_config_types.h
+usr/include/speex/speex_header.h
+usr/include/speex/speex_stereo.h
+usr/include/speex/speex_types.h
+usr/lib/
+usr/lib/libspeex.so.1.5.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/speex.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/speexdec.1.gz
+usr/man/man1/speexenc.1.gz
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/speex.m4
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/speex/
+usr/src/slackbuilds/speex/ChangeLog.SB
+usr/src/slackbuilds/speex/apply-patches.sh
+usr/src/slackbuilds/speex/slack-desc
+usr/src/slackbuilds/speex/slack-required
+usr/src/slackbuilds/speex/speex.SlackBuild

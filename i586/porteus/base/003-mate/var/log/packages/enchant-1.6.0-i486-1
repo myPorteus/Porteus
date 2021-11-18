@@ -1,0 +1,58 @@
+PACKAGE NAME:     enchant-1.6.0-i486-1
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     220K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_mate/enchant-1.6.0-i486-1.txz
+PACKAGE DESCRIPTION:
+enchant: Enchant (a wrapper for spellcheck libraries)
+enchant:
+enchant: Enchant supports:
+enchant:   * Aspell/Pspell
+enchant:   * Ispell
+enchant:   * MySpell/HunSpell
+enchant:   * Uspell (Yiddish, Hebrew and Eastern European languages)
+enchant:   * Hspell (Hebrew) and others
+enchant:
+enchant: http://www.abisource.com/projects/enchant/
+enchant:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/enchant
+usr/bin/enchant-lsmod
+usr/doc/
+usr/doc/enchant-1.6.0/
+usr/doc/enchant-1.6.0/AUTHORS
+usr/doc/enchant-1.6.0/BUGS
+usr/doc/enchant-1.6.0/COPYING.LIB
+usr/doc/enchant-1.6.0/HACKING
+usr/doc/enchant-1.6.0/MAINTAINERS
+usr/doc/enchant-1.6.0/NEWS
+usr/doc/enchant-1.6.0/README
+usr/doc/enchant-1.6.0/TODO
+usr/include/
+usr/include/enchant/
+usr/include/enchant/enchant++.h
+usr/include/enchant/enchant-provider.h
+usr/include/enchant/enchant.h
+usr/lib/
+usr/lib/enchant/
+usr/lib/enchant/libenchant_aspell.la
+usr/lib/enchant/libenchant_aspell.so
+usr/lib/enchant/libenchant_ispell.la
+usr/lib/enchant/libenchant_ispell.so
+usr/lib/enchant/libenchant_myspell.la
+usr/lib/enchant/libenchant_myspell.so
+usr/lib/libenchant.la
+usr/lib/libenchant.so.1.6.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/enchant.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/enchant.1.gz
+usr/share/
+usr/share/enchant/
+usr/share/enchant/enchant.ordering

@@ -1,0 +1,85 @@
+PACKAGE NAME:     perlkde-4.14.3-i486-3alien
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     430K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/perlkde-4.14.3-i486-3alien.txz
+PACKAGE DESCRIPTION:
+perlkde: perlkde (perl bindings for KDE)
+perlkde:
+perlkde: Perl bindings for KDE.
+perlkde:
+perlkde: For more information, visit:  http://www.kde.org
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+perlkde:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kperlpluginfactory.so
+usr/lib/perl5/
+usr/lib/perl5/vendor_perl/
+usr/lib/perl5/vendor_perl/Akonadi.pm
+usr/lib/perl5/vendor_perl/Attica.pm
+usr/lib/perl5/vendor_perl/KDECore4.pm
+usr/lib/perl5/vendor_perl/KDEUi4.pm
+usr/lib/perl5/vendor_perl/KFile.pm
+usr/lib/perl5/vendor_perl/KHTML.pm
+usr/lib/perl5/vendor_perl/KIO4.pm
+usr/lib/perl5/vendor_perl/KNewStuff2.pm
+usr/lib/perl5/vendor_perl/KNewStuff3.pm
+usr/lib/perl5/vendor_perl/KParts.pm
+usr/lib/perl5/vendor_perl/KTextEditor.pm
+usr/lib/perl5/vendor_perl/KUtils.pm
+usr/lib/perl5/vendor_perl/Nepomuk.pm
+usr/lib/perl5/vendor_perl/NepomukQuery.pm
+usr/lib/perl5/vendor_perl/Plasma4.pm
+usr/lib/perl5/vendor_perl/Solid.pm
+usr/lib/perl5/vendor_perl/Soprano.pm
+usr/lib/perl5/vendor_perl/SopranoClient.pm
+usr/lib/perl5/vendor_perl/SopranoServer.pm
+usr/lib/perl5/vendor_perl/auto/
+usr/lib/perl5/vendor_perl/auto/Akonadi/
+usr/lib/perl5/vendor_perl/auto/Akonadi/Akonadi.so
+usr/lib/perl5/vendor_perl/auto/Attica/
+usr/lib/perl5/vendor_perl/auto/Attica/Attica.so
+usr/lib/perl5/vendor_perl/auto/KDECore4/
+usr/lib/perl5/vendor_perl/auto/KDECore4/KDECore4.so
+usr/lib/perl5/vendor_perl/auto/KDEUi4/
+usr/lib/perl5/vendor_perl/auto/KDEUi4/KDEUi4.so
+usr/lib/perl5/vendor_perl/auto/KFile/
+usr/lib/perl5/vendor_perl/auto/KFile/KFile.so
+usr/lib/perl5/vendor_perl/auto/KHTML/
+usr/lib/perl5/vendor_perl/auto/KHTML/KHTML.so
+usr/lib/perl5/vendor_perl/auto/KIO4/
+usr/lib/perl5/vendor_perl/auto/KIO4/KIO4.so
+usr/lib/perl5/vendor_perl/auto/KNewStuff2/
+usr/lib/perl5/vendor_perl/auto/KNewStuff2/KNewStuff2.so
+usr/lib/perl5/vendor_perl/auto/KNewStuff3/
+usr/lib/perl5/vendor_perl/auto/KNewStuff3/KNewStuff3.so
+usr/lib/perl5/vendor_perl/auto/KParts/
+usr/lib/perl5/vendor_perl/auto/KParts/KParts.so
+usr/lib/perl5/vendor_perl/auto/KTextEditor/
+usr/lib/perl5/vendor_perl/auto/KTextEditor/KTextEditor.so
+usr/lib/perl5/vendor_perl/auto/KUtils/
+usr/lib/perl5/vendor_perl/auto/KUtils/KUtils.so
+usr/lib/perl5/vendor_perl/auto/Nepomuk/
+usr/lib/perl5/vendor_perl/auto/Nepomuk/Nepomuk.so
+usr/lib/perl5/vendor_perl/auto/NepomukQuery/
+usr/lib/perl5/vendor_perl/auto/NepomukQuery/NepomukQuery.so
+usr/lib/perl5/vendor_perl/auto/Plasma4/
+usr/lib/perl5/vendor_perl/auto/Plasma4/Plasma4.so
+usr/lib/perl5/vendor_perl/auto/Solid/
+usr/lib/perl5/vendor_perl/auto/Solid/Solid.so
+usr/lib/perl5/vendor_perl/auto/Soprano/
+usr/lib/perl5/vendor_perl/auto/Soprano/Soprano.so
+usr/lib/perl5/vendor_perl/auto/SopranoClient/
+usr/lib/perl5/vendor_perl/auto/SopranoClient/SopranoClient.so
+usr/lib/perl5/vendor_perl/auto/SopranoServer/
+usr/lib/perl5/vendor_perl/auto/SopranoServer/SopranoServer.so

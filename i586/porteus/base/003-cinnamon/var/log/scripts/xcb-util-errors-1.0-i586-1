@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libxcb-errors.so )
+( cd usr/lib ; ln -sf libxcb-errors.so.0.0.0 libxcb-errors.so )
+( cd usr/lib ; rm -rf libxcb-errors.so.0 )
+( cd usr/lib ; ln -sf libxcb-errors.so.0.0.0 libxcb-errors.so.0 )

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Porteus updater
+Comment=Check for Porteus updates
+Exec=gksu /opt/porteus-scripts/porteus-update
+Terminal=false
+Icon=/usr/share/pixmaps/porteus/download-64.png
+Type=Application
+Categories=Porteus;
+Version=1.0

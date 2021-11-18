@@ -1,0 +1,108 @@
+config() {
+  NEW="$1"
+  OLD="`dirname $NEW`/`basename $NEW .new`"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "`cat $OLD | md5sum`" = "`cat $NEW | md5sum`" ]; then # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+for file in etc/cups/*.new ; do
+  config $file
+done
+config etc/dbus-1/system.d/cups.conf.new
+
+# This file will just have to go.  It appeared for a while during a -current
+# devel period and has never been part of a stable release.
+#config etc/modprobe.d/cups.blacklist.usblp.conf.new
+rm -f etc/modprobe.d/cups.blacklist.usblp.conf.new
+rm -f etc/modprobe.d/cups.blacklist.usblp.conf
+
+# Leave any new rc.cups with the same permissions as the old one:
+# This is a kludge, but it's because there's no --reference option
+# on busybox's 'chmod':
+if [ -e etc/rc.d/rc.cups ]; then
+  if [ -x etc/rc.d/rc.cups ]; then
+    chmod 755 etc/rc.d/rc.cups.new
+  else
+    chmod 644 etc/rc.d/rc.cups.new
+  fi
+fi
+# Then config() it:
+config etc/rc.d/rc.cups.new
+( cd usr/bin ; rm -rf lp )
+( cd usr/bin ; ln -sf lp-cups lp )
+( cd usr/bin ; rm -rf lpq )
+( cd usr/bin ; ln -sf lpq-cups lpq )
+( cd usr/bin ; rm -rf lpstat )
+( cd usr/bin ; ln -sf lpstat-cups lpstat )
+( cd usr/bin ; rm -rf lpr )
+( cd usr/bin ; ln -sf lpr-cups lpr )
+( cd usr/bin ; rm -rf cancel )
+( cd usr/bin ; ln -sf cancel-cups cancel )
+( cd usr/bin ; rm -rf lprm )
+( cd usr/bin ; ln -sf lprm-cups lprm )
+( cd usr/man/man8 ; rm -rf reject.8.gz )
+( cd usr/man/man8 ; ln -sf cupsaccept.8.gz reject.8.gz )
+( cd usr/man/man8 ; rm -rf cupsreject.8.gz )
+( cd usr/man/man8 ; ln -sf cupsaccept.8.gz cupsreject.8.gz )
+( cd usr/man/man8 ; rm -rf cupsdisable.8.gz )
+( cd usr/man/man8 ; ln -sf cupsenable.8.gz cupsdisable.8.gz )
+( cd usr/man/man8 ; rm -rf cups-driverd.8.gz )
+( cd usr/man/man8 ; ln -sf cupsd-helper.8.gz cups-driverd.8.gz )
+( cd usr/man/man8 ; rm -rf cups-deviced.8.gz )
+( cd usr/man/man8 ; ln -sf cupsd-helper.8.gz cups-deviced.8.gz )
+( cd usr/man/man8 ; rm -rf cups-exec.8.gz )
+( cd usr/man/man8 ; ln -sf cupsd-helper.8.gz cups-exec.8.gz )
+( cd usr/man/man8 ; rm -rf accept.8.gz )
+( cd usr/man/man8 ; ln -sf cupsaccept.8.gz accept.8.gz )
+( cd usr/man/man8 ; rm -rf lpc.8.gz )
+( cd usr/man/man8 ; ln -sf lpc-cups.8.gz lpc.8.gz )
+( cd usr/man/man1 ; rm -rf cancel.1.gz )
+( cd usr/man/man1 ; ln -sf cancel-cups.1.gz cancel.1.gz )
+( cd usr/man/man1 ; rm -rf lpq.1.gz )
+( cd usr/man/man1 ; ln -sf lpq-cups.1.gz lpq.1.gz )
+( cd usr/man/man1 ; rm -rf lpstat.1.gz )
+( cd usr/man/man1 ; ln -sf lpstat-cups.1.gz lpstat.1.gz )
+( cd usr/man/man1 ; rm -rf lprm.1.gz )
+( cd usr/man/man1 ; ln -sf lprm-cups.1.gz lprm.1.gz )
+( cd usr/man/man1 ; rm -rf lpr.1.gz )
+( cd usr/man/man1 ; ln -sf lpr-cups.1.gz lpr.1.gz )
+( cd usr/man/man1 ; rm -rf lp.1.gz )
+( cd usr/man/man1 ; ln -sf lp-cups.1.gz lp.1.gz )
+( cd usr/lib ; rm -rf libcupsmime.so )
+( cd usr/lib ; ln -sf libcupsmime.so.1 libcupsmime.so )
+( cd usr/lib ; rm -rf libcupsimage.so )
+( cd usr/lib ; ln -sf libcupsimage.so.2 libcupsimage.so )
+( cd usr/lib/cups/filter ; rm -rf rastertodymo )
+( cd usr/lib/cups/filter ; ln -sf rastertolabel rastertodymo )
+( cd usr/lib/cups/backend ; rm -rf http )
+( cd usr/lib/cups/backend ; ln -sf ipp http )
+( cd usr/lib/cups/backend ; rm -rf ipps )
+( cd usr/lib/cups/backend ; ln -sf ipp ipps )
+( cd usr/lib/cups/backend ; rm -rf https )
+( cd usr/lib/cups/backend ; ln -sf ipp https )
+( cd usr/lib/cups/backend ; rm -rf smb )
+( cd usr/lib/cups/backend ; ln -sf /usr/bin/smbspool smb )
+( cd usr/lib ; rm -rf libcupsppdc.so )
+( cd usr/lib ; ln -sf libcupsppdc.so.1 libcupsppdc.so )
+( cd usr/lib ; rm -rf libcups.so )
+( cd usr/lib ; ln -sf libcups.so.2 libcups.so )
+( cd usr/lib ; rm -rf libcupscgi.so )
+( cd usr/lib ; ln -sf libcupscgi.so.1 libcupscgi.so )
+( cd usr/sbin ; rm -rf cupsdisable )
+( cd usr/sbin ; ln -sf cupsaccept cupsdisable )
+( cd usr/sbin ; rm -rf accept )
+( cd usr/sbin ; ln -sf cupsaccept accept )
+( cd usr/sbin ; rm -rf reject )
+( cd usr/sbin ; ln -sf cupsaccept reject )
+( cd usr/sbin ; rm -rf cupsenable )
+( cd usr/sbin ; ln -sf cupsaccept cupsenable )
+( cd usr/sbin ; rm -rf lpc )
+( cd usr/sbin ; ln -sf lpc-cups lpc )
+( cd usr/sbin ; rm -rf cupsreject )
+( cd usr/sbin ; ln -sf cupsaccept cupsreject )
+( cd usr/doc ; rm -rf cups )
+( cd usr/doc ; ln -sf cups-2.1.4 cups )

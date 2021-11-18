@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libkfontinstui.so )
+( cd usr/lib ; ln -sf libkfontinstui.so.5 libkfontinstui.so )
+( cd usr/lib ; rm -rf libkfontinst.so )
+( cd usr/lib ; ln -sf libkfontinst.so.5 libkfontinst.so )
+( cd usr/lib ; rm -rf libkfontinst.so.5 )
+( cd usr/lib ; ln -sf libkfontinst.so.5.8.4 libkfontinst.so.5 )
+( cd usr/lib ; rm -rf libkfontinstui.so.5 )
+( cd usr/lib ; ln -sf libkfontinstui.so.5.8.4 libkfontinstui.so.5 )

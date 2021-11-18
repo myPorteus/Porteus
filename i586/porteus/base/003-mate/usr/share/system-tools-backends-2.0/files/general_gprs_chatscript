@@ -1,0 +1,7 @@
+ABORT   'BUSY'
+ABORT   'NO CARRIER'
+ABORT   'ERROR'
+''      AT
+OK      AT+CGATT=1
+OK      AT+CGDCONT=1,"IP","internet"
+OK      ATDT*99***1#

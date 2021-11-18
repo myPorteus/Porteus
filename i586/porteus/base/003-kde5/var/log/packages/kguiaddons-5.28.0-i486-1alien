@@ -1,0 +1,63 @@
+PACKAGE NAME:     kguiaddons-5.28.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     230K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kguiaddons-5.28.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kguiaddons: kguiaddons (kguiaddons)
+kguiaddons:
+kguiaddons: 
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons: Homepage: http://kde.org/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kguiaddons-5.28.0/
+usr/doc/kguiaddons-5.28.0/COPYING
+usr/doc/kguiaddons-5.28.0/COPYING.LIB
+usr/doc/kguiaddons-5.28.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KGuiAddons/
+usr/include/KF5/KGuiAddons/KColorCollection
+usr/include/KF5/KGuiAddons/KColorMimeData
+usr/include/KF5/KGuiAddons/KColorUtils
+usr/include/KF5/KGuiAddons/KDateValidator
+usr/include/KF5/KGuiAddons/KFontUtils
+usr/include/KF5/KGuiAddons/KIconUtils
+usr/include/KF5/KGuiAddons/KImageCache
+usr/include/KF5/KGuiAddons/KModifierKeyInfo
+usr/include/KF5/KGuiAddons/KWordWrap
+usr/include/KF5/KGuiAddons/kcolorcollection.h
+usr/include/KF5/KGuiAddons/kcolormimedata.h
+usr/include/KF5/KGuiAddons/kcolorutils.h
+usr/include/KF5/KGuiAddons/kdatevalidator.h
+usr/include/KF5/KGuiAddons/kfontutils.h
+usr/include/KF5/KGuiAddons/kguiaddons_export.h
+usr/include/KF5/KGuiAddons/kiconutils.h
+usr/include/KF5/KGuiAddons/kimagecache.h
+usr/include/KF5/KGuiAddons/klocalimagecacheimpl.h
+usr/include/KF5/KGuiAddons/kmodifierkeyinfo.h
+usr/include/KF5/KGuiAddons/kwordwrap.h
+usr/include/KF5/kguiaddons_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5GuiAddons/
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfig.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfigVersion.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets-release.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets.cmake
+usr/lib/libKF5GuiAddons.so.5.28.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KGuiAddons.pri

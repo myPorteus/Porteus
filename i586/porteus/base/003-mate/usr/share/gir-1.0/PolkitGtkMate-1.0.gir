@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="Gtk" version="3.0"/>
+  <include name="Polkit" version="1.0"/>
+  <package name="polkit-mate-gtk-1"/>
+  <c:include name="polkitgtkmate/polkitgtkmate.h"/>
+  <namespace name="PolkitGtkMate"
+             version="1.0"
+             shared-library="libpolkit-gtk-mate-1.so.0"
+             c:identifier-prefixes="Polkit"
+             c:symbol-prefixes="polkit">
+    <class name="LockButton"
+           c:symbol-prefix="lock_button"
+           c:type="PolkitLockButton"
+           parent="Gtk.Box"
+           glib:type-name="PolkitLockButton"
+           glib:get-type="polkit_lock_button_get_type"
+           glib:type-struct="LockButtonClass">
+      <doc xml:space="preserve">The #PolkitLockButton structure contains only private data and
+should be accessed using the provided API.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <implements name="Gtk.Orientable"/>
+      <constructor name="new" c:identifier="polkit_lock_button_new">
+        <return-value transfer-ownership="none">
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <parameter name="action_id" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <virtual-method name="changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <method name="get_can_obtain"
+              c:identifier="polkit_lock_button_get_can_obtain">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_is_authorized"
+              c:identifier="polkit_lock_button_get_is_authorized">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_is_visible"
+              c:identifier="polkit_lock_button_get_is_visible">
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_lock_down_text"
+              c:identifier="polkit_lock_button_set_lock_down_text">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="text" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_lock_down_tooltip"
+              c:identifier="polkit_lock_button_set_lock_down_tooltip">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="tooltip" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_lock_text"
+              c:identifier="polkit_lock_button_set_lock_text">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="text" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_lock_tooltip"
+              c:identifier="polkit_lock_button_set_lock_tooltip">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="tooltip" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_not_authorized_text"
+              c:identifier="polkit_lock_button_set_not_authorized_text">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="text" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_not_authorized_tooltip"
+              c:identifier="polkit_lock_button_set_not_authorized_tooltip">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="tooltip" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_unlock_text"
+              c:identifier="polkit_lock_button_set_unlock_text">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="text" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_unlock_tooltip"
+              c:identifier="polkit_lock_button_set_unlock_tooltip">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="button" transfer-ownership="none">
+            <type name="LockButton" c:type="PolkitLockButton*"/>
+          </instance-parameter>
+          <parameter name="tooltip" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="action-id"
+                writable="1"
+                construct-only="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="can-obtain" transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="is-authorized" transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="is-visible" transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="text-lock"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="text-lock-down"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="text-not-authorized"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="text-unlock"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="tooltip-lock"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="tooltip-lock-down"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="tooltip-not-authorized"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="tooltip-unlock"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <doc xml:space="preserve">The parent instance.</doc>
+        <type name="Gtk.Box" c:type="GtkBox"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="LockButtonPrivate" c:type="PolkitLockButtonPrivate*"/>
+      </field>
+      <glib:signal name="changed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="LockButtonClass"
+            c:type="PolkitLockButtonClass"
+            glib:is-gtype-struct-for="LockButton">
+      <doc xml:space="preserve">Class structure for #PolkitLockButton.</doc>
+      <field name="parent_class">
+        <doc xml:space="preserve">The parent class structure.</doc>
+        <type name="Gtk.BoxClass" c:type="GtkBoxClass"/>
+      </field>
+      <field name="changed">
+        <callback name="changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="button" transfer-ownership="none">
+              <type name="LockButton" c:type="PolkitLockButton*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="_polkit_reserved0" introspectable="0">
+        <callback name="_polkit_reserved0">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved1" introspectable="0">
+        <callback name="_polkit_reserved1">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved2" introspectable="0">
+        <callback name="_polkit_reserved2">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved3" introspectable="0">
+        <callback name="_polkit_reserved3">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved4" introspectable="0">
+        <callback name="_polkit_reserved4">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved5" introspectable="0">
+        <callback name="_polkit_reserved5">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved6" introspectable="0">
+        <callback name="_polkit_reserved6">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved7" introspectable="0">
+        <callback name="_polkit_reserved7">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved8" introspectable="0">
+        <callback name="_polkit_reserved8">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved9" introspectable="0">
+        <callback name="_polkit_reserved9">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved10" introspectable="0">
+        <callback name="_polkit_reserved10">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved11" introspectable="0">
+        <callback name="_polkit_reserved11">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved12" introspectable="0">
+        <callback name="_polkit_reserved12">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved13" introspectable="0">
+        <callback name="_polkit_reserved13">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved14" introspectable="0">
+        <callback name="_polkit_reserved14">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_polkit_reserved15" introspectable="0">
+        <callback name="_polkit_reserved15">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+    </record>
+    <record name="LockButtonPrivate"
+            c:type="PolkitLockButtonPrivate"
+            disguised="1">
+    </record>
+  </namespace>
+</repository>

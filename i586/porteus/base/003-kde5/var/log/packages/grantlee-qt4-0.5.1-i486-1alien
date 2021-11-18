@@ -1,0 +1,81 @@
+PACKAGE NAME:     grantlee-qt4-0.5.1-i486-1alien
+COMPRESSED PACKAGE SIZE:     288K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/grantlee-qt4-0.5.1-i486-1alien.txz
+PACKAGE DESCRIPTION:
+grantlee-qt4: grantlee-qt4 (string template engine for Qt4)
+grantlee-qt4: 
+grantlee-qt4: Grantlee is a plugin based String Template system written using the
+grantlee-qt4: Qt4 framework.  The goals of the project are to make it easier for
+grantlee-qt4: application developers to separate the structure of documents from
+grantlee-qt4: the data they contain, opening the door for theming.
+grantlee-qt4:
+grantlee-qt4:
+grantlee-qt4:
+grantlee-qt4: Homepage: http://gitorious.org/grantlee/
+grantlee-qt4:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/grantlee-qt4-0.5.1/
+usr/doc/grantlee-qt4-0.5.1/AUTHORS
+usr/doc/grantlee-qt4-0.5.1/CHANGELOG
+usr/doc/grantlee-qt4-0.5.1/COPYING.LIB
+usr/doc/grantlee-qt4-0.5.1/README
+usr/include/
+usr/include/grantlee-qt4/
+usr/include/grantlee-qt4/grantlee/
+usr/include/grantlee-qt4/grantlee/abstractlocalizer.h
+usr/include/grantlee-qt4/grantlee/abstractmarkupbuilder.h
+usr/include/grantlee-qt4/grantlee/bbcodebuilder.h
+usr/include/grantlee-qt4/grantlee/cachingloaderdecorator.h
+usr/include/grantlee-qt4/grantlee/containeraccessor.h
+usr/include/grantlee-qt4/grantlee/context.h
+usr/include/grantlee-qt4/grantlee/engine.h
+usr/include/grantlee-qt4/grantlee/exception.h
+usr/include/grantlee-qt4/grantlee/filter.h
+usr/include/grantlee-qt4/grantlee/filterexpression.h
+usr/include/grantlee-qt4/grantlee/grantlee_core_export.h
+usr/include/grantlee-qt4/grantlee/grantlee_gui_export.h
+usr/include/grantlee-qt4/grantlee/grantlee_version.h
+usr/include/grantlee-qt4/grantlee/markupdirector.h
+usr/include/grantlee-qt4/grantlee/mediawikimarkupbuilder.h
+usr/include/grantlee-qt4/grantlee/metatype.h
+usr/include/grantlee-qt4/grantlee/node.h
+usr/include/grantlee-qt4/grantlee/outputstream.h
+usr/include/grantlee-qt4/grantlee/parser.h
+usr/include/grantlee-qt4/grantlee/plaintextmarkupbuilder.h
+usr/include/grantlee-qt4/grantlee/qtlocalizer.h
+usr/include/grantlee-qt4/grantlee/rendercontext.h
+usr/include/grantlee-qt4/grantlee/safestring.h
+usr/include/grantlee-qt4/grantlee/taglibraryinterface.h
+usr/include/grantlee-qt4/grantlee/template.h
+usr/include/grantlee-qt4/grantlee/templateloader.h
+usr/include/grantlee-qt4/grantlee/texthtmlbuilder.h
+usr/include/grantlee-qt4/grantlee/token.h
+usr/include/grantlee-qt4/grantlee/typeaccessor.h
+usr/include/grantlee-qt4/grantlee/util.h
+usr/include/grantlee-qt4/grantlee/variable.h
+usr/include/grantlee-qt4/grantlee_core.h
+usr/include/grantlee-qt4/grantlee_templates.h
+usr/include/grantlee-qt4/grantlee_textdocument.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/grantlee/
+usr/lib/cmake/grantlee/GrantleeConfig.cmake
+usr/lib/cmake/grantlee/GrantleeConfigVersion.cmake
+usr/lib/cmake/grantlee/GrantleeTargets-noconfig.cmake
+usr/lib/cmake/grantlee/GrantleeTargets.cmake
+usr/lib/cmake/grantlee/GrantleeUse.cmake
+usr/lib/grantlee/
+usr/lib/grantlee/0.5/
+usr/lib/grantlee/0.5/grantlee_defaultfilters.so
+usr/lib/grantlee/0.5/grantlee_defaulttags.so
+usr/lib/grantlee/0.5/grantlee_i18ntags.so
+usr/lib/grantlee/0.5/grantlee_loadertags.so
+usr/lib/libgrantlee_core.so.0.5.1
+usr/lib/libgrantlee_gui.so.0.5.1

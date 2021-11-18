@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.openobex.client
-Exec=/usr/libexec/obex-client

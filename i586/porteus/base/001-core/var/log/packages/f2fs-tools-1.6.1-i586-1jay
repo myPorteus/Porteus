@@ -1,0 +1,36 @@
+PACKAGE NAME:     f2fs-tools-1.6.1-i586-1jay
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/f2fs-tools-1.6.1-i586-1jay.tgz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/f2fs-tools-1.6.1/
+usr/doc/f2fs-tools-1.6.1/AUTHORS
+usr/doc/f2fs-tools-1.6.1/COPYING
+usr/doc/f2fs-tools-1.6.1/ChangeLog
+usr/doc/f2fs-tools-1.6.1/README
+usr/doc/f2fs-tools-1.6.1/VERSION
+usr/doc/f2fs-tools-1.6.1/f2fs-tools.SlackBuild
+usr/lib/
+usr/lib/libf2fs.la
+usr/lib/libf2fs.so.0.0.1
+usr/lib/libf2fs_format.la
+usr/lib/libf2fs_format.so.0.0.1
+usr/man/
+usr/man/man8/
+usr/man/man8/defrag.f2fs.8.gz
+usr/man/man8/dump.f2fs.8.gz
+usr/man/man8/fsck.f2fs.8.gz
+usr/man/man8/mkfs.f2fs.8.gz
+usr/sbin/
+usr/sbin/f2fstat
+usr/sbin/fibmap.f2fs
+usr/sbin/fsck.f2fs
+usr/sbin/mkfs.f2fs
+usr/sbin/parse.f2fs

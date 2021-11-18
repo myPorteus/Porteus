@@ -1,0 +1,74 @@
+PACKAGE NAME:     lame-3.99.5-i586-3jay
+COMPRESSED PACKAGE SIZE:     340K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/lame-3.99.5-i586-3jay.txz
+PACKAGE DESCRIPTION:
+lame: LAME (LAME Ain't an MP3 Encoder)
+lame:
+lame: LAME is an LGPL MP3 encoder.  The open source development model
+lame: allowed the authors to improve its quality and speed since 1999.
+lame: It is now a highly evolved MP3 encoder, with quality and speed
+lame: able to rival state-of-the-art commercial encoders.
+lame:
+lame: Homepage: http://sourceforge.net/projects/lame
+lame:
+lame:
+lame: Packager: brokenman@porteus.org on 07-Feb-2016
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/lame
+usr/bin/mp3x
+usr/doc/
+usr/doc/lame-3.99.5/
+usr/doc/lame-3.99.5/API
+usr/doc/lame-3.99.5/COPYING
+usr/doc/lame-3.99.5/ChangeLog
+usr/doc/lame-3.99.5/ChangeLog.SB
+usr/doc/lame-3.99.5/HACKING
+usr/doc/lame-3.99.5/LICENSE
+usr/doc/lame-3.99.5/README
+usr/doc/lame-3.99.5/STYLEGUIDE
+usr/doc/lame-3.99.5/TODO
+usr/doc/lame-3.99.5/USAGE
+usr/doc/lame-3.99.5/html/
+usr/doc/lame-3.99.5/html/about.html
+usr/doc/lame-3.99.5/html/abr.html
+usr/doc/lame-3.99.5/html/cbr.html
+usr/doc/lame-3.99.5/html/contact.html
+usr/doc/lame-3.99.5/html/contributors.html
+usr/doc/lame-3.99.5/html/detailed.html
+usr/doc/lame-3.99.5/html/history.html
+usr/doc/lame-3.99.5/html/index.html
+usr/doc/lame-3.99.5/html/introduction.html
+usr/doc/lame-3.99.5/html/links.html
+usr/doc/lame-3.99.5/html/list.html
+usr/doc/lame-3.99.5/html/ms_stereo.html
+usr/doc/lame-3.99.5/html/usage.html
+usr/doc/lame-3.99.5/html/vbr.html
+usr/include/
+usr/include/lame/
+usr/include/lame/lame.h
+usr/lib/
+usr/lib/libmp3lame.so.0.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/lame.1.gz
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/lame/
+usr/src/slackbuilds/lame/ChangeLog.SB
+usr/src/slackbuilds/lame/apply-patches.sh
+usr/src/slackbuilds/lame/lame.SlackBuild
+usr/src/slackbuilds/lame/patches/
+usr/src/slackbuilds/lame/patches/gtk3-port.patch
+usr/src/slackbuilds/lame/patches/lame-3.99.5-automake-2.12.patch
+usr/src/slackbuilds/lame/patches/lame-mp3x-gtk3.patch
+usr/src/slackbuilds/lame/patches/lame-noexecstack.patch.gz
+usr/src/slackbuilds/lame/slack-desc
+usr/src/slackbuilds/lame/slack-required

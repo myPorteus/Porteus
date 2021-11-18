@@ -1,0 +1,43 @@
+PACKAGE NAME:     kdegraphics-mobipocket-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kdegraphics-mobipocket-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kdegraphics-mobipocket: kdegraphics-mobipocket (Mobipocket support for Okular)
+kdegraphics-mobipocket:
+kdegraphics-mobipocket: Mobipocket support for Okular.
+kdegraphics-mobipocket:
+kdegraphics-mobipocket: For more information, visit:  http://www.kde.org/
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+kdegraphics-mobipocket:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kdegraphics-mobipocket-16.08.3/
+usr/doc/kdegraphics-mobipocket-16.08.3/COPYING
+usr/include/
+usr/include/qmobipocket/
+usr/include/qmobipocket/mobipocket.h
+usr/include/qmobipocket/qfilestream.h
+usr/include/qmobipocket/qmobipocket_export.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/QMobipocket/
+usr/lib/cmake/QMobipocket/QMobipocketConfig.cmake
+usr/lib/kde4/
+usr/lib/kde4/mobithumbnail.so
+usr/lib/libqmobipocket.so.1.0.0
+usr/lib/strigi/
+usr/lib/strigi/strigila_mobi.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/mobithumbnail.desktop

@@ -1,0 +1,86 @@
+PACKAGE NAME:     extra-cmake-modules-5.28.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     420K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/extra-cmake-modules-5.28.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+extra-cmake-modules: CMake extra modules (extra cmake modules for compiling KDE Frameworks
+extra-cmake-modules:
+extra-cmake-modules: This package contains additional cmake modules required for
+extra-cmake-modules: compiling KDE Frameworks 5.
+extra-cmake-modules:
+extra-cmake-modules:
+extra-cmake-modules:
+extra-cmake-modules:
+extra-cmake-modules:
+extra-cmake-modules:
+extra-cmake-modules:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/extra-cmake-modules-5.28.0/
+usr/doc/extra-cmake-modules-5.28.0/COPYING-CMAKE-SCRIPTS
+usr/doc/extra-cmake-modules-5.28.0/README.rst
+usr/share/
+usr/share/ECM/
+usr/share/ECM/cmake/
+usr/share/ECM/cmake/ECMConfig.cmake
+usr/share/ECM/cmake/ECMConfigVersion.cmake
+usr/share/ECM/find-modules/
+usr/share/ECM/find-modules/ECMFindModuleHelpersStub.cmake
+usr/share/ECM/find-modules/FindEGL.cmake
+usr/share/ECM/find-modules/FindKF5.cmake
+usr/share/ECM/find-modules/FindLibGit2.cmake
+usr/share/ECM/find-modules/FindOpenEXR.cmake
+usr/share/ECM/find-modules/FindPng2Ico.cmake
+usr/share/ECM/find-modules/FindPoppler.cmake
+usr/share/ECM/find-modules/FindPythonModuleGeneration.cmake
+usr/share/ECM/find-modules/FindQtWaylandScanner.cmake
+usr/share/ECM/find-modules/FindSharedMimeInfo.cmake
+usr/share/ECM/find-modules/FindWayland.cmake
+usr/share/ECM/find-modules/FindWaylandScanner.cmake
+usr/share/ECM/find-modules/FindX11_XCB.cmake
+usr/share/ECM/find-modules/FindXCB.cmake
+usr/share/ECM/find-modules/Qt5Ruleset.py
+usr/share/ECM/find-modules/rules_engine.py
+usr/share/ECM/find-modules/run-sip.py
+usr/share/ECM/find-modules/sip_generator.py
+usr/share/ECM/kde-modules/
+usr/share/ECM/kde-modules/KDECMakeSettings.cmake
+usr/share/ECM/kde-modules/KDECompilerSettings.cmake
+usr/share/ECM/kde-modules/KDEFrameworkCompilerSettings.cmake
+usr/share/ECM/kde-modules/KDEInstallDirs.cmake
+usr/share/ECM/kde-modules/KDEPackageAppTemplates.cmake
+usr/share/ECM/kde-modules/appstreamtest.cmake
+usr/share/ECM/modules/
+usr/share/ECM/modules/ECMAddAppIcon.cmake
+usr/share/ECM/modules/ECMAddTests.cmake
+usr/share/ECM/modules/ECMCoverageOption.cmake
+usr/share/ECM/modules/ECMCreateQmFromPoFiles.cmake
+usr/share/ECM/modules/ECMEnableSanitizers.cmake
+usr/share/ECM/modules/ECMFindModuleHelpers.cmake
+usr/share/ECM/modules/ECMGenerateHeaders.cmake
+usr/share/ECM/modules/ECMGeneratePkgConfigFile.cmake
+usr/share/ECM/modules/ECMGeneratePriFile.cmake
+usr/share/ECM/modules/ECMInstallIcons.cmake
+usr/share/ECM/modules/ECMMarkAsTest.cmake
+usr/share/ECM/modules/ECMMarkNonGuiExecutable.cmake
+usr/share/ECM/modules/ECMOptionalAddSubdirectory.cmake
+usr/share/ECM/modules/ECMPackageConfigHelpers.cmake
+usr/share/ECM/modules/ECMPoQmTools.cmake
+usr/share/ECM/modules/ECMQmLoader.cpp.in
+usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cmake
+usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cpp.in
+usr/share/ECM/modules/ECMQtDeclareLoggingCategory.h.in
+usr/share/ECM/modules/ECMQueryQmake.cmake
+usr/share/ECM/modules/ECMSetupVersion.cmake
+usr/share/ECM/modules/ECMUninstallTarget.cmake
+usr/share/ECM/modules/ECMUseFindModules.cmake
+usr/share/ECM/modules/ECMVersionHeader.h.in
+usr/share/ECM/modules/ecm_uninstall.cmake.in
+usr/share/ECM/toolchain/
+usr/share/ECM/toolchain/Android.cmake
+usr/share/ECM/toolchain/deployment-file.json.in
+usr/share/ECM/toolchain/specifydependencies.cmake

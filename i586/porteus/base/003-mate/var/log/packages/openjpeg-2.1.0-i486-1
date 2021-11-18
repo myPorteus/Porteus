@@ -1,0 +1,77 @@
+PACKAGE NAME:     openjpeg-2.1.0-i486-1
+COMPRESSED PACKAGE SIZE:     408K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_mate/openjpeg-2.1.0-i486-1.txz
+PACKAGE DESCRIPTION:
+openjpeg: openjpeg (JPEG2000 Codec)
+openjpeg:
+openjpeg: The OpenJPEG library is an open-source JPEG 2000 codec.
+openjpeg:
+openjpeg: Homepage: http://www.openjpeg.org
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/opj_compress
+usr/bin/opj_dec_server
+usr/bin/opj_decompress
+usr/bin/opj_dump
+usr/bin/opj_jp3d_compress
+usr/bin/opj_jp3d_decompress
+usr/bin/opj_jpip_addxml
+usr/bin/opj_jpip_test
+usr/bin/opj_jpip_transcode
+usr/bin/opj_jpwl_compress
+usr/bin/opj_jpwl_decompress
+usr/bin/opj_mj2_compress
+usr/bin/opj_mj2_decompress
+usr/bin/opj_mj2_extract
+usr/bin/opj_mj2_wrap
+usr/doc/
+usr/doc/openjpeg-2.1.0/
+usr/doc/openjpeg-2.1.0/AUTHORS
+usr/doc/openjpeg-2.1.0/CHANGES
+usr/doc/openjpeg-2.1.0/INSTALL
+usr/doc/openjpeg-2.1.0/LICENSE
+usr/doc/openjpeg-2.1.0/NEWS
+usr/doc/openjpeg-2.1.0/README
+usr/doc/openjpeg-2.1.0/THANKS
+usr/include/
+usr/include/openjpeg-2.1/
+usr/include/openjpeg-2.1/openjp3d.h
+usr/include/openjpeg-2.1/openjpeg.h
+usr/include/openjpeg-2.1/opj_config.h
+usr/include/openjpeg-2.1/opj_stdint.h
+usr/include/openmj2-2.1/
+usr/include/openmj2-2.1/openjpeg.h
+usr/lib/
+usr/lib/libopenjp2.so.2.1.0
+usr/lib/libopenjp3d.so.2.1.0
+usr/lib/libopenjpip.so.2.1.0
+usr/lib/libopenjpwl.so.2.1.0
+usr/lib/libopenmj2.so.2.1.0
+usr/lib/openjpeg-2.1/
+usr/lib/openjpeg-2.1/OpenJPEGConfig.cmake
+usr/lib/openjpeg-2.1/OpenJPEGTargets-noconfig.cmake
+usr/lib/openjpeg-2.1/OpenJPEGTargets.cmake
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libopenjp2.pc
+usr/lib/pkgconfig/libopenjp3d.pc
+usr/lib/pkgconfig/libopenjpip.pc
+usr/lib/pkgconfig/libopenjpwl.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/opj_compress.1.gz
+usr/man/man1/opj_decompress.1.gz
+usr/man/man1/opj_dump.1.gz
+usr/man/man3/
+usr/man/man3/libopenjp2.3.gz

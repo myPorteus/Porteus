@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libxfsm-4.6.so )
+( cd usr/lib ; ln -sf libxfsm-4.6.so.0.0.0 libxfsm-4.6.so )
+( cd usr/lib ; rm -rf libxfsm-4.6.so.0 )
+( cd usr/lib ; ln -sf libxfsm-4.6.so.0.0.0 libxfsm-4.6.so.0 )

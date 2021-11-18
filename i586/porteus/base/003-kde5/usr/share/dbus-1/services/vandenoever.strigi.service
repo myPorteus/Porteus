@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=vandenoever.strigi
+Exec=/usr/bin/strigidaemon

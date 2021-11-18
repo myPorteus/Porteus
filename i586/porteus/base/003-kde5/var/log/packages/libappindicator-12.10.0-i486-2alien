@@ -1,0 +1,84 @@
+PACKAGE NAME:     libappindicator-12.10.0-i486-2alien
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     650K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/libappindicator-12.10.0-i486-2alien.txz
+PACKAGE DESCRIPTION:
+libappindicator: libappindicator (Plasma 5 systray support for GTK applications)
+libappindicator:
+libappindicator: A library to allow applications to export a menu into the
+libappindicator: system tray.  Based on KSNI it also works in KDE and will
+libappindicator: fallback to generic Systray support (xembed) if none of
+libappindicator: those are available.
+libappindicator:
+libappindicator:
+libappindicator:
+libappindicator: Homepage: https://launchpad.net/libappindicator
+libappindicator:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libappindicator-12.10.0/
+usr/doc/libappindicator-12.10.0/AUTHORS
+usr/doc/libappindicator-12.10.0/COPYING
+usr/doc/libappindicator-12.10.0/COPYING.LGPL.2.1
+usr/doc/libappindicator-12.10.0/ChangeLog
+usr/doc/libappindicator-12.10.0/NEWS
+usr/doc/libappindicator-12.10.0/README
+usr/include/
+usr/include/libappindicator-0.1/
+usr/include/libappindicator-0.1/libappindicator/
+usr/include/libappindicator-0.1/libappindicator/app-indicator-enum-types.h
+usr/include/libappindicator-0.1/libappindicator/app-indicator.h
+usr/include/libappindicator3-0.1/
+usr/include/libappindicator3-0.1/libappindicator/
+usr/include/libappindicator3-0.1/libappindicator/app-indicator-enum-types.h
+usr/include/libappindicator3-0.1/libappindicator/app-indicator.h
+usr/lib/
+usr/lib/girepository-1.0/
+usr/lib/girepository-1.0/AppIndicator-0.1.typelib
+usr/lib/girepository-1.0/AppIndicator3-0.1.typelib
+usr/lib/libappindicator.la
+usr/lib/libappindicator.so.1.0.0
+usr/lib/libappindicator3.la
+usr/lib/libappindicator3.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/appindicator-0.1.pc
+usr/lib/pkgconfig/appindicator3-0.1.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/appindicator/
+usr/lib/python2.7/site-packages/appindicator/__init__.py
+usr/lib/python2.7/site-packages/appindicator/__init__.pyc
+usr/lib/python2.7/site-packages/appindicator/__init__.pyo
+usr/lib/python2.7/site-packages/appindicator/_appindicator.la
+usr/lib/python2.7/site-packages/appindicator/_appindicator.so
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/AppIndicator-0.1.gir
+usr/share/gir-1.0/AppIndicator3-0.1.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libappindicator/
+usr/share/gtk-doc/html/libappindicator/annotation-glossary.html
+usr/share/gtk-doc/html/libappindicator/api-index-0-5.html
+usr/share/gtk-doc/html/libappindicator/api-index-deprecated.html
+usr/share/gtk-doc/html/libappindicator/api-index-full.html
+usr/share/gtk-doc/html/libappindicator/ch01.html
+usr/share/gtk-doc/html/libappindicator/home.png
+usr/share/gtk-doc/html/libappindicator/index.html
+usr/share/gtk-doc/html/libappindicator/index.sgml
+usr/share/gtk-doc/html/libappindicator/left.png
+usr/share/gtk-doc/html/libappindicator/libappindicator-app-indicator.html
+usr/share/gtk-doc/html/libappindicator/libappindicator.devhelp2
+usr/share/gtk-doc/html/libappindicator/object-tree.html
+usr/share/gtk-doc/html/libappindicator/right.png
+usr/share/gtk-doc/html/libappindicator/style.css
+usr/share/gtk-doc/html/libappindicator/up.png
+usr/share/pygtk/
+usr/share/pygtk/2.0/
+usr/share/pygtk/2.0/defs/
+usr/share/pygtk/2.0/defs/appindicator.defs

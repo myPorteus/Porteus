@@ -1,6 +1,0 @@
-sdkdir=/usr/include/xorg
-
-Name: xorg-evdev
-Description: X.Org evdev input driver.
-Version: 2.8.4
-Cflags: -I${sdkdir}

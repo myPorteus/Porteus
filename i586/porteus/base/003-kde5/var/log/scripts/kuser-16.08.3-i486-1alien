@@ -1,0 +1,2 @@
+( cd usr/doc/HTML/en/kuser ; rm -rf common )
+( cd usr/doc/HTML/en/kuser ; ln -sf /usr/share/doc/HTML/en/common common )

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/opt/porteus-scripts/activate %F
+MimeType=application/x-xzm;
+Name=Activate
+NoDisplay=true
+Icon=cdr
+Type=Application

@@ -1,0 +1,110 @@
+PACKAGE NAME:     libkgeomap-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     184K
+UNCOMPRESSED PACKAGE SIZE:     690K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/libkgeomap-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+libkgeomap: libkgeomap (library for world map components)
+libkgeomap:
+libkgeomap: A wrapper around world map components like marble, openstreetmap
+libkgeomap: and googlemap, for browsing and arranging photos on a map.
+libkgeomap:
+libkgeomap:
+libkgeomap:
+libkgeomap:
+libkgeomap:
+libkgeomap: For more information, visit:  http://www.digikam.org
+libkgeomap:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkgeomap-16.08.3/
+usr/doc/libkgeomap-16.08.3/AUTHORS
+usr/doc/libkgeomap-16.08.3/COPYING
+usr/doc/libkgeomap-16.08.3/COPYING-CMAKE-SCRIPTS
+usr/doc/libkgeomap-16.08.3/COPYING.LIB
+usr/doc/libkgeomap-16.08.3/README
+usr/doc/libkgeomap-16.08.3/TODO
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KGeoMap/
+usr/include/KF5/KGeoMap/KGeoMap/
+usr/include/KF5/KGeoMap/KGeoMap/AbstractMarkerTiler
+usr/include/KF5/KGeoMap/KGeoMap/DragDropHandler
+usr/include/KF5/KGeoMap/KGeoMap/GeoCoordinates
+usr/include/KF5/KGeoMap/KGeoMap/GroupState
+usr/include/KF5/KGeoMap/KGeoMap/GroupStateComputer
+usr/include/KF5/KGeoMap/KGeoMap/ItemMarkerTiler
+usr/include/KF5/KGeoMap/KGeoMap/LookupAltitude
+usr/include/KF5/KGeoMap/KGeoMap/LookupFactory
+usr/include/KF5/KGeoMap/KGeoMap/MapWidget
+usr/include/KF5/KGeoMap/KGeoMap/ModelHelper
+usr/include/KF5/KGeoMap/KGeoMap/TileIndex
+usr/include/KF5/KGeoMap/KGeoMap/TrackReader
+usr/include/KF5/KGeoMap/KGeoMap/Tracks
+usr/include/KF5/KGeoMap/KGeoMap/Types
+usr/include/KF5/KGeoMap/kgeomap/
+usr/include/KF5/KGeoMap/kgeomap/abstractmarkertiler.h
+usr/include/KF5/KGeoMap/kgeomap/dragdrophandler.h
+usr/include/KF5/KGeoMap/kgeomap/geocoordinates.h
+usr/include/KF5/KGeoMap/kgeomap/groupstate.h
+usr/include/KF5/KGeoMap/kgeomap/groupstatecomputer.h
+usr/include/KF5/KGeoMap/kgeomap/itemmarkertiler.h
+usr/include/KF5/KGeoMap/kgeomap/libkgeomap_export.h
+usr/include/KF5/KGeoMap/kgeomap/lookupaltitude.h
+usr/include/KF5/KGeoMap/kgeomap/lookupfactory.h
+usr/include/KF5/KGeoMap/kgeomap/mapwidget.h
+usr/include/KF5/KGeoMap/kgeomap/modelhelper.h
+usr/include/KF5/KGeoMap/kgeomap/tileindex.h
+usr/include/KF5/KGeoMap/kgeomap/trackreader.h
+usr/include/KF5/KGeoMap/kgeomap/tracks.h
+usr/include/KF5/KGeoMap/kgeomap/types.h
+usr/include/KF5/libkgeomap_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5KGeoMap/
+usr/lib/cmake/KF5KGeoMap/KF5KGeoMapConfig.cmake
+usr/lib/cmake/KF5KGeoMap/KF5KGeoMapConfigVersion.cmake
+usr/lib/cmake/KF5KGeoMap/KF5KGeoMapTargets-release.cmake
+usr/lib/cmake/KF5KGeoMap/KF5KGeoMapTargets.cmake
+usr/lib/libKF5KGeoMap.so.5.0.0
+usr/share/
+usr/share/libkgeomap/
+usr/share/libkgeomap/backend-googlemaps-js.js
+usr/share/libkgeomap/backend-googlemaps.html
+usr/share/libkgeomap/backend-osm-js.js
+usr/share/libkgeomap/backend-osm.html
+usr/share/libkgeomap/cluster-circle-00ff00-selected.png
+usr/share/libkgeomap/cluster-circle-00ff00-someselected.png
+usr/share/libkgeomap/cluster-circle-00ff00.png
+usr/share/libkgeomap/cluster-circle-00ffff-selected.png
+usr/share/libkgeomap/cluster-circle-00ffff-someselected.png
+usr/share/libkgeomap/cluster-circle-00ffff.png
+usr/share/libkgeomap/cluster-circle-ff0000-selected.png
+usr/share/libkgeomap/cluster-circle-ff0000-someselected.png
+usr/share/libkgeomap/cluster-circle-ff0000.png
+usr/share/libkgeomap/cluster-circle-ff7f00-selected.png
+usr/share/libkgeomap/cluster-circle-ff7f00-someselected.png
+usr/share/libkgeomap/cluster-circle-ff7f00.png
+usr/share/libkgeomap/cluster-circle-ffff00-selected.png
+usr/share/libkgeomap/cluster-circle-ffff00-someselected.png
+usr/share/libkgeomap/cluster-circle-ffff00.png
+usr/share/libkgeomap/marker-00ff00-selected.png
+usr/share/libkgeomap/marker-00ff00-someselected.png
+usr/share/libkgeomap/marker-00ff00.png
+usr/share/libkgeomap/marker-00ffff-selected.png
+usr/share/libkgeomap/marker-00ffff-someselected.png
+usr/share/libkgeomap/marker-00ffff.png
+usr/share/libkgeomap/marker-ff0000-selected.png
+usr/share/libkgeomap/marker-ff0000-someselected.png
+usr/share/libkgeomap/marker-ff0000.png
+usr/share/libkgeomap/marker-ff7f00-selected.png
+usr/share/libkgeomap/marker-ff7f00-someselected.png
+usr/share/libkgeomap/marker-ff7f00.png
+usr/share/libkgeomap/marker-ffff00-selected.png
+usr/share/libkgeomap/marker-ffff00-someselected.png
+usr/share/libkgeomap/marker-ffff00.png
+usr/share/libkgeomap/marker-icon-16x16.png

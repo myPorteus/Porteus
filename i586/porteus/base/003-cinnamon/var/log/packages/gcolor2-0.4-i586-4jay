@@ -1,0 +1,55 @@
+PACKAGE NAME:     gcolor2-0.4-i586-4jay
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_cinnamon/gcolor2-0.4-i586-4jay.txz
+PACKAGE DESCRIPTION:
+gcolor2: gcolor2 (GTK+2 Color Selector)
+gcolor2:
+gcolor2: gcolor2 is a simple color selector that was originally based on
+gcolor2: gcolor, ported to use GTK+2, and now has a completely new UI. 
+gcolor2:
+gcolor2: http://gcolor2.sourceforge.net/
+gcolor2:
+gcolor2:
+gcolor2: Packager: brokenman@porteus.org on 21-Feb-2016
+gcolor2:
+gcolor2:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/gcolor2
+usr/doc/
+usr/doc/gcolor2-0.4/
+usr/doc/gcolor2-0.4/AUTHORS
+usr/doc/gcolor2-0.4/COPYING
+usr/doc/gcolor2-0.4/ChangeLog
+usr/doc/gcolor2-0.4/ChangeLog.SB
+usr/doc/gcolor2-0.4/NEWS
+usr/doc/gcolor2-0.4/README
+usr/share/
+usr/share/applications/
+usr/share/applications/gcolor2.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/gcolor2.png
+usr/share/pixmaps/
+usr/share/pixmaps/gcolor2/
+usr/share/pixmaps/gcolor2/about_icon.png
+usr/share/pixmaps/gcolor2/icon.png
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/gcolor2/
+usr/src/slackbuilds/gcolor2/ChangeLog.SB
+usr/src/slackbuilds/gcolor2/apply-patches.sh
+usr/src/slackbuilds/gcolor2/gcolor2.SlackBuild
+usr/src/slackbuilds/gcolor2/patches/
+usr/src/slackbuilds/gcolor2/patches/gcolor2-0.4-amd64.patch
+usr/src/slackbuilds/gcolor2/patches/gcolor2-0.4-missing-includes.patch.gz
+usr/src/slackbuilds/gcolor2/slack-desc
+usr/src/slackbuilds/gcolor2/slack-required

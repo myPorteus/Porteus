@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.freedesktop.SystemToolsBackends.TimeConfig
+Exec=/usr/share/system-tools-backends-2.0/scripts/SystemToolsBackends.pl -m TimeConfig
+User=root

@@ -1,0 +1,125 @@
+PACKAGE NAME:     libgksu-2.0.12-i486-2jay
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     520K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_mate/libgksu-2.0.12-i486-2jay.tgz
+PACKAGE DESCRIPTION:
+libgksu: libgksu (library for gksu)
+libgksu:
+libgksu: libgksu is a library that provides a Gtk+ frontend to su and sudo.
+libgksu: It supports login shells and preserving environment when acting as
+libgksu: a su frontend. It is useful to menu items or other graphical
+libgksu: programs that need to ask a user's password to run another program
+libgksu: as another user.
+libgksu:
+libgksu: Homepage: http://www.nongnu.org/gksu/
+libgksu:
+libgksu:
+FILE LIST:
+./
+etc/
+etc/gconf/
+etc/gconf/gconf.xml.defaults/
+etc/gconf/schemas/
+etc/gconf/schemas/gksu.schemas
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gksu-properties
+usr/doc/
+usr/doc/libgksu-2.0.12/
+usr/doc/libgksu-2.0.12/ABOUT-NLS
+usr/doc/libgksu-2.0.12/AUTHORS
+usr/doc/libgksu-2.0.12/COPYING
+usr/doc/libgksu-2.0.12/ChangeLog
+usr/doc/libgksu-2.0.12/INSTALL
+usr/doc/libgksu-2.0.12/libgksu.SlackBuild
+usr/include/
+usr/include/libgksu/
+usr/include/libgksu/gksu.h
+usr/include/libgksu/libgksu.h
+usr/lib/
+usr/lib/libgksu/
+usr/lib/libgksu/gksu-run-helper
+usr/lib/libgksu2.la
+usr/lib/libgksu2.so.0.0.2
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libgksu2.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/gksu-properties.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/gksu-properties.desktop
+usr/share/libgksu/
+usr/share/libgksu/gksu-properties.ui
+usr/share/locale/
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libgksu.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libgksu.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libgksu.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libgksu.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libgksu.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libgksu.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libgksu.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libgksu.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libgksu.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libgksu.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libgksu.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libgksu.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libgksu.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libgksu.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libgksu.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libgksu.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libgksu.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libgksu.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libgksu.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libgksu.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/libgksu.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libgksu.mo
+usr/share/pixmaps/
+usr/share/pixmaps/gksu.png

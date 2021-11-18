@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtGStreamer
+
+Name: QtGStreamerUi-1.0
+Description: QtGui/QtWidgets GStreamer integration library
+Requires: QtGui QtGStreamer-1.0
+Version: 1.2.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lQtGStreamerUi-1.0

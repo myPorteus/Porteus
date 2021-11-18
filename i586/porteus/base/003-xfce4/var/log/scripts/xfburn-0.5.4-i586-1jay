@@ -1,0 +1,27 @@
+#!/bin/sh
+# Figure out our root directory
+ROOTDIR=$(pwd)
+unset CHROOT
+if test "${ROOTDIR}" != "/"; then
+  CHROOT="chroot ${ROOTDIR} "
+  ROOTDIR="${ROOTDIR}/"
+fi
+if [ -x usr/bin/update-desktop-database ]; then
+  ${CHROOT} /usr/bin/update-desktop-database 1> /dev/null 2> /dev/null
+fi
+if [ -x usr/bin/gtk-update-icon-cache ]; then
+  ${CHROOT} /usr/bin/touch --no-create /usr/share/icons/hicolor > /dev/null 2>&1
+  ${CHROOT} /usr/bin/gtk-update-icon-cache -q /usr/share/icons/hicolor > /dev/null 2>&1
+fi
+( cd usr/share/icons/hicolor/scalable/apps ; rm -rf xfburn.svg )
+( cd usr/share/icons/hicolor/scalable/apps ; ln -sf ../stock/media/stock_xfburn.svg xfburn.svg )
+( cd usr/share/icons/hicolor/48x48/apps ; rm -rf xfburn.png )
+( cd usr/share/icons/hicolor/48x48/apps ; ln -sf ../stock/media/stock_xfburn.png xfburn.png )
+( cd usr/share/icons/hicolor/32x32/apps ; rm -rf xfburn.png )
+( cd usr/share/icons/hicolor/32x32/apps ; ln -sf ../stock/media/stock_xfburn.png xfburn.png )
+( cd usr/share/icons/hicolor/24x24/apps ; rm -rf xfburn.png )
+( cd usr/share/icons/hicolor/24x24/apps ; ln -sf ../stock/media/stock_xfburn.png xfburn.png )
+( cd usr/share/icons/hicolor/22x22/apps ; rm -rf xfburn.png )
+( cd usr/share/icons/hicolor/22x22/apps ; ln -sf ../stock/media/stock_xfburn.png xfburn.png )
+( cd usr/share/icons/hicolor/16x16/apps ; rm -rf xfburn.png )
+( cd usr/share/icons/hicolor/16x16/apps ; ln -sf ../stock/media/stock_xfburn.png xfburn.png )

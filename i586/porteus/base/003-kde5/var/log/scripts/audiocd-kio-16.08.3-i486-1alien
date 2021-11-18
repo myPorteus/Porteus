@@ -1,0 +1,6 @@
+( cd usr/doc/HTML/en/kioslave/audiocd ; rm -rf common )
+( cd usr/doc/HTML/en/kioslave/audiocd ; ln -sf /usr/share/doc/HTML/en/common common )
+( cd usr/lib ; rm -rf libaudiocdplugins.so.4 )
+( cd usr/lib ; ln -sf libaudiocdplugins.so.4.14.26 libaudiocdplugins.so.4 )
+( cd usr/lib ; rm -rf libaudiocdplugins.so )
+( cd usr/lib ; ln -sf libaudiocdplugins.so.4 libaudiocdplugins.so )

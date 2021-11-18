@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: UDisks Library
+Description: UDisks Client Library
+Version: 2.1.5
+Requires: gio-2.0,gobject-2.0,glib-2.0
+Libs: -L${libdir} -ludisks2
+Cflags: -I${includedir}/udisks2

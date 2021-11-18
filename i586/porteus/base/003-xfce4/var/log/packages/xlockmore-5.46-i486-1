@@ -1,0 +1,51 @@
+PACKAGE NAME:     xlockmore-5.46-i486-1
+COMPRESSED PACKAGE SIZE:     960K
+UNCOMPRESSED PACKAGE SIZE:     3.5M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_xfce4/xlockmore/xlockmore-5.46-i486-1.txz
+PACKAGE DESCRIPTION:
+xlockmore: xlockmore (screen locker for X)
+xlockmore:
+xlockmore: Patrick J. Naughton's xlock screensaver/locker for X, with many
+xlockmore: more modes added by David A. Bagley.
+xlockmore:
+xlockmore: The 'Bob' bitmap has been included especially for Slackware, as well
+xlockmore: as a Linux penguin logo.  (NOTE: the image of J. R. "Bob" Dobbs is a
+xlockmore: registered trademark of The Subgenius Foundation, used by permission)
+xlockmore:
+xlockmore:
+xlockmore:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/app-defaults/
+etc/X11/app-defaults/XLock
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xlock
+usr/doc/
+usr/doc/xlockmore-5.46/
+usr/doc/xlockmore-5.46/3d.howto
+usr/doc/xlockmore-5.46/HACKERS.GUIDE
+usr/doc/xlockmore-5.46/HACKERS.GUIDE.fr
+usr/doc/xlockmore-5.46/Purify
+usr/doc/xlockmore-5.46/Purify.sunos4
+usr/doc/xlockmore-5.46/Purify.sunos5
+usr/doc/xlockmore-5.46/README
+usr/doc/xlockmore-5.46/Revisions
+usr/doc/xlockmore-5.46/TODO
+usr/doc/xlockmore-5.46/cell_automata
+usr/doc/xlockmore-5.46/l-bob.README
+usr/doc/xlockmore-5.46/xlock.hlp
+usr/doc/xlockmore-5.46/xlock.html
+usr/include/
+usr/include/X11/
+usr/include/X11/bitmaps/
+usr/include/X11/bitmaps/l-bob.xbm
+usr/include/X11/bitmaps/l-linux.xbm
+usr/include/X11/bitmaps/s-bob.xbm
+usr/man/
+usr/man/man1/
+usr/man/man1/xlock.1.gz

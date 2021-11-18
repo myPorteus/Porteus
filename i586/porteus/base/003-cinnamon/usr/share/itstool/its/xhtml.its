@@ -1,0 +1,48 @@
+<its:rules
+    xmlns:its="http://www.w3.org/2005/11/its"
+    xmlns:itst="http://itstool.org/extensions/"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    version="2.0">
+
+  <itst:match selector="/html:html"/>
+
+  <its:translateRule translate="no" selector="//html:script | //html:style"/>
+
+  <its:preserveSpaceRule space="preserve" selector="//html:pre"/>
+
+  <its:withinTextRule withinText="yes" selector="//html:a |
+                                                 //html:abbr |
+                                                 //html:acronym |
+                                                 //html:b |
+                                                 //html:bdo |
+                                                 //html:big |
+                                                 //html:br |
+                                                 //html:center |
+                                                 //html:cite |
+                                                 //html:code |
+                                                 //html:del |
+                                                 //html:dfn |
+                                                 //html:em |
+                                                 //html:font |
+                                                 //html:hr |
+                                                 //html:i |
+                                                 //html:img |
+                                                 //html:ins |
+                                                 //html:isindex |
+                                                 //html:kbd |
+                                                 //html:q |
+                                                 //html:s |
+                                                 //html:samp |
+                                                 //html:small |
+                                                 //html:span |
+                                                 //html:strike |
+                                                 //html:strong |
+                                                 //html:sub |
+                                                 //html:sup |
+                                                 //html:tt |
+                                                 //html:u |
+                                                 //html:var "/>
+
+  <its:externalResourceRefRule externalResourceRefPointer="@src"
+                               selector="//html:img | //html:audio | //html:video"/>
+</its:rules>

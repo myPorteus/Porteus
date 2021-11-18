@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+extensionsdir=${libdir}/thunarx-2
+
+Name: thunarx
+Description: A library to create Thunar extensions
+Requires: gtk+-2.0 gio-2.0
+Version: 1.6.10
+Libs: -L${libdir} -lthunarx-2
+Cflags: -I${includedir}/thunarx-2

@@ -1,0 +1,51 @@
+PACKAGE NAME:     libvncserver-0.9.10-i586-2
+COMPRESSED PACKAGE SIZE:     232K
+UNCOMPRESSED PACKAGE SIZE:     810K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/libvncserver-0.9.10-i586-2.txz
+PACKAGE DESCRIPTION:
+libvncserver: libvncserver (VNC Server Library)
+libvncserver:
+libvncserver: LibVNCServer makes writing a VNC server (or more correctly,
+libvncserver: a program exporting a framebuffer via the Remote Frame Buffer
+libvncserver: protocol) easy.
+libvncserver:
+libvncserver: Homepage: https://libvnc.github.io/
+libvncserver:
+libvncserver:
+libvncserver:
+libvncserver:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/SDLvncviewer
+usr/bin/libvncserver-config
+usr/doc/
+usr/doc/libvncserver-0.9.10/
+usr/doc/libvncserver-0.9.10/AUTHORS
+usr/doc/libvncserver-0.9.10/COPYING
+usr/doc/libvncserver-0.9.10/ChangeLog
+usr/doc/libvncserver-0.9.10/INSTALL
+usr/doc/libvncserver-0.9.10/NEWS
+usr/doc/libvncserver-0.9.10/README
+usr/doc/libvncserver-0.9.10/TODO
+usr/include/
+usr/include/rfb/
+usr/include/rfb/keysym.h
+usr/include/rfb/rfb.h
+usr/include/rfb/rfbclient.h
+usr/include/rfb/rfbconfig.h
+usr/include/rfb/rfbint.h
+usr/include/rfb/rfbproto.h
+usr/include/rfb/rfbregion.h
+usr/lib/
+usr/lib/libvncclient.la
+usr/lib/libvncclient.so.0.0.0
+usr/lib/libvncserver.la
+usr/lib/libvncserver.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libvncclient.pc
+usr/lib/pkgconfig/libvncserver.pc

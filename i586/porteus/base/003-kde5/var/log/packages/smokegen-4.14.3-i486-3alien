@@ -1,0 +1,63 @@
+PACKAGE NAME:     smokegen-4.14.3-i486-3alien
+COMPRESSED PACKAGE SIZE:     332K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/smokegen-4.14.3-i486-3alien.txz
+PACKAGE DESCRIPTION:
+smokegen: smokegen (smoke generator)
+smokegen:
+smokegen: Smoke Generator.  The main purpose of SMOKE is making it easier to
+smokegen: write bindings from scripting languages to Qt and KDE - with an
+smokegen: emphasis on ease of use and flexibility.
+smokegen:
+smokegen: For more information, visit:  http://www.kde.org
+smokegen:
+smokegen:
+smokegen:
+smokegen:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/smokeapi
+usr/bin/smokegen
+usr/doc/
+usr/doc/smokegen-4.14.3/
+usr/doc/smokegen-4.14.3/COPYING
+usr/doc/smokegen-4.14.3/COPYING.LIB
+usr/doc/smokegen-4.14.3/README
+usr/include/
+usr/include/smoke.h
+usr/include/smokegen/
+usr/include/smokegen/generator_export.h
+usr/include/smokegen/generatorenvironment.h
+usr/include/smokegen/generatorpreprocessor.h
+usr/include/smokegen/generatorvisitor.h
+usr/include/smokegen/name_compiler.h
+usr/include/smokegen/options.h
+usr/include/smokegen/type.h
+usr/include/smokegen/type_compiler.h
+usr/lib/
+usr/lib/libcppparser.so
+usr/lib/libsmokebase.so.3.0.0
+usr/lib/smokegen/
+usr/lib/smokegen/generator_dump.so
+usr/lib/smokegen/generator_smoke.so
+usr/share/
+usr/share/smoke/
+usr/share/smoke/cmake/
+usr/share/smoke/cmake/FindLibraryWithDebug.cmake
+usr/share/smoke/cmake/FindPhonon.cmake
+usr/share/smoke/cmake/FindQImageBlitz.cmake
+usr/share/smoke/cmake/FindQScintilla.cmake
+usr/share/smoke/cmake/FindQwt5.cmake
+usr/share/smoke/cmake/HandleImportedTargetsInCMakeRequiredLibraries.cmake
+usr/share/smoke/cmake/MacroLogFeature.cmake
+usr/share/smoke/cmake/MacroOptionalAddBindings.cmake
+usr/share/smoke/cmake/MacroOptionalFindPackage.cmake
+usr/share/smoke/cmake/SmokeConfig.cmake
+usr/share/smoke/cmake/SmokeVersionConfig.cmake
+usr/share/smokegen/
+usr/share/smokegen/string.h

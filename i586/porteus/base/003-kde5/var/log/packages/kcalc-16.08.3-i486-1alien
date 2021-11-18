@@ -1,0 +1,51 @@
+PACKAGE NAME:     kcalc-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     172K
+UNCOMPRESSED PACKAGE SIZE:     640K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kcalc-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kcalc: kcalc (KDE calculator)
+kcalc:
+kcalc: KCalc is a calculator which offers many more mathematical functions
+kcalc: than meet the eye on a first glance.
+kcalc:
+kcalc: kcalc's home page is:  http://utils.kde.org/projects/kcalc
+kcalc:
+kcalc:
+kcalc:
+kcalc:
+kcalc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kcalc
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/kcalc/
+usr/doc/HTML/en/kcalc/commands.docbook
+usr/doc/HTML/en/kcalc/index.cache.bz2
+usr/doc/HTML/en/kcalc/index.docbook
+usr/doc/kcalc-16.08.3/
+usr/doc/kcalc-16.08.3/COPYING
+usr/doc/kcalc-16.08.3/COPYING.LIB
+usr/doc/kcalc-16.08.3/ChangeLog
+usr/doc/kcalc-16.08.3/README
+usr/doc/kcalc-16.08.3/TODO
+usr/lib/
+usr/lib/libkdeinit5_kcalc.so
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.kcalc.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/kcalc.kcfg
+usr/share/kcalc/
+usr/share/kcalc/scienceconstants.xml
+usr/share/kconf_update/
+usr/share/kconf_update/kcalcrc.upd
+usr/share/kxmlgui5/
+usr/share/kxmlgui5/kcalc/
+usr/share/kxmlgui5/kcalc/kcalcui.rc

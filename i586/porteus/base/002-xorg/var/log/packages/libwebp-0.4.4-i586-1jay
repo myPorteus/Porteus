@@ -1,0 +1,70 @@
+PACKAGE NAME:     libwebp-0.4.4-i586-1jay
+COMPRESSED PACKAGE SIZE:     292K
+UNCOMPRESSED PACKAGE SIZE:     1000K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libwebp-0.4.4-i586-1jay.txz
+PACKAGE DESCRIPTION:
+libwebp: libwebp (A lossy image compression format)
+libwebp:
+libwebp: WebP is an image format that does lossy compression of digital
+libwebp: photographic images.
+libwebp:
+libwebp: https://developers.google.com/speed/webp/
+libwebp:
+libwebp:
+libwebp: Packager: brokenman@porteus.org on 07-Feb-2016
+libwebp:
+libwebp:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/cwebp
+usr/bin/dwebp
+usr/bin/gif2webp
+usr/bin/vwebp
+usr/bin/webpmux
+usr/doc/
+usr/doc/libwebp-0.4.4/
+usr/doc/libwebp-0.4.4/AUTHORS
+usr/doc/libwebp-0.4.4/COPYING
+usr/doc/libwebp-0.4.4/ChangeLog
+usr/doc/libwebp-0.4.4/ChangeLog.SB
+usr/doc/libwebp-0.4.4/NEWS
+usr/doc/libwebp-0.4.4/README
+usr/include/
+usr/include/webp/
+usr/include/webp/decode.h
+usr/include/webp/demux.h
+usr/include/webp/encode.h
+usr/include/webp/mux.h
+usr/include/webp/mux_types.h
+usr/include/webp/types.h
+usr/lib/
+usr/lib/libwebp.so.5.0.4
+usr/lib/libwebpdecoder.so.1.0.4
+usr/lib/libwebpdemux.so.1.0.2
+usr/lib/libwebpmux.so.1.0.2
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libwebp.pc
+usr/lib/pkgconfig/libwebpdecoder.pc
+usr/lib/pkgconfig/libwebpdemux.pc
+usr/lib/pkgconfig/libwebpmux.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cwebp.1.gz
+usr/man/man1/dwebp.1.gz
+usr/man/man1/gif2webp.1.gz
+usr/man/man1/vwebp.1.gz
+usr/man/man1/webpmux.1.gz
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/libwebp/
+usr/src/slackbuilds/libwebp/ChangeLog.SB
+usr/src/slackbuilds/libwebp/apply-patches.sh
+usr/src/slackbuilds/libwebp/libwebp.SlackBuild
+usr/src/slackbuilds/libwebp/slack-desc
+usr/src/slackbuilds/libwebp/slack-required

@@ -1,0 +1,89 @@
+PACKAGE NAME:     libieee1284-0.2.11-i486-3
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_cinnamon/libieee1284-0.2.11-i486-3.txz
+PACKAGE DESCRIPTION:
+libieee1284: libieee1284 (parallel port library)
+libieee1284:
+libieee1284: This library is intended to be used by applications that need to
+libieee1284: communicate with (or at least identify) devices that are attached via
+libieee1284: a parallel port.  For example, SANE uses it to identify scanners.
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+libieee1284:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libieee1284_test
+usr/doc/
+usr/doc/libieee1284-0.2.11/
+usr/doc/libieee1284-0.2.11/AUTHORS
+usr/doc/libieee1284-0.2.11/COPYING
+usr/doc/libieee1284-0.2.11/ChangeLog
+usr/doc/libieee1284-0.2.11/NEWS
+usr/doc/libieee1284-0.2.11/README
+usr/doc/libieee1284-0.2.11/README.FreeBSD
+usr/doc/libieee1284-0.2.11/README.OpenBSD
+usr/doc/libieee1284-0.2.11/README.Solaris
+usr/doc/libieee1284-0.2.11/README.VC6
+usr/doc/libieee1284-0.2.11/README.win95
+usr/doc/libieee1284-0.2.11/README.winNT
+usr/include/
+usr/include/ieee1284.h
+usr/lib/
+usr/lib/libieee1284.a
+usr/lib/libieee1284.la
+usr/lib/libieee1284.so.3.2.2
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/ieee1284module.a
+usr/lib/python2.7/site-packages/ieee1284module.la
+usr/lib/python2.7/site-packages/ieee1284module.so
+usr/man/
+usr/man/man3/
+usr/man/man3/ieee1284_byte_read.3.gz
+usr/man/man3/ieee1284_claim.3.gz
+usr/man/man3/ieee1284_close.3.gz
+usr/man/man3/ieee1284_compat_write.3.gz
+usr/man/man3/ieee1284_data_dir.3.gz
+usr/man/man3/ieee1284_do_nack_handshake.3.gz
+usr/man/man3/ieee1284_ecp_fwd_to_rev.3.gz
+usr/man/man3/ieee1284_ecp_read_addr.3.gz
+usr/man/man3/ieee1284_ecp_read_data.3.gz
+usr/man/man3/ieee1284_ecp_rev_to_fwd.3.gz
+usr/man/man3/ieee1284_ecp_write_addr.3.gz
+usr/man/man3/ieee1284_ecp_write_data.3.gz
+usr/man/man3/ieee1284_epp_read_addr.3.gz
+usr/man/man3/ieee1284_epp_read_data.3.gz
+usr/man/man3/ieee1284_epp_write_addr.3.gz
+usr/man/man3/ieee1284_epp_write_data.3.gz
+usr/man/man3/ieee1284_find_ports.3.gz
+usr/man/man3/ieee1284_free_ports.3.gz
+usr/man/man3/ieee1284_frob_control.3.gz
+usr/man/man3/ieee1284_get_deviceid.3.gz
+usr/man/man3/ieee1284_get_irq_fd.3.gz
+usr/man/man3/ieee1284_negotiate.3.gz
+usr/man/man3/ieee1284_nibble_read.3.gz
+usr/man/man3/ieee1284_open.3.gz
+usr/man/man3/ieee1284_read_control.3.gz
+usr/man/man3/ieee1284_read_data.3.gz
+usr/man/man3/ieee1284_read_status.3.gz
+usr/man/man3/ieee1284_ref.3.gz
+usr/man/man3/ieee1284_release.3.gz
+usr/man/man3/ieee1284_set_timeout.3.gz
+usr/man/man3/ieee1284_terminate.3.gz
+usr/man/man3/ieee1284_unref.3.gz
+usr/man/man3/ieee1284_wait_data.3.gz
+usr/man/man3/ieee1284_wait_status.3.gz
+usr/man/man3/ieee1284_write_control.3.gz
+usr/man/man3/ieee1284_write_data.3.gz
+usr/man/man3/libieee1284.3.gz
+usr/man/man3/parport.3.gz
+usr/man/man3/parport_list.3.gz

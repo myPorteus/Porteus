@@ -1,0 +1,67 @@
+PACKAGE NAME:     krunner-5.28.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     104K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/krunner-5.28.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+krunner: krunner (KDE plasma launcher)
+krunner:
+krunner: KRunner is the launcher built into the Plasma desktop. While
+krunner: its basic function is to launch programs from a sort of
+krunner: mini-command-line, its functionality can be extended by
+krunner: runners to assist the user to accomplish a lot of tasks.
+krunner:
+krunner:
+krunner:
+krunner:
+krunner: Homepage: http://kde.org/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/krunner-5.28.0/
+usr/doc/krunner-5.28.0/COPYING.LIB
+usr/doc/krunner-5.28.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KRunner/
+usr/include/KF5/KRunner/KRunner/
+usr/include/KF5/KRunner/KRunner/AbstractRunner
+usr/include/KF5/KRunner/KRunner/QueryMatch
+usr/include/KF5/KRunner/KRunner/RunnerContext
+usr/include/KF5/KRunner/KRunner/RunnerManager
+usr/include/KF5/KRunner/KRunner/RunnerSyntax
+usr/include/KF5/KRunner/krunner/
+usr/include/KF5/KRunner/krunner/abstractrunner.h
+usr/include/KF5/KRunner/krunner/krunner_export.h
+usr/include/KF5/KRunner/krunner/querymatch.h
+usr/include/KF5/KRunner/krunner/runnercontext.h
+usr/include/KF5/KRunner/krunner/runnermanager.h
+usr/include/KF5/KRunner/krunner/runnersyntax.h
+usr/include/KF5/krunner_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5Runner/
+usr/lib/cmake/KF5Runner/KF5RunnerConfig.cmake
+usr/lib/cmake/KF5Runner/KF5RunnerConfigVersion.cmake
+usr/lib/cmake/KF5Runner/KF5RunnerTargets-release.cmake
+usr/lib/cmake/KF5Runner/KF5RunnerTargets.cmake
+usr/lib/libKF5Runner.so.5.28.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KRunner.pri
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/runnermodel/
+usr/lib/qt5/qml/org/kde/runnermodel/librunnermodelplugin.so
+usr/lib/qt5/qml/org/kde/runnermodel/qmldir
+usr/share/
+usr/share/kdevappwizard/
+usr/share/kdevappwizard/templates/
+usr/share/kdevappwizard/templates/runner.tar.bz2
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/plasma-runner.desktop

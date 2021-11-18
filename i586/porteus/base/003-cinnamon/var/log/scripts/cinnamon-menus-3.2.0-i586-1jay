@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libcinnamon-menu-3.so )
+( cd usr/lib ; ln -sf libcinnamon-menu-3.so.0.0.1 libcinnamon-menu-3.so )
+( cd usr/lib ; rm -rf libcinnamon-menu-3.so.0 )
+( cd usr/lib ; ln -sf libcinnamon-menu-3.so.0.0.1 libcinnamon-menu-3.so.0 )

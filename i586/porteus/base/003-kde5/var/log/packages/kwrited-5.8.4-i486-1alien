@@ -1,0 +1,33 @@
+PACKAGE NAME:     kwrited-5.8.4-i486-1alien
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kwrited-5.8.4-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kwrited: kwrited (write daemon)
+kwrited:
+kwrited: Watch for messages from local users sent with write(1)
+kwrited: or wall(1).
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited: Homepage: http://kde.org/
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kwrited-5.8.4/
+usr/doc/kwrited-5.8.4/COPYING
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kf5/
+usr/lib/qt5/plugins/kf5/kded/
+usr/lib/qt5/plugins/kf5/kded/kwrited.so
+usr/share/
+usr/share/knotifications5/
+usr/share/knotifications5/kwrited.notifyrc

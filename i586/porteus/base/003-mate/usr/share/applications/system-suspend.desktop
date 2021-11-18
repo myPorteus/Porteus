@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=System suspend
+Comment=Put your system into RAM suspend
+Exec=gksu /usr/sbin/pm-suspend
+Icon=system-suspend
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Application;System;
+OnlyShowIn=MATE;

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/xorg/terminal -e "su -"
-Icon=utilities-terminal
-Name=Konsole
-GenericName=Super User Mode - Konsole
-Type=Application
-Categories=Application;System;

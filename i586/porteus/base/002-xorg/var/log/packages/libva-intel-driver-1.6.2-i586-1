@@ -1,0 +1,31 @@
+PACKAGE NAME:     libva-intel-driver-1.6.2-i586-1
+COMPRESSED PACKAGE SIZE:     268K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libva-intel-driver-1.6.2-i586-1.txz
+PACKAGE DESCRIPTION:
+libva-intel-driver: libva-intel-driver (VA driver for Intel G45 & HD Graphics family)
+libva-intel-driver:
+libva-intel-driver: libva-intel-driver is the VA-API implementation for Intel G45
+libva-intel-driver: chipsets and Intel HD Graphics for Intel Core processor family.
+libva-intel-driver:
+libva-intel-driver: Website: http://www.freedesktop.org/wiki/Software/vaapi
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libva-intel-driver-1.6.2/
+usr/doc/libva-intel-driver-1.6.2/AUTHORS
+usr/doc/libva-intel-driver-1.6.2/COPYING
+usr/doc/libva-intel-driver-1.6.2/NEWS
+usr/doc/libva-intel-driver-1.6.2/README
+usr/lib/
+usr/lib/dri/
+usr/lib/dri/i965_drv_video.la
+usr/lib/dri/i965_drv_video.so

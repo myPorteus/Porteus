@@ -1,8 +1,0 @@
-# DO NOT EDIT! This file will be overwritten
-# Any customization should be done in ~/.gtkrc-2.0.mine instead.
-
-gtk-theme-name="oxygen-gtk"
-gtk-icon-theme-name="oxygen"
-
-include "/usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc"
-#include "~/.gtkrc-2.0.mine"

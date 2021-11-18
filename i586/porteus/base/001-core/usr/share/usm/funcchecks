@@ -1,0 +1,82 @@
+#!/bin/bash
+
+## Will the real root please stand up?
+is_root(){ [ $UID -eq 0 ] ;}
+
+## A check for xsession or text mode
+is_x(){ [ `w|tail -1|awk '{print$3}'|cut -c 1-1` = ":" ] ;}
+
+## Check architecture
+is_64bit(){ [ "$HOSTTYPE" == "x86_64" ] ;}
+
+## Directory is in aufs
+is_aufs(){ [ "`df -T $1|tail -n1|awk '{print$1}'`" == "aufs" ] ;}
+
+## File is a porteus module
+is_module(){ [ `file $1|egrep -o "endian|data"` ] ;}
+
+## URL is up
+is_online(){ ( wget -q --spider --force-html --inet4-only $1 >/dev/null 2>&1 ) ;}; export -f is_online
+
+## Directory is writable
+is_writable(){ [ -w $1 ] ;}
+
+## Check if directory is mounted
+is_mounted(){ mountpoint "$1" >/dev/null ;}
+
+## Is a standard slackware file
+is_slackware_package(){
+[ -e $1 ] || return 1
+
+## Check there is at least 4 fields
+local FLD=`awk -F- '{print NF}' <<<$1`
+[ $FLD -ge 4 ] || return 1
+    
+## Check the extension is ok
+local EXT=${1##*/}
+egrep -o "tgz|tbz|tlz|txz" <<<$EXT >/dev/null || return 1
+
+## Check architecture is ok
+egrep -qo "(x86_64|i?86|arm|fw|noarch)" <<<$1
+
+## Check the mimetype
+xdg-mime query filetype $1|egrep -qo "x-.*compressed-tar|x-xz|x-gzip" \
+>/dev/null || return 1
+
+## Check that there is a usr directory
+tar tvf $1|grep -qo "usr/" || return 1
+}
+
+## Check if package is installed (real slackware package path on disk)
+is_installed(){
+local PKG=${1##*/}
+local PKGN=${PKG%.*}
+local PKGSHORT=${PKG%-*-*-*}
+ls /var/log/packages|grep "$PKGSHORT-[0-9].*" 2>/dev/null
+}
+
+## Check if device is USB
+is_usb(){
+local a=${1//[0-9]/}
+local b=${a##*/}
+readlink /sys/block/$b | grep -q usb
+}
+
+## Check we are on porteus
+is_porteus(){ [ -e /etc/porteus-version ]; }
+
+## Make a posix test
+is_posix(){
+f1=$1/._test1
+f2=$1/._test2
+touch $f1
+ln -s $f1 $f2 2>/dev/null && chmod +x $f1 2>/dev/null && [ -x $f1 ] && \
+chmod -x $f1 2>/dev/null && [ ! -x $f1 ] && rm -f $f1 $f2
+}
+
+## Check if an array contains a value
+array_contains(){
+  local e
+  for e in "${@:2}"; do [[ "$e" == "$1" ]] && return 0; done
+  return 1
+}

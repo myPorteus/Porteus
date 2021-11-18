@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libjson-c.so.2 )
+( cd usr/lib ; ln -sf libjson-c.so.2.0.1 libjson-c.so.2 )
+( cd usr/lib ; rm -rf libjson-c.so )
+( cd usr/lib ; ln -sf libjson-c.so.2.0.1 libjson-c.so )

@@ -1,0 +1,52 @@
+PACKAGE NAME:     libXfont-1.5.1-i586-2
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     380K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/libXfont-1.5.1-i586-2.txz
+PACKAGE DESCRIPTION:
+libXfont: libXfont (library for legacy X11 font system)
+libXfont:
+libXfont: libXfont provides the core of the legacy X11 font system, handling the
+libXfont: index files (fonts.dir, fonts.alias, fonts.scale), the various font
+libXfont: file formats, and rasterizing them.   It is used by the X servers, the
+libXfont: X Font Server (xfs), and some font utilities (bdftopcf for instance),
+libXfont: but should not be used by normal X11 clients.  X11 clients access fonts
+libXfont: via either the new API's in libXft, or the legacy API's in libX11.
+libXfont:
+libXfont:
+libXfont:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXfont-1.5.1/
+usr/doc/libXfont-1.5.1/AUTHORS
+usr/doc/libXfont-1.5.1/COPYING
+usr/doc/libXfont-1.5.1/ChangeLog
+usr/doc/libXfont-1.5.1/INSTALL
+usr/doc/libXfont-1.5.1/README
+usr/include/
+usr/include/X11/
+usr/include/X11/fonts/
+usr/include/X11/fonts/bdfint.h
+usr/include/X11/fonts/bitmap.h
+usr/include/X11/fonts/bufio.h
+usr/include/X11/fonts/fntfil.h
+usr/include/X11/fonts/fntfilio.h
+usr/include/X11/fonts/fntfilst.h
+usr/include/X11/fonts/fontconf.h
+usr/include/X11/fonts/fontencc.h
+usr/include/X11/fonts/fontmisc.h
+usr/include/X11/fonts/fontshow.h
+usr/include/X11/fonts/fontutil.h
+usr/include/X11/fonts/fontxlfd.h
+usr/include/X11/fonts/ft.h
+usr/include/X11/fonts/ftfuncs.h
+usr/include/X11/fonts/pcf.h
+usr/lib/
+usr/lib/libXfont.la
+usr/lib/libXfont.so.1.4.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xfont.pc

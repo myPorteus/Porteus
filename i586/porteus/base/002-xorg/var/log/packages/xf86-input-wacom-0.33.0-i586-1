@@ -1,0 +1,58 @@
+PACKAGE NAME:     xf86-input-wacom-0.33.0-i586-1
+COMPRESSED PACKAGE SIZE:     100K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/xf86-input-wacom-0.33.0-i586-1.txz
+PACKAGE DESCRIPTION:
+xf86-input-wacom: xf86-input-wacom (driver for Wacom tablets)
+xf86-input-wacom:
+xf86-input-wacom: This package provides the X.Org X11 driver for Wacom and Wacom-like
+xf86-input-wacom: tablets.  It obsoletes the linuxwacom driver and supports X server
+xf86-input-wacom: versions 1.7 and higher. Server versions lower than 1.7 may be
+xf86-input-wacom: supported by this driver, but users are encouraged to use the old
+xf86-input-wacom: linuxwacom driver instead.
+xf86-input-wacom:
+xf86-input-wacom:
+xf86-input-wacom:
+xf86-input-wacom:
+FILE LIST:
+./
+install/
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/60-wacom.rules
+usr/
+usr/bin/
+usr/bin/isdv4-serial-debugger
+usr/bin/isdv4-serial-inputattach
+usr/bin/xsetwacom
+usr/doc/
+usr/doc/xf86-input-wacom-0.33.0/
+usr/doc/xf86-input-wacom-0.33.0/AUTHORS
+usr/doc/xf86-input-wacom-0.33.0/ChangeLog
+usr/doc/xf86-input-wacom-0.33.0/INSTALL
+usr/doc/xf86-input-wacom-0.33.0/README
+usr/include/
+usr/include/xorg/
+usr/include/xorg/Xwacom.h
+usr/include/xorg/isdv4.h
+usr/include/xorg/wacom-properties.h
+usr/include/xorg/wacom-util.h
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xorg-wacom.pc
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/wacom_drv.la
+usr/lib/xorg/modules/input/wacom_drv.so
+usr/man/
+usr/man/man1/
+usr/man/man1/xsetwacom.1.gz
+usr/man/man4/
+usr/man/man4/wacom.4.gz
+usr/share/
+usr/share/X11/
+usr/share/X11/xorg.conf.d/
+usr/share/X11/xorg.conf.d/70-wacom.conf

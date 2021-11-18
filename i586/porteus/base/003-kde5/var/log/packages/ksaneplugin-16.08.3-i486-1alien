@@ -1,0 +1,32 @@
+PACKAGE NAME:     ksaneplugin-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/ksaneplugin-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+ksaneplugin: ksaneplugin (scanning plugin using libksane)
+ksaneplugin:
+ksaneplugin: This is a KScan plugin that implements the scanning through libksane.
+ksaneplugin:
+ksaneplugin: For more information, visit:  http://www.kde.org
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+ksaneplugin:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/ksaneplugin-16.08.3/
+usr/doc/ksaneplugin-16.08.3/COPYING
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/ksaneplugin.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/ksane_scan_service.desktop

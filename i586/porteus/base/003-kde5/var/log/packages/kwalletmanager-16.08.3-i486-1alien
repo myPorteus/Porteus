@@ -1,0 +1,100 @@
+PACKAGE NAME:     kwalletmanager-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     544K
+UNCOMPRESSED PACKAGE SIZE:     1010K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kwalletmanager-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kwalletmanager: kwalletmanager (KDE wallet manager)
+kwalletmanager:
+kwalletmanager: KDE Wallet Manager is a tool to manage your passwords under KDE.
+kwalletmanager:
+kwalletmanager: kwalletmanager's home page is:
+kwalletmanager:   https://projects.kde.org/projects/kde/kdeutils
+kwalletmanager:
+kwalletmanager:
+kwalletmanager:
+kwalletmanager:
+kwalletmanager:
+FILE LIST:
+./
+etc/
+etc/dbus-1/
+etc/dbus-1/system.d/
+etc/dbus-1/system.d/org.kde.kcontrol.kcmkwallet5.conf
+etc/kde/
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kwalletmanager5
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/kwallet5/
+usr/doc/HTML/en/kwallet5/application-request-to-open-wallet.png
+usr/doc/HTML/en/kwallet5/error-nokey.png
+usr/doc/HTML/en/kwallet5/first-open-request.png
+usr/doc/HTML/en/kwallet5/index.cache.bz2
+usr/doc/HTML/en/kwallet5/index.docbook
+usr/doc/HTML/en/kwallet5/key-selection.png
+usr/doc/HTML/en/kwallet5/kwallet-applications.png
+usr/doc/HTML/en/kwallet5/kwallet-edit.png
+usr/doc/HTML/en/kwallet5/kwalletmanager.png
+usr/doc/HTML/en/kwallet5/openwallet-request.png
+usr/doc/HTML/en/kwallet5/oxygen48-status-wallet-closed.png
+usr/doc/HTML/en/kwallet5/oxygen48-status-wallet-open.png
+usr/doc/HTML/en/kwallet5/save-login-information.png
+usr/doc/HTML/en/kwallet5/wallet-encryption-selection.png
+usr/doc/kwalletmanager-16.08.3/
+usr/doc/kwalletmanager-16.08.3/COPYING
+usr/doc/kwalletmanager-16.08.3/COPYING.LIB
+usr/doc/kwalletmanager-16.08.3/TODO
+usr/lib/
+usr/lib/kauth/
+usr/lib/kauth/kcm_kwallet_helper5
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kcm_kwallet5.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kwalletmanager5-kwalletd.desktop
+usr/share/applications/org.kde.kwalletmanager5.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/system-services/
+usr/share/dbus-1/system-services/org.kde.kcontrol.kcmkwallet5.service
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/kwalletmanager.png
+usr/share/icons/hicolor/128x128/apps/kwalletmanager2.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kwalletmanager.png
+usr/share/icons/hicolor/16x16/apps/kwalletmanager2.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/actions/
+usr/share/icons/hicolor/22x22/actions/wallet-closed.png
+usr/share/icons/hicolor/22x22/actions/wallet-open.png
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kwalletmanager.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kwalletmanager.png
+usr/share/icons/hicolor/32x32/apps/kwalletmanager2.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kwalletmanager.png
+usr/share/icons/hicolor/48x48/apps/kwalletmanager2.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/kwalletmanager.png
+usr/share/icons/hicolor/64x64/apps/kwalletmanager2.png
+usr/share/kservices5/
+usr/share/kservices5/kwalletconfig5.desktop
+usr/share/kservices5/kwalletmanager5_show.desktop
+usr/share/kxmlgui5/
+usr/share/kxmlgui5/kwalletmanager5/
+usr/share/kxmlgui5/kwalletmanager5/kwalletmanager.rc
+usr/share/polkit-1/
+usr/share/polkit-1/actions/
+usr/share/polkit-1/actions/org.kde.kcontrol.kcmkwallet5.policy

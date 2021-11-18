@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libwnck-1.so )
+( cd usr/lib ; ln -sf libwnck-1.so.22.4.0 libwnck-1.so )
+( cd usr/lib ; rm -rf libwnck-1.so.22 )
+( cd usr/lib ; ln -sf libwnck-1.so.22.4.0 libwnck-1.so.22 )

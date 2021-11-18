@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libunique-1.0.so.0 )
+( cd usr/lib ; ln -sf libunique-1.0.so.0.100.6 libunique-1.0.so.0 )
+( cd usr/lib ; rm -rf libunique-1.0.so )
+( cd usr/lib ; ln -sf libunique-1.0.so.0.100.6 libunique-1.0.so )

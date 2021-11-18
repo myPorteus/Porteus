@@ -1,0 +1,11 @@
+polkit.addAdminRule(function(action, subject) {
+    return ["unix-group:wheel"];
+});
+
+polkit.addRule(function(action, subject) {
+    if (action.id.indexOf("org.freedesktop.udisks") == 0) {
+        if (subject.isInGroup("users")) {
+            return polkit.Result.AUTH_ADMIN;
+        }
+    }
+});

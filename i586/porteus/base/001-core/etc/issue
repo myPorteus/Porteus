@@ -1,0 +1,29 @@
+[1;34m                      _.====.._[0;39m
+[1;34m                     ,:._       ~-_[0;39m
+[1;34m                         '\        ~-_[0;39m
+[1;34m                           \        \\.[0;39m
+[1;34m                         ,/           ~-_[0;39m
+[1;34m                -..__..-''   PORTEUS   ~~--..__[0;39m
+
+[1;32m===============================================================================[0;39m
+[1;32m Welcome to Porteus                                                        v3.2[0;39m
+[1;32m===============================================================================[0;39m
+
+ [1;29mThe system is up and running now.[0;29m
+
+ Login as [1;29mroot[0;29m with password [1;29mtoor[0;29m or [1;29mguest[0;29m with password [1;29mguest[0;29m.
+ If you're new to Porteus, visit http://www.porteus.org/ for more info.
+
+ [1;29mAfter you login, try the following commands:[0;29m
+
+ mc ....... to start Midnight Commander (edit/copy/move/create/delete files)
+ init 4 ... to run Xwindow system
+
+ [1;29mOther commands you may find useful:[0;29m
+
+ activate ..... to insert (install) Porteus module into the system on the fly
+ deactivate ... to remove (uninstall) Porteus module from the root filesystem
+ pns-tool ..... to setup internet connection
+
+[1;32m When finished, use "poweroff" or "reboot" command and wait until it completes [0;39m
+[1;32m===============================================================================[0;39m

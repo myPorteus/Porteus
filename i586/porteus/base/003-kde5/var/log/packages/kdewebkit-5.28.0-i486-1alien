@@ -1,0 +1,53 @@
+PACKAGE NAME:     kdewebkit-5.28.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kdewebkit-5.28.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kdewebkit: kdewebkit (kdewebkit)
+kdewebkit:
+kdewebkit: 
+kdewebkit:
+kdewebkit:
+kdewebkit:
+kdewebkit:
+kdewebkit:
+kdewebkit:
+kdewebkit:
+kdewebkit: Homepage: http://kde.org/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kdewebkit-5.28.0/
+usr/doc/kdewebkit-5.28.0/COPYING.LIB
+usr/doc/kdewebkit-5.28.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KDEWebKit/
+usr/include/KF5/KDEWebKit/KGraphicsWebView
+usr/include/KF5/KDEWebKit/KWebPage
+usr/include/KF5/KDEWebKit/KWebPluginFactory
+usr/include/KF5/KDEWebKit/KWebView
+usr/include/KF5/KDEWebKit/KWebWallet
+usr/include/KF5/KDEWebKit/kdewebkit_export.h
+usr/include/KF5/KDEWebKit/kgraphicswebview.h
+usr/include/KF5/KDEWebKit/kwebpage.h
+usr/include/KF5/KDEWebKit/kwebpluginfactory.h
+usr/include/KF5/KDEWebKit/kwebview.h
+usr/include/KF5/KDEWebKit/kwebwallet.h
+usr/include/KF5/kdewebkit_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5WebKit/
+usr/lib/cmake/KF5WebKit/KF5WebKitConfig.cmake
+usr/lib/cmake/KF5WebKit/KF5WebKitConfigVersion.cmake
+usr/lib/cmake/KF5WebKit/KF5WebKitTargets-release.cmake
+usr/lib/cmake/KF5WebKit/KF5WebKitTargets.cmake
+usr/lib/libKF5WebKit.so.5.28.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KDEWebKit.pri

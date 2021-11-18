@@ -1,0 +1,103 @@
+PACKAGE NAME:     floppy-5.5-i486-1
+COMPRESSED PACKAGE SIZE:     344K
+UNCOMPRESSED PACKAGE SIZE:     810K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/floppy-5.5-i486-1.txz
+PACKAGE DESCRIPTION:
+floppy: floppy (floppy disk utilities)
+floppy:
+floppy: Contains fdutils, tools to test and format floppy disks; and mtools,
+floppy: a collection of utilities to access FAT disks without mounting them.
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+floppy:
+FILE LIST:
+./
+etc/
+etc/mediaprm
+etc/mtools.conf
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/amuFormat.sh
+usr/bin/diskd
+usr/bin/diskseekd
+usr/bin/fdmount
+usr/bin/fdrawcmd
+usr/bin/floppycontrol
+usr/bin/floppyd
+usr/bin/floppyd_installtest
+usr/bin/floppymeter
+usr/bin/getfdprm
+usr/bin/mkmanifest
+usr/bin/mtools
+usr/bin/setfdprm
+usr/bin/superformat
+usr/bin/xdfcopy
+usr/doc/
+usr/doc/fdutils-5.5/
+usr/doc/fdutils-5.5/COPYING
+usr/doc/fdutils-5.5/CREDITS
+usr/doc/fdutils-5.5/Changelog
+usr/doc/fdutils-5.5/FAQ.html
+usr/doc/fdutils-5.5/INSTALL
+usr/doc/fdutils-5.5/README
+usr/doc/mtools-4.0.18/
+usr/doc/mtools-4.0.18/COPYING
+usr/doc/mtools-4.0.18/INSTALL
+usr/doc/mtools-4.0.18/README
+usr/doc/mtools-4.0.18/Release.notes
+usr/info/
+usr/info/fdutils.info.gz
+usr/info/mtools.info.gz
+usr/man/
+usr/man/man1/
+usr/man/man1/diskd.1.gz
+usr/man/man1/diskseekd.1.gz
+usr/man/man1/fdmount.1.gz
+usr/man/man1/fdrawcmd.1.gz
+usr/man/man1/floppycontrol.1.gz
+usr/man/man1/floppyd.1.gz
+usr/man/man1/floppyd_installtest.1.gz
+usr/man/man1/floppymeter.1.gz
+usr/man/man1/getfdprm.1.gz
+usr/man/man1/makefloppies.1.gz
+usr/man/man1/mattrib.1.gz
+usr/man/man1/mbadblocks.1.gz
+usr/man/man1/mcat.1.gz
+usr/man/man1/mcd.1.gz
+usr/man/man1/mclasserase.1.gz
+usr/man/man1/mcopy.1.gz
+usr/man/man1/mdel.1.gz
+usr/man/man1/mdeltree.1.gz
+usr/man/man1/mdir.1.gz
+usr/man/man1/mdu.1.gz
+usr/man/man1/mformat.1.gz
+usr/man/man1/minfo.1.gz
+usr/man/man1/mkmanifest.1.gz
+usr/man/man1/mlabel.1.gz
+usr/man/man1/mmd.1.gz
+usr/man/man1/mmount.1.gz
+usr/man/man1/mmove.1.gz
+usr/man/man1/mpartition.1.gz
+usr/man/man1/mrd.1.gz
+usr/man/man1/mren.1.gz
+usr/man/man1/mshortname.1.gz
+usr/man/man1/mshowfat.1.gz
+usr/man/man1/mtools.1.gz
+usr/man/man1/mtoolstest.1.gz
+usr/man/man1/mtype.1.gz
+usr/man/man1/mzip.1.gz
+usr/man/man1/setfdprm.1.gz
+usr/man/man1/superformat.1.gz
+usr/man/man1/xdfcopy.1.gz
+usr/man/man4/
+usr/man/man4/fd.4.gz
+usr/man/man5/
+usr/man/man5/mtools.5.gz
+usr/man/man8/

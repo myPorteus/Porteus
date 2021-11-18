@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.PowerManager
+Exec=/usr/bin/mate-power-manager

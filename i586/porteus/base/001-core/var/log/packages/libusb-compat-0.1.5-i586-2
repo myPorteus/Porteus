@@ -1,0 +1,40 @@
+PACKAGE NAME:     libusb-compat-0.1.5-i586-2
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/libusb-compat-0.1.5-i586-2.txz
+PACKAGE DESCRIPTION:
+libusb-compat: libusb-compat (Compatibility library for libusb-0.1 apps)
+libusb-compat:
+libusb-compat: A compatibility layer allowing applications written for libusb-0.1 to
+libusb-compat: work with libusb-1.0.  libusb-compat-0.1 attempts to retain as much
+libusb-compat: ABI and API compatibility with libusb-0.1 as possible.
+libusb-compat:
+libusb-compat: Homepage:  http://libusb.info
+libusb-compat:
+libusb-compat:
+libusb-compat:
+libusb-compat:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libusb-config
+usr/doc/
+usr/doc/libusb-compat-0.1.5/
+usr/doc/libusb-compat-0.1.5/AUTHORS
+usr/doc/libusb-compat-0.1.5/COPYING
+usr/doc/libusb-compat-0.1.5/ChangeLog
+usr/doc/libusb-compat-0.1.5/INSTALL
+usr/doc/libusb-compat-0.1.5/LICENSE
+usr/doc/libusb-compat-0.1.5/NEWS
+usr/doc/libusb-compat-0.1.5/README
+usr/include/
+usr/include/usb.h
+usr/lib/
+usr/lib/libusb-0.1.so.4.4.4
+usr/lib/libusb.la
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libusb.pc

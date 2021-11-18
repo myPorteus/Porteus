@@ -1,0 +1,31 @@
+#!/bin/sh
+#BLURB="Add entry of rc.transmission in rc.local."
+
+if ! grep -q "rc.transmission start" etc/rc.d/rc.local; then
+cat >> /etc/rc.d/rc.local << EOF
+
+# Start the transmission torrent server.
+if [ -x /etc/rc.d/rc.transmission ]; then
+  sh /etc/rc.d/rc.transmission start
+fi
+EOF
+
+echo "Adding rc.transmission."
+echo "Entry added in rc.local with success!"
+else
+  echo "transmission is already in /etc/rc.d/rc.local ."
+fi
+
+if ! grep -q "rc.transmission stop" etc/rc.d/rc.local_shutdown; then
+cat >> /etc/rc.d/rc.local_shutdown << EOF
+
+# Stop the transmission torrent server.
+if [ -x /etc/rc.d/rc.transmission ]; then
+  sh /etc/rc.d/rc.transmission stop
+fi
+
+EOF
+echo "Entry added in rc.local_shutdown with success!"
+else
+  echo "transmission is already in /etc/rc.d/rc.local_shutdown ."
+fi

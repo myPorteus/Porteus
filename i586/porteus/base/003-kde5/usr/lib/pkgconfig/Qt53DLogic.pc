@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt5
+
+
+Name: Qt5 3DLogic
+Description: Qt 3DLogic module
+Version: 5.7.0
+Libs: -lQt53DLogic 
+Libs.private:  -lQt53DCore  -lQt5Gui -lQt5Core -latomic -lpthread -lGL  
+Cflags: -I${includedir}/Qt3DLogic -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore
+

@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libsystemsettingsview.so )
+( cd usr/lib ; ln -sf libsystemsettingsview.so.3 libsystemsettingsview.so )

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>SDDM</vendor>
+<vendor_url>https://github.com/sddm/sddm</vendor_url>
+<icon_name>kauth-example</icon_name>
+   <action id="org.kde.kcontrol.kcmsddm.save" >
+      <description xml:lang="ar">احفظ اﻹعدادات</description>
+      <description xml:lang="ast">Guardar axustes</description>
+      <description xml:lang="bs">Sačuvaj postavke</description>
+      <description xml:lang="ca">Desa l'arranjament</description>
+      <description xml:lang="cs">Uložit nastavení</description>
+      <description xml:lang="da">Gem indstillinger</description>
+      <description xml:lang="de">Einstellungen speichern</description>
+      <description xml:lang="el">Αποθήκευση ρυθμίσεων</description>
+      <description>Save Settings</description>
+      <description xml:lang="en_GB">Save Settings</description>
+      <description xml:lang="es">Guardar preferencias</description>
+      <description xml:lang="et">Seadistuste salvestamine</description>
+      <description xml:lang="fi">Tallenna asetukset</description>
+      <description xml:lang="fr">Enregistrer les paramètres</description>
+      <description xml:lang="gl">Gardar a configuración</description>
+      <description xml:lang="he">שמור הגדרות</description>
+      <description xml:lang="hu">Beállítások mentése</description>
+      <description xml:lang="it">Salva impostazioni</description>
+      <description xml:lang="ko">설정 저장</description>
+      <description xml:lang="lt">Išsaugoti nustatymus</description>
+      <description xml:lang="nb">Lagre innstillinger</description>
+      <description xml:lang="nl">Instellingen opslaan</description>
+      <description xml:lang="nn">Lagra innstillingar</description>
+      <description xml:lang="pa">ਸੈਟਿੰਗ ਸੰਭਾਲੋ</description>
+      <description xml:lang="pl">Zapisz ustawienia</description>
+      <description xml:lang="pt">Gravar a Configuração</description>
+      <description xml:lang="pt_BR">Salvar configurações</description>
+      <description xml:lang="ro">Salvează configurările</description>
+      <description xml:lang="ru">Сохранение параметров</description>
+      <description xml:lang="sk">Uložiť nastavenie</description>
+      <description xml:lang="sl">Shrani nastavitve</description>
+      <description xml:lang="sr">Сачувај поставке</description>
+      <description xml:lang="sv">Spara inställningar</description>
+      <description xml:lang="tr">Ayarları Kaydet</description>
+      <description xml:lang="uk">Зберегти параметри</description>
+      <description xml:lang="zh_CN">保存设置</description>
+      <description xml:lang="zh_TW">儲存設定</description>
+      <message xml:lang="ar">احفظ الإعدادات في SDDM</message>
+      <message xml:lang="ast">Guardar axustes en SDDM</message>
+      <message xml:lang="bs">Snimi postavke u SDDM</message>
+      <message xml:lang="ca">Desa l'arranjament a l'SDDM</message>
+      <message xml:lang="cs">Uložit nastavení v SDDM</message>
+      <message xml:lang="da">Gem indstillinger i SDDM</message>
+      <message xml:lang="de">Einstellungen in SDDM speichern</message>
+      <message xml:lang="el">Αποθήκευση ρυθμίσεων στο SDDM</message>
+      <message>Save Settings in SDDM</message>
+      <message xml:lang="en_GB">Save Settings in SDDM</message>
+      <message xml:lang="es">Guardar preferencias en SDDM</message>
+      <message xml:lang="et">Seadistuste salvestamine SDDM-is</message>
+      <message xml:lang="fi">Tallenna SDDM-asetukset</message>
+      <message xml:lang="fr">Enregistrer les paramètres dans SDDM</message>
+      <message xml:lang="gl">Gardar as configuracións en SDDM</message>
+      <message xml:lang="he">שמור הגדרות ב־SDDM</message>
+      <message xml:lang="hu">Az SDDM beállításainak mentése</message>
+      <message xml:lang="it">Salva impostazioni in SDDM</message>
+      <message xml:lang="ko">SDDM에 설정 저장</message>
+      <message xml:lang="lt">Išsaugoti nustatymus į SDDM</message>
+      <message xml:lang="nb">Lagre innstillinger i SDDM</message>
+      <message xml:lang="nl">Instellingen opslaan in SDDM</message>
+      <message xml:lang="nn">Lagra innstillingar i SDDM</message>
+      <message xml:lang="pa">SDDM ਵਿੱਚ ਸੈਟਿੰਗ ਸੰਭਾਲੋ</message>
+      <message xml:lang="pl">Zapisz ustawienia w SDDM</message>
+      <message xml:lang="pt">Gravar a Configuração no SDDM</message>
+      <message xml:lang="pt_BR">Salvar configurações no SDDM</message>
+      <message xml:lang="ro">Salvează configurările în SDDM</message>
+      <message xml:lang="ru">Сохранение параметров диспетчера входа в систему SDDM</message>
+      <message xml:lang="sk">Uložiť nastavenia v SDDM</message>
+      <message xml:lang="sl">Shrani nastavitve v SDDM</message>
+      <message xml:lang="sr">Сачувај поставке у СДДМ‑у</message>
+      <message xml:lang="sv">Spara inställningar i SDDM</message>
+      <message xml:lang="tr">SDDM içerisinde Ayarları Kaydet</message>
+      <message xml:lang="uk">Зберегти параметри у SDDM</message>
+      <message xml:lang="zh_CN">保存 SDDM 设置</message>
+      <message xml:lang="zh_TW">儲存 SDDM 設定</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

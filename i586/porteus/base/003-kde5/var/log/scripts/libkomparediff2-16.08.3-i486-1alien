@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libkomparediff2.so )
+( cd usr/lib ; ln -sf libkomparediff2.so.5 libkomparediff2.so )
+( cd usr/lib ; rm -rf libkomparediff2.so.5 )
+( cd usr/lib ; ln -sf libkomparediff2.so.5.0 libkomparediff2.so.5 )

@@ -1,0 +1,33 @@
+PACKAGE NAME:     libmnl-1.0.3-i486-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/libmnl-1.0.3-i486-1.txz
+PACKAGE DESCRIPTION:
+libmnl: libmnl (user-space library oriented to Netlink developers)
+libmnl:
+libmnl: libmnl is a minimalistic user-space library oriented to Netlink
+libmnl: developers.  There are a lot of common tasks in parsing, validating,
+libmnl: constructing of both the Netlink header and TLVs that are repetitive
+libmnl: and easy to get wrong.  This library aims to provide simple helpers
+libmnl: that allows you to re-use code and to avoid re-inventing the wheel.
+libmnl:
+libmnl: Homepage: http://www.netfilter.org/projects/libmnl/
+libmnl:
+libmnl:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libmnl-1.0.3/
+usr/doc/libmnl-1.0.3/COPYING
+usr/doc/libmnl-1.0.3/README
+usr/include/
+usr/include/libmnl/
+usr/include/libmnl/libmnl.h
+usr/lib/
+usr/lib/libmnl.so.0.1.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libmnl.pc

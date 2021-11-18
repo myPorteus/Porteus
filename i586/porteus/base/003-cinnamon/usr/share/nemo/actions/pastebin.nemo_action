@@ -1,0 +1,15 @@
+[Nemo Action]
+
+Name=Upload to pastebin: %N
+Name[ru]=Загрузить в pastebin: %N
+
+Comment=Upload a file to pastebin
+Comment[ru]=Загрузить содержимое файла в pastebin
+
+Icon-Name=text-x-generic
+
+Exec=/opt/porteus-scripts/context-menu/pastebin "%F"
+
+Selection=s
+
+Mimetypes=text/plain

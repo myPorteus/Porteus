@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=kdesu dolphin
-Icon=system-file-manager
-Name=Dophin file manager
-GenericName=Super User Mode - Dolphin
-Type=Application
-Categories=Application;System;

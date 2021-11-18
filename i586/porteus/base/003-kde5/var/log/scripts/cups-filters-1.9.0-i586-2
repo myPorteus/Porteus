@@ -1,0 +1,44 @@
+config() {
+  NEW="$1"
+  OLD="$(dirname $NEW)/$(basename $NEW .new)"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "$(cat $OLD | md5sum)" = "$(cat $NEW | md5sum)" ]; then
+    # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+
+preserve_perms() {
+  NEW="$1"
+  OLD="$(dirname $NEW)/$(basename $NEW .new)"
+  if [ -e $OLD ]; then
+    cp -a $OLD ${NEW}.incoming
+    cat $NEW > ${NEW}.incoming
+    mv ${NEW}.incoming $NEW
+  fi
+  config $NEW
+}
+
+config etc/cups/cups-browsed.conf.new
+config etc/fonts/conf.d/99pdftoopvp.conf.new
+preserve_perms etc/rc.d/rc.cups-browsed.new
+
+( cd usr/bin ; rm -rf foomatic-rip )
+( cd usr/bin ; ln -sf /usr/lib/cups/filter/foomatic-rip foomatic-rip )
+( cd usr/lib ; rm -rf libfontembed.so )
+( cd usr/lib ; ln -sf libfontembed.so.1.0.0 libfontembed.so )
+( cd usr/lib ; rm -rf libcupsfilters.so )
+( cd usr/lib ; ln -sf libcupsfilters.so.1.0.0 libcupsfilters.so )
+( cd usr/lib ; rm -rf libcupsfilters.so.1 )
+( cd usr/lib ; ln -sf libcupsfilters.so.1.0.0 libcupsfilters.so.1 )
+( cd usr/lib/cups/filter ; rm -rf imagetoubrl )
+( cd usr/lib/cups/filter ; ln -sf imagetobrf imagetoubrl )
+( cd usr/lib/cups/filter ; rm -rf textbrftoindexv4 )
+( cd usr/lib/cups/filter ; ln -sf textbrftoindexv3 textbrftoindexv4 )
+( cd usr/lib ; rm -rf libfontembed.so.1 )
+( cd usr/lib ; ln -sf libfontembed.so.1.0.0 libfontembed.so.1 )
+( cd usr/share/cups/charsets ; rm -rf pdf.utf-8 )
+( cd usr/share/cups/charsets ; ln -sf pdf.utf-8.simple pdf.utf-8 )

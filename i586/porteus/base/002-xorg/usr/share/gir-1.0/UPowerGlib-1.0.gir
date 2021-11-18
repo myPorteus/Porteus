@@ -1,0 +1,2526 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="GObject" version="2.0"/>
+  <include name="Gio" version="2.0"/>
+  <namespace name="UPowerGlib"
+             version="1.0"
+             shared-library="libupower-glib.so.1"
+             c:identifier-prefixes="Up"
+             c:symbol-prefixes="up_">
+    <class name="Client"
+           c:symbol-prefix="client"
+           c:type="UpClient"
+           parent="GObject.Object"
+           glib:type-name="UpClient"
+           glib:get-type="up_client_get_type"
+           glib:type-struct="ClientClass">
+      <constructor name="new" c:identifier="up_client_new" version="0.9.0">
+        <doc xml:space="preserve">Creates a new #UpClient object.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpClient object.</doc>
+          <type name="Client" c:type="UpClient*"/>
+        </return-value>
+      </constructor>
+      <virtual-method name="changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="device_added">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="device" transfer-ownership="none">
+            <type name="Device" c:type="UpDevice*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="device_changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="device" transfer-ownership="none">
+            <type name="Device" c:type="UpDevice*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="device_removed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="device" transfer-ownership="none">
+            <type name="Device" c:type="UpDevice*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="notify_resume">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="sleep_kind" transfer-ownership="none">
+            <type name="SleepKind" c:type="UpSleepKind"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="notify_sleep">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="sleep_kind" transfer-ownership="none">
+            <type name="SleepKind" c:type="UpSleepKind"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <method name="about_to_sleep_sync"
+              c:identifier="up_client_about_to_sleep_sync"
+              version="0.9.11"
+              throws="1">
+        <doc xml:space="preserve">Tells UPower that we are soon to reqest either Suspend() or Hibernate()
+and that session and system components should be notified of this.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if system suspended okay, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="sleep_kind" transfer-ownership="none">
+            <doc xml:space="preserve">a sleep type, e.g. %UP_SLEEP_KIND_SUSPEND</doc>
+            <type name="SleepKind" c:type="UpSleepKind"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="enumerate_devices_sync"
+              c:identifier="up_client_enumerate_devices_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Enumerates all the devices from the daemon.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE for success, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_can_hibernate"
+              c:identifier="up_client_get_can_hibernate"
+              version="0.9.0">
+        <doc xml:space="preserve">Get whether the system is able to hibernate.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if system can hibernate, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_can_suspend"
+              c:identifier="up_client_get_can_suspend"
+              version="0.9.0">
+        <doc xml:space="preserve">Get whether the system is able to suspend.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if system can suspend, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_daemon_version"
+              c:identifier="up_client_get_daemon_version"
+              version="0.9.0">
+        <doc xml:space="preserve">Get UPower daemon version.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">string containing the daemon version, e.g. 008</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_devices"
+              c:identifier="up_client_get_devices"
+              version="0.9.0">
+        <doc xml:space="preserve">Get a copy of the device objects.
+You must have called up_client_enumerate_devices_sync() before calling this
+function.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">an array of #UpDevice objects, free with g_ptr_array_unref()</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="Device"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_is_docked"
+              c:identifier="up_client_get_is_docked"
+              version="0.9.2">
+        <doc xml:space="preserve">Get whether the machine is docked into a docking station.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if the machine is docked</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_lid_force_sleep"
+              c:identifier="up_client_get_lid_force_sleep"
+              version="0.9.9">
+        <doc xml:space="preserve">Get whether the laptop has to sleep when the lid is closed.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if the session has to suspend</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_lid_is_closed"
+              c:identifier="up_client_get_lid_is_closed"
+              version="0.9.0">
+        <doc xml:space="preserve">Get whether the laptop lid is closed.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if lid is closed or %FALSE otherwise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_lid_is_present"
+              c:identifier="up_client_get_lid_is_present"
+              version="0.9.2">
+        <doc xml:space="preserve">Get whether a laptop lid is present on this machine.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if the machine has a laptop lid</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_on_battery"
+              c:identifier="up_client_get_on_battery"
+              version="0.9.0">
+        <doc xml:space="preserve">Get whether the system is running on battery power.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if the system is currently running on battery, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_on_low_battery"
+              c:identifier="up_client_get_on_low_battery"
+              version="0.9.0">
+        <doc xml:space="preserve">Get whether the system is running on low battery power.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if the system is currently on low battery power, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_properties_sync"
+              c:identifier="up_client_get_properties_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Get all the properties from UPower daemon.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE for success, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="hibernate_sync"
+              c:identifier="up_client_hibernate_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Puts the computer into a low power state, where state is preserved if the
+power is lost.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if system suspended okay, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="suspend_sync"
+              c:identifier="up_client_suspend_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Puts the computer into a low power state, but state is not preserved if the
+power is lost.
+
+NOTE: The system is still consuming a small amount of power</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">TRUE if system suspended okay, FALSE other wise.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="client" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpClient instance.</doc>
+            <type name="Client" c:type="UpClient*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="can-hibernate" version="0.9.0" transfer-ownership="none">
+        <doc xml:space="preserve">If the computer can hibernate.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="can-suspend" version="0.9.0" transfer-ownership="none">
+        <doc xml:space="preserve">If the computer can suspend.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="daemon-version"
+                version="0.9.0"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The daemon version.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="is-docked" version="0.9.8" transfer-ownership="none">
+        <doc xml:space="preserve">If the laptop is docked</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="lid-force-sleep"
+                version="0.9.9"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If a laptop has to sleep if the lid is closed.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="lid-is-closed" version="0.9.0" transfer-ownership="none">
+        <doc xml:space="preserve">If the laptop lid is closed.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="lid-is-present"
+                version="0.9.0"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If a laptop lid is present.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="on-battery" version="0.9.0" transfer-ownership="none">
+        <doc xml:space="preserve">If the computer is on battery power.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="on-low-battery"
+                version="0.9.0"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the computer is on low battery power.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="ClientPrivate" c:type="UpClientPrivate*"/>
+      </field>
+      <glib:signal name="changed" when="last" version="0.9.0">
+        <doc xml:space="preserve">The ::changed signal is emitted when properties may have changed.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="device-added" when="last" version="0.9.0">
+        <doc xml:space="preserve">The ::device-added signal is emitted when a power device is added.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">the #UpDevice that was added.</doc>
+            <type name="Device"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="device-changed" when="last" version="0.9.0">
+        <doc xml:space="preserve">The ::device-changed signal is emitted when a power device is changed.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">the #UpDevice that was changed.</doc>
+            <type name="Device"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="device-removed" when="last" version="0.9.0">
+        <doc xml:space="preserve">The ::device-added signal is emitted when a power device is removed.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">the #UpDevice that was removed.</doc>
+            <type name="Device"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="notify-resume" when="last" version="0.9.11">
+        <doc xml:space="preserve">The ::notify-resume signal is emitted when the system has
+resumed.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="sleep_kind" transfer-ownership="none">
+            <doc xml:space="preserve">the #UpSleepKind</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+      <glib:signal name="notify-sleep" when="last" version="0.9.11">
+        <doc xml:space="preserve">The ::notify-sleep signal is emitted when system sleep is
+about to occur. Applications have about 1 second to do
+anything they need to do. There is no way to stop the sleep
+process.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="sleep_kind" transfer-ownership="none">
+            <doc xml:space="preserve">the #UpSleepKind</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="ClientClass"
+            c:type="UpClientClass"
+            glib:is-gtype-struct-for="Client">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+      <field name="device_added">
+        <callback name="device_added">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+            <parameter name="device" transfer-ownership="none">
+              <type name="Device" c:type="UpDevice*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="device_changed">
+        <callback name="device_changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+            <parameter name="device" transfer-ownership="none">
+              <type name="Device" c:type="UpDevice*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="device_removed">
+        <callback name="device_removed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+            <parameter name="device" transfer-ownership="none">
+              <type name="Device" c:type="UpDevice*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="changed">
+        <callback name="changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="notify_sleep">
+        <callback name="notify_sleep">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+            <parameter name="sleep_kind" transfer-ownership="none">
+              <type name="SleepKind" c:type="UpSleepKind"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="notify_resume">
+        <callback name="notify_resume">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="client" transfer-ownership="none">
+              <type name="Client" c:type="UpClient*"/>
+            </parameter>
+            <parameter name="sleep_kind" transfer-ownership="none">
+              <type name="SleepKind" c:type="UpSleepKind"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="_up_client_reserved1" introspectable="0">
+        <callback name="_up_client_reserved1">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved2" introspectable="0">
+        <callback name="_up_client_reserved2">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved3" introspectable="0">
+        <callback name="_up_client_reserved3">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved4" introspectable="0">
+        <callback name="_up_client_reserved4">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved5" introspectable="0">
+        <callback name="_up_client_reserved5">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved6" introspectable="0">
+        <callback name="_up_client_reserved6">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved7" introspectable="0">
+        <callback name="_up_client_reserved7">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_client_reserved8" introspectable="0">
+        <callback name="_up_client_reserved8">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+    </record>
+    <record name="ClientPrivate" c:type="UpClientPrivate" disguised="1">
+      <doc xml:space="preserve">Private #UpClient data</doc>
+    </record>
+    <class name="Device"
+           c:symbol-prefix="device"
+           c:type="UpDevice"
+           parent="GObject.Object"
+           glib:type-name="UpDevice"
+           glib:get-type="up_device_get_type"
+           glib:type-struct="DeviceClass">
+      <constructor name="new" c:identifier="up_device_new" version="0.9.0">
+        <doc xml:space="preserve">Creates a new #UpDevice object.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpDevice object.</doc>
+          <type name="Device" c:type="UpDevice*"/>
+        </return-value>
+      </constructor>
+      <function name="kind_from_string"
+                c:identifier="up_device_kind_from_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a string to a #UpDeviceKind.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">enumerated value</doc>
+          <type name="DeviceKind" c:type="UpDeviceKind"/>
+        </return-value>
+        <parameters>
+          <parameter name="type" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </function>
+      <function name="kind_to_string"
+                c:identifier="up_device_kind_to_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a #UpDeviceKind to a string.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">identifier string</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <parameter name="type_enum" transfer-ownership="none">
+            <type name="DeviceKind" c:type="UpDeviceKind"/>
+          </parameter>
+        </parameters>
+      </function>
+      <function name="state_from_string"
+                c:identifier="up_device_state_from_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a string to a #UpDeviceState.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">enumerated value</doc>
+          <type name="DeviceState" c:type="UpDeviceState"/>
+        </return-value>
+        <parameters>
+          <parameter name="state" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </function>
+      <function name="state_to_string"
+                c:identifier="up_device_state_to_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a #UpDeviceState to a string.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">identifier string</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <parameter name="state_enum" transfer-ownership="none">
+            <type name="DeviceState" c:type="UpDeviceState"/>
+          </parameter>
+        </parameters>
+      </function>
+      <function name="technology_from_string"
+                c:identifier="up_device_technology_from_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a string to a #UpDeviceTechnology.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">enumerated value</doc>
+          <type name="DeviceTechnology" c:type="UpDeviceTechnology"/>
+        </return-value>
+        <parameters>
+          <parameter name="technology" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </function>
+      <function name="technology_to_string"
+                c:identifier="up_device_technology_to_string"
+                version="0.9.0">
+        <doc xml:space="preserve">Converts a #UpDeviceTechnology to a string.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">identifier string</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <parameter name="technology_enum" transfer-ownership="none">
+            <type name="DeviceTechnology" c:type="UpDeviceTechnology"/>
+          </parameter>
+        </parameters>
+      </function>
+      <virtual-method name="changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+          <parameter name="obj" transfer-ownership="none">
+            <type name="gpointer" c:type="gpointer*"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <method name="get_history_sync"
+              c:identifier="up_device_get_history_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Gets the device history.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">an array of #UpHistoryItem's, with the most
+              recent one being first; %NULL if @error is set or @device is
+              invalid</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="HistoryItem"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+          <parameter name="type" transfer-ownership="none">
+            <doc xml:space="preserve">The type of history, known values are "rate" and "charge".</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="timespec" transfer-ownership="none">
+            <doc xml:space="preserve">the amount of time to look back into time.</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+          <parameter name="resolution" transfer-ownership="none">
+            <doc xml:space="preserve">the resolution of data.</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_object_path"
+              c:identifier="up_device_get_object_path"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the object path for the device.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the object path, or %NULL</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_statistics_sync"
+              c:identifier="up_device_get_statistics_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Gets the device current statistics.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">an array of #UpStatsItem's, else #NULL and @error is used</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="StatsItem"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+          <parameter name="type" transfer-ownership="none">
+            <doc xml:space="preserve">the type of statistics.</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="refresh_sync"
+              c:identifier="up_device_refresh_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Refreshes properties on the device.
+This function is normally not required.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">#TRUE for success, else #FALSE and @error is used</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_object_path_sync"
+              c:identifier="up_device_set_object_path_sync"
+              version="0.9.0"
+              throws="1">
+        <doc xml:space="preserve">Sets the object path of the object and fills up initial properties.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">#TRUE for success, else #FALSE and @error is used</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+          <parameter name="object_path" transfer-ownership="none">
+            <doc xml:space="preserve">The UPower object path.</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="to_text" c:identifier="up_device_to_text" version="0.9.0">
+        <doc xml:space="preserve">Converts the device to a string description.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">text representation of #UpDevice</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpDevice instance.</doc>
+            <type name="Device" c:type="UpDevice*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="capacity"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The percentage capacity of the device where 100% means the device has
+the same charge potential as when it was manufactured.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="energy"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The energy left in the device. Measured in mWh.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="energy-empty"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The energy the device will have when it is empty. This is usually zero.
+Measured in mWh.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="energy-full"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The amount of energy when the device is fully charged. Measured in mWh.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="energy-full-design"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The amount of energy when the device was brand new. Measured in mWh.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="energy-rate"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The rate of discharge or charge. Measured in mW.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="has-history"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device has history data that might be useful.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="has-statistics"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device has statistics data that might be useful.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="is-present"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device is present, as some devices like laptop batteries
+can be removed, leaving an empty bay that is still technically a
+device.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="is-rechargeable"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device has a rechargable battery.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="kind"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The device kind, e.g. %UP_DEVICE_KIND_KEYBOARD.</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="luminosity"
+                version="0.9.19"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The current luminosity of the device.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="model"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The model of the device.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="native-path"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The native path of the device, useful for direct device access.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="online"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device is online, i.e. connected.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="percentage"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The percentage charge of the device.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="power-supply"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device is powering the system.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="recall-notice"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">If the device may be recalled due to defect. NOTE: This property does
+not mean the battery is broken, and just that the user should
+_check_ with the vendor.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="recall-url"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The vendors internet link for the recalled device.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="recall-vendor"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The vendor that is recalling the device.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="serial"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The serial number of the device.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="state"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The state the device is in at this time, e.g. %UP_DEVICE_STATE_EMPTY.</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="technology"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The battery technology e.g. %UP_DEVICE_TECHNOLOGY_LITHIUM_ION.</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="temperature"
+                version="0.9.22"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The temperature of the device in degrees Celsius.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="time-to-empty"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The amount of time until the device is empty.</doc>
+        <type name="gint64" c:type="gint64"/>
+      </property>
+      <property name="time-to-full"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The amount of time until the device is fully charged.</doc>
+        <type name="gint64" c:type="gint64"/>
+      </property>
+      <property name="update-time"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The last time the device was updated.</doc>
+        <type name="guint64" c:type="guint64"/>
+      </property>
+      <property name="vendor"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The vendor of the device.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="voltage"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The current voltage of the device.</doc>
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="DevicePrivate" c:type="UpDevicePrivate*"/>
+      </field>
+      <glib:signal name="changed" when="last" version="0.9.0">
+        <doc xml:space="preserve">The ::changed signal is emitted when the device data has changed.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="DeviceClass"
+            c:type="UpDeviceClass"
+            glib:is-gtype-struct-for="Device">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+      <field name="changed">
+        <callback name="changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="device" transfer-ownership="none">
+              <type name="Device" c:type="UpDevice*"/>
+            </parameter>
+            <parameter name="obj" transfer-ownership="none">
+              <type name="gpointer" c:type="gpointer*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="_up_device_reserved1" introspectable="0">
+        <callback name="_up_device_reserved1">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved2" introspectable="0">
+        <callback name="_up_device_reserved2">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved3" introspectable="0">
+        <callback name="_up_device_reserved3">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved4" introspectable="0">
+        <callback name="_up_device_reserved4">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved5" introspectable="0">
+        <callback name="_up_device_reserved5">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved6" introspectable="0">
+        <callback name="_up_device_reserved6">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved7" introspectable="0">
+        <callback name="_up_device_reserved7">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+      <field name="_up_device_reserved8" introspectable="0">
+        <callback name="_up_device_reserved8">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+        </callback>
+      </field>
+    </record>
+    <enumeration name="DeviceKind" c:type="UpDeviceKind">
+      <doc xml:space="preserve">The device type.</doc>
+      <member name="unknown" value="0" c:identifier="UP_DEVICE_KIND_UNKNOWN">
+      </member>
+      <member name="line_power"
+              value="1"
+              c:identifier="UP_DEVICE_KIND_LINE_POWER">
+      </member>
+      <member name="battery" value="2" c:identifier="UP_DEVICE_KIND_BATTERY">
+      </member>
+      <member name="ups" value="3" c:identifier="UP_DEVICE_KIND_UPS">
+      </member>
+      <member name="monitor" value="4" c:identifier="UP_DEVICE_KIND_MONITOR">
+      </member>
+      <member name="mouse" value="5" c:identifier="UP_DEVICE_KIND_MOUSE">
+      </member>
+      <member name="keyboard" value="6" c:identifier="UP_DEVICE_KIND_KEYBOARD">
+      </member>
+      <member name="pda" value="7" c:identifier="UP_DEVICE_KIND_PDA">
+      </member>
+      <member name="phone" value="8" c:identifier="UP_DEVICE_KIND_PHONE">
+      </member>
+      <member name="media_player"
+              value="9"
+              c:identifier="UP_DEVICE_KIND_MEDIA_PLAYER">
+      </member>
+      <member name="tablet" value="10" c:identifier="UP_DEVICE_KIND_TABLET">
+      </member>
+      <member name="computer"
+              value="11"
+              c:identifier="UP_DEVICE_KIND_COMPUTER">
+      </member>
+      <member name="last" value="12" c:identifier="UP_DEVICE_KIND_LAST">
+      </member>
+    </enumeration>
+    <record name="DevicePrivate" c:type="UpDevicePrivate" disguised="1">
+      <doc xml:space="preserve">Private #PkDevice data</doc>
+    </record>
+    <enumeration name="DeviceState" c:type="UpDeviceState">
+      <doc xml:space="preserve">The device state.</doc>
+      <member name="unknown" value="0" c:identifier="UP_DEVICE_STATE_UNKNOWN">
+      </member>
+      <member name="charging"
+              value="1"
+              c:identifier="UP_DEVICE_STATE_CHARGING">
+      </member>
+      <member name="discharging"
+              value="2"
+              c:identifier="UP_DEVICE_STATE_DISCHARGING">
+      </member>
+      <member name="empty" value="3" c:identifier="UP_DEVICE_STATE_EMPTY">
+      </member>
+      <member name="fully_charged"
+              value="4"
+              c:identifier="UP_DEVICE_STATE_FULLY_CHARGED">
+      </member>
+      <member name="pending_charge"
+              value="5"
+              c:identifier="UP_DEVICE_STATE_PENDING_CHARGE">
+      </member>
+      <member name="pending_discharge"
+              value="6"
+              c:identifier="UP_DEVICE_STATE_PENDING_DISCHARGE">
+      </member>
+      <member name="last" value="7" c:identifier="UP_DEVICE_STATE_LAST">
+      </member>
+    </enumeration>
+    <enumeration name="DeviceTechnology" c:type="UpDeviceTechnology">
+      <doc xml:space="preserve">The device technology.</doc>
+      <member name="unknown"
+              value="0"
+              c:identifier="UP_DEVICE_TECHNOLOGY_UNKNOWN">
+      </member>
+      <member name="lithium_ion"
+              value="1"
+              c:identifier="UP_DEVICE_TECHNOLOGY_LITHIUM_ION">
+      </member>
+      <member name="lithium_polymer"
+              value="2"
+              c:identifier="UP_DEVICE_TECHNOLOGY_LITHIUM_POLYMER">
+      </member>
+      <member name="lithium_iron_phosphate"
+              value="3"
+              c:identifier="UP_DEVICE_TECHNOLOGY_LITHIUM_IRON_PHOSPHATE">
+      </member>
+      <member name="lead_acid"
+              value="4"
+              c:identifier="UP_DEVICE_TECHNOLOGY_LEAD_ACID">
+      </member>
+      <member name="nickel_cadmium"
+              value="5"
+              c:identifier="UP_DEVICE_TECHNOLOGY_NICKEL_CADMIUM">
+      </member>
+      <member name="nickel_metal_hydride"
+              value="6"
+              c:identifier="UP_DEVICE_TECHNOLOGY_NICKEL_METAL_HYDRIDE">
+      </member>
+      <member name="last" value="7" c:identifier="UP_DEVICE_TECHNOLOGY_LAST">
+      </member>
+    </enumeration>
+    <class name="HistoryItem"
+           c:symbol-prefix="history_item"
+           c:type="UpHistoryItem"
+           parent="GObject.Object"
+           glib:type-name="UpHistoryItem"
+           glib:get-type="up_history_item_get_type"
+           glib:type-struct="HistoryItemClass">
+      <constructor name="new"
+                   c:identifier="up_history_item_new"
+                   version="0.9.0">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpHistoryItem object.</doc>
+          <type name="HistoryItem" c:type="UpHistoryItem*"/>
+        </return-value>
+      </constructor>
+      <method name="get_state"
+              c:identifier="up_history_item_get_state"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item state.</doc>
+        <return-value transfer-ownership="none">
+          <type name="DeviceState" c:type="UpDeviceState"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_time"
+              c:identifier="up_history_item_get_time"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item time.</doc>
+        <return-value transfer-ownership="none">
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_value"
+              c:identifier="up_history_item_get_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="gdouble" c:type="gdouble"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_from_string"
+              c:identifier="up_history_item_set_from_string"
+              version="0.9.1">
+        <doc xml:space="preserve">Converts the history item to a string representation.</doc>
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+          <parameter name="text" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_state"
+              c:identifier="up_history_item_set_state"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item state.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+          <parameter name="state" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="DeviceState" c:type="UpDeviceState"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_time"
+              c:identifier="up_history_item_set_time"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item time.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+          <parameter name="time" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_time_to_present"
+              c:identifier="up_history_item_set_time_to_present"
+              version="0.9.1">
+        <doc xml:space="preserve">Sets the item time to the present value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_value"
+              c:identifier="up_history_item_set_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="to_string"
+              c:identifier="up_history_item_to_string"
+              version="0.9.1">
+        <doc xml:space="preserve">Converts the history item to a string representation.</doc>
+        <return-value transfer-ownership="full">
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="history_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpHistoryItem</doc>
+            <type name="HistoryItem" c:type="UpHistoryItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="state"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="time"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="value"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="HistoryItemPrivate" c:type="UpHistoryItemPrivate*"/>
+      </field>
+    </class>
+    <record name="HistoryItemClass"
+            c:type="UpHistoryItemClass"
+            glib:is-gtype-struct-for="HistoryItem">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <record name="HistoryItemPrivate"
+            c:type="UpHistoryItemPrivate"
+            disguised="1">
+    </record>
+    <constant name="MAJOR_VERSION" value="0" c:type="UP_MAJOR_VERSION">
+      <type name="gint" c:type="gint"/>
+    </constant>
+    <constant name="MICRO_VERSION" value="23" c:type="UP_MICRO_VERSION">
+      <doc xml:space="preserve">The compile-time micro version</doc>
+      <type name="gint" c:type="gint"/>
+    </constant>
+    <constant name="MINOR_VERSION" value="9" c:type="UP_MINOR_VERSION">
+      <type name="gint" c:type="gint"/>
+    </constant>
+    <class name="QosItem"
+           c:symbol-prefix="qos_item"
+           c:type="UpQosItem"
+           parent="GObject.Object"
+           glib:type-name="UpQosItem"
+           glib:get-type="up_qos_item_get_type"
+           glib:type-struct="QosItemClass">
+      <constructor name="new" c:identifier="up_qos_item_new" version="0.9.0">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpQosItem object.</doc>
+          <type name="QosItem" c:type="UpQosItem*"/>
+        </return-value>
+      </constructor>
+      <method name="get_cmdline"
+              c:identifier="up_qos_item_get_cmdline"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item cmdline.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_cookie"
+              c:identifier="up_qos_item_get_cookie"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item cookie.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_kind"
+              c:identifier="up_qos_item_get_kind"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item type.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="QosKind" c:type="UpQosKind"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_persistent"
+              c:identifier="up_qos_item_get_persistent"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item persistent.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_pid"
+              c:identifier="up_qos_item_get_pid"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item pid.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_sender"
+              c:identifier="up_qos_item_get_sender"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item sender.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_timespec"
+              c:identifier="up_qos_item_get_timespec"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item timespec.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint64" c:type="guint64"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_uid"
+              c:identifier="up_qos_item_get_uid"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item uid.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_value"
+              c:identifier="up_qos_item_get_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="gint" c:type="gint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_cmdline"
+              c:identifier="up_qos_item_set_cmdline"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item cmdline.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="cmdline" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_cookie"
+              c:identifier="up_qos_item_set_cookie"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item cookie.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="cookie" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_kind"
+              c:identifier="up_qos_item_set_kind"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item type.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="type" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="QosKind" c:type="UpQosKind"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_persistent"
+              c:identifier="up_qos_item_set_persistent"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item persistent.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="persistent" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_pid"
+              c:identifier="up_qos_item_set_pid"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item pid.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="pid" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_sender"
+              c:identifier="up_qos_item_set_sender"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item sender.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="sender" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_timespec"
+              c:identifier="up_qos_item_set_timespec"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item timespec.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="timespec" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint64" c:type="guint64"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_uid"
+              c:identifier="up_qos_item_set_uid"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item uid.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="uid" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_value"
+              c:identifier="up_qos_item_set_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="qos_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpQosItem</doc>
+            <type name="QosItem" c:type="UpQosItem*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="gint" c:type="gint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="cmdline"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="cookie"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="persistent"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="pid"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="sender"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="timespec"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint64" c:type="guint64"/>
+      </property>
+      <property name="type"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="uid"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="value"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gint" c:type="gint"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="QosItemPrivate" c:type="UpQosItemPrivate*"/>
+      </field>
+    </class>
+    <record name="QosItemClass"
+            c:type="UpQosItemClass"
+            glib:is-gtype-struct-for="QosItem">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <record name="QosItemPrivate" c:type="UpQosItemPrivate" disguised="1">
+    </record>
+    <enumeration name="QosKind" c:type="UpQosKind">
+      <doc xml:space="preserve">The type of QOS request.</doc>
+      <member name="unknown" value="0" c:identifier="UP_QOS_KIND_UNKNOWN">
+      </member>
+      <member name="network" value="1" c:identifier="UP_QOS_KIND_NETWORK">
+      </member>
+      <member name="cpu_dma" value="2" c:identifier="UP_QOS_KIND_CPU_DMA">
+      </member>
+      <member name="last" value="3" c:identifier="UP_QOS_KIND_LAST">
+      </member>
+    </enumeration>
+    <enumeration name="SleepKind" c:type="UpSleepKind">
+      <doc xml:space="preserve">The type of QOS request.</doc>
+      <member name="unknown" value="0" c:identifier="UP_SLEEP_KIND_UNKNOWN">
+      </member>
+      <member name="suspend" value="1" c:identifier="UP_SLEEP_KIND_SUSPEND">
+      </member>
+      <member name="hibernate"
+              value="2"
+              c:identifier="UP_SLEEP_KIND_HIBERNATE">
+      </member>
+      <member name="hybrid" value="3" c:identifier="UP_SLEEP_KIND_HYBRID">
+      </member>
+      <member name="last" value="4" c:identifier="UP_SLEEP_KIND_LAST">
+      </member>
+    </enumeration>
+    <class name="StatsItem"
+           c:symbol-prefix="stats_item"
+           c:type="UpStatsItem"
+           parent="GObject.Object"
+           glib:type-name="UpStatsItem"
+           glib:get-type="up_stats_item_get_type"
+           glib:type-struct="StatsItemClass">
+      <constructor name="new" c:identifier="up_stats_item_new" version="0.9.0">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpStatsItem object.</doc>
+          <type name="StatsItem" c:type="UpStatsItem*"/>
+        </return-value>
+      </constructor>
+      <method name="get_accuracy"
+              c:identifier="up_stats_item_get_accuracy"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item accuracy.</doc>
+        <return-value transfer-ownership="none">
+          <type name="gdouble" c:type="gdouble"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="stats_item" transfer-ownership="none">
+            <type name="StatsItem" c:type="UpStatsItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_value"
+              c:identifier="up_stats_item_get_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="gdouble" c:type="gdouble"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="stats_item" transfer-ownership="none">
+            <type name="StatsItem" c:type="UpStatsItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_accuracy"
+              c:identifier="up_stats_item_set_accuracy"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item accuracy.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="stats_item" transfer-ownership="none">
+            <type name="StatsItem" c:type="UpStatsItem*"/>
+          </instance-parameter>
+          <parameter name="accuracy" transfer-ownership="none">
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_value"
+              c:identifier="up_stats_item_set_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="stats_item" transfer-ownership="none">
+            <type name="StatsItem" c:type="UpStatsItem*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="accuracy"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <property name="value"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="StatsItemPrivate" c:type="UpStatsItemPrivate*"/>
+      </field>
+    </class>
+    <record name="StatsItemClass"
+            c:type="UpStatsItemClass"
+            glib:is-gtype-struct-for="StatsItem">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <record name="StatsItemPrivate" c:type="UpStatsItemPrivate" disguised="1">
+    </record>
+    <class name="WakeupItem"
+           c:symbol-prefix="wakeup_item"
+           c:type="UpWakeupItem"
+           parent="GObject.Object"
+           glib:type-name="UpWakeupItem"
+           glib:get-type="up_wakeup_item_get_type"
+           glib:type-struct="WakeupItemClass">
+      <constructor name="new"
+                   c:identifier="up_wakeup_item_new"
+                   version="0.9.0">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">a new UpWakeupItem object.</doc>
+          <type name="WakeupItem" c:type="UpWakeupItem*"/>
+        </return-value>
+      </constructor>
+      <method name="get_cmdline"
+              c:identifier="up_wakeup_item_get_cmdline"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item cmdline.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_details"
+              c:identifier="up_wakeup_item_get_details"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item details.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_id"
+              c:identifier="up_wakeup_item_get_id"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item id.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_is_userspace"
+              c:identifier="up_wakeup_item_get_is_userspace"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets if the item is userspace.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_old"
+              c:identifier="up_wakeup_item_get_old"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item old.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_value"
+              c:identifier="up_wakeup_item_get_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Gets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the value</doc>
+          <type name="gdouble" c:type="gdouble"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_cmdline"
+              c:identifier="up_wakeup_item_set_cmdline"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item cmdline.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="cmdline" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_details"
+              c:identifier="up_wakeup_item_set_details"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item details.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="details" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_id"
+              c:identifier="up_wakeup_item_set_id"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item id.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="id" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_is_userspace"
+              c:identifier="up_wakeup_item_set_is_userspace"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets if the item is userspace.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="is_userspace" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_old"
+              c:identifier="up_wakeup_item_set_old"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item old.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="old" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_value"
+              c:identifier="up_wakeup_item_set_value"
+              version="0.9.0">
+        <doc xml:space="preserve">Sets the item value.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeup_item" transfer-ownership="none">
+            <doc xml:space="preserve">#UpWakeupItem</doc>
+            <type name="WakeupItem" c:type="UpWakeupItem*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <doc xml:space="preserve">the new value</doc>
+            <type name="gdouble" c:type="gdouble"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="cmdline"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="details"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="id"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="is-userspace"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="old"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="value"
+                version="0.9.0"
+                writable="1"
+                transfer-ownership="none">
+        <type name="gdouble" c:type="gdouble"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="WakeupItemPrivate" c:type="UpWakeupItemPrivate*"/>
+      </field>
+    </class>
+    <record name="WakeupItemClass"
+            c:type="UpWakeupItemClass"
+            glib:is-gtype-struct-for="WakeupItem">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <record name="WakeupItemPrivate"
+            c:type="UpWakeupItemPrivate"
+            disguised="1">
+    </record>
+    <class name="Wakeups"
+           c:symbol-prefix="wakeups"
+           c:type="UpWakeups"
+           parent="GObject.Object"
+           glib:type-name="UpWakeups"
+           glib:get-type="up_wakeups_get_type"
+           glib:type-struct="WakeupsClass">
+      <constructor name="new" c:identifier="up_wakeups_new" version="0.9.1">
+        <doc xml:space="preserve">Gets a new object to allow querying the wakeups data from the server.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">the a new @UpWakeups object.</doc>
+          <type name="Wakeups" c:type="UpWakeups*"/>
+        </return-value>
+      </constructor>
+      <virtual-method name="data_changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="total_changed">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+          <parameter name="value" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </virtual-method>
+      <method name="get_data_sync"
+              c:identifier="up_wakeups_get_data_sync"
+              version="0.9.1"
+              throws="1">
+        <doc xml:space="preserve">Gets the wakeups data from the daemon.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">an array of %UpWakeupItem's</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="WakeupItem"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpWakeups instance.</doc>
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_has_capability"
+              c:identifier="up_wakeups_get_has_capability"
+              version="0.9.1">
+        <doc xml:space="preserve">Returns if the daemon supports getting the wakeup data.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if supported</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpWakeups instance.</doc>
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_properties_sync"
+              c:identifier="up_wakeups_get_properties_sync"
+              version="0.9.1"
+              throws="1">
+        <doc xml:space="preserve">Gets properties from the daemon about wakeup data.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">%TRUE if supported</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpWakeups instance.</doc>
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="get_total_sync"
+              c:identifier="up_wakeups_get_total_sync"
+              version="0.9.1"
+              throws="1">
+        <doc xml:space="preserve">Gets the the total number of wakeups per second from the daemon.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">number of wakeups per second.</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="wakeups" transfer-ownership="none">
+            <doc xml:space="preserve">a #UpWakeups instance.</doc>
+            <type name="Wakeups" c:type="UpWakeups*"/>
+          </instance-parameter>
+          <parameter name="cancellable"
+                     transfer-ownership="none"
+                     nullable="1"
+                     allow-none="1">
+            <doc xml:space="preserve">a #GCancellable or %NULL</doc>
+            <type name="Gio.Cancellable" c:type="GCancellable*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+      <field name="priv">
+        <type name="WakeupsPrivate" c:type="UpWakeupsPrivate*"/>
+      </field>
+      <glib:signal name="data-changed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="total-changed" when="last">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <parameter name="object" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </glib:signal>
+    </class>
+    <record name="WakeupsClass"
+            c:type="UpWakeupsClass"
+            glib:is-gtype-struct-for="Wakeups">
+      <field name="parent_class">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+      <field name="data_changed">
+        <callback name="data_changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="wakeups" transfer-ownership="none">
+              <type name="Wakeups" c:type="UpWakeups*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="total_changed">
+        <callback name="total_changed">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="wakeups" transfer-ownership="none">
+              <type name="Wakeups" c:type="UpWakeups*"/>
+            </parameter>
+            <parameter name="value" transfer-ownership="none">
+              <type name="guint" c:type="guint"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <record name="WakeupsPrivate" c:type="UpWakeupsPrivate" disguised="1">
+    </record>
+    <function name="qos_kind_from_string"
+              c:identifier="up_qos_kind_from_string"
+              version="0.9.0">
+      <doc xml:space="preserve">Converts a string to a #UpQosKind.</doc>
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve">enumerated value</doc>
+        <type name="QosKind" c:type="UpQosKind"/>
+      </return-value>
+      <parameters>
+        <parameter name="type" transfer-ownership="none">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="qos_kind_to_string"
+              c:identifier="up_qos_kind_to_string"
+              version="0.9.0">
+      <doc xml:space="preserve">Converts a #UpQosKind to a string.</doc>
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve">identifier string</doc>
+        <type name="utf8" c:type="const gchar*"/>
+      </return-value>
+      <parameters>
+        <parameter name="type" transfer-ownership="none">
+          <type name="QosKind" c:type="UpQosKind"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="sleep_kind_from_string"
+              c:identifier="up_sleep_kind_from_string"
+              version="0.9.10">
+      <doc xml:space="preserve">Converts a string to a #UpSleepKind.</doc>
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve">enumerated value</doc>
+        <type name="SleepKind" c:type="UpSleepKind"/>
+      </return-value>
+      <parameters>
+        <parameter name="sleep_kind" transfer-ownership="none">
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="sleep_kind_to_string"
+              c:identifier="up_sleep_kind_to_string"
+              version="0.9.10">
+      <doc xml:space="preserve">Converts a #UpSleepKind to a string.</doc>
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve">identifier string</doc>
+        <type name="utf8" c:type="const gchar*"/>
+      </return-value>
+      <parameters>
+        <parameter name="sleep_kind_enum" transfer-ownership="none">
+          <type name="SleepKind" c:type="UpSleepKind"/>
+        </parameter>
+      </parameters>
+    </function>
+  </namespace>
+</repository>

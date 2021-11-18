@@ -1,3 +1,0 @@
-#!/bin/sh
-
-su -c "echo -e 'pcmanfm-qt /root &\nexit' >> ~/.bashrc; bash; sed -i '/pcmanfm-qt \/root &/d' ~/.bashrc; sed -i '/^exit/d' ~/.bashrc"

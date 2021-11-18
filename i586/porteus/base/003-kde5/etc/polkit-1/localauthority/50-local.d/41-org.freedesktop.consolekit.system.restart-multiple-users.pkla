@@ -1,0 +1,7 @@
+# /etc/polkit-1/localauthority/50-local.d/41-org.freedesktop.consolekit.system.restart-multiple-users.pkla
+[Allow power users to restart]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.restart-multiple-users;org.freedesktop.consolekit.system.restart
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes

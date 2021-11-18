@@ -1,0 +1,40 @@
+#!/bin/bash
+# Save all changes made to the system in definied time period.
+
+# Switch to root
+if [ `whoami` != "root" ]; then
+    echo "Please enter your root password below"
+    su - -c "/opt/porteus-scripts/changes-time"
+    exit
+fi
+
+# Variables
+c='\e[36m'
+r='\e[31m'
+e=`tput sgr0`
+changes=/mnt/live/memory/changes
+tmp=/tmp/work$$
+path=/root/changes$$
+
+clear
+echo -e ${c}"Use this script save Porteus changes made in definied time period.
+Enter time interval or press enter for keeping default value (3 minutes):"$e
+read int
+[ ! $int = "" ] && time=$int || time=3
+
+# Creating tmp dir
+mkdir $tmp
+
+# Locating and copying newly created/modified files except of /dev, /home, /mnt, /root and /tmp
+echo -e ${r}"Following folders will be excluded by default: /dev, /home, /mnt, /root, /tmp"$e
+file=`find $changes -mmin -$time ! -type d | egrep -v "$changes/dev|$changes/mnt|$changes/tmp"`
+for x in $file; do cp -a --parents $x $tmp 2> /dev/null; done
+
+# Removing all files which are recreated by Porteus during boot anyway and may cause troubles during activation "on the fly"
+rm $tmp/$changes/etc/ld.so.cache $tmp/$changes/lib/modules/3.*/* $tmp/$changes/usr/share/applications/mimeinfo.cache 2>/dev/null
+rm -r $tmp/$changes/usr/share/mime 2>/dev/null
+
+# Moving all stuff to the final destination
+mv $tmp/$changes $path
+
+echo -e ${c}"all files created/modified in last $time minutes were copied to $path folder"$e

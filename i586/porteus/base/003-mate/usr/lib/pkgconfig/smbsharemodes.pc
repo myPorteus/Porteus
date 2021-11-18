@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/samba-4.0
+
+Name: Samba libsmbsharemodes
+Description: A library
+Version: 0
+Libs: -Wl,-rpath,/usr/lib -L${libdir} -lsmbsharemodes
+Cflags: -I${includedir}
+URL: http://www.samba.org/

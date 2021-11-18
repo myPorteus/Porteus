@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <include>krdccore_export.h</include>
+  <kcfgfile name="krdcrc"/>
+  <group name="General">
+    <entry name="RememberSessions" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="RememberHistory" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="OpenSessions" type="StringList" key="Items">
+      <label>Sessions</label>
+    </entry>
+    <entry name="NormalUrlInputLine" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="ShowPreferencesForNewConnections" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="ResizeOnConnect" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="FullscreenOnConnect" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="BackgroundColor" type="Color">
+      <default>#00417F</default>
+    </entry>
+    <entry name="WalletSupport" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="SystemTrayIcon" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="KeepAspectRatio" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="TabCloseButton" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="TabMiddleClick" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="TabPosition" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="ShowTabBar" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="ShowStatusBar" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="ConnectionListSortColumn" type="Int">
+      <default>2</default>
+    </entry>
+    <entry name="ConnectionListSortOrder" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="DefaultProtocol" type="String">
+      <default>vnc</default>
+    </entry>
+  </group>
+  <group name="VNC">
+    <entry name="Quality" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="Scaling" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="ScalingWidth" type="Int">
+      <default>800</default>
+    </entry>
+    <entry name="ScalingHeight" type="Int">
+      <default>600</default>
+    </entry>
+  </group>
+  <group name="RDP">
+    <entry name="Width" type="Int">
+      <default>800</default>
+    </entry>
+    <entry name="Height" type="Int">
+      <default>600</default>
+    </entry>
+    <entry name="KeyboardLayout" type="Int">
+      <default>7</default>
+    </entry>
+    <entry name="Resolution" type="Int">
+      <default>6</default>
+    </entry>
+    <entry name="ColorDepth" type="Int">
+      <default>2</default>
+    </entry>
+    <entry name="Sound" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="SoundSystem" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="Console" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="ExtraOptions" type="String">
+      <default></default>
+    </entry>
+    <entry name="DefaultRdpUserName" type="String">
+      <default></default>
+    </entry>
+    <entry name="RecognizeLdapLogins" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="RemoteFX" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="Performance" type="Int">
+      <default>2</default>
+    </entry>
+    <entry name="ShareMedia" type="String">
+      <default>/media</default>
+    </entry>
+  </group>
+  <group name="NX">
+    <entry name="NxWidth" type="Int">
+      <default>800</default>
+    </entry>
+    <entry name="NxHeight" type="Int">
+      <default>600</default>
+    </entry>
+    <entry name="NxDesktopType" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="NxKeyboardLayout" type="Int">
+      <default>7</default>
+    </entry>
+    <entry name="NxPrivateKey" type="String">
+      <default>default</default>
+    </entry>
+  </group>
+</kcfg>

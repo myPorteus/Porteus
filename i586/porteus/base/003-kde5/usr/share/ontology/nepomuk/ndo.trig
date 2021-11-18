@@ -1,0 +1,107 @@
+#
+# Copyright (c) 2010 Evgeny Egorochkin <phreedom.stdin@gmail.com>
+# All rights reserved, licensed under either CC-BY or BSD.
+#
+# You are free:
+#  * to Share - to copy, distribute and transmit the work
+#  * to Remix - to adapt the work
+# Under the following conditions:
+#  * Attribution - You must attribute the work in the manner specified by the author
+#    or licensor (but not in any way that suggests that they endorse you or your use 
+#    of the work).
+#
+# Redistribution and use in source and binary forms, with or without modification, 
+# are permitted provided that the following conditions are met:
+#  * Redistributions of source code must retain the above copyright notice, this 
+#    list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice, this 
+#    list of conditions and the following disclaimer in the documentation and/or 
+#    other materials provided with the distribution.
+#  * Neither the names of the authors nor the names of contributors may
+#    be used to endorse or promote products derived from this ontology without 
+#    specific prior written permission.
+#
+# THIS ONTOLOGY IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+# IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+# OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+# NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS ONTOLOGY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ndo:     <http://www.semanticdesktop.org/ontologies/2010/04/30/ndo#> .
+@prefix nrl:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#> .
+@prefix nuao:    <http://www.semanticdesktop.org/ontologies/2010/01/25/nuao#> .
+@prefix nao:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nao#> .
+@prefix nmo:     <http://www.semanticdesktop.org/ontologies/2007/03/22/nmo#> .
+@prefix nco:     <http://www.semanticdesktop.org/ontologies/2007/03/22/nco#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix nie:     <http://www.semanticdesktop.org/ontologies/2007/01/19/nie#> .
+@prefix nfo:     <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+
+ndo: {
+
+    ndo:P2PFile
+        a rdfs:Class ;
+        rdfs:subClassOf nfo:RemoteDataObject;
+        rdfs:label "P2P file" ;
+        rdfs:comment "A file available via a peer-to-peer network" .
+
+    ndo:TorrentedFile
+        a rdfs:Class ;
+        rdfs:subClassOf ndo:P2PFile;
+        rdfs:label "torrented file" ;
+        rdfs:comment "A file available via a BitTorrent peer-to-peer network" .
+
+    ndo:Torrent
+        a rdfs:Class;
+        rdfs:subClassOf nie:InformationElement;
+        rdfs:label "torrent" ;
+        rdfs:comment "A .torrent file which contains references(ndo:TorrentedFile) to files available via BitTorrent. The references are pointed to via nie:hasLogicalPart" .
+
+    ndo:DownloadEvent
+        a rdfs:Class ;
+        rdfs:subClassOf nuao:DesktopEvent ;
+        rdfs:label "download event" ;
+        rdfs:comment "A single event (from the point of view of the user) of downloading of a file or a set of files. Use nuao:involves to indicate the files involved. The event is assigned to downloaded copies of files. Can be assigned to multiple files." .
+
+    ndo:copiedFrom
+        a rdf:Property ;
+        rdfs:label "copied from" ;
+        rdfs:comment "Links a DataObject with its copy. This relation means that originally the Data Objects were copies but might have changed subsequentially." ;
+        rdfs:domain nie:DataObject ;
+        rdfs:range nie:DataObject .
+
+    ndo:referrer
+        a rdf:Property ;
+        rdfs:label "referrer" ;
+        rdfs:comment "Points to the Information Element that contained the link to the download source which was used in the download event." ;
+        rdfs:domain ndo:DownloadEvent ;
+        rdfs:range nie:InformationElement .
+}
+
+<http://www.semanticdesktop.org/ontologies/2010/04/30/ndo/metadata>
+{
+    ndo:
+          a       nrl:DocumentGraph , nrl:KnowledgeBase ;
+          nao:hasDefaultNamespace "http://www.semanticdesktop.org/ontologies/2010/04/30/ndo#" ;
+          nao:hasDefaultNamespaceAbbreviation "ndo" ;
+          nao:lastModified "2010-04-30T09:38:49Z" ;
+          nao:serializationLanguage "TriG" ;
+          nao:status "Testing" ;
+          nrl:updatable "0" ;
+          nao:version "0.11.0" ;
+          nao:prefLabel "Nepomuk Download Ontology ";
+          nao:description "The Nepomuk Download Ontology provides classes and properties to describe file downloads." .
+
+    <http://www.semanticdesktop.org/ontologies/2010/04/30/ndo/metadata>
+          a       nrl:GraphMetadata , nrl:DocumentGraph ;
+          nao:serializationLanguage "TriG" ;
+          nrl:coreGraphMetadataFor ndo: .
+}

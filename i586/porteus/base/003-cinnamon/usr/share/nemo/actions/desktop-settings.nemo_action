@@ -1,0 +1,20 @@
+[Nemo Action]
+
+Name=Desktop Settings
+Name[ru]=Конфигурация рабочего стола
+
+Comment=Change how your desktop works
+Comment[ru]=Настройки рабочего стола
+
+Exec=cinnamon-settings desktop
+
+Selection=None
+
+Icon-Name=cs-desktop
+
+Extensions=any;
+
+Dependencies=cinnamon-settings;
+
+Conditions=desktop;dbus org.Cinnamon;
+

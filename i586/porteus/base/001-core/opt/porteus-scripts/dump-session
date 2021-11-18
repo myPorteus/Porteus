@@ -1,0 +1,53 @@
+#!/bin/bash
+# Save live session and free up the RAM.
+# Script takes action only when 'changes=EXIT' cheatcode is used.
+# Author: fanthom <fanthom@porteus.org>
+
+# Check if 'changes=EXIT' cheatcode is active:
+test -f /mnt/live/tmp/changes-exit || { echo "'changes=EXIT:' cheatcode is not active - exiting..."; exit; }
+
+# Variables:
+DEST=`cat /mnt/live/tmp/changes-exit`
+NAME=`basename $DEST`
+MNAME=/mnt/live/memory/images/changes
+WDIR=$MNAME/changes-exit
+FOLDERS=`grep '^/' /etc/changes-exit.conf | sed s/^.//g`
+
+# Functions:
+finish() {
+# Remount aufs with 'udba=none' flag:
+mount -o remount,udba=none /
+# Cleanup:
+rm -rf $WDIR
+}
+
+## Save session:
+echo "syncing what's left in buffers"
+sync
+
+# Remount aufs with 'udba=notify' flag:
+mount -o remount,udba=notify /
+echo "saving changes to $DEST - this may take a while..."
+
+# Copy changes to a temporary folder first:
+mkdir -p $WDIR; cd /mnt/live/memory/changes
+cp -af $FOLDERS $WDIR 2>/dev/null #|| { echo "ERROR: couldn't save session - not enough space in "$DEST"? Exiting..."; finish; exit; }
+cd $WDIR
+
+# Remove unneded files:
+rm -rf var/lock/subsys/* var/run/laptop-mode-tools/* `grep '^!' /etc/changes-exit.conf | sed s/^..//g | tr "\n" " "`
+
+# Handle whiteouts properly:
+for x in `find $FOLDERS -name ".wh.*" 2>/dev/null | sed s/.wh.//g`; do test -e $MNAME/$x && rm -rf $MNAME/$x; done
+for y in `find $MNAME -name ".wh.*" 2>/dev/null`; do wh=`echo $y | sed -e s^$MNAME^^g -e s/.wh.//g`; test -e $wh && rm $y; done
+
+# Merge changes with 'changes=EXIT' destination:
+cp -af $FOLDERS $MNAME 2>/dev/null
+
+# Clear tmpfs (RAM):
+echo "clearing RAM"
+cd /mnt/live/memory/changes
+find $WDIR -type f | sed s@$WDIR/@@ | xargs rm -f
+
+finish
+echo "session saved"

@@ -1,0 +1,154 @@
+=head2 Sat Apr 30 00:10:48 2016: C<Module> L<DBI|DBI>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.636>
+
+=item *
+
+C<EXE_FILES: dbiproxy dbiprof dbilogstrip>
+
+=back
+
+=head2 Sat Apr 30 00:10:59 2016: C<Module> L<DBD::mysql|DBD::mysql>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 4.033>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 30 00:11:04 2016: C<Module> L<XML::Parser|XML::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.44>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 30 00:11:18 2016: C<Module> L<XML::Simple|XML::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.22>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 30 00:11:22 2016: C<Module> L<URI|URI>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.71>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 30 00:11:25 2016: C<Module> L<Locale::gettext|Locale::gettext>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.07>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sat Apr 30 00:11:27 2016: C<Module> L<Term::ReadKey|Term::ReadKey>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/share/perl5/vendor_perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.33>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

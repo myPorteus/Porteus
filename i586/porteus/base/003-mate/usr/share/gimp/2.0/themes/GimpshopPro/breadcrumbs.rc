@@ -1,0 +1,100 @@
+style "nautilus-breadcrumbs"
+{
+	xthickness = 3
+	ythickness = 0
+	
+	GtkButton::child-displacement-y		= 0
+	GtkButton::child-displacement-x		= 0
+	GtkButton::inner-border			= { 0, 6, 0, 0}
+
+	engine "pixmap"
+	{	
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= PRELIGHT
+			file			= "/breadcrumbs/breadcrumb_prelight.png"
+			border			= { 0, 14, 4, 3 }
+			stretch         	= TRUE
+		}		
+	  
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= NORMAL
+			file			= "/breadcrumbs/breadcrumb_normal.png"
+			border			= { 0, 14, 4, 3 }
+			stretch         	= TRUE
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= ACTIVE
+			file			= "/breadcrumbs/breadcrumb_pressed.png"
+			border			= { 0, 14, 4, 3 }
+			stretch         	= TRUE
+		}
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= INSENSITIVE
+			file			= "/breadcrumbs/breadcrumb_normal.png"
+			border			= { 0, 14, 4, 3 }
+			stretch         	= TRUE
+		} 
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= SELECTED
+			file			= "/breadcrumbs/breadcrumb_pressed.png"
+			border			= { 0, 14, 4, 3 }
+			stretch         	= TRUE
+		}
+	}
+}
+
+style "nautilus-left-slider"
+{
+	xthickness = 0
+	ythickness = 0
+	
+	engine "pixmap"
+	{
+		image
+		{
+			function 		= BOX
+			file			= "/breadcrumbs/left_slider_normal.png"
+			border			= { 4, 0, 4, 3 }
+			stretch			= TRUE
+		}
+	}
+}
+
+style "nautilus-right-slider"
+{	
+	xthickness = 0
+	ythickness = 0
+	
+	engine "pixmap"
+	{
+		image
+		{
+			function 		= BOX
+			file			= "/breadcrumbs/right_slider_normal.png"
+			border			= { 0, 4, 4, 3 }
+			stretch			= TRUE
+		}
+	}
+}
+
+widget_class 	"*NautilusPathBar.*ToggleButton*"	style "nautilus-breadcrumbs"
+widget 		"Nautilus*left_slider*"			style "nautilus-left-slider"
+widget 		"Nautilus*right_slider*"		style "nautilus-right-slider"

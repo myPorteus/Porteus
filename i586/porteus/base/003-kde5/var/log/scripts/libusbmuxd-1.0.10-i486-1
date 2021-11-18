@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libusbmuxd.so )
+( cd usr/lib ; ln -sf libusbmuxd.so.4.0.0 libusbmuxd.so )
+( cd usr/lib ; rm -rf libusbmuxd.so.4 )
+( cd usr/lib ; ln -sf libusbmuxd.so.4.0.0 libusbmuxd.so.4 )

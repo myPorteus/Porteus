@@ -1,0 +1,8 @@
+[Ontology]
+Version=1.0
+Name=TMO
+Comment=The Task Management Ontology
+Namespace=http://www.semanticdesktop.org/ontologies/2008/05/20/tmo#
+Path=/usr/share/ontology/pimo/tmo.trig
+MimeType=application/x-trig
+Type=Data

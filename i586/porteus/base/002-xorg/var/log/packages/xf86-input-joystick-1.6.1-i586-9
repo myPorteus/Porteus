@@ -1,0 +1,41 @@
+PACKAGE NAME:     xf86-input-joystick-1.6.1-i586-9
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/xf86-input-joystick-1.6.1-i586-9.txz
+PACKAGE DESCRIPTION:
+xf86-input-joystick: xf86-input-joystick (Joystick input driver for the Xorg X server)
+xf86-input-joystick:
+xf86-input-joystick: xf86-input-joystick is part of X11.
+xf86-input-joystick:
+xf86-input-joystick: For more information about the X.Org Foundation (the providers of the
+xf86-input-joystick: X.Org implementation of the X Window System), see their website:
+xf86-input-joystick:
+xf86-input-joystick: http://www.x.org
+xf86-input-joystick:
+xf86-input-joystick:
+xf86-input-joystick:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-joystick-1.6.1/
+usr/doc/xf86-input-joystick-1.6.1/COPYING
+usr/doc/xf86-input-joystick-1.6.1/ChangeLog
+usr/doc/xf86-input-joystick-1.6.1/INSTALL
+usr/doc/xf86-input-joystick-1.6.1/README
+usr/include/
+usr/include/xorg/
+usr/include/xorg/joystick-properties.h
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xorg-joystick.pc
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/joystick_drv.la
+usr/lib/xorg/modules/input/joystick_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/joystick.4.gz

@@ -1,0 +1,50 @@
+PACKAGE NAME:     akonadi-notes-16.08.3-i486-1alien
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/akonadi-notes-16.08.3-i486-1alien.txz
+PACKAGE DESCRIPTION:
+akonadi-notes: akonadi-notes (implement management of notes in akonadi)
+akonadi-notes:
+akonadi-notes: akonadi-notes contains libraries and daemons to implement
+akonadi-notes: management of notes in Akonadi.
+akonadi-notes:
+akonadi-notes:
+akonadi-notes:
+akonadi-notes:
+akonadi-notes:
+akonadi-notes: Home page: http://www.kde.org/
+akonadi-notes:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/akonadi-notes-16.08.3/
+usr/doc/akonadi-notes-16.08.3/COPYING
+usr/doc/akonadi-notes-16.08.3/COPYING.BSD
+usr/doc/akonadi-notes-16.08.3/COPYING.LIB
+usr/include/
+usr/include/KF5/
+usr/include/KF5/Akonadi/
+usr/include/KF5/Akonadi/Notes/
+usr/include/KF5/Akonadi/Notes/NoteUtils
+usr/include/KF5/akonadi-notes_version.h
+usr/include/KF5/akonadi/
+usr/include/KF5/akonadi/notes/
+usr/include/KF5/akonadi/notes/NoteUtils
+usr/include/KF5/akonadi/notes/akonadi-notes_export.h
+usr/include/KF5/akonadi/notes/noteutils.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5AkonadiNotes/
+usr/lib/cmake/KF5AkonadiNotes/KF5AkonadiNotesConfig.cmake
+usr/lib/cmake/KF5AkonadiNotes/KF5AkonadiNotesConfigVersion.cmake
+usr/lib/cmake/KF5AkonadiNotes/KF5AkonadiNotesTargets-release.cmake
+usr/lib/cmake/KF5AkonadiNotes/KF5AkonadiNotesTargets.cmake
+usr/lib/libKF5AkonadiNotes.so.5.3.3
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_AkonadiNotes.pri

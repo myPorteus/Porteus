@@ -1,0 +1,78 @@
+PACKAGE NAME:     qca-qt5-2.1.1-i486-5alien
+COMPRESSED PACKAGE SIZE:     684K
+UNCOMPRESSED PACKAGE SIZE:     2.7M
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/qca-qt5-2.1.1-i486-5alien.txz
+PACKAGE DESCRIPTION:
+qca-qt5: qca-qt5 (Qt5 Cryptographic Architecture)
+qca-qt5:
+qca-qt5: QCA aims to provide a straightforward and cross-platform crypto API,
+qca-qt5: using Qt datatypes and conventions.  QCA separates the API from the
+qca-qt5: implementation, using plugins known as Providers.  The advantage of
+qca-qt5: this model is to allow applications to avoid linking to or explicitly
+qca-qt5: depending on any particular cryptographic library.  This allows one
+qca-qt5: to easily change or upgrade crypto implementations without needing
+qca-qt5: to recompile the application.
+qca-qt5:
+qca-qt5: QCA was written by Justin Karneges. This package contains Qt5 bindings.
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qca-qt5-2.1.1/
+usr/doc/qca-qt5-2.1.1/COPYING
+usr/doc/qca-qt5-2.1.1/INSTALL
+usr/doc/qca-qt5-2.1.1/README
+usr/doc/qca-qt5-2.1.1/TODO
+usr/include/
+usr/include/qt5/
+usr/include/qt5/Qca-qt5/
+usr/include/qt5/Qca-qt5/QtCrypto/
+usr/include/qt5/Qca-qt5/QtCrypto/QtCrypto
+usr/include/qt5/Qca-qt5/QtCrypto/qca.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_basic.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_cert.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_core.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_export.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_keystore.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_publickey.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_safetimer.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_securelayer.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_securemessage.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_support.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_textfilter.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_tools.h
+usr/include/qt5/Qca-qt5/QtCrypto/qca_version.h
+usr/include/qt5/Qca-qt5/QtCrypto/qcaprovider.h
+usr/include/qt5/Qca-qt5/QtCrypto/qpipe.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/Qca-qt5/
+usr/lib/cmake/Qca-qt5/Qca-qt5Config.cmake
+usr/lib/cmake/Qca-qt5/Qca-qt5ConfigVersion.cmake
+usr/lib/cmake/Qca-qt5/Qca-qt5Targets-release.cmake
+usr/lib/cmake/Qca-qt5/Qca-qt5Targets.cmake
+usr/lib/libqca-qt5.so.2.1.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/qca2-qt5.pc
+usr/lib/qt5/
+usr/lib/qt5/bin/
+usr/lib/qt5/bin/mozcerts-qt5
+usr/lib/qt5/bin/qcatool-qt5
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/features/
+usr/lib/qt5/mkspecs/features/crypto.prf
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/crypto/
+usr/lib/qt5/plugins/crypto/libqca-cyrus-sasl.so
+usr/lib/qt5/plugins/crypto/libqca-gcrypt.so
+usr/lib/qt5/plugins/crypto/libqca-gnupg.so
+usr/lib/qt5/plugins/crypto/libqca-logger.so
+usr/lib/qt5/plugins/crypto/libqca-nss.so
+usr/lib/qt5/plugins/crypto/libqca-ossl.so
+usr/lib/qt5/plugins/crypto/libqca-softstore.so
+usr/man/
+usr/man/man1/
+usr/man/man1/qcatool-qt5.1.gz

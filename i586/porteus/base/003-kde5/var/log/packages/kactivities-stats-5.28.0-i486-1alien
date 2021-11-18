@@ -1,0 +1,64 @@
+PACKAGE NAME:     kactivities-stats-5.28.0-i486-1alien
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     380K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/kactivities-stats-5.28.0-i486-1alien.txz
+PACKAGE DESCRIPTION:
+kactivities-stats: kactivities-stats (component of KDE activities)
+kactivities-stats:
+kactivities-stats: kactivities-stats is library for accessing the usage dat
+kactivities-stats:a collected by the activities system.
+kactivities-stats:
+kactivities-stats:
+kactivities-stats:
+kactivities-stats:
+kactivities-stats:
+kactivities-stats: For more information, visit:  http://www.kde.org
+kactivities-stats:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kactivities-stats-5.28.0/
+usr/doc/kactivities-stats-5.28.0/COPYING.LGPL-2
+usr/doc/kactivities-stats-5.28.0/COPYING.LGPL-2.1
+usr/doc/kactivities-stats-5.28.0/COPYING.LGPL-3
+usr/doc/kactivities-stats-5.28.0/README.developers
+usr/doc/kactivities-stats-5.28.0/README.md
+usr/doc/kactivities-stats-5.28.0/TODO
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KActivitiesStats/
+usr/include/KF5/KActivitiesStats/KActivities/
+usr/include/KF5/KActivitiesStats/KActivities/Stats/
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Cleaning
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Query
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultModel
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultSet
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultWatcher
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Terms
+usr/include/KF5/KActivitiesStats/kactivitiesstats/
+usr/include/KF5/KActivitiesStats/kactivitiesstats/cleaning.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/kactivitiesstats_export.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/query.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultmodel.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultset.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultwatcher.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/terms.h
+usr/include/KF5/kactivitiesstats_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5ActivitiesStats/
+usr/lib/cmake/KF5ActivitiesStats/KF5ActivitiesStatsConfig.cmake
+usr/lib/cmake/KF5ActivitiesStats/KF5ActivitiesStatsConfigVersion.cmake
+usr/lib/cmake/KF5ActivitiesStats/KF5ActivitiesStatsLibraryTargets-release.cmake
+usr/lib/cmake/KF5ActivitiesStats/KF5ActivitiesStatsLibraryTargets.cmake
+usr/lib/libKF5ActivitiesStats.so.5.28.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libKActivitiesStats.pc
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KActivitiesStats.pri

@@ -1,0 +1,477 @@
+#!/bin/bash
+## Magic folders original script by fanthom
+## Ported to gtk by Brokenman
+
+## A folder is chosen from which all changes are saved
+## to an external location (outside aufs) by use of a
+## bind or mounted save container.
+## Supports encrypted containers.
+
+## Vars
+export SCRIPT="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+[ ! $DISPLAY ] && echo "$SCRIPT requires an xsession" && exit
+export ICONS=/usr/share/pixmaps/porteus
+WRK=/tmp/pmagic
+OPTIONAL=`readlink /mnt/live/porteus/optional`
+PDIR=${OPTIONAL%/*}
+export RCOPY=${PDIR}/rootcopy
+CONFIG=$HOME/.config/gtk-2.0/gtkfilechooser.ini
+DUMP=${WRK}/.dump
+t1="._test1"
+t2="._test2"
+PTEST=/tmp/ptest$$
+mdir=/tmp/magic$$
+
+# Switch to root
+TMP=/tmp/.gtkpns.tmp
+if [ `whoami` != "root" ]; then
+    echo $HOME > $TMP
+    /opt/porteus-scripts/xorg/psu "$SCRIPT" || sleep 1
+    exit
+	else
+    [ ! -f $TMP ] && echo $HOME > $TMP
+fi
+pth=`<$TMP`
+rm $TMP
+
+## No incriminating terminal output
+exec 2>/dev/null
+
+## Setup
+[ -d $WRK ] && rm -rf $WRK
+mkdir $WRK
+
+## Make sure gtkdialog chooser config file exists and shows hidden directories.
+if [ -f $CONFIG ]; then
+	if [ `grep ShowHidden=false $CONFIG` ]; then
+		sed -i 's/ShowHidden=false/ShowHidden=true/g' $CONFIG
+	fi
+		else
+	mkdir -p $HOME/.config/gtk-2.0
+	cat > $CONFIG << EOF
+[Filechooser Settings]
+LocationMode=path-bar
+ShowHidden=true
+ExpandFolders=false
+ShowSizeColumn=true
+GeometryX=0
+GeometryY=0
+GeometryWidth=780
+GeometryHeight=585
+SortColumn=name
+SortOrder=ascending
+EOF
+fi
+
+
+function magic_main(){
+export MAIN_MAGIC='
+<window window_position="1" title="Magic Folders" height-request="450" width-request="550" icon-name="cdr" allow-shrink="false">
+<vbox margin="15">
+	<hbox>
+		<pixmap>
+			<input file>'$ICONS'/magic-folder-128.png</input>
+			<width>100</width>
+		</pixmap>
+		<vbox>
+		<text use-markup="true" xalign="0"><label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Porteus Magic Folders</span>"</label></text>
+<text xalign="0" width-request="390" use-markup="true"><label>"This tool allows you to save changes made to selected folders in the system. It allows you to save your settings for one application (<i>/home/guest/.mozilla</i>), for one user (<i>/home/guest</i>) or any other folder in the system (<i>/var/log for example</i>). These changes will be loaded at every boot."</label></text>
+		</vbox>
+	</hbox>
+<frame>
+<text use-markup="true" xalign="0" width-request="500"><label>"Please select a <b>SOURCE</b> directory in your <b>live filesystem</b> <i>(aufs)</i> from which changes will be stored. Example: <i>/home/guest/.mozilla</i>. Changes to this directory will then be stored on a real filesystem."</label></text>
+<hbox>
+	<text label="Source:  " width-request="80"></text>
+	<entry editable="false" fs-title="Select an existing folder" fs-action="folder" fs-folder="/">
+	<variable>SDIR</variable>
+	</entry>
+	<button>
+		<input file stock="gtk-directory"></input>
+		<action>fileselect:SDIR</action>
+	</button>
+</hbox>
+<text use-markup="true" xalign="0" width-request="500"><label>"Please select a <b>TARGET</b> directory or savefile.dat on a <b>real filesystem</b> where the changes will be stored. Example: /mnt/sda4/myfolder"</label></text>
+<hbox homogeneous="true">
+	<radiobutton active="true" tooltip-text="I want to save my magic folder changes in a real file system">
+		<label>Target is a directory</label>
+		<variable>TRGFOLDER</variable>
+		<action>if true enable:TDIR</action>
+		<action>if true enable:butTDIR</action>
+		<action>if true disable:TDAT</action>
+		<action>if true disable:butTDAT</action>
+		<action>refresh:TDIR</action>
+		<action>refresh:TDAT</action>
+	</radiobutton>
+	<radiobutton active="false" tooltip-text="I want to save my magic folder changes in a savefile">
+		<label>Target is a savefile.dat</label>
+		<variable>TRGFILE</variable>
+		<action>if true enable:TDAT</action>
+		<action>if true enable:butTDAT</action>
+		<action>if true disable:TDIR</action>
+		<action>if true disable:butTDIR</action>
+		<action>refresh:TDIR</action>
+		<action>refresh:TDAT</action>
+		<action>echo TRG2: is $TRG</action>
+	</radiobutton>
+</hbox>
+<hbox>
+	<text label="Target dir:  " width-request="80"></text>
+	<entry editable="false" fs-title="Select an existing folder" fs-action="folder" fs-folder="/mnt" sensitive="true">
+	<variable>TDIR</variable>
+	</entry>
+	<button sensitive="true">
+		<input file stock="gtk-directory"></input>
+		<variable>butTDIR</variable>
+		<action>fileselect:TDIR</action>
+	</button>
+</hbox>
+<hbox>
+	<text label="Target file:  " width-request="80"></text>
+	<entry editable="false" fs-title="Select an existing save file" fs-action="file" fs-folder="/mnt" sensitive="false">
+	<variable>TDAT</variable>
+	</entry>
+	<button sensitive="false">
+		<input file stock="gtk-directory"></input>
+		<variable>butTDAT</variable>
+		<action>fileselect:TDAT</action>
+	</button>
+</hbox>
+</frame>
+	<hbox>
+		<button ok></button>
+		<button cancel></button>
+	</hbox>
+</vbox>
+</window>'
+gtkdialog -p MAIN_MAGIC > $DUMP
+
+## Check for close
+[ `egrep "abort|Cancel|cancel" $DUMP` ] && { cleanup; exit; }
+
+## Cleanup dump file
+sed -i 's@"@@g' $DUMP
+
+## Check for input
+SDIR=`grep "SDIR=" $DUMP|awk -F= '{print$NF}'`
+TDIR=`grep "TDIR=" $DUMP|awk -F= '{print$NF}'`
+TDAT=`grep "TDAT=" $DUMP|awk -F= '{print$NF}'`
+
+if [ -z "$SDIR" ]; then
+	gtk_message "You must choose a source directory. Try again" 400 gtk-dialog-warning
+	unset SDIR TDIR
+	$FUNCNAME
+	return
+fi
+
+if [[ "$TDIR" == "" && "$TDAT" == "" ]]; then
+	gtk_message "You seem to have missed an entry. Try again" 400 gtk-dialog-warning
+	unset SDIR TDIR
+	$FUNCNAME
+	return
+fi
+
+## Check that source is aufs and target is real file system
+if [ `df -T $SDIR|tail -n1|awk '{print$1}'` != "aufs" ]; then
+	gtk_message "You must choose a location in the live file system for the source. For example: /home/guest/.mozilla" 500 gtk-dialog-warning
+	unset SDIR TDIR
+	$FUNCNAME
+	return
+fi
+
+## Check if target is a directory or file
+if [ `grep "TRGFOLDER=true" $DUMP` ]; then
+if [ `df -T $TDIR|tail -n1|awk '{print$1}'` == "aufs" ]; then
+	gtk_message "You must choose a real file system for the target. You can not choose a location in the live filesystem like /home/guest" 500 gtk-dialog-warning
+	unset SDIR TDIR
+	$FUNCNAME
+	return
+fi
+fi
+
+## If target is a file we need to know if it is encrypted
+if [ `grep "TRGFILE=true" $DUMP` ]; then
+	if [[ `file $TDAT|grep -o LUKS` ]]; then
+		ENCRYPTED=1
+			else
+		unset ENCRYPTED
+	fi
+	TDIR=${TDAT}
+fi
+
+BASE=`cut -d/ -f3 <<<$TDIR`
+UUID=`blkid|grep /dev/$BASE|egrep -o " UUID=[^ ]+" |cut -d'"' -f2`
+TUID=`echo $TDIR|sed s/$BASE/$UUID/g`
+}
+
+function posix_test(){
+touch $1
+ln -s $1 $2 && chmod +x $1 && [ -x $1 ] && chmod -x $1 && [ ! -x $1 ] && rm -f $1 $2
+if [ $? -ne 0 ]; then
+	rm $1
+	umount $mdir && rmdir $mdir >/dev/null 2>&1
+	cryptsetup luksClose crypt >/dev/null 2>&1
+	losetup -d $loop 2>/dev/null
+	gtk_message "This is NOT a posix compatible filesystem (probably FAT or NTFS)! Please use a linux filesystem instead." 400 gtk-dialog-warning
+	cleanup && $SCRIPT && exit
+		else
+	echo "Posix compatible"
+fi
+}
+
+#### Functions
+
+function cleanup(){
+[ -d $WRK ] && rm -rf $WRK
+}
+
+function check_close(){
+## See if user canceled
+if [ `egrep "abort|Cancel" $DUMP` ]; then
+	cleanup
+	exit
+fi
+}
+
+function manual_progress(){
+# Open a window for progress
+export MANUAL_PROGRESS='
+<window title="Processing now"	icon-name="cdr">
+<vbox>
+  <frame>
+    <text width-request="310">
+      <label>"'$1'"</label>
+      <variable>PROGRESS_TXT</variable>
+    </text>
+    <progressbar visible="true">
+      <variable>PROGRESS_BAR</variable>
+      <label>...</label>
+      <input>prog_counter</input>
+    </progressbar>
+  </frame>
+</vbox>
+</window>
+'
+gtkdialog -c -p MANUAL_PROGRESS 2>$WRK/.progress_trap &
+}; export -f manual_progress
+
+## This is called by the manual_progress function.
+function prog_counter(){
+case $STATE in
+DOWNLOAD )
+while [ A != B ]; do
+    if [ -f $WRK/.cdload ]; then M=`cat $WRK/.cdload`; echo "$M"; fi
+    sleep 0.3
+    [ `grep "100%" $WRK/in` ] && echo 1
+    i=$(grep -o "[^ ]*%[^ ]*" $WRK/in|sed "s/%//g"|tail -n1)
+    [ "$i" == "100" ] && i=1
+    [ "$i" != "" ] && echo "$i"
+    sleep 0.3
+done
+echo "ALL DONE"
+unset STATE
+;;
+ANUAL )
+while [ A != B ]; do
+    MSG=`cat $WRK/in`
+    echo "$MSG"
+    sleep 0.3
+done
+unset STATE
+[ -f $WRK/.cdload ] && rm $WRK/.cdload 2>&-
+esac
+
+}; export -f prog_counter
+
+function kill_manual_progress() {
+unset DOWNLOAD MANUAL
+myself=`ps ax|grep MANUAL_PROGRESS|awk '{print$1}'|head -n1`
+for children in `ps -o pid --ppid $myself|sed '/PID/d'`; do
+kill $children >/dev/null 2>&-
+done
+kill $myself >/dev/null 2>&-
+}; export -f kill_manual_progress
+
+function gtk_message(){
+export PMESSAGE='
+<window window_position="1" title="Porteus message" icon-name="cdr" allow-shrink="false" width-request="'$2'">
+<vbox>
+ <hbox>
+  <frame>
+  <pixmap icon_size="6">
+   <input file stock="'$3'"></input>
+  </pixmap>
+  </frame>
+  <frame>
+  <text wrap="true"><label>"'$1'"</label></text>
+  </frame>
+ </hbox>
+ <hbox>
+  <button ok></button>
+  <button cancel></button>
+ </hbox>
+</vbox>
+<action signal="hide">exit:abort</action>
+</window>
+'
+gtkdialog -p PMESSAGE > $WRK/junk
+}; export -f gtk_message
+
+## A yes/no dialog that dumps to $WRK/.yesno
+## 1=text 2=width 3=gtk-stock icon
+function gtk_yesno(){
+export YESNO='
+<window window_position="1" title="yes or no" icon-name="cdr" allow-shrink="false" width-request="'$2'">
+<vbox>
+ <hbox>
+  <frame>
+  <pixmap icon_size="6">
+   <input file stock="'$3'"></input>
+  </pixmap>
+  </frame>
+  <frame>
+  <text><label>"'$1'"</label></text>
+  </frame>
+ </hbox>
+ <hbox>
+  <button yes></button>
+  <button no></button>
+ </hbox>
+</vbox>
+</window>
+'
+gtkdialog -c -p YESNO > $WRK/.yesno
+}; export -f gtk_yesno
+
+function bad_passphrase(){
+gtk_message "No key available with this passphrase." 400 gtk-dialog-warning
+create_passphrase
+};export -f bad_passphrase
+
+function create_passphrase(){
+secret=$WRK/.passphrase
+export CREATE_A_PASSPRASE='
+<window window_position="1" title="Passphrase" width-request="400" icon-name="cdr" resizable="false">
+<vbox margin="20">
+	<text use-markup="true">
+		<label>"Please provide a passphrase which will be used to decrypt your savefile container. This passphrase will be required at boot time."</label>
+	</text>
+	<frame>
+		<hbox>
+			<text width-request="90"><label>Passphrase:</label></text>
+			<entry visibility="false" invisible-char="120" tooltip-text="visibility, invisible-char">
+				<default>""</default>
+				<variable>pp</variable>
+				<action signal="changed">enable:pp2</action>
+			</entry>
+		</hbox>
+		<hbox>
+			<text width-request="90"><label>Repeat:</label></text>
+			<entry visibility="false" invisible-char="120" tooltip-text="visibility, invisible-char" sensitive="false">
+				<default>""</default>
+				<variable>pp2</variable>
+			</entry>
+		</hbox>
+	</frame>
+	<hbox>
+		<button cancel></button>
+		<button ok></button>
+	</hbox>
+</vbox>
+<action signal="hide">exit:abort main window by X</action>
+</window>'
+gtkdialog -p CREATE_A_PASSPRASE > $secret
+[ `egrep "Exit|exit|abort|Cancel|cancel" $secret` ] && { rm $secret; exit; }
+
+## Make sure the passwords matched
+sed -i 's@"@@g' $secret
+p1=`grep "pp=" $secret|awk -F= '{print$NF}'`
+p2=`grep "pp2=" $secret|awk -F= '{print$NF}'`
+rm $secret
+
+if [ "$p1" != "$p2" ]; then
+	gtk_message "PASSWORDS DO NOT MATCH!!!" 500 gtk-dialog-warning
+	unset p1 p2
+	$FUNCNAME
+	return
+fi
+
+## Make sure password is not blank
+if [ -z "$p1" -o -z "$p2" ]; then
+	gtk_message "BLANK PASSWORDS NOT ALLOWED!!!" 500 gtk-dialog-warning
+	unset p1 p2
+	$FUNCNAME
+	return
+fi
+export PPHRASE=${p2}
+unset p1 p2
+}; export -f create_passphrase
+
+function make_loop(){
+x=`losetup -a | tail -n1 | cut -d: -f1 | sed s^/dev/loop^^`; let y=x+1
+[ -b /dev/loop$y ] || mknod /dev/loop$y b 7 $y
+export loop=/dev/loop$y
+}
+
+function encrypted_savefile(){
+## Make loop
+make_loop
+
+create_passphrase
+mkdir $mdir
+losetup $loop $TDAT
+cryptsetup luksOpen $loop crypt <<< $PPHRASE || bad_passphrase
+mount /dev/mapper/crypt $mdir
+posix_test $mdir/._test1 $mdir/._test2
+chown $owner:$group $mdir
+cp -af $SDIR/. $mdir 2>/dev/null
+umount $mdir && rmdir $mdir
+cryptsetup luksClose crypt
+losetup -d $loop
+}
+
+magic_main
+
+## At this point we have only written to /tmp/pmagic/.dump
+## Now the real work begins.
+
+if [[ "$TDAT" != "" && "$ENCRYPTED" != "" ]]; then
+	encrypted_savefile
+	elif [ $TDAT ]; then
+		mkdir $mdir
+		mount -o loop $TDAT $mdir
+		posix_test $mdir/._test1 $mdir/._test2
+		chown $owner:$group $mdir
+		cp -af $SDIR/. $mdir 2>/var/log/magicfolders
+		umount -d $mdir && rmdir $mdir
+			else
+	posix_test $TDIR/._test1 $TDIR/._test2
+	chown $owner:$group $TDIR
+	cp -af $SDIR/. $TDIR 2>/dev/null
+fi
+
+[ ! -d $RCOPY/etc/magic_folders ] && mkdir -p $RCOPY/etc/magic_folders
+echo "$TUID $SDIR" >> $RCOPY/etc/magic_folders/folders.cfg
+owner=`stat -c %u $SDIR`
+group=`stat -c %g $SDIR`
+
+gtk_yesno "Do you want to begin recording changes to $SDIR right now?" 450 gtk-dialog-question
+
+if [ `grep Yes $WRK/.yesno` ]; then
+    if [ $TDAT ]; then
+	if [ $ENCRYPTED ]; then
+	    losetup $loop $TDAT
+	    cryptsetup luksOpen $loop crypt <<< $PPHRASE || bad_passphrase
+	    mount /dev/mapper/crypt $SDIR
+	else
+	    mount -o loop $TDAT $SDIR
+	fi
+    else
+	mount -o bind $TDIR $SDIR
+    fi
+else
+    gtk_message "Changes will start being saved when you reboot." 350 gtk-dialog-yes
+fi
+
+gtk_message "Success! Your config file is at: $RCOPY/etc/magic_folders/folders.cfg" 500 gtk-dialog-info
+rm -rf $WRK
+rm -rf /tmp/magic*

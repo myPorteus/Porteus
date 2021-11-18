@@ -1,0 +1,32 @@
+PACKAGE NAME:     xkill-1.0.4-i586-2
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/002/xkill-1.0.4-i586-2.txz
+PACKAGE DESCRIPTION:
+xkill: xkill (X11 utility)
+xkill:
+xkill: xkill is a utility for forcing the X server to close connections to
+xkill: clients.  This program is very dangerous, but is useful for aborting
+xkill: programs that have displayed undesired windows on a user's screen.
+xkill:
+xkill:
+xkill:
+xkill:
+xkill:
+xkill:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xkill
+usr/doc/
+usr/doc/xkill-1.0.4/
+usr/doc/xkill-1.0.4/COPYING
+usr/doc/xkill-1.0.4/ChangeLog
+usr/doc/xkill-1.0.4/INSTALL
+usr/doc/xkill-1.0.4/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xkill.1.gz

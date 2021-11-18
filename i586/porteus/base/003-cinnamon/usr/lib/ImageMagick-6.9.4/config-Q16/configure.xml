@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuremap [
+<!ELEMENT configuremap (configure)+>
+<!ELEMENT configure (#PCDATA)>
+<!ATTLIST configure name CDATA #REQUIRED>
+<!ATTLIST configure value CDATA #REQUIRED>
+]>
+<configuremap>
+  <configure name="CC" value="gcc"/>
+  <configure name="CFLAGS" value="-I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libdrm -I/usr/include/libpng16 -pthread -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/libpng16  -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libdrm -I/usr/include/libpng16 -pthread -I/usr/include/OpenEXR  -I/usr/include/openjpeg-2.1  -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -pthread     -O2 -march=i586 -mtune=i686 -Wall -mtune=i586 -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CODER_PATH" value="/usr/lib/ImageMagick-6.9.4/modules-Q16/coders"/>
+  <configure name="CONFIGURE_PATH" value="/etc/ImageMagick-6/"/>
+  <configure name="CONFIGURE" value="./configure  '--prefix=/usr' '--libdir=/usr/lib' '--mandir=/usr/man' '--sysconfdir=/etc' '--program-prefix=' '--with-x' '--with-frozenpaths=no' '--without-modules' '--disable-openmp' '--enable-static=no' '--enable-shared' '--with-gcc-arch=i586' '--with-perl' '--with-rsvg' '--build=i586-slackware-linux' 'build_alias=i586-slackware-linux' 'CFLAGS=-O2 -march=i586 -mtune=i686' 'CXXFLAGS=-O2 -march=i586 -mtune=i686' 'PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'"/>
+  <configure name="COPYRIGHT" value="Copyright (C) 1999-2016 ImageMagick Studio LLC"/>
+  <configure name="CPPFLAGS" value="-I/usr/include/ImageMagick-6"/>
+  <configure name="CXXFLAGS" value="-O2 -march=i586 -mtune=i686 -pthread"/>
+  <configure name="CXX" value="g++"/>
+  <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
+  <configure name="DELEGATES" value="bzlib djvu mpeg fftw fontconfig freetype jng jpeg lcms lzma openexr openjp2 pango png ps rsvg tiff wmf x xml zlib"/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value="'CFLAGS=-O2 -march=i586 -mtune=i686'  --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-autotrace=no  --with-gslib=no  --with-fontpath= "/>
+  <configure name="DOCUMENTATION_PATH" value="/usr/share/doc/ImageMagick-6"/>
+  <configure name="EXEC-PREFIX" value="/usr"/>
+  <configure name="EXECUTABLE_PATH" value="/usr/bin"/>
+  <configure name="FEATURES" value="DPC Cipher"/>
+  <configure name="FILTER_PATH" value="/usr/lib/ImageMagick-6.9.4/modules-Q16/filters"/>
+  <configure name="GIT_REVISION" value="10877" />
+  <configure name="HOST" value="i586-slackware-linux-gnu"/>
+  <configure name="INCLUDE_PATH" value="/usr/include/ImageMagick-6"/>
+  <configure name="LDFLAGS" value="-L/usr/lib  "/>
+  <configure name="LIBRARY_PATH" value="/usr/lib/ImageMagick-6.9.4"/>
+  <configure name="LIBS" value="  -llcms2 -ltiff -lfreetype  -ljpeg   -lpng16  -ldjvulibre -lfftw3   -lfontconfig -lfreetype  -lwmflite  -lXext -lXt   -lSM -lICE -lX11  -llzma -lbz2 -lIlmImf -lImath -lHalf -lIex -lIexMath -lIlmThread -pthread -lopenjp2 -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lcairo -lrsvg-2 -lm -lgio-2.0 -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -lcairo -lxml2  -lz  -lm     "/>
+  <configure name="LIB_VERSION_NUMBER" value="6,9,4,9"/>
+  <configure name="LIB_VERSION" value="0x694"/>
+  <configure name="NAME" value="ImageMagick"/>
+  <configure name="PCFLAGS" value="-DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="PREFIX" value="/usr"/>
+  <configure name="QuantumDepth" value="16"/>
+  <configure name="RELEASE_DATE" value="2016-06-17"/>
+  <configure name="SHAREARCH_PATH" value="/usr/lib/ImageMagick-6.9.4/config-Q16"/>
+  <configure name="SHARE_PATH" value="/usr/share/ImageMagick-6"/>
+  <configure name="TARGET_CPU" value="i586"/>
+  <configure name="TARGET_OS" value="linux-gnu"/>
+  <configure name="TARGET_VENDOR" value="slackware"/>
+  <configure name="VERSION" value="6.9.4"/>
+  <configure name="WEBSITE" value="http://www.imagemagick.org"/>
+</configuremap>

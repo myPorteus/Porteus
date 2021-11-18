@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/ktsuss dbus-launch --exit-with-session "$@"

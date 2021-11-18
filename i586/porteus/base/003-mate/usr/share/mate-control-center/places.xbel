@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="HOME" added="2007-01-25T23:17:19Z" modified="2007-01-25T23:17:19Z" visited="2007-01-25T23:17:19Z">
+    <title>Home</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>rank-0</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="caja" exec="caja --browser %u" timestamp="1169767039" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="DOCUMENTS" added="2007-01-25T23:17:19Z" modified="2007-01-25T23:17:19Z" visited="2007-01-25T23:17:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>rank-1</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="caja" exec="caja --browser %u" timestamp="1169767039" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="network:" added="2007-01-25T23:17:19Z" modified="2007-01-25T23:17:19Z" visited="2007-01-25T23:17:19Z">
+    <title>Network Servers</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>rank-2</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="caja" exec="caja --browser %u" timestamp="1169767039" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="DESKTOP" added="2007-01-25T23:17:19Z" modified="2007-01-25T23:17:19Z" visited="2007-01-25T23:17:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>rank-3</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="caja" exec="caja --browser %u" timestamp="1169767039" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///" added="2007-01-25T23:17:19Z" modified="2007-01-25T23:17:19Z" visited="2007-01-25T23:17:19Z">
+    <title>File System</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>rank-4</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="caja" exec="caja --browser %u" timestamp="1169767039" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

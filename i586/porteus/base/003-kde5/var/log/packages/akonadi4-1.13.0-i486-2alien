@@ -1,0 +1,82 @@
+PACKAGE NAME:     akonadi4-1.13.0-i486-2alien
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     450K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/003_kde/KTOWN/akonadi4-1.13.0-i486-2alien.txz
+PACKAGE DESCRIPTION:
+akonadi4: akonadi4 (PIM storage service)
+akonadi4:
+akonadi4: akonadi is an extensible cross-desktop storage service for PIM data 
+akonadi4: and meta data providing concurrent read, write, and query access. 
+akonadi4: It will provide a unique desktop wide object identification and 
+akonadi4: retrieval.
+akonadi4: This package contains the 0.x version which is required for the
+akonadi4: older Qt4 based KDE-PIM applications.
+akonadi4:
+akonadi4: Homepage:  http://www.kdepim.org/akonadi/
+akonadi4:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/akonadi4-1.13.0/
+usr/doc/akonadi4-1.13.0/AUTHORS
+usr/doc/akonadi4-1.13.0/INSTALL
+usr/doc/akonadi4-1.13.0/NEWS
+usr/doc/akonadi4-1.13.0/README
+usr/doc/akonadi4-1.13.0/README.sqlite
+usr/include/
+usr/include/akonadi/
+usr/include/akonadi/abstractsearchplugin.h
+usr/include/akonadi/private/
+usr/include/akonadi/private/akonadiprotocolinternals_export.h
+usr/include/akonadi/private/capabilities_p.h
+usr/include/akonadi/private/imapparser_p.h
+usr/include/akonadi/private/imapset_p.h
+usr/include/akonadi/private/notificationmessage_p.h
+usr/include/akonadi/private/notificationmessagev2_p.h
+usr/include/akonadi/private/notificationmessagev3_p.h
+usr/include/akonadi/private/protocol_p.h
+usr/include/akonadi/private/xdgbasedirs_p.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/Akonadi/
+usr/lib/cmake/Akonadi/AkonadiConfig.cmake
+usr/lib/cmake/Akonadi/AkonadiConfigVersion.cmake
+usr/lib/cmake/Akonadi/AkonadiTargetsWithPrefix-release.cmake
+usr/lib/cmake/Akonadi/AkonadiTargetsWithPrefix.cmake
+usr/lib/libakonadiprotocolinternals.so.1.13.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/akonadi.pc
+usr/lib/qt/
+usr/lib/qt/plugins/
+usr/lib/qt/plugins/sqldrivers/
+usr/lib/qt/plugins/sqldrivers/libqsqlite3.so
+usr/share/
+usr/share/config/
+usr/share/config/akonadi/
+usr/share/config/akonadi/mysql-global-mobile.conf
+usr/share/config/akonadi/mysql-global.conf
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Search.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Status.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.ControlManager.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.DebugInterface.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationManager.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationSource.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Preprocessor.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Resource.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Server.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.StorageDebugger.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Tracer.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.TracerNotification.xml
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.freedesktop.Akonadi.Control.service
+usr/share/mime/
+usr/share/mime/packages/
+usr/share/mime/packages/akonadi-mime.xml

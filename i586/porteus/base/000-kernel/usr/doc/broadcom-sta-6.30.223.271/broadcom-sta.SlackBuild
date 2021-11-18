@@ -1,0 +1,113 @@
+#!/bin/sh
+
+# Slackware build script for broadcom-sta
+
+# Copyright 2015 Andreas Voegele <andreas@andreasvoegele.com>
+#
+# Permission to use, copy, modify, and distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+PRGNAM=broadcom-sta
+VERSION=${VERSION:-6.30.223.271}
+BUILD=${BUILD:-1}
+TAG=${TAG:-jay}
+
+KERNEL=${KERNEL:-$( uname -r )}
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i486 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+CWD=$(pwd)
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+case "$ARCH" in
+  i?86)
+    SRCNAM=hybrid-v35-nodebug-pcoem
+    ;;
+  x86_64)
+    SRCNAM=hybrid-v35_64-nodebug-pcoem
+    ;;
+  *)
+    echo "$ARCH is not supported..."
+    exit 1
+    ;;
+esac
+
+set -e
+
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf $PRGNAM-$VERSION
+mkdir $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
+tar xvf $CWD/$SRCNAM-$( echo $VERSION | tr . _ ).tar.gz
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+patch -p1 < $CWD/001-null-pointer-fix.patch
+patch -p1 < $CWD/002-rdtscl.patch
+patch -p1 < $CWD/003-linux47.patch
+echo "########## Applying patch: 004-linux48.patch ..."
+sleep 3
+patch -p1 < $CWD/004-linux48.patch
+
+make -C /lib/modules/$KERNEL/build M=$(pwd) clean
+make -C /lib/modules/$KERNEL/build M=$(pwd)
+
+mkdir -p $PKG/lib/modules/$KERNEL/kernel/extra
+cp wl.ko $PKG/lib/modules/$KERNEL/kernel/extra
+
+mkdir -p $PKG/etc/modprobe.d
+cat $CWD/b43_blacklist.conf.new > $PKG/etc/modprobe.d/b43_blacklist.conf.new
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a lib/LICENSE.txt $CWD/README $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat << EOF > $PKG/install/doinst.sh
+config() {
+  NEW="\$1"
+  OLD="\$(dirname \$NEW)/\$(basename \$NEW .new)"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r \$OLD ]; then
+    mv \$NEW \$OLD
+  elif [ "\$(cat \$OLD | md5sum)" = "\$(cat \$NEW | md5sum)" ]; then
+    # toss the redundant copy
+    rm \$NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+
+config etc/modprobe.d/b43_blacklist.conf.new
+
+# A good idea whenever kernel modules are added or changed:
+if [ -x sbin/depmod ]; then
+  chroot . /sbin/depmod -a $KERNEL 1> /dev/null 2> /dev/null
+fi
+EOF
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-${VERSION}_$( echo $KERNEL | tr - _ )-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

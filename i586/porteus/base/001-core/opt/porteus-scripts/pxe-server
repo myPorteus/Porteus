@@ -1,0 +1,94 @@
+#!/bin/bash
+# Run services necessary for pxe-boot.
+
+# Switch to root:
+if [ `whoami` != "root" ]; then
+    echo "Please enter root's password below"
+    su - -c "/opt/porteus-scripts/pxe-boot"
+    exit
+fi
+
+echo "Preparing PXE environment - wait a while ..."
+
+# Find mount point for porteus data:
+ROOT=`awk 'c-->0;/Porteus data found in/{c=1}' /mnt/live/var/log/livedbg | rev | cut -d/ -f2- | rev`
+pxeboot=/srv/pxe/boot
+pxedata=/srv/pxe/porteus
+pxechn=/srv/pxe/storage
+kver=`uname -r`
+
+storage=`egrep -o " storage=[^ ]+" /proc/cmdline | cut -d= -f2 | sed s@^/dev/@/mnt/@`
+if ! grep -qw "$pxechn" /proc/mounts; then
+    if [ -e "$storage" ]; then
+	echo "Setting up storage for NFS clients"
+	if [ -f $storage ]; then
+	    echo "mount -o loop $storage $pxechn"
+	    if file $storage | grep -qo LUKS; then
+		let y=`losetup -a | tail -n1 | cut -d: -f1 | sed s^/dev/loop^^`+1
+		losetup /dev/loop$y $storage
+		cryptsetup luksOpen /dev/loop$y storage$y
+		mount /dev/mapper/storage$y $pxechn
+	    else
+		mount -o loop $storage $pxechn
+	    fi
+	else
+	    echo "mount -o bind $storage $pxechn"
+	    mount -o bind $storage $pxechn 2>/dev/null
+	fi
+    else
+	echo -e "storage= cheatcode not found or not valid,\nclients wont be able to save the changes over network."
+    fi
+fi
+
+# Prepare files needed for pxe boot:
+cd /mnt/live/opt/000-kernel
+xz -d < $ROOT/boot/syslinux/initrd.xz | cpio -i >/dev/null 2>&1
+for mod in `find /lib/modules/$kver/kernel/drivers/net/ethernet -name "*.ko"` nfsv4.ko nfsv3.ko virtio_net.ko vmxnet3.ko; do
+    grep `basename $mod`: /lib/modules/$kver/modules.dep | sed s/:// | tr " " "\n" >> mod
+done
+sort -u mod > modules
+for x in `cat modules`; do cp -a --parents /lib/modules/$kver/$x .; done
+rm -rf mod modules
+depmod -b . >/dev/null 2>&1
+find | cpio -H newc -o 2>/dev/null | xz --check=crc32 --x86 --lzma2 >$pxeboot/initrd.xz
+rm -r /mnt/live/opt/000-kernel/*
+ln -sf $ROOT/boot/syslinux/vmlinuz $pxeboot/vmlinuz
+ln -sf $ROOT/boot/syslinux/vesamenu.c32 $pxeboot/vesamenu.c32
+
+# Wait till network interface is ready:
+gtw=`route -n | grep -v lo | grep -w UG`; x=10
+while [ -z "$gtw" -a $x -gt 0 ]; do
+    sleep 1
+    let x=x-1; gtw=`route -n | grep -v lo | grep -w UG`
+done
+
+# Find IP address. If more interfaces are available, use the first one:
+IP=`ifconfig | grep broadcast | head -n1 | awk '{print$2}'`
+
+# If no IP is defined set a random one from private pool:
+if [ "$IP" = "" ]; then
+    # NetworkManager and dhcpcd needs to be stopped:
+    sh /etc/rc.d/rc.networkmanager stop 2>/dev/null || killall dhcpcd 2>/dev/null
+    IP="10."$(($RANDOM/130+1))"."$(($RANDOM/130+1))".1"
+    echo "Setting the IP address of iface `ls -1 /sys/class/net | head -n1 | sed 's/@//g'` to $IP"
+    ifconfig `ls -1 /sys/class/net | head -n1 | sed 's/@//g'` $IP netmask 255.0.0.0 up
+fi
+
+# Calculate C class range:
+RANGE=`echo $IP | cut -d"." -f1-3`
+
+# Start the DHCP server and TFTP server:
+killall dnsmasq 2>/dev/null
+dnsmasq --enable-tftp --tftp-root=$pxeboot --dhcp-boot=/pxelinux.0 --dhcp-range=$RANGE.50,$RANGE.250,infinite --log-dhcp
+
+# Enable packet forwarding so pxe clients can connect to internet:
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Start nfs server:
+sh /etc/rc.d/rc.nfsd stop
+grep -qw "$pxedata" /proc/mounts || mount -o bind $ROOT/porteus $pxedata >/dev/null
+grep -qw "$pxedata" /etc/exports || echo "$pxedata $RANGE.1/24(ro,fsid=0,no_subtree_check)" >> /etc/exports
+[ -e "$storage" ] && { grep -qw "$pxechn" /etc/exports || echo "$pxechn $RANGE.1/24(rw,fsid=1,no_root_squash,no_subtree_check)" >> /etc/exports; } || sed -i "\^$pxechn ^d" /etc/exports
+sh /etc/rc.d/rc.nfsd start >/dev/null
+
+echo "PXE services should be started now."

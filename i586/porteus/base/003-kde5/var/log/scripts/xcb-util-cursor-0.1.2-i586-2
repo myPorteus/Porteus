@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libxcb-cursor.so.0 )
+( cd usr/lib ; ln -sf libxcb-cursor.so.0.0.0 libxcb-cursor.so.0 )
+( cd usr/lib ; rm -rf libxcb-cursor.so )
+( cd usr/lib ; ln -sf libxcb-cursor.so.0.0.0 libxcb-cursor.so )

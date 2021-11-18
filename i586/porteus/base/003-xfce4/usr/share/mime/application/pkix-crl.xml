@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pkix-crl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Certificate Revocation List</comment>
+  <acronym>CRL</acronym>
+  <expanded-acronym>Certificate Revocation List</expanded-acronym>
+  <glob weight="75" pattern="*.crl"/>
+</mime-type>

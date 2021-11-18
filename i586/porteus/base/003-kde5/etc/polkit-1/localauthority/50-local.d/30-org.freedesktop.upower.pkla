@@ -1,0 +1,9 @@
+# /etc/polkit-1/localauthority/50-local.d/30-org.freedesktop.upower.pkla
+# Allow all power users to suspend/hibernate the computer:
+[Power Users]
+Identity=unix-group:power
+Action=org.freedesktop.upower.suspend;org.freedesktop.upower.hibernate
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes
+

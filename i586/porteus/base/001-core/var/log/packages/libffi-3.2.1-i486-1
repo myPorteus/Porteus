@@ -1,0 +1,43 @@
+PACKAGE NAME:     libffi-3.2.1-i486-1
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/libffi-3.2.1-i486-1.txz
+PACKAGE DESCRIPTION:
+libffi: libffi (A Portable Foreign Function Interface Library)
+libffi:
+libffi: FFI stands for Foreign Function Interface.  A foreign function 
+libffi: interface is the popular name for the interface that allows code 
+libffi: written in one language to call code written in another language. 
+libffi: The libffi library really only provides the lowest, machine dependent 
+libffi: layer of a fully featured foreign function interface.  
+libffi:
+libffi: Homepage: http://sourceware.org/libffi/
+libffi:
+libffi:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libffi-3.2.1/
+usr/doc/libffi-3.2.1/ChangeLog
+usr/doc/libffi-3.2.1/LICENSE
+usr/doc/libffi-3.2.1/README
+usr/include/
+usr/include/ffi.h
+usr/include/ffitarget.h
+usr/info/
+usr/info/libffi.info.gz
+usr/lib/
+usr/lib/libffi.la
+usr/lib/libffi.so.6.0.4
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libffi.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/ffi.3.gz
+usr/man/man3/ffi_call.3.gz
+usr/man/man3/ffi_prep_cif.3.gz
+usr/man/man3/ffi_prep_cif_var.3.gz

@@ -1,0 +1,36 @@
+<!DOCTYPE kpartgui>
+<kpartgui name="kuser" version="1">
+	<MenuBar>
+    <Menu name="file"><text>&amp;File</text>
+      <Action name="select_conn"/>
+      <Action name="reload"/>
+    </Menu>
+		<Menu name="user"><text>&amp;User</text>
+			<Action name="add_user"/>
+			<Action name="edit_user"/>
+			<Action name="delete_user"/>
+			<Action name="set_password_user"/>
+		</Menu>
+		<Menu name="group"><text>&amp;Group</text>
+			<Action name="add_group"/>
+			<Action name="edit_group"/>
+			<Action name="delete_group"/>
+		</Menu>
+		<Menu name="settings"><text>&amp;Settings</text>
+			<Action name="show_sys" append="show_merge"/>
+		</Menu>
+	</MenuBar>
+	<ToolBar fullWidth="true" name="mainToolBar">
+		<Action name="add_user"/>
+		<Action name="edit_user"/>
+		<Action name="delete_user"/>
+		<Separator/>
+		<Action name="add_group"/>
+		<Action name="edit_group"/>
+		<Action name="delete_group"/>
+		<Separator/>
+    <Action name="reload"/>
+		<Separator/>
+	</ToolBar>
+</kpartgui>
+

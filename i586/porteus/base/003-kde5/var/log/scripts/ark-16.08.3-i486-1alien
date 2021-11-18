@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libkerfuffle.so.16 )
+( cd usr/lib ; ln -sf libkerfuffle.so.16.08.3 libkerfuffle.so.16 )

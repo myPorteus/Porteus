@@ -1,0 +1,77 @@
+PACKAGE NAME:     lm_sensors-3.4.0-i586-1
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     550K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/lm_sensors-3.4.0-i586-1.txz
+PACKAGE DESCRIPTION:
+lm_sensors: lm_sensors (hardware monitoring package)
+lm_sensors:
+lm_sensors: lm_sensors provides tools for monitoring the temperatures, voltages,
+lm_sensors: and fans of Linux systems with hardware monitoring devices.  Included
+lm_sensors: are text-based tools for sensor reporting, and a library for sensors
+lm_sensors: access called libsensors.  It also contains tools for sensor hardware
+lm_sensors: identification and I2C bus probing.
+lm_sensors:
+lm_sensors:
+lm_sensors:
+lm_sensors:
+FILE LIST:
+./
+etc/
+etc/sensors.d/
+etc/sensors3.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sensors
+usr/bin/sensors-conf-convert
+usr/doc/
+usr/doc/lm_sensors-3.4.0/
+usr/doc/lm_sensors-3.4.0/CHANGES
+usr/doc/lm_sensors-3.4.0/CONTRIBUTORS
+usr/doc/lm_sensors-3.4.0/COPYING
+usr/doc/lm_sensors-3.4.0/COPYING.LGPL
+usr/doc/lm_sensors-3.4.0/INSTALL
+usr/doc/lm_sensors-3.4.0/README
+usr/doc/lm_sensors-3.4.0/doc/
+usr/doc/lm_sensors-3.4.0/doc/developers/
+usr/doc/lm_sensors-3.4.0/doc/developers/applications
+usr/doc/lm_sensors-3.4.0/doc/developers/lm_sensors.lsm
+usr/doc/lm_sensors-3.4.0/doc/developers/makefiles
+usr/doc/lm_sensors-3.4.0/doc/developers/release_checklist
+usr/doc/lm_sensors-3.4.0/doc/developers/smbus_company_id
+usr/doc/lm_sensors-3.4.0/doc/donations
+usr/doc/lm_sensors-3.4.0/doc/fan-divisors
+usr/doc/lm_sensors-3.4.0/doc/fancontrol.txt
+usr/doc/lm_sensors-3.4.0/doc/libsensors-API.txt
+usr/doc/lm_sensors-3.4.0/doc/progs
+usr/doc/lm_sensors-3.4.0/doc/svn
+usr/doc/lm_sensors-3.4.0/doc/temperature-sensors
+usr/doc/lm_sensors-3.4.0/doc/vid
+usr/include/
+usr/include/sensors/
+usr/include/sensors/error.h
+usr/include/sensors/sensors.h
+usr/lib/
+usr/lib/libsensors.so.4.4.0
+usr/man/
+usr/man/man1/
+usr/man/man1/sensors.1.gz
+usr/man/man3/
+usr/man/man3/libsensors.3.gz
+usr/man/man5/
+usr/man/man5/sensors.conf.5.gz
+usr/man/man8/
+usr/man/man8/fancontrol.8.gz
+usr/man/man8/isadump.8.gz
+usr/man/man8/isaset.8.gz
+usr/man/man8/pwmconfig.8.gz
+usr/man/man8/sensors-conf-convert.8.gz
+usr/man/man8/sensors-detect.8.gz
+usr/sbin/
+usr/sbin/fancontrol
+usr/sbin/isadump
+usr/sbin/isaset
+usr/sbin/pwmconfig
+usr/sbin/sensors-detect

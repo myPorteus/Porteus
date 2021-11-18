@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libxfce4panel-2.0.so )
+( cd usr/lib ; ln -sf libxfce4panel-2.0.so.4.0.0 libxfce4panel-2.0.so )
+( cd usr/lib ; rm -rf libxfce4panel-1.0.so.4 )
+( cd usr/lib ; ln -sf libxfce4panel-1.0.so.4.0.0 libxfce4panel-1.0.so.4 )
+( cd usr/lib ; rm -rf libxfce4panel-2.0.so.4 )
+( cd usr/lib ; ln -sf libxfce4panel-2.0.so.4.0.0 libxfce4panel-2.0.so.4 )
+( cd usr/lib ; rm -rf libxfce4panel-1.0.so )
+( cd usr/lib ; ln -sf libxfce4panel-1.0.so.4.0.0 libxfce4panel-1.0.so )

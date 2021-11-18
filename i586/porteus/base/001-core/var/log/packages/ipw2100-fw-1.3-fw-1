@@ -1,0 +1,30 @@
+PACKAGE NAME:     ipw2100-fw-1.3-fw-1
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     630K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/ipw2100-fw-1.3-fw-1.txz
+PACKAGE DESCRIPTION:
+ipw2100-fw: ipw2100-fw (Intel ipw2100 wireless firmware)
+ipw2100-fw:
+ipw2100-fw: This firmware is used by the ipw2100 kernel module for the Intel
+ipw2100-fw: PRO/Wireless 2100 Network Connection mini PCI adapter.
+ipw2100-fw: Your use of this firmware is governed by this Intel license:
+ipw2100-fw:   /usr/doc/ipw2100-fw-1.3/LICENSE
+ipw2100-fw:
+ipw2100-fw: Visit Intel's Linux wireless website at this address:
+ipw2100-fw:   http://intellinuxwireless.org/
+ipw2100-fw:
+ipw2100-fw:
+FILE LIST:
+./
+install/
+install/slack-desc
+lib/
+lib/firmware/
+lib/firmware/LICENSE.ipw2100-fw-1.3
+lib/firmware/ipw2100-1.3-i.fw
+lib/firmware/ipw2100-1.3-p.fw
+lib/firmware/ipw2100-1.3.fw
+usr/
+usr/doc/
+usr/doc/ipw2100-fw-1.3/
+usr/doc/ipw2100-fw-1.3/LICENSE

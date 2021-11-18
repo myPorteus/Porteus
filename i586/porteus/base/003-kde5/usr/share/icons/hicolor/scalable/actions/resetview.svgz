@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 43)  -->
+<svg
+   width="320.00000mm"
+   height="320.00000mm"
+   viewBox="0 0 245 244"
+   style="overflow:visible;enable-background:new 0 0 245 244"
+   xml:space="preserve"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.38.1"
+   sodipodi:docname="crsc-action-ksys1.svgz"
+   sodipodi:docbase="/home/pipesmoker/HEAD/kdeedu/kmplot/icons/actions"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"><defs
+   id="defs105">
+    <linearGradient
+   id="XMLID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="120.5005"
+   y1="238.0117"
+   x2="120.5005"
+   y2="3.0131">
+			<stop
+   offset="0"
+   style="stop-color:#616161"
+   id="stop11" />
+
+
+			<stop
+   offset="0.5169"
+   style="stop-color:#828282"
+   id="stop13" />
+
+
+			<stop
+   offset="1"
+   style="stop-color:#616161"
+   id="stop15" />
+
+
+			<a:midPointStop
+   offset="0"
+   style="stop-color:#616161"
+   id="midPointStop17" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#616161"
+   id="midPointStop19" />
+
+
+			<a:midPointStop
+   offset="0.5169"
+   style="stop-color:#828282"
+   id="midPointStop21" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#828282"
+   id="midPointStop23" />
+
+
+			<a:midPointStop
+   offset="1"
+   style="stop-color:#616161"
+   id="midPointStop25" />
+
+
+		</linearGradient>
+
+    <linearGradient
+   id="XMLID_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="2.9946"
+   y1="120.5"
+   x2="237.9839"
+   y2="120.5">
+			<stop
+   offset="0"
+   style="stop-color:#FFFFFF"
+   id="stop34" />
+
+
+			<stop
+   offset="0.5169"
+   style="stop-color:#CECEDB"
+   id="stop36" />
+
+
+			<stop
+   offset="1"
+   style="stop-color:#E9E9EF"
+   id="stop38" />
+
+
+			<a:midPointStop
+   offset="0"
+   style="stop-color:#FFFFFF"
+   id="midPointStop40" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#FFFFFF"
+   id="midPointStop42" />
+
+
+			<a:midPointStop
+   offset="0.5169"
+   style="stop-color:#CECEDB"
+   id="midPointStop44" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#CECEDB"
+   id="midPointStop46" />
+
+
+			<a:midPointStop
+   offset="1"
+   style="stop-color:#E9E9EF"
+   id="midPointStop48" />
+
+
+		</linearGradient>
+
+  </defs>
+<sodipodi:namedview
+   id="base"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageopacity="0.0"
+   inkscape:pageshadow="2"
+   inkscape:zoom="0.88745659"
+   inkscape:cx="453.54331"
+   inkscape:cy="608.66815"
+   inkscape:window-width="1273"
+   inkscape:window-height="944"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   showgrid="true"
+   showguides="true"
+   snaptoguides="true"
+   snaptogrid="true"
+   gridspacingy="10.000000mm"
+   gridspacingx="10.000000mm"
+   horizgrid="true"
+   vertgrid="true" />
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    <g
+   id="g944">
+  <path
+     style="fill:none;stroke:#333333;stroke-width:16.205729;stroke-miterlimit:2.0000000;stroke-dasharray:none;"
+     d="M 122.50000,236.84375 L 122.50000,45.437502"
+     id="path75"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#333333;"
+     d="M 99.531249,45.437502 L 122.50000,7.1562518 L 145.46875,45.437502 L 99.531249,45.437502 z "
+     id="path97"
+     sodipodi:nodetypes="cccc" />
+</g>
+
+    <g
+   id="g947">
+  <path
+     style="fill:none;stroke:#333333;stroke-width:16.205729;stroke-miterlimit:2.0000000;stroke-dasharray:none;"
+     d="M 7.6562499,122.00000 L 199.06250,122.00000"
+     id="path53"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#333333;"
+     d="M 199.06250,99.031251 L 237.34375,122.00000 L 199.06250,144.96875 L 199.06250,99.031251 z "
+     id="path99"
+     sodipodi:nodetypes="cccc" />
+</g>
+
+  
+</svg>

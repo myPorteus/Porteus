@@ -1,0 +1,41 @@
+PACKAGE NAME:     slocate-3.1-i486-4
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /p/git/build/../i586/pkg/001/slocate-3.1-i486-4.txz
+PACKAGE DESCRIPTION:
+slocate: slocate (Secure Locate)
+slocate:
+slocate: Slocate is an enhanced version of locate, a command to help you locate
+slocate: files on the system.  Like the original version of locate, Slocate
+slocate: maintains a database of files on the system, updating it nightly.
+slocate: Unlike the original, Slocate indexes every file on the machine rather
+slocate: than only the ones that can be seen by everyone.  The "secure" part of
+slocate: slocate is that it will only return matches if the user is allowed to
+slocate: see the files.
+slocate:
+slocate:
+FILE LIST:
+./
+etc/
+etc/cron.daily/
+etc/cron.daily/slocate
+etc/updatedb.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/slocate
+usr/doc/
+usr/doc/slocate-3.1/
+usr/doc/slocate-3.1/Changelog
+usr/doc/slocate-3.1/LICENSE
+usr/doc/slocate-3.1/README
+usr/doc/slocate-3.1/WISHLIST
+usr/man/
+usr/man/man1/
+usr/man/man1/slocate.1.gz
+usr/man/man1/updatedb.1.gz
+var/
+var/lib/
+var/lib/slocate/
