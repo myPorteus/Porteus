@@ -1,0 +1,67 @@
+PACKAGE NAME:     dolphin-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     456K
+UNCOMPRESSED PACKAGE SIZE:     1.7M
+PACKAGE LOCATION: /var/tmp/binpkgs/dolphin-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+dolphin: A KDE filemanager focusing on usability
+dolphin:
+dolphin:
+dolphin:
+dolphin:
+dolphin:
+dolphin:
+dolphin:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/dolphin-4.14.3/
+usr/share/doc/dolphin-4.14.3/README.bz2
+usr/share/doc/dolphin-4.14.3/AUTHORS.bz2
+usr/share/apps/
+usr/share/apps/dolphinpart/
+usr/share/apps/dolphinpart/dolphinpart.rc
+usr/share/apps/dolphin/
+usr/share/apps/dolphin/dolphinui.rc
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/dolphinpart.desktop
+usr/share/kde4/services/filenamesearch.protocol
+usr/share/kde4/services/kcmdolphinviewmodes.desktop
+usr/share/kde4/services/kcmdolphinnavigation.desktop
+usr/share/kde4/services/kcmdolphinservices.desktop
+usr/share/kde4/services/kcmdolphingeneral.desktop
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/dolphin.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/dolphin_directoryviewpropertysettings.kcfg
+usr/share/config.kcfg/dolphin_generalsettings.kcfg
+usr/share/config.kcfg/dolphin_compactmodesettings.kcfg
+usr/share/config.kcfg/dolphin_iconsmodesettings.kcfg
+usr/share/config.kcfg/dolphin_detailsmodesettings.kcfg
+usr/share/config.kcfg/dolphin_versioncontrolsettings.kcfg
+usr/share/appdata/
+usr/share/appdata/dolphin.appdata.xml
+usr/share/config/
+usr/share/config/servicemenu.knsrc
+usr/lib/
+usr/lib/libkdeinit4_dolphin.so
+usr/lib/libdolphinprivate.so.4.14.3
+usr/lib/kde4/
+usr/lib/kde4/kio_filenamesearch.so
+usr/lib/kde4/kcm_dolphingeneral.so
+usr/lib/kde4/kcm_dolphinservices.so
+usr/lib/kde4/kcm_dolphinnavigation.so
+usr/lib/kde4/kcm_dolphinviewmodes.so
+usr/lib/kde4/dolphinpart.so
+usr/bin/
+usr/bin/dolphin
+usr/bin/servicemenuinstallation
+usr/bin/servicemenudeinstallation
+install/
+install/doinst.sh
+install/slack-desc

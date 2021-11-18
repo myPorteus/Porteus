@@ -1,0 +1,85 @@
+PACKAGE NAME:     kamerka-0.10-i486-1ftm
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: /mnt/sdb3/work/Port14.1-32/003/003-ftm/opt/kamerka-0.10-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kamerka: Simple photo taking application with fancy animated interface
+kamerka:
+kamerka:
+kamerka:
+kamerka:
+kamerka:
+kamerka:
+kamerka:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/kamerka-0.10/
+usr/share/doc/kamerka-0.10/TODO.bz2
+usr/share/doc/kamerka-0.10/AUTHORS.bz2
+usr/share/doc/kamerka-0.10/README.bz2
+usr/share/doc/kamerka-0.10/ChangeLog.bz2
+usr/share/locale/
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kamerka.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kamerka.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kamerka.mo
+usr/share/locale/sr@Latn/
+usr/share/locale/sr@Latn/LC_MESSAGES/
+usr/share/locale/sr@Latn/LC_MESSAGES/kamerka.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kamerka.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kamerka.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kamerka.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kamerka.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kamerka.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kamerka.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kamerka.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kamerka.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kamerka.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kamerka.mo
+usr/share/config.kcfg/
+usr/share/config.kcfg/kamerka.kcfg
+usr/share/pixmaps/
+usr/share/pixmaps/kamerka.png
+usr/share/apps/
+usr/share/apps/kamerka/
+usr/share/apps/kamerka/camera_click.ogg
+usr/share/apps/kamerka/timer.ogg
+usr/share/apps/kamerka/kamerka.notifyrc
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/kamerka.desktop
+usr/man/
+usr/man/man1/
+usr/man/man1/kamerka.1
+usr/bin/
+usr/bin/kamerka
+install/
+install/slack-desc

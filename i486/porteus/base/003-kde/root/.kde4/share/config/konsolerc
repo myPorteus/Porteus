@@ -1,0 +1,22 @@
+[$Version]
+update_info=konsole.upd:2.9.0-global-options
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Favorite Profiles]
+Favorites=/root/.kde4/share/apps/konsole/Shell.profile
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+
+[MainWindow]
+Height 1024=627
+Height 1080=786
+State=AAAA/wAAAAD9AAAAAAAAAuMAAAL9AAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1280=849
+Width 1920=739
+
+[TabBar]
+ShowQuickButtons=true

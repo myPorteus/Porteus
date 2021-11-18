@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>KDE</vendor>
+<icon_name>kde</icon_name>
+   <action id="org.kde.powerdevil.backlighthelper.brightness" >
+      <description xml:lang="ga">Faigh an ghile</description>
+      <description xml:lang="fr">Obtenir la luminosité</description>
+      <description xml:lang="sk">Získať jas</description>
+      <description xml:lang="sl">Dobi svetlost</description>
+      <description xml:lang="ca">Lluminositat de la pantalla</description>
+      <description xml:lang="bs">Dobavi osvetljaj</description>
+      <description xml:lang="kk">Жарықтығын білу</description>
+      <description xml:lang="sr">Добави осветљај</description>
+      <description xml:lang="km">យក​ពន្លឺ</description>
+      <description xml:lang="pa">ਚਮਕ ਲਵੋ</description>
+      <description xml:lang="kn">ಪ್ರದರ್ಶಕದ ಹೊಳಪನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ</description>
+      <description xml:lang="ko">밝기 가져오기</description>
+      <description xml:lang="gl">Obter o brillo</description>
+      <description xml:lang="sv">Hämta ljusstyrka</description>
+      <description xml:lang="th">แสดงความสว่างของการแสดงผล</description>
+      <description xml:lang="pt_BR">Obter brilho</description>
+      <description xml:lang="da">Hent lysstyrke</description>
+      <description xml:lang="zh_CN">获取亮度</description>
+      <description xml:lang="he">קבלת ערך הבהירות</description>
+      <description xml:lang="pl">Pobierz jasność</description>
+      <description xml:lang="cs">Získat jas</description>
+      <description xml:lang="de">Bildschirmhelligkeit abrufen</description>
+      <description xml:lang="hi">चमक लाएँ</description>
+      <description xml:lang="tr">Parlaklık bilgisi al</description>
+      <description xml:lang="pt">Obter o brilho</description>
+      <description xml:lang="ug">يورۇقلۇققا ئېرىش</description>
+      <description xml:lang="ia">Obtene brillantia</description>
+      <description xml:lang="lt">Gauti šviesumą</description>
+      <description xml:lang="zh_TW">取得亮度</description>
+      <description xml:lang="hr">Dohvati osvjetljenje</description>
+      <description xml:lang="uk">Отримання рівня яскравості</description>
+      <description xml:lang="lv">Iegūt gaišumu</description>
+      <description xml:lang="hu">Fényesség lekérdezése</description>
+      <description xml:lang="mr">प्रखरता घ्या</description>
+      <description xml:lang="nb">Hent lysstyrke</description>
+      <description xml:lang="el">Ανάκτηση λαμπρότητας</description>
+      <description xml:lang="vi">Lấy độ sáng</description>
+      <description>Get brightness</description>
+      <description xml:lang="en_GB">Get brightness</description>
+      <description xml:lang="is">Ná í upplýsingar um birtu skjás</description>
+      <description xml:lang="es">Obtener brillo</description>
+      <description xml:lang="et">Heleduse hankimine</description>
+      <description xml:lang="eu">Eskuratu distira</description>
+      <description xml:lang="wa">Awè l' rilujhance</description>
+      <description xml:lang="ro">Obține luminozitatea</description>
+      <description xml:lang="nl">Helderheid verkrijgen</description>
+      <description xml:lang="nds">Helligkeit afropen</description>
+      <description xml:lang="fi">Lue kirkkaus</description>
+      <description xml:lang="bg">Ниво на яркост</description>
+      <description xml:lang="ru">Настройка яркости</description>
+      <message xml:lang="ga"></message>
+      <message xml:lang="fr">La stratégie système vous empêche d'obtenir le niveau de luminosité.</message>
+      <message xml:lang="sk">Systémové politiky vám zabránili získať úroveň jasu.</message>
+      <message xml:lang="sl"></message>
+      <message xml:lang="ca">Les polítiques del sistema impedeixen que conegueu el nivell de brillantor de la pantalla.</message>
+      <message xml:lang="bs">Sistemske smjernice sprečavaju dobavljanje postavki nivoa osvetljaja.</message>
+      <message xml:lang="kk">Жарықтық деңгейін білуді болдырмайтын жүйелік ережелері.</message>
+      <message xml:lang="sr">Системске смернице спречавају добављање поставки нивоа осветљаја.</message>
+      <message xml:lang="km">គោលនយោបាយ​ប្រព័ន្ធ​ ការពារ​អ្នក​​មិន​ឲ្យ​យក​កម្រិត​ពន្លឺ ។</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਤੁਹਾਨੂੰ ਚਮਕ (brightness) ਲੈਵਲ ਲੈਣ ਤੋਂ ਰੋਕਦੀ ਹੈ।</message>
+      <message xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಕಾರ್ಯನೀತಿಯು ನಿಮ್ಮನ್ನು ಪ್ರದರ್ಶಕದ ಹೊಳಪನ್ನು ತಿಳಿದುಕೊಳ್ಳದಂತೆ ತಡೆಯುತ್ತಿದೆ.</message>
+      <message xml:lang="ko">시스템 정책 때문에 밝기를 가져올 수 없습니다.</message>
+      <message xml:lang="gl">As políticas do sistema evitan que coñeza o nivel de brillo.</message>
+      <message xml:lang="sv">Systemets policy förhindrar att du hämtar ljusstyrkans nivå.</message>
+      <message xml:lang="th">นโยบายของระบบเพื่อป้องกันการแสดงระดับความสว่าง</message>
+      <message xml:lang="pt_BR">As políticas do sistema não permitem a modificação do nível de brilho.</message>
+      <message xml:lang="da">Systempolitikker forhindrer dig i at  hente lysstyrkeniveauet.</message>
+      <message xml:lang="zh_CN">系统安全策略不允许获取亮度级别。</message>
+      <message xml:lang="he">מדינויות מערכת מונעות קבלת ערך הבהירות.</message>
+      <message xml:lang="pl">Polityka systemu nie pozwala Ci na pobranie poziomu jasności.</message>
+      <message xml:lang="cs">Nastavení systému vám znemožňuje získat úroveň podsvícení.</message>
+      <message xml:lang="de">Die Stufe der Bildschirmhelligkeit kann aufgrund einer Systemrichtlinie nicht abgerufen werden.</message>
+      <message xml:lang="tr">Sistem politikaları parlaklık seviye bilgisini almanızı engelliyor</message>
+      <message xml:lang="pt">As políticas do sistema proíbem a leitura do nível do brilho.</message>
+      <message xml:lang="ug">سىستېما بىخەتەرلىك تەدبىرىڭىز يورۇقلۇق دەرىجىسىگە ئېرىشىشكە يول قويمايدۇ.</message>
+      <message xml:lang="ia">Le politicas de systema preveni te ex obtener le nivello de brillantia.</message>
+      <message xml:lang="lt">Sistemos taisyklės neleidžia jums gauti šviesumo lygio.</message>
+      <message xml:lang="zh_TW">系統政策不允許您取得亮度設定。</message>
+      <message xml:lang="hr">Pravila sustava vam onemogućuju dohvaćanje razine osvjetljenja.</message>
+      <message xml:lang="uk"></message>
+      <message xml:lang="lv">Sistēmas politikas jums neļauj iegūt gaišuma līmeni.</message>
+      <message xml:lang="hu">A rendszer házirendjei nem engedik meg Önnek a fényesség lekérdezését.</message>
+      <message xml:lang="mr">प्रणाली धोरण प्रखरता पातळी घेण्यास प्रतिबंध करत आहे.</message>
+      <message xml:lang="nb">Systembestemmelser gjør at du ikke kan hente lysstyrkenivået.</message>
+      <message xml:lang="el">Οι πολιτικές του συστήματος αποτρέπουν τη λήψη του επίπεδου λαμπρότητας.</message>
+      <message>System policies prevent you from getting the brightness level.</message>
+      <message xml:lang="en_GB">System policies prevent you from getting the brightness level.</message>
+      <message xml:lang="is">Öryggisstillingar kerfisins koma í veg fyrir að þú getir náð í upplýsingar um birtustig.</message>
+      <message xml:lang="es">Las políticas del sistema le impiden guardar el nivel de brillo.</message>
+      <message xml:lang="et">Süsteemi reeglid takistavad heledustaseme hankimist.</message>
+      <message xml:lang="eu">Sistemako gidalerroek distira-maila eskuratzea galarazten dizute.</message>
+      <message xml:lang="wa">Les politikes do sistinme vos espaitchèt d' awè l' livea del rilujhance.</message>
+      <message xml:lang="ro">Politicile sistemului vă interzic obținerea nivelului de luminozitate.</message>
+      <message xml:lang="nl">Systeembeleid voorkwam dat u het helderheidsniveau kon verkrijgen.</message>
+      <message xml:lang="nds"></message>
+      <message xml:lang="fi">Järjestelmämenettelytavat estävät sinua saamasta kirkkauden tasoa selville.</message>
+      <message xml:lang="bg">Системни правила забраняват показването на нивото на яркостта</message>
+      <message xml:lang="ru">Правила безопасности запрещают вам узнавать уровень яркости.</message>
+      <defaults>
+         <allow_inactive>yes</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.powerdevil.backlighthelper.setbrightness" >
+      <description xml:lang="ga">Socraigh an ghile</description>
+      <description xml:lang="fr">Fixer la luminosité</description>
+      <description xml:lang="sk">Nastaviť jas</description>
+      <description xml:lang="sl">Nastavi svetlost</description>
+      <description xml:lang="ca">Ajusta la lluminositat</description>
+      <description xml:lang="bs">Postavi osvetljaj</description>
+      <description xml:lang="kk">Жарықтығын орнату</description>
+      <description xml:lang="sr">Постави осветљај</description>
+      <description xml:lang="km">កំណត់​ពន្លឺ</description>
+      <description xml:lang="pa">ਚਮਕ ਸੈੱਟ ਕਰੋ</description>
+      <description xml:lang="kn">ಪ್ರದರ್ಶಕದ ಹೊಳಪನ್ನು ಬದಲಾಯಿಸಿ</description>
+      <description xml:lang="ko">밝기 설정하기</description>
+      <description xml:lang="gl">Axustar o brillo</description>
+      <description xml:lang="sv">Ställ in ljusstyrka</description>
+      <description xml:lang="th">ปรับความสว่างของการแสดงผล</description>
+      <description xml:lang="pt_BR">Definir o brilho</description>
+      <description xml:lang="da">Sæt lysstyrke</description>
+      <description xml:lang="zh_CN">设置亮度</description>
+      <description xml:lang="he">קביעת הבהירות</description>
+      <description xml:lang="pl">Ustaw jasność</description>
+      <description xml:lang="cs">Nastavit jas</description>
+      <description xml:lang="de">Bildschirmhelligkeit einstellen</description>
+      <description xml:lang="hi">चमक लगाएँ</description>
+      <description xml:lang="tr">Parlaklığı ayarla</description>
+      <description xml:lang="pt">Mudar o brilho</description>
+      <description xml:lang="ug">يورۇقلۇق تەڭشىكى</description>
+      <description xml:lang="ia">Fixa brillantia</description>
+      <description xml:lang="lt">Nustatyti šviesumą</description>
+      <description xml:lang="zh_TW">設定亮度</description>
+      <description xml:lang="hr">Postavi osvjetljenje</description>
+      <description xml:lang="uk">Встановлення рівня яскравості</description>
+      <description xml:lang="lv">Iestatīt gaišumu</description>
+      <description xml:lang="hu">Fényesség beállítása</description>
+      <description xml:lang="mr">प्रखरता संयोजना</description>
+      <description xml:lang="nb">Sett lysstyrke</description>
+      <description xml:lang="el">Ρύθμιση λαμπρότητας</description>
+      <description xml:lang="ja">明るさを設定</description>
+      <description>Set brightness</description>
+      <description xml:lang="en_GB">Set brightness</description>
+      <description xml:lang="is">Setja birtustig</description>
+      <description xml:lang="es">Establecer brillo</description>
+      <description xml:lang="et">Heleduse määramine</description>
+      <description xml:lang="eu">Ezarri distira</description>
+      <description xml:lang="wa">Defini l' rilujhance</description>
+      <description xml:lang="nl">Helderheid instellen</description>
+      <description xml:lang="ro">Stabilește luminozitatea</description>
+      <description xml:lang="nds">Helligkeit instellen</description>
+      <description xml:lang="fi">Aseta kirkkaus</description>
+      <description xml:lang="bg">Задаване на яркост</description>
+      <description xml:lang="ru">Настройка яркости</description>
+      <message xml:lang="ga"></message>
+      <message xml:lang="fr">La stratégie système vous empêche de fixer le niveau de luminosité.</message>
+      <message xml:lang="sk">Systémové politiky vám zabránili nastaviť úroveň jasu.</message>
+      <message xml:lang="sl"></message>
+      <message xml:lang="ca">Les polítiques del sistema impedeixen que ajusteu la lluminositat de la pantalla.</message>
+      <message xml:lang="bs">Sistemske smjernice sprečavaju postavljanje nivoa osvetljaja.</message>
+      <message xml:lang="kk">Жарықтық деңгейін орнатуды болдырмайтын жүйелік ережелері.</message>
+      <message xml:lang="sr">Системске смернице спречавају постављање нивоа осветљаја.</message>
+      <message xml:lang="km">គោលនយោបាយ​ប្រព័ន្ធ​ការពារ​អ្នក​មិន​​ឲ្យ​កំណត់​កម្រិត​ពន្លឺ ។</message>
+      <message xml:lang="pa"></message>
+      <message xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಕಾರ್ಯನೀತಿಯು ನಿಮ್ಮನ್ನು ಪ್ರದರ್ಶಕದ ಹೊಳಪನ್ನು ಬದಲಾಯಿಸದಂತೆ ತಡೆಯುತ್ತಿದೆ.</message>
+      <message xml:lang="ko">시스템 정책 때문에 밝기를 지정할 수 없습니다.</message>
+      <message xml:lang="gl">As políticas do sistema evitan que modifique o nivel de brillo.</message>
+      <message xml:lang="sv">Systemets policy förhindrar att du ställer in ljusstyrkans nivå.</message>
+      <message xml:lang="th">นโยบายของระบบเพื่อป้องกันการตั้งระดับความสว่าง</message>
+      <message xml:lang="pt_BR">As políticas do sistema não permitem a modificação das configurações do nível de brilho.</message>
+      <message xml:lang="da">Systempolitikker forhindrer dig i at sætte lysstyrkeniveauet.</message>
+      <message xml:lang="zh_CN">系统安全策略不允许设置亮度级别。</message>
+      <message xml:lang="he">מדינויות מערכת מונעות קביעת ערך הבהירות.</message>
+      <message xml:lang="pl">Polityka systemu nie pozwala Ci na ustawienie jasności.</message>
+      <message xml:lang="cs">Systémové omezení vám neumožňuje nastavit úroveň podsvícení.</message>
+      <message xml:lang="de">Die Bildschirmhelligkeit kann aufgrund einer Systemrichtlinie nicht geändert werden.</message>
+      <message xml:lang="tr">Sistem politikaları parlaklık seviyesini ayarlamanızı engelliyor</message>
+      <message xml:lang="pt">As políticas do sistema proíbem a mudança do nível do brilho.</message>
+      <message xml:lang="ug">سىستېما بىخەتەرلىك تەدبىرىڭىز يورۇقلۇق دەرىجىسىنى تەڭشىشىڭىزگە يول قويمايدۇ.</message>
+      <message xml:lang="ia">Le politicas de systema preveni te ex fixar le nivello de brillantia.</message>
+      <message xml:lang="lt">Sistemos taisyklės neleidžia jums nustatyti šviesumo lygio.</message>
+      <message xml:lang="zh_TW">系統政策不允許您設定亮度。</message>
+      <message xml:lang="hr">Pravila sustava vam onemogućuju postavljanje razine osvjetljenja.</message>
+      <message xml:lang="uk"></message>
+      <message xml:lang="lv">Sistēmas politikas jums neļauj iestatīt gaišuma līmeni.</message>
+      <message xml:lang="hu">A rendszer házirendjei nem engedik meg Önnek a fényesség beállítását.</message>
+      <message xml:lang="mr">प्रणाली धोरण प्रखरता पातळी संयोजीत करण्यास प्रतिबंध करत आहे.</message>
+      <message xml:lang="nb">Systembestemmelser gjør at du ikke kan sette lysstyrkenivået.</message>
+      <message xml:lang="el">Οι πολιτικές του συστήματος αποτρέπουν τον ορισμό του επίπεδου λαμπρότητας.</message>
+      <message xml:lang="ja">システムポリシーにより、明るさを設定することができません。</message>
+      <message>System policies prevent you from setting the brightness level.</message>
+      <message xml:lang="en_GB">System policies prevent you from setting the brightness level.</message>
+      <message xml:lang="is">Öryggisstillingar kerfisins koma í veg fyrir að þú getir breytt birtustigi.</message>
+      <message xml:lang="es">Las políticas del sistema le impiden establecer el nivel de brillo.</message>
+      <message xml:lang="et">Süsteemi reeglid takistavad heleduse määramist.</message>
+      <message xml:lang="eu">Sistemako gidalerroek distira-maila ezartzea galarazten dizute.</message>
+      <message xml:lang="wa">Les politikes do sistinme vos espaitchèt d' defini l' livea del rilujhance.</message>
+      <message xml:lang="ro">Politicile sistemului vă interzic stabilirea nivelului de luminozitate.</message>
+      <message xml:lang="nl">Systeembeleid voorkwam dat u het helderheidsniveau kon instellen.</message>
+      <message xml:lang="nds"></message>
+      <message xml:lang="fi">Järjestelmämenettelytavat estävät sinua asettamasta kirkkauden tasoa.</message>
+      <message xml:lang="bg">Системни правила забраняват настройването на нивото на яркостта</message>
+      <message xml:lang="ru">Правила безопасности запрещают вам устанавливать уровень яркости.</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.powerdevil.backlighthelper.syspath" >
+      <description xml:lang="ia">Obtene syspath</description>
+      <description xml:lang="pa">syspath ਲਵੋ</description>
+      <description xml:lang="hu">Rendszerútvonal lekérése</description>
+      <description xml:lang="zh_CN">获取 syspath</description>
+      <description xml:lang="kk">Жүйелік жолды табу</description>
+      <description xml:lang="fr">Obtenir « syspath »</description>
+      <description xml:lang="nb">Hent syspath</description>
+      <description xml:lang="tr">Syspath'i al</description>
+      <description xml:lang="ko">syspath 가져오기</description>
+      <description xml:lang="pl">Pobierz ścieżkę systemową</description>
+      <description xml:lang="ca">Obtén el «syspath»</description>
+      <description xml:lang="nds">Syspadd halen</description>
+      <description xml:lang="gl">Obter syspath</description>
+      <description xml:lang="ru">Получение системного пути</description>
+      <description xml:lang="bs">Dobavi sistemsku stazu</description>
+      <description xml:lang="nl">Systeempad ophalen</description>
+      <description xml:lang="uk">Отримання шляху у системі</description>
+      <description xml:lang="pt">Obter o 'syspath'</description>
+      <description xml:lang="el">Λήψη syspath</description>
+      <description xml:lang="sk">Získať systémovú cestu</description>
+      <description>Get syspath</description>
+      <description xml:lang="en_GB">Get syspath</description>
+      <description xml:lang="sl">Dobi syspath</description>
+      <description xml:lang="zh_TW">取得系統路徑</description>
+      <description xml:lang="es">Obtener ruta del sistema</description>
+      <description xml:lang="et">Süsteemse asukoha hankimine</description>
+      <description xml:lang="pt_BR">Obter o syspath</description>
+      <description xml:lang="sr">Добави сис‑путању</description>
+      <description xml:lang="eu"></description>
+      <description xml:lang="lt">Gauti syspath</description>
+      <description xml:lang="da">Hent syspath</description>
+      <description xml:lang="cs">Získat syspath</description>
+      <description xml:lang="sv">Hämta systemsökväg</description>
+      <description xml:lang="fi">Lue järjestelmäpolku</description>
+      <description xml:lang="de">„syspath“ holen</description>
+      <message xml:lang="ia">Le politicas de systema preveni te ex obtener le syspath</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਤੁਹਾਨੂੰ syspath ਲੈਣ ਤੋਂ ਰੋਕਦੀ ਹੈ।</message>
+      <message xml:lang="hu">A rendszer házirendjei nem engedik meg Önnek a rendszerútvonal lekérdezését.</message>
+      <message xml:lang="zh_CN">系统安全策略不允许获取系统路径</message>
+      <message xml:lang="kk">Жүйелік жолын білуді болдырмайтын жүйелік ережелері.</message>
+      <message xml:lang="fr">La stratégie système vous empêche d'obtenir « syspath ».</message>
+      <message xml:lang="nb">Systembestemmelser gjør at du ikke kan hente syspath-en</message>
+      <message xml:lang="tr">Sistem politikaları syspath almanızı engelliyor</message>
+      <message xml:lang="ko">시스템 정책 때문에 syspath를 가져올 수 없습니다.</message>
+      <message xml:lang="pl">Polityka systemu nie pozwala Ci na pobranie ścieżki systemowej</message>
+      <message xml:lang="ca">Les polítiques del sistema impedeixen que conegueu el camí del sistema «syspath»</message>
+      <message xml:lang="nds"></message>
+      <message xml:lang="gl">As políticas do sistema evitan que coñeza syspath</message>
+      <message xml:lang="ru">Правила безопасности не позволяют вам получить системный путь.</message>
+      <message xml:lang="bs">Sistemske smjernice sprečavaju dobavljanje sistemske staze.</message>
+      <message xml:lang="nl">Systeembeleid voorkwam dat u het systeempad kon ophalen</message>
+      <message xml:lang="uk"></message>
+      <message xml:lang="pt">As políticas de sistema impedem-no de obter o 'syspath'</message>
+      <message xml:lang="el">Οι πολιτικές του συστήματος αποτρέπουν τη λήψη του syspath</message>
+      <message xml:lang="sk">Systémové politiky vám zabránili získať systémovú cestu</message>
+      <message>System policies prevent you from getting the syspath</message>
+      <message xml:lang="en_GB">System policies prevent you from getting the syspath</message>
+      <message xml:lang="sl"></message>
+      <message xml:lang="zh_TW">系統政策不允許您取得系統路徑</message>
+      <message xml:lang="es">Las políticas del sistema le impiden obtener la ruta del sistema.</message>
+      <message xml:lang="et">Süsteemi reeglid takistavad süsteemse asukoha hankimist</message>
+      <message xml:lang="pt_BR">As políticas do sistema não permitem a modificação do syspath</message>
+      <message xml:lang="sr">Системске смернице спречавају добављање сис‑путање.</message>
+      <message xml:lang="eu"></message>
+      <message xml:lang="lt">Sistemos taisyklės neleidžia jums gauti syspath</message>
+      <message xml:lang="da">Systempolitikker forhindrer dig i at hente syspath</message>
+      <message xml:lang="cs">Nastavení systému vám znemožňuje získat syspath</message>
+      <message xml:lang="sv">Systemets policy förhindrar att du hämtar systemsökvägen.</message>
+      <message xml:lang="fi">Järjestelmämenettelytavat estävät sinua saamasta järjestelmäpolkua selville.</message>
+      <message xml:lang="de">Systemrichtlinien verhindern das Holen von „syspath“</message>
+      <defaults>
+         <allow_inactive>yes</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

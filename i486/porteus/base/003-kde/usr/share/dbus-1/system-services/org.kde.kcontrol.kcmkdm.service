@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.kcontrol.kcmkdm
+Exec=/usr/lib/kde4/libexec/kcmkdmhelper
+User=root

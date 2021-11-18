@@ -1,0 +1,44 @@
+PACKAGE NAME:     libkscreen-1.0.5-i486-1ftm
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     260K
+PACKAGE LOCATION: /mnt/sdb3/work/Port14.1-32/003/003-ftm/opt/libkscreen-1.0.5-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libkscreen: KDE screen management library
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen:
+libkscreen:
+FILE LIST:
+./
+usr/
+usr/include/
+usr/include/kscreen/
+usr/include/kscreen/config.h
+usr/include/kscreen/kscreen_export.h
+usr/include/kscreen/edid.h
+usr/include/kscreen/configmonitor.h
+usr/include/kscreen/screen.h
+usr/include/kscreen/output.h
+usr/include/kscreen/mode.h
+usr/lib/
+usr/lib/libkscreen.so.1.0.4
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/kscreen.pc
+usr/lib/kde4/
+usr/lib/kde4/plugins/
+usr/lib/kde4/plugins/kscreen/
+usr/lib/kde4/plugins/kscreen/KSC_Fake.so
+usr/lib/kde4/plugins/kscreen/KSC_XRandR.so
+usr/lib/kde4/plugins/kscreen/KSC_XRandR11.so
+usr/lib/cmake/
+usr/lib/cmake/LibKScreen/
+usr/lib/cmake/LibKScreen/LibKScreenConfigVersion.cmake
+usr/lib/cmake/LibKScreen/LibKScreenTargetsWithPrefix-gentoo.cmake
+usr/lib/cmake/LibKScreen/LibKScreenConfig.cmake
+usr/lib/cmake/LibKScreen/LibKScreenTargetsWithPrefix.cmake
+install/
+install/slack-desc
+install/doinst.sh

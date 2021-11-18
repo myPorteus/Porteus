@@ -1,0 +1,47 @@
+[$Version]
+update_info=plasma_popupapplet_fix_groups.upd:PlasmaPopupAppletFixGroups2
+
+[BackgroundConfigDialog]
+Height 1024=719
+Width 1280=655
+
+[General]
+perVirtualDesktopViews=true
+
+[KPropertiesDialog]
+Height 1024=382
+Width 1280=394
+
+[Open-with settings]
+CompletionMode=5
+History=
+
+[PlasmaViews][1]
+panelVisibility=0
+
+[PlasmaViews][1][Horizontal1920]
+offset=0
+
+[PlasmaViews][1][Sizes]
+lastsize=1920
+
+[PlasmaViews][1][Sizes][Horizontal1280]
+max=-1,-1
+min=-1,-1
+offset=0
+size=1280,720
+
+[Updates]
+performed=/usr/share/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js,/usr/share/apps/plasma-desktop/updates/systray-to-notifications-widget.js,/usr/share/apps/plasma-desktop/updates/set-hidden-single-vd-pager.js
+
+[ViewIds]
+1=1
+19=3
+20=4
+8=2
+
+[requestShutDown]
+__file=
+
+[updateFreespace]
+__file=

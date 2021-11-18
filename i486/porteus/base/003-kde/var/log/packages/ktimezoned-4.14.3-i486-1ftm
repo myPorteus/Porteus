@@ -1,0 +1,29 @@
+PACKAGE NAME:     ktimezoned-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /var/tmp/binpkgs/ktimezoned-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+ktimezoned: KDE: Timezone daemon
+ktimezoned:
+ktimezoned:
+ktimezoned:
+ktimezoned:
+ktimezoned:
+ktimezoned:
+ktimezoned:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kded_ktimezoned.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/kded/
+usr/share/kde4/services/kded/ktimezoned.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
+install/
+install/slack-desc

@@ -1,0 +1,33 @@
+PACKAGE NAME:     kdebase-startkde-4.11.14-i486-1ftm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /var/tmp/binpkgs/kdebase-startkde-4.11.14-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kdebase-startkde: Startkde script, which starts a complete KDE session,
+kdebase-startkde: and associated scripts
+kdebase-startkde:
+kdebase-startkde:
+kdebase-startkde:
+kdebase-startkde:
+kdebase-startkde:
+kdebase-startkde:
+kdebase-startkde:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/startkde
+usr/share/
+usr/share/xsessions/
+usr/share/xsessions/KDE-4.desktop
+etc/
+etc/kde/
+etc/kde/startup/
+etc/kde/startup/agent-startup.sh
+etc/kde/shutdown/
+etc/kde/shutdown/agent-shutdown.sh
+etc/X11/
+etc/X11/Sessions/
+etc/X11/Sessions/KDE-4
+install/
+install/slack-desc

@@ -1,0 +1,8 @@
+[ScreenSaver]
+Enabled=true
+LegacySaverEnabled=false
+Lock=true
+LockGrace=60000
+PlasmaEnabled=false
+Saver=kblank.desktop
+Timeout=300

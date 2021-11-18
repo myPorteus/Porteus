@@ -1,0 +1,23 @@
+PACKAGE NAME:     kcmshell-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /var/tmp/binpkgs/kcmshell-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kcmshell: KCMShell is a utility to host KDE control modules independently
+kcmshell: of SystemSettings
+kcmshell:
+kcmshell:
+kcmshell:
+kcmshell:
+kcmshell:
+kcmshell:
+kcmshell:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/libkdeinit4_kcmshell4.so
+usr/bin/
+usr/bin/kcmshell4
+install/
+install/slack-desc

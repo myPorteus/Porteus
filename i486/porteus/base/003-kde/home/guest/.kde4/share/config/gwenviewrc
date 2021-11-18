@@ -1,0 +1,14 @@
+[General]
+SideBarPage=folders
+
+[ImageView]
+AnimationMethod=DocumentView::NoAnimation
+
+[MainWindow]
+Height 768=500
+State=AAAA/wAAAAD9AAAAAAAAAqoAAAHBAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1024=682
+
+[SideBar-BrowseMode]
+IsVisible=false

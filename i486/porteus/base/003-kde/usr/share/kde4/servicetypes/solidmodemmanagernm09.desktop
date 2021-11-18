@@ -1,0 +1,41 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=SolidModemManager
+
+Comment=Modem Management Backend
+Comment[bs]=Pozadina za upravljanje modemom
+Comment[ca]=Dorsal de gestió de mòdem
+Comment[ca@valencia]=Dorsal de gestió de mòdem
+Comment[cs]=Podpůrná vrstva pro správu modemu
+Comment[da]=Backend til modemhåndtering
+Comment[de]=Backend zur Netzwerkverwaltung
+Comment[es]=Motor de gestión del módem
+Comment[fi]=Modeeminhallinnan taustaosa
+Comment[fr]=Moteur de gestion de modem
+Comment[gl]=Infraestrutura de xestión do módem
+Comment[hu]=Modemkezelő modul
+Comment[ia]=Gestion  de retro-administration de modem
+Comment[it]=Motore di gestione del modem
+Comment[kk]=Модемді басқару тетігі
+Comment[ko]=모뎀 관리 백엔드
+Comment[nb]=Bakgrunnsmotor for modemstyring
+Comment[nds]=Hülpprogramm för de Modempleeg
+Comment[nl]=Backend voor modembeheer
+Comment[pl]=Silnik zarządzania modemem
+Comment[pt]=Infra-Estrutura de Gestão do Modem
+Comment[pt_BR]=Infraestrutura de gerenciamento de modem
+Comment[ru]=Служба Modem Management
+Comment[sk]=Backend pre správu modemu
+Comment[sl]=Zaledje za upravljanje z modemi
+Comment[sr]=Позадина управљања модемом
+Comment[sr@ijekavian]=Позадина управљања модемом
+Comment[sr@ijekavianlatin]=Pozadina upravljanja modemom
+Comment[sr@latin]=Pozadina upravljanja modemom
+Comment[sv]=Modemhanteringsgränssnitt
+Comment[uk]=Модуль керування модемом
+Comment[x-test]=xxModem Management Backendxx
+Comment[zh_TW]=數據機管理後端介面
+
+[PropertyDef::X-KDE-SolidBackendInfo-Version]
+Type=QString
+

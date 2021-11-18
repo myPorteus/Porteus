@@ -1,0 +1,63 @@
+<br>
+<font size=4><b>Version 1.4.5</b></font>
+<ul>
+<li>Code optimization</li>
+<li>Single instance</li>
+<li>More Languages</li>
+<li>Simpler interface</li>
+</ul>
+<br><br>
+<font size=4><b>Version 1.4.4</b></font>
+<ul>
+<li>Code optimization</li>
+<li>Minimize to tray</li>
+<li>Volume slider in player</li>
+<li>More Coats</li>
+<li>More Languages</li>
+<li>Editing local stations file</li>
+<li>Filter stations differently</li>
+</ul>
+<br><br>
+<font size=4><b>Version 1.4.3</b></font><br>
+<ul>
+<li>Support for other languages!</li>
+<li>Coats interface is improved!</li>
+<li>Coats preview is added in Settings.</li>
+<li>Pause</li>
+<li>Buffer</li>
+<li>More coats</li>
+<li>Some 'dead' stations are removed.</li>
+</ul>
+<br><br>
+<font size=4><b>Version 1.4.2</b></font><br>
+<ul>
+<li>Some bugs are fixed!</li>
+<li>Classic inerface is improved!</li>
+<li>Coat interface is improved!</li>
+<li>'Set to defaults' is added in Settings.</li>
+<li>Station List View have several modes.</li>
+<li>Some icons look better.</li>
+<li>Some 'dead' stations are removed.</li>
+</ul>
+<br><br>
+<font size=4><b>Version 1.4.1</b></font><br>
+<ul>
+<li>Song and artist information if server give that.</li>
+<li>Some bugs are fixed. New are added!</li>
+<li>Interface, beside classic mode now have Coat mode. It is clean, simple and beautiful style for this app! It is optional and require composite manager! With the app comes about 30 coats. You can make your own coats and share with friends!</li>
+<li>Importing and Exporting stations are posible now!</li>
+<li>Now you can load data from *.pls files in Add New Station Dialog.</li>
+<li>Most of settings react immediately after OK button!</li>
+<li>Favorites option are in Add New Station Dialog</li>
+</ul>
+<br><br>
+<font size=4><b>Version 1.3.0</b></font><br>
+<ul>
+<li>Initial Release.</li>
+</ul>
+<br><br>
+<font size=4><b>Before version 1.3.0 (1.2; 1.1; 0.1...)</b></font><br>
+<ul>
+<li>No official relese.</li>
+</ul>
+<br>

@@ -1,0 +1,38 @@
+PACKAGE NAME:     qimageblitz-0.0.6-i486-1
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     230K
+PACKAGE LOCATION: /root/work/Port14.1-32/003/003/qimageblitz-0.0.6-i486-1.txz
+PACKAGE DESCRIPTION:
+qimageblitz: QImageBlitz (Graphical effect and filter library for KDE4)
+qimageblitz:
+qimageblitz: Blitz is a graphical effect and filter library for KDE4.0 that 
+qimageblitz: contains many improvements over KDE 3.x's kdefx library 
+qimageblitz: including bugfixes, memory and speed improvements, and MMX/SSE
+qimageblitz: support.
+qimageblitz:
+qimageblitz:
+qimageblitz:
+qimageblitz:
+qimageblitz:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/qimageblitz.pc
+usr/lib/libqimageblitz.so.4.0.0
+usr/include/
+usr/include/qimageblitz/
+usr/include/qimageblitz/blitzcpu.h
+usr/include/qimageblitz/qimageblitz.h
+usr/include/qimageblitz/qimageblitz_export.h
+usr/bin/
+usr/bin/blitztest
+usr/doc/
+usr/doc/qimageblitz-0.0.6/
+usr/doc/qimageblitz-0.0.6/README.BLITZ
+usr/doc/qimageblitz-0.0.6/COPYING
+usr/doc/qimageblitz-0.0.6/README.PORTING
+install/
+install/slack-desc
+install/doinst.sh

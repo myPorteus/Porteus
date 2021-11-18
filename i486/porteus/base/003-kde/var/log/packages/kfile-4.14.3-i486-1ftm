@@ -1,0 +1,24 @@
+PACKAGE NAME:     kfile-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /var/tmp/binpkgs/kfile-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kfile: A commandline frontend to KFileMetaInfo
+kfile:
+kfile:
+kfile:
+kfile:
+kfile:
+kfile:
+kfile:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/kfile-4.14.3/
+usr/share/doc/kfile-4.14.3/README.bz2
+usr/bin/
+usr/bin/kfile4
+install/
+install/slack-desc

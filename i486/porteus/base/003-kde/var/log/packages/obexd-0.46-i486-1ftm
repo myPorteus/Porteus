@@ -1,0 +1,32 @@
+PACKAGE NAME:     obexd-0.46-i486-1ftm
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: obexd-0.46-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+obexd: OBEX Server and Client
+obexd:
+obexd:
+obexd:
+obexd:
+obexd:
+obexd:
+obexd:
+FILE LIST:
+./
+usr/
+usr/libexec/
+usr/libexec/obex-client
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/obex-client.service
+usr/share/doc/
+usr/share/doc/obexd-0.46/
+usr/share/doc/obexd-0.46/obexd-api.txt.bz2
+usr/share/doc/obexd-0.46/client-api.txt.bz2
+usr/share/doc/obexd-0.46/agent-api.txt.bz2
+usr/share/doc/obexd-0.46/README.bz2
+usr/share/doc/obexd-0.46/ChangeLog.bz2
+usr/share/doc/obexd-0.46/AUTHORS.bz2
+install/
+install/slack-desc

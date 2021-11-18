@@ -1,0 +1,65 @@
+Height 1024=500
+Height 800=569
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACkAAABwfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawEAAAAzAAABCwAAAFABAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAFBAAAAswAAAFABAAAFAAAAAQAAALYAAAHB/AIAAAAC+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAADMAAAHBAAAA9QEAAAX7AAAAFABmAGkAbAB0AGUAcgBEAG8AYwBrAQAAAdkAAACZAAAAAAAAAAAAAAADAAAFAAAAANH8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAFAAAAAAgBAAAFAAABjgAAAcEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAaAHMAZQBhAHIAYwBoAFQAbwBvAGwAQgBhAHIBAAACvf////8AAAAAAAAAAA==
+Width 1280=750
+
+[AdditionalInfoDialog]
+Height 1024=279
+Width 1280=230
+
+[ColumnMode]
+FontWeight=50
+
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[DetailsMode]
+ExpandableFolders=true
+FontWeight=50
+PreviewSize=16
+
+[Favorite Profiles]
+Favorites=/home/guest/.kde4/share/apps/konsole/Shell.profile
+
+[General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
+EditableUrl=true
+FirstRun=false
+GlobalViewProps=true
+HomeUrl=file:///home/guest
+ShowCopyMoveMenu=true
+ShowFullPath=true
+ShowSelectionToggle=false
+ShowSpaceInfo=true
+Version=200
+ViewPropsTimestamp=2012,2,9,14,37,2
+
+[IconsMode]
+FontWeight=50
+IconSize=48
+
+[MainWindow]
+Height 1024=500
+Height 800=569
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACkAAABwfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawEAAAAzAAABCwAAAFABAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAFBAAAAswAAAFABAAAFAAAAAQAAALYAAAHB/AIAAAAC+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAADMAAAHBAAAA9QEAAAX7AAAAFABmAGkAbAB0AGUAcgBEAG8AYwBrAQAAAdkAAACZAAAAAAAAAAAAAAADAAAFAAAAANH8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAFAAAAAAgBAAAFAAABjgAAAcEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAaAHMAZQBhAHIAYwBoAFQAbwBvAGwAQgBhAHIBAAACdv////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+Width 1280=750
+
+[Notification Messages]
+ConfirmDelete=true
+
+[PreviewSettings]
+Plugins=comicbookthumbnail,cursorthumbnail,djvuthumbnail,htmlthumbnail,imagethumbnail,jpegthumbnail,windowsimagethumbnail,svgthumbnail
+
+[SettingsDialog]
+Height 1024=451
+Height 800=451
+Width 1280=514
+
+[ViewPropertiesDialog]
+Height 1024=240
+Width 1280=350

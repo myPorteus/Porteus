@@ -1,0 +1,38 @@
+PACKAGE NAME:     xcb-util-image-0.3.9-i486-2
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /root/work/Port14.1-32/003/003/xcb-util-image-0.3.9-i486-2.txz
+PACKAGE DESCRIPTION:
+xcb-util-image: xcb-util-image (port of Xlib's XImage and XShmImage functions)
+xcb-util-image:
+xcb-util-image: xcb-util-image provides a port of Xlib's XImage and XShmImage 
+xcb-util-image: functions.
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xcb-image.pc
+usr/lib/libxcb-image.so.0.0.0
+usr/lib/libxcb-image.la
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_bitops.h
+usr/include/xcb/xcb_pixel.h
+usr/include/xcb/xcb_image.h
+usr/doc/
+usr/doc/xcb-util-image-0.3.9/
+usr/doc/xcb-util-image-0.3.9/ChangeLog
+usr/doc/xcb-util-image-0.3.9/README
+usr/doc/xcb-util-image-0.3.9/INSTALL
+usr/doc/xcb-util-image-0.3.9/NEWS

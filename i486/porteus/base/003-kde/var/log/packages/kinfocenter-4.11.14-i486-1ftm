@@ -1,0 +1,65 @@
+PACKAGE NAME:     kinfocenter-4.11.14-i486-1ftm
+COMPRESSED PACKAGE SIZE:     324K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /var/tmp/binpkgs/kinfocenter-4.11.14-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kinfocenter: The KDE Info Center
+kinfocenter:
+kinfocenter:
+kinfocenter:
+kinfocenter:
+kinfocenter:
+kinfocenter:
+kinfocenter:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/kinfocenter
+usr/share/
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/kinfocenter.desktop
+usr/share/apps/
+usr/share/apps/kinfocenter/
+usr/share/apps/kinfocenter/kinfocenterui.rc
+usr/share/apps/kcmusb/
+usr/share/apps/kcmusb/usb.ids
+usr/share/apps/kcmview1394/
+usr/share/apps/kcmview1394/oui.db
+usr/share/kde4/
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/kinfocentercategory.desktop
+usr/share/kde4/services/
+usr/share/kde4/services/deviceinfocategory.desktop
+usr/share/kde4/services/graphicalinfocategory.desktop
+usr/share/kde4/services/networkinfocategory.desktop
+usr/share/kde4/services/lostfoundcategory.desktop
+usr/share/kde4/services/kcmusb.desktop
+usr/share/kde4/services/kcm_infosummary.desktop
+usr/share/kde4/services/kcm_memory.desktop
+usr/share/kde4/services/devinfo.desktop
+usr/share/kde4/services/dma.desktop
+usr/share/kde4/services/interrupts.desktop
+usr/share/kde4/services/ioports.desktop
+usr/share/kde4/services/scsi.desktop
+usr/share/kde4/services/xserver.desktop
+usr/share/kde4/services/smbstatus.desktop
+usr/share/kde4/services/nic.desktop
+usr/share/kde4/services/opengl.desktop
+usr/share/kde4/services/kcm_pci.desktop
+usr/share/kde4/services/kcmview1394.desktop
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kcm_view1394.so
+usr/lib/kde4/kcm_pci.so
+usr/lib/kde4/kcm_opengl.so
+usr/lib/kde4/kcm_nic.so
+usr/lib/kde4/kcm_samba.so
+usr/lib/kde4/kcm_info.so
+usr/lib/kde4/devinfo.so
+usr/lib/kde4/kcm_memory.so
+usr/lib/kde4/kcm_infosummary.so
+usr/lib/kde4/kcm_usb.so
+install/
+install/slack-desc

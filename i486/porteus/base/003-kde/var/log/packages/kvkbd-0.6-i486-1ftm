@@ -1,0 +1,43 @@
+PACKAGE NAME:     kvkbd-0.6-i486-1ftm
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /mnt/sdb3/work/Port14.1-32/003/003-ftm/opt/kvkbd-0.6-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kvkbd: A virtual keyboard for KDE
+kvkbd:
+kvkbd:
+kvkbd:
+kvkbd:
+kvkbd:
+kvkbd:
+kvkbd:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/HTML/
+usr/share/doc/HTML/en/
+usr/share/doc/HTML/en/kvkbd/
+usr/share/doc/HTML/en/kvkbd/index.docbook
+usr/share/doc/HTML/en/kvkbd/config-menu.png
+usr/share/doc/HTML/en/kvkbd/kvkbd.png
+usr/share/doc/HTML/en/kvkbd/index.cache.bz2
+usr/share/doc/kvkbd-0.6-r1/
+usr/share/doc/kvkbd-0.6-r1/TODO.bz2
+usr/share/doc/kvkbd-0.6-r1/AUTHORS.bz2
+usr/share/doc/kvkbd-0.6-r1/README.bz2
+usr/share/doc/kvkbd-0.6-r1/ChangeLog.bz2
+usr/share/apps/
+usr/share/apps/kvkbd/
+usr/share/apps/kvkbd/pics/
+usr/share/apps/kvkbd/pics/dock.png
+usr/share/apps/kvkbd/pics/tray.png
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/kvkbd.desktop
+usr/bin/
+usr/bin/kvkbd
+install/
+install/slack-desc
+install/doinst.sh

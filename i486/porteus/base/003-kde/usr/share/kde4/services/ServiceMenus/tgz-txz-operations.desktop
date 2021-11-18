@@ -1,0 +1,24 @@
+# Service menu to for tgz/txz packages operation
+# Author: fanthom & KSA_ARAB
+
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-compressed-tar;application/x-xz-compressed-tar;
+X-KDE-Priority=TopLevel
+Actions=slackware_install;slackware_uninstall;convert_tgz/txz_xzm;
+
+[Desktop Action slackware_install]
+Name=Install Slackware package
+Icon=application-x-compressed-tar
+Exec=/opt/porteus-scripts/context-menu/install-slack %F
+
+[Desktop Action slackware_uninstall]
+Name=Uninstall Slackware package
+Icon=application-x-compressed-tar
+Exec=/opt/porteus-scripts/context-menu/remove-slack %F
+
+[Desktop Action convert_tgz/txz_xzm]
+Name=Convert tgz/txz to xzm
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/convert_txz %F

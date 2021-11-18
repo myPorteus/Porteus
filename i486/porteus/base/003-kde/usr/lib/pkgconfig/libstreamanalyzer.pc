@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libstreamanalyzer
+Description: C++ library for extracting text and metadata from files and streams
+Requires: libstreams
+Version: 0.7.8
+Libs: -L/usr/lib -lstreamanalyzer
+Cflags: -I/usr/include

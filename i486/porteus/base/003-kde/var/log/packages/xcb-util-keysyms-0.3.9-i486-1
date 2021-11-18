@@ -1,0 +1,36 @@
+PACKAGE NAME:     xcb-util-keysyms-0.3.9-i486-1
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /root/work/Port14.1-32/003/003/xcb-util-keysyms-0.3.9-i486-1.txz
+PACKAGE DESCRIPTION:
+xcb-util-keysyms: xcb-util-keysyms (keysyms library for XCB)
+xcb-util-keysyms:
+xcb-util-keysyms: xcb-util-keysyms provides the keysyms library, which handles
+xcb-util-keysyms: standard X key constants and conversion to/from keycodes.
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+xcb-util-keysyms:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xcb-keysyms.pc
+usr/lib/libxcb-keysyms.so.1.0.0
+usr/lib/libxcb-keysyms.la
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_keysyms.h
+usr/doc/
+usr/doc/xcb-util-keysyms-0.3.9/
+usr/doc/xcb-util-keysyms-0.3.9/ChangeLog
+usr/doc/xcb-util-keysyms-0.3.9/README
+usr/doc/xcb-util-keysyms-0.3.9/INSTALL
+usr/doc/xcb-util-keysyms-0.3.9/NEWS

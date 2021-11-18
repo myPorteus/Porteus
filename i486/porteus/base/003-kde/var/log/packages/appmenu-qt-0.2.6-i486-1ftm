@@ -1,0 +1,28 @@
+PACKAGE NAME:     appmenu-qt-0.2.6-i486-1ftm
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /mnt/sdb3/work/Port14.1-32/003/003-ftm/opt/appmenu-qt-0.2.6-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+appmenu-qt: Application menu module for Qt
+appmenu-qt:
+appmenu-qt:
+appmenu-qt:
+appmenu-qt:
+appmenu-qt:
+appmenu-qt:
+appmenu-qt:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/qt/
+usr/lib/qt/plugins/
+usr/lib/qt/plugins/menubar/
+usr/lib/qt/plugins/menubar/libappmenu-qt.so
+usr/share/
+usr/share/doc/
+usr/share/doc/appmenu-qt-0.2.6/
+usr/share/doc/appmenu-qt-0.2.6/README.bz2
+usr/share/doc/appmenu-qt-0.2.6/NEWS.bz2
+install/
+install/slack-desc

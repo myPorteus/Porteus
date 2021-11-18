@@ -1,0 +1,41 @@
+PACKAGE NAME:     kgamma-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /var/tmp/binpkgs/kgamma-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kgamma: KDE screen gamma values kcontrol module
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+kgamma:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/kgamma-4.14.3/
+usr/share/doc/kgamma-4.14.3/AUTHORS.bz2
+usr/share/doc/kgamma-4.14.3/ChangeLog.bz2
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/kgamma.desktop
+usr/share/apps/
+usr/share/apps/kgamma/
+usr/share/apps/kgamma/pics/
+usr/share/apps/kgamma/pics/background.png
+usr/share/apps/kgamma/pics/cmyscale.png
+usr/share/apps/kgamma/pics/darkgrey.png
+usr/share/apps/kgamma/pics/greyscale.png
+usr/share/apps/kgamma/pics/lightgrey.png
+usr/share/apps/kgamma/pics/midgrey.png
+usr/share/apps/kgamma/pics/rgbscale.png
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kcm_kgamma.so
+usr/bin/
+usr/bin/xf86gammacfg
+install/
+install/slack-desc

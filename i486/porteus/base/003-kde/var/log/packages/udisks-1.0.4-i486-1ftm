@@ -1,0 +1,101 @@
+PACKAGE NAME:     udisks-1.0.4-i486-1ftm
+COMPRESSED PACKAGE SIZE:     164K
+UNCOMPRESSED PACKAGE SIZE:     830K
+PACKAGE LOCATION: /root/003-ftm/udisks-1.0.4-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+udisks: udisks (storage device daemon)
+udisks:
+udisks: The udisks project provides a storage daemon that implements D-Bus
+udisks: interfaces that can be used to query and manipulate storage devices.
+udisks:
+udisks: It also includes a command-line tool, udisks(1), that can be used to
+udisks: query and control the daemon.
+udisks:
+udisks: Homepage:  http://www.freedesktop.org/wiki/Software/udisks
+udisks:
+udisks:
+FILE LIST:
+./
+install/
+install/slack-desc
+sbin/
+sbin/umount.udisks
+var/
+var/lib/
+var/lib/udisks/
+lib/
+lib/udev/
+lib/udev/udisks-part-id
+lib/udev/udisks-dm-export
+lib/udev/udisks-probe-ata-smart
+lib/udev/udisks-probe-sas-expander
+lib/udev/rules.d/
+lib/udev/rules.d/80-udisks.rules
+usr/
+usr/doc/
+usr/doc/udisks-1.0.4/
+usr/doc/udisks-1.0.4/README
+usr/doc/udisks-1.0.4/NEWS
+usr/doc/udisks-1.0.4/INSTALL
+usr/doc/udisks-1.0.4/HACKING
+usr/doc/udisks-1.0.4/ChangeLog
+usr/doc/udisks-1.0.4/COPYING
+usr/doc/udisks-1.0.4/AUTHORS
+usr/bin/
+usr/bin/udisks
+usr/bin/udisks-tcp-bridge
+usr/man/
+usr/man/man8/
+usr/man/man8/udisks-daemon.8.gz
+usr/man/man7/
+usr/man/man7/udisks.7.gz
+usr/man/man1/
+usr/man/man1/udisks.1.gz
+usr/man/man1/udisks-tcp-bridge.1.gz
+usr/libexec/
+usr/libexec/udisks-helper-mkfs
+usr/libexec/udisks-helper-delete-partition
+usr/libexec/udisks-helper-create-partition
+usr/libexec/udisks-helper-modify-partition
+usr/libexec/udisks-helper-create-partition-table
+usr/libexec/udisks-helper-change-filesystem-label
+usr/libexec/udisks-helper-linux-md-remove-component
+usr/libexec/udisks-helper-fstab-mounter
+usr/libexec/udisks-helper-ata-smart-collect
+usr/libexec/udisks-helper-ata-smart-selftest
+usr/libexec/udisks-helper-drive-detach
+usr/libexec/udisks-helper-drive-poll
+usr/libexec/udisks-helper-linux-md-check
+usr/libexec/udisks-helper-drive-benchmark
+usr/libexec/udisks-daemon
+usr/libexec/udisks-helper-mdadm-expand
+usr/libexec/udisks-helper-change-luks-password
+usr/share/
+usr/share/locale/
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/udisks.mo
+usr/share/polkit-1/
+usr/share/polkit-1/actions/
+usr/share/polkit-1/actions/org.freedesktop.udisks.policy
+usr/share/pkgconfig/
+usr/share/pkgconfig/udisks.pc
+usr/share/dbus-1/
+usr/share/dbus-1/system-services/
+usr/share/dbus-1/system-services/org.freedesktop.UDisks.service
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.freedesktop.UDisks.Expander.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UDisks.Port.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UDisks.Adapter.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UDisks.Device.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UDisks.xml
+etc/
+etc/bash_completion.d/
+etc/bash_completion.d/udisks
+etc/profile.d/
+etc/dbus-1/
+etc/dbus-1/system.d/
+etc/dbus-1/system.d/org.freedesktop.UDisks.conf
+etc/avahi/
+etc/avahi/services/
+etc/avahi/services/udisks.service

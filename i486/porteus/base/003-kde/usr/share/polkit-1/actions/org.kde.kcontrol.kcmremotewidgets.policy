@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+   <action id="org.kde.kcontrol.kcmremotewidgets.save" >
+      <description xml:lang="si">දුරස්ථ විජට්ටුවල ප්‍රතිපත්ති සුරකින්න</description>
+      <description xml:lang="ga">Sábháil polasaithe um giuirléidí cianda</description>
+      <description xml:lang="fr">Enregistrer la politique des composants graphiques distants</description>
+      <description xml:lang="sk">Uložiť politiky pre vzdialené widgety</description>
+      <description xml:lang="sl">Shrani pravilnike za oddaljene gradnike</description>
+      <description xml:lang="ca">Desa les polítiques d'estris remots</description>
+      <description xml:lang="bs">Sačuvaj smjernice za udaljene grafičke kontrole</description>
+      <description xml:lang="kk">Қашықтағы виджеттер ережелерін сақтау</description>
+      <description xml:lang="sr">Сачувај смернице за удаљене виџете</description>
+      <description xml:lang="km">រក្សាទុក​គោលនយោបាយ​របស់​ធាតុក្រាហ្វិក​ពី​ចម្ងាយ</description>
+      <description xml:lang="pa">ਰਿਮੋਟ ਵਿਦਜੈੱਟ ਦੀ ਪਾਲਸੀ ਸੰਭਾਲੋ</description>
+      <description xml:lang="ko">원격 위젯의 정책 저장하기</description>
+      <description xml:lang="gl">Gardas as políticas dos widgets remotos</description>
+      <description xml:lang="sv">Spara policy för grafiska fjärrkomponenter</description>
+      <description xml:lang="tg">Танзимоти видҷетҳои дурдастро сабт кунед</description>
+      <description xml:lang="th">บันทึกกฎของวิดเจ็ตระยะไกล</description>
+      <description xml:lang="pt_BR">Salvar políticas de widgets remotos</description>
+      <description xml:lang="da">Gem politikker for eksterne widgets</description>
+      <description xml:lang="zh_CN">保存远程部件的策略</description>
+      <description xml:lang="gu">દૂરસ્થ વિજેટ્સની નિતિઓ સંગ્રહો</description>
+      <description xml:lang="he">שמירת מדיניות של ווידג׳טים מרוחקים</description>
+      <description xml:lang="cs">Uložit zásady vzdálených widgetů</description>
+      <description xml:lang="pl">Zapisz polityki zdalnych elementów interfejsu</description>
+      <description xml:lang="de">Regelungen für entfernte Miniprogramme speichern</description>
+      <description xml:lang="hi">दूरस्थ विगेट्स नीतियाँ सहेजें</description>
+      <description xml:lang="tr">Uzak gereç politikalarını kaydet</description>
+      <description xml:lang="pt">Gravar as políticas dos elementos remotos</description>
+      <description xml:lang="ug">يىراقتىكى ۋىجېتلارنى ساقلاش تەدبىرى</description>
+      <description xml:lang="ia">Il salva le politicas del widgets remote</description>
+      <description xml:lang="lt">Išsaugoti nutolusių valdiklių taisykles</description>
+      <description xml:lang="zh_TW">儲存遠端元件政策</description>
+      <description xml:lang="hr">Spremi pravila za udaljene widgete</description>
+      <description xml:lang="uk">Зберегти правила для віддалених віджетів</description>
+      <description xml:lang="lv">Saglabāt attālinātā sīkrīka politiku</description>
+      <description xml:lang="id">Simpan kebijakan widget jarak jauh</description>
+      <description xml:lang="hu">Távoli widgetek irányelveinek mentése</description>
+      <description xml:lang="ml">വിദൂര ഉരുപ്പടികള്‍ക്കുള്ള നയങ്ങള്‍ സൂക്ഷിയ്ക്കുക</description>
+      <description xml:lang="mr">दूरस्थ विजेटची धोरणे साठवा</description>
+      <description xml:lang="nb">Lagre praksis for nettverkselementer</description>
+      <description xml:lang="el">Αποθήκευση των πολιτικών απομακρυσμένων μικροεφαρμογών</description>
+      <description xml:lang="vi">Lưu các chế độ widget từ xa</description>
+      <description xml:lang="ja">リモートウィジェットポリシーを保存</description>
+      <description>Save remote widgets' policies</description>
+      <description xml:lang="en_GB">Save remote widgets' policies</description>
+      <description xml:lang="eo">Konservi politikojn de foraj fenestraĵoj</description>
+      <description xml:lang="is">Vista stefnur varðandi fjartengdar græjur</description>
+      <description xml:lang="it">Salva le linee guida degli oggetti remoti</description>
+      <description xml:lang="ast">Guardáu de polítiques d'elementos gráficos remotos</description>
+      <description xml:lang="es">Guardar las políticas de elementos gráficos remotos</description>
+      <description xml:lang="et">Välisvidinate reeglite salvestamine</description>
+      <description xml:lang="ar">احفظ سياسات الودجات البعيدة</description>
+      <description xml:lang="eu">Urruneko trepeten politikak gordetzea</description>
+      <description xml:lang="wa">Schaper les politikes dåzès ahesses då lon</description>
+      <description xml:lang="nl">Beleidsregels voor widgets op afstand opslaan</description>
+      <description xml:lang="ro">Salvează politicile controalelor distante</description>
+      <description xml:lang="nds">Regeln för feern Lüttprogrammen sekern</description>
+      <description xml:lang="nn">Lagra reglar for fjernelement</description>
+      <description xml:lang="fi">Tallenna etäkäyttöliittymäkomponenttien menettelytavat</description>
+      <description xml:lang="bg">Запазване на правилата на отдалечените джаджи</description>
+      <description xml:lang="ru">Сохранение правил удалённо доступных виджетов</description>
+      <message xml:lang="si">දුරස්ථ ප්ලැස්මා විජට්ටු ප්‍රතිපත්ති සුරැකීමෙන් පද්ධතිය වළක්වයි</message>
+      <message xml:lang="ga">Ná lig don chóras polasaithe um giuirléidí cianda plasma a shábháil</message>
+      <message xml:lang="fr">Empêche le système d'enregistrer la politique des composants graphiques distants</message>
+      <message xml:lang="sk">Zabraňuje systému ukladať politiky pre vzdialené widgety</message>
+      <message xml:lang="sl">Sistemu prepreči shranjevanje pravilnikov za oddaljene gradnike</message>
+      <message xml:lang="ca">Evita al sistema de desar polítiques d'estris remots del plasma</message>
+      <message xml:lang="bs">Sprečava sistem da sačuva smjernice udaljenih plazma grafičkih kontrola</message>
+      <message xml:lang="kk">Қашықтағы Plasma виджеттер ережелерін жүйеде сақтауын болдырмау</message>
+      <message xml:lang="sr">Спречава систем да сачува смернице удаљених плазма виџета</message>
+      <message xml:lang="km">ការពារ​ប្រព័ន្ធ​មិន​ឲ្យ​រក្សាទុក​គោលនយោបាយ​របស់​ធាតុក្រាហ្វិក​ប្លាស្មា​ពី​ចម្ងាយ</message>
+      <message xml:lang="pa">ਰਿਮੋਟ ਪਲਾਜ਼ਮਾ ਵਿਦਜੈੱਟ ਦੀਆਂ ਨੀਤੀਆਂ ਸੰਭਾਲਣ ਤੋਂ ਸਿਸਟਮ ਨੂੰ ਰੋਕਦਾ ਹੈ</message>
+      <message xml:lang="ko">Plasma 원격 위젯 정책을 저장하지 못하도록 합니다</message>
+      <message xml:lang="gl">Evita que o sistema garde as políticas dos widgets remotos de plasma</message>
+      <message xml:lang="sv">Förhindrar systemet från att spara policy för Plasma grafiska fjärrkomponenter</message>
+      <message xml:lang="tg">Системаро аз сабткунии танзимоти видҷетҳои plasma-и дурдаст пешгирӣ мекунад</message>
+      <message xml:lang="th">ป้องกันระบบจากการบันทึกกฎของวิดเจ็ตของพลาสมาจากทางไกล</message>
+      <message xml:lang="pt_BR">Previne o sistema de salvar as políticas de widgets Plasma remotos</message>
+      <message xml:lang="da">Forhindrer systemet i et gemme politikker for eksterne plasma-widgets</message>
+      <message xml:lang="zh_CN">禁止系统保存远程 Plasma 部件的策略</message>
+      <message xml:lang="gu">સિસ્ટમને દૂરસ્થ પ્લાઝમા વિજેટ્સ નિતીઓ સંગ્રહ કરવામાંથી અટકાવે છે</message>
+      <message xml:lang="he">מונע מהמערכת מלשמור מדיניות של ווידג׳טים מרוחקים</message>
+      <message xml:lang="cs">Zabrání systému ukládat zásady vzdálených widgetů plasmy</message>
+      <message xml:lang="pl">Wyłącza zapisywanie polityk zdalnych elementów interfejsu</message>
+      <message xml:lang="de"></message>
+      <message xml:lang="hi">दूरस्थ प्लाज्मा विगेट्स नीतियाँ को सहेजने से तंत्र को रोकता है</message>
+      <message xml:lang="tr">Sistemin uzak plasma gereçlerinin politikalarını kaydetmesini engelle</message>
+      <message xml:lang="pt">Impede o sistema de gravar as políticas dos elementos remotos do Plasma</message>
+      <message xml:lang="ug">سىستېما يىراقتىكى پلازما ۋىجېتلىرىنىڭ تەدبىرىنى ساقلاشنى چەكلەيدۇ</message>
+      <message xml:lang="ia">Il preveni le systema ab salvar le politicas del widgets (elementos graphic) remote de plasma</message>
+      <message xml:lang="lt">Neleidžia sistemai išsaugoti nutolusių plazmos valdiklių taisyklių</message>
+      <message xml:lang="zh_TW">避免系統儲存遠端 plasma 元件政策</message>
+      <message xml:lang="hr">Brani sustavu spremanje pravila za udaljene widgete Plasme</message>
+      <message xml:lang="uk">Заборонити системі зберігати правила для віддалених віджетів Плазми</message>
+      <message xml:lang="lv">Liedz sistēmai saglabāt plasma attālināto sīkrīku politikas</message>
+      <message xml:lang="id">Mencegah sistem dari menyimpan kebijakan widget jarak jauh plasma</message>
+      <message xml:lang="hu">Megakadályozza a rendszert a távoli widgetek irányelveinek mentésében</message>
+      <message xml:lang="mr">दूरस्थ विजेटची धोरणे संचयीत करण्यापासुन प्रणालीस परावृत्त करतो.</message>
+      <message xml:lang="nb">Hindrer at systemet lagrer praksiser for plasmaelementer på nettverket</message>
+      <message xml:lang="el">Αποτρέπει το σύστημα από το να σώσει τις πολιτικές απομακρυσμένων μικροεφαρμογών plasma</message>
+      <message xml:lang="vi">Ngăn hệ thống khỏi lưu các chế độ widget plasma từ xa</message>
+      <message xml:lang="ja">システムがリモート Plasma ウィジェットポリシー保存するのを防ぎます</message>
+      <message>Prevents the system from saving remote plasma widgets' policies</message>
+      <message xml:lang="en_GB">Prevents the system from saving remote plasma widgets' policies</message>
+      <message xml:lang="eo"></message>
+      <message xml:lang="is">Kemur í veg fyrir að kerfið geti vistað stefnur varðandi fjartengdar græjur</message>
+      <message xml:lang="it">Impedisce al sistema di salvare le linee guida degli oggetti remoti di Plasma</message>
+      <message xml:lang="ast">Impide que'l sistema guarde polítiques d'elementos gráficos Plasma remotos</message>
+      <message xml:lang="es">Impide que el sistema guarde políticas de elementos gráficos Plasma remotos</message>
+      <message xml:lang="et">Takistab süsteemil salvestamast Plasma välisvidinate reegleid</message>
+      <message xml:lang="ar">يمنع النظام من حفظ سياسات ودجات بلازما البعيدة</message>
+      <message xml:lang="eu">Sistemak urruneko Plasma trepeten politikak gordetzea galarazten du</message>
+      <message xml:lang="wa">Espaitche li sistinme di schaper des politikes des ahesses plasma då lon</message>
+      <message xml:lang="nl">Voorkomt het opslaan door het systeem van beleidsregels voor widgets op afstand</message>
+      <message xml:lang="ro">Impiedică sistemul să salveze politicile controalelor distante</message>
+      <message xml:lang="nds">Höllt dat Systeem vun't Sekern vun de Regeln för feern Plasma-Lüttprogrammen af</message>
+      <message xml:lang="nn">Hindrar systemet i å lagra reglar for fjernelement</message>
+      <message xml:lang="fi">Estää järjestelmää tallentamasta etäplasmakäyttöliittymäkomponenttien menettelytapoja</message>
+      <message xml:lang="bg">Забраняване запазването на правилата на отдалечените джаджи</message>
+      <message xml:lang="ru">Сохранение правил доступа к удалённо доступным виджетам</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

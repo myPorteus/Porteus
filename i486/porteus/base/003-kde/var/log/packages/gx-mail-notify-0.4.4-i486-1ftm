@@ -1,0 +1,35 @@
+PACKAGE NAME:     gx-mail-notify-0.4.4-i486-1ftm
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /mnt/sdb3/work/Port14.1-32/003/003-ftm/opt/gx-mail-notify-0.4.4-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+gx-mail-notify: Plasmoid for checking unread mail
+gx-mail-notify:
+gx-mail-notify:
+gx-mail-notify:
+gx-mail-notify:
+gx-mail-notify:
+gx-mail-notify:
+gx-mail-notify:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/plasma_applet_gx_mail_notify.so
+usr/share/
+usr/share/doc/
+usr/share/doc/gx-mail-notify-0.4.4/
+usr/share/doc/gx-mail-notify-0.4.4/README.bz2
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/plasma-applet-gx_mail_notify.desktop
+usr/share/apps/
+usr/share/apps/desktoptheme/
+usr/share/apps/desktoptheme/default/
+usr/share/apps/desktoptheme/default/widgets/
+usr/share/apps/desktoptheme/default/widgets/gx_mail_notify-normal.svg
+usr/share/apps/desktoptheme/default/widgets/gx_mail_notify-icon_error.svg
+usr/share/apps/desktoptheme/default/widgets/gx_mail_notify-icon_new.svg
+install/
+install/slack-desc

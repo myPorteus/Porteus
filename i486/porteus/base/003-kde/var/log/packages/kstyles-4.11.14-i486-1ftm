@@ -1,0 +1,38 @@
+PACKAGE NAME:     kstyles-4.11.14-i486-1ftm
+COMPRESSED PACKAGE SIZE:     232K
+UNCOMPRESSED PACKAGE SIZE:     860K
+PACKAGE LOCATION: /var/tmp/binpkgs/kstyles-4.11.14-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kstyles: KDE: A set of different KDE styles
+kstyles:
+kstyles:
+kstyles:
+kstyles:
+kstyles:
+kstyles:
+kstyles:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kstyle_oxygen_config.so
+usr/lib/kde4/plugins/
+usr/lib/kde4/plugins/styles/
+usr/lib/kde4/plugins/styles/oxygen.so
+usr/share/
+usr/share/apps/
+usr/share/apps/kstyle/
+usr/share/apps/kstyle/themes/
+usr/share/apps/kstyle/themes/oxygen.themerc
+usr/share/apps/kstyle/themes/qtcde.themerc
+usr/share/apps/kstyle/themes/qtcleanlooks.themerc
+usr/share/apps/kstyle/themes/qtmotif.themerc
+usr/share/apps/kstyle/themes/qtplastique.themerc
+usr/share/apps/kstyle/themes/qtwindows.themerc
+usr/share/apps/kstyle/themes/qtgtk.themerc
+usr/bin/
+usr/bin/oxygen-demo
+usr/bin/oxygen-settings
+install/
+install/slack-desc

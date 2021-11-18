@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libkdcraw
+Description: A C++ wrapper around LibRaw library to decode RAW pictures. This library is used by digiKam and kipi-plugins.
+URL: http://www.digikam.org/sharedlibs
+Requires:
+Version: 2.4.2
+Libs: -L/usr/lib -lkdcraw
+Cflags: -I/usr/include

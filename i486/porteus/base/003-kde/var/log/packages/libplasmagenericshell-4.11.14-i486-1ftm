@@ -1,0 +1,42 @@
+PACKAGE NAME:     libplasmagenericshell-4.11.14-i486-1ftm
+COMPRESSED PACKAGE SIZE:     104K
+UNCOMPRESSED PACKAGE SIZE:     380K
+PACKAGE LOCATION: /var/tmp/binpkgs/libplasmagenericshell-4.11.14-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+libplasmagenericshell: Libraries for the KDE Plasma shell
+libplasmagenericshell:
+libplasmagenericshell:
+libplasmagenericshell:
+libplasmagenericshell:
+libplasmagenericshell:
+libplasmagenericshell:
+libplasmagenericshell:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/libplasmagenericshell-4.11.14/
+usr/share/doc/libplasmagenericshell-4.11.14/TODO.bz2
+usr/share/apps/
+usr/share/apps/plasma/
+usr/share/apps/plasma/packages/
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/metadata.desktop
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/contents/
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/contents/ui/
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/contents/ui/main.qml
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/contents/ui/Tooltip.qml
+usr/share/apps/plasma/packages/org.kde.desktop.widgetexplorer/contents/ui/AppletDelegate.qml
+usr/share/kde4/
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/plasma-layout-template.desktop
+usr/lib/
+usr/lib/libplasmagenericshell.so.4.14.3
+var/
+var/lib/
+var/lib/kde/
+var/lib/kde/libplasmagenericshell
+install/
+install/doinst.sh
+install/slack-desc

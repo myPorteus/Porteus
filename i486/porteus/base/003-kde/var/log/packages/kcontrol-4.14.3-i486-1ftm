@@ -1,0 +1,64 @@
+PACKAGE NAME:     kcontrol-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     232K
+UNCOMPRESSED PACKAGE SIZE:     890K
+PACKAGE LOCATION: /var/tmp/binpkgs/kcontrol-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kcontrol: The KDE Control Center
+kcontrol:
+kcontrol:
+kcontrol:
+kcontrol:
+kcontrol:
+kcontrol:
+kcontrol:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kcmspellchecking.so
+usr/lib/kde4/kcm_emoticons.so
+usr/lib/kde4/kcm_kdnssd.so
+usr/lib/kde4/kcm_componentchooser.so
+usr/lib/kde4/kcm_knotify.so
+usr/lib/kde4/kcm_kded.so
+usr/lib/kde4/kcm_locale.so
+usr/lib/kde4/kcm_icons.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/icons.desktop
+usr/share/kde4/services/language.desktop
+usr/share/kde4/services/kcmkded.desktop
+usr/share/kde4/services/kcmnotify.desktop
+usr/share/kde4/services/componentchooser.desktop
+usr/share/kde4/services/kcm_kdnssd.desktop
+usr/share/kde4/services/emoticons.desktop
+usr/share/kde4/services/spellchecking.desktop
+usr/share/config/
+usr/share/config/icons.knsrc
+usr/share/config/emoticons.knsrc
+usr/share/apps/
+usr/share/apps/kcmlocale/
+usr/share/apps/kcmlocale/pics/
+usr/share/apps/kcmlocale/pics/background.png
+usr/share/apps/kcm_componentchooser/
+usr/share/apps/kcm_componentchooser/kcm_kemail.desktop
+usr/share/apps/kcm_componentchooser/kcm_browser.desktop
+usr/share/apps/kcm_componentchooser/kcm_filemanager.desktop
+usr/share/apps/kcm_componentchooser/kcm_terminal.desktop
+usr/share/apps/kcm_componentchooser/kcm_wm.desktop
+usr/share/apps/ksmserver/
+usr/share/apps/ksmserver/windowmanagers/
+usr/share/apps/ksmserver/windowmanagers/openbox.desktop
+usr/share/apps/ksmserver/windowmanagers/metacity.desktop
+usr/share/apps/ksmserver/windowmanagers/compiz.desktop
+usr/share/apps/ksmserver/windowmanagers/compiz-custom.desktop
+usr/share/desktop-directories/
+usr/share/desktop-directories/kde-information.directory
+etc/
+etc/xdg/
+etc/xdg/menus/
+etc/xdg/menus/kde-information.menu
+install/
+install/slack-desc

@@ -1,0 +1,10 @@
+[Desktop Action open]
+Exec=pburn
+Icon=/usr/share/pixmaps/pburn2.png
+Name=Open with Pburn
+
+[Desktop Entry]
+Actions=open;
+Type=Service
+X-KDE-Action-Custom=true
+X-KDE-Solid-Predicate=IS OpticalDisc

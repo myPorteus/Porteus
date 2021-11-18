@@ -1,0 +1,224 @@
+'\" t
+.\"     Title: udisks
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: March 2008
+.\"    Manual: udisks
+.\"    Source: udisks
+.\"  Language: English
+.\"
+.TH "UDISKS" "7" "March 2008" "udisks" "udisks"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+udisks \- Storage Management
+.SH "DESCRIPTION"
+.PP
+udisks provides an interface to enumerate storage devices and perform operations on them\&. Any application can access the
+\fIorg\&.freedesktop\&.UDisks\fR
+service on the system message bus\&. Some operations (such as formatting disks etc\&.) is restricted using polkit\&.
+.SH "DEVICE INFORMATION"
+.PP
+On Linux, udisks relies on recent versions of
+\fBudev\fR(7)
+and the kernel\&. Influential device properties in the udev database include:
+.PP
+\fBUDISKS_PRESENTATION_HIDE\fR
+.RS 4
+If set to 1 this is a hint to presentation level software that the device should not be shown to the user\&.
+.RE
+.PP
+\fBUDISKS_PRESENTATION_NOPOLICY\fR
+.RS 4
+If set to 1 this is a hint to presentation level software that the device should not be automounted or autoassembled (for e\&.g\&. components of a multi\-disk device)\&.
+.RE
+.PP
+\fBUDISKS_DISABLE_POLLING\fR
+.RS 4
+If set to 1 this will disable the polling of drives for media changes, for devices which do not send out media notifications by themselves (this mostly affects CD drives)\&. Some CD drives cause bad effects such as very high CPU usage when being polled\&.
+.RE
+.PP
+\fBUDISKS_PRESENTATION_NAME\fR
+.RS 4
+The name to user for the device when presenting it to the user\&.
+.RE
+.PP
+\fBUDISKS_PRESENTATION_ICON_NAME\fR
+.RS 4
+The icon to use when presenting the device to the user\&. If set, the name must follow the freedesktop\&.org icon theme specification\&.
+.RE
+.PP
+\fBUDISKS_AUTOMOUNT_HINT\fR
+.RS 4
+A variable to influence whether a device should be automounted\&. Possible values include "always" (to hint that a device should always be automounted) and "never" (to hint that a device should never be automounted)\&. Note that this is only a hint \- the auto\-mounter might not honor it\&.
+.RE
+.PP
+\fBUDISKS_SYSTEM_INTERNAL\fR
+.RS 4
+If set, this will override the usual bus type based detection of whether a device is considered "system internal"\&. "0" means "removable" (i\&. e\&. eligible for automounting, and normal users can mount), any other value means "system internal" (i\&. e\&. no automounting, and only administrators can mount)\&.
+.RE
+.PP
+The
+\fBID_DRIVE_*\fR
+properties are used to describe what kind of physical media can be used in a device\&. These are typically set on the main block device (e\&.g\&.
+/dev/sdb) and more than one these properties can be set if the device supports multiple kinds of media\&.
+.PP
+\fBID_DRIVE_EJECTABLE\fR
+.RS 4
+Whether the media in the drive is physically ejectable\&. Only set this to 1 (or 0) if the drive truly uses (or doesn\*(Aqt) ejectable media\&. In particular, it is not necessary to set this for e\&.g\&. iPod or Kindle devices where it is necessary to send a command via
+\fBeject\fR(1)
+since the desktop user session will offer this option for removable devices regardless of whether they are ejectable\&. If this property is not set, a heuristic will be used to determine if the media is ejectable (drives using optical, Zip or Jaz media are considered ejectable)\&.
+.RE
+.PP
+\fBID_DRIVE_DETACHABLE\fR
+.RS 4
+Whether the device is detachable\&. It is only meaningful to set this to 0 (to avoid marking a device as detachable) since the code for detaching the device is part of udisks itself\&. If this property is not set, a heuristic will be used to determine if the drive is detachable (currently only devices connected through USB are detachable)\&.
+.RE
+.PP
+\fBID_DRIVE_CAN_SPINDOWN\fR
+.RS 4
+Whether the device can spin down\&. It is only meaningful to set this to 0 (to avoid marking a device as being capable of spinning down) since the code for spinning down the device is part of udisks itself\&. If this property is not set, a heuristic will be used to determine if the drive can spin down (currently only ATA devices, including those USB devices with a SAT layer) can be spun down)\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH\fR
+.RS 4
+The device is compatible with flash\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_CF\fR
+.RS 4
+The device is compatible with Compact Flash\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_MS\fR
+.RS 4
+The device is compatible with Memory Stick\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_SM\fR
+.RS 4
+The device is compatible with SmartMedia\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_SD\fR
+.RS 4
+The device is compatible with SecureDigital\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_SDHC\fR
+.RS 4
+The device is compatible with High\-Capicity SecureDigital\&.
+.RE
+.PP
+\fBID_DRIVE_FLASH_MMC\fR
+.RS 4
+The device is compatible with MultiMediaCard\&.
+.RE
+.PP
+\fBID_DRIVE_FLOPPY\fR
+.RS 4
+The device is compatible with floppy disk\&.
+.RE
+.PP
+\fBID_DRIVE_FLOPPY_ZIP\fR
+.RS 4
+The device is compatible with Zip\&.
+.RE
+.PP
+\fBID_DRIVE_FLOPPY_JAZ\fR
+.RS 4
+The device is compatible with Jaz\&.
+.RE
+.PP
+The
+\fBID_DRIVE_MEDIA_*\fR
+properties describe the current media in a device\&. As with the
+\fBID_DRIVE_*\fR
+properties, these properties are typically set on the main block device (e\&.g\&.
+/dev/sdb)\&. Typically only one of these properties are set\&.
+.PP
+\fBID_DRIVE_MEDIA_FLASH\fR
+.RS 4
+The physical media currently inserted into the device is flash\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_CF\fR
+.RS 4
+The physical media currently inserted into the device is Compact Flash\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_MS\fR
+.RS 4
+The physical media currently inserted into the device is Memory Stick\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_SM\fR
+.RS 4
+The physical media currently inserted into the device is SmartMedia\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_SD\fR
+.RS 4
+The physical media currently inserted into the device is SecureDigital\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_SDHC\fR
+.RS 4
+The physical media currently inserted into the device is High\-Capicity SecureDigital\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLASH_MMC\fR
+.RS 4
+The physical media currently inserted into the device is MultiMediaCard\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLOPPY\fR
+.RS 4
+The physical media currently inserted into the device is floppy disk\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLOPPY_ZIP\fR
+.RS 4
+The physical media currently inserted into the device is Zip\&.
+.RE
+.PP
+\fBID_DRIVE_MEDIA_FLOPPY_JAZ\fR
+.RS 4
+The physical media currently inserted into the device is Jaz\&.
+.RE
+.SH "REMOTE CLIENTS"
+.PP
+TODO: write me\&.
+.SH "AUTHOR"
+.PP
+Written by David Zeuthen
+<david@fubar\&.dk>
+with a lot of help from many others\&.
+.SH "BUGS"
+.PP
+Please send bug reports to either the distribution bug tracker or the upstream bug tracker at
+\m[blue]\fB\%http://bugs.freedesktop.org/enter_bug.cgi?product=udisks\fR\m[]\&.
+.SH "SEE ALSO"
+.PP
+\fBudev\fR(7),
+\fBpolkit\fR(8),
+\fBudisks-daemon\fR(8),
+\fBudisks-tcp-bridge\fR(1),
+\fBudisks\fR(1)

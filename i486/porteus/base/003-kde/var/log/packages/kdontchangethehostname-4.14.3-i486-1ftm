@@ -1,0 +1,22 @@
+PACKAGE NAME:     kdontchangethehostname-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /var/tmp/binpkgs/kdontchangethehostname-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kdontchangethehostname: Tool to inform KDE about a change in hostname
+kdontchangethehostname:
+kdontchangethehostname:
+kdontchangethehostname:
+kdontchangethehostname:
+kdontchangethehostname:
+kdontchangethehostname:
+kdontchangethehostname:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/libexec/
+usr/lib/kde4/libexec/kdontchangethehostname
+install/
+install/slack-desc

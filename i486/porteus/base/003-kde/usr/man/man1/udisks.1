@@ -1,0 +1,204 @@
+'\" t
+.\"     Title: udisks
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: April 2008
+.\"    Manual: udisks
+.\"    Source: udisks
+.\"  Language: English
+.\"
+.TH "UDISKS" "1" "April 2008" "udisks" "udisks"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+udisks \- udisks command line tool
+.SH "SYNOPSIS"
+.HP \w'\fBudisks\fR\ 'u
+\fBudisks\fR [\fBOPTIONS\fR]
+.SH "DESCRIPTION"
+.PP
+\fIudisks\fR
+is a simple command line client for the
+\fBudisks\fR(7)
+system bus service\&.
+.SH "OPTIONS"
+.PP
+\fB\-\-dump\fR
+.RS 4
+Dump all information about all devices\&. Please include this when filing bugs\&.
+.RE
+.PP
+\fB\-\-enumerate\fR
+.RS 4
+Lists all object paths of devices know to the daemon\&.
+.RE
+.PP
+\fB\-\-enumerate\-device\-files\fR
+.RS 4
+Lists all device files of devices know to the daemon\&.
+.RE
+.PP
+\fB\-\-monitor\fR
+.RS 4
+Connect to the daemon and print a line every time an event happens\&.
+.RE
+.PP
+\fB\-\-monitor\-detail\fR
+.RS 4
+Like
+\fB\-\-monitor\fR
+but prints the full details of the device whenever an event happens\&.
+.RE
+.PP
+\fB\-\-show\-info\fR \fIdevice_file\fR
+.RS 4
+Shows information about
+\fIdevice_file\fR\&.
+.RE
+.PP
+\fB\-\-inhibit\-polling\fR \fIdevice_file\fR [\fB\-\-\ program\ arg\ \&.\&.\&.\fR]
+.RS 4
+Inhibits polling on
+\fIdevice_file\fR\&. If no program is given, polling is inhibited until Ctrl+C is pressed\&. Otherwise the program is spawned and the polling is only inhibited until the program terminates\&.
+.RE
+.PP
+\fB\-\-poll\-for\-media\fR \fIdevice_file\fR
+.RS 4
+Polls
+\fIdevice_file\fR
+to perform media detection\&.
+.RE
+.PP
+\fB\-\-inhibit\-all\-polling\fR [\fB\-\-\ program\ arg\ \&.\&.\&.\fR]
+.RS 4
+Inhibits polling on all devices\&. If no program is given, polling is inhibited until Ctrl+C is pressed\&. Otherwise the program is spawned and the polling is only inhibited until the program terminates\&.
+.RE
+.PP
+\fB\-\-mount\fR \fIdevice_file\fR [\fB\-\-mount\-fstype\fR\ \fIfstype\fR] [\fB\-\-mount\-options\fR\ \fIoptions\fR]
+.RS 4
+Mounts the device represented by
+\fIdevice_file\fR
+using the file system
+\fIfstype\fR
+and a comma\-separated list of
+\fIoptions\fR\&.
+.RE
+.PP
+\fB\-\-unmount\fR \fIdevice_file\fR [\fB\-\-unmount\-options\fR\ \fIoptions\fR]
+.RS 4
+Unmounts the device represented by
+\fIdevice_file\fR
+using a comma\-separated list of
+\fIoptions\fR\&.
+.RE
+.PP
+\fB\-\-detach\fR \fIdevice_file\fR [\fB\-\-detach\-options\fR\ \fIoptions\fR]
+.RS 4
+Detaches (e\&.g\&. powering down the physical port the device is connected to) the device represented by
+\fIdevice_file\fR
+using a comma\-separated list of
+\fIoptions\fR\&.
+.RE
+.PP
+\fB\-\-eject\fR \fIdevice_file\fR [\fB\-\-eject\-options\fR\ \fIoptions\fR]
+.RS 4
+Ejects media from the device represented by
+\fIdevice_file\fR
+using a comma\-separated list of
+\fIoptions\fR\&.
+.RE
+.PP
+\fB\-\-ata\-smart\-refresh\fR \fIdevice_file\fR [\fB\-\-ata\-smart\-wakeup\fR]
+.RS 4
+Refreshes ATA SMART data for
+\fIdevice_file\fR\&. If the disk is sleeping it will not be woken up unless
+\fB\-\-ata\-smart\-wakeup\fR
+is passed\&. will be used\&.
+.RE
+.PP
+\fB\-\-ata\-smart\-refresh\fR \fIdevice_file\fR \fB\-\-ata\-smart\-simulate\fR \fIblob\fR
+.RS 4
+Read ATA SMART data from
+\fIblob\fR
+for
+\fIdevice_file\fR\&. This can only be done by the super user and is typically used for testing that clients relying on the ATA SMART data provided by udisks behave correctly\&. The libatasmart git repository at
+\m[blue]\fB\%http://git.0pointer.de/?p=libatasmart.git;a=summary\fR\m[]
+contains a collection of blobs from failing disks\&.
+.RE
+.PP
+\fB\-\-inhibit\fR [\fB\-\-\ program\ arg\ \&.\&.\&.\fR]
+.RS 4
+Inhibits clients from invoking methods on the daemon that require authorization (all methods will return the
+org\&.freedesktop\&.UDisks\&.Error\&.Inhibited
+error) if the caller is not the super user\&. This is typically used by OS installers and other programs that expects full control of the system, specifically to avoid automounting devices\&. Only the super user can do this\&.
+.sp
+If no program is given, the daemon is inhibited until Ctrl+C is pressed\&. Otherwise the program is spawned and the daemon is only inhibited until the program terminates\&.
+.RE
+.PP
+\fB\-\-set\-spindown\fR \fIdevice_file\fR \fB\-\-spindown\-timeout\fR \fIseconds\fR [\fB\-\-\ program\ arg\ \&.\&.\&.\fR]
+.RS 4
+Configures disk spindown timeout on
+\fIdevice_file\fR
+to
+\fIseconds\fR\&. See
+the section called \(lqSPINNING DOWN DISKS\(rq
+for important information before using this option\&.
+.sp
+If no program is given, the spindown time will be used until Ctrl+C is pressed\&. Otherwise the program is spawned and the the spindown timeout will only be used until the program terminates\&.
+.RE
+.PP
+\fB\-\-set\-spindown\-all\fR \fB\-\-spindown\-timeout\fR \fIseconds\fR [\fB\-\-\ program\ arg\ \&.\&.\&.\fR]
+.RS 4
+Configures disk spindown timeout on all disks that can be spun down to
+\fIseconds\fR\&. See
+the section called \(lqSPINNING DOWN DISKS\(rq
+for important information before using this option\&.
+.sp
+If no program is given, the spindown time will be used until Ctrl+C is pressed\&. Otherwise the program is spawned and the the spindown timeout will only be used until the program terminates\&.
+.RE
+.PP
+\fB\-\-help\fR
+.RS 4
+Show help options\&.
+.RE
+.SH "SPINNING DOWN DISKS"
+.PP
+Caution should be exercised when configuring disk spin down timeouts\&.
+.PP
+Note that every time a disk is spun down, the
+\(lqstart\-stop\-count\(rq
+ATA SMART attribute will increase by 1 and most disks are only good for a limited number (typically 50,000 but it varies by manufacturer and model)\&. In addition, the drive may take as long as 30 seconds to respond to subsequent disk access \(en most drives are typically faster, see the
+\(lqspin\-up\-time\(rq
+ATA SMART attribute\&.
+.PP
+On the other hand, cautious use (e\&.g\&. using conservative timeouts) of the ability to spin down disks, can be a good way to trade power consumption (typically 8 vs 1 Watts for 3\&.5" drives) and heat emission for a slightly higher latency\&.
+.SH "AUTHOR"
+.PP
+Written by David Zeuthen
+<david@fubar\&.dk>
+with a lot of help from many others\&.
+.SH "BUGS"
+.PP
+Please send bug reports to either the distribution bug tracker or the upstream bug tracker at
+\m[blue]\fB\%http://bugs.freedesktop.org/enter_bug.cgi?product=udisks\fR\m[]\&.
+.SH "SEE ALSO"
+.PP
+\fBudisks-daemon\fR(8),
+\fBudisks\fR(7),

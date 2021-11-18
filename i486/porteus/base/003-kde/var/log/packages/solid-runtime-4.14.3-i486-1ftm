@@ -1,0 +1,37 @@
+PACKAGE NAME:     solid-runtime-4.14.3-i486-1ftm
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     310K
+PACKAGE LOCATION: /var/tmp/binpkgs/solid-runtime-4.14.3-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+solid-runtime: KDE SC solid runtime modules (autoeject, automounter and
+solid-runtime: others)
+solid-runtime:
+solid-runtime:
+solid-runtime:
+solid-runtime:
+solid-runtime:
+solid-runtime:
+solid-runtime:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/kde4/
+usr/lib/kde4/kded_networkstatus.so
+usr/lib/kde4/kded_device_automounter.so
+usr/lib/kde4/kcm_device_automounter.so
+usr/lib/kde4/kded_solidautoeject.so
+usr/lib/kde4/kded_soliduiserver.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/kded/
+usr/share/kde4/services/kded/soliduiserver.desktop
+usr/share/kde4/services/kded/solidautoeject.desktop
+usr/share/kde4/services/kded/device_automounter.desktop
+usr/share/kde4/services/kded/networkstatus.desktop
+usr/share/kde4/services/device_automounter_kcm.desktop
+usr/bin/
+usr/bin/solid-hardware
+install/
+install/slack-desc

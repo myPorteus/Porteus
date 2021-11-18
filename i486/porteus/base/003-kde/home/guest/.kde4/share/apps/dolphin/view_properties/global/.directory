@@ -1,0 +1,7 @@
+[Dolphin]
+AdditionalInfo=511
+AdditionalInfoV2=Icons_Size,CustomizedDetails,Details_Size,Details_Date,Details_Permissions,Details_Owner,Details_Group,Details_Type
+ShowPreview=true
+Timestamp=2013,1,16,11,17,45
+Version=3
+VisibleRoles=CustomizedDetails,Details_text,Details_size,Details_date,Details_type,Details_permissions,Details_owner,Details_group

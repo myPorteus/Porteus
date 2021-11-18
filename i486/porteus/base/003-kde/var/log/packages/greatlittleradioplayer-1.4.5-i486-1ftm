@@ -1,0 +1,159 @@
+PACKAGE NAME:     greatlittleradioplayer-1.4.5-i486-1ftm
+COMPRESSED PACKAGE SIZE:     7.6M
+UNCOMPRESSED PACKAGE SIZE:     8.4M
+PACKAGE LOCATION: /root/work/greatlittleradioplayer-1.4.5-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+greatlittleradioplayer: Great Little Radio Player
+greatlittleradioplayer: 
+greatlittleradioplayer: A robust internet radio station streamer for various Linux
+greatlittleradioplayer: distributions. It connects to web sites offering radio streaming and
+greatlittleradioplayer: lets you play radio stations directly from that locations.
+greatlittleradioplayer: With Great Little Radio Player, you will have collection of more then
+greatlittleradioplayer: 370 radio stations worldwide.
+greatlittleradioplayer:
+greatlittleradioplayer: http://sites.google.com/site/glrpgreatlittleradioplayer/
+greatlittleradioplayer:
+greatlittleradioplayer:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/greatlittleradioplayer/
+usr/share/doc/greatlittleradioplayer/changelog.gz
+usr/share/doc/greatlittleradioplayer/copyright
+usr/share/applications/
+usr/share/applications/greatlittleradioplayer.desktop
+opt/
+opt/glrp/
+opt/glrp/glrp.svg
+opt/glrp/language/
+opt/glrp/language/Serbian (Latinic).lng
+opt/glrp/language/German.lng
+opt/glrp/language/Russian.lng
+opt/glrp/language/Portuguese Brazil.lng
+opt/glrp/language/Spanish.lng
+opt/glrp/language/Czech.lng
+opt/glrp/language/French.lng
+opt/glrp/language/Serbian (Cyrilic).lng
+opt/glrp/language/English.lng
+opt/glrp/language/Romanian.lng
+opt/glrp/language/Croatian.lng
+opt/glrp/GreatLittleRadioPlayer
+opt/glrp/stations.csv
+opt/glrp/changelog.txt
+opt/glrp/styles/
+opt/glrp/styles/Writing.qss
+opt/glrp/styles/One and Only - Gray.qss
+opt/glrp/styles/Left to Right - Blue.qss
+opt/glrp/styles/Cool even more.qss
+opt/glrp/styles/Linux home.qss
+opt/glrp/styles/Get Contrast.qss
+opt/glrp/styles/Ubuntu.qss
+opt/glrp/styles/Pink Lights.qss
+opt/glrp/styles/thumbnails/
+opt/glrp/styles/thumbnails/Linux home.png
+opt/glrp/styles/thumbnails/Cool even more.png
+opt/glrp/styles/thumbnails/NoImage.png
+opt/glrp/styles/thumbnails/Black Aluminum Speaker.png
+opt/glrp/styles/thumbnails/Orange thin cout.png
+opt/glrp/styles/thumbnails/iTunes.png
+opt/glrp/styles/thumbnails/Android Honeycomb.png
+opt/glrp/styles/thumbnails/One and Only - Gray.png
+opt/glrp/styles/thumbnails/Carpent.png
+opt/glrp/styles/thumbnails/Gray gradient seal.png
+opt/glrp/styles/thumbnails/Orange.png
+opt/glrp/styles/thumbnails/Writing.png
+opt/glrp/styles/thumbnails/Carpent on 80%.png
+opt/glrp/styles/thumbnails/White Aluminum Speaker.png
+opt/glrp/styles/thumbnails/Wood.png
+opt/glrp/styles/thumbnails/iPhone.png
+opt/glrp/styles/thumbnails/Linux speed.png
+opt/glrp/styles/thumbnails/Aluminum.png
+opt/glrp/styles/thumbnails/Ubuntu.png
+opt/glrp/styles/thumbnails/Thin bird.png
+opt/glrp/styles/thumbnails/Get Contrast.png
+opt/glrp/styles/thumbnails/Left to Right - Red.png
+opt/glrp/styles/thumbnails/Star Trek.png
+opt/glrp/styles/thumbnails/Elegant cream.png
+opt/glrp/styles/thumbnails/Black glass.png
+opt/glrp/styles/thumbnails/iPod.png
+opt/glrp/styles/thumbnails/Record.png
+opt/glrp/styles/thumbnails/Ubuntu Rounded.png
+opt/glrp/styles/thumbnails/Gray glass - text.png
+opt/glrp/styles/thumbnails/Clouds.png
+opt/glrp/styles/thumbnails/Silver and Slick.png
+opt/glrp/styles/thumbnails/Terminal.png
+opt/glrp/styles/thumbnails/Old Radio on Wood.png
+opt/glrp/styles/thumbnails/Left to Right - Gray.png
+opt/glrp/styles/thumbnails/Silver, Slick and Deep.png
+opt/glrp/styles/thumbnails/Pink Lights.png
+opt/glrp/styles/thumbnails/One to listen.png
+opt/glrp/styles/thumbnails/Left to Right - Blue.png
+opt/glrp/styles/thumbnails/Cool.png
+opt/glrp/styles/iTunes.qss
+opt/glrp/styles/Cool.qss
+opt/glrp/styles/iPod.qss
+opt/glrp/styles/Carpent.qss
+opt/glrp/styles/Android Honeycomb.qss
+opt/glrp/styles/Left to Right - Gray.qss
+opt/glrp/styles/Wood.qss
+opt/glrp/styles/iPhone.qss
+opt/glrp/styles/Terminal.qss
+opt/glrp/styles/Ubuntu Rounded.qss
+opt/glrp/styles/Aluminum.qss
+opt/glrp/styles/Carpent on 80%.qss
+opt/glrp/styles/Elegant cream.qss
+opt/glrp/styles/White Aluminum Speaker.qss
+opt/glrp/styles/Gray gradient seal.qss
+opt/glrp/styles/Orange.qss
+opt/glrp/styles/Silver, Slick and Deep.qss
+opt/glrp/styles/Star Trek.qss
+opt/glrp/styles/Thin bird.qss
+opt/glrp/styles/Black glass.qss
+opt/glrp/styles/One to listen.qss
+opt/glrp/styles/Silver and Slick.qss
+opt/glrp/styles/Black Aluminum Speaker.qss
+opt/glrp/styles/images/
+opt/glrp/styles/images/starfleet_command.png
+opt/glrp/styles/images/old-radio.png
+opt/glrp/styles/images/white_aluminum_speaker.png
+opt/glrp/styles/images/ubuntu-logo.png
+opt/glrp/styles/images/carpent_on_80%_menu.png
+opt/glrp/styles/images/itunes.png
+opt/glrp/styles/images/linux-speed.png
+opt/glrp/styles/images/ipod.png
+opt/glrp/styles/images/clouds.png
+opt/glrp/styles/images/white_speaker.png
+opt/glrp/styles/images/old-paper.png
+opt/glrp/styles/images/iPhone_glass.png
+opt/glrp/styles/images/iPhone.png
+opt/glrp/styles/images/carpent_on_80%.png
+opt/glrp/styles/images/linux-welcome-home.png
+opt/glrp/styles/images/badge_light.png
+opt/glrp/styles/images/enterprise.png
+opt/glrp/styles/images/apple-logo.png
+opt/glrp/styles/images/orange.png
+opt/glrp/styles/images/gray_speaker.png
+opt/glrp/styles/images/wood_planks.png
+opt/glrp/styles/images/carpent.png
+opt/glrp/styles/images/android-honeycomb.png
+opt/glrp/styles/images/wood.png
+opt/glrp/styles/images/old-paper-menu.png
+opt/glrp/styles/images/cream.png
+opt/glrp/styles/images/black_aluminum_speaker.png
+opt/glrp/styles/images/black_aluminum_speaker_menu.png
+opt/glrp/styles/images/record.png
+opt/glrp/styles/images/pink-flower.png
+opt/glrp/styles/images/old-radio-button.png
+opt/glrp/styles/images/badge_purple.png
+opt/glrp/styles/images/aluminum.png
+opt/glrp/styles/Clouds.qss
+opt/glrp/styles/Old Radio on Wood.qss
+opt/glrp/styles/Orange thin cout.qss
+opt/glrp/styles/Record.qss
+opt/glrp/styles/Left to Right - Red.qss
+opt/glrp/styles/Linux speed.qss
+opt/glrp/styles/Gray glass - text.qss

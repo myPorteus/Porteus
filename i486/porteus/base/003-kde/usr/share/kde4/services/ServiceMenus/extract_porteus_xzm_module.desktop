@@ -1,0 +1,23 @@
+# Service menu to extract Porteus modules ( *.xzm files )
+# Author: fanthom
+
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,application/x-xzm
+X-KDE-Priority=TopLevel
+Actions=extract_porteus_module;mount_porteus_module;umount_porteus_module;
+
+[Desktop Action mount_porteus_module]
+Name=Mount Porteus xzm module
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/mount-module %f
+
+[Desktop Action umount_porteus_module]
+Name=Umount Porteus xzm module
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/unmount-module %f
+
+[Desktop Action extract_porteus_module]
+Name=Extract Porteus xzm module
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/extract-module %F

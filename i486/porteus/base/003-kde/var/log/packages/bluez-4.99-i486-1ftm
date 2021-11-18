@@ -1,0 +1,122 @@
+PACKAGE NAME:     bluez-4.99-i486-1ftm
+COMPRESSED PACKAGE SIZE:     552K
+UNCOMPRESSED PACKAGE SIZE:     2.4M
+PACKAGE LOCATION: /root/003-ftm/bluez-4.99-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+bluez: bluez (Bluetooth libraries and utilities)
+bluez:
+bluez: Bluez is the Bluetooth stack for Linux, allowing Bluetooth adaptors
+bluez: and devices to be used with Linux.  This package contains the Bluez
+bluez: libraries, utilities, and other support files.
+bluez: 
+bluez: For more info, visit:  http://www.bluez.org
+bluez:
+bluez:
+bluez:
+bluez:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+var/
+var/lib/
+var/lib/bluetooth/
+lib/
+lib/udev/
+lib/udev/hid2hci
+lib/udev/bluetooth_serial
+lib/udev/rules.d/
+lib/udev/rules.d/97-bluetooth-serial.rules
+lib/udev/rules.d/97-bluetooth-hid2hci.rules
+lib/udev/rules.d/97-bluetooth.rules
+etc/
+etc/rc.d/
+etc/rc.d/rc.bluetooth.new
+etc/alsa/
+etc/alsa/bluetooth.conf.new
+etc/dbus-1/
+etc/dbus-1/system.d/
+etc/dbus-1/system.d/bluetooth.conf
+etc/bluetooth/
+etc/bluetooth/main.conf.new
+etc/bluetooth/rfcomm.conf.new
+etc/bluetooth/serial.conf.new
+etc/bluetooth/network.conf.new
+etc/bluetooth/input.conf.new
+etc/bluetooth/audio.conf.new
+usr/
+usr/doc/
+usr/doc/bluez-4.99/
+usr/doc/bluez-4.99/ChangeLog
+usr/doc/bluez-4.99/README
+usr/doc/bluez-4.99/NEWS
+usr/doc/bluez-4.99/INSTALL
+usr/doc/bluez-4.99/COPYING.LIB
+usr/doc/bluez-4.99/COPYING
+usr/doc/bluez-4.99/AUTHORS
+usr/man/
+usr/man/man8/
+usr/man/man8/l2ping.8.gz
+usr/man/man8/hid2hci.8.gz
+usr/man/man8/hciconfig.8.gz
+usr/man/man8/hciattach.8.gz
+usr/man/man8/bluetoothd.8.gz
+usr/man/man8/bccmd.8.gz
+usr/man/man1/
+usr/man/man1/sdptool.1.gz
+usr/man/man1/rfcomm.1.gz
+usr/man/man1/pand.1.gz
+usr/man/man1/hidd.1.gz
+usr/man/man1/hcitool.1.gz
+usr/man/man1/dund.1.gz
+usr/man/man1/dfutool.1.gz
+usr/man/man1/ciptool.1.gz
+usr/include/
+usr/include/bluetooth/
+usr/include/bluetooth/a2mp.h
+usr/include/bluetooth/hidp.h
+usr/include/bluetooth/cmtp.h
+usr/include/bluetooth/bnep.h
+usr/include/bluetooth/rfcomm.h
+usr/include/bluetooth/uuid.h
+usr/include/bluetooth/sdp_lib.h
+usr/include/bluetooth/sdp.h
+usr/include/bluetooth/l2cap.h
+usr/include/bluetooth/sco.h
+usr/include/bluetooth/mgmt.h
+usr/include/bluetooth/hci_lib.h
+usr/include/bluetooth/hci.h
+usr/include/bluetooth/bluetooth.h
+usr/share/
+usr/share/alsa/
+usr/sbin/
+usr/sbin/bluetoothd
+usr/sbin/hciattach
+usr/sbin/hciconfig
+usr/sbin/bccmd
+usr/bin/
+usr/bin/rfcomm
+usr/bin/l2ping
+usr/bin/hcitool
+usr/bin/sdptool
+usr/bin/ciptool
+usr/bin/dfutool
+usr/bin/hidd
+usr/bin/pand
+usr/bin/dund
+usr/lib/
+usr/lib/libbluetooth.so.3.12.0
+usr/lib/bluetooth/
+usr/lib/bluetooth/plugins/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/bluez.pc
+usr/lib/cups/
+usr/lib/cups/backend/
+usr/lib/cups/backend/bluetooth
+usr/lib/alsa-lib/
+usr/lib/alsa-lib/libasound_module_pcm_bluetooth.so
+usr/lib/alsa-lib/libasound_module_ctl_bluetooth.so
+usr/lib/alsa-lib/libasound_module_ctl_bluetooth.la
+usr/lib/alsa-lib/libasound_module_pcm_bluetooth.la
+usr/lib/libbluetooth.la

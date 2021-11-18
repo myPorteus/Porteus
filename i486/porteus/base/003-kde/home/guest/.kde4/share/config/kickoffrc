@@ -1,0 +1,8 @@
+[Favorites]
+FavoriteURLs=/usr/share/applications/usm.desktop,/usr/share/applications/pinstaller.desktop,/usr/share/applications/gtk-porteus-settings-centre.desktop,/usr/share/applications/gtk-make-changes.desktop,/usr/share/applications/kde4/kdesystemsettings.desktop,/usr/share/applications/kde4/dolphin.desktop,/usr/share/applications/browser.desktop
+
+[KRunner]
+loadAll=false
+
+[KRunner][PlasmaRunnerManager]
+pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations

@@ -1,0 +1,37 @@
+PACKAGE NAME:     libbluedevil-1.9.3-i486-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /libbluedevil-1.9.3-i486-1.txz
+PACKAGE DESCRIPTION:
+libbluedevil: libbluedevil (Qt wrapper for bluez)
+libbluedevil: 
+libbluedevil: This is a Qt-based library for handling Bluetooth functionality.
+libbluedevil:
+libbluedevil: Homepage: http://ereslibre.es/
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+libbluedevil:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/bluedevil.pc
+usr/lib/libbluedevil.so.1.9
+usr/include/
+usr/include/bluedevil/
+usr/include/bluedevil/bluedevil_export.h
+usr/include/bluedevil/bluedevildevice.h
+usr/include/bluedevil/bluedevilmanager.h
+usr/include/bluedevil/bluedevilutils.h
+usr/include/bluedevil/bluedevil.h
+usr/include/bluedevil/bluedeviladapter.h
+usr/doc/
+usr/doc/libbluedevil-1.9.3/
+usr/doc/libbluedevil-1.9.3/HACKING

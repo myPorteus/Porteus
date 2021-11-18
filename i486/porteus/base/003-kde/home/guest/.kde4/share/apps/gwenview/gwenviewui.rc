@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<!DOCTYPE kpartgui SYSTEM 'kpartgui.dtd'>
+<kpartgui version="50" name="gwenview">
+ <MenuBar>
+  <Menu name="file">
+   <Action name="file_save"/>
+   <Action name="file_save_as"/>
+   <Separator/>
+   <Action name="reload"/>
+   <Separator/>
+   <Action name="file_print"/>
+   <Separator/>
+   <Action name="file_rename"/>
+   <Action name="file_trash"/>
+   <Action name="file_delete"/>
+   <Separator/>
+   <Action name="file_copy_to"/>
+   <Action name="file_move_to"/>
+   <Action name="file_link_to"/>
+   <Separator/>
+   <Action name="file_show_properties"/>
+   <Action name="file_create_folder"/>
+   <Action name="file_open_with"/>
+   <Separator/>
+   <Action name="add_folder_to_places"/>
+   <Separator/>
+   <Action name="quit"/>
+  </Menu>
+  <Menu name="view">
+   <Action name="browse"/>
+   <Action name="view"/>
+   <Action name="fullscreen"/>
+   <Action name="toggle_slideshow"/>
+   <Separator/>
+   <Action name="view_actual_size"/>
+   <Action name="view_zoom_to_fit"/>
+   <Action name="view_zoom_in"/>
+   <Action name="view_zoom_out"/>
+   <Separator/>
+   <Action name="sort_order"/>
+   <Action name="thumbnail_details"/>
+   <Separator/>
+   <Action name="toggle_sidebar"/>
+  </Menu>
+  <Menu name="edit">
+   <Action name="edit_undo"/>
+   <Action name="edit_redo"/>
+   <Separator/>
+   <Action name="edit_cut"/>
+   <Action name="edit_copy"/>
+   <Action name="edit_paste"/>
+   <Separator/>
+   <Action name="edit_tags"/>
+   <Menu name="rating">
+    <text>&amp;Rating</text>
+    <Action name="rate_0"/>
+    <Action name="rate_1"/>
+    <Action name="rate_2"/>
+    <Action name="rate_3"/>
+    <Action name="rate_4"/>
+    <Action name="rate_5"/>
+   </Menu>
+   <Separator/>
+   <Action name="rotate_left"/>
+   <Action name="rotate_right"/>
+   <Action name="mirror"/>
+   <Action name="flip"/>
+   <Separator/>
+   <Action name="resize"/>
+   <Action name="crop"/>
+   <Action name="red_eye_reduction"/>
+  </Menu>
+  <Menu name="go">
+   <Action name="go_previous"/>
+   <Action name="go_next"/>
+   <Separator/>
+   <Action name="go_up"/>
+   <Separator/>
+   <Action name="go_start_page"/>
+  </Menu>
+  <Menu name="plugins">
+   <text>&amp;Plugins</text>
+  </Menu>
+  <Menu noMerge="1" name="settings">
+   <text>&amp;Settings</text>
+   <!--
+		Disable merging because we do not want the "fullscreen" action to appear
+		here, since it is already in the "view" menu.
+		-->
+   <Action name="options_show_menubar"/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Action name="options_configure"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar noMerge="1" name="mainToolBar">
+  <text>Main Toolbar</text>
+  <Action name="go_start_page"/>
+  <Action name="browse"/>
+  <Action name="view"/>
+  <Action name="fullscreen"/>
+  <Separator/>
+  <Action name="go_previous"/>
+  <Action name="go_next"/>
+  <Separator/>
+  <Action name="rotate_left"/>
+  <Action name="rotate_right"/>
+ </ToolBar>
+ <ActionProperties scheme="Default">
+  <Action shortcut="Space; Right" name="go_next"/>
+  <Action shortcut="Backspace; Left" name="go_previous"/>
+ </ActionProperties>
+</kpartgui>

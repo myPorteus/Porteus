@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libstreams
+Description: C++ streams for reading data as streams from various file formats
+Version: 0.7.8
+
+Libs: -L/usr/lib -lstreams
+Cflags: -I/usr/include

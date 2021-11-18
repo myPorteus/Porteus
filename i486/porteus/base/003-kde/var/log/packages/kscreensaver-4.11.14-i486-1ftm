@@ -1,0 +1,39 @@
+PACKAGE NAME:     kscreensaver-4.11.14-i486-1ftm
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /var/tmp/binpkgs/kscreensaver-4.11.14-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+kscreensaver: KDE screensaver framework
+kscreensaver:
+kscreensaver:
+kscreensaver:
+kscreensaver:
+kscreensaver:
+kscreensaver:
+kscreensaver:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/kscreensaver-4.11.14/
+usr/share/doc/kscreensaver-4.11.14/README.bz2
+usr/share/kde4/
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/screensaver.desktop
+usr/share/kde4/services/
+usr/share/kde4/services/ScreenSavers/
+usr/share/kde4/services/ScreenSavers/kblank.desktop
+usr/share/kde4/services/ScreenSavers/krandom.desktop
+usr/lib/
+usr/lib/libkscreensaver.so.5.0.0
+usr/include/
+usr/include/kscreensaver.h
+usr/include/kscreensaver_vroot.h
+usr/include/kscreensaver_export.h
+usr/bin/
+usr/bin/krandom.kss
+usr/bin/kblankscrn.kss
+install/
+install/doinst.sh
+install/slack-desc
