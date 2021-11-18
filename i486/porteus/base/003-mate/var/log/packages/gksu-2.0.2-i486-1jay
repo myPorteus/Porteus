@@ -1,0 +1,43 @@
+PACKAGE NAME:     gksu-2.0.2-i486-1jay
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: PKG32/dep/gksu-2.0.2-i486-1jay.txz
+PACKAGE DESCRIPTION:
+gksu: gksu (su and sudo GTK+ Frontend)
+gksu:
+gksu: gksu is a Gtk+ frontend to su and sudo
+gksu: 
+gksu: 
+gksu:
+gksu: 
+gksu:
+gksu:
+gksu: Homepage: http://www.nongnu.org/gksu/
+gksu:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gksu-2.0.2/
+usr/doc/gksu-2.0.2/gksu.SlackBuild
+usr/doc/gksu-2.0.2/INSTALL
+usr/doc/gksu-2.0.2/ChangeLog
+usr/doc/gksu-2.0.2/COPYING
+usr/doc/gksu-2.0.2/AUTHORS
+usr/doc/gksu-2.0.2/ABOUT-NLS
+usr/bin/
+usr/bin/gksu
+usr/man/
+usr/man/man1/
+usr/man/man1/gksu.1.gz
+usr/share/
+usr/share/gksu/
+usr/share/gksu/gksu-migrate-conf.sh
+usr/share/pixmaps/
+usr/share/pixmaps/gksu-root-terminal.png
+usr/share/pixmaps/gksu-icon.png
+usr/share/applications/
+usr/share/applications/gksu.desktop

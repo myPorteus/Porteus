@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/mate/settings-daemon/plugins/media-keys/" id="org.mate.SettingsDaemon.plugins.media-keys" gettext-domain="mate-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by mate-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>98</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in mate-settings-daemon startup queue</description>
+    </key>
+    <key type="i" name="volume-step">
+      <default>6</default>
+      <summary>Volume step</summary>
+      <description>Volume step as percentage of volume.</description>
+    </key>
+    <key type="s" name="touchpad">
+      <default>'XF86TouchpadToggle'</default>
+      <summary>Toggle touchpad</summary>
+      <description>Binding to enable or disable the touchpad.</description>
+    </key>
+    <key type="s" name="volume-mute">
+      <default>'XF86AudioMute'</default>
+      <summary>Volume mute</summary>
+      <description>Binding to mute the system volume.</description>
+    </key>
+    <key type="s" name="volume-down">
+      <default>'XF86AudioLowerVolume'</default>
+      <summary>Volume down</summary>
+      <description>Binding to lower the system volume.</description>
+    </key>
+    <key type="s" name="volume-up">
+      <default>'XF86AudioRaiseVolume'</default>
+      <summary>Volume up</summary>
+      <description>Binding to raise the system volume.</description>
+    </key>
+    <key type="s" name="power">
+      <default>'&lt;Control&gt;&lt;Alt&gt;Delete'</default>
+      <summary>Log out</summary>
+      <description>Binding to log out.</description>
+    </key>
+    <key type="s" name="eject">
+      <default>'XF86Eject'</default>
+      <summary>Eject</summary>
+      <description>Binding to eject an optical disc.</description>
+    </key>
+    <key type="s" name="home">
+      <default>'XF86Explorer'</default>
+      <summary>Home folder</summary>
+      <description>Binding to open the Home folder.</description>
+    </key>
+    <key type="s" name="search">
+      <default>'XF86Search'</default>
+      <summary>Search</summary>
+      <description>Binding to launch the search tool.</description>
+    </key>
+    <key type="s" name="email">
+      <default>'XF86Mail'</default>
+      <summary>Launch email client</summary>
+      <description>Binding to launch the email client.</description>
+    </key>
+    <key type="s" name="screensaver">
+      <default>'&lt;Control&gt;&lt;Alt&gt;l'</default>
+      <summary>Lock screen</summary>
+      <description>Binding to lock the screen.</description>
+    </key>
+    <key type="s" name="help">
+      <default>''</default>
+      <summary>Launch help browser</summary>
+      <description>Binding to launch the help browser.</description>
+    </key>
+    <key type="s" name="calculator">
+      <default>'XF86Calculator'</default>
+      <summary>Launch calculator</summary>
+      <description>Binding to launch the calculator.</description>
+    </key>
+    <key type="s" name="www">
+      <default>'XF86WWW'</default>
+      <summary>Launch web browser</summary>
+      <description>Binding to launch the web browser.</description>
+    </key>
+    <key type="s" name="media">
+      <default>'XF86AudioMedia'</default>
+      <summary>Launch media player</summary>
+      <description>Binding to launch the media player.</description>
+    </key>
+    <key type="s" name="play">
+      <default>'XF86AudioPlay'</default>
+      <summary>Play (or play/pause)</summary>
+      <description>Binding to start playback (or toggle play/pause).</description>
+    </key>
+    <key type="s" name="pause">
+      <default>'XF86AudioPause'</default>
+      <summary>Pause playback</summary>
+      <description>Binding to pause playback.</description>
+    </key>
+    <key type="s" name="stop">
+      <default>'XF86AudioStop'</default>
+      <summary>Stop playback</summary>
+      <description>Binding to stop playback.</description>
+    </key>
+    <key type="s" name="previous">
+      <default>'XF86AudioPrev'</default>
+      <summary>Previous track</summary>
+      <description>Binding to skip to previous track.</description>
+    </key>
+    <key type="s" name="next">
+      <default>'XF86AudioNext'</default>
+      <summary>Next track</summary>
+      <description>Binding to skip to next track.</description>
+    </key>
+  </schema>
+</schemalist>

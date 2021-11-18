@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/samba-4.0
+modulesdir=${prefix}/modules/torture
+
+Name: torture
+Description: Samba torture (test) suite
+Requires: talloc
+Version: 0.0.1
+Libs: -Wl,-rpath,/usr/lib -L${libdir} -ltorture
+Cflags: -I${includedir}  -DHAVE_IMMEDIATE_STRUCTURES=1

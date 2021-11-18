@@ -1,0 +1,44 @@
+PACKAGE NAME:     pycairo-1.8.10-i486-2
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: PKG32/dep/pycairo-1.8.10-i486-2.txz
+PACKAGE DESCRIPTION:
+pycairo: pycairo (a set of Python bindings for the cairo graphics library)
+pycairo:
+pycairo: Pycairo is set of Python bindings for the cairo graphics library.
+pycairo: 
+pycairo: Pycairo's web site:  http://cairographics.org/pycairo
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+pycairo:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/pycairo.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/cairo/
+usr/lib/python2.7/site-packages/cairo/_cairo.la
+usr/lib/python2.7/site-packages/cairo/__init__.py
+usr/lib/python2.7/site-packages/cairo/__init__.pyo
+usr/lib/python2.7/site-packages/cairo/_cairo.so
+usr/lib/python2.7/site-packages/cairo/__init__.pyc
+usr/include/
+usr/include/pycairo/
+usr/include/pycairo/pycairo.h
+usr/doc/
+usr/doc/pycairo-1.8.10/
+usr/doc/pycairo-1.8.10/AUTHORS
+usr/doc/pycairo-1.8.10/COPYING
+usr/doc/pycairo-1.8.10/COPYING-LGPL-2.1
+usr/doc/pycairo-1.8.10/README
+usr/doc/pycairo-1.8.10/INSTALL
+usr/doc/pycairo-1.8.10/COPYING-MPL-1.1
+usr/doc/pycairo-1.8.10/NEWS

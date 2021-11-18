@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="mate-desktop">
+  <schema path="/org/mate/desktop/sound/" id="org.mate.sound">
+    <key type="s" name="default-mixer-device">
+      <default>''</default>
+      <summary>Default mixer device</summary>
+      <description>The default mixer device used by the multimedia key bindings.</description>
+    </key>
+    <key type="as" name="default-mixer-tracks">
+      <default>[]</default>
+      <summary>Default mixer tracks</summary>
+      <description>The default mixer tracks used by the multimedia key bindings.</description>
+    </key>
+    <key type="b" name="enable-esd">
+      <default>false</default>
+      <summary>Enable ESD</summary>
+      <description>Enable sound server startup.</description>
+    </key>
+    <key type="b" name="event-sounds">
+      <default>false</default>
+      <summary>Sounds for events</summary>
+      <description>Whether to play sounds on user events.</description>
+    </key>
+    <key type="s" name="theme-name">
+      <default>'freedesktop'</default>
+      <summary>Sound theme name</summary>
+      <description>The XDG sound theme to use for event sounds.</description>
+    </key>
+    <key type="b" name="input-feedback-sounds">
+      <default>false</default>
+      <summary>Input feedback sounds</summary>
+      <description>Whether to play sounds on input events.</description>
+    </key>
+  </schema>
+</schemalist>

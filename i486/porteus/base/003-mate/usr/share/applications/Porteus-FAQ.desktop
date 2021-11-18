@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Porteus FAQ
+Exec=/opt/porteus-scripts/xorg/browser /usr/doc/Porteus-FAQ/index.html
+Icon=help-browser
+Terminal=false
+Type=Application
+Categories=Porteus;

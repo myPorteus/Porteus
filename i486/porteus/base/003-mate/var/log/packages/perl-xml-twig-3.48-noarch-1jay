@@ -1,0 +1,48 @@
+PACKAGE NAME:     perl-xml-twig-3.48-noarch-1jay
+COMPRESSED PACKAGE SIZE:     196K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: PKG32/dep/perl-xml-twig-3.48-noarch-1jay.txz
+PACKAGE DESCRIPTION:
+perl-xml-twig: perl-xml-twig (Perl XML transformation module)
+perl-xml-twig:
+perl-xml-twig: XML::Twig is (yet another!) XML transformation module.
+perl-xml-twig: Its strong points: can be used to process huge documents while
+perl-xml-twig: still being in tree mode; not bound by DOM or SAX, so it is
+perl-xml-twig: very perlish and offers a very comprehensive set of methods;
+perl-xml-twig: simple to use; DWIMs as much as possible.
+perl-xml-twig:
+perl-xml-twig: Homepage: http://xmltwig.org/xmltwig/
+perl-xml-twig:
+perl-xml-twig:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/perl-xml-twig-3.48/
+usr/doc/perl-xml-twig-3.48/perl-xml-twig.SlackBuild
+usr/doc/perl-xml-twig-3.48/README
+usr/doc/perl-xml-twig-3.48/Changes
+usr/man/
+usr/man/man3/
+usr/man/man3/XML::Twig.3.gz
+usr/man/man1/
+usr/man/man1/xml_grep.1.gz
+usr/man/man1/xml_split.1.gz
+usr/man/man1/xml_pp.1.gz
+usr/man/man1/xml_spellcheck.1.gz
+usr/man/man1/xml_merge.1.gz
+usr/share/
+usr/share/perl5/
+usr/share/perl5/vendor_perl/
+usr/share/perl5/vendor_perl/XML/
+usr/share/perl5/vendor_perl/XML/Twig.pm
+usr/share/perl5/vendor_perl/XML/Twig/
+usr/share/perl5/vendor_perl/XML/Twig/XPath.pm
+usr/bin/
+usr/bin/xml_spellcheck
+usr/bin/xml_merge
+usr/bin/xml_grep
+usr/bin/xml_split
+usr/bin/xml_pp

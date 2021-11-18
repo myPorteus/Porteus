@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="mate-desktop">
+  <schema path="/org/mate/desktop/file-views/" id="org.mate.file-views">
+    <key type="s" name="icon-theme">
+      <default>'crux_teal'</default>
+      <summary>File Icon Theme</summary>
+      <description>Theme used for displaying file icons.</description>
+    </key>
+  </schema>
+</schemalist>

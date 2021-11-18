@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Florence - Florence is a simple virtual keyboard for Gnome.
+  
+   Copyright (C) 2008, 2009, 2010 François Agrech
+  
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2, or (at your option)
+   any later version.
+  
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+  
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software Foundation,
+   Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  
+-->
+<grammar xml:lang="en" ns="http://florence.sourceforge.net" xmlns:svg="http://www.w3.org/2000/svg" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="style-element"/>
+  </start>
+  <define name="xmllang">
+    <attribute name="xml:lang">
+      <data type="language"/>
+    </attribute>
+  </define>
+  <define name="xmlbase">
+    <attribute name="xml:base"/>
+  </define>
+  <define name="style-element">
+    <element name="style">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <ref name="shapes-element"/>
+      <ref name="symbols-element"/>
+      <optional>
+        <ref name="sounds-element"/>
+      </optional>
+    </element>
+  </define>
+  <define name="shapes-element">
+    <element name="shapes">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <oneOrMore>
+        <ref name="shape-element"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="symbols-element">
+    <element name="symbols">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <oneOrMore>
+        <ref name="symbol-element"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="sounds-element">
+    <element name="sounds">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <oneOrMore>
+        <ref name="sound-element"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="shape-element">
+    <element name="shape">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <element name="name">
+        <data type="string"/>
+      </element>
+      <externalRef href="svg11.rng"/>
+    </element>
+  </define>
+  <define name="symbol-element">
+    <element name="symbol">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <choice>
+        <element name="name">
+          <data type="string"/>
+        </element>
+        <element name="type">
+          <choice>
+            <value>close</value>
+            <value>reduce</value>
+            <value>config</value>
+            <value>move</value>
+            <value>bigger</value>
+            <value>smaller</value>
+            <value>extend</value>
+            <value>unextend</value>
+          </choice>
+        </element>
+      </choice>
+      <choice>
+        <externalRef href="svg11.rng"/>
+        <group>
+          <element name="label">
+            <data type="string"/>
+          </element>
+          <zeroOrMore>
+            <element name="label">
+              <ref name="xmllang"/>
+              <data type="string"/>
+            </element>
+          </zeroOrMore>
+        </group>
+      </choice>
+    </element>
+  </define>
+  <define name="sound-element">
+    <element name="sound">
+      <optional>
+        <ref name="xmllang"/>
+      </optional>
+      <optional>
+        <ref name="xmlbase"/>
+      </optional>
+      <attribute name="match">
+        <data type="string"/>
+      </attribute>
+      <element name="press">
+        <data type="string"/>
+      </element>
+      <element name="release">
+        <data type="string"/>
+      </element>
+      <element name="hover">
+        <data type="string"/>
+      </element>
+    </element>
+  </define>
+</grammar>

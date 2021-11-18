@@ -1,0 +1,190 @@
+.TH AUDACIOUS "1" "February 2014" "Version 3.6-devel" "Audacious"
+
+.SH NAME
+audacious \- an advanced audio player.
+
+.SH SYNOPSIS
+.B audacious
+[OPTION] ... [FILE] ...
+
+.SH DESCRIPTION
+Audacious is a free advanced audio player for Linux and many other
+UNIX-compatible systems. It focuses on low resource usage, high audio quality,
+and support for a wide range of audio formats. It was originally based on Beep
+Media Player, which was in turn based on XMMS.
+
+.SH OPTIONS
+.B Getting help:
+
+.TP
+.I -h, --help
+Show a brief list of options.
+
+.PP
+.B Opening files:
+
+.TP
+.I -e, --enqueue
+Add the files on the command line to the current playlist but do not start
+playback.
+
+.TP
+.I -E, --enqueue-to-temp
+Add the files on the command line to a temporary playlist and start playback.
+
+.PP
+.B Controlling playback:
+
+.TP
+.I -p, --play
+If currently playing, go to the beginning of the song; otherwise, begin playing.
+
+.TP
+.I -u, --pause
+If currently playing, pause; if paused, resume playing.
+
+.TP
+.I -t, --play-pause
+If currently playing, pause; otherwise, begin playing.
+
+.TP
+.I -s, --stop
+Stop playing and go to the beginning of the song.
+
+.TP
+.I -r, --rew
+Go to the previous song in the playlist.
+
+.TP
+.I -f, --fwd
+Go to the next song in the playlist.
+
+.PP
+.B Miscellaneous:
+
+.TP
+.I -m, --show-main-window
+Show the Audacious window if it is hidden and bring it to the top.
+
+.TP
+.I -j, --show-jump-box
+Show the Jump to Song window.
+
+.TP
+.I -H, --headless
+Start in command-line mode; i.e., without any graphical user interface.
+
+.TP
+.I -q, --quit-after-play
+Exit as soon as playback stops, or immediately if there is nothing to play.
+
+.TP
+.I -v, --version
+Print version information and exit.
+
+.TP
+.I -V, --verbose
+Print debugging output while running.
+
+.SH KEYBINDINGS
+.ta 24
+z	Previous song
+.br
+x	Play
+.br
+c, Space	Pause
+.br
+v	Stop
+.br
+b	Next song
+.br
+Right arrow	Seek forward 5 seconds
+.br
+Left arrow	Seek backward 5 seconds
+.br
+Control + z	Go to beginning of playlist
+.br
+Escape	Scroll to current song
+.br
+Control + a	Select all songs in playlist
+.br
+Shift + Control + a	Cancel selection
+.br
++ (plus)	Increase volume 5 percent
+.br
+- (minus)	Decrease volume 5 percent
+.br
+s	Toggle shuffle
+.br
+r	Toggle repeat
+.br
+Control + n	Toggle advancing in playlist
+.br
+Control + m	Toggle stopping after current song
+.br
+Control + e	Show elapsed time
+.br
+Control + r	Show time remaining
+.br
+Alt + e	Show/hide playlist
+.br
+Alt + g	Show/hide equalizer
+.br
+Control + o	Toggle windows always on top
+.br
+Control + s	Toggle windows on all workspaces
+.br
+Control + w	Toggle rolling up main window
+.br
+Control + Alt + w	Toggle rolling up equalizer
+.br
+Shift + Control + w	Toggle rolling up playlist
+.br
+i	Display Song Information dialog
+.br
+Control + j	Display Jump to Time dialog
+.br
+j	Display Jump to Song dialog
+.br
+Control + f	Display Search dialog
+.br
+l	Display Open dialog
+.br
+f	Display Add dialog
+.br
+Control + l	Display Open Internet Address dialog
+.br
+Control + h	Display Add Internet Address dialog
+.br
+Control + p	Display Preferences dialog
+
+.SH FILES
+.TP
+~/.config/audacious/config
+User's Audacious configuration.
+.TP
+~/.config/audacious/playlists/1000.audpl
+Default playlist usually loaded on startup.
+.TP
+~/.local/share/audacious/Skins, ${prefix}/share/audacious/Skins
+Default location(s) where Audacious should look for skin files.
+.TP
+~/.local/share/audacious/Plugins
+Location of user-installed plugins.
+.SH ENVIRONMENT
+.TP 12
+.B SKINSDIR
+Colon separated list of paths where Audacious should look for skin files.
+.TP
+.B TARCMD
+Tar command supporting GNU tar style decompression.  Used for
+unpacking gzip and bzip2 compressed skins.  Default is \fItar\fP.
+.TP
+.B UNZIPCMD
+Command for decompressing zip files (skins).  Default is \fIunzip\fP.
+
+.SH "SEE ALSO"
+.BR audtool (1)
+
+.SH WEBSITE
+.I http://audacious-media-player.org

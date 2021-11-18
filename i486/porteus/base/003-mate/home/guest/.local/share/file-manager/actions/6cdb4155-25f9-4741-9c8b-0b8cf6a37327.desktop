@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Action
+TargetContext=false
+Icon[en_US]=cdr
+Icon[en]=cdr
+Icon[C]=cdr
+Tooltip[en_US]=Unmount a porteus module that is mounted
+Tooltip[en]=Unmount a porteus module that is mounted
+Tooltip[C]=Unmount a porteus module that is mounted
+ToolbarLabel[en_US]=Unmount module
+ToolbarLabel[en]=Unmount module
+ToolbarLabel[C]=Unmount module
+Name[en_US]=Unmount module
+Name[en]=Unmount module
+Name[C]=Unmount module
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.xzm;
+Exec=/opt/porteus-scripts/context-menu/unmount-module %f
+Name[en_US]=Unmount module
+Name[en]=Unmount module
+Name[C]=Unmount module

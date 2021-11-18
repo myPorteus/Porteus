@@ -1,0 +1,7 @@
+#!/bin/sh
+# Update MATE menu:
+
+echo "Updating MATE menu: update-desktop-database"
+for x in `ps -C mate-session -o user=`; do su --login $x -c "xdg-desktop-menu $1 --novendor /`cut -d/ -f7- /mnt/live/tmp/caches/desktop-$1`"; done
+update-desktop-database
+killall mate-panel

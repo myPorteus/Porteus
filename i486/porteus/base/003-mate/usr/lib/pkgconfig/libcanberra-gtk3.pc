@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: libcanberra-gtk3
+Description: Gtk3 Event Sound API
+Version: 0.29
+Libs: -L${libdir} -lcanberra-gtk3 
+Cflags: -D_REENTRANT -I${includedir}
+Requires: libcanberra gtk+-3.0

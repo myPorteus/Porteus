@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+  <enum id="org.mate.engrampa.sort-method">
+    <value value="0" nick="name"/>
+    <value value="1" nick="size"/>
+    <value value="2" nick="type"/>
+    <value value="3" nick="time"/>
+    <value value="4" nick="path"/>
+  </enum>
+
+  <enum id="org.mate.engrampa.sort-type">
+    <value value="0" nick="ascending"/>
+    <value value="1" nick="descending"/>
+  </enum>
+
+  <enum id="org.mate.engrampa.list-mode">
+    <value value="0" nick="all-files"/>
+    <value value="1" nick="as-folder"/>
+  </enum>
+
+  <enum id="org.mate.engrampa.compression-level">
+    <value value="0" nick="very-fast"/>
+    <value value="1" nick="fast"/>
+    <value value="2" nick="normal"/>
+    <value value="3" nick="maximum"/>
+  </enum>
+
+  <schema path="/org/mate/engrampa/" id="org.mate.engrampa" gettext-domain="@GETTEXT_PACKAGE@">
+    <child schema="org.mate.engrampa.listing" name="listing"/>
+    <child schema="org.mate.engrampa.ui" name="ui"/>
+    <child schema="org.mate.engrampa.general" name="general"/>
+    <child schema="org.mate.engrampa.dialogs" name="dialogs"/>
+  </schema>
+  <schema path="/org/mate/engrampa/listing/" id="org.mate.engrampa.listing" gettext-domain="@GETTEXT_PACKAGE@">
+    <key name="sort-method" enum="org.mate.engrampa.sort-method">
+      <default>'name'</default>
+      <summary>How to sort files</summary>
+      <description>What criteria must be used to arrange files. Possible values: name, size, type, time, path.</description>
+    </key>
+    <key name="sort-type" enum="org.mate.engrampa.sort-type">
+      <default>'ascending'</default>
+      <summary>Sort type</summary>
+      <description>Whether to sort in ascending or descending direction. Possible values: ascending, descending.</description>
+    </key>
+    <key name="list-mode" enum="org.mate.engrampa.list-mode">
+      <default>'as-folder'</default>
+      <summary>List Mode</summary>
+      <description>Whether to view all files in the archive (all_files), or view the archive as a folder (as_folder).</description>
+    </key>
+    <key type="b" name="show-type">
+      <default>true</default>
+      <summary>Display type</summary>
+      <description>Display the Type column in the main window.</description>
+    </key>
+    <key type="b" name="show-size">
+      <default>true</default>
+      <summary>Display size</summary>
+      <description>Display the Size column in the main window.</description>
+    </key>
+    <key type="b" name="show-time">
+      <default>true</default>
+      <summary>Display time</summary>
+      <description>Display the Time column in the main window.</description>
+    </key>
+    <key type="b" name="show-path">
+      <default>true</default>
+      <summary>Display path</summary>
+      <description>Display the Path column in the main window.</description>
+    </key>
+    <key type="b" name="use-mime-icons">
+      <default>true</default>
+      <summary>Use mime icons</summary>
+      <description>if TRUE will display icons depending on the file type (slower), otherwise will use always the same icon for all files (faster).</description>
+    </key>
+    <key type="i" name="name-column-width">
+      <default>250</default>
+      <summary>Name column width</summary>
+      <description>The default width ofthe name column the file list.</description>
+    </key>
+  </schema>
+  <schema path="/org/mate/engrampa/ui/" id="org.mate.engrampa.ui" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="i" name="history-len">
+      <default>5</default>
+      <summary>Max history length</summary>
+      <description>Max number of items in the Open Recents menu.</description>
+    </key>
+    <key type="i" name="window-width">
+      <default>600</default>
+    </key>
+    <key type="i" name="window-height">
+      <default>480</default>
+    </key>
+    <key type="i" name="sidebar-width">
+      <default>200</default>
+    </key>
+    <key type="b" name="view-toolbar">
+      <default>true</default>
+      <summary>View toolbar</summary>
+      <description>Whether to display the toolbar.</description>
+    </key>
+    <key type="b" name="view-statusbar">
+      <default>true</default>
+      <summary>View statusbar</summary>
+      <description>Whether to display the statusbar.</description>
+    </key>
+    <key type="b" name="view-folders">
+      <default>false</default>
+      <summary>View the folders pane</summary>
+      <description>Whether to display the folders pane.</description>
+    </key>
+  </schema>
+  <schema path="/org/mate/engrampa/general/" id="org.mate.engrampa.general" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="as" name="editors">
+      <default>[]</default>
+      <summary>Editors</summary>
+      <description>List of applications entered in the Open file dialog and not  associated with the file type.</description>
+    </key>
+    <key name="compression-level" enum="org.mate.engrampa.compression-level">
+      <default>'normal'</default>
+      <summary>Compression level</summary>
+      <description>Compression level used when adding files to an archive.  Possible values : very_fast, fast, normal, maximum.</description>
+    </key>
+    <key type="b" name="encrypt-header">
+      <default>false</default>
+      <summary>Encrypt the archive header</summary>
+      <description>Whether to encrypt the archive header.  If the header is encrypted the password will be required to list the archive content as well.</description>
+    </key>
+    <key type="b" name="migrate-directories">
+      <default>true</default>
+    </key>
+  </schema>
+  <schema path="/org/mate/engrampa/dialogs/" id="org.mate.engrampa.dialogs" gettext-domain="@GETTEXT_PACKAGE@">
+    <child schema="org.mate.engrampa.dialogs.extract" name="extract"/>
+    <child schema="org.mate.engrampa.dialogs.add" name="add"/>
+    <child schema="org.mate.engrampa.dialogs.batch-add" name="batch-add"/>
+  </schema>
+  <schema path="/org/mate/engrampa/dialogs/extract/" id="org.mate.engrampa.dialogs.extract" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="b" name="overwrite">
+      <default>true</default>
+      <summary>Overwrite existing files</summary>
+    </key>
+    <key type="b" name="skip-newer">
+      <default>false</default>
+      <summary>Do not overwrite newer files</summary>
+    </key>
+    <key type="b" name="recreate-folders">
+      <default>true</default>
+      <summary>Recreate the folders stored in the archive</summary>
+    </key>
+  </schema>
+  <schema path="/org/mate/engrampa/dialogs/add/" id="org.mate.engrampa.dialogs.add" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="s" name="current-folder">
+      <default>''</default>
+    </key>
+    <key type="s" name="filename">
+      <default>''</default>
+    </key>
+    <key type="s" name="include-files">
+      <default>''</default>
+    </key>
+    <key type="s" name="exclude-files">
+      <default>''</default>
+    </key>
+    <key type="s" name="exclude-folders">
+      <default>''</default>
+    </key>
+    <key type="b" name="update">
+      <default>false</default>
+    </key>
+    <key type="b" name="recursive">
+      <default>true</default>
+    </key>
+    <key type="b" name="no-symlinks">
+      <default>false</default>
+    </key>
+</schema>
+  <schema path="/org/mate/engrampa/dialogs/batch-add/" id="org.mate.engrampa.dialogs.batch-add" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="s" name="default-extension">
+      <default>'.tar.gz'</default>
+    </key>
+    <key type="b" name="other-options">
+      <default>false</default>
+    </key>
+    <key type="i" name="volume-size">
+      <default>0</default>
+      <summary>Default volume size</summary>
+      <description>The default size for volumes.</description>
+    </key>
+  </schema>
+  <schema path="/org/mate/engrampa/dialogs/last-output/" id="org.mate.engrampa.dialogs.last-output" gettext-domain="@GETTEXT_PACKAGE@">
+    <key type="i" name="width">
+      <default>-1</default>
+    </key>
+    <key type="i" name="height">
+      <default>-1</default>
+    </key>
+  </schema>
+</schemalist>

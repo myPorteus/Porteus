@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=cdr
+Icon[en]=cdr
+Icon[C]=cdr
+Tooltip[en_US]=Extract a porteus module
+Tooltip[en]=Extract a porteus module
+Tooltip[C]=Extract a porteus module
+ToolbarLabel[en_US]=Extract module
+ToolbarLabel[en]=Extract module
+ToolbarLabel[C]=Extract module
+Name[en_US]=Extract module
+Name[en]=Extract module
+Name[C]=Extract module
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/octet-stream;
+Basenames=*.xzm;
+Exec=/opt/porteus-scripts/context-menu/extract-module %F
+Name[en_US]=Extract module
+Name[en]=Extract module
+Name[C]=Extract module

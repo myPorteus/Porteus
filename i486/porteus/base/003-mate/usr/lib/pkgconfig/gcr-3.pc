@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+sysconfdir=/etc
+
+Name: gcr-3
+Description: GObject and GUI library for high level crypto parsing and display
+Version: 3.8.2
+Requires: gck-1 gcr-ui-3 gcr-base-3

@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=gdeb
+Icon[en]=gdeb
+Icon[C]=gdeb
+Tooltip[en_US]=Convert a debian package to a Porteus module
+Tooltip[en]=Convert a debian package to a Porteus module
+Tooltip[C]=Convert a debian package to a Porteus module
+ToolbarLabel[en_US]=Convert debian package
+ToolbarLabel[en]=Convert debian package
+ToolbarLabel[C]=Convert debian package
+Name[en_US]=Convert debian package
+Name[en]=Convert debian package
+Name[C]=Convert debian package
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/x-debian-package;
+Basenames=*.deb;
+Exec=/opt/porteus-scripts/context-menu/convert_deb %f
+Name[en_US]=deb2xzm
+Name[en]=deb2xzm
+Name[C]=deb2xzm

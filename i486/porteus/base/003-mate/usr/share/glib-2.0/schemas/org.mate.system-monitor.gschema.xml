@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/mate/system-monitor/" id="org.mate.system-monitor" gettext-domain="mate-system-monitor">
+    <key type="i" name="width">
+      <default>440</default>
+      <summary>Main Window width</summary>
+    </key>
+    <key type="i" name="height">
+      <default>495</default>
+      <summary>Main Window height</summary>
+    </key>
+    <key type="b" name="show-tree">
+      <default>false</default>
+      <summary>Show process dependencies in tree form</summary>
+    </key>
+    <key type="b" name="solaris-mode">
+      <default>false</default>
+      <summary>Solaris mode for CPU percentage</summary>
+      <description>If TRUE, system-monitor operates in 'Solaris mode' where a task's cpu usage is divided by the total number of CPUs. Else it operates in 'Irix mode'.</description>
+    </key>
+    <key type="b" name="smooth-refresh">
+      <default>true</default>
+      <summary>Enable/Disable smooth refresh</summary>
+    </key>
+    <key type="b" name="kill-dialog">
+      <default>true</default>
+      <summary>Show warning dialog when killing processes</summary>
+    </key>
+    <key type="i" name="update-interval">
+      <default>3000</default>
+      <summary>Time in milliseconds between updates of the process view</summary>
+    </key>
+    <key type="i" name="graph-update-interval">
+      <default>1000</default>
+      <summary>Time in milliseconds between updates of the graphs</summary>
+    </key>
+    <key type="b" name="show-all-fs">
+      <default>false</default>
+      <summary>Whether information about all filesystems should be displayed</summary>
+      <description>Whether to display information about all filesystems (including types like 'autofs' and 'procfs'). Useful for getting a list of all currently mounted filesystems.</description>
+    </key>
+    <key type="i" name="disks-interval">
+      <default>5000</default>
+      <summary>Time in milliseconds between updates of the devices list</summary>
+    </key>
+    <key type="i" name="view-as">
+      <default>1</default>
+      <summary>Determines which processes to show by default. 0 is All, 1 is user, and 2 is active</summary>
+    </key>
+    <key type="i" name="current-tab">
+      <default>2</default>
+      <summary>Saves the currently viewed tab</summary>
+      <description>0 for the System Info, 1 for the processes list, 2 for the resources and 3 for the disks list</description>
+    </key>
+    <key type="s" name="cpu-color0">
+      <default>'#FF6E00'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color1">
+      <default>'#CB0C29'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color2">
+      <default>'#49A835'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color3">
+      <default>'#2D7DB3'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color4">
+      <default>'#FF6600'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color5">
+      <default>'#6600CC'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color6">
+      <default>'#990000'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color7">
+      <default>'#000099'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color8">
+      <default>'#FFCC00'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color9">
+      <default>'#009900'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color10">
+      <default>'#CC6600'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color11">
+      <default>'#330099'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color12">
+      <default>'#CC0066'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color13">
+      <default>'#00FFCC'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color14">
+      <default>'#FFCC99'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="cpu-color15">
+      <default>'#339999'</default>
+      <summary>Default graph cpu color</summary>
+    </key>
+    <key type="s" name="mem-color">
+      <default>'#AB1852'</default>
+      <summary>Default graph mem color</summary>
+    </key>
+    <key type="s" name="swap-color">
+      <default>'#49A835'</default>
+      <summary>Default graph swap color</summary>
+    </key>
+    <key type="s" name="net-in-color">
+      <default>'#2D7DB3'</default>
+      <summary>Default graph incoming network traffic color</summary>
+    </key>
+    <key type="s" name="net-out-color">
+      <default>'#844798'</default>
+      <summary>Default graph outgoing network traffic color</summary>
+    </key>
+    <key type="b" name="network-in-bits">
+      <default>false
+      </default>
+      <summary>Show network traffic in bits</summary>
+    </key>
+    <child schema="org.mate.system-monitor.proctree" name="proctree"/>
+    <child schema="org.mate.system-monitor.disktreenew" name="disktreenew"/>
+    <child schema="org.mate.system-monitor.memmapstree" name="memmapstree"/>
+    <child schema="org.mate.system-monitor.openfilestree" name="openfilestree"/>
+  </schema>
+  <schema path="/org/mate/system-monitor/proctree/" id="org.mate.system-monitor.proctree" gettext-domain="mate-system-monitor">
+    <key type="i" name="sort-col">
+      <default>0</default>
+      <summary>Process view sort column</summary>
+    </key>
+    <key type="ai" name="columns-order">
+      <default>[ 0 ]</default>
+      <summary>Process view columns order</summary>
+    </key>
+    <key type="i" name="sort-order">
+      <default>0</default>
+      <summary>Process view sort order</summary>
+    </key>
+    <key type="i" name="col-0-width">
+      <default>198</default>
+      <summary>Width of process 'name' column</summary>
+    </key>
+    <key type="b" name="col-0-visible">
+      <default>true</default>
+      <summary>Show process 'name' column on startup</summary>
+    </key>
+    <key type="i" name="col-1-width">
+      <default>0</default>
+      <summary>Width of process 'owner' column</summary>
+    </key>
+    <key type="b" name="col-1-visible">
+      <default>false</default>
+      <summary>Show process 'owner' column on startup</summary>
+    </key>
+    <key type="i" name="col-2-width">
+      <default>37</default>
+      <summary>Width of process 'status' column</summary>
+    </key>
+    <key type="b" name="col-2-visible">
+      <default>true</default>
+      <summary>Show process 'status' column on startup</summary>
+    </key>
+    <key type="i" name="col-3-width">
+      <default>0</default>
+      <summary>Width of process 'virtual memory' column</summary>
+    </key>
+    <key type="b" name="col-3-visible">
+      <default>false</default>
+      <summary>Show process 'virtual memory' column on startup</summary>
+    </key>
+    <key type="i" name="col-4-width">
+      <default>53</default>
+      <summary>Width of process 'resident memory' column</summary>
+    </key>
+    <key type="b" name="col-4-visible">
+      <default>false</default>
+      <summary>Show process 'resident memory' column on startup</summary>
+    </key>
+    <key type="i" name="col-5-width">
+      <default>0</default>
+      <summary>Width of process 'writable memory' column</summary>
+    </key>
+    <key type="b" name="col-5-visible">
+      <default>false</default>
+      <summary>Show process 'writable memory' column on startup</summary>
+    </key>
+    <key type="i" name="col-6-width">
+      <default>0</default>
+      <summary>Width of process 'shared memory' column</summary>
+    </key>
+    <key type="b" name="col-6-visible">
+      <default>false</default>
+      <summary>Show process 'shared memory' column on startup</summary>
+    </key>
+    <key type="i" name="col-7-width">
+      <default>0</default>
+      <summary>Width of process 'X server memory' column</summary>
+    </key>
+    <key type="b" name="col-7-visible">
+      <default>false</default>
+      <summary>Show process 'X server memory' column on startup</summary>
+    </key>
+    <key type="i" name="col-8-width">
+      <default>0</default>
+      <summary>Width of process 'CPU %' column</summary>
+    </key>
+    <key type="b" name="col-8-visible">
+      <default>true</default>
+      <summary>Show process 'CPU %' column on startup</summary>
+    </key>
+    <key type="i" name="col-9-width">
+      <default>50</default>
+      <summary>Width of process 'CPU time' column</summary>
+    </key>
+    <key type="b" name="col-9-visible">
+      <default>false</default>
+      <summary>Show process 'CPU time' column on startup</summary>
+    </key>
+    <key type="i" name="col-10-width">
+      <default>0</default>
+      <summary>Width of process 'start time' column</summary>
+    </key>
+    <key type="b" name="col-10-visible">
+      <default>false</default>
+      <summary>Show process 'start time' column on startup</summary>
+    </key>
+    <key type="i" name="col-11-width">
+      <default>48</default>
+      <summary>Width of process 'nice' column</summary>
+    </key>
+    <key type="b" name="col-11-visible">
+      <default>true</default>
+      <summary>Show process 'nice' column on startup</summary>
+    </key>
+    <key type="i" name="col-12-width">
+      <default>48</default>
+      <summary>Width of process 'PID' column</summary>
+    </key>
+    <key type="b" name="col-12-visible">
+      <default>true</default>
+      <summary>Show process 'PID' column on startup</summary>
+    </key>
+    <key type="i" name="col-13-width">
+      <default>48</default>
+      <summary>Width of process 'SELinux security context' column</summary>
+    </key>
+    <key type="b" name="col-13-visible">
+      <default>false</default>
+      <summary>Show process 'SELinux security context' column on startup</summary>
+    </key>
+    <key type="i" name="col-14-width">
+      <default>48</default>
+      <summary>Width of process 'arguments' column</summary>
+    </key>
+    <key type="b" name="col-14-visible">
+      <default>false</default>
+      <summary>Show process 'arguments' column on startup</summary>
+    </key>
+    <key type="i" name="col-15-width">
+      <default>48</default>
+      <summary>Width of process 'estimated memory usage' column</summary>
+    </key>
+    <key type="b" name="col-15-visible">
+      <default>true</default>
+      <summary>Show process 'estimated memory usage' column on startup</summary>
+    </key>
+    <key type="i" name="col-16-width">
+      <default>48</default>
+      <summary>Width of process 'Waiting Channel' column</summary>
+    </key>
+    <key type="b" name="col-16-visible">
+      <default>true</default>
+      <summary>Show process 'Waiting Channel' column on startup</summary>
+    </key>
+  </schema>
+  <schema path="/org/mate/system-monitor/disktreenew/" id="org.mate.system-monitor.disktreenew" gettext-domain="mate-system-monitor">
+    <key type="i" name="sort-col">
+      <default>1</default>
+      <summary>Process view sort column</summary>
+    </key>
+    <key type="i" name="sort-order">
+      <default>0</default>
+      <summary>Process view sort order</summary>
+    </key>
+    <key type="ai" name="columns-order">
+      <default>[ 0 ]</default>
+      <summary>Disk view columns order</summary>
+    </key>
+  </schema>
+  <schema path="/org/mate/system-monitor/memmapstree/" id="org.mate.system-monitor.memmapstree" gettext-domain="mate-system-monitor">
+    <key type="i" name="sort-col">
+      <default>0</default>
+      <summary>Process view sort column</summary>
+    </key>
+    <key type="i" name="sort-order">
+      <default>0</default>
+      <summary>Process view sort order</summary>
+    </key>
+  </schema>
+  <schema path="/org/mate/system-monitor/openfilestree/" id="org.mate.system-monitor.openfilestree" gettext-domain="mate-system-monitor">
+    <key type="i" name="sort-col">
+      <default>0</default>
+      <summary>Process view sort column</summary>
+    </key>
+    <key type="i" name="sort-order">
+      <default>0</default>
+      <summary>Process view sort order</summary>
+    </key>
+  </schema>
+</schemalist>

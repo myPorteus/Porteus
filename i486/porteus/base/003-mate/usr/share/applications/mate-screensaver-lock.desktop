@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Lock Screen
+Encoding=UTF-8
+Version=1.0
+Icon=gnome-lockscreen
+Exec=mate-screensaver-command --lock
+Terminal=false
+Type=Application
+Categories=Application;System;
+OnlyShowIn=MATE;
+Hidden=true

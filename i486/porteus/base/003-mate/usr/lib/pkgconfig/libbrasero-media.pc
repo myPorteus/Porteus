@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+	
+	
+Name: libbrasero-media
+Description: Brasero Optical Media library
+Version: 2.32.1
+Requires: glib-2.0 gthread-2.0 gtk+-2.0
+Libs: -L${libdir} -lbrasero-media
+Cflags: -I${includedir}/brasero

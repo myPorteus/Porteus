@@ -1,0 +1,68 @@
+.\" Man page for Marco.
+.TH MARCO 1 "7 February 2014" "MATE Desktop Environment"
+.\" Please adjust this date when revising the manpage.
+.\"
+.SH "NAME"
+Marco \- The MATE Window Manager
+.SH "SYNOPSIS"
+.B marco [OPTIONS]
+.SH "DESCRIPTION"
+Marco is a minimal X window manager that uses GTK+ for drawing window frames. It is aimed at non-technical users and is designed to integrate well with the MATE desktop. Marco is a plain window manager for the adult in you; Many window managers are like Marshmallow Froot Loops, Marco is like Cheerios. It lacks some features that may be expected by traditional UNIX or other technical users; these users may want to investigate other available window managers for use with MATE or as a standalone window manager.
+.PP
+Marco supports several somewhat advanced but common features such as Window Shading/Roll-Up, Window/Edge Snapping, Vertical and Horizontal Maximize, Always-On-Top, Sloppy/Mouse Focus and Raising, and many more... Well, not a lot, but some more.
+.PP
+This manual page documents the \fBmarco\fR command.
+
+.SH "OPTIONS"
+.TP
+\fB\-d, \-\-display=DISPLAY\fR
+X display to use.
+.TP
+\fB\-\-sync\fR
+.br
+Make X calls synchronous.
+.TP
+\fB\-\-replace\fR
+Replace the currently running window manager with Marco.
+.TP
+\fB\-\-sm\-disable\fR
+Disable the connection to the session manager.
+.TP
+\fB\-\-sm\-client\-id=ID\fR
+Specify a session management ID.
+.TP
+\fB\-\-sm\-save\-file=FILENAME\fR
+Restore from a session management savefile. 
+.br
+If no path is specified \fBmarco\fR will look in ~/.config/mate-session/saved-session/
+.TP
+\fB\-c, \-\-composite\fR
+Turn compositing ON. You may also use this option to start \fBmarco\fR with composite "true transparency" effects. 
+.TP
+\fB\-\-no\-composite\fR
+Turn compositing OFF. You may also use this option to start \fBmarco\fR without compositing effects. 
+.TP
+\fB\-\-no\-force\-fullscreen\fR
+Do not create fullscreen windows without decorations.
+.TP
+\fB\-\-version\fR
+Print current version information and exit.
+.TP
+\fB\-?, \-h, \-\-help\fR
+Print standard command line options.
+.SH "CONFIGURATION"
+Marco configuration can be found via the main MATE menus, under "\fISystem\fP->\fIPreferences\fP->\fIWindows\fP" and "\fISystem\fP->\fIPreferences\fP->\fIKeyboard Shortcuts\fP" or by running the commands \fBmate-window-properties\fR and \fBmate-keybinding-properties\fR respectively. Advanced configuration can also be achieved directly, via \fBdconf-editor\fR under "/\fIorg\fP/\fImate\fP/\fImarco\fP/".
+.SH "BUGS"
+.SS Should you encounter any bugs, they may be reported at: 
+http://github.com/mate-desktop/marco/issues
+.SH "AUTHORS"
+.SS This Man Page has been updated/re-written for the MATE Desktop Environment by:
+Adam Erdman <hekel@archlinux.info> (2014)
+.SH "HISTORY"
+.SS Portions of this manual page were originally written by Luke Morton and Philip O'Brien (2006) for Metacity, but do not bear resemblance to preceding documentation.
+.SH "SEE ALSO"
+.SS Further information may also be available at: http://wiki.mate-desktop.org/docs
+.P
+.BR marco-message (1),
+.BR marco-theme-viewer (1),
+.BR marco-window-demo (1)
