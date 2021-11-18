@@ -1,0 +1,111 @@
+<!DOCTYPE kpartgui SYSTEM 'kpartgui.dtd'>
+<kpartgui version="17" name="kwrite">
+ <MenuBar alreadyVisited="1">
+  <Menu noMerge="1" name="file" alreadyVisited="1">
+   <text>&amp;File</text>
+   <Action name="file_new"/>
+   <Separator/>
+   <Action name="file_open"/>
+   <Action name="file_open_recent"/>
+   <Separator/>
+   <DefineGroup append="save_merge" name="save_merge"/>
+   <Separator/>
+   <DefineGroup append="revert_merge" name="revert_merge"/>
+   <DefineGroup append="print_merge" name="print_merge"/>
+   <Separator/>
+   <Action name="file_close"/>
+   <DefineGroup append="close_merge" name="close_merge"/>
+   <Separator/>
+   <Action name="file_quit"/>
+  </Menu>
+  <Menu noMerge="1" name="edit" alreadyVisited="1">
+   <text>&amp;Edit</text>
+   <DefineGroup name="edit_undo_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_paste_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_select_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_find_merge"/>
+   <Separator/>
+   <Merge/>
+  </Menu>
+  <Menu noMerge="1" name="view" alreadyVisited="1">
+   <text>&amp;View</text>
+   <Action name="view_new_view"/>
+   <Separator/>
+   <DefineGroup name="view_operations"/>
+  </Menu>
+  <Merge/>
+  <Separator weakSeparator="1"/>
+  <Menu noMerge="1" name="tools" alreadyVisited="1">
+   <text>&amp;Tools</text>
+   <DefineGroup name="tools_operations"/>
+  </Menu>
+  <Menu name="settings" alreadyVisited="1">
+   <text>&amp;Settings</text>
+   <DefineGroup name="show_toolbar_merge"/>
+   <DefineGroup name="show_merge"/>
+   <Action name="options_configure_toolbars"/>
+   <Separator weakSeparator="1"/>
+   <Separator weakSeparator="1"/>
+   <Separator weakSeparator="1"/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Separator weakSeparator="1"/>
+   <Merge name="StandardToolBarMenuHandler"/>
+   <Merge name="KMDIViewActions"/>
+   <Action append="show_merge" name="settings_show_statusbar"/>
+   <Action append="show_merge" name="set_showPath"/>
+   <Separator weakSeparator="1"/>
+   <DefineGroup append="save_merge" name="configure_merge"/>
+   <Separator weakSeparator="1"/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Action append="configure_merge" name="settings_configure"/>
+  </Menu>
+  <Separator weakSeparator="1"/>
+  <Menu name="help" alreadyVisited="1">
+   <text>&amp;Help</text>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action append="about_merge" name="help_about_editor"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar noMerge="1" name="mainToolBar" alreadyVisited="1">
+  <text>Main Toolbar</text>
+  <Action name="file_new"/>
+  <Action name="file_open"/>
+  <Separator name="separator_0"/>
+  <DefineGroup name="file_operations"/>
+  <Separator name="separator_1"/>
+  <DefineGroup name="print_merge"/>
+  <Separator name="separator_2"/>
+  <Separator name="separator_3"/>
+  <DefineGroup name="edit_operations"/>
+  <Separator name="separator_4"/>
+  <DefineGroup name="find_operations"/>
+  <Separator name="separator_5"/>
+  <DefineGroup name="zoom_operations"/>
+ </ToolBar>
+ <Menu noMerge="1" name="ktexteditor_popup">
+  <DefineGroup name="popup_operations"/>
+ </Menu>
+</kpartgui>

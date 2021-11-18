@@ -1,0 +1,27 @@
+PACKAGE NAME:     phonon-mplayer-1b1fd1f_20110823git-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     230K
+PACKAGE LOCATION: /tmp/phonon-mplayer-1b1fd1f_20110823git-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/THANKS
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/README
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/COPYING.LESSER
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/COPYING
+usr/doc/phonon-mplayer-1b1fd1f_20110823git/AUTHORS
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/phononbackends/
+usr/share/kde4/services/phononbackends/mplayer.desktop
+usr/lib64/
+usr/lib64/kde4/
+usr/lib64/kde4/plugins/
+usr/lib64/kde4/plugins/phonon_backend/
+usr/lib64/kde4/plugins/phonon_backend/phonon_mplayer.so

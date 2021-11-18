@@ -1,0 +1,20 @@
+PACKAGE NAME:     kquitapp-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     20K
+PACKAGE LOCATION: /var/tmp/binpkgs/kquitapp-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+kquitapp: A CLI application quitter
+kquitapp:
+kquitapp:
+kquitapp:
+kquitapp:
+kquitapp:
+kquitapp:
+kquitapp:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/kquitapp
+install/
+install/slack-desc

@@ -1,0 +1,36 @@
+PACKAGE NAME:     krunner-4.11.14-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /var/tmp/binpkgs/krunner-4.11.14-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+krunner: KDE Command Runner
+krunner:
+krunner:
+krunner:
+krunner:
+krunner:
+krunner:
+krunner:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/krunner-4.11.14/
+usr/share/doc/krunner-4.11.14/HACKING.bz2
+usr/share/doc/krunner-4.11.14/README.bz2
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.krunner.service
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.krunner.App.xml
+usr/share/autostart/
+usr/share/autostart/krunner.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/klaunch.kcfg
+usr/lib64/
+usr/lib64/libkdeinit4_krunner.so
+usr/bin/
+usr/bin/krunner
+install/
+install/slack-desc

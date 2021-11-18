@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name="kamerkarc"/>
+  <group name="Video">
+    <entry name="node" type="Path">
+      <label>Device node for video camera.</label>
+      <default>/dev/video0</default>
+    </entry>
+    <entry name="width" type="Int">
+      <label>Width of the video transmited by webcam.</label>
+      <default>640</default>
+    </entry>
+    <entry name="height" type="Int">
+      <label>Height of the video transmited by webcam.</label>
+      <default>480</default>
+    </entry>
+    <entry name="fps" type="Int">
+      <label>Framerate limit.</label>
+      <default>0</default>
+    </entry>
+    <entry name="mirror" type="Bool">
+			<label>Mirror output</label>
+      <default>false</default>
+    </entry>
+    <entry name="flip" type="Bool">
+			<label>Flip output (upside down)</label>
+      <default>false</default>
+    </entry>
+		<entry name="normalize" type="Bool">
+			<label>Enhance contrast (histogram normalization)</label>
+			<default>true</default>
+		</entry>
+		<entry name="aspectlock" type="Bool">
+      <label>Lock aspect ratio</label>
+        <default>false</default>
+    </entry>
+  </group>
+  <group name="Capture">
+    <entry name="selftimer" type="Int">
+        <label>Self-timer timeout in seconds.</label>
+        <default>5</default>
+    </entry>
+    <entry name="burstnumphotos" type="Int">
+      <label>Number of photos to shoot in burst.</label>
+      <default>3</default>
+    </entry>
+    <entry name="delaybetweenphotos" type="Int">
+      <label>Delay between photos shot in burst (seconds).</label>
+      <default>1</default>
+    </entry>
+  </group>
+  <group name="Storage">
+    <entry name="usexdgpictures" type="Bool">
+      <label>Tells Kamerka to use XDG Pictures folder to store photos.</label>
+      <default>true</default>
+    </entry>
+    <entry name="ifsubdirectory" type="Bool">
+      <label>Tells Kamerka to use subdirectory within XDG Pictures folder.</label>
+      <default>true</default>
+    </entry>
+    <entry name="subdirectory" type="String">
+      <label>Subdirectory within XDG Pictures folder.</label>
+      <default>kamerka</default>
+    </entry>
+    <entry name="photodir" type="Path">
+      <label>Path to directory, in which photos will be stored.</label>
+      <default></default>
+    </entry>
+  </group>
+  <group name="Storage">
+    <entry name="soundontaking" type="Bool">
+      <label>Play sound on taking photos.</label>
+      <default>true</default>
+    </entry>
+    <entry name="soundontimer" type="Bool">
+      <label>Play sounds when using self-timer.</label>
+      <default>true</default>
+    </entry>
+    <entry name="notification" type="Bool">
+      <label>Show desktop notification on taking photo.</label>
+      <default>true</default>
+    </entry>
+  </group>
+</kcfg>

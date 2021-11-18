@@ -1,0 +1,53 @@
+PACKAGE NAME:     kmenuedit-4.11.14-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /var/tmp/binpkgs/kmenuedit-4.11.14-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+kmenuedit: KDE menu editor
+kmenuedit:
+kmenuedit:
+kmenuedit:
+kmenuedit:
+kmenuedit:
+kmenuedit:
+kmenuedit:
+FILE LIST:
+./
+usr/
+usr/lib64/
+usr/lib64/libkdeinit4_kmenuedit.so
+usr/bin/
+usr/bin/kmenuedit
+usr/share/
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/kmenuedit.desktop
+usr/share/apps/
+usr/share/apps/kmenuedit/
+usr/share/apps/kmenuedit/kmenueditui.rc
+usr/share/apps/kmenuedit/icons/
+usr/share/apps/kmenuedit/icons/hicolor/
+usr/share/apps/kmenuedit/icons/hicolor/32x32/
+usr/share/apps/kmenuedit/icons/hicolor/32x32/actions/
+usr/share/apps/kmenuedit/icons/hicolor/32x32/actions/menu_new_sep.png
+usr/share/apps/kmenuedit/icons/hicolor/32x32/actions/menu_new.png
+usr/share/apps/kmenuedit/icons/hicolor/22x22/
+usr/share/apps/kmenuedit/icons/hicolor/22x22/actions/
+usr/share/apps/kmenuedit/icons/hicolor/22x22/actions/menu_new_sep.png
+usr/share/apps/kmenuedit/icons/hicolor/22x22/actions/menu_new.png
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kmenuedit.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kmenuedit.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kmenuedit.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kmenuedit.png
+install/
+install/slack-desc

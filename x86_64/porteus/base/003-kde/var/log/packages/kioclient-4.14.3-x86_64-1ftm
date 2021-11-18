@@ -1,0 +1,23 @@
+PACKAGE NAME:     kioclient-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /var/tmp/binpkgs/kioclient-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+kioclient: Command-line tool for network-transparent operations
+kioclient:
+kioclient:
+kioclient:
+kioclient:
+kioclient:
+kioclient:
+kioclient:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/kde-mv
+usr/bin/kde-cp
+usr/bin/kde-open
+usr/bin/kioclient
+install/
+install/slack-desc

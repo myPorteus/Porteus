@@ -1,0 +1,53 @@
+[$Version]
+update_info=kaccel.upd:kde3.3/r1,kded.upd:kde3.0,kwin.upd:kde3.2Xinerama
+
+[General]
+BrowserApplication[$e]=browser.desktop
+XftHintStyle=hintmedium
+desktopFont=Sans Serif,10,-1,5,50,0,0,0,0,0
+fixed=Monospace,10,-1,5,50,0,0,0,0,0
+font=Sans Serif,10,-1,5,50,0,0,0,0,0
+menuFont=Sans Serif,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Sans Serif,10,-1,5,50,0,0,0,0,0
+taskbarFont=Sans Serif,10,-1,5,50,0,0,0,0,0
+toolBarFont=Sans Serif,10,-1,5,50,0,0,0,0,0
+
+[KDE]
+AutoSelectDelay=-1
+ChangeCursor=true
+DoubleClickInterval=400
+ShowDeleteCommand=true
+SingleClick=false
+StartDragDist=4
+StartDragTime=500
+WheelScrollLines=3
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=0
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Preview Width=289
+Previews=false
+Recent URLs[$e]=/mnt/
+Show Bookmarks=true
+Show Full Path=false
+Show Preview=true
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=98
+View Style=DetailTree
+
+[PreviewSettings]
+MaximumRemoteSize=0
+MaximumSize=5242880
+
+[WM]
+activeFont=Sans Serif,10,-1,5,50,0,0,0,0,0

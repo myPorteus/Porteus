@@ -1,0 +1,69 @@
+PACKAGE NAME:     konsole-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     308K
+UNCOMPRESSED PACKAGE SIZE:     1.1M
+PACKAGE LOCATION: /var/tmp/binpkgs/konsole-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+konsole: X terminal for use with KDE
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/konsole-4.14.3/
+usr/share/doc/konsole-4.14.3/README.bz2
+usr/share/apps/
+usr/share/apps/konsole/
+usr/share/apps/konsole/BlackOnLightYellow.colorscheme
+usr/share/apps/konsole/BlackOnRandomLight.colorscheme
+usr/share/apps/konsole/BlackOnWhite.colorscheme
+usr/share/apps/konsole/BlueOnBlack.colorscheme
+usr/share/apps/konsole/GreenOnBlack.colorscheme
+usr/share/apps/konsole/WhiteOnBlack.colorscheme
+usr/share/apps/konsole/Linux.colorscheme
+usr/share/apps/konsole/DarkPastels.colorscheme
+usr/share/apps/konsole/RedOnBlack.colorscheme
+usr/share/apps/konsole/Solarized.colorscheme
+usr/share/apps/konsole/SolarizedLight.colorscheme
+usr/share/apps/konsole/default.keytab
+usr/share/apps/konsole/linux.keytab
+usr/share/apps/konsole/solaris.keytab
+usr/share/apps/konsole/README.KeyTab
+usr/share/apps/konsole/Shell.profile
+usr/share/apps/konsole/konsole.notifyrc
+usr/share/apps/konsole/konsoleui.rc
+usr/share/apps/konsole/sessionui.rc
+usr/share/apps/konsole/partui.rc
+usr/share/apps/kconf_update/
+usr/share/apps/kconf_update/konsole.upd
+usr/share/apps/kconf_update/konsole-2.9.0-global-options.sh
+usr/share/apps/kconf_update/konsole-2.9.0-colorscheme-bold-key.sh
+usr/share/apps/kconf_update/konsole-2.10.0-remove-menuindex-from-profiles.sh
+usr/share/apps/kconf_update/konsole_remove_background_mode.upd
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/konsole.desktop
+usr/share/kde4/
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/terminalemulator.desktop
+usr/share/kde4/services/
+usr/share/kde4/services/konsolepart.desktop
+usr/share/kde4/services/ServiceMenus/
+usr/share/kde4/services/ServiceMenus/konsolehere.desktop
+usr/share/kde4/services/ServiceMenus/konsolerun.desktop
+usr/lib64/
+usr/lib64/libkonsoleprivate.so
+usr/lib64/libkdeinit4_konsole.so
+usr/lib64/kde4/
+usr/lib64/kde4/libkonsolepart.so
+usr/bin/
+usr/bin/konsole
+usr/bin/konsoleprofile
+install/
+install/slack-desc

@@ -1,0 +1,35 @@
+PACKAGE NAME:     zeroconf-ioslave-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /var/tmp/binpkgs/zeroconf-ioslave-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+zeroconf-ioslave: A DNSSD (DNS Service Discovery - part of Rendezvous)
+zeroconf-ioslave: ioslave and kded module
+zeroconf-ioslave:
+zeroconf-ioslave:
+zeroconf-ioslave:
+zeroconf-ioslave:
+zeroconf-ioslave:
+zeroconf-ioslave:
+zeroconf-ioslave:
+FILE LIST:
+./
+usr/
+usr/lib64/
+usr/lib64/kde4/
+usr/lib64/kde4/kded_dnssdwatcher.so
+usr/lib64/kde4/kio_zeroconf.so
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/zeroconf.protocol
+usr/share/kde4/services/kded/
+usr/share/kde4/services/kded/dnssdwatcher.desktop
+usr/share/apps/
+usr/share/apps/remoteview/
+usr/share/apps/remoteview/zeroconf.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.kdnssd.xml
+install/
+install/slack-desc

@@ -1,0 +1,33 @@
+PACKAGE NAME:     sweeper-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /var/tmp/binpkgs/sweeper-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+sweeper: KDE Privacy Settings Widget
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+sweeper:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/sweeper-4.14.3/
+usr/share/doc/sweeper-4.14.3/TODO.bz2
+usr/share/applications/
+usr/share/applications/kde4/
+usr/share/applications/kde4/sweeper.desktop
+usr/share/apps/
+usr/share/apps/sweeper/
+usr/share/apps/sweeper/sweeperui.rc
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.sweeper.xml
+usr/bin/
+usr/bin/sweeper
+install/
+install/slack-desc

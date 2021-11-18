@@ -1,0 +1,14 @@
+SCALE ON
+BACKGROUND_IMAGE 0 0 black.jpg
+SCALE OFF
+
+IMAGE_REL CC 0 250 CC progress0.png
+WAIT_STATE kded
+IMAGE_REL CC 0 250 CC progress1.png
+WAIT_STATE kcminit
+IMAGE_REL CC 0 250 CC progress2.png
+WAIT_STATE ksmserver
+IMAGE_REL CC 0 250 CC progress3.png
+WAIT_STATE wm
+IMAGE_REL CC 0 250 CC progress4.png
+WAIT_STATE desktop

@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: libkipi
+Description: KDE Image Plugin Interface, a C++ library to share plugins among graphic applications.
+URL: http://www.digikam.org
+Requires:
+Version: 2.1.0
+Libs: -L/usr/lib64 -lkipi
+Cflags: -I/usr/include

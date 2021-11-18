@@ -1,0 +1,69 @@
+PACKAGE NAME:     libkipi-4.14.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /var/tmp/binpkgs/libkipi-4.14.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+libkipi: A library for image plugins accross KDE applications
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/doc/
+usr/share/doc/libkipi-4.14.3/
+usr/share/doc/libkipi-4.14.3/AUTHORS.bz2
+usr/share/doc/libkipi-4.14.3/README.bz2
+usr/share/doc/libkipi-4.14.3/tests.README.bz2
+usr/share/kde4/
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/kipiplugin.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kipi.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kipi.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kipi.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kipi.png
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/kipi.png
+usr/share/apps/
+usr/share/apps/kipi/
+usr/share/apps/kipi/data/
+usr/share/apps/kipi/data/kipi-plugins_logo.png
+usr/share/apps/kipi/data/kipi-icon.svg
+usr/share/apps/kipi/data/kipi-logo.svg
+usr/lib64/
+usr/lib64/libkipi.so.11.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libkipi.pc
+usr/include/
+usr/include/libkipi/
+usr/include/libkipi/plugin.h
+usr/include/libkipi/pluginloader.h
+usr/include/libkipi/interface.h
+usr/include/libkipi/imageinfo.h
+usr/include/libkipi/imagecollection.h
+usr/include/libkipi/imageinfoshared.h
+usr/include/libkipi/imagecollectionshared.h
+usr/include/libkipi/imagecollectionselector.h
+usr/include/libkipi/uploadwidget.h
+usr/include/libkipi/configwidget.h
+usr/include/libkipi/libkipi_export.h
+usr/include/libkipi/version.h
+install/
+install/doinst.sh
+install/slack-desc

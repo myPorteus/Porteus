@@ -1,0 +1,22 @@
+PACKAGE NAME:     liboxygenstyle-4.11.14-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /var/tmp/binpkgs/liboxygenstyle-4.11.14-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+liboxygenstyle: Library to support the Oxygen style in KDE
+liboxygenstyle:
+liboxygenstyle:
+liboxygenstyle:
+liboxygenstyle:
+liboxygenstyle:
+liboxygenstyle:
+liboxygenstyle:
+FILE LIST:
+./
+usr/
+usr/lib64/
+usr/lib64/liboxygenstyleconfig.so.4.14.3
+usr/lib64/liboxygenstyle.so.4.14.3
+install/
+install/doinst.sh
+install/slack-desc

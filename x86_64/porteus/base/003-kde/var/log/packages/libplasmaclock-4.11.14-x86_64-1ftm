@@ -1,0 +1,31 @@
+PACKAGE NAME:     libplasmaclock-4.11.14-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /var/tmp/binpkgs/libplasmaclock-4.11.14-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+libplasmaclock: Libraries for KDE Plasma's clocks
+libplasmaclock:
+libplasmaclock:
+libplasmaclock:
+libplasmaclock:
+libplasmaclock:
+libplasmaclock:
+libplasmaclock:
+FILE LIST:
+./
+var/
+var/lib/
+var/lib/kde/
+var/lib/kde/libplasmaclock
+usr/
+usr/include/
+usr/include/plasmaclock/
+usr/include/plasmaclock/clockapplet.h
+usr/include/plasmaclock/calendar.h
+usr/include/plasmaclock/calendartable.h
+usr/include/plasmaclock/plasmaclock_export.h
+usr/lib64/
+usr/lib64/libplasmaclock.so.4.14.3
+install/
+install/doinst.sh
+install/slack-desc

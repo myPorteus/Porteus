@@ -1,0 +1,102 @@
+PACKAGE NAME:     exiv2-0.23-x86_64-1
+COMPRESSED PACKAGE SIZE:     856K
+UNCOMPRESSED PACKAGE SIZE:     3.7M
+PACKAGE LOCATION: /root/003/003/exiv2-0.23-x86_64-1.txz
+PACKAGE DESCRIPTION:
+exiv2: Exiv2 (Exif and IPTC Metadata Library and Tools)
+exiv2:
+exiv2: Exiv2 is a C++ library and a command line utility to read and write
+exiv2: Exif and IPTC image metadata.
+exiv2:
+exiv2: Homepage:  http://www.exiv2.org/
+exiv2:
+exiv2:
+exiv2:
+exiv2:
+exiv2:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/exiv2
+usr/man/
+usr/man/man1/
+usr/man/man1/exiv2.1.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/exiv2.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/exiv2.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/exiv2.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/exiv2.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/exiv2.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/exiv2.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/exiv2.mo
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/exiv2.pc
+usr/lib64/libexiv2.so.12.0.0
+usr/lib64/libexiv2.la
+usr/include/
+usr/include/exiv2/
+usr/include/exiv2/tags.hpp
+usr/include/exiv2/psdimage.hpp
+usr/include/exiv2/version.hpp
+usr/include/exiv2/futils.hpp
+usr/include/exiv2/rafimage.hpp
+usr/include/exiv2/pgfimage.hpp
+usr/include/exiv2/rw2image.hpp
+usr/include/exiv2/iptc.hpp
+usr/include/exiv2/cr2image.hpp
+usr/include/exiv2/pngimage.hpp
+usr/include/exiv2/mrwimage.hpp
+usr/include/exiv2/easyaccess.hpp
+usr/include/exiv2/value.hpp
+usr/include/exiv2/exiv2.hpp
+usr/include/exiv2/xmp.hpp
+usr/include/exiv2/crwimage.hpp
+usr/include/exiv2/tgaimage.hpp
+usr/include/exiv2/metadatum.hpp
+usr/include/exiv2/basicio.hpp
+usr/include/exiv2/exif.hpp
+usr/include/exiv2/xmpsidecar.hpp
+usr/include/exiv2/convert.hpp
+usr/include/exiv2/epsimage.hpp
+usr/include/exiv2/tiffimage.hpp
+usr/include/exiv2/jp2image.hpp
+usr/include/exiv2/properties.hpp
+usr/include/exiv2/orfimage.hpp
+usr/include/exiv2/gifimage.hpp
+usr/include/exiv2/bmpimage.hpp
+usr/include/exiv2/exv_conf.h
+usr/include/exiv2/types.hpp
+usr/include/exiv2/error.hpp
+usr/include/exiv2/image.hpp
+usr/include/exiv2/preview.hpp
+usr/include/exiv2/jpgimage.hpp
+usr/include/exiv2/datasets.hpp
+usr/doc/
+usr/doc/exiv2-0.23/
+usr/doc/exiv2-0.23/cmdxmp.txt
+usr/doc/exiv2-0.23/README-XMP
+usr/doc/exiv2-0.23/ChangeLog
+usr/doc/exiv2-0.23/COPYING
+usr/doc/exiv2-0.23/cmd.txt
+usr/doc/exiv2-0.23/README
+usr/doc/exiv2-0.23/COPYING-XMPSDK

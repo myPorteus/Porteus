@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: bluedevil
+Description: BlueDevil library
+Version: 1.9
+
+Libs: -L${libdir} -lbluedevil
+Cflags: -I${includedir}

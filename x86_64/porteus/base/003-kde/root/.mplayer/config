@@ -1,0 +1,32 @@
+# Write your default config options here!
+
+[vo.vdpau]
+vc=ffh264vdpau,ffvc1vdpau,ffodivxvdpau,ffwmv3vdpau,ffmpeg12vdpau,
+
+# default configuration that applies to every file
+[default]
+
+# use x11 as a fallback video output
+vo=xv,x11
+
+# use alsa for audio output, choose oss4 as fallback
+ao=alsa,oss
+
+# multithreaded decoding of H264/MPEG-1/2 (valid: 1-8)
+lavdopts=threads=2
+
+# set the window title using the media filename, when not set with --title.
+use-filename-title=yes
+
+# disable screensaver
+#heartbeat-cmd="xscreensaver-command -deactivate &" # stop xscreensaver
+#stop-xscreensaver="yes" # stop gnome-screensaver
+
+# correct pitch when speed is faster or slower than 1.0
+af=scaletempo
+
+# skip displaying some frames to maintain A/V sync on slow systems
+framedrop=yes
+
+# more intense frame dropping (breaks decoding)
+#hardframedrop=yes

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="132"
+   height="32"
+   id="svg2318"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/home/damu/Development/src/playground/applets/system-monitor"
+   sodipodi:docname="hdd_panel.svgz"
+   inkscape:output_extension="org.inkscape.output.svgz.inkscape"
+   version="1.0">
+  <defs
+     id="defs2320">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 16 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="132 : 16 : 1"
+       inkscape:persp3d-origin="66 : 10.666667 : 1"
+       id="perspective14" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.50196078"
+     inkscape:pageshadow="2"
+     inkscape:zoom="29.906183"
+     inkscape:cx="3.2479903"
+     inkscape:cy="22.858456"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1270"
+     inkscape:window-height="898"
+     inkscape:window-x="0"
+     inkscape:window-y="58"
+     width="132px"
+     height="32px"
+     showgrid="false" />
+  <metadata
+     id="metadata2323">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.19101126;fill:#cecece;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.08779998;stroke-opacity:1"
+       id="background"
+       width="132"
+       height="16"
+       x="0"
+       y="15"
+       rx="1.4393399"
+       ry="1.4393399"
+       inkscape:export-filename="/home/pinheiro/Documents/pics/estilo/plasma/rect2996.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:label="#rect3611" />
+    <rect
+       y="1"
+       x="0.76290369"
+       height="12"
+       width="131.21947"
+       id="label0"
+       style="opacity:1;fill:#0000ff;fill-opacity:0.50196078;fill-rule:evenodd;stroke:none;stroke-width:3.19400001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.50196078"
+       inkscape:label="#label2" />
+    <path
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="-0.73563385"
+       inkscape:original="M 1.4375 15 C 0.64010571 15 0 15.640105 0 16.4375 L 0 29.5625 C 0 30.359894 0.64010571 31 1.4375 31 L 130.5625 31 C 131.35989 31 132 30.359895 132 29.5625 L 132 16.4375 C 132 15.640106 131.3599 15 130.5625 15 L 1.4375 15 z "
+       style="opacity:1;fill:#cecece;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:1.08779998000000000;stroke-opacity:1"
+       id="bar"
+       d="M 1.4375,15.75 C 1.0337904,15.75 0.75,16.03379 0.75,16.4375 L 0.75,29.5625 C 0.75,29.966209 1.033791,30.25 1.4375,30.25 L 130.5625,30.25 C 130.9662,30.25 131.25,29.966208 131.25,29.5625 L 131.25,16.4375 C 131.25,16.033788 130.96622,15.75 130.5625,15.75 L 1.4375,15.75 z"
+       inkscape:label="#path3163" />
+  </g>
+</svg>

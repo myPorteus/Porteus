@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.freedesktop.xesam.searcher
+Exec=/usr/bin/strigidaemon

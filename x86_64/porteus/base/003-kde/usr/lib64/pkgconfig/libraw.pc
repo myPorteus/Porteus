@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/libraw
+
+Name: libraw
+Description: libraw - Raw image decoder library (non-thread-safe)
+URL: http://www.libraw.org
+Requires:
+Version: 0.16.0
+Libs: -L${libdir} -lraw
+Cflags: -I${includedir}/libraw

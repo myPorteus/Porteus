@@ -1,0 +1,53 @@
+PACKAGE NAME:     lcms2-2.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     2.5M
+UNCOMPRESSED PACKAGE SIZE:     3.2M
+PACKAGE LOCATION: /mnt/sdb7/work/dev-kit/BUILD-DEPS/lcms2-2.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+lcms2: lcms2 (little cms engine, version 2)
+lcms2:
+lcms2: Little cms is a small, speed optimized color management engine.
+lcms2:
+lcms2: lcms was written by Marti Maria <marti@littlecms.com>.
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+lcms2:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/psicc
+usr/bin/transicc
+usr/bin/linkicc
+usr/bin/jpgicc
+usr/bin/tificc
+usr/man/
+usr/man/man1/
+usr/man/man1/tificc.1.gz
+usr/man/man1/jpgicc.1.gz
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/lcms2.pc
+usr/lib64/liblcms2.so.2.0.4
+usr/lib64/liblcms2.la
+usr/include/
+usr/include/lcms2.h
+usr/include/lcms2_plugin.h
+usr/doc/
+usr/doc/lcms2-2.4/
+usr/doc/lcms2-2.4/AUTHORS
+usr/doc/lcms2-2.4/ChangeLog
+usr/doc/lcms2-2.4/COPYING
+usr/doc/lcms2-2.4/INSTALL
+usr/doc/lcms2-2.4/README.1ST
+usr/doc/lcms2-2.4/NEWS
+usr/doc/lcms2-2.4/doc/
+usr/doc/lcms2-2.4/doc/LittleCMS2.4 Plugin API.pdf
+usr/doc/lcms2-2.4/doc/LittleCMS2.4 tutorial.pdf
+usr/doc/lcms2-2.4/doc/LittleCMS2.4 API.pdf
+usr/doc/lcms2-2.4/doc/src.zip

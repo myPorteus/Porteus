@@ -1,0 +1,17 @@
+<!DOCTYPE kpartgui>
+<kpartgui name="ark" version="12">
+<MenuBar>
+	<Menu name="file">
+		<DefineGroup name="file_save" append="save_merge"/>
+	</Menu>
+	<Merge/>
+	<Menu name="settings">
+		<DefineGroup name="settings_show" append="show_merge"/>
+	</Menu>
+</MenuBar>
+<ToolBar noMerge="1" name="mainToolBar">
+	<text>Main Toolbar</text>
+	<Action name="file_new"/>
+	<Action name="file_open"/>
+</ToolBar>
+</kpartgui>

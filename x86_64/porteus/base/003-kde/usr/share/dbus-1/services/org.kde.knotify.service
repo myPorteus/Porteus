@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.kde.knotify
+Exec=/usr/bin/knotify4

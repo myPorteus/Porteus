@@ -1,0 +1,13 @@
+[Event/connfailed]
+Action=
+Execute=
+KTTS=
+Logfile=
+Sound=
+
+[Event/networkappeared]
+Action=
+Execute=
+KTTS=
+Logfile=
+Sound=

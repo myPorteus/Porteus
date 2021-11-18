@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=GX Mail Notify
+Comment=Mail Notify Plasmoid
+Icon=mail-message
+Type=Service
+ServiceTypes=Plasma/Applet
+ 
+X-KDE-Library=plasma_applet_gx_mail_notify
+X-KDE-PluginInfo-Author=Pavel Vakes
+X-KDE-PluginInfo-Email=pavel.vakes@gmail.com
+X-KDE-PluginInfo-Name=plasma_applet_gx_mail_notify
+X-KDE-PluginInfo-Version=0.4.4
+X-KDE-PluginInfo-Website=http://plasma.kde.org/
+X-KDE-PluginInfo-Category=Online Services
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
