@@ -1,0 +1,107 @@
+PACKAGE NAME:     mesa-10.3.3-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     2.8M
+UNCOMPRESSED PACKAGE SIZE:     14M
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/NEW-SRC/64/mesa-10.3.3-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+mesa: mesa (a 3-D graphics library)
+mesa:
+mesa: Mesa is a 3-D graphics library with an API very similar to that of
+mesa: another well-known 3-D graphics library.  :-)  The Mesa libraries are
+mesa: used by X to provide both software and hardware accelerated graphics.
+mesa:
+mesa: Mesa was written by Brian Paul.
+mesa:
+mesa:
+mesa:
+mesa:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+etc/
+etc/drirc
+usr/
+usr/doc/
+usr/doc/Mesa-10.3.3/
+usr/doc/Mesa-10.3.3/html/
+usr/bin/
+usr/bin/gears
+usr/bin/glinfo
+usr/bin/glthreads
+usr/bin/glxcontexts
+usr/bin/glxdemo
+usr/bin/glxgears
+usr/bin/glxgears_fbconfig
+usr/bin/glxheads
+usr/bin/glxinfo
+usr/bin/glxpbdemo
+usr/bin/glxpixmap
+usr/include/
+usr/include/KHR/
+usr/include/KHR/khrplatform.h
+usr/include/EGL/
+usr/include/EGL/eglplatform.h
+usr/include/EGL/eglmesaext.h
+usr/include/EGL/eglextchromium.h
+usr/include/EGL/egl.h
+usr/include/EGL/eglext.h
+usr/include/GL/
+usr/include/GL/internal/
+usr/include/GL/internal/dri_interface.h
+usr/include/GL/wmesa.h
+usr/include/GL/wglext.h
+usr/include/GL/osmesa.h
+usr/include/GL/glxext.h
+usr/include/GL/glx_mangle.h
+usr/include/GL/glx.h
+usr/include/GL/glext.h
+usr/include/GL/glcorearb.h
+usr/include/GL/gl_mangle.h
+usr/include/GL/gl.h
+usr/include/GLES/
+usr/include/GLES/glplatform.h
+usr/include/GLES/glext.h
+usr/include/GLES/gl.h
+usr/include/GLES/egl.h
+usr/include/GLES3/
+usr/include/GLES3/gl3platform.h
+usr/include/GLES3/gl3ext.h
+usr/include/GLES3/gl31.h
+usr/include/GLES3/gl3.h
+usr/include/GLES2/
+usr/include/GLES2/gl2platform.h
+usr/include/GLES2/gl2ext.h
+usr/include/GLES2/gl2.h
+usr/lib64/
+usr/lib64/libglapi.so.0.0.0
+usr/lib64/libGLESv1_CM.so.1.1.0
+usr/lib64/libGLESv2.so.2.0.0
+usr/lib64/libGL.so.1.2.0
+usr/lib64/libEGL.so.1.0.0
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_r600.so.1.0.0
+usr/lib64/vdpau/libvdpau_nouveau.so.1.0.0
+usr/lib64/libEGL.la
+usr/lib64/libGL.la
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/dri/
+usr/lib64/xorg/modules/dri/r600_dri.so
+usr/lib64/xorg/modules/dri/r300_dri.so
+usr/lib64/xorg/modules/dri/nouveau_dri.so
+usr/lib64/xorg/modules/dri/swrast_dri.so
+usr/lib64/xorg/modules/dri/radeon_dri.so
+usr/lib64/xorg/modules/dri/r200_dri.so
+usr/lib64/xorg/modules/dri/nouveau_vieux_dri.so
+usr/lib64/xorg/modules/dri/i965_dri.so
+usr/lib64/xorg/modules/dri/i915_dri.so
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/egl.pc
+usr/lib64/pkgconfig/dri.pc
+usr/lib64/pkgconfig/gl.pc
+usr/lib64/pkgconfig/glesv2.pc
+usr/lib64/pkgconfig/glesv1_cm.pc
+usr/lib64/libGLESv2.la
+usr/lib64/libGLESv1_CM.la
+usr/lib64/libglapi.la

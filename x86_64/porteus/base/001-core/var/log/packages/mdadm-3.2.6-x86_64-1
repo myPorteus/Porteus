@@ -1,0 +1,46 @@
+PACKAGE NAME:     mdadm-3.2.6-x86_64-1
+COMPRESSED PACKAGE SIZE:     288K
+UNCOMPRESSED PACKAGE SIZE:     850K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/mdadm-3.2.6-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mdadm: mdadm (manage RAID arrays)
+mdadm:
+mdadm: mdadm is a utility program for creating, managing, and monitoring
+mdadm: Linux MD (Software RAID) devices.  Unlike the older raidtools
+mdadm: package, mdadm is a single program (which should make it easier to
+mdadm: use).
+mdadm:
+mdadm: mdadm was written by Neil Brown.  Development of mdadm is sponsored
+mdadm: by CSE@UNSW (The School of Computer Science and Engineering at
+mdadm: The University of New South Wales).
+mdadm:
+FILE LIST:
+./
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/64-md-raid.rules
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/mdadm
+sbin/mdmon
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/mdmon.8.gz
+usr/man/man8/mdadm.8.gz
+usr/man/man5/
+usr/man/man5/mdadm.conf.5.gz
+usr/man/man4/
+usr/man/man4/md.4.gz
+usr/doc/
+usr/doc/mdadm-3.2.6/
+usr/doc/mdadm-3.2.6/ANNOUNCE-3.2.6
+usr/doc/mdadm-3.2.6/ChangeLog
+usr/doc/mdadm-3.2.6/COPYING
+usr/doc/mdadm-3.2.6/INSTALL
+usr/doc/mdadm-3.2.6/TODO
+etc/
+etc/mdadm.conf.new

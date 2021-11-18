@@ -1,0 +1,42 @@
+PACKAGE NAME:     xcb-util-0.3.9-x86_64-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /root/work/002/xcb-util-0.3.9-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xcb-util: xcb-util (utility libraries for X protocol C-language Binding)
+xcb-util:
+xcb-util: xcb-util is part of X11.
+xcb-util:
+xcb-util: For more information about the X.Org Foundation (the providers of the
+xcb-util: X.Org implementation of the X Window System), see their website:
+xcb-util:
+xcb-util: http://www.x.org
+xcb-util:
+xcb-util:
+xcb-util:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xcb-atom.pc
+usr/lib64/pkgconfig/xcb-util.pc
+usr/lib64/pkgconfig/xcb-event.pc
+usr/lib64/pkgconfig/xcb-aux.pc
+usr/lib64/libxcb-util.so.1.0.0
+usr/lib64/libxcb-util.la
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_atom.h
+usr/include/xcb/xcb_event.h
+usr/include/xcb/xcb_aux.h
+usr/include/xcb/xcb_util.h
+usr/doc/
+usr/doc/xcb-util-0.3.9/
+usr/doc/xcb-util-0.3.9/ChangeLog
+usr/doc/xcb-util-0.3.9/README
+usr/doc/xcb-util-0.3.9/INSTALL
+usr/doc/xcb-util-0.3.9/NEWS

@@ -1,0 +1,51 @@
+PACKAGE NAME:     libICE-1.0.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     108K
+UNCOMPRESSED PACKAGE SIZE:     760K
+PACKAGE LOCATION: /root/work/002/libICE-1.0.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libICE: libICE (X Inter-Client Exchange Library)
+libICE:
+libICE: libICE is part of X11.
+libICE:
+libICE: For more information about the X.Org Foundation (the providers of the
+libICE: X.Org implementation of the X Window System), see their website:
+libICE:
+libICE: http://www.x.org
+libICE:
+libICE:
+libICE:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib64/
+usr/lib64/libICE.so.6.3.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/ice.pc
+usr/lib64/libICE.la
+usr/include/
+usr/include/X11/
+usr/include/X11/ICE/
+usr/include/X11/ICE/ICEmsg.h
+usr/include/X11/ICE/ICElib.h
+usr/include/X11/ICE/ICEconn.h
+usr/include/X11/ICE/ICE.h
+usr/include/X11/ICE/ICEutil.h
+usr/include/X11/ICE/ICEproto.h
+usr/doc/
+usr/doc/libICE-1.0.8/
+usr/doc/libICE-1.0.8/ICElib.html.db
+usr/doc/libICE-1.0.8/AUTHORS
+usr/doc/libICE-1.0.8/ChangeLog
+usr/doc/libICE-1.0.8/COPYING
+usr/doc/libICE-1.0.8/ICElib.html
+usr/doc/libICE-1.0.8/ICElib.pdf.db
+usr/doc/libICE-1.0.8/ICElib.xml
+usr/doc/libICE-1.0.8/README
+usr/doc/libICE-1.0.8/INSTALL
+usr/doc/libICE-1.0.8/ice.html.db
+usr/doc/libICE-1.0.8/ice.pdf.db
+usr/doc/libICE-1.0.8/ice.xml
+usr/doc/libICE-1.0.8/ice.html

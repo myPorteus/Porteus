@@ -1,0 +1,45 @@
+PACKAGE NAME:     libvdpau-0.8-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/PRT/002/XORG/libvdpau-0.8-x86_64-1ftm.tgz
+PACKAGE DESCRIPTION:
+libvdpau: libvdpau (VDPAU wrapper library)
+libvdpau:
+libvdpau: This package contains the libvdpau wrapper library and the
+libvdpau: libvdpau_trace debugging library, along with the header files needed
+libvdpau: to build VDPAU applications. To actually use a VDPAU device, you
+libvdpau: need a vendor-specific implementation library, like the one
+libvdpau: shipped with nvidia's binary graphics driver.
+libvdpau:
+libvdpau: Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+libvdpau:
+libvdpau:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+etc/
+etc/vdpau_wrapper.cfg
+usr/
+usr/doc/
+usr/doc/libvdpau-0.8/
+usr/doc/libvdpau-0.8/libvdpau.SlackBuild
+usr/doc/libvdpau-0.8/README
+usr/doc/libvdpau-0.8/NEWS
+usr/doc/libvdpau-0.8/INSTALL
+usr/doc/libvdpau-0.8/COPYING
+usr/doc/libvdpau-0.8/ChangeLog
+usr/doc/libvdpau-0.8/AUTHORS
+usr/include/
+usr/include/vdpau/
+usr/include/vdpau/vdpau_x11.h
+usr/include/vdpau/vdpau.h
+usr/lib64/
+usr/lib64/libvdpau.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/vdpau.pc
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_trace.so.1.0.0
+usr/lib64/vdpau/libvdpau_trace.la
+usr/lib64/libvdpau.la

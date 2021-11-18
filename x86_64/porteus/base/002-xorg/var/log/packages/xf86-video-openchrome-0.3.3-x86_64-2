@@ -1,0 +1,41 @@
+PACKAGE NAME:     xf86-video-openchrome-0.3.3-x86_64-2
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     520K
+PACKAGE LOCATION: /root/work2/xf86-video-openchrome-0.3.3-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xf86-video-openchrome: xf86-video-openchrome (VIA video driver for the Xorg X server)
+xf86-video-openchrome:
+xf86-video-openchrome: xf86-video-openchrome is part of X11.
+xf86-video-openchrome:
+xf86-video-openchrome: For more information about the X.Org Foundation (the providers of the
+xf86-video-openchrome: X.Org implementation of the X Window System), see their website:
+xf86-video-openchrome:
+xf86-video-openchrome: http://www.x.org
+xf86-video-openchrome:
+xf86-video-openchrome:
+xf86-video-openchrome:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/man/
+usr/man/man4/
+usr/man/man4/openchrome.4.gz
+usr/lib64/
+usr/lib64/libchromeXvMCPro.so.1.0.0
+usr/lib64/libchromeXvMC.la
+usr/lib64/libchromeXvMC.so.1.0.0
+usr/lib64/libchromeXvMCPro.la
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/openchrome_drv.la
+usr/lib64/xorg/modules/drivers/openchrome_drv.so
+usr/doc/
+usr/doc/xf86-video-openchrome-0.3.3/
+usr/doc/xf86-video-openchrome-0.3.3/ChangeLog
+usr/doc/xf86-video-openchrome-0.3.3/COPYING
+usr/doc/xf86-video-openchrome-0.3.3/README
+usr/doc/xf86-video-openchrome-0.3.3/NEWS

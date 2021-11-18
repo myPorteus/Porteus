@@ -1,0 +1,782 @@
+#!/bin/sh
+export TEXTDOMAIN=pburn
+
+. $APPDIR/func -find_devices
+echo "$BURNDEV" > $WORKDIR/burner
+
+[ -s $HOME/.pburn/pburnhlp-$LANGUAGE ] && . $HOME/.pburn/pburnhlp-$LANGUAGE || . $HOME/.pburn/pburnhlp-auto #read help text (preferable in installed language)
+
+export BUTTON_OK="<button><input file stock=\"gtk-apply\"></input><label>$(gettext 'Ok')</label></button>"
+
+########################### BURN DATA #########################
+
+TRACK_AT_ONCE=false
+if [ "$DISC_AT_ONCE" = "false" ] && [ "$BURNRAW" = "false" ]; then TRACK_AT_ONCE=true; fi
+CLOSEDISC=false; VISIBLE_CHK_OVERBURN=enabled; VISIBLE_CHK_OVERWRITE=enabled
+#if [ "$BURN" = "iso" ] && [ "`grep -iF '.iso' $WORKDIR/burn`" ]; then BURNMULTI=false; fi #only CD-R(W) supports md5sum-verifing at multisession.
+if [ "$BURNMULTI" = "false" ]; then
+	CLOSEDISC=true
+else
+	VISIBLE_CHK_OVERBURN=disabled	
+fi
+OFF_THE_FLY=false
+if [ "$ON_THE_FLY" = "false" ] && [ "$VISIBLE_ISO" = "enabled" ]; then
+	OFF_THE_FLY=true
+fi
+
+#isosize - human readable
+if [ "$ISOSIZE" -gt "1000000000" > /dev/null 2>&1 ]; then
+	ISOSIZE_HUMAN="`echo "scale=2; $ISOSIZE / 1024 / 1024 / 1024" | bc -l` Gb"
+else
+	ISOSIZE_HUMAN="`echo "scale=2; $ISOSIZE / 1024 / 1024" | bc -l 2> /dev/null` Mb"
+fi
+
+if [ "$CHK_OVERBURN" = "true" ]; then
+	VISIBLE_BURNMULTI=disabled
+	BURNMULTI=false
+	CLOSEDISC=true
+else
+	VISIBLE_BURNMULTI=enabled
+	CHK_OVERBURN=false
+fi
+
+#overwrite
+[ "$CHK_OVERWRITE" != "true" ] && CHK_OVERWRITE=false
+if [ "$MEDIATYPE" = "CD" ] || [ ! "$SECTIONS" ]; then
+	VISIBLE_CHK_OVERWRITE=disabled
+	CHK_OVERWRITE=false
+fi
+
+#---
+GUI_ON_THE_FLY=''
+if [ "$BURN" != "iso" ]; then 
+	GUI_ON_THE_FLY="
+	<frame $(gettext 'Temporary storage')>
+	 <radiobutton>
+	  <variable>ON_THE_FLY</variable>
+	  <label>$(gettext 'On-the-fly - No temporary storage (DVD/Blu-ray recommended)')</label>
+	  <default>$ON_THE_FLY</default>
+	  <visible>$VISIBLE_ISO</visible>
+	 </radiobutton>
+	 <radiobutton>
+	  <variable>OFF_THE_FLY</variable>
+	  <label>$(gettext 'Use temporary storage (CD recommended)') - $(gettext 'Minimum size'): $ISOSIZE_HUMAN</label>
+	  <default>$OFF_THE_FLY</default>
+	  <visible>$VISIBLE_ISO</visible>
+	 </radiobutton>
+	</frame>"
+else
+	[ "`grep -i 'pup' $WORKDIR/burn`" ] && GUI_ON_THE_FLY="
+	<frame $(gettext 'Information')>
+	 <hbox homogeneous=\"true\">
+	  <hbox>
+	   <pixmap icon_size=\"6\"><input file stock=\"gtk-dialog-info\"></input></pixmap>
+	   <vbox>
+	   <text use-markup=\"true\"><label>\"<b>$(gettext 'About burning a Puppy iso-image')</b>\"</label></text>
+	   <text use-markup=\"true\"><label>\"<span color='"'red'"'>$(gettext 'Puppy Linux supports writing user-data back to the Live-CD/DVD during shutdown - no harddrive is needed. To do this, the disc must be open for more burning. You should choose a multisession burn if you intend to use the CD/DVD as your personal storage.')</span>\"</label></text>
+	   </vbox>
+	  </hbox>
+	 </hbox>
+	</frame>"
+fi
+
+export GUI_BURN="
+<vbox>
+ <frame $(gettext 'Disc options')>
+  <text><label>\"\"</label></text>
+  <radiobutton>
+   <variable>BURNMULTI</variable>
+   <label>$(gettext 'Multisession - Allow more burning on this disc later')</label>
+   <visible>$VISIBLE_BURNMULTI</visible>
+   <default>$BURNMULTI</default>
+   <action>if true disable:CHK_OVERBURN</action>
+   <action>if false enable:CHK_OVERBURN</action>
+  </radiobutton>
+  <radiobutton>
+   <variable>CLOSEDISC</variable>
+   <label>$(gettext 'Close disc - Make disc unwritable after this burn')</label>
+   <default>$CLOSEDISC</default>
+  </radiobutton>
+
+
+  <hbox>
+  
+  <hbox space-expand=\"true\" space-fill=\"true\"><text><label>\"\"</label></text></hbox>
+  
+  <vbox>
+  <hbox space-expand=\"true\" space-fill=\"true\">
+   <checkbox>
+    <label>$(gettext 'Overburn')</label>
+    <variable>CHK_OVERBURN</variable>
+    <default>$CHK_OVERBURN</default>
+    <visible>$VISIBLE_CHK_OVERBURN</visible>
+    <action>if true disable:BURNMULTI</action>
+    <action>if false enable:BURNMULTI</action>
+   </checkbox>
+   <text><label>\"\"</label></text>
+  </hbox>
+  <hbox space-expand=\"true\" space-fill=\"true\">
+   <checkbox>
+    <label>$(gettext 'Overwrite existing data on disc') (DVD/Blu-ray)</label>
+    <variable>CHK_OVERWRITE</variable>
+    <default>$CHK_OVERWRITE</default>
+    <visible>$VISIBLE_CHK_OVERWRITE</visible>
+   </checkbox>
+   <text><label>\"\"</label></text>
+  </hbox>
+  <hbox>
+   <text><label>$(gettext 'Mediatype')</label></text>
+   <combobox>
+    <variable>MEDIATYPE</variable>
+    <item>$MEDIATYPE</item>
+    <item>CD</item>
+    <item>DVD</item>
+    <item>Blu-Ray</item>
+   </combobox>
+  </hbox>
+  </vbox>
+  </hbox>
+
+
+
+ </frame>
+ $GUI_ON_THE_FLY
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=null; TXT1=\$HLPTXT32; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### COPY #########################
+
+#if only one drive, copy can't be set to on-the-fly
+if [ `echo "$ITEMS_DEVICES" | wc -l` -gt 1 ]; then export VISIBLE_ONTHEFLY=enabled; else export VISIBLE_ONTHEFLY=disabled; fi
+#if copy audio CD, don't select mediatype
+if [ "$BURN" = "copy_audio" ]; then VISIBLE_MEDIATYPE=disabled; else VISIBLE_MEDIATYPE=enabled; fi
+#set default drives for advanced tab
+export GUI_COPY="
+<vbox>
+ <frame $(gettext 'Copy')>
+  <radiobutton>
+   <variable>ON_THE_FLY</variable>
+   <label>$(gettext 'On-the-fly - No temporary storage (MUST BE 2 different drives)')</label>
+   <visible>$VISIBLE_ONTHEFLY</visible>
+   <default>false</default>
+   <action>if true disable:SYSTEMSIZE</action>
+   <action>if true disable:OUTDIR</action>
+   <action>if true disable:BUTTON_OUTDIR</action>
+  </radiobutton>
+  <radiobutton>
+   <label>$(gettext 'Use temporary storage (Can copy with only 1 drive)')</label>
+   <default>true</default>
+   <action>if true enable:SYSTEMSIZE</action>
+   <action>if true enable:OUTDIR</action>
+   <action>if true enable:BUTTON_OUTDIR</action>
+  </radiobutton>
+  <text><label>\"\"</label></text>
+  <text><label>\"\"</label></text>
+  <text><label>\"\"</label></text>
+  <text><label>\"\"</label></text>
+  <text><label>\"\"</label></text>
+  <hbox>
+   <text>
+    <visible>$VISIBLE_MEDIATYPE</visible>
+    <label>$(gettext 'Mediatype')</label>
+   </text>
+   <combobox>
+    <visible>$VISIBLE_MEDIATYPE</visible>
+    <variable>MEDIATYPE</variable>
+    <item>$MEDIATYPE</item>
+    <item>CD</item>
+    <item>DVD</item>
+    <item>Blu-ray</item>
+   </combobox>
+  </hbox>
+ </frame>
+</vbox>"
+
+########################### COPY VIDEO #########################
+COPY_VIDEO_SUBTITLE=0
+COPY_VIDEO_AUDIOSTREAM=1
+if type vamps >/dev/null; then DEFAULT_SHRINK=true; else DEFAULT_SHRINK=false; fi 
+
+export GUI_COPY_VIDEO="
+<vbox>
+ <frame $(gettext 'Copy/shrink video DVD')>
+  <radiobutton>
+   <variable>COPY_VIDEO_MIRROR</variable>
+   <label>$(gettext 'Copy the complete DVD - (requires most often to burn a dual layer DVD)')</label>
+   <action>if true disable:TXT_COPY_VIDEO_TITLE</action>
+   <action>if true disable:COPY_VIDEO_TITLE</action>
+   <action>if true disable:TXT_COPY_VIDEO_SUBTITLE</action>
+   <action>if true disable:COPY_VIDEO_SUBTITLE</action>
+   <action>if true disable:TXT_COPY_VIDEO_AUDIOSTREAM</action>
+   <action>if true disable:COPY_VIDEO_AUDIOSTREAM</action>
+  </radiobutton>
+  <radiobutton>
+   <variable>COPY_VIDEO_MOVIE</variable>
+   <label>$(gettext 'Copy only movie - shrink to fit on a common (single-layer) DVD')</label>
+   <default>$DEFAULT_SHRINK</default>
+   <action>if true enable:TXT_COPY_VIDEO_TITLE</action>
+   <action>if true enable:COPY_VIDEO_TITLE</action>
+   <action>if true enable:TXT_COPY_VIDEO_SUBTITLE</action>
+   <action>if true enable:COPY_VIDEO_SUBTITLE</action>
+   <action>if true enable:TXT_COPY_VIDEO_AUDIOSTREAM</action>
+   <action>if true enable:COPY_VIDEO_AUDIOSTREAM</action>
+  </radiobutton>
+  <hbox>
+   <text>
+    <variable>TXT_COPY_VIDEO_TITLE</variable>
+    <label>$(gettext 'Title (Field shows title with most chapters):')</label>
+   </text>
+   <vbox>
+    <entry>
+     <variable>COPY_VIDEO_TITLE</variable>
+     <default>$COPY_VIDEO_TITLE</default>
+     <width>30</width><height>25</height>
+    </entry>
+   </vbox>
+  </hbox>
+  <hbox>
+   <text>
+    <variable>TXT_COPY_VIDEO_SUBTITLE</variable>
+    <label>$(gettext 'Subtitle channel (your language):')</label>
+   </text>
+   <vbox>
+    <entry>
+     <variable>COPY_VIDEO_SUBTITLE</variable>
+     <default>$COPY_VIDEO_SUBTITLE</default>
+     <width>30</width><height>25</height>
+    </entry>
+   </vbox>
+  </hbox>
+  <hbox>
+   <text>
+    <variable>TXT_COPY_VIDEO_AUDIOSTREAM</variable>
+    <label>$(gettext 'Audiostream (for dubbed movie):')</label>
+   </text>
+   <vbox>
+    <entry>
+     <variable>COPY_VIDEO_AUDIOSTREAM</variable>
+     <default>$COPY_VIDEO_AUDIOSTREAM</default>
+     <width>30</width><height>25</height>
+    </entry>
+   </vbox>
+  </hbox>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT39 . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### FILESYSTEM #########################
+
+export GUI_FILESYSTEM='
+<vbox space-expand="true" space-fill="true">
+ <frame '$(gettext 'Filesystem')'> 
+  <text><label>""</label></text>
+  <radiobutton>
+   <variable>ISOLEVEL4</variable>
+   <label>'$(gettext 'Most recent systems (Linux, Mac, Windows, ...)')'</label>
+  </radiobutton>
+  <radiobutton>
+   <variable>ISOLEVEL3</variable>
+   <label>'$(gettext 'Windows 95/98')'</label>
+  </radiobutton>
+  <radiobutton>
+   <variable>ISOLEVEL1</variable>
+   <label>'$(gettext 'Old standard (8.3 naming)')'</label>
+  </radiobutton>
+  <text space-expand="true" space-fill="true"><label>""</label></text>
+  <checkbox space-expand="false" space-fill="false">
+   <variable>FOLLOW_SYMLINK</variable>
+   <default>'$FOLLOW_SYMLINK'</default>
+   <label>'$(gettext "Follow symlink - (When off, 'size' will probably show more than you actually need)")'</label>
+  </checkbox>
+ </frame>
+ <hbox space-expand="false" space-fill="false">
+  <text use-markup="true"><label>"<b>'$(gettext 'Information')'</b>"</label></text>
+  <button>
+   <input file stock="gtk-info"></input>
+   <action>FRAME="'$(gettext 'Information')'"; IMG=dialog-info; TXT1="$HLPTXT33"; . '$APPDIR'/box &</action>
+  </button>
+ </hbox>
+</vbox>'
+
+########################### DEVICES #########################
+
+#GUI_DEV is also used by startup check in pburn main file
+export GUI_DEV='
+<hbox space-expand="true" space-fill="true">
+<hbox space-expand="false" space-fill="false">
+ <vbox space-expand="true" space-fill="true">
+  <text use-markup="true" space-expand="false" space-fill="false"><label>"<b>'$(gettext 'My burner device')' </b>"</label></text>
+  <text space-expand="true" space-fill="true"><label>""</label></text>
+ </vbox>
+ </hbox>
+ <vbox space-expand="true" space-fill="true">
+  <entry>
+   <variable>BURNDEV</variable>
+   <input>cat '$WORKDIR'/burner</input>
+  </entry>
+  <text><label>"'$(gettext 'Devices found on system (click to activate)')' "</label></text>
+ <tree rules_hint="true" space-expand="true" space-fill="true">
+  <label>'$(gettext 'Device')'|'$(gettext 'Media')'</label>
+  <variable>TREE</variable>
+  '$ITEMS_DEVICES'
+  <action signal="button-release-event">echo $TREE > '$WORKDIR'/burner</action>
+  <action signal="button-release-event">refresh:BURNDEV</action>
+ </tree>
+ </vbox>
+</hbox>'
+for I in 1 2 4 8 12 16 24 32 40 48 52; do CDSPEEDS="$CDSPEEDS<item>$I</item>"; done
+for I in 1 2 4 8 16; do DVDSPEEDS="$DVDSPEEDS<item>$I</item>"; done
+export GUI_DEVICES="
+<vbox>
+ <frame $(gettext 'Burner device')>
+  $GUI_DEV
+  <hbox>
+   <text><label>$(gettext 'The CD burn speed')</label></text>
+   <combobox>
+    <variable>CDSPEED</variable>
+    <item>$CDSPEED</item>
+    <item>Auto</item>
+    $CDSPEEDS
+   </combobox>
+  </hbox>
+  <hbox>
+   <text><label>$(gettext 'The DVD burn speed')</label></text>
+   <combobox>
+    <variable>DVDSPEED</variable>
+    <item>$DVDSPEED</item>
+    <item>Auto</item>
+    $DVDSPEEDS
+   </combobox>
+  </hbox>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT34; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### COPY-DEVICE #########################
+
+if [ ! "$INDRIVE" ]; then INDRIVE=$BURNDEV; fi
+export GUI_COPY_DEVICE="
+<vbox>
+ <frame $(gettext 'Input device')>
+  <text><label>\"\"</label></text> 
+  <combobox>
+   <variable>INDRIVE</variable>
+   <item>$INDRIVE</item>
+   $ITEMS_DEVICES
+  </combobox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'The device you want to copy from, may be the same as the burner device')</b>\"</label></text> 
+ </frame>
+</vbox>"
+
+########################### AUDIO #########################
+
+if type normalize > /dev/null 2>&1; then
+	VISIBLE_NORMALIZE=enabled
+else
+	VISIBLE_NORMALIZE=disabled
+	LOC440="$(gettext "Volume: 'normalize' is not installed.")" # this is strange, I don't know what to do with it...
+fi
+export GUI_AUDIO="
+<vbox>
+ <frame $(gettext 'Burn mode')>
+  <vbox>
+   <radiobutton>
+    <variable>TRACK_AT_ONCE</variable>
+    <label>$(gettext 'Track-at-once - Safe mode')</label>
+    <default>$TRACK_AT_ONCE</default>
+   </radiobutton>
+   <radiobutton>
+    <variable>DISC_AT_ONCE</variable>
+    <label>$(gettext 'Disc-at-once - No gaps between songs')</label>
+    <default>$DISC_AT_ONCE</default>
+   </radiobutton>
+   <text><label>\"\"</label></text>
+   <radiobutton>
+    <variable>BURNRAW</variable>
+    <label>$(gettext 'Raw mode - Some burners support only this')</label>
+    <default>$BURNRAW</default>
+   </radiobutton>
+   <text><label>\"\"</label></text>
+  </vbox>
+ </frame>
+ <frame $(gettext 'Volume')>
+  <vbox>
+   <checkbox>
+    <variable>NORMALIZE</variable>
+    <visible>$VISIBLE_NORMALIZE</visible>
+    <default>$NORMALIZE</default>
+    <label>$(gettext 'Normalize volume')</label>
+    <action>if true enable:ADJUST_VOL</action>
+    <action>if false disable:ADJUST_VOL</action>
+   </checkbox>
+   <hbox>
+    <text>
+     <label>$(gettext 'Tune volume level')</label>
+     <visible>$VISIBLE_NORMALIZE</visible>
+    </text>
+    <combobox>
+     <variable>ADJUST_VOL</variable>
+     <visible>disabled</visible>
+     <item>$ADJUST_VOL</item>
+     <item>\" \"</item>
+     <item>-20db</item>
+     <item>-10db</item>
+     <item>-5db</item>
+     <item>5db</item>
+     <item>10db</item>
+     <item>20db</item>
+    </combobox>
+   </hbox>
+  </vbox>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT35; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+if [ "$BURN" = "copy_audio" ]; then
+	VISIBLE_CDDB=enabled
+	VISIBLE_CDTEXT=enabled
+	CHECKBOX_CDTEXT=""
+else
+	VISIBLE_CDDB=disabled
+	VISIBLE_CDTEXT=disabled
+	CHECKBOX_CDTEXT="
+<checkbox>
+ <variable>CHK_CDTEXT</variable>
+ <label>$(gettext 'Activate CD-text')</label>
+ <action>if true export VISIBLE_CDTEXT=enabled</action>
+ <action>if false export VISIBLE_CDTEXT=disabled</action>
+ <action>if true enable:TXT_CDTEXT</action>
+ <action>if true enable:CDTEXT_INFO</action>
+ <action>if true enable:TXT2_CDTEXT</action>
+ <action>if true enable:TXT3_CDTEXT</action>
+ <action>if true enable:CDTEXT_ALBUM_ARTIST</action>
+ <action>if true enable:CDTEXT_ALBUM_TITLE</action>
+ <action>if false disable:TXT_CDTEXT</action>
+ <action>if false disable:CDTEXT_INFO</action>
+ <action>if false disable:TXT2_CDTEXT</action>
+ <action>if false disable:TXT3_CDTEXT</action>
+ <action>if false disable:CDTEXT_ALBUM_ARTIST</action>
+ <action>if false disable:CDTEXT_ALBUM_TITLE</action>
+</checkbox>"
+fi
+
+########################### CDTEXT #########################
+
+export GUI_CDTEXT="
+<vbox>
+ <frame $(gettext 'CD-text')>
+  $CHECKBOX_CDTEXT
+  <hbox>
+   <text>
+    <variable>TXT2_CDTEXT</variable>
+    <label>$(gettext 'Album artist')</label>
+    <visible>$VISIBLE_CDTEXT</visible>
+   </text>
+   <entry>
+    <variable>CDTEXT_ALBUM_ARTIST</variable>
+    <visible>$VISIBLE_CDTEXT</visible>
+    <input>cat $WORKDIR/CDTEXT_ALBUM_ARTIST</input>
+   </entry>
+   <text>
+    <variable>TXT3_CDTEXT</variable>
+    <label>$(gettext 'Album title')</label>
+    <visible>$VISIBLE_CDTEXT</visible>
+   </text>
+   <entry>
+    <variable>CDTEXT_ALBUM_TITLE</variable>
+    <input>cat $WORKDIR/CDTEXT_ALBUM_TITLE</input>
+    <visible>$VISIBLE_CDTEXT</visible>
+   </entry>
+  </hbox>
+  <text><label>\"\"</label></text>
+  <text use-markup=\"true\">
+   <variable>TXT_CDTEXT</variable>
+   <label>\"<b>$(gettext 'Artist - Song')</b>\"</label>
+   <visible>$VISIBLE_CDTEXT</visible>
+  </text>
+  <edit>
+   <label>$(gettext 'Artist - Song')</label>
+   <variable>CDTEXT_INFO</variable>
+   <input file>$WORKDIR/cdtext</input>
+   <visible>$VISIBLE_CDTEXT</visible>
+  </edit>
+  <button>
+   <label>$(gettext 'Retrieve CD-text from disc or internet')</label>
+   <variable>CDDB</variable>
+   <visible>$VISIBLE_CDDB</visible>
+   <action>. $APPDIR/func -cdtext</action>
+   <action>refresh:CDTEXT_INFO</action>
+   <action>refresh:CDTEXT_ALBUM_TITLE</action>
+   <action>refresh:CDTEXT_ALBUM_ARTIST</action>
+  </button>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT36; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### VIDEO #########################
+
+S='
+<vbox>
+ <hbox>
+  <frame '$(gettext 'Aspect ratio')'>
+   <vbox>
+    <radiobutton>
+     <variable>ASPECT43</variable>
+     <label>4:3</label>
+     <default>'$ASPECT43'</default>
+    </radiobutton>
+    <radiobutton>
+     <variable>ASPECT169</variable>
+     <label>"16:9 ('$(gettext 'widescreen')')  "</label>
+     <default>'$ASPECT169'</default>
+    </radiobutton>
+   </vbox>
+  </frame>'
+  
+  if [ "$BURN" != "copy_video" ]; then
+  S=$S'<frame '$(gettext 'General')'>
+   <vbox>
+    <hbox> 
+     <text><label>'$(gettext 'Mediatype')'</label></text>
+     <combobox>
+      <variable>MEDIATYPE_VIDEO</variable>
+      <item>'$MEDIATYPE_VIDEO'</item>
+      <item>DVD</item>
+      <item>VCD</item>
+      <item>SVCD</item>
+     </combobox>
+    </hbox>
+    <hbox>
+     <text><label>'$(gettext 'View images (in seconds)')'</label></text>
+     <vbox>
+      <entry>
+       <variable>PIC_VIEWTIME</variable>
+       <default>'$PIC_VIEWTIME'</default>
+       <width>30</width><height>25</height>
+      </entry>
+     </vbox>
+    </hbox>
+    <hbox>
+     <text><label>'$(gettext 'Pause between movies (in seconds)')'</label></text>
+     <vbox>
+      <entry>
+       <variable>PAUSE_VIDEO</variable>
+       <default>'$PAUSE_VIDEO'</default>
+       <width>30</width><height>25</height>
+      </entry>
+     </vbox>
+    </hbox>
+   </vbox>
+  </frame>'
+  fi
+
+ S=$S'</hbox>
+ <frame '$(gettext 'TV standard')'>
+  <hbox space-expand="true" space-fill="true">
+   <vbox>
+    <radiobutton>
+     <variable>PAL</variable>
+     <label>PAL / SECAM</label>
+     <default>'$PAL'</default>
+    </radiobutton>
+    <radiobutton>
+     <variable>NTSC</variable>
+     <label>"NTSC         "</label>
+     <default>'$NTSC'</default>
+    </radiobutton>
+   </vbox>
+   <tree>
+    <label>'$(gettext 'Country')'|'$(gettext 'TV standard')'</label>
+    <input>cat '$APPDIR'/tv_standard</input>
+   </tree>   
+  </hbox>
+ </frame>
+ <hbox>
+  <text use-markup="true"><label>"<b>'$(gettext 'Information')'</b>"</label></text>
+  <button>'"
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT37; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+export GUI_VIDEO="$S"
+
+########################### SLIDESHOW #########################
+
+export GUI_SLIDESHOW="
+<vbox>
+ <frame $(gettext 'Slideshow')>
+  <checkbox>
+   <variable>CHK_SLIDESHOW</variable>
+   <label>$(gettext 'Activate image slideshow')</label>
+   <default>false</default>
+   <action>if true . $APPDIR/func -slideshow true</action>
+   <action>if false . $APPDIR/func -slideshow false</action>
+   <action>if true enable:BUTTON_SLIDETIME</action>
+   <action>if true enable:TXT_SLIDETIME</action>
+   <action>if true enable:SLIDETIME</action>
+   <action>if true enable:BUTTON_BACKGROUND_MUSIC</action>
+   <action>if true enable:TXT_BACKGROUND_MUSIC</action>
+   <action>if true enable:BACKGROUND_MUSIC</action>
+   <action>if true enable:CHK_EXPORT_SLIDESHOW</action>
+   <action>if false disable:BUTTON_SLIDETIME</action>
+   <action>if false disable:TXT_SLIDETIME</action>
+   <action>if false disable:SLIDETIME</action>
+   <action>if false disable:BUTTON_BACKGROUND_MUSIC</action>
+   <action>if false disable:TXT_BACKGROUND_MUSIC</action>
+   <action>if false disable:BACKGROUND_MUSIC</action>
+   <action>if false disable:CHK_EXPORT_SLIDESHOW</action>
+  </checkbox>
+  <checkbox>
+   <variable>CHK_EXPORT_SLIDESHOW</variable>
+   <label>$(gettext 'Only build Slideshow file (*.mpg) - NO burn')</label>
+   <default>false</default>
+   <visible>disabled</visible>
+  </checkbox>
+  <text><label>\"\"</label></text>
+  <hbox>
+   <text>
+    <variable>TXT_SLIDETIME</variable>
+    <label>$(gettext 'View images (in seconds)')</label>
+    <visible>disabled</visible>
+   </text>
+   <vbox>
+    <entry>
+     <variable>SLIDETIME</variable>
+     <default>7</default>
+     <width>35</width><height>25</height>
+     <visible>disabled</visible>
+    </entry>
+   </vbox>
+   <button>
+    <variable>BUTTON_SLIDETIME</variable>
+    <input file stock=\"gtk-refresh\"></input>
+    <visible>disabled</visible>
+    <action>. $APPDIR/func -slideshow_time</action>
+    <action>refresh:SLIDESHOW_TIME</action>
+   </button>
+  </hbox>
+  <hbox>
+   <text>
+    <label>$(gettext 'Background music')</label>
+    <visible>disabled</visible>
+    <variable>TXT_BACKGROUND_MUSIC</variable>
+   </text>
+   <entry>
+    <variable>BACKGROUND_MUSIC</variable>
+    <input>cat $WORKDIR/BACKGROUND_MUSIC</input>
+    <visible>disabled</visible>
+   </entry>
+   <button>
+    <variable>BUTTON_BACKGROUND_MUSIC</variable>
+    <input file stock=\"gtk-open\"></input>
+    <visible>disabled</visible>
+    <action>SLIDESHOW=true; TITLE=\$(gettext 'Aspect ratio'); . $APPDIR/box_chooser</action>
+    <action>refresh:BACKGROUND_MUSIC</action>
+    <action>. $APPDIR/func -slideshow_time</action>
+    <action>refresh:SLIDESHOW_TIME</action>
+   </button>
+  </hbox>
+ </frame>
+ <frame $(gettext 'Time')>
+  <tree headers_visible=\"false\">
+   <label>a|b</label>
+   <variable>SLIDESHOW_TIME</variable>
+   <input>cat $WORKDIR/slideshow_time</input>
+   <height>100</height><width>200</width>
+  </tree>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT38; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### PUBLISH #########################
+
+export GUI_PUBLISH="
+<vbox>
+ <frame $(gettext 'Publish')>
+  <hbox homogeneous=\"true\">
+   <text><label>$(gettext 'Publisher')</label></text>
+   <entry>
+    <default>\"$PUBLISHER\"</default>
+    <variable>PUBLISHER</variable>
+   </entry>
+  </hbox>
+  <hbox homogeneous=\"true\">
+   <text><label>$(gettext 'Preparer')</label></text>
+   <entry>
+    <default>\"$PREPARER\"</default>
+    <variable>PREPARER</variable>
+   </entry>
+  </hbox>
+  <hbox homogeneous=\"true\">
+   <text><label>$(gettext 'Project label')</label></text>
+   <entry>
+    <default>\"$VOLUME\"</default>
+    <variable>VOLUME</variable>
+   </entry>
+  </hbox>
+ </frame>
+ <hbox>
+  <text use-markup=\"true\"><label>\"<b>$(gettext 'Information')</b>\"</label></text>
+  <button>
+   <input file stock=\"gtk-info\"></input>
+   <action>FRAME=$(gettext 'Information'); IMG=dialog-info; TXT1=\$HLPTXT310; . $APPDIR/box &</action>
+  </button>
+ </hbox>
+</vbox>"
+
+########################### TEMPORARY STORAGE #########################
+
+export GUI_TEMPORARY_STORAGE="
+<vbox>
+ <hbox>
+  <entry editable= \"false\" accept=\"directory\">
+   <variable>OUTDIR</variable>
+   <input>cat $WORKDIR/OUTDIR</input>
+  </entry>
+  <button>
+   <variable>BUTTON_OUTDIR</variable>
+   <input file stock=\"gtk-open\"></input>
+   <action type=\"fileselect\">OUTDIR</action>
+   <action>. $APPDIR/func -available_size</action>
+   <action>refresh:SYSTEMSIZE</action>
+  </button>
+ </hbox>
+ <text><variable>SYSTEMSIZE</variable><input file>$WORKDIR/systemsize</input></text>
+</vbox>"

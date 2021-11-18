@@ -1,0 +1,30 @@
+PACKAGE NAME:     rfkill-0.5-x86_64-1
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /rfkill-0.5-x86_64-1.txz
+PACKAGE DESCRIPTION:
+rfkill: rfkill (tool to query subsystem interfaces)
+rfkill:
+rfkill: rfkill is a small tool to query the state of the rfkill switches,
+rfkill: buttons and subsystem interfaces.
+rfkill:
+rfkill: http://linuxwireless.org/en/users/Documentation/rfkill
+rfkill:
+rfkill:
+rfkill:
+rfkill:
+rfkill:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/rfkill.8.gz
+usr/sbin/
+usr/sbin/rfkill
+usr/doc/
+usr/doc/rfkill-0.5/
+usr/doc/rfkill-0.5/COPYING
+usr/doc/rfkill-0.5/README

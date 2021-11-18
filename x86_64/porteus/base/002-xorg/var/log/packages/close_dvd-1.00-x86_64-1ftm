@@ -1,0 +1,31 @@
+PACKAGE NAME:     close_dvd-1.00-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sdb7/fanthom/Downloads/Pburn/close_dvd-1.00-x86_64-1ftm.tgz
+PACKAGE DESCRIPTION:
+close_dvd: close_dvd 
+close_dvd: 
+close_dvd: pburn dependency and fix for closing dvd
+close_dvd:
+close_dvd:
+close_dvd:
+close_dvd:
+close_dvd:
+close_dvd: Package created for Porteus by bigbass
+close_dvd:
+close_dvd:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/close_dvd-1.00/
+usr/doc/close_dvd-1.00/close_dvd.SlackBuild
+usr/doc/close_dvd-1.00/transport.hxx
+usr/doc/close_dvd-1.00/close.cpp
+usr/doc/close_dvd-1.00/asctable.h
+usr/doc/close_dvd-1.00/README
+usr/doc/close_dvd-1.00/Makefile
+usr/bin/
+usr/bin/close

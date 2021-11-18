@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: mtdev
+Description: Multitouch Protocol Translation Library
+Version: 1.1.3
+Libs: -L${libdir} -lmtdev
+Cflags: -I${includedir}

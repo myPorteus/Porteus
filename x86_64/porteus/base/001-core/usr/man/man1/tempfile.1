@@ -1,0 +1,64 @@
+.\" -*- nroff -*-
+.TH TEMPFILE 1 "5 January 2003" "Debian"
+.SH NAME
+tempfile \- create a temporary file in a safe manner
+.SH SYNOPSYS
+.B tempfile
+[\-d DIR] [\-p STRING] [\-s STRING] [\-m MODE] [\-n FILE] [\-\-directory=DIR]
+[\-\-prefix=STRING] [\-\-suffix=STRING] [\-\-mode=MODE] [\-\-name=FILE] [\-\-help] [\-\-version]
+.SH DESCRIPTION
+.PP
+.B tempfile
+creates a temporary file in a safe manner.  It uses
+.BR tempnam (3)
+to choose the name and opens it with O_RDWR | O_CREAT | O_EXCL.  The filename
+is printed on standard output.
+.PP
+The directory to place the file is searched for in the following order:
+.IP a)
+The directory specified by the environment variable
+.BR TMPDIR ,
+if it is writable.
+.IP b)
+The directory specified by the
+.B --directory
+argument, if given.
+.IP c)
+The directory
+.IR /tmp .
+.PP
+Debian packages using
+.B tempfile
+in maintainer scripts must depend on debianutils >= 1.6.
+.SH OPTIONS
+.TP
+.BI "-d, --directory " DIR
+Place the file in DIR.
+.TP
+.BI "-p, --prefix " STRING
+Use up to five letters of STRING to generate the name.
+.TP
+.BI "-s, --suffix " STRING
+Generate the file with STRING as the suffix.
+.TP
+.BI "-m, --mode " MODE
+Open the file with MODE instead of 0600.
+.TP
+.BI "-n, --name " FILE
+Use FILE for the name instead of
+.BR tempnam (3) .
+The options -d, -p, and -s are ignored if this option is given.
+.TP
+.B "--help"
+Print a usage message on standard output and exit succesfully.
+.TP
+.B "--version"
+Print version information on standard output and exist succesfully.
+.SH RETURN VALUES
+An exit status of 0 means the temporary file was created succesfully.
+Any other exit status indicates an error.
+.SH BUGS
+Exclusive creation is not guaranteed when creating files on NFS
+partitions.
+.SH "SEE ALSO"
+.BR tempnam (3)

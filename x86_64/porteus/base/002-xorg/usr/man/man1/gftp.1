@@ -1,0 +1,50 @@
+.TH GFTP 1 "MARCH 2007"
+.SH NAME
+gftp - file transfer client for *NIX based machines.
+.SH SYNOPSIS
+.B gftp [options] [[proto://][
+.I user
+.B :
+.I [pass]
+.B @]
+.I server
+.B [:
+.I port
+.B ][/
+.I directory
+.B ]]
+.SH DESCRIPTION
+gFTP is a file transfer client for *NIX based machines. It currently has a text interface and a GTK+ 1.2/2.x graphical interface. It currently supports the FTP, FTPS (control connection only), HTTP, HTTPS, SSH and FSP protocols.
+.SH OPTIONS
+You may enter a url on the command line that gFTP will automatically connect to when it starts up.
+.IP "\-\-help, \-h"
+Display program usage.
+.IP "\-\-info"
+Display some information about how gFTP was built. Please send the output of this command when submitting a bug report.
+.IP "\-\-version, \-v"
+Display the current version of gFTP.
+.IP proto
+This specifies the protocol that should be used. It can currently be one of the following options: ftp, ftps, http, https, ssh, fsp, local and bookmark. If omitted, the protocol specified by the default_protocol option will be used.
+.IP user
+The username that will be used to log into the remote server. If omitted, your current username will be used for most protocols. For the FTP protocol, the anonymous username will be used.
+.IP pass
+The password that will be used to log into the remote server. If omitted, you will be prompted for the password. If you are using the FTP protocol, and the username is anonymous, then your email address will be used as the password.
+.IP server
+The remote server to connect to.
+.IP port
+The remote port on the server to connect to. If omitted, the default port for the protocol will be used. The port will be looked up in the
+.BR services(5)
+file.
+.IP directory
+The directory to change to once you are connected to the remote server.
+.SH FILES
+.I ~/.gftp/gftprc
+.RS
+Per user configuration file. Most of these options can be edited inside gFTP. This file is also commented very well.
+.I ~/.gftp/bookmarks
+.RS
+Per user bookmarks file.
+.SH BUGS
+If you find any bugs in gFTP, please report them to GNOME's Bugzilla at http://bugzilla.gnome.org/
+.SH AUTHOR
+Brian Masney <masneyb@gftp.org> - http://www.gftp.org/

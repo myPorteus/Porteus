@@ -1,0 +1,131 @@
+PACKAGE NAME:     sudo-1.8.6p8-x86_64-1
+COMPRESSED PACKAGE SIZE:     376K
+UNCOMPRESSED PACKAGE SIZE:     1.5M
+PACKAGE LOCATION: git/PKG64/dep/sudo-1.8.6p8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+sudo: sudo (give limited root privileges to certain users)
+sudo:
+sudo: 'sudo' is a command that allows users to execute some commands as 
+sudo: root.  The /etc/sudoers file (edited with 'visudo') specifies which
+sudo: users have access to sudo and which commands they can run.  'sudo' 
+sudo: logs all its activities to /var/log/ so the system administrator
+sudo: can keep an eye on things.
+sudo:
+sudo:
+sudo:
+sudo:
+FILE LIST:
+./
+var/
+var/db/
+var/db/sudo/
+var/lib/
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/sudoreplay
+usr/bin/sudo
+usr/man/
+usr/man/man8/
+usr/man/man8/visudo.8.gz
+usr/man/man8/sudo.8.gz
+usr/man/man8/sudo_plugin.8.gz
+usr/man/man8/sudoreplay.8.gz
+usr/man/man5/
+usr/man/man5/sudoers.5.gz
+usr/sbin/
+usr/sbin/visudo
+usr/share/
+usr/share/locale/
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/sudoers.mo
+usr/share/locale/fi/LC_MESSAGES/sudo.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/sudo.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/sudoers.mo
+usr/share/locale/pl/LC_MESSAGES/sudo.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/sudoers.mo
+usr/share/locale/zh_CN/LC_MESSAGES/sudo.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/sudoers.mo
+usr/share/locale/sv/LC_MESSAGES/sudo.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/sudoers.mo
+usr/share/locale/vi/LC_MESSAGES/sudo.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/sudo.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/sudo.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/sudo.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/sudoers.mo
+usr/share/locale/eo/LC_MESSAGES/sudo.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/sudoers.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/sudo.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/sudoers.mo
+usr/share/locale/uk/LC_MESSAGES/sudo.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/sudoers.mo
+usr/share/locale/ja/LC_MESSAGES/sudo.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/sudoers.mo
+usr/share/locale/da/LC_MESSAGES/sudo.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/sudoers.mo
+usr/share/locale/it/LC_MESSAGES/sudo.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/sudoers.mo
+usr/share/locale/hr/LC_MESSAGES/sudo.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/sudoers.mo
+usr/share/locale/eu/LC_MESSAGES/sudo.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/sudoers.mo
+usr/share/locale/sl/LC_MESSAGES/sudo.mo
+usr/libexec/
+usr/libexec/sudoers.so
+usr/libexec/sudo_noexec.so
+usr/include/
+usr/include/sudo_plugin.h
+usr/doc/
+usr/doc/sudo-1.8.6p8/
+usr/doc/sudo-1.8.6p8/UPGRADE
+usr/doc/sudo-1.8.6p8/ChangeLog
+usr/doc/sudo-1.8.6p8/LICENSE
+usr/doc/sudo-1.8.6p8/README
+usr/doc/sudo-1.8.6p8/INSTALL
+usr/doc/sudo-1.8.6p8/README.LDAP
+usr/doc/sudo-1.8.6p8/TROUBLESHOOTING
+usr/doc/sudo-1.8.6p8/HISTORY
+usr/doc/sudo-1.8.6p8/NEWS
+usr/doc/sudo-1.8.6p8/CONTRIBUTORS
+etc/
+etc/sudoers.d/
+etc/sudoers.new

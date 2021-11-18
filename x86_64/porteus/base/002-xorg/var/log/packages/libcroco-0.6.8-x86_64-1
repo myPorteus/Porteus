@@ -1,0 +1,120 @@
+PACKAGE NAME:     libcroco-0.6.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     212K
+UNCOMPRESSED PACKAGE SIZE:     1.9M
+PACKAGE LOCATION: /root/work/002/libcroco-0.6.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libcroco: libcroco (CSS2 parsing and manipulation library)
+libcroco:
+libcroco: Libcroco is a standalone CSS2 parsing and manipulation library.
+libcroco: The parser provides a low level event driven SAC like API and a CSS
+libcroco: object model like API.
+libcroco:
+libcroco: Libcroco provides a CSS2 selection engine and an experimental
+libcroco: XML/CSS rendering engine.
+libcroco:
+libcroco:
+libcroco:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/csslint-0.6
+usr/bin/croco-0.6-config
+usr/share/
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libcroco/
+usr/share/gtk-doc/html/libcroco/libcroco-cr-sel-eng.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-doc-handler.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-simple-sel.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-fonts.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-parsing-location.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-attr-sel.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-token.html
+usr/share/gtk-doc/html/libcroco/left.png
+usr/share/gtk-doc/html/libcroco/libcroco-cr-num.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-additional-sel.html
+usr/share/gtk-doc/html/libcroco/up.png
+usr/share/gtk-doc/html/libcroco/index.sgml
+usr/share/gtk-doc/html/libcroco/libcroco-cr-enc-handler.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-prop-list.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-om-parser.html
+usr/share/gtk-doc/html/libcroco/home.png
+usr/share/gtk-doc/html/libcroco/libcroco-cr-selector.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-pseudo.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-term.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-utils.html
+usr/share/gtk-doc/html/libcroco/libcroco.devhelp2
+usr/share/gtk-doc/html/libcroco/ch01.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-input.html
+usr/share/gtk-doc/html/libcroco/index.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-stylesheet.html
+usr/share/gtk-doc/html/libcroco/libcroco-libcroco-config.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-statement.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-cascade.html
+usr/share/gtk-doc/html/libcroco/right.png
+usr/share/gtk-doc/html/libcroco/libcroco-cr-parser.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-style.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-rgb.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-string.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-declaration.html
+usr/share/gtk-doc/html/libcroco/libcroco-cr-tknzr.html
+usr/share/gtk-doc/html/libcroco/style.css
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcroco-0.6.pc
+usr/lib64/libcroco-0.6.la
+usr/lib64/libcroco-0.6.so.3.0.1
+usr/lib64/libcroco-0.6.a
+usr/include/
+usr/include/libcroco-0.6/
+usr/include/libcroco-0.6/libcroco/
+usr/include/libcroco-0.6/libcroco/cr-stylesheet.h
+usr/include/libcroco-0.6/libcroco/cr-simple-sel.h
+usr/include/libcroco-0.6/libcroco/libcroco-config.h
+usr/include/libcroco-0.6/libcroco/cr-selector.h
+usr/include/libcroco-0.6/libcroco/cr-additional-sel.h
+usr/include/libcroco-0.6/libcroco/cr-rgb.h
+usr/include/libcroco-0.6/libcroco/cr-parsing-location.h
+usr/include/libcroco-0.6/libcroco/cr-parser.h
+usr/include/libcroco-0.6/libcroco/libcroco.h
+usr/include/libcroco-0.6/libcroco/cr-om-parser.h
+usr/include/libcroco-0.6/libcroco/cr-term.h
+usr/include/libcroco-0.6/libcroco/cr-string.h
+usr/include/libcroco-0.6/libcroco/cr-cascade.h
+usr/include/libcroco-0.6/libcroco/cr-enc-handler.h
+usr/include/libcroco-0.6/libcroco/cr-declaration.h
+usr/include/libcroco-0.6/libcroco/cr-prop-list.h
+usr/include/libcroco-0.6/libcroco/cr-input.h
+usr/include/libcroco-0.6/libcroco/cr-statement.h
+usr/include/libcroco-0.6/libcroco/cr-doc-handler.h
+usr/include/libcroco-0.6/libcroco/cr-attr-sel.h
+usr/include/libcroco-0.6/libcroco/cr-pseudo.h
+usr/include/libcroco-0.6/libcroco/cr-fonts.h
+usr/include/libcroco-0.6/libcroco/cr-token.h
+usr/include/libcroco-0.6/libcroco/cr-num.h
+usr/include/libcroco-0.6/libcroco/cr-tknzr.h
+usr/include/libcroco-0.6/libcroco/cr-utils.h
+usr/include/libcroco-0.6/libcroco/cr-sel-eng.h
+usr/include/libcroco-0.6/libcroco/cr-style.h
+usr/doc/
+usr/doc/libcroco-0.6.8/
+usr/doc/libcroco-0.6.8/examples/
+usr/doc/libcroco-0.6.8/examples/sac-example-1.c
+usr/doc/libcroco-0.6.8/examples/sac-example-2.c
+usr/doc/libcroco-0.6.8/examples/cssom-example-1.c
+usr/doc/libcroco-0.6.8/examples/Makefile.in
+usr/doc/libcroco-0.6.8/examples/Makefile
+usr/doc/libcroco-0.6.8/examples/Makefile.am
+usr/doc/libcroco-0.6.8/AUTHORS
+usr/doc/libcroco-0.6.8/ChangeLog
+usr/doc/libcroco-0.6.8/COPYING
+usr/doc/libcroco-0.6.8/README
+usr/doc/libcroco-0.6.8/INSTALL
+usr/doc/libcroco-0.6.8/HACKING
+usr/doc/libcroco-0.6.8/COPYING.LIB
+usr/doc/libcroco-0.6.8/NEWS
+usr/doc/libcroco-0.6.8/TODO

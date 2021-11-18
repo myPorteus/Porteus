@@ -1,0 +1,11 @@
+#!/bin/sh
+# script by 82issa, lo-n-behold and fanthom
+
+if [ "$1" = "" ]; then echo "What manual page do you want?"; exit; fi
+
+# if man page does not exist, fetch it from the network
+/usr/bin/man $*
+if [ $? -ne 0 ]; then
+    echo "checking network resources..."
+    for x in $*; do lynx http://man.cx/$x; done
+fi

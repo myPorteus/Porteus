@@ -1,0 +1,57 @@
+PACKAGE NAME:     sysvinit-2.88dsf-x86_64-3
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/sysvinit-2.88dsf-x86_64-3.txz
+PACKAGE DESCRIPTION:
+sysvinit: sysvinit (init, the parent of all processes)
+sysvinit:
+sysvinit: System V style init programs by Miquel van Smoorenburg that control
+sysvinit: the booting and shutdown of your system.  These support a number of
+sysvinit: system runlevels, each with a specific set of utilities spawned.
+sysvinit: For example, the normal system runlevel is 3, which starts agetty
+sysvinit: on virtual consoles tty1 - tty6.  Runlevel 4 starts xdm.
+sysvinit: Runlevel 0 shuts the system down.
+sysvinit:
+sysvinit:
+sysvinit:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/killall5
+sbin/bootlogd
+sbin/runlevel
+sbin/halt
+sbin/initscript.sample
+sbin/shutdown
+sbin/init.new
+usr/
+usr/bin/
+usr/bin/last
+usr/man/
+usr/man/man8/
+usr/man/man8/shutdown.8.gz
+usr/man/man8/halt.8.gz
+usr/man/man8/pidof.8.gz
+usr/man/man8/reboot.8.gz
+usr/man/man8/bootlogd.8.gz
+usr/man/man8/poweroff.8.gz
+usr/man/man8/init.8.gz
+usr/man/man8/killall5.8.gz
+usr/man/man8/telinit.8.gz
+usr/man/man8/runlevel.8.gz
+usr/man/man5/
+usr/man/man5/inittab.5.gz
+usr/man/man5/initscript.5.gz
+usr/man/man1/
+usr/man/man1/last.1.gz
+usr/doc/
+usr/doc/sysvinit-2.88dsf/
+usr/doc/sysvinit-2.88dsf/Install
+usr/doc/sysvinit-2.88dsf/COPYING
+usr/doc/sysvinit-2.88dsf/README
+usr/doc/sysvinit-2.88dsf/Propaganda
+usr/doc/sysvinit-2.88dsf/COPYRIGHT
+usr/doc/sysvinit-2.88dsf/sysvinit-2.86.lsm

@@ -1,0 +1,73 @@
+PACKAGE NAME:     volumeicon-0.4.6-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: git/PKG64/apps/volumeicon-0.4.6-x86_64-1jay.tgz
+PACKAGE DESCRIPTION:
+volumeicon: volumeicon (volume control)
+volumeicon:
+volumeicon: volumeicon aims to be a lightweight volume control that
+volumeicon: sits in the systray.
+volumeicon:
+volumeicon: Homepage: http://softwarebakery.com/maato/volumeicon.html
+volumeicon:
+volumeicon:
+volumeicon:
+volumeicon:
+volumeicon:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/volumeicon-0.4.6/
+usr/doc/volumeicon-0.4.6/volumeicon.SlackBuild
+usr/doc/volumeicon-0.4.6/README
+usr/doc/volumeicon-0.4.6/NEWS
+usr/doc/volumeicon-0.4.6/ChangeLog
+usr/doc/volumeicon-0.4.6/COPYING
+usr/doc/volumeicon-0.4.6/AUTHORS
+usr/share/
+usr/share/volumeicon/
+usr/share/volumeicon/icons/
+usr/share/volumeicon/icons/Blue Bar/
+usr/share/volumeicon/icons/Blue Bar/8.png
+usr/share/volumeicon/icons/Blue Bar/5.png
+usr/share/volumeicon/icons/Blue Bar/2.png
+usr/share/volumeicon/icons/Blue Bar/4.png
+usr/share/volumeicon/icons/Blue Bar/1.png
+usr/share/volumeicon/icons/Blue Bar/3.png
+usr/share/volumeicon/icons/Blue Bar/7.png
+usr/share/volumeicon/icons/Blue Bar/6.png
+usr/share/volumeicon/icons/White Gnome/
+usr/share/volumeicon/icons/White Gnome/8.png
+usr/share/volumeicon/icons/White Gnome/5.png
+usr/share/volumeicon/icons/White Gnome/2.png
+usr/share/volumeicon/icons/White Gnome/4.png
+usr/share/volumeicon/icons/White Gnome/1.png
+usr/share/volumeicon/icons/White Gnome/3.png
+usr/share/volumeicon/icons/White Gnome/7.png
+usr/share/volumeicon/icons/White Gnome/6.png
+usr/share/volumeicon/icons/Black Gnome/
+usr/share/volumeicon/icons/Black Gnome/8.png
+usr/share/volumeicon/icons/Black Gnome/5.png
+usr/share/volumeicon/icons/Black Gnome/2.png
+usr/share/volumeicon/icons/Black Gnome/4.png
+usr/share/volumeicon/icons/Black Gnome/1.png
+usr/share/volumeicon/icons/Black Gnome/3.png
+usr/share/volumeicon/icons/Black Gnome/7.png
+usr/share/volumeicon/icons/Black Gnome/6.png
+usr/share/volumeicon/icons/tango/
+usr/share/volumeicon/icons/tango/8.png
+usr/share/volumeicon/icons/tango/5.png
+usr/share/volumeicon/icons/tango/2.png
+usr/share/volumeicon/icons/tango/4.png
+usr/share/volumeicon/icons/tango/1.png
+usr/share/volumeicon/icons/tango/3.png
+usr/share/volumeicon/icons/tango/7.png
+usr/share/volumeicon/icons/tango/6.png
+usr/share/volumeicon/gui/
+usr/share/volumeicon/gui/appicon.svg
+usr/share/volumeicon/gui/preferences.ui
+usr/bin/
+usr/bin/volumeicon

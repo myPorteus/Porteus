@@ -1,0 +1,33 @@
+PACKAGE NAME:     patch-2.7-x86_64-2
+COMPRESSED PACKAGE SIZE:     100K
+UNCOMPRESSED PACKAGE SIZE:     240K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/patch-2.7-x86_64-2.txz
+PACKAGE DESCRIPTION:
+patch: patch (apply a diff file to an original file or files)
+patch:
+patch: Patch is a utility used to apply diffs (or patches) to files, which
+patch: are usually source code.
+patch:
+patch: Larry Wall wrote the original version of patch.  Paul Eggert removed
+patch: patch's arbitrary limits; added support for binary files, setting
+patch: file times, and deleting files; and made it conform better to POSIX.
+patch: Other  contributors include Wayne Davison, who added unidiff support,
+patch: and David MacKenzie, who added configuration and backup support.
+patch:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/patch
+usr/man/
+usr/man/man1/
+usr/man/man1/patch.1.gz
+usr/doc/
+usr/doc/patch-2.7/
+usr/doc/patch-2.7/AUTHORS
+usr/doc/patch-2.7/ChangeLog
+usr/doc/patch-2.7/COPYING
+usr/doc/patch-2.7/README
+usr/doc/patch-2.7/NEWS

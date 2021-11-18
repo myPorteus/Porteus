@@ -1,0 +1,94 @@
+PACKAGE NAME:     wpa_supplicant-2.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     832K
+UNCOMPRESSED PACKAGE SIZE:     2.4M
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/wpa_supplicant-2.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+wpa_supplicant: wpa_supplicant (WPA/WPA2/IEEE 802.1X Supplicant)
+wpa_supplicant:
+wpa_supplicant: wpa_supplicant is a WPA Supplicant for Linux with support for WPA and
+wpa_supplicant: WPA2 (IEEE 802.11i / RSN).  Supplicant is the IEEE 802.1X/WPA
+wpa_supplicant: component that is used in the client stations.  It implements key
+wpa_supplicant: negotiation with a WPA Authenticator and it controls the roaming and
+wpa_supplicant: IEEE 802.11 authentication/association of the wlan driver.
+wpa_supplicant:
+wpa_supplicant: More info: http://hostap.epitest.fi/wpa_supplicant/
+wpa_supplicant:
+wpa_supplicant:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/wpa_gui
+usr/man/
+usr/man/man8/
+usr/man/man8/wpa_priv.8.gz
+usr/man/man8/wpa_cli.8.gz
+usr/man/man8/wpa_gui.8.gz
+usr/man/man8/wpa_supplicant.8.gz
+usr/man/man8/wpa_passphrase.8.gz
+usr/man/man8/wpa_background.8.gz
+usr/man/man5/
+usr/man/man5/wpa_supplicant.conf.5.gz
+usr/sbin/
+usr/sbin/wpa_passphrase
+usr/sbin/wpa_cli
+usr/sbin/wpa_supplicant
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/system-services/
+usr/share/dbus-1/system-services/fi.epitest.hostap.WPASupplicant.service
+usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service
+usr/share/pixmaps/
+usr/share/pixmaps/wpa_gui.png
+usr/share/applications/
+usr/share/applications/wpa_gui.desktop
+usr/doc/
+usr/doc/wpa_supplicant-2.0/
+usr/doc/wpa_supplicant-2.0/eap_testing.txt
+usr/doc/wpa_supplicant-2.0/examples/
+usr/doc/wpa_supplicant-2.0/examples/wep.conf
+usr/doc/wpa_supplicant-2.0/examples/wps-nfc.py
+usr/doc/wpa_supplicant-2.0/examples/wpa-psk-tkip.conf
+usr/doc/wpa_supplicant-2.0/examples/ieee8021x.conf
+usr/doc/wpa_supplicant-2.0/examples/wpas-dbus-new-signals.py
+usr/doc/wpa_supplicant-2.0/examples/wpa2-eap-ccmp.conf
+usr/doc/wpa_supplicant-2.0/examples/dbus-listen-preq.py
+usr/doc/wpa_supplicant-2.0/examples/wpas-dbus-new-getall.py
+usr/doc/wpa_supplicant-2.0/examples/wpas-dbus-new.py
+usr/doc/wpa_supplicant-2.0/examples/wps-ap-cli
+usr/doc/wpa_supplicant-2.0/examples/wpas-dbus-new-wps.py
+usr/doc/wpa_supplicant-2.0/examples/p2p-action-udhcp.sh
+usr/doc/wpa_supplicant-2.0/examples/udhcpd-p2p.conf
+usr/doc/wpa_supplicant-2.0/examples/wpas-test.py
+usr/doc/wpa_supplicant-2.0/examples/60_wpa_supplicant
+usr/doc/wpa_supplicant-2.0/examples/openCryptoki.conf
+usr/doc/wpa_supplicant-2.0/examples/p2p/
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_disconnect.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_flush.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_connect.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_stop_find.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_group_add.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_listen.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_find.py
+usr/doc/wpa_supplicant-2.0/examples/p2p/p2p_invite.py
+usr/doc/wpa_supplicant-2.0/examples/plaintext.conf
+usr/doc/wpa_supplicant-2.0/examples/p2p-action.sh
+usr/doc/wpa_supplicant-2.0/ChangeLog
+usr/doc/wpa_supplicant-2.0/COPYING
+usr/doc/wpa_supplicant-2.0/README-WPS
+usr/doc/wpa_supplicant-2.0/README
+usr/doc/wpa_supplicant-2.0/wpa_supplicant.conf.sample
+usr/doc/wpa_supplicant-2.0/README.slackware
+usr/doc/wpa_supplicant-2.0/todo.txt
+usr/doc/wpa_supplicant-2.0/README-P2P
+usr/doc/wpa_supplicant-2.0/README-Windows.txt
+etc/
+etc/logrotate.d/
+etc/logrotate.d/wpa_supplicant.new
+etc/wpa_supplicant.conf.new
+etc/dbus-1/
+etc/dbus-1/system.d/
+etc/dbus-1/system.d/dbus-wpa_supplicant.conf

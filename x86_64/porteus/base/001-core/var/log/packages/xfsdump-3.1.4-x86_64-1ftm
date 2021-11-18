@@ -1,0 +1,55 @@
+PACKAGE NAME:     xfsdump-3.1.4-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     320K
+UNCOMPRESSED PACKAGE SIZE:     1000K
+PACKAGE LOCATION: /tmp/xfsdump-3.1.4-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+xfsdump: xfsdump (backup tools for the XFS filesystem)
+xfsdump:
+xfsdump: The xfsdump package contains the xfsdump and xfsrestore utilities for
+xfsdump: backing up and restoring XFS partitions.  xfsdump examines files in a
+xfsdump: filesystem, determines which need to be backed up, and copies those
+xfsdump: files to a specified disk, tape or other storage medium.  xfsrestore
+xfsdump: performs the inverse function of xfsdump; it can restore a full
+xfsdump: or incremental backup of a filesystem.
+xfsdump:
+xfsdump:
+xfsdump:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/xfsdump
+sbin/xfsrestore
+usr/
+usr/doc/
+usr/doc/xfsdump-3.1.4/
+usr/doc/xfsdump-3.1.4/CHANGES
+usr/doc/xfsdump-3.1.4/html/
+usr/doc/xfsdump-3.1.4/html/xfsdump.html
+usr/doc/xfsdump-3.1.4/html/split_algorithm.gif
+usr/doc/xfsdump-3.1.4/html/media_files.gif
+usr/doc/xfsdump-3.1.4/html/inventory.gif
+usr/doc/xfsdump-3.1.4/html/inode_map.gif
+usr/doc/xfsdump-3.1.4/html/global_hdr.gif
+usr/doc/xfsdump-3.1.4/html/files.gif
+usr/doc/xfsdump-3.1.4/html/directories.gif
+usr/doc/xfsdump-3.1.4/README
+usr/doc/xfsdump-3.1.4/COPYING
+usr/doc/xfsdump-3.1.4/README.xfsdump
+usr/share/
+usr/share/locale/
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/xfsdump.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/xfsdump.mo
+usr/man/
+usr/man/man8/
+usr/man/man8/xfsrestore.8.gz
+usr/man/man8/xfsinvutil.8.gz
+usr/man/man8/xfsdump.8.gz
+usr/sbin/
+usr/sbin/xfsinvutil

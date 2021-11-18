@@ -1,0 +1,124 @@
+'\" t
+.\"     Title: dconf
+.\"    Author: Ryan Lortie <desrt@desrt.ca>
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 07/28/2014
+.\"    Manual: User Commands
+.\"    Source: dconf
+.\"  Language: English
+.\"
+.TH "DCONF" "1" "" "dconf" "User Commands"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+dconf \- Simple tool for manipulating a dconf database
+.SH "SYNOPSIS"
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR read \fIKEY\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR list \fIDIR\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR write \fIKEY\fR \fIVALUE\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR reset [\-f] \fIPATH\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR update
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR watch \fIPATH\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR dump \fIDIR\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR load \fIDIR\fR
+.HP \w'\fBdconf\fR\ 'u
+\fBdconf\fR help [\fICOMMAND\fR]
+.SH "DESCRIPTION"
+.PP
+The
+\fBdconf\fR
+program can perform various operations on a dconf database, such as reading or writing individual values or entire directories\&. This tool operates directly on the dconf database and does not read gsettings schema information\&. Therefore, it cannot perform type and consistency checks on values\&. The
+\fBgsettings\fR(1)
+utility is an alternative if such checks are needed\&.
+.PP
+The
+\fIDIR\fR
+arguments must be directory paths (starting and ending with \*(Aq/\*(Aq), the
+\fIKEY\fR
+arguments must be key paths (starting, but not ending with \*(Aq/\*(Aq) and the
+\fIPATH\fR
+arguments can be either directory or key paths\&.
+.PP
+\fIVALUE\fR
+arguments must be in GVariant format, so e\&.g\&. a string must include explicit quotes: "\*(Aqfoo\*(Aq"\&. This format is also used when printing out values\&.
+.SH "COMMANDS"
+.PP
+\fBread\fR
+.RS 4
+Read the value of a key\&.
+.RE
+.PP
+\fBlist\fR
+.RS 4
+List the sub\-keys and sub\-directories of a directory\&.
+.RE
+.PP
+\fBwrite\fR
+.RS 4
+Write a new value to a key\&.
+.RE
+.PP
+\fBreset\fR
+.RS 4
+Reset a key or an entire directory\&. For directories,
+\fB\-f\fR
+must be specified\&.
+.RE
+.PP
+\fBupdate\fR
+.RS 4
+Update the system dconf databases\&.
+.RE
+.PP
+\fBwatch\fR
+.RS 4
+Watch a key or directory for changes\&.
+.RE
+.PP
+\fBdump\fR
+.RS 4
+Dump an entire subpath to stdout\&. The output is in a keyfile\-like format, with values in GVariant syntax\&.
+.RE
+.PP
+\fBload\fR
+.RS 4
+Populate a subpath from stdin\&. The expected format is the same as produced by
+\fBdump\fR\&.
+.RE
+.PP
+\fBhelp\fR
+.RS 4
+Display help and exit\&. If
+\fICOMMAND\fR
+is given, display help for this command\&.
+.RE
+.SH "SEE ALSO"
+.PP
+\fBdconf\fR(7),
+\fBgsettings\fR(1),
+\fBdconf-editor\fR(1)

@@ -1,0 +1,48 @@
+PACKAGE NAME:     opus-1.1-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     160K
+UNCOMPRESSED PACKAGE SIZE:     430K
+PACKAGE LOCATION: /tmp/opus-1.1-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+opus: Opus (Audio Codec Library)
+opus:
+opus: Opus is a totally open, royalty-free, highly versatile audio codec
+opus: It is standardized by the  Internet  Engineering Task Force (IETF) 
+opus: as RFC 6716 which incorporated technology  from Skype's SILK codec 
+opus: and Xiph.Org's CELT codec. 
+opus:
+opus:
+opus:
+opus:
+opus:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/opus-1.1/
+usr/doc/opus-1.1/SlackBuild/
+usr/doc/opus-1.1/SlackBuild/slack-desc
+usr/doc/opus-1.1/SlackBuild/opus.SlackBuild
+usr/doc/opus-1.1/README
+usr/doc/opus-1.1/NEWS
+usr/doc/opus-1.1/INSTALL
+usr/doc/opus-1.1/ChangeLog
+usr/doc/opus-1.1/COPYING
+usr/doc/opus-1.1/AUTHORS
+usr/include/
+usr/include/opus/
+usr/include/opus/opus_custom.h
+usr/include/opus/opus_defines.h
+usr/include/opus/opus_types.h
+usr/include/opus/opus_multistream.h
+usr/include/opus/opus.h
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/opus.m4
+usr/lib64/
+usr/lib64/libopus.so.0.5.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/opus.pc
+usr/lib64/libopus.la

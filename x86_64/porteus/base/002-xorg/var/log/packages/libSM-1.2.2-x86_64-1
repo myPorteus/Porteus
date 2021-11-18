@@ -1,0 +1,48 @@
+PACKAGE NAME:     libSM-1.2.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     540K
+PACKAGE LOCATION: /root/work/002/libSM-1.2.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libSM: libSM (X Session Management Library)
+libSM:
+libSM: libSM is part of X11.
+libSM:
+libSM: For more information about the X.Org Foundation (the providers of the
+libSM: X.Org implementation of the X Window System), see their website:
+libSM:
+libSM: http://www.x.org
+libSM:
+libSM:
+libSM:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/sm.pc
+usr/lib64/libSM.la
+usr/lib64/libSM.so.6.0.1
+usr/include/
+usr/include/X11/
+usr/include/X11/SM/
+usr/include/X11/SM/SMlib.h
+usr/include/X11/SM/SMproto.h
+usr/include/X11/SM/SM.h
+usr/doc/
+usr/doc/libSM-1.2.2/
+usr/doc/libSM-1.2.2/xsmp.pdf.db
+usr/doc/libSM-1.2.2/xsmp.html
+usr/doc/libSM-1.2.2/AUTHORS
+usr/doc/libSM-1.2.2/SMlib.html
+usr/doc/libSM-1.2.2/ChangeLog
+usr/doc/libSM-1.2.2/COPYING
+usr/doc/libSM-1.2.2/xsmp.html.db
+usr/doc/libSM-1.2.2/SMlib.pdf.db
+usr/doc/libSM-1.2.2/README
+usr/doc/libSM-1.2.2/xsmp.txt
+usr/doc/libSM-1.2.2/SMlib.txt
+usr/doc/libSM-1.2.2/INSTALL
+usr/doc/libSM-1.2.2/SMlib.html.db

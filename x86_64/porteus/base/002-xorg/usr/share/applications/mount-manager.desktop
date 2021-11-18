@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/opt/porteus-scripts/xorg/psu "/opt/porteus-scripts/mount-manager"
+Icon=drive-harddisk
+Name=Mount drives/filesystems/shares
+Type=Application
+Categories=Application;System;

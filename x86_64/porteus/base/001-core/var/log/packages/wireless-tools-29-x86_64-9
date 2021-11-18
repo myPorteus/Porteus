@@ -1,0 +1,62 @@
+PACKAGE NAME:     wireless-tools-29-x86_64-9
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     520K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/wireless-tools-29-x86_64-9.txz
+PACKAGE DESCRIPTION:
+wireless-tools: wireless-tools (utilities for wireless networking)
+wireless-tools:
+wireless-tools: This package contains tools and a library used for configuring
+wireless-tools: wireless networking interfaces:
+wireless-tools:   iwconfig (the main wireless tool),  iwlist (display more detailed
+wireless-tools:   information than iwconfig),  iwspy (get stats per MAC address and
+wireless-tools:   more),  iwpriv (set driver private ioctls),  iwgetid (show the
+wireless-tools:   ESSID or NWID of a device),  iwevent (display wireless events),
+wireless-tools:   ifrename (rename a network interface).
+wireless-tools:
+wireless-tools: The wireless-tools were written by Jean Tourrilhes.
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/iwgetid
+sbin/ifrename
+sbin/iwlist
+sbin/iwpriv
+sbin/iwspy
+sbin/iwevent
+sbin/iwconfig
+usr/
+usr/man/
+usr/man/man7/
+usr/man/man7/wireless.7.gz
+usr/man/man8/
+usr/man/man8/iwpriv.8.gz
+usr/man/man8/iwlist.8.gz
+usr/man/man8/iwevent.8.gz
+usr/man/man8/iwspy.8.gz
+usr/man/man8/iwconfig.8.gz
+usr/man/man8/iwgetid.8.gz
+usr/man/man8/ifrename.8.gz
+usr/man/man5/
+usr/man/man5/iftab.5.gz
+usr/lib64/
+usr/lib64/libiw.a
+usr/include/
+usr/include/iwlib.h
+usr/include/wireless.h
+usr/doc/
+usr/doc/wireless-tools-29/
+usr/doc/wireless-tools-29/README.fr
+usr/doc/wireless-tools-29/COPYING
+usr/doc/wireless-tools-29/IFRENAME-VS-XXX.txt
+usr/doc/wireless-tools-29/README
+usr/doc/wireless-tools-29/INSTALL
+usr/doc/wireless-tools-29/HOTPLUG.txt
+usr/doc/wireless-tools-29/DISTRIBUTIONS.txt
+usr/doc/wireless-tools-29/PCMCIA.txt
+etc/
+etc/rc.d/
+etc/rc.d/rc.wireless.new
+etc/rc.d/rc.wireless.conf.new

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libudf
+Description: UDF library of libcdio
+Version: 0.83
+Requires: libcdio 
+Libs: -L${libdir} -ludf -lcdio
+Cflags: -I${includedir}

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=VirtualBox builder
+Exec=/opt/porteus-scripts/gtk-easy-build-start
+Icon=/usr/share/pixmaps/porteus/virtualbox.png
+Type=Application
+Categories=Application;System;

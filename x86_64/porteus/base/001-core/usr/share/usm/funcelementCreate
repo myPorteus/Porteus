@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+rbutCreate(){
+echo '<label>'"$2"'</label>
+		<variable>'$1'</variable>
+	</radiobutton>'
+}
+
+chkboxCreate(){
+echo '<label>'"$2"'</label>
+		<variable>'$1'</variable>
+	</checkbox>'
+}
+
+butCreateStock() {
+echo '<button>
+	<label>'"$1"'</label>
+	<input file stock="'$2'"></input>'
+}
+
+menCreateItem(){
+echo '<menuitem icon="'$3'"><label>"'$1'"</label>
+		<action>"'$2'"</action>'
+}

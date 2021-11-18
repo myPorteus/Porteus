@@ -1,0 +1,70 @@
+PACKAGE NAME:     libpng-1.4.12-x86_64-1
+COMPRESSED PACKAGE SIZE:     592K
+UNCOMPRESSED PACKAGE SIZE:     3.6M
+PACKAGE LOCATION: /root/work/002/libpng-1.4.12-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libpng: libpng (Portable Network Graphics library)
+libpng:
+libpng: PNG (Portable Network Graphics) is an extensible file format for the
+libpng: lossless, portable, well-compressed storage of raster images.  PNG
+libpng: provides a patent-free replacement for GIF and can also replace many
+libpng: common uses of TIFF.  Indexed-color, grayscale, and truecolor images
+libpng: are supported, plus an optional alpha channel.  Sample depths range
+libpng: from 1 to 16 bits.
+libpng:
+libpng:
+libpng:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/libpng14-config
+usr/bin/libpng12-config
+usr/man/
+usr/man/man5/
+usr/man/man5/png.5.gz
+usr/man/man3/
+usr/man/man3/libpng.3.gz
+usr/man/man3/libpngpf.3.gz
+usr/lib64/
+usr/lib64/libpng12.so.0.50.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libpng14.pc
+usr/lib64/pkgconfig/libpng12.pc
+usr/lib64/libpng14.so.14.12.0
+usr/lib64/libpng12.a
+usr/lib64/libpng.so.3.50.0
+usr/lib64/libpng14.a
+usr/lib64/libpng12.la
+usr/lib64/libpng14.la
+usr/include/
+usr/include/libpng14/
+usr/include/libpng14/pngconf.h
+usr/include/libpng14/png.h
+usr/include/libpng12/
+usr/include/libpng12/pngconf.h
+usr/include/libpng12/png.h
+usr/doc/
+usr/doc/libpng-1.4.12/
+usr/doc/libpng-1.4.12/CHANGES
+usr/doc/libpng-1.4.12/libpng-1.4.12.txt
+usr/doc/libpng-1.4.12/ANNOUNCE
+usr/doc/libpng-1.4.12/LICENSE
+usr/doc/libpng-1.4.12/README
+usr/doc/libpng-1.4.12/INSTALL
+usr/doc/libpng-1.4.12/example.c
+usr/doc/libpng-1.4.12/TODO
+usr/doc/libpng-1.2.50/
+usr/doc/libpng-1.2.50/KNOWNBUG
+usr/doc/libpng-1.2.50/CHANGES
+usr/doc/libpng-1.2.50/ANNOUNCE
+usr/doc/libpng-1.2.50/LICENSE
+usr/doc/libpng-1.2.50/README
+usr/doc/libpng-1.2.50/INSTALL
+usr/doc/libpng-1.2.50/libpng-1.2.50.txt
+usr/doc/libpng-1.2.50/example.c
+usr/doc/libpng-1.2.50/Y2KINFO
+usr/doc/libpng-1.2.50/TODO

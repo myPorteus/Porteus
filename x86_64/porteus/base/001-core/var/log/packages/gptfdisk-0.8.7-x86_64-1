@@ -1,0 +1,38 @@
+PACKAGE NAME:     gptfdisk-0.8.7-x86_64-1
+COMPRESSED PACKAGE SIZE:     168K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/gptfdisk-0.8.7-x86_64-1.txz
+PACKAGE DESCRIPTION:
+gptfdisk: gptfdisk (GPT fdisk utilities)
+gptfdisk:
+gptfdisk: GPT fdisk (consisting of the gdisk, cgdisk, sgdisk, and fixparts
+gptfdisk: programs) is a set of text-mode partitioning tools for using a GPT
+gptfdisk: (GUID Partition Table), rather than the traditional MBR (Master Boot
+gptfdisk: Record) partition tables.  It features several partitioning tools,
+gptfdisk: recovery tools to help you deal with corrupt partition tables, and the
+gptfdisk: ability to convert MBR disks to GPT format.
+gptfdisk:
+gptfdisk: gdisk home: http://www.rodsbooks.com/gdisk/
+gptfdisk:
+FILE LIST:
+./
+install/
+install/slack-desc
+sbin/
+sbin/cgdisk
+sbin/fixparts
+sbin/sgdisk
+sbin/gdisk
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/gdisk.8.gz
+usr/man/man8/fixparts.8.gz
+usr/man/man8/cgdisk.8.gz
+usr/man/man8/sgdisk.8.gz
+usr/doc/
+usr/doc/gptfdisk-0.8.7/
+usr/doc/gptfdisk-0.8.7/COPYING
+usr/doc/gptfdisk-0.8.7/gdisk_test.sh
+usr/doc/gptfdisk-0.8.7/README
+usr/doc/gptfdisk-0.8.7/NEWS

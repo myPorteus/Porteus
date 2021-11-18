@@ -1,0 +1,139 @@
+.\" -*- nroff -*-
+.TH SAVELOG 8 "12 April 2003" "Debian"
+.SH NAME
+savelog \- save a log file
+.SH SYNOPSIS
+.B savelog
+[\-m mode] [\-u user] [\-g group] [\-t] [\-p] [\-c cycle] [\-l] [\-j]
+[\-C] [\-d] [\-l] [\-r rolldir] [\-n] [\-q] file ...
+.SH DESCRIPTION
+The
+.B savelog
+command saves and optionally compresses old copies of files.  Older versions
+of
+.I file
+are named:
+.RS
+
+.IR "file" "." "<number>" "" "<compress_suffix>"
+
+.RE
+where 
+.I <number>
+is the version number, 0 being the newest.  Version numbers > 0 are compressed
+unless
+.B \-l
+prevents it.  Version number 0 is not compressed becase a process might still
+have 
+.I file
+opened for I/O.  Only
+.I cycle
+versions of the file are kept.
+
+If the file does not exist and
+.B \-t
+was given, it will be created.
+
+For files that do exist and have lengths greater than zero, the following
+actions are performed:
+
+.IP 1)
+Version numbered files are cycled.  Version
+.IR cycle \-2
+is moved to version
+.IR cycle "\-3,"
+version
+.IR cycle \-1
+is moved to version
+.IR cycle "\-2 ,"
+and so on.  Finally version 0 is moved to version 1, and version
+.I cycle
+is deleted.  Both
+compressed names and uncompressed names are cycled, regardless of
+.BR \-l .
+Missing version files are ignored.
+
+.IP 2)
+The new
+.I file.1
+is compressed unless the
+.B \-l
+flag was given.  It is changed subject to the
+.BR "\-m" ", " "\-u" ", and " "\-g"
+flags.
+
+.IP 3)
+The main file is moved to
+.IR file.0 .
+
+.IP 4)
+If the
+.BR "\-m" ", " "\-u" ", " "\-g" ",  " "\-t" ", or " "\-p"
+flags are given, then an empty
+.I file
+is created subject to the given flags.  With the
+.B \-p
+flag, the file is created with the same owner, group, and permissions as
+before.
+
+.IP 5)
+The new
+.I file.0
+is changed subject to the
+.BR "\-m" ", " "\-u" ", and " "\-g"
+flags.
+
+Since the version numbers start with 0, version number
+.I cycle
+is never formed.  The
+.I cycle
+count must be at least 2.
+
+.SH OPTIONS
+.TP
+.B "\-m mode"
+chmod the log files to mode
+.TP
+.B "\-u user"
+chown log files to user
+.TP
+.B "\-g group"
+chgrp log files to group
+.TP
+.B "\-c cycle"
+Save cycle versions of the logfile (default: 7)
+.TP
+.B \-t
+touch new logfile into existence
+.TP
+.B \-l
+don't compress any log files (default: do compress)
+.TP
+.B \-p
+preserve owner, group, and permissions of logfile
+.TP
+.B \-j
+compress with bzip2 instead of gzip
+.TP
+.B \-C
+force cleanup of cycled logfiles
+.TP
+.B \-d
+use standard date for rolling
+.TP
+.B \-r
+use
+.I rolldir
+instead of . to roll files
+.TP
+.B \-n
+do not rotate empty files
+.TP
+.B \-q
+be quiet
+.SH BUGS
+If a process is still writing to
+.IR "file.0" ","
+and savelog moves it to
+.I file.1
+and compresses it, data could be lost.

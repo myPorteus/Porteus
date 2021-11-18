@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Porteus Package Manager</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Unknown" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+
+<body>
+
+<!--header -->
+<div id="header-wrap"><div id="header">
+
+	<a name="top"></a>
+
+	<h1 id="logo-text"><a href="index.html" title="">Porteus help file</a></h1>
+	<p id="slogan">Porteus help file</p>
+
+	<div  id="nav">
+		<ul>
+			<li><a href="index.html" title="Frequently asked questions">FAQ</a></li>
+			<li id="current"><a href="ppm.html" title="Porteus Package Manager">Package Manager</a></li>
+                        <li><a href="tipsntricks.html" title="Porteus Tips and Tricks">Tips and Tricks</a></li>
+			<li><a href="http://porteus.org" title="Browse the Porteus website">Website</a></li>
+			<li><a href="http://forum.porteus.org" title="Visit the forum">Forum</a></li>
+			<li><a href="http://ponce.cc/porteus" title="Download Porteus">Download</a></li>
+			<li><a href="http://porteus.org/contact-us.html" title="Contact us">Contact</a></li>
+		</ul>
+	</div>
+
+   <p id="rss" name="website"><a href="http://forum.porteus.org" title="Visit the Porteus forum">Visit the forum</a>
+   </p>
+
+   <!--/header-->
+</div></div>
+	
+<!-- content-outer -->
+<div id="content-wrap" class="clear" >
+
+	<!-- content -->
+   <div id="content">
+
+   	<!-- main -->
+	   <div id="main">
+
+      	<div class="post">
+
+      		<div class="right">
+
+            	<h2><a href="ppm.html">Porteus Package Manager</a> (PPM)</h2>
+
+               <p class="post-info">Author: Brokenman<br />
+                 Email: brokenman@porteus.org
+               </p>
+              <div class="image-section"></div>
+               <p><strong><a href="#mods">WHAT ARE MODULES?</a></strong></p>
+               <p><strong><a href="#deps">WHAT ARE DEPENDENCIES AND WHY SHOULD I CARE?</a></strong></p>
+               <p><strong><a href="#features">WHAT ARE THE FEATURES OF PPM?</a></strong></p>
+               <p><strong><a href="#configs">WHERE ARE MY CONFIG FILES?</a></strong></p>
+               <p><strong><a href="#difference">HOW IS A PORTEUS MODULE DIFFERENT FROM A SLACKWARE PACKAGE?</a></strong></p>
+               <p><strong><a href="#submit">CAN I SUBMIT A MODULE I CREATED?</a></strong></p>
+               <p><strong><a href="#compliant">WHAT IS A PORTEUS COMPLIANT MODULE?</a></strong></p>
+               <p><strong><a href="#bug">I FOUND A BUG IN PPM, HOW CAN I NOTIFY THE DEVELOPER?</a></strong></p>
+               <p>&nbsp;</p>
+               <p><strong><a name="mods" id="mods"></a>WHAT ARE MODULES?</strong></p>
+<p>Porteus is modular by design. In other operating systems where you might download and install a program, in Porteus you simply <em>'activate a module'</em>. Activating a module simply injects the directory structure of the module into the live file system after which it is ready to use. If you don't need it any more you simply <em>'deactivate'</em> the module.</p>
+               <p><strong><a name="deps" id="deps"></a>WHAT ARE DEPENDENCIES AND WHY SHOULD I CARE?</strong></p>
+               <p>Usually a linux application requires certain files (libraries) to be present in order to successfully run an application. An example would be that you want to start the application called 'codeblocks' but you find that it requires another application called wxwidgets before it can start. Anyone that has attempted to compile their own packages in Linux has no doubt experienced 'dependency hell'. This is where you download wxwidgets only to find that IT requires two other packages to run. It may be the case that these packages required by wxwidgets also require other packages ... and this can go on until you give up following the chain, or find that finally no other packages are required. Nobody likes hunting around for required packges and this is one reason that a good package manager resolves these dependencies for the user.</p>
+               <p><strong><a name="features" id="features"></a>WHAT ARE THE FEATURES OF PPM?</strong></p>
+               <p>PPM is a hybrid CLI/GUI program which means you can run it from a console (type: usm) or with a graphical user interface from the user application menu. It is an application written specifically for Porteus; but designed with slackware users in mind. In the slackware world it is known as USM (Unified Slackware Package Manager).</p>
+               <p>Primarily, PPM was designed for downloading and converting slackware packages from multiple repositories, but it also has many other functions:</p>
+               <ul>
+                 <li>Package tools</li>
+                 <li>If a dependency is missing, PPM will download it</li>
+                 <li>Missing system dependency resolution</li>
+                 <li>Conversion of Slackware packages to Porteus modules</li>
+                 <li>Various Porteus module &amp; Slackware package manipulation tools</li>
+                 <li>Checking for updates to the database and program</li>
+               </ul>
+               <p>Features are always being changed and added to PPM as and when they are requested. If you have a request please post it on the Porteus forum in the appropriate thread.</p>
+               <p><strong><a name="configs" id="configs"></a>WHERE ARE MY CONFIG FILES?</strong></p>
+               <p>PPM stores a couple of config files. /etc/usm/ holds the configuration files which can also be edited using the GUI</p>
+             <p><strong><a name="difference" id="difference"></a>HOW IS A PORTEUS MODULE DIFFERENT FROM A SLACKWARE PACKAGE?</strong></p>
+               <p>It is not really all that different at all. A Porteus moule does not require installing (see <a href="#mods"><em>WHAT IS A PORTEUS MODULE?</em></a>) in the way that a slackware package does. The file structure of a Porteus module is very similar to a slackare package with the addition of an extra file, and the removal of unneeded files. A list of <em>'required libraries'</em> &amp; <em>'offered libraries'</em> is put into<em> /var/porteus/package.info</em>. The /var/log/packages file is also modified to include a<em> CATEGORY</em>: line and the<em> LOCATION</em>: line is changed to suit the Porteus server.</p>
+               <p><strong><a name="bug" id="bug"></a>I FOUND A BUG IN PPM, HOW CAN I NOTIFY THE DEVELOPER?</strong></p>
+               <p>Start a thread in the bug report topic on the Porteus forum with a description of your find.</p>
+<p>&nbsp;</p>
+              <ol>
+               <hr />
+                 <p>Thanks for reading this document :)<br />
+                   <br />
+                   The Porteus Package Manager is continually being developed and modified. If you have a feature request you can post it on the<a href="http://forum.porteus.org"> Porteus forum</a> in the relevent topic area. Some areas of PPM are currently disabled, and these are the areas currently being worked on.</p>
+              </ol>
+                <br />
+      		</div>
+      	</div>
+
+      	<!-- /main -->
+		</div>
+
+      <!-- sidebar -->
+		<div id="sidebar">
+
+      	<div class="about-me">
+
+         	<h3>Screenshots</h3>
+		      <p>
+		      <a href="index.html"><img src="images/gravatar.jpg" width="40" height="40" alt="firefox" class="float-left" /></a>
+            Porteus has the option to boot to either KDE or the lightweight LXDE within the default ISO. You can checkout some of the different styles that are used by various users here.<a href="http://porteus.org/info/screens.html" title="Porteus screenshots"> Learn more... </a></p>
+
+         </div>
+
+			<div class="sidemenu">
+
+				<h3>Sidebar Menu</h3>
+            <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ppm.html">PACKAGE MANAGER</a></li>
+					<li><a href="http://porteus.org/info/docs/37-installing/114-official-porteus-installation-guide-v-10.html">Installation</a></li>
+					<li><a href="http://porteus.org/info/docs/57-general-information/118-howto-find-your-way-around-in-the-porteus-file-structure.html">PORTEUS FILE STRUCTURE</a></li>
+					<li><a href="http://porteus.org/info/docs/57-general-information/116-howto-create-a-savedat-container-and-why-you-need-one.html" title="Porteus Partitions">PORTEUS ON FAT32/NTFS</a></li>
+					<li><a href="http://porteus.org/info/docs/36-modules/121-howto-understanding-module-creation-and-manipulation-two-case-studies.html" title="Web Templates">MODULE MANIPULATION</a></li>
+				</ul>
+
+			</div>
+
+			<div class="sidemenu">
+
+				<h3>Other links</h3>
+            <ul>
+					<li><a href="http://porteus.org/info/porteus-video-tutorials.html" title="Video gold!!">PORTEUS VIDEOS <br />
+	            	<span>Various video tutorials</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/features.html" title="Porteus features">PORTEUS FEATURES<br />
+	            	<span>Read about Porteus features</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/docs.html" title="Porteus Documentation">DOCUMENTATION<br />
+	            	<span>Full Porteus Documentation</span></a>
+          </li>
+					<li><a href="http://www.porteus.org/tutorials/" title="Porteus tutorials">Porteus tutorials <br />
+	            	<span>Various user created tutorials</span></a>
+    </li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/117-cheatcodes-what-they-are-and-how-to-use-them.html" title="Cheatcodes">Cheatcodes<br />
+	            	<span>Important cheatcodes for booting</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/docs/57-general-information/112-howto-use-the-rootcopy-directory.html" title="Rootcopy">Rootcopy<br />
+	            	<span>What it is & how to use it</span></a>
+              </li>
+				</ul>
+
+			</div>
+
+         <div class="popular">
+
+				<h3>Porteus Media</h3>
+				<ul>
+			   	<li><a href="http://www.facebook.com/porteus.org" title="Facebook">Facebook</a><span></span>
+					</li>
+               <li><a href="http://twitter.com/#!/porteusOS">Twitter</a></li>
+               <li><a href="http://distrowatch.com/table.php?distribution=porteus">Distro watch</a></li>
+               <li><a href="http://linux.softpedia.com/get/System/Operating-Systems/Linux-Distributions/Porteus-64578.shtml">Softpedia</a></li>
+               <li><a href="http://en.wikipedia.org/wiki/Porteus_(operating_system)" title="Wikiporteus">Wikipedia</a></li>
+				</ul>
+
+			</div>
+
+      <!-- /sidebar -->
+		</div>
+
+    <!-- content -->
+	</div>
+
+<!-- /content-out -->
+</div>
+		
+<!-- footer-outer -->
+<div id="footer-outer" class="clear"></div>
+
+<!-- footer-bottom -->
+<div id="footer-bottom">
+
+	<p class="bottom-left">
+  &copy; 2014 <strong>Copyright</strong></p>
+
+	<p class="bottom-right">
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
+	   <a href="http://validator.w3.org/check/referer">XHTML</a>	|
+		<a href="index.html">Home</a> |<a href="contact.html">Contact</a> |
+      <strong><a href="#top">Back to Top</a></strong>
+   </p>
+
+<!-- /footer-bottom-->
+</div>
+
+</body>
+</html>

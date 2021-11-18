@@ -1,0 +1,67 @@
+#!/bin/bash
+
+function package_info() {
+if [ $GUI ]; then
+	PKG=$1
+	[[ `egrep -o "Nothing|test-package-name" <<<$PKG` ]] && return
+	local RESULT=`find /var/usm/ -name PACKAGES.TXT|xargs grep $1|head -n1`
+else
+	local RESULT1=`find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep -i "PACKAGE NAME:.*$1.*"|sed 's/ //g'`
+	[ $CLI ] && [[ -z $RESULT1 ]] && { echo; echo $txtbld "`gettext "Nothing found for:"`" $rst "$1"; cleanup; }
+fi
+
+if [ $GUI ]; then
+	local DIST=`awk -F/ '{print $(NF-1)}' <<<$RESULT`
+	local exclude="CONFLICTS:|SUGGESTS:|DESCRIPTION:|REQUIRED:|LOCATION:"
+	awk -v RS= '/'$PKG'/{printf $0""RT}' $DBDIR/$DIST/PACKAGES.TXT|egrep -v "$exclude" > $TMPDIR/welcome
+else # RUN CLI STUFF
+	if [ `wc -w <<<$RESULT1` -gt 1 ]; then
+		local RESULT=`tr " " "\n" <<<$RESULT1|awk -F: '{print$NF}'`
+		menu_from_variable $RESULT
+		local RESULT=`find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep -i "PACKAGE NAME:.*$CHOICE"|sed 's/ //g'`
+	else
+		RESULT=${RESULT1}
+	fi
+	local PKG=`awk -F"NAME:" '{print$NF}' <<<$RESULT`
+	local DIST=`awk -F/ '{print $(NF-1)}' <<<$RESULT`
+	local DESC=`sed -e "1,/$PKG/d" -e '/NAME:/,$d' $DBDIR/$DIST/PACKAGES.TXT|grep -v "PACKAGE"`
+	local SIZE=`sed -e "1,/$PKG/d" -e '/NAME:/,$d' $DBDIR/$DIST/PACKAGES.TXT|grep "(comp"|awk '{print $(NF-1),$NF}'`
+	PKG=`awk '/Package:/ && /'$PKG'/''{print$NF}' $DBDIR/$DIST/OPTIFEST`
+	package_status $PKG
+	echo && echo -e "Package:" $txtbld "$PKG" $rst "($SIZE) $STATUS"
+	while read -r; do echo "$REPLY"; done <<<"$DESC"
+	cleanup
+fi
+}
+
+function package_status(){
+GIVENPKG=${1##*/}
+is_slackware_package $GIVENPKG
+package_split $GIVENPKG
+ISINSTALLED=`ls /var/log/packages|grep "$PKG_NAME-[0-9]"|head -n1`
+
+if [[ "$ISINSTALLED" ]]; then
+    local INSTALLEDPKG=${ISINSTALLED##*/}
+    package_split $GIVENPKG
+    PKGVER1=$PKG_VER
+    package_split $INSTALLEDPKG
+    PKGVER2=$PKG_VER
+    if [ "$PKGVER1" == "$PKGVER2" ]; then
+        STATUS="[installed]"
+        PKGSTATUS=2
+            elif [ `printf "$PKGVER1\n$PKGVER2\n"|sort -V|tail -n1` == "$PKGVER1" ]; then
+        STATUS="[upgrade]"
+        PKGSTATUS=3
+            else
+        STATUS="[downgrade]"
+        PKGSTATUS=1
+    fi
+else
+    STATUS="[not installed]"
+    PKGSTATUS=0
+fi
+}
+
+function package_split(){
+eval `echo $1 | sed 's/\(.*\)-\([^-]*\)-\([^-]*\)-\([0-9]*\)\(.*\)*/ PKG_NAME=\1 PKG_VER=\2 PKG_ARCH=\3 PKG_BUILD=\4 PKG_TAG=\5/'`
+}

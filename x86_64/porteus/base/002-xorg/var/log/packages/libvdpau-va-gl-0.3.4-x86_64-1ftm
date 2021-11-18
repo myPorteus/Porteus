@@ -1,0 +1,27 @@
+PACKAGE NAME:     libvdpau-va-gl-0.3.4-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /mnt/sdb3/fanthom/Desktop/PRT/002/XORG/libvdpau-va-gl-0.3.4-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+libvdpau-va-gl: libvdpau-va-gl
+libvdpau-va-gl:
+libvdpau-va-gl: VDPAU driver with OpenGL/VAAPI backend. It uses OpenGL to accelerate
+libvdpau-va-gl: drawing and scaling and VA-API (if available) to accelerate video
+libvdpau-va-gl: decoding. There are applications exists that can use VDPAU. Amongst
+libvdpau-va-gl: them are Adobe Flash Player and Mplayer.
+libvdpau-va-gl:
+libvdpau-va-gl: https://github.com/i-rinat/libvdpau-va-gl
+libvdpau-va-gl:
+libvdpau-va-gl:
+libvdpau-va-gl:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libvdpau-va-gl-0.3.4/
+usr/lib64/
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_va_gl.so.1

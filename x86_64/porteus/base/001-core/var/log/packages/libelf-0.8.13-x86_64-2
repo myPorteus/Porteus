@@ -1,0 +1,45 @@
+PACKAGE NAME:     libelf-0.8.13-x86_64-2
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     420K
+PACKAGE LOCATION: /home/guest/Downloads/lib64/libelf-0.8.13-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libelf: libelf (ELF object file access library)
+libelf:
+libelf: Libelf lets you read, modify or create ELF files in an architecture
+libelf: independent way.  The library takes care of size and endian issues,
+libelf: so for example you can process a file for SPARC processors on an
+libelf: Intel based system.  GCC uses libelf for LTO (Link Time Optimization).
+libelf:
+libelf: Project home:  http://www.mr511.de/software/
+libelf:
+libelf:
+libelf:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/doc/
+usr/doc/libelf-0.8.13/
+usr/doc/libelf-0.8.13/INSTALL
+usr/doc/libelf-0.8.13/README
+usr/doc/libelf-0.8.13/COPYING.LIB
+usr/doc/libelf-0.8.13/ChangeLog
+usr/lib64/
+usr/lib64/libelf.a
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libelf.pc
+usr/lib64/libelf.so.0.8.13
+usr/include/
+usr/include/libelf/
+usr/include/libelf/nlist.h
+usr/include/libelf/libelf.h
+usr/include/libelf/elf_repl.h
+usr/include/libelf/sys_elf.h
+usr/include/libelf/gelf.h
+usr/share/
+usr/share/locale/
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libelf.mo

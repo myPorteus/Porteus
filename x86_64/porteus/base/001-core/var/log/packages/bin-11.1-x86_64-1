@@ -1,0 +1,55 @@
+PACKAGE NAME:     bin-11.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/bin-11.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+bin: bin (some command-line utilities)
+bin:
+bin: The bin package is a collection of miscellaneous command-line 
+bin: utilities.  Some of these (such as 'tempfile') are used in system
+bin: scripts.
+bin:
+bin:
+bin:
+bin:
+bin:
+bin:
+FILE LIST:
+./
+usr/
+usr/doc/
+usr/doc/debianutils-2.7/
+usr/doc/debianutils-2.7/copyright
+usr/doc/fbset-2.1/
+usr/doc/fbset-2.1/fb.modes.ATI
+usr/doc/fbset-2.1/fb.modes.PAL
+usr/doc/fbset-2.1/INSTALL
+usr/doc/fbset-2.1/fb.modes.Falcon
+usr/doc/fbset-2.1/fb.modes.NTSC
+usr/bin/
+usr/bin/xx
+usr/bin/tempfile
+usr/bin/sysvbanner
+usr/bin/savelog
+usr/bin/mktemp
+usr/bin/fromdos
+usr/bin/todos
+usr/bin/diskcopy
+usr/bin/bban
+usr/sbin/
+usr/sbin/fbset
+usr/man/
+usr/man/man5/
+usr/man/man5/fb.modes.5.gz
+usr/man/man1/
+usr/man/man1/tempfile.1.gz
+usr/man/man1/todos.1.gz
+usr/man/man1/fromdos.1.gz
+usr/man/man1/mktemp.1.gz
+usr/man/man8/
+usr/man/man8/fbset.8.gz
+usr/man/man8/savelog.8.gz
+etc/
+etc/fb.modes
+install/
+install/slack-desc

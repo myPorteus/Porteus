@@ -1,0 +1,101 @@
+'\" t
+.\"     Title: pkttyagent
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
+.\"      Date: May 2009
+.\"    Manual: pkttyagent
+.\"    Source: polkit
+.\"  Language: English
+.\"
+.TH "PKTTYAGENT" "1" "May 2009" "polkit" "pkttyagent"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+pkttyagent \- Textual authentication helper
+.SH "SYNOPSIS"
+.HP \w'\fBpkttyagent\fR\ 'u
+\fBpkttyagent\fR [\fB\-\-version\fR] [\fB\-\-help\fR]
+.HP \w'\fBpkttyagent\fR\ 'u
+\fBpkttyagent\fR [\fB\-\-process\fR\ {\ \fIpid\fR\ |\ \fIpid,pid\-start\-time\fR\ } | \fB\-\-system\-bus\-name\fR\ \fIbusname\fR] [\fB\-\-notify\-fd\fR\ \fIfd\fR] [\fB\-\-fallback\fR]
+.SH "DESCRIPTION"
+.PP
+
+\fBpkttyagent\fR
+is used to start a textual authentication agent for the subject specified by either
+\fB\-\-process\fR
+or
+\fB\-\-system\-bus\-name\fR\&. If neither of these options are given, the parent process is used\&.
+.PP
+To get notified when the authentication agent has been registered either listen to the
+Changed
+D\-Bus signal or use
+\fB\-\-notify\-fd\fR
+to pass the number of a file descriptor that has been passed to the program\&. This file descriptor will then be closed when the authentication agent has been successfully registered\&.
+.PP
+If
+\fB\-\-fallback\fR
+is used, the textual authentication agent will not replace an existing authentication agent\&.
+.SH "RETURN VALUE"
+.PP
+If the authentication agent could not be registered,
+\fBpkttyagent\fR
+exits with an exit code of 127\&. Diagnostic messages are printed on standard error\&.
+.PP
+If one or more of the options passed are malformed,
+\fBpkttyagent\fR
+exits with an exit code of 126\&. If stdin is a tty, then this manual page is also shown\&.
+.PP
+If the authentication agent was successfully registered,
+\fBpkttyagent\fR
+will keep running, interacting with the user as needed\&. When its services are no longer needed, the process can be killed\&.
+.SH "NOTES"
+.PP
+Since process identifiers can be recycled, the caller should always use
+\fIpid,pid\-start\-time\fR
+when using the
+\fB\-\-process\fR
+option\&. The value of
+\fIpid\-start\-time\fR
+can be determined by consulting e\&.g\&. the
+\fBproc\fR(5)
+file system depending on the operating system\&. If only
+\fIpid\fR
+is passed to the
+\fB\-\-process\fR
+option, then
+\fBpkttyagent\fR
+will look up the start time itself but note that this may be racy\&.
+.SH "AUTHOR"
+.PP
+Written by David Zeuthen
+davidz@redhat\&.com
+with a lot of help from many others\&.
+.SH "BUGS"
+.PP
+Please send bug reports to either the distribution or the polkit\-devel mailing list, see the link
+\m[blue]\fB\%http://lists.freedesktop.org/mailman/listinfo/polkit-devel\fR\m[]
+on how to subscribe\&.
+.SH "SEE ALSO"
+.PP
+
+\fBpolkit\fR(8),
+\fBpkaction\fR(1),
+\fBpkcheck\fR(1),
+\fBpkexec\fR(1)

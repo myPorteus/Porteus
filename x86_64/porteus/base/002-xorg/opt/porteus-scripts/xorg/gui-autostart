@@ -1,0 +1,39 @@
+#!/bin/sh
+# GUI startup helper.
+
+# Allow root to send messages to the user
+xhost +local:root >/dev/null 2>&1
+
+# Merge defaults
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+if [ -f $sysresources ]; then xrdb -merge $sysresources; fi
+if [ -f $sysmodmap ]; then xmodmap $sysmodmap; fi
+if [ -f $userresources ]; then xrdb -merge $userresources; fi
+if [ -f $usermodmap ]; then xmodmap $usermodmap; fi
+
+# Set volume
+VOLUME=`egrep -o " volume=[^ ]+" /proc/cmdline | cut -d= -f2`
+[ "$VOLUME" ] && amixer set Master $VOLUME
+
+# Set keymap
+KMAP=`egrep -o " kmap=[^ ]+" /proc/cmdline | cut -d= -f2`
+VAR=`echo $KMAP | cut -s -d: -f2`
+if [ "$VAR" ]; then
+    KMAP=`echo $KMAP | cut -d: -f1`
+    VARIANT="-variant $VAR"
+    sleep 3 && setxkbmap $KMAP $VARIANT
+elif [ "$KMAP" ]; then
+    sleep 3 && setxkbmap $KMAP -option "grp:alt_shift_toggle"
+fi
+
+# If guiexec= cheatcode is present, automatically start the command given.
+# If you need to execute several commands, separate them using ';'
+# If you need to use spaces in your command, use '~' instead
+# Example: guiexec=firefox~porteus.org;pidgin
+for cmd in `egrep -o " guiexec=[^ ]+" /proc/cmdline | cut -d= -f2- | tr ";" " "`; do
+    `echo $cmd | tr "~" " "` &
+done

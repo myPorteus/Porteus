@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# This is the laptop mode tools polling daemon. It is used by the module
+# battery-level-polling to periodically let laptop mode tools run and check
+# the battery levels.
+
+
+# Poll every 2.5 minutes. That ought to give a good balance between
+# polling too often (which costs power) and polling too little (which
+# risks data loss).
+INTERVAL=150
+
+while :; do
+	sleep $INTERVAL
+
+	/usr/sbin/laptop_mode auto
+done

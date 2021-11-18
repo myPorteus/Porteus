@@ -1,0 +1,46 @@
+PACKAGE NAME:     libXres-1.0.7-x86_64-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /root/work/002/libXres-1.0.7-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libXres: libXres (X-Resource extension client library)
+libXres:
+libXres: libXres is part of X11.
+libXres:
+libXres: For more information about the X.Org Foundation (the providers of the
+libXres: X.Org implementation of the X Window System), see their website:
+libXres:
+libXres: http://www.x.org
+libXres:
+libXres:
+libXres:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/man/
+usr/man/man3/
+usr/man/man3/XResQueryClientPixmapBytes.3.gz
+usr/man/man3/XResQueryClients.3.gz
+usr/man/man3/XResQueryClientResources.3.gz
+usr/man/man3/XResQueryVersion.3.gz
+usr/man/man3/XResQueryExtension.3.gz
+usr/man/man3/XRes.3.gz
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xres.pc
+usr/lib64/libXRes.la
+usr/lib64/libXRes.so.1.0.0
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/XRes.h
+usr/doc/
+usr/doc/libXres-1.0.7/
+usr/doc/libXres-1.0.7/AUTHORS
+usr/doc/libXres-1.0.7/ChangeLog
+usr/doc/libXres-1.0.7/COPYING
+usr/doc/libXres-1.0.7/README
+usr/doc/libXres-1.0.7/INSTALL

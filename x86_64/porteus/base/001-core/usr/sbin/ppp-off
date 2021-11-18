@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# This is the standard ppp-off script that comes with ppp-2.?.?, it's
+# been expanded to include the -d option for pppsetup. (1-17-98)
+#
+######################################################################
+#
+# Determine the device to be terminated.
+#
+if [ "$1" = "" ]; then
+	DEVICE=ppp0
+elif [ ! "$1" = "-d" ]; then
+	DEVICE=$1	
+elif [ "$1" = "-d" ]; then
+	DEVICE=ppp0	
+elif [ ! "$1" = "" ] && [ "$2" = "-d" ]; then
+	DEVICE=$1	
+fi
+######################################################################
+#
+# This just checks if demand dialing is running, if so it
+# says Demand Dialing Stoped.
+
+if ps x | fgrep "options.demand" 1> /dev/null 2> /dev/null ; then
+        D="echo Demand Dialing Stoped."
+fi
+
+#
+# If the ppp0 pid file is present then the program is running. Stop it.
+if [ -r /var/run/$DEVICE.pid ]; then
+        kill -INT `cat /var/run/$DEVICE.pid`
+#
+# If the kill did not work then there is no process running for this
+# pid. It may also mean that the lock file will be left. You may wish
+# to delete the lock file at the same time.
+        if [ ! "$?" = "0" ]; then
+	        killall -INT pppd 2>/dev/null
+                rm -f /var/run/$DEVICE.pid
+                rm -f /var/lock/LCK*
+                echo "ERROR: No pppd process running, removed stale pid file."
+                exit 1
+        fi
+#
+# Success. Let pppd clean up its own junk.
+        echo "PPP link to [$DEVICE] terminated."
+        $D
+        if [ "$1" = "-d" ]; then
+	pppd file "/etc/ppp/options.demand" || exit 1
+	echo "Demand Dialing Started."
+	exit 0
+	elif [ "$2" = "-d" ]; then
+	pppd file "/etc/ppp/options.demand" || exit 1
+	echo "Demand Dialing Started."
+	exit 0
+	else
+	exit 0
+fi
+fi
+#
+# The ppp process is not running for ppp0
+echo "ERROR: PPP link is not active on: [$DEVICE]"
+exit 1

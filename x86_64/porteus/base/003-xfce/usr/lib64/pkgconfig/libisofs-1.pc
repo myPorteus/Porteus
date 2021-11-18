@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libisofs
+Description: ISO9660 filesystem creation library
+Version: 1.3.6
+Requires: 
+Libs: -L${libdir} -lisofs
+Cflags: -I${includedir}/libisofs

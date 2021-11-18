@@ -1,0 +1,23 @@
+.\"
+.\" Man page for todos
+.\"
+.\" Copyright (c) 1997 Timothy J. Halloran.
+.\"
+.\" You may distribute under the terms of the GNU General Public
+.\" License as specified in the README file that comes with the man 1.0
+.\" distribution.  
+.\"
+.TH todos 1 "May 4, 1997"
+.LO 1
+.SH NAME
+todos \- convert UNIX text file format to DOS.
+.SH SYNOPSIS
+.BI todos\ <\ unixfile.txt\ >\ dosfile.txt
+.SH DESCRIPTION
+todos takes a UNIX text file as stdin and sends a DOS text file to stdout.
+DOS text file format separates lines of text by two characters: CR followed
+by LF (hex 0d 0a). UNIX text file format separates lines of text with
+a single LF character (hex 0a).  This program changes the LF characters found
+in the input stream to CR LF groups in the output stream.
+.SH "SEE ALSO"
+fromdos(1).

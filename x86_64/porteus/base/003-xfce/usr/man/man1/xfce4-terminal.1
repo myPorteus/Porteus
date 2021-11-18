@@ -1,0 +1,319 @@
+'\" t
+.\"     Title: xfce4-terminal
+.\"    Author: Nick Schermer <nick@xfce.org>
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 12/26/2013
+.\"    Manual: Xfce
+.\"    Source: xfce4-terminal 0.6.3
+.\"  Language: English
+.\"
+.TH "XFCE4\-TERMINAL" "1" "12/26/2013" "xfce4-terminal 0\&.6\&.3" "Xfce"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfce4-terminal \- A Terminal emulator for X
+.SH "SYNOPSIS"
+.HP \w'\fBxfce4\-terminal\fR\ 'u
+\fBxfce4\-terminal\fR [OPTION...]
+.SH "DESCRIPTION"
+.PP
+xfce4\-terminal is what is known as an X terminal emulator, often referred to as terminal or shell\&. It provides an equivalent to the old\-fashioned text screen on your desktop, but one which can easily share the screen with other graphical applications\&. Windows users may already be familiar with the MS\-DOS Prompt utility, which has the analogous function of offering a DOS command\-line under Windows, though one should note that the UNIX CLI offer far more power and ease of use than does DOS\&.
+.PP
+xfce4\-terminal emulates the
+xterm
+application developed by the X Consortium\&. In turn, the
+xterm
+application emulates the DEC VT102 terminal and also supports the DEC VT220 escape sequences\&. An escape sequence is a series of characters that start with the
+Esc
+character\&. xfce4\-terminal accepts all of the escape sequences that the VT102 and VT220 terminals use for functions such as to position the cursor and to clear the screen\&.
+.SH "OPTIONS"
+.SS "Option Summary"
+.PP
+Here is a summary of all the options, grouped by type\&. Explanations are in the following sections\&.
+.PP
+General Options
+.RS 4
+\fB\-h\fR, \fB\-\-help\fR;
+\fB\-V\fR, \fB\-\-version\fR;
+\fB\-\-disable\-server\fR;
+\fB\-\-color\-table\fR;
+\fB\-\-default\-display=\fR\fB\fIdisplay\fR\fR;
+\fB\-\-default\-working\-directory=\fR\fB\fIdirectory\fR\fR
+.RE
+.PP
+Window or Tab Separators
+.RS 4
+\fB\-\-tab\fR;
+\fB\-\-window\fR
+.RE
+.PP
+Tab Options
+.RS 4
+\fB\-x\fR, \fB\-\-execute\fR;
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR;
+\fB\-\-working\-directory=\fR\fB\fIdirectory\fR\fR;
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR;
+\fB\-H\fR, \fB\-\-hold\fR
+.RE
+.PP
+Window Options
+.RS 4
+\fB\-\-display=\fR\fB\fIdisplay\fR\fR;
+\fB\-\-drop\-down\fR;
+\fB\-\-geometry=\fR\fB\fIgeometry\fR\fR;
+\fB\-\-role=\fR\fB\fIrole\fR\fR;
+\fB\-\-startup\-id=\fR\fB\fIstring\fR\fR;
+\fB\-I, \-\-icon=\fR\fB\fIicon\fR\fR;
+\fB\-\-fullscreen\fR;
+\fB\-\-maximize\fR;
+\fB\-\-show\-menubar\fR,
+\fB\-\-hide\-menubar\fR;
+\fB\-\-show\-borders\fR,
+\fB\-\-hide\-borders\fR;
+\fB\-\-show\-toolbar\fR,
+\fB\-\-hide\-toolbar\fR
+.RE
+.SS "General Options"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+List the various command line options supported by xfce4\-terminal and exit
+.RE
+.PP
+\fB\-V\fR, \fB\-\-version\fR
+.RS 4
+Display version information and exit
+.RE
+.PP
+\fB\-\-disable\-server\fR
+.RS 4
+Do not register with the D\-BUS session message bus
+.RE
+.PP
+\fB\-\-color\-table\fR
+.RS 4
+Echo the color codes
+.RE
+.PP
+\fB\-\-default\-display=\fR\fB\fIdisplay\fR\fR
+.RS 4
+Default X display to use\&.
+.RE
+.PP
+\fB\-\-default\-working\-directory=\fR\fB\fIdirectory\fR\fR
+.RS 4
+Set
+\fIdirectory\fR
+as the default working directory for the terminal
+.RE
+.SS "Window or Tab Separators"
+.PP
+\fB\-\-tab\fR
+.RS 4
+Open a new tab in the last\-specified window; more than one of these options can be provided\&.
+.sp
+If you use this as the first option, without \-\-window separators, the last window will be re\-used\&.
+.RE
+.PP
+\fB\-\-window\fR
+.RS 4
+Open a new window containing one tab; more than one of these options can be provided\&.
+.RE
+.SS "Tab Options"
+.PP
+\fB\-x\fR, \fB\-\-execute\fR
+.RS 4
+Execute the remainder of the command line inside the terminal
+.RE
+.PP
+\fB\-e\fR, \fB\-\-command=\fR\fB\fIcommand\fR\fR
+.RS 4
+Execute
+\fIcommand\fR
+inside the terminal
+.RE
+.PP
+\fB\-\-working\-directory=\fR\fB\fIdirectory\fR\fR
+.RS 4
+Set
+\fIdirectory\fR
+as the working directory for the terminal
+.RE
+.PP
+\fB\-T\fR, \fB\-\-title=\fR\fB\fItitle\fR\fR
+.RS 4
+Set
+\fItitle\fR
+as the initial window title for the terminal
+.RE
+.PP
+\fB\-H\fR, \fB\-\-hold\fR
+.RS 4
+Causes the terminal to be kept around after the child command has terminated
+.RE
+.SS "Window Options"
+.PP
+\fB\-\-display=\fR\fB\fIdisplay\fR\fR
+.RS 4
+X display to use for the last\- specified window\&.
+.RE
+.PP
+\fB\-\-drop\-down\fR
+.RS 4
+Will start the window in drop\-down mode (also called a Quake\-style terminal)\&. This will only apply to the first window started with this option\&. It is advised to bind this to a shortcut in the keyboard preferences\&.
+.RE
+.PP
+\fB\-\-geometry=\fR\fB\fIgeometry\fR\fR
+.RS 4
+Sets the geometry of the last\-specified window to
+\fIgeometry\fR\&. Read
+\fBX\fR(7)
+for more information on how to specify window geometries\&.
+.RE
+.PP
+\fB\-\-role=\fR\fB\fIrole\fR\fR
+.RS 4
+Sets the window role of the last\-specified window to
+\fIrole\fR\&. Applies to only one window and can be specified once for each window you create from the command line\&. The
+\fIrole\fR
+is a unique identifier for the window to be used when restoring a session\&.
+.RE
+.PP
+\fB\-\-startup\-id=\fR\fB\fIstring\fR\fR
+.RS 4
+Specifies the startup notification id for the last\-specified window\&. Used internally to forward the startup notification id when using the D\-BUS service\&.
+.RE
+.PP
+\fB\-I, \-\-icon=\fR\fB\fIicon\fR\fR
+.RS 4
+Set the terminal\*(Aqs icon as an icon name or filename\&.
+.RE
+.PP
+\fB\-\-fullscreen\fR
+.RS 4
+Set the last\-specified window into fullscreen mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-maximize\fR
+.RS 4
+Set the last\-specified window into maximized mode; applies to only one window; can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-menubar\fR
+.RS 4
+Turn on the menubar for the last\-specified window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-menubar\fR
+.RS 4
+Turn off the menubar for the last\-specified window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-borders\fR
+.RS 4
+Turn on the window decorations for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-borders\fR
+.RS 4
+Turn off the window decorations for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-show\-toolbar\fR
+.RS 4
+Turn on the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.PP
+\fB\-\-hide\-toolbar\fR
+.RS 4
+Turn off the toolbar for the last\-specified window\&. Applies to only one window\&. Can be specified once for each window you create from the command line\&.
+.RE
+.SH "EXAMPLES"
+.PP
+xfce4\-terminal \-\-geometry 80x40 \-\-command mutt \-\-tab \-\-command mc
+.RS 4
+Opens a new terminal window with a geometry of 80 columns and 40 rows and two tabs in it, where the first tab runs
+\fBmutt\fR
+and the second tab runs
+\fBmc\fR\&.
+.RE
+.SH "ENVIRONMENT"
+.PP
+xfce4\-terminal uses the Basedir Specification as defined on
+\m[blue]\fBFreedesktop\&.org\fR\m[]\&\s-2\u[1]\d\s+2
+to locate its data and configuration files\&. This means that file locations will be specified as a path relative to the directories described in the specification\&.
+.PP
+\fI${XDG_CONFIG_HOME}\fR
+.RS 4
+The first base directory to look for configuration files\&. By default this is set to
+~/\&.config/\&.
+.RE
+.PP
+\fI${XDG_CONFIG_DIRS}\fR
+.RS 4
+A colon separated list of base directories that contain configuration data\&. By default the application will look in
+${sysconfdir}/xdg/\&. The value of
+\fI${sysconfdir}\fR
+depends on how the program was build and will often be
+/etc/
+for binary packages\&.
+.RE
+.PP
+\fI${XDG_DATA_HOME}\fR
+.RS 4
+The root for all user\-specific data files\&. By default this is set to
+~/\&.local/share/\&.
+.RE
+.PP
+\fI${XDG_DATA_DIRS}\fR
+.RS 4
+A set of preference ordered base directories relative to which data files should be searched in addition to the
+\fI${XDG_DATA_HOME}\fR
+base directory\&. The directories should be separated with a colon\&.
+.RE
+.SH "FILES"
+.PP
+${XDG_CONFIG_DIRS}/xfce4/terminal/terminalrc
+.RS 4
+This is the location of the configuration file that includes the preferences which control the look and feel of xfce4\-terminal\&.
+.RE
+.SH "SEE ALSO"
+.PP
+\fBbash\fR(1),
+\fBX\fR(7)
+.SH "AUTHORS"
+.PP
+\fBNick Schermer\fR <\&nick@xfce\&.org\&>
+.RS 4
+Developer
+.RE
+.PP
+\fBBenedikt Meurer\fR <\&benny@xfce\&.org\&>
+.br
+Software developer, os\-cillation, System development, 
+.RS 4
+Developer
+.RE
+.SH "NOTES"
+.IP " 1." 4
+Freedesktop.org
+.RS 4
+\%http://freedesktop.org/
+.RE

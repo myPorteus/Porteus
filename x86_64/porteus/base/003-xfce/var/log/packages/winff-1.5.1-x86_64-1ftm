@@ -1,0 +1,75 @@
+PACKAGE NAME:     winff-1.5.1-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     1.8M
+UNCOMPRESSED PACKAGE SIZE:     6.2M
+PACKAGE LOCATION: /tmp/winff-1.5.1-x86_64-1ftm.tgz
+PACKAGE DESCRIPTION:
+winff: winff (GUI for ffmpeg)
+winff:
+winff: WinFF is a GUI for the command line video converter, FFMPEG. It will
+winff: convert most any video file that FFmpeg will convert. WinFF does
+winff: multiple files in multiple formats at one time. You can for example
+winff: convert mpeg's, flv's, and mov's, all into avi's all at once.
+winff:
+winff:
+winff: Homepage: http://winff.org/
+winff:
+winff:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/winff-1.5.1/
+usr/doc/winff-1.5.1/winff.SlackBuild
+usr/doc/winff-1.5.1/copyright
+usr/doc/winff-1.5.1/changelog.gz
+usr/doc/winff-1.5.1/README.txt
+usr/doc/winff-1.5.1/README-Presets.txt
+usr/doc/winff-1.5.1/README-Icons.txt
+usr/man/
+usr/man/man1/
+usr/man/man1/winff.1.gz
+usr/share/
+usr/share/pixmaps/
+usr/share/pixmaps/winff.png
+usr/share/applications/
+usr/share/applications/winff.desktop
+usr/share/winff/
+usr/share/winff/presets.xml
+usr/share/winff/presets-ubuntu.xml
+usr/share/winff/presets-orig.xml
+usr/share/winff/presets-libavcodec52-v5.xml
+usr/share/winff/presets-libavcodec51-v4.xml
+usr/share/winff/languages/
+usr/share/winff/languages/winff.bg.po
+usr/share/winff/languages/winff.ar.po
+usr/share/winff/languages/winff.es.po
+usr/share/winff/languages/winff.sl.po
+usr/share/winff/languages/winff.tr.po
+usr/share/winff/languages/winff.sv.po
+usr/share/winff/languages/winff.el.po
+usr/share/winff/languages/winff.zh_TW.po
+usr/share/winff/languages/winff.nl.po
+usr/share/winff/languages/winff.he.po
+usr/share/winff/languages/winff.pt_BR.po
+usr/share/winff/languages/winff.pt.po
+usr/share/winff/languages/winff.pot
+usr/share/winff/languages/winff.ca.po
+usr/share/winff/languages/winff.gl.po
+usr/share/winff/languages/winff.fr.po
+usr/share/winff/languages/winff.ku.po
+usr/share/winff/languages/winff.es_AR.po
+usr/share/winff/languages/winff.de.po
+usr/share/winff/languages/winff.it.po
+usr/share/winff/languages/winff.nb.po
+usr/share/winff/languages/winff.hu.po
+usr/share/winff/languages/winff.pl.po
+usr/share/winff/languages/winff.sr.po
+usr/share/winff/languages/winff.ru.po
+usr/share/winff/languages/winff.en.po
+usr/share/winff/languages/winff.es_UY.po
+usr/share/winff/languages/winff.zh_CN.po
+usr/bin/
+usr/bin/winff

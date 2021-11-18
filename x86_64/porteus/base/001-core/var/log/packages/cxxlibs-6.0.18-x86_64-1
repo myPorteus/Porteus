@@ -1,0 +1,25 @@
+PACKAGE NAME:     cxxlibs-6.0.18-x86_64-1
+COMPRESSED PACKAGE SIZE:     856K
+UNCOMPRESSED PACKAGE SIZE:     5.2M
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/cxxlibs-6.0.18-x86_64-1.txz
+PACKAGE DESCRIPTION:
+cxxlibs: cxxlibs (C++ shared library compatibility package)
+cxxlibs:
+cxxlibs: This package contains the shared libraries needed to run dynamically
+cxxlibs: linked C++ binaries linked with older versions of libstdc++.
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+cxxlibs:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/lib64/
+usr/lib64/libstdc++.so.6.0.18
+usr/lib64/libstdc++.so.5.0.7

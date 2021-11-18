@@ -1,0 +1,87 @@
+#!/bin/bash
+# Insert a module to the /union on the fly.
+#
+# Author: Tomas M. <http://www.linux-live.org>
+# Completely rewritten for Porteus by fanthom.
+
+BASE=`basename $1`
+MOD=/mnt/live/memory/images/$BASE
+
+# Arch specific variables:
+if [ `uname -m|grep "x86_64"` ]; then
+    lib=lib64
+else
+    lib=lib
+fi
+
+if [ "`echo $BASE | grep .xzm`" = "" ]; then
+    echo "$BASE: Module must end with .xzm"
+    exit 1
+fi
+
+if [ "`grep '^aufs / ' /proc/mounts`" = "" ]; then
+    echo "Not in the live mode, can't continue. Try xzm2dir $1 /"
+    exit 2
+fi
+
+if [ ! -f $1 ]; then
+    echo "$BASE: This is not a valid module"
+    exit 3
+fi
+
+if cat /proc/mounts | cut -d" " -f2 | grep -q $MOD; then
+    echo "$BASE: Module is already activated. Deactivate? Answer y/n"
+    read ans
+    if [ "$ans" = y ]; then
+	/opt/porteus-scripts/xorg/aufs-remove $BASE
+	exit
+    else
+	exit
+    fi
+fi
+
+# Make sure that we have some free loop device:
+x=`losetup -a | tail -n1 | cut -d: -f1 | sed s^/dev/loop^^`; let y=x+1
+if [ ! -b /dev/loop$y ]; then
+    echo "Adding 10 new loop devices"
+    for i in {1..10}; do mknod /dev/loop$y b 7 $y; let y=y+1; done
+fi
+
+# 'Stale NFS' workaround:
+cd /etc
+
+# Insert module to union:
+mkdir -p $MOD
+mount -no loop,ro $1 $MOD 2>/dev/null
+if [ $? -ne 0 ]; then echo "$BASE: Cannot read module data. Corrupted download?"; rmdir $MOD 2>/dev/null; exit 4; fi
+mount -no remount,add:1:$MOD=rr aufs /
+if [ $? -ne 0 ]; then echo "$BASE: Can't insert module to union"; umount $MOD; rmdir $MOD; exit 5; fi
+
+# Find all rc scripts from the module:
+find $MOD/etc/rc.d $MOD/etc/init.d $MOD/etc/rc.d/init.d -type f -executable -maxdepth 1 2>/dev/null | egrep -v 'rc.[0-9]|rc.K|rc.S|rc.M' | sed s^$MOD^^ | sort -u >> /mnt/live/tmp/caches/services
+
+# Check for certain files to update system caches if necessary:
+touch /mnt/live/tmp/caches/ldconfig
+
+for x in `find $MOD/usr/share/icons -name icon-theme.cache 2>/dev/null | sed s^$MOD^^`; do
+    echo `dirname $x` >> /mnt/live/tmp/caches/icons
+done
+
+[ -e $MOD/usr/share/mime ] && touch /mnt/live/tmp/caches/mime
+[ -e $MOD/usr/share/fonts ] && touch /mnt/live/tmp/caches/fonts
+[ -e $MOD/usr/share/glib-2.0/schemas ] && touch /mnt/live/tmp/caches/schemas
+[ -e $MOD/usr/$lib/gio/modules ] && touch /mnt/live/tmp/caches/gio
+[ -e $MOD/usr/$lib/gtk-2.0/*/immodules ] && touch /mnt/live/tmp/caches/immodules
+[ -e $MOD/usr/$lib/gtk-3.0/*/immodules ] && touch /mnt/live/tmp/caches/immodules
+[ -e $MOD/etc/ssl/certs ] && touch /mnt/live/tmp/caches/certs
+[ -e $MOD/usr/share/applications ] && find $MOD/usr/share/applications -name "*.desktop" 2>/dev/null >> /mnt/live/tmp/caches/desktop-install
+
+# Multilib support for x86_64 arch:
+if [ $lib = lib64 ]; then
+    [ -e $MOD/usr/lib/gtk-2.0/*/immodules ] && touch /mnt/live/tmp/caches/immodules
+    [ -e $MOD/usr/lib/gtk-3.0/*/immodules ] && touch /mnt/live/tmp/caches/immodules
+    [ -e $MOD/usr/lib/gdk-pixbuf-*/*/loaders ] && touch /mnt/live/tmp/caches/pixbuf
+    [ -e $MOD/usr/lib/pango/*/modules ] && touch /mnt/live/tmp/caches/pango
+fi
+
+exit 0

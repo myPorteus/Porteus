@@ -1,0 +1,445 @@
+#!/bin/bash
+## Mounts various filesystems under Porteus
+## Authoer: Brokenman
+
+# Switch to root
+if [ "$DISPLAY" ]; then
+  if [ `whoami` != "root" ]; then
+    /opt/porteus-scripts/xorg/psu /opt/porteus-scripts/mount-manager
+    exit
+  fi
+    else
+  if [ `whoami` != "root" ]; then
+    echo "Please enter root's password below"
+    su - -c "/opt/porteus-scripts/mount-manager `whoami`" || sleep 1
+    exit
+  fi
+fi
+
+## Set vars
+wrk=/tmp/mmanager_$$
+log=/var/log/mount-manager.log
+dump=$wrk/dump
+export mntpnt=/mnt/mount-manager
+
+## Sanity check
+[ ! -f /usr/lib/librokenman ] && echo "librokenman not found" >> $log
+. /usr/lib/librokenman
+
+## initial setup
+rm -rf /tmp/mmanager*
+mkdir $wrk
+
+## Drive enumeration
+blkid|egrep -v "squashfs|swsuspend|loop" > $wrk/drives-available
+for a in `awk '{print$1}' $wrk/drives-available|sed 's/://g'`; do
+	if [[ ! `mount|grep $a` ]]; then
+		grep $a $wrk/drives-available >> $wrk/drives-unmounted
+	fi
+done
+
+unsetall(){
+unset rerun openme OPENDIR IPADDY SHDIR USERPWD SHUSR IPADDY MNTDIR BADIP 
+}
+
+create_storage_menu(){
+## Create storage tab input
+[ -f $wrk/drives-output ] && rm -f $wrk/drives-output
+unmounted=$wrk/drives-available
+for block in `awk '{print$1}' $wrk/drives-available|sed 's/://g'`; do
+	fs=`grep $block $unmounted|grep -o "[^ ]* TYPE=[^ ]*"|cut -d'"' -f4`
+	## Get label if exists
+	label=`grep $block $unmounted|grep -o "[^ ]*LABEL=[^ ]*"|cut -d'"' -f2`
+	[ -z $label ] && label="not set"
+	## Is it removable?
+	base=`echo ${block##*/}|tr -d [:digit:]`
+	rem=`</sys/block/$base/removable`
+	[ $rem -eq 1 ] && remov=removable||remov=fixed
+	## Get the size in Mb or Gb
+	kbsize=`sfdisk -s $block`
+	mbsize=$(( kbsize/1024 ))
+	if [ `wc -c <<<$kbsize` -gt 7 ]; then
+		size1=`echo "scale=2; $kbsize/1024/1024"|bc -l`
+		size="$size1 Gb"
+			else
+		size="$mbsize Mb"
+	fi
+	## Mounted?
+	[[ `mount|grep $block` ]] && mounted=yes||mounted=no
+	## Create the file
+	echo "$block|$size|$label|$fs|$remov|$mounted" >> $wrk/drives-output
+	sed -i '/loop/d' $wrk/drives-output
+done
+}; export -f create_storage_menu
+
+## Functions
+function clean(){
+rm /tmp/.cdload /tmp/.message /tmp/output /tmp/mount 2>/dev/null
+}
+
+check_mount_point(){
+if [ "$chtab" != "4" ]; then
+if [[ `grep MNTDIR $dump|cut -d'"' -f2` == "" ]]; then
+	rerun=1
+	gtk_message "You forgot to set a mount point!" 400 gtk-dialog-error
+		else
+	if [ ! -w $MNTDIR ]; then
+		rerun=1
+		gtk_message "Your mount point is not writable!" 400 gtk-dialog-error
+	fi
+	MNTDIR=`grep MNTDIR $dump|cut -d'"' -f2`
+fi fi
+}
+
+check_valid_entry(){
+for entry in $@; do
+if [[ `grep $entry $dump|cut -d'"' -f2` == "" ]]; then
+	rerun=1
+	gtk_message "All fields were not entered!" 400 gtk-dialog-error
+	break
+		else
+	echo "$entry is populated"
+fi
+done
+}
+
+enablemount(){
+	echo '<action signal="changed">enable:btnMount</action>'
+}; export -f enablemount
+
+getdump(){
+	answ=`grep $1 $dump|cut -d'"' -f2`
+}
+
+main_screen(){
+	export MAIN_DIALOG='
+'`start_window "Mount manager" cdr 500 0`'
+	<hbox>
+		'`pixmapicon 48 48 drive-harddisk`'
+		'`txtcolor 400 darkred x-large normal " Porteus Mount Manager"`'
+	</hbox>
+	'`hsep`'
+	<hbox>
+	<text label="Mount point:" width-request="90"></text>
+	<entry editable="true" fs-title="Select a mount point" fs-action="folder" fs-folder="/" height-request="32" tooltip-text="If no mountpoint is chosen one will be created at '$mntpnt'">
+		<variable>MNTDIR</variable>
+	</entry>
+	<button tooltip-text="If no mountpoint is chosen one will be created at '$mntpnt'">
+		<input file stock="gtk-directory"></input>
+		<action>fileselect:MNTDIR</action>
+	</button>
+	</hbox>
+	'`hsep`'
+
+<notebook show-tabs="true" show-border="false" labels="Main|LAN share|Local ISO|Remote ISO|Storage">
+<vbox margin="10">
+	'`txtmarkup 280 "<b>How to use this application</b>"`'
+	'`blankline`'
+	'`txtmarkup 300 "<b>1.</b> Select the mount point"`'
+	'`txtmarkup 300 "<b>2.</b> Select your preferred tab"`'
+	'`txtmarkup 300 "<b>3.</b> Fill in the information"`'
+	'`txtmarkup 300 "<b>4.</b> Click the mount button"`'
+</vbox>
+<vbox margin="10">
+	<hbox>
+	<text label="Target IP:" width-request="65"></text>
+	<entry editable="true" fs-title="Enter target machine IP address" height-request="32" tooltip-text="Enter the target machine IP address here">
+		<variable>IPADDY</variable>
+		'`enablemount`'
+	</entry>
+	</hbox>
+	<hbox>
+	<text label="Share:" width-request="65"></text>
+	<entry editable="true" fs-title="Enter share name" height-request="32" tooltip-text="Enter shared folder name">
+		<variable>SHDIR</variable>
+		'`enablemount`'
+	</entry>
+	</hbox>
+	<hbox>
+	<text label="User:" width-request="65"></text>
+	<entry editable="true" fs-title="Enter user name" height-request="32" tooltip-text="User must exist on target machine">
+		<variable>SHUSR</variable>
+		'`enablemount`'
+	</entry>
+	</hbox>
+		<hbox>
+	<text label="Password:" width-request="65"></text>
+	<entry editable="true" fs-title="Enter remote machine user password" height-request="32" tooltip-text="Enter remote machine user password" visibility="false">
+		<variable>USERPWD</variable>
+		'`enablemount`'
+	</entry>
+	</hbox>
+</vbox>
+
+<vbox margin="10">
+	<text use-markup="true" width-request="420"><label>"Your ISO image will be available as <b>read only</b>. If you need to write to the folder you will need to copy the contents to a different place on your system."</label>
+	</text>
+	'`blankline`'
+	<hbox>
+		<text label="ISO file:" width-request="55"></text>
+		<entry editable="true" fs-title="Select an iso" fs-action="file" fs-folder="/" 	height-request="32" tooltip-text="Select an existing ISO file to mount">
+			<variable>ISO</variable>
+			'`enablemount`'
+		</entry>
+		<button tooltip-text="Select an existing ISO file to mount">
+			<input file stock="gtk-cdrom"></input>
+			<action>fileselect:ISO</action>
+		</button>
+	</hbox>
+</vbox>
+
+
+
+<vbox margin="10">
+	<text use-markup="true" width-request="420"><label>"Your remote ISO image will be available as <b>read only</b>. Your path should look like this: http://www.myurl.com/myfile.iso"</label>
+	</text>
+	'`blankline`'
+	<hbox>
+		<text label="ISO file:" width-request="55"></text>
+		<entry fs-title="Remote iso" fs-action="file" fs-folder="/" height-request="32" tooltip-text="example: ttp://www.myurl.com/myfile.iso">
+			<variable>REMISO</variable>
+			'`enablemount`'
+		</entry>
+	</hbox>
+</vbox>
+
+<vbox margin="10">
+	<tree selection-mode="2" exported-column="0" headers-clickable="false" rules-hint="true">
+		<label>Block    |Size  |Label  |Fs  |Type  |Mounted</label>
+		<variable>drivechosen</variable>
+		<input file>'$wrk'/drives-output</input>
+		<action signal="cursor-changed">enable:btnMount</action>
+		<action signal="cursor-changed">echo $drivechosen > '$wrk'/mount-target</action>
+		<action signal="cursor-changed">echo $nbkMount > /tmp/.tab</action>
+	</tree>
+</vbox>
+<variable>nbkMount</variable>
+</notebook>
+'`chkbox false openme "Open folder after mounting"`'</checkbox>
+<hbox>
+'`butcancel`'
+<button use-underline="true" can-focus="true" has-focus="true">
+	<variable>unmount</variable>
+	<input file stock="gtk-go-down"></input>
+	<label>_Unmount</label>
+</button>
+<button use-underline="true" sensitive="false">
+	<input file stock="gtk-go-up"></input>
+	<label>_Mount</label>
+	<variable>btnMount</variable>
+</button>
+</hbox>
+'`end_window`'
+'
+gtkdialog -p MAIN_DIALOG > $dump
+
+## Did user cancel?
+[ `egrep "Cancel|abort" $dump` ] && { rm -rf $wrk; exit; }
+
+## Which tab was user on?
+chtab=`grep nbkMount $dump|cut -d'"' -f2`
+
+## Check for usable mount point
+check_mount_point
+[ $rerun ] && { unset rerun; $FUNCNAME; exit; }
+
+## Are we just unmounting?
+if [ `grep "_Unmount" $dump` ]; then
+    if [ $MNTDIR ]; then
+      if [ `grep $MNTDIR /proc/mounts | wc -l` -gt 0 ]; then
+        umount $MNTDIR
+        gtk_message "$MNTDIR has been unmounted." 500 gtk-yes
+	unsetall
+	main_screen
+else
+        gtk_message "Nothing is mounted in $MNTDIR" 500 gtk-yes
+	unsetall
+	main_screen
+      fi
+    fi
+    if [ "$chtab" == "4" ]; then
+      drive=`grep drivechosen $dump|cut -d'"' -f2`
+      umount $drive
+      gtk_message "$drive was unmounted successfully" 500 gtk-yes
+      unsetall
+      main_screen
+    fi
+	main_screen
+fi
+
+## Open mount folder?
+getdump openme
+[ "$answ" == "true" ] && OPENDIR=1 || unset OPENDIR
+
+case $chtab in
+1 )
+## Get entries
+unset openme IPADDY SHDIR USERPWD SHUSR
+getdump IPADDY && IPADDY=${answ}
+getdump SHDIR && SHDIR=${answ}
+getdump USERPWD && USERPWD=${answ}
+getdump SHUSR && SHUSR=${answ}
+getdump openme && openme=1
+check_valid_entry IPADDY SHDIR USERPWD
+[ $rerun ] && { unset rerun; $FUNCNAME; exit; }
+
+## Check ip address
+if [ `awk -F. '{print NF}' <<<$IPADDY` -ne 4 ]; then
+  BADIP=1
+   else
+  ## Pingable ip?
+  [[ `ping -w2 -c128 $IPADDY` ]] || BADIP=1
+fi
+
+## If address did not respond
+if [ $BADIP ]; then
+  gtk_message "$IPADDY does not seem to be responding. Are you sure the target machine is available on the local area network?" 500 gtk-dialog-error
+  unsetall
+  main-screen
+fi
+
+## Make sure cifs is available
+modprobe cifs 2>/dev/null
+
+## Setup mountpoint
+[ ! -d $MNTDIR ] && mkdir /$MNTDIR || umount $MNTDIR 2>/dev/null
+## Mount the share
+mount.cifs //$IPADDY/$SHDIR $MNTDIR -o user=$SHUSR,password=$USERPWD,sec=ntlm 2>/tmp/log || \
+mount.cifs //$IPADDY/$SHDIR $MNTDIR -o user=$SHUSR,password=$USERPWD,sec=ntlmv2 2>/tmp/log || \
+mount.cifs //$IPADDY/$SHDIR $MNTDIR -o user=$SHUSR,password=$USERPWD,sec=ntlmssp 2>/tmp/log || \
+mount.cifs //$IPADDY/$SHDIR $MNTDIR -o user=$SHUSR,password=$USERPWD,sec=krb5 2>/tmp/log 
+
+## Confirm success
+if [[ `mount|grep $MNTDIR` ]]; then
+  if [ $openme ]; then
+    /opt/porteus-scripts/xorg/fmanager $MNTDIR &
+      else
+    gtk_message "$IPADDY/$SHDIR was mounted at $MNTDIR" 500 gtk-yes
+  fi
+    else
+  gtk_message "There was an error mounting $IPADDY/$SHDIR. Please make sure target machine user and password are correct. Try again." 500 gtk-dialog-error
+fi
+unset IPADDY SHDIR MNTDIR BADIP USERPWD SHUSR openme
+main_screen
+;;
+2 )
+## Get iso file
+SRCISO=`grep "ISO=" $dump|cut -d'"' -f2`
+
+## Is it an ISO?
+if [ ! -f $SRCISO ]; then
+    gtk_message "No ISO was found at $SRCISO!" 500 gtk-dialog-error
+    unsetall
+    main_screen
+fi
+if [[ ! `egrep -o "UDF|ISO" "$SRCISO"` ]]; then
+	gtk_message "This does not appear to be an ISO file!" 450 gtk-dialog-warning
+	rm -rf $wrk/*
+	$FUNCNAME
+	main_screen
+		else
+	## Mount the iso
+	mount "$SRCISO" $MNTDIR
+	if [ "$OPENDIR" ]; then
+		/opt/porteus-scripts/xorg/fmanager $MNTDIR &
+			else
+		gtk_message "ISO was mounted read-only at $MNTDIR" 500 gtk-yes
+	fi
+fi
+unset unset MNTDIR OPENDIR SRCISO
+main_screen
+;;
+3 )
+## Remote ISO
+getdump openme && openme=1
+getdump REMISO && REMISO=${answ}
+getdump MNTDIR && MNTDIR=${answ}
+[ $REMISO ] && ISONAME=${REMISO##*/}
+
+export STATE=MANUAL
+echo "Checking remote iso" > /tmp/.message
+manual_progress "Processing remote file"
+
+## Make sure address is available
+wget --spider --force-html --inet4-only $REMISO 2> /tmp/output
+if [[ -z `grep -o exists /tmp/output` ]]; then
+  kill_manual_progress
+  gtk_message "Could not resolve $REMISO" 500 gtk-dialog-error
+  clean
+  main_screen
+fi
+## Make sure mount point is not populated
+umount $MNTDIR >/dev/null 2>&1
+## Mount remote file
+echo "Mounting remote ISO" > /tmp/.message
+httpfs2 -t 15 $REMISO $MNTDIR
+## Mount contents of iso
+[ -d /mnt/loop ] && umount /mnt/loop >/dev/null 2>&1
+mloop $MNTDIR/$ISONAME
+mount > /tmp/mount
+sleep 2
+kill_manual_progress
+
+## Check that iso was mounted
+[[ -z `grep $ISONAME /tmp/mount` ]] && BADISO=1
+if [ $BADISO ]; then
+  gtk_message "There was an error mounting $ISONAME. Please check that the remote file path is correct." 500 gtk-dialog-error &
+  umount /mnt/loop >/dev/null 2>&1
+  umount $MNTDIR >/dev/null 2>&1
+  clean
+  main_screen
+fi
+
+## Give confirmation
+if [ $openme ]; then
+  gtk_message "$ISONAME is mounted at /mnt/loop" 500 gtk-yes
+  sleep 3
+  /opt/porteus-scripts/xorg/fmanager /mnt/loop &
+    else
+  gtk_message "$ISONAME is mounted at /mnt/loop" 500 gtk-yes &
+fi
+unset ISONAME MNTDIR BADISO REMISO
+main_screen
+;;
+4 )
+## Are we mounting a drive?
+getdump openme && openme=1
+MNTDIR=`grep MNTDIR $dump|cut -d'"' -f2`
+cyan "Mounting a drive" ### TESTING
+if [ `grep "_Mount" $dump` ]; then
+    drive=`grep drivechosen $dump|cut -d'"' -f2`
+    base=`awk -F/ '{print$NF}' <<<$drive`
+    if [ $MNTDIR ]; then
+      mount $drive $MNTDIR
+      mntpnt=${MNTDIR}
+        else
+## If it is in fstab then mount it
+      if [[ `grep $base /etc/fstab` ]]; then
+        mount $drive
+        mntpnt=`grep $base /etc/fstab|awk '{print$2}'`
+          else
+        mkdir /mnt/$base 2>/dev/null
+        mount $drive /mnt/$base
+        mntpnt="/mnt/$base"
+      fi
+    fi
+fi
+
+## open mount point if requested
+if [ $openme ]; then
+  /opt/porteus-scripts/xorg/fmanager $mntpnt &
+    else
+  gtk_message "$drive was successfully mounted at $mntpnt" 500 gtk-yes
+fi
+unset drive mntpnt openme MNTDIR base
+main_screen
+;;
+* )
+gtk_message "An error occured! Please notify porteus admin"
+;;
+esac
+
+}; export -f main_screen
+
+create_storage_menu
+main_screen

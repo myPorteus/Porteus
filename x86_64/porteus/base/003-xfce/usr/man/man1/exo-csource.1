@@ -1,0 +1,106 @@
+'\" t
+.\"     Title: exo-csource
+.\"    Author: [see the "Author" section]
+.\" Generator: DocBook XSL Stylesheets v1.77.1 <http://docbook.sf.net/>
+.\"      Date: 12/27/2012
+.\"    Manual: Xfce User\*(Aqs Manual
+.\"    Source: Xfce
+.\"  Language: English
+.\"
+.TH "EXO\-CSOURCE" "1" "12/27/2012" "Xfce" "Xfce User\*(Aqs Manual"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+exo-csource \- C code generation utility for arbitrary data
+.SH "SYNOPSIS"
+.HP \w'\fBexo\-csource\fR\ 'u
+\fBexo\-csource\fR [options] [file]
+.HP \w'\fBexo\-csource\fR\ 'u
+\fBexo\-csource\fR [options] \-\-build\-list [[name]\ [file]...]
+.SH "DESCRIPTION"
+.PP
+
+\fBexo\-csource\fR
+is a small utility that generates C code containing arbitrary data, useful for compiling texts or other data directly into programs\&.
+.SH "INVOCATION"
+.PP
+
+\fBexo\-csource\fR
+either takes as input one file name to generate code for, or, using the
+\fB\-\-build\-list\fR
+option, a list of (\fIname\fR,
+\fIfile\fR) pairs to generate code for a list of images into named variables\&.
+.SS "Options"
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Print brief help and exit\&.
+.RE
+.PP
+\fB\-v\fR, \fB\-\-version\fR
+.RS 4
+Print version information and exit\&.
+.RE
+.PP
+\fB\-\-extern\fR
+.RS 4
+Generate extern symbols\&.
+.RE
+.PP
+\fB\-\-static\fR
+.RS 4
+Generate static symbols (default)\&.
+.RE
+.PP
+\fB\-\-name=identifier\fR
+.RS 4
+Specifies the
+\fIidentifier\fR
+name (prefix) for the generated variables (only used if
+\fB\-\-build\-list\fR
+was not specified as well)\&.
+.RE
+.PP
+\fB\-\-build\-list\fR
+.RS 4
+Enables (\fIname\fR,
+\fIfile\fR) pair parsing mode\&.
+.RE
+.SH "SEE ALSO"
+.PP
+The
+\fBgdk\-pixbuf\-csource\fR
+utility which ships with the Gtk+ distribution, available from
+\m[blue]\fBwww\&.gtk\&.org\fR\m[]\&\s-2\u[1]\d\s+2\&.
+.SH "AUTHOR"
+.PP
+
+\fBexo\-csource\fR
+was written by Benedikt Meurer
+benny@xfce\&.org\&.
+.PP
+This manual page was provided by Benedikt Meurer
+benny@xfce\&.org\&.
+.SH "NOTES"
+.IP " 1." 4
+www.gtk.org
+.RS 4
+\%http://www.gtk.org
+.RE

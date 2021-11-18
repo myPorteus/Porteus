@@ -1,0 +1,42 @@
+PACKAGE NAME:     portmap-6.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/portmap-6.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+portmap: portmap (a daemon to manage RPC connections)
+portmap:
+portmap: The portmapper (/sbin/rpc.portmap) is a network daemon used to manage
+portmap: connections to RPC services.  Daemons that offer RPC services (such
+portmap: as the daemons for NFS) tell the portmapper on what port they listen. 
+portmap: Unlike the services registered with the inetd, RPC network port
+portmap: numbers may change each time the system is booted.
+portmap:
+portmap: The portmapper is required to use NFS or other RPC services.
+portmap:
+portmap:
+FILE LIST:
+./
+usr/
+usr/doc/
+usr/doc/portmap-6.0/
+usr/doc/portmap-6.0/README.5
+usr/doc/portmap-6.0/CHANGES
+usr/doc/portmap-6.0/README
+usr/doc/portmap-6.0/BLURBv5
+usr/sbin/
+usr/sbin/pmap_dump
+usr/sbin/pmap_set
+usr/man/
+usr/man/man8/
+usr/man/man8/pmap_set.8.gz
+usr/man/man8/portmap.8.gz
+usr/man/man8/pmap_dump.8.gz
+sbin/
+sbin/rpc.portmap
+install/
+install/doinst.sh
+install/slack-desc
+etc/
+etc/rc.d/
+etc/rc.d/rc.rpc.new
+etc/rpc

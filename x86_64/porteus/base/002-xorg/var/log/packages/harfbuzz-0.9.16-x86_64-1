@@ -1,0 +1,60 @@
+PACKAGE NAME:     harfbuzz-0.9.16-x86_64-1
+COMPRESSED PACKAGE SIZE:     252K
+UNCOMPRESSED PACKAGE SIZE:     870K
+PACKAGE LOCATION: /root/work/harfbuzz-0.9.16-x86_64-1.txz
+PACKAGE DESCRIPTION:
+harfbuzz: harfbuzz (OpenType text shaping engine)
+harfbuzz:
+harfbuzz: HarfBuzz is an OpenType text shaping engine.
+harfbuzz:
+harfbuzz: http://www.freedesktop.org/wiki/Software/HarfBuzz
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+harfbuzz:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/hb-view
+usr/bin/hb-ot-shape-closure
+usr/bin/hb-shape
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/harfbuzz.pc
+usr/lib64/libharfbuzz.so.0.916.0
+usr/lib64/libharfbuzz.la
+usr/include/
+usr/include/harfbuzz/
+usr/include/harfbuzz/hb-ft.h
+usr/include/harfbuzz/hb.h
+usr/include/harfbuzz/hb-icu.h
+usr/include/harfbuzz/hb-glib.h
+usr/include/harfbuzz/hb-gobject.h
+usr/include/harfbuzz/hb-shape.h
+usr/include/harfbuzz/hb-ot-tag.h
+usr/include/harfbuzz/hb-ot.h
+usr/include/harfbuzz/hb-unicode.h
+usr/include/harfbuzz/hb-common.h
+usr/include/harfbuzz/hb-shape-plan.h
+usr/include/harfbuzz/hb-font.h
+usr/include/harfbuzz/hb-set.h
+usr/include/harfbuzz/hb-buffer.h
+usr/include/harfbuzz/hb-ot-layout.h
+usr/include/harfbuzz/hb-blob.h
+usr/include/harfbuzz/hb-version.h
+usr/doc/
+usr/doc/harfbuzz-0.9.16/
+usr/doc/harfbuzz-0.9.16/AUTHORS
+usr/doc/harfbuzz-0.9.16/ChangeLog
+usr/doc/harfbuzz-0.9.16/COPYING
+usr/doc/harfbuzz-0.9.16/README
+usr/doc/harfbuzz-0.9.16/INSTALL
+usr/doc/harfbuzz-0.9.16/NEWS
+usr/doc/harfbuzz-0.9.16/TODO
+usr/doc/harfbuzz-0.9.16/THANKS

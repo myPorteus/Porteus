@@ -1,0 +1,48 @@
+#!/bin/bash
+
+function display_usage(){
+bold "`gettext " Usage: usm <option> [argument]"`"
+echo
+echo "`gettext " Single letter options also support entire words."`"
+echo "`gettext " Example: -u is the same as -update, --update or update"`"
+echo
+echo "`gettext " Use example:"`" "$SCRIPT -u all" "`gettext "(to update all databases)"`"
+echo
+echo -e $txtbld "`gettext "Options \t\t\t Arguments"`" $rst
+echo -e "`gettext "  -u: Update databases. \t alien|ponce|salix|slackware|slacky|all"`"
+echo -e "`gettext "  -u usm: Update the usm package to latest version"`"
+echo -e "`gettext "  -s: Package search. \t\t <package>"`"
+echo -e "`gettext "  -s: Reverse library search. \t <library>"`"
+echo -e "`gettext "  -i: Package information. \t <package>"`"
+echo -e "`gettext "  -g: Download package. \t <package>"`"
+echo -e "`gettext "  -l: List installed packages. \t <package>"`"
+echo -e "`gettext "  -d: Resolve dependencies. \t </var/log/packages/package-name>"`"
+echo -e "`gettext "  -c: Open repo changelog. \t <distro>"`"
+echo -e "`gettext "  -k: Keyword search. \t\t <string>"`"
+echo -e "`gettext "  -b: Build from source. \t <package>"`"
+echo -e "`gettext "  -v: Get USM version."`"
+echo -e "`gettext "  -h: Show this help."`"
+echo
+echo -e "`gettext " set: Set local storage. \t /path/to/folder"`"
+echo -e "`gettext " linksonly: Only show links."`"
+echo -e "`gettext " noprompts: Only essential questions."`"
+echo -e "`gettext " nodeps: No dependency resolution."`"
+echo -e "`gettext " depth=n: Quit after n loops of resolution."`"
+echo -e "`gettext " info: Give interesting information."`"
+echo
+echo $txtbld "`gettext "Slackbuilds options"`" $rst
+echo -e "`gettext "  sbo -l: list sbo categories"`"
+echo -e "`gettext "  sbo -l: with no argument will show all sbo categories"`"
+echo -e "`gettext "  sbo -l: with a category will list all packages in the category"`"
+echo -e "`gettext "  sbo -b: will attempt to build the package from source"`"
+echo
+echo "`gettext "Example1: usm sbo -l multimedia"`"
+echo "`gettext "Example2: usm sbo -b cueplayer"`"
+echo
+
+echo "`gettext "Type:"`" $txtbld "man usm" $rst "`gettext "for more info"`"
+echo
+echo $txtbld "`gettext "You are using USM version:"`" $rst  "$USMVERSION"
+cleanup
+}
+

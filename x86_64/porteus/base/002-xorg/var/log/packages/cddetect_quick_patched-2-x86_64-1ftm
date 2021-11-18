@@ -1,0 +1,28 @@
+PACKAGE NAME:     cddetect_quick_patched-2-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     20K
+PACKAGE LOCATION: /mnt/sdb7/fanthom/Downloads/Pburn/cddetect_quick_patched-2-x86_64-1ftm.tgz
+PACKAGE DESCRIPTION:
+cddetect_quick_patched: cddetect_quick_patched 
+cddetect_quick_patched:
+cddetect_quick_patched: pburn dependency and a hacked version of a 2008 version of cddetect
+cddetect_quick_patched: the source was patched so it will now build with the latest tool chains 
+cddetect_quick_patched:
+cddetect_quick_patched:
+cddetect_quick_patched:
+cddetect_quick_patched:
+cddetect_quick_patched: Package created for Porteus by bigbass
+cddetect_quick_patched:
+cddetect_quick_patched:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/cddetect_quick_patched-2/
+usr/doc/cddetect_quick_patched-2/cddetect_quick_patched.SlackBuild
+usr/doc/cddetect_quick_patched-2/cddetect_quick.c
+usr/doc/cddetect_quick_patched-2/README
+usr/bin/
+usr/bin/cddetect_quick

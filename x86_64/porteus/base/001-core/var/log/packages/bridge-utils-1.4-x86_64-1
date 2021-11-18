@@ -1,0 +1,47 @@
+PACKAGE NAME:     bridge-utils-1.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/bridge-utils-1.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+bridge-utils: bridge-utils (network Ethernet bridging utilities)
+bridge-utils:
+bridge-utils: This package contains utilities for configuring Linux Ethernet
+bridge-utils: bridges.  The Linux Ethernet bridge can be used for connecting
+bridge-utils: multiple Ethernet devices together.  The connecting is fully
+bridge-utils: transparent.  Hosts connected to one Ethernet device see hosts
+bridge-utils: connected through a bridge to the other Ethernet devices directly.
+bridge-utils:
+bridge-utils: bridge-utils was written by Stephen Hemminger and Lennert Buytenhek.
+bridge-utils:
+bridge-utils:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/brctl
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/brctl.8.gz
+usr/doc/
+usr/doc/bridge-utils-1.4/
+usr/doc/bridge-utils-1.4/TODO
+usr/doc/bridge-utils-1.4/doc/
+usr/doc/bridge-utils-1.4/doc/HOWTO
+usr/doc/bridge-utils-1.4/doc/SMPNOTES
+usr/doc/bridge-utils-1.4/doc/WISHLIST
+usr/doc/bridge-utils-1.4/doc/PROJECTS
+usr/doc/bridge-utils-1.4/doc/FIREWALL
+usr/doc/bridge-utils-1.4/doc/FAQ
+usr/doc/bridge-utils-1.4/README
+usr/doc/bridge-utils-1.4/COPYING
+usr/doc/bridge-utils-1.4/THANKS
+usr/doc/bridge-utils-1.4/ChangeLog
+usr/doc/bridge-utils-1.4/AUTHORS
+usr/lib64/
+usr/lib64/libbridge.a
+usr/sbin/
+usr/include/
+usr/include/libbridge.h

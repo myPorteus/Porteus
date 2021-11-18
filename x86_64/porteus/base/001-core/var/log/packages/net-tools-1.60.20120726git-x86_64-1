@@ -1,0 +1,63 @@
+PACKAGE NAME:     net-tools-1.60.20120726git-x86_64-1
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     530K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/net-tools-1.60.20120726git-x86_64-1.txz
+PACKAGE DESCRIPTION:
+net-tools: net-tools (base Linux networking utilities)
+net-tools:
+net-tools: This is the core collection of tools such as "ifconfig" and "route"
+net-tools: used to configure networking on Linux.  You won't be able to do much
+net-tools: networking without this package and the network-scripts.
+net-tools:
+net-tools: The net-tools package was maintained for many years by Phil Blundell
+net-tools: and Bernd Eckenfels.
+net-tools:
+net-tools:
+net-tools:
+FILE LIST:
+./
+bin/
+bin/netstat
+bin/ipmask
+bin/hostname
+install/
+install/slack-desc
+install/doinst.sh
+sbin/
+sbin/mii-tool
+sbin/plipconfig
+sbin/rarp
+sbin/arp
+sbin/nameif
+sbin/iptunnel
+sbin/ifconfig
+sbin/route
+sbin/ipmaddr
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/mii-tool.8.gz
+usr/man/man8/rarp.8.gz
+usr/man/man8/slattach.8.gz
+usr/man/man8/nameif.8.gz
+usr/man/man8/arp.8.gz
+usr/man/man8/route.8.gz
+usr/man/man8/plipconfig.8.gz
+usr/man/man8/netstat.8.gz
+usr/man/man8/ipmask.8.gz
+usr/man/man8/ifconfig.8.gz
+usr/man/man5/
+usr/man/man5/ethers.5.gz
+usr/man/man1/
+usr/man/man1/domainname.1.gz
+usr/man/man1/ypdomainname.1.gz
+usr/man/man1/dnsdomainname.1.gz
+usr/man/man1/hostname.1.gz
+usr/man/man1/nisdomainname.1.gz
+usr/sbin/
+usr/sbin/slattach
+usr/doc/
+usr/doc/net-tools-1.60.20120726git/
+usr/doc/net-tools-1.60.20120726git/README.ipv6
+usr/doc/net-tools-1.60.20120726git/COPYING
+usr/doc/net-tools-1.60.20120726git/README

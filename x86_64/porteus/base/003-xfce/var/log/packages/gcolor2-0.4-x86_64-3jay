@@ -1,0 +1,38 @@
+PACKAGE NAME:     gcolor2-0.4-x86_64-3jay
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: git/PKG64/apps/gcolor2-0.4-x86_64-3jay.tgz
+PACKAGE DESCRIPTION:
+gcolor2: gcolor2 (GTK2 color selector)
+gcolor2:
+gcolor2: gcolor2 is a simple color selector that was originally based on
+gcolor2: gcolor, ported to use GTK+2, and now has a completely new UI.
+gcolor2:
+gcolor2: Homepage: http://gcolor2.sourceforge.net/
+gcolor2:
+gcolor2:
+gcolor2:
+gcolor2:
+gcolor2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gcolor2-0.4/
+usr/doc/gcolor2-0.4/gcolor2.SlackBuild
+usr/doc/gcolor2-0.4/INSTALL
+usr/doc/gcolor2-0.4/ChangeLog
+usr/doc/gcolor2-0.4/COPYING
+usr/doc/gcolor2-0.4/AUTHORS
+usr/share/
+usr/share/applications/
+usr/share/applications/gcolor2.desktop
+usr/share/pixmaps/
+usr/share/pixmaps/gcolor2/
+usr/share/pixmaps/gcolor2/about_icon.png
+usr/share/pixmaps/gcolor2/icon.png
+usr/bin/
+usr/bin/gcolor2

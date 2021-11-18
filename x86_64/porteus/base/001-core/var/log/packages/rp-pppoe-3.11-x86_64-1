@@ -1,0 +1,63 @@
+PACKAGE NAME:     rp-pppoe-3.11-x86_64-1
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /mnt/sdb7/work/Port14.1/001/001/rp-pppoe-3.11-x86_64-1.txz
+PACKAGE DESCRIPTION:
+rp-pppoe: rp-pppoe (Roaring Penguin PPPoE client)
+rp-pppoe:
+rp-pppoe: PPPoE (Point-to-Point Protocol over Ethernet) is a protocol used by
+rp-pppoe: many ADSL Internet Service Providers. Roaring Penguin has a free
+rp-pppoe: client for Linux systems to connect to PPPoE service providers.
+rp-pppoe:
+rp-pppoe: The client is a user-mode program and does not require any kernel
+rp-pppoe: modifications. It is fully compliant with RFC 2516, the official
+rp-pppoe: PPPoE specification.
+rp-pppoe:
+rp-pppoe:
+FILE LIST:
+./
+install/
+install/slack-desc
+install/doinst.sh
+usr/
+usr/man/
+usr/man/man8/
+usr/man/man8/pppoe-setup.8.gz
+usr/man/man8/pppoe-status.8.gz
+usr/man/man8/pppoe-sniff.8.gz
+usr/man/man8/pppoe-server.8.gz
+usr/man/man8/pppoe.8.gz
+usr/man/man8/pppoe-stop.8.gz
+usr/man/man8/pppoe-relay.8.gz
+usr/man/man8/pppoe-start.8.gz
+usr/man/man8/pppoe-connect.8.gz
+usr/man/man5/
+usr/man/man5/pppoe.conf.5.gz
+usr/sbin/
+usr/sbin/pppoe-start
+usr/sbin/pppoe-sniff
+usr/sbin/pppoe-status
+usr/sbin/pppoe-stop
+usr/sbin/pppoe
+usr/sbin/pppoe-relay
+usr/sbin/pppoe-setup
+usr/sbin/pppoe-connect
+usr/sbin/pppoe-server
+usr/doc/
+usr/doc/rp-pppoe-3.11/
+usr/doc/rp-pppoe-3.11/CHANGES
+usr/doc/rp-pppoe-3.11/LICENSE
+usr/doc/rp-pppoe-3.11/README
+usr/doc/rp-pppoe-3.11/pap-secrets
+usr/doc/rp-pppoe-3.11/KERNEL-MODE-PPPOE
+usr/doc/rp-pppoe-3.11/HOW-TO-CONNECT
+usr/doc/rp-pppoe-3.11/SERVPOET
+etc/
+etc/ppp/
+etc/ppp/firewall-masq.new
+etc/ppp/pppoe-server-options.new
+etc/ppp/pppoe.conf.new
+etc/ppp/plugins/
+etc/ppp/plugins/rp-pppoe.so
+etc/ppp/plugins/README
+etc/ppp/firewall-standalone.new

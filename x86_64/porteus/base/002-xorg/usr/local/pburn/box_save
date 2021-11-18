@@ -1,0 +1,75 @@
+#!/bin/sh
+export TEXTDOMAIN=pburn
+
+set_SAVEFILE (){
+#user select a file, and we have to update the filename <entry>
+[ -f "$CHOOSER" ] && basename "`echo "$CHOOSER"`" > $WORKDIR/SAVEFILE_NAME
+}
+
+export -f set_SAVEFILE
+
+cd $HOME
+#basename "`cat $WORKDIR/SAVEFILE`" > $WORKDIR/SAVEFILE_NAME
+[ "$TIMESTAMP" = "true" ] && TMP=" `date "+%d.%b %Y %T"`"
+echo Pburn${TMP}.$SAVE_EXT  > $WORKDIR/SAVEFILE_NAME
+export savebox="
+<window title=\"Pburn - Save\" icon-name=\"gtk-save\" resizable=\"false\">
+ <vbox>
+  <frame $(gettext 'Save')>
+   <hbox>
+    <entry>
+    <variable>SAVEFILE</variable>
+     <input>cat $WORKDIR/SAVEFILE_NAME</input>
+    </entry>
+   </hbox>
+   <chooser>
+    <height>400</height><width>600</width>
+    <variable>CHOOSER</variable>
+    <action>. $APPDIR/func -set_SAVEFILE</action>
+    <action>refresh: SAVEFILE</action>
+   </chooser>
+  </frame>
+  <hbox>
+   <button>
+    <input file stock=\"gtk-cancel\">
+    </input><label>$(gettext 'Cancel')</label>
+   </button>
+   <button can-default=\"true\" has-default=\"true\" use-stock=\"true\">
+    <input file stock=\"gtk-save\"></input>
+    <label>$(gettext 'Save')</label>
+    <action type=\"exit\">save</action>
+   </button>
+  </hbox>
+ </vbox>
+</window>"
+I=$IFS; IFS=""
+for STATEMENTS in  $($GTKDIALOG -p savebox --center); do
+	eval $STATEMENTS
+done
+IFS=$I
+
+if [ "$EXIT" = "save" ]; then
+	CHOOSER="`dirname "$CHOOSER"`" #we want to define the dir we're standing in, not the autoselected one.
+	echo "$CHOOSER"/"$SAVEFILE".$SAVE_EXT > $WORKDIR/SAVEFILE
+	sed -i -e "s%\.$SAVE_EXT.$SAVE_EXT%.$SAVE_EXT%g" $WORKDIR/SAVEFILE #remove double extension if exist.
+	
+	#checks
+	if [ "$EXPORT_ISO" = "true" ]; then
+		cp -f $WORKDIR/SAVEFILE $WORKDIR/isofile
+	else
+		if [ -s "`cat $WORKDIR/SAVEFILE`" ]; then #already exist
+			IMG=warning
+			FRAME=Warning
+			TXT1="<b>$(gettext 'File already exists.')</b>"
+			TXT2="$(gettext 'Do you want to overwrite existing file?')"
+			. "$APPDIR"/box -yesno
+			if [ ! $EXIT = Yes ]; then 
+				echo -n > $WORKDIR/SAVEFILE
+			fi
+		fi
+	fi
+else
+	echo -n > $WORKDIR/SAVEFILE
+fi
+
+	
