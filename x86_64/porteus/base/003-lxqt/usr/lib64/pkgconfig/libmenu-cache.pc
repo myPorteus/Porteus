@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libmenu-cache
+Description: Cache for freedesktop.org menu spec
+Requires: glib-2.0
+Version: 0.5.1
+Libs: -L${libdir} -lmenu-cache
+Cflags: -I${includedir}/menu-cache

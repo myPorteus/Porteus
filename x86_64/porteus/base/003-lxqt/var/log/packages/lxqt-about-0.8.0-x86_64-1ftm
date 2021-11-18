@@ -1,0 +1,29 @@
+PACKAGE NAME:     lxqt-about-0.8.0-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     4.0K
+UNCOMPRESSED PACKAGE SIZE:     20K
+PACKAGE LOCATION: /var/tmp/binpkgs/lxqt-about-0.8.0-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+lxqt-about: LXQt about dialog
+lxqt-about:
+lxqt-about:
+lxqt-about:
+lxqt-about:
+lxqt-about:
+lxqt-about:
+lxqt-about:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/lxqt-about
+usr/share/
+usr/share/lxqt/
+usr/share/lxqt/lxqt-about/
+usr/share/lxqt/lxqt-about/lxqt-targets-gentoo.cmake
+usr/share/applications/
+usr/share/applications/lxqt-about.desktop
+usr/share/doc/
+usr/share/doc/lxqt-about-0.8.0/
+usr/share/doc/lxqt-about-0.8.0/AUTHORS.bz2
+install/
+install/slack-desc

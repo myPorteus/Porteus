@@ -1,0 +1,41 @@
+.\" -*- coding: us-ascii -*-
+.if \n(.g .ds T< \\FC
+.if \n(.g .ds T> \\F[\n[.fam]]
+.de URL
+\\$2 \(la\\$1\(ra\\$3
+..
+.if \n(.g .mso www.tmac
+.TH statgrab-make-mrtg-index 1 2013-06-07 i-scream ""
+.SH NAME
+statgrab-make-mrtg-index \- generates MRTG configuration
+.SH SYNOPSIS
+'nh
+.fi
+.ad l
+\fBstatgrab-make-mrtg-index\fR \kx
+.if (\nx>(\n(.l/2)) .nr x (\n(.l/5)
+'in \n(.iu+\nxu
+[OPTION]\&... [CONFIGFILE]\&...
+'in \n(.iu-\nxu
+.ad b
+'hy
+.SH DESCRIPTION
+\fBstatgrab-make-mrtg-index\fR generates an XHTML
+index page from MRTG configuration files specified on the
+command line or read from stdin.
+.SH OPTIONS
+The following options are supported.
+.TP 
+\*(T<\fB\-\-title\fR\*(T> \fITITLE\fR
+Use TITLE as the title of the generated page
+.TP 
+\*(T<\fB\-\-help\fR\*(T>
+Display help and exit
+.SH "SEE ALSO"
+\fBstatgrab\fR(1)
+\fBstatgrab-make-mrtg-config\fR(1)
+.SH AUTHORS
+This man page was derived from the man page written by Bartosz
+Fenski for the Debian GNU/Linux distribution.
+.SH WEBSITE
+\(lahttp://www.i-scream.org/libstatgrab/\(ra

@@ -1,0 +1,39 @@
+PACKAGE NAME:     menu-cache-0.5.1-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: /var/tmp/binpkgs/menu-cache-0.5.1-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+menu-cache: A library creating and utilizing caches to speed up
+menu-cache: freedesktop.org application menus
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache:
+FILE LIST:
+./
+usr/
+usr/lib64/
+usr/lib64/libmenu-cache.so.3.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libmenu-cache.pc
+usr/lib64/libmenu-cache.la
+usr/lib64/libmenu-cache.a
+usr/include/
+usr/include/menu-cache/
+usr/include/menu-cache/menu-cache.h
+usr/libexec/
+usr/libexec/menu-cache/
+usr/libexec/menu-cache/menu-cached
+usr/libexec/menu-cache/menu-cache-gen
+usr/share/
+usr/share/doc/
+usr/share/doc/menu-cache-0.5.1/
+usr/share/doc/menu-cache-0.5.1/NEWS.bz2
+usr/share/doc/menu-cache-0.5.1/AUTHORS.bz2
+usr/share/doc/menu-cache-0.5.1/README.bz2
+install/
+install/doinst.sh
+install/slack-desc

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Uninstall slackware package...
+Icon=tgz
+Author=Brokenman
+MimeType=application/x-xz-compressed-tar;application/x-compressed-tar
+OnlyShowIn=pcmanfm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/remove-slack %F

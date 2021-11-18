@@ -1,0 +1,27 @@
+PACKAGE NAME:     lxqt-notificationd-0.8.0-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /var/tmp/binpkgs/lxqt-notificationd-0.8.0-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+lxqt-notificationd: LXQt notification daemon and library
+lxqt-notificationd:
+lxqt-notificationd:
+lxqt-notificationd:
+lxqt-notificationd:
+lxqt-notificationd:
+lxqt-notificationd:
+lxqt-notificationd:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/lxqt-config-notificationd
+usr/bin/lxqt-notificationd
+usr/share/
+usr/share/applications/
+usr/share/applications/lxqt-config-notificationd.desktop
+usr/share/doc/
+usr/share/doc/lxqt-notificationd-0.8.0/
+usr/share/doc/lxqt-notificationd-0.8.0/AUTHORS.bz2
+install/
+install/slack-desc

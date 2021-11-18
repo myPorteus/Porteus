@@ -1,0 +1,53 @@
+PACKAGE NAME:     tigervnc-1.3.1-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     152K
+UNCOMPRESSED PACKAGE SIZE:     450K
+PACKAGE LOCATION: /var/tmp/binpkgs/tigervnc-1.3.1-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+tigervnc: Remote desktop viewer display system
+tigervnc:
+tigervnc:
+tigervnc:
+tigervnc:
+tigervnc:
+tigervnc:
+tigervnc:
+FILE LIST:
+./
+usr/
+usr/man/
+usr/man/man1/
+usr/man/man1/vncviewer.1
+usr/share/
+usr/share/doc/
+usr/share/doc/tigervnc-1.3.1/
+usr/share/doc/tigervnc-1.3.1/README.txt.bz2
+usr/share/doc/tigervnc-1.3.1/LICENCE.TXT.bz2
+usr/share/doc/tigervnc-1.3.1-r2/
+usr/share/doc/tigervnc-1.3.1-r2/README.txt.bz2
+usr/share/locale/
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/tigervnc.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/tigervnc.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/tigervnc.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/tigervnc.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/tigervnc.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/tigervnc.mo
+usr/share/pixmaps/
+usr/share/pixmaps/vncviewer.png
+usr/share/applications/
+usr/share/applications/vncviewer-tigervnc.desktop
+usr/bin/
+usr/bin/vncviewer
+install/
+install/slack-desc

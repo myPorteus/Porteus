@@ -1,0 +1,52 @@
+PACKAGE NAME:     lximage-qt-0.3.0-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /var/tmp/binpkgs/lximage-qt-0.3.0-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+lximage-qt: LXImage Image Viewer - GPicView replacement
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/applications/
+usr/share/applications/lximage-qt.desktop
+usr/share/applications/lximage-qt-screenshot.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/lximage-qt.png
+usr/share/lximage-qt/
+usr/share/lximage-qt/translations/
+usr/share/lximage-qt/translations/lximage-qt_zh_TW.qm
+usr/share/lximage-qt/translations/lximage-qt_template.qm
+usr/share/lximage-qt/translations/lximage-qt_template-zh_CN.qm
+usr/share/lximage-qt/translations/lximage-qt_template-uk.qm
+usr/share/lximage-qt/translations/lximage-qt_template-sv.qm
+usr/share/lximage-qt/translations/lximage-qt_template-ru.qm
+usr/share/lximage-qt/translations/lximage-qt_template-pt_BR.qm
+usr/share/lximage-qt/translations/lximage-qt_template-pt.qm
+usr/share/lximage-qt/translations/lximage-qt_template-pl.qm
+usr/share/lximage-qt/translations/lximage-qt_template-pa.qm
+usr/share/lximage-qt/translations/lximage-qt_template-ja.qm
+usr/share/lximage-qt/translations/lximage-qt_template-is.qm
+usr/share/lximage-qt/translations/lximage-qt_template-id.qm
+usr/share/lximage-qt/translations/lximage-qt_template-hr.qm
+usr/share/lximage-qt/translations/lximage-qt_template-gl.qm
+usr/share/lximage-qt/translations/lximage-qt_template-es.qm
+usr/share/lximage-qt/translations/lximage-qt_template-ca.qm
+usr/share/doc/
+usr/share/doc/lximage-qt-0.3.0/
+usr/share/doc/lximage-qt-0.3.0/AUTHORS.bz2
+usr/share/doc/lximage-qt-0.3.0/README.bz2
+usr/bin/
+usr/bin/lximage-qt
+install/
+install/slack-desc

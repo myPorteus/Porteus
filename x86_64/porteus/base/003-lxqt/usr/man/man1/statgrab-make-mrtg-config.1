@@ -1,0 +1,49 @@
+.\" -*- coding: us-ascii -*-
+.if \n(.g .ds T< \\FC
+.if \n(.g .ds T> \\F[\n[.fam]]
+.de URL
+\\$2 \(la\\$1\(ra\\$3
+..
+.if \n(.g .mso www.tmac
+.TH statgrab-make-mrtg-config 1 2013-06-07 i-scream ""
+.SH NAME
+statgrab-make-mrtg-config \- generates MRTG configuration
+.SH SYNOPSIS
+'nh
+.fi
+.ad l
+\fBstatgrab-make-mrtg-config\fR \kx
+.if (\nx>(\n(.l/2)) .nr x (\n(.l/5)
+'in \n(.iu+\nxu
+[OPTION]\&...
+'in \n(.iu-\nxu
+.ad b
+'hy
+.SH DESCRIPTION
+\fBstatgrab-make-mrtg-config\fR generates MRTG
+configuration from statgrab output and writes it to stdout.
+.SH OPTIONS
+The following options are supported.
+.TP 
+\*(T<\fB\-\-no\-header\fR\*(T>
+Don't print MRTG global options; useful if you
+want to include the output of this script in
+another MRTG config file
+.TP 
+\*(T<\fB\-\-workdir\fR\*(T> \fIPATH\fR
+Use PATH for MRTG's WorkDir option
+.TP 
+\*(T<\fB\-\-statgrab\fR\*(T> \fIPATH\fR
+Specify location of statgrab binary
+(default "statgrab")
+.TP 
+\*(T<\fB\-\-help\fR\*(T>
+Display help and exit
+.SH "SEE ALSO"
+\fBstatgrab\fR(1)
+\fBstatgrab-make-mrtg-index\fR(1)
+.SH AUTHORS
+This man page was derived from the man page written by Bartosz
+Fenski for the Debian GNU/Linux distribution.
+.SH WEBSITE
+\(lahttp://www.i-scream.org/libstatgrab/\(ra

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=vncviewer
+Type=Application
+Comment=Remote desktop viewer display system
+Exec=vncviewer
+TryExec=vncviewer
+Icon=vncviewer
+Categories=Network;

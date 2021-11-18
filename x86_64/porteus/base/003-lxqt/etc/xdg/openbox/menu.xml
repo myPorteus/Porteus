@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+
+  <separator />
+  <item label="Terminal">
+    <action name="Execute">
+      <command>lxterminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="File Manager">
+    <action name="Execute">
+      <command>pcmanfm-qt</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Editor">
+    <action name="Execute">
+      <command>leafpad</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Web Browser">
+    <action name="Execute">
+      <command>/opt/porteus-scripts/xorg/browser</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+<menu id="desktop-app-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu" />
+  <separator />
+<menu id="system" label="System">
+  <separator />
+  <item label="Configuration Center">
+    <action name="Execute"><command>lxqt-config</command></action>
+  </item>
+  <menu id="admin" label="Superuser">
+   <separator />
+   <item label="Terminal">
+     <action name="Execute"><command>/opt/porteus-scripts/xorg/terminal -e "su"</command></action>
+   </item>
+   <item label="File Manager">
+     <action name="Execute">
+     <startupnotify><enabled>yes</enabled></startupnotify>
+     <command>lxterminal -e "/opt/porteus-scripts/xorg/pcmanfm"</command></action>
+   </item>
+</menu>
+    <separator />
+    <item label="Leave">
+    <action name="Execute">
+      <command>qtLogout</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

@@ -1,0 +1,68 @@
+PACKAGE NAME:     trojita-0.4.1-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     916K
+UNCOMPRESSED PACKAGE SIZE:     4.1M
+PACKAGE LOCATION: /var/tmp/binpkgs/trojita-0.4.1-x86_64-1ftm.txz
+PACKAGE DESCRIPTION:
+trojita: A Qt IMAP e-mail client
+trojita:
+trojita:
+trojita:
+trojita:
+trojita:
+trojita:
+trojita:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/trojita/
+usr/share/trojita/locale/
+usr/share/trojita/locale/trojita_common_bs.qm
+usr/share/trojita/locale/trojita_common_cs.qm
+usr/share/trojita/locale/trojita_common_da.qm
+usr/share/trojita/locale/trojita_common_de.qm
+usr/share/trojita/locale/trojita_common_el.qm
+usr/share/trojita/locale/trojita_common_es.qm
+usr/share/trojita/locale/trojita_common_et.qm
+usr/share/trojita/locale/trojita_common_fr.qm
+usr/share/trojita/locale/trojita_common_ga.qm
+usr/share/trojita/locale/trojita_common_gl.qm
+usr/share/trojita/locale/trojita_common_hu.qm
+usr/share/trojita/locale/trojita_common_ia.qm
+usr/share/trojita/locale/trojita_common_it.qm
+usr/share/trojita/locale/trojita_common_lt.qm
+usr/share/trojita/locale/trojita_common_mr.qm
+usr/share/trojita/locale/trojita_common_nb.qm
+usr/share/trojita/locale/trojita_common_nl.qm
+usr/share/trojita/locale/trojita_common_pl.qm
+usr/share/trojita/locale/trojita_common_pt.qm
+usr/share/trojita/locale/trojita_common_pt_BR.qm
+usr/share/trojita/locale/trojita_common_ro.qm
+usr/share/trojita/locale/trojita_common_sk.qm
+usr/share/trojita/locale/trojita_common_sv.qm
+usr/share/trojita/locale/trojita_common_tr.qm
+usr/share/trojita/locale/trojita_common_ug.qm
+usr/share/trojita/locale/trojita_common_uk.qm
+usr/share/trojita/locale/trojita_common_zh_CN.qm
+usr/share/trojita/locale/trojita_common_zh_TW.qm
+usr/share/applications/
+usr/share/applications/trojita.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/trojita.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/trojita.svg
+usr/share/doc/
+usr/share/doc/trojita-0.4.1/
+usr/share/doc/trojita-0.4.1/LICENSE.bz2
+usr/share/doc/trojita-0.4.1/README.bz2
+usr/lib64/
+usr/lib64/libtrojita_plugins.so
+usr/bin/
+usr/bin/be.contacts
+usr/bin/trojita
+install/
+install/slack-desc

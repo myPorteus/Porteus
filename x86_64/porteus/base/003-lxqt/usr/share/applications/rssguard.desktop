@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Exec=rssguard
+Name=RSS Guard
+GenericName=RSS & ATOM feed reader 
+Icon=rssguard
+Comment=A (very) tiny (yet useful) RSS 0.91/2.0 & ATOM 1.0 feed reader developed using Qt framework
+Terminal=false
+Categories=Qt;Network;News;
+
