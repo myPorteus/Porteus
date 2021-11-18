@@ -6,7 +6,7 @@ It is licensed under GPL (GNU General Public License) version 2, June 1991 (see 
 
 This repo aims to give you the "source code" by which Porteus bundles compiled packages like Linux kernel, GNU Core Utilities, X.Org windowing server and Desktop environments, but not the sources of those packages which need not or not fully to be GPL licensed themselves.
 
-As a prominent goal, this repo should make version changes transparent.
+As a prominent goal, this repo should make version changes transparent. On the other hand, it is not intended to be a historical museum, so no versions prior to 3.1 (december 2014) are included.
 
 **Be aware that you cannot install Porteus from here**. You can make *an installation package* from here.
 
