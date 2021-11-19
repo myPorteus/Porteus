@@ -1,8 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/activate %F
-MimeType=application/x-xzm;
-Name=Activate...
-Name[ru]=Активировать модуль...
-NoDisplay=true
-Icon=cdr
-Type=Application

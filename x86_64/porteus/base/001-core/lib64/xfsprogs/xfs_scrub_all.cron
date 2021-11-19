@@ -1,1 +1,0 @@
-10 3 * * 0 root test -e /run/systemd/system || /sbin/xfs_scrub_all

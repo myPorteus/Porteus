@@ -1,7 +1,0 @@
-#!/bin/sh
-# Update CINNAMON menu:
-
-echo "Updating CINNAMON menu: update-desktop-database"
-update-desktop-database 2>/dev/null 2>&1
-#user=`ps -C cinnamon-session -o user=`
-#su $user -c "cinnamon --replace &"

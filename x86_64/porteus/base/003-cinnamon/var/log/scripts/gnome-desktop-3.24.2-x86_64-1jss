@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libgnome-desktop-3.so )
-( cd usr/lib64 ; ln -sf libgnome-desktop-3.so.12.2.0 libgnome-desktop-3.so )
-( cd usr/lib64 ; rm -rf libgnome-desktop-3.so.12 )
-( cd usr/lib64 ; ln -sf libgnome-desktop-3.so.12.2.0 libgnome-desktop-3.so.12 )

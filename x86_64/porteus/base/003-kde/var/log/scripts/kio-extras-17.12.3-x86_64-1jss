@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libmolletnetwork5.so.17 )
-( cd usr/lib64 ; ln -sf libmolletnetwork5.so.17.12.3 libmolletnetwork5.so.17 )
-( cd usr/lib64 ; rm -rf libkioarchive.so.5 )
-( cd usr/lib64 ; ln -sf libkioarchive.so.5.97.0 libkioarchive.so.5 )

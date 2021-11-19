@@ -1,7 +1,0 @@
-{
- "uuid": "keyboard@cinnamon.org",
- "name": "Keyboard",
- "description": "Keyboard layout",
- "icon": "input-keyboard",
- "max-instances": -1
-}

@@ -1,6 +1,0 @@
-( cd usr/lib64 ; rm -rf libplasmapotdprovidercore.so )
-( cd usr/lib64 ; ln -sf libplasmapotdprovidercore.so.1 libplasmapotdprovidercore.so )
-( cd usr/lib64 ; rm -rf libplasmapotdprovidercore.so.1 )
-( cd usr/lib64 ; ln -sf libplasmapotdprovidercore.so.1.0.0 libplasmapotdprovidercore.so.1 )
-( cd usr/lib64 ; rm -rf libplasmacomicprovidercore.so.1 )
-( cd usr/lib64 ; ln -sf libplasmacomicprovidercore.so.1.0.0 libplasmacomicprovidercore.so.1 )

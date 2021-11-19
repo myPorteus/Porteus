@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.xfce.FileManager
-Exec=/usr/bin/Thunar --daemon

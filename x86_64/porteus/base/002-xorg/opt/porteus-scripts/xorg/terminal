@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Script to open terminal as root
-
-where() { which $1 2>/dev/null; }
-browser=`where lxterminal || where mate-terminal || where xfce-terminal || kterminal || where xterm`
-
-$browser $*

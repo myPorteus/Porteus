@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/xorg/psu /usr/bin/pmodules.sh
-Icon=cdr
-Name=Porteus Modules
-Type=Application
-Categories=Application;System

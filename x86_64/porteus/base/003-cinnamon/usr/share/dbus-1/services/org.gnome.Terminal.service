@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.Terminal
-SystemdService=gnome-terminal-server.service
-Exec=/usr/libexec/gnome-terminal-server

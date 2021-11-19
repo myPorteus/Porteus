@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="video/video/mpeg">
-        <icon name="video-mp4"/>
-        <glob-deleteall/>
-        <glob pattern="*.mpg"/>
-    </mime-type>
-</mime-info>

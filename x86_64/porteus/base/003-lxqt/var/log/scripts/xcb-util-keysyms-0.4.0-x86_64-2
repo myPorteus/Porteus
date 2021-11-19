@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libxcb-keysyms.so )
-( cd usr/lib64 ; ln -sf libxcb-keysyms.so.1.0.0 libxcb-keysyms.so )
-( cd usr/lib64 ; rm -rf libxcb-keysyms.so.1 )
-( cd usr/lib64 ; ln -sf libxcb-keysyms.so.1.0.0 libxcb-keysyms.so.1 )

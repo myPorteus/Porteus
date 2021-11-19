@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Cinnamon GUI helper
-Comment=Cinnamon GUI helper
-Exec=/opt/porteus-scripts/cinnamon/cinnamon-autostart
-

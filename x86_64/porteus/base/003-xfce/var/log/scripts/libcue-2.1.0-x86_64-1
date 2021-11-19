@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libcue.so.1 )
-( cd usr/lib64 ; ln -sf libcue.so.2.1.0 libcue.so.2 )
-( cd usr/lib64 ; rm -rf libcue.so )
-( cd usr/lib64 ; ln -sf libcue.so.2.1.0 libcue.so )

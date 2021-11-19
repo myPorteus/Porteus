@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libbabl-0.1.so.0 )
-( cd usr/lib64 ; ln -sf libbabl-0.1.so.0.137.1 libbabl-0.1.so.0 )
-( cd usr/lib64 ; rm -rf libbabl-0.1.so )
-( cd usr/lib64 ; ln -sf libbabl-0.1.so.0.137.1 libbabl-0.1.so )

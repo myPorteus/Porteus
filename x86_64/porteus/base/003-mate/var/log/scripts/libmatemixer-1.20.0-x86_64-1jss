@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libmatemixer.so )
-( cd usr/lib64 ; ln -sf libmatemixer.so.0.0.0 libmatemixer.so )
-( cd usr/lib64 ; rm -rf libmatemixer.so.0 )
-( cd usr/lib64 ; ln -sf libmatemixer.so.0.0.0 libmatemixer.so.0 )

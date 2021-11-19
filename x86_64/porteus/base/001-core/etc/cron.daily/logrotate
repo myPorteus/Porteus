@@ -1,3 +1,0 @@
-#!/bin/sh
-/usr/sbin/logrotate /etc/logrotate.conf \
- || { /usr/bin/logger -t logrotate "ALERT - exited abnormally." && false ; }

@@ -1,6 +1,0 @@
-#!/bin/sh
-# Update MATE menu:
-
-echo "Updating MATE menu: update-desktop-database"
-for x in `ps -C mate-session -o user=`; do su $x -c 'killall mate-panel'; done
-update-desktop-database

@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.kde.KScreen
-Exec=/usr/lib64/libexec/kf5/kscreen_backend_launcher

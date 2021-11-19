@@ -1,1 +1,0 @@
-/usr/lib64/python2.7/site-packages/i18n/msgfmt.py

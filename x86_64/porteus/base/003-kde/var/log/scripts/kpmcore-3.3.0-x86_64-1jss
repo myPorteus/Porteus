@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libkpmcore.so )
-( cd usr/lib64 ; ln -sf libkpmcore.so.7 libkpmcore.so )
-( cd usr/lib64 ; rm -rf libkpmcore.so.7 )
-( cd usr/lib64 ; ln -sf libkpmcore.so.3.3.0 libkpmcore.so.7 )

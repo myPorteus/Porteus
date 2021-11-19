@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libenchant.so )
-( cd usr/lib64 ; ln -sf libenchant.so.1.6.1 libenchant.so )
-( cd usr/lib64 ; rm -rf libenchant.so.1 )
-( cd usr/lib64 ; ln -sf libenchant.so.1.6.1 libenchant.so.1 )
