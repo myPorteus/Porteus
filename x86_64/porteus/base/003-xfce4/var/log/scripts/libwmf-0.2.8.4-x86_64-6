@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libwmf.so )
+( cd usr/lib64 ; ln -sf libwmf-0.2.so.7.1.0 libwmf.so )
+( cd usr/lib64 ; rm -rf libwmflite-0.2.so.7 )
+( cd usr/lib64 ; ln -sf libwmflite-0.2.so.7.0.1 libwmflite-0.2.so.7 )
+( cd usr/lib64 ; rm -rf libwmf-0.2.so.7 )
+( cd usr/lib64 ; ln -sf libwmf-0.2.so.7.1.0 libwmf-0.2.so.7 )
+( cd usr/lib64 ; rm -rf libwmflite.so )
+( cd usr/lib64 ; ln -sf libwmflite-0.2.so.7.0.1 libwmflite.so )

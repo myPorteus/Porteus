@@ -1,0 +1,69 @@
+#!/bin/bash
+# Service menu script to convert deb packages to xzm modules
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu "$0 $selection" &
+  exit
+fi
+
+# Put up a dialog
+export STATE=MANUAL
+echo "Converting $package ..." > /tmp/.message
+manual_progress "Processing ..."
+
+# Convert the packages
+for package in $selection; do
+  path=${package%/*}
+  name=${package##*/}
+  dir=${name%.*}
+  echo "$name" >> /tmp/.extracted
+  echo "$name" > /tmp/.message
+  mkdir /tmp/deb2xzm$$
+  cp $path/$name /tmp/deb2xzm$$
+  cd /tmp/deb2xzm$$
+  dataname=`ar t * | grep data`
+  
+  case $dataname in
+data.tar.gz)
+  ar x * data.tar.gz
+;;
+data.tar.lzma)
+  ar x * data.tar.lzma && unxz data.tar.lzma && gzip data.tar
+;;
+data.tar.xz)
+  ar x * data.tar.xz && unxz data.tar.xz && gzip data.tar
+;;
+  esac
+  
+  mv data.tar.gz $dir.tgz
+  txz2xzm $dir.tgz
+  mv $dir.xzm $path/
+  rm -r /tmp/deb2xzm$$
+done
+
+kill_manual_progress
+
+# Give notification
+echo '
+'`start_window "Confirmation" gtk-yes 400 0`'
+	<hbox>
+		'`pixmapstock gtk-yes`'
+		'`txtcolor 330 darkred x-large normal "Conversion complete!"`'
+	</hbox>
+		'`hsep`'
+		'`blankline`'
+		<timer milliseconds="true" visible="false">
+             <action>sleep 2</action>
+             <action type="exit">timedout</action>
+           </timer>
+'`end_window`'
+'|gtkdialog -s
+
+rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit

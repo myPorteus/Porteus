@@ -1,0 +1,64 @@
+PACKAGE NAME:     eject-2.1.5-x86_64-4
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/eject-2.1.5-x86_64-4.txz
+PACKAGE DESCRIPTION:
+eject: eject (a tool to eject removable media)
+eject:
+eject: Eject allows removable media (typically a DVD, CD, floppy disk, tape,
+eject: etc.) to be ejected under software control.  The command can also
+eject: control some multi-disc changers, the auto-eject feature supported by
+eject: some devices, and can close the disc tray of some drives.
+eject:
+eject: The 'eject' program was written by Jeff Tranter.
+eject:
+eject:
+eject:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/eject
+usr/bin/volname
+usr/doc/
+usr/doc/eject-2.1.5/
+usr/doc/eject-2.1.5/AUTHORS
+usr/doc/eject-2.1.5/COPYING
+usr/doc/eject-2.1.5/NEWS
+usr/doc/eject-2.1.5/PORTING
+usr/doc/eject-2.1.5/PROBLEMS
+usr/doc/eject-2.1.5/README
+usr/doc/eject-2.1.5/TODO
+usr/doc/eject-2.1.5/eject-2.1.5.lsm
+usr/man/
+usr/man/man1/
+usr/man/man1/eject.1.gz
+usr/man/man1/volname.1.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/cs_CZ/
+usr/share/locale/cs_CZ/LC_MESSAGES/
+usr/share/locale/cs_CZ/LC_MESSAGES/eject.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/eject.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/eject.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/eject.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/eject.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/eject.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/eject.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/eject.mo

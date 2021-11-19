@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=USM (Unified Slackware package Manager)
+Comment=Unified Slackware Package Manager
+Exec=/opt/porteus-scripts/xorg/psu /usr/bin/usmgui
+Terminal=false
+Icon=/usr/share/icons/hicolor/48x48/apps/usm.png
+Type=Application
+Categories=System;
+Version=1.0

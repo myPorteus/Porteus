@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libapr-1.so )
+( cd usr/lib64 ; ln -sf libapr-1.so.0.5.2 libapr-1.so )
+( cd usr/lib64 ; rm -rf libapr-1.so.0 )
+( cd usr/lib64 ; ln -sf libapr-1.so.0.5.2 libapr-1.so.0 )

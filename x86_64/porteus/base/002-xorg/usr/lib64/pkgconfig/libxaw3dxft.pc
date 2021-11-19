@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: Xaw3dxft
+Description: X 3D Athena Widgets Library
+Version: 1.6.2
+Requires: xproto xmu xt xft
+Requires.private: x11 xext
+Cflags: -I${includedir}  -DXAW_INTERNATIONALIZATION -DXAW_MULTIPLANE_PIXMAPS -DXAW_GRAY_BLKWHT_STIPPLES -DXAW_ARROW_SCROLLBARS
+Libs: -L${libdir} -lXaw3dxft -lXft -lfontconfig

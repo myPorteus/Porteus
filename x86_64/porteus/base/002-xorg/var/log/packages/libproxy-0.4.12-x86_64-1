@@ -1,0 +1,61 @@
+PACKAGE NAME:     libproxy-0.4.12-x86_64-1
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libproxy-0.4.12-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libproxy: libproxy (proxy configuration library)
+libproxy:
+libproxy: libproxy exists to answer the question: Given a network resource, 
+libproxy: how do I reach it?  It handles all the details, enabling you to get 
+libproxy: back to programming.  Just ask libproxy what proxy to use:  you get
+libproxy: simple code and your users get correct, consistent behavior and 
+libproxy: broad infrastructure compatibility. 
+libproxy:
+libproxy: Homepage: http://code.google.com/p/libproxy/
+libproxy:
+libproxy:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/proxy
+usr/doc/
+usr/doc/libproxy-0.4.12/
+usr/doc/libproxy-0.4.12/AUTHORS
+usr/doc/libproxy-0.4.12/COPYING
+usr/doc/libproxy-0.4.12/ChangeLog
+usr/doc/libproxy-0.4.12/INSTALL
+usr/doc/libproxy-0.4.12/NEWS
+usr/doc/libproxy-0.4.12/README
+usr/include/
+usr/include/proxy.h
+usr/lib64/
+usr/lib64/libproxy.so.1.0.0
+usr/lib64/libproxy/
+usr/lib64/libproxy/0.4.12/
+usr/lib64/libproxy/0.4.12/modules/
+usr/lib64/libproxy/0.4.12/modules/config_gnome3.so
+usr/lib64/libproxy/0.4.12/modules/config_kde.so
+usr/lib64/libproxy/0.4.12/modules/network_networkmanager.so
+usr/lib64/perl5/
+usr/lib64/perl5/vendor_perl/
+usr/lib64/perl5/vendor_perl/Net/
+usr/lib64/perl5/vendor_perl/Net/Libproxy.pm
+usr/lib64/perl5/vendor_perl/auto/
+usr/lib64/perl5/vendor_perl/auto/Net/
+usr/lib64/perl5/vendor_perl/auto/Net/Libproxy/
+usr/lib64/perl5/vendor_perl/auto/Net/Libproxy/Libproxy.so
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libproxy-1.0.pc
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/libproxy.py
+usr/libexec/
+usr/libexec/pxgsettings
+usr/share/
+usr/share/cmake/
+usr/share/cmake/Modules/
+usr/share/cmake/Modules/Findlibproxy.cmake

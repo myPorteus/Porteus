@@ -1,0 +1,32 @@
+PACKAGE NAME:     xsetroot-1.1.1-x86_64-2
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/xsetroot-1.1.1-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xsetroot: xsetroot (root window parameter setting utility for X)
+xsetroot:
+xsetroot: xsetroot is part of X11.
+xsetroot:
+xsetroot: For more information about the X.Org Foundation (the providers of the
+xsetroot: X.Org implementation of the X Window System), see their website:
+xsetroot:
+xsetroot: http://www.x.org
+xsetroot:
+xsetroot:
+xsetroot:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xsetroot
+usr/doc/
+usr/doc/xsetroot-1.1.1/
+usr/doc/xsetroot-1.1.1/COPYING
+usr/doc/xsetroot-1.1.1/ChangeLog
+usr/doc/xsetroot-1.1.1/INSTALL
+usr/doc/xsetroot-1.1.1/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xsetroot.1.gz

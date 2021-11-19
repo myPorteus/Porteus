@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=${prefix}
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+libdir=/usr/lib64
+includedir=${prefix}/include
+libexecdir=${exec_prefix}/libexec
+localedir=${datarootdir}/locale
+
+Name: libxfce4sensors
+Description: Library for the Xfce 4 Sensors Plugin and Viewer
+Requires: libxfce4util-1.0 libxfce4ui-1
+Version: 1.2.6
+Libs: -L${libdir} -lxfce4sensors
+Cflags: -I${includedir}/xfce4/

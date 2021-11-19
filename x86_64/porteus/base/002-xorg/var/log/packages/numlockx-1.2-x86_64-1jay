@@ -1,0 +1,36 @@
+PACKAGE NAME:     numlockx-1.2-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/numlockx-1.2-x86_64-1jay.tgz
+PACKAGE DESCRIPTION:
+numlockx: NumLockX (Start X with NumLock Turned On)
+numlockx:
+numlockx: This little thingy allows you to start X with NumLock turned on
+numlockx: (which is a feature that a lot of people seem to miss and nobody
+numlockx: really knew how to achieve this).
+numlockx:
+numlockx: Homepage: http://ktown.kde.org/~seli/numlockx/
+numlockx:
+numlockx:
+numlockx:
+numlockx:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/numlockx
+usr/doc/
+usr/doc/numlockx-1.2/
+usr/doc/numlockx-1.2/AUTHORS
+usr/doc/numlockx-1.2/ChangeLog
+usr/doc/numlockx-1.2/INSTALL
+usr/doc/numlockx-1.2/LICENSE
+usr/doc/numlockx-1.2/README
+usr/doc/numlockx-1.2/README.SLACKWARE
+usr/doc/numlockx-1.2/TODO
+usr/doc/numlockx-1.2/numlockx.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/numlockx.1.gz

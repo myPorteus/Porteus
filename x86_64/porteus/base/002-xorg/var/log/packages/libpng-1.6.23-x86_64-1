@@ -1,0 +1,52 @@
+PACKAGE NAME:     libpng-1.6.23-x86_64-1
+COMPRESSED PACKAGE SIZE:     304K
+UNCOMPRESSED PACKAGE SIZE:     880K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libpng-1.6.23-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libpng: libpng (Portable Network Graphics library)
+libpng:
+libpng: PNG (Portable Network Graphics) is an extensible file format for the
+libpng: lossless, portable, well-compressed storage of raster images.  PNG
+libpng: provides a patent-free replacement for GIF and can also replace many
+libpng: common uses of TIFF.  Indexed-color, grayscale, and truecolor images
+libpng: are supported, plus an optional alpha channel.  Sample depths range
+libpng: from 1 to 16 bits.
+libpng:
+libpng:
+libpng:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libpng16-config
+usr/bin/png-fix-itxt
+usr/bin/pngfix
+usr/doc/
+usr/doc/libpng-1.6.23/
+usr/doc/libpng-1.6.23/ANNOUNCE
+usr/doc/libpng-1.6.23/CHANGES
+usr/doc/libpng-1.6.23/INSTALL
+usr/doc/libpng-1.6.23/LICENSE
+usr/doc/libpng-1.6.23/README
+usr/doc/libpng-1.6.23/TODO
+usr/doc/libpng-1.6.23/example.c
+usr/doc/libpng-1.6.23/libpng-manual.txt
+usr/include/
+usr/include/libpng16/
+usr/include/libpng16/png.h
+usr/include/libpng16/pngconf.h
+usr/include/libpng16/pnglibconf.h
+usr/lib64/
+usr/lib64/libpng16.la
+usr/lib64/libpng16.so.16.23.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libpng16.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/libpng.3.gz
+usr/man/man3/libpngpf.3.gz
+usr/man/man5/
+usr/man/man5/png.5.gz

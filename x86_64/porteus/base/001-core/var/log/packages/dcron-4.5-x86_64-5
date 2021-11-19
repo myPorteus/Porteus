@@ -1,0 +1,57 @@
+PACKAGE NAME:     dcron-4.5-x86_64-5
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/dcron-4.5-x86_64-5.txz
+PACKAGE DESCRIPTION:
+dcron: dcron (Dillon's Cron daemon)
+dcron:
+dcron: The cron daemon runs in the background and executes tasks on behalf of
+dcron: users at the appropriate time.  Many timed system tasks are started
+dcron: with cron, such as the nightly indexing with updatedb.
+dcron:
+dcron: dcron was written entirely from scratch by Matthew Dillon.
+dcron:
+dcron:
+dcron:
+dcron:
+FILE LIST:
+./
+etc/
+etc/cron.d/
+etc/cron.daily/
+etc/cron.hourly/
+etc/cron.monthly/
+etc/cron.weekly/
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/crontab
+usr/bin/run-parts
+usr/doc/
+usr/doc/dcron-4.5/
+usr/doc/dcron-4.5/CHANGELOG
+usr/doc/dcron-4.5/README
+usr/doc/dcron-4.5/extra/
+usr/doc/dcron-4.5/extra/crond.conf
+usr/doc/dcron-4.5/extra/crond.logrotate
+usr/doc/dcron-4.5/extra/crond.rc
+usr/doc/dcron-4.5/extra/crontab.vim
+usr/doc/dcron-4.5/extra/prune-cronstamps
+usr/doc/dcron-4.5/extra/root.crontab
+usr/doc/dcron-4.5/extra/run-cron
+usr/man/
+usr/man/man1/
+usr/man/man1/crontab.1.gz
+usr/man/man8/
+usr/man/man8/crond.8.gz
+usr/man/man8/run-parts.8.gz
+usr/sbin/
+usr/sbin/crond
+var/
+var/spool/
+var/spool/cron/
+var/spool/cron/cronstamps/
+var/spool/cron/crontabs/
+var/spool/cron/crontabs/root.new

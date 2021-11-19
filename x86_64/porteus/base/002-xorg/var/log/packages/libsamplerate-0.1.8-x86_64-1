@@ -1,0 +1,75 @@
+PACKAGE NAME:     libsamplerate-0.1.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     972K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libsamplerate-0.1.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libsamplerate: libsamplerate (a Sample Rate Converter for audio)
+libsamplerate:
+libsamplerate: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for
+libsamplerate: audio.  One example of where such a thing would be useful is
+libsamplerate: converting audio from the CD sample rate of 44.1kHz to the 48kHz
+libsamplerate: sample rate used by DAT players.  SRC is capable of arbitrary and time
+libsamplerate: varying conversions.  SRC provides a small set of converters to allow
+libsamplerate: quality to be traded off against computation cost.
+libsamplerate:
+libsamplerate: libsamplerate home: http://www.mega-nerd.com/SRC/
+libsamplerate:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sndfile-resample
+usr/doc/
+usr/doc/libsamplerate-0.1.8/
+usr/doc/libsamplerate-0.1.8/AUTHORS
+usr/doc/libsamplerate-0.1.8/COPYING
+usr/doc/libsamplerate-0.1.8/ChangeLog
+usr/doc/libsamplerate-0.1.8/Makefile
+usr/doc/libsamplerate-0.1.8/Makefile.am
+usr/doc/libsamplerate-0.1.8/Makefile.in
+usr/doc/libsamplerate-0.1.8/NEWS
+usr/doc/libsamplerate-0.1.8/README
+usr/doc/libsamplerate-0.1.8/SRC.css
+usr/doc/libsamplerate-0.1.8/SRC.png
+usr/doc/libsamplerate-0.1.8/api.html
+usr/doc/libsamplerate-0.1.8/api_callback.html
+usr/doc/libsamplerate-0.1.8/api_full.html
+usr/doc/libsamplerate-0.1.8/api_misc.html
+usr/doc/libsamplerate-0.1.8/api_simple.html
+usr/doc/libsamplerate-0.1.8/download.html
+usr/doc/libsamplerate-0.1.8/faq.html
+usr/doc/libsamplerate-0.1.8/history.html
+usr/doc/libsamplerate-0.1.8/index.html
+usr/doc/libsamplerate-0.1.8/license.html
+usr/doc/libsamplerate-0.1.8/lists.html
+usr/doc/libsamplerate-0.1.8/quality.html
+usr/doc/libsamplerate-0.1.8/win32.html
+usr/include/
+usr/include/samplerate.h
+usr/lib64/
+usr/lib64/libsamplerate.la
+usr/lib64/libsamplerate.so.0.1.8
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/samplerate.pc
+usr/share/
+usr/share/doc/
+usr/share/doc/libsamplerate0-dev/
+usr/share/doc/libsamplerate0-dev/html/
+usr/share/doc/libsamplerate0-dev/html/SRC.css
+usr/share/doc/libsamplerate0-dev/html/SRC.png
+usr/share/doc/libsamplerate0-dev/html/api.html
+usr/share/doc/libsamplerate0-dev/html/api_callback.html
+usr/share/doc/libsamplerate0-dev/html/api_full.html
+usr/share/doc/libsamplerate0-dev/html/api_misc.html
+usr/share/doc/libsamplerate0-dev/html/api_simple.html
+usr/share/doc/libsamplerate0-dev/html/download.html
+usr/share/doc/libsamplerate0-dev/html/faq.html
+usr/share/doc/libsamplerate0-dev/html/history.html
+usr/share/doc/libsamplerate0-dev/html/index.html
+usr/share/doc/libsamplerate0-dev/html/license.html
+usr/share/doc/libsamplerate0-dev/html/lists.html
+usr/share/doc/libsamplerate0-dev/html/quality.html
+usr/share/doc/libsamplerate0-dev/html/win32.html

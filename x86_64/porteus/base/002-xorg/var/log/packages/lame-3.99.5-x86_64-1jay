@@ -1,0 +1,64 @@
+PACKAGE NAME:     lame-3.99.5-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     488K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/lame-3.99.5-x86_64-1jay.tgz
+PACKAGE DESCRIPTION:
+lame: Lame (LAME Ain't an Mp3 Encoder)
+lame:
+lame: LAME is an educational tool to be used for learning about MP3
+lame: encoding.  The goal of the LAME project is to use the open source
+lame: model to improve the psycho acoustics, noise shaping, and speed of MP3.
+lame:
+lame:
+lame:
+lame:
+lame:
+lame:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lame
+usr/doc/
+usr/doc/lame-3.99.5/
+usr/doc/lame-3.99.5/API
+usr/doc/lame-3.99.5/COPYING
+usr/doc/lame-3.99.5/ChangeLog
+usr/doc/lame-3.99.5/DEFINES
+usr/doc/lame-3.99.5/HACKING
+usr/doc/lame-3.99.5/INSTALL
+usr/doc/lame-3.99.5/INSTALL.configure
+usr/doc/lame-3.99.5/LICENSE
+usr/doc/lame-3.99.5/README
+usr/doc/lame-3.99.5/README.WINGTK
+usr/doc/lame-3.99.5/STYLEGUIDE
+usr/doc/lame-3.99.5/TODO
+usr/doc/lame-3.99.5/USAGE
+usr/doc/lame-3.99.5/html/
+usr/doc/lame-3.99.5/html/about.html
+usr/doc/lame-3.99.5/html/abr.html
+usr/doc/lame-3.99.5/html/cbr.html
+usr/doc/lame-3.99.5/html/contact.html
+usr/doc/lame-3.99.5/html/contributors.html
+usr/doc/lame-3.99.5/html/detailed.html
+usr/doc/lame-3.99.5/html/history.html
+usr/doc/lame-3.99.5/html/index.html
+usr/doc/lame-3.99.5/html/introduction.html
+usr/doc/lame-3.99.5/html/links.html
+usr/doc/lame-3.99.5/html/list.html
+usr/doc/lame-3.99.5/html/ms_stereo.html
+usr/doc/lame-3.99.5/html/usage.html
+usr/doc/lame-3.99.5/html/vbr.html
+usr/doc/lame-3.99.5/lame.SlackBuild
+usr/include/
+usr/include/lame/
+usr/include/lame/lame.h
+usr/lib64/
+usr/lib64/libmp3lame.la
+usr/lib64/libmp3lame.so.0.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/lame.1.gz

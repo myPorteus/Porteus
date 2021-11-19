@@ -1,0 +1,63 @@
+PACKAGE NAME:     xl2tpd-1.3.2-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     476K
+UNCOMPRESSED PACKAGE SIZE:     1.1M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/xl2tpd-1.3.2-x86_64-1jay.tgz
+PACKAGE DESCRIPTION:
+xl2tpd: xl2tpd (L2TP daemon)
+xl2tpd:
+xl2tpd: Xelerance Corporation currently maintains a version of the Layer 2
+xl2tpd: Tunneling Protocol (L2TP) daemon.
+xl2tpd:
+xl2tpd: This version contains many patches that have not yet been integrated
+xl2tpd: into the mainstream release. These patches are needed to run on
+xl2tpd: modern distributions with DEVFS, or to support L2TP over IPsec, when
+xl2tpd: used in conjunction with Openswan.
+xl2tpd:
+xl2tpd: Homepage: http://www.xelerance.com/software/xl2tpd/
+FILE LIST:
+./
+etc/
+etc/ppp/
+etc/ppp/chap-secrets.new
+etc/ppp/options.xl2tpd.new
+etc/xl2tpd/
+etc/xl2tpd/xl2tpd.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/pfc
+usr/doc/
+usr/doc/xl2tpd-1.3.2/
+usr/doc/xl2tpd-1.3.2/BUGS
+usr/doc/xl2tpd-1.3.2/CHANGES
+usr/doc/xl2tpd-1.3.2/CREDITS
+usr/doc/xl2tpd-1.3.2/LICENSE
+usr/doc/xl2tpd-1.3.2/README.passwordfd
+usr/doc/xl2tpd-1.3.2/README.patents
+usr/doc/xl2tpd-1.3.2/README.xl2tpd
+usr/doc/xl2tpd-1.3.2/TODO
+usr/doc/xl2tpd-1.3.2/examples/
+usr/doc/xl2tpd-1.3.2/examples/xl2tpd-L2TP-CERT-orgWIN2KXP.conf
+usr/doc/xl2tpd-1.3.2/examples/xl2tpd-L2TP-CERT.conf
+usr/doc/xl2tpd-1.3.2/examples/xl2tpd-L2TP-PSK-orgWIN2KXP.conf
+usr/doc/xl2tpd-1.3.2/examples/xl2tpd-L2TP-PSK.conf
+usr/doc/xl2tpd-1.3.2/ipsecsaref.png
+usr/doc/xl2tpd-1.3.2/l2tp-secrets.sample
+usr/doc/xl2tpd-1.3.2/l2tp.png
+usr/doc/xl2tpd-1.3.2/l2tp.svg
+usr/doc/xl2tpd-1.3.2/l2tpd.conf.sample
+usr/doc/xl2tpd-1.3.2/origREADME
+usr/doc/xl2tpd-1.3.2/rfc2661.txt
+usr/man/
+usr/man/man1/
+usr/man/man1/pfc.1.gz
+usr/man/man5/
+usr/man/man5/l2tp-secrets.5.gz
+usr/man/man5/xl2tpd.conf.5.gz
+usr/man/man8/
+usr/man/man8/xl2tpd.8.gz
+usr/sbin/
+usr/sbin/xl2tpd
+usr/sbin/xl2tpd-control

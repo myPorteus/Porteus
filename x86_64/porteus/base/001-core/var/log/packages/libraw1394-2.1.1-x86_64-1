@@ -1,0 +1,51 @@
+PACKAGE NAME:     libraw1394-2.1.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/libraw1394-2.1.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libraw1394: libraw1394 (user space IEEE 1394 driver)
+libraw1394:
+libraw1394: libraw1394 provides direct access to the IEEE 1394 bus through
+libraw1394: the Linux 1394 subsystem's raw1394 user space interface.
+libraw1394:
+libraw1394: Homepage:  http://www.kernel.org/pub/linux/libs/ieee1394/
+libraw1394:
+libraw1394:
+libraw1394:
+libraw1394:
+libraw1394:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/dumpiso
+usr/bin/sendiso
+usr/bin/testlibraw
+usr/doc/
+usr/doc/libraw1394-2.1.1/
+usr/doc/libraw1394-2.1.1/AUTHORS
+usr/doc/libraw1394-2.1.1/COPYING.LIB
+usr/doc/libraw1394-2.1.1/ChangeLog
+usr/doc/libraw1394-2.1.1/INSTALL
+usr/doc/libraw1394-2.1.1/NEWS
+usr/doc/libraw1394-2.1.1/README
+usr/include/
+usr/include/libraw1394/
+usr/include/libraw1394/csr.h
+usr/include/libraw1394/ieee1394.h
+usr/include/libraw1394/raw1394.h
+usr/lib64/
+usr/lib64/libraw1394.la
+usr/lib64/libraw1394.so.11.1.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libraw1394.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/dumpiso.1.gz
+usr/man/man1/sendiso.1.gz
+usr/man/man1/testlibraw.1.gz
+usr/man/man5/
+usr/man/man5/isodump.5.gz

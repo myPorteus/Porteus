@@ -1,0 +1,15 @@
+#!/bin/bash
+# Start/stop/restart the GPM mouse server:
+
+if [ "$1" = "stop" ]; then
+    echo "Stopping gpm..."
+    gpm -k
+elif [ "$1" = "restart" ]; then
+    echo "Restarting gpm..."
+    gpm -k
+    sleep 1
+    gpm -m /dev/mouse -t ps2
+else # assume $1 = start:
+    echo "Starting gpm:  gpm -m /dev/mouse -t ps2"
+    gpm -m /dev/mouse -t ps2
+fi

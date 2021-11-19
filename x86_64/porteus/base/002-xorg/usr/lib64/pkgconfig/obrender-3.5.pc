@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+xcflags=
+xlibs= -lSM -lICE  -lX11
+
+Name: ObRender
+Description: Openbox Render Library
+Version: 3.6
+Requires: obt-3.5 glib-2.0 xft pangoxft  librsvg-2.0
+Libs: -L${libdir} -lobrender ${xlibs}
+Cflags: -I${includedir}/openbox/3.6 ${xcflags}

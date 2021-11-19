@@ -1,0 +1,12 @@
+[Device]
+Product=Score
+Vendor=ZTE
+AccessProtocol=storage
+DeviceMatch=usb:8087:0024
+
+[Media]
+OutputFormats=audio/mpeg;audio/3gpp;audio/mp4;audio/aac;audio/x-wav;audio/x-gsm
+
+[storage]
+AudioFolders=Music/
+

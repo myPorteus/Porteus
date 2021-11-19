@@ -1,0 +1,13 @@
+SERF_MAJOR_VERSION=1
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include/serf-1
+
+Name: serf
+Description: HTTP client library
+Version: 1.3.8
+Requires.private: libssl libcrypto
+Libs: -L${libdir} -lserf-${SERF_MAJOR_VERSION}
+Libs.private: /usr/lib64/libaprutil-1.la -lldap -llber -ldb-4.4   -lexpat      -lsqlite3     -ldb-4.4   -lldap -llber /usr/lib64/libapr-1.la -luuid -lrt -lcrypt  -lpthread -ldl  -lz
+Cflags: -I${includedir}

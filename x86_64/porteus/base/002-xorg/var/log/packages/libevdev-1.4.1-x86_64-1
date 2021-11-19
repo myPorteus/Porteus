@@ -1,0 +1,43 @@
+PACKAGE NAME:     libevdev-1.4.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     390K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libevdev-1.4.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libevdev: libevdev (wrapper library for evdev devices)
+libevdev:
+libevdev: libevdev is a wrapper library for evdev devices.  It moves the common
+libevdev: tasks when dealing with evdev devices into a library and provides a 
+libevdev: library interface to the callers, thus avoiding erroneous ioctls, etc.
+libevdev:
+libevdev: http://www.freedesktop.org/wiki/Software/libevdev/
+libevdev:
+libevdev:
+libevdev:
+libevdev:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libevdev-tweak-device
+usr/bin/mouse-dpi-tool
+usr/bin/touchpad-edge-detector
+usr/doc/
+usr/doc/libevdev-1.4.1/
+usr/doc/libevdev-1.4.1/COPYING
+usr/include/
+usr/include/libevdev-1.0/
+usr/include/libevdev-1.0/libevdev/
+usr/include/libevdev-1.0/libevdev/libevdev-uinput.h
+usr/include/libevdev-1.0/libevdev/libevdev.h
+usr/lib64/
+usr/lib64/libevdev.a
+usr/lib64/libevdev.la
+usr/lib64/libevdev.so.2.1.7
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libevdev.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/libevdev.3.gz

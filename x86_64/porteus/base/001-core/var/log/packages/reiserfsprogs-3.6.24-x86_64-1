@@ -1,0 +1,43 @@
+PACKAGE NAME:     reiserfsprogs-3.6.24-x86_64-1
+COMPRESSED PACKAGE SIZE:     224K
+UNCOMPRESSED PACKAGE SIZE:     1020K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/reiserfsprogs-3.6.24-x86_64-1.txz
+PACKAGE DESCRIPTION:
+reiserfsprogs: reiserfsprogs (Reiserfs filesystem utilities)
+reiserfsprogs:
+reiserfsprogs: These utilities are used for Reiserfs.  Reiserfs is a file system
+reiserfsprogs: based on balanced tree algorithms.
+reiserfsprogs:
+reiserfsprogs: Reiserfs is the work of Hans Reiser and many others.  See the file
+reiserfsprogs: /usr/doc/reiserfs*/README for full credits.
+reiserfsprogs:
+reiserfsprogs:
+reiserfsprogs:
+reiserfsprogs:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/debugreiserfs
+sbin/mkreiserfs
+sbin/reiserfsck
+sbin/reiserfstune
+sbin/resize_reiserfs
+usr/
+usr/doc/
+usr/doc/reiserfsprogs-3.6.24/
+usr/doc/reiserfsprogs-3.6.24/AUTHORS
+usr/doc/reiserfsprogs-3.6.24/COPYING
+usr/doc/reiserfsprogs-3.6.24/CREDITS
+usr/doc/reiserfsprogs-3.6.24/INSTALL
+usr/doc/reiserfsprogs-3.6.24/NEWS
+usr/doc/reiserfsprogs-3.6.24/README
+usr/man/
+usr/man/man8/
+usr/man/man8/debugreiserfs.8.gz
+usr/man/man8/mkreiserfs.8.gz
+usr/man/man8/reiserfsck.8.gz
+usr/man/man8/reiserfstune.8.gz
+usr/man/man8/resize_reiserfs.8.gz

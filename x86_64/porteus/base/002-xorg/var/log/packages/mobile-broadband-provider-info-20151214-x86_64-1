@@ -1,0 +1,35 @@
+PACKAGE NAME:     mobile-broadband-provider-info-20151214-x86_64-1
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     360K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/mobile-broadband-provider-info-20151214-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mobile-broadband-provider-info: mobile-broadband-provider-info (service provider settings)
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: This package contains mobile broadband settings for service providers
+mobile-broadband-provider-info: in various countries.
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: For more info, see:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
+mobile-broadband-provider-info:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/mobile-broadband-provider-info-20151214/
+usr/doc/mobile-broadband-provider-info-20151214/COPYING
+usr/doc/mobile-broadband-provider-info-20151214/ChangeLog
+usr/doc/mobile-broadband-provider-info-20151214/NEWS
+usr/doc/mobile-broadband-provider-info-20151214/README
+usr/doc/mobile-broadband-provider-info-20151214/mobile-broadband-provider-info.SlackBuild
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/mobile-broadband-provider-info.pc
+usr/share/
+usr/share/mobile-broadband-provider-info/
+usr/share/mobile-broadband-provider-info/serviceproviders.2.dtd
+usr/share/mobile-broadband-provider-info/serviceproviders.xml

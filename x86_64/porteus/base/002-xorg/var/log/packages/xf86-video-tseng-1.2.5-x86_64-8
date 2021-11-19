@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-tseng-1.2.5-x86_64-8
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/xf86-video-tseng-1.2.5-x86_64-8.txz
+PACKAGE DESCRIPTION:
+xf86-video-tseng: xf86-video-tseng (Tseng Labs video driver for the Xorg X server)
+xf86-video-tseng:
+xf86-video-tseng: xf86-video-tseng is part of X11.
+xf86-video-tseng:
+xf86-video-tseng: For more information about the X.Org Foundation (the providers of the
+xf86-video-tseng: X.Org implementation of the X Window System), see their website:
+xf86-video-tseng:
+xf86-video-tseng: http://www.x.org
+xf86-video-tseng:
+xf86-video-tseng:
+xf86-video-tseng:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-tseng-1.2.5/
+usr/doc/xf86-video-tseng-1.2.5/COPYING
+usr/doc/xf86-video-tseng-1.2.5/ChangeLog
+usr/doc/xf86-video-tseng-1.2.5/INSTALL
+usr/doc/xf86-video-tseng-1.2.5/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/tseng_drv.la
+usr/lib64/xorg/modules/drivers/tseng_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/tseng.4.gz

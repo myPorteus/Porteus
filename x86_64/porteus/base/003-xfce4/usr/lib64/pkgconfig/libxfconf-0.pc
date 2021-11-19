@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+libxfconf_api_version=0
+
+Name: xfconf
+Description: Configuration library for Xfce
+Requires: gobject-2.0 dbus-1 dbus-glib-1
+Version: 4.12.0
+Libs: -L${libdir} -lxfconf-${libxfconf_api_version}
+Cflags: -I${includedir}/xfce4/xfconf-${libxfconf_api_version}

@@ -1,0 +1,26 @@
+PACKAGE NAME:     ifenslave-1.1.0-x86_64-1ftm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/ifenslave-1.1.0-x86_64-1ftm.tgz
+PACKAGE DESCRIPTION:
+ifenslave: ifenslave ( interface bonding utility )
+ifenslave: 
+ifenslave: from the kernel, load balance on multiple interfaces.
+ifenslave: 
+ifenslave: more info: http://www.linuxfoundation.org/en/Net:Bonding
+ifenslave: 
+ifenslave: 
+ifenslave: 
+ifenslave: 
+ifenslave: 
+ifenslave: 
+FILE LIST:
+./
+install/
+install/slack-desc
+sbin/
+sbin/ifenslave
+usr/
+usr/doc/
+usr/doc/ifenslave-1.1.0/
+usr/doc/ifenslave-1.1.0/ifenslave.SlackBuild

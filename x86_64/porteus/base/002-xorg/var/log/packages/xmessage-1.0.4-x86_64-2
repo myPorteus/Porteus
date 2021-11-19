@@ -1,0 +1,37 @@
+PACKAGE NAME:     xmessage-1.0.4-x86_64-2
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/xmessage-1.0.4-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xmessage: xmessage (displays a message or query in a window)
+xmessage:
+xmessage: The user can click on an "okay" button to dismiss it or can select
+xmessage: one of several buttons to answer a question.  xmessage can also exit
+xmessage: after a specified time.
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+xmessage:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/app-defaults/
+etc/X11/app-defaults/Xmessage
+etc/X11/app-defaults/Xmessage-color
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xmessage
+usr/doc/
+usr/doc/xmessage-1.0.4/
+usr/doc/xmessage-1.0.4/COPYING
+usr/doc/xmessage-1.0.4/ChangeLog
+usr/doc/xmessage-1.0.4/INSTALL
+usr/doc/xmessage-1.0.4/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xmessage.1.gz

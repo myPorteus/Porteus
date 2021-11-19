@@ -1,0 +1,53 @@
+PACKAGE NAME:     rtmpdump-2.4-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/rtmpdump-2.4-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+rtmpdump: RTMPDump (RTMP Streams Toolkit)
+rtmpdump:
+rtmpdump: RTMPDump is a toolkit for RTMP streams. All forms of RTMP are
+rtmpdump: supported,  including  rtmp://, rtmpt://, rtmpe://, rtmpte://
+rtmpdump: and rtmps://.
+rtmpdump:
+rtmpdump:
+rtmpdump:
+rtmpdump:
+rtmpdump:
+rtmpdump:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rtmpdump
+usr/doc/
+usr/doc/rtmpdump-2.4/
+usr/doc/rtmpdump-2.4/COPYING
+usr/doc/rtmpdump-2.4/ChangeLog
+usr/doc/rtmpdump-2.4/README
+usr/doc/rtmpdump-2.4/SlackBuild/
+usr/doc/rtmpdump-2.4/SlackBuild/rtmpdump.SlackBuild
+usr/doc/rtmpdump-2.4/SlackBuild/slack-desc
+usr/include/
+usr/include/librtmp/
+usr/include/librtmp/amf.h
+usr/include/librtmp/http.h
+usr/include/librtmp/log.h
+usr/include/librtmp/rtmp.h
+usr/lib64/
+usr/lib64/librtmp.so.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/librtmp.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/rtmpdump.1.gz
+usr/man/man3/
+usr/man/man3/librtmp.3.gz
+usr/man/man8/
+usr/man/man8/rtmpgw.8.gz
+usr/sbin/
+usr/sbin/rtmpgw
+usr/sbin/rtmpsrv
+usr/sbin/rtmpsuck

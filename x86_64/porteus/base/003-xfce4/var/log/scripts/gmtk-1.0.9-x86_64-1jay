@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libgmtk.so )
+( cd usr/lib64 ; ln -sf libgmtk.so.1.0.9 libgmtk.so )
+( cd usr/lib64 ; rm -rf libgmtk.so.1 )
+( cd usr/lib64 ; ln -sf libgmtk.so.1.0.9 libgmtk.so.1 )
+( cd usr/lib64 ; rm -rf libgmlib.so )
+( cd usr/lib64 ; ln -sf libgmlib.so.1.0.9 libgmlib.so )
+( cd usr/lib64 ; rm -rf libgmlib.so.1 )
+( cd usr/lib64 ; ln -sf libgmlib.so.1.0.9 libgmlib.so.1 )

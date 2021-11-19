@@ -1,0 +1,55 @@
+PACKAGE NAME:     libdvdread-5.0.3-x86_64-1
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     370K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libdvdread-5.0.3-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libdvdread: libdvdread (library for reading DVDs)
+libdvdread:
+libdvdread: libdvdread provides a simple foundation for reading DVD video
+libdvdread: disks.  It provides the functionality that is required to access
+libdvdread: many DVDs.  It parses IFO files, reads NAV-blocks, and performs
+libdvdread: CSS authentication and descrambling.
+libdvdread:
+libdvdread:
+libdvdread:
+libdvdread:
+libdvdread:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdvdread-5.0.3/
+usr/doc/libdvdread-5.0.3/AUTHORS
+usr/doc/libdvdread-5.0.3/COPYING
+usr/doc/libdvdread-5.0.3/ChangeLog
+usr/doc/libdvdread-5.0.3/NEWS
+usr/doc/libdvdread-5.0.3/README
+usr/doc/libdvdread-5.0.3/TODO
+usr/include/
+usr/include/dvdread/
+usr/include/dvdread/bitreader.h
+usr/include/dvdread/dvd_reader.h
+usr/include/dvdread/dvd_udf.h
+usr/include/dvdread/ifo_print.h
+usr/include/dvdread/ifo_read.h
+usr/include/dvdread/ifo_types.h
+usr/include/dvdread/nav_print.h
+usr/include/dvdread/nav_read.h
+usr/include/dvdread/nav_types.h
+usr/lib64/
+usr/lib64/libdvdread.la
+usr/lib64/libdvdread.so.4.2.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/dvdread.pc
+usr/share/
+usr/share/doc/
+usr/share/doc/libdvdread/
+usr/share/doc/libdvdread/AUTHORS
+usr/share/doc/libdvdread/COPYING
+usr/share/doc/libdvdread/ChangeLog
+usr/share/doc/libdvdread/NEWS
+usr/share/doc/libdvdread/README
+usr/share/doc/libdvdread/TODO

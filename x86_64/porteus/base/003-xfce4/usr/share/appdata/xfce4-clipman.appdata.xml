@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>xfce4-clipman.desktop</id>
+  <metadata_license>CC-BY-3.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <name>Clipman</name>
+  <summary>Clipboard manager</summary>
+
+  <description>
+    <p>Clipboard Manager provided as a panel plugin for Xfce and as a standalone application running in the notification area. It keeps a history of text and images of content copied to the clipboard. It also has a feature to execute actions on specific text selection by matching them against regexes.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>http://docs.xfce.org/_media/extra/clipman/clipman-menu.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin</url>
+  <url type="bugtracker">https://bugzilla.xfce.org/</url>
+  <url type="help">http://docs.xfce.org/panel-plugins/clipman/start</url>
+
+  <updatecontact>xfce4-dev@xfce.org</updatecontact>
+
+  <project_group>XFCE</project_group>
+
+  <provides>
+    <binary>xfce4-clipman</binary>
+    <binary>xfce4-clipman-settings</binary>
+    <binary>xfce4-popup-clipman</binary>
+  </provides>
+
+
+</component>

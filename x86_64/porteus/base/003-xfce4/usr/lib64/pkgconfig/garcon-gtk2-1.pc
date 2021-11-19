@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+garcon_api_version=1
+
+Name: garcon
+Description: Freedesktop.org compliant menu library
+Requires: garcon-1 gtk+-2.0 libxfce4ui-1
+Version: 0.4.0
+Libs: -L${libdir} -lgarcon-gtk2-${garcon_api_version}
+Cflags: -I${includedir}/garcon-gtk2-${garcon_api_version}

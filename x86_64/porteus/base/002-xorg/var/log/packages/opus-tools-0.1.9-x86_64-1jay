@@ -1,0 +1,33 @@
+PACKAGE NAME:     opus-tools-0.1.9-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/opus-tools-0.1.9-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+opus-tools: opus-tools
+opus-tools:
+opus-tools: This is opus-tools, a set of tools to encode, inspect, and decode
+opus-tools: audio in the Opus format.
+opus-tools:
+opus-tools: For more information on Opus see:
+opus-tools:
+opus-tools: http://www.opus-codec.org/
+opus-tools:
+opus-tools:
+opus-tools:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/opusdec
+usr/bin/opusenc
+usr/bin/opusinfo
+usr/doc/
+usr/doc/opus-tools-0.1.9/
+usr/doc/opus-tools-0.1.9/README
+usr/man/
+usr/man/man1/
+usr/man/man1/opusdec.1.gz
+usr/man/man1/opusenc.1.gz
+usr/man/man1/opusinfo.1.gz

@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include/gmtk
+gtk2=yes
+gtk3=no
+backend=keystore
+
+Name: gmtk
+Description: Gnome Media Player Toolkit
+Version: 1.0.9
+Requires.private: gmlib >= 1.0.9
+Requires: 
+Libs: -L${libdir} -lgmtk
+Cflags: -I${includedir}

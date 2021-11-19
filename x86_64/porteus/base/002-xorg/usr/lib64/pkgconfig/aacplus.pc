@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include/aacplus
+toolsdir=${exec_prefix}/bin
+cppflags=-I 
+cflags_only=-I/usr/lib64 -lfftw3f
+
+
+Name: aacplus
+Description: AAC+ encoder library
+Requires: 
+Version: 2.0.2
+Libs: -laacplus -lm -lfftw3f
+Cflags: -I${includedir} -I/usr/lib64 -lfftw3f

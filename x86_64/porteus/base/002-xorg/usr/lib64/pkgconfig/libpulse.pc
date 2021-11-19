@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+modlibexecdir=/usr/lib64/pulse-9.0/modules
+
+Name: libpulse
+Description: PulseAudio Client Interface
+Version: 9.0-rebootstrapped
+Libs: -L${libdir} -lpulse 
+Libs.private: -L${libdir}/pulseaudio -lpulsecommon-9.0
+Cflags: -I${includedir} -D_REENTRANT

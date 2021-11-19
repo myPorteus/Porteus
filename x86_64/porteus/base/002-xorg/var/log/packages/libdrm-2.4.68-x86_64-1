@@ -1,0 +1,103 @@
+PACKAGE NAME:     libdrm-2.4.68-x86_64-1
+COMPRESSED PACKAGE SIZE:     204K
+UNCOMPRESSED PACKAGE SIZE:     810K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/libdrm-2.4.68-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libdrm: libdrm (A library to support Direct Rendering)
+libdrm:
+libdrm: This library implements an interface to the kernel's DRM services.
+libdrm: It is used to support hardware accelerated 3-D rendering.
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+libdrm:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdrm-2.4.68/
+usr/doc/libdrm-2.4.68/README
+usr/include/
+usr/include/libdrm/
+usr/include/libdrm/amdgpu.h
+usr/include/libdrm/amdgpu_drm.h
+usr/include/libdrm/drm.h
+usr/include/libdrm/drm_fourcc.h
+usr/include/libdrm/drm_mode.h
+usr/include/libdrm/drm_sarea.h
+usr/include/libdrm/i915_drm.h
+usr/include/libdrm/intel_aub.h
+usr/include/libdrm/intel_bufmgr.h
+usr/include/libdrm/intel_debug.h
+usr/include/libdrm/mach64_drm.h
+usr/include/libdrm/mga_drm.h
+usr/include/libdrm/nouveau/
+usr/include/libdrm/nouveau/nouveau.h
+usr/include/libdrm/nouveau/nvif/
+usr/include/libdrm/nouveau/nvif/cl0080.h
+usr/include/libdrm/nouveau/nvif/cl9097.h
+usr/include/libdrm/nouveau/nvif/class.h
+usr/include/libdrm/nouveau/nvif/if0002.h
+usr/include/libdrm/nouveau/nvif/if0003.h
+usr/include/libdrm/nouveau/nvif/ioctl.h
+usr/include/libdrm/nouveau/nvif/unpack.h
+usr/include/libdrm/nouveau_drm.h
+usr/include/libdrm/qxl_drm.h
+usr/include/libdrm/r128_drm.h
+usr/include/libdrm/r600_pci_ids.h
+usr/include/libdrm/radeon_bo.h
+usr/include/libdrm/radeon_bo_gem.h
+usr/include/libdrm/radeon_bo_int.h
+usr/include/libdrm/radeon_cs.h
+usr/include/libdrm/radeon_cs_gem.h
+usr/include/libdrm/radeon_cs_int.h
+usr/include/libdrm/radeon_drm.h
+usr/include/libdrm/radeon_surface.h
+usr/include/libdrm/savage_drm.h
+usr/include/libdrm/sis_drm.h
+usr/include/libdrm/tegra_drm.h
+usr/include/libdrm/vc4_drm.h
+usr/include/libdrm/via_drm.h
+usr/include/libdrm/vmwgfx_drm.h
+usr/include/libkms/
+usr/include/libkms/libkms.h
+usr/include/xf86drm.h
+usr/include/xf86drmMode.h
+usr/lib64/
+usr/lib64/libdrm.la
+usr/lib64/libdrm.so.2.4.0
+usr/lib64/libdrm_amdgpu.la
+usr/lib64/libdrm_amdgpu.so.1.0.0
+usr/lib64/libdrm_intel.la
+usr/lib64/libdrm_intel.so.1.0.0
+usr/lib64/libdrm_nouveau.la
+usr/lib64/libdrm_nouveau.so.2.0.0
+usr/lib64/libdrm_radeon.la
+usr/lib64/libdrm_radeon.so.1.0.1
+usr/lib64/libkms.la
+usr/lib64/libkms.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libdrm.pc
+usr/lib64/pkgconfig/libdrm_amdgpu.pc
+usr/lib64/pkgconfig/libdrm_intel.pc
+usr/lib64/pkgconfig/libdrm_nouveau.pc
+usr/lib64/pkgconfig/libdrm_radeon.pc
+usr/lib64/pkgconfig/libkms.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/drmAvailable.3.gz
+usr/man/man3/drmHandleEvent.3.gz
+usr/man/man3/drmModeGetResources.3.gz
+usr/man/man7/
+usr/man/man7/drm-gem.7.gz
+usr/man/man7/drm-kms.7.gz
+usr/man/man7/drm-memory.7.gz
+usr/man/man7/drm-mm.7.gz
+usr/man/man7/drm-ttm.7.gz
+usr/man/man7/drm.7.gz

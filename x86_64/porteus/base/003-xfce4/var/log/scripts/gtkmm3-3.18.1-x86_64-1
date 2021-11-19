@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libgtkmm-3.0.so )
+( cd usr/lib64 ; ln -sf libgtkmm-3.0.so.1.1.0 libgtkmm-3.0.so )
+( cd usr/lib64 ; rm -rf libgtkmm-3.0.so.1 )
+( cd usr/lib64 ; ln -sf libgtkmm-3.0.so.1.1.0 libgtkmm-3.0.so.1 )
+( cd usr/lib64 ; rm -rf libgdkmm-3.0.so.1 )
+( cd usr/lib64 ; ln -sf libgdkmm-3.0.so.1.1.0 libgdkmm-3.0.so.1 )
+( cd usr/lib64 ; rm -rf libgdkmm-3.0.so )
+( cd usr/lib64 ; ln -sf libgdkmm-3.0.so.1.1.0 libgdkmm-3.0.so )

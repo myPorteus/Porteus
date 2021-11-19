@@ -1,0 +1,58 @@
+PACKAGE NAME:     smartmontools-6.5-x86_64-1
+COMPRESSED PACKAGE SIZE:     348K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/001/smartmontools-6.5-x86_64-1.txz
+PACKAGE DESCRIPTION:
+smartmontools: smartmontools (hard drive monitoring utilities)
+smartmontools:
+smartmontools: SMARTMONTOOLS contains utilities that control and monitor storage
+smartmontools: devices using the Self-Monitoring, Analysis, and Reporting Technology
+smartmontools: (S.M.A.R.T.) system build into ATA and SCSI Hard Drives. This is used
+smartmontools: to check the reliability of the hard drive and to predict drive
+smartmontools: failures.
+smartmontools:
+smartmontools:
+smartmontools:
+smartmontools:
+FILE LIST:
+./
+etc/
+etc/smartd.conf.new
+etc/smartd_warning.d/
+etc/smartd_warning.sh
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/smartmontools-6.5/
+usr/doc/smartmontools-6.5/AUTHORS
+usr/doc/smartmontools-6.5/COPYING
+usr/doc/smartmontools-6.5/ChangeLog
+usr/doc/smartmontools-6.5/INSTALL
+usr/doc/smartmontools-6.5/NEWS
+usr/doc/smartmontools-6.5/README
+usr/doc/smartmontools-6.5/TODO
+usr/doc/smartmontools-6.5/examplescripts/
+usr/doc/smartmontools-6.5/examplescripts/Example1
+usr/doc/smartmontools-6.5/examplescripts/Example2
+usr/doc/smartmontools-6.5/examplescripts/Example3
+usr/doc/smartmontools-6.5/examplescripts/Example4
+usr/doc/smartmontools-6.5/examplescripts/Example5
+usr/doc/smartmontools-6.5/examplescripts/Example6
+usr/doc/smartmontools-6.5/examplescripts/README
+usr/doc/smartmontools-6.5/smartd.conf
+usr/man/
+usr/man/man5/
+usr/man/man5/smartd.conf.5.gz
+usr/man/man8/
+usr/man/man8/smartctl.8.gz
+usr/man/man8/smartd.8.gz
+usr/man/man8/update-smart-drivedb.8.gz
+usr/sbin/
+usr/sbin/smartctl
+usr/sbin/smartd
+usr/sbin/update-smart-drivedb
+usr/share/
+usr/share/smartmontools/
+usr/share/smartmontools/drivedb.h

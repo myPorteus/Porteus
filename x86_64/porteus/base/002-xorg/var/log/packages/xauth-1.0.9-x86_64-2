@@ -1,0 +1,32 @@
+PACKAGE NAME:     xauth-1.0.9-x86_64-2
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/xauth-1.0.9-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xauth: xauth (X11 authorization utility)
+xauth:
+xauth: The xauth program is used to edit and display the authorization
+xauth: information used in connecting to the X server.
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+xauth:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xauth
+usr/doc/
+usr/doc/xauth-1.0.9/
+usr/doc/xauth-1.0.9/COPYING
+usr/doc/xauth-1.0.9/ChangeLog
+usr/doc/xauth-1.0.9/INSTALL
+usr/doc/xauth-1.0.9/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xauth.1.gz

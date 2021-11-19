@@ -1,0 +1,104 @@
+PACKAGE NAME:     libisofs-1.4.0-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     440K
+UNCOMPRESSED PACKAGE SIZE:     3.9M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_xfce4/libisofs-1.4.0-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+libisofs: libisofs (Library to create ISO 9660 disk images)
+libisofs:
+libisofs: Libisofs is a library to pack up hard disk files and directories into
+libisofs: a ISO 9660 disk image. This may then be burned to CD via libburn.
+libisofs:
+libisofs: http://libburnia-project.org/
+libisofs:
+libisofs:
+libisofs: Packager: brokenman@porteus.org on 31-Dec-2015
+libisofs:
+libisofs:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/libisofs-1.4.0/
+usr/doc/libisofs-1.4.0/AUTHORS
+usr/doc/libisofs-1.4.0/COPYING
+usr/doc/libisofs-1.4.0/COPYRIGHT
+usr/doc/libisofs-1.4.0/ChangeLog.SB
+usr/doc/libisofs-1.4.0/README
+usr/doc/libisofs-1.4.0/html/
+usr/doc/libisofs-1.4.0/html/annotated.html
+usr/doc/libisofs-1.4.0/html/arrowdown.png
+usr/doc/libisofs-1.4.0/html/arrowright.png
+usr/doc/libisofs-1.4.0/html/bc_s.png
+usr/doc/libisofs-1.4.0/html/bdwn.png
+usr/doc/libisofs-1.4.0/html/classes.html
+usr/doc/libisofs-1.4.0/html/closed.png
+usr/doc/libisofs-1.4.0/html/deprecated.html
+usr/doc/libisofs-1.4.0/html/dir_3636c291e31ef2d9c2dbbf28cac6699c.html
+usr/doc/libisofs-1.4.0/html/dir_5e16d7045da1076323430c1d185b130d.html
+usr/doc/libisofs-1.4.0/html/doc.png
+usr/doc/libisofs-1.4.0/html/doxygen.css
+usr/doc/libisofs-1.4.0/html/doxygen.png
+usr/doc/libisofs-1.4.0/html/dynsections.js
+usr/doc/libisofs-1.4.0/html/files.html
+usr/doc/libisofs-1.4.0/html/folderclosed.png
+usr/doc/libisofs-1.4.0/html/folderopen.png
+usr/doc/libisofs-1.4.0/html/functions.html
+usr/doc/libisofs-1.4.0/html/functions_vars.html
+usr/doc/libisofs-1.4.0/html/globals.html
+usr/doc/libisofs-1.4.0/html/globals_defs.html
+usr/doc/libisofs-1.4.0/html/globals_e.html
+usr/doc/libisofs-1.4.0/html/globals_enum.html
+usr/doc/libisofs-1.4.0/html/globals_eval.html
+usr/doc/libisofs-1.4.0/html/globals_func.html
+usr/doc/libisofs-1.4.0/html/globals_func_e.html
+usr/doc/libisofs-1.4.0/html/globals_func_i.html
+usr/doc/libisofs-1.4.0/html/globals_i.html
+usr/doc/libisofs-1.4.0/html/globals_l.html
+usr/doc/libisofs-1.4.0/html/globals_s.html
+usr/doc/libisofs-1.4.0/html/globals_type.html
+usr/doc/libisofs-1.4.0/html/globals_vars.html
+usr/doc/libisofs-1.4.0/html/index.html
+usr/doc/libisofs-1.4.0/html/jquery.js
+usr/doc/libisofs-1.4.0/html/libisofs_8h.html
+usr/doc/libisofs-1.4.0/html/libisofs_8h_source.html
+usr/doc/libisofs-1.4.0/html/nav_f.png
+usr/doc/libisofs-1.4.0/html/nav_g.png
+usr/doc/libisofs-1.4.0/html/nav_h.png
+usr/doc/libisofs-1.4.0/html/open.png
+usr/doc/libisofs-1.4.0/html/pages.html
+usr/doc/libisofs-1.4.0/html/splitbar.png
+usr/doc/libisofs-1.4.0/html/struct_iso_file_source___iface.html
+usr/doc/libisofs-1.4.0/html/struct_iso_stream___iface.html
+usr/doc/libisofs-1.4.0/html/structiso__data__source.html
+usr/doc/libisofs-1.4.0/html/structiso__external__filter__command.html
+usr/doc/libisofs-1.4.0/html/structiso__file__section.html
+usr/doc/libisofs-1.4.0/html/structiso__file__source.html
+usr/doc/libisofs-1.4.0/html/structiso__filesystem.html
+usr/doc/libisofs-1.4.0/html/structiso__hfsplus__xinfo__data.html
+usr/doc/libisofs-1.4.0/html/structiso__stream.html
+usr/doc/libisofs-1.4.0/html/structiso__zisofs__ctrl.html
+usr/doc/libisofs-1.4.0/html/sync_off.png
+usr/doc/libisofs-1.4.0/html/sync_on.png
+usr/doc/libisofs-1.4.0/html/tab_a.png
+usr/doc/libisofs-1.4.0/html/tab_b.png
+usr/doc/libisofs-1.4.0/html/tab_h.png
+usr/doc/libisofs-1.4.0/html/tab_s.png
+usr/doc/libisofs-1.4.0/html/tabs.css
+usr/include/
+usr/include/libisofs/
+usr/include/libisofs/libisofs.h
+usr/lib64/
+usr/lib64/libisofs.so.6.76.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libisofs-1.pc
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/libisofs/
+usr/src/slackbuilds/libisofs/ChangeLog.SB
+usr/src/slackbuilds/libisofs/libisofs.SlackBuild
+usr/src/slackbuilds/libisofs/slack-desc
+usr/src/slackbuilds/libisofs/slack-required

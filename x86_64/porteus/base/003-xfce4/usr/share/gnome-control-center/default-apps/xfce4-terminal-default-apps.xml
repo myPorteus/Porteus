@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE default-apps SYSTEM "gnome-da-list.dtd">
+<default-apps>
+  <terminals>
+    <terminal>
+      <name>Xfce Terminal Emulator</name>
+      <name xml:lang="ur">ایکس ٹرمنل ایمولیٹر</name>
+      <executable/>
+      <command/>
+      <icon-name>utilities-terminal</icon-name>
+      <exec-flag>-x</exec-flag>
+    </terminal>
+  </terminals>
+</default-apps>

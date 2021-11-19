@@ -1,0 +1,49 @@
+PACKAGE NAME:     x264-20151230-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     420K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/002/x264-20151230-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+x264: x264 (Library for encoding and decoding H264/AVC video streams)
+x264:
+x264: x264 is a free library for encoding H264/AVC video streams, written
+x264: from scratch.
+x264:
+x264: http://www.videolan.org/developers/x264.html
+x264:
+x264:
+x264: Packager: brokenman@porteus.org on 30-Dec-2015
+x264:
+x264:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/x264
+usr/doc/
+usr/doc/x264-20151230/
+usr/doc/x264-20151230/AUTHORS
+usr/doc/x264-20151230/COPYING
+usr/doc/x264-20151230/ChangeLog.SB
+usr/doc/x264-20151230/ratecontrol.txt
+usr/doc/x264-20151230/vui.txt
+usr/include/
+usr/include/x264/
+usr/include/x264/x264.h
+usr/include/x264/x264_config.h
+usr/lib64/
+usr/lib64/libx264.so.148
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/x264.pc
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/x264/
+usr/src/slackbuilds/x264/ChangeLog.SB
+usr/src/slackbuilds/x264/apply-patches.sh
+usr/src/slackbuilds/x264/slack-desc
+usr/src/slackbuilds/x264/slack-required
+usr/src/slackbuilds/x264/x264-snapshot.sh
+usr/src/slackbuilds/x264/x264.SlackBuild

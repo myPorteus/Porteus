@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Script to decompress multiple slakware packages to a dir
+# Author: brokenman@portues.org
+# August 25th 2016
+
+. /usr/share/porteus/porteus-functions
+get_colors
+echo
+
+CWD=`pwd`
+usage(){
+	echo
+echo "Usage:"
+bold "$0 /path/to/slackware-package.txz /path/to/dir"
+bold "$0 /path/to/folder/of/packages /path/to/dir"
+echo
+exit
+}
+
+ARGNUM=$#
+
+# Check input
+[ -z $1 ] && usage
+[ $# -lt 2 ] && { red "A target dir must be supplied"; usage; }
+case $1 in
+    -h|--help)
+    usage ;;
+esac
+
+ARGS=${@:1:$(($#-1))}
+LASTARG=${@: -1}
+[ -e $1 ] && SRC=FILE
+[ -d $1 ] && SRC=DIR
+[ -z $SRC ] && { red "$1 does not appear to exist."; usage; }
+[ ! -d $LASTARG ] && { red "$LASTARG is not a valid directory."; usage; }
+[ ! -w $LASTARG ] && { red "$LASTARG is not writable."; usage; }
+
+
+# Make variable with source files
+if [ "$SRC" = DIR ]; then
+	FILES=`find $1 -type f | egrep "*.tgz|*.txz"`
+	[[ -z $FILES ]] && { red "$1 does not contain any slackware packages."; usage; }
+else
+	FILES=${@:1:$(($#-1))}
+fi
+
+# Go through packages and extract them
+for a in $FILES; do
+	file $a | egrep -qo "gzip compressed data|XZ compressed data" || { bold "${a##*/} is not a slackware package. Skipping."; continue; }
+	installpkg --terse --root $LASTARG $a
+done

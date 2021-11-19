@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+dridriverdir=/usr/lib64/xorg/modules/dri
+
+Name: dri
+Description: Direct Rendering Infrastructure
+Version: 11.2.2
+Requires.private: libdrm >= 2.4.60
+Cflags: -I${includedir}

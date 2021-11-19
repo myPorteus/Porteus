@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libpulse-simple
+Description: PulseAudio Simplified Synchronous Client Interface
+Version: 9.0-rebootstrapped
+Libs: -L${libdir} -lpulse-simple 
+Libs.private: -L${libdir}/pulseaudio -lpulsecommon-9.0
+Cflags: -I${includedir} -D_REENTRANT
+Requires: libpulse

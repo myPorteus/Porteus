@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/opt/porteus-scripts/deactivate %F
+MimeType=application/x-xzm;
+Name=Deactivate
+NoDisplay=true
+Icon=cdr
+Type=Application

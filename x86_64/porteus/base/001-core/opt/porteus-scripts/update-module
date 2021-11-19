@@ -1,0 +1,44 @@
+#!/bin/sh
+# Update content of the module.
+
+# Switch to root
+if [ `whoami` != "root" ]; then
+    echo "Please enter your root password below"
+    mod=`readlink -f $1`
+    su - -c "/opt/porteus-scripts/update-module $mod"
+    exit
+fi
+
+# Variables
+c='\e[36m'
+r='\e[31m'
+e=`tput sgr0`
+mod=`readlink -f $1 2>/dev/null`
+dest=/tmp/update_module$$
+path=`echo $mod | rev | cut -d/ -f2- | rev`
+
+# Let's start
+if [ "$1" = "" ]; then
+echo && echo -e "${r}This script can be used to update content of the xzm module.
+All files included in the module will be replaced with it's current version
+from the live filesystem.
+
+Please type the path to the .xzm module that you would like to update.
+Examples:
+
+$0 module.xzm
+$0 /mnt/sda2/porteus/modules/configs.xzm"$e
+exit
+fi
+
+echo && echo -e "${c}Provide a name for your new module, without .xzm at the end."$e
+read name
+echo && echo -e "${c}Wait a while..."$e
+mkdir $dest
+for x in `unsquashfs -l $mod | cut -b 14- | sed '4,/*/ !d'`; do
+    [ -f $x ] && cp -aP --parents $x $dest 2> /dev/null
+done
+dir2xzm $dest $path/$name.xzm
+rm -r $dest
+
+echo && echo -e "${c}Updated module is saved as $path/$name.xzm"$e
