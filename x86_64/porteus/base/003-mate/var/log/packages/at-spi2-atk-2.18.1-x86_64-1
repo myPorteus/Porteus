@@ -1,0 +1,45 @@
+PACKAGE NAME:     at-spi2-atk-2.18.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     310K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_mate/at-spi2-atk-2.18.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+at-spi2-atk: at-spi2-atk (AT-SPI2 bridge to ATK)
+at-spi2-atk:
+at-spi2-atk: The At-Spi2 Atk package contains a library that bridges ATK to the
+at-spi2-atk: At-Spi2 D-Bus service.
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+at-spi2-atk:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/at-spi2-atk-2.18.1/
+usr/doc/at-spi2-atk-2.18.1/AUTHORS
+usr/doc/at-spi2-atk-2.18.1/COPYING
+usr/doc/at-spi2-atk-2.18.1/INSTALL
+usr/doc/at-spi2-atk-2.18.1/NEWS
+usr/doc/at-spi2-atk-2.18.1/README
+usr/include/
+usr/include/at-spi2-atk/
+usr/include/at-spi2-atk/2.0/
+usr/include/at-spi2-atk/2.0/atk-bridge.h
+usr/lib64/
+usr/lib64/gnome-settings-daemon-3.0/
+usr/lib64/gnome-settings-daemon-3.0/gtk-modules/
+usr/lib64/gnome-settings-daemon-3.0/gtk-modules/at-spi2-atk.desktop
+usr/lib64/gtk-2.0/
+usr/lib64/gtk-2.0/modules/
+usr/lib64/gtk-2.0/modules/libatk-bridge.la
+usr/lib64/gtk-2.0/modules/libatk-bridge.so
+usr/lib64/libatk-bridge-2.0.la
+usr/lib64/libatk-bridge-2.0.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/atk-bridge-2.0.pc

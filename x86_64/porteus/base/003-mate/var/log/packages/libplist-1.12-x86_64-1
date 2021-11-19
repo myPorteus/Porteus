@@ -1,0 +1,55 @@
+PACKAGE NAME:     libplist-1.12-x86_64-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     230K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_mate/libplist-1.12-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libplist: libplist (A library for Apple Binary and XML Property Lists) 
+libplist:
+libplist: libplist is a library that attempts to support Apple Binary and XML
+libplist: Property Lists.  It is used by libgpod.
+libplist:
+libplist: The libplist homepage:  http://www.libimobiledevice.org/
+libplist:
+libplist:
+libplist:
+libplist:
+libplist:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/plistutil
+usr/doc/
+usr/doc/libplist-1.12/
+usr/doc/libplist-1.12/AUTHORS
+usr/doc/libplist-1.12/COPYING
+usr/doc/libplist-1.12/COPYING.LESSER
+usr/doc/libplist-1.12/NEWS
+usr/doc/libplist-1.12/README
+usr/include/
+usr/include/plist/
+usr/include/plist/Array.h
+usr/include/plist/Boolean.h
+usr/include/plist/Data.h
+usr/include/plist/Date.h
+usr/include/plist/Dictionary.h
+usr/include/plist/Integer.h
+usr/include/plist/Key.h
+usr/include/plist/Node.h
+usr/include/plist/Real.h
+usr/include/plist/String.h
+usr/include/plist/Structure.h
+usr/include/plist/Uid.h
+usr/include/plist/plist++.h
+usr/include/plist/plist.h
+usr/lib64/
+usr/lib64/libplist++.la
+usr/lib64/libplist++.so.3.0.0
+usr/lib64/libplist.la
+usr/lib64/libplist.so.3.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libplist++.pc
+usr/lib64/pkgconfig/libplist.pc

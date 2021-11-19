@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include/gmtk
+preference_backend=keystore
+
+Name: gmlib
+Description: Gnome Mplayer shared library
+Version: 1.0.9
+Requires: 
+Libs: -L${libdir} -lgmlib
+Cflags: -I${includedir}

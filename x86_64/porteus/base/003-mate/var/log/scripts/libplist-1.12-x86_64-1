@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libplist.so )
+( cd usr/lib64 ; ln -sf libplist.so.3.0.0 libplist.so )
+( cd usr/lib64 ; rm -rf libplist.so.3 )
+( cd usr/lib64 ; ln -sf libplist.so.3.0.0 libplist.so.3 )
+( cd usr/lib64 ; rm -rf libplist++.so )
+( cd usr/lib64 ; ln -sf libplist++.so.3.0.0 libplist++.so )
+( cd usr/lib64 ; rm -rf libplist++.so.3 )
+( cd usr/lib64 ; ln -sf libplist++.so.3.0.0 libplist++.so.3 )

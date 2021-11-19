@@ -1,0 +1,14 @@
+[VPN Connection]
+name=vpnc
+service=org.freedesktop.NetworkManager.vpnc
+program=/usr/libexec/nm-vpnc-service
+supports-multiple-connections=true
+
+[libnm]
+plugin=libnm-vpn-plugin-vpnc.so
+
+[GNOME]
+auth-dialog=/usr/libexec/nm-vpnc-auth-dialog
+properties=libnm-vpnc-properties
+supports-external-ui-mode=true
+supports-hints=true

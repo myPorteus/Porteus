@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libpolkit-gtk-mate-1.so )
+( cd usr/lib64 ; ln -sf libpolkit-gtk-mate-1.so.0.0.0 libpolkit-gtk-mate-1.so )
+( cd usr/lib64 ; rm -rf libpolkit-gtk-mate-1.so.0 )
+( cd usr/lib64 ; ln -sf libpolkit-gtk-mate-1.so.0.0.0 libpolkit-gtk-mate-1.so.0 )

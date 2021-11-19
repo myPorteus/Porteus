@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+ <id>mate-dictionary.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-2.0+</project_license>
+ <name>MATE Dictionary</name>
+ <summary>A dictionary for MATE Desktop</summary>
+ <summary xml:lang="am">መዝገበ ቃላት ለ ሜት ዴስክቶፕ </summary>
+ <summary xml:lang="ar">قاموس لسطح مكتب متّة</summary>
+ <summary xml:lang="be">Слоўнік асяроддзя MATE</summary>
+ <summary xml:lang="bg">Речник на MATE десктоп</summary>
+ <summary xml:lang="br">Ur geriadur evit burev MATE</summary>
+ <summary xml:lang="ca">Un diccionari per a l'escriptori MATE</summary>
+ <summary xml:lang="cs">Slovník pro MATE</summary>
+ <summary xml:lang="da">En ordbog for MATE-skrivebordet</summary>
+ <summary xml:lang="de">Ein Wörterbuch für die MATE-Arbeitsumgebung</summary>
+ <summary xml:lang="el">Ένα λεξικό για την επιφάνεια εργασίας MATE</summary>
+ <summary xml:lang="en_AU">A dictionary for MATE Desktop</summary>
+ <summary xml:lang="en_GB">A dictionary for MATE Desktop</summary>
+ <summary xml:lang="es">Un diccionario para el escritorio MATE</summary>
+ <summary xml:lang="et">MATE töölaua sõnastik</summary>
+ <summary xml:lang="fr">Un dictionnaire pour le bureau MATE</summary>
+ <summary xml:lang="he">מילון עבור שולחן העבודה MATE</summary>
+ <summary xml:lang="hu">Szótár a MATE asztali környezethez</summary>
+ <summary xml:lang="hy">MATE Աշխատասեղանի համար բառարանը</summary>
+ <summary xml:lang="id">Kamus untuk Desktop MATE</summary>
+ <summary xml:lang="it">Un dizioneario per l'ambiente desktop MATE</summary>
+ <summary xml:lang="ja">MATE デスクトップの辞書ツール</summary>
+ <summary xml:lang="ko">마테 데스크톱 사전</summary>
+ <summary xml:lang="lt">Žodynas MATE darbalaukiui</summary>
+ <summary xml:lang="ms">Kamus untuk Desktop MATE</summary>
+ <summary xml:lang="nb">Ei ordbok for MATE-skrivebordet</summary>
+ <summary xml:lang="nl">Een woordenboek voor MATE Bureaublad</summary>
+ <summary xml:lang="pl">Słownik dla środowiska MATE</summary>
+ <summary xml:lang="pt">Um dicionário para o Ambiente de Trabalho MATE</summary>
+ <summary xml:lang="pt_BR">Um dicionário para o Ambiente de Trabalho MATE</summary>
+ <summary xml:lang="ro">Un dicționar pentru desktopul MATE</summary>
+ <summary xml:lang="ru">Словарь для рабочего стола MATE</summary>
+ <summary xml:lang="sk">Slovník pre prostredie MATE</summary>
+ <summary xml:lang="sl">Slovar za MATE Namizje</summary>
+ <summary xml:lang="sr">Речник за Мејтову радну површ</summary>
+ <summary xml:lang="sv">Ett lexikon för MATE-skrivbordet</summary>
+ <summary xml:lang="th">โปรแกรมพจนานุกรมสำหรับเดสก์ท็อปของ MATE</summary>
+ <summary xml:lang="tr">MATE Masaüstü için sözlük</summary>
+ <summary xml:lang="uk">Словник для середовища MATE</summary>
+ <summary xml:lang="zh_CN">MATE 桌面的词典</summary>
+ <summary xml:lang="zh_TW">適用於 MATE 桌面環境的字典</summary>
+ <description><p> MATE Dictionary allows you to look up words in on-line dictionaries. It comes preconfigured with a list of Dict servers (RFC 2229), to which you can add your own sources, while you can select specific servers for a specific query. </p></description>
+ <description xml:lang="ar"><p> قاموس متّة يسمح لك بمشاهدة الكلمات في القواميس عبر الخط. يأتي معدّا بقائمة لخوادم القواميس (RFC 2229)، التي تستطيع أن تضيف لهل مصادرك، كما تستطيع اختيار خادم معيّن لسؤال معيّن. </p></description>
+ <description xml:lang="be"><p> Слоўнік MATE дазваляе шукаць словы ў анлайн-слоўніках. Пастаўляецца са спісам гатовых Dict-сервераў (RFC 2229). Спіс можна дапоўніць сваімі крыніцамі. Да таго ж, для пэўных запытаў можна задаць свае серверы. </p></description>
+ <description xml:lang="bg"><p> MATE Речник ви позволява да търсите думи в онлайн речници. Презареден е със списък от Речникови сървъри (RFC 2229), към който можете да добавяте собствени източници, като можете да избирате конкретни сървъри за конкретни заявки. </p></description>
+ <description xml:lang="br"><p>Geriadur MATE a ro tro deoc'h da glask gerioù e-kreiz geriadurioù enlinenn. Rakkefluniet eo gant ur roll dafariadoù geriadurioù (RFC 2229), ma c'hallit ouzhpennañ ho tarzhioù deoc'h enno rak gallout a rit diuzañ dafariadoù spesadel evit azgoulennoù spesadel. </p></description>
+ <description xml:lang="ca"><p> El diccionari de MATE us permet consultar paraules als diccionaris en línia. Ve preconfigurat amb una llista de servidors de diccionaris (RFC 2229), als que podeu afegir els vostres propis fonts, mentre que podeu seleccionar els servidors específics per a una consulta específica. </p></description>
+ <description xml:lang="cs"><p> Slovník pro MATE vám umožňuje vyhledávat slova ve slovnících dostupných online. Má předkonfigurován seznam slovníkových serverů (RFC 2229), do kterého můžete přidat své vlastní zdroje, a pro specifické dotazy můžete zvolit specifické servery. </p></description>
+ <description xml:lang="da"><p> MATE-ordbogen giver dig mulighed for at slå ord op i ordbøger på nettet. Den har en forudfyldt liste med Dict-servere (RFC 2229) hvortil du kan tilføje dine egne kilder, mens du kan vælge specifikke servere for en specifik forespørgsel. </p></description>
+ <description xml:lang="de"><p> MATE-Wörterbuch erlaubt es Ihnen Wörter in Internetwörterbüchern nachzuschlagen. Es wird mit einer Liste von DICT-Servern (RFC 2229) ausgeliefert, zu welchen Sie Ihre eigenen Quellen hinzufügen können, wohingegen Sie bestimmte Server für bestimmte Suchanfragen auswählen können. </p></description>
+ <description xml:lang="en_AU"><p> MATE Dictionary allows you to look up words in on-line dictionaries. It comes preconfigured with a list of Dict servers (RFC 2229), to which you can add your own sources, while you can select specific servers for a specific query. </p></description>
+ <description xml:lang="en_GB"><p> MATE Dictionary allows you to look up words in on-line dictionaries. It comes preconfigured with a list of Dict servers (RFC 2229), to which you can add your own sources, while you can select specific servers for a specific query. </p></description>
+ <description xml:lang="es"><p> MATE Dictionary le permite buscar palabras en diccionarios en línea. Viene preconfigurado con una lista de servidores DICT (RFC 2229), a la cual puede agregar sus propias fuentes, mientras que puede seleccionar servidores específicos para una consulta específica. </p></description>
+ <description xml:lang="et"><p> MATE Sõnastik võimaldab Sul otsida sõnu onlain-sõnastikest. Selle koosseisus on eelseadistatud nimekiri Dict-teenustest (RFC 2229), millele on võimalik lisada oma allikaid, samuti on võimalik määrata päringule kohast serverit. </p></description>
+ <description xml:lang="fr"><p>Le Dictionnaire MATE vous permet de rechercher des mots dans des dictionnaires en ligne. Il est préconfiguré avec une liste de serveurs Dict (RFC 2229) à laquelle vous pouvez ajouter vos propres sources et y spécifier des serveurs spécifiques pour certaines requêtes.</p></description>
+ <description xml:lang="hu"><p>A MATE szótár segítségével szavak kereshetőek online szótárakban. Előre beállítva a Dict szerverek listájával (RFC 2229), amely saját forrásokkal bővíthető, és minden kereséshez megadható a használandó szerver. </p></description>
+ <description xml:lang="hy"><p> MATE Բառարանը թույլ է տալիս ձեզ դւտել բառերը առցանց բառարանի մեջ։ Այն գալիս է նախակոնֆիգուրացված Dict սերվերների ցանկի հետ միասին (RFC 2229), որը դուք կարող եք ավելացնել ձեր սեփական աղբյուրները, մինչ դուք կարող եք ընտրել կոնկրետ սերվերներ կոնկրետ հարցման համար։ </p></description>
+ <description xml:lang="id"><p> Mate Dictionary memungkinkan Anda untuk mencari kata pada kamus online. Aplikasi ini hadir dengan daftar server kamus (RFC 2229) yang dapat Anda tambahkan sendiri, dan Anda bisa memilih server yang spesifik untuk query yang spesifik.</p></description>
+ <description xml:lang="it"><p> Il dizionario MATE permette di cercare parole in dizionari online. E' preconfigurato con una lista di server di dizionari (RFC 2229), a cui puoi aggiungere le tue sorgenti, mentre tu puoi selezionare server specifici per una specifica richiesta. </p></description>
+ <description xml:lang="ja"><p>MATE辞書ではオンライン辞書により単語の検索が可能です。事前に辞書サーバー(RFC 2229)の追加可能なリストが予め設定されておりますが、個別の検索に特定のサーバーを選択することもできます。</p></description>
+ <description xml:lang="lt"><p> MATE žodynas leidžia ieškoti žodžių interneto žodynuose. Jame jau yra sukonfigūruotų Dict serverių sąrašas (RFC 2229), į kurį galite pridėti savo žodynų. </p></description>
+ <description xml:lang="ms"><p> Kamus MATE membolehkan anda cari perkatan dalam kamus atas-talian. Ia disertakan senarai pelayan kamus dipra-konfigur (RFC 2229), yang membolehkan anda tambah sumber anda sendiri, selain dari memilih pelayan khusus untuk pertanyaan tertentu. </p></description>
+ <description xml:lang="nb"><p> MATE-orboken gir deg mulighet til å slå opp i ordbøker på nettet. Du har en forhåndsutfylt liste med Dict-tjenere (RFC 2229) der du kan legge til dine egne kilder, mens du kan velge spesifikke tjenere for en gitt forespørsel. </p></description>
+ <description xml:lang="nl"><p> MATE Woordenboek stelt u in staat om woorden op te zoeken via online woordenboeken. Het wordt geconfigureerd geleverd met een lijst van Dict servers (RFC 2229), waaraan u eigen bronnen kunt toevoegen, terwijl u specifieke servers kunt selecteren voor een specifieke query's. </p></description>
+ <description xml:lang="pl"><p> Słownik MATE pozwala Ci na sprawdzenie słów w słownikach online. Jest dostarczany prekonfigurowany z listą serwerów Dict (RFC 2229), do których możesz dodawać własne źródła, kiedy możesz wybrać specyficzne serwery dla specyficznego zapytania. </p></description>
+ <description xml:lang="pt"><p> O Dicionário Mate permite-te ver palavras em dicionários online. Ele vem pré-configurado com uma lista de Dict Servers (RFC 2229), para o qual tu podes adicionar as tuas próprias fontes, enquanto selecionas um servidor especifico para uma específica questão. </p></description>
+ <description xml:lang="pt_BR"><p> O Dicionário MATE permite consultar palavras em dicionários on-line. Ele vem pré-configurado com uma lista de servidores Dict (RFC 2229), à qual você pode adicionar suas próprias fontes de palavras. Também é possível direcionar consultas a servidores específicos. </p></description>
+ <description xml:lang="ro"><p> Dicționarul MATE vă permite să căutați cuvinte în dicționarele de pe Internet. Vine preconfigurat cu o listă de  servere DICT (RFC 2229), la care puteți adăuga propriile dumneavoastră surse, în timp ce puteți selecta servere specifice pentru o anumită căutare. </p></description>
+ <description xml:lang="sk"><p> Slovník MATE umožňuje vyhľadanie slov v online slovníkoch. Je predkonfigurovaný so zoznamom slovníkových serverov (RFC-2229), ku ktorým môžete pridať vlastné zdroje, pričom môžete pre dané slovo zvoliť použitý server. </p></description>
+ <description xml:lang="sr"><p> Мејтов речник вам омогућава да потражите речи у речницима на мрежи. Долази претподешен са списком сервера речника (РФЦ 2229), у који можете да додате ваше личне изворе, док можете да изаберете нарочите сервере за нарочите упите. </p></description>
+ <description xml:lang="tr"><p>MATE Sözlüğü çevrimiçi sözlüklerde kelime aramanıza imkân sağlar. Öntanımlı Dict sunucuları (RFC 2229) listesi ile dağıtılır ancak bunlara kendi kaynaklarınızı ekleyebilirsiniz ve belli bir sorgu için özel sunucular seçebilirsiniz. </p></description>
+ <description xml:lang="uk"><p> MATE Словник дозволяє шукати слова у мережних словниках. Він початково зконфігурований з переліком словникових серверів (RFC 2229), у якому Ви можете додати свої власні джерела, в той час як Ви можете вибрати певні сервери для конкретного запиту. </p></description>
+ <description xml:lang="zh_CN"><p> MATE 字典可用于通过在线词典查阅词汇。它附带了一些预先配置好的字典服务器（RFC 2229），你也可以自行添加字典源，或选定一部分服务器来执行特定的查询。</p></description>
+ <description xml:lang="zh_TW"><p> MATE 字典讓您可以線上查詢單字。它伴隨著一個預先設定好的字典伺服器清單 (RFC 2229)，您可以在其中加入您自己的來源，您也可以在特定的查詢中選取特定的伺服器。 </p></description>
+ <screenshots>
+  <screenshot type="default">
+   <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-dictionary/screens/mate-dictionary_01.png
+   </image>
+  </screenshot>
+  <screenshot>
+   <image width="688" height="387">
+    https://alexpl.fedorapeople.org/AppData/mate-dictionary/screens/mate-dictionary_02.png
+   </image>
+  </screenshot>
+ </screenshots>
+ <url type="homepage">http://www.mate-desktop.org</url>
+ <updatecontact>mate-dev@ml.mate-desktop.org</updatecontact>
+ <project_group>MATE</project_group>
+</component>

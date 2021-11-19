@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgtksourceview-2.0.so )
+( cd usr/lib64 ; ln -sf libgtksourceview-2.0.so.0.0.0 libgtksourceview-2.0.so )
+( cd usr/lib64 ; rm -rf libgtksourceview-2.0.so.0 )
+( cd usr/lib64 ; ln -sf libgtksourceview-2.0.so.0.0.0 libgtksourceview-2.0.so.0 )

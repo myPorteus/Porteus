@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgssdp-1.0.so )
+( cd usr/lib64 ; ln -sf libgssdp-1.0.so.3.0.0 libgssdp-1.0.so )
+( cd usr/lib64 ; rm -rf libgssdp-1.0.so.3 )
+( cd usr/lib64 ; ln -sf libgssdp-1.0.so.3.0.0 libgssdp-1.0.so.3 )

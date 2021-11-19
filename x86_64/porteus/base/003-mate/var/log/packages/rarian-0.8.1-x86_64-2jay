@@ -1,0 +1,78 @@
+PACKAGE NAME:     rarian-0.8.1-x86_64-2jay
+COMPRESSED PACKAGE SIZE:     140K
+UNCOMPRESSED PACKAGE SIZE:     880K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_mate/rarian-0.8.1-x86_64-2jay.txz
+PACKAGE DESCRIPTION:
+rarian: rarian (documentation metadata library)
+rarian:
+rarian: Rarian is a documentation metadata library based on the proposed
+rarian: freedesktop.org specification.
+rarian:
+rarian: Rarian is a replacement for ScrollKeeper.
+rarian:
+rarian:
+rarian:
+rarian: Homepage: http://rarian.freedesktop.org
+rarian:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rarian-example
+usr/bin/rarian-sk-config
+usr/bin/rarian-sk-extract
+usr/bin/rarian-sk-gen-uuid
+usr/bin/rarian-sk-get-cl
+usr/bin/rarian-sk-get-content-list
+usr/bin/rarian-sk-get-extended-content-list
+usr/bin/rarian-sk-get-scripts
+usr/bin/rarian-sk-install
+usr/bin/rarian-sk-migrate
+usr/bin/rarian-sk-preinstall
+usr/bin/rarian-sk-rebuild
+usr/bin/rarian-sk-update
+usr/doc/
+usr/doc/rarian-0.8.1/
+usr/doc/rarian-0.8.1/COPYING
+usr/doc/rarian-0.8.1/COPYING.LIB
+usr/doc/rarian-0.8.1/COPYING.UTILS
+usr/doc/rarian-0.8.1/ChangeLog
+usr/doc/rarian-0.8.1/INSTALL
+usr/doc/rarian-0.8.1/MAINTAINERS
+usr/doc/rarian-0.8.1/NEWS
+usr/doc/rarian-0.8.1/README
+usr/doc/rarian-0.8.1/TODO
+usr/doc/rarian-0.8.1/help/
+usr/doc/rarian-0.8.1/help/rarian.document
+usr/doc/rarian-0.8.1/rarian.SlackBuild
+usr/include/
+usr/include/rarian/
+usr/include/rarian/rarian-info.h
+usr/include/rarian/rarian-main.h
+usr/include/rarian/rarian-man.h
+usr/include/rarian/rarian-reg-utils.h
+usr/include/rarian/rarian.h
+usr/lib64/
+usr/lib64/librarian.a
+usr/lib64/librarian.la
+usr/lib64/librarian.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/rarian.pc
+usr/share/
+usr/share/librarian/
+usr/share/librarian/Templates/
+usr/share/librarian/Templates/C/
+usr/share/librarian/Templates/C/scrollkeeper_cl.xml
+usr/share/librarian/manual/
+usr/share/librarian/manual/help-spec-0.2.xml
+usr/share/librarian/manual/index.xhtml
+usr/share/librarian/manual/rar-lib.xhtml
+usr/share/librarian/manual/rar-mdf.xhtml
+usr/share/librarian/manual/rar-skcompat.xhtml
+usr/share/librarian/rarian-sk-cl.xml
+var/
+var/lib/
+var/lib/rarian/

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+ <id>mate-search-tool.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-2.0+</project_license>
+ <name>MATE Search Tool</name>
+ <summary>A file searching tool for MATE Desktop</summary>
+ <summary xml:lang="ar">أداة بحث عن الملفات لسطح مكتب متّة</summary>
+ <summary xml:lang="be">Сродак пошуку файлаў асяроддзя MATE</summary>
+ <summary xml:lang="bg">Инстумент за търсене на файлове за MATE работна стреда</summary>
+ <summary xml:lang="br">Ur benveg da glask restroù evit burev MATE</summary>
+ <summary xml:lang="ca">Una eina de cerca de fitxers per a l'escriptori MATE</summary>
+ <summary xml:lang="cs">Vyhledávání souborů pro MATE</summary>
+ <summary xml:lang="da">Et filsøgningsværktøj for MATE-skrivebordet</summary>
+ <summary xml:lang="de">Ein Werkzeug zur Dateisuche für die MATE-Arbeitsumgebung</summary>
+ <summary xml:lang="el">Ένα εργαλείο αναζήτησης για το MATE</summary>
+ <summary xml:lang="en_AU">A file searching tool for MATE Desktop</summary>
+ <summary xml:lang="en_GB">A file searching tool for MATE Desktop</summary>
+ <summary xml:lang="es">Una herramienta de búsqueda de archivos para el escritorio MATE</summary>
+ <summary xml:lang="et">MATE töölaua failiotsimise tööriist</summary>
+ <summary xml:lang="fr">Un outil de recherche de fichiers pour le bureau MATE</summary>
+ <summary xml:lang="he">כלי לחיפוש קבצים עבור שולחן העבודה MATE</summary>
+ <summary xml:lang="hu">Fájlkereső eszköz a MATE asztali környezethez</summary>
+ <summary xml:lang="hy">MATE Աշխատասեղանի համար ֆայլը փնտրում է գործիք</summary>
+ <summary xml:lang="id">Aplikasi pencarian berkas Desktop MATE</summary>
+ <summary xml:lang="it">Uno strumento di ricerca file per l'ambiente desktop MATE</summary>
+ <summary xml:lang="ja">MATE デスクトップのファイル検索ツール</summary>
+ <summary xml:lang="ko">마테 데스크톱용 파일 검색 도구 </summary>
+ <summary xml:lang="lt">Failų ieškojimo įrankis MATE darbalaukiui</summary>
+ <summary xml:lang="ms">Alat menggelintar fail untuk Desktop MATE</summary>
+ <summary xml:lang="nb">Et filsøkingsverktøy for MATE-skrivebordet</summary>
+ <summary xml:lang="nl">Een hulpmiddel voor het zoeken naar bestanden voor MATE Bureaublad</summary>
+ <summary xml:lang="pl">Narzędzie wyszukania plików dla Środowiska MATE</summary>
+ <summary xml:lang="pt">Uma ferramenta de busca de ficheiros para o Ambiente de Trabalho MATE</summary>
+ <summary xml:lang="pt_BR">Uma ferramenta de busca de arquivos para o Ambiente de Trabalho MATE</summary>
+ <summary xml:lang="ro">O unealtă pentru căutare de fișiere pentru desktopul MATE</summary>
+ <summary xml:lang="ru">Поиск файлов для рабочего стола MATE</summary>
+ <summary xml:lang="sk">Nástroj na hľadanie súborov prostredia MATE</summary>
+ <summary xml:lang="sl">Orodje za iskanje datotek v MATE Namizju</summary>
+ <summary xml:lang="sr">Алат за тражење датотека за Мејтову радну површ</summary>
+ <summary xml:lang="sv">Ett verktyg för filsökning för MATE-skrivbordet</summary>
+ <summary xml:lang="th">เครื่องสำหรับค้นหาแฟ้มสำหรับเดสก์ท็อปของ MATE</summary>
+ <summary xml:lang="tr">MATE Masaüstü için dosya arama aracı</summary>
+ <summary xml:lang="uk">Знаряддя пошуку файлів для середовища MATE</summary>
+ <summary xml:lang="uz">MATE Ish stoli uchun qidiruv vositasi</summary>
+ <summary xml:lang="zh_CN">MATE 桌面的文件查找工具</summary>
+ <summary xml:lang="zh_TW">適用於 MATE 桌面環境的檔案搜尋工具</summary>
+ <description><p> MATE Search Tool is a simple but powerful utility that allows you to search for files and folders on any mounted file system. Its interface gives you instant access to a wide variety of parameters for each search, such as text contained within a file, ownership, date of modification, file size, folder exclusion, etc.. </p></description>
+ <description xml:lang="ar"><p> أداة بحث متّة هي أداة بسيطة و قوية تسمح لك بالبحث عن الملفات و المجلدات في أي نظام ملفات متصل. واجهته تمنحك الوصول الفوري لعدد هائل من العوامل لكل بحث، مثل النص المضمّن في الملف، المالك، تاريخ التعديل ، حجم الملف، اقصاء المجلدات، الخ..  </p></description>
+ <description xml:lang="be"><p> Пошук файлаў MATE - гэта простая, але магутная ўтыліта, што дазваляе шукаць файлы ці каталогі на любой прымантаванай файлавай сістэме.  Можна задаваць шырокі абсяг параметраў, напрыклад, улік тэксту ўнутры файла, уладальніка, дату змянення, памер файла, выключэнне каталогаў і да т.п. </p></description>
+ <description xml:lang="bg"><p> MATE инструмент за търсене (MATE Search Tool) е прост, но мощен инструмент, който Ви позволява да търсите файлове и папки на всяка монтирана файлова система. Неговият интерфейс Ви дава достъп до широк кръг от параметри при търсенето, като например, текст съдържан във файл, собственост, дата на промяна, размер на файла, изключване на папки и т.н. </p></description>
+ <description xml:lang="br"><p>Benveg klask MATE a dalv d'ur maveg eeun met galloudus a ro tro deoc'h da glask restroù ha teuliadoù war ne vern pe reizhiad restroù savet. Gant e getal e tizhit kalz arventennoù evit pep klask, evel testennoù e-barzh ur restr, perc'henniezh, deiziad daskemmañ, ment ar restr, ezkaelaat teuliadoù, h.a. </p></description>
+ <description xml:lang="ca"><p> L'eina de cerca de MATE és una utilitat simple però potent que us permet cercar fitxers i carpetes en qualsevol sistema de fitxers muntat. La seva interfície us dóna accés instantani a una àmplia varietat de paràmetres per a cada cerca, com ara el text contingut en un fitxer, el propietari, la data de modificació, la mida del fitxer, l'exclusió de carpetes, etc. </p></description>
+ <description xml:lang="cs"><p> Vyhledávání souborů pro MATE je jednoduchý ale mocný nástroj umožňující vám hledat soubory a složky na libovolném připojeném souborovém systému. Rozhraní vám umožňuje rychlý přístup k široké škále parametrů hledání jako je vyhledání textu v obsahu souborů, hledání dle vlastníka, data změny, velikosti, nastavení vyjímek hledání u složek a podobně. </p></description>
+ <description xml:lang="da"><p> MATE Search Tool er et simpelt men funktionsrigt redskab, hvor du kan søge efter filer og mapper på ethvert monteret filsystem. Dets grænseflade giver dig øjeblikkelig adgang til en bred vifte af parametre for hver søgning, såsom tekst indeholdt i en fil, ejerskab, dato for sidste ændring, filstørrelse, mappeudelukkelse etc. </p></description>
+ <description xml:lang="de"><p> Die MATE-Suche ist ein einfaches aber leistungsfähiges Werkzeug, mit dem man nach Dateien oder Ordnern in jedem eingehängten Dateisystem suchen kann. Ihre Benutzeroberfläche bietet schnellen Zugriff auf viele verschiedene Parameter für jede Suche, z.B. Text innerhalb einer Datei, Besitzer, Änderungsdatum, Dateigröße, Verzeichnisausschluss, usw..</p></description>
+ <description xml:lang="en_AU"><p> MATE Search Tool is a simple but powerful utility that allows you to search for files and folders on any mounted file system. Its interface gives you instant access to a wide variety of parameters for each search, such as text contained within a file, ownership, date of modification, file size, folder exclusion, etc.. </p></description>
+ <description xml:lang="en_GB"><p> MATE Search Tool is a simple but powerful utility that allows you to search for files and folders on any mounted file system. Its interface gives you instant access to a wide variety of parameters for each search, such as text contained within a file, ownership, date of modification, file size, folder exclusion, etc.. </p></description>
+ <description xml:lang="es"><p> MATE Search Tool es una simple pero potente utilidad que le permite buscar archivos y carpetas en cualquier sistema de archivos montado. Su interfaz te da acceso instantáneo a una amplia variedad de parámetros para cada búsqueda, como texto contenido en un archivo, la propiedad, la fecha de modificación, tamaño del archivo, la posibilidad de excluir carpetas, etc.. </p></description>
+ <description xml:lang="et"><p> MATE otsimisvahend on lihtne ja võimas vahend failide ja kataloogide otsimiseks igast külgehaagitud failisüsteemist. Selle liides pakub sulle laia valikut parameetreid igat liiki otsingu tarbeks, nagu näiteks failis sisalduv tekst, faili omanik, suurus ja muutmiskuupäev jne... </p></description>
+ <description xml:lang="fr"><p>L'Outil de recherche MATE est un utilitaire simple mais puissant vous permettant d'effectuer des recherches sur fichiers et répertoires sur tous les systèmes de fichiers montés. Son interface vous donne un accès instantané à une variété de paramètres pour chaque recherche, tel que du texte contenu dans un fichier, propriété, date de modification, taille du fichier, exclusion de répertoires,...</p></description>
+ <description xml:lang="hu"><p>A MATE kereső egy egyszerű segédeszköz, amellyel fájlok és mappák kereshetőek bármely csatolt fájlrendszeren. Minden kereséshez széles körű lehetőségeket biztosít, pl. szöveg keresése fájlban, tulajdonos, módosítás ideje,fájlméret, mappa kihagyása, stb.. </p></description>
+ <description xml:lang="hy"><p> MATE Որոնման Գործիքը պարզ և հզոր օժանդակ ծրագիր է, որը թույլ է տալիս փնտրել ֆայլեր և թղթապանակներ տեղադրված ցանկացած ֆայլային համակարգի վրա։ Դրա ինտերֆեյսը հնարավորություն է տալիս ակնթարթորեն մուտք գործել բազմազան պարամետրեր յուրաքանչյուր որոնման համար, ինչպես նաև ֆայլեր պարունակող ֆայլերի շրջանակներում, սեփականության նկատմամբ, ամսաթվի ձևափոխման, ֆայլի չափի, թղթապանակի բացառման և այլն․․․</p></description>
+ <description xml:lang="id"><p> MATE Search Tool adalah utilitas yang sederhana namun berguna yang memungkinkan Anda untuk mencari berkas atau folder pada sembarang sistem berkas yang sudah di-mount. Antarmukanya memberikan akses yang instan pada berbagai macam parameter untuk setiap pencarian, seperti teks yang terkandung dalam sebuah file, kepemilikan, tanggal modifikasi, ukuran file, pengecualian, dll.. </p></description>
+ <description xml:lang="it"><p> 
+Lo Strumento di ricerca di MATE è una semplice ma potente applicazione che permette di ricercare file e cartelle su ogni file system montato. La sua interfaccia da accesso istantaneo a una grande varietà di parametri per ogni ricerca, ad esempio il testo contenuto in un file, la proprietà, la data di modifica, la grandezza del file, la possibilità di escludere cartelle, etc.. </p></description>
+ <description xml:lang="ja"><p> MATE 検索ツールはマウント中のファイルシステムからファイルやフォルダーを探しだすシンプルかつ強力なユーティリティです。ファイル内に含まれる文章、ファイルの所有者、最終変更日時、ファイルサイズ、無視フォルダなど、様々な検索条件を簡単に設定することができます。 </p></description>
+ <description xml:lang="ko"><p>마테 검색 도구는 연결된 모든 파일 시스템의 파일과 폴더를 찾아낼 수 있는 간단하지만 강력한 도구입니다. 그 인터페이스는 파일에 포함된 텍스트, 소유권, 수정 날짜, 파일 크기, 폴더 제외 등의 다양한 매개 변수에 바로 접근할 수 있게 합니다. </p></description>
+ <description xml:lang="lt"><p> MATE paieškos įrankis yra paprasta, bet galinga programa, leidžianti ieškoti failų ir aplankų kiekvienoje prijungtoje failų sistemoje. Jos sąsąja suteikia greitą prieigą prie įvairių paieškos parametrų, kaip tekstas faile, nuosavybė, keitimo data, failo dydis, aplanko išskyrimas ir t. t. </p></description>
+ <description xml:lang="ms"><p> Alat Gelintar MATE merupakan utiliti perkasa tetapi ringkas yang membolehkan anda gelintar fail dan folder pada mana-mana sistem fail terlekap. Antaramukanya memberikan capaian pantas ke pelbagai parameter untuk setiap gelintar, seperti teks terkandung di dalam fail, pemilikan, tarikh pengubahsuaian, saiz fail, pengecualian folder, dll.. </p></description>
+ <description xml:lang="nb"><p> MATE søkeverktøy er et enkelt med funksjonsrikt redskap, som tillater søk etter filer og mapper på ethvert montert filsystem. Dets grensesnitt gir deg umiddelbar tilgang til en lang rekke parametre for hvert søk, som tekst i en fil, eierskap, modifiseringsdato, filstørrelse, mappeutelukking, osv. </p></description>
+ <description xml:lang="nl"><p> MATE Zoekprogramma is een simpele maar krachtige hulpprogramma waarmee u kunt zoeken naar bestanden en mappen op elk gemonteerd bestandssysteem. De interface geeft u direct toegang tot een breed scala van parameters voor elke zoekopdracht, zoals tekst in een bestand, eigendom, de datum van wijziging, bestandsgrootte, map uitsluiting, enzovoorts... </p></description>
+ <description xml:lang="pl"><p> Narzędzie wyszukiwania MATE jest prostym, aczkolwiek potężnym programem pozwalającym na wyszukiwanie plików i folderów na każdym podłączonym systemie plików. Jego interfejs daje Ci natychmiastowy dostęp do szerokiego wachlarza parametrów dla każdego wyszukiwania, takich jak szukanie tekstu w pliku, właściciela, daty modyfikacji, rozmiaru, wyłączania folderów z szukania itd.. </p></description>
+ <description xml:lang="pt"><p> A ferramenta de pesquisa MATE é uma simples mas poderosa ferramenta que te permite pesquisar por ficheiros e pastas em qualquer unidade montada. A sua interface dá-te um acesso rápido para uma grande variedade de parâmetros para cada pesquisa, como um texto contido num ficheiro, propriedade, data de modificação, tamanho do ficheiro, exclusão de pasta, etc... </p></description>
+ <description xml:lang="pt_BR"><p> A Ferramenta de Busca MATE é um utilitário simples, mas poderoso, que permite a você procurar por arquivos e pastas em qualquer sistema de arquivos montado. Sua interface oferece acesso instantâneo a uma grande variedade de parâmetros de busca, tais como texto contido num arquivo, a quem o arquivo pertence, data de modificação, tamanho do arquivo, exclusão de pastas, etc... </p></description>
+ <description xml:lang="ro"><p> Unealtă de căutare MATE este un utilitar simplu, dar puternic care vă permite să căutați fișiere și dosare pe orice sistem de fișiere montat. Interfața vă oferă acces instantaneu la o gamă largă de parametrii pentru fiecare căutare, cum ar fi textul conținut într-un fișier, deținere, data modificării, mărimea fișierului, excluderea unui dosar, etc.. </p></description>
+ <description xml:lang="ru"><p> Поиск файлов MATE – это простая, но функциональная утилита для поиска файлов и папок на всех подключенных файловых системах. Интерфейс предоставляет доступ к различным параметрам для поиска: поиск по содержимому файла, владельцу файла, дате модификации, размеру файла, поиск с исключением выбранных папкок, и т.д.. </p></description>
+ <description xml:lang="sk"><p> Nástroj na hľadanie súborov MATE je jednoduchým, ale silným nástrojom, ktorý vám umožňuje hľadať súbory, alebo priečinky v pripojených súborových systémoch. Jeho prostredie vám dáva prístup ku širokému spektru parametrov vyhľadávania, ako napr. text obsiahnutý v súbore, vlastníctvo, dátum poslednej úpravy, veľkosť súboru, vylúčenie priečinkov, atď. </p></description>
+ <description xml:lang="sr"><p> Мејтов алат тражења је једноставно али моћно помагало које вам омогућава да тражите датотеке и фасцикле на било ком прикаченом систему датотека. Његово сучеље вам даје тренутни приступ широком опсегу параметара за сваку претрагу, као што је текст садржан у тексту, власништво, датум измене, величина датотеке, искључење фасцикле, итд.. </p></description>
+ <description xml:lang="tr"><p> MATE Arama Aracı takılı bütün dosya sistemlerinde dosya ve klasör aramanıza imkân sağlayan sade ama aynı zamanda güçlü bir programdır. Arayüzü her arama için dosyanın içerdiği metin, sahibi, değiştirilme tarihi, dosya boyutu, klasör dışlaması vs. gibi çok çeşitli parametrelere anında erişim sağlar </p></description>
+ <description xml:lang="uk"><p> Знаряддя пошуку Мате-це простий але потужний засіб, що дозволяє виконувати пошук файлів і тек на будь-якій змонтованій файловій системі. Його інтерфейс надає Вам миттєвий доступ до широкого спектру параметрів для кожної операції пошуку, наприклад текст, що міститься у файлі, власника, дату змінювання, розмір файлу, виключення тек, тощо.. </p></description>
+ <description xml:lang="zh_CN"><p> MATE 搜索工具是一个短小精悍的实用工具，用于搜索任何位于已挂载文件系统上的文件或目录。其界面便于用户进行快捷的参数配置，比如包含在某个文件中的文本、所有者属性、修改日期、文件大小以及排除文件夹等。</p></description>
+ <description xml:lang="zh_TW"><p> MATE 搜尋工具是一個簡單但強而有力的小工具，讓您可以在您任何已掛載的檔案系統上搜尋檔案及資料夾。其介面讓您可以立即的存取各式各樣的搜尋參數，像是在檔案中包含特定文字、擁有者、修改日期、檔案大小、資料夾排除等。 </p></description>
+ <screenshots>
+  <screenshot type="default">
+   <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-search-tool/screens/mate-search-tool_01.png
+   </image>
+  </screenshot>
+  <screenshot>
+   <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-search-tool/screens/mate-search-tool_02.png
+   </image>
+  </screenshot>
+ </screenshots>
+ <url type="homepage">http://www.mate-desktop.org</url>
+ <updatecontact>mate-dev@ml.mate-desktop.org</updatecontact>
+ <project_group>MATE</project_group>
+</component>

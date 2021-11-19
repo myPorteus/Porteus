@@ -1,0 +1,77 @@
+if [ -x /usr/bin/update-desktop-database ]; then
+  /usr/bin/update-desktop-database -q usr/share/applications >/dev/null 2>&1
+fi
+
+if [ -x /usr/bin/update-mime-database ]; then
+  /usr/bin/update-mime-database usr/share/mime >/dev/null 2>&1
+fi
+
+if [ -e usr/share/icons/hicolor/icon-theme.cache ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache usr/share/icons/hicolor >/dev/null 2>&1
+  fi
+fi
+
+if [ -e usr/share/glib-2.0/schemas ]; then
+  if [ -x /usr/bin/glib-compile-schemas ]; then
+    /usr/bin/glib-compile-schemas usr/share/glib-2.0/schemas >/dev/null 2>&1
+  fi
+fi
+( cd usr/lib64 ; rm -rf libmate-panel-applet-4.so )
+( cd usr/lib64 ; ln -sf libmate-panel-applet-4.so.1.0.1 libmate-panel-applet-4.so )
+( cd usr/lib64 ; rm -rf libmate-panel-applet-4.so.1 )
+( cd usr/lib64 ; ln -sf libmate-panel-applet-4.so.1.0.1 libmate-panel-applet-4.so.1 )
+( cd usr/share/help/zh_HK/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/zh_HK/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/zh_CN/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/zh_CN/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/uk/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/uk/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/th/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/th/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/sv/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/sv/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/ru/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/ru/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/ru/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/ru/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/pt_BR/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/pt_BR/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/pt/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/pt/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/pa/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/pa/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/oc/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/oc/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/oc/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/oc/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/ko/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/ko/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/ja/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/ja/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/it/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/it/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/fr/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/fr/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/fi/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/fi/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/fi/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/fi/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/eu/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/eu/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/es/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/es/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/en_GB/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/en_GB/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/en_GB/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/en_GB/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/el/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/el/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/de/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/de/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/da/mate-clock/figures ; rm -rf clock_applet.png )
+( cd usr/share/help/da/mate-clock/figures ; ln -sf /usr/share/help/C/mate-clock/figures/clock_applet.png clock_applet.png )
+( cd usr/share/help/cs/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/cs/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )
+( cd usr/share/help/ca/mate-fish/figures ; rm -rf fish_applet.png )
+( cd usr/share/help/ca/mate-fish/figures ; ln -sf /usr/share/help/C/mate-fish/figures/fish_applet.png fish_applet.png )

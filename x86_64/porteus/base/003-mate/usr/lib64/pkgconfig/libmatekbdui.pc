@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libmatekbd
+Description: MATE keyboard shared library
+Version: 1.16.0
+Requires: libmatekbd = 1.16.0
+Libs: -L${libdir} -lmatekbdui
+Cflags: -I${includedir}

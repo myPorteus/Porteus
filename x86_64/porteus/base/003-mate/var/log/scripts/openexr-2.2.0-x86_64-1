@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libIlmImfUtil.so )
+( cd usr/lib64 ; ln -sf libIlmImfUtil-2_2.so.22.0.0 libIlmImfUtil.so )
+( cd usr/lib64 ; rm -rf libIlmImf-2_2.so.22 )
+( cd usr/lib64 ; ln -sf libIlmImf-2_2.so.22.0.0 libIlmImf-2_2.so.22 )
+( cd usr/lib64 ; rm -rf libIlmImfUtil-2_2.so.22 )
+( cd usr/lib64 ; ln -sf libIlmImfUtil-2_2.so.22.0.0 libIlmImfUtil-2_2.so.22 )
+( cd usr/lib64 ; rm -rf libIlmImf.so )
+( cd usr/lib64 ; ln -sf libIlmImf-2_2.so.22.0.0 libIlmImf.so )

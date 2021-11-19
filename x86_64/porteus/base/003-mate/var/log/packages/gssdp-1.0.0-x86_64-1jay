@@ -1,0 +1,91 @@
+PACKAGE NAME:     gssdp-1.0.0-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     580K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_mate/gssdp-1.0.0-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+gssdp: gssdp (GObject-based API)
+gssdp:
+gssdp: GSSDP implements resource discovery and announcement over SSDP
+gssdp:
+gssdp:
+gssdp:
+gssdp:
+gssdp:
+gssdp:
+gssdp: Homepage: http://wiki.gnome.org/GUPnP/
+gssdp:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gssdp-device-sniffer
+usr/doc/
+usr/doc/gssdp-1.0.0/
+usr/doc/gssdp-1.0.0/AUTHORS
+usr/doc/gssdp-1.0.0/COPYING
+usr/doc/gssdp-1.0.0/GSSDPClient.html
+usr/doc/gssdp-1.0.0/GSSDPResourceBrowser.html
+usr/doc/gssdp-1.0.0/GSSDPResourceGroup.html
+usr/doc/gssdp-1.0.0/INSTALL
+usr/doc/gssdp-1.0.0/NEWS
+usr/doc/gssdp-1.0.0/README
+usr/doc/gssdp-1.0.0/annotation-glossary.html
+usr/doc/gssdp-1.0.0/ch01.html
+usr/doc/gssdp-1.0.0/gssdp-Error-codes.html
+usr/doc/gssdp-1.0.0/gssdp.SlackBuild
+usr/doc/gssdp-1.0.0/gssdp.devhelp2
+usr/doc/gssdp-1.0.0/home.png
+usr/doc/gssdp-1.0.0/index.html
+usr/doc/gssdp-1.0.0/left-insensitive.png
+usr/doc/gssdp-1.0.0/left.png
+usr/doc/gssdp-1.0.0/right-insensitive.png
+usr/doc/gssdp-1.0.0/right.png
+usr/doc/gssdp-1.0.0/style.css
+usr/doc/gssdp-1.0.0/up-insensitive.png
+usr/doc/gssdp-1.0.0/up.png
+usr/include/
+usr/include/gssdp-1.0/
+usr/include/gssdp-1.0/libgssdp/
+usr/include/gssdp-1.0/libgssdp/gssdp-client.h
+usr/include/gssdp-1.0/libgssdp/gssdp-error.h
+usr/include/gssdp-1.0/libgssdp/gssdp-resource-browser.h
+usr/include/gssdp-1.0/libgssdp/gssdp-resource-group.h
+usr/include/gssdp-1.0/libgssdp/gssdp.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/GSSDP-1.0.typelib
+usr/lib64/libgssdp-1.0.la
+usr/lib64/libgssdp-1.0.so.3.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/gssdp-1.0.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/GSSDP-1.0.gir
+usr/share/gssdp/
+usr/share/gssdp/gssdp-device-sniffer.ui
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/gssdp/
+usr/share/gtk-doc/html/gssdp/GSSDPClient.html
+usr/share/gtk-doc/html/gssdp/GSSDPResourceBrowser.html
+usr/share/gtk-doc/html/gssdp/GSSDPResourceGroup.html
+usr/share/gtk-doc/html/gssdp/annotation-glossary.html
+usr/share/gtk-doc/html/gssdp/ch01.html
+usr/share/gtk-doc/html/gssdp/gssdp-Error-codes.html
+usr/share/gtk-doc/html/gssdp/gssdp.devhelp2
+usr/share/gtk-doc/html/gssdp/home.png
+usr/share/gtk-doc/html/gssdp/index.html
+usr/share/gtk-doc/html/gssdp/left-insensitive.png
+usr/share/gtk-doc/html/gssdp/left.png
+usr/share/gtk-doc/html/gssdp/right-insensitive.png
+usr/share/gtk-doc/html/gssdp/right.png
+usr/share/gtk-doc/html/gssdp/style.css
+usr/share/gtk-doc/html/gssdp/up-insensitive.png
+usr/share/gtk-doc/html/gssdp/up.png
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/gssdp-1.0.deps
+usr/share/vala/vapi/gssdp-1.0.vapi
