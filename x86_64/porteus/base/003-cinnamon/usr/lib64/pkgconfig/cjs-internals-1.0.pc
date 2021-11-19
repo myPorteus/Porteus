@@ -1,0 +1,16 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+bindir=${exec_prefix}/bin
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+jsdir=${datadir}/cjs-1.0
+
+Cflags: -I${includedir}/cjs-1.0
+Requires: cjs-1.0 gobject-introspection-1.0 mozjs-24
+
+Name: cjs-internals-1.0
+Description: Internal API for cjs (for modules and embedders); uses mozjs
+Version: 3.2.0

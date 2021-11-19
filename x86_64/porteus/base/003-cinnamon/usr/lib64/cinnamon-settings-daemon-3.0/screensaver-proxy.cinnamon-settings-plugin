@@ -1,0 +1,8 @@
+[Cinnamon Settings Plugin]
+Module=screensaver-proxy
+IAge=0
+Name=Screensaver Proxy
+Description=Proxy FreeDesktop screensaver inhibition to cinnamon-session
+Authors=AUTHOR
+Copyright=Copyright © 2012 Bastien Nocera
+Website=

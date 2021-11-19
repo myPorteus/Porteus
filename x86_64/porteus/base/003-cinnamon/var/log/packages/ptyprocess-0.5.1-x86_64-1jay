@@ -1,0 +1,39 @@
+PACKAGE NAME:     ptyprocess-0.5.1-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/csb/ptyprocess-0.5.1-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+ptyprocess: ptyprocess (python module)
+ptyprocess:
+ptyprocess: Launch a subprocess in a pseudo terminal (pty), and interact with
+ptyprocess: both the process and its pty.
+ptyprocess: Sometimes, piping stdin and stdout is not enough. There might be
+ptyprocess: a password prompt that doesn’t read from stdin, output that changes
+ptyprocess: when it’s going to a pipe rather than a terminal, or curses-style
+ptyprocess: interfaces that rely on a terminal.
+ptyprocess:
+ptyprocess: Project URL: https://pypi.python.org/pypi/ptyprocess
+ptyprocess:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/ptyprocess-0.5.1/
+usr/doc/ptyprocess-0.5.1/PKG-INFO
+usr/doc/ptyprocess-0.5.1/README.rst
+usr/doc/ptyprocess-0.5.1/ptyprocess.SlackBuild
+usr/lib64/
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/ptyprocess-0.5.1-py2.7.egg-info
+usr/lib64/python2.7/site-packages/ptyprocess/
+usr/lib64/python2.7/site-packages/ptyprocess/__init__.py
+usr/lib64/python2.7/site-packages/ptyprocess/__init__.pyc
+usr/lib64/python2.7/site-packages/ptyprocess/_fork_pty.py
+usr/lib64/python2.7/site-packages/ptyprocess/_fork_pty.pyc
+usr/lib64/python2.7/site-packages/ptyprocess/ptyprocess.py
+usr/lib64/python2.7/site-packages/ptyprocess/ptyprocess.pyc
+usr/lib64/python2.7/site-packages/ptyprocess/util.py
+usr/lib64/python2.7/site-packages/ptyprocess/util.pyc

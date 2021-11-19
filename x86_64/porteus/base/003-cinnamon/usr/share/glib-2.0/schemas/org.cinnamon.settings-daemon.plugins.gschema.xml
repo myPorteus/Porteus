@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/cinnamon/settings-daemon/plugins/" id="org.cinnamon.settings-daemon.plugins" gettext-domain="cinnamon-settings-daemon">
+    <child schema="org.cinnamon.settings-daemon.plugins.a11y-keyboard" name="a11y-keyboard"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.a11y-settings" name="a11y-settings"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.background" name="background"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.automount" name="automount"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.clipboard" name="clipboard"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.color" name="color"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.cursor" name="cursor"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.font" name="font"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.housekeeping" name="housekeeping"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.keyboard" name="keyboard"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.media-keys" name="media-keys"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.mouse" name="mouse"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.orientation" name="orientation"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.power" name="power"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.print-notifications" name="print-notifications"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.screensaver-proxy" name="screensaver-proxy"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.smartcard" name="smartcard"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.sound" name="sound"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.xrandr" name="xrandr"/>
+    <child schema="org.cinnamon.settings-daemon.plugins.xsettings" name="xsettings"/>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/a11y-keyboard/" id="org.cinnamon.settings-daemon.plugins.a11y-keyboard" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>7</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/a11y-settings/" id="org.cinnamon.settings-daemon.plugins.a11y-settings" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>7</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/automount/" id="org.cinnamon.settings-daemon.plugins.automount" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>97</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/clipboard/" id="org.cinnamon.settings-daemon.plugins.clipboard" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>99</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/cursor/" id="org.cinnamon.settings-daemon.plugins.cursor" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>99</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/font/" id="org.cinnamon.settings-daemon.plugins.font" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>4</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/mouse/" id="org.cinnamon.settings-daemon.plugins.mouse" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>7</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/screensaver-proxy/" id="org.cinnamon.settings-daemon.plugins.screensaver-proxy" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>8</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/smartcard/" id="org.cinnamon.settings-daemon.plugins.smartcard" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>8</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+  <schema path="/org/cinnamon/settings-daemon/plugins/sound/" id="org.cinnamon.settings-daemon.plugins.sound" gettext-domain="cinnamon-settings-daemon">
+    <key type="b" name="active">
+      <default>true</default>
+      <summary>Activation of this plugin</summary>
+      <description>Whether this plugin would be activated by cinnamon-settings-daemon or not</description>
+    </key>
+    <key type="i" name="priority">
+      <default>5</default>
+      <summary>Priority to use for this plugin</summary>
+      <description>Priority to use for this plugin in cinnamon-settings-daemon startup queue</description>
+    </key>
+  </schema>
+</schemalist>

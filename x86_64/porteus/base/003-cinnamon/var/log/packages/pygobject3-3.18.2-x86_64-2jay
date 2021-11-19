@@ -1,0 +1,122 @@
+PACKAGE NAME:     pygobject3-3.18.2-x86_64-2jay
+COMPRESSED PACKAGE SIZE:     252K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/pygobject3-3.18.2-x86_64-2jay.txz
+PACKAGE DESCRIPTION:
+pygobject3: pygobject3 (GObject bindings for Python)
+pygobject3:
+pygobject3: This archive contains bindings for the GObject, to be used in Python.
+pygobject3: It is a fairly complete set of bindings, it's already rather useful,
+pygobject3: and is usable to write moderately complex programs.
+pygobject3:
+pygobject3: pygobject's home page:  http://www.pygtk.org/
+pygobject3:
+pygobject3:
+pygobject3:
+pygobject3:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/pygobject3-3.18.2/
+usr/doc/pygobject3-3.18.2/AUTHORS
+usr/doc/pygobject3-3.18.2/COPYING
+usr/doc/pygobject3-3.18.2/INSTALL
+usr/doc/pygobject3-3.18.2/NEWS
+usr/doc/pygobject3-3.18.2/README
+usr/include/
+usr/include/pygobject-3.0/
+usr/include/pygobject-3.0/pygobject.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/pygobject-3.0.pc
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/gi/
+usr/lib64/python2.7/site-packages/gi/__init__.py
+usr/lib64/python2.7/site-packages/gi/__init__.pyc
+usr/lib64/python2.7/site-packages/gi/__init__.pyo
+usr/lib64/python2.7/site-packages/gi/_constants.py
+usr/lib64/python2.7/site-packages/gi/_constants.pyc
+usr/lib64/python2.7/site-packages/gi/_constants.pyo
+usr/lib64/python2.7/site-packages/gi/_error.py
+usr/lib64/python2.7/site-packages/gi/_error.pyc
+usr/lib64/python2.7/site-packages/gi/_error.pyo
+usr/lib64/python2.7/site-packages/gi/_gi.la
+usr/lib64/python2.7/site-packages/gi/_gi.so
+usr/lib64/python2.7/site-packages/gi/_gi_cairo.la
+usr/lib64/python2.7/site-packages/gi/_gi_cairo.so
+usr/lib64/python2.7/site-packages/gi/_gobject/
+usr/lib64/python2.7/site-packages/gi/_gobject/__init__.py
+usr/lib64/python2.7/site-packages/gi/_gobject/__init__.pyc
+usr/lib64/python2.7/site-packages/gi/_gobject/__init__.pyo
+usr/lib64/python2.7/site-packages/gi/_option.py
+usr/lib64/python2.7/site-packages/gi/_option.pyc
+usr/lib64/python2.7/site-packages/gi/_option.pyo
+usr/lib64/python2.7/site-packages/gi/_propertyhelper.py
+usr/lib64/python2.7/site-packages/gi/_propertyhelper.pyc
+usr/lib64/python2.7/site-packages/gi/_propertyhelper.pyo
+usr/lib64/python2.7/site-packages/gi/_signalhelper.py
+usr/lib64/python2.7/site-packages/gi/_signalhelper.pyc
+usr/lib64/python2.7/site-packages/gi/_signalhelper.pyo
+usr/lib64/python2.7/site-packages/gi/docstring.py
+usr/lib64/python2.7/site-packages/gi/docstring.pyc
+usr/lib64/python2.7/site-packages/gi/docstring.pyo
+usr/lib64/python2.7/site-packages/gi/importer.py
+usr/lib64/python2.7/site-packages/gi/importer.pyc
+usr/lib64/python2.7/site-packages/gi/importer.pyo
+usr/lib64/python2.7/site-packages/gi/module.py
+usr/lib64/python2.7/site-packages/gi/module.pyc
+usr/lib64/python2.7/site-packages/gi/module.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/
+usr/lib64/python2.7/site-packages/gi/overrides/GIMarshallingTests.py
+usr/lib64/python2.7/site-packages/gi/overrides/GIMarshallingTests.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/GIMarshallingTests.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/GLib.py
+usr/lib64/python2.7/site-packages/gi/overrides/GLib.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/GLib.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/GObject.py
+usr/lib64/python2.7/site-packages/gi/overrides/GObject.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/GObject.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/Gdk.py
+usr/lib64/python2.7/site-packages/gi/overrides/Gdk.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/Gdk.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/Gio.py
+usr/lib64/python2.7/site-packages/gi/overrides/Gio.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/Gio.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/Gtk.py
+usr/lib64/python2.7/site-packages/gi/overrides/Gtk.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/Gtk.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/Pango.py
+usr/lib64/python2.7/site-packages/gi/overrides/Pango.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/Pango.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/__init__.py
+usr/lib64/python2.7/site-packages/gi/overrides/__init__.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/__init__.pyo
+usr/lib64/python2.7/site-packages/gi/overrides/keysyms.py
+usr/lib64/python2.7/site-packages/gi/overrides/keysyms.pyc
+usr/lib64/python2.7/site-packages/gi/overrides/keysyms.pyo
+usr/lib64/python2.7/site-packages/gi/pygtkcompat.py
+usr/lib64/python2.7/site-packages/gi/pygtkcompat.pyc
+usr/lib64/python2.7/site-packages/gi/pygtkcompat.pyo
+usr/lib64/python2.7/site-packages/gi/repository/
+usr/lib64/python2.7/site-packages/gi/repository/__init__.py
+usr/lib64/python2.7/site-packages/gi/repository/__init__.pyc
+usr/lib64/python2.7/site-packages/gi/repository/__init__.pyo
+usr/lib64/python2.7/site-packages/gi/types.py
+usr/lib64/python2.7/site-packages/gi/types.pyc
+usr/lib64/python2.7/site-packages/gi/types.pyo
+usr/lib64/python2.7/site-packages/pygobject-3.18.2-py2.7-linux-x86_64.egg-info
+usr/lib64/python2.7/site-packages/pygtkcompat/
+usr/lib64/python2.7/site-packages/pygtkcompat/__init__.py
+usr/lib64/python2.7/site-packages/pygtkcompat/__init__.pyc
+usr/lib64/python2.7/site-packages/pygtkcompat/__init__.pyo
+usr/lib64/python2.7/site-packages/pygtkcompat/generictreemodel.py
+usr/lib64/python2.7/site-packages/pygtkcompat/generictreemodel.pyc
+usr/lib64/python2.7/site-packages/pygtkcompat/generictreemodel.pyo
+usr/lib64/python2.7/site-packages/pygtkcompat/pygtkcompat.py
+usr/lib64/python2.7/site-packages/pygtkcompat/pygtkcompat.pyc
+usr/lib64/python2.7/site-packages/pygtkcompat/pygtkcompat.pyo

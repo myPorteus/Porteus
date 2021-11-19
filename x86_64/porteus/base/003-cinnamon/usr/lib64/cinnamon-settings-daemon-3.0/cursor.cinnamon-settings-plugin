@@ -1,0 +1,8 @@
+[Cinnamon Settings Plugin]
+Module=cursor
+IAge=0
+Name=Cursor
+Description=Show/hide cursor on tablet devices
+Authors=Bastien Nocera <hadess@hadess.net>
+Copyright=Copyright © 2011 Red Hat, Inc.
+Website=

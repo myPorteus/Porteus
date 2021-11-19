@@ -1,0 +1,9 @@
+if [ -e usr/share/icons/hicolor/icon-theme.cache ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache usr/share/icons/hicolor >/dev/null 2>&1
+  fi
+fi
+( cd usr/lib64 ; rm -rf libcaribou.so )
+( cd usr/lib64 ; ln -sf libcaribou.so.0.0.0 libcaribou.so )
+( cd usr/lib64 ; rm -rf libcaribou.so.0 )
+( cd usr/lib64 ; ln -sf libcaribou.so.0.0.0 libcaribou.so.0 )

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libburn.so.4 )
+( cd usr/lib64 ; ln -sf libburn.so.4.93.0 libburn.so.4 )
+( cd usr/lib64 ; rm -rf libburn.so )
+( cd usr/lib64 ; ln -sf libburn.so.4.93.0 libburn.so )

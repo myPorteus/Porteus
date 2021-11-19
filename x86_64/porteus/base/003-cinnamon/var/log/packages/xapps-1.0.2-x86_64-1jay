@@ -1,0 +1,59 @@
+PACKAGE NAME:     xapps-1.0.2-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/csb/xapps-1.0.2-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+xapps: xapps (Common library for X-Apps project)
+xapps:
+xapps: This project gathers the components which are common to multiple
+xapps: desktop environments and required to implement cross-DE solutions.
+xapps:
+xapps:
+xapps: Project URL: https://github.com/linuxmint/xapps
+xapps:
+xapps:
+xapps:
+xapps:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/pastebin
+usr/bin/upload-system-info
+usr/bin/xfce4-set-wallpaper
+usr/doc/
+usr/doc/xapps-1.0.2/
+usr/doc/xapps-1.0.2/COPYING
+usr/doc/xapps-1.0.2/xapps.SlackBuild
+usr/include/
+usr/include/xapp/
+usr/include/xapp/libxapp/
+usr/include/xapp/libxapp/xapp-kbd-layout-controller.h
+usr/include/xapp/libxapp/xapp-monitor-blanker.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/XApp-1.0.typelib
+usr/lib64/libxapp.la
+usr/lib64/libxapp.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xapp.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/XApp-1.0.gir
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.x.apps.enums.xml
+usr/share/glib-2.0/schemas/org.x.apps.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/actions/
+usr/share/icons/hicolor/scalable/actions/xapp-search-entire-word-symbolic.svg
+usr/share/icons/hicolor/scalable/actions/xapp-search-wrap-symbolic.svg
+usr/share/icons/hicolor/scalable/actions/xapp-text-case-symbolic.svg
+usr/share/locale/
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/

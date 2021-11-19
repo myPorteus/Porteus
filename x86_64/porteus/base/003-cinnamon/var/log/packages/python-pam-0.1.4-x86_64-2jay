@@ -1,0 +1,38 @@
+PACKAGE NAME:     python-pam-0.1.4-x86_64-2jay
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/csb/python-pam-0.1.4-x86_64-2jay.txz
+PACKAGE DESCRIPTION:
+python-pam: python-pam (Authentication Module)
+python-pam:
+python-pam: This module provides an authenticate function that allows the caller
+python-pam: to authenticate a given username / password against the PAM system
+python-pam: on Linux.
+python-pam:
+python-pam:
+python-pam:
+python-pam:
+python-pam: Project URL: http://atlee.ca/software/pam/
+python-pam:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/python-pam-0.1.4/
+usr/doc/python-pam-0.1.4/PKG-INFO
+usr/doc/python-pam-0.1.4/python-pam.SlackBuild
+usr/lib64/
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/PKG-INFO
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/SOURCES.txt
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/dependency_links.txt
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/entry_points.txt
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/top_level.txt
+usr/lib64/python2.7/site-packages/pam-0.1.4-py2.7.egg-info/zip-safe
+usr/lib64/python2.7/site-packages/pam.py
+usr/lib64/python2.7/site-packages/pam.pyc

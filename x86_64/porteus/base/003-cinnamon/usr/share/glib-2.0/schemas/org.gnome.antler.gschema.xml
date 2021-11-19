@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/gnome/antler/" id="org.gnome.antler" gettext-domain="caribou">
+    <key type="s" name="keyboard-type">
+      <default>'touch'</default>
+      <summary>The keyboard geometry Caribou should use</summary>
+      <description>The keyboard geometry determines the shape and complexity of the keyboard, it could range from a 'natural' look and feel good for composing simple text, to a fullscale keyboard.</description>
+    </key>
+    <key type="b" name="use-system">
+      <default>false</default>
+      <summary>Use System Theme</summary>
+      <description/>
+    </key>
+    <key type="d" name="min-alpha">
+      <default>0.20000000000000001</default>
+      <summary>Minimal opacity of keyboard</summary>
+      <description/>
+    </key>
+    <key type="d" name="max-alpha">
+      <default>1.0</default>
+      <summary>Maximal opacity of keyboard</summary>
+      <description/>
+    </key>
+    <key type="i" name="max-distance">
+      <default>100</default>
+      <summary>Maximum distance when keyboard is hidden</summary>
+      <description/>
+    </key>
+  </schema>
+</schemalist>

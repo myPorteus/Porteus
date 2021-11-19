@@ -1,0 +1,18 @@
+[Nemo Action]
+
+Name=Remove workspace
+Name[ru]=Удалить рабочую область
+
+Comment=Remove the currently active workspace
+Comment[ru]=Удалить текущую активную рабочую область
+
+Exec=sh -c 'dbus-send --dest=org.Cinnamon --print-reply /org/Cinnamon org.Cinnamon.RemoveCurrentWorkspace >/dev/null'
+
+Selection=None
+
+Extensions=any;
+
+Conditions=desktop;dbus org.Cinnamon;gsettings org.cinnamon number-workspaces i gt 1;
+
+Active=false
+

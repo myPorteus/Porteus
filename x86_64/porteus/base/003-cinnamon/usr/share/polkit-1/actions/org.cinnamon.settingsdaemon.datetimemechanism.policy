@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>Cinnamon</vendor>
+  <vendor_url>http://cinnamon.linuxmint.com/</vendor_url>
+  <icon_name>gnome-panel-clock</icon_name>
+
+  <action id="org.cinnamon.settingsdaemon.datetimemechanism.configure">
+    <description>Change system time and date settings</description>
+    <description xml:lang="ast">Camudar la configuración de la hora y la data del sistema</description>
+    <description xml:lang="bn">সিস্টেমের সময় এবং তারিখের সেটিং পরিবর্তন</description>
+    <description xml:lang="fa">تغییر تنظیمات زمان و تاریخ</description>
+    <description xml:lang="mk">Промени ги поставувањата за време и датум</description>
+    <description xml:lang="ro">Modifică data și ora sistemului</description>
+    <description xml:lang="tr">Sistem saat ve tarih ayarlarını değiştir</description>
+    <message>To change time or date settings, you need to authenticate.</message>
+    <message xml:lang="ast">Pa camudar la configuración de la data o de la hora, tienes d'autenticate.</message>
+    <message xml:lang="fa">برای تغییر تنظیمات تاریخ و زمان، باید تصدیق هویت شوید.</message>
+    <message xml:lang="mk">За да ги промените поставувањата за датум и време мора да се автентицирате.</message>
+    <message xml:lang="ro">Pentru a schimba ora sau data, este obligatorie autentificarea.</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

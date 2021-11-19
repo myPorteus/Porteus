@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libspeex.so )
+( cd usr/lib64 ; ln -sf libspeex.so.1.5.0 libspeex.so )
+( cd usr/lib64 ; rm -rf libspeex.so.1 )
+( cd usr/lib64 ; ln -sf libspeex.so.1.5.0 libspeex.so.1 )
+( cd usr/lib64 ; rm -rf libspeexdsp.so )
+( cd usr/lib64 ; ln -sf libspeexdsp.so.1.5.0 libspeexdsp.so )
+( cd usr/lib64 ; rm -rf libspeexdsp.so.1 )
+( cd usr/lib64 ; ln -sf libspeexdsp.so.1.5.0 libspeexdsp.so.1 )

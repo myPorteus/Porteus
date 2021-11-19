@@ -1,0 +1,15 @@
+[Nemo Action]
+
+Name=Mount: %N
+Name[ru]=Смонтировать: %N
+
+Comment=Mount a module at /mnt/loop
+Comment[ru]=Смонтировать xzm модуль в /mnt/loop
+
+Icon-Name=cdr
+
+Exec=/opt/porteus-scripts/context-menu/mount-module "%F"
+
+Selection=s
+
+Extensions=xzm;

@@ -1,0 +1,42 @@
+PACKAGE NAME:     pangox-compat-0.0.2-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/csb/pangox-compat-0.0.2-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+pangox-compat: pangox-compat (X font support for Pango)
+pangox-compat:
+pangox-compat: X Window System font support for Pango.
+pangox-compat:
+pangox-compat: http://www.pango.org
+pangox-compat:
+pangox-compat:
+pangox-compat:
+pangox-compat:
+pangox-compat:
+pangox-compat:
+FILE LIST:
+./
+etc/
+etc/pango/
+etc/pango/pangox.aliases
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/pangox-compat-0.0.2/
+usr/doc/pangox-compat-0.0.2/AUTHORS
+usr/doc/pangox-compat-0.0.2/COPYING
+usr/doc/pangox-compat-0.0.2/ChangeLog
+usr/doc/pangox-compat-0.0.2/INSTALL
+usr/doc/pangox-compat-0.0.2/NEWS
+usr/doc/pangox-compat-0.0.2/README
+usr/include/
+usr/include/pango-1.0/
+usr/include/pango-1.0/pango/
+usr/include/pango-1.0/pango/pangox.h
+usr/lib64/
+usr/lib64/libpangox-1.0.la
+usr/lib64/libpangox-1.0.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/pangox.pc

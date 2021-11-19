@@ -1,0 +1,44 @@
+PACKAGE NAME:     polib-1.0.7-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/csb/polib-1.0.7-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+polib: polib (pot, po, and mo file manipulation library)
+polib:
+polib: Allows you to load existing files, iterate through it's entries, add,
+polib: modify entries, comments or metadata, etc., or create new po files
+polib: from scratch.
+polib:
+polib: Homepage: https://bitbucket.org/izi/polib/wiki/Home
+polib:
+polib:
+polib:
+polib:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/polib-1.0.7/
+usr/doc/polib-1.0.7/polib.SlackBuild
+usr/lib64/
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/polib-1.0.7-py2.7.egg-info/
+usr/lib64/python2.7/site-packages/polib-1.0.7-py2.7.egg-info/PKG-INFO
+usr/lib64/python2.7/site-packages/polib-1.0.7-py2.7.egg-info/SOURCES.txt
+usr/lib64/python2.7/site-packages/polib-1.0.7-py2.7.egg-info/dependency_links.txt
+usr/lib64/python2.7/site-packages/polib-1.0.7-py2.7.egg-info/top_level.txt
+usr/lib64/python2.7/site-packages/polib.py
+usr/lib64/python2.7/site-packages/polib.pyc
+usr/lib64/python3.5/
+usr/lib64/python3.5/site-packages/
+usr/lib64/python3.5/site-packages/__pycache__/
+usr/lib64/python3.5/site-packages/__pycache__/polib.cpython-35.pyc
+usr/lib64/python3.5/site-packages/polib-1.0.7-py3.5.egg-info/
+usr/lib64/python3.5/site-packages/polib-1.0.7-py3.5.egg-info/PKG-INFO
+usr/lib64/python3.5/site-packages/polib-1.0.7-py3.5.egg-info/SOURCES.txt
+usr/lib64/python3.5/site-packages/polib-1.0.7-py3.5.egg-info/dependency_links.txt
+usr/lib64/python3.5/site-packages/polib-1.0.7-py3.5.egg-info/top_level.txt
+usr/lib64/python3.5/site-packages/polib.py

@@ -1,0 +1,17 @@
+( cd usr/share/icons/hicolor/64x64/apps ; rm -rf isomaster.png )
+( cd usr/share/icons/hicolor/64x64/apps ; ln -sf ../../../../isomaster/icons/isomaster.png isomaster.png )
+
+# Figure out our root directory
+ROOTDIR=$(pwd)
+unset CHROOT
+if test "${ROOTDIR}" != "/"; then
+  CHROOT="chroot ${ROOTDIR} "
+  ROOTDIR="${ROOTDIR}/"
+fi
+if [ -x usr/bin/update-desktop-database ]; then
+  ${CHROOT} /usr/bin/update-desktop-database /usr/share/applications >/dev/null 2>&1
+fi
+if [ -x usr/bin/gtk-update-icon-cache ]; then
+  ${CHROOT} /usr/bin/touch --no-create /usr/share/icons/hicolor >/dev/null 2>&1
+  ${CHROOT} /usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor >/dev/null 2>&1
+fi

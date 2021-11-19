@@ -1,0 +1,50 @@
+PACKAGE NAME:     libburn-1.4.0-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     216K
+UNCOMPRESSED PACKAGE SIZE:     620K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_cinnamon/libburn-1.4.0-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+libburn: libburn (Library for reading, mastering and writing optical discs)
+libburn:
+libburn: Libburn is an open-source library for reading, mastering and writing
+libburn: optical discs. For now this means only CD-R and CD-RW.
+libburn: The project comprises of several more or less interdependent parts
+libburn: which together strive to be a usable foundation for application
+libburn: development. These are libraries, language bindings, and middleware
+libburn: binaries which emulate classical (and valuable) Linux tools.
+libburn:
+libburn: http://libburnia-project.org/
+libburn: Packager: brokenman@porteus.org on 31-Dec-2015
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/cdrskin
+usr/doc/
+usr/doc/libburn-1.4.0/
+usr/doc/libburn-1.4.0/AUTHORS
+usr/doc/libburn-1.4.0/COPYING
+usr/doc/libburn-1.4.0/ChangeLog
+usr/doc/libburn-1.4.0/ChangeLog.SB
+usr/doc/libburn-1.4.0/NEWS
+usr/doc/libburn-1.4.0/README
+usr/include/
+usr/include/libburn/
+usr/include/libburn/libburn.h
+usr/lib64/
+usr/lib64/libburn.so.4.93.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libburn-1.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cdrskin.1.gz
+usr/src/
+usr/src/slackbuilds/
+usr/src/slackbuilds/libburn/
+usr/src/slackbuilds/libburn/ChangeLog.SB
+usr/src/slackbuilds/libburn/libburn.SlackBuild
+usr/src/slackbuilds/libburn/slack-desc
+usr/src/slackbuilds/libburn/slack-required

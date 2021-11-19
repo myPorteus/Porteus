@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/gnome/caribou/" id="org.gnome.caribou" gettext-domain="caribou">
+    <key type="b" name="scan-enabled">
+      <default>false</default>
+      <summary>Enable switch scanning</summary>
+      <description/>
+    </key>
+    <key type="i" name="scan-grouping">
+      <default>1</default>
+      <summary>Scanning type, subgroups, rows or linear</summary>
+      <description/>
+    </key>
+    <key type="d" name="step-time">
+      <default>1.0</default>
+      <summary>Time between key transitions</summary>
+      <description/>
+    </key>
+    <key type="b" name="inverse-scanning">
+      <default>false</default>
+      <summary>Step with the switch, activate by dwelling</summary>
+      <description/>
+    </key>
+    <key type="b" name="autorestart">
+      <default>false</default>
+      <summary>Automatically restart scanning after item activation</summary>
+      <description/>
+    </key>
+    <key type="i" name="scan-cycles">
+      <default>1</default>
+      <summary/>
+      <description/>
+    </key>
+    <key type="s" name="switch-device">
+      <default>'keyboard'</default>
+      <summary>Switch device, keyboard or mouse</summary>
+      <description/>
+    </key>
+    <key type="s" name="keyboard-key">
+      <default>'space'</default>
+      <summary>Key to use with scanning mode</summary>
+      <description/>
+    </key>
+    <key type="i" name="mouse-button">
+      <default>2</default>
+      <summary>Mouse button to use in the scanning mode</summary>
+      <description/>
+    </key>
+  </schema>
+</schemalist>

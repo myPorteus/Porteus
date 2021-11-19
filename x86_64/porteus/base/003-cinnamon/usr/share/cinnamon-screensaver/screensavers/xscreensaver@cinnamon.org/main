@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk, GdkX11, Gio, GLib
+import sys
+import subprocess
+import shlex
+import argparse
+import syslog
+import signal
+
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+class XScreensaverPlugin:
+    def __init__(self):
+        parser = argparse.ArgumentParser(description="Cinnamon Screensaver XScreensaver Plugin")
+        parser.add_argument("--standalone", action="store_true", help="run as standalone window instead of embedded in screensaver", dest="standalone")
+        parser.add_argument("--dir", action="store", help="directory to search for xscreensaver hacks")
+        parser.add_argument("--hack", action="store", help="xscreensaver hack to load")
+        self.args = parser.parse_args()
+
+        GLib.unix_signal_add(GLib.PRIORITY_HIGH, signal.SIGTERM, self.on_terminate)
+
+        if self.args.standalone:
+            self.plug = Gtk.Window()
+        else:
+            self.plug = Gtk.Plug()
+
+        self.plug.draw_id = self.plug.connect("draw", self.load_hack)
+        self.plug.connect("delete-event", Gtk.main_quit)
+
+        self.plug.show_all()
+
+        self.xid = self.plug.get_window().get_xid()
+        print("WINDOW ID=" + str(self.xid))
+        sys.stdout.flush()
+
+    def load_hack (self, plug, data=None):
+        self.plug.disconnect(self.plug.draw_id)
+
+        directories = ["/usr/lib/xscreensaver/",
+                       "/usr/libexec/xscreensaver/",
+                       "/usr/local/lib/xscreensaver/",
+                       "/usr/local/libexec/xscreensaver/"]
+
+        if self.args.dir:
+            directories.append(self.args.dir)
+
+        if (self.args.hack):
+            hack = self.args.hack
+        else:
+            settings = Gio.Settings.new(schema_id="org.cinnamon.desktop.screensaver")
+            hack = settings.get_string("xscreensaver-hack")
+
+        success = False
+
+        for direc in directories:
+            try:
+                path = shlex.split(direc + hack)
+                path.append("-window-id")
+                path.append(str(self.xid))
+                GLib.spawn_async(path)
+                success = True
+                break;
+            except:
+                pass
+
+        if not success:
+            syslog.syslog("cinnamon-screensaver: Screensaver '%s' not found" % hack)
+            color = Gdk.RGBA()
+            color.red = 0
+            color.green = 0
+            color.blue = 0
+            color.alpha = 1
+            label = Gtk.Label()
+            label.override_background_color(Gtk.StateFlags.NORMAL, color)
+            label.show()
+            self.plug.add(label)
+
+    def on_terminate(self, data=None):
+        self.plug.destroy()
+        Gtk.main_quit()
+
+
+if __name__ == "__main__":
+    XScreensaverPlugin()
+    Gtk.main()
+

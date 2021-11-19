@@ -1,0 +1,18 @@
+[Nemo Action]
+
+Name=Jump to new workspace
+Name[ru]=Перейти в новую рабочую область
+
+Comment=Create a new workspace and activate it
+Comment[ru]=Создать новую рабочую область и активировать её
+
+Exec=sh -c 'dbus-send --dest=org.Cinnamon --print-reply /org/Cinnamon org.Cinnamon.JumpToNewWorkspace >/dev/null'
+
+Selection=None
+
+Extensions=any;
+
+Conditions=desktop;dbus org.Cinnamon;
+
+Active=false
+

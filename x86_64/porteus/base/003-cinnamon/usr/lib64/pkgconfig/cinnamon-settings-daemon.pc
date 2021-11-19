@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+libexecdir=${exec_prefix}/libexec
+plugindir=${libdir}/cinnamon-settings-daemon-3.0
+binary=${libexecdir}/cinnamon-settings-daemon
+
+Name: cinnamon-settings-daemon
+Description: Utility library for accessing cinnamon-settings-daemon over DBUS
+Requires: glib-2.0
+Version: 3.2.0
+Libs: -L${libdir}
+Cflags: -I${includedir}/cinnamon-settings-daemon-3.0

@@ -1,0 +1,24 @@
+config() {
+  NEW="$1"
+  OLD="$(dirname $NEW)/$(basename $NEW .new)"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "$(cat $OLD | md5sum)" = "$(cat $NEW | md5sum)" ]; then
+    # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+
+config etc/gconf/2/path.new
+config etc/gconf/2/evoldap.conf.new
+
+if [ -x /usr/bin/gio-querymodules ]; then
+  chroot . /usr/bin/gio-querymodules /usr/lib64/gio/modules/ >/dev/null 2>&1
+fi
+
+( cd usr/lib64 ; rm -rf libgconf-2.so )
+( cd usr/lib64 ; ln -sf libgconf-2.so.4.1.5 libgconf-2.so )
+( cd usr/lib64 ; rm -rf libgconf-2.so.4 )
+( cd usr/lib64 ; ln -sf libgconf-2.so.4.1.5 libgconf-2.so.4 )

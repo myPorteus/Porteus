@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Date & Time
+Comment=Date and Time preferences panel
+Exec=cinnamon-control-center datetime
+Icon=cs-date-time
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;X-cinnamon-SystemSettings;X-Cinnamon-Settings-Panel;
+OnlyShowIn=GNOME;
+X-Cinnamon-Settings-Panel=datetime
+# Translators: those are keywords for the date and time control-center panel
+Keywords=Clock;Timezone;Location;
+NoDisplay=true

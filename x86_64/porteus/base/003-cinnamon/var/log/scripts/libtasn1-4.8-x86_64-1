@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libtasn1.so.6 )
+( cd usr/lib64 ; ln -sf libtasn1.so.6.5.2 libtasn1.so.6 )
+( cd usr/lib64 ; rm -rf libtasn1.so )
+( cd usr/lib64 ; ln -sf libtasn1.so.6.5.2 libtasn1.so )
