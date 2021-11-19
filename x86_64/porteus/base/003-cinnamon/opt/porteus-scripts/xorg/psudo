@@ -1,0 +1,3 @@
+#! /bin/bash
+
+SUDO_ASKPASS=/usr/bin/zsudo sudo -Ai "$@"

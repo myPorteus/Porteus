@@ -1,0 +1,32 @@
+PACKAGE NAME:     iceauth-1.0.8-x86_64-2
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/iceauth-1.0.8-x86_64-2.txz
+PACKAGE DESCRIPTION:
+iceauth: iceauth (display/edit ICE authorization information)
+iceauth:
+iceauth: The iceauth program is used to edit and display the authorization
+iceauth: information used in connecting with ICE. It operates very much like
+iceauth: the xauth program for X11 connection authentication records.
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+iceauth:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/iceauth
+usr/doc/
+usr/doc/iceauth-1.0.8/
+usr/doc/iceauth-1.0.8/COPYING
+usr/doc/iceauth-1.0.8/ChangeLog
+usr/doc/iceauth-1.0.8/INSTALL
+usr/doc/iceauth-1.0.8/README
+usr/man/
+usr/man/man1/
+usr/man/man1/iceauth.1.gz

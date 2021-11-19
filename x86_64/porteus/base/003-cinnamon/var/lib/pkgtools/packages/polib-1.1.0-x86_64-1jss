@@ -1,0 +1,32 @@
+PACKAGE NAME:     polib-1.1.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /root/mcbs/build/../x86_64/pkg/003_cinnamon/polib-1.1.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+polib: polib (manage pot, po, and mo files)
+polib:
+polib: polib is used to load existing files, iterate through its entries, 
+polib: add, modify entries, comments or metadata, etc., or create new po 
+polib: files from scratch.
+polib:
+polib: 
+polib:
+polib:
+polib: https://bitbucket.org/izi/polib
+polib:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/python3.7/
+usr/lib64/python3.7/site-packages/
+usr/lib64/python3.7/site-packages/__pycache__/
+usr/lib64/python3.7/site-packages/__pycache__/polib.cpython-37.pyc
+usr/lib64/python3.7/site-packages/polib-1.1.0-py3.7.egg-info/
+usr/lib64/python3.7/site-packages/polib-1.1.0-py3.7.egg-info/PKG-INFO
+usr/lib64/python3.7/site-packages/polib-1.1.0-py3.7.egg-info/SOURCES.txt
+usr/lib64/python3.7/site-packages/polib-1.1.0-py3.7.egg-info/dependency_links.txt
+usr/lib64/python3.7/site-packages/polib-1.1.0-py3.7.egg-info/top_level.txt
+usr/lib64/python3.7/site-packages/polib.py

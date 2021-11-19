@@ -1,0 +1,85 @@
+PACKAGE NAME:     libunwind-1.3.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libunwind-1.3.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libunwind: libunwind (API to determine the call-chain of a program)
+libunwind:
+libunwind: The primary goal of libunwind is to define a portable and efficient C
+libunwind: programming interface (API) to determine the call-chain of a program.
+libunwind: The API additionally provides the means to manipulate the preserved
+libunwind: (callee-saved) state of each call-frame and to resume execution at
+libunwind: any point in the call-chain (non-local goto). Some uses for this API
+libunwind: include exception handling, debuggers, introspection, or implementing
+libunwind: an extremely efficient version of setjmp(). 
+libunwind:
+libunwind: Homepage: http://www.nongnu.org/libunwind
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libunwind-1.3.1/
+usr/doc/libunwind-1.3.1/AUTHORS
+usr/doc/libunwind-1.3.1/COPYING
+usr/doc/libunwind-1.3.1/ChangeLog
+usr/doc/libunwind-1.3.1/NEWS
+usr/doc/libunwind-1.3.1/README
+usr/doc/libunwind-1.3.1/TODO
+usr/include/
+usr/include/libunwind-common.h
+usr/include/libunwind-coredump.h
+usr/include/libunwind-dynamic.h
+usr/include/libunwind-ptrace.h
+usr/include/libunwind-x86_64.h
+usr/include/libunwind.h
+usr/include/unwind.h
+usr/lib64/
+usr/lib64/libunwind-coredump.so.0.0.0
+usr/lib64/libunwind-ptrace.so.0.0.0
+usr/lib64/libunwind-setjmp.so.0.0.0
+usr/lib64/libunwind-x86_64.so.8.0.1
+usr/lib64/libunwind.so.8.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libunwind-coredump.pc
+usr/lib64/pkgconfig/libunwind-generic.pc
+usr/lib64/pkgconfig/libunwind-ptrace.pc
+usr/lib64/pkgconfig/libunwind-setjmp.pc
+usr/lib64/pkgconfig/libunwind.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/_U_dyn_cancel.3.gz
+usr/man/man3/_U_dyn_register.3.gz
+usr/man/man3/libunwind-dynamic.3.gz
+usr/man/man3/libunwind-ia64.3.gz
+usr/man/man3/libunwind-ptrace.3.gz
+usr/man/man3/libunwind-setjmp.3.gz
+usr/man/man3/libunwind.3.gz
+usr/man/man3/unw_apply_reg_state.3.gz
+usr/man/man3/unw_backtrace.3.gz
+usr/man/man3/unw_create_addr_space.3.gz
+usr/man/man3/unw_destroy_addr_space.3.gz
+usr/man/man3/unw_flush_cache.3.gz
+usr/man/man3/unw_get_accessors.3.gz
+usr/man/man3/unw_get_fpreg.3.gz
+usr/man/man3/unw_get_proc_info.3.gz
+usr/man/man3/unw_get_proc_info_by_ip.3.gz
+usr/man/man3/unw_get_proc_name.3.gz
+usr/man/man3/unw_get_reg.3.gz
+usr/man/man3/unw_getcontext.3.gz
+usr/man/man3/unw_init_local.3.gz
+usr/man/man3/unw_init_local2.3.gz
+usr/man/man3/unw_init_remote.3.gz
+usr/man/man3/unw_is_fpreg.3.gz
+usr/man/man3/unw_is_signal_frame.3.gz
+usr/man/man3/unw_reg_states_iterate.3.gz
+usr/man/man3/unw_regname.3.gz
+usr/man/man3/unw_resume.3.gz
+usr/man/man3/unw_set_cache_size.3.gz
+usr/man/man3/unw_set_caching_policy.3.gz
+usr/man/man3/unw_set_fpreg.3.gz
+usr/man/man3/unw_set_reg.3.gz
+usr/man/man3/unw_step.3.gz
+usr/man/man3/unw_strerror.3.gz

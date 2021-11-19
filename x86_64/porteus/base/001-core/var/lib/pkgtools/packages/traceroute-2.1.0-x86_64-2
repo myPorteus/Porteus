@@ -1,0 +1,44 @@
+PACKAGE NAME:     traceroute-2.1.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/traceroute-2.1.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+traceroute: traceroute (IP packet route tracing utility)
+traceroute:
+traceroute: The traceroute utility displays the route used by IP packets on their
+traceroute: way to a specified network host. Traceroute will display the IP
+traceroute: number and host name (if possible) of all the machines along the route
+traceroute: taken by the packets. If you're having network connectivity problems,
+traceroute: traceroute can show you where the trouble is located.
+traceroute:
+traceroute: Homepage: http://traceroute.sourceforge.net
+traceroute:
+traceroute:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/traceroute
+usr/doc/
+usr/doc/traceroute-2.1.0/
+usr/doc/traceroute-2.1.0/COPYING
+usr/doc/traceroute-2.1.0/COPYING.LIB
+usr/doc/traceroute-2.1.0/CREDITS
+usr/doc/traceroute-2.1.0/ChangeLog
+usr/doc/traceroute-2.1.0/README
+usr/doc/traceroute-2.1.0/TODO
+usr/doc/traceroute-2.1.0/VERSION
+usr/doc/traceroute-2.1.0/wrappers/
+usr/doc/traceroute-2.1.0/wrappers/Makefile
+usr/doc/traceroute-2.1.0/wrappers/README.wrappers
+usr/doc/traceroute-2.1.0/wrappers/lft
+usr/doc/traceroute-2.1.0/wrappers/tcptraceroute
+usr/doc/traceroute-2.1.0/wrappers/tcptraceroute.8
+usr/doc/traceroute-2.1.0/wrappers/tracepath
+usr/doc/traceroute-2.1.0/wrappers/traceproto
+usr/doc/traceroute-2.1.0/wrappers/traceroute-nanog
+usr/man/
+usr/man/man8/
+usr/man/man8/traceroute.8.gz

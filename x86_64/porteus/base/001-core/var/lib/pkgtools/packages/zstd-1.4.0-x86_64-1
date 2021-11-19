@@ -1,0 +1,48 @@
+PACKAGE NAME:     zstd-1.4.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     384K
+UNCOMPRESSED PACKAGE SIZE:     1.7M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/zstd-1.4.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+zstd: zstd (real-time compression algorithm)
+zstd:
+zstd: Zstandard, or zstd for short, is a real-time compression algorithm
+zstd: providing high compression ratios. It offers a very wide range of
+zstd: compression/speed trade-off, while being backed by a very fast
+zstd: decoder. It also offers a special mode for small data, called
+zstd: dictionary compression, and can create dictionaries from any sample
+zstd: set.
+zstd:
+zstd: Homepage: http://zstd.net/
+zstd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/pzstd
+usr/bin/zstd
+usr/bin/zstdgrep
+usr/bin/zstdless
+usr/doc/
+usr/doc/zstd-1.4.0/
+usr/doc/zstd-1.4.0/CONTRIBUTING.md
+usr/doc/zstd-1.4.0/COPYING
+usr/doc/zstd-1.4.0/LICENSE
+usr/doc/zstd-1.4.0/README.md
+usr/doc/zstd-1.4.0/TESTING.md
+usr/include/
+usr/include/zbuff.h
+usr/include/zdict.h
+usr/include/zstd.h
+usr/include/zstd_errors.h
+usr/lib64/
+usr/lib64/libzstd.so.1.4.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libzstd.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/zstd.1.gz
+usr/man/man1/zstdgrep.1.gz
+usr/man/man1/zstdless.1.gz

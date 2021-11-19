@@ -1,0 +1,51 @@
+PACKAGE NAME:     mpfr-4.0.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     324K
+UNCOMPRESSED PACKAGE SIZE:     850K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/mpfr-4.0.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mpfr: mpfr (Multiple-Precision Floating-Point Reliable Library)
+mpfr:
+mpfr: The MPFR library is a C library for multiple-precision floating-point
+mpfr: computations with exact rounding (also called correct rounding).
+mpfr: It is based on the GMP multiple-precision library.
+mpfr: The main goal of MPFR is to provide a library for multiple-precision
+mpfr: floating-point computation which is both efficient and has 
+mpfr: well-defined semantics. It copies the good ideas from the
+mpfr: ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+mpfr: (53-bit mantissa).
+mpfr:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/mpfr-4.0.2/
+usr/doc/mpfr-4.0.2/AUTHORS
+usr/doc/mpfr-4.0.2/BUGS
+usr/doc/mpfr-4.0.2/COPYING
+usr/doc/mpfr-4.0.2/COPYING.LESSER
+usr/doc/mpfr-4.0.2/ChangeLog
+usr/doc/mpfr-4.0.2/FAQ.html
+usr/doc/mpfr-4.0.2/INSTALL
+usr/doc/mpfr-4.0.2/NEWS
+usr/doc/mpfr-4.0.2/README
+usr/doc/mpfr-4.0.2/TODO
+usr/doc/mpfr-4.0.2/VERSION
+usr/doc/mpfr-4.0.2/examples/
+usr/doc/mpfr-4.0.2/examples/ReadMe
+usr/doc/mpfr-4.0.2/examples/can_round.c
+usr/doc/mpfr-4.0.2/examples/divworst.c
+usr/doc/mpfr-4.0.2/examples/rndo-add.c
+usr/doc/mpfr-4.0.2/examples/sample.c
+usr/doc/mpfr-4.0.2/examples/version.c
+usr/include/
+usr/include/mpf2mpfr.h
+usr/include/mpfr.h
+usr/info/
+usr/info/mpfr.info.gz
+usr/lib64/
+usr/lib64/libmpfr.so.6.0.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/mpfr.pc

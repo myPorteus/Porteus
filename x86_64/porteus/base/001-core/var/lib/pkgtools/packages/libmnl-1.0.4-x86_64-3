@@ -1,0 +1,34 @@
+PACKAGE NAME:     libmnl-1.0.4-x86_64-3
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/libmnl-1.0.4-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libmnl: libmnl (user-space library oriented to Netlink developers)
+libmnl:
+libmnl: libmnl is a minimalistic user-space library oriented to Netlink
+libmnl: developers. There are a lot of common tasks in parsing, validating,
+libmnl: constructing of both the Netlink header and TLVs that are repetitive
+libmnl: and easy to get wrong. This library aims to provide simple helpers
+libmnl: that allows you to re-use code and to avoid re-inventing the wheel.
+libmnl:
+libmnl: Homepage: http://www.netfilter.org/projects/libmnl/
+libmnl:
+libmnl:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libmnl.so.0.2.0
+usr/
+usr/doc/
+usr/doc/libmnl-1.0.4/
+usr/doc/libmnl-1.0.4/COPYING
+usr/doc/libmnl-1.0.4/README
+usr/include/
+usr/include/libmnl/
+usr/include/libmnl/libmnl.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libmnl.pc

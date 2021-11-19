@@ -1,0 +1,91 @@
+PACKAGE NAME:     gdbm-1.18.1-x86_64-2
+COMPRESSED PACKAGE SIZE:     188K
+UNCOMPRESSED PACKAGE SIZE:     700K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/gdbm-1.18.1-x86_64-2.txz
+PACKAGE DESCRIPTION:
+gdbm: gdbm (GNU database routines)
+gdbm:
+gdbm: GNU dbm is a set of database routines that work similar to the
+gdbm: standard UNIX dbm routines.
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+gdbm:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gdbm_dump
+usr/bin/gdbm_load
+usr/bin/gdbmtool
+usr/doc/
+usr/doc/gdbm-1.18.1/
+usr/doc/gdbm-1.18.1/ABOUT-NLS
+usr/doc/gdbm-1.18.1/AUTHORS
+usr/doc/gdbm-1.18.1/COPYING
+usr/doc/gdbm-1.18.1/ChangeLog
+usr/doc/gdbm-1.18.1/NEWS
+usr/doc/gdbm-1.18.1/NOTE-WARNING
+usr/doc/gdbm-1.18.1/README
+usr/doc/gdbm-1.18.1/README-alpha
+usr/doc/gdbm-1.18.1/THANKS
+usr/include/
+usr/include/gdbm.h
+usr/info/
+usr/info/gdbm.info.gz
+usr/lib64/
+usr/lib64/libgdbm.so.6.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/gdbm_dump.1.gz
+usr/man/man1/gdbm_load.1.gz
+usr/man/man1/gdbmtool.1.gz
+usr/man/man3/
+usr/man/man3/gdbm.3.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/gdbm.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/gdbm.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/gdbm.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/gdbm.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/gdbm.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/gdbm.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/gdbm.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/gdbm.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/gdbm.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/gdbm.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/gdbm.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/gdbm.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/gdbm.mo

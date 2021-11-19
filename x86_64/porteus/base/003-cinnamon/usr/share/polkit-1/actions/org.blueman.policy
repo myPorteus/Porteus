@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The Blueman Project</vendor>
+  <vendor_url>https://github.com/blueman-project/blueman</vendor_url>
+  <icon_name>blueman</icon_name>
+  
+   <action id="org.blueman.network.setup">
+    <description>Configure Bluetooth Network</description>
+    <description xml:lang="am">የ ብሉቱዝ ኔትዎርክ ማሰናጃ</description>
+    <description xml:lang="ar">ضبط شبكة البلوتوث</description>
+    <description xml:lang="ast">Configurar rede Bluetooth</description>
+    <description xml:lang="be">Наставіць сетку Bluetooth</description>
+    <description xml:lang="bg">Настройка на Bluetooth мрежа</description>
+    <description xml:lang="bs">Konfiguriraj Bluetooth Mrežu</description>
+    <description xml:lang="cs">Nastavit Bluetooh síť</description>
+    <description xml:lang="da">Konfigurer Bluetooth-netværk</description>
+    <description xml:lang="de">Bluetooth-Netzwerk konfigurieren</description>
+    <description xml:lang="el">Διαμόρφωση δικτύου Bluetooth</description>
+    <description xml:lang="en_AU">Configure Bluetooth Network</description>
+    <description xml:lang="en_GB">Configure Bluetooth Network</description>
+    <description xml:lang="es">Configurar red Bluetooth</description>
+    <description xml:lang="et">Bluetooth võrgu sätete määramine</description>
+    <description xml:lang="eu">Konfiguratu Bluetooth sarea</description>
+    <description xml:lang="fi">Määritä bluetooth-verkko</description>
+    <description xml:lang="fr">Configurer le réseau Bluetooth</description>
+    <description xml:lang="gl">Configurar unha rede bluetooth</description>
+    <description xml:lang="hr">Podesi Bluetooth mrežu</description>
+    <description xml:lang="hu">Bluetooth hálózat konfigurálása</description>
+    <description xml:lang="id">Konfigurasi Jaringan Bluetooth</description>
+    <description xml:lang="it">Configura rete Bluetooth</description>
+    <description xml:lang="ja">Bluetoothネットワークを設定</description>
+    <description xml:lang="ko">블루투스 네트워크 설정</description>
+    <description xml:lang="lt">Nustatyti „Bluetooth“ tinklą</description>
+    <description xml:lang="lv">Konfigurēt Bluetooth Tīklu</description>
+    <description xml:lang="mk">Подесување на блутут мрежа</description>
+    <description xml:lang="mr">ब्लुटूथ संजाळ संयोजीत करा</description>
+    <description xml:lang="ms">Konfigur Rangkaian Bluetooth</description>
+    <description xml:lang="nb">Sett opp Blåtannsnettverk</description>
+    <description xml:lang="nl">Bluetooth-netwerk instellen</description>
+    <description xml:lang="pl">Konfiguruj sieć Bluetooth</description>
+    <description xml:lang="pt">Configurar Rede Bluetooth</description>
+    <description xml:lang="pt_BR">Configurar Rede Bluetooth</description>
+    <description xml:lang="ru">Настроить сеть Bluetooth</description>
+    <description xml:lang="sk">Konfigurovať Bluetooth Sieť</description>
+    <description xml:lang="sl">Nastavi omrežje Bluetooth</description>
+    <description xml:lang="sr">Подесите блутут мрежу</description>
+    <description xml:lang="sv">Konfigurera blåtandsnätverk</description>
+    <description xml:lang="tr">Bluetooth Ağını Ayarla</description>
+    <description xml:lang="uk">Налаштувати мережу bluetooth</description>
+    <description xml:lang="zh_CN">配置蓝牙网络</description>
+    <description xml:lang="zh_TW">設定藍牙網路</description>
+    <message>Configuring networking requires privileges</message>
+    <message xml:lang="ar">ضبط الشبكة يحتاج إلى صلاحيات</message>
+    <message xml:lang="ast">Requier privilexos configurar la rede</message>
+    <message xml:lang="be">Настáўленне сеткі патрабуе прывілеяў</message>
+    <message xml:lang="bg">Настройването на мрежата изисква права</message>
+    <message xml:lang="cs">Nastavení připojení vyžaduje oprávnění</message>
+    <message xml:lang="da">Konfiguration af netværk kræver privilegier</message>
+    <message xml:lang="de">Die Konfiguration des Netzwerkes erfordert Privilegien</message>
+    <message xml:lang="el">Οι ρυθμίσεις δικτύωσης απαιτούν δικαιώματα</message>
+    <message xml:lang="en_AU">Configuring networking requires privileges</message>
+    <message xml:lang="en_GB">Configuring networking requires privileges</message>
+    <message xml:lang="es">Configurar la red requiere privilegios</message>
+    <message xml:lang="fr">Les droits d'administration sont requis pour configurer le réseau</message>
+    <message xml:lang="gl">Configurar a rede require privilexios</message>
+    <message xml:lang="hr">Postavljanje mreža zahtijeva posebne privilegije</message>
+    <message xml:lang="hu">A hálózat szerkesztéséhez megfelelő jog szükséges</message>
+    <message xml:lang="id">Mengkonfigurasi jaringan membutuhkan hak akses</message>
+    <message xml:lang="it">La configurazione della rete richiede privilegi</message>
+    <message xml:lang="ja">ネットワークの設定の変更には権限が必要です</message>
+    <message xml:lang="ko">네트워크 설정에 권한이 필요합니다</message>
+    <message xml:lang="lt">Tinklo konfigūravimas reikalauja privilegijų</message>
+    <message xml:lang="lv">Tīkla konfigurēšanai nepieciešamas privilēģijas</message>
+    <message xml:lang="mk">Подесувањето на мрежата бара привилегии</message>
+    <message xml:lang="ms">Mengkonfigur perangkaian memerlukan kelayakan</message>
+    <message xml:lang="nb">Oppsett av nettverk krever priviliger</message>
+    <message xml:lang="nl">U heeft rechten nodig om netwerkbeheer uit te kunnen voeren</message>
+    <message xml:lang="pl">Do konfiguracji sieci potrzeba uprawnień</message>
+    <message xml:lang="pt">Configurar a rede precisa de privilégios</message>
+    <message xml:lang="pt_BR">É necessário privilégios para configurar a rede</message>
+    <message xml:lang="ru">Настройка сети требует привилегий</message>
+    <message xml:lang="sk">Nastavenie siete vyžaduje privilégiá</message>
+    <message xml:lang="sl">Nastavljanje omreženja zahteva dovoljenja</message>
+    <message xml:lang="sr">За подешавање умрежавања су потребна овлашћења</message>
+    <message xml:lang="sv">Konfigurering av nätverk kräver behörighet</message>
+    <message xml:lang="tr">Ağ ayarlarını değiştirmek yetki gerektirir</message>
+    <message xml:lang="uk">Налаштування мережі потребує достатніх прав доступу</message>
+    <message xml:lang="zh_CN">配置网络需要权限</message>
+    <message xml:lang="zh_TW">設定網路需要更高的權限</message>
+
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+
+    </defaults>
+  </action>
+  
+  <action id="org.blueman.dhcp.client">
+    <description>Launch DHCP client</description>
+    <description xml:lang="ast">Llanzar veceru DHCP</description>
+    <description xml:lang="be">Запусціць DHCP-кліент</description>
+    <description xml:lang="bg">Пускане на DHCP клиент</description>
+    <description xml:lang="cs">Spustit DHCP klient</description>
+    <description xml:lang="da">Start DHCP-klient</description>
+    <description xml:lang="de">Starte DHCP client</description>
+    <description xml:lang="el">Εκκίνηση πελάτη DHCP</description>
+    <description xml:lang="en_AU">Launch DHCP client</description>
+    <description xml:lang="en_GB">Launch DHCP client</description>
+    <description xml:lang="es">Ejecutar el cliente DHCP</description>
+    <description xml:lang="et">DHCP kliendi käivitamine</description>
+    <description xml:lang="eu">Abiarazi DHCP bezeroa</description>
+    <description xml:lang="fi">Käynnistä DHCP-asiakas</description>
+    <description xml:lang="fr">Lancer le client DHCP</description>
+    <description xml:lang="gl">Iniciar o cliente DHCP</description>
+    <description xml:lang="hr">Pokreni DHCP klijenta</description>
+    <description xml:lang="hu">DHCP klien indítása</description>
+    <description xml:lang="id">Jalankan klien DHCP</description>
+    <description xml:lang="it">Lancia il client DHCP</description>
+    <description xml:lang="ja">DHCPクライアントを実行</description>
+    <description xml:lang="ko">DHCP 클라이언트 실행</description>
+    <description xml:lang="lt">Paleisti DHCP klientą</description>
+    <description xml:lang="lv">Palaist DHCP klientu</description>
+    <description xml:lang="mk">Стартувај го DHCP клиентот</description>
+    <description xml:lang="mr">DHCP क्लाऐंट दाखल करा</description>
+    <description xml:lang="ms">Lancar klien DHCP</description>
+    <description xml:lang="nb">Start DHCP-klient</description>
+    <description xml:lang="nl">DHCP-client starten</description>
+    <description xml:lang="pl">Uruchom klienta DHCP</description>
+    <description xml:lang="pt">Iniciar cliente DHCP</description>
+    <description xml:lang="pt_BR">Lançar cliente DHCP</description>
+    <description xml:lang="ru">Запустить клиент DHCP</description>
+    <description xml:lang="sk">Spustiť DHCP klienta</description>
+    <description xml:lang="sl">Zagon odjemalca DHCP</description>
+    <description xml:lang="sr">Покрени ДХЦП клијента</description>
+    <description xml:lang="sv">Starta DHCP-klient</description>
+    <description xml:lang="tr">DHCP istemcisini başlat</description>
+    <description xml:lang="uk">Запустити клієнт DHCP</description>
+    <description xml:lang="zh_CN">启动DHCP客户端</description>
+    <description xml:lang="zh_TW">啟動 DHCP</description>
+    <message>Launching DHCP client requires privileges</message>
+    <message xml:lang="ast">Requier privilexos llanzar veceros DHCP</message>
+    <message xml:lang="be">Запуск DHCP-кліента патрабуе неабходных прывілеяў</message>
+    <message xml:lang="bg">Пускането на DHCP клиент изисква правомощия</message>
+    <message xml:lang="cs">Spuštění DHCP klienta vyžaduje oprávnění</message>
+    <message xml:lang="da">Start af DHCP-klienten kræver privilegier</message>
+    <message xml:lang="de">Um den DHCP-Client zu starten sind Zugriffsrechte erforderlich</message>
+    <message xml:lang="el">Η εκκίνηση πελάτη DHCP απαιτεί δικαιώματα</message>
+    <message xml:lang="en_AU">Launching DHCP client requires privileges</message>
+    <message xml:lang="en_GB">Launching DHCP client requires privileges</message>
+    <message xml:lang="es">Se necesitan privilegios para ejecutar el cliente DHCP</message>
+    <message xml:lang="et">DHCP kliendi käivitamine nõuab õigusi</message>
+    <message xml:lang="fi">DHCP-asiakkaan käynnistäminen vaatii oikeuksia</message>
+    <message xml:lang="fr">Le lancement du client DHCP requiert des privilèges</message>
+    <message xml:lang="gl">O inicio do cliente DHCP require privilexios</message>
+    <message xml:lang="hr">Pokretanje DHCP klijenta zahtijeva ovlasti</message>
+    <message xml:lang="hu">DHCP klien indításához megfelelő jog szükséges</message>
+    <message xml:lang="id">Menjalankan klien DHCP membutuhkan hak akses</message>
+    <message xml:lang="it">Lanciare il client DHCP richiede privilegi</message>
+    <message xml:lang="ja">DHCPクライアントを実行する権利が必要です</message>
+    <message xml:lang="ko">DHCP 클라이언트 실행에 권한이 필요합니다</message>
+    <message xml:lang="lt">DHCP kliento paleidimas reikalauja privilegijų</message>
+    <message xml:lang="lv">DHCP klienta palaišanai nepieciešamas privilēģijas</message>
+    <message xml:lang="mk">Стартувањето на DHCP клиентот бара привилегии</message>
+    <message xml:lang="ms">Melancarkan klien DHCP memerlukan kelayakan</message>
+    <message xml:lang="nb">Start av DHCP-klienten krever rettigheter</message>
+    <message xml:lang="nl">Het starten van de DHCP-client vereist rechten</message>
+    <message xml:lang="pl">Uruchamianie klienta DHCP wymaga przywilejów</message>
+    <message xml:lang="pt">Iniciar cliente DHCP requer previlégios</message>
+    <message xml:lang="pt_BR">É necessário privilégios para executar cliente DHCP</message>
+    <message xml:lang="ru">Запуск клиента DHCP требует соответствующих привилегий</message>
+    <message xml:lang="sk">Spúšťanie DHCP klienta požaduje privilégiá</message>
+    <message xml:lang="sl">Zaganjanje odjemalca DHCP zahteva dovoljenja</message>
+    <message xml:lang="sr">За покретање ДХЦП клијента су потребна овлашћења</message>
+    <message xml:lang="sv">Start av DHCP-klient kräver behörighet</message>
+    <message xml:lang="tr">DHCP istemcisini başlatmak yetki gerektirir</message>
+    <message xml:lang="uk">Запуск клієнта DHCP потребує достатніх прав доступу</message>
+    <message xml:lang="zh_CN">启动DHCP客户端需要特权</message>
+    <message xml:lang="zh_TW">啟動 DHCP 需要權限</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.blueman.pppd.pppconnect">
+    <description>Launch PPP daemon</description>
+    <message>Launching PPP daemon requires privileges</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.blueman.rfkill.setstate">
+    <description>Set RfKill State</description>
+    <message>Setting RfKill State requires privileges</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

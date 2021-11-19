@@ -1,0 +1,32 @@
+PACKAGE NAME:     xset-1.2.4-x86_64-2
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xset-1.2.4-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xset: xset (get and set various preferences and properties)
+xset:
+xset: xset is a command line utility to get and set various preferences
+xset: and properties for the current session.
+xset:
+xset:
+xset:
+xset:
+xset:
+xset:
+xset:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xset
+usr/doc/
+usr/doc/xset-1.2.4/
+usr/doc/xset-1.2.4/COPYING
+usr/doc/xset-1.2.4/ChangeLog
+usr/doc/xset-1.2.4/INSTALL
+usr/doc/xset-1.2.4/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xset.1.gz

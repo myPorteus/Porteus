@@ -1,0 +1,96 @@
+PACKAGE NAME:     libtirpc-1.1.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     140K
+UNCOMPRESSED PACKAGE SIZE:     460K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/libtirpc-1.1.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libtirpc: libtirpc (Transport-Independent RPC library)
+libtirpc:
+libtirpc: Libtirpc is a port of Sun's Transport-Independent RPC library to
+libtirpc: Linux. It is being developed by Bull GNU/Linux NFSv4 project.
+libtirpc:
+libtirpc: You will need this library if you plan to use RPC with a GLIBC
+libtirpc: version newer than 2.13, because the RPC stack has been removed
+libtirpc: from GLIBC versions newer than 2.13. The library is required
+libtirpc: by the 'rpcbind' package.
+libtirpc:
+libtirpc: http://sourceforge.net/projects/libtirpc/
+FILE LIST:
+./
+etc/
+etc/bindresvport.blacklist
+etc/netconfig.new
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libtirpc.so.3.0.0
+usr/
+usr/doc/
+usr/doc/libtirpc-1.1.4/
+usr/doc/libtirpc-1.1.4/AUTHORS
+usr/doc/libtirpc-1.1.4/COPYING
+usr/doc/libtirpc-1.1.4/NEWS
+usr/doc/libtirpc-1.1.4/README
+usr/doc/libtirpc-1.1.4/THANKS
+usr/doc/libtirpc-1.1.4/TODO
+usr/include/
+usr/include/tirpc/
+usr/include/tirpc/netconfig.h
+usr/include/tirpc/rpc/
+usr/include/tirpc/rpc/auth.h
+usr/include/tirpc/rpc/auth_des.h
+usr/include/tirpc/rpc/auth_unix.h
+usr/include/tirpc/rpc/clnt.h
+usr/include/tirpc/rpc/clnt_soc.h
+usr/include/tirpc/rpc/clnt_stat.h
+usr/include/tirpc/rpc/des.h
+usr/include/tirpc/rpc/des_crypt.h
+usr/include/tirpc/rpc/key_prot.h
+usr/include/tirpc/rpc/nettype.h
+usr/include/tirpc/rpc/pmap_clnt.h
+usr/include/tirpc/rpc/pmap_prot.h
+usr/include/tirpc/rpc/pmap_rmt.h
+usr/include/tirpc/rpc/raw.h
+usr/include/tirpc/rpc/rpc.h
+usr/include/tirpc/rpc/rpc_com.h
+usr/include/tirpc/rpc/rpc_msg.h
+usr/include/tirpc/rpc/rpcb_clnt.h
+usr/include/tirpc/rpc/rpcb_prot.h
+usr/include/tirpc/rpc/rpcb_prot.x
+usr/include/tirpc/rpc/rpcent.h
+usr/include/tirpc/rpc/svc.h
+usr/include/tirpc/rpc/svc_auth.h
+usr/include/tirpc/rpc/svc_dg.h
+usr/include/tirpc/rpc/svc_mt.h
+usr/include/tirpc/rpc/svc_soc.h
+usr/include/tirpc/rpc/types.h
+usr/include/tirpc/rpc/xdr.h
+usr/include/tirpc/rpcsvc/
+usr/include/tirpc/rpcsvc/crypt.h
+usr/include/tirpc/rpcsvc/crypt.x
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libtirpc.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/bindresvport.3.gz
+usr/man/man3/des_crypt.3.gz
+usr/man/man3/getnetconfig.3.gz
+usr/man/man3/getnetpath.3.gz
+usr/man/man3/getrpcent.3.gz
+usr/man/man3/getrpcport.3.gz
+usr/man/man3/rpc.3.gz
+usr/man/man3/rpc_clnt_auth.3.gz
+usr/man/man3/rpc_clnt_calls.3.gz
+usr/man/man3/rpc_clnt_create.3.gz
+usr/man/man3/rpc_secure.3.gz
+usr/man/man3/rpc_soc.3.gz
+usr/man/man3/rpc_svc_calls.3.gz
+usr/man/man3/rpc_svc_create.3.gz
+usr/man/man3/rpc_svc_err.3.gz
+usr/man/man3/rpc_svc_reg.3.gz
+usr/man/man3/rpc_xdr.3.gz
+usr/man/man3/rpcbind.3.gz
+usr/man/man3/rtime.3.gz
+usr/man/man5/
+usr/man/man5/netconfig.5.gz

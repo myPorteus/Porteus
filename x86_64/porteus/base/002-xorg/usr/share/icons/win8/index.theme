@@ -1,0 +1,5 @@
+[Icon Theme]
+Name=win8
+Comment=Porteus cursors
+Example=left_ptr
+Inherits=core

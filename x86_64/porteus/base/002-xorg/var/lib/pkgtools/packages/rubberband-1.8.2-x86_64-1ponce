@@ -1,0 +1,51 @@
+PACKAGE NAME:     rubberband-1.8.2-x86_64-1ponce
+COMPRESSED PACKAGE SIZE:     168K
+UNCOMPRESSED PACKAGE SIZE:     970K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/rubberband-1.8.2-x86_64-1ponce.txz
+PACKAGE DESCRIPTION:
+rubberband: rubberband (audio time-stretching and pitch-shifting)
+rubberband:
+rubberband: Rubber Band is a library and utility program that permits you to
+rubberband: change the tempo and pitch of an audio recording independently of one
+rubberband: another.
+rubberband:
+rubberband: Homepage: http://breakfastquay.com/rubberband
+rubberband:
+rubberband: This package was built without Java JNI support.
+rubberband:
+rubberband:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rubberband
+usr/doc/
+usr/doc/rubberband-1.8.2/
+usr/doc/rubberband-1.8.2/CHANGELOG
+usr/doc/rubberband-1.8.2/COPYING
+usr/doc/rubberband-1.8.2/README.txt
+usr/doc/rubberband-1.8.2/rubberband.SlackBuild
+usr/include/
+usr/include/rubberband/
+usr/include/rubberband/RubberBandStretcher.h
+usr/include/rubberband/rubberband-c.h
+usr/lib64/
+usr/lib64/ladspa/
+usr/lib64/ladspa/ladspa-rubberband.cat
+usr/lib64/ladspa/ladspa-rubberband.so
+usr/lib64/librubberband.so.2.1.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/rubberband.pc
+usr/lib64/vamp/
+usr/lib64/vamp/vamp-rubberband.cat
+usr/lib64/vamp/vamp-rubberband.so
+usr/man/
+usr/man/man1/
+usr/man/man1/rubberband.1.gz
+usr/share/
+usr/share/ladspa/
+usr/share/ladspa/rdf/
+usr/share/ladspa/rdf/ladspa-rubberband.rdf

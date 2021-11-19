@@ -1,0 +1,40 @@
+PACKAGE NAME:     libglvnd-1.1.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     192K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libglvnd-1.1.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libglvnd: libglvnd (The GL Vendor-Neutral Dispatch library)
+libglvnd:
+libglvnd: libglvnd is a vendor-neutral dispatch layer for arbitrating OpenGL
+libglvnd: API calls between multiple vendors. It allows multiple drivers from
+libglvnd: different vendors to coexist on the same filesystem, and determines
+libglvnd: which vendor to dispatch each API call to at runtime.
+libglvnd:
+libglvnd: Homepage: https://github.com/NVIDIA/libglvnd
+libglvnd:
+libglvnd:
+libglvnd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libglvnd-1.1.1/
+usr/doc/libglvnd-1.1.1/README.md
+usr/include/
+usr/include/glvnd/
+usr/include/glvnd/GLdispatchABI.h
+usr/include/glvnd/libeglabi.h
+usr/include/glvnd/libglxabi.h
+usr/lib64/
+usr/lib64/libEGL.so.1.1.0
+usr/lib64/libGL.so.1.7.0
+usr/lib64/libGLESv1_CM.so.1.2.0
+usr/lib64/libGLESv2.so.2.1.0
+usr/lib64/libGLX.so.0.0.0
+usr/lib64/libGLdispatch.so.0.0.0
+usr/lib64/libOpenGL.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libglvnd.pc

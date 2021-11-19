@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64/muffin
+includedir=${prefix}/include/muffin
+apiversion=0
+requires= cairo >= 1.10 gobject-2.0 gmodule-no-export-2.0 gdk-pixbuf-2.0 >= 2.0 egl x11 xext xfixes >= 3 xdamage xcomposite >= 0.4 xrandr >= 1.2 muffin-cogl-0
+
+Name: Cogl
+Description: An object oriented GL/GLES Abstraction/Utility Layer
+Version: 4.0.7
+Libs: -L${libdir} -lmuffin-cogl-pango-0
+Cflags: -I${includedir}/cogl
+Requires: ${requires}

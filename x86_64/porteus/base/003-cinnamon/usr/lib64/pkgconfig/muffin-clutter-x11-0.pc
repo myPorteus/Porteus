@@ -1,0 +1,24 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64/muffin
+includedir=${prefix}/include/muffin
+
+apiversion=0
+requires=cairo-gobject >= 1.14.0 gio-2.0 >= 2.50.3 atk >= 2.5.3 pangocairo >= 1.30 json-glib-1.0 >= 0.12.0 x11 xext xdamage xcomposite >= 0.4 xtst xi muffin-cogl-0
+requires_private=  pangoft2
+backends=x11
+
+# only kept for backward compatibility
+soname_infix=deprecated
+winsys=deprecated
+backend=deprecated
+cogl=deprecated
+cogl_driver=deprecated
+
+Name: Muffin Clutter
+Description: Muffin's Clutter Private Library
+Version: 4.0.7
+Libs: -L${libdir} -lmuffin-clutter-${apiversion}
+Cflags: -I${includedir}/clutter-${apiversion}
+Requires: ${requires}
+Requires.private: ${requires_private}

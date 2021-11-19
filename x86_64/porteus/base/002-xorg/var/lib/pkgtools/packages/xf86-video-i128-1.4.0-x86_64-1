@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-i128-1.4.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xf86-video-i128-1.4.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xf86-video-i128: xf86-video-i128 (Number Nine I128 video driver for the Xorg X server)
+xf86-video-i128:
+xf86-video-i128: xf86-video-i128 is part of X11.
+xf86-video-i128:
+xf86-video-i128: For more information about the X.Org Foundation (the providers of the
+xf86-video-i128: X.Org implementation of the X Window System), see their website:
+xf86-video-i128:
+xf86-video-i128: http://www.x.org
+xf86-video-i128:
+xf86-video-i128:
+xf86-video-i128:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-i128-1.4.0/
+usr/doc/xf86-video-i128-1.4.0/COPYING
+usr/doc/xf86-video-i128-1.4.0/ChangeLog
+usr/doc/xf86-video-i128-1.4.0/INSTALL
+usr/doc/xf86-video-i128-1.4.0/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/i128_drv.la
+usr/lib64/xorg/modules/drivers/i128_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/i128.4.gz

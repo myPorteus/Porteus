@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<layout xmlns:xi="http://www.w3.org/2001/XInclude">
+  <level mode="default" name="level1" xml:base="common/qwerty.xml">
+    <row>
+      <key align="left" name="Escape"/>
+      <key name="q">
+        <key name="1"/>
+      </key>
+      <key name="w">
+        <key name="2"/>
+      </key>
+      <key name="e">
+        <key name="3"/>
+        <key name="egrave"/>
+        <key name="eacute"/>
+        <key name="ecircumflex"/>
+        <key name="ediaeresis"/>
+        <key name="emacron"/>
+        <key name="eogonek"/>
+      </key>
+      <key name="r">
+        <key name="4"/>
+      </key>
+      <key name="t">
+        <key name="5"/>
+      </key>
+      <key name="z">
+        <key name="6"/>
+        <key name="zabovedot"/>
+        <key name="zacute"/>
+      </key>
+      <key name="u">
+        <key name="7"/>
+        <key name="ugrave"/>
+        <key name="uacute"/>
+        <key name="ucircumflex"/>
+        <key name="udiaeresis"/>
+        <key name="umacron"/>
+      </key>
+      <key name="i">
+        <key name="8"/>
+        <key name="igrave"/>
+        <key name="iacute"/>
+        <key name="icircumflex"/>
+        <key name="idiaeresis"/>
+        <key name="imacron"/>
+      </key>
+      <key name="o">
+        <key name="9"/>
+        <key name="ograve"/>
+        <key name="oacute"/>
+        <key name="ocircumflex"/>
+        <key name="odiaeresis"/>
+        <key name="omacron"/>
+      </key>
+      <key name="p">
+        <key name="0"/>
+      </key>
+      <key align="right" name="BackSpace" repeatable="yes"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+    <row>
+      <key align="left" name="Tab" width="1.5"/>
+      <key name="a">
+        <key name="agrave"/>
+        <key name="aacute"/>
+        <key name="acircumflex"/>
+        <key name="adiaeresis"/>
+        <key name="aring"/>
+        <key name="atilde"/>
+        <key name="ae"/>
+        <key name="amacron"/>
+        <key name="aogonek"/>
+      </key>
+      <key name="s">
+        <key name="ssharp"/>
+        <key name="sacute"/>
+      </key>
+      <key name="d"/>
+      <key name="f"/>
+      <key name="g"/>
+      <key name="h"/>
+      <key name="j"/>
+      <key name="k"/>
+      <key name="l">
+        <key name="lstroke"/>
+      </key>
+      <key name="question">
+        <key name="plus"/>
+        <key name="questiondown"/>
+      </key>
+      <key name="exclam">
+        <key name="minus"/>
+        <key name="underscore"/>
+        <key name="exclamdown"/>
+      </key>
+      <key align="right" name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key align="left" name="Caribou_ShiftUp" toggle="level2" width="1.5"/>
+      <key name="y"/>
+      <key name="x">
+        <key name="zacute"/>
+      </key>
+      <key name="c">
+        <key name="c"/>
+        <key name="ccedilla"/>
+        <key name="cacute"/>
+      </key>
+      <key name="v"/>
+      <key name="b"/>
+      <key name="n">
+        <key name="nacute"/>
+      </key>
+      <key name="m"/>
+      <key name="comma"/>
+      <key name="period"/>
+      <key align="right" name="Caribou_ShiftUp" toggle="level2" width="1.5"/>
+    </row>
+    <row>
+      <key name="Control_L" width="1.5"/>
+      <key name="Alt_L" width="1.5"/>
+      <key name="Caribou_Symbols" toggle="symbols1" width="1.5"/>
+      <key name="space" width="7.0" repeatable="yes"/>
+      <key name="Caribou_Symbols_More" toggle="symbols2" width="1.5"/>
+      <key name="Left" repeatable="yes"/>
+      <key name="Up" repeatable="yes"/>
+      <key name="Down" repeatable="yes"/>
+      <key name="Right" repeatable="yes"/>
+    </row>
+  </level>
+  <level mode="latched" name="level2" xml:base="common/qwerty.xml">
+    <row>
+      <key align="left" name="Escape"/>
+      <key name="Q"/>
+      <key name="W"/>
+      <key name="E">
+        <key name="Egrave"/>
+        <key name="Eacute"/>
+        <key name="Ecircumflex"/>
+        <key name="Ediaeresis"/>
+        <key name="Emacron"/>
+        <key name="Eogonek"/>
+      </key>
+      <key name="R"/>
+      <key name="T"/>
+      <key name="Z">
+        <key name="Zabovedot"/>
+        <key name="Zacute"/>
+      </key>
+      <key name="U">
+        <key name="Ugrave"/>
+        <key name="Uacute"/>
+        <key name="Ucircumflex"/>
+        <key name="Udiaeresis"/>
+        <key name="Umacron"/>
+      </key>
+      <key name="I">
+        <key name="Igrave"/>
+        <key name="Iacute"/>
+        <key name="Icircumflex"/>
+        <key name="Idiaeresis"/>
+        <key name="Imacron"/>
+      </key>
+      <key name="O">
+        <key name="Ograve"/>
+        <key name="Oacute"/>
+        <key name="Ocircumflex"/>
+        <key name="Odiaeresis"/>
+        <key name="Omacron"/>
+      </key>
+      <key name="P"/>
+      <key align="right" name="BackSpace" repeatable="yes"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+    <row>
+      <key align="left" name="Tab" width="1.5"/>
+      <key name="A">
+        <key name="Agrave"/>
+        <key name="Aacute"/>
+        <key name="Acircumflex"/>
+        <key name="Adiaeresis"/>
+        <key name="Aring"/>
+        <key name="Atilde"/>
+        <key name="Ae"/>
+        <key name="Amacron"/>
+        <key name="Aogonek"/>
+      </key>
+      <key name="S">
+        <key name="Sacute"/>
+      </key>
+      <key name="D"/>
+      <key name="F"/>
+      <key name="G"/>
+      <key name="H"/>
+      <key name="J"/>
+      <key name="K"/>
+      <key name="L">
+        <key name="Lstroke"/>
+      </key>
+      <key name="comma"/>
+      <key name="period"/>
+      <key align="right" name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key align="left" name="Caribou_ShiftDown" toggle="level1" width="1.5"/>
+      <key name="Y"/>
+      <key name="X">
+        <key name="Zacute"/>
+      </key>
+      <key name="C">
+        <key name="Ccedilla"/>
+        <key name="Cacute"/>
+      </key>
+      <key name="V"/>
+      <key name="B"/>
+      <key name="N">
+        <key name="Nacute"/>
+      </key>
+      <key name="M"/>
+      <key name="question">
+        <key name="question"/>
+        <key name="questiondown"/>
+      </key>
+      <key name="exclam">
+        <key name="exclam"/>
+        <key name="exclamdown"/>
+      </key>
+      <key align="right" name="Caribou_ShiftDown" toggle="level1" width="1.5"/>
+    </row>
+    <row>
+      <key name="Control_L" width="1.5"/>
+      <key name="Alt_L" width="1.5"/>
+      <key name="Caribou_Symbols" toggle="symbols1" width="1.5"/>
+      <key name="space" width="7.0" repeatable="yes"/>
+      <key name="Caribou_Symbols_More" toggle="symbols2" width="1.5"/>
+      <key name="Left" repeatable="yes"/>
+      <key name="Up" repeatable="yes"/>
+      <key name="Down" repeatable="yes"/>
+      <key name="Right" repeatable="yes"/>
+    </row>
+  </level>
+  <level mode="locked" name="symbols1" xml:base="common/symbols.xml">
+    <row>
+      <key align="left" name="Escape"/>
+      <key name="1"/>
+      <key name="2"/>
+      <key name="3"/>
+      <key name="4"/>
+      <key name="5"/>
+      <key name="6"/>
+      <key name="7"/>
+      <key name="8"/>
+      <key name="9"/>
+      <key name="0"/>
+      <key align="right" name="BackSpace" repeatable="yes" width="1"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+    <row>
+      <key align="left" name="Tab" width="1.5"/>
+      <key name="plus"/>
+      <key name="minus"/>
+      <key name="asterisk"/>
+      <key name="slash"/>
+      <key name="asciicircum"/>
+      <key name="equal"/>
+      <key name="less"/>
+      <key name="greater"/>
+      <key align="right" name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key name="parenleft"/>
+      <key name="parenright"/>
+      <key name="bracketleft"/>
+      <key name="bracketright"/>
+      <key name="braceleft"/>
+      <key name="braceright"/>
+      <key name="comma"/>
+      <key name="period"/>
+    </row>
+    <row>
+      <key name="Control_L" width="1.5"/>
+      <key name="Alt_L" width="1.5"/>
+      <key name="Caribou_Alpha" toggle="default" width="1.5"/>
+      <key name="space" width="7.0" repeatable="yes"/>
+      <key name="Caribou_Symbols_More" toggle="symbols2" width="1.5"/>
+      <key name="Left" repeatable="yes"/>
+      <key name="Up" repeatable="yes"/>
+      <key name="Down" repeatable="yes"/>
+      <key name="Right" repeatable="yes"/>
+    </row>
+  </level>
+  <level mode="latched" name="symbols2" xml:base="common/symbols.xml">
+    <row>
+      <key align="left" name="Escape"/>
+      <key name="F1"/>
+      <key name="F2"/>
+      <key name="F3"/>
+      <key name="F4"/>
+      <key name="F5"/>
+      <key name="F6"/>
+      <key name="F7"/>
+      <key name="F8"/>
+      <key name="F9"/>
+      <key name="F10"/>
+      <key name="F11"/>
+      <key name="F12"/>
+      <key align="right" name="BackSpace" repeatable="yes"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+    <row>
+      <key align="left" name="Tab" width="1.5"/>
+      <key name="backslash"/>
+      <key name="bar"/>
+      <key name="slash"/>
+      <key name="ampersand"/>
+      <key name="at"/>
+      <key name="grave"/>
+      <key name="asciitilde"/>
+      <key name="dollar"/>
+      <key name="EuroSign"/>
+      <key name="sterling"/>
+      <key align="right" name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key name="numbersign"/>
+      <key name="percent"/>
+      <key name="apostrophe"/>
+      <key name="quotedbl"/>
+      <key name="semicolon"/>
+      <key name="colon"/>
+      <key name="plus"/>
+      <key name="minus"/>
+      <key name="underscore"/>
+    </row>
+    <row>
+      <key name="Control_L" width="1.5"/>
+      <key name="Alt_L" width="1.5"/>
+      <key name="Caribou_Symbols" toggle="symbols1" width="1.5"/>
+      <key name="space" width="7.0" repeatable="yes"/>
+      <key name="Caribou_Alpha" toggle="default" width="1.5"/>
+      <key name="Left" repeatable="yes"/>
+      <key name="Up" repeatable="yes"/>
+      <key name="Down" repeatable="yes"/>
+      <key name="Right" repeatable="yes"/>
+    </row>
+  </level>
+</layout>

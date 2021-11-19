@@ -1,0 +1,46 @@
+#!/bin/sh
+# Cinnamon startup helper.
+
+# Notification of the changes and build date during development stage
+# notify-send -t 10000 -i cdr "$(/usr/bin/cinnamon --version)" "Build: $(cat /etc/porteus/003-mate.ver | cut -f 2 -d :)
+# Changelog: /var/log/cinnamon-changelog"
+
+# Enable/Disable bluetooth
+bluetooth_is_on=$(ps -C bluetoothd -o pid=)
+if [[ $bluetooth_is_on ]]; then
+  /usr/bin/blueman-applet &
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' $HOME/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' $HOME/.local/share/applications/blueman-adapters.desktop
+else
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' $HOME/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' $HOME/.local/share/applications/blueman-adapters.desktop
+fi
+
+if [ `grep -o "^darkmode" /etc/bootcmd.cfg` ]; then
+	gsettings set org.cinnamon.desktop.interface gtk-theme "Adwaita-dark"
+fi
+
+# Show notification for errors with changes cheatcode
+REASON_1="A Windows filesystem (FAT, NTFS) or other non-posix compatible filesystem has been detected on your changes location.
+Your changes cannot be saved directly to the specified storage media with this setup. Please use the Porteus save file manager application to create a .dat container and use it for saving your changes after your next reboot."
+
+REASON_2="The changes location is not writable. This may be because the changes path is located on a read-only filesystem."
+
+REASON_3="The changes location as provided in the changes cheatcode could not be found."
+
+if [ "$CHGERR" ]; then
+  case "$CHGERR" in
+    1) REASON="$REASON_1"          
+       ;;
+    2) REASON="$REASON_2"          
+       ;;
+    3) REASON="$REASON_3"
+       ;;
+  esac
+  echo "$REASON" > "/tmp/chg_errlog"
+  (                 
+  sleep 10       
+  notify-send -t 0 -u critical -i error "Changes are not saved" "More information here: /tmp/chg_errlog"
+  ) &
+fi
+

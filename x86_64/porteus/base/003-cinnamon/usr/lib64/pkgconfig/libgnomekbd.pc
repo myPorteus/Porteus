@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libgnomekbd
+Description: GNOME keyboard shared library
+Version: 3.26.1
+Requires: gmodule-export-2.0 gdk-3.0 >= 2.91.7 libxklavier >= 5.2
+Libs: -L${libdir} -lgnomekbd
+Cflags: -I${includedir}

@@ -1,0 +1,77 @@
+PACKAGE NAME:     audiofile-0.3.6-x86_64-2
+COMPRESSED PACKAGE SIZE:     184K
+UNCOMPRESSED PACKAGE SIZE:     1000K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/audiofile-0.3.6-x86_64-2.txz
+PACKAGE DESCRIPTION:
+audiofile: audiofile (audio support library)
+audiofile:
+audiofile: Audiofile is a library to handle various audio file formats, and is
+audiofile: used by the esound daemon. You can also use it to develop your own
+audiofile: audiofile applications.
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+audiofile:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sfconvert
+usr/bin/sfinfo
+usr/doc/
+usr/doc/audiofile-0.3.6/
+usr/doc/audiofile-0.3.6/COPYING
+usr/doc/audiofile-0.3.6/COPYING.GPL
+usr/doc/audiofile-0.3.6/ChangeLog
+usr/doc/audiofile-0.3.6/README
+usr/doc/audiofile-0.3.6/TODO
+usr/include/
+usr/include/af_vfs.h
+usr/include/audiofile.h
+usr/include/aupvlist.h
+usr/lib64/
+usr/lib64/libaudiofile.a
+usr/lib64/libaudiofile.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/audiofile.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/sfconvert.1.gz
+usr/man/man1/sfinfo.1.gz
+usr/man/man3/
+usr/man/man3/afCloseFile.3.gz
+usr/man/man3/afGetDataOffset.3.gz
+usr/man/man3/afGetFrameCount.3.gz
+usr/man/man3/afGetFrameSize.3.gz
+usr/man/man3/afGetTrackBytes.3.gz
+usr/man/man3/afInitAESChannelData.3.gz
+usr/man/man3/afInitAESChannelDataTo.3.gz
+usr/man/man3/afInitByteOrder.3.gz
+usr/man/man3/afInitChannels.3.gz
+usr/man/man3/afInitCompression.3.gz
+usr/man/man3/afInitFileFormat.3.gz
+usr/man/man3/afInitRate.3.gz
+usr/man/man3/afInitSampleFormat.3.gz
+usr/man/man3/afNewFileSetup.3.gz
+usr/man/man3/afOpenFile.3.gz
+usr/man/man3/afQuery.3.gz
+usr/man/man3/afQueryDouble.3.gz
+usr/man/man3/afQueryLong.3.gz
+usr/man/man3/afQueryPointer.3.gz
+usr/man/man3/afReadFrames.3.gz
+usr/man/man3/afReadMisc.3.gz
+usr/man/man3/afSeekFrame.3.gz
+usr/man/man3/afSeekMisc.3.gz
+usr/man/man3/afSetErrorHandler.3.gz
+usr/man/man3/afSetVirtualByteOrder.3.gz
+usr/man/man3/afSetVirtualChannels.3.gz
+usr/man/man3/afSetVirtualPCMMapping.3.gz
+usr/man/man3/afSetVirtualSampleFormat.3.gz
+usr/man/man3/afTellFrame.3.gz
+usr/man/man3/afWriteFrames.3.gz
+usr/man/man3/afWriteMisc.3.gz

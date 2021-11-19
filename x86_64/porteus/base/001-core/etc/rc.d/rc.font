@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# This selects your default screen font from among the ones in
+# /usr/share/kbd/consolefonts.
+#
+setfont -v

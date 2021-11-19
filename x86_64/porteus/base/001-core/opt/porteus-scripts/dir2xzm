@@ -1,0 +1,48 @@
+#!/bin/bash
+# Convert directory tree into .xzm compressed file
+# which can be used as a module.
+#
+# Author: Tomas M. <http://www.linux-live.org>
+# Modifications for Porteus by fanthom
+
+# Variables:
+mod=`readlink -f $1`
+mod2=`readlink -f $2`
+
+# Switch to root:
+if [ "$DISPLAY" ]; then
+   if [ `whoami` != "root" ]; then
+      /opt/porteus-scripts/xorg/psu "/opt/porteus-scripts/dir2xzm $mod $mod2"
+      exit
+   fi
+else
+   if [ `whoami` != "root" ]; then
+      echo "Please enter root's password below"
+      su - -c "/opt/porteus-scripts/dir2xzm $mod $mod2"
+      exit
+   fi
+fi
+
+if [ ! -d "$1" -o "$2" = "" ]; then
+   echo
+   echo "Convert directory tree into .xzm compressed module"
+   echo "usage: $0 source_directory output_file.xzm"
+   exit 1
+fi
+
+# Optimalization procedures, this doesn't hurt:
+find $1/usr{/local/,/}{man,info} -type l -name "*.gz" 2>/dev/null | xargs -r gunzip -f
+find $1/usr{/local/,/}{man,info} -type f -name "*.gz" 2>/dev/null | xargs -r gunzip
+rm -f $1/{usr,usr/local,var}/man/cat*/*
+
+# Fix permissions/ownership:
+chmod 755 $1
+chown 0:0 $1
+#[ `stat -c %a $1` = 755 ] || { echo "Refusing to create the module on non linux filesystem"; exit; }
+
+# Check if we need to create root for the module:
+echo $1 | egrep -w '^bin|^etc|^home|^lib|^opt|^root|^sbin|^srv|^usr|^tmp|^var' && keep='-keep-as-directory'
+
+# Build the module:
+mksquashfs "$1" "$2" -b 256K -Xbcj x86 -noappend $keep $3 $4 $5 $6 $7 $8 $9
+if [ $? != 0 ]; then echo "Error building compressed image"; exit 1; fi

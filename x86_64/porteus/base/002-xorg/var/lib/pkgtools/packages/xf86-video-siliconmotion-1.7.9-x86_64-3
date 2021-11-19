@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-siliconmotion-1.7.9-x86_64-3
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xf86-video-siliconmotion-1.7.9-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xf86-video-siliconmotion: xf86-video-siliconmotion (Silicon Motion video driver for Xorg)
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: xf86-video-siliconmotion is part of X11.
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: For more information about the X.Org Foundation (the providers of the
+xf86-video-siliconmotion: X.Org implementation of the X Window System), see their website:
+xf86-video-siliconmotion:
+xf86-video-siliconmotion: http://www.x.org
+xf86-video-siliconmotion:
+xf86-video-siliconmotion:
+xf86-video-siliconmotion:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-siliconmotion-1.7.9/
+usr/doc/xf86-video-siliconmotion-1.7.9/COPYING
+usr/doc/xf86-video-siliconmotion-1.7.9/ChangeLog
+usr/doc/xf86-video-siliconmotion-1.7.9/INSTALL
+usr/doc/xf86-video-siliconmotion-1.7.9/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/siliconmotion_drv.la
+usr/lib64/xorg/modules/drivers/siliconmotion_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/siliconmotion.4.gz

@@ -1,0 +1,203 @@
+#!/bin/bash
+
+## gtkdialog front end for the Tranlsate Shell application
+## https://github.com/soimort/translate-shell
+## Author: brokenman <brokenman@porteus.org>
+
+## Variables
+CWD=`pwd`
+ccode=/etc/polyglot/cc.txt
+pgconf=/etc/polyglot/polyglot.conf
+dump=/tmp/.polyglot
+export pixmaps=/usr/share//pixmaps/porteus
+export poutput=/tmp/.polyglot-output
+
+## Import the config file
+. $pgconf
+
+## Get default target language. If nothing is set in config file
+## then sniff system language.
+[ -z $TARGETL ] && export TARGETL=${LANG:0:2}
+
+## Get default source language
+[ -z SOURCEL ] && export SOURCEL=`head -n1 $ccode`
+
+## Set default dropdown target language
+deftarg=`sed -n '/\'$TARGETL'$/=' $ccode`
+deftarg=$(( deftarg-1 ))
+defsrc=`sed -n '/\'$SOURCEL'$/=' $ccode`
+defsrc=$(( defsrc-1 ))
+
+############### Functions
+remove_format(){ sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"	; }
+
+cleanup(){ rm -f /tmp/.polyglot*; unset translate_it checkit remove_format ping_gw gtk_message poutput; exit; }
+
+checkit(){ grep "$1" $dump; }
+
+ping_gw(){
+for interface in $(ls /sys/class/net/ | grep -v lo | sed 's/@//g'); do
+  if [[ $(cat /sys/class/net/$interface/carrier) = 1 ]]; then OnLine=1; fi
+done
+[ -z $OnLine ] && return 1 || return 0
+}
+
+###############################
+## Process the translate button
+###############################
+translate_it(){
+## Reset arguments
+unset ARGS
+
+## Get target language
+TARGETL=`echo $cmbTarget|awk '{print$NF}'`
+
+## Set target language
+ARGS=":${TARGETL}"
+
+[ -f $poutput ] && rm $poutput
+gettext "Preparing translation" > $poutput
+
+## Basic or extra output?
+[ "$radBasic" = "true" ] && ARGS="$ARGS -b"
+[ "$chkSound" = "true" ] && ARGS="$ARGS -p"
+
+## Ensure file is plain text
+if [ -z $entFile ]; then
+	trans $ARGS "$edInput" | remove_format > $poutput
+else
+	if [ ! `file -i $entFile|grep -o "text/plain"` ]; then
+		gtk_message "`gettext "This is not a plain text file."`"
+		cleanup
+	fi
+	trans $ARGS -i $entFile | remove_format > $poutput
+fi
+}
+
+gtk_message(){
+echo '
+<window window_position="1" title="'$(gettext "Message")'" icon-name="gtk-error" allow-resize="false">
+<vbox>
+	<hseparator></hseparator>
+	<text><label>"'$1'"</label></text>
+	<text><label>""</label></text>
+	<hbox>
+		<button ok></button>
+	</hbox>
+</vbox>
+</window>
+' | gtkdialog -s -c
+}
+
+updateit(){
+wget git.io/trans -P /tmp
+[ ! -e /tmp/trans ] && 	{ gtk_message "Failed to download update."; exit; }
+chmod +x /tmp/translate_it
+mv /tmp/trans /usr/local/bin
+gtk_message "translation component updated with success."
+}; export -f updateit
+
+############### End Functions
+
+export -f translate_it
+export -f checkit
+export -f remove_format
+export -f ping_gw
+export -f gtk_message
+
+## Trap exits
+trap cleanup SIGHUP SIGINT SIGTERM
+
+## Check for internet
+ping_gw || { gtk_message "`gettext "An internet connection is required."`"; cleanup; }
+
+## Setup files
+touch $poutput
+echo false > /tmp/.polyglot-chk
+
+export MAIN_TRANS='<window title="Porteus translater" image-name="'$pixmaps'/globe.png">
+<vbox margin="10">
+	<hseparator></hseparator>
+	<hbox>
+		<text><label>'$(gettext "From: ")'</label></text>
+		<comboboxtext width-request="250" active="'$defsrc'">
+			<variable>cmbSource</variable>
+			<input file>'$ccode'</input>
+		</comboboxtext>
+			<vseparator></vseparator>
+		<text><label>'$(gettext "To: ")'</label></text>
+		<comboboxtext width-request="250" active="'$deftarg'">
+			<variable>cmbTarget</variable>
+			<input file>'$ccode'</input>
+		</comboboxtext>			
+	</hbox>
+	<hbox>
+		<frame>
+			<radiobutton>
+				<label>'$(gettext "Basic output")'</label>
+				<variable>radBasic</variable>
+			</radiobutton>
+			<radiobutton>
+				<label>'$(gettext "Extra output")'</label>
+				<variable>radExtra</variable>
+			</radiobutton>
+		</frame>
+		<frame>
+			<checkbox>
+				<label>'$(gettext "Speak output")'</label>
+				<variable>chkSound</variable>
+				<input file>/tmp/.polyglot-chk</input>
+			</checkbox>
+		</frame>
+	</hbox>
+	<hbox>
+## SELECT A FILE SECTION
+		<text><label>'$(gettext "Select a file: ")'</label></text>
+		<entry primary-icon-stock="gtk-file" tooltip-text="'$(gettext "Select a plain text file")'">
+			<variable>entFile</variable>
+			<action signal="changed">"if [ $chkSound = true ]; then
+										echo false > /tmp/.polyglot-chk
+									fi"	</action>
+			<action>refresh:chkSound</action>
+		</entry>
+		<button>
+			<label>'$(gettext "Select")'</label>
+			<action function="fileselect">entFile</action>
+		</button>
+	</hbox>
+	<hseparator></hseparator>
+	<text><label>'$(gettext "Input text")'</label></text>
+	<edit height-request="300" vscrollbar-policy="1" can-focus="true" has-focus="true" accepts-tab="false">
+		<variable>edInput</variable>
+	</edit>
+	
+	<text><label>'$(gettext "Output text")'</label></text>
+	
+	<edit editable="false" height-request="300" file-monitor="true" auto-refresh="true" accepts-tab="false" cursor-visible="false" wrap-mode="1">
+		<input file>'$poutput'</input>
+		<variable>edOutput</variable>
+	</edit>
+	<hbox>
+		<button can-focus="false">
+			<input file stock="gtk-go-down"></input>
+			<label>Update</label>
+			<action>updateit &</action>
+		</button>
+		<button can-focus="false">
+			<input file stock="gtk-close"></input>
+			<label>Cancel</label>
+		</button>
+		<button>
+			<input file stock="gtk-media-play"></input>
+			<label>'$(gettext "Translate")'</label>
+			<action>'translate_it'</action>
+		</button>
+	</hbox>
+</vbox>
+</window>
+'
+
+export GUI="`echo "$MAIN_TRANS" | sed -e 's/##.*//'`"
+gtkdialog -p GUI
+
+cleanup

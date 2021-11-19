@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+ <id>xreader.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-2.0+</project_license>
+ <name>Document Viewer</name>
+ <summary>A Document Viewer</summary>
+ <description><p> Xreader is a simple multi-page document viewer. It can display and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI, XPS and Portable Document Format (PDF) files, as well as comic book archive files. When supported by the document, it also allows searching for text, copying text to the clipboard, hypertext navigation and table-of-contents bookmarks. </p></description>
+ <url type="homepage">http://github.com/linuxmint/xreader</url>
+ <project_group>Linux Mint</project_group>
+</component>

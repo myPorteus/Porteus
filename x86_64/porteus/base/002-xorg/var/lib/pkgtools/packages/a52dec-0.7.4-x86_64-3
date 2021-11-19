@@ -1,0 +1,48 @@
+PACKAGE NAME:     a52dec-0.7.4-x86_64-3
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/a52dec-0.7.4-x86_64-3.txz
+PACKAGE DESCRIPTION:
+a52dec: a52dec (test program for liba52)
+a52dec:
+a52dec: a52dec is a test program for liba52. It decodes ATSC A/52 streams
+a52dec: and also includes a demultiplexer for mpeg-1 and mpeg-2 program
+a52dec: streams. This package also includes liba52, which is a free
+a52dec: library for decoding ATSC A/52 streams. The A/52 standard is used
+a52dec: in a variety of applications, including digital television and DVD.
+a52dec: It is also known as AC-3.
+a52dec:
+a52dec: Homepage: http://liba52.sourceforge.net/
+a52dec:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/a52dec
+usr/bin/extract_a52
+usr/doc/
+usr/doc/a52dec-0.7.4/
+usr/doc/a52dec-0.7.4/AUTHORS
+usr/doc/a52dec-0.7.4/COPYING
+usr/doc/a52dec-0.7.4/ChangeLog
+usr/doc/a52dec-0.7.4/HISTORY
+usr/doc/a52dec-0.7.4/INSTALL
+usr/doc/a52dec-0.7.4/NEWS
+usr/doc/a52dec-0.7.4/README
+usr/doc/a52dec-0.7.4/TODO
+usr/include/
+usr/include/a52dec/
+usr/include/a52dec/a52.h
+usr/include/a52dec/a52_internal.h
+usr/include/a52dec/attributes.h
+usr/include/a52dec/audio_out.h
+usr/include/a52dec/mm_accel.h
+usr/lib64/
+usr/lib64/liba52.so.0.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/a52dec.1.gz
+usr/man/man1/extract_a52.1.gz

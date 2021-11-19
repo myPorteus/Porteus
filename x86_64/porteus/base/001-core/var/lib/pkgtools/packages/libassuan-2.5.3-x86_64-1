@@ -1,0 +1,47 @@
+PACKAGE NAME:     libassuan-2.5.3-x86_64-1
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     310K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/libassuan-2.5.3-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libassuan: libassuan (Interprocess Communication Library for GPG)
+libassuan:
+libassuan: This is the IPC library used by GnuPG 2.x, GPGME and a few other
+libassuan: packages. 
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+libassuan:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libassuan-config
+usr/doc/
+usr/doc/libassuan-2.5.3/
+usr/doc/libassuan-2.5.3/AUTHORS
+usr/doc/libassuan-2.5.3/COPYING
+usr/doc/libassuan-2.5.3/COPYING.LIB
+usr/doc/libassuan-2.5.3/ChangeLog
+usr/doc/libassuan-2.5.3/INSTALL
+usr/doc/libassuan-2.5.3/NEWS
+usr/doc/libassuan-2.5.3/README
+usr/doc/libassuan-2.5.3/README.GIT
+usr/doc/libassuan-2.5.3/THANKS
+usr/doc/libassuan-2.5.3/TODO
+usr/include/
+usr/include/assuan.h
+usr/info/
+usr/info/assuan.info.gz
+usr/lib64/
+usr/lib64/libassuan.so.0.8.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libassuan.pc
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/libassuan.m4

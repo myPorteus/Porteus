@@ -1,0 +1,193 @@
+#!/bin/sh
+# Dectivate modules on the fly.
+# Author: fanthom
+
+# Exit if no argument is provided:
+case $1 in
+	-h|--help|"")
+    echo "Usage:"
+    echo "$0 module.xzm"
+    echo "$0 module1.xzm module2.xzm module3.xzm"
+    echo "$0 /folder/with_modules"
+    echo
+    echo "To disable recursive deactivation of folders run deactivate with '-o' (one level) flag:"
+    echo "$0 -o /folder/with_modules"
+    exit
+    ;;
+    quiet)
+    qmode=0
+    shift
+    ;;
+esac
+
+# Check for quiet mode in remainder of arguments
+if [ `echo $@ | grep -o quiet` ]; then
+	qmode=0
+	ARGS="$@"
+	ARGS1=${ARGS#quiet}
+	ARGS2=${ARGS1%quiet}
+	MODULE="$ARGS2" && unset ARGS ARGS1 ARGS2
+else
+	MODULE=$@
+fi
+
+# Arch specific variables:
+if [ `uname -m|grep "x86_64"` ]; then
+    lib=lib64
+else
+    lib=lib
+fi
+
+# Switch to root:
+if [ `whoami` != root ]; then
+	# Enable 'one level' decativation if requested:
+	if [ "$1" = "-o" ]; then
+		farg="-maxdepth 1"
+		MODULE=`echo "$MODULE" | sed 's/-o\ //'`
+	else
+		MODULE=$MODULE
+	fi
+	# Construct list of modules needed for pararell deactivation:
+	for x in $MODULE; do
+		if [ -d $x ]; then
+			for y in `find $x $farg -name "*.xzm"`; do LIST="$LIST $y"; done
+				else
+			LIST="$LIST $x"
+		fi
+	done
+	# Re-execute this script with super user privileges:
+	if [ "$DISPLAY" ]; then
+		/opt/porteus-scripts/xorg/psu "/opt/porteus-scripts/deactivate $LIST"
+		exit
+	else
+		echo "Please enter root's password below"
+		su -c "/opt/porteus-scripts/deactivate $LIST"
+		exit
+	fi
+fi
+
+# Clear old cache files if exist:
+CACHES=/mnt/live/tmp/caches
+[ -d $CACHES ] && rm -r $CACHES
+mkdir $CACHES
+
+## Remove module(s) from /union.
+
+# Enable 'one level' decativation if requested:
+if [ "$1" = "-o" ]; then
+    farg="-maxdepth 1"
+    MODULE=`echo "$MODULE" | sed 's/-o\ //'`
+else
+    MODULE=$MODULE
+fi
+
+process_directory(){
+for y in `find $x $farg -name "*.xzm"`; do
+	get_desktop_files $y
+	modname=${y##*/}
+	for dfile in $desktopfiles; do xdg-desktop-menu uninstall ${dfile} 2>/dev/null; done
+	if [ -z $qmode ]; then
+		/opt/porteus-scripts/xorg/xdeactivate $modname
+			else
+		/opt/porteus-scripts/xorg/aufs-remove $modname
+	fi
+done
+}
+
+get_desktop_files(){
+unset desktopfiles
+modname=${1##*/}
+desktopfiles=`find $mlmi/$modname -type f -name "*.desktop"`	
+}
+
+[ $qmode ] && echo "Quiet mode: on" || echo "Quiet mode: off"
+
+# If we are in GUI then use 'xdeactivate' as a helper:
+mlmi=/mnt/live/memory/images
+if [ "$DISPLAY" ]; then
+	for x in $MODULE; do
+		if [ -d $x ]; then
+			process_directory
+				else
+			# This is NOT a directory
+			modname=${x##*/}
+			get_desktop_files $x
+			for menufile in $desktopfiles; do
+				xdg-desktop-menu uninstall $mlmi/$modname/$menufile
+				echo "Removing $modname desktop file ..."
+			done
+			if [ -z $qmode ]; then
+				/opt/porteus-scripts/xorg/xdeactivate $modname
+					else
+				/opt/porteus-scripts/xorg/aufs-remove $modname
+			fi
+		fi
+	done
+else
+    for x in $MODULE; do
+	if [ -d $x ]; then
+	    for y in `find $x $farg -name "*.xzm"`; do
+			modname=${y##*/}
+			/opt/porteus-scripts/xorg/aufs-remove $modname
+		done
+	else
+		modname=${x##*/}
+	    /opt/porteus-scripts/xorg/aufs-remove $modname
+	fi
+    done
+fi
+
+# Rebuild the system configuration cache:
+if [ -e $CACHES/ldconfig ]; then
+    echo "Updating shared library links:  /sbin/ldconfig"
+    /sbin/ldconfig
+else
+    exit 0
+fi
+
+if [ -e $CACHES/mime ]; then
+    echo "Updating MIME database:  /usr/bin/update-mime-database /usr/share/mime"
+    /usr/bin/update-mime-database /usr/share/mime > /dev/null 2>&1
+fi
+
+if [ -e $CACHES/fonts ]; then
+    echo "Updating X font indexes:  /usr/bin/fc-cache -f"
+    /usr/bin/fc-cache -f
+fi
+
+if [ -e $CACHES/schemas ]; then
+    echo "Updating glib schemas: /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas"
+    /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas
+fi
+
+if [ -e $CACHES/gio ]; then
+    echo "Updating GIO cache: /usr/bin/gio-querymodules /usr/$lib/gio/modules"
+    /usr/bin/gio-querymodules /usr/$lib/gio/modules
+fi
+
+if [ -e $CACHES/immodules ]; then
+    echo "Updating GTK immodules: /usr/bin/update-gtk-immodules"
+    /usr/bin/update-gtk-immodules
+fi
+
+if [ -e $CACHES/certs ]; then
+    echo "Updating certificates in /etc/ssl/certs: /usr/sbin/update-ca-certificates --fresh"
+    /usr/sbin/update-ca-certificates --fresh >/dev/null 2>&1
+fi
+
+# Multilib support for x86_64 arch:
+if [ $lib = lib64 ]; then
+    if [ -e $CACHES/pixbuf ]; then
+	echo "Updating GDK pixbuf loaders: /usr/bin/update-gdk-pixbuf-loaders"
+	/usr/bin/update-gdk-pixbuf-loaders
+    fi
+    if [ -e $CACHES/pango ]; then
+	echo "Updating Pango querymodules: /usr/bin/update-pango-querymodules"
+	/usr/bin/update-pango-querymodules
+    fi
+fi
+
+# Update desktop menu:
+[ -e $CACHES/desktop-uninstall ] && /opt/porteus-scripts/xorg/update-menu uninstall 2>/dev/null
+
+sleep 1

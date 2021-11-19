@@ -1,0 +1,500 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# This script is a part of the brokenman porteus slackware build scripts
+#
+# A script to download single or multiple slackware packages.
+# It will accept a list of exact package names (E.g getpkg binutils flex)
+# or a file with one package name per line.
+
+
+# Slackware version (14.1 14.2 current)
+SLACKVER=current
+
+# Link for list of slackware mirrors
+MIRRORS=http://mirrors.slackware.com/mirrorlist
+
+# Country code
+CCODE=us
+SKIPMIRRORCHECK=yes
+
+# Skip the check for an internet connection
+SKIPNETCHECK=yes
+
+# Convert downloaded packages into modules
+XZM=yes
+
+# How to long to wait before updating the FILELIST.TXT file
+WAITTIME=3600
+
+# How long in seconds to wait before updating mirrors (10800=3hrs)
+MTIME=108000
+
+
+########## DO NOT EDIT BELOW THIS POINT OR A PUPPY DOG COULD DIE.
+
+SCRIPT=${0##*/}
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+SC=$SCRIPTPATH/$SCRIPT
+TMPDIR=/tmp/getpkg
+
+# Pretty colors
+txtbld=$(tput bold)
+txtred=${txtbld}$(tput setaf 1)
+txtgreen=${txtbld}$(tput setaf 2)
+txtwhite=${txtbld}$(tput setaf 7)
+txtcyan=${txtbld}$(tput setaf 6)
+rst=$(tput sgr0)
+function bold(){ echo -e $txtbld "$1" $rst; }
+function green() { echo -e $txtgreen "$1" $rst; }
+function red(){ echo $txtred "$1" $rst; }	
+function cyan(){ echo $txtcyan "$1" $rst; }
+
+usage (){
+echo
+echo "You may enter a package/s"
+echo "$SCRIPT binutils flex"
+echo
+echo "You may also enter a file with a"
+echo "list of packages one per line."
+exit
+}
+
+err(){
+red "$1"
+if [ `echo $* | grep -wo FATAL` ]; then
+	return 1
+fi
+}
+
+# Pretty colors
+txtbld=$(tput bold)
+txtred=${txtbld}$(tput setaf 1)
+txtgreen=${txtbld}$(tput setaf 2)
+txtwhite=${txtbld}$(tput setaf 7)
+txtcyan=${txtbld}$(tput setaf 6)
+rst=$(tput sgr0)
+function bold(){ echo -e $txtbld "$1" $rst; }
+function green() { echo -e $txtgreen "$1" $rst; }
+function red(){ echo $txtred "$1" $rst; }	
+function cyan(){ echo $txtcyan "$1" $rst; }
+
+########################################################################
+# download
+#
+# A percentage meter for wget download
+########################################################################
+download(){
+echo -n "Downloading: ${1##*/} --> "
+wget $1 -P $2 2>&1 | grep --line-buffered "%" |sed -u -e "s,\.,,g" | awk '{printf("\b\b\b\b%4s", $2)}'
+echo -ne "\b\b\b\b"
+green " DONE"	
+}
+
+########################################################################
+# sayok
+#
+# [OK] in green
+########################################################################
+sayok(){
+echo "[${txtbold}${txtgreen}OK$rst]"
+}
+
+########################################################################
+# sayupdate
+#
+# [UPDATE] in red
+########################################################################
+sayupdate(){
+echo "[${txtbold}${txtred}UPDATE$rst]"
+}
+
+########################################################################
+# sayerror
+#
+# [ERROR] in red
+########################################################################
+sayerror(){
+echo "[${txtbold}${txtred}ERROR$rst]"
+}
+
+########################################################################
+# gitpull reminder
+#
+# Reminds users to pull from git when file structure is corrupt.
+########################################################################
+remind_gitpull(){
+echo
+echo "Please update your files by doing a git pull and copying the files"
+echo "downloaded to: ${CWD%/*}"
+}
+
+########################################################################
+# menu_deselect
+#
+# CLI menu for users to deselect a package
+########################################################################
+menu_deselect(){
+required=( $@ )
+clear
+choices=( `printf '+ %.0s' {1..100}` )
+prompt="`gettext "Deselect an item (again to reselect, ENTER when ready):"`"
+while menu_multiple_choice && read -n1 -rp "$prompt" num && [[ "$num" ]]; do
+    [[ "$num" != *[![:digit:]]* ]] && (( num > 0 && num <= ${#required[@]} )) || {
+        msg="Invalid option: $num"; clear; continue
+    }
+    ((num--)); msg=""
+    [[ "${choices[num]}" ]] && choices[num]="" || choices[num]="+"
+clear
+done
+
+msg=" nothing"
+for i in ${!required[@]}; do
+    #[[ "${choices[i]}" = "+" ]] && { FINALPKGS="${FINALPKGS} ${required[i]}"; msg=""; }
+    if [ $frompackageGet ]; then
+		[[ "${choices[i]}" = "+" ]] && NEWFINAL+=( `echo $FINALPKGS|tr ' ' '\n'|grep ${required[i]}` )
+	elif [ $fromsystemDeps=0 ]; then
+		[[ "${choices[i]}" = "+" ]] && NEWFINAL+=( ${required[i]} )
+	else
+		echo "Error at $FUNCNAME $LINENO: please notify brokenman"
+	fi
+done
+FINALPKGS=${NEWFINAL[@]} && unset NEWFINAL
+echo
+}
+
+########################################################################
+# menu_from_variable
+#
+# CLI menu from a variable
+# This function receives a variable called $RESULT and returns $CHOICE
+########################################################################
+menu_from_variable(){
+echo
+bold "Multiple packages were found."
+echo " Choose the correct package or ctrl+c to quit."
+select CHOICE in $RESULT; do
+    if [ -z "$CHOICE" ]; then
+        bold "`gettext "Invalid choice!"`" && echo
+        $FUNCNAME
+    fi
+    break
+done
+}
+
+cleanup(){
+echo
+red "User aborted ..."
+echo " Cleaning up ..."
+rm $TMPDIR 2>/dev/null
+echo
+exit
+}
+trap cleanup SIGHUP SIGINT SIGTERM
+
+# Get arch
+CHKARCH=`echo $* | egrep -o "i486|i586|x86_64"`
+if [ "$CHKARCH" ]; then
+  ARCH=$CHKARCH
+  shift
+else
+  ARCH=`uname -m`
+fi
+
+if [ "$ARCH" = x86_64 ]; then
+  SUFFIX=64
+  LIB=lib64
+  SARCH=64
+else
+  SUFFIX=
+  LIB=lib
+  SARCH=32
+fi
+
+# Check that we have required environment
+REQUIREDPROGS="lynx wget tee awk"
+
+for a in $REQUIREDPROGS; do
+	command -v $a >/dev/null || NOTHAVE+=( "$a" )
+done
+
+if [ ${#NOTHAVE[@]} -gt 0 ]; then
+	red "Required applications are missing:"
+	printf '%s\n' ${NOTHAVE[@]}
+	echo
+	exit
+fi
+
+CWD=`pwd`
+
+# Check for valid input
+[ -z $1 ] && usage
+case $1 in
+	-h|-help|--help)
+	usage ;;
+	-s|--search)
+	userinput=search
+	shift ;;
+esac
+
+if [ "$userinput" != search ]; then
+	# Check if input is a file
+	if [ -e $1 ]; then
+		userinput=file
+	else
+		userinput=package
+	fi
+fi
+
+# Make sure if user entered a file that it exists
+if [ "$userinput" = package ] && [[ `grep -o "/" <<<$1` ]]; then
+	echo
+	echo "`sayerror` $1 not found."
+	usage
+fi
+
+# Internet check
+if [ "$SKIPNETCHECK" != yes ]; then
+	bold "Checking net connectivity ..."
+	if ! (wget -q --spider --force-html --inet4-only $MIRRORS >/dev/null 2>&1); then
+		red "Could not connect to $MIRRORS"
+		echo
+		exit
+	fi
+fi
+
+# Check if we have a country preference
+CCODE=${CCODE-us}
+
+[ ! -d $TMPDIR ] && mkdir -p $TMPDIR
+
+get_slack_mirror(){
+echo "Checking that mirror is online ..." && echo
+URL=`lynx -dump $MIRRORS -nonumbers | grep "^$CCODE" | head -n1 | awk '{print$NF}'`
+if [ -z $URL ]; then
+	echo
+	echo "`sayerror` Could not connect to $MIRRORS"
+	echo
+	exit
+fi
+}
+
+checkmirror(){
+# Check that mirror is up
+if [ "$SKIPMIRRORCHECK" = yes ]; then
+	if [ ! -e /tmp/.slackmirror ]; then
+		get_slack_mirror
+		echo $URL > /tmp/.slackmirror
+	else
+		# Check that file is not too old (time is in second since file creation)
+		TSTAMP=$(expr `date +%s` - `stat -c %Y /tmp/.slackmirror`)
+		if [ $TSTAMP -gt $MTIME ]; then
+			cyan "Updating slackware mirrors ..."
+			rm /tmp/.slackmirror
+			$FUNCNAME
+		else
+			URL=`</tmp/.slackmirror`
+		fi
+	fi
+else
+	get_slack_mirror
+fi	
+}
+checkmirror
+
+URL=$URL/slackware${SUFFIX}-$SLACKVER
+
+# Download mirror list
+FLIST=$TMPDIR/FILELIST.TXT
+if [ "$SKIPFILELIST" = no ]; then
+	[ -e $FLIST ] && rm $FLIST
+	if [ -z $URL ]; then
+		red "Could not set slackware mirror from $MIRRORS"
+		echo
+		exit
+	fi
+
+	# Download the FILELIST.TXT file from the mirror
+	wget $URL/FILELIST.TXT -P $TMPDIR
+	
+	# Make sure we have the FILELIST.TXT file
+	[ ! -e $FLIST ] && \
+	{ echo; echo "`sayerror` Could not download FILELIST.TXT"; exit; }
+	
+	# Touch the file to zero WAITTIME variable
+	touch $FLIST
+else
+	# Make sure we have the FILELIST.TXT file
+	if [ ! -e $FLIST ]; then
+		# Download the FILELIST.TXT file from the mirror
+		wget $URL/FILELIST.TXT -P $TMPDIR
+		touch $FLIST
+		
+		# Make sure the download was successful
+		[ ! -e $FLIST ] && \
+		{ echo; echo "`sayerror` Could not find $TMPDIR/FILELIST.TXT"; exit; }
+			else
+		# Check the seconds variable in config.txt and update if necessary
+		filetime=`date +%s -r $FLIST`
+		nowtime=`date +%s`
+		timediff=$(( nowtime - filetime ))
+		if [ $WAITTIME -lt $timediff ]; then
+			echo "$WAITTIME seconds reached. Updating FILELIST.TXT"
+			rm $FLIST
+			wget $URL/FILELIST.TXT -P $TMPDIR
+			touch $FLIST
+			# Make sure the download was successful
+			[ ! -e $FLIST ] && \
+			{ echo; echo "`sayerror` Could not download $TMPDIR/FILELIST.TXT"; exit; }
+		fi
+	fi
+fi
+
+echo
+
+process_pkg(){
+unset pkg
+pkg=$1
+# Check if it is a full or partial package name
+if [ "${pkg: -3}" = txz ]; then
+	foundpkg=`grep "/$pkg$" $FLIST | awk -F/ '{print$NF}'`
+		else
+	foundpkg=`grep "/$pkg-[0-9].*\.txz$" $FLIST | awk -F/ '{print$NF}'`
+fi
+
+# Make sure we found a package
+if [ -z "$foundpkg" ]; then
+	echo "`sayerror` Could not find $pkg in slackware repo."
+	ERRORS+=( $pkg )
+	cleanup
+fi
+
+# Check if multiple packages were found
+pkgs=( $foundpkg )
+if [ ${#pkgs[@]} -gt 1 ]; then
+	echo "[${txtbold}${txtcyan}MULTIPLE$rst] $pkg"
+	RESULT="$foundpkg"
+	menu_from_variable $RESULT
+	#taillink=`grep "$pkgs$" $FLIST | awk '{print$NF}' | sed 's ..  '`
+	taillink=`grep "$CHOICE$" $FLIST | awk '{print$NF}' | sed 's ..  '`
+	
+	# If we could not get a link then add it to an error array
+	if [ -z $taillink ]; then
+		echo "`sayerror` Could not get URL for $CHOICE."
+		ERRORS+=( $CHOICE )
+			else
+		LINKS+=( $URL/$taillink )
+		echo "`sayok` $CHOICE"
+	fi
+else
+	taillink=`grep "$pkgs$" $FLIST | awk '{print$NF}' | sed 's ..  '`
+	if [[ -z $taillink ]]; then
+		echo "`sayerror` Could not get URL for $CHOICE."
+		ERRORS+=( $CHOICE )
+			else
+		LINKS+=( $URL/$taillink )
+		echo "`sayok` $foundpkg"
+	fi
+fi
+}
+
+# Process user input
+case $userinput in
+search )
+	echo "Searching ..."
+	for a in $*; do
+		FPKG+=( `awk -F/ '/.txz$/ && /'$a'/{print$NF}' $FLIST` )
+	done
+	if [ ${#FPKG[@]} -gt 0 ]; then
+		cyan "Packages found:"
+		printf '%s\n' ${FPKG[@]}
+		exit
+			else
+		cyan "Nothing found."
+		exit
+	fi
+;;
+file)
+	for pkg in `cat $1`; do
+		process_pkg $pkg
+	done
+;;
+package)
+	for pkg in $*; do
+		unset foundpkg
+		process_pkg $pkg
+	done
+;;
+esac
+
+# Dump reports
+REPORTS=${REPORTS-$TMPDIR}
+
+if [ ${#ERRORS[@]} -gt 0 ]; then
+	echo " ###############################"
+	bold "SCAN REPORT"
+	echo "The following packages were not found."
+	echo
+	printf '%s\n' ${ERRORS[@]}
+	echo
+	echo "The following packages were not found." > $REPORTS/portbuild-errors.txt
+	printf '%s\n' ${ERRORS[@]} >> $REPORTS/portbuild-errors.txt
+	cyan "A report was left at $REPORTS/errors.txt"
+fi
+
+if [[ -z $LINKS ]] || [ ${#LINKS[@]} -eq 0 ]; then
+	bold "No packages found."
+	exit
+else
+	sed -i '/-/d' $REPORTS/portbuild-download.txt 2>/dev/null
+	for a in ${LINKS[@]}; do
+		echo ${a##*/} >> $REPORTS/portbuild-download.txt
+	done
+fi
+
+# Ask for path to download packages
+echo
+echo "Please enter a directory to download the packages to."
+read -e -p "> " targetdir
+echo
+
+# If no directory was given set it to /tmp
+targetdir=${targetdir-/tmp}
+
+# Commence download of packages
+for a in ${LINKS[@]}; do
+	name=${a##*/}
+	if [ ! -e $targetdir/$name ]; then
+		download $a $targetdir
+	else
+		echo "Downloading: $name ${txtbold}${txtgreen}DONE$rst"
+	fi
+	if [ "$XZM" = yes ]; then
+		echo "Converting $name ..."
+		txz2xzm $targetdir/$name
+	fi
+done
+
+# Give final report
+echo
+bold "Processing finished."
+echo "Your files are in: $targetdir"

@@ -1,0 +1,46 @@
+PACKAGE NAME:     faac-1.28-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/faac-1.28-x86_64-1jay.tgz
+PACKAGE DESCRIPTION:
+faac: faac (Freeware Advanced Audio Coder)
+faac:
+faac: FAAC is an Advanced Audio Coder (MPEG2-AAC, MPEG4-AAC).
+faac: The goal of FAAC is to explore the possibilities of AAC
+faac: and exceed the quality of the currently best MP3 encoders.
+faac:
+faac: Homepage: http://sourceforge.net/projects/faac
+faac:
+faac:
+faac:
+faac:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/faac
+usr/doc/
+usr/doc/faac-1.28/
+usr/doc/faac-1.28/AUTHORS
+usr/doc/faac-1.28/COPYING
+usr/doc/faac-1.28/ChangeLog
+usr/doc/faac-1.28/INSTALL
+usr/doc/faac-1.28/NEWS
+usr/doc/faac-1.28/README
+usr/doc/faac-1.28/TODO
+usr/doc/faac-1.28/faac.SlackBuild
+usr/doc/faac-1.28/faac.html
+usr/doc/faac-1.28/libfaac.html
+usr/doc/faac-1.28/libfaac.pdf
+usr/include/
+usr/include/faac.h
+usr/include/faaccfg.h
+usr/lib64/
+usr/lib64/libfaac.la
+usr/lib64/libfaac.so.0.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/faac.1.gz

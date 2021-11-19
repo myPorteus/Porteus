@@ -1,0 +1,50 @@
+#!/bin/bash
+# Service menu script to install slackware packages
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu "$0 $selection" &
+  exit
+fi
+
+# Put up a dialog
+export STATE=MANUAL
+echo "Installing $package ..." > /tmp/.message
+manual_progress "Processing ..."
+
+# Install the packages
+for package in $selection; do
+  path=${package%/*}
+  name=${package##*/}
+  dir=${name%.*}
+  echo "$name" >> /tmp/.extracted
+  echo "$name" > /tmp/.message
+  installpkg $package
+done
+
+kill_manual_progress
+
+# Give notification
+echo '
+'`start_window "Confirmation" gtk-yes 400 0`'
+	<hbox>
+		'`pixmapstock gtk-yes`'
+		'`txtcolor 330 darkred x-large normal "Installation was completed"`'
+	</hbox>
+		'`hsep`'
+		'`blankline`'
+		<timer milliseconds="true" visible="false">
+             <action>sleep 2</action>
+             <action type="exit">timedout</action>
+           </timer>
+'`end_window`'
+'|gtkdialog -s
+
+rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit
+

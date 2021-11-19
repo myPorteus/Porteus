@@ -1,0 +1,34 @@
+PACKAGE NAME:     mkfontscale-1.2.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/mkfontscale-1.2.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mkfontscale: mkfontscale (X11 font utility)
+mkfontscale:
+mkfontscale: mkfontscale creates the fonts.scale and fonts.dir index files used
+mkfontscale: by the legacy X11 font system.
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+mkfontscale:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mkfontdir
+usr/bin/mkfontscale
+usr/doc/
+usr/doc/mkfontscale-1.2.1/
+usr/doc/mkfontscale-1.2.1/COPYING
+usr/doc/mkfontscale-1.2.1/ChangeLog
+usr/doc/mkfontscale-1.2.1/INSTALL
+usr/doc/mkfontscale-1.2.1/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/mkfontdir.1.gz
+usr/man/man1/mkfontscale.1.gz

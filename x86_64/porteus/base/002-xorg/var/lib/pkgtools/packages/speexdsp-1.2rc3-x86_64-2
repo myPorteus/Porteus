@@ -1,0 +1,41 @@
+PACKAGE NAME:     speexdsp-1.2rc3-x86_64-2
+COMPRESSED PACKAGE SIZE:     448K
+UNCOMPRESSED PACKAGE SIZE:     570K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/speexdsp-1.2rc3-x86_64-2.txz
+PACKAGE DESCRIPTION:
+speexdsp: SpeexDSP (DSP library)
+speexdsp:
+speexdsp: SpeexDSP is a patent-free, Open Source/Free Software DSP library.
+speexdsp:
+speexdsp: Homepage: http://www.speex.org/
+speexdsp:
+speexdsp:
+speexdsp:
+speexdsp:
+speexdsp:
+speexdsp:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/speexdsp-1.2rc3/
+usr/doc/speexdsp-1.2rc3/COPYING
+usr/doc/speexdsp-1.2rc3/README
+usr/doc/speexdsp-1.2rc3/README.blackfin
+usr/doc/speexdsp-1.2rc3/TODO
+usr/doc/speexdsp-1.2rc3/manual.pdf
+usr/include/
+usr/include/speex/
+usr/include/speex/speex_echo.h
+usr/include/speex/speex_jitter.h
+usr/include/speex/speex_preprocess.h
+usr/include/speex/speex_resampler.h
+usr/include/speex/speexdsp_config_types.h
+usr/include/speex/speexdsp_types.h
+usr/lib64/
+usr/lib64/libspeexdsp.so.1.5.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/speexdsp.pc

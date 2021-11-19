@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Arnaud Bonatti <arnaud.bonatti@gmail.com> -->
+<component type="desktop">
+  <id>ca.desrt.dconf-editor.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Dconf Editor</name>
+  <name xml:lang="ug">dconf تەھرىرلىگۈچى</name>
+  <name xml:lang="zh_TW">Dconf 編輯器</name>
+  <name xml:lang="zh_HK">dconf 編輯器</name>
+  <name xml:lang="zh_CN">Dconf 系统配置编辑器</name>
+  <name xml:lang="vi">Trình soạn thảo dconf</name>
+  <name xml:lang="uk">Редактор dconf</name>
+  <name xml:lang="tr">Dconf Düzenleyici</name>
+  <name xml:lang="th">เครื่องมือแก้ไข dconf</name>
+  <name xml:lang="tg">Муҳаррири dconf</name>
+  <name xml:lang="te">డికాన్ఫ్ కూర్పకం</name>
+  <name xml:lang="ta">டிகான்ஃப் திருத்தி</name>
+  <name xml:lang="sv">Dconf-redigerare</name>
+  <name xml:lang="sr@latin">Dkonf uređivač</name>
+  <name xml:lang="sr">Дконф уређивач</name>
+  <name xml:lang="sl">Urejevalnik Dconf</name>
+  <name xml:lang="sk">Editor systému Dconf</name>
+  <name xml:lang="ru">Редактор dconf</name>
+  <name xml:lang="ro">Editorul dconf</name>
+  <name xml:lang="pt_BR">Editor dconf</name>
+  <name xml:lang="pt">Editor Dconf</name>
+  <name xml:lang="pl">Edytor dconf</name>
+  <name xml:lang="pa">dconf ਐਡੀਟਰ</name>
+  <name xml:lang="oc">Editor Dconf</name>
+  <name xml:lang="nl">Dconf-bewerker</name>
+  <name xml:lang="ne">Dconf सम्पादक</name>
+  <name xml:lang="nb">Dconf-redigering</name>
+  <name xml:lang="mr">डीकॉन्फ संपादक</name>
+  <name xml:lang="ml">Dconf എഡിറ്റര്‍</name>
+  <name xml:lang="lv">Dconf redaktors</name>
+  <name xml:lang="lt">Dconf redaktorius</name>
+  <name xml:lang="ko">dconf 편집기</name>
+  <name xml:lang="kk">Dconf түзетушісі</name>
+  <name xml:lang="ja">dconf エディター</name>
+  <name xml:lang="it">Editor dconf</name>
+  <name xml:lang="is">Dconf ritill</name>
+  <name xml:lang="id">Penyunting Dconf</name>
+  <name xml:lang="hu">Dconf szerkesztő</name>
+  <name xml:lang="hr">Dconf uređivač</name>
+  <name xml:lang="hi">dconf संपादक</name>
+  <name xml:lang="he">עורך Dconf</name>
+  <name xml:lang="gl">Editor de Dconf</name>
+  <name xml:lang="fur">Editôr di dconf</name>
+  <name xml:lang="fr">Éditeur Dconf</name>
+  <name xml:lang="fi">Dconf-muokkain</name>
+  <name xml:lang="fa">ویرایشگر dconf</name>
+  <name xml:lang="eu">Dconf editorea</name>
+  <name xml:lang="et">dconf redaktor</name>
+  <name xml:lang="es">Editor de dconf</name>
+  <name xml:lang="eo">Dconf-redaktilo</name>
+  <name xml:lang="en_GB">Dconf Editor</name>
+  <name xml:lang="el">Επεξεργαστής Dconf</name>
+  <name xml:lang="de">Dconf-Editor</name>
+  <name xml:lang="da">Dconf-redigering</name>
+  <name xml:lang="cs">Editor dconf</name>
+  <name xml:lang="ca@valencia">Editor del dconf</name>
+  <name xml:lang="ca">Editor del dconf</name>
+  <name xml:lang="bs">Uređivač dconf</name>
+  <name xml:lang="bn_IN">dconf সম্পাদক</name>
+  <name xml:lang="bg">Редактор за dconf</name>
+  <name xml:lang="be">Рэдактар dconf-настроек</name>
+  <name xml:lang="as">dconf সম্পাদক</name>
+  <name xml:lang="ar">محرر dconf</name>
+  <name xml:lang="an">Editor de dconf</name>
+  <name xml:lang="af">Dconf redigeerder</name>
+  <summary>A graphical tool for editing the dconf database</summary>
+  <summary xml:lang="zh_TW">編輯 dconf 資料庫的圖形化工具</summary>
+  <summary xml:lang="zh_CN">用于编辑 dconf 数据库的图形界面工具</summary>
+  <summary xml:lang="tr">Dconf veri tabanını düzenlemek için grafiksel bir araç</summary>
+  <summary xml:lang="sv">Ett grafiskt verktyg för redigering av dconf-databasen</summary>
+  <summary xml:lang="sr@latin">Grafički alat za uređivanje baze podataka dkonf-a</summary>
+  <summary xml:lang="sr">Графички алат за уређивање базе података дконф-а</summary>
+  <summary xml:lang="sl">Grafično orodje za urejanje podatkovne zbirke dconf</summary>
+  <summary xml:lang="sk">Grafický nástroj na úpravu databázy systému dconf</summary>
+  <summary xml:lang="ro">Un utilitar grafic pentru editarea bazei de date dconf</summary>
+  <summary xml:lang="pt_BR">Uma ferramenta gráfica para editar o banco de dados dconf</summary>
+  <summary xml:lang="pt">Uma ferramenta gráfica para editar a base de dados dconf</summary>
+  <summary xml:lang="pl">Graficzne narzędzie do modyfikowania bazy danych dconf</summary>
+  <summary xml:lang="oc">Una aisina visuala per editar la basa de donadas dconf</summary>
+  <summary xml:lang="nl">Een grafisch hulpprogramma voor het bewerken van de dconf-database</summary>
+  <summary xml:lang="ne">dconf डेटाबेस सम्पादनको लागि ग्राफिकल उपकरण</summary>
+  <summary xml:lang="nb">Et grafisk verktøy for redigering av dconf-databasen</summary>
+  <summary xml:lang="ml">Donf ഡേറ്റാബേസ് എഡിറ്റു ചെയ്യുവാനുള്ള ഒരു ഗ്രാഫിക്കല്‍ പ്രയോഗം</summary>
+  <summary xml:lang="lv">Grafiskais rīks dconf datubāzes rediģēšanai</summary>
+  <summary xml:lang="lt">Grafinis įrankis dconf duomenų bazės redagavimui</summary>
+  <summary xml:lang="ko">dconf 데이터베이스를 편집하는 그래픽 도구</summary>
+  <summary xml:lang="kk">dconf дерекқорын өңдеудің графикалық сайманы</summary>
+  <summary xml:lang="it">Uno strumento grafico per modificare il database dconf</summary>
+  <summary xml:lang="id">Alat grafis untuk menyunting basis data dconf</summary>
+  <summary xml:lang="hu">Grafikus eszköz a dconf adatbázis szerkesztéséhez</summary>
+  <summary xml:lang="hr">Grafički alat za uređivanje dconf baze podataka</summary>
+  <summary xml:lang="he">כלי חזותי לעריכת מסד נתוני dconf</summary>
+  <summary xml:lang="gl">Unha ferramenta gráfica para editar a base de datos de dconf</summary>
+  <summary xml:lang="fur">Un imprest grafic par modificâ la base di dâts dconf</summary>
+  <summary xml:lang="fr">Un outil visuel pour éditer la base de données dconf</summary>
+  <summary xml:lang="fi">Graafinen työkalu dconf-tietokannan muokkaamiseen</summary>
+  <summary xml:lang="eu">Dconf-en datu-basea editatzeko tresna grafikoa</summary>
+  <summary xml:lang="es">Una herramienta gráfica para editar la base de datos de dconf</summary>
+  <summary xml:lang="en_GB">A graphical tool for editing the dconf database</summary>
+  <summary xml:lang="el">Ένα εργαλείο για επεξεργασία της βάσης δεδομένων του Dconf</summary>
+  <summary xml:lang="de">Ein grafisches Werkzeug zum Bearbeiten der dconf-Datenbank</summary>
+  <summary xml:lang="da">Et grafisk værktøj til at redigere dconf-databasen</summary>
+  <summary xml:lang="cs">Grafický nástroj pro úpravy databáze dconf</summary>
+  <summary xml:lang="ca@valencia">Una eina gràfica per editar la base de dades del dconf</summary>
+  <summary xml:lang="ca">Una eina gràfica per editar la base de dades del dconf</summary>
+  <summary xml:lang="af">'n Grafiese hulpmiddel om die dconf databasis te redigeer</summary>
+  <description>
+    <p>
+      Dconf Editor is a tool to allow direct editing of the dconf configuration database.
+      This is useful when developing applications that use these settings.
+    </p>
+    <p xml:lang="zh_TW">Dconf 編輯器是一個能讓您直接編輯 dconf 設定資料庫的工具。這在開發使用這些設定值的應用程式時會很有幫助。</p>
+    <p xml:lang="zh_CN">Dconf 编辑器使你能够直接编辑 dconf 配置数据库，这在开发使用这些设置的程序时非常有用。</p>
+    <p xml:lang="tr">Dconf Düzenleyici, dconf yapılandırma veri tabanının doğrudan düzenlenmesine olanak tanıyan bir araçtır; ve bu ayarları kullanan uygulamalar geliştirilirken kullanışlıdır.</p>
+    <p xml:lang="sv">Dconf-redigeraren är ett verktyg för att tillåta direkt redigering av dconf-konfigurationsdatabasen. Detta är användbart under utveckling av program som använder dessa inställningar.</p>
+    <p xml:lang="sr@latin">Dkonf uređivač je alat koji omogućava direktno uređivanje baze podataka podešavanja dkonf-a. Ovo je korisno kada razvijate programe koji koriste ova podešavanja.</p>
+    <p xml:lang="sr">Дконф уређивач је алат који омогућава директно уређивање базе података подешавања дконф-а. Ово је корисно када развијате програме који користе ова подешавања.</p>
+    <p xml:lang="sl">Urejevalnik Dconf je orodje, ki omogoča neposredno urejanje nastavitev podatkovne zbirke dconf. Orodje je nepogrešljivo za razvijalce programske opreme, ki uporabljajo te nastavitve.</p>
+    <p xml:lang="sk">Editor systému Dconf je nástroj, ktorý umožňuje priamu úpravu konfiguračnej databázy systému dconf. To je užitočné pri vývoji aplikácií, ktoré používajú tieto nastavenia.</p>
+    <p xml:lang="ro">Editorul Dconf este o unealtă ce vă permite editarea directă a bazei de date pentru configurații dconf. Este util când dezvoltați aplicații care folosesc aceste configurări.</p>
+    <p xml:lang="pt_BR">O editor Dconf é uma ferramenta que permite editar diretamente o banco de dados de configuração do dconf. Isto é útil ao desenvolver aplicações que utilizam essas configurações.</p>
+    <p xml:lang="pt">O editor Dconf é uma ferramenta que permite a edição direta da base de dados de configurações dconf. É útil quando desenvolver aplicações que utilizem estas definições.</p>
+    <p xml:lang="pl">Edytor dconf jest narzędziem umożliwiającym bezpośrednie modyfikowanie bazy danych konfiguracji dconf. Jest to przydatne przy rozwijaniu programów używających tych ustawień.</p>
+    <p xml:lang="oc">Editor Dconf es una aisina que permet la modificacion dirècta de la basa de donadas de configuracion dconf. Utile al moment del desvolopament d’aplicacions que s’apuèjan sus aquestes reglatges.</p>
+    <p xml:lang="nl">Dconf-bewerker is een hulpprogramma om de dconf-configuratiedatabase rechtstreeks aan te passen. Dit is nuttig bij het ontwikkelen van toepassingen die gebruik maken van deze instellingen.</p>
+    <p xml:lang="ne">डिकन्फ सम्पादक एक डिकन्फ कन्फिगरेसन डाटाबेस को सीधा सम्पादन को लागी एक उपकरण हो। यी सेटिङ्गहरू प्रयोग गर्ने अनुप्रयोगहरू विकास गर्दा यो उपयोगी छ।</p>
+    <p xml:lang="nb">Dconf-editor er et verktøy som lar deg redigere dconf konfigurasjonsdatabasen direkte. Dette er nyttig når man utvikler applikasjoner som bruker disse innstillingene.</p>
+    <p xml:lang="ml">Dconf ഡേറ്റാബേസ് എഡിറ്റു ചെയ്യാന്‍ നിങ്ങളെ സഹായിക്കുന്ന പ്രയോഗം ആണ് dconf എഡിറ്റര്‍. ഇത്തരം ക്രമീകരണങ്ങള്‍ ഉപയോഗിക്കുന്ന പുതിയ പ്രയോഗങ്ങള്‍ ഉണ്ടാക്കുമ്പോള്‍ ഇത് വളരേ ഉപകാരപ്രദമാണ്.</p>
+    <p xml:lang="lv">Dconf redaktora rīks jums ļauj tiešā veidā rediģēt dconf konfigurācijas datubāzi. Tas noder izstrādājot lietotnes, kuras izmanto šos iestatījumus.</p>
+    <p xml:lang="lt">Dconf redaktorius yra įrankis, leidžiantis tiesiogiai redaguoti dconf konfigūracijos duomenų bazę. Jis naudingas kuriant programas, naudojančias šiuos nustatymus.</p>
+    <p xml:lang="ko">dconf 편집기는 dconf 설정 데이터베이스를 직접 편집하는 도구입니다. 이 설정을 사용하는 프로그램을 개발하는데 좋습니다.</p>
+    <p xml:lang="kk">Dconf түзеткіші - dconf баптаулар дерекқорын тікелей түзетуді мүмкін ететін сайман. Бұл осы баптауларды қолданатын қолданбаларды жасау кезінде пайдалы.</p>
+    <p xml:lang="it">Editor dconf è uno strumento che consente di modificare il database delle configurazioni dconf. Risulta molto utile durante lo sviluppo di applicazioni che usano queste impostazioni.</p>
+    <p xml:lang="id">Penyunting Dconf adalah sebuah alat yang dapat menyunting langsung basis data dari konfigurasi dconf. Alat ini berguna bagi pengembang aplikasi yang menggunakan pengaturan ini.</p>
+    <p xml:lang="hu">A Dconf szerkesztő egy grafikus eszköz a dconf adatbázis közvetlen szerkesztéséhez. Hasznos olyan alkalmazások fejlesztése során, amelyek használják ezeket a beállításokat.</p>
+    <p xml:lang="hr">Dconf uređivač je alat koji omogućava izravno uređivanje podešavanja dconf baze podataka. To je korisno kada razvijate aplikaciju koja koristi te postavke.</p>
+    <p xml:lang="he">עורך Dconf הוא כלי המאפשר עריכה ישירה של תצורות ממסד הנתונים של dconf. זה שימוש בעת פיתוח יישומים המשתמשות בהגדרות אלו.</p>
+    <p xml:lang="gl">O Editor de Dconf é unha ferramenta que permite editar directamente a base de datos de configuracións de dconf. Isto é útil para desenvolver aplicativos que usa estas preferencias.</p>
+    <p xml:lang="fur">L'editôr dconf al è un imprest che al permet di modificâ in maniere direte la base di dâts des configurazions dconf. Chest al è util tal svilupâ aplicazions che a doprin chestis impostazions.</p>
+    <p xml:lang="fr">Éditeur Dconf est un outil permettant la modification directe de la base de données de configuration dconf. Utile lors du développement d’applications qui s’appuient sur ces réglages.</p>
+    <p xml:lang="fi">Dconf-muokkaimen avulla voit muokata suoraan dconf-asetustietokantaa. Tämä on erityisesti silloin tarpeen, kun kehität näitä asetuksia käyttäviä sovelluksia.</p>
+    <p xml:lang="eu">Dconf editorea dconf konfigurazioaren datu-basea zuzenean editatzeko tresna bat da. Hau erabilgarria da ezarpen hauek erabiltzen dituzten aplikazioak garatzean.</p>
+    <p xml:lang="es">El editor de dconf es una herramienta que permite editar directamente la base de datos de configuraciones. Esto es útil al desarrollar aplicaciones que usas estas configuraciones.</p>
+    <p xml:lang="en_GB">Dconf Editor is a tool to allow direct editing of the dconf configuration database. This is useful when developing applications that use these settings.</p>
+    <p xml:lang="el">Ο επεξεργαστής Dconf είναι ένα εργαλείο που σας επιτρέπει να επεξεργαστείτε τις ρυθμίσεις της βάσης δεδομένων του. Αυτό είναι ιδιαίτερα χρήσιμο όταν αναπτύσσετε μια εφαρμογή που χρησιμοποιεί αυτές τις ρυθμίσεις.</p>
+    <p xml:lang="de">Dconf-Editor ist ein Werkzeug zum direkten Bearbeiten der Dconf-Konfigurationsdatenbank. Dies ist nützlich beim Entwickeln von Anwendungen, die diese Einstellungen nutzen.</p>
+    <p xml:lang="da">Dconf-redigering er et værktøj der giver mulighed for direkte redigering af dconf-konfigurationsdatabasen. Det er nyttigt ved udvikling af programmer, der bruger disse indstillinger.</p>
+    <p xml:lang="cs">Editor dconf je nástroj, který umožňuje přímé úpravy databáze nastavení dconf. Hodí se především při vývoji aplikací, které používají tato nastavení.</p>
+    <p xml:lang="ca@valencia">L'editor del dconf és una eina per permetre l'edició directa de la configuració de la base dades del dconf. Això és útil quan es desenvolupen aplicacions que usen estes configuracions.</p>
+    <p xml:lang="ca">L'editor del dconf és una eina per permetre l'edició directa de la configuració de la base dades del dconf. Això és útil quan es desenvolupen aplicacions que usen aquestes configuracions.</p>
+    <p>
+      Editing your configuration directly is an advanced feature and may cause applications to not work correctly.
+    </p>
+    <p xml:lang="zh_TW">直接編輯您的設定是一種進階的功能且可能會導致應用程式無法正常運作。</p>
+    <p xml:lang="zh_CN">直接编辑设置属于高级功能，可能会导致应用程序无法正常运作。</p>
+    <p xml:lang="tr">Yapılandırmanızı doğrudan düzenlemek ileri düzey bir özelliktir ve uygulamaların düzgün çalışmamasına neden olabilir.</p>
+    <p xml:lang="sv">Att redigera din konfiguration direkt är en avancerad funktion som kan förorsaka att program inte fungerar korrekt.</p>
+    <p xml:lang="sr@latin">Uređivanje vaših podešavanja direktno je napredna mogućnost i može dovesti do neispravnog rada programa.</p>
+    <p xml:lang="sr">Уређивање ваших подешавања директно је напредна могућност и може довести до неисправног рада програма.</p>
+    <p xml:lang="sl">Neposredno urejanje nastavitev zahteva poglobljeno poznavanje programa in lahko povzroči nepravilno delovanje sistema.</p>
+    <p xml:lang="sk">Priama úprava vašej konfigurácie je pokročilá funkcia a môže spôsobiť nesprávnu funkčnosť aplikácií.</p>
+    <p xml:lang="ro">Editarea configurației în mod direct este o funcționalitate avansată și poate cauza funcționarea incorectă a aplicațiilor.</p>
+    <p xml:lang="pt_BR">Editar suas configurações diretamente é um recurso avançado e pode fazer com que as aplicações não funcionem corretamente.</p>
+    <p xml:lang="pt">Editar as configurações diretamente é uma funcionalidade avançada e pode fazer com que certas aplicações não funcionem corretamente.</p>
+    <p xml:lang="pl">Bezpośrednie modyfikowanie konfiguracji jest funkcją dla zaawansowanych użytkowników i może spowodować niepoprawne działanie programów.</p>
+    <p xml:lang="oc">La modificacion dirècta de la configuracion es una foncionalitat avançada e poiriá perturbar lo bon foncionament de las aplicacions.</p>
+    <p xml:lang="nl">Het rechtstreeks bewerken van uw configuratie is enkel voor gevorderden en kan ertoe leiden dat sommige toepassingen niet meer correct werken.</p>
+    <p xml:lang="ne">तपाईंको कन्फिगरेसन सम्पादन गर्दा सिधै एक उन्नत सुविधा हो र अनुप्रयोगहरूले सही काम गर्न सकेन।</p>
+    <p xml:lang="nb">Direkte redigering av konfigurasjonen er en avansert funksjon og kan forårsake at programmer ikke fungerer korrekt.</p>
+    <p xml:lang="ml">നിങ്ങളുടെ കോണ്‍ഫിഗറേഷന്‍ നേരിട്ട് എഡിറ്റ് ചെയ്യുന്നത് നൂതനമായ സങ്കേതം ആണ് , ഇത് ചിലപ്പോള്‍ പ്രയോഗം ശരിയായ രീതിയില്‍ വര്‍ക്ക് ചെയ്യാതിരിക്കാന്‍ കാരണമായേക്കാം.</p>
+    <p xml:lang="lv">Tieša konfigurācijas rediģēšana ir paredzēta lietpratējiem un lietotne var sākt strādāt nepareizi.</p>
+    <p xml:lang="lt">Tiesioginis konfigūracijos redagavimas yra sudėtingas ir dėl jo programos gali veikti nekorektiškai.</p>
+    <p xml:lang="ko">설정을 직접 편집하는 기능은 고급 기능이므로 잘못 편집하면 프로그램이 정상 동작하지 않을 수도 있습니다.</p>
+    <p xml:lang="it">La modifica diretta della propria configurazione è un'attività avanzata e potrebbe causare il malfunzionamento delle applicazioni.</p>
+    <p xml:lang="id">Menyunting konfigurasi Anda secara langsung adalah fitur tingkat lanjut yang mungkin menyebabkan aplikasi tidak dapat berjalan sebagaimana mestinya.</p>
+    <p xml:lang="hu">A konfiguráció közvetlen szerkesztése speciális funkció, és az alkalmazások nem megfelelő működését okozhatja.</p>
+    <p xml:lang="hr">Uređivanje vaših podešavanja izravno je napredna značajka i može uzrokovati neispravan rad aplikacija.</p>
+    <p xml:lang="he">עריכה התצורה שלי ישירות היא תכונה מתקדמת ועשויה לגרום ליישומים לא לעבוד כראוי.</p>
+    <p xml:lang="gl">A edición da súa configuración directamente é unha característica avanzada e pode causar que os aplicativos non funcionen correctamente.</p>
+    <p xml:lang="fur">Modificâ in maniere direte la configurazion e je une funzionalitât avanzade e e pues causâ il malfunzionament des aplicazions.</p>
+    <p xml:lang="fr">La modification directe de la configuration est une fonctionnalité avancée et pourrait perturber le bon fonctionnement des applications.</p>
+    <p xml:lang="fi">Asetusten muokkaaminen suoraan on edistynyt ominaisuus ja se saattaa aiheuttaa ongelmia sovellusten toimintaan.</p>
+    <p xml:lang="eu">Zure konfigurazioa zuzenean editatzea eginbide aurreratu bat da, eta aplikazioak ongi ez funtzionatzea eragin dezake.</p>
+    <p xml:lang="es">Editar su configuración directamente es una característica avanzada que puede hacer que las aplicaciones no funcionen correctamente.</p>
+    <p xml:lang="en_GB">Editing your configuration directly is an advanced feature and may cause applications to not work correctly.</p>
+    <p xml:lang="el">Επεξεργάζοντας απευθείας τις ρυθμίσεις είναι ένα χαρακτηριστικό για προχωρημένους και μπορεί να προκαλέσει προβλήματα λειτουργίας στις εφαρμογές.</p>
+    <p xml:lang="de">Das direkte Bearbeiten der Konfiguration ist ein Funktionsmerkmal für fortgeschrittene Anwender und kann daher dazu führen, dass sich Anwendungen nicht wie erwartet verhalten.</p>
+    <p xml:lang="da">Direkte redigering af dine indstillinger er en avanceret funktion og kan få programmer til ikke at virke korrekt.</p>
+    <p xml:lang="cs">Přímé úpravy nastavení jsou pokročilou funkcí a mohou způsobit, že aplikace nebudou správně fungovat.</p>
+    <p xml:lang="ca@valencia">L'edició directa de la vostra configuració és una característica avançada i pot causar que les aplicacions no funcionen correctament.</p>
+    <p xml:lang="ca">L'edició directa de la vostra configuració és una característica avançada i pot causar que les aplicacions no funcionin correctament.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default" height="576" width="1024">
+      <image>https://gitlab.gnome.org/GNOME/dconf-editor/raw/master/editor/screenshot1.png</image>
+      <caption>Browse the keys used by installed applications</caption>
+      <caption xml:lang="zh_TW">瀏覽已安裝應用程式的設定鍵</caption>
+      <caption xml:lang="zh_CN">浏览已安装的应用程序所使用的键</caption>
+      <caption xml:lang="tr">Kurulan uygulamalar tarafından kullanılan anahtarlara göz atın</caption>
+      <caption xml:lang="sv">Bläddra bland nycklarna som används av installerade program</caption>
+      <caption xml:lang="sr@latin">Razgledajte ključeve koje koriste instalirani programi</caption>
+      <caption xml:lang="sr">Разгледајте кључеве које користе инсталирани програми</caption>
+      <caption xml:lang="sl">Prebrskaj med ključi, ki jih uporabljajo nameščeni programi</caption>
+      <caption xml:lang="sk">Prehliadajte kľúče použité nainštalovanými aplikáciami</caption>
+      <caption xml:lang="ro">Navighează cheile folosite de aplicațiile instalate</caption>
+      <caption xml:lang="pt_BR">Navega pelas chaves usadas pelos aplicativos instalados</caption>
+      <caption xml:lang="pl">Klucze używane przez zainstalowane programy</caption>
+      <caption xml:lang="oc">Consultar las claus utilizadas per las aplicacions installadas</caption>
+      <caption xml:lang="nl">Blader door de sleutels gebruikt door geïnstalleerde toepassingen</caption>
+      <caption xml:lang="ne">स्थापित अनुप्रयोगहरू द्वारा प्रयोग कुञ्जीहरू ब्राउज गर्नुहोस्</caption>
+      <caption xml:lang="nb">Bla gjennom nøkler som brukes av installerte programmer</caption>
+      <caption xml:lang="ml">ഇന്‍സ്റ്റാള്‍ ചെയ്ത പ്രയോഗം ഉപയോഗിക്കുന്ന കീകള്‍ ബ്രൌസ് ചെയ്യുക</caption>
+      <caption xml:lang="lv">Pārlūkot atslēgas, ko izmanto instalētās lietotnes</caption>
+      <caption xml:lang="lt">Naršyti programų įdiegtus raktus</caption>
+      <caption xml:lang="ko">설치한 프로그램이 사용하는 키를 살펴봅니다</caption>
+      <caption xml:lang="kk">Орнатылған қолданбалар қолданатын кілттерді шолу</caption>
+      <caption xml:lang="it">Esplora le chiavi usate dalle applicazioni installate</caption>
+      <caption xml:lang="id">Ramban kunci yang dipakai oleh aplikasi yang terpasang</caption>
+      <caption xml:lang="hu">A telepített alkalmazások által használt kulcsot böngészése</caption>
+      <caption xml:lang="hr">Pregledajte ključeve koje koriste instalirane aplikacije</caption>
+      <caption xml:lang="he">דפדוף במפתחות המשמשות יישומים מותקנים</caption>
+      <caption xml:lang="gl">Explore as chaves usadas polos aplicativos instalados</caption>
+      <caption xml:lang="fur">Esplore lis clâfs dopradis par aplicazions instaladis</caption>
+      <caption xml:lang="fr">Consulter les clés utilisées par les applications installées</caption>
+      <caption xml:lang="fi">Selaa asennettujen sovellusten käyttämiä avaimia</caption>
+      <caption xml:lang="eu">Arakatu gakoak instalatutako aplikazioak erabiliz</caption>
+      <caption xml:lang="es">Explorar las claves usadas por la aplicaciones instaladas</caption>
+      <caption xml:lang="en_GB">Browse the keys used by installed applications</caption>
+      <caption xml:lang="el">Εξερευνήστε τα κλειδιά που χρησιμοποιούνται από εγκατεστημένες εφαρμογές</caption>
+      <caption xml:lang="de">Die von installierten Anwendungen verwendeten Schlüssel durchsuchen</caption>
+      <caption xml:lang="da">Gennemse nøgler som bruges af installerede programmer</caption>
+      <caption xml:lang="cs">Procházení klíčů používaných nainstalovanými aplikacemi</caption>
+      <caption xml:lang="ca@valencia">Navegueu les tecles usades per les aplicacions instal·lades</caption>
+      <caption xml:lang="ca">Navegueu per les claus usades per les aplicacions instal·lades</caption>
+    </screenshot>
+    <screenshot type="default" height="576" width="1024">
+      <image>https://gitlab.gnome.org/GNOME/dconf-editor/raw/master/editor/screenshot2.png</image>
+      <caption>Read keys descriptions and edit their values</caption>
+      <caption xml:lang="zh_TW">讀取設定鍵描述並編輯它們的數值</caption>
+      <caption xml:lang="zh_CN">阅读键描述并编辑其对应的值</caption>
+      <caption xml:lang="tr">Anahtarların açıklamalarını okuyup değerlerini düzenleyin</caption>
+      <caption xml:lang="sv">Läs nyckelbeskrivningar och redigera deras värden</caption>
+      <caption xml:lang="sr@latin">Čitajte opise ključeva i uređujte njihove vrednosti</caption>
+      <caption xml:lang="sr">Читајте описе кључева и уређујте њихове вредности</caption>
+      <caption xml:lang="sl">Preberi opise ključev in uredi vrednosti</caption>
+      <caption xml:lang="sk">Prečítajte popisy kľúčov a upravujte ich hodnoty</caption>
+      <caption xml:lang="ro">Citește descrierile cheilor și editează valorile lor</caption>
+      <caption xml:lang="pt_BR">Lê as descrições das chaves e edita seus valores</caption>
+      <caption xml:lang="pl">Opisy kluczy i modyfikowanie ich wartości</caption>
+      <caption xml:lang="oc">Legir las informacions de las claus e modificar lors valors</caption>
+      <caption xml:lang="nl">Lees beschrijvingen van sleutels en pas hun waarden aan</caption>
+      <caption xml:lang="ne">कुञ्जीहरू वर्णन पढ्न र मान सम्पादन गर्नुहोस्</caption>
+      <caption xml:lang="nb">Les nøkkelbeskrivelser og rediger verdiene</caption>
+      <caption xml:lang="ml">കീ വിവരണങ്ങള്‍ വായിക്കുകയും അവയുടെ മൂല്യം മാറ്റുകയും ചെയ്യുക</caption>
+      <caption xml:lang="lv">Lasīt atslēgu aprakstus un rediģēt to vērtības</caption>
+      <caption xml:lang="lt">Skaityti raktų aprašymus bei keisti jų vertes</caption>
+      <caption xml:lang="ko">키 설명을 보고 값을 편집합니다</caption>
+      <caption xml:lang="kk">Кілттер сипаттамаларын оқып, олардың мәндерін түзету</caption>
+      <caption xml:lang="it">Legge le descrizioni delle chiavi e modifica i loro valori</caption>
+      <caption xml:lang="id">Baca deskripsi kunci dan sunting nilai mereka</caption>
+      <caption xml:lang="hu">Kulcsok leírásainak olvasása és azok értékeinek szerkesztése</caption>
+      <caption xml:lang="hr">Pročitajte opise ključeva i uredite njihove vrijednosti</caption>
+      <caption xml:lang="he">קריאת פרטי מפתחות ועריכת הערך שלהן</caption>
+      <caption xml:lang="gl">Lea as descricións das chaves e edite os seus valores</caption>
+      <caption xml:lang="fur">Lei lis descrizions des clâfs e modifiche i lôr valôrs</caption>
+      <caption xml:lang="fr">Lire les informations des clés et modifier leurs valeurs</caption>
+      <caption xml:lang="fi">Lue avainten kuvauksia ja muuta niiden arvoja</caption>
+      <caption xml:lang="eu">Irakurri gakoen azalpenak eta editatu haien balioak</caption>
+      <caption xml:lang="es">Leer las descripciones y editar sus valores</caption>
+      <caption xml:lang="en_GB">Read descriptions of keys and edit their values</caption>
+      <caption xml:lang="de">Schlüsselbeschreibungen lesen und deren Werte bearbeiten</caption>
+      <caption xml:lang="da">Indlæs nøglebeskrivelser og redigér deres værdier</caption>
+      <caption xml:lang="cs">Čtení popisů klíčů a jejich hodnot</caption>
+      <caption xml:lang="ca@valencia">Llegiu les descripcions de les tecles i editeu els seus valors</caption>
+      <caption xml:lang="ca">Llegiu les descripcions de les claus i editeu els seus valors</caption>
+    </screenshot>
+  </screenshots>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>Notifications</kudo>
+  </kudos>
+  <url type="homepage">https://wiki.gnome.org/Apps/DconfEditor</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/dconf-editor/issues</url>
+  <update_contact>arnaud.bonatti_at_gmail.com</update_contact>
+  <project_group>GNOME</project_group>
+  <!--a translatable version of project_group-->
+  <developer_name>The GNOME Project</developer_name>
+  <!--GNOME Projects usually have no per-app donation page-->
+  <url type="donation">https://www.gnome.org/friends/</url>
+  <provides>
+    <binary>dconf-editor</binary>
+  </provides>
+  <translation type="gettext">dconf-editor</translation>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+</component>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=P7ZIP File Manager
+Name[ru]=P7ZIP менеджер архивов
+MimeType=application/x-gzip;application/x-tar;application/x-compressed-tar;application/x-bzip-compressed-tar;application/zip;application/x-bzip;application/x-rar;application/x-tarz;application/x-bzip2;application/x-java-archive;application/x-deb;application/x-7z-compressed;application/x-compress;application/x-zip-compressed;application/x-lzma;application/x-servicepack;application/x-xz-compressed-tar;application/x-lzma-compressed-tar;application/x-cd-image;
+GenericName=Archiving Tool
+Exec=7zFM %F
+Icon=p7zip
+Type=Application
+Terminal=false
+X-KDE-HasTempFileOption=true
+Categories=GTK;KDE;Utility;System;Archiving;

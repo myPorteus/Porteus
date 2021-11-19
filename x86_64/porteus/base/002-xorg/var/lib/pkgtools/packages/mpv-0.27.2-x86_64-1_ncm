@@ -1,0 +1,79 @@
+PACKAGE NAME:     mpv-0.27.2-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     1.6M
+UNCOMPRESSED PACKAGE SIZE:     3.8M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/mpv-0.27.2-x86_64-1_ncm.tgz
+PACKAGE DESCRIPTION:
+mpv: mpv (a movie player based on MPlayer and mplayer2)
+mpv:
+mpv: mpv is a fork of mplayer2 and MPlayer. It shares some features with
+mpv: the former projects while introducing many more. It supports a wide
+mpv: variety of video file formats, audio and video codecs, and subtitle
+mpv: types.
+mpv:
+mpv:
+mpv:
+mpv: mpv homepage: http://mpv.io/
+mpv:
+FILE LIST:
+./
+etc/
+etc/mpv/
+etc/mpv/encoding-profiles.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mpv
+usr/doc/
+usr/doc/mpv-0.27.2/
+usr/doc/mpv-0.27.2/Copyright
+usr/doc/mpv-0.27.2/LICENSE
+usr/doc/mpv-0.27.2/README.md
+usr/doc/mpv-0.27.2/RELEASE_NOTES
+usr/doc/mpv-0.27.2/input.conf
+usr/doc/mpv-0.27.2/manual/
+usr/doc/mpv-0.27.2/manual/client-api-changes.rst
+usr/doc/mpv-0.27.2/manual/compile-windows.md
+usr/doc/mpv-0.27.2/manual/contribute.md
+usr/doc/mpv-0.27.2/manual/edl-mpv.rst
+usr/doc/mpv-0.27.2/manual/encoding.rst
+usr/doc/mpv-0.27.2/manual/interface-changes.rst
+usr/doc/mpv-0.27.2/manual/mplayer-changes.rst
+usr/doc/mpv-0.27.2/manual/release-policy.md
+usr/doc/mpv-0.27.2/manual/tech-overview.txt
+usr/doc/mpv-0.27.2/manual/waf-buildsystem.rst
+usr/doc/mpv-0.27.2/mplayer-input.conf
+usr/doc/mpv-0.27.2/mpv.SlackBuild
+usr/doc/mpv-0.27.2/mpv.conf
+usr/doc/mpv-0.27.2/restore-old-bindings.conf
+usr/include/
+usr/include/mpv/
+usr/include/mpv/client.h
+usr/include/mpv/opengl_cb.h
+usr/include/mpv/qthelper.hpp
+usr/include/mpv/stream_cb.h
+usr/lib64/
+usr/lib64/libmpv.so.1.25.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/mpv.pc
+usr/share/
+usr/share/applications/
+usr/share/applications/mpv.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/mpv.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/mpv.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/mpv.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/mpv.svg
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/mpv-symbolic.svg

@@ -1,0 +1,44 @@
+PACKAGE NAME:     libXpm-3.5.12-x86_64-2
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libXpm-3.5.12-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libXpm: libXpm (X Pixmap (XPM) image file format library)
+libXpm:
+libXpm: libXpm is part of X11.
+libXpm:
+libXpm: For more information about the X.Org Foundation (the providers of the
+libXpm: X.Org implementation of the X Window System), see their website:
+libXpm:
+libXpm: http://www.x.org
+libXpm:
+libXpm:
+libXpm:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cxpm
+usr/bin/sxpm
+usr/doc/
+usr/doc/libXpm-3.5.12/
+usr/doc/libXpm-3.5.12/AUTHORS
+usr/doc/libXpm-3.5.12/COPYING
+usr/doc/libXpm-3.5.12/ChangeLog
+usr/doc/libXpm-3.5.12/INSTALL
+usr/doc/libXpm-3.5.12/NEWS.old
+usr/doc/libXpm-3.5.12/README
+usr/include/
+usr/include/X11/
+usr/include/X11/xpm.h
+usr/lib64/
+usr/lib64/libXpm.so.4.11.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xpm.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cxpm.1.gz
+usr/man/man1/sxpm.1.gz

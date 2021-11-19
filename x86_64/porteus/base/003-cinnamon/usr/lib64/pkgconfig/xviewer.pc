@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include/xviewer-3.0
+pluginsdir=/usr/lib64/xviewer/plugins
+
+Name: Xviewer
+Description: An Image Viewer
+Requires: gtk+-3.0
+Version: 2.0.2
+Cflags: -I${includedir}

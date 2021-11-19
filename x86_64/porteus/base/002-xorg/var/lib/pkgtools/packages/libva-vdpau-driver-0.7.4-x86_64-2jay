@@ -1,0 +1,35 @@
+PACKAGE NAME:     libva-vdpau-driver-0.7.4-x86_64-2jay
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libva-vdpau-driver-0.7.4-x86_64-2jay.txz
+PACKAGE DESCRIPTION:
+libva-vdpau-driver: libva-vdpau-driver (VDPAU backend for VA API)
+libva-vdpau-driver:
+libva-vdpau-driver: libva-vdpau-driver consists in a VDPAU-based backend for VA API.
+libva-vdpau-driver:
+libva-vdpau-driver:
+libva-vdpau-driver:
+libva-vdpau-driver:
+libva-vdpau-driver:
+libva-vdpau-driver:
+libva-vdpau-driver: Home: http://www.freedesktop.org/wiki/Software/vaapi/
+libva-vdpau-driver:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/doc/
+usr/doc/libva-vdpau-driver-0.7.4/
+usr/doc/libva-vdpau-driver-0.7.4/AUTHORS
+usr/doc/libva-vdpau-driver-0.7.4/COPYING
+usr/doc/libva-vdpau-driver-0.7.4/NEWS
+usr/doc/libva-vdpau-driver-0.7.4/README
+usr/doc/libva-vdpau-driver-0.7.4/libva-vdpau-driver.SlackBuild
+usr/lib64/
+usr/lib64/dri/
+usr/lib64/dri/vdpau_drv_video.a
+usr/lib64/dri/vdpau_drv_video.la
+usr/lib64/dri/vdpau_drv_video.so

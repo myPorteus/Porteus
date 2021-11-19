@@ -1,0 +1,34 @@
+PACKAGE NAME:     jansson-2.12-x86_64-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/jansson-2.12-x86_64-1.txz
+PACKAGE DESCRIPTION:
+jansson: jansson (JSON data handling library)
+jansson:
+jansson: Jansson is a C library for encoding, decoding and manipulating JSON
+jansson: data. It features a simple and intuitive API and data model, includes
+jansson: full Unicode support, and has no dependencies on other libraries
+jansson: (except for glibc).
+jansson:
+jansson:
+jansson: Homepage: http://www.digip.org/jansson/
+jansson:
+jansson:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/jansson-2.12/
+usr/doc/jansson-2.12/CHANGES
+usr/doc/jansson-2.12/LICENSE
+usr/doc/jansson-2.12/README.rst
+usr/include/
+usr/include/jansson.h
+usr/include/jansson_config.h
+usr/lib64/
+usr/lib64/libjansson.so.4.11.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/jansson.pc

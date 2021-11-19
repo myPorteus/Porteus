@@ -1,0 +1,35 @@
+PACKAGE NAME:     ptyprocess-0.6.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /root/mcbs/build/../x86_64/pkg/003_cinnamon/ptyprocess-0.6.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+ptyprocess: ptyprocess (run a subprocess in a pseudo terminal)
+ptyprocess:
+ptyprocess: ptyprocess is used to launch a subprocess in a pseudo terminal 
+ptyprocess: (pty), and interact with both the process and its pty.
+ptyprocess: 
+ptyprocess: 
+ptyprocess: 
+ptyprocess: 
+ptyprocess:
+ptyprocess: https://pypi.python.org/pypi/ptyprocess
+ptyprocess:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/python3.7/
+usr/lib64/python3.7/site-packages/
+usr/lib64/python3.7/site-packages/ptyprocess-0.6.0-py3.7.egg-info
+usr/lib64/python3.7/site-packages/ptyprocess/
+usr/lib64/python3.7/site-packages/ptyprocess/__init__.py
+usr/lib64/python3.7/site-packages/ptyprocess/__pycache__/
+usr/lib64/python3.7/site-packages/ptyprocess/__pycache__/__init__.cpython-37.pyc
+usr/lib64/python3.7/site-packages/ptyprocess/__pycache__/_fork_pty.cpython-37.pyc
+usr/lib64/python3.7/site-packages/ptyprocess/__pycache__/ptyprocess.cpython-37.pyc
+usr/lib64/python3.7/site-packages/ptyprocess/__pycache__/util.cpython-37.pyc
+usr/lib64/python3.7/site-packages/ptyprocess/_fork_pty.py
+usr/lib64/python3.7/site-packages/ptyprocess/ptyprocess.py
+usr/lib64/python3.7/site-packages/ptyprocess/util.py

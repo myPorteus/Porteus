@@ -1,0 +1,15 @@
+polkit.addAdminRule(function(action, subject) {
+    return ["unix-group:wheel"];
+});
+
+// Allow users in group 'wheel' to perform any operation on
+// without having to authenticate.
+//
+polkit.addRule(function(action, subject) {
+    if (action.id.indexOf("org.freedesktop.udisks2.") == 0 &&
+        subject.isInGroup("wheel")) {
+            return polkit.Result.YES;
+        }
+    }
+});
+

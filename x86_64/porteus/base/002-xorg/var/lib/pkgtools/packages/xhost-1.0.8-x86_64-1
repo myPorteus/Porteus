@@ -1,0 +1,33 @@
+PACKAGE NAME:     xhost-1.0.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xhost-1.0.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xhost: xhost (X11 authorization utility)
+xhost:
+xhost: xhost is used to manage the list of host names or user names allowed
+xhost: to make connections to the X server.
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+xhost:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xhost
+usr/doc/
+usr/doc/xhost-1.0.8/
+usr/doc/xhost-1.0.8/AUTHORS
+usr/doc/xhost-1.0.8/COPYING
+usr/doc/xhost-1.0.8/ChangeLog
+usr/doc/xhost-1.0.8/INSTALL
+usr/doc/xhost-1.0.8/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/xhost.1.gz

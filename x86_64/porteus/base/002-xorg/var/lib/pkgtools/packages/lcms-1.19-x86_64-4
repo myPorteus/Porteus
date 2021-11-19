@@ -1,0 +1,55 @@
+PACKAGE NAME:     lcms-1.19-x86_64-4
+COMPRESSED PACKAGE SIZE:     176K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/lcms-1.19-x86_64-4.txz
+PACKAGE DESCRIPTION:
+lcms: lcms (little cms engine)
+lcms:
+lcms: Little cms is a small, speed optimized color management engine.
+lcms:
+lcms: lcms was written by Marti Maria <marti@littlecms.com>.
+lcms:
+lcms:
+lcms:
+lcms:
+lcms:
+lcms:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/icc2ps
+usr/bin/icclink
+usr/bin/icctrans
+usr/bin/jpegicc
+usr/bin/tiffdiff
+usr/bin/tifficc
+usr/bin/wtpt
+usr/doc/
+usr/doc/lcms-1.19/
+usr/doc/lcms-1.19/AUTHORS
+usr/doc/lcms-1.19/COPYING
+usr/doc/lcms-1.19/ChangeLog
+usr/doc/lcms-1.19/INSTALL
+usr/doc/lcms-1.19/NEWS
+usr/doc/lcms-1.19/README.1ST
+usr/doc/lcms-1.19/doc/
+usr/doc/lcms-1.19/doc/LCMSAPI.TXT
+usr/doc/lcms-1.19/doc/TUTORIAL.TXT
+usr/include/
+usr/include/icc34.h
+usr/include/lcms.h
+usr/lib64/
+usr/lib64/liblcms.so.1.0.19
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/lcms.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/icc2ps.1.gz
+usr/man/man1/icclink.1.gz
+usr/man/man1/jpegicc.1.gz
+usr/man/man1/tifficc.1.gz
+usr/man/man1/wtpt.1.gz

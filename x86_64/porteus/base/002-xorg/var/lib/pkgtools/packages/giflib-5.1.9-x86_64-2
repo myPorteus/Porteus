@@ -1,0 +1,107 @@
+PACKAGE NAME:     giflib-5.1.9-x86_64-2
+COMPRESSED PACKAGE SIZE:     212K
+UNCOMPRESSED PACKAGE SIZE:     850K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/giflib-5.1.9-x86_64-2.txz
+PACKAGE DESCRIPTION:
+giflib: giflib (GIF image format library)
+giflib:
+giflib: A library to load and save (uncompressed only) images using GIF,
+giflib: or Graphics Interchange Format. GIF was introduced by CompuServe
+giflib: in 1987, but is still widely used today (especially on web pages.)
+giflib:
+giflib:
+giflib:
+giflib:
+giflib:
+giflib:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gif2rgb
+usr/bin/gifbuild
+usr/bin/gifclrmp
+usr/bin/gifecho
+usr/bin/giffilter
+usr/bin/giffix
+usr/bin/gifinto
+usr/bin/gifsponge
+usr/bin/giftext
+usr/bin/giftool
+usr/doc/
+usr/doc/giflib-5.1.9/
+usr/doc/giflib-5.1.9/COPYING
+usr/doc/giflib-5.1.9/ChangeLog
+usr/doc/giflib-5.1.9/NEWS
+usr/doc/giflib-5.1.9/README
+usr/doc/giflib-5.1.9/TODO
+usr/doc/giflib-5.1.9/html/
+usr/doc/giflib-5.1.9/html/00README
+usr/doc/giflib-5.1.9/html/gif2rgb.html
+usr/doc/giflib-5.1.9/html/gif_lib.html
+usr/doc/giflib-5.1.9/html/gifbg.html
+usr/doc/giflib-5.1.9/html/gifbuild.html
+usr/doc/giflib-5.1.9/html/gifclrmp.html
+usr/doc/giflib-5.1.9/html/gifcolor.html
+usr/doc/giflib-5.1.9/html/gifecho.html
+usr/doc/giflib-5.1.9/html/giffix.html
+usr/doc/giflib-5.1.9/html/gifhisto.html
+usr/doc/giflib-5.1.9/html/gifinto.html
+usr/doc/giflib-5.1.9/html/giflib.html
+usr/doc/giflib-5.1.9/html/giftext.html
+usr/doc/giflib-5.1.9/html/giftool.html
+usr/doc/giflib-5.1.9/html/gifwedge.html
+usr/doc/giflib-5.1.9/html/index.html
+usr/doc/giflib-5.1.9/html/intro.html
+usr/doc/giflib-5.1.9/html/whatsinagif/
+usr/doc/giflib-5.1.9/html/whatsinagif/animation_and_transparency.html
+usr/doc/giflib-5.1.9/html/whatsinagif/bits_and_bytes.html
+usr/doc/giflib-5.1.9/html/whatsinagif/comment_ext.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/gif_file_stream.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/global_color_table.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/graphic_control_ext.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/header_block.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/highlight_green.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/highlight_purple.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/image_data_block.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/image_descriptor_block.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/index.html
+usr/doc/giflib-5.1.9/html/whatsinagif/logical_screen_desc_block.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/lzw_decoding_bytes.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/lzw_encoding_codes.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/lzw_image_data.html
+usr/doc/giflib-5.1.9/html/whatsinagif/lzw_image_data_code_table.html
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_1.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_1_enlarged.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_1_trans.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_1_trans_blue.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_1_trans_red.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_animation_green.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_animation_red.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_animation_yellow.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_green_large.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_green_yellow_diff.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/sample_2_yellow_large.gif
+usr/doc/giflib-5.1.9/html/whatsinagif/trailer_block.gif
+usr/include/
+usr/include/gif_lib.h
+usr/lib64/
+usr/lib64/libgif.so.7.1.0
+usr/man/
+usr/man/man1/
+usr/man/man1/gif2rgb.1.gz
+usr/man/man1/gifbg.1.gz
+usr/man/man1/gifbuild.1.gz
+usr/man/man1/gifclrmp.1.gz
+usr/man/man1/gifcolor.1.gz
+usr/man/man1/gifecho.1.gz
+usr/man/man1/giffix.1.gz
+usr/man/man1/gifhisto.1.gz
+usr/man/man1/gifinto.1.gz
+usr/man/man1/giflib.1.gz
+usr/man/man1/giftext.1.gz
+usr/man/man1/giftool.1.gz
+usr/man/man1/gifwedge.1.gz

@@ -1,0 +1,95 @@
+PACKAGE NAME:     libqmi-1.22.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     760K
+UNCOMPRESSED PACKAGE SIZE:     5.7M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/libqmi-1.22.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libqmi: libqmi (QMI library and utils)
+libqmi:
+libqmi: libqmi is a glib-based library for talking to WWAN modems and devices
+libqmi: which speak the Qualcomm MSM Interface (QMI) protocol.
+libqmi:
+libqmi: Homepage: http://www.freedesktop.org/software/libqmi/
+libqmi:
+libqmi:
+libqmi:
+libqmi:
+libqmi:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/qmi-firmware-update
+usr/bin/qmi-network
+usr/bin/qmicli
+usr/doc/
+usr/doc/libqmi-1.22.4/
+usr/doc/libqmi-1.22.4/AUTHORS
+usr/doc/libqmi-1.22.4/COPYING
+usr/doc/libqmi-1.22.4/ChangeLog
+usr/doc/libqmi-1.22.4/NEWS
+usr/doc/libqmi-1.22.4/README
+usr/doc/libqmi-1.22.4/TODO
+usr/include/
+usr/include/libqmi-glib/
+usr/include/libqmi-glib/libqmi-glib.h
+usr/include/libqmi-glib/qmi-client.h
+usr/include/libqmi-glib/qmi-compat.h
+usr/include/libqmi-glib/qmi-device.h
+usr/include/libqmi-glib/qmi-dms.h
+usr/include/libqmi-glib/qmi-enum-types.h
+usr/include/libqmi-glib/qmi-enums-dms.h
+usr/include/libqmi-glib/qmi-enums-loc.h
+usr/include/libqmi-glib/qmi-enums-nas.h
+usr/include/libqmi-glib/qmi-enums-oma.h
+usr/include/libqmi-glib/qmi-enums-pbm.h
+usr/include/libqmi-glib/qmi-enums-pdc.h
+usr/include/libqmi-glib/qmi-enums-pds.h
+usr/include/libqmi-glib/qmi-enums-private.h
+usr/include/libqmi-glib/qmi-enums-qos.h
+usr/include/libqmi-glib/qmi-enums-uim.h
+usr/include/libqmi-glib/qmi-enums-voice.h
+usr/include/libqmi-glib/qmi-enums-wda.h
+usr/include/libqmi-glib/qmi-enums-wds.h
+usr/include/libqmi-glib/qmi-enums-wms.h
+usr/include/libqmi-glib/qmi-enums.h
+usr/include/libqmi-glib/qmi-error-types.h
+usr/include/libqmi-glib/qmi-errors.h
+usr/include/libqmi-glib/qmi-flags64-dms.h
+usr/include/libqmi-glib/qmi-flags64-loc.h
+usr/include/libqmi-glib/qmi-flags64-nas.h
+usr/include/libqmi-glib/qmi-flags64-types.h
+usr/include/libqmi-glib/qmi-loc.h
+usr/include/libqmi-glib/qmi-message-context.h
+usr/include/libqmi-glib/qmi-message.h
+usr/include/libqmi-glib/qmi-nas.h
+usr/include/libqmi-glib/qmi-oma.h
+usr/include/libqmi-glib/qmi-pbm.h
+usr/include/libqmi-glib/qmi-pdc.h
+usr/include/libqmi-glib/qmi-pds.h
+usr/include/libqmi-glib/qmi-proxy.h
+usr/include/libqmi-glib/qmi-qos.h
+usr/include/libqmi-glib/qmi-uim.h
+usr/include/libqmi-glib/qmi-utils.h
+usr/include/libqmi-glib/qmi-version.h
+usr/include/libqmi-glib/qmi-voice.h
+usr/include/libqmi-glib/qmi-wda.h
+usr/include/libqmi-glib/qmi-wds.h
+usr/include/libqmi-glib/qmi-wms.h
+usr/lib64/
+usr/lib64/libqmi-glib.so.5.5.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/qmi-glib.pc
+usr/libexec/
+usr/libexec/qmi-proxy
+usr/man/
+usr/man/man1/
+usr/man/man1/qmi-firmware-update.1.gz
+usr/man/man1/qmi-network.1.gz
+usr/man/man1/qmicli.1.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/qmicli

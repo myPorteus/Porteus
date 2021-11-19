@@ -1,0 +1,48 @@
+PACKAGE NAME:     xtrans-1.4.0-noarch-1
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     430K
+PACKAGE LOCATION: /root/mcbs/build/../x86_64/pkg/003_cinnamon/xtrans-1.4.0-noarch-1.txz
+PACKAGE DESCRIPTION:
+xtrans: xtrans (X network transport library)
+xtrans:
+xtrans: xtrans is a library of code that is shared among various X packages
+xtrans: to handle network protocol transport in a modular fashion, allowing a
+xtrans: single place to add new transport types. It is used by the X server,
+xtrans: libX11, libICE, the X font server, and related components.
+xtrans:
+xtrans:
+xtrans:
+xtrans:
+xtrans:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xtrans-1.4.0/
+usr/doc/xtrans-1.4.0/AUTHORS
+usr/doc/xtrans-1.4.0/COPYING
+usr/doc/xtrans-1.4.0/ChangeLog
+usr/doc/xtrans-1.4.0/INSTALL
+usr/doc/xtrans-1.4.0/README.md
+usr/doc/xtrans-1.4.0/xtrans.html
+usr/doc/xtrans-1.4.0/xtrans.html.db
+usr/doc/xtrans-1.4.0/xtrans.pdf.db
+usr/doc/xtrans-1.4.0/xtrans.txt
+usr/doc/xtrans-1.4.0/xtrans.xml
+usr/include/
+usr/include/X11/
+usr/include/X11/Xtrans/
+usr/include/X11/Xtrans/Xtrans.c
+usr/include/X11/Xtrans/Xtrans.h
+usr/include/X11/Xtrans/Xtransint.h
+usr/include/X11/Xtrans/Xtranslcl.c
+usr/include/X11/Xtrans/Xtranssock.c
+usr/include/X11/Xtrans/Xtransutil.c
+usr/include/X11/Xtrans/transport.c
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/xtrans.m4
+usr/share/pkgconfig/
+usr/share/pkgconfig/xtrans.pc

@@ -1,0 +1,38 @@
+PACKAGE NAME:     ethtool-5.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     124K
+UNCOMPRESSED PACKAGE SIZE:     420K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/ethtool-5.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+ethtool: ethtool (a tool for examining and tuning a network interface)
+ethtool:
+ethtool: ethtool is a small utility for examining and tuning your Ethernet
+ethtool: based network interface. For more details, see "man ethtool".
+ethtool:
+ethtool: ethtool was written by David Miller, with help from Jakub Jelinek,
+ethtool: Jeff Garzik, Tim Hockin, Eli Kupermann, Chris Leech, Scott Feldman,
+ethtool: and Andi Kleen.
+ethtool:
+ethtool:
+ethtool:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/ethtool-5.1/
+usr/doc/ethtool-5.1/AUTHORS
+usr/doc/ethtool-5.1/COPYING
+usr/doc/ethtool-5.1/ChangeLog
+usr/doc/ethtool-5.1/LICENSE
+usr/doc/ethtool-5.1/NEWS
+usr/doc/ethtool-5.1/README
+usr/man/
+usr/man/man8/
+usr/man/man8/ethtool.8.gz
+usr/sbin/
+usr/sbin/ethtool
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/ethtool

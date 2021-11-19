@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The GNOME Project</vendor>
+  <vendor_url>http://www.gnome.org/projects/gconf/</vendor_url>
+  <icon_name>gconf-editor</icon_name>
+
+  <action id="org.gnome.gconf.defaults.set-system">
+    <description>Change GConf system values</description>
+    <description xml:lang="ar">غيّر قيم GConf للنظام </description>
+    <description xml:lang="as">GConf প্ৰণালীৰ মান সলনি কৰক</description>
+    <description xml:lang="ast">Camudar valores de sistema de GConf</description>
+    <description xml:lang="be">Змяненне сістэмных значэнняў GConf</description>
+    <description xml:lang="bg">Промяна на системните стойности на GConf</description>
+    <description xml:lang="bn">GConf-এর সিস্টেম সংক্রান্ত মান পরিবর্তন করুন</description>
+    <description xml:lang="bn_IN">GConf-র সিস্টেম সংক্রান্ত মান পরিবর্তন করুন</description>
+    <description xml:lang="ca">Canvia els valors de sistema del GConf</description>
+    <description xml:lang="ca@valencia">Canvia els valors de sistema del GConf</description>
+    <description xml:lang="cs">Změnit systémové hodnoty GConfu</description>
+    <description xml:lang="cy">Newid gwerthoedd system GConf</description>
+    <description xml:lang="da">Ændr GConf-systemværdier</description>
+    <description xml:lang="de">GConf-Systemwerte ändern</description>
+    <description xml:lang="el">Αλλαγή των τιμών συστήματος του GConf</description>
+    <description xml:lang="en@shaw">𐑗𐑱𐑯𐑡 GConf 𐑕𐑦𐑕𐑑𐑩𐑥 𐑝𐑨𐑤𐑿𐑟</description>
+    <description xml:lang="en_GB">Change GConf system values</description>
+    <description xml:lang="eo">Ŝanĝi la sistemvalorojn de GConf</description>
+    <description xml:lang="es">Cambiar los valores de GConf del sistema</description>
+    <description xml:lang="et">GConf'i süsteemsete väärtuste muutmine</description>
+    <description xml:lang="eu">Aldatu GConf-eko sistemako balioak</description>
+    <description xml:lang="fi">Muuta GConfin järjestelmäarvoja</description>
+    <description xml:lang="fr">Modifier les valeurs GConf système</description>
+    <description xml:lang="gl">Cambiar os valores de sistema do GConf</description>
+    <description xml:lang="gu">GConf સિસ્ટમ કિંમતો બદલો</description>
+    <description xml:lang="he">Change GConf system values</description>
+    <description xml:lang="hi">GConf तंत्र मान बदलें</description>
+    <description xml:lang="hu">GConf rendszerértékek módosítása</description>
+    <description xml:lang="hy">Փոխել GConf համակարգի արժեքները</description>
+    <description xml:lang="id">Ubah nilai sistem GConf</description>
+    <description xml:lang="it">Cambia i valori di sistema di GConf</description>
+    <description xml:lang="ja">システム規模で GConf の設定値の変更</description>
+    <description xml:lang="km">ផ្លាស់ប្ដូរ​​តម្លៃ​ប្រព័ន្ធ GConf</description>
+    <description xml:lang="kn">GConf ವ್ಯವಸ್ಥೆಯ ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಿ</description>
+    <description xml:lang="ko">GConf 시스템 값 바꾸기</description>
+    <description xml:lang="lt">Keisti GConf sistemines reikšmes</description>
+    <description xml:lang="lv">Izmainiet GConf sistēmas vērtības</description>
+    <description xml:lang="ml">GConf സിസ്റ്റം മൂല്ല്യങ്ങള്‍ മാറ്റുക</description>
+    <description xml:lang="mr">GConf प्रणाली मुल्य बदलवा</description>
+    <description xml:lang="nb">Endre systemverdier for GConf</description>
+    <description xml:lang="nl">Systeemwaarden GConf aanpassen</description>
+    <description xml:lang="or">GConf ତନ୍ତ୍ର ମୂଲ୍ୟଗୁଡ଼ିକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</description>
+    <description xml:lang="pa">GConf ਸਿਸਟਮ ਮੁੱਲ ਬਦਲੋ</description>
+    <description xml:lang="pl">Zmiana wartości systemowych GConf</description>
+    <description xml:lang="pt">Alterar os valores de sistema do GConf</description>
+    <description xml:lang="pt_BR">Modifica valores de sistema do GConf</description>
+    <description xml:lang="ro">Modificare valori GConf de sistem</description>
+    <description xml:lang="ru">Изменять системные значения конфигурации</description>
+    <description xml:lang="sl">Spremeni GConf sistemske vrednosti</description>
+    <description xml:lang="sq">Ndrysho vlerat e sistemit në GConf</description>
+    <description xml:lang="sr">Измени системске вредности Гконфа</description>
+    <description xml:lang="sr@latin">Izmeni sistemske vrednosti Gkonfa</description>
+    <description xml:lang="sv">Ändra GConf-systemvärden</description>
+    <description xml:lang="ta">GConf கணினி மதிப்புகளை மாற்று</description>
+    <description xml:lang="te">GConf సిస్టమ్ విలువలను మార్చుము</description>
+    <description xml:lang="th">เปลี่ยนค่า GConf สำหรับระบบ</description>
+    <description xml:lang="tr">GConf sistem değerlerini değiştir</description>
+    <description xml:lang="ug">GConf سىستېما قىممەتلىرىنى ئۆزگەرتىش</description>
+    <description xml:lang="uk">Зміна системних значень GConf</description>
+    <description xml:lang="vi">Thay đổi giá trị GConf hệ thống</description>
+    <description xml:lang="zh_CN">更改 GConf 系统源的值</description>
+    <description xml:lang="zh_HK">改變 GConf 系統數值</description>
+    <description xml:lang="zh_TW">改變 GConf 系統數值</description>
+    <message>Privileges are required to change GConf system values</message>
+    <message xml:lang="ar">الصلاحيات مطلوبة لتغيير قيم GConf للنظام</message>
+    <message xml:lang="as">GConf প্ৰণালীৰ মান সলনি কৰিবলৈ বিশেষ সুবিধাৰ প্ৰয়োজন</message>
+    <message xml:lang="ast">Necesítense privilexos pa camudar valores de sistema de GConf</message>
+    <message xml:lang="be">Прывілеі, патрэбныя для змянення сістэмных значэнняў GConf</message>
+    <message xml:lang="bg">Необходими са ви допълнителни привилегии за промяна на системните стойности на GConf</message>
+    <message xml:lang="bn">GConf-এর সিস্টেম সংক্রান্ত মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
+    <message xml:lang="bn_IN">GConf-র সিস্টেম সংক্রান্ত মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
+    <message xml:lang="ca">Es necessiten privilegis per canviar els valors de sistema del GConf</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per canviar els valors de sistema del GConf</message>
+    <message xml:lang="cs">Ke změně systémových hodnot GConfu jsou vyžadována oprávnění</message>
+    <message xml:lang="cy">Mae angen breintiau ar gyfer newid gwerthoedd system GConf</message>
+    <message xml:lang="da">Der kræves rettigheder til at ændre GConf-systemværdier</message>
+    <message xml:lang="de">Zugriffsrechte werden benötigt, um zGConf-Systemwerte zu ändern</message>
+    <message xml:lang="el">Απαιτούνται επιπλέον προνόμια για την αλλαγή των τιμών συστήματος του GConf</message>
+    <message xml:lang="en@shaw">𐑐𐑮𐑦𐑝𐑤𐑩𐑡𐑩𐑟 𐑸 𐑮𐑦𐑒𐑢𐑲𐑼𐑛 𐑑 𐑗𐑱𐑯𐑡 GConf 𐑕𐑦𐑕𐑑𐑩𐑥 𐑝𐑨𐑤𐑿𐑟</message>
+    <message xml:lang="en_GB">Privileges are required to change GConf system values</message>
+    <message xml:lang="es">Se necesitan privilegios para cambiar los valores de GConf del sistema</message>
+    <message xml:lang="et">GConf'i süsteemsete väärtuste muutmiseks on vaja vastavaid õigusi</message>
+    <message xml:lang="eu">Baimenak behar dira GConf-eko sistemako balioak aldatzeko</message>
+    <message xml:lang="fi">Gconfin järjestelmäasetusten muuttaminen vaatii riittävät oikeudet</message>
+    <message xml:lang="fr">Des permissions sont nécessaires pour modifier les valeurs GConf système</message>
+    <message xml:lang="gl">Son necesarios privilexios para cambiar os valores de sistema do GConf</message>
+    <message xml:lang="gu">GConf સિસ્ટમ કિંમતો બદલવા માટે વિશેષાધિકારો જરૂરી</message>
+    <message xml:lang="he">Privileges are required to change GConf system values</message>
+    <message xml:lang="hi">GConf तंत्र मान बदलने के लिए अधिकार जरूरी हैं</message>
+    <message xml:lang="hu">A GConf rendszerértékek módosításához jogosultságok szükségesek</message>
+    <message xml:lang="hy">GConf-ի համակարգային արժեքները փոփոխելու համար պահանջվում են արտոնյալ իրավունքներ</message>
+    <message xml:lang="id">Diperlukan hak khusus untuk mengubah nilai sistem GConf</message>
+    <message xml:lang="it">Sono richiesti dei privilegi per cambiare i valori di sistema di GConf</message>
+    <message xml:lang="ja">GConf でシステム規模の値を変更するのに必要な権限です</message>
+    <message xml:lang="km">សិទ្ធិត្រូវ​បាន​ទាមទារ​សម្រាប់​ការ​ផ្លាស់ប្ដូរ​តម្លៃ​ប្រព័ន្ធ GConf</message>
+    <message xml:lang="kn">GConf ವ್ಯವಸ್ಥೆಯ ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಲು ವಿಶೇಷ ಸವಲತ್ತಿನ ಅವಶ್ಯಕತೆ ಇದೆ</message>
+    <message xml:lang="ko">GConf 시스템 값을 바꾸려면 관리자 권한이 필요합니다</message>
+    <message xml:lang="lt">Norint pakeisti GConf sistemines reikšmes reikia privilegijų</message>
+    <message xml:lang="lv">Lai izmainītu GConf sistēmas vērtības nepieciešamas lielākas privilēģijas</message>
+    <message xml:lang="ml">GConf സിസ്റ്റം മൂല്ല്യങ്ങള്‍ മാറ്റുന്നതിനായി ആനുകൂല്യങ്ങള്‍ ആവശ്യമുണ്ടു്</message>
+    <message xml:lang="mr">परवानगी GConf प्रणाली मुल्य बदलविण्याजोगी असावेत</message>
+    <message xml:lang="nb">Du må ha rettigheter for å endre systemverdier i GConf</message>
+    <message xml:lang="nl">Er zijn toegangsrechten nodig om systeemwaarden in GConf aan te passen</message>
+    <message xml:lang="or">GConf ତନ୍ତ୍ର ମୂଲ୍ୟଗୁଡ଼ିକୁ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ବିଶେଷାଧିକାର ଆବଶ୍ୟକ</message>
+    <message xml:lang="pa">GConf ਸਿਸਟਮ ਮੁੱਲ ਬਦਲਣ ਲਈ ਅਧਿਕਾਰਾਂ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="pl">Do zmiany wartości systemowych GConf wymagane są uprawnienia</message>
+    <message xml:lang="pt">São necessárias permissões para alterar os valores de sistema do GConf</message>
+    <message xml:lang="pt_BR">Privilégios especiais são necessários para modificar valores de sistema do GConf</message>
+    <message xml:lang="ro">E nevoie de drepturi elevate pentru a modifica valorile GConf de sistem</message>
+    <message xml:lang="ru">Для изменения системных значений конфигурации требуются права доступа</message>
+    <message xml:lang="sl">Za spreminjanje sistemskih GConf nastavitev je treba imeti skrbniška dovoljenja.</message>
+    <message xml:lang="sq">Nevoiten privilegje për të ndryshuar vlerat e sistemit në GConf</message>
+    <message xml:lang="sr">Неопходна су овлашћења за промену системских вредности Гконфа</message>
+    <message xml:lang="sr@latin">Neophodna su ovlašćenja za promenu sistemskih vrednosti Gkonfa</message>
+    <message xml:lang="sv">Behörighet krävs för att ändra GConf-systemvärden</message>
+    <message xml:lang="ta">GConf முறைமை மதிப்புகளை மாற்ற முன்னுரிமைகள் தேவை</message>
+    <message xml:lang="te">GConf సిస్టమ్ విలువలను మార్చుటకు అనుమతుల అవసరము.</message>
+    <message xml:lang="th">ต้องมีสิทธิพิเศษจึงจะเปลี่ยนค่า GConf สำหรับระบบได้</message>
+    <message xml:lang="tr">GConfs sistem değerlerini değiştirmek için imtiyazlar gereklidir.</message>
+    <message xml:lang="ug">GConf سىستېما قىممەتلىرىنى ئۆزگەرتىش ئۈچۈن ئىمتىياز تەلەپ قىلىنىدۇ</message>
+    <message xml:lang="uk">Для зміни системних значень GConf потрібні привілеї</message>
+    <message xml:lang="vi">Cần đặc quyền để thay đổi giá trị GConf hệ thống</message>
+    <message xml:lang="zh_CN">需要特权以更改 GConf 系统源的值</message>
+    <message xml:lang="zh_HK">要改變 GConf 系統數值需要管理權限</message>
+    <message xml:lang="zh_TW">要改變 GConf 系統數值需要管理權限</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.gnome.gconf.defaults.set-mandatory">
+    <description>Change GConf mandatory values</description>
+    <description xml:lang="ar">غيّر قيم GCong الإجبارية</description>
+    <description xml:lang="as">GConf ৰ বাধ্যতামূলক মান সলনি কৰক</description>
+    <description xml:lang="ast">Camudar valores obligatorios de GConf</description>
+    <description xml:lang="be">Змяненне абавязковых значэнняў GConf</description>
+    <description xml:lang="bg">Промяна на задължителните стойности на GConf</description>
+    <description xml:lang="bn">GConf-এর আবশ্যক মান পরিবর্তন করুন</description>
+    <description xml:lang="bn_IN">GConf-র আবশ্যক মান পরিবর্তন করুন</description>
+    <description xml:lang="ca">Canvia els valors obligatoris del GConf</description>
+    <description xml:lang="ca@valencia">Canvia els valors obligatoris del GConf</description>
+    <description xml:lang="cs">Změnit povinné hodnoty GConfu</description>
+    <description xml:lang="cy">Newid gwerthoedd hanfodol GConf</description>
+    <description xml:lang="da">Ændr obligatoriske GConf-værdier</description>
+    <description xml:lang="de">Zwingend erforderliche GConf-Werte ändern</description>
+    <description xml:lang="el">Αλλαγή των υποχρεωτικών τιμών του GConf</description>
+    <description xml:lang="en@shaw">𐑗𐑱𐑯𐑡 GConf 𐑥𐑨𐑯𐑛𐑩𐑑𐑪𐑮𐑰 𐑝𐑨𐑤𐑿𐑟</description>
+    <description xml:lang="en_GB">Change GConf mandatory values</description>
+    <description xml:lang="es">Cambiar los valores obligatorios de GConf</description>
+    <description xml:lang="et">GConf'i kohustuslike väärtuste muutmine</description>
+    <description xml:lang="eu">Aldatu GConf-eko derrigorrezko balioak</description>
+    <description xml:lang="fi">Muuta GConfin pakollisia arvoja</description>
+    <description xml:lang="fr">Modifier les valeurs GConf obligatoires</description>
+    <description xml:lang="gl">Cambiar os valores obrigatorios do GConf</description>
+    <description xml:lang="gu">GConf જરૂરી કિંમતો બદલો</description>
+    <description xml:lang="he">Change GConf mandatory values</description>
+    <description xml:lang="hi">GConf अनिवार्य मान बदलें</description>
+    <description xml:lang="hu">Kötelező GConf értékek módosítása</description>
+    <description xml:lang="hy">Փոխել GConf-ի պարտադիր արժեքները</description>
+    <description xml:lang="id">Ubah nilai wajib GConf</description>
+    <description xml:lang="it">Cambia i valori vincolanti di GConf</description>
+    <description xml:lang="ja">変更不可の GConf の設定値の編集</description>
+    <description xml:lang="km">ផ្លាស់ប្ដូរ​​តម្លៃ GConf ដែល​ចាំបាច់</description>
+    <description xml:lang="kn">GConf ಕಡ್ಡಾಯ ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಿ</description>
+    <description xml:lang="ko">GConf 필수 값 바꾸기</description>
+    <description xml:lang="lt">Keisti GConf būtinąsias reikšmes</description>
+    <description xml:lang="lv">Izmainiet GConf obligātās vērtības</description>
+    <description xml:lang="ml">GConf നിര്‍ബന്ധമായ മൂല്ല്യങ്ങള്‍ മാറ്റുക</description>
+    <description xml:lang="mr">GConf अनिवार्य मुल्य बदलवा</description>
+    <description xml:lang="nb">Endre obligatoriske verdier for GConf</description>
+    <description xml:lang="nl">Verplichte waarden GConf aanpassen</description>
+    <description xml:lang="or">GConf ଜରୁରୀ ମୂଲ୍ୟଗୁଡ଼ିକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</description>
+    <description xml:lang="pa">GConf ਲਾਜ਼ਮੀ ਮੁੱਲ ਬਦਲੋ</description>
+    <description xml:lang="pl">Zmiana obowiązkowych wartości GConf</description>
+    <description xml:lang="pt">Alterar os valores obrigatórios do GConf</description>
+    <description xml:lang="pt_BR">Modifica valores obrigatórios do GConf</description>
+    <description xml:lang="ro">Modificare valori obligatorii GConf</description>
+    <description xml:lang="ru">Изменять обязательный значения конфигурации</description>
+    <description xml:lang="sl">Spremeni nastavitve GConf vrednosti</description>
+    <description xml:lang="sq">Ndrysho vlerat e detyrueshme në GConf</description>
+    <description xml:lang="sr">Измени обавезне вредности Гконфа</description>
+    <description xml:lang="sr@latin">Izmeni obavezne vrednosti Gkonfa</description>
+    <description xml:lang="sv">Ändra obligatoriska GConf-värden</description>
+    <description xml:lang="ta">GConf அவசியமான மதிப்புகளை மாற்று</description>
+    <description xml:lang="te">GConf తప్పనిసరి విలువలను మార్చుము</description>
+    <description xml:lang="th">เปลี่ยนค่า GConf บังคับ</description>
+    <description xml:lang="tr">GConf zorunlu değerlerini değiştir</description>
+    <description xml:lang="ug">GConf mandatory قىممەتلىرىنى ئۆزگەرتىش</description>
+    <description xml:lang="uk">Зміна обов'язкових' значень GConf</description>
+    <description xml:lang="vi">Thay đổi giá trị GConf mặc định</description>
+    <description xml:lang="zh_CN">更改 GConf 强制源的值</description>
+    <description xml:lang="zh_HK">改變 GConf 強制數值</description>
+    <description xml:lang="zh_TW">改變 GConf 強制數值</description>
+    <message>Privileges are required to change GConf mandatory values</message>
+    <message xml:lang="ar">الصلاحيات مطلوبة لتغيير قيم GConf الإجبارية</message>
+    <message xml:lang="as">GConf ৰ বাধ্যতামূলক মান সলনি কৰিবলৈ বিশেষ সুবিধাৰ প্ৰয়োজন</message>
+    <message xml:lang="ast">Necesítense privilexos pa camudar valores obligatorios de GConf</message>
+    <message xml:lang="be">Прывілеі, патрэбныя для змянення абавязковых значэнняў GConf</message>
+    <message xml:lang="bg">Необходими са ви допълнителни привилегии за промяна на задължителните стойности на GConf</message>
+    <message xml:lang="bn">GConf-এর আবশ্যক মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
+    <message xml:lang="bn_IN">GConf-র আবশ্যক মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
+    <message xml:lang="ca">Es necessiten privilegis per canviar els valors obligatoris del GConf</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per canviar els valors obligatoris del GConf</message>
+    <message xml:lang="cs">Ke změně povinných hodnot GConfu jsou vyžadována oprávnění</message>
+    <message xml:lang="cy">Mae angen breintiau ar gyfer newid gwerthoedd hanfodol GConf</message>
+    <message xml:lang="da">Der kræves rettigheder til at ændre obligatoriske GConf-værdier</message>
+    <message xml:lang="de">Zugriffsrechte werden benötigt, um zwingend erforderliche GConf-Werte zu ändern</message>
+    <message xml:lang="el">Απαιτούνται επιπλέον προνόμια για την αλλαγή των υποχρεωτικών τιμών του GConf</message>
+    <message xml:lang="en@shaw">𐑐𐑮𐑦𐑝𐑤𐑩𐑡𐑩𐑟 𐑸 𐑮𐑦𐑒𐑢𐑲𐑼𐑛 𐑑 𐑗𐑱𐑯𐑡 GConf 𐑥𐑨𐑯𐑛𐑩𐑑𐑪𐑮𐑰 𐑝𐑨𐑤𐑿𐑟</message>
+    <message xml:lang="en_GB">Privileges are required to change GConf mandatory values</message>
+    <message xml:lang="es">Se necesitan privilegios para cambiar los valores obligatorios de GConf</message>
+    <message xml:lang="et">GConf'i kohustuslike väärtuste muutmiseks on vaja vastavaid õigusi</message>
+    <message xml:lang="eu">Baimenak behar dira GConf-eko derrigorrezko balioak aldatzeko</message>
+    <message xml:lang="fi">Gconfin pakollisten asetusten muuttaminen vaatii riittävät oikeudet</message>
+    <message xml:lang="fr">Des permissions sont nécessaires pour modifier les valeurs GConf obligatoires</message>
+    <message xml:lang="gl">Son necesarios privilexios para cambiar os valores obrigatorios do GConf</message>
+    <message xml:lang="gu">GConf જરૂરી કિંમતો બદલવા માટે વિશેષાધિકારો જરૂરી છે</message>
+    <message xml:lang="he">Privileges are required to change GConf mandatory values</message>
+    <message xml:lang="hi">GConf अनिवार्य मान बदलने के लिए अधिकार जरूरी हैं</message>
+    <message xml:lang="hu">A kötelező GConf értékek módosításához jogosultságok szükségesek</message>
+    <message xml:lang="hy">GConf-ի պարտադիր արժեքները փոփոխելու համար պահանջվում են արտոնյալ իրավունքներ</message>
+    <message xml:lang="id">Diperlukan hak khusus untuk mengubah nilai mandatori GConf</message>
+    <message xml:lang="it">Sono richiesti dei privilegi per cambiare i valori vincolanti di GConf</message>
+    <message xml:lang="ja">GConf で変更不可の値を編集するのに必要な権限です</message>
+    <message xml:lang="km">សិទ្ធិ​ត្រូវ​បាន​ទាមទារ​សម្រាប់​ការ​ផ្លាស់ប្ដូរ​តម្លៃ GConf ដែល​ចាំបាច់</message>
+    <message xml:lang="kn">GConf ಕಡ್ಡಾಯ ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಲು ವಿಶೇಷ ಸವಲತ್ತಿನ ಅವಶ್ಯಕತೆ ಇದೆ</message>
+    <message xml:lang="ko">GConf 필수 값을 바꾸려면 관리자 권한이 필요합니다</message>
+    <message xml:lang="lt">Norint pakeisti GConf būtinąsias reikšmes reikia privilegijų</message>
+    <message xml:lang="lv">Lai izmainītu GConf obligātās vērtības nepieciešamas lielākas privilēģijas</message>
+    <message xml:lang="ml">GConf നിര്‍ബന്ധമായ മൂല്ല്യങ്ങള്‍ മാറ്റുന്നതിനായി ആനുകൂല്യങ്ങള്‍ ആവശ്യമുണ്ടു്</message>
+    <message xml:lang="mr">परवानगी GConf अनिवार्य मुल्य बदलविण्याजोगी असावेत</message>
+    <message xml:lang="nb">Du må ha rettigheter for å endre obligatoriske verdier i GConf</message>
+    <message xml:lang="nl">Er zijn toegangsrechten nodig om verplichte waarden in GConf aan te passen</message>
+    <message xml:lang="or">GConf ଜରୁରୀ ମୂଲ୍ୟଗୁଡ଼ିକୁ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ବିଶେଷାଧିକାର ଆବଶ୍ୟକ</message>
+    <message xml:lang="pa">GConf ਲਾਜ਼ਮੀ ਮੁੱਲ ਬਦਲਣ ਲਈ ਅਧਿਕਾਰਾਂ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="pl">Do zmiany wartości obowiązkowych GConf wymagane są uprawnienia</message>
+    <message xml:lang="pt">São necessárias permissões para alterar os valores obrigatórios do GConf</message>
+    <message xml:lang="pt_BR">Privilégios especiais são necessários para modificar valores obrigatórios do GConf</message>
+    <message xml:lang="ro">E nevoie de drepturi elevate pentru a modifica valorile obligatorii GConf</message>
+    <message xml:lang="ru">Для изменения обязательных значений конфигурации требуются права доступа</message>
+    <message xml:lang="sl">Za spreminjanje obveznih nastavitev GConf je treba imeti skrbniška dovoljenja</message>
+    <message xml:lang="sq">Nevoiten privilegje për të ndryshuar vlerat e detyrueshme në GConf</message>
+    <message xml:lang="sr">Неопходна су овлашћења за промену обавезних вредности Гконфа</message>
+    <message xml:lang="sr@latin">Neophodna su ovlašćenja za promenu obaveznih vrednosti Gkonfa</message>
+    <message xml:lang="sv">Behörighet krävs för att ändra obligatoriska GConf-värden</message>
+    <message xml:lang="ta">GConf அவசிய மதிப்புகளை மாற்ற முன்னுரிமைகள் தேவை</message>
+    <message xml:lang="te">GConf తప్పనిసరి విలువలను మార్చుటకు అనుమతులు అవసరము</message>
+    <message xml:lang="th">ต้องมีสิทธิพิเศษจึงจะเปลี่ยนค่า GConf บังคับได้</message>
+    <message xml:lang="tr">GConfs zorunlu değerlerini değiştirmek için imtiyazlar gereklidir.</message>
+    <message xml:lang="ug">GConf mandatory قىممەتلىرىنى ئۆزگەرتىش ئۈچۈن ئىمتىياز تەلەپ قىلىنىدۇ</message>
+    <message xml:lang="uk">Для зміни обов'язкових' значень GConf потрібні привілеї</message>
+    <message xml:lang="vi">Cần đặc quyền để thay đổi giá trị GConf mặc định</message>
+    <message xml:lang="zh_CN">需要特权以更改 GConf 强制源的值</message>
+    <message xml:lang="zh_HK">要改變 GConf 強制數值需要管理權限</message>
+    <message xml:lang="zh_TW">要改變 GConf 強制數值需要管理權限</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

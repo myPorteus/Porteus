@@ -1,0 +1,63 @@
+PACKAGE NAME:     libnotify-0.7.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libnotify-0.7.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libnotify: libnotify (notification library)
+libnotify: 
+libnotify: A general library for event notification
+libnotify:
+libnotify: Homepage: https://developer.gnome.org/libnotify
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+libnotify:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/notify-send
+usr/doc/
+usr/doc/libnotify-0.7.8/
+usr/doc/libnotify-0.7.8/AUTHORS
+usr/doc/libnotify-0.7.8/COPYING
+usr/doc/libnotify-0.7.8/ChangeLog
+usr/doc/libnotify-0.7.8/README
+usr/include/
+usr/include/libnotify/
+usr/include/libnotify/notification.h
+usr/include/libnotify/notify-enum-types.h
+usr/include/libnotify/notify-features.h
+usr/include/libnotify/notify.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Notify-0.7.typelib
+usr/lib64/libnotify.so.4.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libnotify.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Notify-0.7.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libnotify/
+usr/share/gtk-doc/html/libnotify/NotifyNotification.html
+usr/share/gtk-doc/html/libnotify/annotation-glossary.html
+usr/share/gtk-doc/html/libnotify/api-index-full.html
+usr/share/gtk-doc/html/libnotify/ch01.html
+usr/share/gtk-doc/html/libnotify/home.png
+usr/share/gtk-doc/html/libnotify/index.html
+usr/share/gtk-doc/html/libnotify/left-insensitive.png
+usr/share/gtk-doc/html/libnotify/left.png
+usr/share/gtk-doc/html/libnotify/libnotify-notify.html
+usr/share/gtk-doc/html/libnotify/libnotify.devhelp2
+usr/share/gtk-doc/html/libnotify/right-insensitive.png
+usr/share/gtk-doc/html/libnotify/right.png
+usr/share/gtk-doc/html/libnotify/style.css
+usr/share/gtk-doc/html/libnotify/up-insensitive.png
+usr/share/gtk-doc/html/libnotify/up.png

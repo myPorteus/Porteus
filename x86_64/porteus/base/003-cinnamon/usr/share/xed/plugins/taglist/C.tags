@@ -1,0 +1,3678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TagList xmlns="http://xed.sourceforge.net/some-location">
+<TagGroup sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ab" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="af" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="am" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ar" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="as" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ast" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="az" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="be" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="be@latin" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="bg" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="bn" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="bn_IN" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="br" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="bs" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ca" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ca@valencia" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="cmn" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="crh" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="cs" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="cy" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="da" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="de" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="dz" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="el" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="en@shaw" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="en_AU" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="en_CA" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="en_GB" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="eo" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="es" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="et" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="eu" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="fa" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="fi" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="fr" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="fr_CA" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ga" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="gl" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="gu" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="he" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="hi" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="hr" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="hu" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="hy" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ia" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="id" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="is" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="it" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ja" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ka" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="kab" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="kk" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="kn" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ko" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ku" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ky" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="la" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="lt" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="lv" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mai" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mg" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mi" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mk" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ml" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mn" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="mr" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ms" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="my" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="nb" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="nds" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ne" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="nl" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="nn" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="oc" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="or" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="pa" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="pl" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ps" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="pt" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="pt_BR" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ro" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ru" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="rw" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="si" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sk" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sl" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sq" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sr" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sr@latin" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="sv" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ta" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="te" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="tg" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="th" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="tk" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="tr" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="uk" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="ur" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="vi" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="wa" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="xh" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="zh_CN" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="zh_HK" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+<TagGroup xml:lang="zh_TW" sort="true" name="C - Tags">
+
+  <Tag name="STDIO">
+    <Begin>#include &lt;stdio.h&gt;</Begin>
+  </Tag>
+
+  <Tag name="include">
+    <Begin>#include </Begin>
+  </Tag>
+
+  <Tag name="main">
+    <Begin>int main() {
+	</Begin>
+    <End>
+}</End>
+  </Tag>
+
+  <Tag name="Comment">
+    <Begin>/* </Begin>
+    <End> */</End>
+  </Tag>
+
+  <Tag name="Multi-Line Comment">
+    <Begin>/*
+ * </Begin>
+    <End>
+ */</End>
+  </Tag>
+
+  <Tag name="printf">
+    <Begin>printf("</Begin>
+    <End>");</End>
+  </Tag>
+
+</TagGroup>
+</TagList>

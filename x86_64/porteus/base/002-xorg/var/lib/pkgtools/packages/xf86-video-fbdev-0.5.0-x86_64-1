@@ -1,0 +1,34 @@
+PACKAGE NAME:     xf86-video-fbdev-0.5.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xf86-video-fbdev-0.5.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xf86-video-fbdev: xf86-video-fbdev (X.Org generic framebuffer video driver)
+xf86-video-fbdev:
+xf86-video-fbdev: xf86-video-fbdev is the generic framebuffer video driver for X.Org,
+xf86-video-fbdev: designed to draw into a video framebuffer provided by the
+xf86-video-fbdev: underlying operating system.
+xf86-video-fbdev:
+xf86-video-fbdev:
+xf86-video-fbdev:
+xf86-video-fbdev:
+xf86-video-fbdev:
+xf86-video-fbdev:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-fbdev-0.5.0/
+usr/doc/xf86-video-fbdev-0.5.0/COPYING
+usr/doc/xf86-video-fbdev-0.5.0/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/fbdev_drv.la
+usr/lib64/xorg/modules/drivers/fbdev_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/fbdev.4.gz

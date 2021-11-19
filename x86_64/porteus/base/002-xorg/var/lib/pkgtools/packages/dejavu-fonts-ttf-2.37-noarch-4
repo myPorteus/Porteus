@@ -1,0 +1,67 @@
+PACKAGE NAME:     dejavu-fonts-ttf-2.37-noarch-4
+COMPRESSED PACKAGE SIZE:     2.5M
+UNCOMPRESSED PACKAGE SIZE:     12M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/dejavu-fonts-ttf-2.37-noarch-4.txz
+PACKAGE DESCRIPTION:
+dejavu-fonts-ttf: dejavu-fonts-ttf (DejaVu fonts)
+dejavu-fonts-ttf:
+dejavu-fonts-ttf: The DejaVu fonts are a font family based on the Bitstream Vera Fonts.
+dejavu-fonts-ttf: Its purpose is to provide a wider range of characters while
+dejavu-fonts-ttf: maintaining the original look and feel.
+dejavu-fonts-ttf:
+dejavu-fonts-ttf: Homepage: http://dejavu-fonts.github.io
+dejavu-fonts-ttf:
+dejavu-fonts-ttf:
+dejavu-fonts-ttf:
+dejavu-fonts-ttf:
+FILE LIST:
+./
+etc/
+etc/fonts/
+etc/fonts/conf.avail/
+etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf
+etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf
+etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf
+etc/fonts/conf.avail/61-dejavu-sans-mono.conf
+etc/fonts/conf.avail/61-dejavu-sans.conf
+etc/fonts/conf.avail/61-dejavu-serif.conf
+etc/fonts/conf.d/
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/dejavu-fonts-ttf-2.37/
+usr/doc/dejavu-fonts-ttf-2.37/AUTHORS
+usr/doc/dejavu-fonts-ttf-2.37/BUGS
+usr/doc/dejavu-fonts-ttf-2.37/LICENSE
+usr/doc/dejavu-fonts-ttf-2.37/NEWS
+usr/doc/dejavu-fonts-ttf-2.37/README.md
+usr/doc/dejavu-fonts-ttf-2.37/langcover.txt
+usr/doc/dejavu-fonts-ttf-2.37/status.txt
+usr/doc/dejavu-fonts-ttf-2.37/unicover.txt
+usr/share/
+usr/share/fonts/
+usr/share/fonts/TTF/
+usr/share/fonts/TTF/DejaVuMathTeXGyre.ttf
+usr/share/fonts/TTF/DejaVuSans-Bold.ttf
+usr/share/fonts/TTF/DejaVuSans-BoldOblique.ttf
+usr/share/fonts/TTF/DejaVuSans-ExtraLight.ttf
+usr/share/fonts/TTF/DejaVuSans-Oblique.ttf
+usr/share/fonts/TTF/DejaVuSans.ttf
+usr/share/fonts/TTF/DejaVuSansCondensed-Bold.ttf
+usr/share/fonts/TTF/DejaVuSansCondensed-BoldOblique.ttf
+usr/share/fonts/TTF/DejaVuSansCondensed-Oblique.ttf
+usr/share/fonts/TTF/DejaVuSansCondensed.ttf
+usr/share/fonts/TTF/DejaVuSansMono-Bold.ttf
+usr/share/fonts/TTF/DejaVuSansMono-BoldOblique.ttf
+usr/share/fonts/TTF/DejaVuSansMono-Oblique.ttf
+usr/share/fonts/TTF/DejaVuSansMono.ttf
+usr/share/fonts/TTF/DejaVuSerif-Bold.ttf
+usr/share/fonts/TTF/DejaVuSerif-BoldItalic.ttf
+usr/share/fonts/TTF/DejaVuSerif-Italic.ttf
+usr/share/fonts/TTF/DejaVuSerif.ttf
+usr/share/fonts/TTF/DejaVuSerifCondensed-Bold.ttf
+usr/share/fonts/TTF/DejaVuSerifCondensed-BoldItalic.ttf
+usr/share/fonts/TTF/DejaVuSerifCondensed-Italic.ttf
+usr/share/fonts/TTF/DejaVuSerifCondensed.ttf
