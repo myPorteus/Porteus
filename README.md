@@ -8,7 +8,7 @@ This repo aims to give you the "source code" by which Porteus bundles compiled p
 
 As a prominent goal, this repo should make version changes transparent. On the other hand, it is not intended to be a historical museum, so no versions prior to 3.1 (december 2014) are included.
 
-**Refer to the [version tags]() to see which Porteus versions are included here** and choose the one you like to jump to.
+**Refer to the [version tags][] to see which Porteus versions are included here** and choose the one you like to jump to.
 
 This repo uses Markdown files (*.md) at various levels for annotations on Porteus sources, they are not part of the source itself.
 
