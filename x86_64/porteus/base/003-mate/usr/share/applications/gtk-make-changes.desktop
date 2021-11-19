@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=gksu /opt/porteus-scripts/make-changes
-Icon=document-save
-Name=Porteus save file manager
-Type=Application
-Categories=Porteus;

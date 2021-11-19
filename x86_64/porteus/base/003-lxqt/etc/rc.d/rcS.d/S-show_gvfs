@@ -1,8 +1,0 @@
-#!/bin/bash
-# Modifies /etc/fstab to add 'comment=x-gvfs-show' to all devices.
-# This allows the devices to show up in the pcmanfm and thunar left
-# panel under udisks2
-
-for a in `cat /etc/fstab | sed '/Device partitions/,/^$/!d' | grep '/dev/' | cut -d' ' -f4 | sort -u | grep -v 'x-gvfs-show'`; do
-    sed -i '/Device partitions/,/^$/ '"s/$a/$a,comment=x-gvfs-show/g"'' /etc/fstab
-done

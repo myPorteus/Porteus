@@ -1,9 +1,0 @@
-#This define what Pfilesearch recognize as documents, pictures...
-#-------------------------------------------------------------------------------------------------------
-document= .abw .doc .gnumeric .html .odt .pdf .ps .pps .rtf .stw .sxc .sxw .txt .xls .wp .{END}
-picture= .bmp .gif .ico .jpg .jpeg .jpe .png .pnm .psd .psp .svg .tif .tiff .xcf .xpm .{END}
-music= .aac .ac3 .aif .aiff .ape .asf .au .flac .gsm .m3u .m4a .mid .mp1 .mp2 .mp3 .mp4 .ogg .ra .ram .raw .shn .voc .wav .wma .wv .{END}
-video= .avi .avx .mpe .mpeg .mpg .movie .movi .mv .mov .rm .ram .wmv .{END}
-mail= .eml .{END}
-zip= .deb .img .iso .jar .gz .pet .pup .rpm .sfs .tar .tbz .tgz .tar.gz .zip .{END}
-code= .c .h .html .pl .sh .xml .{END}

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Porteus Installer
-Comment=Porteus Installer
-Exec=/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/pinstaller
-Terminal=false
-Icon=drive-external-usb
-Type=Application
-Categories=System;
-Version=1.0

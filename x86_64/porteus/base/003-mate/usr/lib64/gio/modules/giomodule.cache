@@ -1,5 +1,0 @@
-libgsettingsgconfbackend.so: gsettings-backend
-libdconfsettings.so: gsettings-backend
-libgioremote-volume-monitor.so: gio-native-volume-monitor,gio-volume-monitor
-libgvfsdbus.so: gio-vfs,gio-volume-monitor
-libgiofam.so: gio-local-directory-monitor,gio-local-file-monitor,gio-nfs-directory-monitor,gio-nfs-file-monitor

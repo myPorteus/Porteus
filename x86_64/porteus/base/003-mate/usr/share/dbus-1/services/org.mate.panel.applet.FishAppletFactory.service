@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.mate.panel.applet.FishAppletFactory
-Exec=/usr/lib64/mate-panel/fish-applet

@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kcontrol.kcmremotewidgets
-Exec=/usr/lib64/kde4/libexec/kcmremotewidgetshelper
-User=root

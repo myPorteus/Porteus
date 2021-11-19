@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Openbox Settings
-GenericName=Window Manager Settings
-Comment=Configure the Openbox window manager
-Exec=obconf-qt
-Categories=Qt;DesktopSettings;
-Icon=/usr/share/pixmaps/obconf-qt.png
-StartupNotify=true

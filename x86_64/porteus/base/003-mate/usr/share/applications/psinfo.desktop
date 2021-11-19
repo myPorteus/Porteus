@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Porteus System Info
-Exec=gksu xpsinfo
-Icon=dialog-information
-Terminal=false
-Type=Application
-Categories=Sysinfo;

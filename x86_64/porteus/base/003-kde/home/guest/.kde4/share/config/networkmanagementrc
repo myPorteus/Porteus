@@ -1,4 +1,0 @@
-[General]
-InterfaceNamingStyle=SystemNames
-SecretStorageMode=PlainText
-ShowAllConnections=false

@@ -1,9 +1,0 @@
-noipdefault
-defaultroute
-replacedefaultroute
-hide-password
-noauth
-persist
-usepeerdns
-
-plugin rp-pppoe.so eth0

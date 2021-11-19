@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.SystemToolsBackends
-Exec=/usr/sbin/system-tools-backends
-User=root

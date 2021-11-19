@@ -1,3 +1,0 @@
-# mirrors - List of SBo Linux mirrors
-
-http://slackbuilds.org/slackbuilds

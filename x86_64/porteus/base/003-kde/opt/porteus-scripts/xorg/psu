@@ -1,4 +1,0 @@
-#!/bin/sh
-# kdesu is our default gui for su:
-
-/usr/bin/kdesu $*

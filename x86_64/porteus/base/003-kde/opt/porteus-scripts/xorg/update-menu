@@ -1,5 +1,0 @@
-#!/bin/sh
-# Update KDE4 menu:
-
-echo "Updating KDE menu: kbuildsycoca4"
-for x in `ps -C startkde -o user=`; do su --login $x -c "/usr/bin/kbuildsycoca4"; done

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Porteus System Info
-Exec=/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/xpsinfo
-Icon=dialog-information
-Terminal=false
-Type=Application
-Categories=Application;System;

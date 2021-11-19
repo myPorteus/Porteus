@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Service
-ServiceTypes=LxQtPanel/Plugin
-Name=Panel DOM tree.
-Comment=Show a DOM tree of the LXDE-Qt panel.

@@ -1,1 +1,0 @@
-libgiofam.so: gio-local-directory-monitor,gio-local-file-monitor,gio-nfs-directory-monitor,gio-nfs-file-monitor

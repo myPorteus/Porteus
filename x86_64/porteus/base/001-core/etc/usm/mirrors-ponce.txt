@@ -1,5 +1,0 @@
-# List of ponce Slackware mirrors
-# Structure: $VER/$ARCH
-
-# OFFICIAL
-http://ponce.cc/slackware

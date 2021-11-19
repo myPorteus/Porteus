@@ -1,7 +1,0 @@
-[Defaults]
-Profile=Default
-
-[PROFILE_Default]
-EmailClient[$e]=trojita
-ServerType=
-TerminalClient=false

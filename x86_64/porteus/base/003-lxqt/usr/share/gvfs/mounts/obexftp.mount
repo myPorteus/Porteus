@@ -1,4 +1,0 @@
-[Mount]
-Type=obex
-Exec=/usr/libexec/gvfsd-obexftp
-AutoMount=false

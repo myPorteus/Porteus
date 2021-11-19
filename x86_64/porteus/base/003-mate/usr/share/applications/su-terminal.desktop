@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=gnsu -u root mate-terminal
-Icon=utilities-terminal
-Name=Super User Mode - Terminal
-Type=Application
-Categories=Application;System;

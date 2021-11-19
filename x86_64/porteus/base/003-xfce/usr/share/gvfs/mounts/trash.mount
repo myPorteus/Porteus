@@ -1,5 +1,0 @@
-[Mount]
-Type=trash
-Exec=/usr/libexec/gvfsd-trash
-AutoMount=true
-

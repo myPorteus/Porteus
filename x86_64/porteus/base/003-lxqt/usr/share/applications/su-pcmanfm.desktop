@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=lxterminal -e "/opt/porteus-scripts/xorg/pcmanfm"
-Icon=system-file-manager
-Name=Super User Mode - PCManFM
-Type=Application
-Categories=Application;System;
