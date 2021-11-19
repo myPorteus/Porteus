@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libkeybinder.so )
+( cd usr/lib64 ; ln -sf libkeybinder.so.0.1.0 libkeybinder.so )
+( cd usr/lib64 ; rm -rf libkeybinder-3.0.so )
+( cd usr/lib64 ; ln -sf libkeybinder-3.0.so.0.0.0 libkeybinder-3.0.so )
+( cd usr/lib64 ; rm -rf libkeybinder.so.0 )
+( cd usr/lib64 ; ln -sf libkeybinder.so.0.1.0 libkeybinder.so.0 )
+( cd usr/lib64 ; rm -rf libkeybinder-3.0.so.0 )
+( cd usr/lib64 ; ln -sf libkeybinder-3.0.so.0.0.0 libkeybinder-3.0.so.0 )

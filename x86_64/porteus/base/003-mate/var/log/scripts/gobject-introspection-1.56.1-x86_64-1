@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgirepository-1.0.so.1 )
+( cd usr/lib64 ; ln -sf libgirepository-1.0.so.1.0.0 libgirepository-1.0.so.1 )
+( cd usr/lib64 ; rm -rf libgirepository-1.0.so )
+( cd usr/lib64 ; ln -sf libgirepository-1.0.so.1.0.0 libgirepository-1.0.so )

@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: gdict-1.0
+Description: MATE Dictionary Protocol client library
+Requires: gtk+-3.0 >= 3.22.0
+Version: 1.1.0
+Libs: -L${libdir} -lmatedict
+Cflags: -I${includedir}/mate-dict
+

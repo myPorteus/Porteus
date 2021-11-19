@@ -1,0 +1,18 @@
+if [ -x /usr/bin/update-desktop-database ]; then
+  /usr/bin/update-desktop-database -q usr/share/applications >/dev/null 2>&1
+fi
+
+if [ -e usr/share/icons/hicolor/icon-theme.cache ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache -f usr/share/icons/hicolor >/dev/null 2>&1
+  fi
+fi
+
+( cd usr/lib64 ; rm -rf libqmmp.so )
+( cd usr/lib64 ; ln -sf libqmmp.so.0 libqmmp.so )
+( cd usr/lib64 ; rm -rf libqmmpui.so )
+( cd usr/lib64 ; ln -sf libqmmpui.so.0 libqmmpui.so )
+( cd usr/lib64 ; rm -rf libqmmpui.so.0 )
+( cd usr/lib64 ; ln -sf libqmmpui.so.1.1.12 libqmmpui.so.0 )
+( cd usr/lib64 ; rm -rf libqmmp.so.0 )
+( cd usr/lib64 ; ln -sf libqmmp.so.1.1.12 libqmmp.so.0 )

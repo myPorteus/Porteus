@@ -1,0 +1,66 @@
+PACKAGE NAME:     rarian-0.8.1-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     730K
+PACKAGE LOCATION: /root/mcbs/build/../x86_64/pkg/003_mate/rarian-0.8.1-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+rarian: rarian (a documentation metadata library)
+rarian:
+rarian: Rarian is a documentation metadata library based on the proposed
+rarian: freedesktop.org specification.
+rarian:
+rarian: 
+rarian:
+rarian:
+rarian:
+rarian: http://rarian.freedesktop.org
+rarian:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rarian-example
+usr/bin/rarian-sk-config
+usr/bin/rarian-sk-extract
+usr/bin/rarian-sk-gen-uuid
+usr/bin/rarian-sk-get-cl
+usr/bin/rarian-sk-get-content-list
+usr/bin/rarian-sk-get-extended-content-list
+usr/bin/rarian-sk-get-scripts
+usr/bin/rarian-sk-install
+usr/bin/rarian-sk-migrate
+usr/bin/rarian-sk-preinstall
+usr/bin/rarian-sk-rebuild
+usr/bin/rarian-sk-update
+usr/include/
+usr/include/rarian/
+usr/include/rarian/rarian-info.h
+usr/include/rarian/rarian-main.h
+usr/include/rarian/rarian-man.h
+usr/include/rarian/rarian-reg-utils.h
+usr/include/rarian/rarian.h
+usr/lib64/
+usr/lib64/librarian.a
+usr/lib64/librarian.la
+usr/lib64/librarian.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/rarian.pc
+usr/share/
+usr/share/help/
+usr/share/help/rarian.document
+usr/share/librarian/
+usr/share/librarian/Templates/
+usr/share/librarian/Templates/C/
+usr/share/librarian/Templates/C/scrollkeeper_cl.xml
+usr/share/librarian/manual/
+usr/share/librarian/manual/help-spec-0.2.xml
+usr/share/librarian/manual/index.xhtml
+usr/share/librarian/manual/rar-lib.xhtml
+usr/share/librarian/manual/rar-mdf.xhtml
+usr/share/librarian/manual/rar-skcompat.xhtml
+usr/share/librarian/rarian-sk-cl.xml
+var/
+var/lib/
+var/lib/rarian/

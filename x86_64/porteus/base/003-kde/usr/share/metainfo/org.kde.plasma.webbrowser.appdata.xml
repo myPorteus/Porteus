@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <id>org.kde.plasma.webbrowser</id>
+    <name>Web browser</name>
+    <name xml:lang="ar">متصفّح وبّ</name>
+    <name xml:lang="ca@valencia">Navegador web</name>
+    <name xml:lang="ca">Navegador web</name>
+    <name xml:lang="cs">Webový prohlížeč</name>
+    <name xml:lang="da">Webbrowser</name>
+    <name xml:lang="de">Webbrowser</name>
+    <name xml:lang="el">Περιηγητής ιστού</name>
+    <name xml:lang="en_GB">Web browser</name>
+    <name xml:lang="es">Navegador web</name>
+    <name xml:lang="et">Veebibrauser</name>
+    <name xml:lang="eu">Web arakatzailea</name>
+    <name xml:lang="fi">Verkkoselain</name>
+    <name xml:lang="fr">Navigateur Web</name>
+    <name xml:lang="gl">Navegador web</name>
+    <name xml:lang="he">דפדפן</name>
+    <name xml:lang="hu">Webböngésző</name>
+    <name xml:lang="ia">Navigator Web</name>
+    <name xml:lang="it">Browser web</name>
+    <name xml:lang="ko">웹 브라우저</name>
+    <name xml:lang="lt">Žiniatinklio naršyklė</name>
+    <name xml:lang="nb">Nettleser</name>
+    <name xml:lang="nl">Webbrowser</name>
+    <name xml:lang="nn">Nettlesar</name>
+    <name xml:lang="pl">Przeglądarka sieciowa</name>
+    <name xml:lang="pt">Navegador Web</name>
+    <name xml:lang="pt_BR">Navegador Web</name>
+    <name xml:lang="ru">Веб-браузер</name>
+    <name xml:lang="sk">Webový prehliadač</name>
+    <name xml:lang="sl">Spletni brskalnik</name>
+    <name xml:lang="sr@ijekavian">веб прегледач</name>
+    <name xml:lang="sr@ijekavianlatin">veb pregledač</name>
+    <name xml:lang="sr@latin">veb pregledač</name>
+    <name xml:lang="sr">веб прегледач</name>
+    <name xml:lang="sv">Webbläsare</name>
+    <name xml:lang="tr">Web tarayıcı</name>
+    <name xml:lang="uk">Перегляд інтернету</name>
+    <name xml:lang="x-test">xxWeb browserxx</name>
+    <name xml:lang="zh_CN">网页浏览器</name>
+    <name xml:lang="zh_TW">網頁瀏覽器</name>
+    <summary>Add a webpage on your desktop</summary>
+    <summary xml:lang="ar">أضف صفحة وبّ إلى سطح المكتب</summary>
+    <summary xml:lang="ca@valencia">Afig una pàgina web a l'escriptori</summary>
+    <summary xml:lang="ca">Afegeix una pàgina web a l'escriptori</summary>
+    <summary xml:lang="da">Tilføj en webside til dit skrivebord</summary>
+    <summary xml:lang="de">Fügt eine Webseite zu Ihrer Arbeitsfläche hinzu</summary>
+    <summary xml:lang="el">Προσθήκη ιστοσελίδας στην επιφάνεια εργασίας σας</summary>
+    <summary xml:lang="en_GB">Add a webpage on your desktop</summary>
+    <summary xml:lang="es">Añadir una página web a su escritorio</summary>
+    <summary xml:lang="et">Veebilehe lisamine töölauale</summary>
+    <summary xml:lang="eu">Erantsi web-orri bat zure mahaigainean</summary>
+    <summary xml:lang="fi">Lisää verkkosivu työpöydällesi</summary>
+    <summary xml:lang="fr">Ajouter une page Web sur votre bureau</summary>
+    <summary xml:lang="gl">Engadir unha páxina web ao escritorio</summary>
+    <summary xml:lang="he">הוסף דף אינטרנט לשולחן העבודה שלך</summary>
+    <summary xml:lang="hu">Adjon hozzá egy weboldalt az asztalhoz!</summary>
+    <summary xml:lang="it">Aggiungi una pagina web al tuo desktop</summary>
+    <summary xml:lang="ko">데스크톱에 웹 페이지를 추가합니다</summary>
+    <summary xml:lang="lt">Internetinis puslapis darbalaukyje</summary>
+    <summary xml:lang="nb">Legg de merkeligste plott på skrivebordet!</summary>
+    <summary xml:lang="nl">Een webpagina toevoegen aan uw bureaublad</summary>
+    <summary xml:lang="nn">Legg ei nettside på skrivebordet</summary>
+    <summary xml:lang="pl">Dodaje stronę internetową na pulpit</summary>
+    <summary xml:lang="pt">Adiciona uma página Web ao seu ecrã</summary>
+    <summary xml:lang="pt_BR">Adiciona uma página da Web na sua área de trabalho</summary>
+    <summary xml:lang="ru">Просмотр веб-страницы на рабочем столе</summary>
+    <summary xml:lang="sk">Pridať webovú stránku na vašu plochu</summary>
+    <summary xml:lang="sl">Dodajte spletno stran na vaše namizje</summary>
+    <summary xml:lang="sr@ijekavian">Додајте веб страницу на површ</summary>
+    <summary xml:lang="sr@ijekavianlatin">Dodajte veb stranicu na površ</summary>
+    <summary xml:lang="sr@latin">Dodajte veb stranicu na površ</summary>
+    <summary xml:lang="sr">Додајте веб страницу на површ</summary>
+    <summary xml:lang="sv">Lägg till en webbsida på skrivbordet</summary>
+    <summary xml:lang="tr">Masaüstünüze bir dosya ekleyin</summary>
+    <summary xml:lang="uk">Додати сторінку інтернету на вашу стільницю</summary>
+    <summary xml:lang="x-test">xxAdd a webpage on your desktop.xx</summary>
+    <summary xml:lang="zh_CN">添加网页到您的桌面</summary>
+    <summary xml:lang="zh_TW">在桌面上新增網頁。</summary>
+    <url type="homepage">plasma.kde.org</url>
+    <developer_name>Mikhail Ivchenko &lt;ematirov@gmail.com&gt;</developer_name>
+    <icon type="stock">internet-web-browser</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

@@ -1,0 +1,67 @@
+PACKAGE NAME:     lxqt-runner-0.12.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: lxqt-runner-0.12.0-x86_64.txz
+PACKAGE DESCRIPTION:
+lxqt-runner: lxqt-runner (application starter)
+lxqt-runner:
+lxqt-runner: Tool used to launch programs quickly by typing their names.
+lxqt-runner:
+lxqt-runner:
+lxqt-runner:
+lxqt-runner:
+lxqt-runner:
+lxqt-runner:
+lxqt-runner: Home page: http://lxqt.org
+lxqt-runner:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lxqt-runner
+usr/doc/
+usr/doc/lxqt-runner-0.12.0/
+usr/doc/lxqt-runner-0.12.0/AUTHORS
+usr/doc/lxqt-runner-0.12.0/README.md
+usr/share/
+usr/share/lxqt/
+usr/share/lxqt/translations/
+usr/share/lxqt/translations/lxqt-runner/
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ar.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ca.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_cs.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_da.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_de.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_el.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_eo.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_es.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_es_VE.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_eu.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_fi.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_fr.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_hu.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ia.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_id_ID.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_it.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ja.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ko.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_lt.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_nl.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_pl_PL.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_pt.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_pt_BR.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ro_RO.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ru.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_ru_RU.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_sk_SK.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_sl.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_sr@latin.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_sr_BA.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_sr_RS.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_th_TH.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_tr.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_uk.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_zh_CN.qm
+usr/share/lxqt/translations/lxqt-runner/lxqt-runner_zh_TW.qm

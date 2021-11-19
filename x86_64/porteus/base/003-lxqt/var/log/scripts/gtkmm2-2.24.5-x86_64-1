@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libgdkmm-2.4.so )
+( cd usr/lib64 ; ln -sf libgdkmm-2.4.so.1.1.0 libgdkmm-2.4.so )
+( cd usr/lib64 ; rm -rf libgtkmm-2.4.so )
+( cd usr/lib64 ; ln -sf libgtkmm-2.4.so.1.1.0 libgtkmm-2.4.so )
+( cd usr/lib64 ; rm -rf libgdkmm-2.4.so.1 )
+( cd usr/lib64 ; ln -sf libgdkmm-2.4.so.1.1.0 libgdkmm-2.4.so.1 )
+( cd usr/lib64 ; rm -rf libgtkmm-2.4.so.1 )
+( cd usr/lib64 ; ln -sf libgtkmm-2.4.so.1.1.0 libgtkmm-2.4.so.1 )

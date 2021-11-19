@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libsigc-2.0.so )
+( cd usr/lib64 ; ln -sf libsigc-2.0.so.0.0.0 libsigc-2.0.so )
+( cd usr/lib64 ; rm -rf libsigc-2.0.so.0 )
+( cd usr/lib64 ; ln -sf libsigc-2.0.so.0.0.0 libsigc-2.0.so.0 )

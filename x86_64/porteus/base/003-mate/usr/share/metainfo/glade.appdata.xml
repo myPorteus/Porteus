@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>glade.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+ and LGPL-2.0+</project_license>
+  <name>Glade</name>
+  <name xml:lang="ar">جلايد</name>
+  <name xml:lang="ast">Glade</name>
+  <name xml:lang="bg">Glade</name>
+  <name xml:lang="bn">Glade</name>
+  <name xml:lang="bn_IN">Glade</name>
+  <name xml:lang="bs">Glade</name>
+  <name xml:lang="ca">Glade</name>
+  <name xml:lang="ca@valencia">Glade</name>
+  <name xml:lang="cs">Glade</name>
+  <name xml:lang="da">Glade</name>
+  <name xml:lang="de">Glade</name>
+  <name xml:lang="el">Glade</name>
+  <name xml:lang="en@shaw">·𐑜𐑤𐑱𐑛</name>
+  <name xml:lang="en_CA">Glade</name>
+  <name xml:lang="en_GB">Glade</name>
+  <name xml:lang="eo">Glado</name>
+  <name xml:lang="es">Glade</name>
+  <name xml:lang="et">Glade</name>
+  <name xml:lang="eu">Glade</name>
+  <name xml:lang="fi">Glade</name>
+  <name xml:lang="fr">Glade</name>
+  <name xml:lang="fur">Glade</name>
+  <name xml:lang="gl">Glade</name>
+  <name xml:lang="gu">Glade</name>
+  <name xml:lang="he">Glade</name>
+  <name xml:lang="hi">Glade</name>
+  <name xml:lang="hu">Glade</name>
+  <name xml:lang="hy">Glade</name>
+  <name xml:lang="id">Glade</name>
+  <name xml:lang="it">Glade</name>
+  <name xml:lang="ja">Glade</name>
+  <name xml:lang="kk">Glade</name>
+  <name xml:lang="km">Glade</name>
+  <name xml:lang="ko">글레이드</name>
+  <name xml:lang="lt">Glade</name>
+  <name xml:lang="lv">Glade</name>
+  <name xml:lang="mk">Glade</name>
+  <name xml:lang="ml">ഗ്ലേഡ്</name>
+  <name xml:lang="mr">Glade</name>
+  <name xml:lang="nb">Glade</name>
+  <name xml:lang="nl">Glade</name>
+  <name xml:lang="oc">Glade</name>
+  <name xml:lang="pa">ਗਲੇਡ</name>
+  <name xml:lang="pl">Glade</name>
+  <name xml:lang="pt">Glade</name>
+  <name xml:lang="pt_BR">Glade</name>
+  <name xml:lang="ro">Glade</name>
+  <name xml:lang="ru">Glade</name>
+  <name xml:lang="sk">Glade</name>
+  <name xml:lang="sl">Glade</name>
+  <name xml:lang="sq">Glade</name>
+  <name xml:lang="sr">Глејд</name>
+  <name xml:lang="sr@latin">Glejd</name>
+  <name xml:lang="sv">Glade</name>
+  <name xml:lang="te">గ్లేడ్</name>
+  <name xml:lang="th">Glade</name>
+  <name xml:lang="tr">Glade</name>
+  <name xml:lang="ug">Glade</name>
+  <name xml:lang="uk">Glade</name>
+  <name xml:lang="vi">Glade</name>
+  <name xml:lang="zh_CN">Glade</name>
+  <name xml:lang="zh_HK">Glade</name>
+  <name xml:lang="zh_TW">Glade</name>
+  <summary>Create or open user interface designs for GTK+ applications</summary>
+  <summary xml:lang="ar">أنشئ أو افتح تصميمات واجهات مستخدم لتطبيقات جتك+</summary>
+  <summary xml:lang="ast">Crea o abri diseños d'interfaces d'usuariu p'aplicaciones GTK+</summary>
+  <summary xml:lang="bg">Създаване или редактиране на потребителски интерфейси за приложения на GTK+</summary>
+  <summary xml:lang="bs">Stvorite ili otvorite dizajne korisničkog sučelja za GTK + aplikacije</summary>
+  <summary xml:lang="ca">Creeu o obriu dissenys d'interfície d'usuari per a aplicacions GTK+</summary>
+  <summary xml:lang="ca@valencia">Creeu o obriu dissenys d'interfície d'usuari per a aplicacions GTK+</summary>
+  <summary xml:lang="cs">Vytvářejte a otevírejte návrhy uživatelského rozhraní pro aplikace používající GTK+</summary>
+  <summary xml:lang="da">Opret eller åbn grænsefladedesign for GTK+-programmer</summary>
+  <summary xml:lang="de">Erstellen oder Öffnen von grafischen Oberflächen für GTK-Anwendungen</summary>
+  <summary xml:lang="el">Δημιουργήστε ή ανοίξτε σχέδια διεπαφής χρήστη για εφαρμογές GTK+</summary>
+  <summary xml:lang="en@shaw">𐑒𐑮𐑦𐑱𐑑 𐑹 𐑴𐑐𐑩𐑯 𐑿𐑟𐑼 𐑦𐑯𐑑𐑼𐑓𐑱𐑕 𐑛𐑩𐑟𐑲𐑯𐑟 𐑓𐑹 GTK+ 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯𐑟</summary>
+  <summary xml:lang="en_CA">Create or open user interface designs for GTK+ applications</summary>
+  <summary xml:lang="en_GB">Create or open user interface designs for GTK+ applications</summary>
+  <summary xml:lang="eo">Krei aŭ malfermi uzantointerfacan dizajnon por aplikaĵoj de GTK+</summary>
+  <summary xml:lang="es">Cree o abra diseños de interfaces de usuario para aplicaciones GTK+</summary>
+  <summary xml:lang="et">GTK+ rakenduste kasutajaliideste projektide avamine või loomine</summary>
+  <summary xml:lang="eu">Erabiltzaile-interfazeen diseinuak sortzen edo irekitzen ditu GTK+ aplikazioentzat</summary>
+  <summary xml:lang="fi">Luo tai avaa GTK+ -ja Gnome-sovellusten käyttöliittymäsuunnitelmia</summary>
+  <summary xml:lang="fr">Créer ou ouvrir un modèle d’interface utilisateur pour des applications GTK+</summary>
+  <summary xml:lang="fur">Cree o vierç i progjets di interface utent pes aplicazions GTK+</summary>
+  <summary xml:lang="gl">Crear ou abrir deseños de interface de usuario para aplicativos GTK+</summary>
+  <summary xml:lang="gu">GTK+ કાર્યક્રમો માટે વપરાશકર્તા ઇન્ટરફેસ રચનાઓ ખોલો અથવા બનાવો</summary>
+  <summary xml:lang="he">יצירה או פתיחה של עיצוב מנשק משתמש ליישומי GTK+</summary>
+  <summary xml:lang="hu">Felhasználóifelület-tervek készítése GTK+ alkalmazásokhoz</summary>
+  <summary xml:lang="hy">Ստեղծել կամ բացել օգտագործողի ինտերֆեյսի նախագծեր GTK+ աշխատածրագրերի համար</summary>
+  <summary xml:lang="id">Buat atau buka rancangan antar muka pengguna bagi aplikasi GTK+</summary>
+  <summary xml:lang="it">Crea o apre disegni di interfaccia utente per applicazioni GTK+</summary>
+  <summary xml:lang="ja">GTK+ アプリの UI ファイルの作成や編集を行います</summary>
+  <summary xml:lang="km">បង្កើត ឬ​បើក​ការ​រចនា​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​សម្រាប់​កម្មវិធី GTK+</summary>
+  <summary xml:lang="ko">GTK+ 프로그램의 사용자 인터페이스 디자인을 열거나 새로 만듭니다</summary>
+  <summary xml:lang="lt">Kurti arba atverti GTK+ programų naudotojo sąsajas</summary>
+  <summary xml:lang="lv">Izveidot vai atvērt lietotāja saskarnes izstrādnes GTK+ lietotnēm</summary>
+  <summary xml:lang="mk">Креирај или отворај дизајни за кориснички интерфејс за GTK+ апликации</summary>
+  <summary xml:lang="ml">GTK+ പ്രോഗ്രാമുകള്‍ക്കുളള യൂസര്‍ ഇന്റര്‍ഫെയിസ് രീതികള്‍ ഉണ്ടാക്കുക അല്ലെങ്കില്‍ തുറക്കുക</summary>
+  <summary xml:lang="mr">GTK+ अनुप्रयोगांकरीता वापरकर्ता संवाद रचना बनवा किंवा उघडा</summary>
+  <summary xml:lang="nb">Opprett eller åpne brukergrensesnittdefinisjoner for GTK+-programmer</summary>
+  <summary xml:lang="ne">Create or open user interface designs for GTK+ applications</summary>
+  <summary xml:lang="oc">Crear o dobrir un modèl d'interfàcia utilizaire per d'aplicacions GTK+</summary>
+  <summary xml:lang="pa">GTK+ ਕਾਰਜਾਂ ਲਈ ਉਪਭੋਗੀ ਇੰਟਰਫੇਸ ਡਿਜ਼ਾਇਨ ਬਣਾਓ ਜਾਂ ਖੋਲ੍ਹੋ</summary>
+  <summary xml:lang="pl">Tworzenie lub otwieranie projektów interfejsów dla programów GTK+</summary>
+  <summary xml:lang="pt">Criar ou abrir um desenho de ambiente de utilizador para aplicações GTK+</summary>
+  <summary xml:lang="pt_BR">Crie ou abra projetos de interface com o usuário para aplicativos GTK+</summary>
+  <summary xml:lang="ro">Creeați sau deschideți design-uri de interfețe cu utilizatorul pentru aplicații GTK+</summary>
+  <summary xml:lang="ru">Создать или открыть модель пользовательского интерфейса для приложений GTK+</summary>
+  <summary xml:lang="sk">Vytvára alebo otvára návrhy rozhraní pre aplikácie GTK+.</summary>
+  <summary xml:lang="sl">Oblikovanje in odpiranje uporabniških vmesnikov za GTK+ aplikacije</summary>
+  <summary xml:lang="sq">Krijon ose hap vizatime interfaqe përdorimi për aplikativë GTK+</summary>
+  <summary xml:lang="sr">Направите или отворите цртеже корисничког сучеља ГТК+ програма</summary>
+  <summary xml:lang="sr@latin">Napravite ili otvorite crteže korisničkog sučelja GTK+ programa</summary>
+  <summary xml:lang="sv">Skapa eller öppna designade användargränssnitt för GTK+-program</summary>
+  <summary xml:lang="te">వినియోగదారు సంవిధాన మాదిరిలు సృష్టించుటకు లేదా తెరచుట కొరకు GTK+ కార్యక్షేత్రాలు</summary>
+  <summary xml:lang="th">สร้างหรือเปิดแบบของส่วนติดต่อผู้ใช้สำหรับโปรแกรม GTK+</summary>
+  <summary xml:lang="tr">GTK+ uygulamaları için kullanıcı arabirim tasarımları oluştur ya da aç</summary>
+  <summary xml:lang="ug">GTK+ پروگراممىلىرى ئۈچۈن كۆرۈنمەيۈز لايىھىسىنى قۇرۇش ياكى ئېچىش</summary>
+  <summary xml:lang="uk">Створення та редагування моделей інтерфейсу бібліотеки GTK+</summary>
+  <summary xml:lang="vi">Tạo hay mở bản đồ án thiết kế giao diện người dùng cho ứng dụng GTK+</summary>
+  <summary xml:lang="zh_CN">创建或打开 GTK+ 程序用户界面设计</summary>
+  <summary xml:lang="zh_HK">建立或開啟 GTK+ 應用程式的使用者介面設計</summary>
+  <summary xml:lang="zh_TW">建立或開啟 GTK+ 應用程式的使用者介面設計</summary>
+  <description>
+
+    
+    <p>Glade is a RAD tool to enable quick &amp; easy development of user interfaces for the GTK+ 3 toolkit and the GNOME desktop environment.</p>
+    <p xml:lang="ca">El Glade és una eina RAD que facilita el desenvolupament d'interfícies d'usuari per al joc d'eines GTK+3 i l'entorn d'escriptori GNOME.</p>
+    <p xml:lang="ca@valencia">El Glade és una eina RAD que facilita el desenvolupament d'interfícies d'usuari per al joc d'eines GTK+3 i l'entorn d'escriptori GNOME.</p>
+    <p xml:lang="cs">Glade je nástroj pro rychlý vývoj aplikací (RAD), který vám umožní rychle a snadno vytvořit uživatelské rozhraní pro platformu GTK+ 3 a pracovní prostředí GNOME.</p>
+    <p xml:lang="da">Glade er et RAD-værktøj til hurtig og nem udvikling af brugergrænseflader til GTK+ 3-værktøjskassen og GNOME-skrivebordsmiljøet.</p>
+    <p xml:lang="de">Glade ist eine schnelle Anwendungsentwicklung (RAD tool) zur schnellen und einfachen Entwicklung von Benutzerschnittstellen für GTK+ 3 und die GNOME Arbeitsumgebung.</p>
+    <p xml:lang="el">Το Glade είναι ένα εργαλείο RAD που δίνει τη δυνατότητα για γρήγορη &amp; εύκολη ανάπτυξη διεπαφών χρήστη για το πακέτο εργαλείων GTK+ 3 και το περιβάλλον επιφάνειας εργασίας GNOME.</p>
+    <p xml:lang="en_GB">Glade is a RAD tool to enable quick &amp; easy development of user interfaces for the GTK+ 3 toolkit and the GNOME desktop environment.</p>
+    <p xml:lang="es">Glade es una herramienta RAD (Desarrollo rápido de aplicaciones) para crear y desarrollar fácilmente interfaces de usuario para el kit de herramientas GTK+ 3 en el entorno de escritorio GNOME.</p>
+    <p xml:lang="fr">Glade est un outil RAD (Rapid Application Development) qui permet le développement rapide et facile d’interfaces utilisateur pour la boîte à outils GTK+ 3 et l’environnement de bureau GNOME.</p>
+    <p xml:lang="fur">Glade al è un imprest RAD par rindi veloç e sempliç il svilup di interfacis utent pal toolkit GTK+ 3 e l'ambient di scritori GNOME.</p>
+    <p xml:lang="gl">Glade é unha ferramenta RAD para activar o desenvolvemento rápido e doado de interfaces de usuario para o conxunto de ferramentas GTK+3 e o ambiente de escritorio GNOME.</p>
+    <p xml:lang="hu">A Glade egy RAD eszköz, amely lehetővé teszi felhasználói felületek gyors és egyszerű fejlesztését a GTK+ 3 eszközkészlethez és a GNOME asztali környezethez.</p>
+    <p xml:lang="id">Glade adalah suatu alat RAD yang memungkinkan pengembangan antar muka pengguna yang cepat &amp; mudah bagi toolkit GTK+ 3 dan lingkungan desktop GNOME.</p>
+    <p xml:lang="it">Glade è uno strumento RAD che consente uno sviluppo rapido e semplice di interfacce utente per il toolkit GTK+ 3 e per l'ambiente desktop GNOME.</p>
+    <p xml:lang="ja">Glade は RADツールで、GTK+ 3 ツールキット及び GNOME デスクトップ環境向けのユーザーインターフェース開発が迅速、容易にできるようになります。</p>
+    <p xml:lang="ko">글레이드는 빠르고 쉽게 GTK+ 툴킷 및 그놈 데스크톱 환경의 사용자 인터페이스를 개발하는 RAD 도구입니다.</p>
+    <p xml:lang="lt">Glade yra RAD įrankis greitam ir paprastam naudotojo sąsajos kūrimui GTK+ 3 rinkiniui bei GNOME darbalaukio aplinkai.</p>
+    <p xml:lang="lv">Glade ir RAD rīks, kas ļauj ātri un viegli izstrādāt lietotāja saskarnes ar GTK+ 3 rīkkopai un GNOME darbvirsmas videi.</p>
+    <p xml:lang="ne">ग्लेड एउटा RAD उपकरण हो जुन छिटो &amp; GTK + 3 टूलकिट र जिनोम डेस्कटप वातावरणको लागि प्रयोगकर्ता इन्टरफेसहरूको सजिलो विकास।</p>
+    <p xml:lang="oc">Glade es un aisina RAD (Rapid Aplicacion Development) que permet lo desvolopament rapid e aisit d'interfàcias utilizaire per la bóstia a aisinas GTK+ 3 e l'environament de burèu GNOME.</p>
+    <p xml:lang="pl">Glade jest narzędziem RAD do szybkiego i łatwego rozwijania interfejsów użytkownika dla zestawu narzędzie GTK+ 3 i środowiska GNOME.</p>
+    <p xml:lang="pt">O Glade é uma ferramenta RAD (Desenvolvimento Rápido de Aplicações) que permite desenvolver rápida &amp; facilmente ambientes de utilizador para o GTK+3 e ambiente de trabalho do GNOME</p>
+    <p xml:lang="pt_BR">O Glade é uma ferramenta RAD (desenvolvimento rápido de aplicativos) que permite o desenvolvimento ágil &amp; fácil de interfaces gráficas para o kit de ferramentas GTK+ 3 e para o ambiente de área de trabalho GNOME.</p>
+    <p xml:lang="sk">Glade je nástroj pre rýchly vývoj aplikácií, ktorý umožňuje rýchlo a jednoducho vyvíjať používateľské rozhrania pre sadu nástrojov GTK+ 3 a pracovné prostredie GNOME.</p>
+    <p xml:lang="sl">Glade je orodje za hitro in enostavno razvijanje uporabniškega vmesnika za okolje GTK+ 3in namizno okolje GNOME.</p>
+    <p xml:lang="sr">Глејд је РАД алат за укључивање брзог и лаког развоја корисничких сучеља за комплет алата ГТК+ 3 и за Гномово окружење радне површи.</p>
+    <p xml:lang="sr@latin">Glejd je RAD alat za uključivanje brzog i lakog razvoja korisničkih sučelja za komplet alata GTK+ 3 i za Gnomovo okruženje radne površi.</p>
+    <p xml:lang="sv">Glade är ett RAD-verktyg för snabb och enkel utveckling av användargränssnitt för GTK+ 3-verktygslådan och GNOMEs skrivbordsmiljö.</p>
+    <p xml:lang="tr">Glade, GTK+ 3 araç takımı ve GNOME masaüstü ortamı için hızlı ve kolay kullanıcı arayüzü geliştirmeyi sağlayan bir RAD aracıdır. </p>
+    <p xml:lang="zh_CN">Glade 是一款 RAD 工具，它可以方便快速的开发 GTK+ 3 工具集和 GNOME 桌面环境的用户界面。</p>
+    <p xml:lang="zh_HK">Glade 是能快速 &amp; 簡單開發 GTK+ 3 工具箱的使用者介面和 GNOME 桌面環境的 RAD 工具。</p>
+    <p xml:lang="zh_TW">Glade 是能快速 &amp; 簡單開發 GTK+ 3 工具箱的使用者介面和 GNOME 桌面環境的 RAD 工具。</p>
+
+    
+    <p>The user interfaces designed in Glade are saved as XML and these can be loaded by applications dynamically as needed by using GtkBuilder or used directly to define a new GtkWidget derived object class using GTK+ new template feature.</p>
+    <p xml:lang="bs">Korisnička sučelja dizajnirana u Glade su spremljene kao XML i to mogu aplikacije opteretiti dinamički kako je potrebno pomoću GtkBuilder ili izravno koristiti za definiranje nove GtkWidget izvedeni objekt klase pomoću GTK + nove značajke predloška .</p>
+    <p xml:lang="ca">Les interfícies d'usuari dissenyades al Glade es desen en format XML que les aplicacions poden carregar de forma dinàmica utilitzant el GtkBuilder o bé utilitzades directament per definir una classe d'objecte derivat de GtkWidget utilitzant la característica nova de plantilla de la GTK+.</p>
+    <p xml:lang="ca@valencia">Les interfícies d'usuari dissenyades al Glade es guarden en format XML que les aplicacions poden carregar de forma dinàmica utilitzant el GtkBuilder o bé utilitzades directament per definir una classe d'objecte derivat de GtkWidget utilitzant la característica nova de plantilla de la GTK+.</p>
+    <p xml:lang="cs">Uživatelská rozhraní navržená v Glade se ukládají jako XML a mohou pak být dynamicky načtena aplikací podle potřeby pomocí GtkBuilder nebo použita přímo k definici nového třídy objektu odvozené od GtkWidget za pomocí podpory nových šablon GTK+.</p>
+    <p xml:lang="da">Brugergrænsefladerne, som designes i Glade, gemmes som XML og kan efter behov indlæses af programmer dynamisk ved hjælp af GtkBuilder, eller bruges direkte til at definere en ny GtkWidget-afledt objektklasse ved hjælp af GTK+-funktionen ny skabelon.</p>
+    <p xml:lang="de">Die in Glade entworfenen Benutzerschnittstellen werden als XML gespeichert. Diese können von Anwendungen mit Hilfe von GtkBuilder dynamisch nach Bedarf geladen werden, oder direkt verwendet werden, um ein neue von GtkWidget abgeleitete Objektklasse mit Hilfe der neuen GTK-Vorlagenfunktion zu definieren.</p>
+    <p xml:lang="el">Οι διεπαφές χρήστη που σχεδιάσθηκαν στο Glade αποθηκεύονται ως XML και μπορούν να φορτώνονται δυναμικά από διάφορες εφαρμογές, όταν απαιτείται, χρησιμοποιώντας το GtkBuilder, ή να χρησιμοποιηθούν άμεσα για να ορίσουν μια νέα παραγόμενη κλάση αντικειμένων GtkWidget, με τη χρήση του νέας λειτουργίας του προτύπου Gtk+.</p>
+    <p xml:lang="en_GB">The user interfaces designed in Glade are saved as XML and these can be loaded by applications dynamically as needed by using GtkBuilder or used directly to define a new GtkWidget derived object class using GTK+ new template feature.</p>
+    <p xml:lang="es">Las interfaces de usuarios diseñadas en Glade se guardan como archivos XML y las aplicaciones pueden cargarlos dinámicamente cuando los necesitan usando GtkBuilder o pueden usarlas directamente para definir un objeto GtkWidget nuevo usando la característica de plantilla nueva de GTK+.</p>
+    <p xml:lang="fr">Les interfaces utilisateur conçues dans Glade sont enregistrées en XML. Ces fichiers peuvent être chargés de façon dynamique selon les besoins grâce à GtkBuider, ou être utilisées directement pour définir une nouvelle classe objet dérivée de GtkWidget grâce à la nouvelle fonctionnalité de modèle GTK+.</p>
+    <p xml:lang="fur">Lis interfacis utent disegnadis in Glade a son salvadis come XML e chestis a puedin jessi cjariadis des aplicazions in maniere dinamiche, cuant che al covente, doprant GtkBuilder o dopradis daurman par definî une gnove classe di ogjet derivât GtkWidget doprant la funzionalitât gnûf model GTK+.</p>
+    <p xml:lang="gl">As interfaces de usuario deseñadas por Glade gárdanse en XML e os aplicativos poden lelas dinamicamente tan pronto as precisen as precisen usando GtkBuilder ou usadas directamente para definir un novo GtkWidget derivado da clase de obxecto usando a nova característica de plantillas GTK+.</p>
+    <p xml:lang="hu">A Glade-ben tervezett felhasználói felületek XML-ként kerülnek mentésre, és ezek dinamikusan tölthetők be az alkalmazásokban a GtkBuilder használatával, vagy felhasználhatók új, a GtkWidgetből származtatott objektumosztály közvetlen definiálására a GTK+ új sablon funkciójának segítségével.</p>
+    <p xml:lang="id">Antar muka pengguna yang dirancang dalam Glade disimpan sebagai XML dan ini dapat dimuat oleh aplikasi secara dinamis seperlunya dengan memakai GtkBuilder atau dipakai secara langsung untuk mendefinisikan suatu kelas objek baru turunan GtkWidget memakai fitur templat baru GTK+.</p>
+    <p xml:lang="it">Le interfacce utente create con Glade vengono salvate nel formato XML e possono essere caricate dalle applicazioni in modo dinamico in base alle necessita usando GtkBuilder o usate direttamente per definire una nuova classe di oggetti derivata GtkWidget usando la funzionalità dei nuovi modelli GTK+.</p>
+    <p xml:lang="ko">글레이드에서 디자인한 사용자 인터페이스는 XML로 저장해서 GtkBuilder를 사용하는 프로그램에서 동적으로 읽어들일 수도 있고, GTK+의 서식 기능을 사용해 새로운 GtkWidget 상속 위젯을 정의하는데 사용할 수도 있습니다.</p>
+    <p xml:lang="lt">Su Glade sukurtos naudotojo sąsajos saugomos kaip XML ir prireikus gali būti dinamiškai įkeltos programų naudojant GtkBuilder arba naudojamos tiesiogiai naujam GtkWidget vaikinei objektų klasai aprašyti naudojant naują Gtk+ naująją šablonų savybę.</p>
+    <p xml:lang="lv">Lietotāja saskarnes, kas ir veidotas ar Glade tiek glabātas kā XML un  lietotnes var tās ielādēt dinamiski, izmantojot GtkBuilder vai izmanto tiešā veidā, lai definēt jaunu GtkWidget atvasināto objektu klasi, izmantojot GTK+ jauno veidņu iespēju.</p>
+    <p xml:lang="ne">ग्लेडमा डिजाइन गरिएको प्रयोगकर्ता अन्तरिक्षहरू XML को रूपमा सुरक्षित हुन्छन् र यी अनुप्रयोगहरूले GtkBuilder प्रयोग गरी गतिशील रूपमा अनुप्रयोगद्वारा लोड गर्न सकिन्छ वा GTK + नयाँ टेम्प्लेट सुविधा प्रयोग गरी नयाँ GtkWidget व्युत्पन्न वस्तु वर्ग परिभाषित गर्न प्रयोग गरिन्छ।</p>
+    <p xml:lang="oc">Las interfàcias utilizaire concebudas dins Glade son enregistradas en XML. Aquestes fichièrs pòdon èsser cargats de faiçon dinamica segon los besonhs gràcias a GtkBuider, o èsser utilizadas dirèctament per definir una novèla classa objècte derivada de GtkWidget gràcias a la novèla foncionalitat de modèl GTK+.</p>
+    <p xml:lang="pl">Interfejsy użytkownika zaprojektowane w programie Glade są zapisywane jako pliki XML, które mogą być dynamicznie wczytywane przez programy w razie potrzeby za pomocą mechanizmu GtkBuilder lub używane bezpośrednio do określania nowych klas obiektów wyprowadzonych z GtkWidget za pomocą nowej funkcji szablonów biblioteki GTK+.</p>
+    <p xml:lang="pt">Os ambientes desenhados no Glade são gravados como XML e podem ser carregadas dinamicamente por aplicações quando necessário usando o Gtkbuilder, ou diretamente para definir uma nova classe de objeto derivada de Gtkwidget, usando a nova funcionalidade de modelos do GTK+.</p>
+    <p xml:lang="pt_BR">As interfaces gráficas projetadas no Glade são salvas como XML e estes arquivos podem ser carregados dinamicamente por aplicativos à medida que necessitam usar o GtkBuilder ou usados diretamente para definir uma nova classe de objeto derivada de GtkWidget usando o recurso de novo modelo do GTK+.</p>
+    <p xml:lang="sk">Používateľské rozhrania navrhnuté v programe Glade sa uložia ako XML súbory a tie sa potom dynamicky podľa potreby načítavajú aplikáciami pomocou prvku GtkBuilder alebo priamo ako nový objekt triedy GtkWidget, ktorá používa novú funkcionalitu GTK+ na prácu so šablónami. </p>
+    <p xml:lang="sl">Uporabniški vmesniki, zasnovani v okolju Glade, so shranjeni v zapisu XML, zato je mogoče zapis naložiti dinamično z uporabo ukazov GtkBuilder oziroma je mogoče določiti neposredno nov GtkGradnik, ki je izveden iz razreda predmetov, določenih za nove zmožnosti predloge vmesnika.</p>
+    <p xml:lang="sr">Корисничка сучеља осмишљена у Глејду се чувају као ИксМЛ и могу бити учитавана програмима по потреби користећи Гтк градитеља или коришћена непосредно за одређивање новог разреда предмета произашлог из Гтк елемента употребом функције новог шаблона ГТК+.</p>
+    <p xml:lang="sr@latin">Korisnička sučelja osmišljena u Glejdu se čuvaju kao IksML i mogu biti učitavana programima po potrebi koristeći Gtk graditelja ili korišćena neposredno za određivanje novog razreda predmeta proizašlog iz Gtk elementa upotrebom funkcije novog šablona GTK+.</p>
+    <p xml:lang="sv">Användargränssnitten byggda i Glade sparas som XML och kan läsas in av program dynamiskt efter behov genom att använda GtkBuilder, eller användas direkt för att definiera en ny objektklass ärvd från GtkWidget genom att använda GTK+ nya mallegenskap.</p>
+    <p xml:lang="tr">Glade ile tasarlanan kullanıcı arayüzleri XML olarak kaydedilir ve bu xml'ler uygulamalar tarafından GtkBuilder kullanarak ya da doğrudan yeni GTK+ şablon özelliğini kullanarak GtkWidget'dan türemiş nesne sınıfı tanımlamak için gerektikçe dinamik olarak yüklenebilirler.</p>
+    <p xml:lang="zh_CN">Glade 所设计的用户界面以 XML 格式保存，应用程序可以通过使用 GtkBuilder 动态加载它们，或者使用 Gtk+ 的新模板功能直接用于定义新的 GtkWidget 继承(derived)对象类。</p>
+    <p xml:lang="zh_HK">Glade 中設計的使用者介面是以 XML 儲存，並且能根據需求使用 GtkBuilder 在應用程式中動態載入，或是使用 Gtk+ 新的範本功能在 GtkWidget 衍生的物件類別中直接使用。</p>
+    <p xml:lang="zh_TW">Glade 中設計的使用者介面是以 XML 儲存，並且能依需求使用 GtkBuilder 在應用程式中動態載入，或是使用 Gtk+ 新的範本功能在 GtkWidget 衍生的物件類別中直接使用。</p>
+
+    
+    <p>By using GtkBuilder, Glade XML files can be used in numerous programming languages including C, C++, C#, Vala, Java, Perl, Python, and others.</p>
+    <p xml:lang="bs">Korištenjem GtkBuilder , Glade XML datoteke mogu se koristiti u mnogim programskim jezicima, uključujući C, C ++, C #, Vala, Java, Perl, Python, i drugima .</p>
+    <p xml:lang="ca">En utilitzar el GtkBuilder, els fitxers XML del Glade es poden fer servir en molts llenguatges de programació entre els quals: C, C++, C#, Vala, Java, Perl, Python i d'altres.</p>
+    <p xml:lang="ca@valencia">En utilitzar el GtkBuilder, els fitxers XML del Glade es poden fer servir en molts llenguatges de programació entre els quals: C, C++, C#, Vala, Java, Perl, Python i d'altres</p>
+    <p xml:lang="cs">Díky použití GtkBuilder mohou být soubory XML z Glade využity v řadě programovacích jazyků, včetně C, C++, C#, Vala, Java, Perl, Python a dalších.</p>
+    <p xml:lang="da">Ved hjælp af GtkBuilder kan Glade-XML-filer bruges i mange programmeringssprog, heriblandt C, C++, C#, Vala, Java, Perl, Python med flere.</p>
+    <p xml:lang="de">Durch die Verwendung von GtkBuilder können Glade XML-Dateien in verschiedenen Programmiersprachen wie z.B. C, C++, C#, Vala, Java, Perl, Python und anderen verwendet werden.</p>
+    <p xml:lang="el">Χρησιμοποιώντας το GtkBuilder, τα αρχεία XML Glade μπορούν να χρησιμοποιηθούν σε πολυάριθμες προγραμματιστικές γλώσσες, συμπεριλαμβανομένων των C, C++, C#, Vala, Java, Perl, Python και άλλων.</p>
+    <p xml:lang="en_GB">By using GtkBuilder, Glade XML files can be used in numerous programming languages including C, C++, C#, Vala, Java, Perl, Python, and others.</p>
+    <p xml:lang="es">Usando GtkBuilder, los archivos XML de Glade se pueden usar en numerosos lenguajes de programación, incluyendo C, C++, C#, Vala, Java, Perl, Python, y otros.</p>
+    <p xml:lang="fr">Grâce à GtkBuilder, les fichiers XML de Glade peuvent être utilisés dans de nombreux langages de programmation incluant C, C++, C#, Vala, Java, Perl, Python et autres.</p>
+    <p xml:lang="fur">Doprant GtkBuilder, i file XML di Glade a puedin jessi doprâts intune vore di lengaçs di programazion, includût C, C++, C#, Vala, Java, Perl, Python e altris.</p>
+    <p xml:lang="gl">Usando GtkBuilder, os ficheiros XML de Glade poden usarse en varios linguaxes de programación entre os que están C, C++, C#, Java, Perl e Python.</p>
+    <p xml:lang="hu">A GtkBuilder használatával a Glade XML fájlok számos programozási nyelvben használhatók, mint a C, C++, C#, Vala, Java, Perl, Python és mások.</p>
+    <p xml:lang="id">Dengan memakai GtkBuilder, berkas XML Glade dapat dipakai dalam berbagai bahasa pemrograman termasuk C, C++, C#, Vala, Java, Perl, Python, dan lainnya.</p>
+    <p xml:lang="it">Usando GtkBuilder, i file XML di Glade possono essere usati in numerosi linguaggi di programmazione inclusi C, C++, c#, Vala, Java, Perl, Python e altri.</p>
+    <p xml:lang="ko">GtkBuilder를 사용해 글레이드 XML 파일을 C, C++, C#, 발라, 자바, 펄, 파이썬 등 여러가지 프로그래밍 언어에서 사용할 수 있습니다.</p>
+    <p xml:lang="lt">Naudojant GtkBuilder Glade XML failai gali būti naudojami daugelyje programavimų kalbų: C, C++, C#, Vala, Java, Perl, Python ir kitose.</p>
+    <p xml:lang="lv">Izmantojot GtkBuilder, Glade XML datnes var izmantot dažādas programmēšanas valodas, piemēram C, C++, C#, Vala, Java, Perl, Python.</p>
+    <p xml:lang="ne">GtkBuilder प्रयोग गरेर, ग्लेड XML फाईलहरू सी, सी ++, सी #, वाला, जाभा, पर्ल, पाइथन, र अन्य धेरै प्रोग्रामिङ्ग भाषाहरूमा प्रयोग गर्न सकिन्छ।</p>
+    <p xml:lang="oc">Gràcias a GtkBuilder, los fichièrs XML de Glade pòdon èsser utilizats dins fòrça lengatges de programacion qu'incluisson C, C++, C#, Vala, Java, Perl, Python e autres.</p>
+    <p xml:lang="pl">Dzięki mechanizmowi GtkBuilder, pliki XML programu Glade mogą być używane w wielu językach programowania, w tym C, C++, C#, Vala, Java, Perl, Python i innych.</p>
+    <p xml:lang="pt">Ao usar o Gtkbuilder,os ficheiros XML do Glade podem ser utilizados em inúmeras linguagens de programação, incluindo C, C++, C#, Vala, Java, Perl, Python e outras.</p>
+    <p xml:lang="pt_BR">Ao usar o GtkBuilder, os arquivos XML do Glade podem ser usados em diversas linguagens de programação, incluindo: C, C++, C#, Vala, Java, Perl, Python, entre outras.</p>
+    <p xml:lang="sk">Pomocou prvku GtkBuilder, XML súbory programu Glade môžu byť použité v mnohých programovacích jazykoch vrátane jazykov C, C++, C#, Vala, Java, Perl, Python, a iných.</p>
+    <p xml:lang="sl">Z uporabo programa GtkBuilder so lahko datoteke Glade XML uporabljene v različnih programskih jezikih, vključno s C, C++, C#, Vala, Java, Perl, Python in drugih.</p>
+    <p xml:lang="sr">Употребом Гтк градитеља, Глејдове ИксМЛ датотеке могу бити коришћене у многобројним језицима програмирања укључујући Ц, Ц++, Ц#, Валу, Јаву, Перл, Питона и друге.</p>
+    <p xml:lang="sr@latin">Upotrebom Gtk graditelja, Glejdove IksML datoteke mogu biti korišćene u mnogobrojnim jezicima programiranja uključujući C, C++, C#, Valu, Javu, Perl, Pitona i druge.</p>
+    <p xml:lang="sv">Genom att använda GtkBuilder kan Glade XML-filer användas i flertalet programmeringsspråk som C, C++, C#, Vala, Java, Perl, Python och andra.</p>
+    <p xml:lang="tr">GtkBuilder ile Glade XML dosyaları C, C++, C#, Vala, Java, Perl, Python, vs. gibi bir çok programlama dilinde kullanılabilir.</p>
+    <p xml:lang="zh_CN">通过使用 GtkBuilder，Glade XML 文件可以在多种程序设计语言中使用，包括 C, C++, C#, Vala, Java, Perl, Python 等。</p>
+    <p xml:lang="zh_HK">使用 GtkBuilder，Glade XML 檔案可以用於許多種程式語言，包含 C、C++、C#、Vala、Java、Perl、Python 等等。</p>
+    <p xml:lang="zh_TW">使用 GtkBuilder，Glade XML 檔案可以用於許多種程式語言，包含 C、C++、C#、Vala、Java、Perl、Python 等等。</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://glade.gnome.org/images/glade-main-page.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">http://glade.gnome.org/</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=glade</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/glade/stable/</url>
+  <update_contact>juanpablougarte_at_gmail.com</update_contact>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <project_group>GNOME</project_group>
+  <translation type="gettext">glade</translation>
+</component>

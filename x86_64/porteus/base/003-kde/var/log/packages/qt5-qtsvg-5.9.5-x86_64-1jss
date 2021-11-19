@@ -1,0 +1,71 @@
+PACKAGE NAME:     qt5-qtsvg-5.9.5-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     530K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/qt5-qtsvg-5.9.5-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+qt5-qtsvg: qt5-qtsvg (SVG submodule for Qt5)
+qt5-qtsvg:
+qt5-qtsvg: Qt5 SVG submodule.
+qt5-qtsvg: 
+qt5-qtsvg:
+qt5-qtsvg: Homepage: qt.io
+qt5-qtsvg:
+qt5-qtsvg:
+qt5-qtsvg:
+qt5-qtsvg:
+qt5-qtsvg:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/qt5/
+usr/include/qt5/QtSvg/
+usr/include/qt5/QtSvg/5.9.5/
+usr/include/qt5/QtSvg/5.9.5/QtSvg/
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvgfont_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvggraphics_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvghandler_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvgnode_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvgstructure_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvgstyle_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qsvgtinydocument_p.h
+usr/include/qt5/QtSvg/5.9.5/QtSvg/private/qtsvgglobal_p.h
+usr/include/qt5/QtSvg/QGraphicsSvgItem
+usr/include/qt5/QtSvg/QSvgGenerator
+usr/include/qt5/QtSvg/QSvgRenderer
+usr/include/qt5/QtSvg/QSvgWidget
+usr/include/qt5/QtSvg/QtSvg
+usr/include/qt5/QtSvg/QtSvgDepends
+usr/include/qt5/QtSvg/QtSvgVersion
+usr/include/qt5/QtSvg/qgraphicssvgitem.h
+usr/include/qt5/QtSvg/qsvggenerator.h
+usr/include/qt5/QtSvg/qsvgrenderer.h
+usr/include/qt5/QtSvg/qsvgwidget.h
+usr/include/qt5/QtSvg/qtsvgglobal.h
+usr/include/qt5/QtSvg/qtsvgversion.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/Qt5Svg/
+usr/lib64/cmake/Qt5Svg/Qt5SvgConfig.cmake
+usr/lib64/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake
+usr/lib64/cmake/Qt5Svg/Qt5Svg_QSvgIconPlugin.cmake
+usr/lib64/cmake/Qt5Svg/Qt5Svg_QSvgPlugin.cmake
+usr/lib64/libQt5Svg.la
+usr/lib64/libQt5Svg.prl
+usr/lib64/libQt5Svg.so.5.9.5
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/Qt5Svg.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_lib_svg.pri
+usr/lib64/qt5/mkspecs/modules/qt_lib_svg_private.pri
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/iconengines/
+usr/lib64/qt5/plugins/iconengines/libqsvgicon.so
+usr/lib64/qt5/plugins/imageformats/
+usr/lib64/qt5/plugins/imageformats/libqsvg.so

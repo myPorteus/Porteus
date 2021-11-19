@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="mate-utils">
+  <schema id="org.mate.dictionary" path="/org/mate/dictionary/">
+    <key name="database" type="s">
+      <default>'!'</default>
+      <summary>The default database to use</summary>
+      <description>The name of the default individual database or meta-database to use on a dictionary source. An exclamation mark ("!") means that all the databases present in a dictionary source should be searched</description>
+    </key>
+    <key name="strategy" type="s">
+      <default>'exact'</default>
+      <summary>The default search strategy to use</summary>
+      <description>The name of the default search strategy to use on a dictionary source, if available. The default strategy is 'exact', that is match exact words.</description>
+    </key>
+    <key name="print-font" type="s">
+      <default>'Serif 12'</default>
+      <summary>The font to be used when printing</summary>
+      <description>The font to be used when printing a definition.</description>
+    </key>
+    <key name="source-name" type="s">
+      <default>'Default'</default>
+      <summary>The name of the dictionary source used</summary>
+      <description>The name of the dictionary source used to retrieve the definitions of words.</description>
+    </key>
+  </schema>
+</schemalist>

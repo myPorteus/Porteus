@@ -1,0 +1,52 @@
+PACKAGE NAME:     lxqt-sudo-0.12.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: lxqt-sudo-0.12.0-x86_64.txz
+PACKAGE DESCRIPTION:
+lxqt-sudo: lxqt-sudo (Sudo front-end for LXQt)
+lxqt-sudo:
+lxqt-sudo: Sudo front-end for LXQt (but not restricted to LXQt).
+lxqt-sudo:
+lxqt-sudo:
+lxqt-sudo:
+lxqt-sudo:
+lxqt-sudo:
+lxqt-sudo:
+lxqt-sudo: Home page: http://lxqt.org
+lxqt-sudo:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lxqt-sudo
+usr/doc/
+usr/doc/lxqt-sudo-0.12.0/
+usr/doc/lxqt-sudo-0.12.0/AUTHORS
+usr/doc/lxqt-sudo-0.12.0/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/lxqt-sudo.1.gz
+usr/share/
+usr/share/lxqt/
+usr/share/lxqt/translations/
+usr/share/lxqt/translations/lxqt-sudo/
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_ar.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_ca.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_cs.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_da.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_de.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_el.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_fr.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_it.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_lt.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_nl.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_pl.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_pt.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_ru.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_sk.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_tr.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_uk.qm
+usr/share/lxqt/translations/lxqt-sudo/lxqt-sudo_zh_TW.qm

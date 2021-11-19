@@ -1,0 +1,29 @@
+[Desktop Entry]
+# The names/descriptions should really be better
+Name=LXDE
+Comment=LXDE - Lightweight X11 desktop environment
+Comment[ar]=لكسدي - بيئة سطح مكتب X11 خفيفة
+Comment[cs]=LXDE - lehké X11 pracovní prostředí
+Comment[de]=LXDE - Leichtgewichtige X11 Desktop-Umgebung
+Comment[es]=LXDE - Entorno de Escritorio X11 Liviano
+Comment[fi]=LXDE - kevyt X11-työpöytäympäristö
+Comment[fr]=LXDE - Environnement de bureau léger pour X11
+Comment[gl]=LXDE - Entorno lixeiro de escritorio X11
+Comment[he]=LXDE - סביבת X11 קלילה לשולחן העבודה
+Comment[is]=LXDE skjáborðsumhverfið - Lightweight X11 Desktop Environment
+Comment[ja]=LXDE - 軽量な X11 デスクトップ環境
+Comment[lg]=LXDE - Ekiteekateeka awakolerwa ekya X11 ekitanyunyunta kompyuta
+Comment[nl]=LXDE - lichtgewicht werkomgeving voor X11 (Lightweight X11 Desktop Environment)
+Comment[pl]=LXDE - Lekkie środowisko pulpitowe X11
+Comment[pt]=LXDE - Ambiente de trabalho X11
+Comment[pt_BR]=LXDE - Ambiente de trabalho leve X11
+Comment[ru]=LXDE - Легковесное окружение рабочего стола X11
+Comment[sl]=LXDE - Lahko namizno okolje za X11
+Comment[sv]=LXDE - Lightweight X11 desktop environment
+Comment[tr]=LXDE - Hafif X11 masaüstü ortamı
+Comment[uk]=LXDE - Легке середовище стільниці X11
+Comment[zh_CN]=LXDE - 轻量的 X11 桌面环境
+Comment[zh_TW]=LXDE - 輕量級的 X11 桌面環境
+Exec=/usr/bin/startlxde
+# Icon=
+Type=Application

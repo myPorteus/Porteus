@@ -1,0 +1,56 @@
+PACKAGE NAME:     slim-1.3.6-x86_64-2_SBo
+COMPRESSED PACKAGE SIZE:     272K
+UNCOMPRESSED PACKAGE SIZE:     440K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/slim-1.3.6-x86_64-2_SBo.tgz
+PACKAGE DESCRIPTION:
+slim: slim (graphical login manager similar to xdm/kdm/gdm)
+slim:
+slim: SLiM is a lightweight login manager based on GNUstep's Login.app. It
+slim: makes a great replacement for XDM for those who want something that
+slim: looks good, but still do not want Gnome or KDE.
+slim:
+slim: Homepage: https://sourceforge.net/projects/slim.berlios/
+slim:
+slim:
+slim:
+slim:
+FILE LIST:
+./
+etc/
+etc/logrotate.d/
+etc/logrotate.d/slim.new
+etc/slim.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/slim
+usr/doc/
+usr/doc/slim-1.3.6/
+usr/doc/slim-1.3.6/COPYING
+usr/doc/slim-1.3.6/ChangeLog
+usr/doc/slim-1.3.6/INSTALL
+usr/doc/slim-1.3.6/README
+usr/doc/slim-1.3.6/README.SLACKWARE
+usr/doc/slim-1.3.6/THEMES
+usr/doc/slim-1.3.6/TODO
+usr/doc/slim-1.3.6/slim.SlackBuild
+usr/doc/slim-1.3.6/xinitrc.sample
+usr/lib64/
+usr/lib64/libslim.so.1.3.6
+usr/man/
+usr/man/man1/
+usr/man/man1/slim.1.gz
+usr/share/
+usr/share/slim/
+usr/share/slim/themes/
+usr/share/slim/themes/default/
+usr/share/slim/themes/default/background.jpg
+usr/share/slim/themes/default/panel.png
+usr/share/slim/themes/default/slim.theme
+usr/share/slim/themes/slackware-black/
+usr/share/slim/themes/slackware-black/background.png
+usr/share/slim/themes/slackware-black/panel.png
+usr/share/slim/themes/slackware-black/preview.png
+usr/share/slim/themes/slackware-black/slim.theme

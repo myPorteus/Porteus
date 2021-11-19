@@ -1,0 +1,13 @@
+PACKAGE NAME:     gtkmenu-standalone-x86_64
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /mnt/sda6/Porteus4.0/SpaceDE/BUILD/PKG64/gtkmenu-standalone-x86_64.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/gtkmenu-standalone
+usr/share/
+usr/share/gtkmenu-standalone/
+usr/share/gtkmenu-standalone/config

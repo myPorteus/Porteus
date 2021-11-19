@@ -1,0 +1,43 @@
+PACKAGE NAME:     xfce4-dev-tools-4.12.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: xfce4-dev-tools-4.12.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xfce4-dev-tools: xfce4-dev-tools (Xfce development tools)
+xfce4-dev-tools:
+xfce4-dev-tools: The Xfce development tools are a collection of tools and macros for
+xfce4-dev-tools: Xfce developers and people that want to build Xfce from Git.
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+xfce4-dev-tools:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xdt-autogen
+usr/bin/xdt-commit
+usr/bin/xdt-csource
+usr/doc/
+usr/doc/xfce4-dev-tools-4.12.0/
+usr/doc/xfce4-dev-tools-4.12.0/AUTHORS
+usr/doc/xfce4-dev-tools-4.12.0/COPYING
+usr/doc/xfce4-dev-tools-4.12.0/ChangeLog
+usr/doc/xfce4-dev-tools-4.12.0/HACKING
+usr/doc/xfce4-dev-tools-4.12.0/INSTALL
+usr/doc/xfce4-dev-tools-4.12.0/NEWS
+usr/doc/xfce4-dev-tools-4.12.0/README
+usr/share/
+usr/share/xfce4/
+usr/share/xfce4/dev-tools/
+usr/share/xfce4/dev-tools/m4macros/
+usr/share/xfce4/dev-tools/m4macros/xdt-depends.m4
+usr/share/xfce4/dev-tools/m4macros/xdt-features.m4
+usr/share/xfce4/dev-tools/m4macros/xdt-i18n.m4
+usr/share/xfce4/dev-tools/m4macros/xdt-python.m4
+usr/share/xfce4/dev-tools/m4macros/xdt-xfce.m4

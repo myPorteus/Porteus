@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=bin
+libdir=lib64
+includedir=include/KF5
+
+Name: Baloo
+Description: Baloo is a file indexing and searching framework for Linux
+URL: http://www.kde.org
+Requires: Qt5Core
+Version: 5.45.0
+Libs: -L/usr/lib64 -lKF5Baloo
+Cflags: -I/usr/include/KF5/Baloo

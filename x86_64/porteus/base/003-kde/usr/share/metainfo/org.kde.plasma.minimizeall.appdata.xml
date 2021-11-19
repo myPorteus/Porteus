@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <id>org.kde.plasma.minimizeall</id>
+    <name>Minimize all Windows</name>
+    <name xml:lang="ar">صغّر كلّ النّوافذ</name>
+    <name xml:lang="ca@valencia">Minimitza totes les finestres</name>
+    <name xml:lang="ca">Minimitza totes les finestres</name>
+    <name xml:lang="cs">Minimalizovat všechna okna</name>
+    <name xml:lang="da">Minimér alle vinduer</name>
+    <name xml:lang="de">Alle Fenster minimieren</name>
+    <name xml:lang="el">Ελαχιστοποίηση όλων των παραθύρων</name>
+    <name xml:lang="en_GB">Minimise all Windows</name>
+    <name xml:lang="es">Minimizar todas las ventanas</name>
+    <name xml:lang="et">Kõigi akende minimeerimine</name>
+    <name xml:lang="eu">Leiho guztiak minimizatu</name>
+    <name xml:lang="fi">Pienennä kaikki ikkunat</name>
+    <name xml:lang="fr">Minimiser toutes les fenêtres</name>
+    <name xml:lang="gl">Minimizar todas as xanelas</name>
+    <name xml:lang="he">מזער את כל החלונות</name>
+    <name xml:lang="hu">Minimalizáló</name>
+    <name xml:lang="ia">Minimisa omne fenestras</name>
+    <name xml:lang="it">Minimizza tutte le finestre</name>
+    <name xml:lang="ko">모든 창 최소화</name>
+    <name xml:lang="lt">Visų langų sumažinimas</name>
+    <name xml:lang="nl">Alle vensters minimaliseren</name>
+    <name xml:lang="nn">Minimer alle vindauge</name>
+    <name xml:lang="pl">Minimalizacja wszystkich okien</name>
+    <name xml:lang="pt">Minimizar Todas as Janelas</name>
+    <name xml:lang="pt_BR">Minimizar todas as janelas</name>
+    <name xml:lang="ru">Сворачивание всех окон</name>
+    <name xml:lang="sk">Minimalizovať všetky okná</name>
+    <name xml:lang="sl">Skrči vsa okna</name>
+    <name xml:lang="sr@ijekavian">минимизовање свих прозора</name>
+    <name xml:lang="sr@ijekavianlatin">minimizovanje svih prozora</name>
+    <name xml:lang="sr@latin">minimizovanje svih prozora</name>
+    <name xml:lang="sr">минимизовање свих прозора</name>
+    <name xml:lang="sv">Minimera alla fönster</name>
+    <name xml:lang="tr">Tüm Pencereleri Küçült</name>
+    <name xml:lang="uk">Згорнути усі вікна</name>
+    <name xml:lang="x-test">xxMinimize all Windowsxx</name>
+    <name xml:lang="zh_CN">最小化所有窗口</name>
+    <name xml:lang="zh_TW">最小化所有視窗</name>
+    <summary>Shows the desktop by minimizing all windows</summary>
+    <summary xml:lang="ar">يعرض سطح المكتب بتصغير كلّ النّوافذ</summary>
+    <summary xml:lang="ca@valencia">Mostra l'escriptori minimitzant totes les finestres</summary>
+    <summary xml:lang="ca">Mostra l'escriptori minimitzant totes les finestres</summary>
+    <summary xml:lang="cs">Zobrazit plochu minimalizací všech oken</summary>
+    <summary xml:lang="da">Viser skrivebordet ved at minimere alle vinduer</summary>
+    <summary xml:lang="de">Zeigt die Arbeitsfläche an, indem alle Fenster minimiert werden</summary>
+    <summary xml:lang="el">Εμφάνιση της επιφάνειας εργασίας μέσω ελαχιστοποίησης όλων των παραθύρων</summary>
+    <summary xml:lang="en_GB">Shows the desktop by minimising all windows</summary>
+    <summary xml:lang="es">Muestra el escritorio minimizando todas las ventanas</summary>
+    <summary xml:lang="et">Töölaua näitamine kõiki aknaid minimeerides</summary>
+    <summary xml:lang="eu">Mahaigaina erakusten du leiho guztian minimizatuz</summary>
+    <summary xml:lang="fi">Näyttää työpöydän pienentämällä kaikki ikkunat</summary>
+    <summary xml:lang="fr">Afficher le bureau en minimisant toutes les fenêtres</summary>
+    <summary xml:lang="gl">Minimiza todas as xanelas para mostrar o escritorio</summary>
+    <summary xml:lang="he">הראה את שולחן העבודה על ידי מיזעור כל החלונות</summary>
+    <summary xml:lang="hu">Megjeleníti az asztalt az összes ablak minimalizálásával</summary>
+    <summary xml:lang="it">Mostra il desktop minimizzando tutte le finestre</summary>
+    <summary xml:lang="ko">모든 창을 최소화해서 데스크톱 보이기</summary>
+    <summary xml:lang="lt">Sumažina visus langus ir parodo darbalaukį</summary>
+    <summary xml:lang="nl">Toont het bureaublad door alle vensters te minimaliseren</summary>
+    <summary xml:lang="nn">Vis skrivebordet ved å minimera alle vindauga</summary>
+    <summary xml:lang="pl">Ukazuje pulpit minimalizując wszystkie okna</summary>
+    <summary xml:lang="pt">Mostra o ecrã ao minimizar todas as janelas</summary>
+    <summary xml:lang="pt_BR">Mostra a área de trabalho ao minimizar todas as janelas</summary>
+    <summary xml:lang="ru">Сворачивание всех окон, чтобы увидеть рабочий стол</summary>
+    <summary xml:lang="sk">Zobrazí plochu minimalizovaním všetkých okien</summary>
+    <summary xml:lang="sl">Pokaže namizje s skrčenjem vseh oken</summary>
+    <summary xml:lang="sr@ijekavian">Приказује површ минимизовањем свих прозора</summary>
+    <summary xml:lang="sr@ijekavianlatin">Prikazuje površ minimizovanjem svih prozora</summary>
+    <summary xml:lang="sr@latin">Prikazuje površ minimizovanjem svih prozora</summary>
+    <summary xml:lang="sr">Приказује површ минимизовањем свих прозора</summary>
+    <summary xml:lang="sv">Visar skrivbordet genom att minimera alla fönster</summary>
+    <summary xml:lang="tr">Tüm pencereleri küçülterek masaüstünü gösterir</summary>
+    <summary xml:lang="uk">Показує стільницю, згорнувши усі вікна</summary>
+    <summary xml:lang="x-test">xxShows the desktop by minimizing all windowsxx</summary>
+    <summary xml:lang="zh_CN">最小化所有窗口以显示桌面</summary>
+    <summary xml:lang="zh_TW">透過最小化所有視窗來顯示桌面</summary>
+    <url type="homepage">http://plasma.kde.org/</url>
+    <developer_name>Sebastian Kügler &lt;sebas@kde.org&gt;</developer_name>
+    <icon type="stock">user-desktop</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Porteus 4.0" />
+  <separator />
+  <item label="Terminal">
+    <action name="Execute">
+      <command>/opt/porteus-scripts/xorg/terminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="File Manager">
+    <action name="Execute">
+      <command>/opt/porteus-scripts/xorg/fmanager</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Editor">
+    <action name="Execute">
+      <command>/opt/porteus-scripts/xorg/editor</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Web Browser">
+    <action name="Execute">
+      <command>/opt/porteus-scripts/xorg/browser</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+        <item label="Exit"> <action name="Execute">
+	<execute>/opt/porteus-scripts/extra/logoutscript</execute>
+	</action></item>
+
+</openbox_menu>

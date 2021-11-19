@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>xfce4-screenshooter.desktop</id>
+  <metadata_license>CC-BY-3.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>xfce4-screenshooter</name>
+  <summary>Application and panel plugin to take screenshots</summary>
+
+  <description>
+    <p>This application allows you to capture the entire screen, the active window or a selected region. You can set the delay that elapses before the screenshot is taken and the action that will be done with the screenshot: save it to a PNG file, copy it to the clipboard, open it using another application, or host it on ZimageZ or imgur, free online image hosting services.</p>
+    <p xml:lang="bg">Тази програма позволява да заснемете целият екран, активният прозорец или избрана област. Вие може да зададете забавяне преди заснемането и действията, които да се извършват: запазване като PNG изображение, копиране в системният буфер, отваряне, чрез използване на друга програма или хостване в ZimageZ или Imgur, услуги за безплатен хостинг на изображение.</p>
+    <p xml:lang="cs">Tato aplikace vám umožňuje pořídit snímek celé obrazovky, aktivního okna nebo vybrané oblasti. Lze také nastavit prodlevu před pořízením snímku a akci, která se po pořízení snímku provede: uložení do souboru PNG, zkopírování do schránky, otevření pomocí jiné aplikace nebo nahrání snímku do galerií ZimageZ nebo imgur, bezplatných online služeb pro hostování obrázků.</p>
+    <p xml:lang="de">Diese Anwendung erlaubt es Ihnen den vollständigen Bildschirm, das aktive Fenster oder einen ausgewählten Bereich aufzunehmen. Sie können die Verzögerung, die vergeht, bis das Bildschirmfoto aufgenommen wird und die Aktion, die mit dem Bildschirmfoto ausgeführt werden soll einstellen: Als PNG-Datei speichern, in die Zwischenablage kopieren, mit einer anderen Anwendung öffnen oder auf ZimageZ oder Imgur hochladen, den kostenlosen Bildspeicherdiensten im Internet.</p>
+    <p xml:lang="en_AU">This application allows you to capture the entire screen, the active window or a selected region. You can set the delay that elapses before the screenshot is taken and the action that will be done with the screenshot: save it to a PNG file, copy it to the clipboard, open it using another application, or host it on ZimageZ or imgur, free online image hosting services.</p>
+    <p xml:lang="es">Esta aplicación le permite hacer capturas de pantalla completa, la ventana activa o una región seleccionada. Puede configurar el retraso que transcurre antes de que se tome la captura de pantalla y la acción que se realizará con la captura de pantalla: guardarla en un archivo .PNG, copiarla en el portapapeles, abrirla con otra aplicación o alojarla en ZimageZ o Imgur, servicios gratuitos de alojamiento de imágenes en línea.</p>
+    <p xml:lang="fr">Cette application vous permet de capturer tout l’écran, la fenêtre active ou une zone sélectionnée. Vous pouvez régler le retardateur avant la prise de la capture et l’action qui en découle : l’enregistrer sous un fichier PNG, la copier dans le presse-papier ou la téléverser sur ZimageZ ou Imgur, des services d’hébergement d’images en ligne gratuits.</p>
+    <p xml:lang="hr">Ova aplikacija Vam omogućava da uhvatite sliku cijelog ekrana, aktivnog prozora ili odabranog područja. Možete postaviti odgodu hvatanja slike i odabrati radnju: spremiti kao PNG datoteku, kopirati u međuspremnik, otvoriti s drugom aplikacijom ili pohraniti na ZimageZ ili Imgur besplatnim servisima za pohranu slika.</p>
+    <p xml:lang="is">Þetta forrit gerir þér kleift að taka skjámynd af öllum skjánum, virkum glugga eða af völdu svæði. Þú getur stillt töfina áður en skjámyndin er tekin og þá aðgerð sem síðan á að gera með skjámyndinar: vista þær sem PNG skrá, afrita þær á klippiborðið, opna þær með öðru forriti, eða hýsa þær á vefþjónustum eins og ZimageZ eða Imgur, sem eru ókeypis myndasafnsþjónustur á netinu.</p>
+    <p xml:lang="it">Questa applicazione consente di catturare l'intero schermo, la finestra attiva o una particolare regione. Si può impostare il ritardo prima della cattura e l'azione da effettuare con l'immagine catturata: salvarla in formato PNG, copiarla negli appunti, aprirla con un'altra applicazione o caricarla su servizi online gratuiti di condivisione delle immagini come ZimageZ o Imgur</p>
+    <p xml:lang="ja">このアプリケーションでは、画面全体、アクティブウィンドウ、あるいは画面上の選択した領域のスクリーンショットを撮影できます。撮影の指示を行ってから実際に撮影するまでの遅延時間を指定することもできます。撮影した画像は、PNG ファイルに保存、クリップボードにコピー、他のアプリケーションで開く、あるいはフリーの画像ホスティングサービス ZimageZ や Imgur にアップロードできます。</p>
+    <p xml:lang="ko">이 프로그램은 화면 전체, 활성 창 또는 선택한 영역을 찍을 수 있습니다. 스크린샷을 찍기 전에 일정 시간동안 지연시킬 수 있습니다: PNG 파일로 저장하거나, 클립보드에 복사하거나, 다른 프로그램에서 열거나 ZimageZ 또는 무료 온라인 그림 제공 서비스 Imgur에 게시하세요.</p>
+    <p xml:lang="ms">Aplikasi ini membolehkan anda tangakp keseluruhan skrin, tetingkap aktif atau kawalan terpilih. Anda boleh tetapkan lengahan sebelum cekupan skrin diambil dan tindakan yang akan dibuat dengan cekupan skrin tersebut iaitu: simpan ia dalam format fail PNG, salin ia ke papan keratan, buka ia menggunakan aplikasi lain, atau hos ia ke perkhidmatan pengehosan imej atas-talian percuma ZimageZ atau imgur.</p>
+    <p xml:lang="nl">Met deze toepassing kunt u het gehele scherm vastleggen, het actieve venster of een door u gekozen deel van het scherm. U kunt de vertraging instellen voordat de schermafdruk wordt gemaakt en de actie die zal worden uitgevoerd met de schermafdruk: opslaan als PNG-bestand, kopiëren naar het klembord, openen met een andere toepassing, of plaatsen op ZimageZ of Imgur, gratis webopslagdiensten voor afbeeldingen.</p>
+    <p xml:lang="pt_BR">Este aplicativo lhe permite capturar a tela inteira, a janela ativa ou uma região selecionada. Você pode definir o atraso para a captura da imagem e a ação que será realizada: salvar em um arquivo PNG, copiar para a área de transferência ou hospedar no ZimageZ ou imgur, serviços grátis de hospedagem de imagens online.</p>
+    <p xml:lang="ru">Это приложение позволяет вам сделать снимок всего экрана, активного окна или выбранной области. Вы можете установить задержку перед снимком и действие со снимком: сохранить в файл формата PNG, скопировать в буфер обмена, открыть в другом приложении или разместить на ZimageZ или Imgur, свободных серверах для хранения изображений.</p>
+    <p xml:lang="th">โปรแกรมนี้ช่วยคุณจับภาพของหน้าจอทั้งจอ หรือหน้าต่างที่ทำงานอยู่ หรือบริเวณที่เลือก คุณสามารถตั้งเวลาที่จะให้หน่วงก่อนที่จะจับภาพหน้าจอ และการกระทำที่จะทำกับภาพหน้าจอที่จับ คือจะบันทึกเป็นแฟ้ม PNG หรือจะคัดลอกไปยังคลิปบอร์ด หรือจะเปิดภาพด้วยโปรแกรมอื่น หรือจะโฮสต์ภาพไว้ที่ ZimageZ หรือ imgur ซึ่งเป็นบริการโฮสต์ภาพออนไลน์ฟรี</p>
+    <p xml:lang="tr">Bu uygulama bütün ekranın, etkin pencerenin veya seçilen bölgenin ekran görüntüsünü almanıza izin verir. Ekran görüntüsü almadan önce bir gecikme ayarlanması de ayarlayabilirsiniz: ekran görüntüsü bir PNG dosyasına kaydedin, geçici taşıma panosuna kopyalayın, başka bir uygulama kullanarak açın veya ZimageZ ya da imgur gibi ücretsiz resim barındırma servisinde saklayın.</p>
+    <p xml:lang="uk">Ця програма дозволяє Вам робити знімок цілого екрану, активного вікна або вибраної області. Ви можете налаштувати затримку початку знімання і дію, яка буде виконана разом зі знімком: збереження в файл PNG file, копіювання в буфер обміну, відкриття якоюсь програмою, або завантаження на ZimageZ або imgur, вільні онлайн сервіси обміну малюнками.</p>
+    <p xml:lang="zh_TW">這個應用程式讓您可以抓取整個螢幕、使用中的視窗、或是選取的區域的畫面。您可以設定在螢幕截圖拍攝前所要等待的時間，然後下列這些動作可以與螢幕截圖一同完成：將其儲存為 PNG 檔案、複製其到剪貼簿、使用其他程式開啟該圖片、或是將其放置於 ZimageZ 或 imgur，免費的線上影像寄放服務。</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>http://docs.xfce.org/_media/apps/screenshooter/xfce4-screenshooter-dialog1.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">http://goodies.xfce.org/projects/applications/xfce4-screenshooter</url>
+  <url type="bugtracker">https://bugzilla.xfce.org/describecomponents.cgi?product=Xfce4-screenshooter</url>
+  <url type="help">http://docs.xfce.org/apps/screenshooter/start</url>
+
+  <updatecontact>xfce4-dev@xfce.org</updatecontact>
+
+  <provides>
+    <binary>xfce4-screenshooter</binary>
+  </provides>
+
+</component>

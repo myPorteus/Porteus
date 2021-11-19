@@ -1,0 +1,49 @@
+PACKAGE NAME:     kdewebkit-5.45.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/kdewebkit-5.45.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kdewebkit: kdewebkit framework  
+kdewebkit:  
+kdewebkit: kdewebkit framework  
+kdewebkit: 
+kdewebkit: 
+kdewebkit: 
+kdewebkit: 
+kdewebkit: 
+kdewebkit: 
+kdewebkit: 
+kdewebkit: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KDEWebKit/
+usr/include/KF5/KDEWebKit/KGraphicsWebView
+usr/include/KF5/KDEWebKit/KWebPage
+usr/include/KF5/KDEWebKit/KWebPluginFactory
+usr/include/KF5/KDEWebKit/KWebView
+usr/include/KF5/KDEWebKit/KWebWallet
+usr/include/KF5/KDEWebKit/kdewebkit_export.h
+usr/include/KF5/KDEWebKit/kgraphicswebview.h
+usr/include/KF5/KDEWebKit/kwebpage.h
+usr/include/KF5/KDEWebKit/kwebpluginfactory.h
+usr/include/KF5/KDEWebKit/kwebview.h
+usr/include/KF5/KDEWebKit/kwebwallet.h
+usr/include/KF5/kdewebkit_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5WebKit/
+usr/lib64/cmake/KF5WebKit/KF5WebKitConfig.cmake
+usr/lib64/cmake/KF5WebKit/KF5WebKitConfigVersion.cmake
+usr/lib64/cmake/KF5WebKit/KF5WebKitTargets-release.cmake
+usr/lib64/cmake/KF5WebKit/KF5WebKitTargets.cmake
+usr/lib64/libKF5WebKit.so.5.45.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KDEWebKit.pri

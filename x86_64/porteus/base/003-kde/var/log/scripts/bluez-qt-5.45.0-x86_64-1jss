@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5BluezQt.so )
+( cd usr/lib64 ; ln -sf libKF5BluezQt.so.6 libKF5BluezQt.so )
+( cd usr/lib64 ; rm -rf libKF5BluezQt.so.6 )
+( cd usr/lib64 ; ln -sf libKF5BluezQt.so.5.45.0 libKF5BluezQt.so.6 )

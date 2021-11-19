@@ -1,0 +1,113 @@
+<window title="MATE Tweaker" allow-grow="true" icon-name="gtk-preferences" default-height="300" default-width="400">
+  <vbox margin="15">
+	<text use-markup="true">
+		<label>"<span color='darkred' weight='bold' size='x-large'>Porteus MATE Tweaker</span>"</label>
+	</text>
+    <notebook labels="Desktop|Brisk Menu|Panel Layout" space-fill="true">
+      <vbox>
+        <text use-markup="true" xalign="0">
+          <label>"<b>Desktop Icons</b>"</label>
+        </text>
+        <text use-markup="true"  xalign="0">
+          <label>"<i>   Select the icons to be shown on the desktop</i>"</label>
+        </text>
+        <checkbox>
+          <label>Computer</label>
+		  <input>gsettings get org.mate.caja.desktop computer-icon-visible</input>
+		  <action>gsettings set org.mate.caja.desktop computer-icon-visible $chComputer</action>
+          <variable>chComputer</variable>
+        </checkbox>
+        <checkbox>
+          <label>Home</label>
+		  <input>gsettings get org.mate.caja.desktop home-icon-visible</input>
+		  <action>gsettings set org.mate.caja.desktop home-icon-visible $chHome</action>
+          <variable>chHome</variable>
+        </checkbox>
+        <checkbox>
+          <label>Trash</label>
+		  <input>gsettings get org.mate.caja.desktop trash-icon-visible</input>
+		  <action>gsettings set org.mate.caja.desktop trash-icon-visible $chTrash</action>
+          <variable>chTrash</variable>
+        </checkbox>
+        <checkbox>
+          <label>Network</label>
+		  <input>gsettings get org.mate.caja.desktop network-icon-visible</input>
+		  <action>gsettings set org.mate.caja.desktop network-icon-visible $chNetwork</action>
+          <variable>chNetwork</variable>
+        </checkbox>
+        <checkbox>
+          <label>Mounted Volumes</label>
+		  <input>gsettings get org.mate.caja.desktop volumes-visible</input>
+		  <action>gsettings set org.mate.caja.desktop volumes-visible $chMounts</action>
+          <variable>chMounts</variable>
+        </checkbox>
+      </vbox>
+      <vbox>
+        <text use-markup="true" xalign="0">
+          <label>"<b>Brisk Menu Settings</b>"</label>
+        </text>
+        <checkbox>
+          <label>Use Dark Theme</label>
+		  <input>gsettings get com.solus-project.brisk-menu dark-theme</input>
+		  <action>gsettings set com.solus-project.brisk-menu dark-theme $chDarkTheme</action>
+          <variable>chDarkTheme</variable>
+        </checkbox>
+        <checkbox>
+          <label>Rollover Enabled</label>
+		  <input>gsettings get com.solus-project.brisk-menu rollover-activate</input>
+		  <action>gsettings set com.solus-project.brisk-menu rollover-activate $chRollover</action>
+          <variable>chRollover</variable>
+        </checkbox>
+        <checkbox>
+          <label>Show Menu Label</label>
+		  <input>gsettings get com.solus-project.brisk-menu label-visible</input>
+		  <action>gsettings set com.solus-project.brisk-menu label-visible $chLabel</action>
+          <variable>chLabel</variable>
+        </checkbox>
+        <text xalign="0">
+          <label>"Search Box Position"</label>
+        </text>
+        <hbox>
+          <radiobutton>
+            <label>Top</label>
+		    <input file>/tmp/mate-tweaker/bmSearchBoxTop</input>
+            <action>if true gsettings set com.solus-project.brisk-menu search-position top</action>
+          </radiobutton>
+          <radiobutton>
+            <label>Bottom</label>
+		    <input file>/tmp/mate-tweaker/bmSearchBoxBottom</input>
+            <action>if true gsettings set com.solus-project.brisk-menu search-position bottom</action>
+          </radiobutton>
+          <text space-expand="true" space-fill="true"><label>""</label></text>
+        </hbox>
+      </vbox>
+      <vbox>
+        <text use-markup="true" xalign="0">
+          <label>"<b>Panel Layout</b>"</label>
+        </text>
+        <radiobutton>
+          <label>Porteus 4 Layout</label>
+		  <input file>/tmp/mate-tweaker/plP4</input>
+          <action>if true mate-panel --reset --layout porteus4</action>
+        </radiobutton>
+        <radiobutton>
+          <label>Porteus 3 Layout</label>
+		  <input file>/tmp/mate-tweaker/plP3</input>
+          <action>if true mate-panel --reset --layout porteus3 && dconf write /org/mate/panel/objects/workspace-switcher/prefs/num-rows 2</action>
+        </radiobutton>
+        <radiobutton>
+          <label>Default MATE Layout</label>
+		  <input file>/tmp/mate-tweaker/plM</input>
+          <action>if true mate-panel --reset --layout mate</action>
+        </radiobutton>
+      </vbox>
+    </notebook>
+    <hbox>
+      <button space-fill="true">
+        <label>Exit</label> 
+        <input file stock="gtk-quit"></input>
+        <action>exit:0</action> 
+      </button>  
+    </hbox>
+  </vbox>
+</window>

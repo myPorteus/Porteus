@@ -1,0 +1,25 @@
+config() {
+  NEW="$1"
+  OLD="$(dirname $NEW)/$(basename $NEW .new)"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "$(cat $OLD | md5sum)" = "$(cat $NEW | md5sum)" ]; then
+    # toss the redundant copy
+    rm $NEW
+  fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+
+config etc/xdg/libfm/libfm.conf.new
+
+( cd usr/include ; rm -rf libfm )
+( cd usr/include ; ln -sf libfm-1.0 libfm )
+( cd usr/lib64 ; rm -rf libfm.so.4 )
+( cd usr/lib64 ; ln -sf libfm.so.4.0.4 libfm.so.4 )
+( cd usr/lib64 ; rm -rf libfm-extra.so.4 )
+( cd usr/lib64 ; ln -sf libfm-extra.so.4.0.4 libfm-extra.so.4 )
+( cd usr/lib64 ; rm -rf libfm.so )
+( cd usr/lib64 ; ln -sf libfm.so.4.0.4 libfm.so )
+( cd usr/lib64 ; rm -rf libfm-extra.so )
+( cd usr/lib64 ; ln -sf libfm-extra.so.4.0.4 libfm-extra.so )

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libunique-3.0.so )
+( cd usr/lib64 ; ln -sf libunique-3.0.so.0.0.2 libunique-3.0.so )
+( cd usr/lib64 ; rm -rf libunique-3.0.so.0 )
+( cd usr/lib64 ; ln -sf libunique-3.0.so.0.0.2 libunique-3.0.so.0 )

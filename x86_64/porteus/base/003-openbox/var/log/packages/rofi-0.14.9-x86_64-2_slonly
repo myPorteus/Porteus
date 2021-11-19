@@ -1,0 +1,33 @@
+PACKAGE NAME:     rofi-0.14.9-x86_64-2_slonly
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /mnt/sda6/Porteus4.0/SpaceDE/BUILD/PKG64/rofi-0.14.9-x86_64-2_slonly.txz
+PACKAGE DESCRIPTION:
+rofi: rofi (window switcher)
+rofi:
+rofi: A popup window switcher roughly based on superswitcher, requiring
+rofi: only xlib and xft. This version started off as a clone of
+rofi: simpleswitcher, the version from Sean Pringle. All credit for this
+rofi: great tool should go to him. Rofi developed extra features, like
+rofi: a run-dialog, ssh-launcher and can act as a drop-in dmenu
+rofi: replacement, making it a very versatile tool.
+rofi:
+rofi: Homepage: https://davedavenport.github.io/rofi/
+rofi:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rofi
+usr/doc/
+usr/doc/rofi-0.14.9/
+usr/doc/rofi-0.14.9/COPYING
+usr/doc/rofi-0.14.9/INSTALL.md
+usr/doc/rofi-0.14.9/README.md
+usr/doc/rofi-0.14.9/rofi.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/rofi.1.gz

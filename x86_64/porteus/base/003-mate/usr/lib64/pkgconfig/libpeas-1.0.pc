@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libpeas
+Description: libpeas, a GObject plugins library
+Requires: glib-2.0 >= 2.38.0, gobject-2.0 >= 2.38.0, gmodule-2.0 >= 2.38.0, gio-2.0 >= 2.32.0 gobject-introspection-1.0 >= 1.39.0
+Version: 1.22.0
+Cflags: -I${includedir}/libpeas-1.0
+Libs: -L${libdir} -lpeas-1.0

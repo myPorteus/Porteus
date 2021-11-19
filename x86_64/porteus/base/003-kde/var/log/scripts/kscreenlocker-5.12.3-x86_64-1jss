@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKScreenLocker.so )
+( cd usr/lib64 ; ln -sf libKScreenLocker.so.5 libKScreenLocker.so )
+( cd usr/lib64 ; rm -rf libKScreenLocker.so.5 )
+( cd usr/lib64 ; ln -sf libKScreenLocker.so.5.12.3 libKScreenLocker.so.5 )

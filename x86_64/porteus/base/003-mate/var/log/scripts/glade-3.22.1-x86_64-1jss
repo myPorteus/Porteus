@@ -1,0 +1,29 @@
+if [ -e usr/share/icons/hicolor/icon-theme.cache ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache -f usr/share/icons/hicolor >/dev/null 2>&1
+  fi
+fi
+( cd usr/lib64 ; rm -rf libgladeui-2.so )
+( cd usr/lib64 ; ln -sf libgladeui-2.so.6.5.1 libgladeui-2.so )
+( cd usr/lib64 ; rm -rf libgladeui-2.so.6 )
+( cd usr/lib64 ; ln -sf libgladeui-2.so.6.5.1 libgladeui-2.so.6 )
+( cd usr/share/help/zh_CN/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/zh_CN/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/sl/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/sl/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/ko/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/ko/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/ja/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/ja/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/hu/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/hu/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/hi/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/hi/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/gl/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/gl/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/en_GB/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/en_GB/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/el/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/el/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )
+( cd usr/share/help/ca/glade/figures ; rm -rf main-window.png )
+( cd usr/share/help/ca/glade/figures ; ln -sf ../../../C/glade/figures/main-window.png main-window.png )

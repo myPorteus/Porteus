@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <id>org.kde.plasma.quicklaunch</id>
+    <name>Quicklaunch</name>
+    <name xml:lang="ar">إطلاق سريع</name>
+    <name xml:lang="ca@valencia">Quicklaunch</name>
+    <name xml:lang="ca">Quicklaunch</name>
+    <name xml:lang="cs">Rychlé spuštění</name>
+    <name xml:lang="da">Kvikstart</name>
+    <name xml:lang="de">Schnellstarter</name>
+    <name xml:lang="el">Γρήγορη εκτέλεση</name>
+    <name xml:lang="en_GB">Quicklaunch</name>
+    <name xml:lang="es">Lanzamiento rápido</name>
+    <name xml:lang="et">Kiirkäivitaja</name>
+    <name xml:lang="eu">Quicklaunch</name>
+    <name xml:lang="fi">Pikakäynnistin</name>
+    <name xml:lang="fr">Lancement rapide</name>
+    <name xml:lang="gl">Quicklaunch</name>
+    <name xml:lang="he">הפעלה מהירה</name>
+    <name xml:lang="hu">Gyorsindító</name>
+    <name xml:lang="ia">Quicklaunch (lancea rapidemente)</name>
+    <name xml:lang="it">Avvio rapido</name>
+    <name xml:lang="ko">빠른 실행</name>
+    <name xml:lang="lt">Greitas paleidimas</name>
+    <name xml:lang="nl">Snelstarten</name>
+    <name xml:lang="nn">Snøggstartar</name>
+    <name xml:lang="pl">Szybkie uruchamianie</name>
+    <name xml:lang="pt">Lançamento Rápido</name>
+    <name xml:lang="pt_BR">Lançamento rápido</name>
+    <name xml:lang="ru">Панель запуска</name>
+    <name xml:lang="sk">Rýchle spustenie</name>
+    <name xml:lang="sl">Hitri zagon</name>
+    <name xml:lang="sr@ijekavian">брзокрет</name>
+    <name xml:lang="sr@ijekavianlatin">brzokret</name>
+    <name xml:lang="sr@latin">brzokret</name>
+    <name xml:lang="sr">брзокрет</name>
+    <name xml:lang="sv">Snabbstart</name>
+    <name xml:lang="tr">Hızlı başlat</name>
+    <name xml:lang="uk">Швидкий запуск</name>
+    <name xml:lang="x-test">xxQuicklaunchxx</name>
+    <name xml:lang="zh_CN">快速启动</name>
+    <name xml:lang="zh_TW">快速啟動</name>
+    <summary>Launch your favourite Applications</summary>
+    <summary xml:lang="ar">أطلِق تطبيقاتك المفضّلة</summary>
+    <summary xml:lang="ca@valencia">Llança les vostres aplicacions preferides</summary>
+    <summary xml:lang="ca">Llança les vostres aplicacions preferides</summary>
+    <summary xml:lang="cs">Spouštějte své oblíbené aplikace</summary>
+    <summary xml:lang="da">Start dine favoritprogrammer</summary>
+    <summary xml:lang="de">Ermöglicht den Aufruf Ihrer Lieblingsprogramme</summary>
+    <summary xml:lang="el">Εκτελέστε τις αγαπημένες σας εφαρμογές</summary>
+    <summary xml:lang="en_GB">Launch your favourite Applications</summary>
+    <summary xml:lang="es">Lanzador para sus aplicaciones favoritas</summary>
+    <summary xml:lang="et">Lemmikrakenduste käivitaja</summary>
+    <summary xml:lang="eu">Abiarazi zure gogoko aplikazioak</summary>
+    <summary xml:lang="fi">Käynnistä suosikkisovelluksiasi</summary>
+    <summary xml:lang="fr">Lanceur permettant de démarrer vos applications préférées</summary>
+    <summary xml:lang="gl">Inicia os seus aplicativos favoritos</summary>
+    <summary xml:lang="he">פתח את היישומים המעודפים עלך</summary>
+    <summary xml:lang="hu">Kedvenc alkalmazásainak indítása</summary>
+    <summary xml:lang="ia">Lancea tu applicationes favorite</summary>
+    <summary xml:lang="it">Avvia le tue applicazioni preferite</summary>
+    <summary xml:lang="ko">즐겨 찾는 프로그램 실행</summary>
+    <summary xml:lang="lt">Paleisti mėgstamiausias programas</summary>
+    <summary xml:lang="nl">Uw favoriete programma's starten</summary>
+    <summary xml:lang="nn">Start favorittprogramma dine</summary>
+    <summary xml:lang="pl">Uruchamia ulubione programy</summary>
+    <summary xml:lang="pt">Lança as suas aplicações favoritas</summary>
+    <summary xml:lang="pt_BR">Executa seus aplicativos favoritos</summary>
+    <summary xml:lang="ru">Быстрый запуск избранных приложений</summary>
+    <summary xml:lang="sk">Rýchle spustenie obľúbených aplikácií</summary>
+    <summary xml:lang="sl">Hitri zagon priljubljenih programov</summary>
+    <summary xml:lang="sr@ijekavian">Покрећите омиљене програме</summary>
+    <summary xml:lang="sr@ijekavianlatin">Pokrećite omiljene programe</summary>
+    <summary xml:lang="sr@latin">Pokrećite omiljene programe</summary>
+    <summary xml:lang="sr">Покрећите омиљене програме</summary>
+    <summary xml:lang="sv">Start dina favoritprogram</summary>
+    <summary xml:lang="tr">Favori uygulamalarınızı çalıştırın</summary>
+    <summary xml:lang="uk">Запуск ваших улюблених програм</summary>
+    <summary xml:lang="x-test">xxLaunch your favourite Applicationsxx</summary>
+    <summary xml:lang="zh_CN">启动您最常用的程序</summary>
+    <summary xml:lang="zh_TW">啟動您最愛的應用程式</summary>
+    <url type="homepage">http://plasma.kde.org/</url>
+    <developer_name>David Rosca &lt;nowrep@gmail.com&gt;</developer_name>
+    <icon type="stock">fork</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: xkbcommon
+Description: XKB API common to servers and clients
+Version: 0.7.2
+Cflags: -I${includedir}
+Libs: -L${libdir} -lxkbcommon

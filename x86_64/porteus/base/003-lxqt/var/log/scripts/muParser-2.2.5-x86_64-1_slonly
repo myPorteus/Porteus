@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libmuparser.so.2 )
+( cd usr/lib64 ; ln -sf libmuparser.so.2.2.4 libmuparser.so.2 )
+( cd usr/lib64 ; rm -rf libmuparser.so )
+( cd usr/lib64 ; ln -sf libmuparser.so.2 libmuparser.so )

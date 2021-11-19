@@ -1,0 +1,71 @@
+PACKAGE NAME:     frameworkintegration-5.45.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     1.6M
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/frameworkintegration-5.45.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+frameworkintegration: frameworkintegration framework  
+frameworkintegration:  
+frameworkintegration: frameworkintegration framework  
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: 
+frameworkintegration: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KStyle/
+usr/include/KF5/KStyle/KStyle
+usr/include/KF5/KStyle/kstyle.h
+usr/include/KF5/KStyle/kstyle_export.h
+usr/include/KF5/frameworkintegration_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5FrameworkIntegration/
+usr/lib64/cmake/KF5FrameworkIntegration/KF5FrameworkIntegrationConfig.cmake
+usr/lib64/cmake/KF5FrameworkIntegration/KF5FrameworkIntegrationConfigVersion.cmake
+usr/lib64/cmake/KF5FrameworkIntegration/KF5FrameworkIntegrationTargets-release.cmake
+usr/lib64/cmake/KF5FrameworkIntegration/KF5FrameworkIntegrationTargets.cmake
+usr/lib64/libKF5Style.so.5.45.0
+usr/lib64/libexec/
+usr/lib64/libexec/kf5/
+usr/lib64/libexec/kf5/kpackagehandlers/
+usr/lib64/libexec/kf5/kpackagehandlers/knshandler
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
+usr/share/
+usr/share/kf5/
+usr/share/kf5/infopage/
+usr/share/kf5/infopage/bar-bottom-left.png
+usr/share/kf5/infopage/bar-bottom-middle.png
+usr/share/kf5/infopage/bar-bottom-right.png
+usr/share/kf5/infopage/bar-middle-left.png
+usr/share/kf5/infopage/bar-middle-right.png
+usr/share/kf5/infopage/bar-top-left.png
+usr/share/kf5/infopage/bar-top-middle.png
+usr/share/kf5/infopage/bar-top-right.png
+usr/share/kf5/infopage/body-background.png
+usr/share/kf5/infopage/box-bottom-left.png
+usr/share/kf5/infopage/box-bottom-middle.png
+usr/share/kf5/infopage/box-bottom-right.png
+usr/share/kf5/infopage/box-center.png
+usr/share/kf5/infopage/box-middle-left.png
+usr/share/kf5/infopage/box-middle-right.png
+usr/share/kf5/infopage/box-top-left.png
+usr/share/kf5/infopage/box-top-middle.png
+usr/share/kf5/infopage/box-top-right.png
+usr/share/kf5/infopage/kde_infopage.css
+usr/share/kf5/infopage/kde_infopage_rtl.css
+usr/share/kf5/infopage/top-middle.png
+usr/share/knotifications5/
+usr/share/knotifications5/plasma_workspace.notifyrc

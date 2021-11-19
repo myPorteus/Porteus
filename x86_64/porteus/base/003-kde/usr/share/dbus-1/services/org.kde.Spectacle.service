@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.kde.Spectacle
+Exec=/usr/bin/spectacle --dbus

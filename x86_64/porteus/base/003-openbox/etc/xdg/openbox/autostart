@@ -1,0 +1,4 @@
+spacefm --desktop &
+tint2 &
+nm-applet &
+gxkb &

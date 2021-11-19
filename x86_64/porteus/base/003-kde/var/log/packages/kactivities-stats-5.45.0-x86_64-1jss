@@ -1,0 +1,56 @@
+PACKAGE NAME:     kactivities-stats-5.45.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/kactivities-stats-5.45.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kactivities-stats: kactivities-stats framework  
+kactivities-stats:  
+kactivities-stats: kactivities-stats framework  
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: 
+kactivities-stats: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KActivitiesStats/
+usr/include/KF5/KActivitiesStats/KActivities/
+usr/include/KF5/KActivitiesStats/KActivities/Stats/
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Cleaning
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Query
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultModel
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultSet
+usr/include/KF5/KActivitiesStats/KActivities/Stats/ResultWatcher
+usr/include/KF5/KActivitiesStats/KActivities/Stats/Terms
+usr/include/KF5/KActivitiesStats/kactivitiesstats/
+usr/include/KF5/KActivitiesStats/kactivitiesstats/cleaning.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/kactivitiesstats_export.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/query.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultmodel.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultset.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/resultwatcher.h
+usr/include/KF5/KActivitiesStats/kactivitiesstats/terms.h
+usr/include/KF5/kactivitiesstats_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5ActivitiesStats/
+usr/lib64/cmake/KF5ActivitiesStats/KF5ActivitiesStatsConfig.cmake
+usr/lib64/cmake/KF5ActivitiesStats/KF5ActivitiesStatsConfigVersion.cmake
+usr/lib64/cmake/KF5ActivitiesStats/KF5ActivitiesStatsLibraryTargets-release.cmake
+usr/lib64/cmake/KF5ActivitiesStats/KF5ActivitiesStatsLibraryTargets.cmake
+usr/lib64/libKF5ActivitiesStats.so.5.45.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libKActivitiesStats.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KActivitiesStats.pri

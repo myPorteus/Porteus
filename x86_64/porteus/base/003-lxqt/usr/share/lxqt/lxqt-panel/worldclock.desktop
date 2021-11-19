@@ -1,0 +1,33 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=World clock
+Comment=World clock plugin.
+Icon=clock
+
+Name[ar]=ساعة العالم
+Comment[ar]=ملحقة لساعة العالم.
+Name[da]=Verdensur
+Comment[da]=Verdensur-plugin.
+Name[de]=Weltzeituhr
+Comment[de]=Weltzeituhr
+Name[el]=Παγκόσμιο ρολόι
+Comment[el]=Πρόσθετο παγκόσμιου ρολογιού
+Name[fr]=Horloge universelle
+Comment[fr]=Horloge universelle
+Name[hu]=Világóra
+Comment[hu]=Világóra bővítmény
+Name[it]=Orologio mondiale
+Comment[it]=Mostra un orologio con un fuso orario diverso
+Name[ja]=世界時計
+Comment[ja]=世界時計のウィジェットです
+Name[lt]=Pasaulio laikrodžiai
+Comment[lt]=Pasaulio laikrodžių įskiepis.
+Name[pl]=Zegar światowy
+Comment[pl]=Wtyczka zegara światowego.
+Name[pt]=Relógio mundial
+Comment[pt]=Extra para mostrar um relógio mundial
+Name[ru]=Мировое время
+Comment[ru]=Плагин мирового времени.
+Name[zh_CN]=世界时钟
+Comment[zh_CN]=世界时钟插件

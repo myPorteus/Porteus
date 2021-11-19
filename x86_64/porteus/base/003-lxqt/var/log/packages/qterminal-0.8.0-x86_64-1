@@ -1,0 +1,61 @@
+PACKAGE NAME:     qterminal-0.8.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     156K
+UNCOMPRESSED PACKAGE SIZE:     630K
+PACKAGE LOCATION: qterminal-0.8.0-x86_64.txz
+PACKAGE DESCRIPTION:
+qterminal: qterminal (lightweight Qt-based terminal emulator)
+qterminal:
+qterminal: Qterminal is a lightweight Qt-based terminal emulator.
+qterminal:
+qterminal:
+qterminal:
+qterminal:
+qterminal:
+qterminal:
+qterminal: Home page: https://github.com/qterminal/qterminal
+qterminal:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/qterminal
+usr/doc/
+usr/doc/qterminal-0.8.0/
+usr/doc/qterminal-0.8.0/AUTHORS
+usr/doc/qterminal-0.8.0/CONTRIBUTING.md
+usr/doc/qterminal-0.8.0/README.md
+usr/share/
+usr/share/appdata/
+usr/share/appdata/qterminal.appdata.xml
+usr/share/applications/
+usr/share/applications/qterminal-root.desktop
+usr/share/applications/qterminal.desktop
+usr/share/applications/qterminal_drop.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/qterminal.png
+usr/share/qterminal/
+usr/share/qterminal/translations/
+usr/share/qterminal/translations/qterminal_cs.qm
+usr/share/qterminal/translations/qterminal_de.qm
+usr/share/qterminal/translations/qterminal_el.qm
+usr/share/qterminal/translations/qterminal_es.qm
+usr/share/qterminal/translations/qterminal_et.qm
+usr/share/qterminal/translations/qterminal_fr.qm
+usr/share/qterminal/translations/qterminal_hu.qm
+usr/share/qterminal/translations/qterminal_it.qm
+usr/share/qterminal/translations/qterminal_ja.qm
+usr/share/qterminal/translations/qterminal_lt.qm
+usr/share/qterminal/translations/qterminal_nl.qm
+usr/share/qterminal/translations/qterminal_pl.qm
+usr/share/qterminal/translations/qterminal_pt.qm
+usr/share/qterminal/translations/qterminal_pt_BR.qm
+usr/share/qterminal/translations/qterminal_ru.qm
+usr/share/qterminal/translations/qterminal_tr.qm
+usr/share/qterminal/translations/qterminal_uk.qm
+usr/share/qterminal/translations/qterminal_zh_CN.qm

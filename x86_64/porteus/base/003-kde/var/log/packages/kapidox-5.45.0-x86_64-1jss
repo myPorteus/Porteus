@@ -1,0 +1,94 @@
+PACKAGE NAME:     kapidox-5.45.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/kapidox-5.45.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kapidox: kapidox framework  
+kapidox:  
+kapidox: kapidox framework  
+kapidox: 
+kapidox: 
+kapidox: 
+kapidox: 
+kapidox: 
+kapidox: 
+kapidox: 
+kapidox: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/depdiagram-generate
+usr/bin/depdiagram-generate-all
+usr/bin/depdiagram-prepare
+usr/bin/kapidox_generate
+usr/lib64/
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/kapidox-5.45.0-py2.7.egg-info
+usr/lib64/python2.7/site-packages/kapidox/
+usr/lib64/python2.7/site-packages/kapidox/__init__.py
+usr/lib64/python2.7/site-packages/kapidox/__init__.pyc
+usr/lib64/python2.7/site-packages/kapidox/argparserutils.py
+usr/lib64/python2.7/site-packages/kapidox/argparserutils.pyc
+usr/lib64/python2.7/site-packages/kapidox/data/
+usr/lib64/python2.7/site-packages/kapidox/data/Doxyfile.global
+usr/lib64/python2.7/site-packages/kapidox/data/DoxygenLayout.xml
+usr/lib64/python2.7/site-packages/kapidox/data/dependencies.md.tmpl
+usr/lib64/python2.7/site-packages/kapidox/data/footer.html
+usr/lib64/python2.7/site-packages/kapidox/data/header.html
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/default_product.png
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/favicon.ico
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/frameworks.css
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/icons/
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/icons/bad.png
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/icons/ok.png
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/icons/warning.png
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/kde-white.svg
+usr/lib64/python2.7/site-packages/kapidox/data/htmlresource/kde.css
+usr/lib64/python2.7/site-packages/kapidox/data/templates/
+usr/lib64/python2.7/site-packages/kapidox/data/templates/base.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/footer.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/frontpage-sidebar.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/frontpage.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/libinfo.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/library-sidebar.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/library.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/maintainers.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/search.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/subgroup-sidebar.html
+usr/lib64/python2.7/site-packages/kapidox/data/templates/subgroup.html
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/__init__.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/__init__.pyc
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/block.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/block.pyc
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/framework.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/framework.pyc
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/frameworkdb.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/frameworkdb.pyc
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/generate.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/generate.pyc
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/gvutils.py
+usr/lib64/python2.7/site-packages/kapidox/depdiagram/gvutils.pyc
+usr/lib64/python2.7/site-packages/kapidox/doxyfilewriter.py
+usr/lib64/python2.7/site-packages/kapidox/doxyfilewriter.pyc
+usr/lib64/python2.7/site-packages/kapidox/generator.py
+usr/lib64/python2.7/site-packages/kapidox/generator.pyc
+usr/lib64/python2.7/site-packages/kapidox/hlfunctions.py
+usr/lib64/python2.7/site-packages/kapidox/hlfunctions.pyc
+usr/lib64/python2.7/site-packages/kapidox/models.py
+usr/lib64/python2.7/site-packages/kapidox/models.pyc
+usr/lib64/python2.7/site-packages/kapidox/preprocessing.py
+usr/lib64/python2.7/site-packages/kapidox/preprocessing.pyc
+usr/lib64/python2.7/site-packages/kapidox/utils.py
+usr/lib64/python2.7/site-packages/kapidox/utils.pyc
+usr/share/
+usr/share/man/
+usr/share/man/man1/
+usr/share/man/man1/depdiagram-generate-all.1
+usr/share/man/man1/depdiagram-generate.1
+usr/share/man/man1/depdiagram-prepare.1

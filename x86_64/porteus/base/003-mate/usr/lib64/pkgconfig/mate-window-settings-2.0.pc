@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: mate-window-settings-2.0
+Description: Utility library for getting window manager settings
+Requires: gtk+-3.0 mate-desktop-2.0
+Version: 1.20.2
+Libs: -L${libdir} -lmate-window-settings
+Cflags: -I${includedir}/mate-window-settings-2.0

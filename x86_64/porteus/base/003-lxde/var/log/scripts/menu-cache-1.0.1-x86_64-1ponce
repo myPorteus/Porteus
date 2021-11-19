@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libmenu-cache.so )
+( cd usr/lib64 ; ln -sf libmenu-cache.so.3.1.1 libmenu-cache.so )
+( cd usr/lib64 ; rm -rf libmenu-cache.so.3 )
+( cd usr/lib64 ; ln -sf libmenu-cache.so.3.1.1 libmenu-cache.so.3 )

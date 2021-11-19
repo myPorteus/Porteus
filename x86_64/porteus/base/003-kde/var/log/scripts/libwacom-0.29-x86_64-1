@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libwacom.so.2 )
+( cd usr/lib64 ; ln -sf libwacom.so.2.6.1 libwacom.so.2 )
+( cd usr/lib64 ; rm -rf libwacom.so )
+( cd usr/lib64 ; ln -sf libwacom.so.2.6.1 libwacom.so )

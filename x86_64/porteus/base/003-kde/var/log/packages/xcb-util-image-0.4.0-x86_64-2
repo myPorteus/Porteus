@@ -1,0 +1,39 @@
+PACKAGE NAME:     xcb-util-image-0.4.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/xcb-util-image-0.4.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+xcb-util-image: xcb-util-image (port of Xlib's XImage and XShmImage functions)
+xcb-util-image:
+xcb-util-image: xcb-util-image provides a port of Xlib's XImage and XShmImage 
+xcb-util-image: functions.
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+xcb-util-image:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xcb-util-image-0.4.0/
+usr/doc/xcb-util-image-0.4.0/COPYING
+usr/doc/xcb-util-image-0.4.0/ChangeLog
+usr/doc/xcb-util-image-0.4.0/INSTALL
+usr/doc/xcb-util-image-0.4.0/NEWS
+usr/doc/xcb-util-image-0.4.0/README
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_bitops.h
+usr/include/xcb/xcb_image.h
+usr/include/xcb/xcb_pixel.h
+usr/lib64/
+usr/lib64/libxcb-image.la
+usr/lib64/libxcb-image.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xcb-image.pc

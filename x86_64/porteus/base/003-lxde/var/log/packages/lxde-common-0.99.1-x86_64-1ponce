@@ -1,0 +1,78 @@
+PACKAGE NAME:     lxde-common-0.99.1-x86_64-1ponce
+COMPRESSED PACKAGE SIZE:     804K
+UNCOMPRESSED PACKAGE SIZE:     980K
+PACKAGE LOCATION: lxde-common-0.99.1-x86_64-1ponce.txz
+PACKAGE DESCRIPTION:
+lxde-common: lxde-common (a set of default configurations for LXDE)
+lxde-common:
+lxde-common: The lxde-common package provides a set of default configurations and
+lxde-common: bitmaps for LXDE.
+lxde-common: lxde-settings is the XSettings daemon of LXDE. It presents
+lxde-common: configuration values to other programs via the XSETTINGS protocol
+lxde-common: defined by freedesktop.org.
+lxde-common:
+lxde-common: lxde-common home: http://www.lxde.org/
+lxde-common:
+lxde-common:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/xinit/
+etc/X11/xinit/xinitrc.lxde
+etc/xdg/
+etc/xdg/lxpanel/
+etc/xdg/lxpanel/LXDE/
+etc/xdg/lxpanel/LXDE/config.new
+etc/xdg/lxpanel/LXDE/panels/
+etc/xdg/lxpanel/LXDE/panels/panel.new
+etc/xdg/lxsession/
+etc/xdg/lxsession/LXDE/
+etc/xdg/lxsession/LXDE/autostart.new
+etc/xdg/lxsession/LXDE/desktop.conf.new
+etc/xdg/openbox/
+etc/xdg/openbox/LXDE/
+etc/xdg/openbox/LXDE/menu.xml
+etc/xdg/openbox/LXDE/rc.xml
+etc/xdg/pcmanfm/
+etc/xdg/pcmanfm/LXDE/
+etc/xdg/pcmanfm/LXDE/pcmanfm.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lxde-logout
+usr/bin/openbox-lxde
+usr/bin/startlxde
+usr/doc/
+usr/doc/lxde-common-0.99.1/
+usr/doc/lxde-common-0.99.1/AUTHORS
+usr/doc/lxde-common-0.99.1/COPYING
+usr/doc/lxde-common-0.99.1/ChangeLog
+usr/doc/lxde-common-0.99.1/INSTALL
+usr/doc/lxde-common-0.99.1/NEWS
+usr/doc/lxde-common-0.99.1/README
+usr/doc/lxde-common-0.99.1/lxde-common.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/lxde-logout.1.gz
+usr/man/man1/openbox-lxde.1.gz
+usr/man/man1/startlxde.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/lxde-logout.desktop
+usr/share/applications/lxde-screenlock.desktop
+usr/share/apps/
+usr/share/apps/kdm/
+usr/share/apps/kdm/sessions/
+usr/share/lxde/
+usr/share/lxde/images/
+usr/share/lxde/images/logout-banner.png
+usr/share/lxde/images/lxde-icon.png
+usr/share/lxde/wallpapers/
+usr/share/lxde/wallpapers/lxde_blue.jpg
+usr/share/lxde/wallpapers/lxde_green.jpg
+usr/share/lxde/wallpapers/lxde_red.jpg
+usr/share/xsessions/
+usr/share/xsessions/LXDE.desktop

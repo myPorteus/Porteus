@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: poppler
+Description: PDF rendering library
+Version: 0.63.0
+
+Libs: -L${libdir} -lpoppler
+Cflags: -I${includedir}/poppler

@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=application-x-xz-compressed-tar
+Icon[en]=application-x-xz-compressed-tar
+Icon[C]=application-x-xz-compressed-tar
+Tooltip[en_US]=Convert txz to xzm
+Tooltip[en]=Convert txz to xzm
+Tooltip[ru]=Конвертировать пакет Slackware в модуль Porteus
+Tooltip[C]=Convert txz to xzm
+ToolbarLabel[en_US]=txz2xzm
+ToolbarLabel[en]=txz2xzm
+ToolbarLabel[ru]=Конвертировать txz/tgz в xzm модуль
+ToolbarLabel[C]=txz2xzm
+Name[en_US]=txz2xzm
+Name[en]=txz2xzm
+Name[ru]=Конвертировать txz/tgz в xzm модуль
+Name[C]=txz2xzm
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.txz;*.tgz;
+Exec=/opt/porteus-scripts/context-menu/convert_txz %F
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

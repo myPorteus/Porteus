@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5ActivitiesStats.so )
+( cd usr/lib64 ; ln -sf libKF5ActivitiesStats.so.1 libKF5ActivitiesStats.so )
+( cd usr/lib64 ; rm -rf libKF5ActivitiesStats.so.1 )
+( cd usr/lib64 ; ln -sf libKF5ActivitiesStats.so.5.45.0 libKF5ActivitiesStats.so.1 )

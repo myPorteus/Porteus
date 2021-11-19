@@ -1,0 +1,73 @@
+PACKAGE NAME:     gxkb-0.7.9-x86_64-2_slonly
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /mnt/sda6/Porteus4.0/SpaceDE/BUILD/PKG64/gxkb-0.7.9-x86_64-2_slonly.txz
+PACKAGE DESCRIPTION:
+gxkb: gxkb (X11 keyboard indicator and switcher)
+gxkb:
+gxkb: It shows a flag of current keyboard in a systray area and allows you
+gxkb: to switch to another one. It's written in C and uses the GTK library
+gxkb: (no GNOME is needed).
+gxkb:
+gxkb: Homepage: https://zen-tools.github.io/gxkb/
+gxkb:
+gxkb:
+gxkb:
+gxkb:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gxkb
+usr/doc/
+usr/doc/gxkb-0.7.9/
+usr/doc/gxkb-0.7.9/AUTHORS
+usr/doc/gxkb-0.7.9/COPYING
+usr/doc/gxkb-0.7.9/CREDITS
+usr/doc/gxkb-0.7.9/NEWS
+usr/doc/gxkb-0.7.9/gxkb.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/gxkb.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/gxkb.desktop
+usr/share/gxkb/
+usr/share/gxkb/flags/
+usr/share/gxkb/flags/am.png
+usr/share/gxkb/flags/bg.png
+usr/share/gxkb/flags/by.png
+usr/share/gxkb/flags/cz.png
+usr/share/gxkb/flags/de.png
+usr/share/gxkb/flags/ee.png
+usr/share/gxkb/flags/es.png
+usr/share/gxkb/flags/fi.png
+usr/share/gxkb/flags/fr.png
+usr/share/gxkb/flags/gb.png
+usr/share/gxkb/flags/ge.png
+usr/share/gxkb/flags/gr.png
+usr/share/gxkb/flags/hr.png
+usr/share/gxkb/flags/hu.png
+usr/share/gxkb/flags/is.png
+usr/share/gxkb/flags/it.png
+usr/share/gxkb/flags/kz.png
+usr/share/gxkb/flags/lt.png
+usr/share/gxkb/flags/lv.png
+usr/share/gxkb/flags/no.png
+usr/share/gxkb/flags/pl.png
+usr/share/gxkb/flags/pt.png
+usr/share/gxkb/flags/ro.png
+usr/share/gxkb/flags/ru.png
+usr/share/gxkb/flags/se.png
+usr/share/gxkb/flags/si.png
+usr/share/gxkb/flags/sk.png
+usr/share/gxkb/flags/sr.png
+usr/share/gxkb/flags/ua.png
+usr/share/gxkb/flags/us.png
+usr/share/gxkb/flags/uz.png
+usr/share/gxkb/flags/zz.png
+usr/share/gxkb/logo.png
+usr/share/pixmaps/
+usr/share/pixmaps/gxkb.xpm

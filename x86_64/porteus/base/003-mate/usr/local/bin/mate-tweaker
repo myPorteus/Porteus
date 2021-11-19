@@ -1,0 +1,53 @@
+#! /bin/bash
+
+# Tweaker tool for MATE
+# Author: jssouza
+
+MAIN_DIALOG_FILE="/usr/local/bin/mate-tweaker.ui"
+EXIT_INFO_FILE="/usr/local/bin/mate-tweaker-info.ui"
+
+# Directory for temporary files
+#
+export TMP_DATA_DIR="/tmp/$(basename ${0})"
+mkdir -p ${TMP_DATA_DIR}
+
+fnCleanup() 
+{
+    echo "Cleaning up"
+    rm -rf ${TMP_DATA_DIR}
+
+    gtkdialog --center --file=${EXIT_INFO_FILE}    
+}
+trap fnCleanup 0
+
+origSearchBox=$(gsettings get com.solus-project.brisk-menu search-position)
+if [[ "$origSearchBox" = "'top'" ]]; then
+  echo "true" > ${TMP_DATA_DIR}/bmSearchBoxTop
+  echo "false" > ${TMP_DATA_DIR}/bmSearchBoxBottom
+else
+  echo "false" > ${TMP_DATA_DIR}/bmSearchBoxTop
+  echo "true" > ${TMP_DATA_DIR}/bmSearchBoxBottom
+fi   	      
+
+origLayout=$(gsettings get org.mate.panel default-layout)
+if [[ "$origLayout" = "'porteus4'" ]]; then
+  echo "true" > ${TMP_DATA_DIR}/plP4
+  echo "false" > ${TMP_DATA_DIR}/plP3
+  echo "false" > ${TMP_DATA_DIR}/plM
+elif [[ "$origLayout" = "'porteus3'" ]]; then
+  echo "true" > ${TMP_DATA_DIR}/plP3
+  echo "false" > ${TMP_DATA_DIR}/plP4
+  echo "false" > ${TMP_DATA_DIR}/plM
+else
+  echo "true" > ${TMP_DATA_DIR}/plM
+  echo "false" > ${TMP_DATA_DIR}/plP3
+  echo "false" > ${TMP_DATA_DIR}/plP4
+fi   	      
+
+case $1 in
+    -d | --dump) cat ${MAIN_DIALOG_FILE} ;;
+    *) RESULTS=$(gtkdialog --center --file=${MAIN_DIALOG_FILE}) ;;
+esac
+
+# echo "$RESULTS"
+

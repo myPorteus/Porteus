@@ -1,0 +1,27 @@
+[Desktop Entry]
+Name=Leave
+Comment=Leave Session
+Icon=system-shutdown
+Type=Directory
+
+Comment[de]=Sitzung verlassen
+Name[de]=Verlassen
+Name[el]=Έξοδος
+Name[fr]=Quitter
+Comment[fr]=Quitter la session
+Comment[hu]=LXQt elhagyása
+Name[hu]=Kilépés
+Name[it]=Esci
+Comment[it]=Chiudere la sessione
+Comment[lt]=Užbaigti seansą
+Name[lt]=Išeiti
+Name[pl]=Opuść
+Comment[pl]=Zakończ sesję
+Name[pt]=Sair
+Comment[pt]=Sair da sessão
+Comment[ru]=Завершить сеанс
+Name[ru]=Выйти
+Comment[ru_RU]=Завершить сеанс
+Name[ru_RU]=Выйти
+Name[zh_CN]=离开
+Comment[zh_CN]=离开会话

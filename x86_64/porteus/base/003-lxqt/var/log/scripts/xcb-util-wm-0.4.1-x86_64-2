@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libxcb-ewmh.so )
+( cd usr/lib64 ; ln -sf libxcb-ewmh.so.2.0.0 libxcb-ewmh.so )
+( cd usr/lib64 ; rm -rf libxcb-icccm.so.4 )
+( cd usr/lib64 ; ln -sf libxcb-icccm.so.4.0.0 libxcb-icccm.so.4 )
+( cd usr/lib64 ; rm -rf libxcb-icccm.so )
+( cd usr/lib64 ; ln -sf libxcb-icccm.so.4.0.0 libxcb-icccm.so )
+( cd usr/lib64 ; rm -rf libxcb-ewmh.so.2 )
+( cd usr/lib64 ; ln -sf libxcb-ewmh.so.2.0.0 libxcb-ewmh.so.2 )
