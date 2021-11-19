@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libQt5X11Extras.so.5.9 )
-( cd usr/lib ; ln -sf libQt5X11Extras.so.5.9.5 libQt5X11Extras.so.5.9 )
-( cd usr/lib ; rm -rf libQt5X11Extras.so.5 )
-( cd usr/lib ; ln -sf libQt5X11Extras.so.5.9.5 libQt5X11Extras.so.5 )
-( cd usr/lib ; rm -rf libQt5X11Extras.so )
-( cd usr/lib ; ln -sf libQt5X11Extras.so.5.9.5 libQt5X11Extras.so )

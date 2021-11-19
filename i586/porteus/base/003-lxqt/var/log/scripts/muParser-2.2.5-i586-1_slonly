@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libmuparser.so.2 )
-( cd usr/lib ; ln -sf libmuparser.so.2.2.4 libmuparser.so.2 )
-( cd usr/lib ; rm -rf libmuparser.so )
-( cd usr/lib ; ln -sf libmuparser.so.2 libmuparser.so )

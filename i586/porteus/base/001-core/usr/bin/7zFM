@@ -1,3 +1,0 @@
-#!/bin/sh
-[ -z "$1" ] && ARGS=$HOME || ARGS="$@"
-"/usr/lib/p7zip/7zFM" "$ARGS"

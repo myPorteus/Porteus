@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libunique-3.0.so )
-( cd usr/lib ; ln -sf libunique-3.0.so.0.0.2 libunique-3.0.so )
-( cd usr/lib ; rm -rf libunique-3.0.so.0 )
-( cd usr/lib ; ln -sf libunique-3.0.so.0.0.2 libunique-3.0.so.0 )

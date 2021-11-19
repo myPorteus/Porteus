@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libatkmm-1.6.so )
-( cd usr/lib ; ln -sf libatkmm-1.6.so.1.1.0 libatkmm-1.6.so )
-( cd usr/lib ; rm -rf libatkmm-1.6.so.1 )
-( cd usr/lib ; ln -sf libatkmm-1.6.so.1.1.0 libatkmm-1.6.so.1 )

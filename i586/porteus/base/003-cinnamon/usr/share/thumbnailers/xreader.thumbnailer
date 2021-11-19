@@ -1,6 +1,0 @@
-[Thumbnailer Entry]
-TryExec=xreader-thumbnailer
-Exec=xreader-thumbnailer -s %s %u %o
-MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;application/x-xzpdf;image/vnd.djvu;image/vnd.djvu+multipage;image/tiff;application/x-cbr;application/x-cbz;application/x-cb7;application/x-cbt;application/vnd.comicbook+zip;
-
-

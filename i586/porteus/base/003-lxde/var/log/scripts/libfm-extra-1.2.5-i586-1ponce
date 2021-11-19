@@ -1,6 +1,0 @@
-( cd usr/include ; rm -rf libfm )
-( cd usr/include ; ln -sf libfm-1.0 libfm )
-( cd usr/lib ; rm -rf libfm-extra.so.4 )
-( cd usr/lib ; ln -sf libfm-extra.so.4.0.5 libfm-extra.so.4 )
-( cd usr/lib ; rm -rf libfm-extra.so )
-( cd usr/lib ; ln -sf libfm-extra.so.4.0.5 libfm-extra.so )

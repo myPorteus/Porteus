@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<KeyListEntries schema="org.mate.SettingsDaemon.plugins.media-keys" group="system" name="Accessibility">
-
-	<KeyListEntry name="magnifier" description="Toggle magnifier"></KeyListEntry>
-	<KeyListEntry name="screenreader" description="Toggle screen reader"></KeyListEntry>
-	<KeyListEntry name="on-screen-keyboard" description="Toggle on-screen keyboard"></KeyListEntry>
-
-</KeyListEntries>

@@ -1,6 +1,0 @@
-[GTK Module]
-Name=Caribou
-Description=Caribou On-Screen Keyboard GTK+ Module
-X-GTK-Module-Name=caribou-gtk-module
-X-GTK-Module-Enabled-Schema=org.gnome.desktop.a11y.applications
-X-GTK-Module-Enabled-Key=screen-keyboard-enabled

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgupnp-1.0.so )
-( cd usr/lib ; ln -sf libgupnp-1.0.so.4.0.1 libgupnp-1.0.so )
-( cd usr/lib ; rm -rf libgupnp-1.0.so.4 )
-( cd usr/lib ; ln -sf libgupnp-1.0.so.4.0.1 libgupnp-1.0.so.4 )

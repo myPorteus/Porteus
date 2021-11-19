@@ -1,2 +1,0 @@
-( cd usr/lib ; rm -rf libmozjs-.so )
-( cd usr/lib ; ln -sf /usr/lib/libmozjs-38.so libmozjs-.so )

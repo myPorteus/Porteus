@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libqtermwidget5.so )
-( cd usr/lib ; ln -sf libqtermwidget5.so.0 libqtermwidget5.so )
-( cd usr/lib ; rm -rf libqtermwidget5.so.0 )
-( cd usr/lib ; ln -sf libqtermwidget5.so.0.8.0 libqtermwidget5.so.0 )

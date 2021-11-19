@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libkeybinder-3.0.so.0 )
-( cd usr/lib ; ln -sf libkeybinder-3.0.so.0.0.0 libkeybinder-3.0.so.0 )
-( cd usr/lib ; rm -rf libkeybinder-3.0.so )
-( cd usr/lib ; ln -sf libkeybinder-3.0.so.0.0.0 libkeybinder-3.0.so )
-( cd usr/lib ; rm -rf libkeybinder.so.0 )
-( cd usr/lib ; ln -sf libkeybinder.so.0.1.0 libkeybinder.so.0 )
-( cd usr/lib ; rm -rf libkeybinder.so )
-( cd usr/lib ; ln -sf libkeybinder.so.0.1.0 libkeybinder.so )

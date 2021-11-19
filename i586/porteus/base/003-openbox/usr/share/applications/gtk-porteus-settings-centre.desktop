@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Porteus Settings Centre
-Exec=gksu porteus-settings-centre
-Icon=computer
-Type=Application
-Categories=Application;System;

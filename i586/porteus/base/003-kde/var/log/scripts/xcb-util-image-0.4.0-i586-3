@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libxcb-image.so )
-( cd usr/lib ; ln -sf libxcb-image.so.0.0.0 libxcb-image.so )
-( cd usr/lib ; rm -rf libxcb-image.so.0 )
-( cd usr/lib ; ln -sf libxcb-image.so.0.0.0 libxcb-image.so.0 )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgusb.so )
-( cd usr/lib ; ln -sf libgusb.so.2.0.10 libgusb.so )
-( cd usr/lib ; rm -rf libgusb.so.2 )
-( cd usr/lib ; ln -sf libgusb.so.2.0.10 libgusb.so.2 )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgxps.so )
-( cd usr/lib ; ln -sf libgxps.so.2 libgxps.so )
-( cd usr/lib ; rm -rf libgxps.so.2 )
-( cd usr/lib ; ln -sf libgxps.so.2.2.2 libgxps.so.2 )

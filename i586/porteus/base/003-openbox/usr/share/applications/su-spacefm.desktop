@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=gksu spacefm /root
-Icon=spacefm-root
-Name=Super User Mode - Spacefm
-Type=Application
-Categories=Application;System;
-NotShowIn=KDE;

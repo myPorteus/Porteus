@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libneon.so )
-( cd usr/lib ; ln -sf libneon.so.27.3.1 libneon.so )
-( cd usr/lib ; rm -rf libneon.so.27 )
-( cd usr/lib ; ln -sf libneon.so.27.3.1 libneon.so.27 )

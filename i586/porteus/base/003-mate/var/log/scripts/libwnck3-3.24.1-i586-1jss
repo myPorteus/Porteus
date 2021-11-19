@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libwnck-3.so )
-( cd usr/lib ; ln -sf libwnck-3.so.0.3.0 libwnck-3.so )
-( cd usr/lib ; rm -rf libwnck-3.so.0 )
-( cd usr/lib ; ln -sf libwnck-3.so.0.3.0 libwnck-3.so.0 )

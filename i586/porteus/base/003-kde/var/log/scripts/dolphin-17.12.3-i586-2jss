@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libdolphinprivate.so.5 )
-( cd usr/lib ; ln -sf libdolphinprivate.so.5.0.0 libdolphinprivate.so.5 )
-( cd usr/lib ; rm -rf libdolphinvcs.so )
-( cd usr/lib ; ln -sf libdolphinvcs.so.5 libdolphinvcs.so )
-( cd usr/lib ; rm -rf libdolphinvcs.so.5 )
-( cd usr/lib ; ln -sf libdolphinvcs.so.5.0.0 libdolphinvcs.so.5 )

@@ -1,4 +1,0 @@
-( cd usr/lib/python2.7/site-packages ; rm -rf PAM.pyc )
-( cd usr/lib/python2.7/site-packages ; ln -sf pam.pyc PAM.pyc )
-( cd usr/lib/python2.7/site-packages ; rm -rf PAM.py )
-( cd usr/lib/python2.7/site-packages ; ln -sf pam.py PAM.py )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libpwquality.so.1 )
-( cd usr/lib ; ln -sf libpwquality.so.1.0.2 libpwquality.so.1 )
-( cd usr/lib ; rm -rf libpwquality.so )
-( cd usr/lib ; ln -sf libpwquality.so.1.0.2 libpwquality.so )

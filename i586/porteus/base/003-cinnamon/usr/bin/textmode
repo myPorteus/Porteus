@@ -1,4 +1,0 @@
-#!/bin/sh
-restoretextmode -r /etc/vga/textregs
-restorefont -r /etc/vga/fontdata
-restorepalette

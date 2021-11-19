@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=gksu -l "dbus-launch /opt/porteus-scripts/xorg/terminal"
-Icon=utilities-terminal
-Name=Super User Mode - Terminal
-Type=Application
-Categories=Application;System;

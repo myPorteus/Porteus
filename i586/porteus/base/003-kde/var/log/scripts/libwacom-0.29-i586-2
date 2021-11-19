@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libwacom.so.2 )
-( cd usr/lib ; ln -sf libwacom.so.2.6.1 libwacom.so.2 )
-( cd usr/lib ; rm -rf libwacom.so )
-( cd usr/lib ; ln -sf libwacom.so.2.6.1 libwacom.so )

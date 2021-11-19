@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.kde.ActivityManager
-Exec=/usr/bin/kactivitymanagerd

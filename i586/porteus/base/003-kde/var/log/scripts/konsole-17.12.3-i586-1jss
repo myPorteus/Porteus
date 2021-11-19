@@ -1,2 +1,0 @@
-( cd usr/lib ; rm -rf libkonsoleprivate.so.17 )
-( cd usr/lib ; ln -sf libkonsoleprivate.so.17.12.3 libkonsoleprivate.so.17 )

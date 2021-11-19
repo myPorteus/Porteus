@@ -1,6 +1,0 @@
-( cd usr/doc/libgtop-2.34.0 ; rm -rf html )
-( cd usr/doc/libgtop-2.34.0 ; ln -sf /usr/share/gtk-doc/html/libgtop html )
-( cd usr/lib ; rm -rf libgtop-2.0.so )
-( cd usr/lib ; ln -sf libgtop-2.0.so.10.0.0 libgtop-2.0.so )
-( cd usr/lib ; rm -rf libgtop-2.0.so.10 )
-( cd usr/lib ; ln -sf libgtop-2.0.so.10.0.0 libgtop-2.0.so.10 )

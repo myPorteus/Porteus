@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libpangomm-1.4.so )
-( cd usr/lib ; ln -sf libpangomm-1.4.so.1.0.30 libpangomm-1.4.so )
-( cd usr/lib ; rm -rf libpangomm-1.4.so.1 )
-( cd usr/lib ; ln -sf libpangomm-1.4.so.1.0.30 libpangomm-1.4.so.1 )

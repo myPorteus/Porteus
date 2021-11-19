@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.x.reader.Daemon
-Exec=/usr/libexec/xreaderd

@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libtumbler-1.so.0 )
-( cd usr/lib ; ln -sf libtumbler-1.so.0.0.0 libtumbler-1.so.0 )
-( cd usr/lib/tumbler-1/plugins/cache ; rm -rf tumbler-cache-plugin.so )
-( cd usr/lib/tumbler-1/plugins/cache ; ln -sf tumbler-xdg-cache.so tumbler-cache-plugin.so )
-( cd usr/lib ; rm -rf libtumbler-1.so )
-( cd usr/lib ; ln -sf libtumbler-1.so.0.0.0 libtumbler-1.so )

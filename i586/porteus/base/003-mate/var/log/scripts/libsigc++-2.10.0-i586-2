@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libsigc-2.0.so )
-( cd usr/lib ; ln -sf libsigc-2.0.so.0.0.0 libsigc-2.0.so )
-( cd usr/lib ; rm -rf libsigc-2.0.so.0 )
-( cd usr/lib ; ln -sf libsigc-2.0.so.0.0.0 libsigc-2.0.so.0 )

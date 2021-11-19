@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.mate.ScreenSaver
-Exec=/usr/bin/mate-screensaver --no-daemon

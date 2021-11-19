@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libpangox-1.0.so.0 )
-( cd usr/lib ; ln -sf libpangox-1.0.so.0.0.0 libpangox-1.0.so.0 )
-( cd usr/lib ; rm -rf libpangox-1.0.so )
-( cd usr/lib ; ln -sf libpangox-1.0.so.0.0.0 libpangox-1.0.so )

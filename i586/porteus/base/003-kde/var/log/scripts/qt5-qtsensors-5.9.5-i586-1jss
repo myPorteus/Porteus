@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libQt5Sensors.so.5.9 )
-( cd usr/lib ; ln -sf libQt5Sensors.so.5.9.5 libQt5Sensors.so.5.9 )
-( cd usr/lib ; rm -rf libQt5Sensors.so )
-( cd usr/lib ; ln -sf libQt5Sensors.so.5.9.5 libQt5Sensors.so )
-( cd usr/lib ; rm -rf libQt5Sensors.so.5 )
-( cd usr/lib ; ln -sf libQt5Sensors.so.5.9.5 libQt5Sensors.so.5 )

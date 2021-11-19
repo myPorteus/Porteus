@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libKF5XmlRpcClient.so.5 )
-( cd usr/lib ; ln -sf libKF5XmlRpcClient.so.5.45.0 libKF5XmlRpcClient.so.5 )
-( cd usr/lib ; rm -rf libKF5XmlRpcClient.so )
-( cd usr/lib ; ln -sf libKF5XmlRpcClient.so.5 libKF5XmlRpcClient.so )

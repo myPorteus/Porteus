@@ -1,4 +1,0 @@
-( cd usr/bin ; rm -rf gksudo )
-( cd usr/bin ; ln -sf gksu gksudo )
-( cd usr/man/man1 ; rm -rf gksudo.1 )
-( cd usr/man/man1 ; ln -sf gksu.1 gksudo.1 )

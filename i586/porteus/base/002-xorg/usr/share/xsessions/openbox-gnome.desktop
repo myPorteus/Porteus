@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=GNOME/Openbox
-Comment=Use the Openbox window manager inside of the GNOME desktop environment
-Exec=/usr/bin/openbox-gnome-session
-TryExec=gnome-session
-Icon=openbox
-Type=Application
