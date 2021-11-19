@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libkpmcore.so )
+( cd usr/lib ; ln -sf libkpmcore.so.7 libkpmcore.so )
+( cd usr/lib ; rm -rf libkpmcore.so.7 )
+( cd usr/lib ; ln -sf libkpmcore.so.3.3.0 libkpmcore.so.7 )

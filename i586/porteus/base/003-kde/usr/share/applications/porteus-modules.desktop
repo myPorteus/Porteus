@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Porteus Modules
+Comment=Porteus Module Activation Status
+Exec=/usr/local/bin/lsmodules
+Icon=cdr
+Type=Application
+Categories=Application;System;

@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libOkular5Core.so )
+( cd usr/lib ; ln -sf libOkular5Core.so.8 libOkular5Core.so )
+( cd usr/lib ; rm -rf libOkular5Core.so.8 )
+( cd usr/lib ; ln -sf libOkular5Core.so.8.0.0 libOkular5Core.so.8 )

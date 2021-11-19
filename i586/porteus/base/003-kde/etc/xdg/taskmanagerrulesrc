@@ -1,0 +1,12 @@
+[Mapping]
+Gimp-2.8=GIMP
+Google-chrome=Google Chrome
+Google-chrome-stable=Google Chrome
+Systemsettings=System Settings
+oracle-ide-boot-Launcher=Oracle SQL Developer
+Dragon=dragonplayer
+
+[Settings]
+ManualOnly=Wine
+MatchCommandLineFirst=perl
+TryIgnoreRuntimes=perl

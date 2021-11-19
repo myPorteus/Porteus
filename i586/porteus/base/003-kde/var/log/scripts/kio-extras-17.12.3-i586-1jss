@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libmolletnetwork5.so.17 )
+( cd usr/lib ; ln -sf libmolletnetwork5.so.17.12.3 libmolletnetwork5.so.17 )
+( cd usr/lib ; rm -rf libkioarchive.so.5 )
+( cd usr/lib ; ln -sf libkioarchive.so.5.97.0 libkioarchive.so.5 )

@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libKF5JS.so.5 )
+( cd usr/lib ; ln -sf libKF5JS.so.5.45.0 libKF5JS.so.5 )
+( cd usr/lib ; rm -rf libKF5JSApi.so )
+( cd usr/lib ; ln -sf libKF5JSApi.so.5 libKF5JSApi.so )
+( cd usr/lib ; rm -rf libKF5JSApi.so.5 )
+( cd usr/lib ; ln -sf libKF5JSApi.so.5.45.0 libKF5JSApi.so.5 )
+( cd usr/lib ; rm -rf libKF5JS.so )
+( cd usr/lib ; ln -sf libKF5JS.so.5 libKF5JS.so )

@@ -1,0 +1,29 @@
+PACKAGE NAME:     kwayland-integration-5.12.3-i586-1jss
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /root/kbs/build/../i586/pkg/003_kde/kwayland-integration-5.12.3-i586-1jss.txz
+PACKAGE DESCRIPTION:
+kwayland-integration: kwayland-integration (plasma5)  
+kwayland-integration:  
+kwayland-integration: kwayland-integration plasma5  
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: 
+kwayland-integration: http://download.kde.org/stable/plasma/  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kf5/
+usr/lib/qt5/plugins/kf5/org.kde.kidletime.platforms/
+usr/lib/qt5/plugins/kf5/org.kde.kidletime.platforms/KF5IdleTimeKWaylandPlugin.so
+usr/lib/qt5/plugins/kf5/org.kde.kwindowsystem.platforms/
+usr/lib/qt5/plugins/kf5/org.kde.kwindowsystem.platforms/KF5WindowSystemKWaylandPlugin.so

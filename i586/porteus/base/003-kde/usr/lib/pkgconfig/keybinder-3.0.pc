@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include/keybinder-3.0
+
+Name: keybinder-3.0
+Description: Register global keyboard shortcuts
+Requires: gtk+-3.0
+Version: 0.3.1
+Libs: -L${libdir} -lkeybinder-3.0
+Cflags: -I${includedir}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="image/image/x-ms-bmp">
+        <icon name="image-bmp"/>
+        <glob-deleteall/>
+        <glob pattern="*.bmp"/>
+    </mime-type>
+</mime-info>

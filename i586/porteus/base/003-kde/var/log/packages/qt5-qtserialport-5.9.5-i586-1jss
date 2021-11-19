@@ -1,0 +1,55 @@
+PACKAGE NAME:     qt5-qtserialport-5.9.5-i586-1jss
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /root/kbs/build/../i586/pkg/003_kde/qt5-qtserialport-5.9.5-i586-1jss.txz
+PACKAGE DESCRIPTION:
+qt5-qtserialport: qt5-qtserialport (Serialport submodule for Qt5)
+qt5-qtserialport:
+qt5-qtserialport: Qt5 serialport submodule.
+qt5-qtserialport: 
+qt5-qtserialport:
+qt5-qtserialport: Homepage: qt.io
+qt5-qtserialport:
+qt5-qtserialport:
+qt5-qtserialport:
+qt5-qtserialport:
+qt5-qtserialport:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/qt5/
+usr/include/qt5/QtSerialPort/
+usr/include/qt5/QtSerialPort/5.9.5/
+usr/include/qt5/QtSerialPort/5.9.5/QtSerialPort/
+usr/include/qt5/QtSerialPort/5.9.5/QtSerialPort/private/
+usr/include/qt5/QtSerialPort/5.9.5/QtSerialPort/private/qserialport_p.h
+usr/include/qt5/QtSerialPort/5.9.5/QtSerialPort/private/qserialportinfo_p.h
+usr/include/qt5/QtSerialPort/5.9.5/QtSerialPort/private/qtudev_p.h
+usr/include/qt5/QtSerialPort/QSerialPort
+usr/include/qt5/QtSerialPort/QSerialPortInfo
+usr/include/qt5/QtSerialPort/QtSerialPort
+usr/include/qt5/QtSerialPort/QtSerialPortDepends
+usr/include/qt5/QtSerialPort/QtSerialPortVersion
+usr/include/qt5/QtSerialPort/qserialport.h
+usr/include/qt5/QtSerialPort/qserialportglobal.h
+usr/include/qt5/QtSerialPort/qserialportinfo.h
+usr/include/qt5/QtSerialPort/qtserialportversion.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/Qt5SerialPort/
+usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfig.cmake
+usr/lib/cmake/Qt5SerialPort/Qt5SerialPortConfigVersion.cmake
+usr/lib/libQt5SerialPort.la
+usr/lib/libQt5SerialPort.prl
+usr/lib/libQt5SerialPort.so.5.9.5
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/Qt5SerialPort.pc
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_lib_serialport.pri
+usr/lib/qt5/mkspecs/modules/qt_lib_serialport_private.pri

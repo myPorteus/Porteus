@@ -1,0 +1,47 @@
+PACKAGE NAME:     phonon-backend-gstreamer-4.9.0-i586-1jss
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     470K
+PACKAGE LOCATION: /root/kbs/build/../i586/pkg/003_kde/phonon-backend-gstreamer-4.9.0-i586-1jss.txz
+PACKAGE DESCRIPTION:
+phonon-backend-gstreamer: phonon-backend-gstreamer (gstreamer based phonon backend)
+phonon-backend-gstreamer:
+phonon-backend-gstreamer: phonon-backend-gstreamer package provides a Phonon backend which utilizes 
+phonon-backend-gstreamer: the gstreamer media framework.
+phonon-backend-gstreamer: 
+phonon-backend-gstreamer: 
+phonon-backend-gstreamer:
+phonon-backend-gstreamer:
+phonon-backend-gstreamer:
+phonon-backend-gstreamer: http://phonon.kde.org
+phonon-backend-gstreamer:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/phonon4qt5_backend/
+usr/lib/qt5/plugins/phonon4qt5_backend/phonon_gstreamer.so
+usr/share/
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/phonon-gstreamer.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/phonon-gstreamer.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/phonon-gstreamer.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/phonon-gstreamer.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/phonon-gstreamer.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/phonon-gstreamer.svgz

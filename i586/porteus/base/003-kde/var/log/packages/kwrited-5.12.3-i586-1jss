@@ -1,0 +1,30 @@
+PACKAGE NAME:     kwrited-5.12.3-i586-1jss
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /root/kbs/build/../i586/pkg/003_kde/kwrited-5.12.3-i586-1jss.txz
+PACKAGE DESCRIPTION:
+kwrited: kwrited (plasma5)  
+kwrited:  
+kwrited: kwrited plasma5  
+kwrited: 
+kwrited: 
+kwrited: 
+kwrited: 
+kwrited: 
+kwrited: 
+kwrited: 
+kwrited: http://download.kde.org/stable/plasma/  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kf5/
+usr/lib/qt5/plugins/kf5/kded/
+usr/lib/qt5/plugins/kf5/kded/kwrited.so
+usr/share/
+usr/share/knotifications5/
+usr/share/knotifications5/kwrited.notifyrc

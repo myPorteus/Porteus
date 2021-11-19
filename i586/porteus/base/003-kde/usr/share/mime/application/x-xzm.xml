@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-xzm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>XZM archive</comment>
+  <comment xml:lang="en_GB">XZM archive</comment>
+  <acronym>XZM</acronym>
+  <expanded-acronym>Lempel-Ziv-Oberhumer</expanded-acronym>
+  <generic-icon name="cdr"/>
+  <glob pattern="*.xzm"/>
+</mime-type>

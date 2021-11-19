@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libgwenviewlib.so.5 )
+( cd usr/lib ; ln -sf libgwenviewlib.so.4.97.0 libgwenviewlib.so.5 )

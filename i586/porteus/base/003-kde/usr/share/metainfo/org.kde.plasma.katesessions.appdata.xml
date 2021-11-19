@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <id>org.kde.plasma.katesessions</id>
+    <name>Kate Sessions</name>
+    <name xml:lang="ar">جلسات كيت</name>
+    <name xml:lang="ca@valencia">Sessions del Kate</name>
+    <name xml:lang="ca">Sessions del Kate</name>
+    <name xml:lang="cs">Sezení Kate</name>
+    <name xml:lang="da">Kate-sessioner</name>
+    <name xml:lang="de">Kate-Sitzungen</name>
+    <name xml:lang="el">Συνεδρίες Kate</name>
+    <name xml:lang="en_GB">Kate Sessions</name>
+    <name xml:lang="es">Sesiones de Kate</name>
+    <name xml:lang="et">Kate seansid</name>
+    <name xml:lang="fi">Kate-istunnot</name>
+    <name xml:lang="fr">Sessions de Kate</name>
+    <name xml:lang="gl">Sesións de Kate</name>
+    <name xml:lang="he">הפעלות של Kate</name>
+    <name xml:lang="hu">Kate munkamenetek</name>
+    <name xml:lang="ia">Sessiones de Kate</name>
+    <name xml:lang="id">Sesi Kate</name>
+    <name xml:lang="it">Sessioni di Kate</name>
+    <name xml:lang="ko">Kate 세션</name>
+    <name xml:lang="lt">Kate sesijos</name>
+    <name xml:lang="nb">Kate-økter</name>
+    <name xml:lang="nl">Kate-sessies</name>
+    <name xml:lang="nn">Kate-økter</name>
+    <name xml:lang="pa">ਕੇਟ ਸ਼ੈਸ਼ਨ</name>
+    <name xml:lang="pl">Sesje Kate</name>
+    <name xml:lang="pt">Sessões do Kate</name>
+    <name xml:lang="pt_BR">Sessões do Kate</name>
+    <name xml:lang="ru">Сеансы Kate</name>
+    <name xml:lang="sk">Sedenia Kate</name>
+    <name xml:lang="sl">Seje programa Kate</name>
+    <name xml:lang="sr@ijekavian">Кејтине сесије</name>
+    <name xml:lang="sr@ijekavianlatin">Kateine sesije</name>
+    <name xml:lang="sr@latin">Kateine sesije</name>
+    <name xml:lang="sr">Кејтине сесије</name>
+    <name xml:lang="sv">Kate-sessioner</name>
+    <name xml:lang="tr">Kate Oturumları</name>
+    <name xml:lang="uk">Сеанси Kate</name>
+    <name xml:lang="x-test">xxKate Sessionsxx</name>
+    <name xml:lang="zh_CN">Kate 会话</name>
+    <name xml:lang="zh_TW">Kate 工作階段</name>
+    <summary>Kate Session Launcher</summary>
+    <summary xml:lang="ar">مُطلق لجلسات «كيت»</summary>
+    <summary xml:lang="bg">Зареждане на сесии на Kate</summary>
+    <summary xml:lang="bs">Pokretač Kate sesija</summary>
+    <summary xml:lang="ca@valencia">Llançador de la sessió del Kate</summary>
+    <summary xml:lang="ca">Llançador de la sessió del Kate</summary>
+    <summary xml:lang="cs">Spouštěč sezení Kate</summary>
+    <summary xml:lang="da">Kate sessionstarter</summary>
+    <summary xml:lang="de">Kate-Sitzung starten</summary>
+    <summary xml:lang="el">Εκτελεστής συνεδρίας Kate</summary>
+    <summary xml:lang="en_GB">Kate Session Launcher</summary>
+    <summary xml:lang="es">Lanzador de sesiones de Kate</summary>
+    <summary xml:lang="et">Kate seansi käivitaja</summary>
+    <summary xml:lang="eu">Kate saioaren abiarazlea</summary>
+    <summary xml:lang="fi">Kate-istunnonkäynnistin</summary>
+    <summary xml:lang="fr">Lanceur de sessions pour Kate</summary>
+    <summary xml:lang="ga">Tosaitheoir Seisiúin Kate</summary>
+    <summary xml:lang="gl">Iniciador de sesións de Kate</summary>
+    <summary xml:lang="he">מפעיל הפעלות של Kate</summary>
+    <summary xml:lang="hu">Kate munkamenet-indító</summary>
+    <summary xml:lang="ia">Lanceator de session de Kate</summary>
+    <summary xml:lang="id">Peluncur Sesi Kate</summary>
+    <summary xml:lang="is">Kate seturæsir</summary>
+    <summary xml:lang="it">Avviatore delle sessioni di Kate</summary>
+    <summary xml:lang="ja">Kate のセッションを開始します</summary>
+    <summary xml:lang="kk">Kate сеанс жеккіші</summary>
+    <summary xml:lang="km">កម្មវិធី​ចាប់ផ្ដើម​សម័យ Kate</summary>
+    <summary xml:lang="ko">Kate 세션 실행기</summary>
+    <summary xml:lang="lt">Kate sesijų paleidiklis</summary>
+    <summary xml:lang="lv">Kate sesiju palaidējs</summary>
+    <summary xml:lang="mr">केट सत्र प्रक्षेपक</summary>
+    <summary xml:lang="nb">Kate øktstarter</summary>
+    <summary xml:lang="nds">Kate-Törnstarter</summary>
+    <summary xml:lang="nl">Kate sessiestarter</summary>
+    <summary xml:lang="nn">Start Kate-økter</summary>
+    <summary xml:lang="pa">ਕੇਟ ਸ਼ੈਸ਼ਨ ਲਾਂਚਰ</summary>
+    <summary xml:lang="pl">Uruchamia sesję Kate</summary>
+    <summary xml:lang="pt">Lançador de Sessões do Kate</summary>
+    <summary xml:lang="pt_BR">Lançamento de sessões do Kate</summary>
+    <summary xml:lang="ro">Lansator de sesiuni Kate</summary>
+    <summary xml:lang="ru">Программа запуска сеанса Kate</summary>
+    <summary xml:lang="si">Kate වාර ආරම්භකය</summary>
+    <summary xml:lang="sk">Spúšťač Kate sedenia</summary>
+    <summary xml:lang="sl">Zaganjalnik sej za Kate</summary>
+    <summary xml:lang="sr@ijekavian">Покретач Кејтиних сесија</summary>
+    <summary xml:lang="sr@ijekavianlatin">Pokretač Kateinih sesija</summary>
+    <summary xml:lang="sr@latin">Pokretač Kateinih sesija</summary>
+    <summary xml:lang="sr">Покретач Кејтиних сесија</summary>
+    <summary xml:lang="sv">Kate sessionsstart</summary>
+    <summary xml:lang="tg">Оғозкунандаи мониторинги Кейт</summary>
+    <summary xml:lang="tr">Kate Oturum Başlatıcı</summary>
+    <summary xml:lang="ug">Kate ئەڭگىمە قوزغاتقۇچ</summary>
+    <summary xml:lang="uk">Запуск сеансів Kate</summary>
+    <summary xml:lang="x-test">xxKate Session Launcherxx</summary>
+    <summary xml:lang="zh_CN">Kate 会话启动器</summary>
+    <summary xml:lang="zh_TW">Kate 工作階段啟動器</summary>
+    <developer_name>Joseph Wenninger &lt;jowenn@kde.org&gt;</developer_name>
+    <icon type="stock">kate</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

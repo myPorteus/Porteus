@@ -1,0 +1,60 @@
+PACKAGE NAME:     kdecoration-5.12.3-i586-1jss
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /root/kbs/build/../i586/pkg/003_kde/kdecoration-5.12.3-i586-1jss.txz
+PACKAGE DESCRIPTION:
+kdecoration: kdecoration (plasma5)  
+kdecoration:  
+kdecoration: kdecoration plasma5  
+kdecoration: 
+kdecoration: 
+kdecoration: 
+kdecoration: 
+kdecoration: 
+kdecoration: 
+kdecoration: 
+kdecoration: http://download.kde.org/stable/plasma/  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KDecoration2/
+usr/include/KDecoration2/KDecoration2/
+usr/include/KDecoration2/KDecoration2/DecoratedClient
+usr/include/KDecoration2/KDecoration2/Decoration
+usr/include/KDecoration2/KDecoration2/DecorationButton
+usr/include/KDecoration2/KDecoration2/DecorationButtonGroup
+usr/include/KDecoration2/KDecoration2/DecorationSettings
+usr/include/KDecoration2/KDecoration2/DecorationShadow
+usr/include/KDecoration2/KDecoration2/Private/
+usr/include/KDecoration2/KDecoration2/Private/DecoratedClientPrivate
+usr/include/KDecoration2/KDecoration2/Private/DecorationBridge
+usr/include/KDecoration2/KDecoration2/Private/DecorationSettingsPrivate
+usr/include/KDecoration2/kdecoration2/
+usr/include/KDecoration2/kdecoration2/decoratedclient.h
+usr/include/KDecoration2/kdecoration2/decoration.h
+usr/include/KDecoration2/kdecoration2/decorationbutton.h
+usr/include/KDecoration2/kdecoration2/decorationbuttongroup.h
+usr/include/KDecoration2/kdecoration2/decorationdefines.h
+usr/include/KDecoration2/kdecoration2/decorationsettings.h
+usr/include/KDecoration2/kdecoration2/decorationshadow.h
+usr/include/KDecoration2/kdecoration2/kdecoration2_export.h
+usr/include/KDecoration2/kdecoration2/private/
+usr/include/KDecoration2/kdecoration2/private/decoratedclientprivate.h
+usr/include/KDecoration2/kdecoration2/private/decorationbridge.h
+usr/include/KDecoration2/kdecoration2/private/decorationsettingsprivate.h
+usr/include/KDecoration2/kdecoration2/private/kdecoration2_private_export.h
+usr/include/KF5/
+usr/include/KF5/kdecoration2_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KDecoration2/
+usr/lib/cmake/KDecoration2/KDecoration2Config.cmake
+usr/lib/cmake/KDecoration2/KDecoration2ConfigVersion.cmake
+usr/lib/cmake/KDecoration2/KDecoration2Targets-release.cmake
+usr/lib/cmake/KDecoration2/KDecoration2Targets.cmake
+usr/lib/libkdecorations2.so.5.12.3
+usr/lib/libkdecorations2private.so.5.12.3

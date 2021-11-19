@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: keybinder
+Description: Register global keyboard shortcuts
+Requires: gtk+-2.0
+Version: 0.3.1
+Libs: -L${libdir} -lkeybinder
+Cflags: -I${includedir}

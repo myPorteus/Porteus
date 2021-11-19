@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=lib
+includedir=/usr/include
+
+Name: kscreen2
+Description: Qt Based library to manage screens with backends (xrandr, whatevercomesnext)
+Version: 5.12.3
+
+Libs: -L${libdir} -lKF5Screen
+Cflags: -I${includedir}
