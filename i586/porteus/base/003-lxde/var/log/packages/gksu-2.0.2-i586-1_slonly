@@ -1,0 +1,44 @@
+PACKAGE NAME:     gksu-2.0.2-i586-1_slonly
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: gksu-2.0.2-i586-1_slonly.txz
+PACKAGE DESCRIPTION:
+gksu: gksu (Gtk+ frontend to su and sudo)
+gksu:
+gksu: GKSu is a library that provides a Gtk+ frontend to su and sudo.
+gksu: It supports login shells and preserving environment when acting as
+gksu: a su frontend. It is useful to menu items or other graphical
+gksu: programs that need to ask a user's password to run another program
+gksu: as another user.
+gksu:
+gksu: Homepage: http://www.nongnu.org/gksu/
+gksu:
+gksu:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/gksu
+usr/doc/
+usr/doc/gksu-2.0.2/
+usr/doc/gksu-2.0.2/ABOUT-NLS
+usr/doc/gksu-2.0.2/AUTHORS
+usr/doc/gksu-2.0.2/COPYING
+usr/doc/gksu-2.0.2/ChangeLog
+usr/doc/gksu-2.0.2/INSTALL
+usr/doc/gksu-2.0.2/gksu.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/gksu.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/gksu.desktop
+usr/share/gksu/
+usr/share/gksu/gksu-migrate-conf.sh
+usr/share/pixmaps/
+usr/share/pixmaps/gksu-icon.png
+usr/share/pixmaps/gksu-root-terminal.png
