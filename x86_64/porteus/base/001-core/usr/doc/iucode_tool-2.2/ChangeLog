@@ -1,0 +1,632 @@
+2017-08-28, iucode_tool v2.2
+
+  * README: update for mixed dat and bin Intel releases
+  * configure: fix handling of --without-foo/--disable-bar
+  * intel_microcode: fast-track intel_ucode_compare(a, a)
+  * iucode_tool: fix microcode count when selecting extended signatures
+  * iucode_tool: rename and document some xx_xtsdeduplist* functions
+  * configure: support libargp as an alternative to glibc argp
+  * intel_microcode: do not request inlining for is_zero_checksum()
+  * iucode_tool: use fprintf(stdout) instead of printf()
+  * intel_microcode: declare intel_ucode_errstr() as const
+  * iucode_tool: ensure printf %x args are unsigned
+  * README: add an example of microcode with multiple sigs
+  * configure: add --enable-extend-flags to change default build flags
+    Add a way to not completely override the C/CPP/LDFLAGS configure.ac
+    would like to set.
+  * configure: default build to hardened -O3 PIE with lots of warnings
+    Override the autoconf default CFLAGS, CPPFLAGS and LDFLAGS for a more
+    optimized, hardened build by default.  Also, print the value of these
+    variables in configure output.  The standard methods to override the
+    default CFLAGS, CPPFLAGS and LDFLAGS in configure still work, and will
+    bypass the new defaults.  Linux distros that override these on every build
+    should not see any changes.  Should the compiler not be detected as
+    gcc-compatible, no change to CFLAGS/CPPFLAGS/LDFLAGS will be made.  Note
+    that clang is explicitly supported, and works just fine.  The build will
+    default to a baseline of "-O3 -g" and will attempt to selectively enable
+    several warning options, and several hardening options.  configure will
+    attempt to detect the set of compiler and linker driver flags that would
+    work.    Caveats: autoconf 2.69 and automake 1.13 or later are now
+    required.
+  * configure: whitespace fixes and minor cosmetic fixes
+
+2017-02-15, iucode_tool v2.1.2
+
+  * iucode_tool: compare payloads of similar (not just duplicate) MCUs
+    Within the same signature, if two microcodes have the same revision,
+    and can be installed on the same processor, their payload contents
+    ought to be the same.  However, we would only compare the payloads of
+    microcodes with the exactly same processor flags mask, which is not
+    enough.  Fix it.  Note: this issue not present in Intel-issued
+    microcode seen in the field.
+  * iucode_tool: skip small files as if empty in the -tr loader
+    Make the recovery loader behave the same for empty files and files
+    that are too small to contain any microcode: report that there were no
+    microcodes found in the file, and skip the file.
+  * intel-microcode: validade xx_intel_ucode_check_uc() parameters
+  * iucode_tool: silence a harmless -Wmissing-field-initializers warning
+
+2017-01-11, iucode_tool v2.1.1
+
+  * intel_microcode, iucode_tool: enhance microcode scan API
+  * intel_microcode: harden intel_ucode_scan_for_microcode()
+  * intel_microcode, iucode_tool: no more magic 1024 constants
+  * intel_microcode: forbid unknown buffer sizes in
+    intel_ucode_check_microcode()
+  * intel_microcode, iucode_tool: track buffer sizes when iterating
+  * intel_microcode: fix heap buffer overflow on -tr loader
+    (CVE-2017-0357)
+    When the last microcode region ends at exactly the end of the data
+    file, intel_ucode_scan_for_microcode() would read data past the end of
+    the memory buffer.  This is usually harmless.  Unfortunately, should
+    there be a valid microcode exactly after the memory buffer,
+    iucode_tool will misbehave *badly*.  It is extremely unlikely that the
+    harmful misbehavior could be triggered by accident -- at least when
+    iucode_tool is linked to glibc -- due to glibc's memory allocator
+    implementation details.  Also, it is not believed to be possible for
+    this bug to trigger in a harmful manner when only one datafile is
+    being processed.  However, it might be possible for an attacker to
+    trigger the issue using a number of specially crafted data files, and
+    it might also require tricking the user into using a specially crafted
+    command line.  Should the worst happen, iucode_tool may be convinced
+    to corrupt its heap, and possibly the libc's heap control data
+    structures, which could result in code execution, depending on the
+    libc's internals.  The harmless version of this bug is trivially
+    triggered by using the -tr (recovery) loader on any file that ends
+    with a valid microcode, such as any file that only contains valid
+    microcode.  This issue was detected by gcc's address sanitizer.
+  * update copyright dates to 2017
+  * spelling fixes to comments, messages and docs
+
+2016-11-10, iucode_tool v2.1
+
+  * iucode_tool: alternative bug workaround for the early initramfs
+    Implement a less hackish workaround to ensure the microcode file data
+    will be aligned to a 16-byte boundary from the start of the early
+    initramfs: instead of extending the microcode data filename with NULs,
+    add a suitably sized empty directory entry to the initramfs cpio
+    archive right before it (an empty file entry, or a hardlink entry
+    would also have worked).  We control the size of this "padding" entry
+    by the length of its name, without any embedded NULs hacks.  The
+    increase in cpio metadata size caused by an extra cpio member header
+    entry is always going to be absorbed by the padding at the end of the
+    cpio archive at a 512 byte or 1024 byte block size: the file size of
+    the resulting early initramfs is not changed.  For --mini-earlyfs
+    mode, which is tailored to what the kernel cares about and minimal
+    size, we use the older workaround which results in a smaller archive
+    at a 16-byte block size.
+  * iucode_tool: cosmetic error path cleanup for write_cpio_header()
+  * iucode_tool(8): document --mini-earlyfw and --normal-earlyfw
+  * iucode_tool: add command line option to minimize early initramfs size
+    A minimized early initramfs has a block size of 16 bytes, and doesn't
+    contain parent directories.
+  * iucode_tool: prepare for early-initramfs size minimization
+    Enhance the low-level cpio header/trailer output functions to take
+    runtime parameters instead of compile-time constants for: cpio block
+    size and whether to include parent directories.  While at it, constify
+    parameters on the changed functions where possible.
+  * iucode_tool: xx_write_cpio_hdrentry can assume dword-alignment
+  * iucode_tool: generate reproducible early initramfs
+    Instead of embedding the current time in the early initramfs, use the
+    latest date found among the microcodes that are going to be included
+    in that initramfs.  While at it, fix an year 2038 issue which would
+    result in a corrupted initramfs cpio archive.  The microcode ordering
+    inside the initramfs was already stabilized by iucode_tool release
+    v2.0.  This change is a contribution to the Reproducible Builds effort
+    captained by the Debian project.
+  * Add new CONTRIBUTING text file:
+    Add a CONTRIBUTING text file with some details about how to submit bug
+    reports, report security issues, and request new features.
+  * Makefile.am: ship CONTRIBUTING in the tarball
+  * intel_microcode: add intel_ucode_getdate_bcd() function
+  * intel_microcode: move is_valid_bcd() earlier in the file
+  * README: remove feeds as means to get latest microcode
+    Intel is not updating every processor model's download feeds with the
+    latest microcode package anymore.  Do not suggest using them to locate
+    the latest microcode data pack anymore.
+  * configure, iucode_tool: define bug report address
+  * intel_microcode: constify and restyle prototypes
+  * iucode_tool: constify function parameters
+
+2016-09-12, iucode_tool v2.0
+
+  * README: update for pf_mask change in output
+  * ChangeLog: fix typos
+  * iucode_tool(8): reduce usage of pf_mask in manpage
+  * iucode_tool(8): document iucode-tool microcode ids
+  * iucode_tool: don't str_append_ucode_id() on every microcode
+  * iucode_tool: ensure IUCODE_MAX_MCU_FILE_SIZE is sane
+  * iucode_tool: limit verbosity level to 5
+  * iucode_tool: reorder malloc calls in load_intel_microcode_dat()
+  * iucode_tool: increase first microcode data size guess to 2MiB
+  * iucode_tool: fix -h help text for --scan-system
+  * iucode_tool: limit cpio member size to 4GiB
+  * iucode_tool(8): update for new -s/-S interaction
+    Update manpage now that --scan-system can be overridden by -s !<sig>
+  * iucode_tool: allow override of --scan-system results
+    Process --scan-system in-line with -s, so that a later -s !<sig> can
+    override signature filters added by --scan-system.  To reproduce the
+    earlier behavior, have --scan-system as the last option.
+  * iucode_tool: complain of large sigs and masks for -s option
+    Detect and report as an error (instead of silently truncating to
+    32-bits) CPU signatures and processor flags masks in the command line
+    when they are too large.
+  * iucode_tool: retry on EINTR during writes
+    Instead of aborting with an "interrupted system call" error during
+    writes, retry the operation.  This is already done for reads.
+  * iucode_tool, intel_microcode: fix config.h include order
+    The autoconf config header must be included before any C library
+    headers, or it won't have the desired effects.
+    This change activates large file support on 32-bit targets.
+  * iucode_tool: support very large output files on 32bit
+  * iucode_tool: use LFS-safe typecast for 32-bit
+  * iucode_tool: add exception threshold to disable .dat fast parser
+    If the fast-path parser fails too many times to handle the .dat file
+    being processed, disable it for the remaining of that file.
+  * iucode_tool: add fast-path to .dat loader
+    Add a limited parser to the .dat loader, and use it as a fast path.
+    This fast-path parser is capable of dealing with all currently
+    released Intel .dat files ~40% faster than the better (strtoul-based)
+    slow path.  The fast-path defers to the slow path anything it cannot
+    handle.
+  * iucode_tool: use fgets_unlocked to parse .dat files
+  * iucode_tool: detect large values in .dat files
+    Detect as invalid any values that won't fit in 32 bits when parsing
+    Intel .dat files, instead of silently truncating them to 32 bits.
+    Note that these files would eventually fail to load for other reasons,
+    such as invalid checksums.
+  * iucode_tool: add helper to parse uint32_t values
+  * iucode_tool: detect invalid NULs in .dat format loader
+    Detect and reject files with embedded NULs when attempting to load
+    using the text .dat format, since any NULs will cause everything after
+    them in the same line to be discarded (due to the use of fgets() to
+    parse the file). This effectively means every line must end with a
+    newline ('\n') EOL marker, except for the last one in the data file.
+  * intel_microcode: use the same type for internal microcode sizes
+  * intel_microcode: don't drop const qualifiers from pointers
+  * iucode_tool: use unsigned types for cpio header writing
+  * iucode_tool: fix cosmetic issues in scan_and_pack_microcodes
+  * intel_microcode: silence harmless sign-conversion
+  * intel_microcode: remove undesired sign conversions
+  * iucode_tool: avoid implicit promotion to signed in is_in_date_range()
+  * iucode_tool: use defensive coding in load_intel_microcode_bin
+  * iucode_tool: ensure fileno(stdin) did not fail
+    Fixes: Coverity CID 163302 (false positive, failure requires broken
+    libc/kernel)
+  * iucode_tool: avoid signed bit constants
+  * iucode_tool: (cosmetic comment fixes) it is errno, not errno()
+  * iucode_tool: avoid conversions for constant line buffer size
+  * iucode-tool: flush output files to permanent storage
+    Use fdatasync() to flush output files to permanent storage before
+    close().  For --write-named-to, --write-all-named-to, and
+    --write-firmware, also fsync() the parent directory after all files
+    have been written.  These changes cause a severe performance
+    degradation, but without them we cannot detect write errors on close,
+    and that can end up corrupting a file important for system boot since
+    the write error would be undetectable to a shell script.
+  * configure.ac: default to dist-xz and enable warnings
+    Enable automake warnings, and switch the "make dist" target to xz
+    compression, as that's what is being used for the signed release
+    tarballs.
+  * configure.ac: update autotools minimum versions
+    Update the minimum autoconf version to 2.69, and automake to 1.11.
+    Older versions are not supported, and might or might not work.
+    This is only relevant when not using the pre-built configure script
+    shipped in the iucode_tool distribution tarballs.
+  * iucode_tool: use print_warn() when we do not write to a file
+    When there is nothing to output to a file, we don't touch it (i.e.  we
+    do not overwrite it with an empty result).  Use print_warn() to report
+    that to the user as a warning, instead of print_msg().
+  * iucode_tool: fix minor issue on warning message
+  * iucode_tool: widen bundle id output to three digits
+  * iucode_tool: change pf mask to pf_mask on output
+  * iucode_tool: indent selected microcode output
+    Indent the selected microcode output (for --list) so that it matches
+    the output of --list-all.
+  * iucode_tool: change first column of --list output to gid/id
+    Change the output format of --list output to use the gid/id notation
+    (the same used by --list-all and also by any error messages and by
+    most verbose debug or status messages) to identify the selected
+    microcodes.  This is vastly more useful than a monotonically
+    increasing number that is not usable anywhere else.
+  * iucode_tool: demote debug output about bundle assignment
+    Now that we will output bundle assignment messages for --list (and not
+    just --list-all), demote status/debug output about bundle assignment,
+    so that it matches the same verbosity level of other messages from the
+    same function.  While at it, change the status message to better match
+    what it means.
+  * iucode_tool: output bundle assignment for --list-* when not quiet
+    Output the bundle assignment headers already used for --list-all also
+    for --list.  Suppress that output for both --list-all and --list when
+    in quiet mode.
+  * iucode_tool(8): document new sorting order
+    Microcode sorting order is now stabilized by a secondary key (pf_mask)
+  * iucode_tool: refactor and improve uclist_merge_signature()
+    Refactor uclist_merge_signature() into something much easier to
+    understand.  The refactored code sorts the uclist by cpuid (ascending
+    order) and pf_mask (descending order), which stabilizes the sorting
+    order.  The pf_masks are sorted in descending order to ensure it will
+    find supersets first as it walks the list.  Downgrade mode is (still)
+    limited by not being able to change pf_masks, so partially
+    "superseded" (in the downgrade mode sense) entries will be left over
+    in the selected microcode list when unavoidable.
+
+2016-06-04, iucode_tool v1.6.1
+
+  * iucode_tool: append microcode bundles to linked list in O(1)
+  * iucode_tool: stop allocating twice the required memory for a bundle
+  * iucode_tool: don't close input files twice
+    load_intel_microcode() would cause fds to be closed twice.  iucode_tool
+    is not multi-threaded and isn't otherwise affected by this bug, but
+    unfortunately there is a free() call between the first and second
+    close().  When running iucode_tool under some sort of malloc
+    instrumentation insane enough to open file descriptors on free()
+    inside the instrumented process' context, or indirectly linked to a
+    multi-threaded glibc module/plugin that could do the same, bad things
+    could happen.
+  * iucode_tool(8): minor fix to a comment
+  * iucode_tool(8): update Linux notes for up to v4.6
+  * iucode_tool: constify argp parser information
+
+2016-05-14, iucode_tool v1.6
+
+  * iucode_tool: fix failsafe for --enable-cpuid-device
+    Further fixes for --scan-system when iucode_tool is compiled with the
+    non-default configure/build-time option --enable-cpuid-device mode.
+    Do not disable the failsafe mode when either /dev/cpu/*/cpuid cannot be
+    opened, or an unexpected error happens during the cpuid scan.  Note that
+    we still consider the scan result valid when there are offline nodes.
+    Also, adjust the error and status/debug messages so that proper feedback
+    (through a warning) is given to the user when the scan fails.
+  * iucode_tool: report out-of-memory error during cpuid scan
+  * iucode_tool(8): document warning when downgrade mode fails
+  * iucode_tool: warn of shadowed microcode in downgrade mode
+    Warn when downgrading is impossible due to pf_mask shadowing: this
+    happens when a pf_mask set loaded earlier has a higher microcode
+    revision than a pf_mask subset loaded later for the same signature.
+  * iucode_tool: introduce print_warn()
+    Note: this changes the single "WARNING" in iucode_tool to "warning"
+  * iucode_tool: don't snprintf just to printf something
+  * iucode_tool: silence gcc warnings in -flto mode
+  * iucode_tool: use pfm for pf_mask in structures
+  * iucode_tool: fix another downgrade+loose date filter corner case
+    Fix a corner case for the second pass of the loose date filter in
+    downgrade mode: while late-merging an earlier microcode (in load order)
+    whose pf_mask is either the same as, or a superset of, a later microcode
+    (in load order) but with a same-or-higher revision, it would erroneously
+    remove the later microcode (i.e. act as if download mode was not
+    active).
+
+2016-04-30, iucode_tool v1.5.2
+
+  * README: update technical details and correct two mistakes
+    Mixed-stepping configurations are possible, and there was an off-by-one
+    error in the platform flags mask table.
+  * iucode_tool(8): fix manpage text for --scan-system
+    Fix the iucode_tool(8) manpage text to not imply we will scan every
+    processor in the system, as that depends on configure (compile-time)
+    options, and it isn't the default behavior since version 1.2.
+  * iucode_tool: don't assume single signature for multi-socket
+    When not scanning every processor using the kernel cpuid device, add all
+    possible steppings for the signature of the running processor.
+
+2016-02-13, iucode_tool v1.5.1
+
+  * update copyright dates to 2016
+  * iucode_tool: drop incorrect use of likely() in uclist_merge_signature()
+  * iucode_tool(8): document downgrade mode limitations
+  * iucode_tool: fix unimportant memory leaks for valgrind
+    Fix two memory leaks at the program exit path for valgrind builds. This
+    ensures "valgrind --leak-check=full --show-leak-kinds=all" output has no
+    known false positives. For non-valgrind builds, we simply don't bother to
+    free any heap memory in the exit path, as it would be just a waste of CPU
+    cycles.
+  * iucode_tool: look harder for superseded entries
+    When we replace an entry that has the same pf_mask, it is necessary to
+    look for entries that became obsolete.  In non-downgrade mode, we might
+    have skipped a few revisions, and might have merged microcode that is a
+    proper subset, but has an intermediary revision between ours and the
+    one we're replacing.  In downgrade mode, the revision doesn't matter so
+    it is even easier to have proper subset entries around that became
+    obsolete.
+  * iucode_tool: discard late outdated merge for loose date filter
+    When in downgrade mode, during the second pass of the loose date
+    filter, we would merge microcode that is a proper subset (and has the
+    same revision) of already merged microcode.  This is harmless, but it
+    would waste space in the output.  It is unlikely that this bug would
+    ever happen with real microcode updates.
+  * iucode_tool: fix downgrade mode when loose date-filtering
+    Downgrade mode was broken for the loose mode of date filtering.  Due to
+    this bug, a microcode selected by the loose date filter might be
+    preferred over one that was loaded later.
+  * iucode_tool: fix infinite loop bug on non-disjoint pf_masks
+    In the specific case where two microcodes for the same CPU signature
+    had non-disjoint pf_masks, and neither pf_mask was contained in the
+    other, the code would loop forever when it attempted to add the second
+    microcode to the list of selected microcodes.  Fortunately, Intel never
+    published a public microcode update that could trigger this codepath.
+    This issue exists in every released version of iucode_tool to date.
+  * iucode_tool: cosmetic changes to load_intel_microcode()
+  * iucode_tool: make uclist_add_signature() slightly faster
+    Change uclist_add_signature() to stop looking for duplicates at the
+    first match.  This is slightly faster when processing several files
+    with many duplicates, but it changes same-sig same-revision internal
+    ordering from earliest first to latest first.  This change to the
+    sorting order only change the order in which do_write_named() will
+    create the per-microcode data files.  Also, trigger microcode opaque
+    data comparison on the pointer to the duplicate being non-NULL, instead
+    of testing for res == EEXIST. Note that this is not fixing an existing
+    bug, the old code was correct.
+  * iucode_tool: cosmetic fixes for uclist_add_signature()
+
+2015-10-16, iucode_tool v1.5
+
+  * New --write-all-named-to option:
+    + iucode_tool(8): document the new --write-all-named-to option.
+    + iucode_tool: add a --write-all-named-to option, which works like
+      --write-named-to, but instead of operating on selected microcode, it
+      operates on every revision of every microcode.  Exact duplicates are
+      skipped, keyed on INTEL_UCLE_DUPSIG.  This avoids the need to always
+      enable --overwrite mode.  This is the only way to write out every
+      revision of a microcode.
+    + iucode_tool: add a new flag, INTEL_UCLE_DUPSIG, and use it to track
+      duplicate signatures when they are added to all_microcodes.  Only the
+      first copy of that exact microcode (signature+pfm+revision) will not
+      have INTEL_UCLE_DUPSIG set, in *load* order, regardless of downgrade
+      mode.
+  * intel_microcode.c: remove lots of unlikely() use, as the premise that
+    it is most often called on valid microcode is no longer valid due to
+    the recovery loader.
+  * iucode_tool(8): fix parameter of --write-named-to.  The manpage text
+    was incorrectly naming the parameter of the option --write-named-to to
+    be a file.  It is a directory, as documented for the short version of
+    the same option (-W).
+  * iucode_tool(8): add two examples for the recovery loader (-tr): how to
+    use it to load microcode from an early initramfs, and also how to use
+    it to update an Arch-linux style separate early initramfs.
+  * Changelog: correct the indentation of older Changelog entries.
+  * Changelog: switch back to a "raw" changelog style.  Writing user-level
+    documentation is a much better use of time than simplifying Changelogs.
+
+2015-10-03, iucode_tool v1.4
+
+  * Implement a microcode recover mode (-tr) for the binary loader,
+    which searches for valid microcode(s) inside a generic (binary)
+    data file of unknown format
+    + Do not store an empty microcode bundle for further processing,
+      even if the low-level loader didn't return an error status (this
+      is for future-proofing, currently all of them return errors)
+    + Report unaligned microcode as an internal error in the iterator
+      functions as well as in intel_ucode_check_microcode(), but add
+      a private function to allow for microcode checking without
+      alignment restrictions
+    + Add intel_ucode_scan_for_microcode() to search for valid micro-
+      code(s) inside a memory buffer, regardless of alignment
+    + Factor out microcode checksumming into is_zero_checksum(), and
+      change it to avoid unaligned dword reads.  This avoids a long
+      time gcc -O3 loop vectorizing optimization issue which is still
+      present in gcc 5.2.1
+  * Notify the user when we fail to find any microcode in a data file
+    when the low-level loader returns ENOENT, and continue processing
+    in that case
+  * Report empty data files using ENOENT instead of EINVAL in the
+    low-level loader functions.  This is can happen to non-empty files
+    in the -tr and -td loaders, as well as when reading an empty file
+    from stdin, FIFO, pipe, character device, etc.
+  * In -vv mode, print a message before reading a file, and also when
+    skipping empty files or reading a directory
+  * Fix spelling of default-firmware-dir option in configure,
+    thanks to Timo Gurr for the report and fix
+  * Minor cosmetic fixes:
+    + Typo fix: replace "interator" with "iterator" everywhere
+    + Add comment about not closing a fd in fix_fds() should it
+      be copied elsewhere, fix by Imran Zaman
+    + Add comment that one must not close(fd) after fdopendir(fd)
+      succeeded.  Both human programmers and static checkers get
+      confused over this one and mistake it for leak
+  * Replace "deselect" with "unselect" in the manpage text
+
+2015-05-24, iucode_tool v1.3
+
+  * Reopen stdin/stdout/stderr file descriptors using /dev/null if any
+    of them are closed at program start.  Before this change, it was
+    not safe to call iucode_tool with stdout and/or stderr closed
+  * Ignore multiple attempts to read microcode data from stdin, as all
+    data will have been read by the first attempt
+  * Enforce a maximum of UINT_MAX data files.  The number of microcodes
+    per data file is also limited to UINT_MAX (actually, less than that
+    due to other limits).  Use "unsigned int" instead of "unsigned long
+    int" for variables related to these (such as microcode group id and
+    microcode id)
+  * Document in the manpage the arbitrary maximum limit of 1GiB worth of
+    binary data per microcode data file.  The other limits are too large
+    to bother documenting
+  * Microcode data file loader fixes and enhancements:
+    + Detect and report stream IO errors while reading .dat files
+    + Detect and report IO errors from fdstat() at the beginning
+      of the binary microcode loader
+    + Print the line number when reporting .dat parsing errors
+    + Allow comments after valid data for .dat files, previously they
+      had to be on a line of their own
+    + Rework the .dat parser to make it less convoluted, and optimize it
+      for the exact .dat file layout Intel has been using in the last 15
+      years
+  * Minor build fixes
+    + Silence unused parameter warning on --disable-cpuid-device build
+    + Silence unused function warning on --disable-valgrind-build build
+    + configure.ac: minor updates: add AC_COPYRIGHT; move AC_PREREQ
+      before AC_INIT; remove commented-out AM_MAINTAINER_MODE
+  * Reorder fields to pack some structs on 64 bits
+  * Reorder some struct fields for better cache locality
+
+2015-03-29, iucode_tool v1.2.1
+
+  * Update README and NEWS to mention the new project home
+    location at GitLab, due to gitorious.org's planned shutdown
+    at the end of 2015-05
+  * Manpage fixes and enhancements:
+    + Minor typography/groff fixes
+    + Format long examples into multi-line format
+    + Add examples for --scan-system, -s and --write-earlyfw
+    + Minor changes to the other examples
+    + Document iucode_tool use of stdout and stderr
+    + Document that iucode_tool ignores the loader version microcode
+      metadata field entirely
+    + Document the use of the "0x" and "0" prefixes to denote hexadecimal
+      and octal bases for the signature and pf_mask parameters of the -s
+      option
+  * Flush stdout before writing to stderr.  We want stdout/stderr output
+    to be correctly interleaved when buffering is in effect due to stdout
+    redirection
+  * Flush stdout right after do_process_microcodes() is called, so that
+    iucode_tool will output the result of --list and --list-all at that
+    point in time
+  * Minor argp parser fixes
+    + Don't include EOL in argp_error() strings
+    + Surround incorrect parameters with single quotes in parser error
+      messages
+  * Report internal errors (EINVAL) from uclist_add_signature() as
+    such.  While at it, cosmetic fix the same error message for
+    uclist_merge_signature()
+
+2015-02-14, iucode_tool v1.2
+
+  * Documentation updates:
+    + README: correct the /lib/firmware example to not remove execute
+      permissions from the /lib/firmware/intel-ucode directory, and
+      enhance the text to make it clear those are examples of fixing the
+      permissions and may need to be adjusted
+    + README: enhance the README text and update it to the post-Haswell
+      microcode update reality.  Also, add a table of pf flags and
+      masks, to make the text easier to understand and stop using tabs
+      for the layout
+    + iucode_tool(8): update Linux notes to match reality as of kernel
+      3.18.  Also reword and improve the overall text
+  * iucode_tool: use the cpuid instruction (via gcc's cpuid.h) directly
+    to implement --scan-system.  This assumes there is only one
+    signature per x86/x86-64 system, which is a safe assumption at this
+    time.  One can have processors with distinct pf flags and the same
+    signature in a x86/x86-64 multi-processor system, so --scan-system
+    will match any pf_mask.  When compile-time configured with
+    --enable-cpuid-device (disabled by default), iucode-tool will use
+    the cpuid instruction directly and also scan every processor using
+    the kernel cpuid device.  This fixes an scalability issue in systems
+    with many processors
+
+2014-10-28, iucode_tool v1.1.1
+
+  * Fix issues found by the Coverity static checker:
+    + CID 72165: An off-by-one error caused an out-of-bounds write to a
+      buffer while loading large microcode data files in ASCII format
+      (will not be triggered by the data files currently issued by Intel)
+    + CID 72163: The code could attempt to close an already closed file
+      descriptor in certain conditions when processing directories
+    + CID 72161: Stop memory leak in error path when loading microcode
+      data files
+    + CID 72159, 72164, 72166, 72167, 72168, 72169: Cosmetic issues
+      that could not cause problems at runtime.
+
+2014-09-09, iucode_tool v1.1
+
+  * Don't output duplicates for microcodes with extended signatures
+    to the same file or to the kernel
+  * When writing an early initramfs, pad its trailer with zeros to
+    the next 1024-byte boundary.  This is done so that the next
+    initramfs segment will be better aligned, just in case.  The
+    entire cpio metadata overhead is now exactly 1024 bytes
+  * Manpage style fixes: use iucode_tool consistently, groff formatting
+  * Refuse to load ridiculously large data files (limit set to 1GiB)
+
+2014-08-12, iucode_tool v1.0.3
+
+  * Add a work-around for a Linux kernel bug on the early initramfs
+    microcode update support.  The work-around appends non-standard NUL
+    padding to the file name inside the cpio archive, so as to have the
+    the microcode data 16-byte-aligned to the start of the file
+  * Document file alignment requirements for the early initramfs
+    archive.
+  * Properly check microcode metadata date to be valid packed BCD in
+    strict mode
+  * Do not assume a non-zero microcode Total Size field to be valid, it
+    is valid only when the Data Size field is non-zero.  Fortunately,
+    Intel always set reserved fields to zero on released microcode, so
+    this bug was never (and is unlikely to ever be) triggered
+  * Fix several cosmetic and minor code issues
+  * minor corrections, enhancements and style fixes to the manpage
+
+2014-05-10, iucode_tool v1.0.2
+
+  * Mention iucode-tool's new home at gitorious in documentation.
+  * Warn user when --scan-system fails due to errors such as a lack
+    of permission to access the cpuid devices
+  * Use the libc optimized memcmp() to compare microcode
+  * Minor manpage updates
+  * --strict-checks now verifies that the microcode update date
+    is not utterly insane
+
+2013-12-14, iucode_tool v1.0.1
+
+  * Fix several cosmetic code issues
+  * Manpage updates
+    + Make it clear that the output order of microcodes is not stabilized
+    + Make it clear that iucode_tool always break links when writing a
+      data file, and that it doesn't replace files atomically, so they
+      can get corrupted/lost if iucode-tool is interrupted while writing.
+    + Reword several notes for better readability
+  * Use openat() when loading from a directory
+  * Use openat() when creating files in a directory
+
+2013-05-25, iucode_tool v1.0
+
+  * Add verbose title to manpage iucode_tool(8)
+  * Add support to write an early initramfs archive for Linux v3.9.
+    This early initramfs archive will need to be prepended to the
+    regular initramfs to allow the kernel to load the microcode
+    update
+
+2013-03-28, iucode_tool v0.9
+
+  * Document missing -W, --write-named option in iucode_tool(8)
+    manpage
+  * Print the number of unique signatures in verbose mode
+  * Add loose date-based filtering (--loose-date-filtering option),
+    which is useful when trying to select microcode for very old
+    processors
+  * Skip empty files and directories instead of aborting with an
+    error
+  * Add an option to default to an empty selection (-s!)
+  * Ensure that microcodes with the same metadata have the same
+    opaque data (payload) when in --strict-checks mode (default)
+  * Update copyright notices and manpage date
+
+2012-08-26, iucode_tool v0.8.3
+
+  * Fix regression introduced in 0.8.2 that caused all microcodes
+    to be selected by --scan-system on a box with unsupported
+    processors (e.g. non-Intel)
+  * Update README: Intel has some microcode update information in
+    some public processor specification update documents
+
+2012-07-28, iucode_tool v0.8.2
+
+  * Update documentation and manpages for the new microcode
+    update interface in Linux v3.6.
+  * Fail safe when --scan-system cannot access the cpuid driver:
+    instead of not selecting anything, still select all microcodes
+    if no other microcode selection option was used.
+  * Move NEWS to ChangeLog
+
+2012-07-24, iucode_tool v0.8.1
+
+  * Updates to the iucode_tool(8) manpage, disclosing the
+    need for the cpuid driver for iucode_tool --scan-system,
+    and more details about the sysfs microcode reload
+    interface.
+  * Output an error message if --scan-system could not find
+    any cpuid nodes in sysfs.
+
+2012-06-07, iucode_tool v0.8
+
+  * First release to the general public.  Please refer to
+    the README file for the irrelevant details, and to the
+    manpage for the relevant details.

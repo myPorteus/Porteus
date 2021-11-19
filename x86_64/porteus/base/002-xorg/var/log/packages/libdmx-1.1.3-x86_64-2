@@ -1,0 +1,56 @@
+PACKAGE NAME:     libdmx-1.1.3-x86_64-2
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libdmx-1.1.3-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libdmx: libdmx (DMX (Distributed Multihead X) extension library)
+libdmx:
+libdmx: libdmx is part of X11.
+libdmx:
+libdmx: For more information about the X.Org Foundation (the providers of the
+libdmx: X.Org implementation of the X Window System), see their website:
+libdmx:
+libdmx: http://www.x.org
+libdmx:
+libdmx:
+libdmx:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdmx-1.1.3/
+usr/doc/libdmx-1.1.3/COPYING
+usr/doc/libdmx-1.1.3/ChangeLog
+usr/doc/libdmx-1.1.3/INSTALL
+usr/doc/libdmx-1.1.3/README
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/dmxext.h
+usr/lib64/
+usr/lib64/libdmx.la
+usr/lib64/libdmx.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/dmx.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/DMX.3.gz
+usr/man/man3/DMXAddInput.3.gz
+usr/man/man3/DMXAddScreen.3.gz
+usr/man/man3/DMXChangeDesktopAttributes.3.gz
+usr/man/man3/DMXChangeScreensAttributes.3.gz
+usr/man/man3/DMXForceWindowCreation.3.gz
+usr/man/man3/DMXGetDesktopAttributes.3.gz
+usr/man/man3/DMXGetInputAttributes.3.gz
+usr/man/man3/DMXGetInputCount.3.gz
+usr/man/man3/DMXGetScreenAttributes.3.gz
+usr/man/man3/DMXGetScreenCount.3.gz
+usr/man/man3/DMXGetWindowAttributes.3.gz
+usr/man/man3/DMXQueryExtension.3.gz
+usr/man/man3/DMXQueryVersion.3.gz
+usr/man/man3/DMXRemoveInput.3.gz
+usr/man/man3/DMXRemoveScreen.3.gz
+usr/man/man3/DMXSync.3.gz

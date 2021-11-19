@@ -1,0 +1,99 @@
+PACKAGE NAME:     kmod-25-x86_64-1
+COMPRESSED PACKAGE SIZE:     204K
+UNCOMPRESSED PACKAGE SIZE:     790K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/kmod-25-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kmod: kmod (kernel module tools and library)
+kmod:
+kmod: kmod is a set of tools to handle common tasks with Linux kernel 
+kmod: modules like insert, remove, list, check properties, resolve 
+kmod: dependencies and aliases.  The aim is to be compatible with the tools,
+kmod: configurations and indexes from the module-init-tools project.
+kmod:
+kmod: These tools are designed on top of libkmod, a library that is 
+kmod: shipped with kmod.
+kmod:
+kmod: Project home:  http://www.kernel.org/pub/linux/utils/kernel/kmod/
+FILE LIST:
+./
+bin/
+etc/
+etc/modprobe.d/
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libkmod.so.2.3.3
+sbin/
+sbin/kmod
+usr/
+usr/doc/
+usr/doc/kmod-25/
+usr/doc/kmod-25/COPYING
+usr/doc/kmod-25/NEWS
+usr/doc/kmod-25/README
+usr/doc/kmod-25/TODO
+usr/include/
+usr/include/libkmod.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libkmod.pc
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/kmod/
+usr/lib64/python2.7/site-packages/kmod/__init__.py
+usr/lib64/python2.7/site-packages/kmod/__init__.pyc
+usr/lib64/python2.7/site-packages/kmod/__init__.pyo
+usr/lib64/python2.7/site-packages/kmod/_util.la
+usr/lib64/python2.7/site-packages/kmod/_util.so
+usr/lib64/python2.7/site-packages/kmod/error.py
+usr/lib64/python2.7/site-packages/kmod/error.pyc
+usr/lib64/python2.7/site-packages/kmod/error.pyo
+usr/lib64/python2.7/site-packages/kmod/kmod.la
+usr/lib64/python2.7/site-packages/kmod/kmod.so
+usr/lib64/python2.7/site-packages/kmod/list.la
+usr/lib64/python2.7/site-packages/kmod/list.so
+usr/lib64/python2.7/site-packages/kmod/module.la
+usr/lib64/python2.7/site-packages/kmod/module.so
+usr/lib64/python2.7/site-packages/kmod/version.py
+usr/lib64/python2.7/site-packages/kmod/version.pyc
+usr/lib64/python2.7/site-packages/kmod/version.pyo
+usr/lib64/python3.6/
+usr/lib64/python3.6/site-packages/
+usr/lib64/python3.6/site-packages/kmod/
+usr/lib64/python3.6/site-packages/kmod/__init__.py
+usr/lib64/python3.6/site-packages/kmod/__pycache__/
+usr/lib64/python3.6/site-packages/kmod/__pycache__/__init__.cpython-36.opt-1.pyc
+usr/lib64/python3.6/site-packages/kmod/__pycache__/__init__.cpython-36.pyc
+usr/lib64/python3.6/site-packages/kmod/__pycache__/error.cpython-36.opt-1.pyc
+usr/lib64/python3.6/site-packages/kmod/__pycache__/error.cpython-36.pyc
+usr/lib64/python3.6/site-packages/kmod/__pycache__/version.cpython-36.opt-1.pyc
+usr/lib64/python3.6/site-packages/kmod/__pycache__/version.cpython-36.pyc
+usr/lib64/python3.6/site-packages/kmod/_util.la
+usr/lib64/python3.6/site-packages/kmod/_util.so
+usr/lib64/python3.6/site-packages/kmod/error.py
+usr/lib64/python3.6/site-packages/kmod/kmod.la
+usr/lib64/python3.6/site-packages/kmod/kmod.so
+usr/lib64/python3.6/site-packages/kmod/list.la
+usr/lib64/python3.6/site-packages/kmod/list.so
+usr/lib64/python3.6/site-packages/kmod/module.la
+usr/lib64/python3.6/site-packages/kmod/module.so
+usr/lib64/python3.6/site-packages/kmod/version.py
+usr/man/
+usr/man/man5/
+usr/man/man5/depmod.d.5.gz
+usr/man/man5/modprobe.d.5.gz
+usr/man/man5/modules.dep.5.gz
+usr/man/man5/modules.dep.bin.5.gz
+usr/man/man8/
+usr/man/man8/depmod.8.gz
+usr/man/man8/insmod.8.gz
+usr/man/man8/kmod.8.gz
+usr/man/man8/lsmod.8.gz
+usr/man/man8/modinfo.8.gz
+usr/man/man8/modprobe.8.gz
+usr/man/man8/rmmod.8.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/kmod

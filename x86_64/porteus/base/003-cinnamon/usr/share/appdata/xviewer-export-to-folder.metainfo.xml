@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>xviewer-export-to-folder</id>
+  <extends>xviewer.desktop</extends>
+  <name>Export to Folder</name>
+  <name xml:lang="cs">Exportovat do složky</name>
+  <name xml:lang="da">Eksportér til mappe</name>
+  <name xml:lang="de">In Ordner exportieren</name>
+  <name xml:lang="el">Εξαγωγή σε φάκελο</name>
+  <name xml:lang="en_GB">Export to Folder</name>
+  <name xml:lang="es">Exportar a una carpeta</name>
+  <name xml:lang="eu">Esportatu karpetara</name>
+  <name xml:lang="fi">Vie kansioon</name>
+  <name xml:lang="fr">Exporter vers le dossier</name>
+  <name xml:lang="gl">Exportar a un cartafol</name>
+  <name xml:lang="he">יצוא לתיקייה</name>
+  <name xml:lang="hr">Izvezi u mapu</name>
+  <name xml:lang="hu">Exportálás mappába</name>
+  <name xml:lang="id">Ekspor ke Folder</name>
+  <name xml:lang="it">Esporta nella cartella</name>
+  <name xml:lang="ko">폴더로 내보내기</name>
+  <name xml:lang="lt">Eksportuoti į aplanką</name>
+  <name xml:lang="lv">Eksportēt uz mapi</name>
+  <name xml:lang="pl">Eksport do katalogu</name>
+  <name xml:lang="pt">Exportar para Pasta</name>
+  <name xml:lang="pt_BR">Exportar para pasta</name>
+  <name xml:lang="ru">Экспортировать в папку</name>
+  <name xml:lang="sk">Export do priečinka</name>
+  <name xml:lang="sl">Izvozi v mapo</name>
+  <name xml:lang="sr">Извези у фасциклу</name>
+  <name xml:lang="sr@latin">Izvezi u fasciklu</name>
+  <name xml:lang="zh_CN">导出到文件夹</name>
+  <summary>Export the current image to a separate directory</summary>
+  <summary xml:lang="cs">Exportuje aktuální obrázek do zvláštní složky</summary>
+  <summary xml:lang="da">Eksportér det nuværende billede til en separat mappe</summary>
+  <summary xml:lang="de">Das aktuelle Bild in einen separaten Ordner exportieren</summary>
+  <summary xml:lang="el">Εξαγωγή της τρέχουσας εικόνας σε ξεχωριστό κατάλογο</summary>
+  <summary xml:lang="en_GB">Export the current image to a separate directory</summary>
+  <summary xml:lang="es">Exportar la imagen actual a otra carpeta</summary>
+  <summary xml:lang="eu">Esportatu uneko irudia bereiztutako direktorio batera</summary>
+  <summary xml:lang="fi">Vie nykyinen kuva erilliseen kansioon</summary>
+  <summary xml:lang="fr">Exporter l'image actuelle dans un répertoire distinct</summary>
+  <summary xml:lang="gl">Exportar a imaxe actual a outro cartafol</summary>
+  <summary xml:lang="he">יצוא התמונה הנוכחית לתיקייה נפרדת</summary>
+  <summary xml:lang="hr">Izvezi trenutnu sliku u posebnu mapu</summary>
+  <summary xml:lang="hu">A jelenlegi kép exportálása külön könyvtárba</summary>
+  <summary xml:lang="id">Ekspor gambar sekarang ke direktori terpisah</summary>
+  <summary xml:lang="it">Esporta l'immagine attuale in una directory separata</summary>
+  <summary xml:lang="ko">현재 이미지를 각각의 디렉터리로 내보냅니다</summary>
+  <summary xml:lang="lt">Eksportuoti dabartinį paveikslėlį į atskirą katalogą</summary>
+  <summary xml:lang="lv">Eksportēt pašreizējo attēlu uz atsevišķu direktoriju</summary>
+  <summary xml:lang="pl">Eksportuje bieżący obraz do oddzielnego katalogu</summary>
+  <summary xml:lang="pt">Exportar a imagem atual para um diretório separado</summary>
+  <summary xml:lang="pt_BR">Exportar a imagem atual para um diretório diferente</summary>
+  <summary xml:lang="ru">Экспортировать текущее изображение в отдельный каталог</summary>
+  <summary xml:lang="sk">Exportuje aktuálny obrázok do samostatného adresára</summary>
+  <summary xml:lang="sl">Izvozi trenutno sliko v ločeno mapo</summary>
+  <summary xml:lang="sr">Извезите текућу слику у засебну фасциклу</summary>
+  <summary xml:lang="sr@latin">Izvezite tekuću sliku u zasebnu fasciklu</summary>
+  <summary xml:lang="zh_CN">将当前图像导出到一个单独的目录</summary>
+  <url type="homepage">https://github.com/linuxmint/xviewer-plugins</url>
+  <url type="bugtracker">https://github.com/linuxmint/xviewer-plugins/issues</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <updatecontact>i.gnatenko.brain@gmail.com</updatecontact>
+</component>

@@ -1,0 +1,43 @@
+PACKAGE NAME:     win8-mouse-cursors-theme-1.0-noarch-1ftm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     240K
+PACKAGE LOCATION: win8-mouse-cursors-theme-1.0-noarch-1ftm.txz
+PACKAGE DESCRIPTION:
+win8-mouse-cursors-theme: win8 mouse cursors theme
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme: http://kde-look.org/content/show.php/Windows+8+cursors?content=155025
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+win8-mouse-cursors-theme:
+FILE LIST:
+./
+usr/
+usr/share/
+usr/share/pixmaps/
+usr/share/pixmaps/win8/
+usr/share/pixmaps/win8/cursors/
+usr/share/pixmaps/win8/cursors/draped_box
+usr/share/pixmaps/win8/cursors/center_ptr
+usr/share/pixmaps/win8/cursors/arrow
+usr/share/pixmaps/win8/cursors/size_hor
+usr/share/pixmaps/win8/cursors/unavailable
+usr/share/pixmaps/win8/cursors/xterm
+usr/share/pixmaps/win8/cursors/question_arrow
+usr/share/pixmaps/win8/cursors/aero_busy
+usr/share/pixmaps/win8/cursors/hand
+usr/share/pixmaps/win8/cursors/size_bdiag
+usr/share/pixmaps/win8/cursors/size_ver
+usr/share/pixmaps/win8/cursors/fleur
+usr/share/pixmaps/win8/cursors/pencil
+usr/share/pixmaps/win8/cursors/size_fdiag
+usr/share/pixmaps/win8/cursors/aero_working
+usr/share/pixmaps/default/
+usr/share/pixmaps/default/index.theme
+install/
+install/doinst.sh
+install/slack-desc

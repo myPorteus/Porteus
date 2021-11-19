@@ -1,0 +1,37 @@
+PACKAGE NAME:     xf86-video-neomagic-1.2.9-x86_64-3
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xf86-video-neomagic-1.2.9-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xf86-video-neomagic: xf86-video-neomagic (NeoMagic video driver for the Xorg X server)
+xf86-video-neomagic:
+xf86-video-neomagic: xf86-video-neomagic is part of X11.
+xf86-video-neomagic:
+xf86-video-neomagic: For more information about the X.Org Foundation (the providers of the
+xf86-video-neomagic: X.Org implementation of the X Window System), see their website:
+xf86-video-neomagic:
+xf86-video-neomagic: http://www.x.org
+xf86-video-neomagic:
+xf86-video-neomagic:
+xf86-video-neomagic:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-neomagic-1.2.9/
+usr/doc/xf86-video-neomagic-1.2.9/COPYING
+usr/doc/xf86-video-neomagic-1.2.9/ChangeLog
+usr/doc/xf86-video-neomagic-1.2.9/INSTALL
+usr/doc/xf86-video-neomagic-1.2.9/README
+usr/doc/xf86-video-neomagic-1.2.9/TODO
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/neomagic_drv.la
+usr/lib64/xorg/modules/drivers/neomagic_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/neomagic.4.gz

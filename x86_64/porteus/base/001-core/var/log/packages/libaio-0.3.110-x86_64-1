@@ -1,0 +1,33 @@
+PACKAGE NAME:     libaio-0.3.110-x86_64-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/libaio-0.3.110-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libaio: libaio (asynchronous I/O library)
+libaio:
+libaio: The Linux-native asynchronous I/O facility ("async I/O", or "aio")
+libaio: has a richer API and capability set than the simple POSIX async I/O
+libaio: facility.  This library provides the Linux-native API for async I/O.
+libaio: The POSIX async I/O facility requires this library in order to
+libaio: provide kernel-accelerated async I/O capabilities, as do applications
+libaio: which require the Linux-native async I/O API.
+libaio:
+libaio:
+libaio:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libaio.so.1.0.1
+usr/
+usr/doc/
+usr/doc/libaio-0.3.110/
+usr/doc/libaio-0.3.110/COPYING
+usr/doc/libaio-0.3.110/ChangeLog
+usr/doc/libaio-0.3.110/INSTALL
+usr/doc/libaio-0.3.110/TODO
+usr/include/
+usr/include/libaio.h
+usr/lib64/

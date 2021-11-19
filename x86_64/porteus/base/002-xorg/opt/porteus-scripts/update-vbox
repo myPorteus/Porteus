@@ -1,0 +1,96 @@
+#!/bin/bash
+
+## Easily compile VirtualBox and guest addons
+## Author: Brokenman
+
+. /usr/lib/librokenman
+
+SCRIPT="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+ICON=virtualbox.png
+PIXMAPS=/usr/share/pixmaps/porteus
+SERVER=`awk -F= '/SERVER=/{print$NF}' /etc/porteus.conf`
+link=$SERVER/i586/testing/live/update-vbox-live
+trap cleanup 0
+
+cleanup(){
+rm /tmp/.vbox-live 2>/dev/null
+exit
+}
+
+btnNoTxt(){
+if [ "$#" -eq 3 ]; then
+echo '<button tooltip-text="'$1'"><input file>"'$PIXMAPS/$2'"</input><width>'$3'</width>'
+	else
+if [ "$#" -eq 4 ]; then
+echo '<button tooltip-text="'$1'"><input file '$2'="'$3'"></input><width>'$4'</width>'
+fi fi
+}
+
+# Switch to root
+if [ `whoami` != "root" ]; then
+    /opt/porteus-scripts/xorg/psu "$SCRIPT" || sleep 1
+    exit
+fi
+
+export MAIN_DIALOG='
+<window window_position="1" title="'$DRIVER'" image-name="/usr/share/pixmaps/porteus/'$ICON'" allow-shrink="false" width-request="500">
+<vbox margin="10">
+	<hbox>
+		<pixmap>
+			<input file>/usr/share/pixmaps/porteus/'$ICON'</input>
+			<width>64</width>
+		</pixmap>
+		'`txtcolor 400 darkred x-large bold "  Porteus VirtualBox builder"`'
+	</hbox>
+	'`hsep`'
+	'`txtmarkup 460 "This applications compiles VirtualBox locally on your own computer for optimum compatibility. You can choose a local file or download the required file from the internet. Crippled kernel sources will be required for compilation. If you do not have these you will be prompted to download the file."`'
+	'`blankline`'
+	<frame>
+	<hbox>
+		'`txtmarkup 220 "Choose an option: "`'
+		<comboboxtext active="6" focus-on-click="false" button-sensitivity="1">
+			<variable>vbox_live</variable>
+			<item>VirtualBox</item>
+			<item>VirtualBox Guest additions</item>
+		</comboboxtext>
+	</hbox>
+	'`blankline`'
+	</frame>
+		<hbox>
+		'`butcancel`'
+		'`butok`'
+	</hbox>
+</vbox>
+</window>
+'
+gtkdialog -p MAIN_DIALOG > /tmp/.vbox-live
+. /tmp/.vbox-live
+
+if [ "$EXIT" = "abort" -o "$EXIT" = "Cancel" -o "$vbox_live" = "" ]; then
+   exit
+fi
+
+answer=$vbox_live
+## Internet check
+if [ ! -e /tmp/update-vbox-live ]; then
+if wget --spider -v "$link"; then
+	export HAS_NO_INTERNET=0
+	wget $link -P /tmp
+		else
+	export HAS_NO_INTERNET=1
+	gtk_message "An internet connection was not found or the porteus server was not reachable. Exiting now." 450 gtk-dialog-warning
+	cleanup
+fi
+fi
+
+chmod +x /tmp/update-vbox-live
+mv /tmp/update-vbox-live /usr/local/bin/
+
+case $answer in
+VirtualBox )
+/usr/local/bin/update-vbox-live vbox
+;;
+"VirtualBox Guest additions" )
+/usr/local/bin/update-vbox-live vboxguest
+;;
+esac

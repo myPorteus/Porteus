@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /sbin/e2fsck -C 0 $*

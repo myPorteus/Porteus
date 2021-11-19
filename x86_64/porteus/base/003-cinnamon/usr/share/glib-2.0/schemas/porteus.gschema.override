@@ -1,0 +1,13 @@
+[org.cinnamon.desktop.background]
+picture-uri='file:///usr/share/wallpapers/porteus.jpg'
+primary-color='#000000'
+secondary-color='#78909c'
+
+[org.cinnamon.settings-daemon.peripherals.touchpad]
+disable-while-typing=true
+
+[org.cinnamon.theme]
+name="cinnamon"
+
+[org.cinnamon.desktop.default-applications.terminal]
+exec="gnome-terminal"

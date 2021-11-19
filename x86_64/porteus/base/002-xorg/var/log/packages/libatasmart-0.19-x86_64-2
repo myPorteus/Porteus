@@ -1,0 +1,40 @@
+PACKAGE NAME:     libatasmart-0.19-x86_64-2
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/libatasmart-0.19-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libatasmart: libatasmart (ATA S.M.A.R.T. library)
+libatasmart:
+libatasmart: libatasmart is a lean, small and clean implementation of an ATA
+libatasmart: S.M.A.R.T. ((Self-Monitoring, Analysis and Reporting Technology)
+libatasmart: reading and parsing library.  S.M.A.R.T. is a system used by hard
+libatasmart: drives to monitor factors that may impact drive reliability in the
+libatasmart: hope of predicting a drive failure before it occurs.
+libatasmart:
+libatasmart: Homepage: http://0pointer.de/blog/projects/being-smart.html
+libatasmart:
+libatasmart:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libatasmart-0.19/
+usr/doc/libatasmart-0.19/LGPL
+usr/doc/libatasmart-0.19/README
+usr/include/
+usr/include/atasmart.h
+usr/lib64/
+usr/lib64/libatasmart.la
+usr/lib64/libatasmart.so.4.0.5
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libatasmart.pc
+usr/sbin/
+usr/sbin/skdump
+usr/sbin/sktest
+usr/share/
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/atasmart.vapi

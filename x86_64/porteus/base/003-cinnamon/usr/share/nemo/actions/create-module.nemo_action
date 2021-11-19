@@ -1,0 +1,16 @@
+[Nemo Action]
+
+Name=Create module
+Name[ru]=Создать xzm модуль
+
+Comment=Create module from folder
+Comment[ru]=Создать из папки модуль для Porteus
+
+Exec=/opt/porteus-scripts/context-menu/create-module "%F"
+
+Icon-Name=cdr
+
+Selection=s
+
+Mimetypes=inode/directory
+

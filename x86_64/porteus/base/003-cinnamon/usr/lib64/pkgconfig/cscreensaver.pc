@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: cscreensaver
+Description: Small utility lib used by cinnamon-screensaver v3.1+ to provide a GdkWindow filter (not currently introspectable)
+Requires: gobject-2.0 gtk-3.0 gdk-3.0
+Version: 3.6.1
+Libs: -L${libdir} -lcscreensaver
+Cflags: -I${includedir}/cscreensaver

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgee-0.8.so )
+( cd usr/lib64 ; ln -sf libgee-0.8.so.2.6.0 libgee-0.8.so )
+( cd usr/lib64 ; rm -rf libgee-0.8.so.2 )
+( cd usr/lib64 ; ln -sf libgee-0.8.so.2.6.0 libgee-0.8.so.2 )

@@ -1,0 +1,31 @@
+PACKAGE NAME:     boost-extra-1.66.0-x86_64-1jay
+COMPRESSED PACKAGE SIZE:     128K
+UNCOMPRESSED PACKAGE SIZE:     530K
+PACKAGE LOCATION: /pc/git/x86_64/pkg/002/boost-extra-1.66.0-x86_64-1jay.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/libboost_atomic.so.1.66.0
+usr/lib64/libboost_program_options.so.1.66.0
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/libboost_atomic.so.1.66.0
+usr/lib64/libboost_program_options.so.1.66.0
+var/
+var/log/
+var/log/packages/
+var/log/packages/boost-extra-1.66.0-x86_64-1jay
+var/log/removed_packages/
+var/log/removed_scripts/
+var/log/scripts/
+var/log/scripts/boost-extra-1.66.0-x86_64-1jay
+var/log/setup/
+var/log/setup/tmp/

@@ -1,0 +1,33 @@
+PACKAGE NAME:     xf86-video-ast-1.1.5-x86_64-3
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/xf86-video-ast-1.1.5-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xf86-video-ast: xf86-video-ast (ASpeed Technologies graphics driver for Xorg X server)
+xf86-video-ast:
+xf86-video-ast: xf86-video-ast is part of X11.
+xf86-video-ast:
+xf86-video-ast: For more information about the X.Org Foundation (the providers of the
+xf86-video-ast: X.Org implementation of the X Window System), see their website:
+xf86-video-ast:
+xf86-video-ast: http://www.x.org
+xf86-video-ast:
+xf86-video-ast:
+xf86-video-ast:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-ast-1.1.5/
+usr/doc/xf86-video-ast-1.1.5/COPYING
+usr/doc/xf86-video-ast-1.1.5/ChangeLog
+usr/doc/xf86-video-ast-1.1.5/INSTALL
+usr/doc/xf86-video-ast-1.1.5/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/ast_drv.la
+usr/lib64/xorg/modules/drivers/ast_drv.so

@@ -1,0 +1,116 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Author: brokenman@porteus.org
+#
+# This script uploads a file to transfer.sh and gives you a link
+
+# Source some useful porteus functions
+. /usr/share/porteus/porteus-functions
+get_colors
+
+# Set some variables
+SERVER=https://transfer.sh
+
+usage(){
+echo
+green "How to use transfer"
+echo "Usage examples:"
+echo
+echo "## Transfer single/multiple files"
+echo "transfer /path/to/file.txt"
+echo
+echo "## Encrypt text file and transfer"
+echo "transfer -e /path/to/file.txt" 
+#cat /tmp/hello.txt|gpg -ac -o-|curl -X PUT --upload-file "-" https://transfer.sh/test.txt
+echo
+echo "## Download file and decrypt"
+echo "transfer -d https://transfer.sh/1lDau/file.txt"
+#curl https://transfer.sh/1lDau/test.txt|gpg -o- > /tmp/hello.txt
+echo
+}
+
+[ -z $1 ] && { usage; exit; }
+
+case $1 in
+	-h|--help)
+	usage
+	exit ;;
+esac
+
+########## Start checks
+bold "Starting checks ..."
+
+# Check for connection
+is_online_url http://kernel.org || { red "No internet connection found."; exit; }
+
+echo
+######### Main case
+case $1 in
+	-e )
+shift
+# Make sure file exists
+[ ! -e $1 ] && { sayerror "$1 not found"; exit; }
+
+# Make sure file is a text file
+file $1 | grep -qo text && istext=0
+[ -z $istext ] && { sayerror "$1 not a text file"; exit; }
+
+cat $1|gpg -ac -o-|curl -X PUT --upload-file "-" https://transfer.sh/test.txt
+;;
+	-d )
+shift
+curl $1|gpg -o- > /tmp/.tfile.txt
+if [ $? -eq 0 ]; then
+	echo
+	echo "##### MESSAGE #####"
+	cat /tmp/.tfile.txt
+		else
+	sayerror "There was an error during decryption."
+fi
+rm /tmp/.tfile.txt
+echo
+exit
+;;
+	*)
+# Make sure files exist
+for a in $@; do
+	if [ ! -e $a ]; then
+		sayerror "$a not found"
+		continue
+			else
+		sayok "$a exists"
+		fupload+=( "-F filedata=@$a" )
+	fi
+done
+curl --progress-bar -i ${fupload[@]} https://transfer.sh/ 
+if [ $? -eq 0 ]; then
+	echo
+	green "Success"
+		else
+	sayerror "There was an error during upload."
+fi
+echo
+exit
+;;
+esac
+

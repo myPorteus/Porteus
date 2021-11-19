@@ -1,0 +1,62 @@
+PACKAGE NAME:     rsync-3.1.3-x86_64-1
+COMPRESSED PACKAGE SIZE:     328K
+UNCOMPRESSED PACKAGE SIZE:     700K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/rsync-3.1.3-x86_64-1.txz
+PACKAGE DESCRIPTION:
+rsync: rsync (remote file sync)
+rsync:
+rsync: rsync is a replacement for rcp that has many more features.  It
+rsync: uses the "rsync algorithm" which provides a very fast method for
+rsync: bringing remote files into sync.  It does this by sending just the
+rsync: differences in the files across the link, without requiring that both
+rsync: sets of files are present at one of the ends of the link beforehand.
+rsync: rsync was written by Andrew Tridgell and Paul Mackerras.
+rsync:
+rsync: Homepage:  http://rsync.samba.org
+rsync:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rsync
+usr/doc/
+usr/doc/rsync-3.1.3/
+usr/doc/rsync-3.1.3/COPYING
+usr/doc/rsync-3.1.3/INSTALL
+usr/doc/rsync-3.1.3/NEWS
+usr/doc/rsync-3.1.3/README
+usr/doc/rsync-3.1.3/TODO
+usr/doc/rsync-3.1.3/popt/
+usr/doc/rsync-3.1.3/popt/CHANGES
+usr/doc/rsync-3.1.3/popt/COPYING
+usr/doc/rsync-3.1.3/popt/README
+usr/doc/rsync-3.1.3/popt/README.rsync
+usr/doc/rsync-3.1.3/support/
+usr/doc/rsync-3.1.3/support/Makefile
+usr/doc/rsync-3.1.3/support/atomic-rsync
+usr/doc/rsync-3.1.3/support/cvs2includes
+usr/doc/rsync-3.1.3/support/deny-rsync
+usr/doc/rsync-3.1.3/support/file-attr-restore
+usr/doc/rsync-3.1.3/support/files-to-excludes
+usr/doc/rsync-3.1.3/support/git-set-file-times
+usr/doc/rsync-3.1.3/support/instant-rsyncd
+usr/doc/rsync-3.1.3/support/logfilter
+usr/doc/rsync-3.1.3/support/lsh
+usr/doc/rsync-3.1.3/support/lsh.sh
+usr/doc/rsync-3.1.3/support/mapfrom
+usr/doc/rsync-3.1.3/support/mapto
+usr/doc/rsync-3.1.3/support/mnt-excl
+usr/doc/rsync-3.1.3/support/munge-symlinks
+usr/doc/rsync-3.1.3/support/rrsync
+usr/doc/rsync-3.1.3/support/rsync-no-vanished
+usr/doc/rsync-3.1.3/support/rsync-slash-strip
+usr/doc/rsync-3.1.3/support/rsyncstats
+usr/doc/rsync-3.1.3/support/savetransfer.c
+usr/doc/rsync-3.1.3/tech_report.tex
+usr/man/
+usr/man/man1/
+usr/man/man1/rsync.1.gz
+usr/man/man5/
+usr/man/man5/rsyncd.conf.5.gz

@@ -1,0 +1,85 @@
+PACKAGE NAME:     nfs-utils-2.3.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     236K
+UNCOMPRESSED PACKAGE SIZE:     840K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/nfs-utils-2.3.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+nfs-utils: nfs-utils (Network File System daemons and utilities)
+nfs-utils:
+nfs-utils: The nfs-utils package contains the necessary daemons and utilities to
+nfs-utils: run an NFS server on Linux.
+nfs-utils:
+nfs-utils: You'll also need the rpcbind package to use NFS.
+nfs-utils:
+nfs-utils:
+nfs-utils:
+nfs-utils:
+nfs-utils:
+FILE LIST:
+./
+etc/
+etc/default/
+etc/default/nfs.new
+etc/exports.new
+etc/nfsmount.conf.new
+etc/rc.d/
+etc/rc.d/rc.nfsd.new
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/mount.nfs
+sbin/osd_login
+sbin/rpc.statd
+usr/
+usr/doc/
+usr/doc/nfs-utils-2.3.1/
+usr/doc/nfs-utils-2.3.1/COPYING
+usr/doc/nfs-utils-2.3.1/INSTALL
+usr/doc/nfs-utils-2.3.1/NEWS
+usr/doc/nfs-utils-2.3.1/README
+usr/doc/nfs-utils-2.3.1/statd/
+usr/doc/nfs-utils-2.3.1/statd/COPYING
+usr/doc/nfs-utils-2.3.1/statd/TODO
+usr/man/
+usr/man/man5/
+usr/man/man5/exports.5.gz
+usr/man/man5/nfs.5.gz
+usr/man/man5/nfs.conf.5.gz
+usr/man/man5/nfsmount.conf.5.gz
+usr/man/man7/
+usr/man/man7/nfs.systemd.7.gz
+usr/man/man7/nfsd.7.gz
+usr/man/man8/
+usr/man/man8/exportfs.8.gz
+usr/man/man8/mount.nfs.8.gz
+usr/man/man8/mountd.8.gz
+usr/man/man8/mountstats.8.gz
+usr/man/man8/nfsd.8.gz
+usr/man/man8/nfsiostat.8.gz
+usr/man/man8/nfsstat.8.gz
+usr/man/man8/rpcdebug.8.gz
+usr/man/man8/showmount.8.gz
+usr/man/man8/sm-notify.8.gz
+usr/man/man8/statd.8.gz
+usr/man/man8/umount.nfs.8.gz
+usr/sbin/
+usr/sbin/exportfs
+usr/sbin/mountstats
+usr/sbin/nfsiostat
+usr/sbin/nfsstat
+usr/sbin/rpc.mountd
+usr/sbin/rpc.nfsd
+usr/sbin/rpcdebug
+usr/sbin/showmount
+usr/sbin/sm-notify
+usr/sbin/start-statd
+var/
+var/lib/
+var/lib/nfs/
+var/lib/nfs/etab.new
+var/lib/nfs/rmtab.new
+var/lib/nfs/sm.bak/
+var/lib/nfs/sm/
+var/lib/nfs/state.new
+var/log/
+var/log/nfsd/

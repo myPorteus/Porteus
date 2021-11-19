@@ -1,0 +1,75 @@
+PACKAGE NAME:     alsa-plugins-1.1.6-x86_64-1
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/alsa-plugins-1.1.6-x86_64-1.txz
+PACKAGE DESCRIPTION:
+alsa-plugins: alsa-plugins (Advanced Linux Sound Architecture Plugins)
+alsa-plugins:
+alsa-plugins: The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+alsa-plugins: functionality to the Linux operating system.
+alsa-plugins: This package includes plugins for ALSA.
+alsa-plugins:
+alsa-plugins: Website: http://www.alsa-project.org
+alsa-plugins:
+alsa-plugins:
+alsa-plugins:
+alsa-plugins:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/alsa-plugins-1.1.6/
+usr/doc/alsa-plugins-1.1.6/README-arcam-av
+usr/doc/alsa-plugins-1.1.6/README-jack
+usr/doc/alsa-plugins-1.1.6/README-maemo
+usr/doc/alsa-plugins-1.1.6/README-pcm-oss
+usr/doc/alsa-plugins-1.1.6/README-pulse
+usr/doc/alsa-plugins-1.1.6/a52.txt
+usr/doc/alsa-plugins-1.1.6/lavcrate.txt
+usr/doc/alsa-plugins-1.1.6/samplerate.txt
+usr/doc/alsa-plugins-1.1.6/speexdsp.txt
+usr/doc/alsa-plugins-1.1.6/speexrate.txt
+usr/doc/alsa-plugins-1.1.6/upmix.txt
+usr/doc/alsa-plugins-1.1.6/vdownmix.txt
+usr/lib64/
+usr/lib64/alsa-lib/
+usr/lib64/alsa-lib/libasound_module_conf_pulse.la
+usr/lib64/alsa-lib/libasound_module_conf_pulse.so
+usr/lib64/alsa-lib/libasound_module_ctl_arcam_av.la
+usr/lib64/alsa-lib/libasound_module_ctl_arcam_av.so
+usr/lib64/alsa-lib/libasound_module_ctl_dsp_ctl.la
+usr/lib64/alsa-lib/libasound_module_ctl_dsp_ctl.so
+usr/lib64/alsa-lib/libasound_module_ctl_oss.la
+usr/lib64/alsa-lib/libasound_module_ctl_oss.so
+usr/lib64/alsa-lib/libasound_module_ctl_pulse.la
+usr/lib64/alsa-lib/libasound_module_ctl_pulse.so
+usr/lib64/alsa-lib/libasound_module_pcm_a52.la
+usr/lib64/alsa-lib/libasound_module_pcm_a52.so
+usr/lib64/alsa-lib/libasound_module_pcm_alsa_dsp.la
+usr/lib64/alsa-lib/libasound_module_pcm_alsa_dsp.so
+usr/lib64/alsa-lib/libasound_module_pcm_oss.la
+usr/lib64/alsa-lib/libasound_module_pcm_oss.so
+usr/lib64/alsa-lib/libasound_module_pcm_pulse.la
+usr/lib64/alsa-lib/libasound_module_pcm_pulse.so
+usr/lib64/alsa-lib/libasound_module_pcm_speex.la
+usr/lib64/alsa-lib/libasound_module_pcm_speex.so
+usr/lib64/alsa-lib/libasound_module_pcm_upmix.la
+usr/lib64/alsa-lib/libasound_module_pcm_upmix.so
+usr/lib64/alsa-lib/libasound_module_pcm_usb_stream.la
+usr/lib64/alsa-lib/libasound_module_pcm_usb_stream.so
+usr/lib64/alsa-lib/libasound_module_pcm_vdownmix.la
+usr/lib64/alsa-lib/libasound_module_pcm_vdownmix.so
+usr/lib64/alsa-lib/libasound_module_rate_lavcrate.la
+usr/lib64/alsa-lib/libasound_module_rate_lavcrate.so
+usr/lib64/alsa-lib/libasound_module_rate_samplerate.la
+usr/lib64/alsa-lib/libasound_module_rate_samplerate.so
+usr/lib64/alsa-lib/libasound_module_rate_speexrate.la
+usr/lib64/alsa-lib/libasound_module_rate_speexrate.so
+usr/share/
+usr/share/alsa/
+usr/share/alsa/alsa.conf.d/
+usr/share/alsa/alsa.conf.d/50-pulseaudio.conf
+usr/share/alsa/alsa.conf.d/99-pulseaudio-default.conf.example

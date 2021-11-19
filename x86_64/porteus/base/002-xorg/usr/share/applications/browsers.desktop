@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Browser Selection and Update Tool
+Name[ru]=Загрузка и обновление web-браузеров
+Comment=Choose a Browser via update-scripts
+Comment[ru]=Инструмент для загрузки и обновления web-браузеров
+Exec=/opt/porteus-scripts/gtk-browser-update
+Icon=browser
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Network
+

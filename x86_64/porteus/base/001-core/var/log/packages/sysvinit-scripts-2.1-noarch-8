@@ -1,0 +1,37 @@
+PACKAGE NAME:     sysvinit-scripts-2.1-noarch-8
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/sysvinit-scripts-2.1-noarch-8.txz
+PACKAGE DESCRIPTION:
+sysvinit-scripts: sysvinit-scripts (the basic scripts used to boot your machine)
+sysvinit-scripts:
+sysvinit-scripts: These are the Slackware boot scripts, which are needed to start the
+sysvinit-scripts: machine. Sysvinit looks for these in /etc/rc.d/.
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+FILE LIST:
+./
+etc/
+etc/inittab.new
+etc/rc.d/
+etc/rc.d/rc.4.new
+etc/rc.d/rc.6.new
+etc/rc.d/rc.K.new
+etc/rc.d/rc.M.new
+etc/rc.d/rc.S.new
+etc/rc.d/rc.cpufreq.new
+etc/rc.d/rc.local.new
+etc/rc.d/rc.loop.new
+etc/rc.d/rc.modules.local.new
+etc/rc.d/rc.modules.new
+etc/rc.d/rc.sysvinit.new
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/rescan-scsi-bus

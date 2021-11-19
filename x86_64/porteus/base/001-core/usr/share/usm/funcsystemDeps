@@ -1,0 +1,288 @@
+#!/bin/bash
+
+function system_deps(){
+SDEPS=1
+
+[ ! -d $CACHEPATH ] && mkdir -p $CACHEPATH
+
+let SECS=( 3600 * $HOURS )
+[ -e $CACHE ] && local CACHETIME=`stat -c %Y $CACHE`
+[ -e $CHECKED ] && local REPTIME=`stat -c %Y $CHECKED`
+local TIMENOW=`date +%s`
+[ -e $CACHE ] && [ $(( $TIMENOW - $CACHETIME )) -gt $SECS ] && rm $CACHE $CHECKED
+
+touch $CHECKED
+
+local INCLUDES="lib/.*|lib64/.*|bin/.*"
+local EXCLUDES=".*/$|/locale/|/i18n/|zoneinfo|/kernel/|/rules\.d/|/include/|html|doc/|firmware|/man/|/template.*|.*\.h$|.*\.py$|.*\.la$|.*\.xml$|.*\.png$"
+
+for PACKAGE in /var/log/packages/*; do
+    local SH=${PACKAGE##*/}
+    [ `awk -F- '{print NF}' <<<$SH` -lt 4 ] && NOTSLACK=1
+    [ ! `grep -o "NAME:" <$PACKAGE` ] && NOTSLACK=1
+    [ $NOTSLACK ] && { echo "$SH" $txtpink "`gettext "is not a valid file"`" $rst "skipping"; unset NOTSLACK; continue; }
+    grep -oq $SH $CHECKED && { echo "`gettext "Checked:"`" "$SH"; continue; } || echo "`gettext "Processing:"`" "$SH"|tee -a $CHECKED
+    for b in `egrep "lib/.*|lib64/.*|bin/.*" $PACKAGE|egrep -v "$EXCLUDES"|sed '/.*/s/^/\//'`; do
+        if [ -x $b ]; then
+            NOTFOUND=`ldd $b 2>/dev/null|grep "not found"`
+            if [ "$NOTFOUND" ]; then
+                for x in `awk '{print$1}' <<<"$NOTFOUND"`; do
+                    if [[ `grep $x $DBDIR/local/libs.txt` ]]; then 
+                        NOTFOUND=`echo -e "\n$NOTFOUND"|sed -e 's/^[ \t]*//' -e '/'$x'/d' -e '/^$/d'`
+                    fi
+                done
+            fi
+            if [ `wc -c <<<"$NOTFOUND"` -gt 3 ]; then 
+                echo -e "\n$NOTFOUND"|sed 's/^[ \t]*//' >> $CACHE
+                echo "`gettext "Required by:"`" "${PACKAGE##*/} ($b)" >> $CACHE
+            fi
+        fi
+    done
+done
+
+echo "####################################"
+cat $CACHE
+echo
+echo "####################################"
+echo
+
+if [ -e $CACHE ]; then
+    local MDEPCNT=`grep "not found" $CACHE|sort -u|wc -l`
+    echo
+    [ $MDEPCNT -gt 1 ] && { echo $txtbld "`gettext "Missing dependencies:"`" $rst "$MDEPCNT"; echo; awk '/=>/{print$1}' $CACHE |sort -u; }
+else
+    echo "`gettext "Missing dependencies: 0"`" && cleanup end
+fi
+
+if [ $MISSINGDB ]; then
+	echo $txtbld "$DATABASEERROR2" $rst
+	echo "`gettext " Please run: usm -u all"`"
+	cleanup
+fi
+
+for a in `grep "\=>" $CACHE|sort -u|awk '{print$1}'`; do
+    unset DPKG RESULT CHOICE
+    local FPKG=`find -L $DBDIR -name OPTIFEST|xargs grep $a|sort -u|grep -v "\.debug"`
+    if [ "$FPKG" ]; then
+        echo "`gettext "Searching"`" $txtbld "$a:" $rst "`gettext "found"`" "`wc -w <<<$FPKG`" "`gettext "packages."`"
+        for DIST in `echo $FPKG|tr " " "\n"|awk -F/ '{print $(NF-1)}'`; do
+            DPKG+=( `tac $DBDIR/$DIST/OPTIFEST|sed -n '/'$a'/,/Package:/p'|tail -n1|awk '{print$NF}'` )
+        done
+        for CH in ${DPKG[@]}; do
+            if [[ `grep $CH <<<${PKGLIST[@]}` ]]; then
+                echo "`printf '%s\n' ${PKGLIST[@]}|grep $CH` already in download list." && echo
+                continue 2
+            fi
+        done
+        if [ `echo ${#DPKG[@]}` -gt 1 ]; then
+			RESULT="None ${DPKG[@]}"
+			echo
+			system_deps_download_choice $RESULT
+		elif [ ${#DPKG[@]} -eq 1 ]; then
+			CHOICE=${DPKG[@]}
+        fi
+        [ "$CHOICE" != "None" ] && PKGLIST+=( $CHOICE ) || continue
+        package_get_link $CHOICE
+    else
+        echo "`gettext "Searching"`" $txtbld "$a:" $rst "`gettext "found"`" "0" "`gettext "packages."`"
+    fi
+done
+system_deps_download
+}
+
+function system_deps_download(){
+echo
+echo $txtbld "`gettext "The following packages are ready to download:"`" $rst
+echo
+printf '%s\n' "${DISP[@]}"
+echo
+
+if [ $CLI ]; then
+	echo
+	read -p "`gettext " Press [r] to remove packages, [q] to quit, or enter to start downloading."`" -n 1 -r -s && echo
+	[[ $REPLY =~ ^[Qq]$ ]] && cleanup
+	if [[ $REPLY =~ ^[Rr]$ ]]; then 
+		for a in ${LINKS[@]}; do shlink=${a##*/}; tLINKS+=( $shlink ); done
+		fromsystemDeps=0
+		if [ ${#tLINKS[@]} -lt 10 ];then
+			menu_deselect "${tLINKS[@]}"
+			unset tLINKS
+				else
+			menu_deselect_plusten "${tLINKS[@]}"
+		fi
+	else
+		FINALPKGS="${PKGLIST[@]}"
+	fi
+fi
+
+unset fromsystemDeps
+[[ -z $FINALPKGS ]] && cleanup
+
+if [ "$FINALPKGS" ]; then
+    for a in $FINALPKGS; do
+        grep -q $a <<<${LINKS[@]} && pLINKS+=( `printf '%s\n' ${LINKS[@]}|grep $a` )
+    done
+    LINKS=("${pLINKS[@]}") && unset pLINKS
+        else
+    if [ -z $SDEPS ]; then
+		unset LINKS
+		cleanup
+	fi
+fi
+
+for a in "${LINKS[@]}"; do
+    DPKG=${a##*/}
+    if [ ! -e $STORAGE/$DPKG ]; then
+        download $a $STORAGE
+            else
+        echo "$DPKG" "`gettext "already exists."`"
+        continue
+    fi
+    md5s=`md5sum < $STORAGE/$DPKG|awk '{print$1}'`
+    if [[ `find -L $DBDIR -name CHECKSUMS.md5|xargs grep $md5s|awk -F/ '{print$NF}'|wc -l` -gt 0 ]]; then
+        echo "`gettext "File verification is good"`"
+    else
+        fatality "$SCRIPT $FUNCNAME $LINENO" "`gettext "md5sum mismatch for:"`" "$DPKG"
+    fi
+done
+}
+
+function system_deps_download_choice(){
+echo "`gettext "Choose a package to download or choose 'None' to neglect"`"
+select CHOICE in $RESULT; do
+    if [ -z "$CHOICE" ]; then
+        bold "`gettext "Invalid choice!"`" && echo
+        $FUNCNAME
+    fi
+    break
+done
+unset RESULT
+echo
+}
+
+function system_deps_single(){
+echo
+
+SDEPS=1
+
+PACKAGE=${1##*/}
+if [ -e "$1" ] && [ -e /var/log/packages/$PACKAGE ]; then
+    local FILEISGOOD=0
+else
+    echo "`gettext "This is not a valid file."`"
+    cleanup end
+fi
+echo $txtbld "`gettext "Processing"`" $rst "$PACKAGE" && echo 
+
+local INCLUDES="lib/.*|lib64/.*|bin/.*"
+local EXCLUDES=".*/$|/locale/|/i18n/|zoneinfo|/kernel/|/rules\.d/|/include/|html|doc/|firmware|/man/|/template.*|.*\.h$|.*\.py$|.*\.la$|.*\.xml$|.*\.png$"
+    
+local CACHE=$TMPDIR/singlefile.dep
+for b in `egrep "lib/.*|lib64/.*|bin/.*" $1|egrep -v "$EXCLUDES"|sed '/.*/s/^/\//'`; do
+    if [ -x $b ]; then
+        NOTFOUND=`ldd $b 2>/dev/null|grep "not found"`
+        if [ "$NOTFOUND" ]; then
+            for x in `awk '{print$1}' <<<"$NOTFOUND"`; do
+                if [[ `grep $x $DBDIR/local/libs.txt` ]]; then 
+                    NOTFOUND=`echo -e "\n$NOTFOUND"|sed -e 's/^[ \t]*//' -e '/'$x'/d' -e '/^$/d'`
+                fi
+            done
+        fi
+        if [ `wc -c <<<"$NOTFOUND"` -gt 3 ]; then 
+            echo -e "\n$NOTFOUND"|sed 's/^[ \t]*//' >> $CACHE
+            echo "`gettext "Required by:"`" "${PACKAGE##*/} ($b)" >> $CACHE
+        fi
+    fi
+done
+
+if [ -f $CACHE ]; then
+echo "####################################"
+cat $CACHE
+echo
+echo "####################################"
+echo
+fi
+
+if [ -e $CACHE ]; then
+    local MDEPCNT=`grep "not found" $CACHE|sort -u|wc -l`
+    echo
+    [ $MDEPCNT -gt 1 ] && { echo $txtbld "`gettext "Missing dependencies:"`" $rst "$MDEPCNT"; echo; awk '/=>/{print$1}' $CACHE |sort -u; }
+else
+    echo "`gettext "Missing dependencies: 0"`" && cleanup end
+fi
+
+if [ $MISSINGDB ]; then
+	echo && echo $txtbld "$DATABASEERROR2" $rst
+	echo "`gettext " Please run: usm -u all"`"
+	cleanup
+fi
+
+for a in `grep "\=>" $CACHE|sort -u|awk '{print$1}'`; do
+    unset DPKG RESULT CHOICE
+    local FPKG=`find -L $DBDIR -name OPTIFEST|xargs grep $a|sort -u|grep -v "\.debug"`
+    if [ "$FPKG" ]; then
+        echo "`gettext "Searching"`" $txtbld "$a:" $rst "`gettext "found"`" "`wc -w <<<$FPKG`" "`gettext "packages."`"
+        for DIST in `echo $FPKG|tr " " "\n"|awk -F/ '{print $(NF-1)}'`; do
+            DPKG+=( `tac $DBDIR/$DIST/OPTIFEST|sed -n '/'$a'/,/Package:/p'|tail -n1|awk '{print$NF}'` )
+        done
+        for CH in ${DPKG[@]}; do
+            if [[ `grep $CH <<<${PKGLIST[@]}` ]]; then
+                echo "`printf '%s\n' ${PKGLIST[@]}|grep $CH` already in download list." && echo
+                continue 2
+            fi
+        done
+		if [ `echo ${#DPKG[@]}` -gt 1 ]; then
+			RESULT="None ${DPKG[@]}"
+			echo
+			system_deps_download_choice $RESULT
+		elif [ `echo ${#DPKG[@]}` -eq 1 ]; then
+			CHOICE=${DPKG[@]}
+		fi
+		[ "$CHOICE" != "None" ] && PKGLIST+=( $CHOICE ) || continue
+        package_get_link $CHOICE
+    else
+        echo "`gettext "Searching"`" $txtbld "$a:" $rst "`gettext "found"`" "0" "`gettext "packages."`"
+    fi
+done
+system_deps_download
+}
+
+system_deps_package(){
+PACKAGE=$1
+local ext=${PACKAGE##*.}
+if [ ! `egrep -o "xzm|txz|tgz" <<<$ext` ]; then
+	echo
+	echo $txtbld "`gettext "This is not a valid file."`" $rst
+	cleanup
+fi
+
+local PKGNAME=${PACKAGE##*/}
+local PKGNAMESHORT=${PKGNAME%.*}
+
+if [ $CLI ]; then
+	if [ ! -e /var/log/packages/$PKGNAMESHORT ]; then
+		echo
+		echo "`gettext "This package needs to be installed to proceed."`"
+		read -p "`gettext "Would you like to continue? [y/n]"`" -n 1 -r -s && echo
+		[[ ! $REPLY =~ ^[Yy]$ ]] && cleanup
+		if [ `egrep -o "txz|tgz" <<<$ext` ]; then
+			PKGSLACK=0
+			installpkg --terse $PACKAGE
+		fi
+		if [ "$ext" = "xzm" ]; then
+			PKGPORT=0
+			activate $PACKAGE
+		fi
+    fi
+fi
+
+system_deps_single /var/log/packages/$PKGNAMESHORT
+
+echo "$PACKAGE" "`gettext "was installed."`"
+read -p "`gettext "Would you like to uninstall the package [y/n]"`" -n 1 -r -s && echo
+[[ ! $REPLY =~ ^[Yy]$ ]] && cleanup
+
+if [ $PKGSLACK ]; then removepkg /var/log/packages/$PKGNAMESHORT; fi
+if [ $PKGPORT ]; then deactivate $1; fi
+cleanup
+}

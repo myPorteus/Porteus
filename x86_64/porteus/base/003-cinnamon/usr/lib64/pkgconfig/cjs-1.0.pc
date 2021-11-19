@@ -1,0 +1,18 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+bindir=${exec_prefix}/bin
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+cjs_console=${bindir}/cjs-console
+
+Cflags: -I${includedir}/cjs-1.0
+Requires: gobject-2.0 >= 2.42.0
+Requires.private: gobject-introspection-1.0 libffi gthread-2.0 gio-2.0 >= 2.42.0 mozjs-38 cairo cairo-gobject gthread-2.0 gio-2.0 >= 2.42.0 mozjs-38 gtk+-3.0 >= 3.14.0
+Libs: -L${libdir} -lcjs
+
+Name: cjs-1.0
+Description: Cinnamon JS bindings for GObjects
+Version: 3.6.1

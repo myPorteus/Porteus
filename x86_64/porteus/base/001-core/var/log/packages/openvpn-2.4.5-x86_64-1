@@ -1,0 +1,99 @@
+PACKAGE NAME:     openvpn-2.4.5-x86_64-1
+COMPRESSED PACKAGE SIZE:     448K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/001/openvpn-2.4.5-x86_64-1.txz
+PACKAGE DESCRIPTION:
+openvpn: openvpn (secure IP tunnel daemon)
+openvpn:
+openvpn: OpenVPN is a full-featured SSL VPN which can accommodate a wide range
+openvpn: of configurations, including remote access, site-to-site VPNs, WiFi
+openvpn: security, and enterprise-scale remote access with load balancing,
+openvpn: failover, and fine-grained access-controls.
+openvpn:
+openvpn: OpenVPN's home on the net is: http://openvpn.net
+openvpn:
+openvpn:
+openvpn:
+FILE LIST:
+./
+etc/
+etc/openvpn/
+etc/openvpn/README.TXT
+etc/openvpn/certs/
+etc/openvpn/keys/
+etc/rc.d/
+etc/rc.d/rc.openvpn.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/openvpn-2.4.5/
+usr/doc/openvpn-2.4.5/AUTHORS
+usr/doc/openvpn-2.4.5/COPYING
+usr/doc/openvpn-2.4.5/COPYRIGHT.GPL
+usr/doc/openvpn-2.4.5/ChangeLog
+usr/doc/openvpn-2.4.5/Changes.rst
+usr/doc/openvpn-2.4.5/INSTALL
+usr/doc/openvpn-2.4.5/NEWS
+usr/doc/openvpn-2.4.5/PORTS
+usr/doc/openvpn-2.4.5/README
+usr/doc/openvpn-2.4.5/README.IPv6
+usr/doc/openvpn-2.4.5/README.down-root
+usr/doc/openvpn-2.4.5/README.mbedtls
+usr/doc/openvpn-2.4.5/management-notes.txt
+usr/doc/openvpn-2.4.5/sample-config-files/
+usr/doc/openvpn-2.4.5/sample-config-files/README
+usr/doc/openvpn-2.4.5/sample-config-files/client.conf
+usr/doc/openvpn-2.4.5/sample-config-files/firewall.sh
+usr/doc/openvpn-2.4.5/sample-config-files/home.up
+usr/doc/openvpn-2.4.5/sample-config-files/loopback-client
+usr/doc/openvpn-2.4.5/sample-config-files/loopback-server
+usr/doc/openvpn-2.4.5/sample-config-files/office.up
+usr/doc/openvpn-2.4.5/sample-config-files/openvpn-shutdown.sh
+usr/doc/openvpn-2.4.5/sample-config-files/openvpn-startup.sh
+usr/doc/openvpn-2.4.5/sample-config-files/server.conf
+usr/doc/openvpn-2.4.5/sample-config-files/slackware.conf
+usr/doc/openvpn-2.4.5/sample-config-files/static-home.conf
+usr/doc/openvpn-2.4.5/sample-config-files/static-office.conf
+usr/doc/openvpn-2.4.5/sample-config-files/tls-home.conf
+usr/doc/openvpn-2.4.5/sample-config-files/tls-office.conf
+usr/doc/openvpn-2.4.5/sample-config-files/xinetd-client-config
+usr/doc/openvpn-2.4.5/sample-config-files/xinetd-server-config
+usr/doc/openvpn-2.4.5/sample-keys/
+usr/doc/openvpn-2.4.5/sample-keys/README
+usr/doc/openvpn-2.4.5/sample-keys/ca.crt
+usr/doc/openvpn-2.4.5/sample-keys/ca.key
+usr/doc/openvpn-2.4.5/sample-keys/client-ec.crt
+usr/doc/openvpn-2.4.5/sample-keys/client-ec.key
+usr/doc/openvpn-2.4.5/sample-keys/client-pass.key
+usr/doc/openvpn-2.4.5/sample-keys/client.crt
+usr/doc/openvpn-2.4.5/sample-keys/client.key
+usr/doc/openvpn-2.4.5/sample-keys/client.p12
+usr/doc/openvpn-2.4.5/sample-keys/dh2048.pem
+usr/doc/openvpn-2.4.5/sample-keys/gen-sample-keys.sh
+usr/doc/openvpn-2.4.5/sample-keys/openssl.cnf
+usr/doc/openvpn-2.4.5/sample-keys/server-ec.crt
+usr/doc/openvpn-2.4.5/sample-keys/server-ec.key
+usr/doc/openvpn-2.4.5/sample-keys/server.crt
+usr/doc/openvpn-2.4.5/sample-keys/server.key
+usr/doc/openvpn-2.4.5/sample-keys/ta.key
+usr/doc/openvpn-2.4.5/sample-scripts/
+usr/doc/openvpn-2.4.5/sample-scripts/auth-pam.pl
+usr/doc/openvpn-2.4.5/sample-scripts/bridge-start
+usr/doc/openvpn-2.4.5/sample-scripts/bridge-stop
+usr/doc/openvpn-2.4.5/sample-scripts/ucn.pl
+usr/doc/openvpn-2.4.5/sample-scripts/verify-cn
+usr/include/
+usr/include/openvpn-msg.h
+usr/include/openvpn-plugin.h
+usr/lib64/
+usr/lib64/openvpn/
+usr/lib64/openvpn/plugins/
+usr/lib64/openvpn/plugins/openvpn-plugin-down-root.la
+usr/lib64/openvpn/plugins/openvpn-plugin-down-root.so
+usr/man/
+usr/man/man8/
+usr/man/man8/openvpn.8.gz
+usr/sbin/
+usr/sbin/openvpn

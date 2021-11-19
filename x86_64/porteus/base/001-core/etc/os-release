@@ -1,0 +1,10 @@
+NAME=Porteus
+VERSION="4.0"
+ID=slackware
+VERSION_ID=4.0
+PRETTY_NAME="Porteus 4.0"
+ANSI_COLOR="0;34"
+CPE_NAME="cpe:/o:porteus:porteus_linux:4.0"
+HOME_URL="http://www.porteus.org/"
+SUPPORT_URL="http://forum.porteus.org/"
+BUG_REPORT_URL="http://forum.porteus.org/"

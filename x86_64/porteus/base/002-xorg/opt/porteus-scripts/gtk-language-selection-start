@@ -1,0 +1,98 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Author: brokenman@porteus.org
+#
+# This is a script to download the porteus language setup tool
+
+trap bail SIGHUP SIGINT SIGTERM
+#exec 2>/dev/null
+
+. /usr/share/porteus/gtkdialog-functions
+. /usr/share/porteus/porteus-functions
+
+ICONS=/usr/share/pixmaps/porteus
+SERVER=`awk -F= '/SERVER=/{print$NF}' /etc/porteus.conf`
+link=$SERVER/i586/testing/live/gtk-language-selection
+
+bail(){ 
+rm /tmp/.lst* >/dev/null 2>&1
+[ -e $TMP ] && rm $TMP
+exit
+}
+
+# Switchroot
+PLSSCRIPT="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+TMP=/tmp/.gtkpls.tmp
+if [ `whoami` != "root" ]; then
+    echo $HOME > $TMP
+    /opt/porteus-scripts/xorg/psu "$PLSSCRIPT" || sleep 1
+    exit
+	else
+    [ ! -f $TMP ] && echo $HOME > $TMP
+fi
+pth=`<$TMP`
+rm $TMP
+
+lets_go(){
+export START_SCREEN='
+<window window_position="1" title="Language Selection Tool" icon-name="language-22">
+<vbox>
+<hseparator></hseparator>
+<hbox>
+  <pixmap>
+    <width>48</width>
+	<input file>'$ICONS'/language.png</input>
+  </pixmap>
+  <text use-markup="true">
+    <label>"<span color='"'darkblue'"' weight='"'bold'"' size='"'x-large'"'>Porteus Language Selection Tool</span>"</label>
+  </text>
+</hbox>
+  <frame>
+    <text use-markup="true" xalign="0">
+      <label>"This tool will download language packs so you can use your native language in various desktops and applications."</label>
+    </text>
+    <text><label>""</label></text>
+  </frame>
+<hbox>
+  <button cancel></button>
+  <button ok></button>
+</hbox>
+</vbox>
+</window>
+'
+gtkdialog -p START_SCREEN >/tmp/.lst
+}; export -f lets_go
+
+lets_go
+
+## Check for exit
+egrep -qo "abort|Cancel" /tmp/.lst && bail
+
+## Internet check
+if (wget -q --force-html --inet4-only "$link" -P /tmp); then url=1; fi
+[ -z $url ] && gtk_message1 "An internet connection was not found. Exiting."
+
+chmod +x /tmp/gtk-language-selection && mv /tmp/gtk-language-selection /opt/porteus-scripts/
+ln -sf /opt/porteus-scripts/gtk-language-selection /usr/bin/gtk-language-selection
+gtk-language-selection
+bail

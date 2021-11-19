@@ -1,0 +1,136 @@
+#!/bin/bash
+
+function package_search(){
+if [ $GUI ]; then
+	[[ -z $1 ]] && { echo "`gettext "You must enter a search term."`" > $TMPDIR/filelist; return; }
+	[ `wc -c <<<$1` -lt 4 ] && { echo "`gettext "The search returned too many results."`" > $TMPDIR/filelist; return; }
+	
+	[ -z $foundlib ] && local stype=`< $TMPDIR/searchType`
+	if [ "$stype" = "package" ]; then
+		local RESULT=`find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep -i "PACKAGE NAME:.*$1.*"|sed 's/ //g'`
+		[[ -z $RESULT ]] && { echo "`gettext "Nothing found for:"`" "'$1'" > $TMPDIR/filelist; return; exit; }
+	fi
+	if [ "$stype" = "keyword" ]; then
+		package_keyword $@
+		RESULT=`<$TMPDIR/.result`
+	fi
+	if [ "$stype" = "library" ]; then
+		check_library $1
+		RESULT=`<$TMPDIR/.result`
+	fi
+else # CLI CODE
+	local RESULT=`find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep -i "PACKAGE NAME:.*$1.*"|sed 's/ //g'`
+
+	if [[ -z $RESULT ]]; then
+		NSEARCH=0
+		sbo_search $1
+	fi
+fi
+
+declare -i CNT=0
+echo
+
+for a in $RESULT; do
+    (( CNT++ ))
+    unset DIS PKG LNG SHT LFND1 LFND RFND STA SIZ
+    local DIS=`awk -F/ '{print $(NF-1)}' <<<$a`
+    local PKG=`awk -F: '{print$NF}' <<<"$a"`
+    local SHT="${PKG%-*-*-*}-"
+    #[[ `ls /var/log/packages/$SHT* 2>/dev/null` ]] && local STA="installed" || local STA="not installed"
+    local LFND1=`ls /var/log/packages|grep $SHT*`
+    if [ "$LFND1" ]; then
+		local LFND=${LFND1%-*-*}
+		local RFND=${PKG%-*-*}
+		if [ `echo $LFND $RFND|tr ' ' '\n'|sort -V|head -n1` = "$LFND" ]; then
+				STA="upgrade"
+			else
+				if [ `echo $LFND $RFND|tr ' ' '\n'|sort -V|head -n1` = "$RFND" ]; then
+					STA="downgrade"
+				fi
+		fi
+		[ "$LFND" = "$RFND" ] && STA="installed"
+	else
+		STA="not installed"
+    fi
+    if [ $GUI ]; then
+		local SIZ=`grep -A4 $PKG $DBDIR/$DIS/PACKAGES.TXT|grep "(comp"|awk -F: '{print$NF}'|sed 's/^ *//g'`
+		DOUTPUT+=( "$PKG|$SIZ|$DIS|$STA" )
+		printf '%s\n' "${DOUTPUT[@]}" > $TMPDIR/filelist
+	else # CLI CODE
+		echo "$PKG" "`gettext "was found in"`" "$DIS [$STA]"
+	fi
+done
+
+if [ $CLI ]; then
+	echo -e "`gettext "Packages found: "`" $txtbld "$CNT" $rst
+	echo
+	if [ -z $KEY ]; then
+		echo "`gettext "Use: "`" $txtbld "`gettext "usm -i <package>"`" $rst "`gettext "for more info"`"
+		echo "`gettext "Use: "`" $txtbld "`gettext "usm -g <package>"`" $rst "`gettext "to download"`"
+	fi
+fi
+[ $GUI ] && kill_processing 2>/dev/null
+unset DOUTPUT RESULT NSEARCH CNT
+}
+
+package_keyword(){
+echo
+
+KEY=0
+unset RESULT
+
+local ARGS=$#
+[ $ARGS -eq 1 ] && local RESULT=`find -L $DBDIR -name PACKAGES.TXT | xargs awk -F: '/'$1'/ && !/PACKAGE/{print$1}' | sort -u`
+[ $ARGS -eq 2 ] && local RESULT=`find -L $DBDIR -name PACKAGES.TXT | xargs awk -F: '/'$1'/ && /'$2'/ && !/PACKAGE/{print$1}' | sort -u`
+[ $ARGS -eq 3 ] && local RESULT=`find -L $DBDIR -name PACKAGES.TXT | xargs awk -F: '/'$1'/ && /'$2'/ && '/$3'/ && !/PACKAGE/{print$1}' | sort -u`
+[ $ARGS -gt 3 ] && local RESULT=`find -L $DBDIR -name PACKAGES.TXT | xargs awk '/'$1'/ && /'$2'/ && '/$3'/ && !/PACKAGE/' | sort -u`
+local RESCNT=`sort -u <<<$RESULT|wc -w`
+if [ $GUI ]; then
+	[ $RESCNT -gt 40 ] && { gtk_message2 "$@" "returned too many results. Try multiple words."; exit; }
+	[ $RESCNT -gt 10 ] && gtk_processing "`gettext "Your request is currently being processed ..."`" &
+	RESULT1=${RESULT} && unset RESULT
+	local RESULT1=`printf '%s\n' $RESULT1|sed 's/://g'|sort -u`
+	for a in $RESULT1; do
+		if [ `wc -c <<<$a` -gt 3 ]; then
+			RESULT+=" `find -L $DBDIR -type f -name "PACKAGES.TXT"|xargs grep -i "NAME:.*$a.*"|sed 's/ //g'`"
+		fi
+	done
+	printf '%s\n' ${RESULT[@]} > $TMPDIR/.result
+else # CLI
+	[ $RESCNT -eq 0 ] && { echo "`gettext "Nothing found for:"`" "$@"; cleanup; }
+	RESULT=`printf '%s\n' $RESULT|sort -u`
+	for a in `sort -u <<<$RESULT`; do package_search $a; done
+fi
+}
+
+function check_library(){
+[[ ! `grep ".*\.so.*" <<<$1` ]] && return
+if [ $GUI ]; then
+	# Make sure a library was entered into gui
+	[[ ! `grep "\.so" <<<$1` ]] || [ -z $1 ] && { echo "`gettext "You must enter a library name."`" > $TMPDIR/filelist; return; exit; }
+else
+	if [ `grep ".*\.so.*" <<<$1` ]; then
+		echo && bold "-----------------------------"
+		bold "`gettext "Are you searching for a library file?"`"
+		echo
+		echo "$1, `gettext "it seems a library."`"
+		read -p "`gettext "Would you like to find the package for it? [y/n]"`" -n 1 -r -s && echo
+		if [[ ! $REPLY =~ ^[Yy]$ ]]; then return; fi
+	fi
+fi
+    
+local RESULT=`find -L $DBDIR -name OPTIFEST|xargs grep "$1"|head -n1`
+
+[ $CLI ] && [ -z "$RESULT" ] && { echo; bold "no package found for: $1"; cleanup; }
+[ $GUI ] && [ -z "$RESULT" ] && { echo "`gettext "Nothing found for:"`" "$1" > $TMPDIR/filelist; return; exit; }
+local OPT=${RESULT%:*}
+local MUM=`tac $OPT|sed -n "/$1/,/Package:/p"|tail -n1|awk -F: '{print$NF}'`
+[ $CLI ] && echo && echo $txtbld "$1" $rst "`gettext "was found in"`" $txtbld "$MUM" $rst && cleanup
+if [ $GUI ]; then
+	stype="package"
+    foundlib=1
+    package_search $MUM
+    unset foundlib
+    return
+fi
+}

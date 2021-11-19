@@ -1,0 +1,46 @@
+PACKAGE NAME:     freeglut-3.0.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     124K
+UNCOMPRESSED PACKAGE SIZE:     540K
+PACKAGE LOCATION: /pc/git/build/../x86_64/pkg/002/freeglut-3.0.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+freeglut: freeglut (alternative GLUT library)
+freeglut:
+freeglut: freeglut is a completely OpenSourced alternative to the OpenGL 
+freeglut: Utility Toolkit (GLUT) library.  GLUT (and hence freeglut) allows 
+freeglut: the user to create and manage windows containing OpenGL contexts 
+freeglut: on a wide range of platforms and also read the mouse, keyboard, and 
+freeglut: joystick functions.
+freeglut:
+freeglut: Homepage: http://freeglut.sourceforge.net/
+freeglut:
+freeglut:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/freeglut-3.0.0/
+usr/doc/freeglut-3.0.0/AUTHORS
+usr/doc/freeglut-3.0.0/COPYING
+usr/doc/freeglut-3.0.0/README
+usr/doc/freeglut-3.0.0/html/
+usr/doc/freeglut-3.0.0/html/download.html
+usr/doc/freeglut-3.0.0/html/freeglut.html
+usr/doc/freeglut-3.0.0/html/freeglut_logo.png
+usr/doc/freeglut-3.0.0/html/freeglut_user_interface.html
+usr/doc/freeglut-3.0.0/html/index.html
+usr/doc/freeglut-3.0.0/html/ogl_sm.png
+usr/doc/freeglut-3.0.0/html/progress.html
+usr/doc/freeglut-3.0.0/html/structure.html
+usr/include/
+usr/include/GL/
+usr/include/GL/freeglut.h
+usr/include/GL/freeglut_ext.h
+usr/include/GL/freeglut_std.h
+usr/include/GL/glut.h
+usr/lib64/
+usr/lib64/libglut.so.3.10.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/freeglut.pc

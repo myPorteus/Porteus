@@ -1,0 +1,13 @@
+#!/bin/sh
+
+prefix=/usr
+exec_prefix=${prefix}
+
+if [ "$DISPLAY " != " " ] && [ -f ${exec_prefix}/bin/gftp-gtk ]; then
+	exec ${exec_prefix}/bin/gftp-gtk ${1+"$@"}
+elif [ -f ${exec_prefix}/bin/gftp-text ]; then
+	exec ${exec_prefix}/bin/gftp-text ${1+"$@"}
+else
+	echo "Error: Can't find gFTP binaries installed in ${exec_prefix}/bin"
+fi
+
