@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.nepomuk.filewatch
-Exec=/usr/lib64/kde_nepomuk_filewatch_raiselimit
-User=root

@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libnepomukcleaner.so.4 )
-( cd usr/lib64 ; ln -sf libnepomukcleaner.so.4.14.14 libnepomukcleaner.so.4 )
-( cd usr/lib64 ; rm -rf libnepomukcore.so.4 )
-( cd usr/lib64 ; ln -sf libnepomukcore.so.4.14.14 libnepomukcore.so.4 )
-( cd usr/lib64 ; rm -rf libnepomukcleaner.so )
-( cd usr/lib64 ; ln -sf libnepomukcleaner.so.4 libnepomukcleaner.so )
-( cd usr/lib64 ; rm -rf libnepomukcore.so )
-( cd usr/lib64 ; ln -sf libnepomukcore.so.4 libnepomukcore.so )

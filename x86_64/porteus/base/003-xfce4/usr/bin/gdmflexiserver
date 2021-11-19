@@ -1,3 +1,0 @@
-#!/bin/sh
-xfce4-session-logout
-#/usr/sbin/lxdm -c USER_SWITCH

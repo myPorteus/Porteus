@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libjasper.so )
-( cd usr/lib64 ; ln -sf libjasper.so.1.0.0 libjasper.so )
-( cd usr/lib64 ; rm -rf libjasper.so.1 )
-( cd usr/lib64 ; ln -sf libjasper.so.1.0.0 libjasper.so.1 )

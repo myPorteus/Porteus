@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libindicator3.so )
-( cd usr/lib64 ; ln -sf libindicator3.so.7.0.0 libindicator3.so )
-( cd usr/lib64 ; rm -rf libindicator.so.7 )
-( cd usr/lib64 ; ln -sf libindicator.so.7.0.0 libindicator.so.7 )
-( cd usr/lib64 ; rm -rf libindicator3.so.7 )
-( cd usr/lib64 ; ln -sf libindicator3.so.7.0.0 libindicator3.so.7 )
-( cd usr/lib64 ; rm -rf libindicator.so )
-( cd usr/lib64 ; ln -sf libindicator.so.7.0.0 libindicator.so )

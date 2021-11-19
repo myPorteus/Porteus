@@ -1,8 +1,0 @@
-[Ontology]
-Version=1.0
-Name=Nepomuk User Action Ontology
-Comment=The Nepomuk User Action Ontology provides basic classes and properties for desktop events.
-Namespace=http://www.semanticdesktop.org/ontologies/2010/01/25/nuao#
-Path=/usr/share/ontology/nepomuk/nuao.trig
-MimeType=application/x-trig
-Type=Data

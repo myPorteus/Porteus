@@ -1,6 +1,0 @@
-digraph "Accounts" {
-  compound=true
-  node [ fontsize="10", fontname="FreeSans"];
-  edge [ labelfontsize="10", labelfontname="FreeSans"];
-  dir_c3d1d086c816c0518443c9e800634b9c [shape=box, label="Accounts", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c3d1d086c816c0518443c9e800634b9c.html"];
-}

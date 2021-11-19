@@ -1,4 +1,0 @@
-[Mount]
-Type=cdda
-Exec=/usr/libexec/gvfsd-cdda
-AutoMount=false

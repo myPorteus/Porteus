@@ -1,9 +1,0 @@
-prefix=/usr
-exec_prefix=${prefix}
-libdir=/usr/lib64
-includedir=${prefix}/include
-
-Name: xatracker
-Description: Xorg Gallium3D acceleration library
-Version: 2.3.0
-Libs: -L${libdir} -lxatracker

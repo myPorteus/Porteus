@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.powerdevil.backlighthelper
-Exec=/usr/lib64/kauth/backlighthelper
-User=root

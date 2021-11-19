@@ -1,6 +1,0 @@
-( cd usr/lib64 ; rm -rf libaccounts-qt5.so.1 )
-( cd usr/lib64 ; ln -sf libaccounts-qt5.so.1.2.0 libaccounts-qt5.so.1 )
-( cd usr/lib64 ; rm -rf libaccounts-qt5.so.1.2 )
-( cd usr/lib64 ; ln -sf libaccounts-qt5.so.1.2.0 libaccounts-qt5.so.1.2 )
-( cd usr/lib64 ; rm -rf libaccounts-qt5.so )
-( cd usr/lib64 ; ln -sf libaccounts-qt5.so.1.2.0 libaccounts-qt5.so )

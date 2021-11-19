@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libieee1284.so )
-( cd usr/lib64 ; ln -sf libieee1284.so.3.2.2 libieee1284.so )
-( cd usr/lib64 ; rm -rf libieee1284.so.3 )
-( cd usr/lib64 ; ln -sf libieee1284.so.3.2.2 libieee1284.so.3 )

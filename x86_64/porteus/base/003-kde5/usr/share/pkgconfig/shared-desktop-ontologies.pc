@@ -1,8 +1,0 @@
-prefix=/usr
-
-Name: shared-desktop-ontologies
-Description: Common OSCAF desktop ontologies
-Version: 0.11.0
-Requires:
-Libs:
-Cflags:

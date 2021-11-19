@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libvisual-0.4.so.0 )
-( cd usr/lib64 ; ln -sf libvisual-0.4.so.0.0.0 libvisual-0.4.so.0 )
-( cd usr/lib64 ; rm -rf libvisual-0.4.so )
-( cd usr/lib64 ; ln -sf libvisual-0.4.so.0.0.0 libvisual-0.4.so )

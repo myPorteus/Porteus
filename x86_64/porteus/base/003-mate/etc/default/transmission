@@ -1,6 +1,0 @@
-# /etc/default/transmission
-# Change this to the user you want to run transmission-daemon as.
-# You may specify a group too, after a colon
-DAEMON_USER="transmission:transmission"
-DAEMON_PORT="9091"
-DAEMON_ARGS="-T --blocklist"

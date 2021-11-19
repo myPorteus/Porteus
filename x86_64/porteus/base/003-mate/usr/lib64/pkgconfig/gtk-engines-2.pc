@@ -1,9 +1,0 @@
-prefix=/usr
-exec_prefix=${prefix}
-libdir=/usr/lib64
-includedir=${prefix}/include
-
-Name: gtk-engines-2
-Description: GTK+ Theme Engines
-Version: 2.21.0
-Requires: gtk+-2.0

@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libKF5AkonadiMime.so.5 )
-( cd usr/lib64 ; ln -sf libKF5AkonadiMime.so.5.3.3 libKF5AkonadiMime.so.5 )
-( cd usr/lib64 ; rm -rf libKF5AkonadiMime.so )
-( cd usr/lib64 ; ln -sf libKF5AkonadiMime.so.5 libKF5AkonadiMime.so )

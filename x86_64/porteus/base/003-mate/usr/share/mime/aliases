@@ -1,4 +1,0 @@
-application/pkcs12 application/x-pkcs12
-application/x-pkcs7-certificates application/pkcs7-mime
-application/x-x509-ca-cert application/pkix-cert
-application/x-x509-user-cert application/pkix-cert

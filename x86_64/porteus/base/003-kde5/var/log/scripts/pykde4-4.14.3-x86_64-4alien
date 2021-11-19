@@ -1,4 +1,0 @@
-( cd usr/bin ; rm -rf pykdeuic4-2.7 )
-( cd usr/bin ; ln -sf /usr/lib64/python2.7/site-packages/PyQt4/uic/pykdeuic4.py pykdeuic4-2.7 )
-( cd usr/bin ; rm -rf pykdeuic4 )
-( cd usr/bin ; ln -sf /usr/bin/pykdeuic4-2.7 pykdeuic4 )

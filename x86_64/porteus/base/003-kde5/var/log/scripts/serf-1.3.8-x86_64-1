@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libserf-1.so.1 )
-( cd usr/lib64 ; ln -sf libserf-1.so.1.3.0 libserf-1.so.1 )
-( cd usr/lib64 ; rm -rf libserf-1.so )
-( cd usr/lib64 ; ln -sf libserf-1.so.1 libserf-1.so )

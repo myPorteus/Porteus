@@ -1,4 +1,0 @@
-[GNOME Session]
-Name=GNOME/Openbox
-RequiredComponents=openbox;gnome-settings-daemon;gnome-panel;nautilus-classic;gnome-flashback-services
-DesktopName=GNOME

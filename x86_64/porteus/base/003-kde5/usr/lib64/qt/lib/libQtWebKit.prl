@@ -1,5 +1,0 @@
-QMAKE_PRL_BUILD_DIR = /tmp/qtwebkit-2.3.4/WebKitBuild/Release/Source/
-QMAKE_PRO_INPUT = api.pri
-QMAKE_PRL_TARGET = libQtWebKit.so.4.10.4
-QMAKE_PRL_CONFIG = include_source_dir lex yacc uic resources lex yacc uic resources qt release incremental link_prl gdb_dwarf_index shared def_files_disabled exceptions no_mocdepend release stl qt_no_framework webkit_configured production_build production_build link_pkgconfig root_project_file no_webkit2 include_webinspector production_build no_webkit2 release production_build production_build ordered config_step depend_includepath use_all_in_one_files moc thread link_pkgconfig include_webinspector production_build no_webkit2 release production_build create_pc create_prl config_step depend_includepath hide_symbols x11 x11lib x11inc dll shared opengl
-QMAKE_PRL_VERSION = 4.10.4

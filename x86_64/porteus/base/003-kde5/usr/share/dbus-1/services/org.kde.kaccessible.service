@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kaccessibleapp
-Exec=/usr/lib64/kaccessibleapp

@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf liba52.so.0 )
-( cd usr/lib64 ; ln -sf liba52.so.0.0.0 liba52.so.0 )
-( cd usr/lib64 ; rm -rf liba52.so )
-( cd usr/lib64 ; ln -sf liba52.so.0.0.0 liba52.so )

@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libxcb-errors.so )
-( cd usr/lib64 ; ln -sf libxcb-errors.so.0.0.0 libxcb-errors.so )
-( cd usr/lib64 ; rm -rf libxcb-errors.so.0 )
-( cd usr/lib64 ; ln -sf libxcb-errors.so.0.0.0 libxcb-errors.so.0 )

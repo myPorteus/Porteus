@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Gcolor2
-GenericName=Color Selector
-Comment=Choose Colors
-Type=Application
-Exec=gcolor2
-Icon=gcolor2
-Terminal=false
-Categories=GTK;Graphics;

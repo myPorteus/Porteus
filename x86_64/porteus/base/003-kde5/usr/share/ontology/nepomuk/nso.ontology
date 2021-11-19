@@ -1,8 +1,0 @@
-[Ontology]
-Version=1.0
-Name=Nepomuk Share Ontology
-Comment=The Nepomuk Share Ontology defines basic resource sharing properties.
-Namespace=http://www.semanticdesktop.org/ontologies/2009/11/08/nso#
-Path=/usr/share/ontology/nepomuk/nso.trig
-MimeType=application/x-trig
-Type=Data

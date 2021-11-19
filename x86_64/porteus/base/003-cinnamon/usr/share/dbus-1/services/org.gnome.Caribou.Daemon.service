@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.Caribou.Daemon
-Exec=/usr/libexec/caribou

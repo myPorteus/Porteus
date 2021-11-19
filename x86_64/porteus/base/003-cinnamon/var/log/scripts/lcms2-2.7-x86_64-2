@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf liblcms2.so.2 )
-( cd usr/lib64 ; ln -sf liblcms2.so.2.0.7 liblcms2.so.2 )
-( cd usr/lib64 ; rm -rf liblcms2.so )
-( cd usr/lib64 ; ln -sf liblcms2.so.2.0.7 liblcms2.so )

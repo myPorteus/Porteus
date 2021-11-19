@@ -1,6 +1,0 @@
-Name: udev
-Description: eudev
-Version: 220
-prefix=/usr
-exec_prefix=${prefix}
-udevdir=/lib/udev

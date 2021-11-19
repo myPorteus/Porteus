@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libfakekey.so )
-( cd usr/lib64 ; ln -sf libfakekey.so.0.0.1 libfakekey.so )
-( cd usr/lib64 ; rm -rf libfakekey.so.0 )
-( cd usr/lib64 ; ln -sf libfakekey.so.0.0.1 libfakekey.so.0 )

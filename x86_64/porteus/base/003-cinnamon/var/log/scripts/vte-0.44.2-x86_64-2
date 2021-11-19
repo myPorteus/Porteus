@@ -1,6 +1,0 @@
-( cd usr/doc/vte-0.44.2 ; rm -rf html )
-( cd usr/doc/vte-0.44.2 ; ln -sf /usr/share/gtk-doc/html/vte-0.0 html )
-( cd usr/lib64 ; rm -rf libvte-2.91.so )
-( cd usr/lib64 ; ln -sf libvte-2.91.so.0.4400.2 libvte-2.91.so )
-( cd usr/lib64 ; rm -rf libvte-2.91.so.0 )
-( cd usr/lib64 ; ln -sf libvte-2.91.so.0.4400.2 libvte-2.91.so.0 )

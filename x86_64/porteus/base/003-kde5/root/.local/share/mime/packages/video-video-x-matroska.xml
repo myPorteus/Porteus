@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="video/video/x-matroska">
-        <icon name="video-x-matroska"/>
-        <glob-deleteall/>
-        <glob pattern="*.mkv"/>
-    </mime-type>
-</mime-info>

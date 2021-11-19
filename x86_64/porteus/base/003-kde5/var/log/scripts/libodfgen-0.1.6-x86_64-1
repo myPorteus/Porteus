@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libodfgen-0.1.so )
-( cd usr/lib64 ; ln -sf libodfgen-0.1.so.1.0.6 libodfgen-0.1.so )
-( cd usr/lib64 ; rm -rf libodfgen-0.1.so.1 )
-( cd usr/lib64 ; ln -sf libodfgen-0.1.so.1.0.6 libodfgen-0.1.so.1 )

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="image/image/png">
-        <icon name="image-jpeg2000"/>
-        <glob-deleteall/>
-    </mime-type>
-</mime-info>

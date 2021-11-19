@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libharfbuzz.so )
-( cd usr/lib64 ; ln -sf libharfbuzz.so.0.10200.7 libharfbuzz.so )
-( cd usr/lib64 ; rm -rf libharfbuzz-icu.so )
-( cd usr/lib64 ; ln -sf libharfbuzz-icu.so.0.10200.7 libharfbuzz-icu.so )
-( cd usr/lib64 ; rm -rf libharfbuzz-icu.so.0 )
-( cd usr/lib64 ; ln -sf libharfbuzz-icu.so.0.10200.7 libharfbuzz-icu.so.0 )
-( cd usr/lib64 ; rm -rf libharfbuzz.so.0 )
-( cd usr/lib64 ; ln -sf libharfbuzz.so.0.10200.7 libharfbuzz.so.0 )

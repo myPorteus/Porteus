@@ -1,3 +1,0 @@
-sinus := x->sin x
-something := x*x+y*y=7.9
-plane1 := (x, y, z)->(x+y+z)-1 

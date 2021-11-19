@@ -1,2 +1,0 @@
-( cd usr/bin ; rm -rf xfrun4 )
-( cd usr/bin ; ln -sf xfce4-appfinder xfrun4 )

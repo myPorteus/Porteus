@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libKEduVocDocument.so )
-( cd usr/lib64 ; ln -sf libKEduVocDocument.so.5 libKEduVocDocument.so )
-( cd usr/lib64 ; rm -rf libKEduVocDocument.so.5 )
-( cd usr/lib64 ; ln -sf libKEduVocDocument.so.5.0.0 libKEduVocDocument.so.5 )

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/xorg/terminal -e "lynx forum.porteus.org"
-Icon=/usr/share/pixmaps/porteus/network.png
-Name=Lynx
-GenericName=Console Web Browser
-NoDisplay=true
-Type=Application
-Categories=Application;Network;

@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.gtk.vfs.MTPVolumeMonitor
-Exec=/usr/libexec/gvfs-mtp-volume-monitor
-SystemdService=gvfs-mtp-volume-monitor.service

@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libgpgme-pthread.so )
-( cd usr/lib64 ; ln -sf libgpgme-pthread.so.11.14.0 libgpgme-pthread.so )
-( cd usr/lib64 ; rm -rf libgpgme.so )
-( cd usr/lib64 ; ln -sf libgpgme.so.11.14.0 libgpgme.so )
-( cd usr/lib64 ; rm -rf libgpgme-pthread.so.11 )
-( cd usr/lib64 ; ln -sf libgpgme-pthread.so.11.14.0 libgpgme-pthread.so.11 )
-( cd usr/lib64 ; rm -rf libgpgme.so.11 )
-( cd usr/lib64 ; ln -sf libgpgme.so.11.14.0 libgpgme.so.11 )

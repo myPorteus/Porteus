@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libktorrent.so.6 )
-( cd usr/lib64 ; ln -sf libktorrent.so.6.0.0 libktorrent.so.6 )
-( cd usr/lib64 ; rm -rf libktorrent.so )
-( cd usr/lib64 ; ln -sf libktorrent.so.6 libktorrent.so )

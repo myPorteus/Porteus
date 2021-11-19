@@ -1,2 +1,0 @@
-( cd usr/doc/pygobject3-3.18.2 ; rm -rf html )
-( cd usr/doc/pygobject3-3.18.2 ; ln -sf ../../share/gtk-doc/html/pygobject html )
