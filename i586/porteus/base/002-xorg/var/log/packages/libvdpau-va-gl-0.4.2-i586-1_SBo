@@ -1,0 +1,35 @@
+PACKAGE NAME:     libvdpau-va-gl-0.4.2-i586-1_SBo
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libvdpau-va-gl-0.4.2-i586-1_SBo.tgz
+PACKAGE DESCRIPTION:
+libvdpau-va-gl: libvdpau-va-gl (VDPAU driver with VA-API/OpenGL backend)
+libvdpau-va-gl:
+libvdpau-va-gl: VDPAU driver with VA-API/OpenGL backend.
+libvdpau-va-gl:
+libvdpau-va-gl: Homepage: https://github.com/i-rinat/libvdpau-va-gl/
+libvdpau-va-gl:
+libvdpau-va-gl:
+libvdpau-va-gl:
+libvdpau-va-gl:
+libvdpau-va-gl:
+libvdpau-va-gl:
+FILE LIST:
+./
+etc/
+etc/profile.d/
+etc/profile.d/vdpau-va-gl.csh.new
+etc/profile.d/vdpau-va-gl.sh.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libvdpau-va-gl-0.4.2/
+usr/doc/libvdpau-va-gl-0.4.2/ChangeLog
+usr/doc/libvdpau-va-gl-0.4.2/LICENSE
+usr/doc/libvdpau-va-gl-0.4.2/README.md
+usr/doc/libvdpau-va-gl-0.4.2/libvdpau-va-gl.SlackBuild
+usr/lib/
+usr/lib/vdpau/
+usr/lib/vdpau/libvdpau_va_gl.so.1

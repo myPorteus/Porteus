@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<layout xmlns:xi="http://www.w3.org/2001/XInclude">
+  <level mode="default" name="level1">
+    <row>
+      <key name="period"/>
+      <key name="comma"/>
+      <key name="hebrew_qoph"/>
+      <key name="hebrew_resh"/>
+      <key name="hebrew_aleph"/>
+      <key name="hebrew_tet"/>
+      <key name="hebrew_waw"/>
+      <key name="hebrew_finalnun"/>
+      <key name="hebrew_finalmem"/>
+      <key name="hebrew_pe"/>
+      <key name="BackSpace" repeatable="yes"/>
+    </row>
+    <row align="center">
+      <key name="hebrew_shin"/>
+      <key name="hebrew_dalet"/>
+      <key name="hebrew_gimel"/>
+      <key name="hebrew_kaph"/>
+      <key name="hebrew_ayin"/>
+      <key name="hebrew_yod"/>
+      <key name="hebrew_chet"/>
+      <key name="hebrew_lamed"/>
+      <key name="hebrew_finalkaph"/>
+      <key name="hebrew_finalpe"/>
+    </row>
+    <row>
+      <key name="hebrew_zain"/>
+      <key name="hebrew_samech"/>
+      <key name="hebrew_bet"/>
+      <key name="hebrew_he"/>
+      <key name="hebrew_nun"/>
+      <key name="hebrew_mem"/>
+      <key name="hebrew_zade"/>
+      <key name="hebrew_taw"/>
+      <key name="hebrew_finalzade"/>
+      <key name="Return" width="2.0"/>
+    </row>
+    <row>
+      <key name="Caribou_Symbols" align="left" toggle="symbols1" width="2.0"/>
+      <key name="space" width="6.0" align="center" repeatable="yes"/>
+      <key name="Caribou_Prefs" align="right"/>
+    </row>
+  </level>
+  <level mode="locked" name="symbols1" xml:base="common/symbols.xml">
+    <row>
+      <key name="1"/>
+      <key name="2"/>
+      <key name="3"/>
+      <key name="4"/>
+      <key name="5"/>
+      <key name="6"/>
+      <key name="7"/>
+      <key name="8"/>
+      <key name="9"/>
+      <key name="0"/>
+      <key name="BackSpace" repeatable="yes"/>
+    </row>
+    <row align="right">
+      <key name="minus"/>
+      <key name="slash"/>
+      <key name="colon"/>
+      <key name="semicolon"/>
+      <key name="parenleft"/>
+      <key name="parenright"/>
+      <key name="ampersand"/>
+      <key name="at"/>
+      <key name="grave"/>
+      <key name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key name="Caribou_Symbols_More" toggle="symbols2" width="2.0"/>
+      <key name="period" width="1.2"/>
+      <key name="comma" width="1.2"/>
+      <key name="question" width="1.2">
+        <key name="question"/>
+        <key name="questiondown"/>
+      </key>
+      <key name="exclam" width="1.2">
+        <key name="exclam"/>
+        <key name="exclamdown"/>
+      </key>
+      <key name="apostrophe" width="1.2"/>
+      <key name="quotedbl" width="1.2"/>
+    </row>
+    <row>
+      <key align="left" name="Caribou_Alpha" toggle="default" width="2.0"/>
+      <key align="center" name="space" width="6.0" repeatable="yes"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+  </level>
+  <level mode="locked" name="symbols2" xml:base="common/symbols.xml">
+    <row>
+      <key name="bracketleft"/>
+      <key name="bracketright"/>
+      <key name="braceleft"/>
+      <key name="braceright"/>
+      <key name="numbersign"/>
+      <key name="percent"/>
+      <key name="asciicircum"/>
+      <key name="asterisk"/>
+      <key name="plus"/>
+      <key name="equal"/>
+      <key name="BackSpace" repeatable="yes"/>
+    </row>
+    <row align="right">
+      <key align="right" name="underscore"/>
+      <key name="backslash"/>
+      <key name="bar"/>
+      <key name="asciitilde"/>
+      <key name="less"/>
+      <key name="greater"/>
+      <key name="dollar"/>
+      <key name="EuroSign"/>
+      <key name="sterling"/>
+      <key name="Return" width="1.5"/>
+    </row>
+    <row>
+      <key name="Caribou_Symbols" toggle="symbols1" width="2.0"/>
+      <key name="period" width="1.2"/>
+      <key name="comma" width="1.2"/>
+      <key name="question" width="1.2">
+        <key name="question"/>
+        <key name="questiondown"/>
+      </key>
+      <key name="exclam" width="1.2">
+        <key name="exclam"/>
+        <key name="exclamdown"/>
+      </key>
+      <key name="apostrophe" width="1.2"/>
+      <key name="quotedbl" width="1.2"/>
+    </row>
+    <row>
+      <key align="left" name="Caribou_Alpha" toggle="default" width="2.0"/>
+      <key align="center" name="space" width="6.0" repeatable="yes"/>
+      <key align="right" name="Caribou_Prefs"/>
+    </row>
+  </level>
+</layout>

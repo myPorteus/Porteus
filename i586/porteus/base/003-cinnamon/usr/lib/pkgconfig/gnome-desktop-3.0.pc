@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: gnome-desktop-3.0
+Description: Utility library for loading .desktop files
+Requires: gtk+-3.0 gsettings-desktop-schemas
+Version: 3.24.2
+Libs: -L${libdir} -lgnome-desktop-3
+Cflags: -I${includedir}/gnome-desktop-3.0

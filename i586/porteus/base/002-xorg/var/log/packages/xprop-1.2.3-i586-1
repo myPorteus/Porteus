@@ -1,0 +1,32 @@
+PACKAGE NAME:     xprop-1.2.3-i586-1
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/xprop-1.2.3-i586-1.txz
+PACKAGE DESCRIPTION:
+xprop: xprop (displays window and font properties of an X server)
+xprop:
+xprop: xprop is part of X11.
+xprop:
+xprop: For more information about the X.Org Foundation (the providers of the
+xprop: X.Org implementation of the X Window System), see their website:
+xprop:
+xprop: http://www.x.org
+xprop:
+xprop:
+xprop:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xprop
+usr/doc/
+usr/doc/xprop-1.2.3/
+usr/doc/xprop-1.2.3/COPYING
+usr/doc/xprop-1.2.3/ChangeLog
+usr/doc/xprop-1.2.3/INSTALL
+usr/doc/xprop-1.2.3/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xprop.1.gz

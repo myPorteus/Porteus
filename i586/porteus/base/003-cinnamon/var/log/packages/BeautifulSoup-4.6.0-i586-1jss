@@ -1,0 +1,115 @@
+PACKAGE NAME:     BeautifulSoup-4.6.0-i586-1jss
+COMPRESSED PACKAGE SIZE:     184K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /root/mcbs/build/../i586/pkg/003_cinnamon/BeautifulSoup-4.6.0-i586-1jss.txz
+PACKAGE DESCRIPTION:
+BeautifulSoup: BeautifulSoup (extract HTML and XML data)
+BeautifulSoup:
+BeautifulSoup: Beautiful Soup is a Python library for pulling data out of HTML and 
+BeautifulSoup: XML files.
+BeautifulSoup:
+BeautifulSoup:
+BeautifulSoup:
+BeautifulSoup:
+BeautifulSoup:
+BeautifulSoup: https://www.crummy.com/software/BeautifulSoup/
+BeautifulSoup:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/PKG-INFO
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/SOURCES.txt
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/dependency_links.txt
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/requires.txt
+usr/lib/python2.7/site-packages/beautifulsoup4-4.6.0-py2.7.egg-info/top_level.txt
+usr/lib/python2.7/site-packages/bs4/
+usr/lib/python2.7/site-packages/bs4/__init__.py
+usr/lib/python2.7/site-packages/bs4/__init__.pyc
+usr/lib/python2.7/site-packages/bs4/builder/
+usr/lib/python2.7/site-packages/bs4/builder/__init__.py
+usr/lib/python2.7/site-packages/bs4/builder/__init__.pyc
+usr/lib/python2.7/site-packages/bs4/builder/_html5lib.py
+usr/lib/python2.7/site-packages/bs4/builder/_html5lib.pyc
+usr/lib/python2.7/site-packages/bs4/builder/_htmlparser.py
+usr/lib/python2.7/site-packages/bs4/builder/_htmlparser.pyc
+usr/lib/python2.7/site-packages/bs4/builder/_lxml.py
+usr/lib/python2.7/site-packages/bs4/builder/_lxml.pyc
+usr/lib/python2.7/site-packages/bs4/dammit.py
+usr/lib/python2.7/site-packages/bs4/dammit.pyc
+usr/lib/python2.7/site-packages/bs4/diagnose.py
+usr/lib/python2.7/site-packages/bs4/diagnose.pyc
+usr/lib/python2.7/site-packages/bs4/element.py
+usr/lib/python2.7/site-packages/bs4/element.pyc
+usr/lib/python2.7/site-packages/bs4/testing.py
+usr/lib/python2.7/site-packages/bs4/testing.pyc
+usr/lib/python2.7/site-packages/bs4/tests/
+usr/lib/python2.7/site-packages/bs4/tests/__init__.py
+usr/lib/python2.7/site-packages/bs4/tests/__init__.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_builder_registry.py
+usr/lib/python2.7/site-packages/bs4/tests/test_builder_registry.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_docs.py
+usr/lib/python2.7/site-packages/bs4/tests/test_docs.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_html5lib.py
+usr/lib/python2.7/site-packages/bs4/tests/test_html5lib.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_htmlparser.py
+usr/lib/python2.7/site-packages/bs4/tests/test_htmlparser.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_lxml.py
+usr/lib/python2.7/site-packages/bs4/tests/test_lxml.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_soup.py
+usr/lib/python2.7/site-packages/bs4/tests/test_soup.pyc
+usr/lib/python2.7/site-packages/bs4/tests/test_tree.py
+usr/lib/python2.7/site-packages/bs4/tests/test_tree.pyc
+usr/lib/python3.6/
+usr/lib/python3.6/site-packages/
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/PKG-INFO
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/SOURCES.txt
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/dependency_links.txt
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/requires.txt
+usr/lib/python3.6/site-packages/beautifulsoup4-4.6.0-py3.6.egg-info/top_level.txt
+usr/lib/python3.6/site-packages/bs4/
+usr/lib/python3.6/site-packages/bs4/__init__.py
+usr/lib/python3.6/site-packages/bs4/__pycache__/
+usr/lib/python3.6/site-packages/bs4/__pycache__/__init__.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/__pycache__/dammit.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/__pycache__/diagnose.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/__pycache__/element.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/__pycache__/testing.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/builder/
+usr/lib/python3.6/site-packages/bs4/builder/__init__.py
+usr/lib/python3.6/site-packages/bs4/builder/__pycache__/
+usr/lib/python3.6/site-packages/bs4/builder/__pycache__/__init__.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/builder/__pycache__/_html5lib.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/builder/__pycache__/_htmlparser.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/builder/__pycache__/_lxml.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/builder/_html5lib.py
+usr/lib/python3.6/site-packages/bs4/builder/_htmlparser.py
+usr/lib/python3.6/site-packages/bs4/builder/_lxml.py
+usr/lib/python3.6/site-packages/bs4/dammit.py
+usr/lib/python3.6/site-packages/bs4/diagnose.py
+usr/lib/python3.6/site-packages/bs4/element.py
+usr/lib/python3.6/site-packages/bs4/testing.py
+usr/lib/python3.6/site-packages/bs4/tests/
+usr/lib/python3.6/site-packages/bs4/tests/__init__.py
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/__init__.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_builder_registry.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_docs.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_html5lib.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_htmlparser.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_lxml.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_soup.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/__pycache__/test_tree.cpython-36.pyc
+usr/lib/python3.6/site-packages/bs4/tests/test_builder_registry.py
+usr/lib/python3.6/site-packages/bs4/tests/test_docs.py
+usr/lib/python3.6/site-packages/bs4/tests/test_html5lib.py
+usr/lib/python3.6/site-packages/bs4/tests/test_htmlparser.py
+usr/lib/python3.6/site-packages/bs4/tests/test_lxml.py
+usr/lib/python3.6/site-packages/bs4/tests/test_soup.py
+usr/lib/python3.6/site-packages/bs4/tests/test_tree.py

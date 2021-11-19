@@ -1,0 +1,25 @@
+PACKAGE NAME:     httpfs2-0.1.5-i486-1ftm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: httpfs2-0.1.5-i486-1ftm.txz
+PACKAGE DESCRIPTION:
+httpfs2: httpfs2 
+httpfs2:
+httpfs2: FUSE filesystem for mounting files from http servers
+httpfs2: httpfs2 is a FUSE based filesystem for mounting http or https
+httpfs2: URLS as files in the filesystem. There is no notion of listable  
+httpfs2: directories in http so only a single URL can be mounted. 
+httpfs2: The server must be able to send byte ranges.
+httpfs2:
+httpfs2: Package created for Porteus by bigbass
+httpfs2:
+httpfs2:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/httpfs2-0.1.5/
+usr/bin/
+usr/bin/httpfs2

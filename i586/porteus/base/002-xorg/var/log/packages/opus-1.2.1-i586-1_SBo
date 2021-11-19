@@ -1,0 +1,44 @@
+PACKAGE NAME:     opus-1.2.1-i586-1_SBo
+COMPRESSED PACKAGE SIZE:     232K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/opus-1.2.1-i586-1_SBo.tgz
+PACKAGE DESCRIPTION:
+opus: opus (Audio Codec)
+opus:
+opus: Opus is a totally open, royalty-free, highly versatile audio codec.
+opus: It is standardized by the Internet Engineering Task Force (IETF)
+opus: as RFC 6716 which incorporated technology from Skype's SILK codec
+opus: and Xiph.Org's CELT codec.
+opus:
+opus: Project site: https://opus-codec.org/
+opus:
+opus:
+opus:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/opus-1.2.1/
+usr/doc/opus-1.2.1/AUTHORS
+usr/doc/opus-1.2.1/COPYING
+usr/doc/opus-1.2.1/INSTALL
+usr/doc/opus-1.2.1/README
+usr/doc/opus-1.2.1/opus.SlackBuild
+usr/include/
+usr/include/opus/
+usr/include/opus/opus.h
+usr/include/opus/opus_defines.h
+usr/include/opus/opus_multistream.h
+usr/include/opus/opus_types.h
+usr/lib/
+usr/lib/libopus.la
+usr/lib/libopus.so.0.6.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/opus.pc
+usr/man/
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/opus.m4

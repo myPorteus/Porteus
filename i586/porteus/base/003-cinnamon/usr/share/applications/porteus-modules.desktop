@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Porteus Modules
+Exec=/usr/local/bin/lsmodules
+Icon=cdr
+Type=Application
+Categories=Application;System;

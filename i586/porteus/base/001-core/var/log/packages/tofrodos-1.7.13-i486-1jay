@@ -1,0 +1,31 @@
+PACKAGE NAME:     tofrodos-1.7.13-i486-1jay
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/tofrodos-1.7.13-i486-1jay.txz
+PACKAGE DESCRIPTION:
+tofrodos: tofrodos
+tofrodos:
+tofrodos: Text file conversion utility that converts ASCII files between the MSDOS
+tofrodos: format, which traditionally have CR/LF (carriage return/line feed) pairs as
+tofrodos: their new line delimiters, and the Unix format, which usually have LFs
+tofrodos: (line feeds) to terminate each line.
+tofrodos:
+tofrodos:
+tofrodos: http://www.thefreecountry.com/tofrodos/
+tofrodos:
+tofrodos:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/fromdos
+usr/doc/
+usr/doc/tofrodos-1.7.13/
+usr/doc/tofrodos-1.7.13/readme.txt
+usr/doc/tofrodos-1.7.13/tofrodos.html
+usr/man/
+usr/man/man1/
+usr/man/man1/fromdos.1.gz

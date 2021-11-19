@@ -1,0 +1,38 @@
+PACKAGE NAME:     usbmuxd-1.1.0-i586-1
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/usbmuxd-1.1.0-i586-1.txz
+PACKAGE DESCRIPTION:
+usbmuxd: usbmuxd (iOS USB connection daemon) 
+usbmuxd:
+usbmuxd: A client daemon to multiplex connections from and to iOS devices.
+usbmuxd: It is used by libgpod.
+usbmuxd:
+usbmuxd: The usbmuxd homepage:  http://www.libimobiledevice.org/
+usbmuxd:
+usbmuxd:
+usbmuxd:
+usbmuxd:
+usbmuxd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/39-usbmuxd.rules
+usr/
+usr/doc/
+usr/doc/usbmuxd-1.1.0/
+usr/doc/usbmuxd-1.1.0/AUTHORS
+usr/doc/usbmuxd-1.1.0/COPYING.GPLv2
+usr/doc/usbmuxd-1.1.0/COPYING.GPLv3
+usr/doc/usbmuxd-1.1.0/NEWS
+usr/doc/usbmuxd-1.1.0/README
+usr/man/
+usr/man/man1/
+usr/man/man1/usbmuxd.1.gz
+usr/sbin/
+usr/sbin/usbmuxd

@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.107.100
+Requires: 
+Requires.private: libswscale >= 4.8.100, libpostproc >= 54.7.100, libavformat >= 57.83.100, libavcodec >= 57.107.100, libswresample >= 2.9.100, libavutil >= 55.78.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -lXv -lX11 -lXext -Wl,-rpath,/usr/lib -Wl,--enable-new-dtags -pthread -lSDL2 -lrtmp -lz -lssl -lcrypto -lpulse -lbluray -lass -lgnutls -Wl,-rpath,/usr/lib -Wl,--enable-new-dtags -pthread -lSDL2 -lvdpau -lX11 -lva -lva-x11 -lX11 -lva -lva-drm -lva -lxcb -lxcb-shm -lxcb-xfixes -lxcb-shape -lcdio_paranoia -lcdio_cdda -lcdio -lasound -Wl,-rpath,/usr/lib -Wl,--enable-new-dtags -pthread -lSDL2 -lGL -lxvidcore -lx264 -lvorbisenc -lvorbis -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -lspeex -lrtmp -lz -lssl -lcrypto -lpulse -lopus -lopus -lopencore-amrwb -lopencore-amrnb -lmp3lame -lbluray -lass -lgnutls -lm -ldl -llzma -lbz2 -lz -pthread -pthread
+Cflags: -I${includedir}

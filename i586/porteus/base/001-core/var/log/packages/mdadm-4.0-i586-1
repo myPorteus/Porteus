@@ -1,0 +1,48 @@
+PACKAGE NAME:     mdadm-4.0-i586-1
+COMPRESSED PACKAGE SIZE:     348K
+UNCOMPRESSED PACKAGE SIZE:     1010K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/mdadm-4.0-i586-1.txz
+PACKAGE DESCRIPTION:
+mdadm: mdadm (manage RAID arrays)
+mdadm:
+mdadm: mdadm is a utility program for creating, managing, and monitoring
+mdadm: Linux MD (Software RAID) devices.  Unlike the older raidtools
+mdadm: package, mdadm is a single program (which should make it easier to
+mdadm: use).
+mdadm:
+mdadm: mdadm was written by Neil Brown.  Development of mdadm is sponsored
+mdadm: by CSE@UNSW (The School of Computer Science and Engineering at
+mdadm: The University of New South Wales).
+mdadm:
+FILE LIST:
+./
+etc/
+etc/mdadm.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/63-md-raid-arrays.rules
+lib/udev/rules.d/64-md-raid-assembly.rules
+sbin/
+sbin/mdadm
+sbin/mdmon
+usr/
+usr/doc/
+usr/doc/mdadm-4.0/
+usr/doc/mdadm-4.0/ANNOUNCE-4.0
+usr/doc/mdadm-4.0/COPYING
+usr/doc/mdadm-4.0/ChangeLog
+usr/doc/mdadm-4.0/INSTALL
+usr/doc/mdadm-4.0/README.initramfs
+usr/doc/mdadm-4.0/TODO
+usr/man/
+usr/man/man4/
+usr/man/man4/md.4.gz
+usr/man/man5/
+usr/man/man5/mdadm.conf.5.gz
+usr/man/man8/
+usr/man/man8/mdadm.8.gz
+usr/man/man8/mdmon.8.gz

@@ -1,0 +1,36 @@
+PACKAGE NAME:     lzip-1.20-i586-2
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/lzip-1.20-i586-2.txz
+PACKAGE DESCRIPTION:
+lzip: lzip (a lossless data compressor)
+lzip:
+lzip: Lzip is a lossless data compressor with a user interface similar to
+lzip: the one of gzip or bzip2.  Lzip decompresses almost as fast as gzip
+lzip: and compresses more than bzip2, which makes it well suited for
+lzip: software distribution and data archiving.  Lzip is a clean
+lzip: implementation of the LZMA algorithm.
+lzip:
+lzip: Homepage:  http://www.nongnu.org/lzip/lzip.html
+lzip:
+lzip:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lzip
+usr/doc/
+usr/doc/lzip-1.20/
+usr/doc/lzip-1.20/AUTHORS
+usr/doc/lzip-1.20/COPYING
+usr/doc/lzip-1.20/ChangeLog
+usr/doc/lzip-1.20/INSTALL
+usr/doc/lzip-1.20/NEWS
+usr/doc/lzip-1.20/README
+usr/info/
+usr/info/lzip.info.gz
+usr/man/
+usr/man/man1/
+usr/man/man1/lzip.1.gz

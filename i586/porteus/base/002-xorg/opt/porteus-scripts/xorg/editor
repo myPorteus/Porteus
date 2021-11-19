@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## This script will search for and use an installed text editor.
+
+editors="kwrite kedit kate mousepad leafpad xed tea"
+
+for a in $editors; do
+	command -v $a >/dev/null && $a $1 && break
+done

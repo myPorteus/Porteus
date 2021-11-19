@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: cvc
+Description: Utility library for volume control (based on gvc)
+Requires: gio-2.0 libpulse libpulse-mainloop-glib gobject-2.0
+Version: 3.6.2
+Libs: -L${libdir} -lcvc
+Cflags: -I${includedir}/cinnamon-desktop/libcvc

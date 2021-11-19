@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+modlibexecdir=/usr/lib/pulse-11.1/modules
+
+Name: libpulse
+Description: PulseAudio Client Interface
+Version: 11.1-rebootstrapped
+Libs: -L${libdir} -lpulse 
+Libs.private: -L${libdir}/pulseaudio -lpulsecommon-11.1
+Cflags: -I${includedir} -D_REENTRANT

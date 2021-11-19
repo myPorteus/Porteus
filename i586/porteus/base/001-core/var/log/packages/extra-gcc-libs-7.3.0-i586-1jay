@@ -1,0 +1,14 @@
+PACKAGE NAME:     extra-gcc-libs-7.3.0-i586-1jay
+COMPRESSED PACKAGE SIZE:     272K
+UNCOMPRESSED PACKAGE SIZE:     760K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/extra-gcc-libs-7.3.0-i586-1jay.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/libgomp.so.1.0.0
+usr/lib/libquadmath.so.0.0.0

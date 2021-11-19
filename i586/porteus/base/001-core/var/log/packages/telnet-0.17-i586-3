@@ -1,0 +1,33 @@
+PACKAGE NAME:     telnet-0.17-i586-3
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/telnet-0.17-i586-3.txz
+PACKAGE DESCRIPTION:
+telnet: telnet (the telnet client and daemon)
+telnet:
+telnet: telnet supports the original DARPA telnet interactive communication
+telnet: protocol.  As connecting to a telnetd server transmits your password
+telnet: over the network in cleartext, telnet's use as a login protocol has
+telnet: been mostly superseded by the use of ssh and sshd.  However, the
+telnet: telnet client is still a very handy tool, and telnetd may still have
+telnet: some uses on networks that are known to be secure.
+telnet:
+telnet: telnet and telnetd were ported from BSD.
+telnet:
+FILE LIST:
+./
+bin/
+bin/telnet
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/netkit-telnet-0.17/
+usr/doc/netkit-telnet-0.17/README
+usr/man/
+usr/man/man1/
+usr/man/man1/telnet.1.gz
+usr/man/man8/
+usr/man/man8/in.telnetd.8.gz
+usr/sbin/
+usr/sbin/in.telnetd

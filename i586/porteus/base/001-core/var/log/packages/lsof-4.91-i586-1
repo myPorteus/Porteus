@@ -1,0 +1,41 @@
+PACKAGE NAME:     lsof-4.91-i586-1
+COMPRESSED PACKAGE SIZE:     300K
+UNCOMPRESSED PACKAGE SIZE:     970K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/lsof-4.91-i586-1.txz
+PACKAGE DESCRIPTION:
+lsof: lsof (list open files)
+lsof:
+lsof: Lsof is a Unix-specific tool. Its name stands for "LiSt Open Files",
+lsof: and it does just that. It lists information about files that are open
+lsof: by the processes running on the system.
+lsof:
+lsof: Victor A. Abell of Purdue University is the developer of lsof.
+lsof:
+lsof:
+lsof:
+lsof:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lsof
+usr/doc/
+usr/doc/lsof-4.91/
+usr/doc/lsof-4.91/00.README.FIRST
+usr/doc/lsof-4.91/00CREDITS
+usr/doc/lsof-4.91/00DCACHE
+usr/doc/lsof-4.91/00DIALECTS
+usr/doc/lsof-4.91/00DIST
+usr/doc/lsof-4.91/00FAQ
+usr/doc/lsof-4.91/00LSOF-L
+usr/doc/lsof-4.91/00MANIFEST
+usr/doc/lsof-4.91/00PORTING
+usr/doc/lsof-4.91/00QUICKSTART
+usr/doc/lsof-4.91/00README
+usr/doc/lsof-4.91/00TEST
+usr/doc/lsof-4.91/00XCONFIG
+usr/man/
+usr/man/man8/
+usr/man/man8/lsof.8.gz

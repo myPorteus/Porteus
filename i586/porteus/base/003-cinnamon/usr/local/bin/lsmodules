@@ -1,0 +1,349 @@
+#!/usr/bin/python3
+
+## Porteus Module Activation Status
+## Author: jssouza
+
+import os
+import glob
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GdkPixbuf, Gio, GLib
+from subprocess import run
+
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+
+class PortModules:
+    '''Port Modules Class'''
+
+    backing_files = []
+    extramod_dirs = []
+    extramod_paths = {}
+    is_copy_2_ram = False	
+
+    def __init__(self):
+        self.set_extra_mods()
+        self.check_copy2ram()
+
+    def check_copy2ram(self):
+        with open('/etc/bootcmd.cfg', encoding = 'utf-8') as fd:
+            self.is_copy_2_ram = "copy2ram" in fd.read()
+
+    def set_extra_mods(self):
+        with open('/etc/bootcmd.cfg', encoding = 'utf-8') as fd:
+            for fline in fd:
+                if fline.startswith('extramod='):
+                    fline = fline[9:-1]
+                    self.extramod_dirs = fline.split(';')
+                    i = len(self.extramod_dirs)
+                    while i > 0:
+                        if self.extramod_dirs[i - 1].startswith("UUID") or self.extramod_dirs[i - 1].startswith("LABEL"):
+                            index = self.extramod_dirs[i - 1].find("/")
+                            self.extramod_dirs[i - 1] = self.extramod_dirs[i - 1][index + 1:]
+                        i -= 1
+                    # print(self.extramod_dirs)
+
+    def set_extra_mod_paths(self):
+        self.extramod_paths.clear()
+        for extramod_dir in self.extramod_dirs:
+            for backing_file in self.backing_files:
+                if extramod_dir + "/" in backing_file:
+                    index = backing_file.rfind("/")
+                    self.extramod_paths[extramod_dir] = backing_file[:index]
+                    break
+        return self.extramod_paths
+
+    def set_backing_files(self):
+        del self.backing_files[:]
+        os.chdir('/sys/block/')
+        loop_devices = glob.glob('loop*')
+        for loop_device in loop_devices:
+            if os.path.exists('/sys/block/' + loop_device + '/loop/'):
+                with open('/sys/block/' + loop_device + '/loop/backing_file', encoding = 'utf-8') as fd:
+                    fline = fd.read()
+                    if fline[:-1].endswith(".xzm"):
+                        self.backing_files.append(fline[:-1])
+        return len(self.backing_files)
+        # print(self.backing_files)
+
+    def populate_modules(self, path):
+        module_list = {}
+        if os.path.exists(path):     
+            os.chdir(path)
+            modules = glob.glob('*.xzm')
+            modules.sort()
+            for module in modules:
+                if os.path.realpath(module) in self.backing_files:
+                    is_activated = True
+                    self.backing_files.remove(os.path.realpath(module))
+                else:
+                    is_activated = False            
+                module_list[os.path.realpath(module)] = is_activated
+        return module_list
+
+    def populate_remaining_modules(self):
+        module_list = {}
+        for backing_file in self.backing_files:
+            module_list[backing_file] = True
+        return module_list
+
+
+class MainWindow(Gtk.Window):
+    portdir_env_dir = os.environ["PORTDIR"]
+    bootdev_env_dir = os.environ["BOOTDEV"]
+    extra_mod_paths = {}
+    port_modules = PortModules()
+    theme = Gtk.IconTheme.get_default()
+    activated_icon = Gtk.IconTheme.load_icon(theme, "gtk-yes", 24, Gtk.IconLookupFlags.USE_BUILTIN)
+    not_activated_icon = Gtk.IconTheme.load_icon(theme, "gtk-no", 24, Gtk.IconLookupFlags.USE_BUILTIN)
+    #add_icon = Gtk.IconTheme.load_icon(theme, "gtk-add", 24, Gtk.IconLookupFlags.USE_BUILTIN)
+
+    def __init__(self):
+
+        Gtk.Window.__init__(self, title = "Porteus Modules", border_width = 5, height_request = 550, width_request = 500, icon_name = "cdr")
+
+        self.vb = Gtk.Box(5, orientation = Gtk.Orientation.VERTICAL) 
+        self.vb.set_homogeneous(False)
+
+        self.hb_top = Gtk.Box(5) 
+        self.hb_top.set_homogeneous(False)
+        self.l_num_mods_txt = Gtk.Label("Modules Activated: ")
+        self.l_num_mods_txt.set_justify(Gtk.Justification.RIGHT)
+        self.l_num_mods = Gtk.Label("")
+        self.l_num_mods.set_justify(Gtk.Justification.LEFT)
+        self.hb_top.pack_end(self.l_num_mods, False, False, 0)
+        self.hb_top.pack_end(self.l_num_mods_txt, False, False, 0)
+        self.vb.pack_start(self.hb_top, False, False, 5)
+
+        self.ts_modules_model = Gtk.TreeStore(GdkPixbuf.Pixbuf, str, bool, str)
+
+        self.tree_view = Gtk.TreeView(self.ts_modules_model)
+        self.setup_tree_view()
+        self.tree_view.connect("row-activated", self.on_row_activated)
+
+        self.scrolled_win = Gtk.ScrolledWindow()
+        self.scrolled_win.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        self.scrolled_win.add(self.tree_view)
+        self.vb.pack_start(self.scrolled_win, True, True, 0)
+
+
+        self.hb_bottom = Gtk.Box(5) 
+        self.hb_bottom.set_homogeneous(False)
+        self.l_mod_path = Gtk.Label("")
+        self.hb_bottom.pack_start(self.l_mod_path, False, False, 6)
+
+        self.add_button = Gtk.Button.new_from_icon_name("gtk-add", Gtk.IconSize.BUTTON)
+        self.add_button.connect("clicked", self.on_add_button_clicked)
+        self.hb_bottom.pack_end(self.add_button, False, False, 6)
+
+        self.vb.pack_start(self.hb_bottom, False, False, 6)
+        self.add(self.vb)
+
+        self.select = self.tree_view.get_selection()
+        self.select.connect("changed", self.on_tree_selection_changed)
+
+        self.gio_file = Gio.File.new_for_path("/mnt/live/memory/images")
+        self.monitor = self.gio_file.monitor_directory(Gio.FileMonitorFlags.NONE, None)
+        self.monitor.connect("changed", self.on_mods_dir_changed)
+
+        if self.bootdev_env_dir.startswith("/mnt/isoloop"):
+            self.bootdev_env_dir = "/mnt/live" + self.portdir_env_dir    
+
+        self.set_modules_model()
+
+    def msg_dialog(self, msg):
+        dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO,
+        Gtk.ButtonsType.OK, msg)
+        dialog.run()
+        dialog.destroy()
+    
+
+    def on_add_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog("Choose a modules directory", self,
+            Gtk.FileChooserAction.SELECT_FOLDER,
+            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+             "Select", Gtk.ResponseType.OK))
+        dialog.set_default_size(800, 400)
+
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.add_custom_modules_path(dialog.get_filename())
+
+        dialog.destroy()
+
+    def add_custom_modules_path(self, dir_path):
+        if os.path.exists(dir_path):
+            if dir_path.startswith(self.portdir_env_dir + "/base") or \
+               dir_path.startswith(self.portdir_env_dir + "/modules") or \
+               dir_path.startswith(self.portdir_env_dir + "/optional"):
+                self.msg_dialog("Porteus directories already added")
+                return 
+
+            for extra_mod_path in self.extra_mod_paths:
+                if dir_path == self.extra_mod_paths[extra_mod_path]: 
+                    self.msg_dialog("Directory already added as part of extramod= cheatcode")
+                    return
+
+
+        if os.path.exists(os.environ["HOME"] + "/.config/lsmodules"):
+            with open(os.environ["HOME"] + "/.config/lsmodules", mode = "r", encoding = "utf-8") as fd: 
+                for fline in fd:
+                    if fline.startswith("#"):
+                        fline = fline[1:]
+                    fline = fline.lstrip()
+                    if fline.startswith("$PORTDIR"):
+                        fline = fline.replace("$PORTDIR", self.portdir_env_dir) 
+                    if fline.startswith("$BOOTDEV"):
+                        fline = fline.replace("$BOOTDEV", self.bootdev_env_dir)
+                    if dir_path == fline[:-1]:
+                        self.msg_dialog("Directory already added")
+                        return
+            with open(os.environ["HOME"] + "/.config/lsmodules", mode = "a", encoding = "utf-8") as fd:
+                fd.write(dir_path + "\n")                                
+        else:
+            with open(os.environ["HOME"] + "/.config/lsmodules", mode = "a+", encoding = "utf-8") as fd:
+                fd.write(dir_path + "\n")
+        self.set_modules_model()                        
+        
+            
+    def on_tree_selection_changed(self, selection):
+            model, iter = selection.get_selected()
+            if iter is not None:
+                if model[iter][0] is not None:
+                    self.l_mod_path.set_markup("<i>" + model[iter][3] + "/" + model[iter][1] + "</i>")
+                else:
+                    self.l_mod_path.set_text("")                    
+
+    def on_row_activated(self, tree_view, path, column):
+        model = tree_view.get_model()
+        iter = model.get_iter(path)
+        row = model.get(iter, 0, 1, 2, 3)
+        if row[0] is not None:
+            if row[3] not in self.portdir_env_dir + "/base/" and row[3] not in "/mnt/live/memory/copy2ram":
+                if row[2]:
+                    cmd_string = "deactivate"
+                else:
+                    cmd_string = "activate"
+                run([cmd_string, row[3] + "/" + row[1]])
+            else:
+                self.msg_dialog("Base Modules should not be Activated/Deactivated")
+        
+    def cell_data_func(self, column, renderer, model, iter, data):
+        row = model.get(iter, 0, 1)
+        if row[0] is None:
+            markup_txt = "<b>" + row[1] + "</b>"
+            renderer.set_property("markup", markup_txt)
+
+    def setup_tree_view(self):
+        column = Gtk.TreeViewColumn("Module Name")
+        renderer_pixbuf = Gtk.CellRendererPixbuf()
+        renderer_text = Gtk.CellRendererText()
+        column.pack_start(renderer_pixbuf, False)
+        column.pack_start(renderer_text, False)
+
+        column.add_attribute(renderer_pixbuf, "pixbuf", 0)
+        column.add_attribute(renderer_text, "text", 1)
+        column.set_cell_data_func(renderer_text, self.cell_data_func, None)
+        # column.set_sort_column_id(1)
+
+        self.tree_view.append_column(column)
+
+    def insert_modules_in_model(self, module_list, iter):
+        for module in module_list:
+            (dirname, filename) = os.path.split(module)     
+            if True == module_list[module]:
+                icon = self.activated_icon
+            else:
+                icon = self.not_activated_icon 
+            self.ts_modules_model.append(iter, [icon, filename, module_list[module], dirname])
+
+    def on_mods_dir_changed(self, monitor, file1, file2, event_type):
+        if event_type == Gio.FileMonitorEvent.CREATED or event_type == Gio.FileMonitorEvent.DELETED:
+            GLib.timeout_add_seconds(1, self.set_modules_model)
+
+    def set_modules_model(self):
+        self.ts_modules_model.clear()
+        self.extra_mod_paths.clear()
+        num_modules = 0
+        num_activated_modules = self.port_modules.set_backing_files()
+        self.extra_mod_paths = self.port_modules.set_extra_mod_paths()
+
+        if self.port_modules.is_copy_2_ram:
+            iter = self.ts_modules_model.append(None, [None, "Copied to RAM", None, None])
+            module_list = self.port_modules.populate_modules("/mnt/live/memory/copy2ram/")
+            num_modules += len(module_list)
+            self.insert_modules_in_model(module_list, iter)
+
+        elif os.path.exists(self.portdir_env_dir):
+            iter = self.ts_modules_model.append(None, [None, "Base", None, None])
+            module_list = self.port_modules.populate_modules(self.portdir_env_dir + "/base/")
+            num_modules += len(module_list)
+            self.insert_modules_in_model(module_list, iter)
+
+            iter = self.ts_modules_model.append(None, [None, "Modules", None, None])
+            module_list = self.port_modules.populate_modules(self.portdir_env_dir + "/modules/")
+            num_modules += len(module_list)
+            self.insert_modules_in_model(module_list, iter)
+
+            iter = self.ts_modules_model.append(None, [None, "Optional", None, None])
+            module_list = self.port_modules.populate_modules(self.portdir_env_dir + "/optional/")
+            num_modules += len(module_list)
+            sub_dirs = next(os.walk(self.portdir_env_dir + "/optional/"))[1]
+            self.insert_modules_in_model(module_list, iter)
+            if sub_dirs:
+                for sub_dir in sub_dirs:
+                    module_list = self.port_modules.populate_modules(self.portdir_env_dir + "/optional/" + sub_dir + "/")
+                    num_modules += len(module_list)
+                    self.insert_modules_in_model(module_list, iter) 
+        
+        ''' Extramod Dirs '''
+        for extra_mod_path in self.extra_mod_paths:
+            # print(extra_mod_path, self.extra_mod_paths[extra_mod_path])
+            iter = self.ts_modules_model.append(None, [None, "Extramod Dir (" + extra_mod_path + ")", None, None])
+            module_list = self.port_modules.populate_modules(self.extra_mod_paths[extra_mod_path] + "/")
+            num_modules += len(module_list)
+            self.insert_modules_in_model(module_list, iter)
+    
+        ''' User defined Dirs '''
+        if os.path.exists(os.environ["HOME"] + "/.config/lsmodules"):
+            with open(os.environ["HOME"] + "/.config/lsmodules", mode = "r", encoding = "utf-8") as fd: 
+                for fline in fd:
+                    if fline.startswith("#"):
+                        continue
+                    fline = fline.lstrip()
+                    fline = fline[:-1]
+                    if fline.startswith("$PORTDIR"):
+                        fline = fline.replace("$PORTDIR", self.portdir_env_dir) 
+                    elif fline.startswith("$BOOTDEV"):
+                        fline = fline.replace("$BOOTDEV", self.bootdev_env_dir)
+                    if os.path.exists(fline):                    
+                        iter = self.ts_modules_model.append(None, [None, "Custom Dir (" + fline + ")", None, None])
+                        module_list = self.port_modules.populate_modules(fline + "/")
+                        num_modules += len(module_list)
+                        self.insert_modules_in_model(module_list, iter)
+
+        ''' Remaining Modules '''                    
+        module_list = self.port_modules.populate_remaining_modules()
+        if module_list:
+            iter = self.ts_modules_model.append(None, [None, "Other", None, None])
+            self.insert_modules_in_model(module_list, iter)
+            num_modules += len(module_list)
+
+        self.l_num_mods.set_text(str(num_activated_modules) + "/" + str(num_modules))
+        self.tree_view.expand_all()
+
+        selection = self.tree_view.get_selection()        
+        path = Gtk.TreePath([0, 0])
+        selection.select_path(path)
+        
+
+win = MainWindow()
+win.connect("delete-event", Gtk.main_quit)
+win.connect("destroy", Gtk.main_quit) 
+win.show_all()
+Gtk.main()
+
+#widget = Gtk.TreeViewColumn()
+#print(dir(widget.props))
+

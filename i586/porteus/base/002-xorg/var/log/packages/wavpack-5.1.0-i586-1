@@ -1,0 +1,47 @@
+PACKAGE NAME:     wavpack-5.1.0-i586-1
+COMPRESSED PACKAGE SIZE:     176K
+UNCOMPRESSED PACKAGE SIZE:     520K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/wavpack-5.1.0-i586-1.txz
+PACKAGE DESCRIPTION:
+wavpack: wavpack (A lossless WAV file compressor)
+wavpack:
+wavpack: Wavpack is a hybrid lossless wavefile compressor.  Wavfile is
+wavpack: Copyright (c) 1998 - 2006 Conifer Software.  All Rights Reserved.
+wavpack:
+wavpack: Wavpack is distributed under the BSD Software License.
+wavpack:
+wavpack: Visit the wavpack project online:  http://www.wavpack.com
+wavpack:
+wavpack:
+wavpack:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/wavpack
+usr/bin/wvgain
+usr/bin/wvtag
+usr/bin/wvunpack
+usr/doc/
+usr/doc/wavpack-5.1.0/
+usr/doc/wavpack-5.1.0/AUTHORS
+usr/doc/wavpack-5.1.0/ChangeLog
+usr/doc/wavpack-5.1.0/NEWS
+usr/doc/wavpack-5.1.0/README
+usr/include/
+usr/include/wavpack/
+usr/include/wavpack/wavpack.h
+usr/lib/
+usr/lib/libwavpack.la
+usr/lib/libwavpack.so.1.2.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/wavpack.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/wavpack.1.gz
+usr/man/man1/wvgain.1.gz
+usr/man/man1/wvtag.1.gz
+usr/man/man1/wvunpack.1.gz

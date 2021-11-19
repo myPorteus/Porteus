@@ -1,0 +1,82 @@
+PACKAGE NAME:     libwebp-0.6.0-i586-1_SBo
+COMPRESSED PACKAGE SIZE:     564K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libwebp-0.6.0-i586-1_SBo.tgz
+PACKAGE DESCRIPTION:
+libwebp: libwebp (WebP photo compression library)
+libwebp:
+libwebp: WebP is a method of lossy compression that can be used on
+libwebp: photographic images. The degree of compression is adjustable so a
+libwebp: user can choose the trade-off between file size and image quality.
+libwebp: WebP typically achieves an average of 39% more compression than
+libwebp: JPEG and JPEG 2000, without loss of image quality.
+libwebp:
+libwebp: Homepage: https://developers.google.com/speed/webp/
+libwebp:
+libwebp:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cwebp
+usr/bin/dwebp
+usr/bin/gif2webp
+usr/bin/img2webp
+usr/bin/vwebp
+usr/bin/webpmux
+usr/doc/
+usr/doc/libwebp-0.6.0/
+usr/doc/libwebp-0.6.0/AUTHORS
+usr/doc/libwebp-0.6.0/COPYING
+usr/doc/libwebp-0.6.0/ChangeLog
+usr/doc/libwebp-0.6.0/NEWS
+usr/doc/libwebp-0.6.0/PATENTS
+usr/doc/libwebp-0.6.0/README
+usr/doc/libwebp-0.6.0/libwebp.SlackBuild
+usr/include/
+usr/include/webp/
+usr/include/webp/decode.h
+usr/include/webp/demux.h
+usr/include/webp/encode.h
+usr/include/webp/mux.h
+usr/include/webp/mux_types.h
+usr/include/webp/types.h
+usr/lib/
+usr/lib/libwebp.la
+usr/lib/libwebp.so.7.0.0
+usr/lib/libwebpdecoder.la
+usr/lib/libwebpdecoder.so.3.0.0
+usr/lib/libwebpdemux.la
+usr/lib/libwebpdemux.so.2.0.2
+usr/lib/libwebpmux.la
+usr/lib/libwebpmux.so.3.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libwebp.pc
+usr/lib/pkgconfig/libwebpdecoder.pc
+usr/lib/pkgconfig/libwebpdemux.pc
+usr/lib/pkgconfig/libwebpmux.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/com/
+usr/lib/python2.7/site-packages/com/__init__.py
+usr/lib/python2.7/site-packages/com/__init__.pyc
+usr/lib/python2.7/site-packages/com/google/
+usr/lib/python2.7/site-packages/com/google/__init__.py
+usr/lib/python2.7/site-packages/com/google/__init__.pyc
+usr/lib/python2.7/site-packages/com/google/webp/
+usr/lib/python2.7/site-packages/com/google/webp/__init__.py
+usr/lib/python2.7/site-packages/com/google/webp/__init__.pyc
+usr/lib/python2.7/site-packages/com/google/webp/_libwebp.so
+usr/lib/python2.7/site-packages/com/google/webp/libwebp.py
+usr/lib/python2.7/site-packages/com/google/webp/libwebp.pyc
+usr/lib/python2.7/site-packages/libwebp-0.0-py2.7.egg-info
+usr/man/
+usr/man/man1/
+usr/man/man1/cwebp.1.gz
+usr/man/man1/dwebp.1.gz
+usr/man/man1/gif2webp.1.gz
+usr/man/man1/vwebp.1.gz
+usr/man/man1/webpmux.1.gz

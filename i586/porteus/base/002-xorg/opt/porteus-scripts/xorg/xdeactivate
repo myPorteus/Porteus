@@ -1,0 +1,18 @@
+#!/bin/bash
+# This script is used to provide a GUI messages for 'aufs-remove' script.
+
+# Remove the module from the live filesystem:
+/opt/porteus-scripts/xorg/aufs-remove $1
+err=$?
+
+if [ $err -eq 1 ]; then
+    Xdialog --title "deactivate error" --msgbox "$1: Module is not activated" 0 0
+    exit
+elif [ $err -eq 2 ]; then
+    Xdialog --title "deactivate error" --msgbox "$1: Module can't be deactivated. Perhaps some files from the module are still used, opened or executed." 0 0
+    exit
+else
+    Xdialog --title "deactivate success" --no-buttons --no-close --infobox "Well done! $1: module deactivated." 0 0 2000 &
+fi
+
+exit 0

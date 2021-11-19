@@ -1,0 +1,60 @@
+PACKAGE NAME:     talloc-2.1.11-i586-1
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/talloc-2.1.11-i586-1.txz
+PACKAGE DESCRIPTION:
+talloc: talloc (memory pool system library)
+talloc:
+talloc: Talloc is a hierarchical, reference counted memory pool system with
+talloc: destructors. It is the core memory allocator used in Samba.
+talloc:
+talloc: Homepage:  https://talloc.samba.org
+talloc:
+talloc:
+talloc:
+talloc:
+talloc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/talloc-2.1.11/
+usr/doc/talloc-2.1.11/NEWS
+usr/doc/talloc-2.1.11/doc/
+usr/doc/talloc-2.1.11/doc/context.png
+usr/doc/talloc-2.1.11/doc/context_tree.png
+usr/doc/talloc-2.1.11/doc/mainpage.dox
+usr/doc/talloc-2.1.11/doc/stealing.png
+usr/doc/talloc-2.1.11/doc/tutorial_bestpractices.dox
+usr/doc/talloc-2.1.11/doc/tutorial_context.dox
+usr/doc/talloc-2.1.11/doc/tutorial_debugging.dox
+usr/doc/talloc-2.1.11/doc/tutorial_destructors.dox
+usr/doc/talloc-2.1.11/doc/tutorial_dts.dox
+usr/doc/talloc-2.1.11/doc/tutorial_introduction.dox
+usr/doc/talloc-2.1.11/doc/tutorial_pools.dox
+usr/doc/talloc-2.1.11/doc/tutorial_stealing.dox
+usr/doc/talloc-2.1.11/doc/tutorial_threads.dox
+usr/doc/talloc-2.1.11/index.html
+usr/include/
+usr/include/pytalloc.h
+usr/include/talloc.h
+usr/lib/
+usr/lib/libpytalloc-util.cpython-36m-i386-linux-gnu.so.2.1.11
+usr/lib/libpytalloc-util.so.2.1.11
+usr/lib/libtalloc.so.2.1.11
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/pytalloc-util.cpython-36m-i386-linux-gnu.pc
+usr/lib/pkgconfig/pytalloc-util.pc
+usr/lib/pkgconfig/talloc.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/talloc.so
+usr/lib/python3.6/
+usr/lib/python3.6/site-packages/
+usr/lib/python3.6/site-packages/talloc.cpython-36m-i386-linux-gnu.so
+usr/man/
+usr/man/man3/
+usr/man/man3/talloc.3.gz

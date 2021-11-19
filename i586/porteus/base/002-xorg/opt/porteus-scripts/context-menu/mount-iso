@@ -1,0 +1,57 @@
+#!/bin/bash
+# Service menu script to mount iso on loop
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+file=$1
+name=${file##*/}
+script="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+echo "$file" > /tmp/.mount
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu "$script $file" &
+  exit
+fi
+
+file=`</tmp/.mount`
+echo "Mounting: $file" > /tmp/out
+
+message_good(){
+echo '
+'`start_window "Mounted" gtk-yes 400 0`'
+	<hbox>
+		'`pixmapstock gtk-help`'
+		'`txtcolor 330 darkred x-large normal "$name was mounted"`'
+	</hbox>
+		'`hsep`'
+		'`txtmarkup 370 "$name was successfully mounted at /mnt/loop"`'
+	<timer milliseconds="true" visible="false">
+             <action>sleep 2</action>
+             <action type="exit">timedout</action>
+      </timer>
+'`end_window`'
+'|gtkdialog -s > /tmp/.message
+}
+
+message_bad(){
+echo '
+'`start_window "Not mounted" gtk-yes 400 0`'
+	<hbox>
+		'`pixmapstock gtk-error`'
+		'`txtcolor 330 darkred x-large normal "$name was NOT mounted"`'
+	</hbox>
+		'`hsep`'
+		'`txtmarkup 370 "There was an error mounting $name at /mnt/loop"`'
+     <timer milliseconds="true" visible="false">
+             <action>sleep 2</action>
+             <action type="exit">timedout</action>
+     </timer>
+'`end_window`'
+'|gtkdialog -s > /tmp/.message
+}
+
+mloop $file && message_good || message_bad
+rm /tmp/.message
+rm /tmp/.mount

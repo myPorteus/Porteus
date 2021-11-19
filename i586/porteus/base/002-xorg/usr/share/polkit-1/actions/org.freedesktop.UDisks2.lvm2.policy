@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The Udisks Project</vendor>
+  <vendor_url>https://github.com/storaged-project/udisks</vendor_url>
+  <icon_name>drive-removable-media</icon_name>
+
+  
+  
+
+  <action id="org.freedesktop.udisks2.lvm2.manage-lvm">
+    <description>Manage LVM</description>
+    <description xml:lang="ca">Gestiona el LVM</description>
+    <description xml:lang="cs">Spravovat LVM</description>
+    <description xml:lang="da">Håndter LVM</description>
+    <description xml:lang="de">LVM Verwaltung</description>
+    <description xml:lang="en_GB">Manage LVM</description>
+    <description xml:lang="es">Gestionar LVM</description>
+    <description xml:lang="fi">LVM hallinta</description>
+    <description xml:lang="fr">Gérer le LVM </description>
+    <description xml:lang="hu">LVM kezelése</description>
+    <description xml:lang="id">Kelola LVM</description>
+    <description xml:lang="it">Gestisci LVM</description>
+    <description xml:lang="kk">LVM басқару</description>
+    <description xml:lang="nl">Beheer LVM</description>
+    <description xml:lang="pl">Zarządzanie LVM</description>
+    <description xml:lang="pt_BR">Gerenciar LVM</description>
+    <description xml:lang="sk">Spravovať LVM</description>
+    <description xml:lang="sv">Hantera LVM</description>
+    <description xml:lang="uk">Керування LVM</description>
+    <description xml:lang="zh_CN">管理 LVM</description>
+    <message>Authentication is required to manage LVM</message>
+    <message xml:lang="ca">Es requereix autenticació per gestionar el LVM</message>
+    <message xml:lang="cs">Pro správu LVM je vyžadována autentizace</message>
+    <message xml:lang="da">Godkendelse er krævet for at håndtere LVM</message>
+    <message xml:lang="de">Legitimation ist zum Verwalten von LVM Datenträgern erforderlich</message>
+    <message xml:lang="en_GB">Authentication is required to manage LVM</message>
+    <message xml:lang="es">Se requiere autenticación para la gestión de LVM</message>
+    <message xml:lang="fi">LVM hallinta vaatii tunnistautumisen</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour gérer le LVM</message>
+    <message xml:lang="hu">Hitelesítés szükséges az LVM kezeléséhez</message>
+    <message xml:lang="id">Perlu otentikasi untuk mengelola LVM</message>
+    <message xml:lang="it">È richiesto autenticarsi per gestire LVM</message>
+    <message xml:lang="kk">LVM басқару үшін аутентификация керек</message>
+    <message xml:lang="nl">Authenticatie is vereist om LVM te beheren</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zarządzać LVM</message>
+    <message xml:lang="pt_BR">A autenticação é necessária para gerenciar LVM</message>
+    <message xml:lang="sk">Spravovanie LVM vyžaduje overenie totožnosti</message>
+    <message xml:lang="sv">Autentisering krävs för att hantera LVM</message>
+    <message xml:lang="uk">Щоб отримати доступ до керування LVM, слід пройти розпізнавання</message>
+    <message xml:lang="zh_CN">管理 LVM 时需要身份验证</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

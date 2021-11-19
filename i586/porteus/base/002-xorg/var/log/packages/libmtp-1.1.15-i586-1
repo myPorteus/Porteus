@@ -1,0 +1,63 @@
+PACKAGE NAME:     libmtp-1.1.15-i586-1
+COMPRESSED PACKAGE SIZE:     224K
+UNCOMPRESSED PACKAGE SIZE:     
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libmtp-1.1.15-i586-1.txz
+PACKAGE DESCRIPTION:
+libmtp: libmtp (A library for MTP media devices)
+libmtp:
+libmtp: libmtp is a library that attempts to support Microsoft's Media
+libmtp: Transfer Protocol (MTP). It was initially based on the great libptp2
+libmtp: library by Mariusz Woloszyn now maintained by Marcus Meissners, and
+libmtp: Hubert Figuere's libgphoto2 work based on libptp2 (or is libptp2
+libmtp: based on libgphoto?). It is like a master DJ has remixed all of
+libmtp: these tracks and then added a new API adapted for portable media
+libmtp: players. :-)
+libmtp:
+libmtp: Homepage: http://libmtp.sourceforge.net
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/hwdb.d/
+lib/udev/hwdb.d/69-libmtp.hwdb
+lib/udev/mtp-probe
+lib/udev/rules.d/
+lib/udev/rules.d/69-libmtp.rules
+usr/
+usr/bin/
+usr/bin/mtp-albumart
+usr/bin/mtp-albums
+usr/bin/mtp-connect
+usr/bin/mtp-detect
+usr/bin/mtp-emptyfolders
+usr/bin/mtp-files
+usr/bin/mtp-filetree
+usr/bin/mtp-folders
+usr/bin/mtp-format
+usr/bin/mtp-getplaylist
+usr/bin/mtp-hotplug
+usr/bin/mtp-newplaylist
+usr/bin/mtp-playlists
+usr/bin/mtp-reset
+usr/bin/mtp-thumb
+usr/bin/mtp-tracks
+usr/bin/mtp-trexist
+usr/doc/
+usr/doc/libmtp-1.1.15/
+usr/doc/libmtp-1.1.15/AUTHORS
+usr/doc/libmtp-1.1.15/COPYING
+usr/doc/libmtp-1.1.15/ChangeLog
+usr/doc/libmtp-1.1.15/INSTALL
+usr/doc/libmtp-1.1.15/README
+usr/doc/libmtp-1.1.15/README.windows.txt
+usr/doc/libmtp-1.1.15/TODO
+usr/include/
+usr/include/libmtp.h
+usr/lib/
+usr/lib/libmtp.la
+usr/lib/libmtp.so.9.4.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libmtp.pc

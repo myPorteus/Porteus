@@ -1,0 +1,290 @@
+#!/bin/sh
+
+# this gtkdialog script opens a window with some options to update some web browsers and plugins 
+# for Porteus Linux, it is a gui for some of brokenmans update-* scripts
+# author: ncmprhnsbl
+
+. /usr/lib/librokenman
+ 
+# Check if we are root
+if [ "$UID" -ne 0 ]; then
+  if [ "$DISPLAY" ]; then
+    /opt/porteus-scripts/xorg/psu $0
+  else
+    echo "Enter root password"
+    su -c $0
+  fi
+  exit
+fi
+
+exec 2>/dev/null
+     
+     
+## export functions to perform logout actions:
+
+update_firefox(){
+SUB1='
+ <window title="Update Firefox" icon-name="firefox">
+    <vbox>
+     <terminal>
+      <input>echo "update-firefox"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB1   
+gtkdialog -p SUB1 -c                     
+}; export -f update_firefox 
+
+update_chrome(){
+SUB2='
+ <window title="Update Chrome" icon-name="chrome">
+    <vbox>
+     <terminal>
+      <input>echo "update-chrome"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB2   
+gtkdialog -p SUB2 -c                     
+}; export -f update_chrome 
+
+update_chromium(){
+SUB3='
+ <window title="Update Chromium" icon-name="chromium">
+    <vbox>
+     <terminal>
+      <input>echo "update-chromium"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB3   
+gtkdialog -p SUB3 -c                     
+}; export -f update_chromium 
+
+update_opera(){
+SUB4='
+ <window title="Update Opera" icon-name="opera">
+    <vbox>
+     <terminal>
+      <input>echo "update-opera"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB4   
+gtkdialog -p SUB4 -c                     
+}; export -f update_opera 
+
+update_palemoon(){
+SUB5='
+ <window title="Update Palemoon" icon-name="palemoon">
+    <vbox>
+     <terminal>
+      <input>echo "update-palemoon"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB5   
+gtkdialog -p SUB5 -c                     
+}; export -f update_palemoon
+
+update_flash(){
+SUB6='
+ <window title="Update Flashplugin" icon-name="adobe-flash">
+    <vbox>
+     <terminal>
+      <input>echo "update-flash"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB6   
+gtkdialog -p SUB6 -c                     
+}; export -f update_flash
+
+update_pepperflash(){
+SUB7='
+ <window title="Update PepperFlash" icon-name="chromium">
+    <vbox>
+     <terminal>
+      <input>echo "update-pepperflash"</input>
+     </terminal>
+     <hbox>
+      <button cancel>
+      </button>
+     </hbox>  
+    </vbox>
+  </window>
+'
+export SUB7   
+gtkdialog -p SUB7 -c                     
+}; export -f update_pepperflash
+    
+help_dialog(){
+SUB8='
+  <window title="Help" icon-name="gtk-help">
+    <vbox margin="20">
+     <edit editable="false" left-margin="10" cursor-visible="false">
+     <height>470</height>
+     <width>650</width>
+     <default>"Porteus Browser Tool is to help you get or update Web browsers and Flashplayer plugins.
+Choose by clicking a button and follow the y/n prompts in the terminal window that opens.
+You have a choice, either to download a premade module from our server 
+or to build it from official packages.
+
+If you choose the latter, for Chrome, Chromium, or Opera you will first need:
+  a.  To install binutils , which can be done by(as root user) : 
+      1.  getpkg binutils  (choose /tmp when it asks for directory to download to)
+      2.  installpkg /tmp/binutils*
+  or
+  b.  To get and Activate the 05-devel.xzm.  
+Then rerun the script (click on the button).        
+
+At the end, the chosen module(s) can be found in /tmp directory. 
+Multiple modules can be chosen (one at a time).
+
+The Run Lynx button launches xterm with the included Lynx text based Web browser.
+
+You can use the File button below to open a Privileged (Root user) Filemanager or you can use 
+the normal (Guest user) Filemanager, to move the module to your porteus modules directory or
+somewhere else outside the live filesystem to survive reboot. 
+Don'\''t forget to activate it (double click). The last activated browser will become the icon visible 
+on the toolbar.
+
+Flashplayer plugin is for Firefox and Palemoon and PepperFlash plugin is for  Chromium and Opera. 
+Chrome automatically downloads its own plugin when you try to play a video or run a webapp."</default>
+     </edit>
+     <hbox>
+      <button cancel></button>
+     </hbox>
+    </vbox>
+   </window>
+'
+export SUB8    
+gtkdialog -p SUB8 -c                     
+}; export -f help_dialog
+    
+fileman(){
+/opt/porteus-scripts/xorg/fmanager /tmp &            
+}; export -f fileman
+    
+run_lynx(){
+su --login $USER -c "xterm -e lynx" &             
+}; export -f run_lynx
+     
+BROWSERCHOOSER='
+<window window_position="1" icon-name="browser" title="Porteus Browser Tool" window_position="1"  width-request="440" height-request="550">
+      <vbox margin="30">
+        <vbox>
+         '$(txtcolor 380 green large bold "Choose a Browser to Install or to  Update")'
+        </vbox>
+         '$(hsep)'
+       
+            <button tooltip-text="Please follow the prompts in the terminal that opens.">
+          <label>"  Firefox         "</label>
+         <input file icon="firefox"></input>
+          <action type="function">update_firefox</action>
+         </button>
+       
+            <button tooltip-text="Please follow the prompts in the terminal that opens.">
+          <label>"  Chrome       "</label>
+         <input file icon="chrome"></input>
+          <action type="function">update_chrome</action>
+         </button>
+            <button tooltip-text="Please follow the prompts in the terminal that opens.">
+          <label>"  Chromium   "</label>
+         <input file icon="chromium"></input>
+          <action type="function">update_chromium</action>
+         </button>
+
+            <button tooltip-text="Please follow the prompts in the terminal that opens.">
+          <label>"  Opera          "</label>
+         <input file icon="opera"></input>
+          <action type="function">update_opera</action>
+         </button>
+       
+            <button tooltip-text="Please follow the prompts in the terminal that opens.">
+          <label>"  Palemoon    "</label>
+         <input file icon="palemoon"></input>
+          <action type="function">update_palemoon</action>
+         </button>
+        '$(hsep)'         
+        <vbox>
+          '$(txtcolor 380 green small bold "Flashplayer Plugins:")'
+        </vbox>         
+         
+            <button tooltip-text="Flash plugin for Firefox and Palemoon. Please follow the prompts in the terminal that opens.">
+          <label>"  Flashplayer  "</label>
+         <input file icon="adobe-flash"></input>
+          <action type="function">update_flash</action>
+         </button>
+
+            <button tooltip-text="Flash plugin for Chromium and Opera. Please follow the prompts in the terminal that opens.">
+          <label>"  PepperFlash "</label>
+         <input file icon="chromium"></input>
+          <action type="function">update_pepperflash</action>
+         </button>
+        '$(hsep)'
+         <vbox>
+          '$(txtcolor 380 green small bold "Terminal Web Browser:")'
+        </vbox>          
+          
+          
+            <button tooltip-text="Run Lynx, a text based terminal Web Browser, already installed">
+          <label>"  Run Lynx      "</label>
+         <input file icon="browser"></input>
+          <action type="function">run_lynx &</action>
+         </button> 
+         
+         '$(hsep)'                  
+       
+        <hbox homogeneous="true">
+           <button width-request="80" tooltip-text="Open /tmp directory with Root Filemanager. Your browser module will be here after the script has finished.">           
+          <label>File</label>           
+         <input file icon="cdr"></input>          
+          <action type="function">fileman</action>
+         </button>
+           <button help>
+          <action type="function">help_dialog</action>                                 
+         </button>
+            <button cancel>                                   
+            </button>
+        </hbox>
+       
+      </vbox>
+      <action signal="hide">exit:Cancel</action>
+    </window>
+'
+export BROWSERCHOOSER
+gtkdialog -p BROWSERCHOOSER -c
+
+
+exit

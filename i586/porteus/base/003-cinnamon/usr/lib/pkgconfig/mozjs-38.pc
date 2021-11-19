@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: SpiderMonkey 
+Description: The Mozilla library for JavaScript
+Version: 
+Requires.private: nspr >= 4.9.2
+Libs: -L${libdir} -lmozjs-38
+Cflags: -include ${includedir}/mozjs-38/js/RequiredDefines.h -I${includedir}/mozjs-38

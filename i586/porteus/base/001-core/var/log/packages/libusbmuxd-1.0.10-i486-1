@@ -1,0 +1,38 @@
+PACKAGE NAME:     libusbmuxd-1.0.10-i486-1
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/libusbmuxd-1.0.10-i486-1.txz
+PACKAGE DESCRIPTION:
+libusbmuxd: libusbmuxd (iOS USB connection library) 
+libusbmuxd:
+libusbmuxd: A client library to multiplex connections from and to iOS devices.
+libusbmuxd: It is used by libgpod.
+libusbmuxd:
+libusbmuxd: The libusbmuxd homepage:  http://www.libimobiledevice.org/
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/iproxy
+usr/doc/
+usr/doc/libusbmuxd-1.0.10/
+usr/doc/libusbmuxd-1.0.10/AUTHORS
+usr/doc/libusbmuxd-1.0.10/COPYING
+usr/doc/libusbmuxd-1.0.10/NEWS
+usr/doc/libusbmuxd-1.0.10/README
+usr/include/
+usr/include/usbmuxd-proto.h
+usr/include/usbmuxd.h
+usr/lib/
+usr/lib/libusbmuxd.la
+usr/lib/libusbmuxd.so.4.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libusbmuxd.pc

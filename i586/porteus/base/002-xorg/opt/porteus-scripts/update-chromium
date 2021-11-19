@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Author: brokenman@porteus.org
+#
+# This is a starter script to download a live script and update bundles.
+
+# Get the server
+SERVER=`awk -F= '/SERVER=/{print$NF}' /etc/porteus.conf`
+LIVESCRIPT="$SERVER/i586/testing/live/update-chromium-live"
+
+. /usr/share/porteus/porteus-functions
+get_colors
+
+########## Start checks
+bold "Starting checks ..."
+
+# Root check
+if [ `whoami` != "root" ]; then
+	sayerror "You need to be root to run this script"
+	exit
+		else
+	sayok "User is root."
+fi
+
+# Check for porteus
+is_porteus && sayok "Distro is Porteus" || { sayerror "Distro is not Porteus."; exit; }
+
+# Check for connection
+is_online_url $SERVER || { red "No internet connection found."; exit; }
+
+# Check for libbfd
+havebfd=`find /usr/ -name "libbfd*.so*"`
+if [ -z "$havebfd" ]; then
+	sayerror "No libbfd.so found"
+	echo
+	red "No libbfd.so was found."
+	echo "This can be found in the binutils package or the 05_devel module."
+	echo "Please type as root: ${txtbld}getpkg binutils${rst}"
+	exit
+		else
+	sayok "libbfd was found"
+fi
+
+# Check for libfl.so.2
+havelibfl=`find /usr -name "libfl.so.*"`
+if [ -z "$havelibfl" ]; then
+	sayerror "No libfl.so.2 found"
+	echo
+	red "No libfl.so.2 was found."
+	echo "This can be found in the flex package or the 05_devel module."
+	echo "Please type as root: ${txtbld}getpkg flex${rst}"
+	exit
+		else
+	sayok "libbfd was found"
+fi
+
+# Check if google-chrome is currently installed
+command -pv chromium >/dev/null && ISINSTALLED=0
+if [ "$ISINSTALLED" ]; then
+	sayok "Chromium is installed"
+		else
+	sayerror "Chromium is not currently installed"
+fi
+
+# Download the live script
+echo "Downloading live script ..."
+download $LIVESCRIPT /tmp || { red "Failed to download live script."; exit 1; }
+chmod +x /tmp/update-chromium-live
+mv /tmp/update-chromium-live /usr/local/bin
+/usr/local/bin/update-chromium-live
+exit

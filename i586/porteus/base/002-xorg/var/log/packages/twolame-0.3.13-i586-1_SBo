@@ -1,0 +1,64 @@
+PACKAGE NAME:     twolame-0.3.13-i586-1_SBo
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/twolame-0.3.13-i586-1_SBo.tgz
+PACKAGE DESCRIPTION:
+twolame: twolame (an MP2 Encoder)
+twolame:
+twolame: TwoLAME is an optimized MPEG Audio Layer 2 (MP2) encoder.
+twolame: TwoLAME should be able to be used as a drop-in replacement for
+twolame: LAME (a MPEG Layer 3 encoder). The frontend takes very similar
+twolame: command line options to LAME, and the backend library has a very
+twolame: similar API to LAME.
+twolame:
+twolame: Homepage: http://www.twolame.org/
+twolame:
+twolame:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/twolame
+usr/doc/
+usr/doc/twolame-0.3.13/
+usr/doc/twolame-0.3.13/AUTHORS
+usr/doc/twolame-0.3.13/COPYING
+usr/doc/twolame-0.3.13/ChangeLog
+usr/doc/twolame-0.3.13/README
+usr/doc/twolame-0.3.13/TODO
+usr/doc/twolame-0.3.13/api.txt
+usr/doc/twolame-0.3.13/html/
+usr/doc/twolame-0.3.13/html/api.html
+usr/doc/twolame-0.3.13/html/authors.html
+usr/doc/twolame-0.3.13/html/changelog.html
+usr/doc/twolame-0.3.13/html/doxygen.css
+usr/doc/twolame-0.3.13/html/doxygen.png
+usr/doc/twolame-0.3.13/html/index.html
+usr/doc/twolame-0.3.13/html/nav_f.png
+usr/doc/twolame-0.3.13/html/nav_h.png
+usr/doc/twolame-0.3.13/html/psycho.html
+usr/doc/twolame-0.3.13/html/readme.html
+usr/doc/twolame-0.3.13/html/tabs.css
+usr/doc/twolame-0.3.13/html/todo.html
+usr/doc/twolame-0.3.13/html/twolame-manpage.css
+usr/doc/twolame-0.3.13/html/twolame.1.html
+usr/doc/twolame-0.3.13/html/twolame.css
+usr/doc/twolame-0.3.13/html/twolame_8h.html
+usr/doc/twolame-0.3.13/html/twolame_8h_source.html
+usr/doc/twolame-0.3.13/html/vbr.html
+usr/doc/twolame-0.3.13/psycho.txt
+usr/doc/twolame-0.3.13/twolame.SlackBuild
+usr/doc/twolame-0.3.13/vbr.txt
+usr/include/
+usr/include/twolame.h
+usr/lib/
+usr/lib/libtwolame.la
+usr/lib/libtwolame.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/twolame.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/twolame.1.gz

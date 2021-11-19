@@ -1,0 +1,118 @@
+PACKAGE NAME:     elfutils-0.170-i586-1
+COMPRESSED PACKAGE SIZE:     776K
+UNCOMPRESSED PACKAGE SIZE:     3.5M
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/elfutils-0.170-i586-1.txz
+PACKAGE DESCRIPTION:
+elfutils: elfutils (ELF object file access library and utilities)
+elfutils:
+elfutils: Elfutils is a collection of utilities, including stack (to show
+elfutils: backtraces), nm (for listing symbols from object files), size
+elfutils: (for listing the section sizes of an object or archive file),
+elfutils: strip (for discarding symbols), readelf (to see the raw ELF file
+elfutils: structures), and elflint (to check for well-formed ELF files).
+elfutils:
+elfutils: Project home:  ftp://sourceware.org/pub/elfutils/
+elfutils:
+elfutils:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/libasm-0.170.so
+lib/libdw-0.170.so
+lib/libelf-0.170.so
+usr/
+usr/bin/
+usr/bin/eu-addr2line
+usr/bin/eu-ar
+usr/bin/eu-elfcmp
+usr/bin/eu-elfcompress
+usr/bin/eu-elflint
+usr/bin/eu-findtextrel
+usr/bin/eu-make-debug-archive
+usr/bin/eu-nm
+usr/bin/eu-objdump
+usr/bin/eu-ranlib
+usr/bin/eu-readelf
+usr/bin/eu-size
+usr/bin/eu-stack
+usr/bin/eu-strings
+usr/bin/eu-strip
+usr/bin/eu-unstrip
+usr/doc/
+usr/doc/elfutils-0.170/
+usr/doc/elfutils-0.170/AUTHORS
+usr/doc/elfutils-0.170/CONTRIBUTING
+usr/doc/elfutils-0.170/COPYING
+usr/doc/elfutils-0.170/COPYING-GPLV2
+usr/doc/elfutils-0.170/COPYING-LGPLV3
+usr/doc/elfutils-0.170/ChangeLog
+usr/doc/elfutils-0.170/GPG-KEY
+usr/doc/elfutils-0.170/INSTALL
+usr/doc/elfutils-0.170/NEWS
+usr/doc/elfutils-0.170/NOTES
+usr/doc/elfutils-0.170/README
+usr/doc/elfutils-0.170/THANKS
+usr/doc/elfutils-0.170/TODO
+usr/include/
+usr/include/dwarf.h
+usr/include/elfutils/
+usr/include/elfutils/elf-knowledge.h
+usr/include/elfutils/known-dwarf.h
+usr/include/elfutils/libasm.h
+usr/include/elfutils/libdw.h
+usr/include/elfutils/libdwelf.h
+usr/include/elfutils/libdwfl.h
+usr/include/elfutils/libebl.h
+usr/include/elfutils/version.h
+usr/include/gelf.h
+usr/include/libelf.h
+usr/include/nlist.h
+usr/lib/
+usr/lib/elfutils/
+usr/lib/elfutils/libebl_aarch64-0.170.so
+usr/lib/elfutils/libebl_alpha-0.170.so
+usr/lib/elfutils/libebl_arm-0.170.so
+usr/lib/elfutils/libebl_bpf-0.170.so
+usr/lib/elfutils/libebl_i386-0.170.so
+usr/lib/elfutils/libebl_ia64-0.170.so
+usr/lib/elfutils/libebl_m68k-0.170.so
+usr/lib/elfutils/libebl_ppc-0.170.so
+usr/lib/elfutils/libebl_ppc64-0.170.so
+usr/lib/elfutils/libebl_s390-0.170.so
+usr/lib/elfutils/libebl_sh-0.170.so
+usr/lib/elfutils/libebl_sparc-0.170.so
+usr/lib/elfutils/libebl_tilegx-0.170.so
+usr/lib/elfutils/libebl_x86_64-0.170.so
+usr/lib/libasm.a
+usr/lib/libdw.a
+usr/lib/libebl.a
+usr/lib/libelf.a
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libdw.pc
+usr/lib/pkgconfig/libelf.pc
+usr/share/
+usr/share/locale/
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/elfutils.mo
+usr/share/locale/en@boldquot/
+usr/share/locale/en@boldquot/LC_MESSAGES/
+usr/share/locale/en@boldquot/LC_MESSAGES/elfutils.mo
+usr/share/locale/en@quot/
+usr/share/locale/en@quot/LC_MESSAGES/
+usr/share/locale/en@quot/LC_MESSAGES/elfutils.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/elfutils.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/elfutils.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/elfutils.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/elfutils.mo

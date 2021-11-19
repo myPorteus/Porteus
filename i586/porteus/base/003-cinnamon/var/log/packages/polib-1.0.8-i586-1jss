@@ -1,0 +1,41 @@
+PACKAGE NAME:     polib-1.0.8-i586-1jss
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /root/mcbs/build/../i586/pkg/003_cinnamon/polib-1.0.8-i586-1jss.txz
+PACKAGE DESCRIPTION:
+polib: polib (manage pot, po, and mo files)
+polib:
+polib: polib is used to load existing files, iterate through its entries, 
+polib: add, modify entries, comments or metadata, etc., or create new po 
+polib: files from scratch.
+polib:
+polib: 
+polib:
+polib:
+polib: https://bitbucket.org/izi/polib
+polib:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/polib-1.0.8-py2.7.egg-info/
+usr/lib/python2.7/site-packages/polib-1.0.8-py2.7.egg-info/PKG-INFO
+usr/lib/python2.7/site-packages/polib-1.0.8-py2.7.egg-info/SOURCES.txt
+usr/lib/python2.7/site-packages/polib-1.0.8-py2.7.egg-info/dependency_links.txt
+usr/lib/python2.7/site-packages/polib-1.0.8-py2.7.egg-info/top_level.txt
+usr/lib/python2.7/site-packages/polib.py
+usr/lib/python2.7/site-packages/polib.pyc
+usr/lib/python3.6/
+usr/lib/python3.6/site-packages/
+usr/lib/python3.6/site-packages/__pycache__/
+usr/lib/python3.6/site-packages/__pycache__/polib.cpython-36.pyc
+usr/lib/python3.6/site-packages/polib-1.0.8-py3.6.egg-info/
+usr/lib/python3.6/site-packages/polib-1.0.8-py3.6.egg-info/PKG-INFO
+usr/lib/python3.6/site-packages/polib-1.0.8-py3.6.egg-info/SOURCES.txt
+usr/lib/python3.6/site-packages/polib-1.0.8-py3.6.egg-info/dependency_links.txt
+usr/lib/python3.6/site-packages/polib-1.0.8-py3.6.egg-info/top_level.txt
+usr/lib/python3.6/site-packages/polib.py

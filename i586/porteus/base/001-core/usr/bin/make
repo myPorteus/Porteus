@@ -1,0 +1,35 @@
+#!/bin/sh
+
+## This script, which is contained in 001-core.xzm, is an interim
+## make file for cases when the user does not have the 05-devel.xzm
+## module installed in order to compile from source. When the
+## development module is installed, this file will be overwritten by
+## the real make file and compilation will function as expected.
+
+## Author:  Brokenman <brokenman@porteus.org>
+
+if [ `uname -m` == "x86_64" ]; then arch=x86_64
+  else arch=i486
+fi
+server=`awk -F= '/^SERVER=/{print$NF}' /etc/porteus.conf`
+pver=`</etc/porteus-version`
+clear
+
+echo -e "\E[0;32m+------------------------+\E[0;0m"
+echo -e "\E[0;32m| NOTICE! MAKE NOT FOUND |\E[0;0m"
+echo -e "\E[0;32m+------------------------+\E[0;0m"
+
+echo "The 'make' program is not installed on your system. In order"
+echo "to compile any software, you will need to download and/or"
+echo "activate the porteus 'devel' module, which contains make, gcc"
+echo "and other programs that are necessary to compile source code."
+echo ""
+echo "Please visit $server/$arch/$pver/modules to download"
+echo "the development module for your version and architecture."
+echo ""
+echo "Press enter to quit this program.  If you are running a build"
+echo "script, it may continue and state additional errors."
+echo ""
+
+read
+exit

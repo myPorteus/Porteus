@@ -1,0 +1,9 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: ModemManager
+Description: Common headers provided by ModemManager
+Version: 1.6.12
+Cflags: -I${includedir}/ModemManager

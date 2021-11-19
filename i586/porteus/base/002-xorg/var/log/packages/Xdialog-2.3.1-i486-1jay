@@ -1,0 +1,125 @@
+PACKAGE NAME:     Xdialog-2.3.1-i486-1jay
+COMPRESSED PACKAGE SIZE:     344K
+UNCOMPRESSED PACKAGE SIZE:     710K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/Xdialog-2.3.1-i486-1jay.tgz
+PACKAGE DESCRIPTION:
+Xdialog: Xdialog (GTK1/2 mostly-dialog-compatible UI builder)
+Xdialog:
+Xdialog: Xdialog is designed to be a drop in replacement for the "dialog"
+Xdialog: or "cdialog" programs. It converts any terminal based program into
+Xdialog: a program with an X-windows interface. The dialogs are easier to
+Xdialog: see and use while adding even more functionalities (e.g. with the
+Xdialog: treeview, the file selector, the edit box, the range box, the help
+Xdialog: button/box). Because Xdialog uses GTK+, it will also match your
+Xdialog: desktop theme.
+Xdialog:
+Xdialog: Homepage: http://xdialog.free.fr/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/Xdialog
+usr/doc/
+usr/doc/Xdialog-2.3.1/
+usr/doc/Xdialog-2.3.1/2ranges.png
+usr/doc/Xdialog-2.3.1/ABOUT-NLS
+usr/doc/Xdialog-2.3.1/AUTHORS
+usr/doc/Xdialog-2.3.1/BUGS
+usr/doc/Xdialog-2.3.1/COPYING
+usr/doc/Xdialog-2.3.1/ChangeLog
+usr/doc/Xdialog-2.3.1/INSTALL
+usr/doc/Xdialog-2.3.1/README
+usr/doc/Xdialog-2.3.1/Xdialog.SlackBuild
+usr/doc/Xdialog-2.3.1/Xdialog.wrapper.c
+usr/doc/Xdialog-2.3.1/Xmessage
+usr/doc/Xdialog-2.3.1/Xmore
+usr/doc/Xdialog-2.3.1/allrpms
+usr/doc/Xdialog-2.3.1/authors.html
+usr/doc/Xdialog-2.3.1/bluebox.rc
+usr/doc/Xdialog-2.3.1/box.html
+usr/doc/Xdialog-2.3.1/buildlist
+usr/doc/Xdialog-2.3.1/buildlist.png
+usr/doc/Xdialog-2.3.1/calendar
+usr/doc/Xdialog-2.3.1/calendar.png
+usr/doc/Xdialog-2.3.1/center.png
+usr/doc/Xdialog-2.3.1/chain
+usr/doc/Xdialog-2.3.1/changelog.html
+usr/doc/Xdialog-2.3.1/check.png
+usr/doc/Xdialog-2.3.1/checklist
+usr/doc/Xdialog-2.3.1/checklist.png
+usr/doc/Xdialog-2.3.1/colorsel.png
+usr/doc/Xdialog-2.3.1/combobox.png
+usr/doc/Xdialog-2.3.1/common.html
+usr/doc/Xdialog-2.3.1/compatibility.html
+usr/doc/Xdialog-2.3.1/dselect
+usr/doc/Xdialog-2.3.1/dselect.png
+usr/doc/Xdialog-2.3.1/editbox
+usr/doc/Xdialog-2.3.1/editbox.png
+usr/doc/Xdialog-2.3.1/faq.html
+usr/doc/Xdialog-2.3.1/fill.png
+usr/doc/Xdialog-2.3.1/fixed-font.rc
+usr/doc/Xdialog-2.3.1/fixedfont.png
+usr/doc/Xdialog-2.3.1/fontsel.png
+usr/doc/Xdialog-2.3.1/format1440
+usr/doc/Xdialog-2.3.1/fselect
+usr/doc/Xdialog-2.3.1/fselect.png
+usr/doc/Xdialog-2.3.1/gauge
+usr/doc/Xdialog-2.3.1/gauge.png
+usr/doc/Xdialog-2.3.1/gtk.html
+usr/doc/Xdialog-2.3.1/icon.png
+usr/doc/Xdialog-2.3.1/index.html
+usr/doc/Xdialog-2.3.1/infobox
+usr/doc/Xdialog-2.3.1/infobox.png
+usr/doc/Xdialog-2.3.1/infobox2
+usr/doc/Xdialog-2.3.1/input.png
+usr/doc/Xdialog-2.3.1/inputbox
+usr/doc/Xdialog-2.3.1/install-wrapper
+usr/doc/Xdialog-2.3.1/intro.html
+usr/doc/Xdialog-2.3.1/kernel
+usr/doc/Xdialog-2.3.1/labelcenter.png
+usr/doc/Xdialog-2.3.1/labelleft.png
+usr/doc/Xdialog-2.3.1/labelright.png
+usr/doc/Xdialog-2.3.1/left.png
+usr/doc/Xdialog-2.3.1/license.html
+usr/doc/Xdialog-2.3.1/logbox
+usr/doc/Xdialog-2.3.1/logbox.png
+usr/doc/Xdialog-2.3.1/logbox2
+usr/doc/Xdialog-2.3.1/login
+usr/doc/Xdialog-2.3.1/menubox
+usr/doc/Xdialog-2.3.1/msgbox
+usr/doc/Xdialog-2.3.1/msgbox.png
+usr/doc/Xdialog-2.3.1/no-entry.xpm
+usr/doc/Xdialog-2.3.1/nofixedfont.png
+usr/doc/Xdialog-2.3.1/notags.png
+usr/doc/Xdialog-2.3.1/password.png
+usr/doc/Xdialog-2.3.1/radiolist
+usr/doc/Xdialog-2.3.1/radiolist.png
+usr/doc/Xdialog-2.3.1/range.png
+usr/doc/Xdialog-2.3.1/rangebox
+usr/doc/Xdialog-2.3.1/rcfile.png
+usr/doc/Xdialog-2.3.1/right.png
+usr/doc/Xdialog-2.3.1/set-time
+usr/doc/Xdialog-2.3.1/special.html
+usr/doc/Xdialog-2.3.1/spinbox.png
+usr/doc/Xdialog-2.3.1/syntax.html
+usr/doc/Xdialog-2.3.1/tailbox
+usr/doc/Xdialog-2.3.1/tailbox.png
+usr/doc/Xdialog-2.3.1/textbox
+usr/doc/Xdialog-2.3.1/timebox
+usr/doc/Xdialog-2.3.1/timebox.png
+usr/doc/Xdialog-2.3.1/title.png
+usr/doc/Xdialog-2.3.1/transient.html
+usr/doc/Xdialog-2.3.1/treeview
+usr/doc/Xdialog-2.3.1/treeview.png
+usr/doc/Xdialog-2.3.1/warning.xpm
+usr/doc/Xdialog-2.3.1/withtags.png
+usr/doc/Xdialog-2.3.1/xlock-wrapper
+usr/doc/Xdialog-2.3.1/yesno
+usr/doc/Xdialog-2.3.1/yesno-wizard.png
+usr/doc/Xdialog-2.3.1/yesno.png
+usr/man/
+usr/man/man1/
+usr/man/man1/Xdialog.1.gz

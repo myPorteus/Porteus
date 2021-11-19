@@ -1,0 +1,15 @@
+[Nemo Action]
+
+Name=Mount: %N
+Name[ru]=Смонтировать: %N
+
+Comment=Mount an ISO
+Comment[ru]=Смонтировать образ
+
+Icon-Name=media-optical
+
+Exec=/usr/libexec/gvfsd-archive file="%F"
+
+Selection=s
+
+Extensions=iso;nrg;bin;img;mdf;

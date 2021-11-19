@@ -1,0 +1,13 @@
+<schemalist>
+  <schema gettext-domain="xviewer-plugins" id="org.x.viewer.plugins.exif-display" path="/org/x/viewer/plugins/exif-display/">
+    <key name="channels-histogram" type="b">
+      <default>false</default>
+    </key>
+    <key name="rgb-histogram" type="b">
+      <default>false</default>
+    </key>
+    <key name="exif-in-statusbar" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+</schemalist>

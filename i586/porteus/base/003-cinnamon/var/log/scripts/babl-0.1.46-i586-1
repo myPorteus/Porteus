@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libbabl-0.1.so.0 )
+( cd usr/lib ; ln -sf libbabl-0.1.so.0.145.1 libbabl-0.1.so.0 )
+( cd usr/lib ; rm -rf libbabl-0.1.so )
+( cd usr/lib ; ln -sf libbabl-0.1.so.0.145.1 libbabl-0.1.so )

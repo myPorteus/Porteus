@@ -1,0 +1,64 @@
+PACKAGE NAME:     jasper-2.0.12-i586-2
+COMPRESSED PACKAGE SIZE:     172K
+UNCOMPRESSED PACKAGE SIZE:     580K
+PACKAGE LOCATION: /root/mcbs/build/../i586/pkg/003_cinnamon/jasper-2.0.12-i586-2.txz
+PACKAGE DESCRIPTION:
+jasper: jasper (free implementation of the JPEG-2000 standard)
+jasper:
+jasper: The JasPer Project is an open-source initiative to provide a free
+jasper: software-based reference implementation of the codec specified in the
+jasper: JPEG-2000 Part-1 standard (i.e., ISO/IEC 15444-1).jasper:
+jasper:
+jasper: JasPer home: http://www.ece.uvic.ca/~mdadams/jasper/
+jasper:
+jasper:
+jasper:
+jasper:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/imgcmp
+usr/bin/imginfo
+usr/bin/jasper
+usr/bin/jiv
+usr/doc/
+usr/doc/jasper-2.0.12/
+usr/doc/jasper-2.0.12/COPYRIGHT
+usr/doc/jasper-2.0.12/INSTALL
+usr/doc/jasper-2.0.12/LICENSE
+usr/doc/jasper-2.0.12/README
+usr/include/
+usr/include/jasper/
+usr/include/jasper/jas_cm.h
+usr/include/jasper/jas_config.h
+usr/include/jasper/jas_debug.h
+usr/include/jasper/jas_dll.h
+usr/include/jasper/jas_fix.h
+usr/include/jasper/jas_getopt.h
+usr/include/jasper/jas_icc.h
+usr/include/jasper/jas_image.h
+usr/include/jasper/jas_init.h
+usr/include/jasper/jas_malloc.h
+usr/include/jasper/jas_math.h
+usr/include/jasper/jas_seq.h
+usr/include/jasper/jas_stream.h
+usr/include/jasper/jas_string.h
+usr/include/jasper/jas_tmr.h
+usr/include/jasper/jas_tvp.h
+usr/include/jasper/jas_types.h
+usr/include/jasper/jas_version.h
+usr/include/jasper/jasper.h
+usr/lib/
+usr/lib/libjasper.so.4.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/jasper.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/imgcmp.1.gz
+usr/man/man1/imginfo.1.gz
+usr/man/man1/jasper.1.gz
+usr/man/man1/jiv.1.gz

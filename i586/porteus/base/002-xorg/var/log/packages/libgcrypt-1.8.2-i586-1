@@ -1,0 +1,54 @@
+PACKAGE NAME:     libgcrypt-1.8.2-i586-1
+COMPRESSED PACKAGE SIZE:     508K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libgcrypt-1.8.2-i586-1.txz
+PACKAGE DESCRIPTION:
+libgcrypt: libgcrypt (General purpose crypto library)
+libgcrypt:
+libgcrypt: Libgcrypt is a general purpose crypto library based on the code 
+libgcrypt: used in GnuPG. 
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+libgcrypt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/libgcrypt.so.20.2.2
+usr/
+usr/bin/
+usr/bin/dumpsexp
+usr/bin/hmac256
+usr/bin/libgcrypt-config
+usr/bin/mpicalc
+usr/doc/
+usr/doc/libgcrypt-1.8.2/
+usr/doc/libgcrypt-1.8.2/AUTHORS
+usr/doc/libgcrypt-1.8.2/COPYING
+usr/doc/libgcrypt-1.8.2/COPYING.LIB
+usr/doc/libgcrypt-1.8.2/ChangeLog
+usr/doc/libgcrypt-1.8.2/INSTALL
+usr/doc/libgcrypt-1.8.2/NEWS
+usr/doc/libgcrypt-1.8.2/README
+usr/doc/libgcrypt-1.8.2/README.GIT
+usr/doc/libgcrypt-1.8.2/THANKS
+usr/doc/libgcrypt-1.8.2/TODO
+usr/doc/libgcrypt-1.8.2/VERSION
+usr/include/
+usr/include/gcrypt.h
+usr/info/
+usr/info/gcrypt.info.gz
+usr/lib/
+usr/lib/libgcrypt.la
+usr/man/
+usr/man/man1/
+usr/man/man1/hmac256.1.gz
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/libgcrypt.m4

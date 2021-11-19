@@ -1,0 +1,33 @@
+PACKAGE NAME:     wgetpaste-2.25-noarch-1jay
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/wgetpaste-2.25-noarch-1jay.tgz
+PACKAGE DESCRIPTION:
+wgetpaste: wgetpaste (command-line interface to various pastebins)
+wgetpaste:
+wgetpaste: wgetpaste is a command line interface for various pastebins.
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+wgetpaste:
+FILE LIST:
+./
+etc/
+etc/wgetpaste.conf.sample
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/wgetpaste
+usr/bin/wgetpaste_info
+usr/man/
+usr/man/man1/
+usr/man/man1/wgetpaste.1.gz
+usr/share/
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_wgetpaste

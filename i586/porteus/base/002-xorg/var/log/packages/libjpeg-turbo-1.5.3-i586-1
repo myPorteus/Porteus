@@ -1,0 +1,62 @@
+PACKAGE NAME:     libjpeg-turbo-1.5.3-i586-1
+COMPRESSED PACKAGE SIZE:     328K
+UNCOMPRESSED PACKAGE SIZE:     1.7M
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libjpeg-turbo-1.5.3-i586-1.txz
+PACKAGE DESCRIPTION:
+libjpeg-turbo: libjpeg-turbo (high-speed version of libjpeg)
+libjpeg-turbo:
+libjpeg-turbo: libjpeg-turbo is a high-speed version of libjpeg for x86 and x86-64
+libjpeg-turbo: processors which uses SIMD instructions to accelerate baseline JPEG
+libjpeg-turbo: compression and decompression. libjpeg-turbo is generally 2-4x as
+libjpeg-turbo: fast as the unmodified version of libjpeg, all else being equal.
+libjpeg-turbo:
+libjpeg-turbo: Homepage:  https://libjpeg-turbo.org
+libjpeg-turbo:
+libjpeg-turbo:
+libjpeg-turbo:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cjpeg
+usr/bin/djpeg
+usr/bin/jpegtran
+usr/bin/rdjpgcom
+usr/bin/tjbench
+usr/bin/wrjpgcom
+usr/doc/
+usr/doc/libjpeg-turbo-1.5.3/
+usr/doc/libjpeg-turbo-1.5.3/BUILDING.md
+usr/doc/libjpeg-turbo-1.5.3/ChangeLog.md
+usr/doc/libjpeg-turbo-1.5.3/LICENSE.md
+usr/doc/libjpeg-turbo-1.5.3/README.ijg
+usr/doc/libjpeg-turbo-1.5.3/README.md
+usr/doc/libjpeg-turbo-1.5.3/example.c
+usr/doc/libjpeg-turbo-1.5.3/libjpeg.txt
+usr/doc/libjpeg-turbo-1.5.3/structure.txt
+usr/doc/libjpeg-turbo-1.5.3/usage.txt
+usr/doc/libjpeg-turbo-1.5.3/wizard.txt
+usr/include/
+usr/include/jconfig.h
+usr/include/jerror.h
+usr/include/jmorecfg.h
+usr/include/jpeglib.h
+usr/include/turbojpeg.h
+usr/lib/
+usr/lib/libjpeg.la
+usr/lib/libjpeg.so.62.2.0
+usr/lib/libturbojpeg.la
+usr/lib/libturbojpeg.so.0.1.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libjpeg.pc
+usr/lib/pkgconfig/libturbojpeg.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cjpeg.1.gz
+usr/man/man1/djpeg.1.gz
+usr/man/man1/jpegtran.1.gz
+usr/man/man1/rdjpgcom.1.gz
+usr/man/man1/wrjpgcom.1.gz

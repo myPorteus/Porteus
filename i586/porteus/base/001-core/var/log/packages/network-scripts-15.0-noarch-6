@@ -1,0 +1,49 @@
+PACKAGE NAME:     network-scripts-15.0-noarch-6
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/network-scripts-15.0-noarch-6.txz
+PACKAGE DESCRIPTION:
+network-scripts: network-scripts (Scripts to configure a network)
+network-scripts:
+network-scripts: These are the basic scripts and files used to define a network and
+network-scripts: configure network interfaces on Linux.  Most of the original
+network-scripts: /etc files were written by Fred N. van Kempen, or borrowed from BSD.
+network-scripts: The rc.inet1 and rc.inet2 scripts were mostly written by Patrick
+network-scripts: Volkerding, with suggestions and fixes from hundreds of contributors
+network-scripts: over the years.
+network-scripts:
+network-scripts:
+network-scripts:
+FILE LIST:
+./
+etc/
+etc/HOSTNAME.new
+etc/host.conf.new
+etc/hosts.allow.new
+etc/hosts.deny.new
+etc/hosts.equiv.new
+etc/hosts.new
+etc/networks.new
+etc/nntpserver.new
+etc/protocols.new
+etc/rc.d/
+etc/rc.d/rc.inet1.conf.new
+etc/rc.d/rc.inet1.new
+etc/rc.d/rc.inet2.new
+etc/rc.d/rc.ip_forward.new
+etc/resolv.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/netconfig
+usr/
+usr/man/
+usr/man/man5/
+usr/man/man5/rc.inet1.conf.5.gz
+usr/man/man8/
+usr/man/man8/rc.inet1.8.gz
+var/
+var/log/
+var/log/setup/
+var/log/setup/setup.netconfig

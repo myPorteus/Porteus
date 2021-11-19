@@ -1,0 +1,58 @@
+PACKAGE NAME:     net-tools-20170208_479bb4a-i586-1
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     530K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/001/net-tools-20170208_479bb4a-i586-1.txz
+PACKAGE DESCRIPTION:
+net-tools: net-tools (Linux networking utilities)
+net-tools:
+net-tools: This is a collection of traditional tools such as "ifconfig" and
+net-tools: "route" that were used to configure networking on Linux. While you can
+net-tools: still make use of these tools today, they have been largely superseded
+net-tools: by newer tools such as "ip", "ifrename", and "ethtool".
+net-tools:
+net-tools: The net-tools package was maintained for many years by Phil Blundell
+net-tools: and Bernd Eckenfels.
+net-tools:
+net-tools:
+FILE LIST:
+./
+bin/
+bin/ipmask
+bin/netstat
+install/
+install/slack-desc
+sbin/
+sbin/arp
+sbin/ifconfig
+sbin/ipmaddr
+sbin/iptunnel
+sbin/mii-tool
+sbin/nameif
+sbin/plipconfig
+sbin/rarp
+sbin/route
+usr/
+usr/doc/
+usr/doc/net-tools-20170208_479bb4a/
+usr/doc/net-tools-20170208_479bb4a/COPYING
+usr/doc/net-tools-20170208_479bb4a/INSTALLING
+usr/doc/net-tools-20170208_479bb4a/README
+usr/doc/net-tools-20170208_479bb4a/THANKS
+usr/doc/net-tools-20170208_479bb4a/TODO
+usr/man/
+usr/man/man1/
+usr/man/man5/
+usr/man/man5/ethers.5.gz
+usr/man/man8/
+usr/man/man8/arp.8.gz
+usr/man/man8/ifconfig.8.gz
+usr/man/man8/ipmask.8.gz
+usr/man/man8/mii-tool.8.gz
+usr/man/man8/nameif.8.gz
+usr/man/man8/netstat.8.gz
+usr/man/man8/plipconfig.8.gz
+usr/man/man8/rarp.8.gz
+usr/man/man8/route.8.gz
+usr/man/man8/slattach.8.gz
+usr/sbin/
+usr/sbin/slattach

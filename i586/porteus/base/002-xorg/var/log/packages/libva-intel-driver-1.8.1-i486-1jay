@@ -1,0 +1,27 @@
+PACKAGE NAME:     libva-intel-driver-1.8.1-i486-1jay
+COMPRESSED PACKAGE SIZE:     632K
+UNCOMPRESSED PACKAGE SIZE:     4.2M
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/libva-intel-driver-1.8.1-i486-1jay.txz
+PACKAGE DESCRIPTION:
+libva-intel-driver: libva-intel-driver (libva-intel-driver)
+libva-intel-driver:
+libva-intel-driver: libva-intel-driver
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver:
+libva-intel-driver: Home: https://github.com/01org/intel-vaapi-driver.git
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libva-intel-driver-1.8.1/
+usr/lib/
+usr/lib/dri/
+usr/lib/dri/i965_drv_video.la
+usr/lib/dri/i965_drv_video.so

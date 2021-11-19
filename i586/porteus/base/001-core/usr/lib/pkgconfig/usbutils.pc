@@ -1,0 +1,5 @@
+Name: usbutils
+Description: USB device database
+Version: 009
+
+usbids=/usr/share/hwdata/usb.ids

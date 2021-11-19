@@ -1,0 +1,60 @@
+PACKAGE NAME:     speex-1.2.0-i586-1_SBo
+COMPRESSED PACKAGE SIZE:     492K
+UNCOMPRESSED PACKAGE SIZE:     670K
+PACKAGE LOCATION: /pc/git/build/../i586/pkg/002/speex-1.2.0-i586-1_SBo.tgz
+PACKAGE DESCRIPTION:
+speex: speex (an audio compression format designed for speech)
+speex:
+speex: Speex is an Open Source/Free Software  patent-free audio compression
+speex: format designed for speech. The Speex Project aims to lower the
+speex: barrier of entry for voice applications by providing a free
+speex: alternative to expensive proprietary speech codecs. Moreover, Speex
+speex: is well-adapted to Internet applications and provides useful features
+speex: that are not present in most other codecs. Finally, Speex is part of
+speex: the GNU  Project and is available under the revised BSD license.
+speex:
+speex: homepage: https://speex.org/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/speexdec
+usr/bin/speexenc
+usr/doc/
+usr/doc/speex-1.2.0/
+usr/doc/speex-1.2.0/AUTHORS
+usr/doc/speex-1.2.0/COPYING
+usr/doc/speex-1.2.0/ChangeLog
+usr/doc/speex-1.2.0/INSTALL
+usr/doc/speex-1.2.0/NEWS
+usr/doc/speex-1.2.0/README
+usr/doc/speex-1.2.0/README.TI-DSP
+usr/doc/speex-1.2.0/README.blackfin
+usr/doc/speex-1.2.0/README.symbian
+usr/doc/speex-1.2.0/TODO
+usr/doc/speex-1.2.0/manual.pdf
+usr/doc/speex-1.2.0/speex.SlackBuild
+usr/include/
+usr/include/speex/
+usr/include/speex/speex.h
+usr/include/speex/speex_bits.h
+usr/include/speex/speex_callbacks.h
+usr/include/speex/speex_config_types.h
+usr/include/speex/speex_header.h
+usr/include/speex/speex_stereo.h
+usr/include/speex/speex_types.h
+usr/lib/
+usr/lib/libspeex.la
+usr/lib/libspeex.so.1.5.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/speex.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/speexdec.1.gz
+usr/man/man1/speexenc.1.gz
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/speex.m4

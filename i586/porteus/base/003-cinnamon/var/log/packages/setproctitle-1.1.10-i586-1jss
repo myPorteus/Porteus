@@ -1,0 +1,38 @@
+PACKAGE NAME:     setproctitle-1.1.10-i586-1jss
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /root/mcbs/build/../i586/pkg/003_cinnamon/setproctitle-1.1.10-i586-1jss.txz
+PACKAGE DESCRIPTION:
+setproctitle: setproctitle (customize the process title)
+setproctitle:
+setproctitle: The setproctitle module allows a process to change its title (as 
+setproctitle: displayed by system tools such as ps and top).
+setproctitle:
+setproctitle:
+setproctitle:
+setproctitle: 
+setproctitle:
+setproctitle: http://code.google.com/p/py-setproctitle/
+setproctitle:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib/
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/setproctitle-1.1.10-py2.7.egg-info/
+usr/lib/python2.7/site-packages/setproctitle-1.1.10-py2.7.egg-info/PKG-INFO
+usr/lib/python2.7/site-packages/setproctitle-1.1.10-py2.7.egg-info/SOURCES.txt
+usr/lib/python2.7/site-packages/setproctitle-1.1.10-py2.7.egg-info/dependency_links.txt
+usr/lib/python2.7/site-packages/setproctitle-1.1.10-py2.7.egg-info/top_level.txt
+usr/lib/python2.7/site-packages/setproctitle.so
+usr/lib/python3.6/
+usr/lib/python3.6/site-packages/
+usr/lib/python3.6/site-packages/setproctitle-1.1.10-py3.6.egg-info/
+usr/lib/python3.6/site-packages/setproctitle-1.1.10-py3.6.egg-info/PKG-INFO
+usr/lib/python3.6/site-packages/setproctitle-1.1.10-py3.6.egg-info/SOURCES.txt
+usr/lib/python3.6/site-packages/setproctitle-1.1.10-py3.6.egg-info/dependency_links.txt
+usr/lib/python3.6/site-packages/setproctitle-1.1.10-py3.6.egg-info/top_level.txt
+usr/lib/python3.6/site-packages/setproctitle.cpython-36m-i386-linux-gnu.so
