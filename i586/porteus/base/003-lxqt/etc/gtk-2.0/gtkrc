@@ -1,0 +1,9 @@
+gtk-theme-name="Adwaita"
+
+binding "my-bindings"
+{
+    bind "Return" { "insert-at-cursor" ("\n") }
+    bind "<ctrl>Return" { "message_send" () }
+    bind "<ctrl>v" { "paste" ("text") }
+}
+widget "*pidgin_conv_entry" binding "my-bindings"

@@ -1,0 +1,19 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include/libgladeui-2.0
+catalogdir=${datarootdir}/glade/catalogs
+pixmapdir=${datarootdir}/glade/pixmaps
+moduledir=/usr/lib/glade/modules
+
+
+Name: Glade
+Description: Glade interface designer library
+URL: http://glade.gnome.org
+Version: 3.22.1
+Requires: gtk+-3.0 >= 2.91.2 libxml-2.0 >= 2.4.0
+Libs: -L${libdir} -lgladeui-2
+Libs.private: -lm
+Cflags: -I${includedir}

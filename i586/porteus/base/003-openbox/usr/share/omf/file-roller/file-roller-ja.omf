@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>(サン GNOME ドキュメンテーション・チーム)</creator>
+    <creator>(Paolo Bacchilega)</creator>
+    <creator>(Alexander Kirillov)</creator>
+    <creator>(Paul Cutler)</creator>
+    <maintainer>(GNOMEドキュメンテーションプロジェクト)</maintainer>
+    <title>書庫マネージャマニュアル</title>
+    <date>2002年6月</date>
+    <version identifier="File Roller マニュアル V2.0" date="2002年6月"/>
+    <subject category="GNOME|Applications|Accessories"/>
+    <description>
+       File Rollerとしても知られる書庫マネージャは、アーカイブを作成、閲覧、修正あるいは展開することができます。
+     </description>
+    <type>user's guide</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/share/gnome/help/file-roller/ja/file-roller.xml"/>
+    <language code="ja"/>
+    <relation seriesid="dffe1822-789b-11d6-842e-812e852e3415"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
+  </resource>
+</omf>

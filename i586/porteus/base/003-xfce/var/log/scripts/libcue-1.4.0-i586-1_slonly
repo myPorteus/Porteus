@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libcue.so )
+( cd usr/lib ; ln -sf libcue.so.1.0.4 libcue.so )
+( cd usr/lib ; rm -rf libcue.so.1 )
+( cd usr/lib ; ln -sf libcue.so.1.0.4 libcue.so.1 )

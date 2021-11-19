@@ -1,0 +1,5 @@
+[Default Applications]
+inode/directory=spacefm.desktop;pcmanfm-create-module.desktop;mpv.desktop;
+
+[Added Associations]
+inode/directory=spacefm.desktop;pcmanfm-create-module.desktop;mpv.desktop;

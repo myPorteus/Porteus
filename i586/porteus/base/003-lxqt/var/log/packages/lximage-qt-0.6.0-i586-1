@@ -1,0 +1,67 @@
+PACKAGE NAME:     lximage-qt-0.6.0-i586-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     370K
+PACKAGE LOCATION: lximage-qt-0.6.0-i586.txz
+PACKAGE DESCRIPTION:
+lximage-qt: lximage-qt (Qt based image viewer)
+lximage-qt:
+lximage-qt: A simple, fast, and lightweight image viewer with Qt GUI.
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt:
+lximage-qt: Home page: http://lxqt.org
+lximage-qt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lximage-qt
+usr/doc/
+usr/doc/lximage-qt-0.6.0/
+usr/doc/lximage-qt-0.6.0/AUTHORS
+usr/doc/lximage-qt-0.6.0/COPYING
+usr/doc/lximage-qt-0.6.0/README.md
+usr/share/
+usr/share/applications/
+usr/share/applications/lximage-qt-screenshot.desktop
+usr/share/applications/lximage-qt.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/lximage-qt.png
+usr/share/lximage-qt/
+usr/share/lximage-qt/translations/
+usr/share/lximage-qt/translations/lximage-qt_ar.qm
+usr/share/lximage-qt/translations/lximage-qt_ca.qm
+usr/share/lximage-qt/translations/lximage-qt_cs.qm
+usr/share/lximage-qt/translations/lximage-qt_da.qm
+usr/share/lximage-qt/translations/lximage-qt_de.qm
+usr/share/lximage-qt/translations/lximage-qt_el.qm
+usr/share/lximage-qt/translations/lximage-qt_es.qm
+usr/share/lximage-qt/translations/lximage-qt_fr.qm
+usr/share/lximage-qt/translations/lximage-qt_gl.qm
+usr/share/lximage-qt/translations/lximage-qt_hr.qm
+usr/share/lximage-qt/translations/lximage-qt_hu.qm
+usr/share/lximage-qt/translations/lximage-qt_id.qm
+usr/share/lximage-qt/translations/lximage-qt_is.qm
+usr/share/lximage-qt/translations/lximage-qt_it.qm
+usr/share/lximage-qt/translations/lximage-qt_ja.qm
+usr/share/lximage-qt/translations/lximage-qt_lt.qm
+usr/share/lximage-qt/translations/lximage-qt_nl.qm
+usr/share/lximage-qt/translations/lximage-qt_pa.qm
+usr/share/lximage-qt/translations/lximage-qt_pl.qm
+usr/share/lximage-qt/translations/lximage-qt_pt.qm
+usr/share/lximage-qt/translations/lximage-qt_pt_BR.qm
+usr/share/lximage-qt/translations/lximage-qt_ru.qm
+usr/share/lximage-qt/translations/lximage-qt_sv.qm
+usr/share/lximage-qt/translations/lximage-qt_tr.qm
+usr/share/lximage-qt/translations/lximage-qt_uk.qm
+usr/share/lximage-qt/translations/lximage-qt_zh_CN.qm
+usr/share/lximage-qt/translations/lximage-qt_zh_TW.qm

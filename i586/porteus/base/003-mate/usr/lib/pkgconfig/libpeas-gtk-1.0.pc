@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=${prefix}/include
+
+Name: libpeas-gtk
+Description: libpeas-gtk, a GObject plugins library (Gtk widgets)
+Requires: glib-2.0 >= 2.38.0, gtk+-3.0 >= 3.0.0, libpeas-1.0 >= 1.22.0
+Version: 1.22.0
+Cflags: -I${includedir}/libpeas-1.0
+Libs: -L${libdir} -lpeas-gtk-1.0

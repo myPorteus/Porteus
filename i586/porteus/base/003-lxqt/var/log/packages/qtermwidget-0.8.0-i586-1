@@ -1,0 +1,75 @@
+PACKAGE NAME:     qtermwidget-0.8.0-i586-1
+COMPRESSED PACKAGE SIZE:     188K
+UNCOMPRESSED PACKAGE SIZE:     710K
+PACKAGE LOCATION: qtermwidget-0.8.0-i586.txz
+PACKAGE DESCRIPTION:
+qtermwidget: qtermwidget (Qt widget for using as a built-in console)
+qtermwidget:
+qtermwidget: Qtermwidget originally based on the KDE4 konsole application.
+qtermwidget: The main goal of this project is to provide a unicode-enabled,
+qtermwidget: embeddable Qt widget for using as a built-in console (or terminal
+qtermwidget: emulation widget).
+qtermwidget:
+qtermwidget:
+qtermwidget:
+qtermwidget: Home page: https://github.com/qterminal/qtermwidget
+qtermwidget:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qtermwidget-0.8.0/
+usr/doc/qtermwidget-0.8.0/AUTHORS
+usr/doc/qtermwidget-0.8.0/README.md
+usr/include/
+usr/include/qtermwidget5/
+usr/include/qtermwidget5/Filter.h
+usr/include/qtermwidget5/qtermwidget.h
+usr/lib/
+usr/lib/libqtermwidget5.so.0.8.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/qtermwidget5.pc
+usr/share/
+usr/share/cmake/
+usr/share/cmake/qtermwidget5/
+usr/share/cmake/qtermwidget5/qtermwidget5-config.cmake
+usr/share/cmake/qtermwidget5/qtermwidget5_use.cmake
+usr/share/qtermwidget5/
+usr/share/qtermwidget5/color-schemes/
+usr/share/qtermwidget5/color-schemes/BlackOnLightYellow.schema
+usr/share/qtermwidget5/color-schemes/BlackOnRandomLight.colorscheme
+usr/share/qtermwidget5/color-schemes/BlackOnWhite.schema
+usr/share/qtermwidget5/color-schemes/BreezeModified.colorscheme
+usr/share/qtermwidget5/color-schemes/DarkPastels.colorscheme
+usr/share/qtermwidget5/color-schemes/GreenOnBlack.colorscheme
+usr/share/qtermwidget5/color-schemes/Linux.colorscheme
+usr/share/qtermwidget5/color-schemes/Solarized.colorscheme
+usr/share/qtermwidget5/color-schemes/SolarizedLight.colorscheme
+usr/share/qtermwidget5/color-schemes/WhiteOnBlack.schema
+usr/share/qtermwidget5/color-schemes/historic/
+usr/share/qtermwidget5/color-schemes/historic/BlackOnLightColor.schema
+usr/share/qtermwidget5/color-schemes/historic/DarkPicture.schema
+usr/share/qtermwidget5/color-schemes/historic/GreenOnBlack.schema
+usr/share/qtermwidget5/color-schemes/historic/GreenTint.schema
+usr/share/qtermwidget5/color-schemes/historic/GreenTint_MC.schema
+usr/share/qtermwidget5/color-schemes/historic/LightPicture.schema
+usr/share/qtermwidget5/color-schemes/historic/Linux.schema
+usr/share/qtermwidget5/color-schemes/historic/Transparent.schema
+usr/share/qtermwidget5/color-schemes/historic/Transparent_MC.schema
+usr/share/qtermwidget5/color-schemes/historic/Transparent_darkbg.schema
+usr/share/qtermwidget5/color-schemes/historic/Transparent_lightbg.schema
+usr/share/qtermwidget5/color-schemes/historic/XTerm.schema
+usr/share/qtermwidget5/color-schemes/historic/syscolor.schema
+usr/share/qtermwidget5/color-schemes/historic/vim.schema
+usr/share/qtermwidget5/kb-layouts/
+usr/share/qtermwidget5/kb-layouts/default.keytab
+usr/share/qtermwidget5/kb-layouts/historic/
+usr/share/qtermwidget5/kb-layouts/historic/vt100.keytab
+usr/share/qtermwidget5/kb-layouts/historic/x11r5.keytab
+usr/share/qtermwidget5/kb-layouts/linux.keytab
+usr/share/qtermwidget5/kb-layouts/macbook.keytab
+usr/share/qtermwidget5/kb-layouts/solaris.keytab
+usr/share/qtermwidget5/kb-layouts/vt420pc.keytab

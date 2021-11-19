@@ -1,0 +1,47 @@
+PACKAGE NAME:     lxqt-openssh-askpass-0.12.0-i586-1
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: lxqt-openssh-askpass-0.12.0-i586.txz
+PACKAGE DESCRIPTION:
+lxqt-openssh-askpass: lxqt-openssh-askpass (LXQt password entry dialog)
+lxqt-openssh-askpass:
+lxqt-openssh-askpass: Used to ask for user/password with GUI for OpenSSH.
+lxqt-openssh-askpass:
+lxqt-openssh-askpass:
+lxqt-openssh-askpass:
+lxqt-openssh-askpass:
+lxqt-openssh-askpass:
+lxqt-openssh-askpass:
+lxqt-openssh-askpass: Home page: http://lxqt.org
+lxqt-openssh-askpass:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lxqt-openssh-askpass
+usr/doc/
+usr/doc/lxqt-openssh-askpass-0.12.0/
+usr/doc/lxqt-openssh-askpass-0.12.0/AUTHORS
+usr/doc/lxqt-openssh-askpass-0.12.0/README.md
+usr/share/
+usr/share/lxqt/
+usr/share/lxqt/translations/
+usr/share/lxqt/translations/lxqt-openssh-askpass/
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_ar.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_ca.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_cs.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_da.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_de.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_el.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_fr.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_hu.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_it.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_lt.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_nl.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_pl.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_pt.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_ru.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_tr.qm
+usr/share/lxqt/translations/lxqt-openssh-askpass/lxqt-openssh-askpass_uk.qm

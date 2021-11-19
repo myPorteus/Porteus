@@ -1,0 +1,6 @@
+( cd usr/bin ; rm -rf Thunar )
+( cd usr/bin ; ln -sf thunar Thunar )
+( cd usr/lib ; rm -rf libthunarx-2.so )
+( cd usr/lib ; ln -sf libthunarx-2.so.0.0.0 libthunarx-2.so )
+( cd usr/lib ; rm -rf libthunarx-2.so.0 )
+( cd usr/lib ; ln -sf libthunarx-2.so.0.0.0 libthunarx-2.so.0 )

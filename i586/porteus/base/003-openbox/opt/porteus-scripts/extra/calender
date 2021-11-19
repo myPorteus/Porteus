@@ -1,0 +1,16 @@
+    #!/bin/bash
+    
+    export CAL='
+    <window title="Calendar"
+     icon-name="preferences-system-time" 
+     width-request="180" 
+     height-request="180">
+    <vbox>
+    <terminal pointer-autohide="true"
+     vscrollbar-policy="2">
+    <input>echo "cal"</input>
+    </terminal>  
+    </vbox>    
+    </window>
+    ' 
+    gtkdialog --program=CAL

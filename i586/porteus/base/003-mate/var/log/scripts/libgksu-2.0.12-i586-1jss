@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libgksu2.so )
+( cd usr/lib ; ln -sf libgksu2.so.0.0.2 libgksu2.so )
+( cd usr/lib ; rm -rf libgksu2.so.0 )
+( cd usr/lib ; ln -sf libgksu2.so.0.0.2 libgksu2.so.0 )

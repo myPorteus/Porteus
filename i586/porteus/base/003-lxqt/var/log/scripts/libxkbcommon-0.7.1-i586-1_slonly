@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libxkbcommon.so )
+( cd usr/lib ; ln -sf libxkbcommon.so.0.0.0 libxkbcommon.so )
+( cd usr/lib ; rm -rf libxkbcommon.so.0 )
+( cd usr/lib ; ln -sf libxkbcommon.so.0.0.0 libxkbcommon.so.0 )
+( cd usr/lib ; rm -rf libxkbcommon-x11.so )
+( cd usr/lib ; ln -sf libxkbcommon-x11.so.0.0.0 libxkbcommon-x11.so )
+( cd usr/lib ; rm -rf libxkbcommon-x11.so.0 )
+( cd usr/lib ; ln -sf libxkbcommon-x11.so.0.0.0 libxkbcommon-x11.so.0 )

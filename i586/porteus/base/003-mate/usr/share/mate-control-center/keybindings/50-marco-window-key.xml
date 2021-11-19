@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries wm_name="Metacity (Marco)" schema="org.mate.Marco.window-keybindings" package="marco" name="Window Management">
+
+	<KeyListEntry name="activate-window-menu" description="Activate the window menu"></KeyListEntry>
+
+	<KeyListEntry name="toggle-fullscreen" description="Toggle fullscreen mode"></KeyListEntry>
+
+	<KeyListEntry name="toggle-maximized" description="Toggle maximization state"></KeyListEntry>
+
+	<KeyListEntry name="maximize" description="Maximize window"></KeyListEntry>
+
+	<KeyListEntry name="unmaximize" description="Restore window"></KeyListEntry>
+
+	<KeyListEntry name="toggle-shaded" description="Toggle shaded state"></KeyListEntry>
+
+	<KeyListEntry name="close" description="Close window"></KeyListEntry>
+
+	<KeyListEntry name="minimize" description="Minimize window"></KeyListEntry>
+
+	<KeyListEntry name="begin-move" description="Move window"></KeyListEntry>
+
+	<KeyListEntry name="begin-resize" description="Resize window"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="toggle-on-all-workspaces" key="num-workspaces" comparison="gt" description="Toggle whether window is on all workspaces or just one"></KeyListEntry>
+
+	<KeyListEntry name="raise-or-lower" description="Raise window if it's covered by another window, otherwise lower it"></KeyListEntry>
+
+	<KeyListEntry name="raise" description="Raise window above other windows"></KeyListEntry>
+
+	<KeyListEntry name="lower" description="Lower window below other windows"></KeyListEntry>
+
+	<KeyListEntry name="maximize-vertically" description="Maximize window vertically"></KeyListEntry>
+
+	<KeyListEntry name="maximize-horizontally" description="Maximize window horizontally"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-side-e" description="Tile window to east (right) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-side-w" description="Tile window to west (left) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-corner-nw" description="Tile window to north-west (top left) corner"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-corner-ne" description="Tile window to north-east (top right) corner"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-corner-sw" description="Tile window to south-west (bottom left) corner"></KeyListEntry>
+
+	<KeyListEntry name="tile-to-corner-se" description="Tile window to south-east (bottom right) corner"></KeyListEntry>
+
+	<KeyListEntry name="move-to-corner-nw" description="Move window to north-west (top left) corner"></KeyListEntry>
+
+	<KeyListEntry name="move-to-corner-ne" description="Move window to north-east (top right) corner"></KeyListEntry>
+
+	<KeyListEntry name="move-to-corner-sw" description="Move window to south-west (bottom left) corner"></KeyListEntry>
+
+	<KeyListEntry name="move-to-corner-se" description="Move window to south-east (bottom right) corner"></KeyListEntry>
+
+	<KeyListEntry name="move-to-side-n" description="Move window to north (top) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="move-to-side-s" description="Move window to south (bottom) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="move-to-side-e" description="Move window to east (right) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="move-to-side-w" description="Move window to west (left) side of screen"></KeyListEntry>
+
+	<KeyListEntry name="move-to-center" description="Move window to center of screen"></KeyListEntry>
+
+	<KeyListEntry name="move-to-monitor-n" description="Move window to north (top) monitor"></KeyListEntry>
+
+	<KeyListEntry name="move-to-monitor-s" description="Move window to south (bottom) monitor"></KeyListEntry>
+
+	<KeyListEntry name="move-to-monitor-e" description="Move window to east (right) monitor"></KeyListEntry>
+
+	<KeyListEntry name="move-to-monitor-w" description="Move window to west (left) monitor"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-1" key="num-workspaces" comparison="gt" description="Move window to workspace 1"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-2" key="num-workspaces" comparison="gt" description="Move window to workspace 2"></KeyListEntry>
+
+	<KeyListEntry value="2" schema="org.mate.Marco.general" name="move-to-workspace-3" key="num-workspaces" comparison="gt" description="Move window to workspace 3"></KeyListEntry>
+
+	<KeyListEntry value="3" schema="org.mate.Marco.general" name="move-to-workspace-4" key="num-workspaces" comparison="gt" description="Move window to workspace 4"></KeyListEntry>
+
+	<KeyListEntry value="4" schema="org.mate.Marco.general" name="move-to-workspace-5" key="num-workspaces" comparison="gt" description="Move window to workspace 5"></KeyListEntry>
+
+	<KeyListEntry value="5" schema="org.mate.Marco.general" name="move-to-workspace-6" key="num-workspaces" comparison="gt" description="Move window to workspace 6"></KeyListEntry>
+
+	<KeyListEntry value="6" schema="org.mate.Marco.general" name="move-to-workspace-7" key="num-workspaces" comparison="gt" description="Move window to workspace 7"></KeyListEntry>
+
+	<KeyListEntry value="7" schema="org.mate.Marco.general" name="move-to-workspace-8" key="num-workspaces" comparison="gt" description="Move window to workspace 8"></KeyListEntry>
+
+	<KeyListEntry value="8" schema="org.mate.Marco.general" name="move-to-workspace-9" key="num-workspaces" comparison="gt" description="Move window to workspace 9"></KeyListEntry>
+
+	<KeyListEntry value="9" schema="org.mate.Marco.general" name="move-to-workspace-10" key="num-workspaces" comparison="gt" description="Move window to workspace 10"></KeyListEntry>
+
+	<KeyListEntry value="10" schema="org.mate.Marco.general" name="move-to-workspace-11" key="num-workspaces" comparison="gt" description="Move window to workspace 11"></KeyListEntry>
+
+	<KeyListEntry value="11" schema="org.mate.Marco.general" name="move-to-workspace-12" key="num-workspaces" comparison="gt" description="Move window to workspace 12"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-left" key="num-workspaces" comparison="gt" description="Move window one workspace to the left"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-right" key="num-workspaces" comparison="gt" description="Move window one workspace to the right"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-up" key="num-workspaces" comparison="gt" description="Move window one workspace up"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="move-to-workspace-down" key="num-workspaces" comparison="gt" description="Move window one workspace down"></KeyListEntry>
+
+</KeyListEntries>

@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libjasper.so.4 )
+( cd usr/lib ; ln -sf libjasper.so.4.0.0 libjasper.so.4 )
+( cd usr/lib ; rm -rf libjasper.so )
+( cd usr/lib ; ln -sf libjasper.so.4 libjasper.so )

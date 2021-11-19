@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries wm_name="Metacity (Marco)" schema="org.mate.Marco.global-keybindings" package="marco" name="Window Management">
+
+	<KeyListEntry name="switch-windows" description="Move between windows, using a popup window"></KeyListEntry>
+
+	<KeyListEntry name="switch-group" description="Move between windows of an application, using a popup window"></KeyListEntry>
+
+	<KeyListEntry name="switch-panels" description="Move between panels and the desktop, using a popup window"></KeyListEntry>
+
+	<KeyListEntry name="cycle-windows" description="Move between windows immediately"></KeyListEntry>
+
+	<KeyListEntry name="cycle-group" description="Move between windows of an application immediately"></KeyListEntry>
+
+	<KeyListEntry name="cycle-panels" description="Move between panels and the desktop immediately"></KeyListEntry>
+
+	<KeyListEntry name="show-desktop" description="Hide all normal windows and set focus to the desktop"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-1" key="num-workspaces" comparison="gt" description="Switch to workspace 1"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-2" key="num-workspaces" comparison="gt" description="Switch to workspace 2"></KeyListEntry>
+
+	<KeyListEntry value="2" schema="org.mate.Marco.general" name="switch-to-workspace-3" key="num-workspaces" comparison="gt" description="Switch to workspace 3"></KeyListEntry>
+
+	<KeyListEntry value="3" schema="org.mate.Marco.general" name="switch-to-workspace-4" key="num-workspaces" comparison="gt" description="Switch to workspace 4"></KeyListEntry>
+
+	<KeyListEntry value="4" schema="org.mate.Marco.general" name="switch-to-workspace-5" key="num-workspaces" comparison="gt" description="Switch to workspace 5"></KeyListEntry>
+
+	<KeyListEntry value="5" schema="org.mate.Marco.general" name="switch-to-workspace-6" key="num-workspaces" comparison="gt" description="Switch to workspace 6"></KeyListEntry>
+
+	<KeyListEntry value="6" schema="org.mate.Marco.general" name="switch-to-workspace-7" key="num-workspaces" comparison="gt" description="Switch to workspace 7"></KeyListEntry>
+
+	<KeyListEntry value="7" schema="org.mate.Marco.general" name="switch-to-workspace-8" key="num-workspaces" comparison="gt" description="Switch to workspace 8"></KeyListEntry>
+
+	<KeyListEntry value="8" schema="org.mate.Marco.general" name="switch-to-workspace-9" key="num-workspaces" comparison="gt" description="Switch to workspace 9"></KeyListEntry>
+
+	<KeyListEntry value="9" schema="org.mate.Marco.general" name="switch-to-workspace-10" key="num-workspaces" comparison="gt" description="Switch to workspace 10"></KeyListEntry>
+
+	<KeyListEntry value="10" schema="org.mate.Marco.general" name="switch-to-workspace-11" key="num-workspaces" comparison="gt" description="Switch to workspace 11"></KeyListEntry>
+
+	<KeyListEntry value="11" schema="org.mate.Marco.general" name="switch-to-workspace-12" key="num-workspaces" comparison="gt" description="Switch to workspace 12"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-left" key="num-workspaces" comparison="gt" description="Switch to workspace on the left of the current workspace"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-right" key="num-workspaces" comparison="gt" description="Switch to workspace on the right of the current workspace"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-up" key="num-workspaces" comparison="gt" description="Switch to workspace above the current workspace"></KeyListEntry>
+
+	<KeyListEntry value="1" schema="org.mate.Marco.general" name="switch-to-workspace-down" key="num-workspaces" comparison="gt" description="Switch to workspace below the current workspace"></KeyListEntry>
+
+	<KeyListEntry name="switch-to-workspace-prev" description="Switch to previously selected workspace"></KeyListEntry>
+
+</KeyListEntries>

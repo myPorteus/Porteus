@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libxfce4util.so.7 )
+( cd usr/lib ; ln -sf libxfce4util.so.7.0.0 libxfce4util.so.7 )
+( cd usr/lib ; rm -rf libxfce4util.so )
+( cd usr/lib ; ln -sf libxfce4util.so.7.0.0 libxfce4util.so )

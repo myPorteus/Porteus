@@ -1,0 +1,47 @@
+PACKAGE NAME:     lxqt-policykit-0.12.0-i586-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: lxqt-policykit-0.12.0-i586.txz
+PACKAGE DESCRIPTION:
+lxqt-policykit: lxqt-policykit (Policykit agent)
+lxqt-policykit:
+lxqt-policykit: LXQt Policykit agent.
+lxqt-policykit:
+lxqt-policykit:
+lxqt-policykit:
+lxqt-policykit:
+lxqt-policykit:
+lxqt-policykit:
+lxqt-policykit: Home page: http://lxqt.org
+lxqt-policykit:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lxqt-policykit-agent
+usr/doc/
+usr/doc/lxqt-policykit-0.12.0/
+usr/doc/lxqt-policykit-0.12.0/AUTHORS
+usr/doc/lxqt-policykit-0.12.0/README.md
+usr/share/
+usr/share/lxqt/
+usr/share/lxqt/translations/
+usr/share/lxqt/translations/lxqt-policykit-agent/
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_ar.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_ca.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_cs.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_da.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_de.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_el.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_fr.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_hu.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_it.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_lt.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_nl.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_pl.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_pt.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_ru.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_tr.qm
+usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_uk.qm

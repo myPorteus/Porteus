@@ -1,0 +1,97 @@
+PACKAGE NAME:     sakura-3.4.0-i586-2_slonly
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     260K
+PACKAGE LOCATION: /mnt/sda6/Porteus4.0/SpaceDE/BUILD/PKG32/sakura-3.4.0-i586-2_slonly.txz
+PACKAGE DESCRIPTION:
+sakura: sakura (a terminal emulator)
+sakura:
+sakura: Sakura is a terminal emulator based on GTK and libvte. It has few
+sakura: dependencies, so there's no need of a full GNOME desktop installed to
+sakura: have a powerful terminal emulator. Sakura uses a GTK notebook to
+sakura: provide tabbed terminals in one window and has a contextual menu for
+sakura: configuration; it was designed without a menubar. No more or less.
+sakura:
+sakura:
+sakura:
+sakura: http://www.pleyades.net/david/projects/sakura
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/sakura
+usr/doc/
+usr/doc/sakura-3.4.0/
+usr/doc/sakura-3.4.0/AUTHORS
+usr/doc/sakura-3.4.0/GPL
+usr/doc/sakura-3.4.0/INSTALL
+usr/doc/sakura-3.4.0/sakura.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/sakura.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/sakura.desktop
+usr/share/locale/
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/sakura.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/sakura.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/sakura.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/sakura.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/sakura.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/sakura.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/sakura.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/sakura.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/sakura.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/sakura.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/sakura.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/sakura.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/sakura.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/sakura.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/sakura.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/sakura.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/sakura.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/sakura.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/sakura.mo
+usr/share/pixmaps/
+usr/share/pixmaps/terminal-tango.svg

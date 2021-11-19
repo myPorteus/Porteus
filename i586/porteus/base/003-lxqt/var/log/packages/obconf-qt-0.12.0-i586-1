@@ -1,0 +1,61 @@
+PACKAGE NAME:     obconf-qt-0.12.0-i586-1
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     530K
+PACKAGE LOCATION: obconf-qt-0.12.0-i586.txz
+PACKAGE DESCRIPTION:
+obconf-qt: obconf-qt (Qt port of obconf)
+obconf-qt:
+obconf-qt: The Qt port of obconf, the Openbox configuration tool.
+obconf-qt:
+obconf-qt:
+obconf-qt:
+obconf-qt:
+obconf-qt:
+obconf-qt:
+obconf-qt: Home page: http://lxqt.org
+obconf-qt:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/obconf-qt
+usr/doc/
+usr/doc/obconf-qt-0.12.0/
+usr/doc/obconf-qt-0.12.0/AUTHORS
+usr/doc/obconf-qt-0.12.0/COPYING
+usr/doc/obconf-qt-0.12.0/README.md
+usr/share/
+usr/share/applications/
+usr/share/applications/obconf-qt.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/obconf-qt.png
+usr/share/obconf-qt/
+usr/share/obconf-qt/translations/
+usr/share/obconf-qt/translations/obconf-qt_ca.qm
+usr/share/obconf-qt/translations/obconf-qt_cs.qm
+usr/share/obconf-qt/translations/obconf-qt_de.qm
+usr/share/obconf-qt/translations/obconf-qt_el.qm
+usr/share/obconf-qt/translations/obconf-qt_es.qm
+usr/share/obconf-qt/translations/obconf-qt_fr.qm
+usr/share/obconf-qt/translations/obconf-qt_gl.qm
+usr/share/obconf-qt/translations/obconf-qt_hr.qm
+usr/share/obconf-qt/translations/obconf-qt_hu.qm
+usr/share/obconf-qt/translations/obconf-qt_id.qm
+usr/share/obconf-qt/translations/obconf-qt_is.qm
+usr/share/obconf-qt/translations/obconf-qt_it.qm
+usr/share/obconf-qt/translations/obconf-qt_ja.qm
+usr/share/obconf-qt/translations/obconf-qt_lt.qm
+usr/share/obconf-qt/translations/obconf-qt_nl.qm
+usr/share/obconf-qt/translations/obconf-qt_pa.qm
+usr/share/obconf-qt/translations/obconf-qt_pl.qm
+usr/share/obconf-qt/translations/obconf-qt_pt.qm
+usr/share/obconf-qt/translations/obconf-qt_pt_BR.qm
+usr/share/obconf-qt/translations/obconf-qt_ru.qm
+usr/share/obconf-qt/translations/obconf-qt_sv.qm
+usr/share/obconf-qt/translations/obconf-qt_tr.qm
+usr/share/obconf-qt/translations/obconf-qt_uk.qm

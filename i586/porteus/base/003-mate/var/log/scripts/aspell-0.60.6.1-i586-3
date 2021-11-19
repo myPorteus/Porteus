@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libpspell.so.15 )
+( cd usr/lib ; ln -sf libpspell.so.15.1.5 libpspell.so.15 )
+( cd usr/lib ; rm -rf libaspell.so )
+( cd usr/lib ; ln -sf libaspell.so.15.1.5 libaspell.so )
+( cd usr/lib ; rm -rf libaspell.so.15 )
+( cd usr/lib ; ln -sf libaspell.so.15.1.5 libaspell.so.15 )
+( cd usr/lib ; rm -rf libpspell.so )
+( cd usr/lib ; ln -sf libpspell.so.15.1.5 libpspell.so )

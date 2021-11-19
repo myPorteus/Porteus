@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libdbusmenu-qt5.so )
+( cd usr/lib ; ln -sf libdbusmenu-qt5.so.2 libdbusmenu-qt5.so )
+( cd usr/lib ; rm -rf libdbusmenu-qt5.so.2 )
+( cd usr/lib ; ln -sf libdbusmenu-qt5.so.2.6.0 libdbusmenu-qt5.so.2 )

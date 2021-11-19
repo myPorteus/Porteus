@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libffmpegthumbnailer
+Description: Generates thumbnails for movie files
+Version: 2.2.0
+Libs: -L${libdir} -lffmpegthumbnailer
+Libs.private: -L -lavcodec -lavfilter -lavformat -lavutil /usr/lib/libjpeg.so /usr/lib/libpng.so /usr/lib/libz.so
+Cflags: -I${includedir}

@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libmate-menu.so )
+( cd usr/lib ; ln -sf libmate-menu.so.2.4.9 libmate-menu.so )
+( cd usr/lib ; rm -rf libmate-menu.so.2 )
+( cd usr/lib ; ln -sf libmate-menu.so.2.4.9 libmate-menu.so.2 )

@@ -1,0 +1,48 @@
+PACKAGE NAME:     libgxps-0.3.0-i586-1jss
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     390K
+PACKAGE LOCATION: /root/mcbs/build/../i586/pkg/003_mate/libgxps-0.3.0-i586-1jss.txz
+PACKAGE DESCRIPTION:
+libgxps: libgxps (XPS rendering library)
+libgxps:
+libgxps: libgxps is a GObject based library for handling and rendering
+libgxps: XPS documents.
+libgxps:
+libgxps:
+libgxps:
+libgxps:
+libgxps:
+libgxps: https://github.com/GNOME/libgxps
+libgxps:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xpstojpeg
+usr/bin/xpstopdf
+usr/bin/xpstopng
+usr/bin/xpstops
+usr/bin/xpstosvg
+usr/include/
+usr/include/libgxps/
+usr/include/libgxps/gxps-core-properties.h
+usr/include/libgxps/gxps-document-structure.h
+usr/include/libgxps/gxps-document.h
+usr/include/libgxps/gxps-error.h
+usr/include/libgxps/gxps-file.h
+usr/include/libgxps/gxps-links.h
+usr/include/libgxps/gxps-page.h
+usr/include/libgxps/gxps-version.h
+usr/include/libgxps/gxps.h
+usr/lib/
+usr/lib/girepository-1.0/
+usr/lib/girepository-1.0/GXPS-0.1.typelib
+usr/lib/libgxps.so.2.2.2
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libgxps.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/GXPS-0.1.gir

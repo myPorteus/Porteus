@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Vbox builder
+Exec=lxqt-sudo -s /opt/porteus-scripts/update-vbox
+Icon=/usr/share/pixmaps/porteus/vbox.png
+Type=Application
+Categories=Application;System;

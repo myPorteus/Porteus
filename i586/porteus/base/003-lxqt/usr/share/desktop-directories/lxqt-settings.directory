@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Directory
+Name=LXQt settings
+Icon=preferences-system
+
+
+# Translations
+Name[de]=LXQt-Systemeinstellungen
+Name[el]=Ρυθμίσεις LXQt
+Name[fr]=LXQt-Paramétrage du système
+Name[hu]=LXQt beállítása
+Name[it]=Impostazioni di LXQt
+Name[lt]=LXQt nustatymai
+Name[pl]=Ustawienia LXQt
+Name[ru]=Настройки LXQt
+Name[ru_RU]=Настройки LXQt
+Name[zh_CN]=LXQt 设置

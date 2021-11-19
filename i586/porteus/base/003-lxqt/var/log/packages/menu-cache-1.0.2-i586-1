@@ -1,0 +1,44 @@
+PACKAGE NAME:     menu-cache-1.0.2-i586-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     220K
+PACKAGE LOCATION: menu-cache-1.0.2-i586.txz
+PACKAGE DESCRIPTION:
+menu-cache: menu-cache (lightweight replacement of libgnome-menu)
+menu-cache:
+menu-cache: Libmenu-cache is a library creating and utilizing caches to speed
+menu-cache: up the manipulation for freedesktop.org defined application menus.
+menu-cache:  It can be used as a replacement of libgnome-menu of gnome-menus.
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache:
+menu-cache: menu-cache home: http://lxde.sourceforge.net/
+menu-cache:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/menu-cache-1.0.2/
+usr/doc/menu-cache-1.0.2/AUTHORS
+usr/doc/menu-cache-1.0.2/COPYING
+usr/doc/menu-cache-1.0.2/INSTALL
+usr/doc/menu-cache-1.0.2/NEWS
+usr/doc/menu-cache-1.0.2/README
+usr/include/
+usr/include/menu-cache/
+usr/include/menu-cache/menu-cache.h
+usr/lib/
+usr/lib/libmenu-cache.a
+usr/lib/libmenu-cache.la
+usr/lib/libmenu-cache.so
+usr/lib/libmenu-cache.so.3
+usr/lib/libmenu-cache.so.3.2.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libmenu-cache.pc
+usr/libexec/
+usr/libexec/menu-cache/
+usr/libexec/menu-cache/menu-cache-gen
+usr/libexec/menu-cache/menu-cached

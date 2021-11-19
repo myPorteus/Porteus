@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libgnome-keyring.so.0 )
+( cd usr/lib ; ln -sf libgnome-keyring.so.0.2.0 libgnome-keyring.so.0 )
+( cd usr/lib ; rm -rf libgnome-keyring.so )
+( cd usr/lib ; ln -sf libgnome-keyring.so.0.2.0 libgnome-keyring.so )

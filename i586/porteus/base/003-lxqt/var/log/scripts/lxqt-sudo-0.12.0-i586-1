@@ -1,0 +1,8 @@
+( cd usr/man/man1 ; rm -rf lxsudo.1.gz )
+( cd usr/man/man1 ; ln -sf lxqt-sudo.1.gz lxsudo.1.gz )
+( cd usr/man/man1 ; rm -rf lxsu.1.gz )
+( cd usr/man/man1 ; ln -sf lxqt-sudo.1.gz lxsu.1.gz )
+( cd usr/bin ; rm -rf lxsudo )
+( cd usr/bin ; ln -sf lxqt-sudo lxsudo )
+( cd usr/bin ; rm -rf lxsu )
+( cd usr/bin ; ln -sf lxqt-sudo lxsu )

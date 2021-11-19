@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Power Management
+TryExec=lxqt-powermanagement
+Exec=lxqt-powermanagement
+OnlyShowIn=LXQt;
+X-LXQt-Need-Tray=true
+X-LXQt-Module=true
+
+Name[da]=Strømstyring
+Name[de]=LXQt-Energieverwaltung
+Name[el]=Διαχείριση ενέργειας
+Name[fr]=Gestion de l'énergie
+Name[it]=Gestore energia
+Name[lt]=Maitinimo valdymas
+Name[pl]=Zarządzanie energią
+Name[pt]=Gestor de energia do LXQt
+Name[zh_CN]=电源管理
+Name[zh_TW]=電源管理
