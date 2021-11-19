@@ -1,0 +1,24 @@
+PACKAGE NAME:     gnome-screenshot-3.30.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: gnome-screenshot-3.30.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/gnome-screenshot
+usr/share/
+usr/share/GConf/
+usr/share/GConf/gsettings/
+usr/share/GConf/gsettings/gnome-screenshot.convert
+usr/share/applications/
+usr/share/applications/org.gnome.Screenshot.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.gnome.Screenshot.service
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.gnome-screenshot.gschema.xml
+usr/share/metainfo/
+usr/share/metainfo/org.gnome.Screenshot.metainfo.xml

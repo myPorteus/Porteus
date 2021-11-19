@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.keyboardindicator</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Keyboard Indicator</name>
+    <name xml:lang="ca@valencia">Indicador de teclat</name>
+    <name xml:lang="ca">Indicador de teclat</name>
+    <name xml:lang="cs">Indikátor klávesnice</name>
+    <name xml:lang="da">Tastaturindikator</name>
+    <name xml:lang="de">Tastaturstatus</name>
+    <name xml:lang="el">Ένδειξη πληκτρολογίου</name>
+    <name xml:lang="en_GB">Keyboard Indicator</name>
+    <name xml:lang="es">Indicador del teclado</name>
+    <name xml:lang="eu">Teklatuaren adierazlea</name>
+    <name xml:lang="fi">Näppäimistöosoitin</name>
+    <name xml:lang="fr">Indicateur de clavier</name>
+    <name xml:lang="gl">Indicador de teclado</name>
+    <name xml:lang="hu">Billentyűzetjelző</name>
+    <name xml:lang="id">Keyboard Indicator</name>
+    <name xml:lang="it">Indicatore tastiera</name>
+    <name xml:lang="ko">키보드 표시기</name>
+    <name xml:lang="nl">Toetsenbordindicator</name>
+    <name xml:lang="nn">Tastaturindikator</name>
+    <name xml:lang="pl">Wskaźnik klawiatury</name>
+    <name xml:lang="pt">Indicador do Teclado</name>
+    <name xml:lang="pt_BR">Indicador de teclado</name>
+    <name xml:lang="ru">Индикатор клавиатуры</name>
+    <name xml:lang="sk">Indikátor klávesnice</name>
+    <name xml:lang="sv">Tangentbordsindikator</name>
+    <name xml:lang="uk">Індикатор клавіатури</name>
+    <name xml:lang="x-test">xxKeyboard Indicatorxx</name>
+    <name xml:lang="zh_CN">键盘指示器</name>
+    <name xml:lang="zh_TW">鍵盤指示符號</name>
+    <summary>Shows the state of the keyboard</summary>
+    <summary xml:lang="ca@valencia">Mostra l'estat del teclat</summary>
+    <summary xml:lang="ca">Mostra l'estat del teclat</summary>
+    <summary xml:lang="cs">Ukazuje stav klávesnice</summary>
+    <summary xml:lang="da">Viser tastaturets tilstand</summary>
+    <summary xml:lang="de">Zeigt den Status der Tastatur an</summary>
+    <summary xml:lang="el">Εμφανίζει την κατάσταση του πληκτρολογίου</summary>
+    <summary xml:lang="en_GB">Shows the state of the keyboard</summary>
+    <summary xml:lang="es">Muestra el estado del teclado</summary>
+    <summary xml:lang="eu">Erakutsi teklatuaren egoera</summary>
+    <summary xml:lang="fi">Näyttää näppäimistön tilan</summary>
+    <summary xml:lang="fr">Affiche l'état du clavier</summary>
+    <summary xml:lang="gl">Mostra o estado do teclado</summary>
+    <summary xml:lang="hu">Megjeleníti a billentyűzet állapotát</summary>
+    <summary xml:lang="id">Menampilkan keadaannya keyboard</summary>
+    <summary xml:lang="it">Mostra lo stato della tastiera</summary>
+    <summary xml:lang="ko">키보드 상태 보이기</summary>
+    <summary xml:lang="nl">Toont de status van het toetsenbord</summary>
+    <summary xml:lang="nn">Viser tastaturtilstand</summary>
+    <summary xml:lang="pl">Pokazuje stan klawiatury</summary>
+    <summary xml:lang="pt">Mostra o estado do teclado</summary>
+    <summary xml:lang="pt_BR">Mostra o estado do teclado</summary>
+    <summary xml:lang="ru">Показывает текущее состояние клавиатуры</summary>
+    <summary xml:lang="sk">Zobrazuje stav klávesnice</summary>
+    <summary xml:lang="sv">Visar tangentbordets tillstånd</summary>
+    <summary xml:lang="uk">Показує стан клавіатури</summary>
+    <summary xml:lang="x-test">xxShows the state of the keyboardxx</summary>
+    <summary xml:lang="zh_CN">显示键盘的状态</summary>
+    <summary xml:lang="zh_TW">顯示鍵盤的狀態</summary>
+    <url type="homepage">http://plasma.kde.org/</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.keyboardindicator</url>
+    <developer_name>Aleix Pol Gonzalez &lt;aleixpol@kde.org&gt;</developer_name>
+    <icon type="stock">input-keyboard</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/opt/porteus-scripts/xorg/psu spacefm /root
+Icon=spacefm-root
+Name=Super User Mode - Spacefm
+Type=Application
+Categories=Application;System;
+NotShowIn=KDE;

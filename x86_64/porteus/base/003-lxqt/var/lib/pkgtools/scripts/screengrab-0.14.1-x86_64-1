@@ -1,0 +1,4 @@
+( cd usr/lib64/screengrab ; rm -rf libextedit.so )
+( cd usr/lib64/screengrab ; ln -sf libextedit.so.1.0.0 libextedit.so )
+( cd usr/lib64/screengrab ; rm -rf libuploader.so )
+( cd usr/lib64/screengrab ; ln -sf libuploader.so.1.0.0 libuploader.so )

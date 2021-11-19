@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5Screen.so )
+( cd usr/lib64 ; ln -sf libKF5Screen.so.7 libKF5Screen.so )
+( cd usr/lib64 ; rm -rf libKF5Screen.so.7 )
+( cd usr/lib64 ; ln -sf libKF5Screen.so.5.15.5 libKF5Screen.so.7 )

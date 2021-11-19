@@ -1,0 +1,38 @@
+[Desktop Entry]
+Type=Application
+Name=Compton (X Compositor)
+GenericName=X compositor
+Comment=A X compositor
+TryExec=compton
+Exec=compton --dbus
+
+# turned off by default
+Hidden=true
+OnlyShowIn=LXQt;
+X-LXQt-Module=true
+Name[da]=Compton (X-compositor)
+Comment[da]=En X-compositor
+Name[de]=Compton (X11 Kompositionsmanager)
+GenericName[de]=X11 Kompositionsmanager
+Comment[de]=Kompositionsmanager für X11
+Name[el]=Compton (Συνθέτης X)
+GenericName[el]=Συνθέτης X
+Comment[el]=Ένας συνθέτης X
+Name[es]=Compton (Gestor de composición para X)
+GenericName[es]=Gestor de composición para X
+Comment[es]=Un gestor de composición para X
+Name[gl]=Compton (Xestor de composición para X)
+GenericName[gl]=Xestor de composición para X
+Comment[gl]=Un xestor de composición para X
+Name[lt]=Compton (X tvarkytojas)
+GenericName[lt]=X tvarkytojas
+Comment[lt]=X tvarkytojas
+Name[pl]=Menedżer kompozycji Compton
+GenericName[pl]=Menedżer kompozycji X11
+Comment[pl]=Menedżer kompozycji dla X11
+Name[pt]=Compton (Compositor X)
+GenericName[pt]=Compositor X
+Comment[pt]=Compositor para o servidor X
+Name[tr]=Compton (X Bileşikleştirici)
+GenericName[tr]=X bileşikleştirici
+Comment[tr]=Bir X bileşiklikleştiricisi

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libffmpegthumbnailer.so )
+( cd usr/lib64 ; ln -sf libffmpegthumbnailer.so.4 libffmpegthumbnailer.so )
+( cd usr/lib64 ; rm -rf libffmpegthumbnailer.so.4 )
+( cd usr/lib64 ; ln -sf libffmpegthumbnailer.so.4.13.1 libffmpegthumbnailer.so.4 )

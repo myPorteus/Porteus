@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=KDE GUI helper
+Comment=KDE GUI helper
+Exec=/opt/porteus-scripts/kde/kde-autostart
+

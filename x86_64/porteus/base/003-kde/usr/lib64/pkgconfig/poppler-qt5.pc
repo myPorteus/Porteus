@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: poppler-qt5
+Description: Qt5 bindings for poppler
+Version: 0.77.0
+Requires: 
+Requires.private: poppler = 0.77.0
+
+Libs: -L${libdir} -lpoppler-qt5
+Cflags: -I${includedir}/poppler/qt5

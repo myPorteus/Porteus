@@ -1,0 +1,7 @@
+spacefm --desktop &
+#fbpanel &
+tint2 &
+#nm-applet &
+volumeicon &
+#clipit &
+gxkb &

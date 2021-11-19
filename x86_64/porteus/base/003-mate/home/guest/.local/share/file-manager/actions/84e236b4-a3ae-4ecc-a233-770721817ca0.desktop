@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=media-optical
+Icon[en]=media-optical
+Icon[C]=media-optical
+Tooltip[en_US]=Mount ISO
+Tooltip[en]=Mount ISO
+Tooltip[ru]=Смонтировать образ ISO
+Tooltip[C]=Mount ISO
+ToolbarLabel[en_US]=Mount ISO
+ToolbarLabel[en]=Mount ISO
+ToolbarLabel[ru]=Смонтировать образ ISO
+ToolbarLabel[C]=Mount ISO
+Name[en_US]=Mount ISO
+Name[en]=Mount ISO
+Name[ru]=Смонтировать образ ISO
+Name[C]=Mount ISO
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.iso;
+Exec=/opt/porteus-scripts/context-menu/mount-iso %f
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

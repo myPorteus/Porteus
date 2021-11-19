@@ -1,0 +1,3 @@
+# prevent loop devices (xzm modules) from appearing in the file manager panel
+KERNEL=="loop*", ENV{UDISKS_PRESENTATION_HIDE}="1", ENV{UDISKS_IGNORE}="1"
+KERNEL=="Loop*", ENV{UDISKS_PRESENTATION_HIDE}="1", ENV{UDISKS_IGNORE}="1"

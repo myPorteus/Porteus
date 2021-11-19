@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libpangomm-1.4.so )
+( cd usr/lib64 ; ln -sf libpangomm-1.4.so.1.0.30 libpangomm-1.4.so )
+( cd usr/lib64 ; rm -rf libpangomm-1.4.so.1 )
+( cd usr/lib64 ; ln -sf libpangomm-1.4.so.1.0.30 libpangomm-1.4.so.1 )

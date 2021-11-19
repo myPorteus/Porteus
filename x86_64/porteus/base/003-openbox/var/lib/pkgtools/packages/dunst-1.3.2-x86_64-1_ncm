@@ -1,0 +1,42 @@
+PACKAGE NAME:     dunst-1.3.2-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /mnt/sda6/Porteus5.0/SpaceDE/BUILD/PKG64/dunst-1.3.2-x86_64-1_ncm.tgz
+PACKAGE DESCRIPTION:
+dunst: dunst (notification daemon)
+dunst:
+dunst: Dunst is a lightweight replacement for the notification-daemons
+dunst: provided by most desktop environments.
+dunst: It's very customizable, doesn't depend on any toolkits and therefore
+dunst: fits in those windowmanager centric setups we all love to customize
+dunst: to perfection.
+dunst:
+dunst: Homepage: http://knopwob.org/dunst/
+dunst:
+dunst:
+FILE LIST:
+./
+etc/
+etc/xdg/
+etc/xdg/dunst/
+etc/xdg/dunst/dunstrc.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/dunst
+usr/bin/dunstify
+usr/doc/
+usr/doc/dunst-1.3.2/
+usr/doc/dunst-1.3.2/AUTHORS
+usr/doc/dunst-1.3.2/CHANGELOG.md
+usr/doc/dunst-1.3.2/LICENSE
+usr/doc/dunst-1.3.2/dunst.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/dunst.1.gz
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.knopwob.dunst.service

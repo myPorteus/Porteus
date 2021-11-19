@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+datarootdir=${prefix}/share
+data_dir=${datarootdir}/audacious
+
+version=3.10.1
+include_dir=${prefix}/include
+audacious_include_dir=${prefix}/include
+lib_dir=/usr/lib64
+
+plugin_dir=/usr/lib64/audacious
+
+Name: Audacious
+Description: Audacious is a versatile and handy multi platform media player
+Version: 3.10.1
+Libs: -L${lib_dir} -laudcore
+Cflags: -I${audacious_include_dir}

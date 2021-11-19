@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+libmate_serverdir=${exec_prefix}/libexec
+
+Name: libmarco-private
+Description: Marco internals shared 
+Requires: gtk+-3.0
+Version: 1.22.1
+Libs: -L${libdir} -lmarco-private
+Cflags: -I${includedir}/marco-1

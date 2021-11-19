@@ -1,0 +1,31 @@
+PACKAGE NAME:     nm-tray-0.4.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     580K
+PACKAGE LOCATION: nm-tray-0.4.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/nm-tray
+usr/etc/
+usr/etc/xdg/
+usr/etc/xdg/autostart/
+usr/etc/xdg/autostart/nm-tray-autostart.desktop
+usr/share/
+usr/share/applications/
+usr/share/applications/nm-tray.desktop
+usr/share/nm-tray/
+usr/share/nm-tray/nm-tray.conf
+usr/share/nm-tray/nm-tray_ca.qm
+usr/share/nm-tray/nm-tray_cs.qm
+usr/share/nm-tray/nm-tray_da.qm
+usr/share/nm-tray/nm-tray_de.qm
+usr/share/nm-tray/nm-tray_es.qm
+usr/share/nm-tray/nm-tray_fr.qm
+usr/share/nm-tray/nm-tray_he.qm
+usr/share/nm-tray/nm-tray_lt.qm
+usr/share/nm-tray/nm-tray_nb_NO.qm
+usr/share/nm-tray/nm-tray_nl.qm
+usr/share/nm-tray/nm-tray_pl.qm
+usr/share/nm-tray/nm-tray_sk.qm

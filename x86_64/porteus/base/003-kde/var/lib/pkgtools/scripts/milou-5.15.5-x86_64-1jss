@@ -1,0 +1,2 @@
+( cd usr/lib64 ; rm -rf libmilou.so.5 )
+( cd usr/lib64 ; ln -sf libmilou.so.5.15.5 libmilou.so.5 )

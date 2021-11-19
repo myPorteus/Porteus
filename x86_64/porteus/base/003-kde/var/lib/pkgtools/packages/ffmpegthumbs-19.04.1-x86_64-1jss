@@ -1,0 +1,94 @@
+PACKAGE NAME:     ffmpegthumbs-19.04.1-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /root/kbs/build/../x86_64/pkg/003_kde/ffmpegthumbs-19.04.1-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+ffmpegthumbs: ffmpegthumbs (ffmpeg video thumbnail preview)  
+ffmpegthumbs:  
+ffmpegthumbs: FFMpegThumbs enables previews of video files as thumbnails in 
+ffmpegthumbs: file managers like Dolphin using FFMPeg  
+ffmpegthumbs: 
+ffmpegthumbs: 
+ffmpegthumbs: 
+ffmpegthumbs: 
+ffmpegthumbs: 
+ffmpegthumbs: 
+ffmpegthumbs: https://download.kde.org/stable/applications  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/ffmpegthumbs.so
+usr/share/
+usr/share/config.kcfg/
+usr/share/config.kcfg/ffmpegthumbnailersettings5.kcfg
+usr/share/kservices5/
+usr/share/kservices5/ffmpegthumbs.desktop
+usr/share/locale/
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/ffmpegthumbs.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/ffmpegthumbs.mo

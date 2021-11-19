@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64/openssl-1.0
+includedir=${prefix}/include/openssl-1.0
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.2o
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Libs.private: -ldl
+Cflags: -I${includedir} 

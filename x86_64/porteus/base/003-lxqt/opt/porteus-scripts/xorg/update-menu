@@ -1,0 +1,14 @@
+#!/bin/sh
+# Update LXQt menu:
+
+echo "Updating LXQt menu: update-desktop-database"
+target=/mnt/live/tmp/caches/desktop-$1
+dest=`cut -d/ -f7- $target`
+for desktop in $dest; do touch /$desktop; rm /mnt/live/memory/changes/$desktop; done
+panel=`rev $target | cut -d/ -f1 | rev | tr "\n" "|" | sed s/.$//`
+owner=`ps -C lxqt-session -o user= | sort -u`
+for user in $owner; do
+    [ $user = root ] && hd=/root || hd=/home/$user
+    su $user -c "egrep -q '$panel' $hd/.config/lxqt/panel.conf && killall lxqt-panel && nohup lxqt-panel &"
+done
+update-desktop-database

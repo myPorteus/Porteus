@@ -1,0 +1,116 @@
+[Desktop Entry]
+X-Desktop-File-Install-Version=0.11
+Name=Qmmp
+Name[pt]=Qmmp
+Name[pt_BR]=Qmmp
+Name[sr]=Кумп
+Name[sr@Ijekavian]=Кумп
+Name[ru]=Плеер Qmmp
+Comment=Qt-based Multimedia Player
+Comment[cs]=Přehrávač hudby založený na Qt
+Comment[de]=Qt-basierter Audio-Player
+Comment[el]=Αναπαραγωγέας πολυμέσων βασισμένος στην Qt
+Comment[es]=Reproductor de Medios basado sobre Qt
+Comment[fi]=Qt-pohjainen multimediasoitin
+Comment[fr]=Lecteur multimédia en Qt
+Comment[gl_ES]=Reproductor multimedia basado en Qt
+Comment[he]=נגן מולטימדיה מבוסס Qt
+Comment[id]=Pemain Multimedia Berbasis-Qt
+Comment[it]=Riproduttore audio basato su Qt (Qt-based Multimedia Player)
+Comment[ja]=Qt を用いたマルティミディアプレイヤー
+Comment[pl_PL]=Odtwarzacz multimedialny oparty na Qt
+Comment[pt]=Reprodutor multimédia em Qt
+Comment[pt_BR]=Reprodutor multimídia em Qt
+Comment[ru]=Медиа-проигрыватель на базе Qt
+Comment[sr]=Кут медија плејер
+Comment[sr@Ijekavian]=Кут медија плејер
+Comment[sr@ijekavianlatin]=Qt medija plejer
+Comment[sr@latin]=Qt medija plejer
+Comment[tr]=Qt tabanlı Çokluortam Oynatıcı
+Comment[uk]=Медіа-програвач на базі Qt
+Comment[zh_CN]=基于Qt的多媒体播放器
+Comment[zh_TW]=基于Qt的多媒體播放器
+GenericName=Audio player
+GenericName[cs]=Přehrávač hudby
+GenericName[de]=Audio-Player
+GenericName[el]=Αναπαραγωγέας ήχου
+GenericName[es]=Reproductor de audio
+GenericName[fi]=Äänisoitin
+GenericName[fr]=Lecteur audio
+GenericName[gl_ES]=Reproductor de audio
+GenericName[he]=נגן שמע
+GenericName[id]=Pemain audio
+GenericName[it]=Riproduttore audio
+GenericName[ja]=音楽プレイヤー
+GenericName[pl_PL]=Odtwarzacz audio
+GenericName[pt]=Reprodutor áudio
+GenericName[pt_BR]=Reprodutor de áudio
+GenericName[ru]=Аудио-проигрыватель
+GenericName[sr]=Медија плејер
+GenericName[sr@Ijekavian]=Медија плејер
+GenericName[sr@ijekavianlatin]=Medija plejer
+GenericName[sr@latin]=Medija plejer
+GenericName[tr]=Ses Oynatıcı
+GenericName[uk]=Медіа-програвач
+GenericName[zh_CN]=音乐播放器
+GenericName[zh_TW]=音樂播放器
+Keywords=player;audio;video;multimedia;
+Keywords[fr]=lecteur;audio;vidéo;multimédia;
+Exec=qmmp %F
+Icon=qmmp
+Terminal=false
+Type=Application
+Categories=AudioVideo;Player;Audio;Qt;
+MimeType=application/x-ogg;audio/mp3;audio/mpeg;audio/flac;audio/opus;audio/x-mp3;audio/x-mpeg;audio/x-ms-wma;audio/x-musepack;audio/x-tta;audio/x-wavpack;application/ogg;audio/x-vorbis+ogg;audio/x-scpls;audio/x-mpegurl;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-stm;audio/x-xm;audio/x-ape;application/x-cue;x-content/audio-cdda;audio/x-ffmpeg-shorten;audio/aac;audio/x-aac;audio/m4a;audio/x-m4a;
+X-KDE-StartupNotify=false
+Actions=Play;Pause;Stop;Previous;Next;
+
+[Desktop Action Play]
+Name=Play
+Name[fr]=Lecture
+Name[ru]=Воспроизвести
+Name[sr]=Пусти
+Name[sr@Ijekavian]=Пусти
+Name[sr@ijekavianlatin]=Pusti
+Name[sr@latin]=Pusti
+Exec=qmmp --no-start --play
+
+[Desktop Action Pause]
+Name=Pause
+Name[fr]=Pause
+Name[ru]=Пауза
+Name[sr]=Паузирај
+Name[sr@Ijekavian]=Паузирај
+Name[sr@ijekavianlatin]=Pauziraj
+Name[sr@latin]=Pauziraj
+Exec=qmmp --no-start --pause
+
+[Desktop Action Stop]
+Name=Stop
+Name[fr]=Arrêt
+Name[ru]=Остановить
+Name[sr]=Заустави
+Name[sr@Ijekavian]=Заустави
+Name[sr@ijekavianlatin]=Zaustavi
+Name[sr@latin]=Zaustavi
+Exec=qmmp --no-start --stop
+
+[Desktop Action Previous]
+Name=Previous
+Name[fr]=Précédent
+Name[ru]=Предыдущий фрагмент
+Name[sr]=Претходна
+Name[sr@Ijekavian]=Претходна
+Name[sr@ijekavianlatin]=Prethodna
+Name[sr@latin]=Prethodna
+Exec=qmmp --no-start --previous
+
+[Desktop Action Next]
+Name=Next
+Name[fr]=Suivant
+Name[ru]=Следующий фрагмент
+Name[sr]=Следећа
+Name[sr@Ijekavian]=Сљедећа
+Name[sr@ijekavianlatin]=Sljedeća
+Name[sr@latin]=Sledeća
+Exec=qmmp --no-start --next

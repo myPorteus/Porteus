@@ -1,0 +1,36 @@
+PACKAGE NAME:     arch-xdg-menu-0.7.6.2-noarch-1+
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda6/Porteus5.0/SpaceDE/BUILD/PKG64/arch-xdg-menu-0.7.6.2-noarch-1+.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+etc/
+etc/update-menus.conf
+etc/xdg/
+etc/xdg/menus/
+etc/xdg/menus/arch-applications.menu
+usr/
+usr/bin/
+usr/bin/update-menus
+usr/bin/xdg_menu
+usr/bin/xdg_menu_su
+usr/share/
+usr/share/desktop-directories/
+usr/share/desktop-directories/Arch-Accessibility.directory
+usr/share/desktop-directories/Arch-Accessories.directory
+usr/share/desktop-directories/Arch-Applications.directory
+usr/share/desktop-directories/Arch-Development.directory
+usr/share/desktop-directories/Arch-Education.directory
+usr/share/desktop-directories/Arch-Games.directory
+usr/share/desktop-directories/Arch-Graphics.directory
+usr/share/desktop-directories/Arch-Internet.directory
+usr/share/desktop-directories/Arch-Multimedia.directory
+usr/share/desktop-directories/Arch-Office.directory
+usr/share/desktop-directories/Arch-Other.directory
+usr/share/desktop-directories/Arch-Science.directory
+usr/share/desktop-directories/Arch-Settings.directory
+usr/share/desktop-directories/Arch-System-Tools.directory
+var/
+var/cache/
+var/cache/xdg-menu/

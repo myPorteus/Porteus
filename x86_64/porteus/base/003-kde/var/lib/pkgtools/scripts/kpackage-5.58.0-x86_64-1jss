@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5Package.so )
+( cd usr/lib64 ; ln -sf libKF5Package.so.5 libKF5Package.so )
+( cd usr/lib64 ; rm -rf libKF5Package.so.5 )
+( cd usr/lib64 ; ln -sf libKF5Package.so.5.58.0 libKF5Package.so.5 )

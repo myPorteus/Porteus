@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libxcb-image.so )
+( cd usr/lib64 ; ln -sf libxcb-image.so.0.0.0 libxcb-image.so )
+( cd usr/lib64 ; rm -rf libxcb-image.so.0 )
+( cd usr/lib64 ; ln -sf libxcb-image.so.0.0.0 libxcb-image.so.0 )

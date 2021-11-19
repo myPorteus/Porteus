@@ -1,0 +1,113 @@
+PACKAGE NAME:     imlib2-1.5.1-x86_64-1ponce
+COMPRESSED PACKAGE SIZE:     536K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /mnt/sda6/Porteus5.0/SpaceDE/BUILD/PKG64/imlib2-1.5.1-x86_64-1ponce.txz
+PACKAGE DESCRIPTION:
+imlib2: imlib2 (successor to Imlib)
+imlib2:
+imlib2: Imlib2 can load image files from disk in one of many formats, save
+imlib2: images to disk in one of many formats, render image data onto other
+imlib2: images, render images to an X-Windows drawable, produce pixmaps and
+imlib2: pixmap masks of images, apply filters to images, rotate images,
+imlib2: accept RGBA data for images, scale images, and more.
+imlib2:
+imlib2:
+imlib2:
+imlib2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/imlib2-config
+usr/bin/imlib2_bumpmap
+usr/bin/imlib2_colorspace
+usr/bin/imlib2_conv
+usr/bin/imlib2_grab
+usr/bin/imlib2_poly
+usr/bin/imlib2_show
+usr/bin/imlib2_test
+usr/bin/imlib2_view
+usr/doc/
+usr/doc/imlib2-1.5.1/
+usr/doc/imlib2-1.5.1/AUTHORS
+usr/doc/imlib2-1.5.1/COPYING
+usr/doc/imlib2-1.5.1/COPYING-PLAIN
+usr/doc/imlib2-1.5.1/ChangeLog
+usr/doc/imlib2-1.5.1/INSTALL
+usr/doc/imlib2-1.5.1/README
+usr/doc/imlib2-1.5.1/TODO
+usr/doc/imlib2-1.5.1/imlib2.SlackBuild
+usr/include/
+usr/include/Imlib2.h
+usr/lib64/
+usr/lib64/imlib2/
+usr/lib64/imlib2/filters/
+usr/lib64/imlib2/filters/bumpmap.la
+usr/lib64/imlib2/filters/bumpmap.so
+usr/lib64/imlib2/filters/colormod.la
+usr/lib64/imlib2/filters/colormod.so
+usr/lib64/imlib2/filters/testfilter.la
+usr/lib64/imlib2/filters/testfilter.so
+usr/lib64/imlib2/loaders/
+usr/lib64/imlib2/loaders/argb.la
+usr/lib64/imlib2/loaders/argb.so
+usr/lib64/imlib2/loaders/bmp.la
+usr/lib64/imlib2/loaders/bmp.so
+usr/lib64/imlib2/loaders/bz2.la
+usr/lib64/imlib2/loaders/bz2.so
+usr/lib64/imlib2/loaders/ff.la
+usr/lib64/imlib2/loaders/ff.so
+usr/lib64/imlib2/loaders/gif.la
+usr/lib64/imlib2/loaders/gif.so
+usr/lib64/imlib2/loaders/id3.la
+usr/lib64/imlib2/loaders/id3.so
+usr/lib64/imlib2/loaders/jpeg.la
+usr/lib64/imlib2/loaders/jpeg.so
+usr/lib64/imlib2/loaders/lbm.la
+usr/lib64/imlib2/loaders/lbm.so
+usr/lib64/imlib2/loaders/png.la
+usr/lib64/imlib2/loaders/png.so
+usr/lib64/imlib2/loaders/pnm.la
+usr/lib64/imlib2/loaders/pnm.so
+usr/lib64/imlib2/loaders/tga.la
+usr/lib64/imlib2/loaders/tga.so
+usr/lib64/imlib2/loaders/tiff.la
+usr/lib64/imlib2/loaders/tiff.so
+usr/lib64/imlib2/loaders/xpm.la
+usr/lib64/imlib2/loaders/xpm.so
+usr/lib64/imlib2/loaders/zlib.la
+usr/lib64/imlib2/loaders/zlib.so
+usr/lib64/libImlib2.la
+usr/lib64/libImlib2.so.1.5.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/imlib2.pc
+usr/share/
+usr/share/imlib2/
+usr/share/imlib2/data/
+usr/share/imlib2/data/fonts/
+usr/share/imlib2/data/fonts/cinema.ttf
+usr/share/imlib2/data/fonts/grunge.ttf
+usr/share/imlib2/data/fonts/morpheus.ttf
+usr/share/imlib2/data/fonts/notepad.ttf
+usr/share/imlib2/data/images/
+usr/share/imlib2/data/images/audio.png
+usr/share/imlib2/data/images/bg.png
+usr/share/imlib2/data/images/bulb.png
+usr/share/imlib2/data/images/cal.png
+usr/share/imlib2/data/images/calc.png
+usr/share/imlib2/data/images/folder.png
+usr/share/imlib2/data/images/globe.png
+usr/share/imlib2/data/images/imlib2.png
+usr/share/imlib2/data/images/lock.png
+usr/share/imlib2/data/images/mail.png
+usr/share/imlib2/data/images/menu.png
+usr/share/imlib2/data/images/mush.png
+usr/share/imlib2/data/images/paper.png
+usr/share/imlib2/data/images/sh1.png
+usr/share/imlib2/data/images/sh2.png
+usr/share/imlib2/data/images/sh3.png
+usr/share/imlib2/data/images/stop.png
+usr/share/imlib2/data/images/tnt.png

@@ -1,0 +1,18 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include/gstreamer-1.0
+toolsdir=${exec_prefix}/bin
+pluginsdir=/usr/lib64/gstreamer-1.0
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+girdir=${datadir}/gir-1.0
+typelibdir=${libdir}/girepository-1.0
+
+Name: GStreamer
+Description: Streaming media framework
+Version: 1.16.0
+Requires: glib-2.0, gobject-2.0
+Requires.private: gmodule-no-export-2.0 libunwind libdw
+Libs: -L${libdir} -lgstreamer-1.0
+Cflags: -I${includedir}

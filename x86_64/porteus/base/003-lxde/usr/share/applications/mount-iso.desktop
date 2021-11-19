@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/usr/libexec/gvfsd-archive file=%F
+MimeType=application/x-iso9660-image
+Name=Mount ISO image
+Name[ru]=Смонтировать ISO образ
+NoDisplay=true
+Icon=media-optical
+Type=Application

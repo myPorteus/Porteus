@@ -1,0 +1,54 @@
+PACKAGE NAME:     ffmpegthumbnailer-2.2.0-x86_64-3_slonly
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: ffmpegthumbnailer-2.2.0-x86_64-3_slonly.txz
+PACKAGE DESCRIPTION:
+ffmpegthumbnailer: ffmpegthumbnailer (Lightweight Video Thumbnailer)
+ffmpegthumbnailer:
+ffmpegthumbnailer: FFmpegthumbnailer is a lightweight video thumbnailer that can be
+ffmpegthumbnailer: used by file managers to create thumbnails for your video files.
+ffmpegthumbnailer: The thumbnailer uses ffmpeg to decode frames from the video files,
+ffmpegthumbnailer: so supported videoformats depend on the configuration flags of
+ffmpegthumbnailer: ffmpeg.
+ffmpegthumbnailer:
+ffmpegthumbnailer: Homepage: https://github.com/dirkvdb/ffmpegthumbnailer
+ffmpegthumbnailer:
+ffmpegthumbnailer:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/ffmpegthumbnailer
+usr/doc/
+usr/doc/ffmpegthumbnailer-2.2.0/
+usr/doc/ffmpegthumbnailer-2.2.0/AUTHORS
+usr/doc/ffmpegthumbnailer-2.2.0/COPYING
+usr/doc/ffmpegthumbnailer-2.2.0/ChangeLog
+usr/doc/ffmpegthumbnailer-2.2.0/INSTALL
+usr/doc/ffmpegthumbnailer-2.2.0/NEWS
+usr/doc/ffmpegthumbnailer-2.2.0/README
+usr/doc/ffmpegthumbnailer-2.2.0/TODO
+usr/doc/ffmpegthumbnailer-2.2.0/ffmpegthumbnailer.SlackBuild
+usr/include/
+usr/include/libffmpegthumbnailer/
+usr/include/libffmpegthumbnailer/ffmpegthumbnailertypes.h
+usr/include/libffmpegthumbnailer/filmstripfilter.h
+usr/include/libffmpegthumbnailer/ifilter.h
+usr/include/libffmpegthumbnailer/imagetypes.h
+usr/include/libffmpegthumbnailer/videoframe.h
+usr/include/libffmpegthumbnailer/videothumbnailer.h
+usr/include/libffmpegthumbnailer/videothumbnailerc.h
+usr/lib64/
+usr/lib64/libffmpegthumbnailer.so.4.13.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libffmpegthumbnailer.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/ffmpegthumbnailer.1.gz
+usr/share/
+usr/share/thumbnailers/
+usr/share/thumbnailers/ffmpegthumbnailer.thumbnailer

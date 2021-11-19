@@ -1,0 +1,47 @@
+[KNewStuff3]
+Name=Comics
+Name[ca]=Còmics
+Name[ca@valencia]=Còmics
+Name[cs]=Komiksy
+Name[da]=Tegneserier
+Name[de]=Comics
+Name[el]=Κόμικς
+Name[en_GB]=Comics
+Name[es]=Cómics
+Name[eu]=Komikiak
+Name[fi]=Sarjakuvat
+Name[fr]=Bandes dessinées
+Name[gl]=Cómics
+Name[he]=קומיקסים
+Name[hu]=Képregény
+Name[ia]=Comics
+Name[id]=Comics
+Name[it]=Fumetti
+Name[ko]=만화
+Name[nb]=Tegneserier
+Name[nl]=Stripboeken
+Name[nn]=Teikneseriar
+Name[pl]=Komiksy
+Name[pt]=Banda Desenhada
+Name[pt_BR]=Tirinhas
+Name[ru]=Комиксы
+Name[sk]=Komiks
+Name[sl]=Stripi
+Name[sr]=стрипови
+Name[sr@ijekavian]=стрипови
+Name[sr@ijekavianlatin]=stripovi
+Name[sr@latin]=stripovi
+Name[sv]=Serier
+Name[tr]=Çizgi Romanlar
+Name[uk]=Комікси
+Name[x-test]=xxComicsxx
+Name[zh_CN]=漫画
+Name[zh_TW]=漫畫
+
+ProvidersUrl=https://download.kde.org/ocs/providers.xml
+Categories=Plasma Comic
+TargetDir=plasma/comics
+Uncompress=never
+InstallationCommand=kpackagetool5 -t Plasma/Comic -i %f
+UninstallCommand=kpackagetool5 -t Plasma/Comic -r %f
+

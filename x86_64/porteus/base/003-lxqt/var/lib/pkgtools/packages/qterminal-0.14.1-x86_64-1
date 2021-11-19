@@ -1,0 +1,51 @@
+PACKAGE NAME:     qterminal-0.14.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     196K
+UNCOMPRESSED PACKAGE SIZE:     990K
+PACKAGE LOCATION: qterminal-0.14.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/qterminal
+usr/share/
+usr/share/appdata/
+usr/share/appdata/qterminal.appdata.xml
+usr/share/applications/
+usr/share/applications/qterminal.desktop
+usr/share/applications/qterminal_drop.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/qterminal.png
+usr/share/qterminal/
+usr/share/qterminal/translations/
+usr/share/qterminal/translations/qterminal_ar.qm
+usr/share/qterminal/translations/qterminal_ca.qm
+usr/share/qterminal/translations/qterminal_cs.qm
+usr/share/qterminal/translations/qterminal_cy.qm
+usr/share/qterminal/translations/qterminal_da.qm
+usr/share/qterminal/translations/qterminal_de.qm
+usr/share/qterminal/translations/qterminal_el.qm
+usr/share/qterminal/translations/qterminal_es.qm
+usr/share/qterminal/translations/qterminal_et.qm
+usr/share/qterminal/translations/qterminal_fi.qm
+usr/share/qterminal/translations/qterminal_fr.qm
+usr/share/qterminal/translations/qterminal_gl.qm
+usr/share/qterminal/translations/qterminal_he.qm
+usr/share/qterminal/translations/qterminal_hu.qm
+usr/share/qterminal/translations/qterminal_it.qm
+usr/share/qterminal/translations/qterminal_ja.qm
+usr/share/qterminal/translations/qterminal_ko_KR.qm
+usr/share/qterminal/translations/qterminal_lt.qm
+usr/share/qterminal/translations/qterminal_nb_NO.qm
+usr/share/qterminal/translations/qterminal_nl.qm
+usr/share/qterminal/translations/qterminal_pl.qm
+usr/share/qterminal/translations/qterminal_pt.qm
+usr/share/qterminal/translations/qterminal_pt_BR.qm
+usr/share/qterminal/translations/qterminal_ru.qm
+usr/share/qterminal/translations/qterminal_tr.qm
+usr/share/qterminal/translations/qterminal_uk.qm
+usr/share/qterminal/translations/qterminal_zh_CN.qm
+usr/share/qterminal/translations/qterminal_zh_TW.qm

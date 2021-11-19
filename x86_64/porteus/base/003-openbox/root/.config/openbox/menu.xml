@@ -1,0 +1,37 @@
+<!-- root menu -->
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+        <menu id="date-menu" label="Calendar" execute="/opt/porteus-scripts/extra/pipemenus/date-menu.sh" />
+        <menu id="sysinfo-menu" label="SysInfo" execute="/opt/porteus-scripts/extra/pipemenus/sysinfo.sh" />
+        <menu id="modpipe" label="Modules Activated" execute="/opt/porteus-scripts/extra/pipemenus/modpipe" />
+        <menu id="desktop-app-menu" label="Applications" execute="xdg_menu --format openbox3-pipe --root-menu /etc/xdg/menus/su-arch-applications.menu" />
+        <menu id="openbox" label="0pen3ox" execute="/opt/porteus-scripts/extra/pipemenus/openbox" />
+	<menu id="root-menu" label="OpenBox 3">
+                <separator label="Porteus 5.0" />
+                <separator />
+                <separator />
+                <item label="File Manager"> <action name="Execute">
+                     <execute>/opt/porteus-scripts/xorg/fmanager</execute> 
+                     <startupnotify><enabled>yes</enabled></startupnotify>
+                     </action></item>
+                <item label="Terminal"> <action name="Execute">
+                     <execute>/opt/porteus-scripts/xorg/terminal</execute> 
+                     <startupnotify><enabled>yes</enabled></startupnotify>
+                     </action></item>
+                <item label="Web Browser"> <action name="Execute">
+                     <execute>/opt/porteus-scripts/xorg/browser</execute> 
+                     <startupnotify><enabled>yes</enabled></startupnotify>
+                     </action></item>
+                <separator />
+                <menu id="desktop-app-menu" />  
+		<separator/>
+		<menu id="openbox" />
+	        <item label="Run"> <action name="Execute"> 
+                <execute>rofi -fg "#888888" -bg "#222222" -columns 3 -terminal uxterm -rnow</execute>
+		</action></item>
+                <separator />
+	        <item label="Exit"> <action name="Execute">
+		<execute>/opt/porteus-scripts/extra/logoutscript</execute>
+		</action></item>
+	 </menu>
+</openbox_menu>

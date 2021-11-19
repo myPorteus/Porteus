@@ -1,0 +1,4 @@
+Browser,/opt/porteus-scripts/xorg/browser,browser
+File manager,spacefm,system-file-manager
+Terminal,sakura,utilities-terminal
+^sep()

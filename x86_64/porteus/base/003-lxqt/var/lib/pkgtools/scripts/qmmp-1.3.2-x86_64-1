@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libqmmp.so )
+( cd usr/lib64 ; ln -sf libqmmp.so.1 libqmmp.so )
+( cd usr/lib64 ; rm -rf libqmmp.so.1 )
+( cd usr/lib64 ; ln -sf libqmmp.so.1.3.2 libqmmp.so.1 )
+( cd usr/lib64 ; rm -rf libqmmpui.so )
+( cd usr/lib64 ; ln -sf libqmmpui.so.1 libqmmpui.so )
+( cd usr/lib64 ; rm -rf libqmmpui.so.1 )
+( cd usr/lib64 ; ln -sf libqmmpui.so.1.3.2 libqmmpui.so.1 )

@@ -1,0 +1,6 @@
+( cd usr/lib64 ; rm -rf libQt5Svg.so )
+( cd usr/lib64 ; ln -sf libQt5Svg.so.5.12.3 libQt5Svg.so )
+( cd usr/lib64 ; rm -rf libQt5Svg.so.5 )
+( cd usr/lib64 ; ln -sf libQt5Svg.so.5.12.3 libQt5Svg.so.5 )
+( cd usr/lib64 ; rm -rf libQt5Svg.so.5.12 )
+( cd usr/lib64 ; ln -sf libQt5Svg.so.5.12.3 libQt5Svg.so.5.12 )

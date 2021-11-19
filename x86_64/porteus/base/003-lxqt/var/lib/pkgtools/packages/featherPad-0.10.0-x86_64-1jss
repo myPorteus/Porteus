@@ -1,0 +1,35 @@
+PACKAGE NAME:     featherPad-0.10.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     400K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: featherPad-0.10.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/featherpad
+usr/share/
+usr/share/applications/
+usr/share/applications/featherpad.desktop
+usr/share/featherpad/
+usr/share/featherpad/help
+usr/share/featherpad/translations/
+usr/share/featherpad/translations/featherpad_cy.qm
+usr/share/featherpad/translations/featherpad_da.qm
+usr/share/featherpad/translations/featherpad_de.qm
+usr/share/featherpad/translations/featherpad_eo.qm
+usr/share/featherpad/translations/featherpad_es.qm
+usr/share/featherpad/translations/featherpad_fr.qm
+usr/share/featherpad/translations/featherpad_lt.qm
+usr/share/featherpad/translations/featherpad_pl.qm
+usr/share/featherpad/translations/featherpad_ru.qm
+usr/share/featherpad/translations/featherpad_tr.qm
+usr/share/featherpad/translations/featherpad_zh_CN.qm
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/featherpad.svg

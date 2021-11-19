@@ -1,0 +1,2 @@
+( cd usr/lib64 ; rm -rf libkonsoleprivate.so.19 )
+( cd usr/lib64 ; ln -sf libkonsoleprivate.so.19.04.1 libkonsoleprivate.so.19 )

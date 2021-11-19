@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libcairomm-1.0.so )
+( cd usr/lib64 ; ln -sf libcairomm-1.0.so.1.4.0 libcairomm-1.0.so )
+( cd usr/lib64 ; rm -rf libcairomm-1.0.so.1 )
+( cd usr/lib64 ; ln -sf libcairomm-1.0.so.1.4.0 libcairomm-1.0.so.1 )

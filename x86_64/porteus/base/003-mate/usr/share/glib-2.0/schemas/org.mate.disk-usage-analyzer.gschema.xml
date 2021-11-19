@@ -1,0 +1,40 @@
+<schemalist gettext-domain="mate-utils">
+  <schema id="org.mate.disk-usage-analyzer" path="/org/mate/disk-usage-analyzer/">
+    <child name="preferences" schema="org.mate.disk-usage-analyzer.preferences"/>
+    <child name="ui" schema="org.mate.disk-usage-analyzer.ui"/>
+  </schema>
+  <schema gettext-domain="mate-utils" id="org.mate.disk-usage-analyzer.preferences" path="/org/mate/disk-usage-analyzer/preferences/">
+    <key name="monitor-home" type="b">
+      <default>false</default>
+      <summary>Monitor Home</summary>
+      <description>Whether any change to the home directory should be monitored.</description>
+    </key>
+    <key name="excluded-uris" type="as">
+      <default>[]</default>
+      <summary>Excluded partitions URIs</summary>
+      <description>A list of URIs for partitions to be excluded from scanning.</description>
+    </key>
+  </schema>
+  <schema gettext-domain="mate-utils" id="org.mate.disk-usage-analyzer.ui" path="/org/mate/disk-usage-analyzer/ui/">
+    <key name="toolbar-visible" type="b">
+      <default>true</default>
+      <summary>Toolbar is Visible</summary>
+      <description>Whether the toolbar should be visible in main window.</description>
+    </key>
+    <key name="statusbar-visible" type="b">
+      <default>false</default>
+      <summary>Statusbar is Visible</summary>
+      <description>Whether the status bar at the bottom of main window	should be visible.</description>
+    </key>
+    <key name="subfoldertips-visible" type="b">
+      <default>true</default>
+      <summary>Subfolder tips visible</summary>
+      <description>Whether the subfolder tooltips of the selected folder are drawn.</description>
+    </key>
+    <key name="active-chart" type="s">
+      <default>'rings'</default>
+      <summary>Active Chart</summary>
+      <description>Which type of chart should be displayed.</description>
+    </key>
+  </schema>
+</schemalist>
