@@ -1,7 +1,0 @@
-[Unit]
-Description=Virtual filesystem service - Media Transfer Protocol monitor
-
-[Service]
-ExecStart=/usr/libexec/gvfs-mtp-volume-monitor
-Type=dbus
-BusName=org.gtk.vfs.MTPVolumeMonitor

@@ -1,8 +1,0 @@
-[KNewStuff3]
-ProvidersUrl=http://download.kde.org/ocs/providers.xml
-Categories=Plasma Comic
-TargetDir=plasma/comics
-Uncompress=never
-InstallationCommand=kpackagetool5 -t Plasma/Comic -i %f
-UninstallCommand=kpackagetool5 -t Plasma/Comic -r %f
-

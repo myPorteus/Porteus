@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.ksysguard.processlisthelper
-Exec=/usr/lib/kauth/ksysguardprocesslist_helper
-User=root

@@ -1,8 +1,0 @@
-[Ontology]
-Version=1.0
-Name=Nepomuk Download Ontology
-Comment=The Nepomuk Download Ontology provides classes and properties to describe file downloads.
-Namespace=http://www.semanticdesktop.org/ontologies/2010/04/30/ndo#
-Path=/usr/share/ontology/nepomuk/ndo.trig
-MimeType=application/x-trig
-Type=Data

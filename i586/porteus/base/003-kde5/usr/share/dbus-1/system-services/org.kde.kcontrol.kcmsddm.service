@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kcontrol.kcmsddm
-Exec=/usr/lib/kauth/kcmsddm_authhelper
-User=root

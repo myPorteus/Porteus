@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libvisio-0.1.so )
-( cd usr/lib ; ln -sf libvisio-0.1.so.1.0.5 libvisio-0.1.so )
-( cd usr/lib ; rm -rf libvisio-0.1.so.1 )
-( cd usr/lib ; ln -sf libvisio-0.1.so.1.0.5 libvisio-0.1.so.1 )

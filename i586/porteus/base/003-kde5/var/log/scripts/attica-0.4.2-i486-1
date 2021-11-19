@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libattica.so.0.4 )
-( cd usr/lib ; ln -sf libattica.so.0.4.2 libattica.so.0.4 )
-( cd usr/lib ; rm -rf libattica.so )
-( cd usr/lib ; ln -sf libattica.so.0.4 libattica.so )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libart_lgpl_2.so )
-( cd usr/lib ; ln -sf libart_lgpl_2.so.2.3.21 libart_lgpl_2.so )
-( cd usr/lib ; rm -rf libart_lgpl_2.so.2 )
-( cd usr/lib ; ln -sf libart_lgpl_2.so.2.3.21 libart_lgpl_2.so.2 )

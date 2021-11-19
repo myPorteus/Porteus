@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libssh_threads.so.4 )
-( cd usr/lib ; ln -sf libssh_threads.so.4.4.1 libssh_threads.so.4 )
-( cd usr/lib ; rm -rf libssh.so.4 )
-( cd usr/lib ; ln -sf libssh.so.4.4.1 libssh.so.4 )
-( cd usr/lib ; rm -rf libssh_threads.so )
-( cd usr/lib ; ln -sf libssh_threads.so.4 libssh_threads.so )
-( cd usr/lib ; rm -rf libssh.so )
-( cd usr/lib ; ln -sf libssh.so.4 libssh.so )

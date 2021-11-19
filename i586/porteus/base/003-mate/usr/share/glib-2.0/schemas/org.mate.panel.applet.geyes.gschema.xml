@@ -1,9 +1,0 @@
-<schemalist gettext-domain="mate-applets">
-  <schema id="org.mate.panel.applet.geyes">
-    <key name="theme-path" type="s">
-      <default>''</default>
-      <summary>Directory in which the theme is located</summary>
-      <description>Directory in which the theme is located</description>
-    </key>
-  </schema>
-</schemalist>

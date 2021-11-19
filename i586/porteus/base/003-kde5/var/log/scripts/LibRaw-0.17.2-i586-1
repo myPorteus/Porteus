@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libraw_r.so.15 )
-( cd usr/lib ; ln -sf libraw_r.so.15.0.0 libraw_r.so.15 )
-( cd usr/lib ; rm -rf libraw_r.so )
-( cd usr/lib ; ln -sf libraw_r.so.15.0.0 libraw_r.so )
-( cd usr/lib ; rm -rf libraw.so.15 )
-( cd usr/lib ; ln -sf libraw.so.15.0.0 libraw.so.15 )
-( cd usr/lib ; rm -rf libraw.so )
-( cd usr/lib ; ln -sf libraw.so.15.0.0 libraw.so )

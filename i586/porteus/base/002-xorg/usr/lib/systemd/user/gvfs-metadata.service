@@ -1,7 +1,0 @@
-[Unit]
-Description=Virtual filesystem metadata service
-
-[Service]
-ExecStart=/usr/libexec/gvfsd-metadata
-Type=dbus
-BusName=org.gtk.vfs.Metadata

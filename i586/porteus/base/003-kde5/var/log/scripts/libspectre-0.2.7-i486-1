@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libspectre.so.1 )
-( cd usr/lib ; ln -sf libspectre.so.1.1.7 libspectre.so.1 )
-( cd usr/lib ; rm -rf libspectre.so )
-( cd usr/lib ; ln -sf libspectre.so.1.1.7 libspectre.so )

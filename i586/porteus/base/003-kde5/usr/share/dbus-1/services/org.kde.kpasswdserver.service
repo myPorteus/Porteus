@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kpasswdserver
-Exec=/usr/lib/kf5/kiod5
-

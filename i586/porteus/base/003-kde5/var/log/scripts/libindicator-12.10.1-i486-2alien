@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libindicator.so.7 )
-( cd usr/lib ; ln -sf libindicator.so.7.0.0 libindicator.so.7 )
-( cd usr/lib ; rm -rf libindicator3.so )
-( cd usr/lib ; ln -sf libindicator3.so.7.0.0 libindicator3.so )
-( cd usr/lib ; rm -rf libindicator3.so.7 )
-( cd usr/lib ; ln -sf libindicator3.so.7.0.0 libindicator3.so.7 )
-( cd usr/lib ; rm -rf libindicator.so )
-( cd usr/lib ; ln -sf libindicator.so.7.0.0 libindicator.so )

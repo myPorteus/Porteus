@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgnome-menu-3.so )
-( cd usr/lib ; ln -sf libgnome-menu-3.so.0.0.1 libgnome-menu-3.so )
-( cd usr/lib ; rm -rf libgnome-menu-3.so.0 )
-( cd usr/lib ; ln -sf libgnome-menu-3.so.0.0.1 libgnome-menu-3.so.0 )

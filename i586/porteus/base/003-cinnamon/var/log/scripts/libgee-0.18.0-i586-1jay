@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgee-0.8.so.2 )
-( cd usr/lib ; ln -sf libgee-0.8.so.2.5.1 libgee-0.8.so.2 )
-( cd usr/lib ; rm -rf libgee-0.8.so )
-( cd usr/lib ; ln -sf libgee-0.8.so.2.5.1 libgee-0.8.so )

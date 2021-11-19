@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libhunspell-1.3.so )
-( cd usr/lib ; ln -sf libhunspell-1.3.so.0.0.0 libhunspell-1.3.so )
-( cd usr/lib ; rm -rf libhunspell-1.3.so.0 )
-( cd usr/lib ; ln -sf libhunspell-1.3.so.0.0.0 libhunspell-1.3.so.0 )

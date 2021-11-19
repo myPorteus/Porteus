@@ -1,4 +1,0 @@
-( cd usr/bin ; rm -rf gnome-keyring )
-( cd usr/bin ; ln -sf gnome-keyring-3 gnome-keyring )
-
-chroot . /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas/ 2>/dev/null 1>/dev/null

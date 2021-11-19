@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libnepomukwidgets.so.4 )
-( cd usr/lib ; ln -sf libnepomukwidgets.so.4.14.8 libnepomukwidgets.so.4 )
-( cd usr/lib ; rm -rf libnepomukwidgets.so )
-( cd usr/lib ; ln -sf libnepomukwidgets.so.4 libnepomukwidgets.so )

@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libcjs.so.0 )
-( cd usr/lib ; ln -sf libcjs.so.0.0.0 libcjs.so.0 )
-( cd usr/lib ; rm -rf libcjs.so )
-( cd usr/lib ; ln -sf libcjs.so.0.0.0 libcjs.so )
-( cd usr/bin ; rm -rf cjs )
-( cd usr/bin ; ln -sf cjs-console cjs )

@@ -1,5 +1,0 @@
-[Added Associations]
-application/x-shellscript=uxterm.desktop;exo-terminal-emulator.desktop;
-
-[Default Applications]
-application/x-shellscript=exo-terminal-emulator.desktop

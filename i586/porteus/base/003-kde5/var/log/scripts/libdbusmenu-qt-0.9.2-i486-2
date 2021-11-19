@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libdbusmenu-qt.so )
-( cd usr/lib ; ln -sf libdbusmenu-qt.so.2 libdbusmenu-qt.so )
-( cd usr/lib ; rm -rf libdbusmenu-qt.so.2 )
-( cd usr/lib ; ln -sf libdbusmenu-qt.so.2.6.0 libdbusmenu-qt.so.2 )

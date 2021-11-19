@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libkfilemetadata.so.4 )
-( cd usr/lib ; ln -sf libkfilemetadata.so.4.14.13 libkfilemetadata.so.4 )
-( cd usr/lib ; rm -rf libkfilemetadata.so )
-( cd usr/lib ; ln -sf libkfilemetadata.so.4 libkfilemetadata.so )

@@ -1,9 +1,0 @@
---- svgalib-1.9.25/utils/gtf/gtfcalc.c
-+++ svgalib-1.9.25/utils/gtf/gtfcalc.c
-@@ -68,5 +68,5 @@
-
--static double round(double v)
-+double round(double v)
- {
-    return floor(v + 0.5);
- }  

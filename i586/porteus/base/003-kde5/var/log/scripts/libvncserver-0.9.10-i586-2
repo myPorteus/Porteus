@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libvncclient.so )
-( cd usr/lib ; ln -sf libvncclient.so.0.0.0 libvncclient.so )
-( cd usr/lib ; rm -rf libvncserver.so )
-( cd usr/lib ; ln -sf libvncserver.so.0.0.0 libvncserver.so )
-( cd usr/lib ; rm -rf libvncclient.so.0 )
-( cd usr/lib ; ln -sf libvncclient.so.0.0.0 libvncclient.so.0 )
-( cd usr/lib ; rm -rf libvncserver.so.0 )
-( cd usr/lib ; ln -sf libvncserver.so.0.0.0 libvncserver.so.0 )

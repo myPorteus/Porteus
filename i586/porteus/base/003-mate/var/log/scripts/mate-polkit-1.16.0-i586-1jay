@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libpolkit-gtk-mate-1.so.0 )
-( cd usr/lib ; ln -sf libpolkit-gtk-mate-1.so.0.0.0 libpolkit-gtk-mate-1.so.0 )
-( cd usr/lib ; rm -rf libpolkit-gtk-mate-1.so )
-( cd usr/lib ; ln -sf libpolkit-gtk-mate-1.so.0.0.0 libpolkit-gtk-mate-1.so )

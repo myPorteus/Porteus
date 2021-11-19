@@ -1,6 +1,0 @@
-( cd usr/doc/json-glib-1.2.0 ; rm -rf html )
-( cd usr/doc/json-glib-1.2.0 ; ln -sf /usr/share/gtk-doc/html/json-glib html )
-( cd usr/lib ; rm -rf libjson-glib-1.0.so.0 )
-( cd usr/lib ; ln -sf libjson-glib-1.0.so.0.200.0 libjson-glib-1.0.so.0 )
-( cd usr/lib ; rm -rf libjson-glib-1.0.so )
-( cd usr/lib ; ln -sf libjson-glib-1.0.so.0.200.0 libjson-glib-1.0.so )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libkatepartinterfaces.so )
-( cd usr/lib ; ln -sf libkatepartinterfaces.so.4 libkatepartinterfaces.so )
-( cd usr/lib ; rm -rf libkatepartinterfaces.so.4 )
-( cd usr/lib ; ln -sf libkatepartinterfaces.so.4.14.8 libkatepartinterfaces.so.4 )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libsmokebase.so.3 )
-( cd usr/lib ; ln -sf libsmokebase.so.3.0.0 libsmokebase.so.3 )
-( cd usr/lib ; rm -rf libsmokebase.so )
-( cd usr/lib ; ln -sf libsmokebase.so.3 libsmokebase.so )

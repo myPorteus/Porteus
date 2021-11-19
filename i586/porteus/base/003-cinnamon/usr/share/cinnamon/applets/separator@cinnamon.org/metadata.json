@@ -1,6 +1,0 @@
-{
- "uuid": "separator@cinnamon.org",
- "name": "Separator",
- "description": "A separator icon which can be added multiple times",
- "max-instances": -1
-}

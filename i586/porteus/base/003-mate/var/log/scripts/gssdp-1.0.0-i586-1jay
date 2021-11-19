@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgssdp-1.0.so )
-( cd usr/lib ; ln -sf libgssdp-1.0.so.3.0.0 libgssdp-1.0.so )
-( cd usr/lib ; rm -rf libgssdp-1.0.so.3 )
-( cd usr/lib ; ln -sf libgssdp-1.0.so.3.0.0 libgssdp-1.0.so.3 )

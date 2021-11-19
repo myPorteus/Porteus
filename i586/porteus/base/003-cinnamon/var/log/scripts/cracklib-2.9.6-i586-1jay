@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libcrack.so.2 )
-( cd usr/lib ; ln -sf libcrack.so.2.9.0 libcrack.so.2 )
-( cd usr/lib ; rm -rf libcrack.so )
-( cd usr/lib ; ln -sf libcrack.so.2.9.0 libcrack.so )

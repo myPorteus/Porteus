@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libjson-glib-1.0.so )
-( cd usr/lib ; ln -sf libjson-glib-1.0.so.0.0.4 libjson-glib-1.0.so )
-( cd usr/lib ; rm -rf libjson-glib-1.0.so.0 )
-( cd usr/lib ; ln -sf libjson-glib-1.0.so.0.0.4 libjson-glib-1.0.so.0 )

@@ -1,6 +1,0 @@
-( cd usr/lib ; rm -rf libkdeconnectcore.so.1 )
-( cd usr/lib ; ln -sf libkdeconnectcore.so.1.0.0 libkdeconnectcore.so.1 )
-( cd usr/lib ; rm -rf libkdeconnectinterfaces.so.1 )
-( cd usr/lib ; ln -sf libkdeconnectinterfaces.so.1.0.0 libkdeconnectinterfaces.so.1 )
-( cd usr/lib ; rm -rf libkdeconnectpluginkcm.so.1 )
-( cd usr/lib ; ln -sf libkdeconnectpluginkcm.so.1.0.0 libkdeconnectpluginkcm.so.1 )

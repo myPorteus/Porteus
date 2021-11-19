@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libkdecorations2.so.5 )
-( cd usr/lib ; ln -sf libkdecorations2.so.5.8.4 libkdecorations2.so.5 )
-( cd usr/lib ; rm -rf libkdecorations2.so )
-( cd usr/lib ; ln -sf libkdecorations2.so.5 libkdecorations2.so )
-( cd usr/lib ; rm -rf libkdecorations2private.so )
-( cd usr/lib ; ln -sf libkdecorations2private.so.5 libkdecorations2private.so )
-( cd usr/lib ; rm -rf libkdecorations2private.so.5 )
-( cd usr/lib ; ln -sf libkdecorations2private.so.5.8.4 libkdecorations2private.so.5 )

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libKF5AkonadiContact.so )
-( cd usr/lib ; ln -sf libKF5AkonadiContact.so.5 libKF5AkonadiContact.so )
-( cd usr/lib ; rm -rf libKF5AkonadiContact.so.5 )
-( cd usr/lib ; ln -sf libKF5AkonadiContact.so.5.3.3 libKF5AkonadiContact.so.5 )

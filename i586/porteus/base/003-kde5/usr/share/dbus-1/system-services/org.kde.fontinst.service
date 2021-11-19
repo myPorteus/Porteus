@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.fontinst
-Exec=/usr/lib/kauth/fontinst_helper
-User=root

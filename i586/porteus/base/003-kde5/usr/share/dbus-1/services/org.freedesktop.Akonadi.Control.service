@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.Akonadi.Control
-Exec=/usr/bin/akonadi_control

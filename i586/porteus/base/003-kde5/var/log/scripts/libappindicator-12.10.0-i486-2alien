@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libappindicator3.so.1 )
-( cd usr/lib ; ln -sf libappindicator3.so.1.0.0 libappindicator3.so.1 )
-( cd usr/lib ; rm -rf libappindicator3.so )
-( cd usr/lib ; ln -sf libappindicator3.so.1.0.0 libappindicator3.so )
-( cd usr/lib ; rm -rf libappindicator.so )
-( cd usr/lib ; ln -sf libappindicator.so.1.0.0 libappindicator.so )
-( cd usr/lib ; rm -rf libappindicator.so.1 )
-( cd usr/lib ; ln -sf libappindicator.so.1.0.0 libappindicator.so.1 )

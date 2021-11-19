@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/application/vnd.debian.binary-package">
-        <icon name="application-x-deb"/>
-        <glob-deleteall/>
-        <glob pattern="*.deb"/>
-    </mime-type>
-</mime-info>

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libNetworkManagerQt.so.1 )
-( cd usr/lib ; ln -sf libNetworkManagerQt.so.0.9.8.2 libNetworkManagerQt.so.1 )
-( cd usr/lib ; rm -rf libNetworkManagerQt.so )
-( cd usr/lib ; ln -sf libNetworkManagerQt.so.1 libNetworkManagerQt.so )

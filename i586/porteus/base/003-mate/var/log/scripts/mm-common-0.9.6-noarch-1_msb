@@ -1,2 +1,0 @@
-( cd usr/share/glibmm-2.4 ; rm -rf doctool )
-( cd usr/share/glibmm-2.4 ; ln -sf /usr/share/mm-common/doctool doctool )

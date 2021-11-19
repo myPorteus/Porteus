@@ -1,5 +1,0 @@
-module org.kde.plasma.calendar
-plugin calendarplugin
-
-MonthView 2.0 MonthView.qml
-MonthMenu 2.0 MonthMenu.qml

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libclutter-gtk-1.0.so )
-( cd usr/lib ; ln -sf libclutter-gtk-1.0.so.0.600.6 libclutter-gtk-1.0.so )
-( cd usr/lib ; rm -rf libclutter-gtk-1.0.so.0 )
-( cd usr/lib ; ln -sf libclutter-gtk-1.0.so.0.600.6 libclutter-gtk-1.0.so.0 )

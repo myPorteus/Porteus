@@ -1,7 +1,0 @@
-#! /bin/sh
-set -e
-
-if [ "$1" = rtupdate ]; then
-	pyclean -p nemo-data /usr/share/nemo
-	pycompile -p nemo-data  /usr/share/nemo
-fi

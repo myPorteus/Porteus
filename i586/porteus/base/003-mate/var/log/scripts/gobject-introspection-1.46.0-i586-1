@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libgirepository-1.0.so.1 )
-( cd usr/lib ; ln -sf libgirepository-1.0.so.1.0.0 libgirepository-1.0.so.1 )
-( cd usr/lib ; rm -rf libgirepository-1.0.so )
-( cd usr/lib ; ln -sf libgirepository-1.0.so.1.0.0 libgirepository-1.0.so )

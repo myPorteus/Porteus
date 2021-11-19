@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libxapian.so.22 )
-( cd usr/lib ; ln -sf libxapian.so.22.7.0 libxapian.so.22 )
-( cd usr/lib ; rm -rf libxapian.so )
-( cd usr/lib ; ln -sf libxapian.so.22.7.0 libxapian.so )

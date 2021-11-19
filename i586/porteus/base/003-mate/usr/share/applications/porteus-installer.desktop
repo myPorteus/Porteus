@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Porteus installer
-Comment=mInstall Porteus to media
-Exec=gksu /opt/porteus-scripts/pinstaller
-Terminal=false
-Icon=gtk-harddisk
-Type=Application
-Categories=Porteus;
-Version=1.0

@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libmm-glib.so )
-( cd usr/lib ; ln -sf libmm-glib.so.0.2.0 libmm-glib.so )
-( cd usr/lib ; rm -rf libmm-glib.so.0 )
-( cd usr/lib ; ln -sf libmm-glib.so.0.2.0 libmm-glib.so.0 )

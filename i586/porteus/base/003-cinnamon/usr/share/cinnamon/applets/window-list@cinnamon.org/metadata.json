@@ -1,6 +1,0 @@
-{
- "uuid": "window-list@cinnamon.org",
- "name": "Window list",
- "description": "Main Cinnamon window list",
- "max-instances": -1
-}

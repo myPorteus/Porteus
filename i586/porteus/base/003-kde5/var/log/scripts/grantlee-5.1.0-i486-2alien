@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libGrantlee_Templates.so )
-( cd usr/lib ; ln -sf libGrantlee_Templates.so.5 libGrantlee_Templates.so )
-( cd usr/lib ; rm -rf libGrantlee_TextDocument.so.5 )
-( cd usr/lib ; ln -sf libGrantlee_TextDocument.so.5.1.0 libGrantlee_TextDocument.so.5 )
-( cd usr/lib ; rm -rf libGrantlee_Templates.so.5 )
-( cd usr/lib ; ln -sf libGrantlee_Templates.so.5.1.0 libGrantlee_Templates.so.5 )
-( cd usr/lib ; rm -rf libGrantlee_TextDocument.so )
-( cd usr/lib ; ln -sf libGrantlee_TextDocument.so.5 libGrantlee_TextDocument.so )

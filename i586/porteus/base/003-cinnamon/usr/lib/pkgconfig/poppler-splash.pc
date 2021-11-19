@@ -1,9 +1,0 @@
-prefix=/usr
-exec_prefix=${prefix}
-libdir=/usr/lib
-includedir=${prefix}/include
-
-Name: poppler-splash
-Description: Splash backend for Poppler PDF rendering library
-Version: 0.45.0
-Requires: poppler = 0.45.0

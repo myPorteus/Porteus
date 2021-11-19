@@ -1,8 +1,0 @@
-( cd usr/lib ; rm -rf libspeex.so )
-( cd usr/lib ; ln -sf libspeex.so.1.5.0 libspeex.so )
-( cd usr/lib ; rm -rf libspeex.so.1 )
-( cd usr/lib ; ln -sf libspeex.so.1.5.0 libspeex.so.1 )
-( cd usr/lib ; rm -rf libspeexdsp.so )
-( cd usr/lib ; ln -sf libspeexdsp.so.1.5.0 libspeexdsp.so )
-( cd usr/lib ; rm -rf libspeexdsp.so.1 )
-( cd usr/lib ; ln -sf libspeexdsp.so.1.5.0 libspeexdsp.so.1 )

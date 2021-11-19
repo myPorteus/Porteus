@@ -1,4 +1,0 @@
-( cd usr/lib ; rm -rf libaccounts-glib.so.0 )
-( cd usr/lib ; ln -sf libaccounts-glib.so.0.1.3 libaccounts-glib.so.0 )
-( cd usr/lib ; rm -rf libaccounts-glib.so )
-( cd usr/lib ; ln -sf libaccounts-glib.so.0.1.3 libaccounts-glib.so )
