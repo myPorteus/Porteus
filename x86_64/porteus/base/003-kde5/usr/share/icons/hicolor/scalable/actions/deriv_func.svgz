@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 43)  -->
+<svg
+   width="245"
+   height="244"
+   viewBox="0 0 245 244"
+   style="overflow:visible;enable-background:new 0 0 245 244"
+   xml:space="preserve"
+   id="svg1089"
+   sodipodi:version="0.32"
+   inkscape:version="0.38.1"
+   sodipodi:docname="crsc-action-kmplot-deriv_func.svgz"
+   sodipodi:docbase="/home/pipesmoker/HEAD/kdeedu/kmplot/icons/actions"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs1193">
+    <linearGradient
+   id="XMLID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="120.5005"
+   y1="238.0117"
+   x2="120.5005"
+   y2="3.0131">
+			<stop
+   offset="0"
+   style="stop-color:#616161"
+   id="stop1099" />
+
+
+			<stop
+   offset="0.5169"
+   style="stop-color:#828282"
+   id="stop1101" />
+
+
+			<stop
+   offset="1"
+   style="stop-color:#616161"
+   id="stop1103" />
+
+
+			<a:midPointStop
+   offset="0"
+   style="stop-color:#616161"
+   id="midPointStop1105" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#616161"
+   id="midPointStop1107" />
+
+
+			<a:midPointStop
+   offset="0.5169"
+   style="stop-color:#828282"
+   id="midPointStop1109" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#828282"
+   id="midPointStop1111" />
+
+
+			<a:midPointStop
+   offset="1"
+   style="stop-color:#616161"
+   id="midPointStop1113" />
+
+
+		</linearGradient>
+
+    <linearGradient
+   id="XMLID_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="2.9946"
+   y1="120.5"
+   x2="237.9839"
+   y2="120.5">
+			<stop
+   offset="0"
+   style="stop-color:#FFFFFF"
+   id="stop1122" />
+
+
+			<stop
+   offset="0.5169"
+   style="stop-color:#CECEDB"
+   id="stop1124" />
+
+
+			<stop
+   offset="1"
+   style="stop-color:#E9E9EF"
+   id="stop1126" />
+
+
+			<a:midPointStop
+   offset="0"
+   style="stop-color:#FFFFFF"
+   id="midPointStop1128" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#FFFFFF"
+   id="midPointStop1130" />
+
+
+			<a:midPointStop
+   offset="0.5169"
+   style="stop-color:#CECEDB"
+   id="midPointStop1132" />
+
+
+			<a:midPointStop
+   offset="0.5"
+   style="stop-color:#CECEDB"
+   id="midPointStop1134" />
+
+
+			<a:midPointStop
+   offset="1"
+   style="stop-color:#E9E9EF"
+   id="midPointStop1136" />
+
+
+		</linearGradient>
+
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.78314191"
+     inkscape:cx="97.999984"
+     inkscape:cy="97.600015"
+     inkscape:window-width="640"
+     inkscape:window-height="501"
+     inkscape:window-x="0"
+     inkscape:window-y="378" />
+  <g
+     id="g920">
+  
+  
+  
+	
+		<path
+   style="opacity:0.20000000;"
+   d="M8,3C5.791,3,4,4.791,4,7v233c0,2.209,1.791,4,4,4h233c2.209,0,4-1.791,4-4V7c0-2.209-1.791-4-4-4H8z"
+   id="path1093" />
+
+
+		<path
+   style="opacity:0.20000000;"
+   d="M6,1C3.791,1,2,2.791,2,5v233c0,2.209,1.791,4,4,4h233c2.209,0,4-1.791,4-4V5c0-2.209-1.791-4-4-4H6z"
+   id="path1095" />
+
+
+		
+		<path
+   style="fill:url(#XMLID_1_);"
+   d="M4,0C1.791,0,0,1.791,0,4v233c0,2.209,1.791,4,4,4h233c2.209,0,4-1.791,4-4V4c0-2.209-1.791-4-4-4H4z"
+   id="path1116" />
+
+
+		<path
+   style="fill:#ffffff;"
+   d="M6,6c0,3.897,0,225.103,0,229c3.897,0,225.103,0,229,0c0-3.897,0-225.103,0-229C231.103,6,9.897,6,6,6z"
+   id="path1118" />
+
+
+		
+		<path
+   style="fill:url(#XMLID_2_);"
+   d="M12,12c0,5.76,0,211.24,0,217c5.76,0,211.24,0,217,0c0-5.76,0-211.24,0-217C223.24,12,17.76,12,12,12z"
+   id="path1139" />
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+<g
+   style="font-size:422.00000;font-style:italic;font-family:Thorndale;"
+   id="g833"
+   transform="matrix(0.295580,0.000000,0.000000,0.295580,-34.51582,37.30619)">
+  <g
+   style="stroke:none;fill:rgb(0,0,0)"
+   id="g834">
+    <text
+   x="445.95422"
+   y="380.84054"
+   id="text835"
+   sodipodi:linespacing="100%"
+   style="font-family:Nimbus Roman No9 L;font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal;font-size:422.00000;text-anchor:start;writing-mode:lr;"><tspan
+     x="445.95422"
+     y="380.84055"
+     sodipodi:role="line"
+     id="tspan1570">f</tspan></text>
+
+  </g>
+
+</g>
+
+
+<g
+   style="font-size:422.00000;font-style:italic;font-family:Thorndale;"
+   id="g911"
+   transform="matrix(0.295580,0.000000,0.000000,0.295580,14.96436,35.80938)">
+  <g
+   style="stroke:none;fill:rgb(0,0,0)"
+   id="g913">
+    <text
+   x="445.95422"
+   y="380.84054"
+   id="text915"
+   sodipodi:linespacing="100%"
+   style="font-family:Nimbus Roman No9 L;font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal;font-size:422.00000;text-anchor:start;writing-mode:lr;"><tspan
+     x="445.95422"
+     y="380.84055"
+     sodipodi:role="line"
+     id="tspan916">'</tspan></text>
+
+  </g>
+
+</g>
+</g>
+</svg>

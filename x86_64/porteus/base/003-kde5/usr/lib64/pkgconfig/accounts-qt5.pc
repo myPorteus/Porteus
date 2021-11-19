@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include/accounts-qt5
+servicefilesdir=${prefix}/share/accounts/services
+servicetypefilesdir=${prefix}/share/accounts/service-types
+providerfilesdir=${prefix}/share/accounts/providers
+
+Name: libaccounts-qt5
+Description: Accounts Library
+Version: 1.14
+Libs: -L${libdir} -laccounts-qt5
+Requires: Qt5Core Qt5Xml
+Cflags:  -I${includedir}
+

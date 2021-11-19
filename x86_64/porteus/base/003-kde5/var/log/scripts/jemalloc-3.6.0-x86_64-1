@@ -1,0 +1,2 @@
+( cd usr/lib64 ; rm -rf libjemalloc.so )
+( cd usr/lib64 ; ln -sf libjemalloc.so.1 libjemalloc.so )

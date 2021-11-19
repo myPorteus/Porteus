@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>com.nokia.example.accounts-qt</namespace>
+  <virtualFolder>accounts-qt</virtualFolder>
+  <filterSection>
+    <filterAttribute>doxygen</filterAttribute>
+    <toc>
+      <section title="accounts-qt 1.14" ref="index.html">
+        <section title="Accounts-Qt library" ref="index.html">
+          <section title="Introduction" ref="index.html#intro" />
+          <section title="Terminology and basic concepts" ref="index.html#terminology" />
+          <section title="List of classes in Accounts-Qt" ref="index.html#classlist" />
+        </section>
+        <section title="Deprecated List" ref="deprecated.html" />
+        <section title="Classes">
+          <section title="Class List" ref="annotated.html">
+            <section title="Accounts">
+              <section title="AccountService" ref="classAccounts_1_1AccountService.html">
+                <section title="AccountService" ref="classAccounts_1_1AccountService.html#aef5d4691113e384992926928928ae334" />
+                <section title="AccountService" ref="classAccounts_1_1AccountService.html#a5183e298082ee83004c503197ff14e20" />
+                <section title="~AccountService" ref="classAccounts_1_1AccountService.html#a0622bfbd6cf486c0b73712ff02c0294e" />
+                <section title="account" ref="classAccounts_1_1AccountService.html#a490333c2ed4d6f107c5493a9465d993b" />
+                <section title="allKeys" ref="classAccounts_1_1AccountService.html#a9936a9bd6fca45f1d03a63b1b485ed88" />
+                <section title="authData" ref="classAccounts_1_1AccountService.html#a49a9f7deccedeebacadc37ae01ac83ab" />
+                <section title="beginGroup" ref="classAccounts_1_1AccountService.html#aa889966b87d4315aea74c30088e9c8fa" />
+                <section title="changed" ref="classAccounts_1_1AccountService.html#a4db9a5f1a7e34ec6902ff9630d98b777" />
+                <section title="changedFields" ref="classAccounts_1_1AccountService.html#a678e391f34362471f042719d3b388d81" />
+                <section title="childGroups" ref="classAccounts_1_1AccountService.html#af5b653c82d3a3d7765da47fe5db0e128" />
+                <section title="childKeys" ref="classAccounts_1_1AccountService.html#a09f8085bca6d1c8b4837beabcea7b639" />
+                <section title="clear" ref="classAccounts_1_1AccountService.html#ac8bb3912a3ce86b15842e79d0b421204" />
+                <section title="contains" ref="classAccounts_1_1AccountService.html#aab9f06bc42480ab555a9757e14303e5f" />
+                <section title="enabled" ref="classAccounts_1_1AccountService.html#a1d79980f25d38aba3d6777d0afe544f3" />
+                <section title="enabled" ref="classAccounts_1_1AccountService.html#ab2f0d21a6f535870b37dcb44b2f77205" />
+                <section title="endGroup" ref="classAccounts_1_1AccountService.html#af964cd7bde81d0f118ea09e201e155dd" />
+                <section title="group" ref="classAccounts_1_1AccountService.html#a5adb315467de1866550658b4679bf9f9" />
+                <section title="isEnabled" ref="classAccounts_1_1AccountService.html#ae2931e09e0fd8eac15c83f0254b4e4ac" />
+                <section title="remove" ref="classAccounts_1_1AccountService.html#a89c0a3a6c660a5f577e5241a63052f2c" />
+                <section title="service" ref="classAccounts_1_1AccountService.html#a256dc9d961214d5f60642a290a288998" />
+                <section title="setValue" ref="classAccounts_1_1AccountService.html#a86c9e7ef7d0ab5919f6de30d16899659" />
+                <section title="setValue" ref="classAccounts_1_1AccountService.html#a48d1031ae51455e458b881c49c65a92e" />
+                <section title="value" ref="classAccounts_1_1AccountService.html#a299df626e5ca7968fd8b70f9c87acfbb" />
+                <section title="value" ref="classAccounts_1_1AccountService.html#a53cc185b2ceff59c833ebe939a6e18cb" />
+                <section title="value" ref="classAccounts_1_1AccountService.html#a12c497bbb56e4f866c8e226ba774141c" />
+              </section>
+              <section title="Application" ref="classAccounts_1_1Application.html">
+                <section title="Application" ref="classAccounts_1_1Application.html#aec7d6461aa7be31d98eff24b9d69ae3d" />
+                <section title="Application" ref="classAccounts_1_1Application.html#af5e0a77dad01833eddabf0def1caa475" />
+                <section title="~Application" ref="classAccounts_1_1Application.html#a713b51c450f3ae9db74cd857c2419173" />
+                <section title="description" ref="classAccounts_1_1Application.html#aeaebc63d2181b1a4506603f4e03f1275" />
+                <section title="desktopFilePath" ref="classAccounts_1_1Application.html#a8e3558c6d34db1186be87e3483ff59f8" />
+                <section title="displayName" ref="classAccounts_1_1Application.html#a9def71dea12661002bb3a63b3b91d08d" />
+                <section title="iconName" ref="classAccounts_1_1Application.html#a038b22680aca535f9972908fe2f1f6a1" />
+                <section title="isValid" ref="classAccounts_1_1Application.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+                <section title="name" ref="classAccounts_1_1Application.html#a2b0a198f837184bf6fff555cee3ce770" />
+                <section title="operator=" ref="classAccounts_1_1Application.html#a645636c24dff51fd2b9ec75fc083b928" />
+                <section title="serviceUsage" ref="classAccounts_1_1Application.html#a3e79b6f20785764a31a750544fde6f39" />
+                <section title="trCatalog" ref="classAccounts_1_1Application.html#a6c73afd4753195ea4eee794c95a770dd" />
+              </section>
+              <section title="AuthData" ref="classAccounts_1_1AuthData.html">
+                <section title="AuthData" ref="classAccounts_1_1AuthData.html#aeba8fdc4a52c97afb61f49b9a4d6b9c4" />
+                <section title="~AuthData" ref="classAccounts_1_1AuthData.html#a5bbaeb60e91e492e40be40271b3f4194" />
+                <section title="credentialsId" ref="classAccounts_1_1AuthData.html#a9fe8b6778698b1949275326717f35b02" />
+                <section title="mechanism" ref="classAccounts_1_1AuthData.html#aaff7a936205f9c8044c0093f6497c514" />
+                <section title="method" ref="classAccounts_1_1AuthData.html#a47b45cea7d4fbacc4d751adaeb1e8d79" />
+                <section title="parameters" ref="classAccounts_1_1AuthData.html#a149775212ebd051147314d4a3bfff30d" />
+              </section>
+              <section title="Error" ref="classAccounts_1_1Error.html">
+                <section title="ErrorType" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45a">
+                  <section title="NoError" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aaef9104c292609ba6db320509be8fe27f" />
+                  <section title="Unknown" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa4e81c184ac3ad48a389cd4454c4a05bb" />
+                  <section title="Database" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa31884bb2cfbd4d8e2d428904eb1c3f98" />
+                  <section title="Deleted" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa04ba35ff69a05b2a16733a01fc003d88" />
+                  <section title="DatabaseLocked" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa155f5bb6520a1d872efe0563428315bf" />
+                  <section title="AccountNotFound" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aab49b276755b64c7a63a391e03aebbf49" />
+                </section>
+                <section title="Error" ref="classAccounts_1_1Error.html#a17be1abe802fb9ab3acebe900748cf79" />
+                <section title="Error" ref="classAccounts_1_1Error.html#abc095ef325fbb7c22399270e62f400ca" />
+                <section title="Error" ref="classAccounts_1_1Error.html#a43fd5cb964997186acb7f0297cefd666" />
+                <section title="~Error" ref="classAccounts_1_1Error.html#a810251c55fc575f642cf343c4413c2b1" />
+                <section title="message" ref="classAccounts_1_1Error.html#aba2e3009745c37baeaf086e1bc6a3b8d" />
+                <section title="operator=" ref="classAccounts_1_1Error.html#a25f9ffea919d1d0c265a93df49ee3b32" />
+                <section title="type" ref="classAccounts_1_1Error.html#ac3b58ce6dc3ba4cbfbabd9d7d7774567" />
+              </section>
+              <section title="Manager" ref="classAccounts_1_1Manager.html">
+                <section title="Option" ref="classAccounts_1_1Manager.html#a0e65ad13124ea2cb5e255b640464e35f">
+                  <section title="DisableNotifications" ref="classAccounts_1_1Manager.html#a0e65ad13124ea2cb5e255b640464e35fa8ab6226b5ae4221689bc2d25d6201ae9" />
+                </section>
+                <section title="Manager" ref="classAccounts_1_1Manager.html#a904954dc41cf98ac053b00f12dbc0090" />
+                <section title="Manager" ref="classAccounts_1_1Manager.html#a2d948d667caf0a065d995c847ef57176" />
+                <section title="Manager" ref="classAccounts_1_1Manager.html#a5140dac7527af074eca9a9f97c5a8cea" />
+                <section title="~Manager" ref="classAccounts_1_1Manager.html#a829d7114e3ed38c555af0fb4e974a6f6" />
+                <section title="abortOnTimeout" ref="classAccounts_1_1Manager.html#afdf5d9b1cf381bf5a83ac0bf41be522b" />
+                <section title="account" ref="classAccounts_1_1Manager.html#a8999bd6e99eb3f8ee49bdf6c8e387a6d" />
+                <section title="accountCreated" ref="classAccounts_1_1Manager.html#ad6d2d0cfff2e9f11ab3327ddf573f1eb" />
+                <section title="accountList" ref="classAccounts_1_1Manager.html#af6cb7c309b94adfe0c000a2925745975" />
+                <section title="accountListEnabled" ref="classAccounts_1_1Manager.html#a5034b5eb730a95722ad1bd1dd76b7867" />
+                <section title="accountRemoved" ref="classAccounts_1_1Manager.html#a9e18c1ab3efc480d15fe72d833e9ab95" />
+                <section title="accountUpdated" ref="classAccounts_1_1Manager.html#aa228f4eaf987ea3575c7ff9da03208e8" />
+                <section title="application" ref="classAccounts_1_1Manager.html#a28ff538d5abd52ff691e30ed75a6b41f" />
+                <section title="applicationList" ref="classAccounts_1_1Manager.html#ae18f9f8c59a4e15e8849dd832c54b874" />
+                <section title="createAccount" ref="classAccounts_1_1Manager.html#ab094ae9aa044b74123f9269dd9e5627c" />
+                <section title="enabledEvent" ref="classAccounts_1_1Manager.html#a9da726ad1ee02be3dea7c19b82bb373d" />
+                <section title="lastError" ref="classAccounts_1_1Manager.html#a31f856d7b015a7478550d90feac77f48" />
+                <section title="options" ref="classAccounts_1_1Manager.html#a42ec574899ed53e05880ce02e40073a1" />
+                <section title="provider" ref="classAccounts_1_1Manager.html#a79085e0676834932f64d651f4231b2ec" />
+                <section title="providerList" ref="classAccounts_1_1Manager.html#aa4b53bc6ceef8d0c51b50c4b047409dc" />
+                <section title="service" ref="classAccounts_1_1Manager.html#ac9b1bf173f68b9a0384cd1afad398931" />
+                <section title="serviceList" ref="classAccounts_1_1Manager.html#a77e3d998be834bacfb3378e64656edf8" />
+                <section title="serviceType" ref="classAccounts_1_1Manager.html#a2ace548efe2fbf601ecf6efcfcf9c980" />
+                <section title="serviceType" ref="classAccounts_1_1Manager.html#aa090de65c448278a23851f45f38fa9ce" />
+                <section title="setAbortOnTimeout" ref="classAccounts_1_1Manager.html#a9b4396a045e666376bdb535553bce09b" />
+                <section title="setTimeout" ref="classAccounts_1_1Manager.html#a453a462fc339dae385360dc73128bf14" />
+                <section title="timeout" ref="classAccounts_1_1Manager.html#acd89c68759d802afa73ef928b293c82b" />
+              </section>
+              <section title="Provider" ref="classAccounts_1_1Provider.html">
+                <section title="Provider" ref="classAccounts_1_1Provider.html#a0a281cda2c25f17e851f76142d4527a0" />
+                <section title="Provider" ref="classAccounts_1_1Provider.html#abff16d2acc53f89d7f633e85a4b90634" />
+                <section title="~Provider" ref="classAccounts_1_1Provider.html#ab52fc782db2ed1f2666510367f14d860" />
+                <section title="description" ref="classAccounts_1_1Provider.html#aeaebc63d2181b1a4506603f4e03f1275" />
+                <section title="displayName" ref="classAccounts_1_1Provider.html#a9def71dea12661002bb3a63b3b91d08d" />
+                <section title="domainsRegExp" ref="classAccounts_1_1Provider.html#ab0c2fc656cae3b09e456ec0747315ecc" />
+                <section title="domDocument" ref="classAccounts_1_1Provider.html#a305fe3a04c76c8069c3465621a7967cc" />
+                <section title="iconName" ref="classAccounts_1_1Provider.html#a038b22680aca535f9972908fe2f1f6a1" />
+                <section title="isSingleAccount" ref="classAccounts_1_1Provider.html#aa785668bfd84285ad40299410c02367d" />
+                <section title="isValid" ref="classAccounts_1_1Provider.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+                <section title="name" ref="classAccounts_1_1Provider.html#a2b0a198f837184bf6fff555cee3ce770" />
+                <section title="operator=" ref="classAccounts_1_1Provider.html#a2ea3187c2cc7f9464d47da1aada7d78c" />
+                <section title="pluginName" ref="classAccounts_1_1Provider.html#ac7fe5a9dd669a037edfa2930803311a5" />
+                <section title="trCatalog" ref="classAccounts_1_1Provider.html#a6c73afd4753195ea4eee794c95a770dd" />
+                <section title="operator==" ref="classAccounts_1_1Provider.html#acad7a7994506519762f09b8a66c91c6a" />
+              </section>
+              <section title="Service" ref="classAccounts_1_1Service.html">
+                <section title="Service" ref="classAccounts_1_1Service.html#a37865e4e61715c6d6f81181f7323ae62" />
+                <section title="Service" ref="classAccounts_1_1Service.html#a491f7a1e2b9dfedb805d55c06ca006df" />
+                <section title="~Service" ref="classAccounts_1_1Service.html#a3fa910779a00d2d84bf306d05689a26c" />
+                <section title="displayName" ref="classAccounts_1_1Service.html#a9def71dea12661002bb3a63b3b91d08d" />
+                <section title="domDocument" ref="classAccounts_1_1Service.html#a305fe3a04c76c8069c3465621a7967cc" />
+                <section title="hasTag" ref="classAccounts_1_1Service.html#ab9544628f8c8af163b13eb6b47a3aead" />
+                <section title="iconName" ref="classAccounts_1_1Service.html#a038b22680aca535f9972908fe2f1f6a1" />
+                <section title="isValid" ref="classAccounts_1_1Service.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+                <section title="name" ref="classAccounts_1_1Service.html#a2b0a198f837184bf6fff555cee3ce770" />
+                <section title="operator=" ref="classAccounts_1_1Service.html#acc48a1d85689d512416f5a8cc982b0b4" />
+                <section title="provider" ref="classAccounts_1_1Service.html#a4da62eb704e693e71b73d101f5304a7e" />
+                <section title="serviceType" ref="classAccounts_1_1Service.html#aa090de65c448278a23851f45f38fa9ce" />
+                <section title="tags" ref="classAccounts_1_1Service.html#a4bfac5a5814d94c97ae61695f09e95ee" />
+                <section title="trCatalog" ref="classAccounts_1_1Service.html#a6c73afd4753195ea4eee794c95a770dd" />
+                <section title="operator==" ref="classAccounts_1_1Service.html#adfa1934bd3a7945ac2a26125481ed12f" />
+              </section>
+              <section title="ServiceType" ref="classAccounts_1_1ServiceType.html">
+                <section title="ServiceType" ref="classAccounts_1_1ServiceType.html#a27a10810bcc047da5031725f77b398eb" />
+                <section title="ServiceType" ref="classAccounts_1_1ServiceType.html#aae690d056ba06a78378f8adc8f95cddd" />
+                <section title="~ServiceType" ref="classAccounts_1_1ServiceType.html#a49e5b6e52b0f778c8d0f6842bf126167" />
+                <section title="displayName" ref="classAccounts_1_1ServiceType.html#a9def71dea12661002bb3a63b3b91d08d" />
+                <section title="domDocument" ref="classAccounts_1_1ServiceType.html#a305fe3a04c76c8069c3465621a7967cc" />
+                <section title="hasTag" ref="classAccounts_1_1ServiceType.html#ab9544628f8c8af163b13eb6b47a3aead" />
+                <section title="iconName" ref="classAccounts_1_1ServiceType.html#a038b22680aca535f9972908fe2f1f6a1" />
+                <section title="isValid" ref="classAccounts_1_1ServiceType.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+                <section title="name" ref="classAccounts_1_1ServiceType.html#a2b0a198f837184bf6fff555cee3ce770" />
+                <section title="operator=" ref="classAccounts_1_1ServiceType.html#a30dad6b9e5736036988f2918408878bf" />
+                <section title="tags" ref="classAccounts_1_1ServiceType.html#a4bfac5a5814d94c97ae61695f09e95ee" />
+                <section title="trCatalog" ref="classAccounts_1_1ServiceType.html#a6c73afd4753195ea4eee794c95a770dd" />
+                <section title="operator==" ref="classAccounts_1_1ServiceType.html#ac57edddf8f98ba20c3620becc8f8f6e5" />
+              </section>
+              <section title="Watch" ref="classAccounts_1_1Watch.html">
+                <section title="allKeys" ref="classAccounts_1_1Watch.html#a9936a9bd6fca45f1d03a63b1b485ed88" />
+                <section title="beginGroup" ref="classAccounts_1_1Watch.html#aa889966b87d4315aea74c30088e9c8fa" />
+                <section title="childGroups" ref="classAccounts_1_1Watch.html#af5b653c82d3a3d7765da47fe5db0e128" />
+                <section title="childKeys" ref="classAccounts_1_1Watch.html#a09f8085bca6d1c8b4837beabcea7b639" />
+                <section title="clear" ref="classAccounts_1_1Watch.html#ac8bb3912a3ce86b15842e79d0b421204" />
+                <section title="contains" ref="classAccounts_1_1Watch.html#aab9f06bc42480ab555a9757e14303e5f" />
+                <section title="credentialsId" ref="classAccounts_1_1Watch.html#a483d9a1edcbc46d7070eb70ae23b5989" />
+                <section title="displayName" ref="classAccounts_1_1Watch.html#a9def71dea12661002bb3a63b3b91d08d" />
+                <section title="displayNameChanged" ref="classAccounts_1_1Watch.html#a6c9329531974648e3ea3f05f3ea36129" />
+                <section title="enabledChanged" ref="classAccounts_1_1Watch.html#abc008e2f46ae60c14005e24f4cbf41e5" />
+                <section title="endGroup" ref="classAccounts_1_1Watch.html#af964cd7bde81d0f118ea09e201e155dd" />
+                <section title="error" ref="classAccounts_1_1Watch.html#ae89dad11eccb775ceb9925d0ff27dd7d" />
+                <section title="group" ref="classAccounts_1_1Watch.html#a5adb315467de1866550658b4679bf9f9" />
+                <section title="isWritable" ref="classAccounts_1_1Watch.html#aa741717fa726eea03300fdde9934808a" />
+                <section title="provider" ref="classAccounts_1_1Watch.html#ab2bf7a26f8729dfb6a8595b6294f5565" />
+                <section title="providerName" ref="classAccounts_1_1Watch.html#a65a95a0e50cf1761a9a21d21c0db412e" />
+                <section title="remove" ref="classAccounts_1_1Watch.html#a89c0a3a6c660a5f577e5241a63052f2c" />
+                <section title="remove" ref="classAccounts_1_1Watch.html#a1fcb45e5d2428352eb36b487d1d4eea3" />
+                <section title="removed" ref="classAccounts_1_1Watch.html#adc2a0e638d7742d828062eeafd6769ab" />
+                <section title="selectedService" ref="classAccounts_1_1Watch.html#a4831783cce39d897dc35b57ce233d735" />
+                <section title="selectService" ref="classAccounts_1_1Watch.html#a8c7532fb7377ee33ab449d36200522b9" />
+                <section title="setCredentialsId" ref="classAccounts_1_1Watch.html#a54a9de969058292a257d9d692785ca63" />
+                <section title="setDisplayName" ref="classAccounts_1_1Watch.html#ac036a365819266590db91caa64b4fff0" />
+                <section title="setValue" ref="classAccounts_1_1Watch.html#a48d1031ae51455e458b881c49c65a92e" />
+                <section title="sign" ref="classAccounts_1_1Watch.html#a4ebb90703ca3ec222b5822474e058547" />
+                <section title="sync" ref="classAccounts_1_1Watch.html#ad55f80ed3cd8b6c4f247763b747016af" />
+                <section title="syncAndBlock" ref="classAccounts_1_1Watch.html#a4c182d464e5a7978fdf1817ce50d9531" />
+                <section title="synced" ref="classAccounts_1_1Watch.html#a4fa6a9f29874eb5ad79fbc70532f71a6" />
+                <section title="value" ref="classAccounts_1_1Watch.html#a11e51b34244f3e9288dacb30b6230085" />
+                <section title="value" ref="classAccounts_1_1Watch.html#a6d1dedb9c7a20fc62310946d4e6881a6" />
+                <section title="valueAsBool" ref="classAccounts_1_1Watch.html#a7d639022739d7f3ef53ca0b0195f30ce" />
+                <section title="valueAsInt" ref="classAccounts_1_1Watch.html#a950ddc85d587c0d9372c031ce431edfe" />
+                <section title="valueAsString" ref="classAccounts_1_1Watch.html#a9b737faa22b94f329d0c377b94f9ecf3" />
+                <section title="valueAsUInt64" ref="classAccounts_1_1Watch.html#af26f7d7e660864d08b75dce98565684e" />
+                <section title="verify" ref="classAccounts_1_1Watch.html#a4f1aed052f72d4a55a35a2a1621fc391" />
+                <section title="verifyWithTokens" ref="classAccounts_1_1Watch.html#af491d2638521b57cfa5f01e47a539b33" />
+                <section title="watchKey" ref="classAccounts_1_1Watch.html#a5e36b49426df748e27d189b2b11faf92" />
+              </section>
+            </section>
+          </section>
+          <section title="Class Members" ref="functions.html">
+            <section title="All" ref="functions.html" />
+            <section title="Functions" ref="functions_func.html" />
+            <section title="Enumerations" ref="functions_enum.html" />
+            <section title="Enumerator" ref="functions_eval.html" />
+          </section>
+        </section>
+        <section title="Files">
+          <section title="File List" ref="files.html">
+            <section title="Accounts" ref="dir_c3d1d086c816c0518443c9e800634b9c.html">
+              <section title="account-service.cpp" ref="account-service_8cpp_source.html" />
+              <section title="account-service.h" ref="account-service_8h_source.html" />
+              <section title="account.cpp" ref="account_8cpp_source.html" />
+              <section title="account.h" ref="account_8h_source.html" />
+              <section title="accountscommon.h" ref="accountscommon_8h_source.html" />
+              <section title="application.cpp" ref="application_8cpp_source.html" />
+              <section title="application.h" ref="application_8h_source.html" />
+              <section title="auth-data.cpp" ref="auth-data_8cpp_source.html" />
+              <section title="auth-data.h" ref="auth-data_8h_source.html" />
+              <section title="error.cpp" ref="error_8cpp_source.html" />
+              <section title="error.h" ref="error_8h_source.html" />
+              <section title="manager.cpp" ref="manager_8cpp_source.html" />
+              <section title="manager.h" ref="manager_8h_source.html" />
+              <section title="manager_p.h" ref="manager__p_8h_source.html" />
+              <section title="provider.cpp" ref="provider_8cpp_source.html" />
+              <section title="provider.h" ref="provider_8h_source.html" />
+              <section title="service-type.cpp" ref="service-type_8cpp_source.html" />
+              <section title="service-type.h" ref="service-type_8h_source.html" />
+              <section title="service.cpp" ref="service_8cpp_source.html" />
+              <section title="service.h" ref="service_8h_source.html" />
+              <section title="utils.cpp" ref="utils_8cpp_source.html" />
+              <section title="utils.h" ref="utils_8h_source.html" />
+            </section>
+          </section>
+        </section>
+      </section>
+    </toc>
+    <keywords>
+      <keyword name="Deprecated List" id="Deprecated List" ref="deprecated.html" />
+      <keyword name="Accounts::AccountService" id="Accounts::AccountService" ref="classAccounts_1_1AccountService.html" />
+      <keyword name="enabled" id="Accounts::AccountService::enabled" ref="classAccounts_1_1AccountService.html#ab2f0d21a6f535870b37dcb44b2f77205" />
+      <keyword name="changed" id="Accounts::AccountService::changed" ref="classAccounts_1_1AccountService.html#a4db9a5f1a7e34ec6902ff9630d98b777" />
+      <keyword name="AccountService" id="Accounts::AccountService::AccountService" ref="classAccounts_1_1AccountService.html#aef5d4691113e384992926928928ae334" />
+      <keyword name="AccountService" id="Accounts::AccountService::AccountService" ref="classAccounts_1_1AccountService.html#a5183e298082ee83004c503197ff14e20" />
+      <keyword name="~AccountService" id="Accounts::AccountService::~AccountService" ref="classAccounts_1_1AccountService.html#a0622bfbd6cf486c0b73712ff02c0294e" />
+      <keyword name="account" id="Accounts::AccountService::account" ref="classAccounts_1_1AccountService.html#a490333c2ed4d6f107c5493a9465d993b" />
+      <keyword name="service" id="Accounts::AccountService::service" ref="classAccounts_1_1AccountService.html#a256dc9d961214d5f60642a290a288998" />
+      <keyword name="enabled" id="Accounts::AccountService::enabled" ref="classAccounts_1_1AccountService.html#a1d79980f25d38aba3d6777d0afe544f3" />
+      <keyword name="isEnabled" id="Accounts::AccountService::isEnabled" ref="classAccounts_1_1AccountService.html#ae2931e09e0fd8eac15c83f0254b4e4ac" />
+      <keyword name="allKeys" id="Accounts::AccountService::allKeys" ref="classAccounts_1_1AccountService.html#a9936a9bd6fca45f1d03a63b1b485ed88" />
+      <keyword name="beginGroup" id="Accounts::AccountService::beginGroup" ref="classAccounts_1_1AccountService.html#aa889966b87d4315aea74c30088e9c8fa" />
+      <keyword name="childGroups" id="Accounts::AccountService::childGroups" ref="classAccounts_1_1AccountService.html#af5b653c82d3a3d7765da47fe5db0e128" />
+      <keyword name="childKeys" id="Accounts::AccountService::childKeys" ref="classAccounts_1_1AccountService.html#a09f8085bca6d1c8b4837beabcea7b639" />
+      <keyword name="clear" id="Accounts::AccountService::clear" ref="classAccounts_1_1AccountService.html#ac8bb3912a3ce86b15842e79d0b421204" />
+      <keyword name="contains" id="Accounts::AccountService::contains" ref="classAccounts_1_1AccountService.html#aab9f06bc42480ab555a9757e14303e5f" />
+      <keyword name="endGroup" id="Accounts::AccountService::endGroup" ref="classAccounts_1_1AccountService.html#af964cd7bde81d0f118ea09e201e155dd" />
+      <keyword name="group" id="Accounts::AccountService::group" ref="classAccounts_1_1AccountService.html#a5adb315467de1866550658b4679bf9f9" />
+      <keyword name="remove" id="Accounts::AccountService::remove" ref="classAccounts_1_1AccountService.html#a89c0a3a6c660a5f577e5241a63052f2c" />
+      <keyword name="setValue" id="Accounts::AccountService::setValue" ref="classAccounts_1_1AccountService.html#a86c9e7ef7d0ab5919f6de30d16899659" />
+      <keyword name="setValue" id="Accounts::AccountService::setValue" ref="classAccounts_1_1AccountService.html#a48d1031ae51455e458b881c49c65a92e" />
+      <keyword name="value" id="Accounts::AccountService::value" ref="classAccounts_1_1AccountService.html#a299df626e5ca7968fd8b70f9c87acfbb" />
+      <keyword name="value" id="Accounts::AccountService::value" ref="classAccounts_1_1AccountService.html#a53cc185b2ceff59c833ebe939a6e18cb" />
+      <keyword name="value" id="Accounts::AccountService::value" ref="classAccounts_1_1AccountService.html#a12c497bbb56e4f866c8e226ba774141c" />
+      <keyword name="changedFields" id="Accounts::AccountService::changedFields" ref="classAccounts_1_1AccountService.html#a678e391f34362471f042719d3b388d81" />
+      <keyword name="authData" id="Accounts::AccountService::authData" ref="classAccounts_1_1AccountService.html#a49a9f7deccedeebacadc37ae01ac83ab" />
+      <keyword name="Accounts::Application" id="Accounts::Application" ref="classAccounts_1_1Application.html" />
+      <keyword name="Application" id="Accounts::Application::Application" ref="classAccounts_1_1Application.html#aec7d6461aa7be31d98eff24b9d69ae3d" />
+      <keyword name="Application" id="Accounts::Application::Application" ref="classAccounts_1_1Application.html#af5e0a77dad01833eddabf0def1caa475" />
+      <keyword name="operator=" id="Accounts::Application::operator=" ref="classAccounts_1_1Application.html#a645636c24dff51fd2b9ec75fc083b928" />
+      <keyword name="~Application" id="Accounts::Application::~Application" ref="classAccounts_1_1Application.html#a713b51c450f3ae9db74cd857c2419173" />
+      <keyword name="isValid" id="Accounts::Application::isValid" ref="classAccounts_1_1Application.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+      <keyword name="name" id="Accounts::Application::name" ref="classAccounts_1_1Application.html#a2b0a198f837184bf6fff555cee3ce770" />
+      <keyword name="displayName" id="Accounts::Application::displayName" ref="classAccounts_1_1Application.html#a9def71dea12661002bb3a63b3b91d08d" />
+      <keyword name="description" id="Accounts::Application::description" ref="classAccounts_1_1Application.html#aeaebc63d2181b1a4506603f4e03f1275" />
+      <keyword name="iconName" id="Accounts::Application::iconName" ref="classAccounts_1_1Application.html#a038b22680aca535f9972908fe2f1f6a1" />
+      <keyword name="desktopFilePath" id="Accounts::Application::desktopFilePath" ref="classAccounts_1_1Application.html#a8e3558c6d34db1186be87e3483ff59f8" />
+      <keyword name="trCatalog" id="Accounts::Application::trCatalog" ref="classAccounts_1_1Application.html#a6c73afd4753195ea4eee794c95a770dd" />
+      <keyword name="serviceUsage" id="Accounts::Application::serviceUsage" ref="classAccounts_1_1Application.html#a3e79b6f20785764a31a750544fde6f39" />
+      <keyword name="Accounts::AuthData" id="Accounts::AuthData" ref="classAccounts_1_1AuthData.html" />
+      <keyword name="AuthData" id="Accounts::AuthData::AuthData" ref="classAccounts_1_1AuthData.html#aeba8fdc4a52c97afb61f49b9a4d6b9c4" />
+      <keyword name="~AuthData" id="Accounts::AuthData::~AuthData" ref="classAccounts_1_1AuthData.html#a5bbaeb60e91e492e40be40271b3f4194" />
+      <keyword name="credentialsId" id="Accounts::AuthData::credentialsId" ref="classAccounts_1_1AuthData.html#a9fe8b6778698b1949275326717f35b02" />
+      <keyword name="method" id="Accounts::AuthData::method" ref="classAccounts_1_1AuthData.html#a47b45cea7d4fbacc4d751adaeb1e8d79" />
+      <keyword name="mechanism" id="Accounts::AuthData::mechanism" ref="classAccounts_1_1AuthData.html#aaff7a936205f9c8044c0093f6497c514" />
+      <keyword name="parameters" id="Accounts::AuthData::parameters" ref="classAccounts_1_1AuthData.html#a149775212ebd051147314d4a3bfff30d" />
+      <keyword name="Accounts::Error" id="Accounts::Error" ref="classAccounts_1_1Error.html" />
+      <keyword name="Error" id="Accounts::Error::Error" ref="classAccounts_1_1Error.html#a17be1abe802fb9ab3acebe900748cf79" />
+      <keyword name="Error" id="Accounts::Error::Error" ref="classAccounts_1_1Error.html#abc095ef325fbb7c22399270e62f400ca" />
+      <keyword name="Error" id="Accounts::Error::Error" ref="classAccounts_1_1Error.html#a43fd5cb964997186acb7f0297cefd666" />
+      <keyword name="operator=" id="Accounts::Error::operator=" ref="classAccounts_1_1Error.html#a25f9ffea919d1d0c265a93df49ee3b32" />
+      <keyword name="~Error" id="Accounts::Error::~Error" ref="classAccounts_1_1Error.html#a810251c55fc575f642cf343c4413c2b1" />
+      <keyword name="type" id="Accounts::Error::type" ref="classAccounts_1_1Error.html#ac3b58ce6dc3ba4cbfbabd9d7d7774567" />
+      <keyword name="message" id="Accounts::Error::message" ref="classAccounts_1_1Error.html#aba2e3009745c37baeaf086e1bc6a3b8d" />
+      <keyword name="Database" id="Accounts::Error::Database" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa31884bb2cfbd4d8e2d428904eb1c3f98" />
+      <keyword name="Deleted" id="Accounts::Error::Deleted" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa04ba35ff69a05b2a16733a01fc003d88" />
+      <keyword name="DatabaseLocked" id="Accounts::Error::DatabaseLocked" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aa155f5bb6520a1d872efe0563428315bf" />
+      <keyword name="AccountNotFound" id="Accounts::Error::AccountNotFound" ref="classAccounts_1_1Error.html#ab0df38968e4f03a3f1f6d6df0f31f45aab49b276755b64c7a63a391e03aebbf49" />
+      <keyword name="Accounts::Manager" id="Accounts::Manager" ref="classAccounts_1_1Manager.html" />
+      <keyword name="accountCreated" id="Accounts::Manager::accountCreated" ref="classAccounts_1_1Manager.html#ad6d2d0cfff2e9f11ab3327ddf573f1eb" />
+      <keyword name="accountRemoved" id="Accounts::Manager::accountRemoved" ref="classAccounts_1_1Manager.html#a9e18c1ab3efc480d15fe72d833e9ab95" />
+      <keyword name="accountUpdated" id="Accounts::Manager::accountUpdated" ref="classAccounts_1_1Manager.html#aa228f4eaf987ea3575c7ff9da03208e8" />
+      <keyword name="enabledEvent" id="Accounts::Manager::enabledEvent" ref="classAccounts_1_1Manager.html#a9da726ad1ee02be3dea7c19b82bb373d" />
+      <keyword name="Manager" id="Accounts::Manager::Manager" ref="classAccounts_1_1Manager.html#a904954dc41cf98ac053b00f12dbc0090" />
+      <keyword name="Manager" id="Accounts::Manager::Manager" ref="classAccounts_1_1Manager.html#a2d948d667caf0a065d995c847ef57176" />
+      <keyword name="Manager" id="Accounts::Manager::Manager" ref="classAccounts_1_1Manager.html#a5140dac7527af074eca9a9f97c5a8cea" />
+      <keyword name="~Manager" id="Accounts::Manager::~Manager" ref="classAccounts_1_1Manager.html#a829d7114e3ed38c555af0fb4e974a6f6" />
+      <keyword name="account" id="Accounts::Manager::account" ref="classAccounts_1_1Manager.html#a8999bd6e99eb3f8ee49bdf6c8e387a6d" />
+      <keyword name="accountList" id="Accounts::Manager::accountList" ref="classAccounts_1_1Manager.html#af6cb7c309b94adfe0c000a2925745975" />
+      <keyword name="accountListEnabled" id="Accounts::Manager::accountListEnabled" ref="classAccounts_1_1Manager.html#a5034b5eb730a95722ad1bd1dd76b7867" />
+      <keyword name="createAccount" id="Accounts::Manager::createAccount" ref="classAccounts_1_1Manager.html#ab094ae9aa044b74123f9269dd9e5627c" />
+      <keyword name="service" id="Accounts::Manager::service" ref="classAccounts_1_1Manager.html#ac9b1bf173f68b9a0384cd1afad398931" />
+      <keyword name="serviceList" id="Accounts::Manager::serviceList" ref="classAccounts_1_1Manager.html#a77e3d998be834bacfb3378e64656edf8" />
+      <keyword name="provider" id="Accounts::Manager::provider" ref="classAccounts_1_1Manager.html#a79085e0676834932f64d651f4231b2ec" />
+      <keyword name="providerList" id="Accounts::Manager::providerList" ref="classAccounts_1_1Manager.html#aa4b53bc6ceef8d0c51b50c4b047409dc" />
+      <keyword name="serviceType" id="Accounts::Manager::serviceType" ref="classAccounts_1_1Manager.html#a2ace548efe2fbf601ecf6efcfcf9c980" />
+      <keyword name="application" id="Accounts::Manager::application" ref="classAccounts_1_1Manager.html#a28ff538d5abd52ff691e30ed75a6b41f" />
+      <keyword name="applicationList" id="Accounts::Manager::applicationList" ref="classAccounts_1_1Manager.html#ae18f9f8c59a4e15e8849dd832c54b874" />
+      <keyword name="serviceType" id="Accounts::Manager::serviceType" ref="classAccounts_1_1Manager.html#aa090de65c448278a23851f45f38fa9ce" />
+      <keyword name="setTimeout" id="Accounts::Manager::setTimeout" ref="classAccounts_1_1Manager.html#a453a462fc339dae385360dc73128bf14" />
+      <keyword name="timeout" id="Accounts::Manager::timeout" ref="classAccounts_1_1Manager.html#acd89c68759d802afa73ef928b293c82b" />
+      <keyword name="setAbortOnTimeout" id="Accounts::Manager::setAbortOnTimeout" ref="classAccounts_1_1Manager.html#a9b4396a045e666376bdb535553bce09b" />
+      <keyword name="abortOnTimeout" id="Accounts::Manager::abortOnTimeout" ref="classAccounts_1_1Manager.html#afdf5d9b1cf381bf5a83ac0bf41be522b" />
+      <keyword name="options" id="Accounts::Manager::options" ref="classAccounts_1_1Manager.html#a42ec574899ed53e05880ce02e40073a1" />
+      <keyword name="lastError" id="Accounts::Manager::lastError" ref="classAccounts_1_1Manager.html#a31f856d7b015a7478550d90feac77f48" />
+      <keyword name="DisableNotifications" id="Accounts::Manager::DisableNotifications" ref="classAccounts_1_1Manager.html#a0e65ad13124ea2cb5e255b640464e35fa8ab6226b5ae4221689bc2d25d6201ae9" />
+      <keyword name="Accounts::Provider" id="Accounts::Provider" ref="classAccounts_1_1Provider.html" />
+      <keyword name="Provider" id="Accounts::Provider::Provider" ref="classAccounts_1_1Provider.html#a0a281cda2c25f17e851f76142d4527a0" />
+      <keyword name="Provider" id="Accounts::Provider::Provider" ref="classAccounts_1_1Provider.html#abff16d2acc53f89d7f633e85a4b90634" />
+      <keyword name="operator=" id="Accounts::Provider::operator=" ref="classAccounts_1_1Provider.html#a2ea3187c2cc7f9464d47da1aada7d78c" />
+      <keyword name="isValid" id="Accounts::Provider::isValid" ref="classAccounts_1_1Provider.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+      <keyword name="name" id="Accounts::Provider::name" ref="classAccounts_1_1Provider.html#a2b0a198f837184bf6fff555cee3ce770" />
+      <keyword name="displayName" id="Accounts::Provider::displayName" ref="classAccounts_1_1Provider.html#a9def71dea12661002bb3a63b3b91d08d" />
+      <keyword name="description" id="Accounts::Provider::description" ref="classAccounts_1_1Provider.html#aeaebc63d2181b1a4506603f4e03f1275" />
+      <keyword name="pluginName" id="Accounts::Provider::pluginName" ref="classAccounts_1_1Provider.html#ac7fe5a9dd669a037edfa2930803311a5" />
+      <keyword name="trCatalog" id="Accounts::Provider::trCatalog" ref="classAccounts_1_1Provider.html#a6c73afd4753195ea4eee794c95a770dd" />
+      <keyword name="iconName" id="Accounts::Provider::iconName" ref="classAccounts_1_1Provider.html#a038b22680aca535f9972908fe2f1f6a1" />
+      <keyword name="domainsRegExp" id="Accounts::Provider::domainsRegExp" ref="classAccounts_1_1Provider.html#ab0c2fc656cae3b09e456ec0747315ecc" />
+      <keyword name="isSingleAccount" id="Accounts::Provider::isSingleAccount" ref="classAccounts_1_1Provider.html#aa785668bfd84285ad40299410c02367d" />
+      <keyword name="domDocument" id="Accounts::Provider::domDocument" ref="classAccounts_1_1Provider.html#a305fe3a04c76c8069c3465621a7967cc" />
+      <keyword name="operator==" id="Accounts::Provider::operator==" ref="classAccounts_1_1Provider.html#acad7a7994506519762f09b8a66c91c6a" />
+      <keyword name="Accounts::Service" id="Accounts::Service" ref="classAccounts_1_1Service.html" />
+      <keyword name="Service" id="Accounts::Service::Service" ref="classAccounts_1_1Service.html#a37865e4e61715c6d6f81181f7323ae62" />
+      <keyword name="Service" id="Accounts::Service::Service" ref="classAccounts_1_1Service.html#a491f7a1e2b9dfedb805d55c06ca006df" />
+      <keyword name="operator=" id="Accounts::Service::operator=" ref="classAccounts_1_1Service.html#acc48a1d85689d512416f5a8cc982b0b4" />
+      <keyword name="isValid" id="Accounts::Service::isValid" ref="classAccounts_1_1Service.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+      <keyword name="name" id="Accounts::Service::name" ref="classAccounts_1_1Service.html#a2b0a198f837184bf6fff555cee3ce770" />
+      <keyword name="displayName" id="Accounts::Service::displayName" ref="classAccounts_1_1Service.html#a9def71dea12661002bb3a63b3b91d08d" />
+      <keyword name="trCatalog" id="Accounts::Service::trCatalog" ref="classAccounts_1_1Service.html#a6c73afd4753195ea4eee794c95a770dd" />
+      <keyword name="serviceType" id="Accounts::Service::serviceType" ref="classAccounts_1_1Service.html#aa090de65c448278a23851f45f38fa9ce" />
+      <keyword name="provider" id="Accounts::Service::provider" ref="classAccounts_1_1Service.html#a4da62eb704e693e71b73d101f5304a7e" />
+      <keyword name="iconName" id="Accounts::Service::iconName" ref="classAccounts_1_1Service.html#a038b22680aca535f9972908fe2f1f6a1" />
+      <keyword name="hasTag" id="Accounts::Service::hasTag" ref="classAccounts_1_1Service.html#ab9544628f8c8af163b13eb6b47a3aead" />
+      <keyword name="tags" id="Accounts::Service::tags" ref="classAccounts_1_1Service.html#a4bfac5a5814d94c97ae61695f09e95ee" />
+      <keyword name="domDocument" id="Accounts::Service::domDocument" ref="classAccounts_1_1Service.html#a305fe3a04c76c8069c3465621a7967cc" />
+      <keyword name="operator==" id="Accounts::Service::operator==" ref="classAccounts_1_1Service.html#adfa1934bd3a7945ac2a26125481ed12f" />
+      <keyword name="Accounts::ServiceType" id="Accounts::ServiceType" ref="classAccounts_1_1ServiceType.html" />
+      <keyword name="ServiceType" id="Accounts::ServiceType::ServiceType" ref="classAccounts_1_1ServiceType.html#a27a10810bcc047da5031725f77b398eb" />
+      <keyword name="ServiceType" id="Accounts::ServiceType::ServiceType" ref="classAccounts_1_1ServiceType.html#aae690d056ba06a78378f8adc8f95cddd" />
+      <keyword name="operator=" id="Accounts::ServiceType::operator=" ref="classAccounts_1_1ServiceType.html#a30dad6b9e5736036988f2918408878bf" />
+      <keyword name="isValid" id="Accounts::ServiceType::isValid" ref="classAccounts_1_1ServiceType.html#aac1b70a2ed67ead038c4d3f5ac4d8a81" />
+      <keyword name="name" id="Accounts::ServiceType::name" ref="classAccounts_1_1ServiceType.html#a2b0a198f837184bf6fff555cee3ce770" />
+      <keyword name="displayName" id="Accounts::ServiceType::displayName" ref="classAccounts_1_1ServiceType.html#a9def71dea12661002bb3a63b3b91d08d" />
+      <keyword name="trCatalog" id="Accounts::ServiceType::trCatalog" ref="classAccounts_1_1ServiceType.html#a6c73afd4753195ea4eee794c95a770dd" />
+      <keyword name="iconName" id="Accounts::ServiceType::iconName" ref="classAccounts_1_1ServiceType.html#a038b22680aca535f9972908fe2f1f6a1" />
+      <keyword name="hasTag" id="Accounts::ServiceType::hasTag" ref="classAccounts_1_1ServiceType.html#ab9544628f8c8af163b13eb6b47a3aead" />
+      <keyword name="tags" id="Accounts::ServiceType::tags" ref="classAccounts_1_1ServiceType.html#a4bfac5a5814d94c97ae61695f09e95ee" />
+      <keyword name="domDocument" id="Accounts::ServiceType::domDocument" ref="classAccounts_1_1ServiceType.html#a305fe3a04c76c8069c3465621a7967cc" />
+      <keyword name="operator==" id="Accounts::ServiceType::operator==" ref="classAccounts_1_1ServiceType.html#ac57edddf8f98ba20c3620becc8f8f6e5" />
+      <keyword name="Accounts::Watch" id="Accounts::Watch" ref="classAccounts_1_1Watch.html" />
+      <keyword name="displayNameChanged" id="Accounts::Watch::displayNameChanged" ref="classAccounts_1_1Watch.html#a6c9329531974648e3ea3f05f3ea36129" />
+      <keyword name="enabledChanged" id="Accounts::Watch::enabledChanged" ref="classAccounts_1_1Watch.html#abc008e2f46ae60c14005e24f4cbf41e5" />
+      <keyword name="error" id="Accounts::Watch::error" ref="classAccounts_1_1Watch.html#ae89dad11eccb775ceb9925d0ff27dd7d" />
+      <keyword name="synced" id="Accounts::Watch::synced" ref="classAccounts_1_1Watch.html#a4fa6a9f29874eb5ad79fbc70532f71a6" />
+      <keyword name="removed" id="Accounts::Watch::removed" ref="classAccounts_1_1Watch.html#adc2a0e638d7742d828062eeafd6769ab" />
+      <keyword name="credentialsId" id="Accounts::Watch::credentialsId" ref="classAccounts_1_1Watch.html#a483d9a1edcbc46d7070eb70ae23b5989" />
+      <keyword name="setCredentialsId" id="Accounts::Watch::setCredentialsId" ref="classAccounts_1_1Watch.html#a54a9de969058292a257d9d692785ca63" />
+      <keyword name="displayName" id="Accounts::Watch::displayName" ref="classAccounts_1_1Watch.html#a9def71dea12661002bb3a63b3b91d08d" />
+      <keyword name="setDisplayName" id="Accounts::Watch::setDisplayName" ref="classAccounts_1_1Watch.html#ac036a365819266590db91caa64b4fff0" />
+      <keyword name="providerName" id="Accounts::Watch::providerName" ref="classAccounts_1_1Watch.html#a65a95a0e50cf1761a9a21d21c0db412e" />
+      <keyword name="provider" id="Accounts::Watch::provider" ref="classAccounts_1_1Watch.html#ab2bf7a26f8729dfb6a8595b6294f5565" />
+      <keyword name="selectService" id="Accounts::Watch::selectService" ref="classAccounts_1_1Watch.html#a8c7532fb7377ee33ab449d36200522b9" />
+      <keyword name="selectedService" id="Accounts::Watch::selectedService" ref="classAccounts_1_1Watch.html#a4831783cce39d897dc35b57ce233d735" />
+      <keyword name="allKeys" id="Accounts::Watch::allKeys" ref="classAccounts_1_1Watch.html#a9936a9bd6fca45f1d03a63b1b485ed88" />
+      <keyword name="beginGroup" id="Accounts::Watch::beginGroup" ref="classAccounts_1_1Watch.html#aa889966b87d4315aea74c30088e9c8fa" />
+      <keyword name="childGroups" id="Accounts::Watch::childGroups" ref="classAccounts_1_1Watch.html#af5b653c82d3a3d7765da47fe5db0e128" />
+      <keyword name="childKeys" id="Accounts::Watch::childKeys" ref="classAccounts_1_1Watch.html#a09f8085bca6d1c8b4837beabcea7b639" />
+      <keyword name="clear" id="Accounts::Watch::clear" ref="classAccounts_1_1Watch.html#ac8bb3912a3ce86b15842e79d0b421204" />
+      <keyword name="contains" id="Accounts::Watch::contains" ref="classAccounts_1_1Watch.html#aab9f06bc42480ab555a9757e14303e5f" />
+      <keyword name="endGroup" id="Accounts::Watch::endGroup" ref="classAccounts_1_1Watch.html#af964cd7bde81d0f118ea09e201e155dd" />
+      <keyword name="group" id="Accounts::Watch::group" ref="classAccounts_1_1Watch.html#a5adb315467de1866550658b4679bf9f9" />
+      <keyword name="isWritable" id="Accounts::Watch::isWritable" ref="classAccounts_1_1Watch.html#aa741717fa726eea03300fdde9934808a" />
+      <keyword name="remove" id="Accounts::Watch::remove" ref="classAccounts_1_1Watch.html#a89c0a3a6c660a5f577e5241a63052f2c" />
+      <keyword name="setValue" id="Accounts::Watch::setValue" ref="classAccounts_1_1Watch.html#a48d1031ae51455e458b881c49c65a92e" />
+      <keyword name="value" id="Accounts::Watch::value" ref="classAccounts_1_1Watch.html#a11e51b34244f3e9288dacb30b6230085" />
+      <keyword name="value" id="Accounts::Watch::value" ref="classAccounts_1_1Watch.html#a6d1dedb9c7a20fc62310946d4e6881a6" />
+      <keyword name="valueAsString" id="Accounts::Watch::valueAsString" ref="classAccounts_1_1Watch.html#a9b737faa22b94f329d0c377b94f9ecf3" />
+      <keyword name="valueAsInt" id="Accounts::Watch::valueAsInt" ref="classAccounts_1_1Watch.html#a950ddc85d587c0d9372c031ce431edfe" />
+      <keyword name="valueAsUInt64" id="Accounts::Watch::valueAsUInt64" ref="classAccounts_1_1Watch.html#af26f7d7e660864d08b75dce98565684e" />
+      <keyword name="valueAsBool" id="Accounts::Watch::valueAsBool" ref="classAccounts_1_1Watch.html#a7d639022739d7f3ef53ca0b0195f30ce" />
+      <keyword name="watchKey" id="Accounts::Watch::watchKey" ref="classAccounts_1_1Watch.html#a5e36b49426df748e27d189b2b11faf92" />
+      <keyword name="sync" id="Accounts::Watch::sync" ref="classAccounts_1_1Watch.html#ad55f80ed3cd8b6c4f247763b747016af" />
+      <keyword name="syncAndBlock" id="Accounts::Watch::syncAndBlock" ref="classAccounts_1_1Watch.html#a4c182d464e5a7978fdf1817ce50d9531" />
+      <keyword name="remove" id="Accounts::Watch::remove" ref="classAccounts_1_1Watch.html#a1fcb45e5d2428352eb36b487d1d4eea3" />
+      <keyword name="sign" id="Accounts::Watch::sign" ref="classAccounts_1_1Watch.html#a4ebb90703ca3ec222b5822474e058547" />
+      <keyword name="verify" id="Accounts::Watch::verify" ref="classAccounts_1_1Watch.html#a4f1aed052f72d4a55a35a2a1621fc391" />
+      <keyword name="verifyWithTokens" id="Accounts::Watch::verifyWithTokens" ref="classAccounts_1_1Watch.html#af491d2638521b57cfa5f01e47a539b33" />
+    </keywords>
+    <files>
+      <file>tabs.css</file>
+      <file>tab_a.png</file>
+      <file>tab_b.png</file>
+      <file>tab_h.png</file>
+      <file>tab_s.png</file>
+      <file>nav_h.png</file>
+      <file>nav_f.png</file>
+      <file>bc_s.png</file>
+      <file>doxygen.png</file>
+      <file>closed.png</file>
+      <file>open.png</file>
+      <file>bdwn.png</file>
+      <file>sync_on.png</file>
+      <file>sync_off.png</file>
+      <file>doc.png</file>
+      <file>folderopen.png</file>
+      <file>folderclosed.png</file>
+      <file>arrowdown.png</file>
+      <file>arrowright.png</file>
+      <file>splitbar.png</file>
+      <file>doxygen.css</file>
+      <file>account-service_8cpp_source.html</file>
+      <file>account-service_8h_source.html</file>
+      <file>account_8cpp_source.html</file>
+      <file>account_8h_source.html</file>
+      <file>accountscommon_8h_source.html</file>
+      <file>application_8cpp_source.html</file>
+      <file>application_8h_source.html</file>
+      <file>auth-data_8cpp_source.html</file>
+      <file>auth-data_8h_source.html</file>
+      <file>error_8cpp_source.html</file>
+      <file>error_8h_source.html</file>
+      <file>manager_8cpp_source.html</file>
+      <file>manager_8h_source.html</file>
+      <file>manager__p_8h_source.html</file>
+      <file>provider_8cpp_source.html</file>
+      <file>provider_8h_source.html</file>
+      <file>service-type_8cpp_source.html</file>
+      <file>service-type_8h_source.html</file>
+      <file>service_8cpp_source.html</file>
+      <file>service_8h_source.html</file>
+      <file>utils_8cpp_source.html</file>
+      <file>utils_8h_source.html</file>
+      <file>deprecated.html</file>
+      <file>classAccounts_1_1AccountService.html</file>
+      <file>classAccounts_1_1AccountService-members.html</file>
+      <file>classAccounts_1_1Application.html</file>
+      <file>classAccounts_1_1Application-members.html</file>
+      <file>classAccounts_1_1AuthData.html</file>
+      <file>classAccounts_1_1AuthData-members.html</file>
+      <file>classAccounts_1_1Error.html</file>
+      <file>classAccounts_1_1Error-members.html</file>
+      <file>classAccounts_1_1Manager.html</file>
+      <file>classAccounts_1_1Manager-members.html</file>
+      <file>classAccounts_1_1Provider.html</file>
+      <file>classAccounts_1_1Provider-members.html</file>
+      <file>classAccounts_1_1Service.html</file>
+      <file>classAccounts_1_1Service-members.html</file>
+      <file>classAccounts_1_1ServiceType.html</file>
+      <file>classAccounts_1_1ServiceType-members.html</file>
+      <file>classAccounts_1_1Watch.html</file>
+      <file>classAccounts_1_1Watch-members.html</file>
+      <file>graph_legend.png</file>
+      <file>graph_legend.html</file>
+      <file>dir_c3d1d086c816c0518443c9e800634b9c.html</file>
+      <file>dir_c3d1d086c816c0518443c9e800634b9c_dep.png</file>
+      <file>index.html</file>
+      <file>pages.html</file>
+      <file>annotated.html</file>
+      <file>classes.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_enum.html</file>
+      <file>functions_enum.html</file>
+      <file>functions_eval.html</file>
+      <file>functions_eval.html</file>
+      <file>files.html</file>
+    </files>
+  </filterSection>
+</QtHelpProject>

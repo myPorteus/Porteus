@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.polkitkde1.helper
+Exec=/usr/lib64/polkitkde1helper
+User=root

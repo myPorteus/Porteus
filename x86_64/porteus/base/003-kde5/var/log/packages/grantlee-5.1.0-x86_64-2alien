@@ -1,0 +1,77 @@
+PACKAGE NAME:     grantlee-5.1.0-x86_64-2alien
+COMPRESSED PACKAGE SIZE:     296K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/grantlee-5.1.0-x86_64-2alien.txz
+PACKAGE DESCRIPTION:
+grantlee: grantlee (string template engine for Qt5)
+grantlee: 
+grantlee: Grantlee is a plugin based String Template system written with the
+grantlee: Qt5 framework.  The goals of the project are to make it easier for
+grantlee: application developers to separate the structure of documents from
+grantlee: the data they contain, opening the door for theming.
+grantlee:
+grantlee:
+grantlee:
+grantlee: Homepage: https://github.com/steveire/grantlee
+grantlee:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/grantlee-5.1.0/
+usr/doc/grantlee-5.1.0/AUTHORS
+usr/doc/grantlee-5.1.0/CHANGELOG
+usr/doc/grantlee-5.1.0/COPYING.LIB
+usr/include/
+usr/include/grantlee/
+usr/include/grantlee/abstractlocalizer.h
+usr/include/grantlee/abstractmarkupbuilder.h
+usr/include/grantlee/bbcodebuilder.h
+usr/include/grantlee/cachingloaderdecorator.h
+usr/include/grantlee/context.h
+usr/include/grantlee/engine.h
+usr/include/grantlee/exception.h
+usr/include/grantlee/filter.h
+usr/include/grantlee/filterexpression.h
+usr/include/grantlee/grantlee_templates_export.h
+usr/include/grantlee/grantlee_textdocument_export.h
+usr/include/grantlee/grantlee_version.h
+usr/include/grantlee/markupdirector.h
+usr/include/grantlee/mediawikimarkupbuilder.h
+usr/include/grantlee/metatype.h
+usr/include/grantlee/node.h
+usr/include/grantlee/outputstream.h
+usr/include/grantlee/parser.h
+usr/include/grantlee/plaintextmarkupbuilder.h
+usr/include/grantlee/qtlocalizer.h
+usr/include/grantlee/rendercontext.h
+usr/include/grantlee/safestring.h
+usr/include/grantlee/taglibraryinterface.h
+usr/include/grantlee/template.h
+usr/include/grantlee/templateloader.h
+usr/include/grantlee/texthtmlbuilder.h
+usr/include/grantlee/token.h
+usr/include/grantlee/typeaccessor.h
+usr/include/grantlee/util.h
+usr/include/grantlee/variable.h
+usr/include/grantlee_templates.h
+usr/include/grantlee_textdocument.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/Grantlee5/
+usr/lib64/cmake/Grantlee5/Grantlee5Config.cmake
+usr/lib64/cmake/Grantlee5/Grantlee5ConfigVersion.cmake
+usr/lib64/cmake/Grantlee5/GrantleeMacros.cmake
+usr/lib64/cmake/Grantlee5/GrantleeTargets-noconfig.cmake
+usr/lib64/cmake/Grantlee5/GrantleeTargets.cmake
+usr/lib64/grantlee/
+usr/lib64/grantlee/5.1/
+usr/lib64/grantlee/5.1/grantlee_defaultfilters.so
+usr/lib64/grantlee/5.1/grantlee_defaulttags.so
+usr/lib64/grantlee/5.1/grantlee_i18ntags.so
+usr/lib64/grantlee/5.1/grantlee_loadertags.so
+usr/lib64/libGrantlee_Templates.so.5.1.0
+usr/lib64/libGrantlee_TextDocument.so.5.1.0

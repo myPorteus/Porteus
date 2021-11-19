@@ -1,0 +1,18 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+          "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.kde.nepomuk.FileWatch">
+    <signal name="status" >
+      <arg name="state" type="i" />
+      <arg name="msg" type="s" />
+    </signal>
+    <signal name="metadataUpdateStarted" />
+    <signal name="metadataUpdateStoped" />
+    <method name="isUpdatingMetaData">
+      <arg type="b" direction="out" />
+    </method>
+    <method name="statusMessage">
+      <arg type="s" direction="out" />
+    </method>
+  </interface>
+</node>

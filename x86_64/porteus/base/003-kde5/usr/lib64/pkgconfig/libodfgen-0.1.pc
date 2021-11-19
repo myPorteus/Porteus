@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+                                                                       
+Name: libodfgen-0.1
+Description: Library to generate ODF documents from librevenge's api calls
+Version: 0.1.6
+Requires: librevenge-0.0 librevenge-stream-0.0
+Libs: -L${libdir} -lodfgen-0.1
+Cflags: -I${includedir}/libodfgen-0.1

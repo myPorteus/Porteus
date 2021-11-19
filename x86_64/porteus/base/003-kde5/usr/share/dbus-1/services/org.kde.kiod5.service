@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.kiod5
+Exec=/usr/lib64/kf5/kiod5
+

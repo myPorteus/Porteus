@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5KGeoMap.so.10.0.0 )
+( cd usr/lib64 ; ln -sf libKF5KGeoMap.so.5.0.0 libKF5KGeoMap.so.10.0.0 )
+( cd usr/lib64 ; rm -rf libKF5KGeoMap.so )
+( cd usr/lib64 ; ln -sf libKF5KGeoMap.so.10.0.0 libKF5KGeoMap.so )

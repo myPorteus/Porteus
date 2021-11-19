@@ -1,0 +1,43 @@
+PACKAGE NAME:     libwpd-0.10.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     164K
+UNCOMPRESSED PACKAGE SIZE:     640K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/libwpd-0.10.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libwpd: libwpd (WordPerfect document format library)
+libwpd:
+libwpd: This package contains a library (libwpd) and tools to transform
+libwpd: WordPerfect documents into other formats such as HTML, text, and raw.
+libwpd:
+libwpd:
+libwpd: libwpd is used by word processors such as Calligra Words.
+libwpd:
+libwpd:
+libwpd:
+libwpd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/wpd2html
+usr/bin/wpd2raw
+usr/bin/wpd2text
+usr/doc/
+usr/doc/libwpd-0.10.1/
+usr/doc/libwpd-0.10.1/CREDITS
+usr/doc/libwpd-0.10.1/HACKING
+usr/doc/libwpd-0.10.1/INSTALL
+usr/doc/libwpd-0.10.1/README
+usr/doc/libwpd-0.10.1/TODO
+usr/include/
+usr/include/libwpd-0.10/
+usr/include/libwpd-0.10/libwpd/
+usr/include/libwpd-0.10/libwpd/WPDocument.h
+usr/include/libwpd-0.10/libwpd/libwpd.h
+usr/lib64/
+usr/lib64/libwpd-0.10.la
+usr/lib64/libwpd-0.10.so.10.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libwpd-0.10.pc

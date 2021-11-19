@@ -1,0 +1,33 @@
+PACKAGE NAME:     kdenetwork-filesharing-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/kdenetwork-filesharing-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+kdenetwork-filesharing: kdenetwork-filesharing (share a directory with the local network)
+kdenetwork-filesharing:
+kdenetwork-filesharing: Konqueror properties dialog plugin to share a directory
+kdenetwork-filesharing: with the local network.
+kdenetwork-filesharing:
+kdenetwork-filesharing:
+kdenetwork-filesharing:
+kdenetwork-filesharing:
+kdenetwork-filesharing:
+kdenetwork-filesharing: For more information, visit:  http://www.kde.org
+kdenetwork-filesharing:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kdenetwork-filesharing-16.08.3/
+usr/doc/kdenetwork-filesharing-16.08.3/COPYING
+usr/doc/kdenetwork-filesharing-16.08.3/COPYING.DOC
+usr/doc/kdenetwork-filesharing-16.08.3/COPYING.LIB
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/sambausershareplugin.so
+usr/share/
+usr/share/kservices5/
+usr/share/kservices5/sambausershareplugin.desktop

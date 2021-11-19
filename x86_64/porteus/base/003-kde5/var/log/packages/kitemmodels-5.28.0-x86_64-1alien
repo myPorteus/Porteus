@@ -1,0 +1,63 @@
+PACKAGE NAME:     kitemmodels-5.28.0-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     380K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/kitemmodels-5.28.0-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+kitemmodels: kitemmodels (kitemmodels)
+kitemmodels:
+kitemmodels: 
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels: Homepage: http://kde.org/
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kitemmodels-5.28.0/
+usr/doc/kitemmodels-5.28.0/COPYING.LIB
+usr/doc/kitemmodels-5.28.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KItemModels/
+usr/include/KF5/KItemModels/KBreadcrumbSelectionModel
+usr/include/KF5/KItemModels/KCheckableProxyModel
+usr/include/KF5/KItemModels/KConcatenateRowsProxyModel
+usr/include/KF5/KItemModels/KDescendantsProxyModel
+usr/include/KF5/KItemModels/KExtraColumnsProxyModel
+usr/include/KF5/KItemModels/KLinkItemSelectionModel
+usr/include/KF5/KItemModels/KModelIndexProxyMapper
+usr/include/KF5/KItemModels/KRearrangeColumnsProxyModel
+usr/include/KF5/KItemModels/KRecursiveFilterProxyModel
+usr/include/KF5/KItemModels/KSelectionProxyModel
+usr/include/KF5/KItemModels/kbreadcrumbselectionmodel.h
+usr/include/KF5/KItemModels/kcheckableproxymodel.h
+usr/include/KF5/KItemModels/kconcatenaterowsproxymodel.h
+usr/include/KF5/KItemModels/kdescendantsproxymodel.h
+usr/include/KF5/KItemModels/kextracolumnsproxymodel.h
+usr/include/KF5/KItemModels/kitemmodels_export.h
+usr/include/KF5/KItemModels/klinkitemselectionmodel.h
+usr/include/KF5/KItemModels/kmodelindexproxymapper.h
+usr/include/KF5/KItemModels/krearrangecolumnsproxymodel.h
+usr/include/KF5/KItemModels/krecursivefilterproxymodel.h
+usr/include/KF5/KItemModels/kselectionproxymodel.h
+usr/include/KF5/kitemmodels_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5ItemModels/
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsConfig.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsConfigVersion.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsTargets-release.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsTargets.cmake
+usr/lib64/libKF5ItemModels.so.5.28.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KItemModels.pri

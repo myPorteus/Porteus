@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libsbc.so.1 )
+( cd usr/lib64 ; ln -sf libsbc.so.1.2.1 libsbc.so.1 )
+( cd usr/lib64 ; rm -rf libsbc.so )
+( cd usr/lib64 ; ln -sf libsbc.so.1.2.1 libsbc.so )

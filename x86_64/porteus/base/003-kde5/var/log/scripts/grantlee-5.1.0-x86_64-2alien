@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libGrantlee_Templates.so.5 )
+( cd usr/lib64 ; ln -sf libGrantlee_Templates.so.5.1.0 libGrantlee_Templates.so.5 )
+( cd usr/lib64 ; rm -rf libGrantlee_TextDocument.so )
+( cd usr/lib64 ; ln -sf libGrantlee_TextDocument.so.5 libGrantlee_TextDocument.so )
+( cd usr/lib64 ; rm -rf libGrantlee_TextDocument.so.5 )
+( cd usr/lib64 ; ln -sf libGrantlee_TextDocument.so.5.1.0 libGrantlee_TextDocument.so.5 )
+( cd usr/lib64 ; rm -rf libGrantlee_Templates.so )
+( cd usr/lib64 ; ln -sf libGrantlee_Templates.so.5 libGrantlee_Templates.so )

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=XSession
+Exec=/usr/bin/startkde --failsafe
+TryExec=/usr/bin/startkde
+DesktopNames=KDE
+Name=Plasma (Failsafe)
+Comment=Plasma by KDE (Failsafe)
+

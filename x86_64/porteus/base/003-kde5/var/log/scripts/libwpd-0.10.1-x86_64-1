@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libwpd-0.10.so )
+( cd usr/lib64 ; ln -sf libwpd-0.10.so.10.0.1 libwpd-0.10.so )
+( cd usr/lib64 ; rm -rf libwpd-0.10.so.10 )
+( cd usr/lib64 ; ln -sf libwpd-0.10.so.10.0.1 libwpd-0.10.so.10 )

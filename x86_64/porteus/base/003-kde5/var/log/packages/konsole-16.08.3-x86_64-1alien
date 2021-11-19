@@ -1,0 +1,74 @@
+PACKAGE NAME:     konsole-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     472K
+UNCOMPRESSED PACKAGE SIZE:     1.9M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/konsole-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+konsole: konsole (KDE's terminal emulator)
+konsole:
+konsole: Konsole is KDE's terminal emulator.
+konsole:
+konsole: Homepage: http://kde.org
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+konsole:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/konsole
+usr/bin/konsoleprofile
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/konsole/
+usr/doc/HTML/en/konsole/draganddrop-contextmenu.png
+usr/doc/HTML/en/konsole/index.cache.bz2
+usr/doc/HTML/en/konsole/index.docbook
+usr/doc/konsole-16.08.3/
+usr/doc/konsole-16.08.3/COPYING
+usr/doc/konsole-16.08.3/COPYING.DOC
+usr/doc/konsole-16.08.3/COPYING.LIB
+usr/doc/konsole-16.08.3/COPYING.Unicode
+usr/doc/konsole-16.08.3/README
+usr/lib64/
+usr/lib64/libkdeinit5_konsole.so
+usr/lib64/libkonsoleprivate.so.16.08.3
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/konsolepart.so
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.konsole.desktop
+usr/share/knotifications5/
+usr/share/knotifications5/konsole.notifyrc
+usr/share/konsole/
+usr/share/konsole/BlackOnLightYellow.colorscheme
+usr/share/konsole/BlackOnRandomLight.colorscheme
+usr/share/konsole/BlackOnWhite.colorscheme
+usr/share/konsole/BlueOnBlack.colorscheme
+usr/share/konsole/Breeze.colorscheme
+usr/share/konsole/DarkPastels.colorscheme
+usr/share/konsole/GreenOnBlack.colorscheme
+usr/share/konsole/Linux.colorscheme
+usr/share/konsole/RedOnBlack.colorscheme
+usr/share/konsole/Solarized.colorscheme
+usr/share/konsole/SolarizedLight.colorscheme
+usr/share/konsole/WhiteOnBlack.colorscheme
+usr/share/konsole/default.keytab
+usr/share/konsole/linux.keytab
+usr/share/konsole/solaris.keytab
+usr/share/kservices5/
+usr/share/kservices5/ServiceMenus/
+usr/share/kservices5/ServiceMenus/konsolehere.desktop
+usr/share/kservices5/ServiceMenus/konsolerun.desktop
+usr/share/kservices5/konsolepart.desktop
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/terminalemulator.desktop
+usr/share/metainfo/
+usr/share/metainfo/org.kde.konsole.appdata.xml

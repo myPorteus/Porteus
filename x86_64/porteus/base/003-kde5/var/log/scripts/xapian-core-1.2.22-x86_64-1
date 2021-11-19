@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libxapian.so.22 )
+( cd usr/lib64 ; ln -sf libxapian.so.22.7.0 libxapian.so.22 )
+( cd usr/lib64 ; rm -rf libxapian.so )
+( cd usr/lib64 ; ln -sf libxapian.so.22.7.0 libxapian.so )

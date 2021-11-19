@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib64
+includedir=${prefix}/include/qt5
+
+
+Name: Qt5 3DExtras
+Description: Qt 3DExtras module
+Version: 5.7.0
+Libs: -lQt53DExtras 
+Libs.private:  -lQt53DRender  -lQt53DInput  -lQt53DLogic -lQt53DCore -lQt5Gamepad -lQt5Gui -lQt5Concurrent -lQt5Core -lpthread -lGL  
+Cflags: -I${includedir}/Qt3DExtras -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore Qt53DRender Qt53DInput Qt53DLogic
+

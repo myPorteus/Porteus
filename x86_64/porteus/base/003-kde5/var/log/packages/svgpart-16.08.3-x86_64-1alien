@@ -1,0 +1,34 @@
+PACKAGE NAME:     svgpart-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/svgpart-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+svgpart: svgpart (SVG plugin for KDE)
+svgpart:
+svgpart: KPart for viewing SVG files in KDE.
+svgpart:
+svgpart: For more information, visit:  http://www.kde.org
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+svgpart:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/svgpart-16.08.3/
+usr/doc/svgpart-16.08.3/COPYING
+usr/lib64/
+usr/lib64/kde4/
+usr/lib64/kde4/svgpart.so
+usr/share/
+usr/share/apps/
+usr/share/apps/svgpart/
+usr/share/apps/svgpart/svgpart.rc
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/svgpart.desktop

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libaa.so )
+( cd usr/lib64 ; ln -sf libaa.so.1.0.4 libaa.so )
+( cd usr/lib64 ; rm -rf libaa.so.1 )
+( cd usr/lib64 ; ln -sf libaa.so.1.0.4 libaa.so.1 )

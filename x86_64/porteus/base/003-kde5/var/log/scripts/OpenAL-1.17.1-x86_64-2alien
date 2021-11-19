@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libopenal.so )
+( cd usr/lib64 ; ln -sf libopenal.so.1 libopenal.so )
+( cd usr/lib64 ; rm -rf libopenal.so.1 )
+( cd usr/lib64 ; ln -sf libopenal.so.1.17.1 libopenal.so.1 )

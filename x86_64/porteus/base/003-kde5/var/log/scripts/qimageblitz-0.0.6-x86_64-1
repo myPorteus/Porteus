@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libqimageblitz.so.4 )
+( cd usr/lib64 ; ln -sf libqimageblitz.so.4.0.0 libqimageblitz.so.4 )
+( cd usr/lib64 ; rm -rf libqimageblitz.so )
+( cd usr/lib64 ; ln -sf libqimageblitz.so.4 libqimageblitz.so )

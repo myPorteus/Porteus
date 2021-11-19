@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libdvdnav.so.4 )
+( cd usr/lib64 ; ln -sf libdvdnav.so.4.2.0 libdvdnav.so.4 )
+( cd usr/lib64 ; rm -rf libdvdnav.so )
+( cd usr/lib64 ; ln -sf libdvdnav.so.4.2.0 libdvdnav.so )

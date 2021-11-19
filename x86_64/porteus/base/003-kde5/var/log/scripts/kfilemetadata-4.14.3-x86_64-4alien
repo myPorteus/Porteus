@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libkfilemetadata.so )
+( cd usr/lib64 ; ln -sf libkfilemetadata.so.4 libkfilemetadata.so )
+( cd usr/lib64 ; rm -rf libkfilemetadata.so.4 )
+( cd usr/lib64 ; ln -sf libkfilemetadata.so.4.14.14 libkfilemetadata.so.4 )

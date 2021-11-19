@@ -1,0 +1,34 @@
+PACKAGE NAME:     libfakekey-0.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/libfakekey-0.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libfakekey: libfakekey (X Virtual Keyboard Library)
+libfakekey:
+libfakekey: X virtual keyboard library of the Matchbox WM project.
+libfakekey: 
+libfakekey: 
+libfakekey: 
+libfakekey: 
+libfakekey:
+libfakekey: See also:
+libfakekey:  https://www.yoctoproject.org/tools-resources/projects/matchbox
+libfakekey: 
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libfakekey-0.1/
+usr/doc/libfakekey-0.1/COPYING
+usr/doc/libfakekey-0.1/ChangeLog
+usr/include/
+usr/include/fakekey/
+usr/include/fakekey/fakekey.h
+usr/lib64/
+usr/lib64/libfakekey.la
+usr/lib64/libfakekey.so.0.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libfakekey.pc

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libModemManagerQt.so.0 )
+( cd usr/lib64 ; ln -sf libModemManagerQt.so.1.0.1 libModemManagerQt.so.0 )
+( cd usr/lib64 ; rm -rf libModemManagerQt.so )
+( cd usr/lib64 ; ln -sf libModemManagerQt.so.0 libModemManagerQt.so )

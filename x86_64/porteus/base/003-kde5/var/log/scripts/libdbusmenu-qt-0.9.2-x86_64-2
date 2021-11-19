@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libdbusmenu-qt.so )
+( cd usr/lib64 ; ln -sf libdbusmenu-qt.so.2 libdbusmenu-qt.so )
+( cd usr/lib64 ; rm -rf libdbusmenu-qt.so.2 )
+( cd usr/lib64 ; ln -sf libdbusmenu-qt.so.2.6.0 libdbusmenu-qt.so.2 )

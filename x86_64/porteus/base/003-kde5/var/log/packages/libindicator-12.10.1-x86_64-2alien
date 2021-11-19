@@ -1,0 +1,72 @@
+PACKAGE NAME:     libindicator-12.10.1-x86_64-2alien
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     430K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/libindicator-12.10.1-x86_64-2alien.txz
+PACKAGE DESCRIPTION:
+libindicator: libindicator (support functions for indicators)
+libindicator:
+libindicator: A set of symbols and convience functions that all indicators
+libindicator: would like to use.
+libindicator:
+libindicator:
+libindicator:
+libindicator:
+libindicator:
+libindicator: Homepage: https://launchpad.net/libindicator
+libindicator:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libindicator-12.10.1/
+usr/doc/libindicator-12.10.1/AUTHORS
+usr/doc/libindicator-12.10.1/COPYING
+usr/doc/libindicator-12.10.1/ChangeLog
+usr/doc/libindicator-12.10.1/NEWS
+usr/doc/libindicator-12.10.1/README
+usr/include/
+usr/include/libindicator-0.4/
+usr/include/libindicator-0.4/libindicator/
+usr/include/libindicator-0.4/libindicator/indicator-desktop-shortcuts.h
+usr/include/libindicator-0.4/libindicator/indicator-image-helper.h
+usr/include/libindicator-0.4/libindicator/indicator-object.h
+usr/include/libindicator-0.4/libindicator/indicator-service-manager.h
+usr/include/libindicator-0.4/libindicator/indicator-service.h
+usr/include/libindicator-0.4/libindicator/indicator.h
+usr/include/libindicator3-0.4/
+usr/include/libindicator3-0.4/libindicator/
+usr/include/libindicator3-0.4/libindicator/indicator-desktop-shortcuts.h
+usr/include/libindicator3-0.4/libindicator/indicator-image-helper.h
+usr/include/libindicator3-0.4/libindicator/indicator-object.h
+usr/include/libindicator3-0.4/libindicator/indicator-service-manager.h
+usr/include/libindicator3-0.4/libindicator/indicator-service.h
+usr/include/libindicator3-0.4/libindicator/indicator.h
+usr/lib64/
+usr/lib64/libdummy-indicator-blank.la
+usr/lib64/libdummy-indicator-blank.so
+usr/lib64/libdummy-indicator-entry-func.la
+usr/lib64/libdummy-indicator-entry-func.so
+usr/lib64/libdummy-indicator-null.la
+usr/lib64/libdummy-indicator-null.so
+usr/lib64/libdummy-indicator-signaler.la
+usr/lib64/libdummy-indicator-signaler.so
+usr/lib64/libdummy-indicator-simple.la
+usr/lib64/libdummy-indicator-simple.so
+usr/lib64/libdummy-indicator-visible.la
+usr/lib64/libdummy-indicator-visible.so
+usr/lib64/libindicator.la
+usr/lib64/libindicator.so.7.0.0
+usr/lib64/libindicator3.la
+usr/lib64/libindicator3.so.7.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/indicator-0.4.pc
+usr/lib64/pkgconfig/indicator3-0.4.pc
+usr/libexec/
+usr/libexec/indicator-loader
+usr/libexec/indicator-loader3
+usr/share/
+usr/share/libindicator/
+usr/share/libindicator/80indicator-debugging

@@ -1,0 +1,177 @@
+#
+# Copyright 1995-2009 DCMI All Rights Reserved. 
+# DCMI liability, trademark/service mark, document use and  software licensing rules apply.
+# For details see http://dublincore.org/
+#
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nao:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nao#> .
+@prefix nrl:     <http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#> .
+@prefix dces:    <http://purl.org/dc/elements/1.1/> .
+
+dces: {
+    dc:title rdf:type rdf:Property ;
+        rdfs:label "Title" ;
+        rdfs:comment "A name given to the resource." ;
+        dc:description "Typically, a Title will be a name by which the resource is formally known." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#title-005> .
+    dc:creator rdf:type rdf:Property ;
+        rdfs:label "Creator" ;
+        rdfs:comment "An entity primarily responsible for making  the resource." ;
+        dc:description "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#creator-005> .
+    dc:subject rdf:type rdf:Property ;
+        rdfs:label "Subject" ;
+        rdfs:comment "The topic of the resource." ;
+        dc:description "Typically, the topic will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#subject-005> .
+    dc:description rdf:type rdf:Property ;
+        rdfs:label "Description" ;
+        rdfs:comment "An account of the resource." ;
+        dc:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#description-005> .
+    dc:publisher rdf:type rdf:Property ;
+        rdfs:label "Publisher" ;
+        rdfs:comment "An entity responsible for making the resource  available." ;
+        dc:description "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#publisher-005> .
+    dc:contributor rdf:type rdf:Property ;
+        rdfs:label "Contributor" ;
+        rdfs:comment "An entity responsible for making contributions to the resource." ;
+        dc:description "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#contributor-005> .
+    dc:date rdf:type rdf:Property ;
+        rdfs:label "Date" ;
+        rdfs:comment "A point or period of time associated with an  event in the lifecycle of the resource." ;
+        dc:description "Date may be used to express temporal information at any level of granularity. Recommended best  practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#date-005> .
+    dc:type rdf:type rdf:Property ;
+        rdfs:label "Type" ;
+        rdfs:comment "The nature or genre of the resource." ;
+        dc:description "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#type-005> .
+    dc:format rdf:type rdf:Property ;
+        rdfs:label "Format" ;
+        rdfs:comment "The file format, physical medium, or dimensions of the resource." ;
+        dc:description "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#format-006> .
+    dc:identifier rdf:type rdf:Property ;
+        rdfs:label "Identifier" ;
+        rdfs:comment "An unambiguous reference to the resource within a given context." ;
+        dc:description "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. " ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#identifier-005> .
+    dc:source rdf:type rdf:Property ;
+        rdfs:label "Source" ;
+        rdfs:comment "The resource from which the described  resource is derived." ;
+        dc:description "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#source-005> .
+    dc:language rdf:type rdf:Property ;
+        rdfs:label "Language" ;
+        rdfs:comment "A language of the resource." ;
+        dc:description "Recommended best practice is to use a controlled vocabulary such as RFC 3066 [RFC3066]." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#language-006> .
+    dc:relation rdf:type rdf:Property ;
+        rdfs:label "Relation" ;
+        rdfs:comment "A related resource." ;
+        dc:description "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#relation-005> .
+    dc:coverage rdf:type rdf:Property ;
+        rdfs:label "Coverage" ;
+        rdfs:comment "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant." ;
+        dc:description "Spatial topic may be a named place or a location specified by its geographic coordinates. Temporal period may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a  controlled vocabulary such as the Thesaurus of Geographic Names [TGN].  Where appropriate, named  places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#coverage-005> .
+    dc:rights rdf:type rdf:Property ;
+        rdfs:label "Rights" ;
+        rdfs:comment "Information about rights held in and  over the resource." ;
+        dc:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights." ;
+        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+        dcterms:issued "1999-07-02" ;
+        dcterms:modified "2006-12-04" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#element> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#rights-005> .
+}
+
+<http://purl.org/dc/elements/1.1/metadata> {
+    <http://purl.org/dc/elements/1.1/metadata>
+          a       nrl:GraphMetadata ;
+          nrl:coreGraphMetadataFor dces: .
+
+    dces:
+          a nrl:Ontology, nrl:DocumentGraph ;
+          dc:title "The Dublin Core Element Set v1.1 namespace providing access to its content by means of an RDF Schema" ;
+          dc:publisher "The Dublin Core Metadata Initiative" ;
+          dc:description "The Dublin Core Element Set v1.1 namespace provides URIs for the Dublin Core Elements v1.1. Entries are declared using RDF Schema language to support RDF applications." ;
+          dc:language "English" ;
+          dcterms:issued "1999-07-02" ;
+          dcterms:modified "2002-05-22" ;
+          dc:source <http://dublincore.org/documents/dces/> ,
+              <http://dublincore.org/usage/decisions/> ;
+          dcterms:isReferencedBy <http://www.dublincore.org/documents/2001/10/26/dcmi-namespace/> ;
+          dcterms:isRequiredBy <http://purl.org/dc/terms/> ;
+          dcterms:isReferencedBy <http://purl.org/dc/dcmitype/> ;
+          nao:hasDefaultNamespace "http://purl.org/dc/elements/1.1/" ;
+          nao:hasDefaultNamespaceAbbreviation "dces" ;
+          nao:serializationLanguage "TriG" ;
+          nao:status "Stable" ;
+          nrl:updatable "0" ;
+          nao:version "1" .
+}

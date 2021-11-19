@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+                                                                       
+Name: librevenge-stream-0.0
+Description: Sample Input stream implementation for librevenge
+Version: 0.0.4
+Libs: -L${libdir} -lrevenge-stream-0.0
+Cflags: -I${includedir}/librevenge-0.0

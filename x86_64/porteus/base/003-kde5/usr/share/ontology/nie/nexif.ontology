@@ -1,0 +1,8 @@
+[Ontology]
+Version=1.0
+Name=Nepomuk EXIF Ontology
+Comment=The Nepomuk EXIF Ontology describes basic image metadata used in digital cameras and in image management software.
+Namespace=http://www.semanticdesktop.org/ontologies/2007/05/10/nexif#
+Path=/usr/share/ontology/nie/nexif.trig
+MimeType=application/x-trig
+Type=Data

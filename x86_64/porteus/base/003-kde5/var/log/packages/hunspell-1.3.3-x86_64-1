@@ -1,0 +1,96 @@
+PACKAGE NAME:     hunspell-1.3.3-x86_64-1
+COMPRESSED PACKAGE SIZE:     240K
+UNCOMPRESSED PACKAGE SIZE:     900K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/hunspell-1.3.3-x86_64-1.txz
+PACKAGE DESCRIPTION:
+hunspell: hunspell (spell checker and morphological analyzer library)
+hunspell:
+hunspell: Hunspell is a spell checker and morphological analyzer library
+hunspell: and program designed for languages with rich morphology
+hunspell: and complex word compounding or character encoding.
+hunspell: Hunspell interfaces: Ispell-like terminal interface using ncurses
+hunspell: library, Ispell pipe interface, and OpenOffice.org UNO module.
+hunspell:
+hunspell: Home page: http://hunspell.sourceforge.net/
+hunspell:
+hunspell:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/affixcompress
+usr/bin/analyze
+usr/bin/chmorph
+usr/bin/hunspell
+usr/bin/hunzip
+usr/bin/hzip
+usr/bin/ispellaff2myspell
+usr/bin/makealias
+usr/bin/munch
+usr/bin/unmunch
+usr/bin/wordforms
+usr/bin/wordlist2hunspell
+usr/doc/
+usr/doc/hunspell-1.3.3/
+usr/doc/hunspell-1.3.3/ABOUT-NLS
+usr/doc/hunspell-1.3.3/AUTHORS
+usr/doc/hunspell-1.3.3/AUTHORS.myspell
+usr/doc/hunspell-1.3.3/BUGS
+usr/doc/hunspell-1.3.3/COPYING
+usr/doc/hunspell-1.3.3/COPYING.LGPL
+usr/doc/hunspell-1.3.3/COPYING.MPL
+usr/doc/hunspell-1.3.3/ChangeLog
+usr/doc/hunspell-1.3.3/ChangeLog.O
+usr/doc/hunspell-1.3.3/NEWS
+usr/doc/hunspell-1.3.3/README
+usr/doc/hunspell-1.3.3/README.myspell
+usr/doc/hunspell-1.3.3/THANKS
+usr/doc/hunspell-1.3.3/TODO
+usr/include/
+usr/include/hunspell/
+usr/include/hunspell/affentry.hxx
+usr/include/hunspell/affixmgr.hxx
+usr/include/hunspell/atypes.hxx
+usr/include/hunspell/baseaffix.hxx
+usr/include/hunspell/csutil.hxx
+usr/include/hunspell/dictmgr.hxx
+usr/include/hunspell/filemgr.hxx
+usr/include/hunspell/hashmgr.hxx
+usr/include/hunspell/htypes.hxx
+usr/include/hunspell/hunspell.h
+usr/include/hunspell/hunspell.hxx
+usr/include/hunspell/hunvisapi.h
+usr/include/hunspell/hunzip.hxx
+usr/include/hunspell/langnum.hxx
+usr/include/hunspell/phonet.hxx
+usr/include/hunspell/replist.hxx
+usr/include/hunspell/suggestmgr.hxx
+usr/include/hunspell/w_char.hxx
+usr/lib64/
+usr/lib64/libhunspell-1.3.la
+usr/lib64/libhunspell-1.3.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/hunspell.pc
+usr/man/
+usr/man/hu/
+usr/man/hu/man1/
+usr/man/hu/man1/hunspell.1.gz
+usr/man/man1/
+usr/man/man1/hunspell.1.gz
+usr/man/man1/hunzip.1.gz
+usr/man/man1/hzip.1.gz
+usr/man/man3/
+usr/man/man3/hunspell.3.gz
+usr/man/man5/
+usr/man/man5/hunspell.5.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/hunspell.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/hunspell.mo

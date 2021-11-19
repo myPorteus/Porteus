@@ -1,0 +1,36 @@
+PACKAGE NAME:     libkcompactdisc-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/libkcompactdisc-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+libkcompactdisc: libkcompactdisc (KDE library for playing & ripping CDs)
+libkcompactdisc:
+libkcompactdisc: A KDE library for playing & ripping CDs.
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc:
+libkcompactdisc: For more information, visit:  http://www.kde.org
+libkcompactdisc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkcompactdisc-16.08.3/
+usr/doc/libkcompactdisc-16.08.3/COPYING
+usr/doc/libkcompactdisc-16.08.3/COPYING.LIB
+usr/include/
+usr/include/libkcompactdisc/
+usr/include/libkcompactdisc/kcompactdisc.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/libkcompactdisc/
+usr/lib64/cmake/libkcompactdisc/LibkcompactdiscConfig.cmake
+usr/lib64/cmake/libkcompactdisc/LibkcompactdiscTargets-release.cmake
+usr/lib64/cmake/libkcompactdisc/LibkcompactdiscTargets.cmake
+usr/lib64/libkcompactdisc.so.4.14.26

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libqjson.so.0 )
+( cd usr/lib64 ; ln -sf libqjson.so.0.8.1 libqjson.so.0 )
+( cd usr/lib64 ; rm -rf libqjson.so )
+( cd usr/lib64 ; ln -sf libqjson.so.0 libqjson.so )

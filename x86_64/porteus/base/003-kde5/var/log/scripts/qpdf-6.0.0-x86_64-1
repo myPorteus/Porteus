@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libqpdf.so.17 )
+( cd usr/lib64 ; ln -sf libqpdf.so.17.0.0 libqpdf.so.17 )
+( cd usr/lib64 ; rm -rf libqpdf.so )
+( cd usr/lib64 ; ln -sf libqpdf.so.17.0.0 libqpdf.so )

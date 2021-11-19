@@ -1,0 +1,86 @@
+PACKAGE NAME:     qtruby-4.14.3-x86_64-4alien
+COMPRESSED PACKAGE SIZE:     416K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/qtruby-4.14.3-x86_64-4alien.txz
+PACKAGE DESCRIPTION:
+qtruby: qtruby (Qt bindings for ruby)
+qtruby:
+qtruby: QtRuby is part of Korundum, very complete bindings to both the KDE
+qtruby: API and the Qt APIs. The Korundum package includes both a QtRuby
+qtruby: Qt-only binding along with the full combined Qt/KDE one.
+qtruby: The QtRuby package contains just Qt bindings, with no dependency
+qtruby: on KDE.
+qtruby:
+qtruby: For more information, see:  http://rubyforge.org/projects/korundum/
+qtruby:
+qtruby:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rbqtapi
+usr/bin/rbrcc
+usr/bin/rbuic4
+usr/doc/
+usr/doc/qtruby-4.14.3/
+usr/doc/qtruby-4.14.3/AUTHORS
+usr/doc/qtruby-4.14.3/COPYING
+usr/doc/qtruby-4.14.3/COPYING.LIB
+usr/doc/qtruby-4.14.3/ChangeLog
+usr/doc/qtruby-4.14.3/INSTALL
+usr/doc/qtruby-4.14.3/README
+usr/doc/qtruby-4.14.3/TODO
+usr/include/
+usr/include/qtruby/
+usr/include/qtruby/marshall.h
+usr/include/qtruby/marshall_basetypes.h
+usr/include/qtruby/marshall_complex.h
+usr/include/qtruby/marshall_macros.h
+usr/include/qtruby/marshall_primitives.h
+usr/include/qtruby/marshall_types.h
+usr/include/qtruby/qtruby.h
+usr/include/qtruby/smokeruby.h
+usr/lib64/
+usr/lib64/libqtruby4shared.so.2.0.0
+usr/lib64/ruby/
+usr/lib64/ruby/site_ruby/
+usr/lib64/ruby/site_ruby/2.2.0/
+usr/lib64/ruby/site_ruby/2.2.0/Qt.rb
+usr/lib64/ruby/site_ruby/2.2.0/Qt/
+usr/lib64/ruby/site_ruby/2.2.0/Qt/active_item_model.rb
+usr/lib64/ruby/site_ruby/2.2.0/Qt/active_table_model.rb
+usr/lib64/ruby/site_ruby/2.2.0/Qt/qtruby4.rb
+usr/lib64/ruby/site_ruby/2.2.0/Qt3.rb
+usr/lib64/ruby/site_ruby/2.2.0/Qt4.rb
+usr/lib64/ruby/site_ruby/2.2.0/phonon/
+usr/lib64/ruby/site_ruby/2.2.0/phonon/phonon.rb
+usr/lib64/ruby/site_ruby/2.2.0/qscintilla/
+usr/lib64/ruby/site_ruby/2.2.0/qscintilla/qscintilla.rb
+usr/lib64/ruby/site_ruby/2.2.0/qtdeclarative/
+usr/lib64/ruby/site_ruby/2.2.0/qtdeclarative/qtdeclarative.rb
+usr/lib64/ruby/site_ruby/2.2.0/qtscript/
+usr/lib64/ruby/site_ruby/2.2.0/qtscript/qtscript.rb
+usr/lib64/ruby/site_ruby/2.2.0/qttest/
+usr/lib64/ruby/site_ruby/2.2.0/qttest/qttest.rb
+usr/lib64/ruby/site_ruby/2.2.0/qtuitools/
+usr/lib64/ruby/site_ruby/2.2.0/qtuitools/qtuitools.rb
+usr/lib64/ruby/site_ruby/2.2.0/qtwebkit/
+usr/lib64/ruby/site_ruby/2.2.0/qtwebkit/qtwebkit.rb
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/phonon.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qscintilla.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qtdeclarative.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qtruby4.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qtscript.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qttest.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qtuitools.so
+usr/lib64/ruby/site_ruby/2.2.0/x86_64-linux/qtwebkit.so
+usr/share/
+usr/share/qtruby4/
+usr/share/qtruby4/cmake/
+usr/share/qtruby4/cmake/QtRuby4Config.cmake
+usr/share/qtruby4/cmake/QtRuby4Export-release.cmake
+usr/share/qtruby4/cmake/QtRuby4Export.cmake

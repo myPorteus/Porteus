@@ -1,0 +1,17 @@
+
+if [ -x usr/bin/update-desktop-database ]; then
+  usr/bin/update-desktop-database usr/share/applications >/dev/null 2>&1
+fi
+
+( cd usr/share/icons ; rm -rf default.kde4 )
+( cd usr/share/icons ; ln -sf oxygen default.kde4 )
+( cd usr/bin ; rm -rf kdesu )
+( cd usr/bin ; ln -sf /usr/lib64/kde4/libexec/kdesu kdesu )
+( cd usr/lib64 ; rm -rf libmolletnetwork.so.4 )
+( cd usr/lib64 ; ln -sf libmolletnetwork.so.4.14.26 libmolletnetwork.so.4 )
+( cd usr/lib64 ; rm -rf libmolletnetwork.so )
+( cd usr/lib64 ; ln -sf libmolletnetwork.so.4 libmolletnetwork.so )
+( cd usr/lib64 ; rm -rf libkwalletbackend.so )
+( cd usr/lib64 ; ln -sf libkwalletbackend.so.4 libkwalletbackend.so )
+( cd usr/lib64 ; rm -rf libkwalletbackend.so.4 )
+( cd usr/lib64 ; ln -sf libkwalletbackend.so.4.14.26 libkwalletbackend.so.4 )

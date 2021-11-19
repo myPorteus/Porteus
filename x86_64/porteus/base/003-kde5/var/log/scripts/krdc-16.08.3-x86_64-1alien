@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libkrdccore.so.5 )
+( cd usr/lib64 ; ln -sf libkrdccore.so.16.08.3 libkrdccore.so.5 )
+( cd usr/lib64 ; rm -rf libkrdccore.so )
+( cd usr/lib64 ; ln -sf libkrdccore.so.5 libkrdccore.so )

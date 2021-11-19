@@ -1,0 +1,6 @@
+( cd usr/lib64 ; rm -rf libkcddb.so.4 )
+( cd usr/lib64 ; ln -sf libkcddb.so.4.14.26 libkcddb.so.4 )
+( cd usr/lib64 ; rm -rf libkcddb.so )
+( cd usr/lib64 ; ln -sf libkcddb.so.4 libkcddb.so )
+( cd usr/doc/HTML/en/kcontrol/cddbretrieval ; rm -rf common )
+( cd usr/doc/HTML/en/kcontrol/cddbretrieval ; ln -sf /usr/share/doc/HTML/en/common common )

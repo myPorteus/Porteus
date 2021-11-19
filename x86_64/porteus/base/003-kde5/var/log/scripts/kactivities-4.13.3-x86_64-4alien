@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libkactivities-models.so )
+( cd usr/lib64 ; ln -sf libkactivities-models.so.1 libkactivities-models.so )
+( cd usr/lib64 ; rm -rf libkactivities.so.6 )
+( cd usr/lib64 ; ln -sf libkactivities.so.6.2.0 libkactivities.so.6 )
+( cd usr/lib64 ; rm -rf libkactivities.so )
+( cd usr/lib64 ; ln -sf libkactivities.so.6 libkactivities.so )
+( cd usr/lib64 ; rm -rf libkactivities-models.so.1 )
+( cd usr/lib64 ; ln -sf libkactivities-models.so.1.0.0 libkactivities-models.so.1 )

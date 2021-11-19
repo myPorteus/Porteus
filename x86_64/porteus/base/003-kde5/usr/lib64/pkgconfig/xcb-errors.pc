@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+xcbproto_version=1.11
+
+Name: XCB errors library
+Description: XCB errors utility library
+Version: 1.0
+Requires: xcb
+Libs: -L${libdir} -lxcb-errors 
+Cflags: -I${includedir}

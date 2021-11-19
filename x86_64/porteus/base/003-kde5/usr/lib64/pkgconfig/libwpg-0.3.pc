@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+                                                                       
+Name: libwpg-0.3
+Description: Library for importing and converting Corel WordPerfect(tm) Graphics images
+Version: 0.3.1
+Requires: librevenge-0.0
+Libs: -L${libdir} -lwpg-0.3
+Cflags: -I${includedir}/libwpg-0.3
+
+Requires.private: libwpd-0.10

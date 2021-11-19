@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5WebKit.so.5 )
+( cd usr/lib64 ; ln -sf libKF5WebKit.so.5.28.0 libKF5WebKit.so.5 )
+( cd usr/lib64 ; rm -rf libKF5WebKit.so )
+( cd usr/lib64 ; ln -sf libKF5WebKit.so.5 libKF5WebKit.so )

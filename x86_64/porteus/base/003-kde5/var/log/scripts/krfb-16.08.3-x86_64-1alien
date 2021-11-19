@@ -1,0 +1,2 @@
+( cd usr/lib64 ; rm -rf libkrfbprivate.so.5.0 )
+( cd usr/lib64 ; ln -sf libkrfbprivate.so.5 libkrfbprivate.so.5.0 )

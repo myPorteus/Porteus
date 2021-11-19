@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib64
+includedir=${prefix}/include/Qt5GStreamer
+
+Name: Qt5GLib-2.0
+Description: Qt-style C++ bindings library for GLib & GObject
+Requires: Qt5Core
+Requires.private: gobject-2.0
+Version: 1.2.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lQt5GLib-2.0

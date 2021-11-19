@@ -1,0 +1,67 @@
+PACKAGE NAME:     kfilemetadata-4.14.3-x86_64-4alien
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     400K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/kfilemetadata-4.14.3-x86_64-4alien.txz
+PACKAGE DESCRIPTION:
+kfilemetadata: kfilemetadata (a  library for extracting file metadata)
+kfilemetadata:
+kfilemetadata: kfilemetadata is a library for extracting file metadata.
+kfilemetadata:
+kfilemetadata:
+kfilemetadata:
+kfilemetadata:
+kfilemetadata:
+kfilemetadata:
+kfilemetadata: For more information, visit:  http://www.kde.org
+kfilemetadata:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kfilemetadata-4.14.3/
+usr/doc/kfilemetadata-4.14.3/COPYING-CMAKE-SCRIPTS
+usr/doc/kfilemetadata-4.14.3/COPYING.LGPL-2
+usr/doc/kfilemetadata-4.14.3/COPYING.LGPL-2.1
+usr/doc/kfilemetadata-4.14.3/COPYING.LGPL-3
+usr/include/
+usr/include/kfilemetadata/
+usr/include/kfilemetadata/extractionresult.h
+usr/include/kfilemetadata/extractorplugin.h
+usr/include/kfilemetadata/extractorpluginmanager.h
+usr/include/kfilemetadata/kfilemetadata_export.h
+usr/include/kfilemetadata/properties.h
+usr/include/kfilemetadata/propertyinfo.h
+usr/include/kfilemetadata/typeinfo.h
+usr/include/kfilemetadata/types.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KFileMetaData/
+usr/lib64/cmake/KFileMetaData/KFileMetaDataConfig.cmake
+usr/lib64/cmake/KFileMetaData/KFileMetaDataTargetsWithPrefix-release.cmake
+usr/lib64/cmake/KFileMetaData/KFileMetaDataTargetsWithPrefix.cmake
+usr/lib64/kde4/
+usr/lib64/kde4/kfilemetadata_epubextractor.so
+usr/lib64/kde4/kfilemetadata_exiv2extractor.so
+usr/lib64/kde4/kfilemetadata_odfextractor.so
+usr/lib64/kde4/kfilemetadata_office2007extractor.so
+usr/lib64/kde4/kfilemetadata_officeextractor.so
+usr/lib64/kde4/kfilemetadata_plaintextextractor.so
+usr/lib64/kde4/kfilemetadata_popplerextractor.so
+usr/lib64/kde4/kfilemetadata_taglibextractor.so
+usr/lib64/libkfilemetadata.so.4.14.14
+usr/share/
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/kfilemetadata_epubextractor.desktop
+usr/share/kde4/services/kfilemetadata_exiv2extractor.desktop
+usr/share/kde4/services/kfilemetadata_odfextractor.desktop
+usr/share/kde4/services/kfilemetadata_office2007extractor.desktop
+usr/share/kde4/services/kfilemetadata_officeextractor.desktop
+usr/share/kde4/services/kfilemetadata_plaintextextractor.desktop
+usr/share/kde4/services/kfilemetadata_popplerextractor.desktop
+usr/share/kde4/services/kfilemetadata_taglibextractor.desktop
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/kfilemetadataextractor.desktop

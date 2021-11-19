@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libakonadiprotocolinternals.so.1 )
+( cd usr/lib64 ; ln -sf libakonadiprotocolinternals.so.1.13.0 libakonadiprotocolinternals.so.1 )
+( cd usr/lib64 ; rm -rf libakonadiprotocolinternals.so )
+( cd usr/lib64 ; ln -sf libakonadiprotocolinternals.so.1 libakonadiprotocolinternals.so )

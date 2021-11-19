@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libattica.so.0.4 )
+( cd usr/lib64 ; ln -sf libattica.so.0.4.2 libattica.so.0.4 )
+( cd usr/lib64 ; rm -rf libattica.so )
+( cd usr/lib64 ; ln -sf libattica.so.0.4 libattica.so )

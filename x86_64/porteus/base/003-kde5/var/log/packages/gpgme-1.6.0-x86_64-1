@@ -1,0 +1,57 @@
+PACKAGE NAME:     gpgme-1.6.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     276K
+UNCOMPRESSED PACKAGE SIZE:     950K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/gpgme-1.6.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+gpgme: gpgme (GnuPG Made Easy)
+gpgme:
+gpgme: GPGME (GnuPG Made Easy) is a C language library that allows to add
+gpgme: support for cryptography to a program.  It is designed to make access
+gpgme: to public key crypto engines like GnuPG or GpgSM easier for
+gpgme: applications.  GPGME provides a high-level crypto API for encryption,
+gpgme: decryption, signing, signature verification and key management.
+gpgme:
+gpgme: GPGME uses GnuPG and GpgSM as its backends to support OpenPGP and the 
+gpgme: Cryptographic Message Syntax (CMS).
+gpgme:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gpgme-config
+usr/bin/gpgme-tool
+usr/doc/
+usr/doc/gpgme-1.6.0/
+usr/doc/gpgme-1.6.0/AUTHORS
+usr/doc/gpgme-1.6.0/COPYING
+usr/doc/gpgme-1.6.0/COPYING.LESSER
+usr/doc/gpgme-1.6.0/ChangeLog
+usr/doc/gpgme-1.6.0/INSTALL
+usr/doc/gpgme-1.6.0/NEWS
+usr/doc/gpgme-1.6.0/README
+usr/doc/gpgme-1.6.0/THANKS
+usr/doc/gpgme-1.6.0/TODO
+usr/doc/gpgme-1.6.0/VERSION
+usr/include/
+usr/include/gpgme.h
+usr/info/
+usr/info/gpgme.info-1.gz
+usr/info/gpgme.info-2.gz
+usr/info/gpgme.info.gz
+usr/lib64/
+usr/lib64/libgpgme-pthread.la
+usr/lib64/libgpgme-pthread.so.11.14.0
+usr/lib64/libgpgme.la
+usr/lib64/libgpgme.so.11.14.0
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/gpgme.m4
+usr/share/common-lisp/
+usr/share/common-lisp/source/
+usr/share/common-lisp/source/gpgme/
+usr/share/common-lisp/source/gpgme/gpgme-package.lisp
+usr/share/common-lisp/source/gpgme/gpgme.asd
+usr/share/common-lisp/source/gpgme/gpgme.lisp

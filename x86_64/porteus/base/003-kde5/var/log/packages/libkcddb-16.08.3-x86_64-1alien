@@ -1,0 +1,62 @@
+PACKAGE NAME:     libkcddb-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     208K
+UNCOMPRESSED PACKAGE SIZE:     570K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/libkcddb-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+libkcddb: libkcddb (KDE CDDB retrieval library)
+libkcddb:
+libkcddb: A KDE CDDB retrieval library.
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb:
+libkcddb: For more information, visit:  http://www.kde.org
+libkcddb:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/kcontrol/
+usr/doc/HTML/en/kcontrol/cddbretrieval/
+usr/doc/HTML/en/kcontrol/cddbretrieval/index.cache.bz2
+usr/doc/HTML/en/kcontrol/cddbretrieval/index.docbook
+usr/doc/HTML/en/kcontrol/cddbretrieval/kscd13.png
+usr/doc/HTML/en/kcontrol/cddbretrieval/kscd14.png
+usr/doc/HTML/en/kcontrol/cddbretrieval/kscd16.png
+usr/doc/libkcddb-16.08.3/
+usr/doc/libkcddb-16.08.3/COPYING
+usr/doc/libkcddb-16.08.3/COPYING.DOC
+usr/doc/libkcddb-16.08.3/COPYING.LIB
+usr/doc/libkcddb-16.08.3/TODO
+usr/include/
+usr/include/libkcddb/
+usr/include/libkcddb/cdinfo.h
+usr/include/libkcddb/cdinfodialog.h
+usr/include/libkcddb/client.h
+usr/include/libkcddb/configbase.h
+usr/include/libkcddb/genres.h
+usr/include/libkcddb/kcddb.h
+usr/include/libkcddb/kcddb_export.h
+usr/include/libkcddb/kcddbconfig.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/libkcddb/
+usr/lib64/cmake/libkcddb/LibkcddbConfig.cmake
+usr/lib64/cmake/libkcddb/LibkcddbTargets-release.cmake
+usr/lib64/cmake/libkcddb/LibkcddbTargets.cmake
+usr/lib64/kde4/
+usr/lib64/kde4/kcm_cddb.so
+usr/lib64/libkcddb.so.4.14.26
+usr/share/
+usr/share/config.kcfg/
+usr/share/config.kcfg/libkcddb.kcfg
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/libkcddb.desktop

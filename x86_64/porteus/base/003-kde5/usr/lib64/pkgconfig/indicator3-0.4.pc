@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+bindir=${exec_prefix}/bin
+includedir=${prefix}/include
+
+indicatordir=${libdir}/indicators3/7/
+iconsdir=${prefix}/share/libindicator/icons/
+
+Cflags: -I${includedir}/libindicator3-0.4
+Requires: gtk+-3.0
+Libs: -lindicator3
+
+Name: libindicator3
+Description: libindicator3.
+Version: 12.10.1
+

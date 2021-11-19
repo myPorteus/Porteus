@@ -1,0 +1,8 @@
+# /etc/polkit-1/localauthority/50-local.d/40-org.freedesktop.consolekit.system.stop-multiple-users.pkla
+[Allow power users to shutdown]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.stop-multiple-users;org.freedesktop.consolekit.system.stop
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes
+

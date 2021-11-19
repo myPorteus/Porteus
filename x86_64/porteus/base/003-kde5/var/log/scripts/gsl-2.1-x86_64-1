@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libgslcblas.so )
+( cd usr/lib64 ; ln -sf libgslcblas.so.0.0.0 libgslcblas.so )
+( cd usr/lib64 ; rm -rf libgsl.so )
+( cd usr/lib64 ; ln -sf libgsl.so.19.0.0 libgsl.so )
+( cd usr/lib64 ; rm -rf libgslcblas.so.0 )
+( cd usr/lib64 ; ln -sf libgslcblas.so.0.0.0 libgslcblas.so.0 )
+( cd usr/lib64 ; rm -rf libgsl.so.19 )
+( cd usr/lib64 ; ln -sf libgsl.so.19.0.0 libgsl.so.19 )

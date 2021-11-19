@@ -1,0 +1,90 @@
+PACKAGE NAME:     libcanberra-0.30-x86_64-5
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/libcanberra-0.30-x86_64-5.txz
+PACKAGE DESCRIPTION:
+libcanberra: libcanberra (XDG Sound Theme and Name Spec implementation)
+libcanberra:
+libcanberra: libcanberra is an implementation of the XDG Sound Theme and Name 
+libcanberra: Specifications, for generating event sounds on free desktops. 
+libcanberra: It comes with several backends for several audio systems and is
+libcanberra: designed to be portable.
+libcanberra:
+libcanberra: Homepage: http://0pointer.de/lennart/projects/libcanberra/
+libcanberra:
+libcanberra:
+libcanberra:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/canberra-boot
+usr/bin/canberra-gtk-play
+usr/doc/
+usr/doc/libcanberra-0.30/
+usr/doc/libcanberra-0.30/LGPL
+usr/doc/libcanberra-0.30/README
+usr/include/
+usr/include/canberra-gtk.h
+usr/include/canberra.h
+usr/lib64/
+usr/lib64/gnome-settings-daemon-3.0/
+usr/lib64/gnome-settings-daemon-3.0/gtk-modules/
+usr/lib64/gnome-settings-daemon-3.0/gtk-modules/canberra-gtk-module.desktop
+usr/lib64/gtk-2.0/
+usr/lib64/gtk-2.0/modules/
+usr/lib64/gtk-2.0/modules/libcanberra-gtk-module.la
+usr/lib64/gtk-2.0/modules/libcanberra-gtk-module.so
+usr/lib64/gtk-3.0/
+usr/lib64/gtk-3.0/modules/
+usr/lib64/gtk-3.0/modules/libcanberra-gtk3-module.la
+usr/lib64/gtk-3.0/modules/libcanberra-gtk3-module.so
+usr/lib64/libcanberra-0.30/
+usr/lib64/libcanberra-0.30/libcanberra-alsa.la
+usr/lib64/libcanberra-0.30/libcanberra-alsa.so
+usr/lib64/libcanberra-0.30/libcanberra-gstreamer.la
+usr/lib64/libcanberra-0.30/libcanberra-gstreamer.so
+usr/lib64/libcanberra-0.30/libcanberra-multi.la
+usr/lib64/libcanberra-0.30/libcanberra-multi.so
+usr/lib64/libcanberra-0.30/libcanberra-null.la
+usr/lib64/libcanberra-0.30/libcanberra-null.so
+usr/lib64/libcanberra-0.30/libcanberra-pulse.la
+usr/lib64/libcanberra-0.30/libcanberra-pulse.so
+usr/lib64/libcanberra-gtk.so.0.1.9
+usr/lib64/libcanberra-gtk3.so.0.1.9
+usr/lib64/libcanberra.so.0.2.5
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcanberra-gtk.pc
+usr/lib64/pkgconfig/libcanberra-gtk3.pc
+usr/lib64/pkgconfig/libcanberra.pc
+usr/share/
+usr/share/gdm/
+usr/share/gdm/autostart/
+usr/share/gdm/autostart/LoginWindow/
+usr/share/gdm/autostart/LoginWindow/libcanberra-ready-sound.desktop
+usr/share/gnome/
+usr/share/gnome/autostart/
+usr/share/gnome/autostart/libcanberra-login-sound.desktop
+usr/share/gnome/shutdown/
+usr/share/gnome/shutdown/libcanberra-logout-sound.sh
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libcanberra/
+usr/share/gtk-doc/html/libcanberra/ch01.html
+usr/share/gtk-doc/html/libcanberra/home.png
+usr/share/gtk-doc/html/libcanberra/index.html
+usr/share/gtk-doc/html/libcanberra/index.sgml
+usr/share/gtk-doc/html/libcanberra/left.png
+usr/share/gtk-doc/html/libcanberra/libcanberra-canberra-gtk.html
+usr/share/gtk-doc/html/libcanberra/libcanberra-canberra.html
+usr/share/gtk-doc/html/libcanberra/libcanberra.devhelp2
+usr/share/gtk-doc/html/libcanberra/right.png
+usr/share/gtk-doc/html/libcanberra/style.css
+usr/share/gtk-doc/html/libcanberra/up.png
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/libcanberra-gtk.vapi
+usr/share/vala/vapi/libcanberra.vapi

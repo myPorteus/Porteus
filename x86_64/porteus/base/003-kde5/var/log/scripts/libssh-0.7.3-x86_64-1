@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libssh_threads.so.4 )
+( cd usr/lib64 ; ln -sf libssh_threads.so.4.4.1 libssh_threads.so.4 )
+( cd usr/lib64 ; rm -rf libssh.so.4 )
+( cd usr/lib64 ; ln -sf libssh.so.4.4.1 libssh.so.4 )
+( cd usr/lib64 ; rm -rf libssh_threads.so )
+( cd usr/lib64 ; ln -sf libssh_threads.so.4 libssh_threads.so )
+( cd usr/lib64 ; rm -rf libssh.so )
+( cd usr/lib64 ; ln -sf libssh.so.4 libssh.so )

@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libappindicator.so.1 )
+( cd usr/lib64 ; ln -sf libappindicator.so.1.0.0 libappindicator.so.1 )
+( cd usr/lib64 ; rm -rf libappindicator3.so )
+( cd usr/lib64 ; ln -sf libappindicator3.so.1.0.0 libappindicator3.so )
+( cd usr/lib64 ; rm -rf libappindicator.so )
+( cd usr/lib64 ; ln -sf libappindicator.so.1.0.0 libappindicator.so )
+( cd usr/lib64 ; rm -rf libappindicator3.so.1 )
+( cd usr/lib64 ; ln -sf libappindicator3.so.1.0.0 libappindicator3.so.1 )

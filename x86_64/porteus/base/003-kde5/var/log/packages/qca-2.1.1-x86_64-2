@@ -1,0 +1,76 @@
+PACKAGE NAME:     qca-2.1.1-x86_64-2
+COMPRESSED PACKAGE SIZE:     684K
+UNCOMPRESSED PACKAGE SIZE:     2.8M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/qca-2.1.1-x86_64-2.txz
+PACKAGE DESCRIPTION:
+qca: qca (Qt Cryptographic Architecture)
+qca:
+qca: QCA aims to provide a straightforward and cross-platform crypto API,
+qca: using Qt datatypes and conventions.  QCA separates the API from the
+qca: implementation, using plugins known as Providers.  The advantage of
+qca: this model is to allow applications to avoid linking to or explicitly
+qca: depending on any particular cryptographic library.  This allows one
+qca: to easily change or upgrade crypto implementations without needing
+qca: to recompile the application.
+qca:
+qca: QCA was written by Justin Karneges.
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mozcerts
+usr/bin/qcatool
+usr/doc/
+usr/doc/qca-2.1.1/
+usr/doc/qca-2.1.1/COPYING
+usr/doc/qca-2.1.1/INSTALL
+usr/doc/qca-2.1.1/README
+usr/doc/qca-2.1.1/TODO
+usr/include/
+usr/include/QtCrypto/
+usr/include/QtCrypto/QtCrypto
+usr/include/QtCrypto/qca.h
+usr/include/QtCrypto/qca_basic.h
+usr/include/QtCrypto/qca_cert.h
+usr/include/QtCrypto/qca_core.h
+usr/include/QtCrypto/qca_export.h
+usr/include/QtCrypto/qca_keystore.h
+usr/include/QtCrypto/qca_publickey.h
+usr/include/QtCrypto/qca_safetimer.h
+usr/include/QtCrypto/qca_securelayer.h
+usr/include/QtCrypto/qca_securemessage.h
+usr/include/QtCrypto/qca_support.h
+usr/include/QtCrypto/qca_textfilter.h
+usr/include/QtCrypto/qca_tools.h
+usr/include/QtCrypto/qca_version.h
+usr/include/QtCrypto/qcaprovider.h
+usr/include/QtCrypto/qpipe.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/Qca/
+usr/lib64/cmake/Qca/QcaConfig.cmake
+usr/lib64/cmake/Qca/QcaConfigVersion.cmake
+usr/lib64/cmake/Qca/QcaTargets-release.cmake
+usr/lib64/cmake/Qca/QcaTargets.cmake
+usr/lib64/libqca.so.2.1.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/qca2.pc
+usr/lib64/qca/
+usr/lib64/qca/crypto/
+usr/lib64/qca/crypto/libqca-cyrus-sasl.so
+usr/lib64/qca/crypto/libqca-gcrypt.so
+usr/lib64/qca/crypto/libqca-gnupg.so
+usr/lib64/qca/crypto/libqca-logger.so
+usr/lib64/qca/crypto/libqca-nss.so
+usr/lib64/qca/crypto/libqca-ossl.so
+usr/lib64/qca/crypto/libqca-softstore.so
+usr/lib64/qt/
+usr/lib64/qt/mkspecs/
+usr/lib64/qt/mkspecs/features/
+usr/lib64/qt/mkspecs/features/crypto.prf
+usr/man/
+usr/man/man1/
+usr/man/man1/qcatool.1.gz

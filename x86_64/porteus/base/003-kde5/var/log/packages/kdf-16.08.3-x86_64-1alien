@@ -1,0 +1,82 @@
+PACKAGE NAME:     kdf-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     192K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/kdf-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+kdf: kdf (show available disk space)
+kdf:
+kdf: kdf (KDiskFree) displays the available file devices (hard drive
+kdf: partitions, floppy and CD/DVD drives, etc.) along with information on
+kdf: their capacity, free space, type and mount point.
+kdf:
+kdf: kdf's home page is:  http://utils.kde.org/projects/kdf
+kdf:
+kdf:
+kdf:
+kdf:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kdf
+usr/bin/kwikdisk
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/kcontrol/
+usr/doc/HTML/en/kcontrol/blockdevices/
+usr/doc/HTML/en/kcontrol/blockdevices/index.cache.bz2
+usr/doc/HTML/en/kcontrol/blockdevices/index.docbook
+usr/doc/HTML/en/kdf/
+usr/doc/HTML/en/kdf/index.cache.bz2
+usr/doc/HTML/en/kdf/index.docbook
+usr/doc/HTML/en/kdf/kdf.png
+usr/doc/HTML/en/kdf/kdf_config.png
+usr/doc/kdf-16.08.3/
+usr/doc/kdf-16.08.3/COPYING
+usr/lib64/
+usr/lib64/libkdfprivate.so.16.08.3
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/libkcm_kdf.so
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.kdf.desktop
+usr/share/applications/org.kde.kwikdisk.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/kdf.png
+usr/share/icons/hicolor/128x128/apps/kwikdisk.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kcmdf.png
+usr/share/icons/hicolor/16x16/apps/kdf.png
+usr/share/icons/hicolor/16x16/apps/kwikdisk.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kcmdf.png
+usr/share/icons/hicolor/22x22/apps/kdf.png
+usr/share/icons/hicolor/22x22/apps/kwikdisk.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kcmdf.png
+usr/share/icons/hicolor/32x32/apps/kdf.png
+usr/share/icons/hicolor/32x32/apps/kwikdisk.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kdf.png
+usr/share/icons/hicolor/48x48/apps/kwikdisk.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/kdf.png
+usr/share/icons/hicolor/64x64/apps/kwikdisk.png
+usr/share/kservices5/
+usr/share/kservices5/kcmdf.desktop
+usr/share/kxmlgui5/
+usr/share/kxmlgui5/kdf/
+usr/share/kxmlgui5/kdf/kdfui.rc

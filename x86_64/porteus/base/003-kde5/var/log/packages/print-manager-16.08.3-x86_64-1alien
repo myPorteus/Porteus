@@ -1,0 +1,72 @@
+PACKAGE NAME:     print-manager-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     268K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/print-manager-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+print-manager: print-manager (tool for managing print jobs and printers)
+print-manager:
+print-manager: Print Manager (formerly printer-applet) is a system tray utility
+print-manager: that shows current print jobs, printer warnings, and errors.
+print-manager:
+print-manager:
+print-manager:
+print-manager:
+print-manager: Homepage:
+print-manager:   https://projects.kde.org/projects/kde/kdeutils/print-manager
+print-manager:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/configure-printer
+usr/bin/kde-add-printer
+usr/bin/kde-print-queue
+usr/doc/
+usr/doc/print-manager-16.08.3/
+usr/doc/print-manager-16.08.3/COPYING
+usr/doc/print-manager-16.08.3/README
+usr/lib64/
+usr/lib64/libkcupslib.so
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kcm_printer_manager.so
+usr/lib64/qt5/plugins/kded_printmanager.so
+usr/lib64/qt5/qml/
+usr/lib64/qt5/qml/org/
+usr/lib64/qt5/qml/org/kde/
+usr/lib64/qt5/qml/org/kde/plasma/
+usr/lib64/qt5/qml/org/kde/plasma/printmanager/
+usr/lib64/qt5/qml/org/kde/plasma/printmanager/libprintmanager.so
+usr/lib64/qt5/qml/org/kde/plasma/printmanager/qmldir
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.AddPrinter.desktop
+usr/share/applications/org.kde.ConfigurePrinter.desktop
+usr/share/applications/org.kde.PrintQueue.desktop
+usr/share/knotifications5/
+usr/share/knotifications5/printmanager.notifyrc
+usr/share/kservices5/
+usr/share/kservices5/kcm_printer_manager.desktop
+usr/share/kservices5/kded/
+usr/share/kservices5/kded/printmanager.desktop
+usr/share/kservices5/plasma-applet-org.kde.plasma.printmanager.desktop
+usr/share/metainfo/
+usr/share/metainfo/org.kde.plasma.printmanager.appdata.xml
+usr/share/plasma/
+usr/share/plasma/plasmoids/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/config.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/main.xml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/CompactRepresentation.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/PopupDialog.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/PrinterItem.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/StatusView.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/config.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/printmanager.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/metadata.desktop
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/metadata.json

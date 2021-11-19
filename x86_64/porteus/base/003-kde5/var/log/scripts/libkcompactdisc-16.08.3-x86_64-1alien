@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libkcompactdisc.so )
+( cd usr/lib64 ; ln -sf libkcompactdisc.so.4 libkcompactdisc.so )
+( cd usr/lib64 ; rm -rf libkcompactdisc.so.4 )
+( cd usr/lib64 ; ln -sf libkcompactdisc.so.4.14.26 libkcompactdisc.so.4 )

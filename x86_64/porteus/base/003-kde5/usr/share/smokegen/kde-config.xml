@@ -1,0 +1,21 @@
+<config>
+    <resolveTypedefs>true</resolveTypedefs>
+    <qtMode>true</qtMode>
+    <generator>smoke</generator>
+    <definesList>/usr/share/smokegen/qtdefines</definesList>
+    <includeDirs>
+        <dir>/usr/lib64/qt/include</dir>
+        <dir>/usr/lib64/qt/include/QtCore</dir>
+        <dir>/usr/lib64/qt/include/QtGui</dir>
+        <dir>/usr/lib64/qt/include/QtNetwork</dir>
+        <dir>/usr/lib64/qt/include/QtDBus</dir>
+        <dir>/usr/lib64/qt/include/QtSql</dir>
+        <dir>/usr/lib64/qt/include/QtXml</dir>
+        <dir>/usr/lib64/qt/include/QtOpenGL</dir>
+        <dir>/usr/lib64/qt/include/QtSvg</dir>
+        <dir>/usr/include</dir>
+    </includeDirs>
+    <dropMacros>
+        <name>__KDE_HAVE_GCC_VISIBILITY</name>
+    </dropMacros>
+</config>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>System policy settings</vendor>
+<icon_name>security-high</icon_name>
+   <action id="org.kde.polkitkde1.changeexplicitauthorizations" >
+      <description xml:lang="fr">Modification des autorisations explicites pour une action</description>
+      <description xml:lang="sk">Zmeniť explicitné overenia pre akciu</description>
+      <description xml:lang="sl">Spremeni eksplicitna pravila za dejanje</description>
+      <description xml:lang="ca">Canvia les autoritzacions explícites per una acció</description>
+      <description xml:lang="bs">Promijeni eksplicitnu autorizaciju za radnju</description>
+      <description xml:lang="kk">Әрекет үшін айқын авторизацияларын өзгерту</description>
+      <description xml:lang="sr">Измени изричита овлашћења за радњу</description>
+      <description xml:lang="km">ប្ដូរ​សេចក្ដី​អនុញ្ញាត​មិន​មិន​ទាំង​ស្រុង​​​ សម្រាប់​សកម្មភាព​</description>
+      <description xml:lang="ko">동작에 대한 명시적 인증 설정</description>
+      <description xml:lang="gl">Modificar as autorizacións explícitas para unha acción</description>
+      <description xml:lang="sv">Ändra explicit behörighet för en åtgärd</description>
+      <description xml:lang="th">แก้ไขการอนุญาตสิทธิ์ต่าง ๆ ที่ชัดเจนของการกระทำ</description>
+      <description xml:lang="pt_BR">Alterar autorizações explícitas para uma ação</description>
+      <description xml:lang="da">Ændr eksplicitte godkendelser for en handling</description>
+      <description xml:lang="zh_CN">修改动作的显示验证</description>
+      <description xml:lang="pl">Zmień warunkowe uwierzytelnienia dla działania</description>
+      <description xml:lang="cs">Změnit explicitní oprávnění pro činnost</description>
+      <description xml:lang="de">Explizite Berechtigungen für eine Aktion ändern</description>
+      <description xml:lang="tr">Bir eylem için açık yetkilendirmeleri değiştir</description>
+      <description xml:lang="pt">Modificar as autorizações explícitas para uma acção</description>
+      <description xml:lang="lt">Keisti veiksmo aiškius įgaliojimus</description>
+      <description xml:lang="zh_TW">變更動作的外部授權</description>
+      <description xml:lang="hr">Promjena eksplicitnih autorizacija za radnju</description>
+      <description xml:lang="uk">Змінити явні уповноваження на дію</description>
+      <description xml:lang="lv">Mainīt darbības tiešās pilnvaras</description>
+      <description xml:lang="hu">Explicit hitelesítések megváltoztatása egy művelethez</description>
+      <description xml:lang="nb">Endre uttrykkelige autoriseringer for en handling</description>
+      <description xml:lang="el">Αλλαγή άμεσων εξουσιοδοτήσεων για μία ενέργεια</description>
+      <description xml:lang="vi">Thay đổi cấp phép chi tiết cho một hành động</description>
+      <description>Change explicit authorizations for an action</description>
+      <description xml:lang="en_GB">Change explicit authorisations for an action</description>
+      <description xml:lang="it">Modifica le autorizzazioni esplicite di un'azione</description>
+      <description xml:lang="es">Cambiar autorizaciones explícitas para una acción</description>
+      <description xml:lang="et">Toimingu otseste autentimiste muutmine</description>
+      <description xml:lang="ar">تغيير الأذون الصريحة لإجراء</description>
+      <description xml:lang="ro">Schimbă autorizările explicite pentru o acțiune</description>
+      <description xml:lang="nl">Expliciete autorisaties voor een actie wijzigen</description>
+      <description xml:lang="nds">Utspraken Verlööfnissen för en Akschoon ännern</description>
+      <description xml:lang="fi">Muuta toiminnon eksplisiittisiä käyttövaltuuksia</description>
+      <description xml:lang="ru">Изменение явных разрешений для действия</description>
+      <message xml:lang="fr">Une autorisation est nécessaire pour modifier les autorisations explicites</message>
+      <message xml:lang="sk">Na zmenu explicitných overení je potrebné overenie</message>
+      <message xml:lang="sl">Za spremembo eksplicitnih pravil je zahtevana pooblastitev</message>
+      <message xml:lang="ca">Es requereix autorització per canviar les autoritzacions explícites</message>
+      <message xml:lang="bs">Zahtijeva se autorizacija za promjene eksplicitne autorizacije</message>
+      <message xml:lang="kk">Айқын авторизацияларын өзгерту үшін авторизациядан өту керек</message>
+      <message xml:lang="sr">Потребно је овлашћење за измену изричитих овлашћења</message>
+      <message xml:lang="km">សេចក្ដី​អនុញ្ញាត​ត្រូវ​បាន​ទាមទារ​ ដើម្បី​ប្ដូរ​សេចក្ដី​អនុញ្ញាត​មិន​ទាំងស្រុង​</message>
+      <message xml:lang="ko">명시적 인증을 변경하려면 인증이 필요함</message>
+      <message xml:lang="gl">Requírese autorización para modificar as autorizacións explícitas.</message>
+      <message xml:lang="sv">Behörighet krävs för att ändra explicita behörigheter</message>
+      <message xml:lang="th">การอนุญาตสิทธิ์จำเป็นต้องทำการแก้ไขค่าการอนุญาตสิทธิ์ต่าง ๆ ที่ชัดเจน</message>
+      <message xml:lang="pt_BR">É necessário autorização para alterar as autorizações explícitas</message>
+      <message xml:lang="da">Godkendelse kræves for at ændre eksplicitte godkendelser</message>
+      <message xml:lang="zh_CN">需要验证才能修改显示验证</message>
+      <message xml:lang="pl">Uwierzytelnienie jest wymagane do zmiany warunkowych uwierzytelnień</message>
+      <message xml:lang="cs">Pro změnu explicitních oprávnění je třeba mít patřičná práva</message>
+      <message xml:lang="de">Berechtigung ist für das Ändern von expliziten Berechtigungen erforderlich</message>
+      <message xml:lang="tr">Açık yetkilendirmeleri değiştirmek için yetkilendirme gerekiyor</message>
+      <message xml:lang="pt">É necessária a autorização para modificar as autorizações explícitas</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="zh_TW">您需要授權才能變更動作的外部授權</message>
+      <message xml:lang="hr">Potrebna je autorizacija za promjenu eksplicitnih autorizacija</message>
+      <message xml:lang="uk">Для зміни явних уповноважень потрібно пройти уповноваження</message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="hu">Az explicit hitelesítések megváltoztatásához hitelesítés szükséges</message>
+      <message xml:lang="nb">Autorisering kreves for å endre uttrykkelige autoriseringer</message>
+      <message xml:lang="el">Απαιτείται εξουσιοδότηση για την αλλαγή των άμεσων εξουσιοδοτήσεων</message>
+      <message xml:lang="vi">Cần xác thực để thay đổi các cấp phép chi tiết</message>
+      <message>Authorization is required to change explicit authorizations</message>
+      <message xml:lang="en_GB">Authorisation is required to change explicit authorisations</message>
+      <message xml:lang="it">È richiesta l'autorizzazione per modificare le autorizzazioni esplicite</message>
+      <message xml:lang="es">Es necesaria una autorización para modificar las autorizaciones explícitas</message>
+      <message xml:lang="et">Otseste autentimiste muutmiseks on vajalik autentimine</message>
+      <message xml:lang="ar">يتطلب إذن لتغيير الأذون الصريحة</message>
+      <message xml:lang="ro">Pentru a schimba autorizările explicite este nevoie de autorizare</message>
+      <message xml:lang="nl">Autorisatie is vereist om expliciete autorisaties te wijzigen</message>
+      <message xml:lang="nds">För't Ännern vun utspraken Verlööfnissen deit Verlööf noot.</message>
+      <message xml:lang="fi">Eksplisiittisten käyttövaltuuksien muuttamiseksi tarvitsee tarkistaa käyttöoikeudet</message>
+      <message xml:lang="ru">Для изменения явных разрешений требуется авторизация</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.polkitkde1.changeimplicitauthorizations" >
+      <description xml:lang="fr">Modification des autorisations système pour une action</description>
+      <description xml:lang="sk">Zmeniť implicitné overenia pre akciu</description>
+      <description xml:lang="sl">Spremeni implicitna pravila za dejanje</description>
+      <description xml:lang="ca">Canvia les autoritzacions implícites per una acció</description>
+      <description xml:lang="bs">Promijeni implicitne autorizacije za radnju</description>
+      <description xml:lang="kk">Әрекет үшін жанама авторизацияларын өзгерту</description>
+      <description xml:lang="sr">Измени последична овлашћења за радњу</description>
+      <description xml:lang="km">ប្ដូរ​សេចក្ដី​អនុញ្ញាត​ទាំង​ស្រុង​ សម្រាប់​សកម្មភាព​</description>
+      <description xml:lang="ko">동작에 대한 암시적 인증 설정</description>
+      <description xml:lang="gl">Modificar as autorizacións implícitas para unha acción</description>
+      <description xml:lang="sv">Ändra implicit behörighet för en åtgärd</description>
+      <description xml:lang="th">เปลี่ยนการอนุญาตสิทธิ์ต่าง ๆ ที่จะคงอยู่ของการกระทำ</description>
+      <description xml:lang="pt_BR">Alterar autorizações implícitas para uma ação</description>
+      <description xml:lang="da">Ændr implicitte godkendelser for en handling</description>
+      <description xml:lang="zh_CN">修改动作的隐式验证</description>
+      <description xml:lang="pl">Zmień bezwarunkowe uwierzytelnienia dla działania</description>
+      <description xml:lang="cs">Změnit implicitní oprávnění pro činnost</description>
+      <description xml:lang="de">Implizite Berechtigungen für eine Aktion ändern</description>
+      <description xml:lang="tr">Bir eylem için gizli yetkilendirmeleri değiştir</description>
+      <description xml:lang="pt">Modificar as autorizações implícitas para uma acção</description>
+      <description xml:lang="lt">Keisti veiksmo numanomus įgaliojimus</description>
+      <description xml:lang="zh_TW">變更動作的內部授權</description>
+      <description xml:lang="hr">Promjena implicitnih autorizacija za radnju</description>
+      <description xml:lang="uk">Змінити неявні уповноваження на дію</description>
+      <description xml:lang="lv">Mainīt darbības pastarpinātās pilnvaras</description>
+      <description xml:lang="hu">Implicit hitelesítések megváltoztatása egy művelethez</description>
+      <description xml:lang="nb">Endre implisitte autoriseringer for en handling</description>
+      <description xml:lang="el">Αλλαγή έμμεσων εξουσιοδοτήσεων για μία ενέργεια</description>
+      <description xml:lang="vi">Thay đổi cấp phép ngầm định cho một hành động</description>
+      <description>Change implicit authorizations for an action</description>
+      <description xml:lang="en_GB">Change implicit authorisations for an action</description>
+      <description xml:lang="it">Modifica l'autorizzazione implicita di un'azione</description>
+      <description xml:lang="es">Cambiar autorizaciones implícitas para una acción</description>
+      <description xml:lang="et">Toimingu kaudsete autentimiste muutmine</description>
+      <description xml:lang="ar">تغيير الأذون الضمنية لإجراء</description>
+      <description xml:lang="ro">Schimbă autorizările implicite pentru o acțiune</description>
+      <description xml:lang="nl">Impliciete autorisaties voor een actie wijzigen</description>
+      <description xml:lang="nds">Inslaten Verlööfnissen för en Akschoon ännern</description>
+      <description xml:lang="fi">Muuta toiminnon implisiittisiä käyttövaltuuksia</description>
+      <description xml:lang="ru">Изменение неявных разрешений для действия</description>
+      <message xml:lang="fr">Une autorisation est nécessaire pour modifier les autorisations implicites système</message>
+      <message xml:lang="sk">Na zmenu implicitných overení je potrebné overenie</message>
+      <message xml:lang="sl">Za spremembo implicitnih pravil je zahtevana pooblastitev</message>
+      <message xml:lang="ca">Es requereix autorització per canviar les autoritzacions implícites</message>
+      <message xml:lang="bs">Zahtijeva se autorizacija za promjene implicitne autorizacije</message>
+      <message xml:lang="kk">Жанама авторизацияларын өзгерту үшін авторизациядан өту керек</message>
+      <message xml:lang="sr">Потребно је овлашћење за измену последичних овлашћења</message>
+      <message xml:lang="km">សេចក្ដី​អនុញ្ញាត​ត្រូវ​បាន​ទាមទារ​ ដើម្បី​ប្ដូរ​សេចក្ដីអនុញ្ញាត​​ទាំងស្រុង​</message>
+      <message xml:lang="ko">암시적 인증을 변경하려면 인증이 필요함</message>
+      <message xml:lang="gl">Requírese autorización para modificar as autorizacións implícitas.</message>
+      <message xml:lang="sv">Behörighet krävs för att ändra implicita behörigheter</message>
+      <message xml:lang="th">การอนุญาตสิทธิ์จำเป็นต้องทำการแก้ไขค่าการอนุญาตสิทธิ์ต่าง ๆ ที่จะคงอยู่</message>
+      <message xml:lang="pt_BR">É necessário autorização para alterar as autorizações implícitas</message>
+      <message xml:lang="da">Godkendelse kræves for at ændre implicitte godkendelser</message>
+      <message xml:lang="zh_CN">需要验证才能修改隐式验证</message>
+      <message xml:lang="pl">Uwierzytelnienie jest wymagane do zmiany bezwarunkowych uwierzytelnień</message>
+      <message xml:lang="cs">Pro změnu implicitních oprávnění je třeba mít patřičná práva</message>
+      <message xml:lang="de">Berechtigung ist für das Ändern von impliziten Berechtigungen erforderlich</message>
+      <message xml:lang="tr">Gizli yetkilendirmeleri değiştirmek için yetkilendirme gerekiyor</message>
+      <message xml:lang="pt">É necessária a autorização para modificar as autorizações implícitas</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="zh_TW">您需要授權才能變更動作的內部授權</message>
+      <message xml:lang="hr">Potrebna je autorizacija za promjenu implicitnih autorizacija</message>
+      <message xml:lang="uk">Для зміни неявних уповноважень потрібно пройти уповноваження</message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="hu">Az implicit hitelesítések megváltoztatásához hitelesítés szükséges</message>
+      <message xml:lang="nb">Autorisering kreves for å endre implisitte autoriseringer</message>
+      <message xml:lang="el">Απαιτείται εξουσιοδότηση για την αλλαγή των έμμεσων εξουσιοδοτήσεων</message>
+      <message xml:lang="vi">Cần được cấp phép để thay đổi các cấp phép ngầm</message>
+      <message>Authorization is required to change implicit authorizations</message>
+      <message xml:lang="en_GB">Authorisation is required to change implicit authorisations</message>
+      <message xml:lang="it">È richiesta l'autorizzazione per modificare le autorizzazioni implicite</message>
+      <message xml:lang="es">Es necesaria una autorización para modificar las autorizaciones implícitas</message>
+      <message xml:lang="et">Kaudsete autentimiste muutmiseks on vajalik autentimine</message>
+      <message xml:lang="ar">يتطلب إذناً لتغير الأذون الضمنية</message>
+      <message xml:lang="ro">Pentru a schimba autorizările implicite este nevoie de autorizare</message>
+      <message xml:lang="nl">Autorisatie is vereist om impliciete autorisaties te wijzigen</message>
+      <message xml:lang="nds">För't Ännern vun inslaten Verlööfnissen deit Verlööf noot.</message>
+      <message xml:lang="fi">Implisiittisten käyttövaltuuksien muuttamiseksi tarvitsee tarkistaa käyttöoikeudet</message>
+      <message xml:lang="ru">Для изменения неявных разрешений требуется авторизация</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.polkitkde1.changesystemconfiguration" >
+      <description xml:lang="fr">Modifier la configuration globale des stratégies système</description>
+      <description xml:lang="sk">Zmeniť globálnu konfiguráciu pre systémové politiky</description>
+      <description xml:lang="sl">Spremeni splošno nastavitev za sistemske pravilnike</description>
+      <description xml:lang="ca">Canvia la configuració global de les polítiques del sistema</description>
+      <description xml:lang="bs">Promijeni globalnu postavku za sistemska pravila</description>
+      <description xml:lang="kk">Жүйелік саясаттар үшін жалпы жүйелік баптауды өзгерту</description>
+      <description xml:lang="sr">Измени глобалну поставу системских смерница</description>
+      <description xml:lang="km">ប្ដូរ​ការកំណត់​រចនាសម្ព័ន្ធ​សកល​​​ សម្រាប់​គោល​​នយោបាយ​ប្រព័ន្ធ​</description>
+      <description xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਲਈ ਗਲੋਬਲ ਸੰਰਚਨਾ ਬਦਲੋ</description>
+      <description xml:lang="ko">시스템 정책 전역 설정 변경</description>
+      <description xml:lang="gl">Modificar a configuración global das normas do sistema</description>
+      <description xml:lang="sv">Ändra global inställning av systempolicy</description>
+      <description xml:lang="th">แก้ไขการปรับแต่งค่าทั่วไปของนโยบายต่าง ๆ ของระบบ</description>
+      <description xml:lang="pt_BR">Alterar a configuração global para as políticas do sistema</description>
+      <description xml:lang="da">Ændr global konfiguration af systempolitikker</description>
+      <description xml:lang="zh_CN">修改系统策略的全局配置</description>
+      <description xml:lang="pl">Zmień globalną konfigurację dla polityki systemu</description>
+      <description xml:lang="cs">Změnit globální nastavení pro pravidla systému</description>
+      <description xml:lang="de">Allgemeine Einstellung für Systemberechtigungen ändern</description>
+      <description xml:lang="tr">Sistem politikaları için genel yapılandırmayı değiştir</description>
+      <description xml:lang="pt">Modificar a configuração global das políticas do sistema</description>
+      <description xml:lang="lt">Keisti sistemos taisyklių globalius nustatymus</description>
+      <description xml:lang="zh_TW">變更系統政策的全域設定</description>
+      <description xml:lang="hr">Promjena globalne konfiguracije za pravila sustava</description>
+      <description xml:lang="uk">Змінити загальні налаштування системних правил доступу</description>
+      <description xml:lang="lv">Mainīt sistēmas politiku globālo konfigurāciju</description>
+      <description xml:lang="hu">Globális beállítások megváltoztatása a rendszerházirendekre</description>
+      <description xml:lang="nb">Endre globalt oppsett for systempraksis</description>
+      <description xml:lang="el">Αλλαγή καθολικής διαμόρφωσης στις πολιτικές του συστήματος</description>
+      <description xml:lang="vi">Thay đổi cấu hình toàn hệ thống chính sách</description>
+      <description>Change global configuration for system policies</description>
+      <description xml:lang="en_GB">Change global configuration for system policies</description>
+      <description xml:lang="it">Modifica la configurazione globale delle politiche di sistema</description>
+      <description xml:lang="es">Cambiar la configuración global de las políticas del sistema</description>
+      <description xml:lang="et">Süsteemi reeglite globaalse seadistuse muutmine</description>
+      <description xml:lang="ar">تغيير الإعدادات العامة لسياسات النظام</description>
+      <description xml:lang="ro">Schimbă configurarea globală pentru politici de sistem</description>
+      <description xml:lang="nl">Globale configuratie voor systeembeleid wijzigen</description>
+      <description xml:lang="nds">Globaal Instellen för Systeemregeln ännern</description>
+      <description xml:lang="fi">Muuta järjestelmäkäytäntöjen yleisasetuksia</description>
+      <description xml:lang="ru">Изменение общих параметров политики системы</description>
+      <message xml:lang="fr">Une autorisation est nécessaire pour modifier la configuration globale des stratégies système</message>
+      <message xml:lang="sk">Na zmenu globálneho nastavenia pre systémové politiky je potrebné overenie</message>
+      <message xml:lang="sl">Za spremembo splošnih nastavitev za sistemske pravilnike je zahtevana pooblastitev</message>
+      <message xml:lang="ca">Es requereix autorització per canviar la configuració global de les polítiques del sistema</message>
+      <message xml:lang="bs">Zahtjeva se autorizacija za promjenu globalne postavke za sistemska pravila</message>
+      <message xml:lang="kk">Жүйелік саясаттар жалпы жүйелік баптауын өзгерту үшін авторизация керек</message>
+      <message xml:lang="sr">Потребно је овлашћење за измену глобалне поставе системских смерница</message>
+      <message xml:lang="km">សេចក្ដី​អនុញ្ញាត​ត្រូវ​បាន​ទាមទារ​ ​ដើម្បី​កំណត់​រចនាសម្ព័ន្ធ​សកល​ សម្រាប់​​គោល​នយោបាយ​ប្រព័ន្ធ​</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਲਈ ਗਲੋਬਲ ਸੰਰਚਨਾ ਬਦਲਣ ਵਾਸਤੇ ਪਰਮਾਣਿਤ ਹੋਣ ਦੀ ਲੋੜ ਹੈ</message>
+      <message xml:lang="ko">시스템 정책 전역 설정을 변경하려면 인증이 필요함</message>
+      <message xml:lang="gl">Requírese autorización para modificar a configuración global das normas do sistema.</message>
+      <message xml:lang="sv">Behörighet krävs för att ändra global inställning av systempolicy</message>
+      <message xml:lang="th">การอนุญาตสิทธิ์จำเป็นต้องทำการแก้ไขการปรับแต่งค่าทั่วไปของนโยบายต่าง ๆ ของระบบ</message>
+      <message xml:lang="pt_BR">É necessário autorização para alterar a configuração global para as políticas do sistema</message>
+      <message xml:lang="da">Godkendelse kræves for at ændre global konfiguration af systempolitikker</message>
+      <message xml:lang="zh_CN">需要验证才能修改系统策略的全局配置</message>
+      <message xml:lang="pl">Uwierzytelnienie jest wymagane do zmiany globalnej konfiguracji dla polityki systemu</message>
+      <message xml:lang="cs">Pro změnu globálního nastavení pravidel systému je třeba oprávnění</message>
+      <message xml:lang="de">Die Berechtigung ist für das Ändern der allgemeinen Einstellungen für Systemberechtigungen erforderlich</message>
+      <message xml:lang="tr">Sistem politikaları için genel yapılandırmayı değiştirmek için yetkilendirme gerekiyor</message>
+      <message xml:lang="pt">É necessária a autorização para modificar a configuração global das políticas do sistema</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="zh_TW">您需要授權才能變更系統政策的全域設定</message>
+      <message xml:lang="hr">Potrebna je autorizacija za promjenu globalne konfiguracije za pravila sustava</message>
+      <message xml:lang="uk">Для зміни загального налаштування системних прав доступу потрібно пройти уповноваження</message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="hu">Hitelesítés szükséges a rendszerházirendek globális beállításainak megváltoztatásához</message>
+      <message xml:lang="nb">Autorisering kreves for å endre globalt oppsett for systempraksis</message>
+      <message xml:lang="el">Απαιτείται εξουσιοδότηση για την αλλαγή τής καθολικής διαμόρφωσης στις πολιτικές του συστήματος</message>
+      <message xml:lang="vi">Cần cấp phép để thay đổi cấu hình toàn hệ thống chính sách</message>
+      <message>Authorization is required to change global configuration for system policies</message>
+      <message xml:lang="en_GB">Authorisation is required to change global configuration for system policies</message>
+      <message xml:lang="it">È richiesta l'autorizzazione per modificare le configurazione globale delle politiche di sistema</message>
+      <message xml:lang="es">Es necesaria una autorización para modificar la configuración global de las políticas del sistema</message>
+      <message xml:lang="et">Süsteemi reeglite globaalse seadistuse muutmiseks on vajalik autentimine</message>
+      <message xml:lang="ar">يتطلب أذن لتغيير الإعدادات العامة لسياسات النظام</message>
+      <message xml:lang="ro">Pentru a schimba configurarea globală pentru politici de sistem este nevoie de autorizare</message>
+      <message xml:lang="nl">Autorisatie is vereist om de globale configuratie voor systeembeleid te wijzigen</message>
+      <message xml:lang="nds">För't Ännern vun globaal Instellen för Systeemregeln deit Verlööf noot.</message>
+      <message xml:lang="fi">Järjestelmäkäytäntöjen yleisasetusten muuttamiseksi tarvitsee tarkistaa käyttöoikeudet</message>
+      <message xml:lang="ru">Для изменения общих параметров политики безопасности системы требуется авторизация</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.polkitkde1.readauthorizations" >
+      <description xml:lang="fr">Lecture des autorisations système</description>
+      <description xml:lang="sk">Čítať systémové autorizácie</description>
+      <description xml:lang="sl">Branje sistemskih pooblastil</description>
+      <description xml:lang="ca">Llegeix les autoritzacions del sistema</description>
+      <description xml:lang="bs">Čitaj sistemske autorizacije</description>
+      <description xml:lang="kk">Жүйелік авторизацияларын оқу</description>
+      <description xml:lang="sr">Читај системска овлашћења</description>
+      <description xml:lang="km">អាន​សេចក្ដី​អនុញ្ញាត​ប្រព័ន្ធ​</description>
+      <description xml:lang="pa">ਸਿਸਟਮ ਪਰਮਾਣਕਿਤਾ ਪੜ੍ਹੋ</description>
+      <description xml:lang="ko">시스템 인증 읽기</description>
+      <description xml:lang="gl">Ler as autorizacións do sistema</description>
+      <description xml:lang="sv">Läs systembehörigheter</description>
+      <description xml:lang="th">อ่านการอนุญาตสิทธิ์ต่าง ๆ ของระบบ</description>
+      <description xml:lang="pt_BR">Ler as autorizações do sistema</description>
+      <description xml:lang="da">Læs systemgodkendelser</description>
+      <description xml:lang="zh_CN">读取系统验证配置</description>
+      <description xml:lang="pl">Odczytaj uwierzytelnienia systemowe</description>
+      <description xml:lang="cs">Načíst systémová oprávnění</description>
+      <description xml:lang="de">Systemberechtigungen einlesen</description>
+      <description xml:lang="tr">Sistem yetkilendirmelerini oku</description>
+      <description xml:lang="pt">Ler as autorizações do sistema</description>
+      <description xml:lang="lt">Skaityti sistemos įgaliojimus</description>
+      <description xml:lang="zh_TW">讀取系統授權</description>
+      <description xml:lang="hr">Čitanje autorizacije u sustavu</description>
+      <description xml:lang="uk">Читання системних уповноважень</description>
+      <description xml:lang="lv">Nolasīt sistēmas pilnvaras</description>
+      <description xml:lang="hu">Rendszerhitelesítések olvasása</description>
+      <description xml:lang="nb">Les systemets autoriseringer</description>
+      <description xml:lang="el">Ανάγνωση εξουσιοδοτήσεων συστήματος</description>
+      <description xml:lang="vi">Đọc cấp phép hệ thống</description>
+      <description>Read system authorizations</description>
+      <description xml:lang="en_GB">Read system authorisations</description>
+      <description xml:lang="it">Leggi autorizzazioni di sistema</description>
+      <description xml:lang="es">Leer autorizaciones del sistema</description>
+      <description xml:lang="et">Süsteemi autentimiste lugemine</description>
+      <description xml:lang="ar">قراءة أذون النظام</description>
+      <description xml:lang="ro">Citește autorizările de sistem</description>
+      <description xml:lang="nl">Systeemautorisaties lezen</description>
+      <description xml:lang="nds">Systeemverlööfnissen lesen</description>
+      <description xml:lang="fi">Lue järjestelmän käyttövaltuudet</description>
+      <description xml:lang="ru">Чтение системных разрешений</description>
+      <message xml:lang="fr">Une autorisation est nécessaire pour lire les autorisations système</message>
+      <message xml:lang="sk">Na čítanie systémových overení je potrebné overenie</message>
+      <message xml:lang="sl">Za branje sistemskih pooblastil je zahtevana pooblastitev</message>
+      <message xml:lang="ca">Es requereix autorització per llegir les autoritzacions del sistema</message>
+      <message xml:lang="bs">Zahtijeva se autorizacija za čitanje sistemske autorizacije</message>
+      <message xml:lang="kk">Жүйелік авторизацияларын оқу үшін авторизациядан өту керек</message>
+      <message xml:lang="sr">Потребно је овлашћење за читање системских овлашћења</message>
+      <message xml:lang="km">សេចក្ដី​អនុញ្ញាត​ត្រូវ​បាន​ទាមទារ​ ដើម្បី​អាន​សេចក្ដីអនុញ្ញាត​ប្រព័ន្ធ​</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਰਮਾਣਕਿਤਾ ਪੜ੍ਹਨ ਲਈ ਪਰਮਾਣਿਤ ਹੋਣ ਦੀ ਲੋੜ ਹੈ</message>
+      <message xml:lang="ko">시스템 인증을 읽으려면 인증이 필요함</message>
+      <message xml:lang="gl">Requírese autorización para ler as autoricacións do sistema.</message>
+      <message xml:lang="sv">Behörighet krävs för att läsa systembehörigheter</message>
+      <message xml:lang="th">การอนุญาตสิทธิ์จำเป็นต้องทำการอ่านค่าการอนุญาตสิทธิ์ต่าง ๆ ของระบบ</message>
+      <message xml:lang="pt_BR">É necessário autorização para ler as políticas do sistema</message>
+      <message xml:lang="da">Godkendelse kræves for at læse systemgodkendelser</message>
+      <message xml:lang="zh_CN">需要进行验证才能读取系统验证配置</message>
+      <message xml:lang="pl">Uwierzytelnienie jest wymagane do odczytu uwierzytelnień systemowych</message>
+      <message xml:lang="cs">Pro čtení systémových oprávnění je třeba patřičná oprávnění</message>
+      <message xml:lang="de">Berechtigung ist für das Einlesen von Systemberechtigungen erforderlich</message>
+      <message xml:lang="tr">Sistem yetkilendirmelerini okumak için yetkilendirme gerekiyor</message>
+      <message xml:lang="pt">É necessária a autorização para ler as autorizações do sistema</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="zh_TW">您需要授權才能讀取系統授權</message>
+      <message xml:lang="hr">Potrebno je autorizirati se kako bi se pročitale autorizacije u sustavu</message>
+      <message xml:lang="uk">Для читання системних уповноважень потрібно пройти уповноваження</message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="hu">A rendszerhitelesítések olvasásához hitelesítés szükséges</message>
+      <message xml:lang="nb">Autorisering kreves for å lese systemautoriseringer</message>
+      <message xml:lang="el">Απαιτείται εξουσιοδότηση για την ανάγνωση των εξουσιοδοτήσεων του συστήματος</message>
+      <message xml:lang="vi">Cần được cấp phép để đọc các cấp phép hệ thống</message>
+      <message>Authorization is required to read system authorizations</message>
+      <message xml:lang="en_GB">Authorisation is required to read system authorisations</message>
+      <message xml:lang="it">È richiesta l'autorizzazione per leggere le autorizzazioni di sistema</message>
+      <message xml:lang="es">Es necesaria una autorización para leer las autorizaciones del sistema</message>
+      <message xml:lang="et">Süsteemi autentimiste lugemiseks on vajalik autentimine</message>
+      <message xml:lang="ar">يتطلب أذن لقراءة أذون النظام</message>
+      <message xml:lang="ro">Pentru a citi autorizările sistemului este nevoie de autorizare</message>
+      <message xml:lang="nl">Autorisatie is vereist om systeemautorisaties te lezen</message>
+      <message xml:lang="nds">För't Lesen vun Systeemverlööfnissen deit Verlööf noot.</message>
+      <message xml:lang="fi">Järjestelmän käyttövaltuuksien lukemiseksi tarvitsee tarkistaa käyttöoikeudet</message>
+      <message xml:lang="ru">Для чтения системных разрешений требуется авторизация</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

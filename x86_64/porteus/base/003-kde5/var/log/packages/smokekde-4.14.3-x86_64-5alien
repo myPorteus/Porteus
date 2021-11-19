@@ -1,0 +1,71 @@
+PACKAGE NAME:     smokekde-4.14.3-x86_64-5alien
+COMPRESSED PACKAGE SIZE:     1.7M
+UNCOMPRESSED PACKAGE SIZE:     12M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/smokekde-4.14.3-x86_64-5alien.txz
+PACKAGE DESCRIPTION:
+smokekde: smokekde (smoke-kde library)
+smokekde:
+smokekde: Smoke generator.
+smokekde:
+smokekde: For more information, visit:  http://www.kde.org
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+smokekde:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/smokekde-4.14.3/
+usr/doc/smokekde-4.14.3/AUTHORS
+usr/doc/smokekde-4.14.3/COPYING
+usr/doc/smokekde-4.14.3/COPYING.LIB
+usr/include/
+usr/include/smoke/
+usr/include/smoke/akonadi_smoke.h
+usr/include/smoke/attica_smoke.h
+usr/include/smoke/kdecore_smoke.h
+usr/include/smoke/kdeui_smoke.h
+usr/include/smoke/kfile_smoke.h
+usr/include/smoke/khtml_smoke.h
+usr/include/smoke/kio_smoke.h
+usr/include/smoke/knewstuff2_smoke.h
+usr/include/smoke/knewstuff3_smoke.h
+usr/include/smoke/kparts_smoke.h
+usr/include/smoke/ktexteditor_smoke.h
+usr/include/smoke/kutils_smoke.h
+usr/include/smoke/nepomuk_smoke.h
+usr/include/smoke/nepomukquery_smoke.h
+usr/include/smoke/plasma_smoke.h
+usr/include/smoke/solid_smoke.h
+usr/include/smoke/soprano_smoke.h
+usr/include/smoke/sopranoclient_smoke.h
+usr/include/smoke/sopranoserver_smoke.h
+usr/lib64/
+usr/lib64/libsmokeakonadi.so.3.0.0
+usr/lib64/libsmokeattica.so.3.0.0
+usr/lib64/libsmokekdecore.so.3.0.0
+usr/lib64/libsmokekdeui.so.3.0.0
+usr/lib64/libsmokekfile.so.3.0.0
+usr/lib64/libsmokekhtml.so.3.0.0
+usr/lib64/libsmokekio.so.3.0.0
+usr/lib64/libsmokeknewstuff2.so.3.0.0
+usr/lib64/libsmokeknewstuff3.so.3.0.0
+usr/lib64/libsmokekparts.so.3.0.0
+usr/lib64/libsmokektexteditor.so.3.0.0
+usr/lib64/libsmokekutils.so.3.0.0
+usr/lib64/libsmokenepomuk.so.3.0.0
+usr/lib64/libsmokenepomukquery.so.3.0.0
+usr/lib64/libsmokeplasma.so.3.0.0
+usr/lib64/libsmokesolid.so.3.0.0
+usr/lib64/libsmokesoprano.so.3.0.0
+usr/lib64/libsmokesopranoclient.so.3.0.0
+usr/lib64/libsmokesopranoserver.so.3.0.0
+usr/share/
+usr/share/smokegen/
+usr/share/smokegen/kde-config.xml

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="application/application/x-gzip">
+        <icon name="application-x-gzip"/>
+        <glob-deleteall/>
+        <glob pattern="*.tar.gz"/>
+        <glob pattern="*.tar.xz"/>
+    </mime-type>
+</mime-info>

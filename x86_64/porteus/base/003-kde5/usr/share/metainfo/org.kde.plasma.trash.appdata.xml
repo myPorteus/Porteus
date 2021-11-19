@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.trash</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Trashcan</name>
+    <name xml:lang="af">Gemors</name>
+    <name xml:lang="ar">سلّة المهملات</name>
+    <name xml:lang="ast">Trashcan</name>
+    <name xml:lang="be@latin">Śmietnica</name>
+    <name xml:lang="bg">Кошче</name>
+    <name xml:lang="bn">আবর্জনা</name>
+    <name xml:lang="bs">Korpa za smeće</name>
+    <name xml:lang="ca@valencia">Paperera</name>
+    <name xml:lang="ca">Paperera</name>
+    <name xml:lang="cs">Koš</name>
+    <name xml:lang="csb">Kòsz</name>
+    <name xml:lang="da">Affald</name>
+    <name xml:lang="de">Papierkorb</name>
+    <name xml:lang="el">Κάδος απορριμμάτων</name>
+    <name xml:lang="en_GB">Wastebin</name>
+    <name xml:lang="eo">Rubujo</name>
+    <name xml:lang="es">Papelera</name>
+    <name xml:lang="et">Prügikast</name>
+    <name xml:lang="eu">Zakarontzia</name>
+    <name xml:lang="fi">Roskakori</name>
+    <name xml:lang="fr">Corbeille</name>
+    <name xml:lang="fy">Jiskefet</name>
+    <name xml:lang="ga">Bruscar</name>
+    <name xml:lang="gl">Lixo</name>
+    <name xml:lang="gu">કચરાપેટી</name>
+    <name xml:lang="he">פח אשפה</name>
+    <name xml:lang="hi">रद्दी की टोकरी</name>
+    <name xml:lang="hne">घुरुवा</name>
+    <name xml:lang="hr">Otpad</name>
+    <name xml:lang="hsb">Papjernik</name>
+    <name xml:lang="hu">Kuka</name>
+    <name xml:lang="ia">Corbe</name>
+    <name xml:lang="id">Tempat Sampah</name>
+    <name xml:lang="is">Ruslafata</name>
+    <name xml:lang="it">Cestino</name>
+    <name xml:lang="ja">ごみ箱</name>
+    <name xml:lang="kk">Өшірілгендер</name>
+    <name xml:lang="km">ធុង​សំរាម</name>
+    <name xml:lang="kn">ಕಸಬುಟ್ಟಿ</name>
+    <name xml:lang="ko">휴지통</name>
+    <name xml:lang="ku">Qutiya Sergo</name>
+    <name xml:lang="lt">Šiukšlinė</name>
+    <name xml:lang="lv">Miskaste</name>
+    <name xml:lang="mk">Корпа</name>
+    <name xml:lang="ml">ചവറ്റുകുട്ട</name>
+    <name xml:lang="mr">कचरापेटी</name>
+    <name xml:lang="nb">Søppelbøtte</name>
+    <name xml:lang="nds">Affalltünn</name>
+    <name xml:lang="nl">Prullenbak</name>
+    <name xml:lang="nn">Papirkorg</name>
+    <name xml:lang="or">Trashcan</name>
+    <name xml:lang="pa">ਰੱਦੀ-ਟੋਕਰੀ</name>
+    <name xml:lang="pl">Kosz</name>
+    <name xml:lang="pt">Caixote do Lixo</name>
+    <name xml:lang="pt_BR">Lixeira</name>
+    <name xml:lang="ro">Coș de gunoi</name>
+    <name xml:lang="ru">Корзина</name>
+    <name xml:lang="si">ඉවතලන බඳුන</name>
+    <name xml:lang="sk">Odpadkový kôš</name>
+    <name xml:lang="sl">Smetnjak</name>
+    <name xml:lang="sr@ijekavian">корпа за смеће</name>
+    <name xml:lang="sr@ijekavianlatin">korpa za smeće</name>
+    <name xml:lang="sr@latin">korpa za smeće</name>
+    <name xml:lang="sr">корпа за смеће</name>
+    <name xml:lang="sv">Papperskorg</name>
+    <name xml:lang="ta">அகற்றிடம்</name>
+    <name xml:lang="te">చెత్తబుట్ట</name>
+    <name xml:lang="tg">Ахлотдон</name>
+    <name xml:lang="th">ถังขยะ</name>
+    <name xml:lang="tr">Çöp Kutusu</name>
+    <name xml:lang="ug">ئەخلەتخانا</name>
+    <name xml:lang="uk">Смітник</name>
+    <name xml:lang="uz@cyrillic">Чиқиндилар қутиси</name>
+    <name xml:lang="uz">Chiqindilar qutisi</name>
+    <name xml:lang="wa">Batch ås mannestés</name>
+    <name xml:lang="x-test">xxTrashcanxx</name>
+    <name xml:lang="zh_CN">回收站</name>
+    <name xml:lang="zh_TW">資源回收筒</name>
+    <url type="homepage">http://plasma.kde.org/</url>
+    <developer_name>Heena &lt;heena393@gmail.com&gt;</developer_name>
+    <icon type="stock">user-trash</icon>
+    <project_license>Gpl</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

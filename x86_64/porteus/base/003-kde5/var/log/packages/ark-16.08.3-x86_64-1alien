@@ -1,0 +1,100 @@
+PACKAGE NAME:     ark-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     504K
+UNCOMPRESSED PACKAGE SIZE:     1.9M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/ark-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+ark: ark (KDE archiver tool)
+ark:
+ark: This is KDE's application to work with compressed archives.
+ark:
+ark: Ark's home page is:  http://kde.org
+ark:
+ark:
+ark:
+ark:
+ark:
+ark:
+FILE LIST:
+./
+etc/
+etc/kde/
+etc/kde/xdg/
+etc/kde/xdg/ark.categories
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ark
+usr/doc/
+usr/doc/HTML/
+usr/doc/HTML/en/
+usr/doc/HTML/en/ark/
+usr/doc/HTML/en/ark/ark-comment.png
+usr/doc/HTML/en/ark/ark-mainwindow.png
+usr/doc/HTML/en/ark/create-protected-archive.png
+usr/doc/HTML/en/ark/extract-dialog.png
+usr/doc/HTML/en/ark/index.cache.bz2
+usr/doc/HTML/en/ark/index.docbook
+usr/doc/ark-16.08.3/
+usr/doc/ark-16.08.3/COPYING
+usr/doc/ark-16.08.3/COPYING.icons
+usr/doc/ark-16.08.3/HACKING
+usr/doc/ark-16.08.3/README
+usr/doc/ark-16.08.3/README.packagers
+usr/lib64/
+usr/lib64/libkerfuffle.so.16.08.3
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/arkpart.so
+usr/lib64/qt5/plugins/kerfuffle/
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_cli7z.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_clirar.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_cliunarchiver.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_clizip.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_libarchive.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_libarchive_readonly.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_libbz2.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_libgz.so
+usr/lib64/qt5/plugins/kerfuffle/kerfuffle_libxz.so
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/kfileitemaction/
+usr/lib64/qt5/plugins/kf5/kfileitemaction/compressfileitemaction.so
+usr/lib64/qt5/plugins/kf5/kfileitemaction/extractfileitemaction.so
+usr/lib64/qt5/plugins/kf5/kio_dnd/
+usr/lib64/qt5/plugins/kf5/kio_dnd/extracthere.so
+usr/man/
+usr/man/man1/
+usr/man/man1/ark.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.ark.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/ark.kcfg
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/ark.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/ark.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/ark.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/ark.svgz
+usr/share/kservices5/
+usr/share/kservices5/ark_part.desktop
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/kerfufflePlugin.desktop
+usr/share/kxmlgui5/
+usr/share/kxmlgui5/ark/
+usr/share/kxmlgui5/ark/ark_part.rc
+usr/share/kxmlgui5/ark/arkui.rc
+usr/share/metainfo/
+usr/share/metainfo/org.kde.ark.appdata.xml
+usr/share/mime/
+usr/share/mime/packages/
+usr/share/mime/packages/kerfuffle.xml

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libaccounts-glib.so.0 )
+( cd usr/lib64 ; ln -sf libaccounts-glib.so.0.1.3 libaccounts-glib.so.0 )
+( cd usr/lib64 ; rm -rf libaccounts-glib.so )
+( cd usr/lib64 ; ln -sf libaccounts-glib.so.0.1.3 libaccounts-glib.so )

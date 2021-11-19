@@ -1,0 +1,39 @@
+PACKAGE NAME:     nftables-0.6-x86_64-1
+COMPRESSED PACKAGE SIZE:     124K
+UNCOMPRESSED PACKAGE SIZE:     400K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/nftables-0.6-x86_64-1.txz
+PACKAGE DESCRIPTION:
+nftables: nftables (packet filtering and classification)
+nftables:
+nftables: nftables provides a new packet filtering framework, a new userspace
+nftables: utility, and also a compatibility layer for {ip,ip6}tables.  nftables
+nftables: is built upon the building blocks of the Netfilter infrastructure such
+nftables: as the existing hooks, the connection tracking system, the userspace
+nftables: queueing component, and the logging subsystem.
+nftables:
+nftables: Homepage: http://www.netfilter.org/projects/nftables/
+nftables:
+nftables:
+FILE LIST:
+./
+etc/
+etc/nftables/
+etc/nftables/bridge-filter
+etc/nftables/inet-filter
+etc/nftables/ipv4-filter
+etc/nftables/ipv4-mangle
+etc/nftables/ipv4-nat
+etc/nftables/ipv6-filter
+etc/nftables/ipv6-mangle
+etc/nftables/ipv6-nat
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/nftables-0.6/
+usr/doc/nftables-0.6/COPYING
+usr/man/
+usr/man/man8/
+usr/man/man8/nft.8.gz
+usr/sbin/
+usr/sbin/nft

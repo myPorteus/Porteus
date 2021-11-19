@@ -1,0 +1,14 @@
+prefix=/usr/lib64/qt
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtWebKit
+qt_config=include_source_dir lex yacc uic resources lex yacc uic resources qt release incremental link_prl gdb_dwarf_index shared def_files_disabled exceptions no_mocdepend release stl qt_no_framework webkit_configured production_build production_build link_pkgconfig root_project_file no_webkit2 include_webinspector production_build no_webkit2 release production_build production_build ordered config_step depend_includepath use_all_in_one_files moc thread link_pkgconfig include_webinspector production_build no_webkit2 release production_build create_pc create_prl config_step depend_includepath hide_symbols x11 x11lib x11inc dll shared opengl
+
+Name: Qtwebkit
+Description: Qtwebkit Library
+Version: 4.10.4
+Libs: -L${libdir} -lQtWebKit 
+Libs.private:      -L/usr/X11R6/lib -L/usr/lib64/qt/lib  -Wl,-whole-archive -lWebKit1 -Wl,-no-whole-archive -Wl,-whole-archive -lWebCore -Wl,-no-whole-archive -lXrender -ljpeg -lpng -Wl,-whole-archive -lANGLE -Wl,-no-whole-archive -Wl,-whole-archive -lJavaScriptCore -Wl,-no-whole-archive -Wl,-whole-archive -lWTF -Wl,-no-whole-archive -lxslt -lz -lm -lxml2 -ludev -lgio-2.0 -lgstapp-1.0 -lgstpbutils-1.0 -lgstvideo-1.0 -lgstaudio-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lsqlite3 -ldl -lfontconfig -lfreetype -lQtOpenGL -L/usr/lib64/qt/lib -L/usr/X11R6/lib -lQtGui -lQtNetwork -lQtCore -lpthread -lGL -lXext -lX11 -lm  
+Cflags:  -I${includedir}
+Requires: QtCore QtGui QtNetwork
+

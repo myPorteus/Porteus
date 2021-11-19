@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: libdvdnav
+Description: DVD Navigation library
+Version: 5.0.3
+
+Requires.private: dvdread >= 4.1.2
+Cflags: -I${includedir} 
+Libs: -L${libdir} -ldvdnav -lpthread

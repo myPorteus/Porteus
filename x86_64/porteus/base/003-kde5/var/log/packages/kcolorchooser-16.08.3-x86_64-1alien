@@ -1,0 +1,38 @@
+PACKAGE NAME:     kcolorchooser-16.08.3-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/kcolorchooser-16.08.3-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+kcolorchooser: kcolorchooser (color chooser)
+kcolorchooser:
+kcolorchooser: A color chooser application for KDE.
+kcolorchooser:
+kcolorchooser: For more information, visit:  http://www.kde.org
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+kcolorchooser:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kcolorchooser
+usr/doc/
+usr/doc/kcolorchooser-16.08.3/
+usr/doc/kcolorchooser-16.08.3/COPYING
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.kcolorchooser.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kcolorchooser.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kcolorchooser.png

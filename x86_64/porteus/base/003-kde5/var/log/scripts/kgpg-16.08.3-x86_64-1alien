@@ -1,0 +1,2 @@
+( cd usr/doc/HTML/en/kgpg ; rm -rf common )
+( cd usr/doc/HTML/en/kgpg ; ln -sf /usr/share/doc/HTML/en/common common )

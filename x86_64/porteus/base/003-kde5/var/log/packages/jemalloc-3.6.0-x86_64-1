@@ -1,0 +1,43 @@
+PACKAGE NAME:     jemalloc-3.6.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     192K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/jemalloc-3.6.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+jemalloc: jemalloc (A memory allocator)
+jemalloc:
+jemalloc: jemalloc is a general-purpose scalable concurrent malloc(3)
+jemalloc: implementation.
+jemalloc:
+jemalloc: Homepage: http://www.canonware.com/jemalloc/
+jemalloc:
+jemalloc:
+jemalloc:
+jemalloc:
+jemalloc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/jemalloc.sh
+usr/bin/pprof
+usr/doc/
+usr/doc/jemalloc-3.6.0/
+usr/doc/jemalloc-3.6.0/COPYING
+usr/doc/jemalloc-3.6.0/ChangeLog
+usr/doc/jemalloc-3.6.0/INSTALL
+usr/doc/jemalloc-3.6.0/README
+usr/doc/jemalloc-3.6.0/VERSION
+usr/doc/jemalloc-3.6.0/jemalloc.html
+usr/include/
+usr/include/jemalloc/
+usr/include/jemalloc/jemalloc.h
+usr/lib64/
+usr/lib64/libjemalloc.a
+usr/lib64/libjemalloc.so.1
+usr/lib64/libjemalloc_pic.a
+usr/man/
+usr/man/man3/
+usr/man/man3/jemalloc.3.gz

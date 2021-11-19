@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib64
+includedir=${prefix}/include
+
+Name: librevenge-generators-0.0
+Description: Input generators implementation for librevenge
+Version: 0.0.4
+Requires: librevenge-0.0
+Libs: -L${libdir} -lrevenge-generators-0.0
+Cflags: -I${includedir}/librevenge-0.0

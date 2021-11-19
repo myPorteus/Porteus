@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=lib64
+includedir=include/KF5Attica
+
+Name: libKF5Attica
+Description: Qt library to access Open Collaboration Services
+#Requires:
+Version: ..
+Libs: -Llib64 -lKF5Attica
+Cflags: -Iinclude/KF5Attica

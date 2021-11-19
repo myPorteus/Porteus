@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libsigsegv.so )
+( cd usr/lib64 ; ln -sf libsigsegv.so.2.0.3 libsigsegv.so )
+( cd usr/lib64 ; rm -rf libsigsegv.so.2 )
+( cd usr/lib64 ; ln -sf libsigsegv.so.2.0.3 libsigsegv.so.2 )

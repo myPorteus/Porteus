@@ -1,0 +1,145 @@
+#
+# Copyright 1995-2009 DCMI All Rights Reserved. 
+# DCMI liability, trademark/service mark, document use and  software licensing rules apply.
+# For details see http://dublincore.org/
+#
+
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nao:      <http://www.semanticdesktop.org/ontologies/2007/08/15/nao#> .
+@prefix nrl:      <http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+
+dcmitype: {
+    dcterms:DCMIType rdf:type dcterms:TypeScheme ,
+            rdfs:Class ;
+        dc:description "The DCMI Type Vocabulary provides a general, cross-domain list of approved terms that may be used as values for the Resource Type element to identify the genre of a resource." ;
+        dcterms:issued "2000-07-11" .
+    dcmitype:Collection rdf:type dcterms:DCMIType ;
+        rdfs:label "Collection" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "An aggregation of resources." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Collection-002> .
+    dcmitype:Dataset rdf:type dcterms:DCMIType ;
+        rdfs:label "Dataset" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "Data encoded in a defined structure." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Dataset-002> .
+    dcmitype:Event rdf:type dcterms:DCMIType ;
+        rdfs:label "Event" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A non-persistent, time-based occurrence." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Event-002> .
+    dcmitype:Image rdf:type dcterms:DCMIType ;
+        rdfs:label "Image" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A visual representation other than text." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Image-003> .
+    dcmitype:InteractiveResource rdf:type dcterms:DCMIType ;
+        rdfs:label "Interactive Resource" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A resource requiring interaction from the user to be understood, executed, or experienced." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#InteractiveResource-002> .
+    dcmitype:Service rdf:type dcterms:DCMIType ;
+        rdfs:label "Service" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A system that provides one or more functions." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Service-002> .
+    dcmitype:Software rdf:type dcterms:DCMIType ;
+        rdfs:label "Software" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A computer program in source or compiled form." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Software-002> .
+    dcmitype:Sound rdf:type dcterms:DCMIType ;
+        rdfs:label "Sound" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A resource primarily intended to be heard." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Sound-002> .
+    dcmitype:Text rdf:type dcterms:DCMIType ;
+        rdfs:label "Text" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A resource consisting primarily of words for reading." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2000-07-11" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#Text-002> .
+    dcmitype:PhysicalObject rdf:type dcterms:DCMIType ;
+        rdfs:label "Physical Object" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "An inanimate, three-dimensional object or substance." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2002-07-13" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#PhysicalObject-002> .
+    dcmitype:StillImage rdf:type dcterms:DCMIType ;
+        rdfs:label "Still Image" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A static visual representation." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2003-11-18" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#StillImage-002> ;
+        rdfs:subClassOf dcmitype:Image .
+    dcmitype:MovingImage rdf:type dcterms:DCMIType ;
+        rdfs:label "Moving Image" ;
+        rdfs:isDefinedBy <http://purl.org/dc/dcmitype/> ;
+        rdfs:comment "A series of visual representations imparting an impression of motion when shown in succession." ;
+        rdf:type rdfs:Class ;
+        dcterms:issued "2003-11-18" ;
+        dc:type <http://dublincore.org/usage/documents/principles/#vocabulary-term> ;
+        dcterms:hasVersion <http://dublincore.org/usage/terms/history/#MovingImage-002> ;
+        rdfs:subClassOf dcmitype:Image .
+}
+
+<http://purl.org/dc/dcmitype/metadata> {
+    <http://purl.org/dc/dcmitype/metadata>
+          a       nrl:GraphMetadata ;
+          nrl:coreGraphMetadataFor dcmitype: .
+
+    dcmitype:
+          a nrl:Ontology, nrl:DocumentGraph ;
+          dc:title "The DCMI Types namespace providing access to its content by means of an RDF Schema" ;
+          dc:publisher "The Dublin Core Metadata Initiative" ;
+          dc:description "The Dublin Core Types namespace provides URIs for the entries of the DCMI Type Vocabulary. Entries are declared using RDF Schema language to support RDF applications. The Schema will be updated according to dc-usage decisions." ;
+          dc:language "English" ;
+          dcterms:requires <http://dublincore.org/documents/dcmi-type-vocabulary/> ;
+          dc:source <http://dublincore.org/documents/dcmi-type-vocabulary/> ,
+             <http://dublincore.org/usage/terms/> ;
+          dcterms:requires <http://purl.org/dc/elements/1.1/> ;
+          dcterms:isReferencedBy <http://purl.org/dc/terms/> ;
+          dcterms:issued "2000-07-11" ;
+          dcterms:modified "2002-05-22" ;
+          nao:lastModified "2009-11-30T18:00:00Z" ;
+          nao:hasDefaultNamespace "http://purl.org/dc/dcmitype/" ;
+          nao:hasDefaultNamespaceAbbreviation "dctype" ;
+          nao:serializationLanguage "TriG" ;
+          nao:status "Stable" ;
+          nrl:updatable "0" ;
+          nao:version "1" .
+}

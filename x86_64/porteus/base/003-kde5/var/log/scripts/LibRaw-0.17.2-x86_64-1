@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libraw_r.so.15 )
+( cd usr/lib64 ; ln -sf libraw_r.so.15.0.0 libraw_r.so.15 )
+( cd usr/lib64 ; rm -rf libraw_r.so )
+( cd usr/lib64 ; ln -sf libraw_r.so.15.0.0 libraw_r.so )
+( cd usr/lib64 ; rm -rf libraw.so.15 )
+( cd usr/lib64 ; ln -sf libraw.so.15.0.0 libraw.so.15 )
+( cd usr/lib64 ; rm -rf libraw.so )
+( cd usr/lib64 ; ln -sf libraw.so.15.0.0 libraw.so )

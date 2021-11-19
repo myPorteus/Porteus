@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5FileMetaData.so )
+( cd usr/lib64 ; ln -sf libKF5FileMetaData.so.3 libKF5FileMetaData.so )
+( cd usr/lib64 ; rm -rf libKF5FileMetaData.so.3 )
+( cd usr/lib64 ; ln -sf libKF5FileMetaData.so.5.28.0 libKF5FileMetaData.so.3 )

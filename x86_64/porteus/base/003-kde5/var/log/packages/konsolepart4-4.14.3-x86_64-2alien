@@ -1,0 +1,69 @@
+PACKAGE NAME:     konsolepart4-4.14.3-x86_64-2alien
+COMPRESSED PACKAGE SIZE:     344K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /p/git/build/../x86_64/pkg/003_kde/KTOWN/konsolepart4-4.14.3-x86_64-2alien.txz
+PACKAGE DESCRIPTION:
+konsolepart4: konsolepart4 (KDE's terminal emulator component)
+konsolepart4:
+konsolepart4: Konsole is KDE's terminal emulator. The konsolepart is an
+konsolepart4: embeddable terminal component for KDE4 applications.
+konsolepart4:
+konsolepart4:
+konsolepart4:
+konsolepart4:
+konsolepart4:
+konsolepart4: Homepage: http://kde.org
+konsolepart4:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/konsolepart4-4.14.3/
+usr/doc/konsolepart4-4.14.3/COPYING
+usr/doc/konsolepart4-4.14.3/COPYING.DOC
+usr/doc/konsolepart4-4.14.3/COPYING.LIB
+usr/doc/konsolepart4-4.14.3/COPYING.Unicode
+usr/doc/konsolepart4-4.14.3/README
+usr/lib64/
+usr/lib64/kde4/
+usr/lib64/kde4/libkonsolepart.so
+usr/lib64/libkonsoleprivate.so
+usr/share/
+usr/share/apps/
+usr/share/apps/kconf_update/
+usr/share/apps/kconf_update/konsole-2.10.0-remove-menuindex-from-profiles.sh
+usr/share/apps/kconf_update/konsole-2.9.0-colorscheme-bold-key.sh
+usr/share/apps/kconf_update/konsole-2.9.0-global-options.sh
+usr/share/apps/kconf_update/konsole.upd
+usr/share/apps/kconf_update/konsole_remove_background_mode.upd
+usr/share/apps/konsole/
+usr/share/apps/konsole/BlackOnLightYellow.colorscheme
+usr/share/apps/konsole/BlackOnRandomLight.colorscheme
+usr/share/apps/konsole/BlackOnWhite.colorscheme
+usr/share/apps/konsole/BlueOnBlack.colorscheme
+usr/share/apps/konsole/DarkPastels.colorscheme
+usr/share/apps/konsole/GreenOnBlack.colorscheme
+usr/share/apps/konsole/Linux.colorscheme
+usr/share/apps/konsole/README.KeyTab
+usr/share/apps/konsole/RedOnBlack.colorscheme
+usr/share/apps/konsole/Shell.profile
+usr/share/apps/konsole/Solarized.colorscheme
+usr/share/apps/konsole/SolarizedLight.colorscheme
+usr/share/apps/konsole/WhiteOnBlack.colorscheme
+usr/share/apps/konsole/default.keytab
+usr/share/apps/konsole/konsole.notifyrc
+usr/share/apps/konsole/konsoleui.rc
+usr/share/apps/konsole/linux.keytab
+usr/share/apps/konsole/partui.rc
+usr/share/apps/konsole/sessionui.rc
+usr/share/apps/konsole/solaris.keytab
+usr/share/kde4/
+usr/share/kde4/services/
+usr/share/kde4/services/ServiceMenus/
+usr/share/kde4/services/ServiceMenus/konsolehere.desktop
+usr/share/kde4/services/ServiceMenus/konsolerun.desktop
+usr/share/kde4/services/konsolepart.desktop
+usr/share/kde4/servicetypes/
+usr/share/kde4/servicetypes/terminalemulator.desktop
