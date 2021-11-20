@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: CC0-1.0
+[KNewStuff3]
+Name=Pages
+Name[az]=Səhifələr
+Name[ca]=Pàgines
+Name[ca@valencia]=Pàgines
+Name[cs]=Strany
+Name[da]=Sider
+Name[de]=Seiten
+Name[en_GB]=Pages
+Name[es]=Páginas
+Name[eu]=Orriak
+Name[fi]=Sivut
+Name[fr]=Pages
+Name[hu]=Lapok
+Name[ia]=Paginas
+Name[it]=Pagine
+Name[ja]=ページ
+Name[ko]=쪽
+Name[lt]=Puslapiai
+Name[nl]=Pagina's
+Name[nn]=Sider
+Name[pa]=ਸਫ਼ੇ
+Name[pl]=Strony
+Name[pt]=Páginas
+Name[pt_BR]=Páginas
+Name[ro]=Pagini
+Name[ru]=Страницы
+Name[sk]=Stránky
+Name[sl]=Strani
+Name[sv]=Sidor
+Name[uk]=Сторінки
+Name[x-test]=xxPagesxx
+Name[zh_CN]=页面
+ProvidersUrl=https://autoconfig.kde.org/ocs/providers.xml
+Categories=System Monitor Pages
+XdgTargetDir=plasma-systemmonitor

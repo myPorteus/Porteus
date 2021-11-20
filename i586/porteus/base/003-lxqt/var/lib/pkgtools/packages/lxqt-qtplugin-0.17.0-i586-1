@@ -1,0 +1,13 @@
+PACKAGE NAME:     lxqt-qtplugin-0.17.0-i586-1
+COMPRESSED PACKAGE SIZE:     812K
+UNCOMPRESSED PACKAGE SIZE:     3.2M
+PACKAGE LOCATION: lxqt-qtplugin-0.17.0-i586-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/platformthemes/
+usr/lib/qt5/plugins/platformthemes/libqtlxqt.so

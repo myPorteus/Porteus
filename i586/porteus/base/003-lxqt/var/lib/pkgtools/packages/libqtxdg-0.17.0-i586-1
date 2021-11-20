@@ -1,0 +1,65 @@
+PACKAGE NAME:     libqtxdg-0.17.0-i586-1
+COMPRESSED PACKAGE SIZE:     2.6M
+UNCOMPRESSED PACKAGE SIZE:     12M
+PACKAGE LOCATION: libqtxdg-0.17.0-i586-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/qtxdg-mat
+usr/include/
+usr/include/qt5xdg/
+usr/include/qt5xdg/XdgAction
+usr/include/qt5xdg/XdgAutoStart
+usr/include/qt5xdg/XdgDefaultApps
+usr/include/qt5xdg/XdgDesktopFile
+usr/include/qt5xdg/XdgDirs
+usr/include/qt5xdg/XdgIcon
+usr/include/qt5xdg/XdgMenu
+usr/include/qt5xdg/XdgMenuWidget
+usr/include/qt5xdg/XdgMimeApps
+usr/include/qt5xdg/XdgMimeType
+usr/include/qt5xdg/XmlHelper
+usr/include/qt5xdg/xdgaction.h
+usr/include/qt5xdg/xdgautostart.h
+usr/include/qt5xdg/xdgdefaultapps.h
+usr/include/qt5xdg/xdgdesktopfile.h
+usr/include/qt5xdg/xdgdirs.h
+usr/include/qt5xdg/xdgicon.h
+usr/include/qt5xdg/xdgmacros.h
+usr/include/qt5xdg/xdgmenu.h
+usr/include/qt5xdg/xdgmenuwidget.h
+usr/include/qt5xdg/xdgmimeapps.h
+usr/include/qt5xdg/xdgmimetype.h
+usr/include/qt5xdg/xmlhelper.h
+usr/include/qt5xdgiconloader/
+usr/include/qt5xdgiconloader/3.7.1/
+usr/include/qt5xdgiconloader/3.7.1/private/
+usr/include/qt5xdgiconloader/3.7.1/private/xdgiconloader/
+usr/include/qt5xdgiconloader/3.7.1/private/xdgiconloader/xdgiconloader_p.h
+usr/include/qt5xdgiconloader/xdgiconloader_export.h
+usr/lib/
+usr/lib/libQt5Xdg.so.3.7.1
+usr/lib/libQt5XdgIconLoader.so.3.7.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/Qt5Xdg.pc
+usr/lib/pkgconfig/Qt5XdgIconLoader.pc
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/iconengines/
+usr/lib/qt5/plugins/iconengines/libQt5XdgIconPlugin.so
+usr/share/
+usr/share/cmake/
+usr/share/cmake/qt5xdg/
+usr/share/cmake/qt5xdg/qt5xdg-config-version.cmake
+usr/share/cmake/qt5xdg/qt5xdg-config.cmake
+usr/share/cmake/qt5xdg/qt5xdg-targets-release.cmake
+usr/share/cmake/qt5xdg/qt5xdg-targets.cmake
+usr/share/cmake/qt5xdgiconloader/
+usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-config-version.cmake
+usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-config.cmake
+usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-targets-release.cmake
+usr/share/cmake/qt5xdgiconloader/qt5xdgiconloader-targets.cmake

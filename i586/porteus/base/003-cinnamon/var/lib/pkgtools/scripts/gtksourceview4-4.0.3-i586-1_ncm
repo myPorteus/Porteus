@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libgtksourceview-4.so )
+( cd usr/lib ; ln -sf libgtksourceview-4.so.0.0.0 libgtksourceview-4.so )
+( cd usr/lib ; rm -rf libgtksourceview-4.so.0 )
+( cd usr/lib ; ln -sf libgtksourceview-4.so.0.0.0 libgtksourceview-4.so.0 )

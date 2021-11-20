@@ -1,0 +1,56 @@
+PACKAGE NAME:     prison-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/prison-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+prison: prison (Qt based Barcode API)
+prison:
+prison: Prison is a barcode API currently offering a Qt API to produce QRCode
+prison: barcodes and DotMatrix barcodes. 
+prison:
+prison: Homepage: http://anongit.kde.org/prison
+prison:
+prison:
+prison:
+prison:
+prison:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/prison-5.83.0/
+usr/doc/prison-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/prison/
+usr/include/KF5/prison/AbstractBarcode
+usr/include/KF5/prison/Prison
+usr/include/KF5/prison/abstractbarcode.h
+usr/include/KF5/prison/prison.h
+usr/include/KF5/prison/prison_export.h
+usr/include/KF5/prison_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5Prison/
+usr/lib/cmake/KF5Prison/KF5PrisonConfig.cmake
+usr/lib/cmake/KF5Prison/KF5PrisonConfigVersion.cmake
+usr/lib/cmake/KF5Prison/KF5PrisonTargets-release.cmake
+usr/lib/cmake/KF5Prison/KF5PrisonTargets.cmake
+usr/lib/libKF5Prison.so.5.83.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_Prison.pri
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/prison/
+usr/lib/qt5/qml/org/kde/prison/libprisonquickplugin.so
+usr/lib/qt5/qml/org/kde/prison/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/prison.categories
+usr/share/qlogging-categories5/prison.renamecategories

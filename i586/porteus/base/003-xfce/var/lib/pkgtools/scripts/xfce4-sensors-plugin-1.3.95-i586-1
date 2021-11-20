@@ -1,0 +1,4 @@
+( cd usr/lib/xfce4/modules ; rm -rf libxfce4sensors.so )
+( cd usr/lib/xfce4/modules ; ln -sf libxfce4sensors.so.5.0.1 libxfce4sensors.so )
+( cd usr/lib/xfce4/modules ; rm -rf libxfce4sensors.so.5 )
+( cd usr/lib/xfce4/modules ; ln -sf libxfce4sensors.so.5.0.1 libxfce4sensors.so.5 )

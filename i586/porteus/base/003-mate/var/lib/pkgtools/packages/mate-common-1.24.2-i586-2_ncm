@@ -1,0 +1,45 @@
+PACKAGE NAME:     mate-common-1.24.2-i586-2_ncm
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_mate/mate-common-1.24.2-i586-2_ncm.txz
+PACKAGE DESCRIPTION:
+mate-common: mate-common (common files for the MATE desktop)
+mate-common:
+mate-common: Common scripts and macros to develop with the MATE desktop.
+mate-common: mate-common is an extension to autoconf, automake, and libtool for
+mate-common: the MATE desktop and MATE using applications.  Included are mate-
+mate-common: autogen.sh and several macros to help in MATE source trees.
+mate-common:
+mate-common:
+mate-common:
+mate-common: Homepage: https://www.mate-desktop.org
+mate-common:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mate-autogen
+usr/bin/mate-doc-common
+usr/doc/
+usr/doc/mate-common-1.24.2/
+usr/doc/mate-common-1.24.2/AUTHORS
+usr/doc/mate-common-1.24.2/COPYING
+usr/doc/mate-common-1.24.2/ChangeLog
+usr/doc/mate-common-1.24.2/NEWS
+usr/doc/mate-common-1.24.2/README
+usr/doc/mate-common-1.24.2/mate-common.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/mate-autogen.1.gz
+usr/man/man1/mate-doc-common.1.gz
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/mate-code-coverage.m4
+usr/share/aclocal/mate-common.m4
+usr/share/aclocal/mate-compiler-flags.m4
+usr/share/mate-common/
+usr/share/mate-common/data/
+usr/share/mate-common/data/omf.make
+usr/share/mate-common/data/xmldocs.make

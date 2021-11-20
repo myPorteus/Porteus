@@ -1,0 +1,15 @@
+[Nemo Action]
+
+Name= Open in Terminal
+Name[ru]=Открыть Terminal
+
+Comment=Open in terminal
+Comment[ru]=Открыть terminal
+
+Icon-Name=utilities-terminal-symbolic
+
+Exec=gnome-terminal --working-directory "%D"
+
+Selection=None
+
+Extensions=any;

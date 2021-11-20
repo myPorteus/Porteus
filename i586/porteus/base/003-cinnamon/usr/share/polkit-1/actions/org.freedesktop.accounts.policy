@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor/>
+  <vendor_url/>
+  <icon_name>stock_person</icon_name>
+  <action id="org.freedesktop.accounts.change-own-user-data">
+    <description>Change your own user data</description>
+    <description xml:lang="zh_TW">變更您自身的使用者資料</description>
+    <description xml:lang="zh_CN">修改您的用户数据</description>
+    <description xml:lang="uk">Зміна даних вашого користувача</description>
+    <description xml:lang="tr">Kullanıcı bilgilerinizi değiştirin</description>
+    <description xml:lang="sv">Ändra ditt egna användardata</description>
+    <description xml:lang="sr">Измените ваше личне корисничке податке</description>
+    <description xml:lang="sr@latin">Izmenite vaše lične korisničke podatke</description>
+    <description xml:lang="sl">Spremenite lastne uporabniške podatke</description>
+    <description xml:lang="sk">Zmeniť svoje vlastné používateľské údaje</description>
+    <description xml:lang="ru">Изменить личные пользовательские данные</description>
+    <description xml:lang="pt">Alterar os seus próprios dados</description>
+    <description xml:lang="pt_BR">Alterar dados do próprio usuário</description>
+    <description xml:lang="pl">Zmiana własnych danych</description>
+    <description xml:lang="pa">ਆਪਣਾ ਯੂਜ਼ਰ ਡਾਟਾ ਬਦਲੋ</description>
+    <description xml:lang="oc">Modificar sas pròprias donadas</description>
+    <description xml:lang="nl">Uw eigen gebruikersgegevens bewerken</description>
+    <description xml:lang="lv">Mainīt pašam savus lietotāja datus</description>
+    <description xml:lang="lt">Keisti savo naudotojo duomenis</description>
+    <description xml:lang="ko">개인 사용자 데이터 변경</description>
+    <description xml:lang="kk">Өзіңіздің пайдаланушы ақпаратыңызды өзгерту</description>
+    <description xml:lang="ka">თქვენი პირადი ინფორმაციის შეცვლა</description>
+    <description xml:lang="ja">自身のユーザーデータを変更する</description>
+    <description xml:lang="it">Cambia i propri dati utente</description>
+    <description xml:lang="id">Ubah data penggunamu sendiri</description>
+    <description xml:lang="ia">Modificar tu proprie datos de usator</description>
+    <description xml:lang="hu">Saját felhasználói adatainak módosítása</description>
+    <description xml:lang="hr">Promijenite vlastite korisničke podatke</description>
+    <description xml:lang="gl">Cambiar os seus propios datos de usuario</description>
+    <description xml:lang="fur">Cambie i tiei dâts utent</description>
+    <description xml:lang="fr">Modifier ses propres données</description>
+    <description xml:lang="fi">Muuta omia käyttäjätietojasi</description>
+    <description xml:lang="eu">Aldatu zure erabiltzaile-datuak</description>
+    <description xml:lang="es">Cambie sus propios datos de usuario</description>
+    <description xml:lang="eo">Ŝanĝi viajn proprajn uzantodatumojn</description>
+    <description xml:lang="en">Change your own user data</description>
+    <description xml:lang="en_GB">Change your own user data</description>
+    <description xml:lang="el">Αλλάξτε τα δεδομένα χρήστη σας</description>
+    <description xml:lang="de">Ändern Sie Ihre eigenen Benutzerdaten</description>
+    <description xml:lang="da">Skift data for din egen bruger</description>
+    <description xml:lang="cs">Změnit své vlastní údaje</description>
+    <description xml:lang="ca">Canvieu les dades d'usuari pròpies</description>
+    <description xml:lang="ast">Camudacia de los tos datos d'usuariu</description>
+    <description xml:lang="ar">غيّر بيانات المستخدم خاصتك</description>
+    <message>Authentication is required to change your own user data</message>
+    <message xml:lang="zh_TW">若要變更您自身的使用者資料需要核對身分</message>
+    <message xml:lang="zh_CN">需要授权以修改您的用户数据</message>
+    <message xml:lang="uk">Для зміни даних вашого користувача потрібно пройти розпізнавання</message>
+    <message xml:lang="tr">Kendi kullanıcı bilginizi değiştirmek için kimlik kanıtlaması gereklidir</message>
+    <message xml:lang="sv">Autentisering krävs för att ändra ditt egna användardata</message>
+    <message xml:lang="sr">Потребно је потврђивање идентитета за промену ваших личних корисничких података</message>
+    <message xml:lang="sr@latin">Potrebno je potvrđivanje identiteta za promenu vaših ličnih korisničkih podataka</message>
+    <message xml:lang="sl">Za spremembo lastnih podatkov je zahtevana overitev</message>
+    <message xml:lang="sk">Na zmenu vlastných používateľských údajov je potrebné overenie totožnosti</message>
+    <message xml:lang="ru">Для изменения личных пользовательских данных требуется аутентификация</message>
+    <message xml:lang="pt">É necessária autenticação para alterar os seus próprios dados de utilizador</message>
+    <message xml:lang="pt_BR">Autenticação é necessária para alterar dados do próprio usuário</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmienić własne dane</message>
+    <message xml:lang="pa">ਤੁਹਾਡਾ ਯੂਜ਼ਰ ਡਾਟਾ ਬਦਲਣ ਲਈ ਪਰਮਾਣਿਤ ਹੋਣ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="oc">Vos cal vos autentificar per modificar vòstras pròprias donadas d'utilizaire</message>
+    <message xml:lang="nl">Authenticatie vereist om uw eigen gebruikersgegevens te kunnen veranderen</message>
+    <message xml:lang="lv">Nepieciešama autentifikācija, lai mainītu pats savus lietotāja datus</message>
+    <message xml:lang="lt">Norint keisti savo naudotojo duomenis, reikia patvirtinti tapatybę</message>
+    <message xml:lang="ko">내 사용자 데이터를 변경하려면 인증해야 합니다</message>
+    <message xml:lang="kk">Өзіңіздің пайдаланушы ақпаратыңызды өзгерту үшін аутентификация керек</message>
+    <message xml:lang="ka">თქვენი პირადი მონაცემების შესაცვლელად აუცილებელია ავთენტიფიკაციის გავლა.</message>
+    <message xml:lang="ja">自分自身のユーザーデータを変更するには認証が必要です</message>
+    <message xml:lang="it">È richiesto autenticarsi per cambiare i propri dati utente</message>
+    <message xml:lang="id">Otentikasi diperlukan untuk mengubah data pengguna milikmu</message>
+    <message xml:lang="ia">Authentication es necessari pro modificar tu proprie datos de usator</message>
+    <message xml:lang="hu">Hitelesítés szükséges a saját felhasználói adatai módosításához</message>
+    <message xml:lang="hr">Potrebna je ovjera za promjenu vlastitih korisničkih podataka</message>
+    <message xml:lang="gl">Requírese autenticación para cambiar os seus propios datos de usuario</message>
+    <message xml:lang="fur">La autenticazion e je necssarie par cambiâ i propris dâts utent</message>
+    <message xml:lang="fr">Vous devez vous authentifier pour modifier vos propres données utilisateur</message>
+    <message xml:lang="fi">Omien käyttäjätietojen muuttaminen vaatii tunnistautumisen</message>
+    <message xml:lang="eu">Derrigorrezkoa da autentifikatzea zure erabiltzaile-datuak aldatzeko</message>
+    <message xml:lang="es">Se necesita autenticación para cambiar sus datos de usuario</message>
+    <message xml:lang="eo">Aŭtentigo bezonatas por ŝanĝi viajn proprajn uzantodatumojn</message>
+    <message xml:lang="en">Authentication is required to change your own user data</message>
+    <message xml:lang="en_GB">Authentication is required to change your own user data</message>
+    <message xml:lang="el">Απαιτείται πιστοποίηση για αλλαγή των δικών σας δεδομένων χρήστη</message>
+    <message xml:lang="de">Zur Änderung Ihrer eigenen Benutzerdaten ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="da">Der kræves autentifikation for at skifte data for din egen bruger</message>
+    <message xml:lang="cs">Pro změnu svých vlastních údajů je vyžadována autentizace</message>
+    <message xml:lang="ca">Es requereix autenticació per canviar les vostres dades d'usuari</message>
+    <message xml:lang="ast">Ríquese l'autenticación pa camudar los tos datos d'usuairu</message>
+    <message xml:lang="ar">الاستيثاق مطلوب لتغيير بيانات المستخدم التي تملكها</message>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+  <action id="org.freedesktop.accounts.change-own-password">
+    <description>Change your own user password</description>
+    <description xml:lang="pl">Zmiana własnego hasła</description>
+    <description xml:lang="lt">Keisti savo naudotojo slaptažodį</description>
+    <description xml:lang="it">Cambia la password personale</description>
+    <description xml:lang="da">Skift adgangskode for din egen bruger</description>
+    <message>Authentication is required to change your own user password</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmienić własne hasło</message>
+    <message xml:lang="lt">Norint keisti savo naudotojo slaptažodį, reikia patvirtinti tapatybę</message>
+    <message xml:lang="it">È richiesto autenticarsi per cambiare la propria password personale</message>
+    <message xml:lang="da">Der kræves autentifikation for at skifte adgangskode for din egen bruger</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+  <action id="org.freedesktop.accounts.user-administration">
+    <description>Manage user accounts</description>
+    <description xml:lang="zh_TW">管理使用者帳戶</description>
+    <description xml:lang="zh_CN">管理用户账户</description>
+    <description xml:lang="uk">Керування обліковими записами</description>
+    <description xml:lang="tr">Kullanıcı hesaplarını yönet</description>
+    <description xml:lang="sv">Hantera användarkonton</description>
+    <description xml:lang="sr">Управљај корисничким налозима</description>
+    <description xml:lang="sr@latin">Upravljaj korisničkim nalozima</description>
+    <description xml:lang="sl">Upravljaj račune uporabnikov</description>
+    <description xml:lang="sk">Spravovať používateľské účty</description>
+    <description xml:lang="ru">Управление учётными записями пользователей</description>
+    <description xml:lang="pt">Gerir contas de utilizador</description>
+    <description xml:lang="pt_BR">Gerenciar contas de usuários</description>
+    <description xml:lang="pl">Zarządzanie kontami użytkowników</description>
+    <description xml:lang="pa">ਯੂਜ਼ਰ ਅਕਾਊਂਟ ਪਰਬੰਧ</description>
+    <description xml:lang="oc">Gerir los comptes dels utilizaires</description>
+    <description xml:lang="nl">Gebruikersaccounts beheren</description>
+    <description xml:lang="lv">Pārvaldīt lietotāju kontus</description>
+    <description xml:lang="lt">Tvarkyti naudotojų paskyras</description>
+    <description xml:lang="ko">사용자 계정 관리</description>
+    <description xml:lang="kk">Пайдаланушылар тіркелгілерін басқару</description>
+    <description xml:lang="ka">მოხმარებლების ანგარიშების მართვა</description>
+    <description xml:lang="ja">ユーザーアカウントを管理する</description>
+    <description xml:lang="it">Gestisci gli account utente</description>
+    <description xml:lang="id">Kelola akun pengguna</description>
+    <description xml:lang="ia">Administrar le contos de usatores</description>
+    <description xml:lang="hu">Felhasználói fiókok kezelése</description>
+    <description xml:lang="hr">Upravljajte korisničkim računima</description>
+    <description xml:lang="gl">Xestionar contas de usuario</description>
+    <description xml:lang="fur">Gjestìs i account utent</description>
+    <description xml:lang="fr">Gérer les comptes des utilisateurs</description>
+    <description xml:lang="fi">Hallitse käyttäjätilejä</description>
+    <description xml:lang="eu">Kudeatu erabiltzaile-kontuak</description>
+    <description xml:lang="es">Gestione cuentas de usuario</description>
+    <description xml:lang="eo">Administri uzantokontojn</description>
+    <description xml:lang="en">Manage user accounts</description>
+    <description xml:lang="en_GB">Manage user accounts</description>
+    <description xml:lang="el">Διαχείριση λογαριασμών χρηστών</description>
+    <description xml:lang="de">Benutzerkonten verwalten</description>
+    <description xml:lang="da">Håndter brugerkonti</description>
+    <description xml:lang="cs">Spravovat uživatelské účty</description>
+    <description xml:lang="ca">Gestioneu els comptes d'usuari</description>
+    <description xml:lang="ast">Xestión de cuentes d'usuariu</description>
+    <description xml:lang="ar">أدِر حسابات المستخدمين</description>
+    <message>Authentication is required to change user data</message>
+    <message xml:lang="zh_TW">若要變更使用者資料需要核對身分</message>
+    <message xml:lang="zh_CN">需要授权以修改用户数据</message>
+    <message xml:lang="uk">Для зміни даних користувача потрібно пройти розпізнавання</message>
+    <message xml:lang="tr">Kullanıcı bilgisini değiştirmek için kimlik kanıtlaması gereklidir</message>
+    <message xml:lang="sv">Autentisering krävs för att ändra användardata</message>
+    <message xml:lang="sr">Потребно је потврђивање идентитета за промену корисничких података</message>
+    <message xml:lang="sr@latin">Potrebno je potvrđivanje identiteta za promenu korisničkih podataka</message>
+    <message xml:lang="sl">Za spremembo podatkov uporabnikov je zahtevana overitev</message>
+    <message xml:lang="sk">Na zmenu používateľských údajov je potrebné overenie totožnosti</message>
+    <message xml:lang="ru">Для изменения пользовательских данных требуется аутентификация</message>
+    <message xml:lang="pt">É necessária autenticação para alterar dados de utilizador</message>
+    <message xml:lang="pt_BR">Autenticação é necessária para alteração de dados de usuário</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmienić dane użytkownika</message>
+    <message xml:lang="pa">ਯੂਜ਼ਰ ਡਾਟਾ ਬਦਲਣ ਲਈ ਪਰਮਾਣਿਤ ਹੋਣ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="oc">Es necessari de s'autentificar per modificar de donadas d'utilizaire</message>
+    <message xml:lang="nl">Authenticatie vereist om gebruikersgegevens te kunnen veranderen</message>
+    <message xml:lang="lv">Nepieciešama autentifikācija, lai mainītu lietotāja datus</message>
+    <message xml:lang="lt">Norint keisti naudotojų duomenis, reikia patvirtinti tapatybę</message>
+    <message xml:lang="ko">사용자 데이터를 변경하려면 인증해야 합니다</message>
+    <message xml:lang="kk">Пайдаланушы ақпаратын өзгерту үшін аутентификация керек</message>
+    <message xml:lang="ka">მოხმარებლის მონაცემების შესაცვლელად აუცილებელია ავთენტიფიკაციის გავლა.</message>
+    <message xml:lang="ja">ユーザーのデータを変更するには認証が必要です</message>
+    <message xml:lang="it">È richiesto autenticarsi per cambiare i dati utente</message>
+    <message xml:lang="id">Otentikasi diperlukan untuk mengubah data pengguna</message>
+    <message xml:lang="ia">Authentication es necessari pro modificar le datos de usator</message>
+    <message xml:lang="hu">Hitelesítés szükséges a felhasználói adatok módosításához</message>
+    <message xml:lang="hr">Potrebna je ovjera za promjenu korisničkih podataka</message>
+    <message xml:lang="gl">Requírese autenticación para cambiar os datos do usuario</message>
+    <message xml:lang="fur">La autenticazion e je necessarie par cambiâ i dâts dai utents</message>
+    <message xml:lang="fr">Il est nécessaire de s'authentifier pour modifier des données utilisateur</message>
+    <message xml:lang="fi">Käyttäjätietojen muuttaminen vaatii tunnistautumisen</message>
+    <message xml:lang="eu">Derrigorrezkoa da autentifikatzea erabiltzaile-datuak aldatzeko</message>
+    <message xml:lang="es">Se necesita autenticación para cambiar datos de usuario</message>
+    <message xml:lang="eo">Aŭtentigo bezonatas por ŝanĝi uzantodatumojn</message>
+    <message xml:lang="en">Authentication is required to change user data</message>
+    <message xml:lang="en_GB">Authentication is required to change user data</message>
+    <message xml:lang="el">Απαιτείται πιστοποίηση για αλλαγή των δεδομένων χρήστη</message>
+    <message xml:lang="de">Zur Änderung von Benutzerdaten ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="da">Der kræves autentifikation for at skifte brugerdata</message>
+    <message xml:lang="cs">Pro změnu údajů o uživateli je vyžadována autentizace</message>
+    <message xml:lang="ca">Es requereix autenticació per canviar les dades de l'usuari</message>
+    <message xml:lang="ast">Ríquese l'autenticación pa camudar los tos datos d'usuarios</message>
+    <message xml:lang="ar">الاستيثاق مطلوب لتغيير بيانات المستخدم</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+  <action id="org.freedesktop.accounts.set-login-option">
+    <description>Change the login screen configuration</description>
+    <description xml:lang="zh_TW">變更登入畫面組態</description>
+    <description xml:lang="zh_CN">修改登录窗口配置</description>
+    <description xml:lang="uk">Зміна налаштувань вікна вітання</description>
+    <description xml:lang="tr">Oturum açma ekranı yapılandırmasını değiştirin</description>
+    <description xml:lang="sv">Ändra konfigurationen för inloggningsskärmen</description>
+    <description xml:lang="sr">Измените подешавања екрана за пријављивање</description>
+    <description xml:lang="sr@latin">Izmenite podešavanja ekrana za prijavljivanje</description>
+    <description xml:lang="sl">Spremenite nastavitev prijavnega zaslona</description>
+    <description xml:lang="sk">Zmeniť nastavenia prihlasovacej obrazovky</description>
+    <description xml:lang="ru">Изменить настройки экрана входа в систему</description>
+    <description xml:lang="pt">Alterar a configuração do ecrã de início de sessão</description>
+    <description xml:lang="pt_BR">Alterar configurações da tela de login</description>
+    <description xml:lang="pl">Zmiana konfiguracji ekranu logowania</description>
+    <description xml:lang="pa">ਲਾਗਇਨ ਸਕਰੀਨ ਸੰਰਚਨਾ ਬਦਲੋ</description>
+    <description xml:lang="oc">Modificar la configuracion de l'ecran de connexion</description>
+    <description xml:lang="nl">Configuratie van loginscherm bewerken</description>
+    <description xml:lang="lv">Mainīt pieteikšanās ekrāna konfigurāciju</description>
+    <description xml:lang="lt">Keisti prisijungimo ekrano konfigūraciją</description>
+    <description xml:lang="ko">로그인 화면 환경 설정 변경</description>
+    <description xml:lang="kk">Жүйеге кіру экранның баптауларын өзгерту</description>
+    <description xml:lang="ka">შესასვლელი ეკრანის კონფიგურაციის შეცვლა</description>
+    <description xml:lang="ja">ログイン画面の設定を変更する</description>
+    <description xml:lang="it">Cambia la configurazione della schermata di accesso</description>
+    <description xml:lang="id">Ubah konfigurasi layar log masuk</description>
+    <description xml:lang="ia">Modificar le configuration del schermo pro aperir session</description>
+    <description xml:lang="hu">Bejelentkező képernyő beállításainak módosítása</description>
+    <description xml:lang="hr">Promijenite postavke zaslona prijave</description>
+    <description xml:lang="gl">Cambiar a configuración da pantalla de inicio</description>
+    <description xml:lang="fur">Cambie la configurazion de videade di acès</description>
+    <description xml:lang="fr">Modifier la configuration de l'écran de connexion</description>
+    <description xml:lang="fi">Muuta kirjautumisnäkymän asetuksia</description>
+    <description xml:lang="eu">Aldatu saioa hasteko pantailaren konfigurazioa</description>
+    <description xml:lang="es">Cambie la configuración de pantalla de acceso</description>
+    <description xml:lang="eo">Ŝanĝi la agordojn de la ensalutekrano</description>
+    <description xml:lang="en">Change the login screen configuration</description>
+    <description xml:lang="en_GB">Change the login screen configuration</description>
+    <description xml:lang="el">Αλλαγή των ρυθμίσεων οθόνης σύνδεσης</description>
+    <description xml:lang="de">Konfiguration des Anmeldebildschirms ändern</description>
+    <description xml:lang="da">Skift konfiguration af loginskærmen</description>
+    <description xml:lang="cs">Změnit nastavení přihlašovací obrazovky</description>
+    <description xml:lang="ca">Canvieu la configuració de la pantalla d'inici de sessió</description>
+    <description xml:lang="ast">Cambéu de la configuración de la pantalla d'aniciu de sesión</description>
+    <description xml:lang="ar">غيّر إعدادات شاشة الولوج</description>
+    <message>Authentication is required to change the login screen configuration</message>
+    <message xml:lang="zh_TW">若要變更登入畫面組態需要核對身分</message>
+    <message xml:lang="zh_CN">需要授权以修改登录窗口配置</message>
+    <message xml:lang="uk">Для зміни налаштувань вікна вітання потрібно пройти розпізнавання</message>
+    <message xml:lang="tr">Oturum açma ekranı yapılandırmasını değiştirmek için kimlik kanıtlaması gereklidir</message>
+    <message xml:lang="sv">Autentisering krävs för att ändra konfigurationen för inloggningsskärmen</message>
+    <message xml:lang="sr">Потребно је потврђивање идентитета за промену подешавања екрана за пријављивање</message>
+    <message xml:lang="sr@latin">Potrebno je potvrđivanje identiteta za promenu podešavanja ekrana za prijavljivanje</message>
+    <message xml:lang="sl">Za spremembo prijavnega zaslona je potrebna overitev</message>
+    <message xml:lang="sk">Na zmenu nastavení prihlasovacej obrazovky je potrebné overenie totožnosti</message>
+    <message xml:lang="ru">Для изменения настроек экрана входа в систему требуется аутентификация</message>
+    <message xml:lang="pt">É necessária autenticação para alterar a configuração do ecrã de início de sessão</message>
+    <message xml:lang="pt_BR">Autenticação é necessária para alterar configurações da tela de login</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zmienić konfigurację ekranu logowania</message>
+    <message xml:lang="pa">ਲਾਗਇਨ ਸਕਰੀਨ ਸੰਰਚਨਾ ਬਦਲਣ ਲਈ ਪਰਮਾਣਿਤ ਹੋਣ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="oc">Es necessari de s'autentificar per modificar la configuracion de l'ecran de connexion</message>
+    <message xml:lang="nl">Authenticatie vereist om configuratie van loginscherm te kunnen veranderen</message>
+    <message xml:lang="lv">Nepieciešama autentifikācija, lai mainītu pieteikšanās ekrāna konfigurāciju</message>
+    <message xml:lang="lt">Norint keisti prisijungimo ekrano konfigūraciją, reikia patvirtinti tapatybę</message>
+    <message xml:lang="ko">로그인 화면 환경 설정을 변경하려면 인증해야 합니다</message>
+    <message xml:lang="kk">Жүйеге кіру экранның баптауларын өзгерту үшін аутентификация керек</message>
+    <message xml:lang="ka">შესასვლელი ეკრანის კონფიგურაციის შესაცვლელად აუცილებელია ავთენტიფიკაციის გავლა.</message>
+    <message xml:lang="ja">ログイン画面の設定を変更するには認証が必要です</message>
+    <message xml:lang="it">È richiesto autenticarsi per cambiare la configurazione della schermata di accesso</message>
+    <message xml:lang="id">Otentikasi diperlukan untuk mengubah konfigurasi layar log masuk</message>
+    <message xml:lang="ia">Authentication es necessari pro modificar le configuration del schermo pro aperir session</message>
+    <message xml:lang="hu">Hitelesítés szükséges a bejelentkező képernyő beállításainak módosításához</message>
+    <message xml:lang="hr">Potrebna je ovjera za promjenu postavki zaslona prijave</message>
+    <message xml:lang="gl">Requírese autenticación para cambiar a configuración da pantalla de inicio</message>
+    <message xml:lang="fur">La autenticazion e je necessarie par cambiâ la configurazion de videade di acès</message>
+    <message xml:lang="fr">Il est nécessaire de s'authentifier pour modifier la configuration de l'écran de connexion</message>
+    <message xml:lang="fi">Kirjautumisnäkymän asetusten muuttaminen vaatii tunnistautumisen</message>
+    <message xml:lang="eu">Derrigorrezkoa da autentifikatzea saioa hasteko pantailaren konfigurazioa aldatzeko</message>
+    <message xml:lang="es">Para cambiar la configuración de la pantalla de acceso debe autenticarse</message>
+    <message xml:lang="eo">Aŭtentigo bezonatas por ŝanĝi la agordojn de la ensalutekrano</message>
+    <message xml:lang="en">Authentication is required to change the login screen configuration</message>
+    <message xml:lang="en_GB">Authentication is required to change the login screen configuration</message>
+    <message xml:lang="el">Απαιτείται πιστοποίηση για αλλαγή των ρυθμίσεων της οθόνης αναγνώρισης χρήστη</message>
+    <message xml:lang="de">Zur Änderung der Konfiguration des Anmeldebildschirms ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="da">Der kræves autentifikation for at skifte konfiguration af loginskærmen</message>
+    <message xml:lang="cs">Pro změnu nastavení přihlašovací obrazovky je vyžadována autentizace</message>
+    <message xml:lang="ca">Es requereix autenticació per canviar la configuració de la pantalla d'inici de sessió</message>
+    <message xml:lang="ast">Ríquese l'autenticación pa camudar la configuración de la pantalla d'aniciu de sesión</message>
+    <message xml:lang="ar">الاستيثاق مطلوب لتغيير إعدادات شاشة الولوج</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.gnome.gconf.defaults.set-mandatory.prefix">/apps/gdm/simple-greeter</annotate>
+  </action>
+</policyconfig>

@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libcroco-0.6.so )
+( cd usr/lib ; ln -sf libcroco-0.6.so.3.0.1 libcroco-0.6.so )
+( cd usr/lib ; rm -rf libcroco-0.6.so.3 )
+( cd usr/lib ; ln -sf libcroco-0.6.so.3.0.1 libcroco-0.6.so.3 )

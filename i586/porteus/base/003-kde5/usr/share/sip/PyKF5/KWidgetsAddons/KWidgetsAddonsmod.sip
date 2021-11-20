@@ -1,0 +1,80 @@
+
+%Module PyKF5.KWidgetsAddons
+
+%ModuleHeaderCode
+#pragma GCC visibility push(default)
+%End
+
+%Import QtWidgets/QtWidgetsmod.sip
+
+%Include kacceleratormanager.sip
+%Include kanimatedbutton.sip
+%Include kbusyindicatorwidget.sip
+%Include kcharselect.sip
+%Include kcollapsiblegroupbox.sip
+%Include kcolorbutton.sip
+%Include kcolumnresizer.sip
+%Include kdatecombobox.sip
+%Include kdatepicker.sip
+%Include kdatetimeedit.sip
+%Include kdragwidgetdecorator.sip
+%Include kdualaction.sip
+%Include kfontaction.sip
+%Include kfontchooser.sip
+%Include kfontchooserdialog.sip
+%Include kfontsizeaction.sip
+%Include kguiitem.sip
+%Include kled.sip
+%Include kmessagebox.sip
+%Include kmessageboxdontaskagaininterface.sip
+%Include kmultitabbar.sip
+%Include knewpasswordwidget.sip
+%Include kpopupframe.sip
+%Include kselectaction.sip
+%Include kstandardguiitem.sip
+%Include ktimecombobox.sip
+%Include kurllabel.sip
+%Include kcapacitybar.sip
+%Include kfontrequester.sip
+%Include kpassworddialog.sip
+%Include kruler.sip
+%Include kselector.sip
+%Include ktitlewidget.sip
+%Include kxyselector.sip
+%Include kseparator.sip
+%Include ksqueezedtextlabel.sip
+%Include ktoggleaction.sip
+%Include ktogglefullscreenaction.sip
+%Include kviewstateserializer.sip
+%Include kviewstatemaintainerbase.sip
+%Include keditlistwidget.sip
+%Include kcursor.sip
+%Include kratingpainter.sip
+%Include kratingwidget.sip
+%Include kactionselector.sip
+%Include kcolorcombo.sip
+%Include kactionmenu.sip
+%Include ktoolbarlabelaction.sip
+%Include ktoolbarpopupaction.sip
+%Include ktoolbarspaceraction.sip
+%Include kpagedialog.sip
+%Include kpagemodel.sip
+%Include kpageview.sip
+%Include kpagewidget.sip
+%Include kpagewidgetmodel.sip
+%Include kassistantdialog.sip
+%Include kmessagewidget.sip
+%Include kmessagedialog.sip
+%Include knewpassworddialog.sip
+%Include lineediturldropeventfilter.sip
+%Include kpasswordlineedit.sip
+%Include kpixmapsequence.sip
+%Include kpixmapsequenceoverlaypainter.sip
+%Include kpixmapsequencewidget.sip
+%Include kpixmapregionselectordialog.sip
+%Include kpixmapregionselectorwidget.sip
+%Include kmimetypechooser.sip
+%Include kmimetypeeditor.sip
+%Include kmessageboxnotifyinterface.sip
+%Include ksplittercollapserbutton.sip
+%Include kstyleextensions.sip

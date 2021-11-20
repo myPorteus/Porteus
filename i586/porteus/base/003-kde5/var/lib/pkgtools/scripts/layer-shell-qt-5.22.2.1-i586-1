@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libLayerShellQtInterface.so )
+( cd usr/lib ; ln -sf libLayerShellQtInterface.so.5 libLayerShellQtInterface.so )
+( cd usr/lib ; rm -rf libLayerShellQtInterface.so.5 )
+( cd usr/lib ; ln -sf libLayerShellQtInterface.so.5.22.2 libLayerShellQtInterface.so.5 )

@@ -1,0 +1,46 @@
+PACKAGE NAME:     bulky-1.1-noarch_1ncm
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_cinnamon/bulky-1.1-noarch_1ncm.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/bulky
+usr/lib/
+usr/lib/bulky/
+usr/lib/bulky/bulky.py
+usr/share/
+usr/share/applications/
+usr/share/applications/bulky.desktop
+usr/share/bulky/
+usr/share/bulky/bulky.css
+usr/share/bulky/bulky.ui
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.x.bulky.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/bulky.svg
+usr/share/locale/
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/bulky.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/bulky.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/bulky.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/bulky.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/bulky.mo
+usr/share/locale/la/
+usr/share/locale/la/LC_MESSAGES/
+usr/share/locale/la/LC_MESSAGES/bulky.mo

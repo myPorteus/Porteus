@@ -1,0 +1,50 @@
+PACKAGE NAME:     libconfig-1.7.2-i586-1
+COMPRESSED PACKAGE SIZE:     188K
+UNCOMPRESSED PACKAGE SIZE:     500K
+PACKAGE LOCATION: libconfig-1.7.2-i586-1.tgz
+PACKAGE DESCRIPTION:
+libconfig: libconfig (configuration file parsing library)
+libconfig:
+libconfig: Libconfig is a simple library for processing structured configuration
+libconfig: files. This file format is more compact and more readable than XML
+libconfig: and unlike XML, it is type-aware, so it is not necessary to do string
+libconfig: parsing in application code. It is very compact and well-suited for
+libconfig: memory-constrained systems like handheld devices.
+libconfig:
+libconfig:
+libconfig: libconfig home: http://www.hyperrealm.com/libconfig/
+libconfig:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libconfig-1.7.2/
+usr/doc/libconfig-1.7.2/AUTHORS
+usr/doc/libconfig-1.7.2/COPYING.LIB
+usr/doc/libconfig-1.7.2/ChangeLog
+usr/doc/libconfig-1.7.2/INSTALL
+usr/doc/libconfig-1.7.2/README
+usr/doc/libconfig-1.7.2/libconfig.SlackBuild
+usr/include/
+usr/include/libconfig.h
+usr/include/libconfig.h++
+usr/info/
+usr/info/libconfig.info.gz
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/libconfig++/
+usr/lib/cmake/libconfig++/libconfig++Config.cmake
+usr/lib/cmake/libconfig/
+usr/lib/cmake/libconfig/libconfigConfig.cmake
+usr/lib/libconfig++.a
+usr/lib/libconfig++.la
+usr/lib/libconfig++.so.11.0.2
+usr/lib/libconfig.a
+usr/lib/libconfig.la
+usr/lib/libconfig.so.11.0.2
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libconfig++.pc
+usr/lib/pkgconfig/libconfig.pc

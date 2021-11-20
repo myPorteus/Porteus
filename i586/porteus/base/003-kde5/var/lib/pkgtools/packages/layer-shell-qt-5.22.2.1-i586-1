@@ -1,0 +1,45 @@
+PACKAGE NAME:     layer-shell-qt-5.22.2.1-i586-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/layer-shell-qt-5.22.2.1-i586-1.txz
+PACKAGE DESCRIPTION:
+layer-shell-qt: layer-shell-qt (Wayland layer surface support)
+layer-shell-qt:
+layer-shell-qt: This component is meant for applications to be able to easily use
+layer-shell-qt: clients based on wlr-layer-shell.
+layer-shell-qt:
+layer-shell-qt:
+layer-shell-qt:
+layer-shell-qt:
+layer-shell-qt:
+layer-shell-qt:
+layer-shell-qt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/layer-shell-qt-5.22.2.1/
+usr/doc/layer-shell-qt-5.22.2.1/README.md
+usr/doc/layer-shell-qt-5.22.2.1/README.md.license
+usr/include/
+usr/include/LayerShellQt/
+usr/include/LayerShellQt/Shell
+usr/include/LayerShellQt/Window
+usr/include/LayerShellQt/layershellqt_export.h
+usr/include/LayerShellQt/shell.h
+usr/include/LayerShellQt/window.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/LayerShellQt/
+usr/lib/cmake/LayerShellQt/LayerShellQtConfig.cmake
+usr/lib/cmake/LayerShellQt/LayerShellQtConfigVersion.cmake
+usr/lib/cmake/LayerShellQt/LayerShellQtTargets-release.cmake
+usr/lib/cmake/LayerShellQt/LayerShellQtTargets.cmake
+usr/lib/libLayerShellQtInterface.so.5.22.2
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/wayland-shell-integration/
+usr/lib/qt5/plugins/wayland-shell-integration/liblayer-shell.so

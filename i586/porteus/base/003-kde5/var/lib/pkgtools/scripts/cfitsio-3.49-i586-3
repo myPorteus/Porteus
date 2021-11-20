@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libcfitsio.so )
+( cd usr/lib ; ln -sf libcfitsio.so.9 libcfitsio.so )
+( cd usr/lib ; rm -rf libcfitsio.so.9 )
+( cd usr/lib ; ln -sf libcfitsio.so.9.3.49 libcfitsio.so.9 )

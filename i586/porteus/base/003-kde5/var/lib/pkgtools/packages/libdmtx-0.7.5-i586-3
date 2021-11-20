@@ -1,0 +1,46 @@
+PACKAGE NAME:     libdmtx-0.7.5-i586-3
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/libdmtx-0.7.5-i586-3.txz
+PACKAGE DESCRIPTION:
+libdmtx: libdmtx (Data Matrix barcode library)
+libdmtx:
+libdmtx: libdmtx is a library that enables programs to read and write Data
+libdmtx: Matrix barcodes of the modern ECC200 variety. The utility programs
+libdmtx: dmtxread and dmtxwrite also provide a command line interface for
+libdmtx: libdmtx, and serve as a good reference for developers writing their
+libdmtx: own libdmtx-enabled programs.
+libdmtx:
+libdmtx: Homepage: https://github.com/dmtx/libdmtx
+libdmtx:
+libdmtx:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdmtx-0.7.5/
+usr/doc/libdmtx-0.7.5/AUTHORS
+usr/doc/libdmtx-0.7.5/ChangeLog
+usr/doc/libdmtx-0.7.5/KNOWNBUG
+usr/doc/libdmtx-0.7.5/LICENSE
+usr/doc/libdmtx-0.7.5/NEWS
+usr/doc/libdmtx-0.7.5/README
+usr/doc/libdmtx-0.7.5/README.cygwin
+usr/doc/libdmtx-0.7.5/README.freebsd
+usr/doc/libdmtx-0.7.5/README.linux
+usr/doc/libdmtx-0.7.5/README.mingw
+usr/doc/libdmtx-0.7.5/README.osx
+usr/doc/libdmtx-0.7.5/README.unix
+usr/doc/libdmtx-0.7.5/TODO
+usr/include/
+usr/include/dmtx.h
+usr/lib/
+usr/lib/libdmtx.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libdmtx.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/libdmtx.3.gz

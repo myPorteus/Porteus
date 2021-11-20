@@ -1,0 +1,7 @@
+{
+ "display-name" : {
+    "type" : "switch",
+    "default" : false,
+    "description": "Display user name on panel"
+ }
+}

@@ -1,0 +1,36 @@
+// Discarded CLASS_DECL on line 18 'QColor' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 19 'QFont' (by default forward declaration handling)
+namespace ConversionCheck
+{
+%TypeHeaderCode
+#include <conversioncheck.h>
+%End
+    // Discarded CLASS_TEMPLATE on line 30 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded CLASS_TEMPLATE on line 37 'type_toQString' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded CLASS_TEMPLATE on line 47 'type_toQVariant' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded FUNCTION_TEMPLATE on line 59 'to_QString' (by rules_PyKF5.py:FunctionRuleDb[21],function_discard)
+    // Discarded FUNCTION_TEMPLATE on line 67 'to_QVariant' (by rules_PyKF5.py:FunctionRuleDb[21],function_discard)
+    // Discarded STRUCT_DECL on line 87 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 88 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 89 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 90 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 91 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 92 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 93 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 94 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 95 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 96 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 97 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 98 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 99 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 100 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 101 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 102 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 103 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 104 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 105 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 106 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 107 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 108 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+    // Discarded STRUCT_DECL on line 109 'QVconvertible' (by rules_PyKF5.py:ContainerRuleDb[23],container_discard)
+};

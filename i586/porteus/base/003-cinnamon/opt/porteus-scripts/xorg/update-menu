@@ -1,0 +1,26 @@
+#!/bin/sh
+# Update CINNAMON menu:
+
+echo "Updating menu"
+
+DESKTOP_INSTALLS="/mnt/live/tmp/caches/desktop-install"
+DESKTOP_UNINSTALLS="/mnt/live/tmp/caches/desktop-uninstall"
+
+if [ -e  $DESKTOP_INSTALLS ]; then
+    while read -r DESKTOPFILE; do
+            cp $DESKTOPFILE /usr/share/applications
+            desktopfilename=$(basename $DESKTOPFILE)
+            sed -i 's/^TargetEnvironment/X-TargetEnvionment/g' /usr/share/applications/"$desktopfilename"
+            desktop-file-install /usr/share/applications/"$desktopfilename"
+    done < $DESKTOP_INSTALLS
+fi
+
+if [ -e  $DESKTOP_UNINSTALLS ]; then
+    while read -r DESKTOPFILE; do
+        xdg-desktop-menu uninstall $(basename $DESKTOPFILE)
+    done < $DESKTOP_UNINSTALLS
+fi
+
+echo "Updating desktop database"
+update-desktop-database
+

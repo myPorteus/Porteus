@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.powerdevil.chargethresholdhelper
+Exec=/usr/lib/kauth/chargethresholdhelper
+User=root

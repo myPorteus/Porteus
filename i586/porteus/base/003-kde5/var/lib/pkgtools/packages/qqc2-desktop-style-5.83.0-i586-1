@@ -1,0 +1,97 @@
+PACKAGE NAME:     qqc2-desktop-style-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     360K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/qqc2-desktop-style-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+qqc2-desktop-style: qqc2-desktop-style (desktop integration for Qt Quick Controls 2)
+qqc2-desktop-style:
+qqc2-desktop-style: QQC2-Desktop-Style is a style for Qt Quick Controls 2 (QQC2) which
+qqc2-desktop-style: uses QStyle to paint the controls in order to give them a native look
+qqc2-desktop-style: and feel.
+qqc2-desktop-style:
+qqc2-desktop-style: Homepage: https://api.kde.org/frameworks/qqc2-desktop-style/html/
+qqc2-desktop-style:
+qqc2-desktop-style:
+qqc2-desktop-style:
+qqc2-desktop-style:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qqc2-desktop-style-5.83.0/
+usr/doc/qqc2-desktop-style-5.83.0/README.md
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5QQC2DeskopStyle/
+usr/lib/cmake/KF5QQC2DeskopStyle/KF5QQC2DeskopStyleConfig.cmake
+usr/lib/cmake/KF5QQC2DeskopStyle/KF5QQC2DeskopStyleConfigVersion.cmake
+usr/lib/cmake/KF5QQC2DesktopStyle/
+usr/lib/cmake/KF5QQC2DesktopStyle/KF5QQC2DesktopStyleConfig.cmake
+usr/lib/cmake/KF5QQC2DesktopStyle/KF5QQC2DesktopStyleConfigVersion.cmake
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kf5/
+usr/lib/qt5/plugins/kf5/kirigami/
+usr/lib/qt5/plugins/kf5/kirigami/org.kde.desktop.so
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/QtQuick/
+usr/lib/qt5/qml/QtQuick/Controls.2/
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/BusyIndicator.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Button.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/CheckBox.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/CheckDelegate.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/CheckIndicator.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ComboBox.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Container.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Control.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/DelayButton.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Dial.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Dialog.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/DialogButtonBox.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Drawer.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Frame.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/GroupBox.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ItemDelegate.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Label.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Menu.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/MenuBarItem.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/MenuItem.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/MenuSeparator.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Page.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Popup.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ProgressBar.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/RadioButton.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/RadioDelegate.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/RangeSlider.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/RoundButton.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ScrollBar.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ScrollView.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Slider.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/SpinBox.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/Switch.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/SwitchDelegate.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/SwitchIndicator.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/TabBar.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/TabButton.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/TextArea.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/TextField.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ToolBar.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ToolButton.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ToolSeparator.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/ToolTip.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/DefaultListItemBackground.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/FocusRect.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/MobileCursor.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/MobileTextActionsToolBar.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/TextFieldContextMenu.qml
+usr/lib/qt5/qml/QtQuick/Controls.2/org.kde.desktop/private/qmldir
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/qqc2desktopstyle/
+usr/lib/qt5/qml/org/kde/qqc2desktopstyle/private/
+usr/lib/qt5/qml/org/kde/qqc2desktopstyle/private/libqqc2desktopstyleplugin.so
+usr/lib/qt5/qml/org/kde/qqc2desktopstyle/private/qmldir

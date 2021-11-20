@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.ksystemstats
+Exec=/usr/bin/ksystemstats
+SystemdService=plasma-ksystemstats.service

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.devicenotifier</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Disks &amp; Devices</name>
+    <name xml:lang="ast">Discos y preseos</name>
+    <name xml:lang="az">Disklər və Qurğular</name>
+    <name xml:lang="ca">Discs i dispositius</name>
+    <name xml:lang="cs">Disky &amp; Zařízení</name>
+    <name xml:lang="da">Diske og enheder</name>
+    <name xml:lang="de">Datenträger &amp; Geräte</name>
+    <name xml:lang="en_GB">Disks &amp; Devices</name>
+    <name xml:lang="es">Discos y dispositivos</name>
+    <name xml:lang="et">Kettad ja seadmed</name>
+    <name xml:lang="eu">Diskoak eta gailuak</name>
+    <name xml:lang="fi">Levyt ja laitteet</name>
+    <name xml:lang="fr">Disques &amp; périphériques</name>
+    <name xml:lang="hu">Lemezek és eszközök</name>
+    <name xml:lang="ia">Discos &amp; Dispositivos</name>
+    <name xml:lang="id">Perangkat &amp; Disk</name>
+    <name xml:lang="it">Dischi e dispositivi</name>
+    <name xml:lang="ko">디스크와 장치</name>
+    <name xml:lang="lt">Diskai ir įrenginiai</name>
+    <name xml:lang="nl">Schijven &amp; apparaten</name>
+    <name xml:lang="nn">Diskar og einingar</name>
+    <name xml:lang="pa">ਡਿਸਕ ਤੇ ਡਿਵਾਈਸ</name>
+    <name xml:lang="pl">Dyski i urządzenia</name>
+    <name xml:lang="pt">Discos &amp; Dispositivos</name>
+    <name xml:lang="pt_BR">Discos e dispositivos</name>
+    <name xml:lang="ro">Disc și dispozitive</name>
+    <name xml:lang="ru">Диски и устройства</name>
+    <name xml:lang="sk">Disky a zariadenia</name>
+    <name xml:lang="sl">Diski in naprave</name>
+    <name xml:lang="sv">Diskar och enheter</name>
+    <name xml:lang="ta">வட்டுகளும் சாதனங்களும்</name>
+    <name xml:lang="tg">Дискҳо ва дастгоҳҳо</name>
+    <name xml:lang="tr">Diskler ve Cihazlar</name>
+    <name xml:lang="uk">Диски і пристрої</name>
+    <name xml:lang="vi">Đĩa &amp; Thiết bị</name>
+    <name xml:lang="x-test">xxDisks &amp; Devicesxx</name>
+    <name xml:lang="zh_CN">磁盘和设备</name>
+    <summary>Notifications and access for devices</summary>
+    <summary xml:lang="az">Cihazlar üçün bildirişlər və onlara giriş</summary>
+    <summary xml:lang="ca">Notificacions i accés als dispositius</summary>
+    <summary xml:lang="cs">Upozorňování a přístup k zařízením</summary>
+    <summary xml:lang="da">Bekendtgørelser og adgang til enheder</summary>
+    <summary xml:lang="de">Benachrichtigungen und Zugriff für Geräte</summary>
+    <summary xml:lang="en_GB">Notifications and access for devices</summary>
+    <summary xml:lang="es">Notificaciones y accesos de dispositivos</summary>
+    <summary xml:lang="et">Seadmetest teatamine ja nende kasutamine</summary>
+    <summary xml:lang="eu">Jakinarazpenak eta gailuetarako sarbidea</summary>
+    <summary xml:lang="fi">Ilmoitukset ja pääsy laitteisiin</summary>
+    <summary xml:lang="fr">Notifications et accès aux périphériques</summary>
+    <summary xml:lang="hu">Eszközök elérése, értesítő üzenetek kezelése</summary>
+    <summary xml:lang="ia">Notificationes e accesso pro dispositivos</summary>
+    <summary xml:lang="id">Notifikasi dan akses perangkat</summary>
+    <summary xml:lang="it">Notifiche e accesso per dispositivi</summary>
+    <summary xml:lang="ko">장치가 연결된 것을 알려 주고 접근할 수 있도록 합니다</summary>
+    <summary xml:lang="lt">Pranešimai apie įrenginius ir prieiga prie jų</summary>
+    <summary xml:lang="nl">Meldingen en toegang voor apparaten</summary>
+    <summary xml:lang="nn">Varsling og tilgang til einingar</summary>
+    <summary xml:lang="pa">ਡਿਵਾਈਸਾਂ ਲਈ ਨੋਟੀਫਿਕੇਸ਼ਨ ਅਤੇ ਪਹੁੰਚ</summary>
+    <summary xml:lang="pl">Powiadomienia i dostęp do urządzeń</summary>
+    <summary xml:lang="pt">Notificações e acesso aos dispositivos</summary>
+    <summary xml:lang="pt_BR">Notificações e acesso aos dispositivos</summary>
+    <summary xml:lang="ro">Notificări și acces pentru dispozitive</summary>
+    <summary xml:lang="ru">Уведомление о подключаемых устройствах и доступ к ним</summary>
+    <summary xml:lang="sk">Upozornenia a prístup k zariadeniam</summary>
+    <summary xml:lang="sl">Obvestila in dostop do naprav</summary>
+    <summary xml:lang="sv">Underrättelser och åtkomst av enheter</summary>
+    <summary xml:lang="ta">புதிய சாதனங்களுக்கான அறிவிப்புகள் மற்றும் அணுகல்</summary>
+    <summary xml:lang="tr">Cihazlar için bildirimler ve erişim</summary>
+    <summary xml:lang="uk">Сповіщення і доступ до пристроїв</summary>
+    <summary xml:lang="vi">Thông báo và cách truy cập cho các thiết bị</summary>
+    <summary xml:lang="x-test">xxNotifications and access for devicesxx</summary>
+    <summary xml:lang="zh_CN">设备的通知和访问</summary>
+    <url type="homepage">https://userbase.kde.org/Plasma/DeviceNotifier</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.devicenotifier</url>
+    <developer_name>Viranch Mehta, Jacopo De Simoi &lt;wilderkde@gmail.com&gt;</developer_name>
+    <icon type="stock">device-notifier</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

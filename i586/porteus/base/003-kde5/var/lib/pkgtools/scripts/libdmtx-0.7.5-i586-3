@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libdmtx.so )
+( cd usr/lib ; ln -sf libdmtx.so.0.0.0 libdmtx.so )
+( cd usr/lib ; rm -rf libdmtx.so.0 )
+( cd usr/lib ; ln -sf libdmtx.so.0.0.0 libdmtx.so.0 )

@@ -1,0 +1,53 @@
+PACKAGE NAME:     kquickcharts-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     470K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kquickcharts-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kquickcharts: kquickcharts (QtQuick chart module)
+kquickcharts:
+kquickcharts: The Quick Charts module provides a set of charts that can be used
+kquickcharts: from QtQuick applications. They are intended to be used for both
+kquickcharts: simple display of data as well as continuous display of high-volume
+kquickcharts: data (often referred to as plotters). The charts use a system called
+kquickcharts: distance fields for their accelerated rendering, which provides ways
+kquickcharts: of using the GPU for rendering 2D shapes without loss of quality.
+kquickcharts:
+kquickcharts: See: https://api.kde.org/frameworks/kquickcharts/html/index.html
+kquickcharts:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kquickcharts-5.83.0/
+usr/doc/kquickcharts-5.83.0/README.md
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5QuickCharts/
+usr/lib/cmake/KF5QuickCharts/KF5QuickChartsConfig.cmake
+usr/lib/cmake/KF5QuickCharts/KF5QuickChartsConfigVersion.cmake
+usr/lib/cmake/KF5QuickCharts/KF5QuickChartsTargets-release.cmake
+usr/lib/cmake/KF5QuickCharts/KF5QuickChartsTargets.cmake
+usr/lib/qt5/
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/quickcharts/
+usr/lib/qt5/qml/org/kde/quickcharts/controls/
+usr/lib/qt5/qml/org/kde/quickcharts/controls/Legend.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/LegendDelegate.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/LineChartControl.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/Logging.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/PieChartControl.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/Theme.qml
+usr/lib/qt5/qml/org/kde/quickcharts/controls/libchartscontrolsplugin.so
+usr/lib/qt5/qml/org/kde/quickcharts/controls/qmldir
+usr/lib/qt5/qml/org/kde/quickcharts/controls/styles/
+usr/lib/qt5/qml/org/kde/quickcharts/controls/styles/org.kde.desktop/
+usr/lib/qt5/qml/org/kde/quickcharts/controls/styles/org.kde.desktop/Theme.qml
+usr/lib/qt5/qml/org/kde/quickcharts/libQuickCharts.so
+usr/lib/qt5/qml/org/kde/quickcharts/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kquickcharts.categories

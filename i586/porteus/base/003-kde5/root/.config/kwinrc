@@ -1,0 +1,13 @@
+[Compositing]
+Backend=XRender
+OpenGLIsUnsafe=false
+
+[Desktops]
+Number=1
+
+[org.kde.kdecoration2]
+BorderSize=Normal
+ButtonsOnLeft=MS
+ButtonsOnRight=HIAX
+CloseOnDoubleClickOnMenu=false
+library=org.kde.breeze

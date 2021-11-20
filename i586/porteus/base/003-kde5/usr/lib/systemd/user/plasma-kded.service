@@ -1,0 +1,8 @@
+[Unit]
+Description=KDE Daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/kded5
+BusName=org.kde.kded5
+Slice=session.slice

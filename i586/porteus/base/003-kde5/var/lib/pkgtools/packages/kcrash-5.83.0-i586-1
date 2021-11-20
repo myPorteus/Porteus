@@ -1,0 +1,48 @@
+PACKAGE NAME:     kcrash-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kcrash-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kcrash: kcrash (Crash handler)
+kcrash:
+kcrash: KCrash provides support for intercepting and handling application
+kcrash: crashes.
+kcrash:
+kcrash:
+kcrash:
+kcrash:
+kcrash:
+kcrash:
+kcrash:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kcrash-5.83.0/
+usr/doc/kcrash-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KCrash/
+usr/include/KF5/KCrash/KCrash
+usr/include/KF5/KCrash/kcrash.h
+usr/include/KF5/KCrash/kcrash_export.h
+usr/include/KF5/kcrash_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5Crash/
+usr/lib/cmake/KF5Crash/KF5CrashConfig.cmake
+usr/lib/cmake/KF5Crash/KF5CrashConfigVersion.cmake
+usr/lib/cmake/KF5Crash/KF5CrashTargets-release.cmake
+usr/lib/cmake/KF5Crash/KF5CrashTargets.cmake
+usr/lib/libKF5Crash.so.5.83.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KCrash.pri
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kcrash.categories
+usr/share/qlogging-categories5/kcrash.renamecategories

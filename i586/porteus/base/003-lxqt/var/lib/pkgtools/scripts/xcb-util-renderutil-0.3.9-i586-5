@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libxcb-render-util.so )
+( cd usr/lib ; ln -sf libxcb-render-util.so.0.0.0 libxcb-render-util.so )
+( cd usr/lib ; rm -rf libxcb-render-util.so.0 )
+( cd usr/lib ; ln -sf libxcb-render-util.so.0.0.0 libxcb-render-util.so.0 )

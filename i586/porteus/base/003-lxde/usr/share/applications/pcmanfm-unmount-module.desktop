@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Unmount...
+Name[ru]=Размонтировтаь модуль...
+Icon=cdr
+Author=Brokenman
+MimeType=application/x-xzm
+OnlyShowIn=pcmanfm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/unmount-module %F

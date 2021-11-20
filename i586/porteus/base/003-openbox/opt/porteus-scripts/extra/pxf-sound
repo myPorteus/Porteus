@@ -1,0 +1,64 @@
+#! /usr/bin/python
+## simple script to use for volume change via keybinds using pamixer
+## usage: "pxf-sound up" , "pxf-sound down" , "pxf-sound toggle"
+## by ncmprhnsbl forum.porteus.org
+
+import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk, GLib
+from subprocess import run, PIPE
+from sys import argv
+
+### change this to disable gui
+gui = "1"
+step='5'
+
+if argv[1] == "up":
+    run(['pamixer', '-i', step])
+
+if argv[1] == "down":
+    run(['pamixer', '-d', step])
+
+if argv[1] == "toggle":
+    run(['pamixer', '-t'])
+
+if gui == "1":
+    vol = run(['pamixer', '--get-volume'], stdout=PIPE).stdout.decode('utf-8').strip()
+    ivol = int(vol)
+    vol = float(int(vol) / 100)
+    class LevelBarWindow(Gtk.Window):
+        def __init__(self):
+            Gtk.Window.__init__(self, type = 0, decorated = 0, skip_taskbar_hint = 1, window_position = 1, width_request = 120)
+            self.set_border_width(5)
+
+            self.add_timeout = GLib.timeout_add(2000, Gtk.main_quit, None)
+            
+            self.box = Gtk.Box()
+            self.add(self.box)
+            
+            self.grid = Gtk.Grid(column_spacing = 12)
+            self.vol_icon()
+            self.grid.attach(self.icon, 0, 0, 1, 1)
+            self.level_bar()
+            self.grid.attach(self.levelbar, 1, 0, 12, 1)
+            self.box.pack_end(self.grid, True, True, 0)
+
+        def vol_icon(self):
+            sound_off = run(['pamixer', '--get-mute'], stdout=PIPE).stdout.decode('utf-8').strip()
+            if sound_off == "true":
+                self.icon = Gtk.Image.new_from_icon_name("audio-volume-muted-symbolic", 5)
+            elif ivol > 66:
+                self.icon = Gtk.Image.new_from_icon_name("audio-volume-high-symbolic", 5)
+            elif ivol < 33:
+                self.icon = Gtk.Image.new_from_icon_name("audio-volume-low-symbolic", 5)
+            else:
+                self.icon = Gtk.Image.new_from_icon_name("audio-volume-medium-symbolic", 5)
+                
+        def level_bar(self):
+            self.levelbar = Gtk.LevelBar()
+            self.levelbar.set_value(vol)
+
+    win = LevelBarWindow()
+    win.connect("destroy", Gtk.main_quit)
+    win.show_all()
+    Gtk.main()

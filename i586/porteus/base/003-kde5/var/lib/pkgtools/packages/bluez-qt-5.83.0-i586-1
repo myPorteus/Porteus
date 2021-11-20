@@ -1,0 +1,129 @@
+PACKAGE NAME:     bluez-qt-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     220K
+UNCOMPRESSED PACKAGE SIZE:     1.1M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/bluez-qt-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+bluez-qt: bluez-qt (Qt wrapper for BlueZ 5 DBus API)
+bluez-qt:
+bluez-qt: BluezQt is a library for communication with BlueZ system and session
+bluez-qt: daemons. Manager class is used to communicate with system daemon
+bluez-qt: org.bluez. ObexManager class is used to communicate with session
+bluez-qt: daemon org.bluez.obex.
+bluez-qt:
+bluez-qt: Homepage: https://projects.kde.org/projects/frameworks/bluez-qt
+bluez-qt:
+bluez-qt:
+bluez-qt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/61-kde-bluetooth-rfkill.rules
+usr/
+usr/doc/
+usr/doc/bluez-qt-5.83.0/
+usr/doc/bluez-qt-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/BluezQt/
+usr/include/KF5/BluezQt/BluezQt/
+usr/include/KF5/BluezQt/BluezQt/Adapter
+usr/include/KF5/BluezQt/BluezQt/Agent
+usr/include/KF5/BluezQt/BluezQt/Device
+usr/include/KF5/BluezQt/BluezQt/DevicesModel
+usr/include/KF5/BluezQt/BluezQt/GattApplication
+usr/include/KF5/BluezQt/BluezQt/GattCharacteristic
+usr/include/KF5/BluezQt/BluezQt/GattManager
+usr/include/KF5/BluezQt/BluezQt/GattService
+usr/include/KF5/BluezQt/BluezQt/InitManagerJob
+usr/include/KF5/BluezQt/BluezQt/InitObexManagerJob
+usr/include/KF5/BluezQt/BluezQt/Input
+usr/include/KF5/BluezQt/BluezQt/Job
+usr/include/KF5/BluezQt/BluezQt/LEAdvertisement
+usr/include/KF5/BluezQt/BluezQt/LEAdvertisingManager
+usr/include/KF5/BluezQt/BluezQt/Manager
+usr/include/KF5/BluezQt/BluezQt/Media
+usr/include/KF5/BluezQt/BluezQt/MediaEndpoint
+usr/include/KF5/BluezQt/BluezQt/MediaPlayer
+usr/include/KF5/BluezQt/BluezQt/MediaPlayerTrack
+usr/include/KF5/BluezQt/BluezQt/MediaTransport
+usr/include/KF5/BluezQt/BluezQt/MediaTypes
+usr/include/KF5/BluezQt/BluezQt/ObexAgent
+usr/include/KF5/BluezQt/BluezQt/ObexFileTransfer
+usr/include/KF5/BluezQt/BluezQt/ObexFileTransferEntry
+usr/include/KF5/BluezQt/BluezQt/ObexManager
+usr/include/KF5/BluezQt/BluezQt/ObexObjectPush
+usr/include/KF5/BluezQt/BluezQt/ObexSession
+usr/include/KF5/BluezQt/BluezQt/ObexTransfer
+usr/include/KF5/BluezQt/BluezQt/PendingCall
+usr/include/KF5/BluezQt/BluezQt/Profile
+usr/include/KF5/BluezQt/BluezQt/Request
+usr/include/KF5/BluezQt/BluezQt/Rfkill
+usr/include/KF5/BluezQt/BluezQt/Services
+usr/include/KF5/BluezQt/BluezQt/TPendingCall
+usr/include/KF5/BluezQt/BluezQt/Types
+usr/include/KF5/BluezQt/bluezqt/
+usr/include/KF5/BluezQt/bluezqt/adapter.h
+usr/include/KF5/BluezQt/bluezqt/agent.h
+usr/include/KF5/BluezQt/bluezqt/bluezqt_export.h
+usr/include/KF5/BluezQt/bluezqt/device.h
+usr/include/KF5/BluezQt/bluezqt/devicesmodel.h
+usr/include/KF5/BluezQt/bluezqt/gattapplication.h
+usr/include/KF5/BluezQt/bluezqt/gattcharacteristic.h
+usr/include/KF5/BluezQt/bluezqt/gattmanager.h
+usr/include/KF5/BluezQt/bluezqt/gattservice.h
+usr/include/KF5/BluezQt/bluezqt/initmanagerjob.h
+usr/include/KF5/BluezQt/bluezqt/initobexmanagerjob.h
+usr/include/KF5/BluezQt/bluezqt/input.h
+usr/include/KF5/BluezQt/bluezqt/job.h
+usr/include/KF5/BluezQt/bluezqt/leadvertisement.h
+usr/include/KF5/BluezQt/bluezqt/leadvertisingmanager.h
+usr/include/KF5/BluezQt/bluezqt/manager.h
+usr/include/KF5/BluezQt/bluezqt/media.h
+usr/include/KF5/BluezQt/bluezqt/mediaendpoint.h
+usr/include/KF5/BluezQt/bluezqt/mediaplayer.h
+usr/include/KF5/BluezQt/bluezqt/mediaplayertrack.h
+usr/include/KF5/BluezQt/bluezqt/mediatransport.h
+usr/include/KF5/BluezQt/bluezqt/mediatypes.h
+usr/include/KF5/BluezQt/bluezqt/obexagent.h
+usr/include/KF5/BluezQt/bluezqt/obexfiletransfer.h
+usr/include/KF5/BluezQt/bluezqt/obexfiletransferentry.h
+usr/include/KF5/BluezQt/bluezqt/obexmanager.h
+usr/include/KF5/BluezQt/bluezqt/obexobjectpush.h
+usr/include/KF5/BluezQt/bluezqt/obexsession.h
+usr/include/KF5/BluezQt/bluezqt/obextransfer.h
+usr/include/KF5/BluezQt/bluezqt/pendingcall.h
+usr/include/KF5/BluezQt/bluezqt/profile.h
+usr/include/KF5/BluezQt/bluezqt/request.h
+usr/include/KF5/BluezQt/bluezqt/rfkill.h
+usr/include/KF5/BluezQt/bluezqt/services.h
+usr/include/KF5/BluezQt/bluezqt/tpendingcall.h
+usr/include/KF5/BluezQt/bluezqt/types.h
+usr/include/KF5/bluezqt_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5BluezQt/
+usr/lib/cmake/KF5BluezQt/KF5BluezQtConfig.cmake
+usr/lib/cmake/KF5BluezQt/KF5BluezQtConfigVersion.cmake
+usr/lib/cmake/KF5BluezQt/KF5BluezQtTargets-release.cmake
+usr/lib/cmake/KF5BluezQt/KF5BluezQtTargets.cmake
+usr/lib/libKF5BluezQt.so.5.83.0
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_BluezQt.pri
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/bluezqt/
+usr/lib/qt5/qml/org/kde/bluezqt/DevicesModel.qml
+usr/lib/qt5/qml/org/kde/bluezqt/libbluezqtextensionplugin.so
+usr/lib/qt5/qml/org/kde/bluezqt/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/bluezqt.categories
+usr/share/qlogging-categories5/bluezqt.renamecategories

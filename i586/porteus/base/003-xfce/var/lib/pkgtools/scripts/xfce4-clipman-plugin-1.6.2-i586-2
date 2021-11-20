@@ -1,0 +1,2 @@
+( cd usr/bin ; rm -rf xfce4-popup-clipman-actions )
+( cd usr/bin ; ln -sf xfce4-popup-clipman xfce4-popup-clipman-actions )

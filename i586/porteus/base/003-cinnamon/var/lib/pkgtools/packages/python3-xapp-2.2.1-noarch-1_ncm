@@ -1,0 +1,43 @@
+PACKAGE NAME:     python3-xapp-2.2.1-noarch-1_ncm
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_cinnamon/python3-xapp-2.2.1-noarch-1_ncm.txz
+PACKAGE DESCRIPTION:
+python3-xapp: python3-xapp (Python Xapp Library)
+python3-xapp:
+python3-xapp: This package provides Python Xapp Library
+python3-xapp:
+python3-xapp:
+python3-xapp:
+python3-xapp: Project URL: https://github.com/linuxmint/python3-xapp
+python3-xapp:
+python3-xapp:
+python3-xapp:
+python3-xapp:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/python3-xapp-2.2.1/
+usr/doc/python3-xapp-2.2.1/COPYING
+usr/doc/python3-xapp-2.2.1/python3-xapp.SlackBuild
+usr/lib/
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/python_xapp-2.2.1-py3.9.egg-info/
+usr/lib/python3.9/site-packages/python_xapp-2.2.1-py3.9.egg-info/PKG-INFO
+usr/lib/python3.9/site-packages/python_xapp-2.2.1-py3.9.egg-info/SOURCES.txt
+usr/lib/python3.9/site-packages/python_xapp-2.2.1-py3.9.egg-info/dependency_links.txt
+usr/lib/python3.9/site-packages/python_xapp-2.2.1-py3.9.egg-info/top_level.txt
+usr/lib/python3.9/site-packages/xapp/
+usr/lib/python3.9/site-packages/xapp/GSettingsWidgets.py
+usr/lib/python3.9/site-packages/xapp/SettingsWidgets.py
+usr/lib/python3.9/site-packages/xapp/__init__.py
+usr/lib/python3.9/site-packages/xapp/__pycache__/
+usr/lib/python3.9/site-packages/xapp/__pycache__/GSettingsWidgets.cpython-39.pyc
+usr/lib/python3.9/site-packages/xapp/__pycache__/SettingsWidgets.cpython-39.pyc
+usr/lib/python3.9/site-packages/xapp/__pycache__/__init__.cpython-39.pyc
+usr/lib/python3.9/site-packages/xapp/__pycache__/os.cpython-39.pyc
+usr/lib/python3.9/site-packages/xapp/os.py

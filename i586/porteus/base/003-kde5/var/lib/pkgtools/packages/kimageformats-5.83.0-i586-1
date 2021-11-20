@@ -1,0 +1,59 @@
+PACKAGE NAME:     kimageformats-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     480K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kimageformats-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kimageformats: kimageformats (QImage format plugins)
+kimageformats:
+kimageformats: This framework provides additional image format plugins for QtGui. As
+kimageformats: such it is not required for the compilation of any other software, but
+kimageformats: may be a runtime requirement for Qt-based software to support certain
+kimageformats: image formats.
+kimageformats:
+kimageformats:
+kimageformats:
+kimageformats:
+kimageformats:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kimageformats-5.83.0/
+usr/doc/kimageformats-5.83.0/README.md
+usr/lib/
+usr/lib/qt5/
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/imageformats/
+usr/lib/qt5/plugins/imageformats/kimg_ani.so
+usr/lib/qt5/plugins/imageformats/kimg_eps.so
+usr/lib/qt5/plugins/imageformats/kimg_exr.so
+usr/lib/qt5/plugins/imageformats/kimg_hdr.so
+usr/lib/qt5/plugins/imageformats/kimg_kra.so
+usr/lib/qt5/plugins/imageformats/kimg_ora.so
+usr/lib/qt5/plugins/imageformats/kimg_pcx.so
+usr/lib/qt5/plugins/imageformats/kimg_pic.so
+usr/lib/qt5/plugins/imageformats/kimg_psd.so
+usr/lib/qt5/plugins/imageformats/kimg_ras.so
+usr/lib/qt5/plugins/imageformats/kimg_rgb.so
+usr/lib/qt5/plugins/imageformats/kimg_tga.so
+usr/lib/qt5/plugins/imageformats/kimg_xcf.so
+usr/share/
+usr/share/kservices5/
+usr/share/kservices5/qimageioplugins/
+usr/share/kservices5/qimageioplugins/ani.desktop
+usr/share/kservices5/qimageioplugins/dds.desktop
+usr/share/kservices5/qimageioplugins/eps.desktop
+usr/share/kservices5/qimageioplugins/exr.desktop
+usr/share/kservices5/qimageioplugins/hdr.desktop
+usr/share/kservices5/qimageioplugins/jp2.desktop
+usr/share/kservices5/qimageioplugins/kra.desktop
+usr/share/kservices5/qimageioplugins/ora.desktop
+usr/share/kservices5/qimageioplugins/pcx.desktop
+usr/share/kservices5/qimageioplugins/pic.desktop
+usr/share/kservices5/qimageioplugins/psd.desktop
+usr/share/kservices5/qimageioplugins/ras.desktop
+usr/share/kservices5/qimageioplugins/rgb.desktop
+usr/share/kservices5/qimageioplugins/tga.desktop
+usr/share/kservices5/qimageioplugins/xcf.desktop

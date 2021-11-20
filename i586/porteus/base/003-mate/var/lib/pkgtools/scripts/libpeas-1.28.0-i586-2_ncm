@@ -1,0 +1,13 @@
+if [ -e usr/share/icons/hicolor/icon-theme.cache ]; then
+  if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache -f usr/share/icons/hicolor >/dev/null 2>&1
+  fi
+fi
+( cd usr/lib ; rm -rf libpeas-1.0.so )
+( cd usr/lib ; ln -sf libpeas-1.0.so.0 libpeas-1.0.so )
+( cd usr/lib ; rm -rf libpeas-1.0.so.0 )
+( cd usr/lib ; ln -sf libpeas-1.0.so.0.2800.0 libpeas-1.0.so.0 )
+( cd usr/lib ; rm -rf libpeas-gtk-1.0.so )
+( cd usr/lib ; ln -sf libpeas-gtk-1.0.so.0 libpeas-gtk-1.0.so )
+( cd usr/lib ; rm -rf libpeas-gtk-1.0.so.0 )
+( cd usr/lib ; ln -sf libpeas-gtk-1.0.so.0.2800.0 libpeas-gtk-1.0.so.0 )

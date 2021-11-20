@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Mount...
+Name[ru]=Смонтировать модуль...
+Icon=cdr
+Author=Brokenman
+MimeType=application/x-xzm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/mount-module %F

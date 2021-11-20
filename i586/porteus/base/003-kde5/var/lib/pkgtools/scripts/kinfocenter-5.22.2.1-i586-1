@@ -1,0 +1,2 @@
+( cd usr/bin ; rm -rf kinfocenter )
+( cd usr/bin ; ln -sf /usr/bin/systemsettings5 kinfocenter )

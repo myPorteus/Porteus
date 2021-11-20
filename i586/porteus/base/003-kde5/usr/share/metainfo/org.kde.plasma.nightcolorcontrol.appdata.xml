@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.nightcolorcontrol</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Night Color Control</name>
+    <name xml:lang="az">Gecə rəng sxemi idarəedilməsi</name>
+    <name xml:lang="ca">Control del color de nit</name>
+    <name xml:lang="cs">Ovládání noční barvy</name>
+    <name xml:lang="da">Kontrol af natfarve</name>
+    <name xml:lang="de">Nachtfarben-Steuerung</name>
+    <name xml:lang="en_GB">Night Colour Control</name>
+    <name xml:lang="es">Control del color nocturno</name>
+    <name xml:lang="et">Öörežiimi juhtimine</name>
+    <name xml:lang="eu">Gaueko kolorearen agintea</name>
+    <name xml:lang="fi">Yövärin hallinta</name>
+    <name xml:lang="fr">Contrôle de la couleur de nuit</name>
+    <name xml:lang="hu">Éjszakaiszín-kezelő</name>
+    <name xml:lang="ia">ColorColor de Nocte non es executante</name>
+    <name xml:lang="id">Kendali Warna Malam</name>
+    <name xml:lang="it">Controllo del colore notturno</name>
+    <name xml:lang="ko">야간 색상 제어</name>
+    <name xml:lang="lt">Naktinės spalvos valdymas</name>
+    <name xml:lang="nl">Besturing van nachtkleur</name>
+    <name xml:lang="nn">Styring av nattfargar</name>
+    <name xml:lang="pl">Przełącznik barw nocnych</name>
+    <name xml:lang="pt">Controlo da Cor Nocturna</name>
+    <name xml:lang="pt_BR">Controle da cor noturna</name>
+    <name xml:lang="ro">Control culoare nocturnă</name>
+    <name xml:lang="ru">Управление ночной цветовой схемой</name>
+    <name xml:lang="sk">Ovládanie nočnej farby</name>
+    <name xml:lang="sl">Nadzor nočne barve</name>
+    <name xml:lang="sv">Nattfärgkontroll</name>
+    <name xml:lang="tg">Идоракунии рангҳои шабона</name>
+    <name xml:lang="tr">Gece Renk Kontrolü</name>
+    <name xml:lang="uk">Керування нічними кольорами</name>
+    <name xml:lang="vi">Điều khiển &quot;Màu buổi tối&quot;</name>
+    <name xml:lang="x-test">xxNight Color Controlxx</name>
+    <name xml:lang="zh_CN">夜间颜色控制</name>
+    <name xml:lang="zh_TW">夜色模式控制</name>
+    <summary>Plasmoid for controlling Night Color</summary>
+    <summary xml:lang="az">Gecə rəng sxemini idarə etmək üçün plasmoid</summary>
+    <summary xml:lang="ca">Plasmoide per a controlar el Color de nit</summary>
+    <summary xml:lang="cs">Plasmoid pro ovládání noční barvy</summary>
+    <summary xml:lang="da">Plasmoid til kontrol af natfarve</summary>
+    <summary xml:lang="de">Miniprogramm zur Steuerung der Nachtfarbe</summary>
+    <summary xml:lang="en_GB">Plasmoid for controlling Night Colour</summary>
+    <summary xml:lang="es">Plasmoide para controlar el color nocturno</summary>
+    <summary xml:lang="et">Öörežiimi juhtimise plasmoid</summary>
+    <summary xml:lang="eu">Gaueko kolorea kontrolatzeko plasmoidea</summary>
+    <summary xml:lang="fi">Sovelma yövärin hallintaan</summary>
+    <summary xml:lang="fr">Composant graphique permettant de contrôler la couleur de nuit</summary>
+    <summary xml:lang="hu">Plasmoid az éjszaki színek kezeléséhez</summary>
+    <summary xml:lang="id">Plasmoid untuk mengendalikan Warna Malam</summary>
+    <summary xml:lang="it">Plasmoide per il controllo del colore notturno</summary>
+    <summary xml:lang="ko">야간 색상을 제어하는 Plasmoid</summary>
+    <summary xml:lang="lt">Plasma įskiepis, skirtas valdyti naktinę spalvą</summary>
+    <summary xml:lang="nl">Plasmoid voor besturing van nachtkleur</summary>
+    <summary xml:lang="nn">Skjermelement for styring av nattfargar</summary>
+    <summary xml:lang="pl">Plasmoid do przełączania barw nocnych</summary>
+    <summary xml:lang="pt">Plasmóide para controlar a Cor Nocturna</summary>
+    <summary xml:lang="pt_BR">Plasmoide para controlar a cor noturna</summary>
+    <summary xml:lang="ro">Plasmoid pentru controlul culorii nocturne</summary>
+    <summary xml:lang="ru">Виджет для управления ночной цветовой схемой</summary>
+    <summary xml:lang="sk">Plasmoid na ovládanie Nočnej farby</summary>
+    <summary xml:lang="sl">Plasmoid za nadzor nočne barve</summary>
+    <summary xml:lang="sv">Plasmoid för att kontrollera nattfärg</summary>
+    <summary xml:lang="tr">Gece rengini kontrol etmek için plazmoid</summary>
+    <summary xml:lang="uk">Плазмоїд для керування нічними кольорами</summary>
+    <summary xml:lang="vi">Plasmoid để điều khiển &quot;Màu buổi tối&quot;</summary>
+    <summary xml:lang="x-test">xxPlasmoid for controlling Night Colorxx</summary>
+    <summary xml:lang="zh_CN">控制夜间颜色的小部件</summary>
+    <summary xml:lang="zh_TW">控制夜色的 Plasmoid</summary>
+    <url type="homepage">https://kde.org/plasma-desktop</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.nightcolorcontrol</url>
+    <developer_name>Vlad Zahorodnii &lt;vlad.zahorodnii@kde.org&gt;</developer_name>
+    <icon type="stock">redshift-status-on</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

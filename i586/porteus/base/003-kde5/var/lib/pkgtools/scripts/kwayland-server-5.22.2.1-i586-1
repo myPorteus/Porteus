@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libKWaylandServer.so )
+( cd usr/lib ; ln -sf libKWaylandServer.so.5 libKWaylandServer.so )
+( cd usr/lib ; rm -rf libKWaylandServer.so.5 )
+( cd usr/lib ; ln -sf libKWaylandServer.so.5.22.2 libKWaylandServer.so.5 )

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Unmount xzm module...
+Icon=cdr
+Author=Brokenman
+MimeType=application/x-xzm
+OnlyShowIn=pcmanfm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/unmount-module %F

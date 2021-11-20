@@ -1,0 +1,6 @@
+( cd usr/doc/libxfce4util-4.16.0 ; rm -rf html )
+( cd usr/doc/libxfce4util-4.16.0 ; ln -sf /usr/share/gtk-doc/html/libxfce4util/ html )
+( cd usr/lib ; rm -rf libxfce4util.so )
+( cd usr/lib ; ln -sf libxfce4util.so.7.0.0 libxfce4util.so )
+( cd usr/lib ; rm -rf libxfce4util.so.7 )
+( cd usr/lib ; ln -sf libxfce4util.so.7.0.0 libxfce4util.so.7 )

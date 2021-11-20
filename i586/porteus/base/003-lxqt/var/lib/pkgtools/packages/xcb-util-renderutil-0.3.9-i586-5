@@ -1,0 +1,36 @@
+PACKAGE NAME:     xcb-util-renderutil-0.3.9-i586-5
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: xcb-util-renderutil-0.3.9-i586-5.txz
+PACKAGE DESCRIPTION:
+xcb-util-renderutil: xcb-util-renderutil (XCB renderutil library)
+xcb-util-renderutil:
+xcb-util-renderutil: xcb-util-renderutil provides the XCB renderutil library, which
+xcb-util-renderutil: includes some convenience functions for the Render extension.
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+xcb-util-renderutil:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xcb-util-renderutil-0.3.9/
+usr/doc/xcb-util-renderutil-0.3.9/COPYING
+usr/doc/xcb-util-renderutil-0.3.9/ChangeLog
+usr/doc/xcb-util-renderutil-0.3.9/INSTALL
+usr/doc/xcb-util-renderutil-0.3.9/NEWS
+usr/doc/xcb-util-renderutil-0.3.9/README
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_renderutil.h
+usr/lib/
+usr/lib/libxcb-render-util.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xcb-renderutil.pc

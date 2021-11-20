@@ -1,0 +1,73 @@
+PACKAGE NAME:     cinnamon-session-5.0.0-i586-1_ncm
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_cinnamon/cinnamon-session-5.0.0-i586-1_ncm.txz
+PACKAGE DESCRIPTION:
+cinnamon-session: cinnamon-session (Cinnamon Session Handler)
+cinnamon-session:
+cinnamon-session: cinnamon-session contains the Cinnamon session manager, as well as a
+cinnamon-session: configuration program to choose applications starting on login
+cinnamon-session:
+cinnamon-session:
+cinnamon-session: Project URL: https://github.com/linuxmint/cinnamon-session
+cinnamon-session:
+cinnamon-session:
+cinnamon-session:
+cinnamon-session:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/xinit/
+etc/X11/xinit/xinitrc.cinnamon-session
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cinnamon-session
+usr/bin/cinnamon-session-quit
+usr/doc/
+usr/doc/cinnamon-session-5.0.0/
+usr/doc/cinnamon-session-5.0.0/AUTHORS
+usr/doc/cinnamon-session-5.0.0/COPYING
+usr/doc/cinnamon-session-5.0.0/README
+usr/doc/cinnamon-session-5.0.0/README.md
+usr/doc/cinnamon-session-5.0.0/cinnamon-session.SlackBuild
+usr/lib/
+usr/lib/cinnamon-session-check-accelerated
+usr/lib/cinnamon-session-check-accelerated-helper
+usr/man/
+usr/man/man1/
+usr/man/man1/cinnamon-session-quit.1.gz
+usr/man/man1/cinnamon-session.1.gz
+usr/share/
+usr/share/apps/
+usr/share/apps/kdm/
+usr/share/apps/kdm/sessions/
+usr/share/cinnamon-session/
+usr/share/cinnamon-session/csm-inhibit-dialog.glade
+usr/share/cinnamon-session/hardware-compatibility
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.cinnamon.SessionManager.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/cinnamon-session-properties.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/cinnamon-session-properties.png
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/24x24/apps/
+usr/share/icons/hicolor/24x24/apps/cinnamon-session-properties.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/cinnamon-session-properties.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/cinnamon-session-properties.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/cinnamon-session-properties.svg

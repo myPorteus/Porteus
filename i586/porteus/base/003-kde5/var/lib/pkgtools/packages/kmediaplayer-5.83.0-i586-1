@@ -1,0 +1,51 @@
+PACKAGE NAME:     kmediaplayer-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kmediaplayer-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kmediaplayer: kmediaplayer (Interface for media player KParts)
+kmediaplayer:
+kmediaplayer: KMediaPlayer builds on the KParts framework to provide a common
+kmediaplayer: interface for KParts that can play media files.
+kmediaplayer:
+kmediaplayer:
+kmediaplayer:
+kmediaplayer:
+kmediaplayer:
+kmediaplayer:
+kmediaplayer:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kmediaplayer-5.83.0/
+usr/doc/kmediaplayer-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KMediaPlayer/
+usr/include/KF5/KMediaPlayer/KMediaPlayer/
+usr/include/KF5/KMediaPlayer/KMediaPlayer/Player
+usr/include/KF5/KMediaPlayer/KMediaPlayer/View
+usr/include/KF5/KMediaPlayer/kmediaplayer/
+usr/include/KF5/KMediaPlayer/kmediaplayer/kmediaplayer_export.h
+usr/include/KF5/KMediaPlayer/kmediaplayer/player.h
+usr/include/KF5/KMediaPlayer/kmediaplayer/view.h
+usr/include/KF5/kmediaplayer_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5MediaPlayer/
+usr/lib/cmake/KF5MediaPlayer/KF5MediaPlayerConfig.cmake
+usr/lib/cmake/KF5MediaPlayer/KF5MediaPlayerConfigVersion.cmake
+usr/lib/cmake/KF5MediaPlayer/KF5MediaPlayerTargets-release.cmake
+usr/lib/cmake/KF5MediaPlayer/KF5MediaPlayerTargets.cmake
+usr/lib/libKF5MediaPlayer.so.5.83.0
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/kf5_org.kde.KMediaPlayer.xml
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/kmediaplayer-engine.desktop
+usr/share/kservicetypes5/kmediaplayer-player.desktop

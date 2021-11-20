@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>KDE</vendor>
+<icon_name>kde</icon_name>
+   <action id="org.kde.powerdevil.chargethresholdhelper.getthreshold" >
+      <description xml:lang="az">Batareyanın dolması limitinin göstəricisini əldə etmək</description>
+      <description xml:lang="ca">Obtén el límit actual de càrrega de la bateria</description>
+      <description xml:lang="da">Hent batteriets aktuelle opladningsgrænse</description>
+      <description xml:lang="de">Aktuellen maximalen Ladestand ermitteln</description>
+      <description>Get current battery charge limit</description>
+      <description xml:lang="en_GB">Get current battery charge limit</description>
+      <description xml:lang="es">Obtener el límite de carga de la batería actual</description>
+      <description xml:lang="et">Praeguse aku laadimispiirangu hankimine</description>
+      <description xml:lang="eu">Lortu bateria-kargaren uneko muga</description>
+      <description xml:lang="fi">Lue akun nykyinen latausrajoitus</description>
+      <description xml:lang="fr">Obtenir la limite courante de charge de la batterie</description>
+      <description xml:lang="hu">Töltési korlát lekérdezése</description>
+      <description xml:lang="ia">Obtene le limite de carga del batteria</description>
+      <description xml:lang="it">Leggi il limite di carica attuale della batteria</description>
+      <description xml:lang="ko">현재 배터리 충전 제한 가져오기</description>
+      <description xml:lang="lt">Gauti dabartinę akumuliatoriaus įkrovos ribą</description>
+      <description xml:lang="nl">De huidige limiet van de lading van batterij ophalen</description>
+      <description xml:lang="nn">Hent ladegrense for batteriet</description>
+      <description xml:lang="pa">ਮੌਜੂਦਾ ਬੈਟਰੀ ਚਾਰਜ ਹੱਦ ਲਵੋ</description>
+      <description xml:lang="pl">Pobierz graniczną wartość ładunku bieżącej baterii</description>
+      <description xml:lang="pt">Obter o limite de carga actual da bateria</description>
+      <description xml:lang="pt_BR">Obter o limite de carga da bateria atual</description>
+      <description xml:lang="ro">Obține limita actuală de încărcare a acumulatorului</description>
+      <description xml:lang="ru">Получить значение ограничения уровня заряда батареи</description>
+      <description xml:lang="sk">Získať aktuálny limit nabíjania batérie</description>
+      <description xml:lang="sl">Pridobi omejitev napolnjenosti trenutne baterije</description>
+      <description xml:lang="sv">Hämta batteriets nuvarande laddningsbegränsning</description>
+      <description xml:lang="uk">Отримання поточного рівня обмеження на заряджання акумулятора</description>
+      <description xml:lang="zh_CN">获取当前电池充电上限</description>
+      <message xml:lang="az">Sistemdəki qaydalar batareyanın dolması limitini əldə etməyə imkan vermir.</message>
+      <message xml:lang="ca">Les polítiques del sistema impedeixen que conegueu el límit actual de carrega de la bateria.</message>
+      <message xml:lang="cs">Nastavení systému vám znemožňuje získat limit nabíjení baterie.</message>
+      <message xml:lang="da">Systempolitikker forhindrer dig i at  hente batteriets aktuelle opladningsgrænse.</message>
+      <message xml:lang="de">Der maximale Ladestand kann aufgrund einer Systemrichtlinie nicht ermittelt werden.</message>
+      <message>System policies prevent you from getting the current battery charge limit.</message>
+      <message xml:lang="en_GB">System policies prevent you from getting the current battery charge limit.</message>
+      <message xml:lang="es">Las políticas del sistema le impiden obtener el límite de carga de la batería actual.</message>
+      <message xml:lang="et">Süsteemi reeglid takistavad aku laadimispiirangu hankimist.</message>
+      <message xml:lang="eu">Sistemako gidalerroek bateria-kargaren uneko muga lortzea galarazten dizute.</message>
+      <message xml:lang="fi">Järjestelmäkäytäntö estää sinua lukemasta akun nykyistä latausrajoitusta.</message>
+      <message xml:lang="fr">La stratégie du système vous empêche d'obtenir la limite courante de charge de la batterie</message>
+      <message xml:lang="hu">A rendszer házirendjei nem engedik meg a jelenlegi akkumulátortöltési korlát lekérdezését.</message>
+      <message xml:lang="ia">Le politicas de systema preveni te ex obtener le  currente limite de carga de batteria.</message>
+      <message xml:lang="it">Le politiche di sistema ti impediscono di leggere il limite di carica attuale della batteria.</message>
+      <message xml:lang="ko">시스템 정책 때문에 배터리 충전 제한을 가져올 수 없습니다.</message>
+      <message xml:lang="lt">Sistemos politika neleidžia jums gauti dabartinės akumuliatoriaus įkrovos ribos.</message>
+      <message xml:lang="nl">Systeembeleid voorkwam dat u de huidige ladingslimiet van de batterij kon ophalen.</message>
+      <message xml:lang="nn">Systemreglane hindrar deg i å henta ladegrensa for batteriet.</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਤੁਹਾਨੂੰ ਮੌਜੂਦਾ ਬੈਟਰੀ ਚਾਰਜ ਹੱਦ ਲੈਣ ਤੋਂ ਰੋਕਦੀ ਹੈ।</message>
+      <message xml:lang="pl">Zasady systemowe nie pozwalają ci na odczyt granicznej wartości ładunku bieżącej baterii.</message>
+      <message xml:lang="pt">As políticas do sistema impedem-no de obter o limite de carga actual da bateria.</message>
+      <message xml:lang="pt_BR">As políticas do sistema impedem você de obter o limite de carga da bateria atual.</message>
+      <message xml:lang="ro">Politicile sistemului vă interzic obținerea limitei actuale de încărcare a acumulatorului.</message>
+      <message xml:lang="ru">Правила безопасности запрещают вам узнавать значение ограничения уровня заряда батареи.</message>
+      <message xml:lang="sk">Systémové politiky vám zabránili získať aktuálny limit nabíjania batérie.</message>
+      <message xml:lang="sl"></message>
+      <message xml:lang="sv">Systemets policy förhindrar att du hämtar batteriets nuvarande laddningsbegränsning.</message>
+      <message xml:lang="uk"></message>
+      <message xml:lang="zh_CN">系统安全策略不允许获取当前电池充电上限。</message>
+      <defaults>
+         <allow_inactive>yes</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.powerdevil.chargethresholdhelper.setthreshold" >
+      <description xml:lang="az">Batareyanın dolması limitini təyin etmək</description>
+      <description xml:lang="ca">Estableix el límit actual de càrrega de la bateria</description>
+      <description xml:lang="cs">Nastavit limit nabíjení baterie</description>
+      <description xml:lang="da">Angiv batteriets opladningsgrænse</description>
+      <description xml:lang="de">Maximalen Ladestand einstellen</description>
+      <description>Set battery charge limit</description>
+      <description xml:lang="en_GB">Set battery charge limit</description>
+      <description xml:lang="es">Definir el límite de carga de la batería</description>
+      <description xml:lang="et">Aku laadimispiirangu määramine</description>
+      <description xml:lang="eu">Ezarri bateria-kargaren muga</description>
+      <description xml:lang="fi">Aseta akun latausrajoitus</description>
+      <description xml:lang="fr">Définir la limite de charge de la batterie</description>
+      <description xml:lang="hu">Töltési korlát beállítása</description>
+      <description xml:lang="ia">Fixa le limite de carga del batteria</description>
+      <description xml:lang="it">Imposta un limite di carica della batteria</description>
+      <description xml:lang="ko">배터리 충전 제한 설정</description>
+      <description xml:lang="lt">Nustatyti akumuliatoriaus įkrovos ribą</description>
+      <description xml:lang="nl">De ladingslimiet van de batterij instellen</description>
+      <description xml:lang="nn">Definer ladegrense for batteri</description>
+      <description xml:lang="pa">ਬੈਟਰੀ ਚਾਰਜ ਹੱਦ ਸੈਟ ਕਰੋ</description>
+      <description xml:lang="pl">Ustaw graniczną wartość ładunku baterii</description>
+      <description xml:lang="pt">Modificar o limite de carga da bateria</description>
+      <description xml:lang="pt_BR">Definir o limite de carga da bateria</description>
+      <description xml:lang="ro">Stabilește limita de încărcare a acumulatorului</description>
+      <description xml:lang="ru">Задать значение ограничения уровня заряда батареи</description>
+      <description xml:lang="sk">Nastaviť aktuálny limit nabíjania batérie</description>
+      <description xml:lang="sl">Nastavi omejitev napolnjenosti baterije</description>
+      <description xml:lang="sv">Ställ in batteriets laddningsbegränsning</description>
+      <description xml:lang="uk">Встановлення рівня обмеження на заряджання акумулятора</description>
+      <description xml:lang="zh_CN">设置电池充电上限</description>
+      <message xml:lang="az">Sistemdəki qaydalar batareyanın dolması limitini ayarlamağa imkan vermir.</message>
+      <message xml:lang="ca">Les polítiques del sistema impedeixen que establiu un límit de càrrega de la bateria.</message>
+      <message xml:lang="cs">Nastavení systému vám znemožňuje nastavit limit nabíjení baterie.</message>
+      <message xml:lang="da">Systempolitikker forhindrer dig i at sætte en opladningsgrænse for batteriet.</message>
+      <message xml:lang="de">Der maximale Ladestand kann aufgrund einer Systemrichtlinie nicht geändert werden.</message>
+      <message>System policies prevent you from setting a battery charge limit.</message>
+      <message xml:lang="en_GB">System policies prevent you from setting a battery charge limit.</message>
+      <message xml:lang="es">Las políticas del sistema le impiden definir un límite de carga para la batería.</message>
+      <message xml:lang="et">Süsteemi reeglid takistavad aku laadimispiirangu määramist.</message>
+      <message xml:lang="eu">Sistemako gidalerroek bateriaren karga-muga bat ezartzea galarazten dizute.</message>
+      <message xml:lang="fi">Järjestelmäkäytäntö estää sinua asettamasta akun latausrajoitusta.</message>
+      <message xml:lang="fr">La stratégie système vous empêche de fixer une limite courante de charge de la batterie.</message>
+      <message xml:lang="hu">A rendszer házirendjei nem engedik meg az akkumulátor töltési korlátjának beállítását.</message>
+      <message xml:lang="ia">Le politicas de systema preveni te ex fixar le  currente limite de carga de batteria.</message>
+      <message xml:lang="it">Le politiche di sistema ti impediscono di impostare un limite di carica della batteria.</message>
+      <message xml:lang="ko">시스템 정책 때문에 배터리 충전 제한을 지정할 수 없습니다.</message>
+      <message xml:lang="lt">Sistemos politika neleidžia jums nustatyti akumuliatoriaus įkrovos ribos.</message>
+      <message xml:lang="nl">Systeembeleid voorkwam dat u de ladingslimiet van de batterij kon instellen.</message>
+      <message xml:lang="nn">Systemreglane hindrar deg i å definera ladegrensa for batteriet.</message>
+      <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਤੁਹਾਨੂੰ ਮੌਜੂਦਾ ਬੈਟਰੀ ਚਾਰਜ ਹੱਦ ਸੈੱਟ ਕਰਨ ਤੋਂ ਰੋਕਦੀ ਹੈ।</message>
+      <message xml:lang="pl">Zasady systemowe nie pozwalają ci na ustawienie granicznej wartości ładunku baterii.</message>
+      <message xml:lang="pt">As políticas do sistema impedem-no de modificar o limite de carga da bateria.</message>
+      <message xml:lang="pt_BR">As políticas do sistema impedem você de definir o limite de carga da bateria.</message>
+      <message xml:lang="ro">Politicile sistemului vă interzic stabilirea limitei de încărcare a acumulatorului.</message>
+      <message xml:lang="ru">Правила безопасности запрещают вам задавать значение ограничения уровня заряда батареи.</message>
+      <message xml:lang="sk">Systémové politiky vám zabránili nastaviť limit nabíjania batérie.</message>
+      <message xml:lang="sl">Sistemska pravila preprečujejo nastavitev omejitve napolnjenosti baterije.</message>
+      <message xml:lang="sv">Systemets policy förhindrar att du ställer in batteriets laddningsbegränsning.</message>
+      <message xml:lang="uk"></message>
+      <message xml:lang="zh_CN">系统安全策略不允许设置电池充电上限。</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

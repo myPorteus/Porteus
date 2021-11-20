@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.WnckletFactory
+Exec=/usr/lib/mate-panel/wnck-applet

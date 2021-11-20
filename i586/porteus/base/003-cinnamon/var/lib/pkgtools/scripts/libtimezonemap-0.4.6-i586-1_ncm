@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libtimezonemap.so )
+( cd usr/lib ; ln -sf libtimezonemap.so.1.0.0 libtimezonemap.so )
+( cd usr/lib ; rm -rf libtimezonemap.so.1 )
+( cd usr/lib ; ln -sf libtimezonemap.so.1.0.0 libtimezonemap.so.1 )

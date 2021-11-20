@@ -1,0 +1,88 @@
+PACKAGE NAME:     hunspell-1.6.2-i586-5
+COMPRESSED PACKAGE SIZE:     316K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_mate/hunspell-1.6.2-i586-5.txz
+PACKAGE DESCRIPTION:
+hunspell: hunspell (spell checker and morphological analyzer library)
+hunspell:
+hunspell: Hunspell is a spell checker and morphological analyzer library
+hunspell: and program designed for languages with rich morphology
+hunspell: and complex word compounding or character encoding.
+hunspell: Hunspell interfaces: Ispell-like terminal interface using ncurses
+hunspell: library, Ispell pipe interface, and OpenOffice.org UNO module.
+hunspell:
+hunspell: Home page: http://hunspell.sourceforge.net/
+hunspell:
+hunspell:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/affixcompress
+usr/bin/analyze
+usr/bin/chmorph
+usr/bin/hunspell
+usr/bin/hunzip
+usr/bin/hzip
+usr/bin/ispellaff2myspell
+usr/bin/makealias
+usr/bin/munch
+usr/bin/unmunch
+usr/bin/wordforms
+usr/bin/wordlist2hunspell
+usr/doc/
+usr/doc/hunspell-1.6.2/
+usr/doc/hunspell-1.6.2/ABOUT-NLS
+usr/doc/hunspell-1.6.2/AUTHORS
+usr/doc/hunspell-1.6.2/AUTHORS.myspell
+usr/doc/hunspell-1.6.2/BUGS
+usr/doc/hunspell-1.6.2/COPYING
+usr/doc/hunspell-1.6.2/COPYING.LESSER
+usr/doc/hunspell-1.6.2/COPYING.MPL
+usr/doc/hunspell-1.6.2/ChangeLog
+usr/doc/hunspell-1.6.2/ChangeLog.O
+usr/doc/hunspell-1.6.2/NEWS
+usr/doc/hunspell-1.6.2/README.md
+usr/doc/hunspell-1.6.2/README.myspell
+usr/doc/hunspell-1.6.2/THANKS
+usr/doc/hunspell-1.6.2/TODO
+usr/include/
+usr/include/hunspell/
+usr/include/hunspell/atypes.hxx
+usr/include/hunspell/csutil.hxx
+usr/include/hunspell/htypes.hxx
+usr/include/hunspell/hunspell.h
+usr/include/hunspell/hunspell.hxx
+usr/include/hunspell/hunvisapi.h
+usr/include/hunspell/w_char.hxx
+usr/lib/
+usr/lib/libhunspell-1.6.so.0.0.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/hunspell.pc
+usr/man/
+usr/man/hu/
+usr/man/hu/man1/
+usr/man/hu/man1/hunspell.1.gz
+usr/man/man1/
+usr/man/man1/hunspell.1.gz
+usr/man/man1/hunzip.1.gz
+usr/man/man1/hzip.1.gz
+usr/man/man3/
+usr/man/man3/hunspell.3.gz
+usr/man/man5/
+usr/man/man5/hunspell.5.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/

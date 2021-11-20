@@ -1,0 +1,85 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+# SPDX-FileCopyrightText: 2014 Alex Merry <alex.merry@kdemail.net>
+# SPDX-FileCopyrightText: 2014 Aurélien Gâteau <agateau@kde.org>
+# SPDX-FileCopyrightText: 2014 Alex Turbov <i.zaufi@gmail.com>
+# SPDX-FileCopyrightText: 2016 Olivier Churlaud <olivier@churlaud.com>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
+import logging
+import codecs
+import os
+import sys
+import time
+import datetime
+
+from urllib.request import urlretrieve
+
+from kapidox import generator, utils, argparserutils, preprocessing, hlfunctions
+
+try:
+    from kapidox import depdiagram
+    DEPDIAGRAM_AVAILABLE = True
+except ImportError:
+    DEPDIAGRAM_AVAILABLE = False
+
+
+def download_kde_identities():
+    """Download the "accounts" file on the KDE SVN repository in order to get
+       the KDE identities with their name and e-mail address
+    """
+    cache_file = os.path.join(utils.cache_dir(), 'kde-accounts')
+    needs_download = True
+    if os.path.exists(cache_file):
+        logging.debug("Found cached identities file at %s", cache_file)
+        # not quite a day, so that generation on api.kde.org gets a fresh
+        # copy every time the daily cron job runs it
+        yesterday = time.time() - (23.5 * 3600)
+        if os.path.getmtime(cache_file) > yesterday:
+            needs_download = False
+        else:
+            logging.debug("Cached file too old; updating")
+    if needs_download:
+        logging.info("Downloading KDE identities")
+        try:
+            if not utils.svn_export(
+                    'svn://anonsvn.kde.org/home/kde/trunk/kde-common/accounts',
+                    cache_file,
+                    overwrite=True):
+                logging.debug("Falling back to using websvn to fetch "
+                              "identities file")
+                urlretrieve('https://websvn.kde.org/*checkout*/trunk/kde-common/accounts',
+                            cache_file)
+        except Exception as e:
+            if os.path.exists(cache_file):
+                logging.error('Failed to update KDE identities: %s', e)
+            else:
+                logging.error('Failed to fetch KDE identities: %s', e)
+                return None
+
+    maintainers = {}
+
+    with codecs.open(cache_file, 'r', encoding='utf8') as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) >= 3:
+                maintainers[parts[0]] = {
+                    'name': ' '.join(parts[1:-1]),
+                    'email': parts[-1]
+                    }
+
+    return maintainers
+
+
+def main():
+    kde_copyright = '1996-' + str(datetime.date.today().year) + ' The KDE developers'
+    get_maintainers = download_kde_identities
+
+    hlfunctions.do_it(maintainers_fct=get_maintainers,
+                      copyright=kde_copyright)
+
+
+if __name__ == "__main__":
+    main()

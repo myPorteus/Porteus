@@ -1,0 +1,2 @@
+( cd usr/lib/screengrab ; rm -rf libextedit.so )
+( cd usr/lib/screengrab ; ln -sf libextedit.so.1.0.0 libextedit.so )

@@ -1,0 +1,20 @@
+PACKAGE NAME:     mate-search-tool-1.24.0-i586
+COMPRESSED PACKAGE SIZE:     68K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: mate-search-tool-1.24.0-i586.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/mate-search-tool
+usr/share/
+usr/share/applications/
+usr/share/applications/mate-search-tool.desktop
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.mate.interface.gschema.xml
+usr/share/glib-2.0/schemas/org.mate.search-tool.gschema.xml
+usr/share/pixmaps/
+usr/share/pixmaps/mate-search-tool/
+usr/share/pixmaps/mate-search-tool/thumbnail_frame.png

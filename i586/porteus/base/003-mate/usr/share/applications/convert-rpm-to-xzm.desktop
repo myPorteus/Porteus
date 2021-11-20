@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Convert rpm to xzm...
+Name[ru]=Конвертировать rpm в xzm модуль...
+Icon=cdr
+Author=Brokenman
+MimeType=application/x-rpm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/convert_rpm %F

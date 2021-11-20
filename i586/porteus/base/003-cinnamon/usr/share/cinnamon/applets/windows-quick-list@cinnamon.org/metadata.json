@@ -1,0 +1,7 @@
+{
+"uuid": "windows-quick-list@cinnamon.org",
+"name": "Windows Quick List",
+"description": "Quickly access windows from all workspaces",
+"icon": "cs-windows",
+ "max-instances": -1
+}

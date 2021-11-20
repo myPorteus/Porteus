@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libqca-qt5.so )
+( cd usr/lib ; ln -sf libqca-qt5.so.2 libqca-qt5.so )
+( cd usr/lib ; rm -rf libqca-qt5.so.2 )
+( cd usr/lib ; ln -sf libqca-qt5.so.2.3.3 libqca-qt5.so.2 )

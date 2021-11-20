@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libKF5BalooWidgets.so )
+( cd usr/lib ; ln -sf libKF5BalooWidgets.so.5 libKF5BalooWidgets.so )
+( cd usr/lib ; rm -rf libKF5BalooWidgets.so.5 )
+( cd usr/lib ; ln -sf libKF5BalooWidgets.so.21.4.2 libKF5BalooWidgets.so.5 )

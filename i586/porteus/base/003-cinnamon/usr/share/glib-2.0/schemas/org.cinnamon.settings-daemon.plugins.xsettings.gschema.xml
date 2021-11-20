@@ -1,0 +1,72 @@
+<schemalist>
+  <schema gettext-domain="cinnamon-settings-daemon" id="org.cinnamon.settings-daemon.plugins.xsettings" path="/org/cinnamon/settings-daemon/plugins/xsettings/">
+    <key name="antialiasing" enum="org.cinnamon.settings-daemon.CsdFontAntialiasingMode">
+      <default>'rgba'</default>
+      <summary>Antialiasing</summary>
+      <description>The type of antialiasing to use when rendering fonts. Possible values are: "none" for no antialiasing, "grayscale" for standard grayscale antialiasing, and "rgba" for subpixel antialiasing (LCD screens only).</description>
+    </key>
+    <key name="hinting" enum="org.cinnamon.settings-daemon.CsdFontHinting">
+      <default>'slight'</default>
+      <summary>Hinting</summary>
+      <description>The type of hinting to use when rendering fonts. Possible values are: "none" for no hinting, "slight" for basic, "medium" for moderate, and "full" for maximum hinting (may cause distortion of letter forms).</description>
+    </key>
+    <key name="rgba-order" enum="org.cinnamon.settings-daemon.CsdFontRgbaOrder">
+      <default>'rgb'</default>
+      <summary>RGBA order</summary>
+      <description>The order of subpixel elements on an LCD screen; only used when antialiasing is set to "rgba". Possible values are: "rgb" for red on left (most common), "bgr" for blue on left, "vrgb" for red on top, "vbgr" for red on bottom.</description>
+    </key>
+    <key name="disabled-gtk-modules" type="as">
+      <default>[]</default>
+      <summary>List of explicitly disabled GTK+ modules</summary>
+      <description>A list of strings representing the GTK+ modules that will not be loaded, even if enabled by default in their configuration.</description>
+    </key>
+    <key name="enabled-gtk-modules" type="as">
+      <default>[]</default>
+      <summary>List of explicitly enabled GTK+ modules</summary>
+      <description>A list of strings representing the GTK+ modules that will be loaded, usually in addition to conditional and forcibly disabled ones.</description>
+    </key>
+    <key type="a{sv}" name="overrides">
+      <default>{}</default>
+      <summary>A dictionary of XSETTINGS to override</summary>
+      <description>This dictionary maps XSETTINGS names to overrides values. The values must be either strings, signed int32s or (in the case of colors), 4-tuples of uint16 (red, green, blue, alpha; 65535 is fully opaque).</description>
+    </key>
+    <key name="menus-have-icons" type="b">
+      <default>false</default>
+      <summary>Menus Have Icons</summary>
+      <description>
+        Whether menus may display an icon next to a menu entry.
+      </description>
+    </key>
+    <key name="buttons-have-icons" type="b">
+      <default>false</default>
+      <summary>Buttons Have Icons</summary>
+      <description>
+        Whether buttons may display an icon in addition to the button text.
+      </description>
+    </key>
+    <key name="show-input-method-menu" type="b">
+      <default>true</default>
+      <summary>Show the 'Input Methods' menu</summary>
+      <description>
+        Whether the context menus of entries and text views should offer to
+        change the input method.
+      </description>
+    </key>
+    <key name="show-unicode-menu" type="b">
+      <default>true</default>
+      <summary>Show the 'Unicode Control Character' menu</summary>
+      <description>
+        Whether the context menus of entries and text views should offer to
+        insert control characters.
+      </description>
+    </key>
+    <key name="automatic-mnemonics" type="b">
+      <default>true</default>
+      <summary>Only show mnemonics on when the Alt key is pressed</summary>
+      <description>
+        Whether mnemonics should be automatically shown and hidden when the user
+        presses the Alt key.
+      </description>
+    </key>
+  </schema>
+</schemalist>

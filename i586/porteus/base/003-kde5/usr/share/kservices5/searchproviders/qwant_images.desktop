@@ -1,0 +1,80 @@
+[Desktop Entry]
+Keys=qwi
+Name=Qwant Images
+Name[az]=Qwant Şəkillər
+Name[ca]=Imatges a Qwant
+Name[ca@valencia]=Imatges a Qwant
+Name[cs]=Obrázky Qwant
+Name[da]=Qwant Images
+Name[de]=Qwant-Bilder
+Name[el]=Qwant Εικόνες
+Name[en_GB]=Qwant Images
+Name[es]=Qwant Imágenes
+Name[et]=Qwant Images
+Name[eu]=Qwant Irudiak
+Name[fi]=Qwant-kuvahaku
+Name[fr]=Images « Qwant »
+Name[gd]=Qwant Images
+Name[gl]=Imaxes en Qwant
+Name[hu]=Qwant képek
+Name[ia]=Qwant Images
+Name[id]=Qwant Images
+Name[it]=Immagini di Qwant
+Name[ko]=Qwant 그림
+Name[lt]=Qwant paveikslai
+Name[mr]=क्वांट प्रतिमा
+Name[nb]=Qwant-bilder
+Name[nds]=Qwant-Biller
+Name[nl]=Qwant afbeeldingen
+Name[nn]=Qwant bilete
+Name[pl]=Qwant - obrazy
+Name[pt]=Imagens do Qwant
+Name[pt_BR]=Imagens do Qwant
+Name[ru]=Qwant: Картинки
+Name[sk]=Qwant obrázky
+Name[sl]=Qwant - slike
+Name[sr]=Квант-слике
+Name[sr@ijekavian]=Квант-слике
+Name[sr@ijekavianlatin]=Qwant-slike
+Name[sr@latin]=Qwant-slike
+Name[sv]=Qwant-bilder
+Name[tg]=Тасвирҳои Qwant
+Name[tr]=Qwant Resimleri
+Name[uk]=Зображення Qwant
+Name[vi]=Qwant Ảnh
+Name[x-test]=xxQwant Imagesxx
+Name[zh_CN]=Qwant 图像
+Name[zh_TW]=Qwant Images
+Query=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[ast]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[az]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[ca]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[cs]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[da]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[de]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[el]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[en_GB]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[es]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[et]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[eu]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[fi]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[fr]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[hu]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[ia]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[it]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[ko]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[nl]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[nn]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[pl]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[pt]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[pt_BR]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[ru]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[sk]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[sl]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[sv]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[tg]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[uk]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[vi]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Query[x-test]=xxhttps://www.qwant.com/?q=\\{@}&client=kde&t=imagesxx
+Query[zh_CN]=https://www.qwant.com/?q=\\{@}&client=kde&t=images
+Type=Service

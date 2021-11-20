@@ -1,0 +1,34 @@
+{
+    "KPlugin": {
+        "Icon": "input-keyboard-virtual",
+        "Id": "kcm_virtualkeyboard",
+        "License": "GPL",
+        "Name": "Virtual Keyboard",
+        "Name[ast]": "Tecláu virtual",
+        "Name[az]": "Virtual Klaviatura",
+        "Name[ca]": "Teclat virtual",
+        "Name[cs]": "Virtuální klávesnice",
+        "Name[de]": "Virtuelle Tastatur",
+        "Name[en_GB]": "Virtual Keyboard",
+        "Name[es]": "Teclado virtual",
+        "Name[fi]": "Näyttönäppäimistö",
+        "Name[fr]": "Clavier virtuel",
+        "Name[ia]": "Claviero virtual",
+        "Name[it]": "Tastiera virtuale",
+        "Name[ko]": "가상 키보드",
+        "Name[nl]": "Virtueel toetsenbord",
+        "Name[pl]": "Klawiatura ekranowa",
+        "Name[pt]": "Teclado Virtual",
+        "Name[pt_BR]": "Teclado virtual",
+        "Name[sk]": "Virtuálna klávesnica",
+        "Name[sl]": "Virtualna tipkovnica",
+        "Name[sv]": "Virtuellt tangentbord",
+        "Name[uk]": "Віртуальна клавіатура",
+        "Name[x-test]": "xxVirtual Keyboardxx",
+        "Name[zh_CN]": "虚拟键盘",
+        "ServiceTypes": [
+            "Plasma/Generic"
+        ]
+    },
+    "X-Plasma-MainScript": "ui/main.qml"
+}

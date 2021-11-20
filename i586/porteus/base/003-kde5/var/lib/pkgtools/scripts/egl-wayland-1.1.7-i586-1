@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libnvidia-egl-wayland.so )
+( cd usr/lib ; ln -sf libnvidia-egl-wayland.so.1 libnvidia-egl-wayland.so )
+( cd usr/lib ; rm -rf libnvidia-egl-wayland.so.1 )
+( cd usr/lib ; ln -sf libnvidia-egl-wayland.so.1.1.7 libnvidia-egl-wayland.so.1 )

@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.runners.baloo
+Exec=/usr/lib/baloorunner
+SystemdService=plasma-baloorunner.service

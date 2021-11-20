@@ -1,0 +1,41 @@
+README for SpaceFM Mount-Tools plugin v0.2
+
+AUTHOR
+  Tri Le <trile7 at gmail dot com>
+
+DEPENDENCIES
+  Required: mnttools
+  Optional: yad - display trayicon
+  Optional: lsof - list open files
+
+INSTALL
+  Follow SpaceFM plugin installation here http://ignorantguru.github.com/spacefm/spacefm-manual-en.html#plugins-install
+
+DESCRIPTION
+  Edit configuration file for mnttools.  Configuration file contains the following variables: mntroot, save_history, history_file, general_mntopts, sshfs_mntopts, ftpfs_mntopts, cifs_mntopts, and winfs_mntopts.  Defaults for these variables are:
+
+  - mntroot=/media #directory for mounting media.  You must have read/write/execute to this directory (i.e. "sudo chmod 777 /media")
+  - save_history=true #whether or not to save mount parameters for Samba, SSH, and FTP mounts
+  - history_file=$HOME/.mnttools_history #location of history file
+  - general_mntopts=noatime #mount options for all mount types
+  - winfs_mntopts=gid=100,umask=002 #mount options for vfat and ntfs filesystems
+  - sshfs_mntopts=reconnect,compression=yes,workaround=rename,gid=100,umask=002 #mount options for ssh share
+  - ftpfs_mntopts=gid=100,umask=002 #mount options for ftp share
+  - cifs_mntopts=gid=100 #mount options for Samba share
+
+  If you made changes to configuration file, especially mntroot and winfs_mntopts variables, make sure to also edit udev rule (/etc/udev/rules.d/80-mnttools.rules) to use configuation file.
+
+COPYING
+  Copyright (C) 2012 Tri Le <trile7 at gmail dot com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation version 3.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.

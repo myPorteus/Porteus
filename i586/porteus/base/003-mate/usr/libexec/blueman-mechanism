@@ -1,0 +1,69 @@
+#!/usr/bin/python3
+import sys
+import os
+import logging
+
+from blueman.main.MechanismApplication import MechanismApplication
+
+# support running uninstalled
+_dirname = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if 'BLUEMAN_SOURCE' in os.environ:
+    sys.path = [_dirname, os.path.join(_dirname, 'module', '.libs')] + sys.path
+    os.environ["GSETTINGS_SCHEMA_DIR"] = os.path.join(_dirname, "data")
+
+from blueman.Functions import set_proc_title, create_logger, create_parser
+
+
+class StreamToLogger:
+    """
+    Fake file-like stream object that redirects writes to a logger instance.
+    """
+    def __init__(self, logger, log_level=logging.INFO):
+        self.logger = logger
+        self.log_level = log_level
+        self.linebuf = ''
+
+    def write(self, buf):
+        for line in buf.rstrip().splitlines():
+            self.logger.log(self.log_level, line.rstrip())
+
+    def flush(self):
+        pass
+
+
+parser = create_parser(syslog=False)
+parser.add_argument("-d", "--debug", dest="debug", action="store_true")
+parser.add_argument("-s", "--stop-timer", dest="stoptimer", action="store_true")
+args = parser.parse_args()
+
+if args.LEVEL.upper() == "DEBUG":
+    log_level = logging.DEBUG
+elif args.LEVEL.upper() == "INFO":
+    log_level = logging.INFO
+elif args.LEVEL.upper() == "WARNING":
+    log_level = logging.WARNING
+elif args.LEVEL.upper() == "ERROR":
+    log_level = logging.ERROR
+elif args.LEVEL.upper() == "CRITICAL":
+    log_level = logging.CRITICAL
+else:
+    log_level = logging.WARNING
+
+logger = create_logger(log_level, "blueman-mechanism", syslog=True)
+
+if args.debug:
+    logging.info("Enabled verbose output")
+
+sl = StreamToLogger(logger, logging.INFO)
+sys.stdout = sl
+
+sl = StreamToLogger(logger, logging.ERROR)
+sys.stderr = sl
+
+logging.info("Starting blueman-mechanism")
+
+os.environ["PATH"] = "/usr/bin:/bin:/usr/sbin:/sbin"
+
+set_proc_title()
+app = MechanismApplication(args.stoptimer)
+app.run()

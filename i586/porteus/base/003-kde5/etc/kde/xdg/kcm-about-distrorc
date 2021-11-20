@@ -1,0 +1,5 @@
+[General]
+LogoPath=/usr/share/pixmaps/porteus/porteus-logo.svg
+Website=http://www.porteus.org
+# Commented out - just show what kinfocenter finds from /etc/os-release:
+#Variant=Post 14.2 -current\n(packages by AlienBOB)

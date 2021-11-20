@@ -1,0 +1,9 @@
+chroot . install-info /usr/info/libconfig.info.gz /usr/info/dir 2> /dev/null
+( cd usr/lib ; rm -rf libconfig++.so )
+( cd usr/lib ; ln -sf libconfig++.so.11.0.2 libconfig++.so )
+( cd usr/lib ; rm -rf libconfig++.so.11 )
+( cd usr/lib ; ln -sf libconfig++.so.11.0.2 libconfig++.so.11 )
+( cd usr/lib ; rm -rf libconfig.so )
+( cd usr/lib ; ln -sf libconfig.so.11.0.2 libconfig.so )
+( cd usr/lib ; rm -rf libconfig.so.11 )
+( cd usr/lib ; ln -sf libconfig.so.11.0.2 libconfig.so.11 )

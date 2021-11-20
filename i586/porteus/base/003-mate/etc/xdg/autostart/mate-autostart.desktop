@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=MATE GUI helper
+Comment=MATE GUI helper
+Exec=/opt/porteus-scripts/mate/mate-autostart
+

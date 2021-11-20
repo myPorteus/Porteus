@@ -1,0 +1,4 @@
+# Run the 'setcap' command as standard Slackware packages do not store caps:
+if [ -f usr/lib/kf5/start_kdeinit ]; then
+  /sbin/setcap CAP_SYS_RESOURCE=+ep usr/lib/kf5/start_kdeinit
+fi

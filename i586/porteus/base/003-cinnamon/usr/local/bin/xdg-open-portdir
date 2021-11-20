@@ -1,0 +1,4 @@
+#! /bin/bash
+# A wrapper to open $PORTDIR in filemanger
+# jssouza
+xdg-open "$PORTDIR"

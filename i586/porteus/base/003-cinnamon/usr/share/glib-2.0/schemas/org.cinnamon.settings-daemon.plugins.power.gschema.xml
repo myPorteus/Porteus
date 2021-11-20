@@ -1,0 +1,155 @@
+<schemalist>
+  <schema gettext-domain="cinnamon-settings-daemon" id="org.cinnamon.settings-daemon.plugins.power" path="/org/cinnamon/settings-daemon/plugins/power/">
+    <key name="idle-brightness" type="i">
+      <default>30</default>
+      <summary>The brightness of the screen when idle</summary>
+      <description>This is the laptop panel screen brightness used when the session is idle.</description>
+    </key>
+    <key name="idle-dim-ac" type="b">
+      <default>false</default>
+      <summary>Dim the screen after a period of inactivity when on AC power</summary>
+      <description>If the screen should be dimmed to save power when the computer is idle when on AC power.</description>
+    </key>
+    <key name="idle-dim-battery" type="b">
+      <default>true</default>
+      <summary>Dim the screen after a period of inactivity when on battery power</summary>
+      <description>If the screen should be dimmed to save power when the computer is idle when on battery power.</description>
+    </key>
+    <key name="idle-dim-time" type="i">
+      <default>90</default>
+      <summary>The default amount of time to dim the screen after idle</summary>
+      <description>The default amount of time to dim the screen after idle.</description>
+    </key>
+    <key name="sleep-display-ac" type="i">
+      <default>1800</default>
+      <summary>Sleep timeout display when on AC</summary>
+      <description>The amount of time in seconds before the display turns off when the computer is on AC power.</description>
+    </key>
+    <key name="sleep-display-battery" type="i">
+      <default>1800</default>
+      <summary>Sleep timeout display when on battery</summary>
+      <description>The amount of time in seconds before the display turns off when the computer is on battery power.</description>
+    </key>
+    <key name="sleep-inactive-ac-timeout" type="i">
+      <default>0</default>
+      <summary>Sleep timeout computer when on AC</summary>
+      <description>The amount of time in seconds the computer on AC power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
+    </key>
+    <key name="sleep-inactive-ac-type" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Whether to hibernate, suspend or do nothing when inactive</summary>
+      <description>The type of sleeping that should be performed when the computer is inactive.</description>
+    </key>
+    <key name="sleep-inactive-battery-timeout" type="i">
+      <default>0</default>
+      <summary>Sleep timeout computer when on battery</summary>
+      <description>The amount of time in seconds the computer on battery power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
+    </key>
+    <key name="sleep-inactive-battery-type" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Whether to hibernate, suspend or do nothing when inactive</summary>
+      <description>The type of sleeping that should be performed when the computer is inactive.</description>
+    </key>
+    <key name="button-suspend" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Suspend button action</summary>
+      <description>The action to take when the system suspend button is pressed.</description>
+    </key>
+    <key name="button-hibernate" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'hibernate'</default>
+      <summary>Hibernate button action</summary>
+      <description>The action to take when the system hibernate button is pressed.</description>
+    </key>
+    <key name="button-power" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Power button action</summary>
+      <description>The action to take when the system power button is pressed.</description>
+    </key>
+    <key name="lid-close-battery-action" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Laptop lid close action on battery</summary>
+      <description>The action to take when the laptop lid is closed and the laptop is on battery power.</description>
+    </key>
+    <key name="lid-close-ac-action" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'suspend'</default>
+      <summary>Laptop lid close action when on AC</summary>
+      <description>The action to take when the laptop lid is closed and the laptop is on AC power.</description>
+    </key>
+    <key name="lid-close-suspend-with-external-monitor" type="b">
+      <default>false</default>
+      <summary>Laptop lid, when closed, will suspend even if there is an external monitor plugged in</summary>
+      <description>With no external monitors plugged in, closing a laptop's lid
+	will suspend the machine (as set by the lid-close-battery-action and
+	lid-close-ac-action keys).  By default, however, closing the lid when
+	an external monitor is present will not suspend the machine, so that one can keep
+	working on that monitor (e.g. for docking stations or media viewers).  Set this
+	key to False to keep the default behavior, or to True to suspend the laptop whenever the
+	lid is closed and regardless of external monitors.</description>
+    </key>
+    <key name="critical-battery-action" enum="org.cinnamon.settings-daemon.CsdPowerActionType">
+      <default>'hibernate'</default>
+      <summary>Battery critical low action</summary>
+      <description>The action to take when the battery is critically low.</description>
+    </key>
+    <key name="percentage-low" type="i">
+      <default>10</default>
+      <summary>Percentage considered low</summary>
+      <description>The percentage of the battery when it is considered low. Only valid when use-time-for-policy is false.</description>
+    </key>
+    <key name="percentage-critical" type="i">
+      <default>4</default>
+      <summary>Percentage considered critical</summary>
+      <description>The percentage of the battery when it is considered critical. Only valid when use-time-for-policy is false.</description>
+    </key>
+    <key name="percentage-action" type="i">
+      <default>3</default>
+      <summary>Percentage action is taken</summary>
+      <description>The percentage of the battery when the critical action is performed. Only valid when use-time-for-policy is false.</description>
+    </key>
+    <key name="time-low" type="i">
+      <default>1200</default>
+      <summary>The time remaining when low</summary>
+      <description>The time remaining in seconds of the battery when it is considered low. Only valid when use-time-for-policy is true.</description>
+    </key>
+    <key name="time-critical" type="i">
+      <default>420</default>
+      <summary>The time remaining when critical</summary>
+      <description>The time remaining in seconds of the battery when it is considered critical. Only valid when use-time-for-policy is true.</description>
+    </key>
+    <key name="time-action" type="i">
+      <default>240</default>
+      <summary>The time remaining when action is taken</summary>
+      <description>The time remaining in seconds of the battery when critical action is taken. Only valid when use-time-for-policy is true.</description>
+    </key>
+    <key name="use-time-for-policy" type="b">
+      <default>false</default>
+      <summary>Whether to use time-based notifications</summary>
+      <description>If time based notifications should be used. If set to false, then the percentage change is used instead, which may fix a broken ACPI BIOS.</description>
+    </key>
+    <key name="lock-on-suspend" type="b">
+      <default>false</default>
+      <summary>If the computer should lock when entering suspend mode</summary>
+      <description>If the computer should lock during suspend - replaces ubuntu-lock-on-suspend</description>
+    </key>
+    <key name="backlight-helper-force" type="b">
+	  <default>false</default>
+	  <summary>Use the backlight helper application by default</summary>
+	  <description>Setting this to true forces cinnamon-settings-daemon to use the backlight helper application
+	  to provide backlight control. This will usually fix backlight control problems on laptops where X11 picks
+	  the wrong interface, or uses an interface incorrectly. Adjust backlight-preference-order if the default
+	  selection logic still chooses the wrong interface.</description>
+	</key>
+    <key name="backlight-helper-preference-order" type="as">
+      <default>['firmware','platform','raw']</default>
+      <summary>Search order for backlight control interfaces</summary>
+      <description>Controls the type of interfaces the backlight-helper will search for to control the backlight.
+	This can be useful for working around systems with broken default backlight control behavior which provide
+	multiple interfaces. If you are having problems, try setting 'raw' to a higher priority.</description>
+    </key>
+    <key name="inhibit-lid-switch" type="b">
+      <default>true</default>
+      <summary>Whether or not cinnamon-settings-daemon inhibits logind's handling of lid switch</summary>
+      <description>This setting should be true in all distributions and for all users. Only set it to false, if you want to prevent Cinnamon from handling lid switch events. In this case, you should not rely on Cinnamon's lid actions and use the logind ones instead.</description>
+    </key>
+  </schema>
+</schemalist>

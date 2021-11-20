@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.x.StatusNotifierWatcher
+Exec=/usr/lib/xapps/sn-watcher/xapp-sn-watcher

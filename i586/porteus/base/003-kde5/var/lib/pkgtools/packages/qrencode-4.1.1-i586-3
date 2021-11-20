@@ -1,0 +1,40 @@
+PACKAGE NAME:     qrencode-4.1.1-i586-3
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     210K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/qrencode-4.1.1-i586-3.txz
+PACKAGE DESCRIPTION:
+qrencode: qrencode (QR Code encoding library)
+qrencode:
+qrencode: Libqrencode is a library for encoding data in a QR Code symbol, a kind
+qrencode: of 2D symbology that can be scanned by handy terminals such as a
+qrencode: mobile phone camera. The capacity of QR Code is up to 7000 digits or
+qrencode: 4000 characters, and has high robustness.
+qrencode:
+qrencode: Homepage: http://fukuchi.org/works/qrencode
+qrencode:
+qrencode:
+qrencode:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/qrencode
+usr/doc/
+usr/doc/qrencode-4.1.1/
+usr/doc/qrencode-4.1.1/COPYING
+usr/doc/qrencode-4.1.1/ChangeLog
+usr/doc/qrencode-4.1.1/NEWS
+usr/doc/qrencode-4.1.1/README
+usr/doc/qrencode-4.1.1/TODO
+usr/include/
+usr/include/qrencode.h
+usr/lib/
+usr/lib/libqrencode.so.4.1.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libqrencode.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/qrencode.1.gz

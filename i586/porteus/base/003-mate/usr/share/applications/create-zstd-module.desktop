@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Build zstd module.xzm
+Name[ru]=Создать xzm-zstd модуль
+Icon=cdr
+Author=Brokenman
+MimeType=inode/directory;x-directory/normal
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/create-module -z %F

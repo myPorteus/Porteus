@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# rc.4		This file is executed by init(8) when the system is being
+#		initialized for run level 4.
+
+# Run X11 startup helper:
+pidof watch-xorg >/dev/null && sleep 4 || /opt/porteus-scripts/xorg/watch-xorg 2>/dev/null &
+
+# Change the theme if darkmode cheat is present
+if [ `grep -o "^darkmode" /etc/bootcmd.cfg` ]; then
+	[ ! `grep -o "Adwaita-dark" /etc/gtk-3.0/settings.ini` ] && sed -i s/Adwaita/Adwaita-dark/g /etc/gtk-3.0/settings.ini
+	[ ! `grep -o "Adwaita-dark" /etc/gtk-2.0/gtkrc` ] && sed -i s/Adwaita/Adwaita-dark/g /etc/gtk-2.0/gtkrc
+	[ ! `grep -o "OMG-Dark" /home/guest/.config/openbox/rc.xml` ] && sed -i s/Bear2/OMG-Dark/g /home/guest/.config/openbox/rc.xml && openbox --reconfigure
+	gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+fi
+
+# Start Openbox desktop:
+login=`egrep -o "login=[^ ]+*" /etc/bootcmd.cfg | cut -d= -f2`
+nologin=`grep -o nologin /etc/bootcmd.cfg`
+[ "$login" ] && sed -i 's/^.*default_user.*/default_user '$login'/g' /etc/slim.conf
+[ "$nologin" ] && sed -i 's/^auto_login/#auto_login/g' /etc/slim.conf
+if [ -x /usr/bin/slim ]; then
+  exec /usr/bin/slim -nodaemon
+fi
+

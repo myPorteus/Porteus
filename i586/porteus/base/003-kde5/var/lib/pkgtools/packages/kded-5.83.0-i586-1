@@ -1,0 +1,80 @@
+PACKAGE NAME:     kded-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kded-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kded: kded (Central daemon of KDE workspaces)
+kded:
+kded: KDED stands for KDE Daemon. KDED runs in the background and performs a
+kded: number of small tasks. Some of these tasks are built in, others are
+kded: started on demand. Examples include checking for newly installed
+kded: software and checking for newly installed update files.
+kded:
+kded:
+kded:
+kded:
+kded:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kded5
+usr/doc/
+usr/doc/kded-5.83.0/
+usr/doc/kded-5.83.0/README.md
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KDED/
+usr/lib/cmake/KDED/KDEDConfig.cmake
+usr/lib/cmake/KDED/KDEDConfigVersion.cmake
+usr/lib/systemd/
+usr/lib/systemd/user/
+usr/lib/systemd/user/plasma-kded.service
+usr/man/
+usr/man/ca/
+usr/man/ca/man8/
+usr/man/ca/man8/kded5.8.gz
+usr/man/de/
+usr/man/de/man8/
+usr/man/de/man8/kded5.8.gz
+usr/man/es/
+usr/man/es/man8/
+usr/man/es/man8/kded5.8.gz
+usr/man/it/
+usr/man/it/man8/
+usr/man/it/man8/kded5.8.gz
+usr/man/man8/
+usr/man/man8/kded5.8.gz
+usr/man/nl/
+usr/man/nl/man8/
+usr/man/nl/man8/kded5.8.gz
+usr/man/pt/
+usr/man/pt/man8/
+usr/man/pt/man8/kded5.8.gz
+usr/man/pt_BR/
+usr/man/pt_BR/man8/
+usr/man/pt_BR/man8/kded5.8.gz
+usr/man/ru/
+usr/man/ru/man8/
+usr/man/ru/man8/kded5.8.gz
+usr/man/sv/
+usr/man/sv/man8/
+usr/man/sv/man8/kded5.8.gz
+usr/man/uk/
+usr/man/uk/man8/
+usr/man/uk/man8/kded5.8.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.kded5.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.kded5.xml
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.kded5.service
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/kdedmodule.desktop
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kded.categories
+usr/share/qlogging-categories5/kded.renamecategories

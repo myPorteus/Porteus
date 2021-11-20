@@ -1,0 +1,36 @@
+PACKAGE NAME:     python-magic-0.4.15-i486-1_ncm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../i586/pkg/003_cinnamon/python-magic-0.4.15-i486-1_ncm.tgz
+PACKAGE DESCRIPTION:
+python-magic: python-magic (uses ctypes to access the libmagic)
+python-magic:
+python-magic: This module uses ctypes to access the libmagic file type
+python-magic: identification library. It makes use of the local magic database and
+python-magic: supports both textual and MIME-type output.
+python-magic:
+python-magic: Homepage: https://github.com/ahupp/python-magic
+python-magic:
+python-magic:
+python-magic:
+python-magic:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/python-magic-0.4.15/
+usr/doc/python-magic-0.4.15/LICENSE
+usr/doc/python-magic-0.4.15/python-magic.SlackBuild
+usr/lib/
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/__pycache__/
+usr/lib/python3.9/site-packages/__pycache__/magic.cpython-39.pyc
+usr/lib/python3.9/site-packages/magic.py
+usr/lib/python3.9/site-packages/python_magic-0.4.15-py3.9.egg-info/
+usr/lib/python3.9/site-packages/python_magic-0.4.15-py3.9.egg-info/PKG-INFO
+usr/lib/python3.9/site-packages/python_magic-0.4.15-py3.9.egg-info/SOURCES.txt
+usr/lib/python3.9/site-packages/python_magic-0.4.15-py3.9.egg-info/dependency_links.txt
+usr/lib/python3.9/site-packages/python_magic-0.4.15-py3.9.egg-info/top_level.txt

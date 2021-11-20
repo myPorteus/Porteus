@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Icon=preferences-plugin
+
+Name=Custom Command
+Comment=Displays the output of a cli command

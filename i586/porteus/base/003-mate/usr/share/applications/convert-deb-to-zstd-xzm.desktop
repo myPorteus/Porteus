@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Convert deb to zstd xzm...
+Name[ru]=Конвертировать deb в zstd xzm модуль...
+Icon=cdr
+Author=Brokenman
+MimeType=application/vnd.debian.binary-package
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/convert_deb -z %F

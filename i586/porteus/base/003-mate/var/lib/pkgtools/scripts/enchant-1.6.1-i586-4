@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf libenchant.so )
+( cd usr/lib ; ln -sf libenchant.so.1.6.1 libenchant.so )
+( cd usr/lib ; rm -rf libenchant.so.1 )
+( cd usr/lib ; ln -sf libenchant.so.1.6.1 libenchant.so.1 )

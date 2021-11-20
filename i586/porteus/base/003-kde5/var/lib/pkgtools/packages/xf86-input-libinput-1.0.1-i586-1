@@ -1,0 +1,49 @@
+PACKAGE NAME:     xf86-input-libinput-1.0.1-i586-1
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/xf86-input-libinput-1.0.1-i586-1.txz
+PACKAGE DESCRIPTION:
+xf86-input-libinput: xf86-input-libinput (libinput-based X driver)
+xf86-input-libinput:
+xf86-input-libinput: This is an X driver based on libinput.
+xf86-input-libinput:
+xf86-input-libinput: For more information about the X.Org Foundation (the providers of the
+xf86-input-libinput: X.Org implementation of the X Window System), see their website:
+xf86-input-libinput:
+xf86-input-libinput: http://www.x.org
+xf86-input-libinput:
+xf86-input-libinput:
+xf86-input-libinput:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/xorg.conf.d/
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-libinput-1.0.1/
+usr/doc/xf86-input-libinput-1.0.1/COPYING
+usr/doc/xf86-input-libinput-1.0.1/ChangeLog
+usr/doc/xf86-input-libinput-1.0.1/INSTALL
+usr/doc/xf86-input-libinput-1.0.1/README.md
+usr/include/
+usr/include/xorg/
+usr/include/xorg/libinput-properties.h
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xorg-libinput.pc
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/libinput_drv.la
+usr/lib/xorg/modules/input/libinput_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/libinput.4.gz
+usr/share/
+usr/share/X11/
+usr/share/X11/xorg.conf.d/
+usr/share/X11/xorg.conf.d/40-libinput.conf
+usr/share/X11/xorg.conf.d/91-keyboard-layout-libinput.conf

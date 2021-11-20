@@ -1,0 +1,80 @@
+[Desktop Entry]
+Keys=qwso
+Name=Qwant Social
+Name[az]=Qwant Sosial
+Name[ca]=Tertúlia a Qwant
+Name[ca@valencia]=Tertúlia a Qwant
+Name[cs]=Qwant Social
+Name[da]=Qwant Social
+Name[de]=Qwant-Sozial
+Name[el]=Qwant Κοινωνική δικτύωση
+Name[en_GB]=Qwant Social
+Name[es]=Qwant Social
+Name[et]=Qwant Social
+Name[eu]=Qwant Soziala
+Name[fi]=Qwant Social
+Name[fr]=Réseaux sociaux « Qwant »
+Name[gd]=Qwant Social
+Name[gl]=Qwant social
+Name[hu]=Qwant közösség
+Name[ia]=Qwant Social
+Name[id]=Qwant Sosial
+Name[it]=Rete sociale di Qwant
+Name[ko]=Qwant 소셜
+Name[lt]=Qwant socialinių tinklų įrašai
+Name[mr]=क्वांट सामाजिक
+Name[nb]=Qwant sosialt
+Name[nds]=Qwant-Meenschap
+Name[nl]=Qwant sociaal
+Name[nn]=Qwant sosialt
+Name[pl]=Qwant - społeczność
+Name[pt]=Qwant Social
+Name[pt_BR]=Qwant Social
+Name[ru]=Qwant: Блоги
+Name[sk]=Qwant sociálne
+Name[sl]=Qwant - družabno
+Name[sr]=Квант-дружење
+Name[sr@ijekavian]=Квант-дружење
+Name[sr@ijekavianlatin]=Qwant-druženje
+Name[sr@latin]=Qwant-druženje
+Name[sv]=Qwant-social
+Name[tg]=Шабакаи иҷтимоии Qwant
+Name[tr]=Qwant Sosyal
+Name[uk]=Соціальне Qwant
+Name[vi]=Qwant Xã hội
+Name[x-test]=xxQwant Socialxx
+Name[zh_CN]=Qwant 社会
+Name[zh_TW]=Qwant Social
+Query=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[ast]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[az]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[ca]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[cs]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[da]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[de]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[el]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[en_GB]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[es]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[et]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[eu]=https://www.qwant.com/single?q=\\{@}&client=kde&source=social
+Query[fi]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[fr]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[hu]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[ia]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[it]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[ko]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[nl]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[nn]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[pl]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[pt]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[pt_BR]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[ru]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[sk]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[sl]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[sv]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[tg]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[uk]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[vi]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Query[x-test]=xxhttps://www.qwant.com/?q=\\{@}&client=kde&t=socialxx
+Query[zh_CN]=https://www.qwant.com/?q=\\{@}&client=kde&t=social
+Type=Service

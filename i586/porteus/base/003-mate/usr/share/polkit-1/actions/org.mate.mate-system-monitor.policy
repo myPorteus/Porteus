@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>MATE Desktop</vendor>
+  <vendor_url>https://mate-desktop.org/</vendor_url>
+  <icon_name>utilities-system-monitor</icon_name>
+  <action id="org.mate.mate-system-monitor.kill">
+    <description>Kill process</description>
+    <description xml:lang="zh_TW">強行終止處理程序</description>
+    <description xml:lang="zh_CN">杀死进程</description>
+    <description xml:lang="uk">Вбити процес</description>
+    <description xml:lang="tr">Süreci Öldür</description>
+    <description xml:lang="th">ฆ่าโพรเซส</description>
+    <description xml:lang="sv">Döda process</description>
+    <description xml:lang="sr">Убиј процес</description>
+    <description xml:lang="sq">Ndalo proçesin</description>
+    <description xml:lang="sl">Uniči opravilo</description>
+    <description xml:lang="sk">Zabitie procesu</description>
+    <description xml:lang="ru">Убить процесс</description>
+    <description xml:lang="ro">Omoară proces</description>
+    <description xml:lang="pt_BR">Matar processo</description>
+    <description xml:lang="pt">Terminar processo</description>
+    <description xml:lang="pl">Zakończ proces</description>
+    <description xml:lang="oc">Tuar lo processús</description>
+    <description xml:lang="nl">Proces afbreken</description>
+    <description xml:lang="nds">Prozess ofbreken</description>
+    <description xml:lang="nb">Drep prosess</description>
+    <description xml:lang="ms">Matikan proses</description>
+    <description xml:lang="lt">Nutraukti procesą</description>
+    <description xml:lang="ko">프로세스 끝내기</description>
+    <description xml:lang="ja">プロセスを強制終了する</description>
+    <description xml:lang="it">Uccidi processo</description>
+    <description xml:lang="ie">Terminar li processu</description>
+    <description xml:lang="id">Matikan proses</description>
+    <description xml:lang="hu">Folyamat _kilövése</description>
+    <description xml:lang="he">הריגת התהליך</description>
+    <description xml:lang="gl">Matar o proceso</description>
+    <description xml:lang="fr">Tuer le processus</description>
+    <description xml:lang="fi">Tapa prosessi</description>
+    <description xml:lang="eu">Akabatu prozesua</description>
+    <description xml:lang="et">Kõrvalda protsess</description>
+    <description xml:lang="es">Matar el proceso</description>
+    <description xml:lang="en_GB">Kill process</description>
+    <description xml:lang="el">Βίαιος τερματισμός διεργασίας</description>
+    <description xml:lang="de">Prozess beenden</description>
+    <description xml:lang="da">Afslut proces</description>
+    <description xml:lang="cs">Zabít proces</description>
+    <description xml:lang="ca@valencia">Mata el procés</description>
+    <description xml:lang="ca">Mata el procés</description>
+    <description xml:lang="bg">Убиване на процес</description>
+    <description xml:lang="ast">Matar procesu</description>
+    <description xml:lang="am">ሂደቱን ማጥፊያ </description>
+    <message>Privileges are required to control other users' processes</message>
+    <message xml:lang="zh_TW">控制其他使用的處理程序需要較高的權限</message>
+    <message xml:lang="zh_CN">控制其他用户的进程需要特权</message>
+    <message xml:lang="uk">Для керування процесами инших користувачів потрібні додаткові привілеї</message>
+    <message xml:lang="tr">Diğer kullanıcıların süreçlerini kontrol etmek için izin gereklidir</message>
+    <message xml:lang="th">ต้องใช้สิทธิพิเศษในการควบคุมโพรเซสของผู้ใช้อื่น</message>
+    <message xml:lang="sv">Privilegier krävs för att kontrollera andra användares processer</message>
+    <message xml:lang="sr">Потребна су овлашћења за управљање процесима других корисника</message>
+    <message xml:lang="sl">Nadzor nad opravili drugih uporabnikov zahteva ustrezne pravice</message>
+    <message xml:lang="sk">Na ovládanie procesov iných používateľov sa vyžadujú oprávnenia</message>
+    <message xml:lang="ru">Для управления процессами других пользователей требуются дополнительные привилегии</message>
+    <message xml:lang="ro">Sunt necesare privilegii pentru a controla procesele altor utilizatori.</message>
+    <message xml:lang="pt_BR">Privilégios são necessários para controlar processos de outros usuários</message>
+    <message xml:lang="pt">São necessários privilégios para controlar processos de outros utilizadores</message>
+    <message xml:lang="pl">Wymagane są uprawnienia, aby kontrolować procesy innych użytkowników</message>
+    <message xml:lang="oc">De permissions necessàrias per modificar la frequéncia del processor.</message>
+    <message xml:lang="nl">Er zijn rechten vereist om de processen van andere gebruikers te beheersen</message>
+    <message xml:lang="nds">Du bruukst mehr Rechten, um de Prozessen vun anner Brukers to stüren</message>
+    <message xml:lang="nb">Rettigheter kreves for å kontrollere andre brukeres prosesser</message>
+    <message xml:lang="ms">Kelayakan diperlukan untuk mengawal proses pengguna lain</message>
+    <message xml:lang="lt">Norint valdyti kitų naudotojų procesus, reikia administratoriaus teisių</message>
+    <message xml:lang="ko">다른 사용자들의 프로세스를 조종하려면 권한이 필요합니다</message>
+    <message xml:lang="ja">他ユーザーのプロセスの操作には権限が必要です</message>
+    <message xml:lang="it">Sono richiesti i privilegi per controllare i processi degli altri utenti</message>
+    <message xml:lang="ie">Privilegies es besonat por controlar processus de altri usatores</message>
+    <message xml:lang="id">Izin diperlukan untuk mengatur proses milik pengguna lain</message>
+    <message xml:lang="hu">Hitelesítés szükséges más felhasználók folyamatainak kezeléséhez.</message>
+    <message xml:lang="gl">Requírense privilexios para controlar os procesos doutros usuarios</message>
+    <message xml:lang="fr">Des permissions supplémentaires sont nécessaires pour gérer les processus des autres utilisateurs</message>
+    <message xml:lang="fi">Muiden käyttäjien prosessien hallinta vaatii lisäoikeuksia.</message>
+    <message xml:lang="eu">Beste erabiltzaileen prozesuak kontrolatzeko behar dira pribilegioak</message>
+    <message xml:lang="es">Se requieren privilegios para controlar los procesos de otros usuarios</message>
+    <message xml:lang="en_GB">Privileges are required to control other users' processes</message>
+    <message xml:lang="el">Απαιτούνται προνόμια για τον έλεγχο των διαδικασιών άλλων χρηστών</message>
+    <message xml:lang="de">Berechtigungen werden benötigt, um Prozesse von anderen Benutzern zu steuern</message>
+    <message xml:lang="da">Der kræves tilladelse for at kontrollere andre brugers processer</message>
+    <message xml:lang="cs">K ovládání procesů jiného uživatele je nutné oprávnění</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per a controlar altres processos dels usuaris</message>
+    <message xml:lang="ca">Es necessiten privilegis per controlar els processos dels usuaris</message>
+    <message xml:lang="bg">За управление на процесите на други потребители се изискват специални права</message>
+    <message xml:lang="ast">Ríquense privilexos pa remanar los procesos d'otro usuarios</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/mate-system-monitor/msm-kill</annotate>
+  </action>
+  <action id="org.mate.mate-system-monitor.renice">
+    <description>Renice process</description>
+    <description xml:lang="zh_TW">調整處理程式的優先程度</description>
+    <description xml:lang="zh_CN">调整进程优先级</description>
+    <description xml:lang="uk">Змінити пріоритет процесу</description>
+    <description xml:lang="tr">Renice Süreci</description>
+    <description xml:lang="th">เปลี่ยนค่า nice ของโพรเซส</description>
+    <description xml:lang="sv">Renice process</description>
+    <description xml:lang="sr">Настави процес</description>
+    <description xml:lang="sl">izboljšanje opravil</description>
+    <description xml:lang="sk">Zmena priority procesu</description>
+    <description xml:lang="ru">Изменить приоритет процесса</description>
+    <description xml:lang="ro">Schimbă prioritatea procesului</description>
+    <description xml:lang="pt_BR">Reiniciar processo</description>
+    <description xml:lang="pt">Reprioritizar processo (cmd 'renice')</description>
+    <description xml:lang="pl">Zmień priorytet procesu</description>
+    <description xml:lang="nl">Prioriteit van proces wijzigen</description>
+    <description xml:lang="nb">Renice-prosess</description>
+    <description xml:lang="ms">Elok semula proses</description>
+    <description xml:lang="lt">Vykdyti procesui "renice" komandą</description>
+    <description xml:lang="ko">리나이스 프로세스</description>
+    <description xml:lang="ja">プロセスの Nice 値を変更する</description>
+    <description xml:lang="it">Ridai priorità al processo</description>
+    <description xml:lang="ie">Renicear li processu</description>
+    <description xml:lang="id">Proses Renice</description>
+    <description xml:lang="hu">Folyamat prioritás</description>
+    <description xml:lang="gl">Volver aplicar «nice» o proceso</description>
+    <description xml:lang="fr">Changer la priorité du processus</description>
+    <description xml:lang="eu">Prozesuaren lehentasun balioa aldatu (renice)</description>
+    <description xml:lang="es">Volver a aplicar el valor de prioridad del proceso</description>
+    <description xml:lang="en_GB">Renice process</description>
+    <description xml:lang="el">Διαδικασία ανανέωσης</description>
+    <description xml:lang="de">Prozesspriorität ändern</description>
+    <description xml:lang="da">Renice proces</description>
+    <description xml:lang="cs">Změnit prioritu procesu</description>
+    <description xml:lang="ca@valencia">Torna a aplicar nice al procés</description>
+    <description xml:lang="ca">Torna a aplicar nice al procés</description>
+    <description xml:lang="bg">Промяна на приоритета на процес</description>
+    <description xml:lang="ast">Reaniciar procesu</description>
+    <description xml:lang="am">ሂደቱን መቀየሪያ</description>
+    <message>Privileges are required to change the priority of processes</message>
+    <message xml:lang="zh_TW">變更處理程序的優先度需要較高的權限</message>
+    <message xml:lang="zh_CN">调整进程优先级需要特权</message>
+    <message xml:lang="uk">Для зміни пріоритету процесів потрібні додаткові привілеї</message>
+    <message xml:lang="tr">Süreçlerin önceliğini değiştirmek için izin gereklidir.</message>
+    <message xml:lang="th">ต้องใช้สิทธิพิเศษในการเปลี่ยนลำดับความสำคัญของโพรเซส</message>
+    <message xml:lang="sv">Privilegier krävs för att ändra processers prioritet</message>
+    <message xml:lang="sr">Потрбна су овлашћења за мењање приоритета процеса</message>
+    <message xml:lang="sl">Spreminjanje prednosti opravil zahteva ustrezna dovoljenja</message>
+    <message xml:lang="sk">Na zmenu priority procesov sa vyžadujú oprávnenia</message>
+    <message xml:lang="ru">Для изменения приоритета процессов требуются дополнительные привилегии</message>
+    <message xml:lang="ro">Sunt necesare privilegii pentru a schimba prioritatea proceselor</message>
+    <message xml:lang="pt_BR">Privilégios são necessários para mudar a prioridade dos processos</message>
+    <message xml:lang="pt">São necessários privilégios para alterar a prioridade dos processos</message>
+    <message xml:lang="pl">Wymagane są uprawnienia, aby zmienić priorytet procesów</message>
+    <message xml:lang="oc">De permissions necessàrias per modificar la prioritat dels processús</message>
+    <message xml:lang="nl">Er zijn rechten vereist om de prioriteit van processen te wijzigen</message>
+    <message xml:lang="nds">Du bruukst mehr Rechten, um de Wichtigheid vun Prozessen to ännern</message>
+    <message xml:lang="nb">Rettigheter kreves for å endre prioriteten til prosesser</message>
+    <message xml:lang="ms">Kelayakan diperlukan untuk mengubah keutamaan proses</message>
+    <message xml:lang="lt">Norint keisti proceso prioritetą, reikia administratoriaus teisių</message>
+    <message xml:lang="ko">프로세스의 우선순위를 바꾸려면 권한이 필요합니다</message>
+    <message xml:lang="ja">プロセスの優先度を変更するには権限が必要です</message>
+    <message xml:lang="it">Sono richiesti i privelgi per cambiare la priorità dei processi</message>
+    <message xml:lang="ie">Privilegies es besonat por changear li prioritá de processus</message>
+    <message xml:lang="id">Izin diperlukan untuk mengubah prioritas dari proses</message>
+    <message xml:lang="hu">Hitelesítés szükséges más felhasználók folyamatainak prioritásának megváltoztatásához.</message>
+    <message xml:lang="gl">Requírense privilexios para cambiar a prioridade dos procesos</message>
+    <message xml:lang="fr">Des permissions supplémentaires sont nécessaires pour modifier la priorité des processus</message>
+    <message xml:lang="fi">Prosessien prioriteettien muuttaminen vaatii lisäoikeuksia.</message>
+    <message xml:lang="eu">Prozesuen lehentasunak aldatzeko behar dira pribilegioak</message>
+    <message xml:lang="es">Se requieren privilegios para cambiar la prioridad de los procesos</message>
+    <message xml:lang="en_GB">Privileges are required to change the priority of processes</message>
+    <message xml:lang="el">Απαιτούνται προνόμια για την αλλαγή της προτεραιότητας των διαδικασιών</message>
+    <message xml:lang="de">Berechtigungen werden benötigt, um die Priorität von Prozessen zu ändern</message>
+    <message xml:lang="da">Der kræves tilladelse for at ændre prioriteten for processer.</message>
+    <message xml:lang="cs">Ke změně priority procesu je nutné oprávnění</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per a canviar la prioritat dels processos</message>
+    <message xml:lang="ca">Es necessiten privilegis per canviar la prioritat dels processos</message>
+    <message xml:lang="bg">За промяна на приоритета на процесите се изискват специални права</message>
+    <message xml:lang="ast">Ríquense privilexos pa camudar la propiedá de los procesos</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/mate-system-monitor/msm-renice</annotate>
+  </action>
+</policyconfig>

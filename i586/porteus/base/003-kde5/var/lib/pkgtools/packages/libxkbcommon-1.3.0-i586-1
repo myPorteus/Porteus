@@ -1,0 +1,143 @@
+PACKAGE NAME:     libxkbcommon-1.3.0-i586-1
+COMPRESSED PACKAGE SIZE:     316K
+UNCOMPRESSED PACKAGE SIZE:     2.0M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/libxkbcommon-1.3.0-i586-1.txz
+PACKAGE DESCRIPTION:
+libxkbcommon: libxkbcommon (keyboard description library)
+libxkbcommon:
+libxkbcommon: xkbcommon is a library to handle keyboard descriptions, including
+libxkbcommon: loading them from disk, parsing them and handling their state. It's
+libxkbcommon: mainly meant for client toolkits, window systems, and other system
+libxkbcommon: applications; currently that includes Wayland, kmscon, GTK+, Qt,
+libxkbcommon: Clutter, and more. It is also used by some XCB applications for proper
+libxkbcommon: keyboard support.
+libxkbcommon:
+libxkbcommon: Homepage: http://xkbcommon.org/
+libxkbcommon:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xkbcli
+usr/doc/
+usr/doc/libxkbcommon-1.3.0/
+usr/doc/libxkbcommon-1.3.0/LICENSE
+usr/doc/libxkbcommon-1.3.0/NEWS
+usr/doc/libxkbcommon-1.3.0/PACKAGING
+usr/doc/libxkbcommon-1.3.0/README.md
+usr/doc/libxkbcommon-1.3.0/html/
+usr/doc/libxkbcommon-1.3.0/html/annotated.html
+usr/doc/libxkbcommon-1.3.0/html/bc_s.png
+usr/doc/libxkbcommon-1.3.0/html/bdwn.png
+usr/doc/libxkbcommon-1.3.0/html/classes.html
+usr/doc/libxkbcommon-1.3.0/html/closed.png
+usr/doc/libxkbcommon-1.3.0/html/deprecated.html
+usr/doc/libxkbcommon-1.3.0/html/dir_63ce773eee1f9b680e6e312b48cc99ca.html
+usr/doc/libxkbcommon-1.3.0/html/dir_d44c64559bbebec7f509842c48db8b23.html
+usr/doc/libxkbcommon-1.3.0/html/dir_e68e8157741866f444e17edd764ebbae.html
+usr/doc/libxkbcommon-1.3.0/html/doc.png
+usr/doc/libxkbcommon-1.3.0/html/doxygen-extra.css
+usr/doc/libxkbcommon-1.3.0/html/doxygen.css
+usr/doc/libxkbcommon-1.3.0/html/doxygen.svg
+usr/doc/libxkbcommon-1.3.0/html/dynsections.js
+usr/doc/libxkbcommon-1.3.0/html/files.html
+usr/doc/libxkbcommon-1.3.0/html/folderclosed.png
+usr/doc/libxkbcommon-1.3.0/html/folderopen.png
+usr/doc/libxkbcommon-1.3.0/html/functions.html
+usr/doc/libxkbcommon-1.3.0/html/functions_func.html
+usr/doc/libxkbcommon-1.3.0/html/functions_type.html
+usr/doc/libxkbcommon-1.3.0/html/functions_vars.html
+usr/doc/libxkbcommon-1.3.0/html/globals.html
+usr/doc/libxkbcommon-1.3.0/html/globals_defs.html
+usr/doc/libxkbcommon-1.3.0/html/globals_enum.html
+usr/doc/libxkbcommon-1.3.0/html/globals_eval.html
+usr/doc/libxkbcommon-1.3.0/html/globals_func.html
+usr/doc/libxkbcommon-1.3.0/html/globals_type.html
+usr/doc/libxkbcommon-1.3.0/html/group__components.html
+usr/doc/libxkbcommon-1.3.0/html/group__compose.html
+usr/doc/libxkbcommon-1.3.0/html/group__context.html
+usr/doc/libxkbcommon-1.3.0/html/group__include-path.html
+usr/doc/libxkbcommon-1.3.0/html/group__keymap.html
+usr/doc/libxkbcommon-1.3.0/html/group__keysyms.html
+usr/doc/libxkbcommon-1.3.0/html/group__logging.html
+usr/doc/libxkbcommon-1.3.0/html/group__registry.html
+usr/doc/libxkbcommon-1.3.0/html/group__state.html
+usr/doc/libxkbcommon-1.3.0/html/group__x11.html
+usr/doc/libxkbcommon-1.3.0/html/index.html
+usr/doc/libxkbcommon-1.3.0/html/jquery.js
+usr/doc/libxkbcommon-1.3.0/html/md_doc_compat.html
+usr/doc/libxkbcommon-1.3.0/html/md_doc_keymap_format_text_v1.html
+usr/doc/libxkbcommon-1.3.0/html/md_doc_quick_guide.html
+usr/doc/libxkbcommon-1.3.0/html/md_doc_rules_format.html
+usr/doc/libxkbcommon-1.3.0/html/md_doc_user_configuration.html
+usr/doc/libxkbcommon-1.3.0/html/menu.js
+usr/doc/libxkbcommon-1.3.0/html/menudata.js
+usr/doc/libxkbcommon-1.3.0/html/modules.html
+usr/doc/libxkbcommon-1.3.0/html/nav_f.png
+usr/doc/libxkbcommon-1.3.0/html/nav_g.png
+usr/doc/libxkbcommon-1.3.0/html/nav_h.png
+usr/doc/libxkbcommon-1.3.0/html/open.png
+usr/doc/libxkbcommon-1.3.0/html/pages.html
+usr/doc/libxkbcommon-1.3.0/html/splitbar.png
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__context.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__iso3166__code.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__iso639__code.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__layout.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__model.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__option.html
+usr/doc/libxkbcommon-1.3.0/html/structrxkb__option__group.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__compose__state.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__compose__table.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__context.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__keymap.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__rule__names.html
+usr/doc/libxkbcommon-1.3.0/html/structxkb__state.html
+usr/doc/libxkbcommon-1.3.0/html/sync_off.png
+usr/doc/libxkbcommon-1.3.0/html/sync_on.png
+usr/doc/libxkbcommon-1.3.0/html/tab_a.png
+usr/doc/libxkbcommon-1.3.0/html/tab_b.png
+usr/doc/libxkbcommon-1.3.0/html/tab_h.png
+usr/doc/libxkbcommon-1.3.0/html/tab_s.png
+usr/doc/libxkbcommon-1.3.0/html/tabs.css
+usr/doc/libxkbcommon-1.3.0/html/xkbcommon-compose_8h.html
+usr/doc/libxkbcommon-1.3.0/html/xkbcommon-names_8h.html
+usr/doc/libxkbcommon-1.3.0/html/xkbcommon-x11_8h.html
+usr/doc/libxkbcommon-1.3.0/html/xkbcommon_8h.html
+usr/doc/libxkbcommon-1.3.0/html/xkbregistry_8h.html
+usr/include/
+usr/include/xkbcommon/
+usr/include/xkbcommon/xkbcommon-compat.h
+usr/include/xkbcommon/xkbcommon-compose.h
+usr/include/xkbcommon/xkbcommon-keysyms.h
+usr/include/xkbcommon/xkbcommon-names.h
+usr/include/xkbcommon/xkbcommon-x11.h
+usr/include/xkbcommon/xkbcommon.h
+usr/include/xkbcommon/xkbregistry.h
+usr/lib/
+usr/lib/libxkbcommon-x11.so.0.0.0
+usr/lib/libxkbcommon.so.0.0.0
+usr/lib/libxkbregistry.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xkbcommon-x11.pc
+usr/lib/pkgconfig/xkbcommon.pc
+usr/lib/pkgconfig/xkbregistry.pc
+usr/libexec/
+usr/libexec/xkbcommon/
+usr/libexec/xkbcommon/xkbcli-compile-keymap
+usr/libexec/xkbcommon/xkbcli-how-to-type
+usr/libexec/xkbcommon/xkbcli-interactive-evdev
+usr/libexec/xkbcommon/xkbcli-interactive-wayland
+usr/libexec/xkbcommon/xkbcli-interactive-x11
+usr/libexec/xkbcommon/xkbcli-list
+usr/man/
+usr/man/man1/
+usr/man/man1/xkbcli-compile-keymap.1.gz
+usr/man/man1/xkbcli-how-to-type.1.gz
+usr/man/man1/xkbcli-interactive-evdev.1.gz
+usr/man/man1/xkbcli-interactive-wayland.1.gz
+usr/man/man1/xkbcli-interactive-x11.1.gz
+usr/man/man1/xkbcli-list.1.gz
+usr/man/man1/xkbcli.1.gz

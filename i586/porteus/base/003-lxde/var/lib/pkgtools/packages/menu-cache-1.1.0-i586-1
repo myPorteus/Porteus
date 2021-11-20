@@ -1,0 +1,22 @@
+PACKAGE NAME:     menu-cache-1.1.0-i586-1
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     410K
+PACKAGE LOCATION: menu-cache-1.1.0-i586-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/menu-cache/
+usr/include/menu-cache/menu-cache.h
+usr/lib/
+usr/lib/libmenu-cache.la
+usr/lib/libmenu-cache.so.3.2.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libmenu-cache.pc
+usr/libexec/
+usr/libexec/menu-cache/
+usr/libexec/menu-cache/menu-cache-gen
+usr/libexec/menu-cache/menu-cached

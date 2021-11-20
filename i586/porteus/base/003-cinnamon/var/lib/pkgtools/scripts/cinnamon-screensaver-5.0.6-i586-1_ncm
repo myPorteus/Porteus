@@ -1,0 +1,13 @@
+if [ -e usr/share/glib-2.0/schemas ]; then
+  if [ -x /usr/bin/glib-compile-schemas ]; then
+    /usr/bin/glib-compile-schemas usr/share/glib-2.0/schemas >/dev/null 2>&1
+  fi
+fi
+( cd usr/bin ; rm -rf cinnamon-screensaver )
+( cd usr/bin ; ln -sf /usr/share/cinnamon-screensaver/cinnamon-screensaver-main.py cinnamon-screensaver )
+( cd usr/bin ; rm -rf cinnamon-screensaver-command )
+( cd usr/bin ; ln -sf /usr/share/cinnamon-screensaver/cinnamon-screensaver-command.py cinnamon-screensaver-command )
+( cd usr/lib ; rm -rf libcscreensaver.so )
+( cd usr/lib ; ln -sf libcscreensaver.so.0 libcscreensaver.so )
+( cd usr/lib ; rm -rf libcscreensaver.so.0 )
+( cd usr/lib ; ln -sf libcscreensaver.so.0.0.0 libcscreensaver.so.0 )

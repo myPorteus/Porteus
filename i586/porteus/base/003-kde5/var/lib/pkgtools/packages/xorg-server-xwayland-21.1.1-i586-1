@@ -1,0 +1,33 @@
+PACKAGE NAME:     xorg-server-xwayland-21.1.1-i586-1
+COMPRESSED PACKAGE SIZE:     844K
+UNCOMPRESSED PACKAGE SIZE:     2.4M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/xorg-server-xwayland-21.1.1-i586-1.txz
+PACKAGE DESCRIPTION:
+xorg-server-xwayland: xorg-server-xwayland (X Clients under Wayland)
+xorg-server-xwayland:
+xorg-server-xwayland: Wayland is a complete window system in itself, but even so, if we're
+xorg-server-xwayland: migrating away from X, it makes sense to have a good backwards
+xorg-server-xwayland: compatibility story. With a few changes, the Xorg server can be
+xorg-server-xwayland: modified to use Wayland input devices for input and forward either the
+xorg-server-xwayland: root window or individual top-level windows as wayland surfaces. The
+xorg-server-xwayland: server still runs the same 2D driver with the same acceleration code
+xorg-server-xwayland: as it does when it runs natively. The main difference is that Wayland
+xorg-server-xwayland: handles presentation of the windows instead of KMS.
+xorg-server-xwayland:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/Xwayland
+usr/doc/
+usr/doc/xorg-server-xwayland-21.1.1/
+usr/doc/xorg-server-xwayland-21.1.1/COPYING
+usr/doc/xorg-server-xwayland-21.1.1/README.md
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xwayland.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/Xwayland.1.gz

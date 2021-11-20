@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libphonon4qt5.so )
+( cd usr/lib ; ln -sf libphonon4qt5.so.4 libphonon4qt5.so )
+( cd usr/lib ; rm -rf libphonon4qt5.so.4 )
+( cd usr/lib ; ln -sf libphonon4qt5.so.4.11.1 libphonon4qt5.so.4 )
+( cd usr/lib ; rm -rf libphonon4qt5experimental.so )
+( cd usr/lib ; ln -sf libphonon4qt5experimental.so.4 libphonon4qt5experimental.so )
+( cd usr/lib ; rm -rf libphonon4qt5experimental.so.4 )
+( cd usr/lib ; ln -sf libphonon4qt5experimental.so.4.11.1 libphonon4qt5experimental.so.4 )

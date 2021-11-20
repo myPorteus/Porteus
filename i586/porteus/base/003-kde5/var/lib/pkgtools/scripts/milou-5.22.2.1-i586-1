@@ -1,0 +1,2 @@
+( cd usr/lib ; rm -rf libmilou.so.5 )
+( cd usr/lib ; ln -sf libmilou.so.5.22.2 libmilou.so.5 )

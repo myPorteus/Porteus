@@ -1,0 +1,36 @@
+PACKAGE NAME:     egl-wayland-1.1.7-i586-1
+COMPRESSED PACKAGE SIZE:     24K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/egl-wayland-1.1.7-i586-1.txz
+PACKAGE DESCRIPTION:
+egl-wayland: egl-wayland (Wayland EGL External Platform library)
+egl-wayland:
+egl-wayland: Wayland EGL External Platform library.
+egl-wayland:
+egl-wayland:
+egl-wayland:
+egl-wayland:
+egl-wayland:
+egl-wayland:
+egl-wayland:
+egl-wayland:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/egl-wayland-1.1.7/
+usr/doc/egl-wayland-1.1.7/COPYING
+usr/doc/egl-wayland-1.1.7/README.md
+usr/lib/
+usr/lib/libnvidia-egl-wayland.so.1.1.7
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/wayland-eglstream.pc
+usr/share/
+usr/share/pkgconfig/
+usr/share/pkgconfig/wayland-eglstream-protocols.pc
+usr/share/wayland-eglstream/
+usr/share/wayland-eglstream/wayland-eglstream-controller.xml
+usr/share/wayland-eglstream/wayland-eglstream.xml

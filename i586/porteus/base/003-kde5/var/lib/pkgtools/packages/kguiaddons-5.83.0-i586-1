@@ -1,0 +1,97 @@
+PACKAGE NAME:     kguiaddons-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     460K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kguiaddons-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kguiaddons: kguiaddons (KDE GUI Addons)
+kguiaddons:
+kguiaddons: The KDE GUI addons provide utilities for graphical user interfaces in
+kguiaddons: the areas of colors, fonts, text, images, and keyboard input.
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+kguiaddons:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kguiaddons-5.83.0/
+usr/doc/kguiaddons-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KGuiAddons/
+usr/include/KF5/KGuiAddons/KColorCollection
+usr/include/KF5/KGuiAddons/KColorMimeData
+usr/include/KF5/KGuiAddons/KColorUtils
+usr/include/KF5/KGuiAddons/KCursorSaver
+usr/include/KF5/KGuiAddons/KDateValidator
+usr/include/KF5/KGuiAddons/KFontUtils
+usr/include/KF5/KGuiAddons/KIconUtils
+usr/include/KF5/KGuiAddons/KImageCache
+usr/include/KF5/KGuiAddons/KModifierKeyInfo
+usr/include/KF5/KGuiAddons/KWordWrap
+usr/include/KF5/KGuiAddons/KeySequenceRecorder
+usr/include/KF5/KGuiAddons/kcolorcollection.h
+usr/include/KF5/KGuiAddons/kcolormimedata.h
+usr/include/KF5/KGuiAddons/kcolorutils.h
+usr/include/KF5/KGuiAddons/kcursorsaver.h
+usr/include/KF5/KGuiAddons/kdatevalidator.h
+usr/include/KF5/KGuiAddons/keysequencerecorder.h
+usr/include/KF5/KGuiAddons/kfontutils.h
+usr/include/KF5/KGuiAddons/kguiaddons_export.h
+usr/include/KF5/KGuiAddons/kiconutils.h
+usr/include/KF5/KGuiAddons/kimagecache.h
+usr/include/KF5/KGuiAddons/klocalimagecacheimpl.h
+usr/include/KF5/KGuiAddons/kmodifierkeyinfo.h
+usr/include/KF5/KGuiAddons/kmodifierkeyinfoprovider_p.h
+usr/include/KF5/KGuiAddons/kwordwrap.h
+usr/include/KF5/kguiaddons_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5GuiAddons/
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfig.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfigVersion.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets-release.cmake
+usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets.cmake
+usr/lib/libKF5GuiAddons.so.5.83.0
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/PyKF5/
+usr/lib/python2.7/site-packages/PyKF5/KGuiAddons.so
+usr/lib/python2.7/site-packages/PyKF5/__init__.py
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/PyKF5/
+usr/lib/python3.9/site-packages/PyKF5/KGuiAddons.so
+usr/lib/python3.9/site-packages/PyKF5/__init__.py
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KGuiAddons.pri
+usr/lib/qt5/plugins/
+usr/lib/qt5/plugins/kf5/
+usr/lib/qt5/plugins/kf5/kguiaddons/
+usr/lib/qt5/plugins/kf5/kguiaddons/kmodifierkey/
+usr/lib/qt5/plugins/kf5/kguiaddons/kmodifierkey/kmodifierkey_xcb.so
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kguiaddons.categories
+usr/share/sip/
+usr/share/sip/PyKF5/
+usr/share/sip/PyKF5/KGuiAddons/
+usr/share/sip/PyKF5/KGuiAddons/KGuiAddonsmod.sip
+usr/share/sip/PyKF5/KGuiAddons/kcolorcollection.sip
+usr/share/sip/PyKF5/KGuiAddons/kcolormimedata.sip
+usr/share/sip/PyKF5/KGuiAddons/kcolorutils.sip
+usr/share/sip/PyKF5/KGuiAddons/kdatevalidator.sip
+usr/share/sip/PyKF5/KGuiAddons/kfontutils.sip
+usr/share/sip/PyKF5/KGuiAddons/kiconutils.sip
+usr/share/sip/PyKF5/KGuiAddons/kimagecache.sip
+usr/share/sip/PyKF5/KGuiAddons/kmodifierkeyinfo.sip
+usr/share/sip/PyKF5/KGuiAddons/kwordwrap.sip

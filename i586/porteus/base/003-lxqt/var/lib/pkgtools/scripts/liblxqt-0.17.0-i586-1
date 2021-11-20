@@ -1,0 +1,4 @@
+( cd usr/lib ; rm -rf liblxqt.so )
+( cd usr/lib ; ln -sf liblxqt.so.0 liblxqt.so )
+( cd usr/lib ; rm -rf liblxqt.so.0 )
+( cd usr/lib ; ln -sf liblxqt.so.0.17.0 liblxqt.so.0 )

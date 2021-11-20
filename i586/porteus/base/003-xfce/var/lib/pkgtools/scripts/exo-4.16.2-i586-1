@@ -1,0 +1,6 @@
+( cd usr/doc/exo-4.16.2 ; rm -rf html )
+( cd usr/doc/exo-4.16.2 ; ln -sf /usr/share/gtk-doc/html/exo-2/ html )
+( cd usr/lib ; rm -rf libexo-2.so )
+( cd usr/lib ; ln -sf libexo-2.so.0.1.0 libexo-2.so )
+( cd usr/lib ; rm -rf libexo-2.so.0 )
+( cd usr/lib ; ln -sf libexo-2.so.0.1.0 libexo-2.so.0 )

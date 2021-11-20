@@ -1,0 +1,8 @@
+( cd usr/lib ; rm -rf libQt5Xdg.so )
+( cd usr/lib ; ln -sf libQt5Xdg.so.3 libQt5Xdg.so )
+( cd usr/lib ; rm -rf libQt5Xdg.so.3 )
+( cd usr/lib ; ln -sf libQt5Xdg.so.3.7.1 libQt5Xdg.so.3 )
+( cd usr/lib ; rm -rf libQt5XdgIconLoader.so )
+( cd usr/lib ; ln -sf libQt5XdgIconLoader.so.3 libQt5XdgIconLoader.so )
+( cd usr/lib ; rm -rf libQt5XdgIconLoader.so.3 )
+( cd usr/lib ; ln -sf libQt5XdgIconLoader.so.3.7.1 libQt5XdgIconLoader.so.3 )

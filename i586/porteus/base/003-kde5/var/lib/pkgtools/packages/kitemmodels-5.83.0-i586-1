@@ -1,0 +1,101 @@
+PACKAGE NAME:     kitemmodels-5.83.0-i586-1
+COMPRESSED PACKAGE SIZE:     220K
+UNCOMPRESSED PACKAGE SIZE:     1.5M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../i586/pkg/003_kde/kitemmodels-5.83.0-i586-1.txz
+PACKAGE DESCRIPTION:
+kitemmodels: kitemmodels (Qt model-view extensions)
+kitemmodels:
+kitemmodels: KItemModels is a set of item models extending the Qt model-view
+kitemmodels: framework.
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+kitemmodels:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kitemmodels-5.83.0/
+usr/doc/kitemmodels-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KItemModels/
+usr/include/KF5/KItemModels/KBreadcrumbSelectionModel
+usr/include/KF5/KItemModels/KCheckableProxyModel
+usr/include/KF5/KItemModels/KColumnHeadersModel
+usr/include/KF5/KItemModels/KConcatenateRowsProxyModel
+usr/include/KF5/KItemModels/KDescendantsProxyModel
+usr/include/KF5/KItemModels/KExtraColumnsProxyModel
+usr/include/KF5/KItemModels/KLinkItemSelectionModel
+usr/include/KF5/KItemModels/KModelIndexProxyMapper
+usr/include/KF5/KItemModels/KNumberModel
+usr/include/KF5/KItemModels/KRearrangeColumnsProxyModel
+usr/include/KF5/KItemModels/KRecursiveFilterProxyModel
+usr/include/KF5/KItemModels/KSelectionProxyModel
+usr/include/KF5/KItemModels/kbreadcrumbselectionmodel.h
+usr/include/KF5/KItemModels/kcheckableproxymodel.h
+usr/include/KF5/KItemModels/kcolumnheadersmodel.h
+usr/include/KF5/KItemModels/kconcatenaterowsproxymodel.h
+usr/include/KF5/KItemModels/kdescendantsproxymodel.h
+usr/include/KF5/KItemModels/kextracolumnsproxymodel.h
+usr/include/KF5/KItemModels/kitemmodels_export.h
+usr/include/KF5/KItemModels/klinkitemselectionmodel.h
+usr/include/KF5/KItemModels/kmodelindexproxymapper.h
+usr/include/KF5/KItemModels/knumbermodel.h
+usr/include/KF5/KItemModels/krearrangecolumnsproxymodel.h
+usr/include/KF5/KItemModels/krecursivefilterproxymodel.h
+usr/include/KF5/KItemModels/kselectionproxymodel.h
+usr/include/KF5/kitemmodels_version.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/KF5ItemModels/
+usr/lib/cmake/KF5ItemModels/KF5ItemModelsConfig.cmake
+usr/lib/cmake/KF5ItemModels/KF5ItemModelsConfigVersion.cmake
+usr/lib/cmake/KF5ItemModels/KF5ItemModelsTargets-release.cmake
+usr/lib/cmake/KF5ItemModels/KF5ItemModelsTargets.cmake
+usr/lib/libKF5ItemModels.so.5.83.0
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/PyKF5/
+usr/lib/python2.7/site-packages/PyKF5/KItemModels.so
+usr/lib/python2.7/site-packages/PyKF5/__init__.py
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/PyKF5/
+usr/lib/python3.9/site-packages/PyKF5/KItemModels.so
+usr/lib/python3.9/site-packages/PyKF5/__init__.py
+usr/lib/qt5/
+usr/lib/qt5/mkspecs/
+usr/lib/qt5/mkspecs/modules/
+usr/lib/qt5/mkspecs/modules/qt_KItemModels.pri
+usr/lib/qt5/qml/
+usr/lib/qt5/qml/org/
+usr/lib/qt5/qml/org/kde/
+usr/lib/qt5/qml/org/kde/kitemmodels/
+usr/lib/qt5/qml/org/kde/kitemmodels/libitemmodelsplugin.so
+usr/lib/qt5/qml/org/kde/kitemmodels/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kitemmodels.categories
+usr/share/qlogging-categories5/kitemmodels.renamecategories
+usr/share/sip/
+usr/share/sip/PyKF5/
+usr/share/sip/PyKF5/KItemModels/
+usr/share/sip/PyKF5/KItemModels/KItemModelsmod.sip
+usr/share/sip/PyKF5/KItemModels/kbreadcrumbselectionmodel.sip
+usr/share/sip/PyKF5/KItemModels/kcheckableproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/kcolumnheadersmodel.sip
+usr/share/sip/PyKF5/KItemModels/kconcatenaterowsproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/kdescendantsproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/kextracolumnsproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/klinkitemselectionmodel.sip
+usr/share/sip/PyKF5/KItemModels/kmodelindexproxymapper.sip
+usr/share/sip/PyKF5/KItemModels/krearrangecolumnsproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/krecursivefilterproxymodel.sip
+usr/share/sip/PyKF5/KItemModels/kselectionproxymodel.sip
