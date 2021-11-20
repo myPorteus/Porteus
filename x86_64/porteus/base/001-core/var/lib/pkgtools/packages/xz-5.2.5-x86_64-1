@@ -1,0 +1,139 @@
+PACKAGE NAME:     xz-5.2.5-x86_64-1
+COMPRESSED PACKAGE SIZE:     316K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/xz-5.2.5-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xz: xz (compression utility based on the LZMA algorithm)
+xz:
+xz: LZMA is a general purpose compression algorithm designed by Igor
+xz: Pavlov as part of 7-Zip. It provides high compression ratio while
+xz: keeping the decompression speed fast. XZ Utils are an attempt to make
+xz: LZMA compression easy to use on free (as in freedom) operating
+xz: systems.
+xz:
+xz: The people most responsible for xz are Igor Pavlov, Ville Koskinen,
+xz: and Lasse Collin. Homepage: http://tukaani.org/xz/
+xz:
+FILE LIST:
+./
+bin/
+bin/xz
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/liblzma.so.5.2.5
+usr/
+usr/bin/
+usr/bin/lzmadec
+usr/bin/lzmainfo
+usr/bin/xzdec
+usr/bin/xzdiff
+usr/bin/xzgrep
+usr/bin/xzless
+usr/bin/xzmore
+usr/doc/
+usr/doc/xz-5.2.5/
+usr/doc/xz-5.2.5/ABOUT-NLS
+usr/doc/xz-5.2.5/AUTHORS
+usr/doc/xz-5.2.5/COPYING
+usr/doc/xz-5.2.5/COPYING.GPLv2
+usr/doc/xz-5.2.5/COPYING.GPLv3
+usr/doc/xz-5.2.5/COPYING.LGPLv2.1
+usr/doc/xz-5.2.5/ChangeLog
+usr/doc/xz-5.2.5/INSTALL
+usr/doc/xz-5.2.5/INSTALL.generic
+usr/doc/xz-5.2.5/NEWS
+usr/doc/xz-5.2.5/PACKAGERS
+usr/doc/xz-5.2.5/README
+usr/doc/xz-5.2.5/THANKS
+usr/doc/xz-5.2.5/TODO
+usr/doc/xz-5.2.5/examples/
+usr/doc/xz-5.2.5/examples/00_README.txt
+usr/doc/xz-5.2.5/examples/01_compress_easy.c
+usr/doc/xz-5.2.5/examples/02_decompress.c
+usr/doc/xz-5.2.5/examples/03_compress_custom.c
+usr/doc/xz-5.2.5/examples/04_compress_easy_mt.c
+usr/doc/xz-5.2.5/examples/Makefile
+usr/doc/xz-5.2.5/examples_old/
+usr/doc/xz-5.2.5/examples_old/xz_pipe_comp.c
+usr/doc/xz-5.2.5/examples_old/xz_pipe_decomp.c
+usr/doc/xz-5.2.5/faq.txt
+usr/doc/xz-5.2.5/history.txt
+usr/doc/xz-5.2.5/lzma-file-format.txt
+usr/doc/xz-5.2.5/xz-file-format.txt
+usr/include/
+usr/include/lzma.h
+usr/include/lzma/
+usr/include/lzma/base.h
+usr/include/lzma/bcj.h
+usr/include/lzma/block.h
+usr/include/lzma/check.h
+usr/include/lzma/container.h
+usr/include/lzma/delta.h
+usr/include/lzma/filter.h
+usr/include/lzma/hardware.h
+usr/include/lzma/index.h
+usr/include/lzma/index_hash.h
+usr/include/lzma/lzma12.h
+usr/include/lzma/stream_flags.h
+usr/include/lzma/version.h
+usr/include/lzma/vli.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/liblzma.pc
+usr/man/
+usr/man/de/
+usr/man/de/man1/
+usr/man/de/man1/xz.1.gz
+usr/man/de/man1/xzdec.1.gz
+usr/man/de/man1/xzdiff.1.gz
+usr/man/de/man1/xzgrep.1.gz
+usr/man/de/man1/xzless.1.gz
+usr/man/de/man1/xzmore.1.gz
+usr/man/man1/
+usr/man/man1/lzmainfo.1.gz
+usr/man/man1/xz.1.gz
+usr/man/man1/xzdec.1.gz
+usr/man/man1/xzdiff.1.gz
+usr/man/man1/xzgrep.1.gz
+usr/man/man1/xzless.1.gz
+usr/man/man1/xzmore.1.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/xz.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/xz.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/xz.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/xz.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/xz.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/xz.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/xz.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/xz.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/xz.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/xz.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/xz.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/xz.mo

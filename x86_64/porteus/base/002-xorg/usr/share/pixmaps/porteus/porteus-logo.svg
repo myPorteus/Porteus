@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="128"
+   height="128"
+   viewBox="0 0 102.4 102.4"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg3471"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="porteus-logo-blue-256.svg">
+  <defs
+     id="defs3487" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     id="namedview3485"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.944"
+     inkscape:cx="125"
+     inkscape:cy="125"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3471" />
+  <metadata
+     id="metadata3473">
+Created by potrace 1.10, written by Peter Selinger 2001-2011
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="matrix(0.025,0,0,-0.0261732,1.4689977,104.43168)"
+     id="g3475"
+     style="fill:#172270;stroke:none">
+    <path
+       d="M 1535,3820 C 1121,3769 700,3520 420,3160 l -69,-90 109,97 c 480,427 1103,556 1727,360 743,-235 1133,-959 903,-1677 -7,-22 6,-7 28,33 115,207 169,618 114,877 -145,686 -901,1158 -1697,1060 z"
+       id="path3477"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 1440,3230 C 357,3012 -237,1873 299,1043 c 95,-146 114,-156 61,-33 -328,766 169,1702 1051,1977 493,153 1179,68 1454,-182 82,-73 46,-4 -45,89 -288,294 -877,437 -1380,336 z"
+       id="path3479"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 1668,2893 C 38,2287 494,55 2212,231 l 158,16 -120,16 c -263,35 -386,62 -510,112 -1113,442 -1116,1943 -5,2506 137,69 104,75 -67,12 z"
+       id="path3481"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 1114,2065 c -73,-611 332,-1197 936,-1354 686,-179 1470,179 1776,810 101,210 154,384 63,211 C 3521,1027 2641,695 1932,993 c -443,187 -693,516 -780,1028 l -25,149 -13,-105 z"
+       id="path3483"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+PACKAGE NAME:     libXvMC-1.0.12-x86_64-3
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libXvMC-1.0.12-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libXvMC: libXvMC (X.Org X11 libXvMC runtime library)
+libXvMC:
+libXvMC: libXvMC is part of X11.
+libXvMC:
+libXvMC: For more information about the X.Org Foundation (the providers of the
+libXvMC: X.Org implementation of the X Window System), see their website:
+libXvMC:
+libXvMC: http://www.x.org
+libXvMC:
+libXvMC:
+libXvMC:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXvMC-1.0.12/
+usr/doc/libXvMC-1.0.12/COPYING
+usr/doc/libXvMC-1.0.12/ChangeLog
+usr/doc/libXvMC-1.0.12/INSTALL
+usr/doc/libXvMC-1.0.12/README.md
+usr/doc/libXvMC-1.0.12/XvMC_API.txt
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/XvMClib.h
+usr/include/X11/extensions/vldXvMC.h
+usr/lib64/
+usr/lib64/libXvMC.so.1.0.0
+usr/lib64/libXvMCW.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xvmc-wrapper.pc
+usr/lib64/pkgconfig/xvmc.pc

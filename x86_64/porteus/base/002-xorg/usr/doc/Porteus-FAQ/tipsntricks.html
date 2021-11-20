@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Porteus Package Manager</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+
+<body>
+
+<!--header -->
+<div id="header-wrap"><div id="header">
+
+	<a name="top"></a>
+
+	<h1 id="logo-text"><a href="index.html" title="">Porteus help file</a></h1>
+	<p id="slogan">Porteus help file</p>
+
+	<div  id="nav">
+		<ul>
+			<li><a href="index.html" title="Frequently asked questions">FAQ</a></li>
+			<li><a href="usm.html" title="Porteus Package Manager">Package Manager</a></li>
+                        <li id="current"><a href="tipsntricks.html" title="Porteus Tips and Tricks">Tips and Tricks</a></li>  
+			<li><a href="https://porteus.org" title="Browse the Porteus website">Website</a></li>
+			<li><a href="https://forum.porteus.org" title="Visit the forum">Forum</a></li>
+			<li><a href="https://forum.porteus.org/viewforum.php?f=35" title="Download Porteus">Download</a></li>
+			<li><a href="https://porteus.org/contact-us.html" title="Contact us">Contact</a></li>
+		</ul>
+	</div>
+
+   <p id="rss" name="website"><a href="https://forum.porteus.org" title="Visit the Porteus forum">Visit the forum</a>
+   </p>
+
+   <!--/header-->
+</div></div>
+	
+<!-- content-outer -->
+<div id="content-wrap" class="clear" >
+
+	<!-- content -->
+   <div id="content">
+
+   	<!-- main -->
+	   <div id="main">
+
+      	<div class="post">
+
+      		<div class="right">
+
+            	<h2><a href="tipsntricks.html">Porteus Tips and Tricks</a></h2>
+
+               <p class="post-info">Work smarter, not harder!
+               </p>
+              <div class="image-section"></div>
+
+<ol><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#1">Porteus is Live!</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#2">Use a 'save.dat' container for FAT or NTFS drives</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#3">Cheatcodes</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#4">Copy to RAM</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#5">Use your rootcopy folder for quick changes or additions</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#6">Use Magic Folders for more flexibility</a></span></strong></li><li style="text-align: left;"><strong><span style="color: #000000;"><a href="#7">Porteus CD customization</a></span></strong></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#8">Compiling drivers from source</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#9">Run Porteus from a USB drive, even if not supported by your BIOS</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#10">Firewall</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#11">Aliases</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#12">CLI Utilities</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#13">Manage your packages and modules from the GUI</a></strong></span></li><li style="text-align: left;"><span style="color: #000000;"><strong><a href="#14">Use 'Always Fresh' mode, and be free to experiment!</a></strong></span></li>
+
+<br />
+                  <br />
+                  <hr />
+<br />
+
+<p><strong><a name="1"></a>Porteus is live!</strong></p><p>Porteus is a live distribution, which means that the running environment is constructed in your system's memory when you boot it up. The porteus files on your CD, flash drive, or hard drive are mounted and used to construct this live filesystem. For more information, go <a href="http://www.porteus.org/tutorials/26-general-info-tutorials/118-howto-find-your-way-around-in-the-porteus-file-structure.html">here</a>. 
+
+<br /><br /></p><p><strong><a name="2"></a>Use a 'save.dat' container for FAT or NTFS drives</strong></p><p>If you want to save all the changes that you make to your system (configuration, downloaded files, bookmarks, etc.,) to a drive that is formatted with a window's filesystem, you need to use a save.dat container file. This is because Windows filesystems are not built to handle linux files. For more information, visit this <a href="http://www.porteus.org/tutorials/26-general-info-tutorials/116-howto-create-a-savedat-container-and-why-you-need-one.html">link</a>. 
+
+<br /><br /></p><p><strong><a name="3"></a>Cheatcodes</strong></p><p>You can modify and customize the way your system boots, and resolve or work around many hardware issues by using cheatcodes. Cheatcodes are passed to the system by pressing TAB at the boot menu (when the porteus graphic comes up with the options to boot into KDE, XFCE, LXQt, etc) and entering a short string of text. See this <a href="http://www.porteus.org/tutorials/26-general-info-tutorials/117-cheatcodes-what-they-are-and-how-to-use-them.html">link</a> for more info (this file can also be found on your system at <a href=/usr/doc/porteus/cheatcodes.txt>/usr/doc/porteus/cheatcodes.txt</a> and /boot/docs/cheatcodes.txt) 
+
+<br /><br /></p><p><strong><a name="4"></a>Copy to RAM</strong></p><p>Porteus has a boot option (implemented by a cheatcode) called copy2ram. Selecting this boot option means that all of the files inside your modules will be copied into your system's RAM. This slows down your boot process and uses up more of your RAM, but it also produces an incredibly fast, responsive system because all of the files are already loaded and available for use. RAM requirements vary between desktops: the LXQt needs at least 256MB of RAM to boot properly with the copy2ram cheatcode, while the KDE5 requires at lest 768MB.
+
+<br /><br /></p><p><strong><a name="5"></a>Use your rootcopy folder for quick changes or additions</strong></p><p>You can save individual files to your "rootcopy" folder, after which they will be added to your live filesystem at startup. This is useful for saving your configuration files (among other things) when you are booting into "Always Fresh" mode, without the need to compress these files into a module. For more information, go <a href="http://www.porteus.org/tutorials/26-general-info-tutorials/112-howto-use-the-rootcopy-directory.html">here</a>. 
+
+<br /><br /></p><p><strong><a name="6"></a>Use Magic Folders for more flexibility</strong></p><p>You can use the Magic Folders tool from 'Porteus Settings Centre' to set up paired folders, which will mirror a directory from your storage media on your live filesystem, and changes made to that directory from within Porteus will be saved back to your storage media. This allows you to save changes to specific locations, rather than saving all of your changes for the whole system. Go <a href="http://www.porteus.org/component/content/article/26-tutorials/general-info-tutorials/100-howto-create-and-use-magic-folders.html">here</a> for more information. 
+
+<br /><br /></p><p><strong><a name="7"></a>Porteus CD customization</strong></span></p><p>Though CD's and DVD's are technically "read only" media, there are a number of ways that you can customize Porteus while running from a CD or DVD. One can utilize cheatcodes (see the link above, or the cheatcodes.txt file inside the boot/docs/ folder on your CD), such as 'noload=kde' to make the system boot into LXQt faster, or 'extramod=/path/to/mod' to load modules from a hard drive, usb drive, etc. You can also extract the .iso file for the CD, make modifications, add modules, etc., and remaster a new .iso (using make_iso.bat or make_iso.sh inside the /porteus folder), and burn that to a CD, for your own customized version. 
+
+<br /><br /></p><p><strong><a name="8"></a>Compiling drivers from source</strong></p><p>If you have hardware that is not supported by Porteus out of the box, you may need to compile a driver from source. In order to compile these drivers, you will first need to download the 05-devel.xzm module for your version of porteus from the porteus server and activate it. This will insert utilities, libraries, headers and a stripped-down version of the kernel source into the live session. Now you're ready to compile the driver per the "readme" instructions included with the source code. It is best to compile using the DESTDIR variable, so that you can install the driver and it's files to a fake root folder, which can then be easily turned into a module using the dir2xzm function. If there is no DESTDIR variable in the Makefile, you can also build the drivers and install them to your system, and then use the built-in "changes-time" script, which will pull out all of the files you have added or modified in your system over a specified period of time (e.g. the last three minutes). 
+
+<br /><br /></p><p><strong><a name="9"></a>Run Porteus from a USB drive, even if it is not supported by your BIOS</strong></p><p>If your computer has a USB port but your BIOS does not support booting directly from USB, you can still run Porteus from your USB drive. To do this, you can split your Porteus installation as follows: <br />- /boot folder on CD <br />- /porteus folder on usb stick <br />Now you can boot from the CD and linuxrc script will find the /porteus folder on the USB drive. All cheatcodes like 'from=', 'changes=' still apply here, just like a normal USB installation. 
+
+<br /><br /></p><p><strong><a name="10"></a>Firewall</strong></p><p>To enable a firewall in Porteus open 'Porteus Settings Centre' and click on the 'Security settings' box. Here you can find a firewall with some pre-definied settings.
+
+<br /><br /></p><p><strong><a name="11"></a>Aliases</strong></p><p>Porteus has some aliases set in &#126;/.bashrc (home directory). It's good to know that they exist so you can use them in the console. 
+
+<br /><br /></p><p><strong><a name="12"></a>CLI Utilities</strong></p><p>Porteus has some nice CLI utilities which may be forgotten or never found by most users. Here is the list with short descriptions: <br /><br /><em>changes-time</em> - copies all files that have been added or modified on your system over a specified period of time. <br /><em>fromdos/todos</em> - CLI utilities which convert documents between windows/unix formatting <br /><em>mloop</em> - a great tool by brokenman for mounting modules/iso/dat files on a loop device. e.g. mloop mycustom.iso <br /><em>pxe-boot</em> - run this short script to start PXE boot services. This is useful when you did not choose 'PXE boot option' at the start and dont want to reboot. <br /><em>save-changes</em> - dump whole changes from the live session into a module <br /><em>update-module</em> - searches your system for changes that have been made to the files from a specified module, and updates the module with those changes. 
+
+<br /><br /></p><p><strong><a name="13"></a>Manage your packages and modules from the GUI</strong></p><p>File managers (caja/nemo/spacefm/thunar/dolphin/pcmanfm) have extra service menus specific to Porteus only. All you need to do is right click on a certain file type to get an option for an extra action: <br />- folders: you can build a Porteus module from it <br />- modules: you can extract it to a folder; mount it to a folder (same function as 'mloop' utility) <br />- tgz/txz slackware packages: you can convert it to xzm; install/uninstall directly to/from live system <br />- rpm packages: convert to xzm (requires 05-devel.xzm or binutils package)<br />- deb packages: convert to xzm (requires 05-devel.xzm or binutils package)</p>
+
+<br /><p><strong><a name="14"></a>Use 'Always Fresh' mode, and be free to experiment!</strong></p><p>When you boot in Always Fresh mode (meaning, without the changes= cheatcode or magic folders), none of the changes you make to your live filesystem will survive reboot. So, you can tear apart your system, leave a mess behind you, and it will all get flushed the next time you boot up. This makes you free to experiment with the system, to change things up, without fear that you will 'break' your system and have to reinstall. You can still customize your experience, by using your rootcopy folder, creating modules out of your custom configuration files, etc. Just be careful -- if you spend a lot of time working on something and leave it on your desktop without saving it to your storage media, it will be gone forever.</p><br /><hr>
+
+</ol><br />
+
+
+
+
+
+
+
+
+
+</div>
+      	</div>
+
+      	<!-- /main -->
+		</div>
+
+      <!-- sidebar -->
+		<div id="sidebar">
+
+      	<div class="about-me">
+
+         	<h3>Screenshots</h3>
+		      <p>
+		      <a href="index.html"><img src="images/gravatar.jpg" width="40" height="40" alt="firefox" class="float-left" /></a>
+            Porteus has 7 ISO flavors: Plasma(KDE), Cinnamon, Mate, Xfce4, Lxde, Lxqt, and Openbox. You can checkout some of the different styles that are used by various users here.<a href="http://porteus.org/info/screens.html" title="Porteus screenshots"> Learn more... </a></p>
+
+         </div>
+
+			<div class="sidemenu">
+
+				<h3>Sidebar Menu</h3>
+            <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="usm.html">PACKAGE MANAGER</a></li>
+					<li><a href="http://www.porteus.org/tutorials/10-installing/114-official-porteus-installation-guide.html">Installation</a></li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/118-howto-find-your-way-around-in-the-porteus-file-structure.html">PORTEUS FILE STRUCTURE</a></li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/116-howto-create-a-savedat-container-and-why-you-need-one.html" title="Porteus Partitions">PORTEUS ON FAT32/NTFS</a></li>
+					<li><a href="http://www.porteus.org/tutorials/9-modules/121-howto-understanding-module-creation-and-manipulation-two-case-studies.html" title="Web Templates">MODULE MANIPULATION</a></li>
+				</ul>
+
+			</div>
+
+			<div class="sidemenu">
+
+				<h3>Other links</h3>
+            <ul>
+					<li><a href="http://www.porteus.org/info/videos.html" title="Video gold!!">PORTEUS VIDEOS <br />
+	            	<span>Various video tutorials</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/features.html" title="Porteus features">PORTEUS FEATURES<br />
+	            	<span>Read about Porteus features</span></a>
+          </li>
+					<li><a href="http://porteus.org/info/docs.html" title="Porteus Documentation">DOCUMENTATION<br />
+	            	<span>Full Porteus Documentation</span></a>
+          </li>
+					<li><a href="http://www.porteus.org/component/content/article/8-information/general-info/146-porteus-kiosk-edition-installation-customization-and-faq.html" title="Porteus Kiosk Edition FAQ">Porteus Kiosk Edition FAQ <br />
+	            	<span>FAQ for Porteus Kiosk Edition</span></a>
+    </li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/117-cheatcodes-what-they-are-and-how-to-use-them.html" title="Cheatcodes">Cheatcodes<br />
+	            	<span>Important cheatcodes for booting</span></a>
+          </li>
+					<li><a href="http://www.porteus.org/tutorials/26-general-info-tutorials/112-howto-use-the-rootcopy-directory.html" title="Rootcopy">Rootcopy<br />
+	            	<span>What it is & how to use it</span></a>
+              </li>
+				</ul>
+
+			</div>
+
+         <div class="popular">
+
+				<h3>Porteus Media</h3>
+				<ul>
+			   	<li><a href="https://www.facebook.com/porteus.org" title="Facebook">Facebook</a><span></span>
+					</li>
+               <li><a href="https://twitter.com/#!/porteusOS">Twitter</a></li>
+               <li><a href="https://distrowatch.com/table.php?distribution=porteus">Distro watch</a></li>
+               <li><a href="https://linux.softpedia.com/get/System/Operating-Systems/Linux-Distributions/Porteus-64578.shtml">Softpedia</a></li>
+               <li><a href="https://en.wikipedia.org/wiki/Porteus_(operating_system)" title="Wikiporteus">Wikipedia</a></li>
+				</ul>
+
+			</div>
+
+      <!-- /sidebar -->
+		</div>
+
+    <!-- content -->
+	</div>
+
+<!-- /content-out -->
+</div>
+		
+<!-- footer-outer -->
+<div id="footer-outer" class="clear"></div>
+
+<!-- footer-bottom -->
+<div id="footer-bottom">
+
+	<p class="bottom-left">
+  &copy; 2011 <strong>Copyright Info</strong></p>
+
+	<p class="bottom-right">
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
+	   <a href="http://validator.w3.org/check/referer">XHTML</a>	|
+		<a href="index.html">Home</a> |<a href="contact.html">Contact</a> |
+      <strong><a href="#top">Back to Top</a></strong>
+   </p>
+
+<!-- /footer-bottom-->
+</div>
+
+</body>
+</html>

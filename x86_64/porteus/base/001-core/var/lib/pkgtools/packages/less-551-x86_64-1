@@ -1,0 +1,37 @@
+PACKAGE NAME:     less-551-x86_64-1
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/less-551-x86_64-1.txz
+PACKAGE DESCRIPTION:
+less: less (file pager)
+less:
+less: Less is a paginator similar to more (1), but which allows backward
+less: movement in the file as well as forward movement. Also, less does not
+less: have to read the entire input file before starting, so with large
+less: input files it starts up faster than text editors like vi (1). 
+less:
+less: Less was written by Mark Nudelman.
+less:
+less:
+less:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/less
+usr/bin/lessecho
+usr/bin/lesskey
+usr/bin/lesspipe.sh
+usr/doc/
+usr/doc/less-551/
+usr/doc/less-551/COPYING
+usr/doc/less-551/LICENSE
+usr/doc/less-551/NEWS
+usr/doc/less-551/README
+usr/man/
+usr/man/man1/
+usr/man/man1/less.1.gz
+usr/man/man1/lessecho.1.gz
+usr/man/man1/lesskey.1.gz

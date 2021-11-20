@@ -1,0 +1,99 @@
+PACKAGE NAME:     upower-0.99.11-x86_64-4_rlw
+COMPRESSED PACKAGE SIZE:     156K
+UNCOMPRESSED PACKAGE SIZE:     780K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/upower-0.99.11-x86_64-4_rlw.txz
+PACKAGE DESCRIPTION:
+upower: UPower (power management abstraction daemon)
+upower:
+upower: UPower is an abstraction for enumerating power devices, listening to 
+upower: device events and querying history and statistics. Any application or 
+upower: service on the system can access the org.freedesktop.UPower service 
+upower: via the system message bus. Some operations (such as suspending the 
+upower: system) are restricted using PolicyKit. 
+upower:
+upower: Homepage: http://upower.freedesktop.org/
+upower:
+upower:
+FILE LIST:
+./
+etc/
+etc/UPower/
+etc/UPower/UPower.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/95-upower-csr.rules
+lib/udev/rules.d/95-upower-hid.rules
+lib/udev/rules.d/95-upower-hidpp.rules
+lib/udev/rules.d/95-upower-wup.rules
+usr/
+usr/bin/
+usr/bin/upower
+usr/doc/
+usr/doc/upower-0.99.11/
+usr/doc/upower-0.99.11/AUTHORS
+usr/doc/upower-0.99.11/COPYING
+usr/doc/upower-0.99.11/ChangeLog
+usr/doc/upower-0.99.11/HACKING
+usr/doc/upower-0.99.11/INSTALL
+usr/doc/upower-0.99.11/NEWS
+usr/doc/upower-0.99.11/README
+usr/include/
+usr/include/libupower-glib/
+usr/include/libupower-glib/up-autocleanups.h
+usr/include/libupower-glib/up-client.h
+usr/include/libupower-glib/up-device.h
+usr/include/libupower-glib/up-history-item.h
+usr/include/libupower-glib/up-stats-item.h
+usr/include/libupower-glib/up-types.h
+usr/include/libupower-glib/up-version.h
+usr/include/libupower-glib/up-wakeup-item.h
+usr/include/libupower-glib/up-wakeups.h
+usr/include/libupower-glib/upower.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/UPowerGlib-1.0.typelib
+usr/lib64/libupower-glib.so.3.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/upower-glib.pc
+usr/libexec/
+usr/libexec/upowerd
+usr/man/
+usr/man/man1/
+usr/man/man1/upower.1.gz
+usr/man/man7/
+usr/man/man7/UPower.7.gz
+usr/man/man8/
+usr/man/man8/upowerd.8.gz
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.freedesktop.UPower.Device.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UPower.KbdBacklight.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UPower.Wakeups.xml
+usr/share/dbus-1/interfaces/org.freedesktop.UPower.xml
+usr/share/dbus-1/system-services/
+usr/share/dbus-1/system-services/org.freedesktop.UPower.service
+usr/share/dbus-1/system.d/
+usr/share/dbus-1/system.d/org.freedesktop.UPower.conf
+usr/share/gir-1.0/
+usr/share/gir-1.0/UPowerGlib-1.0.gir
+usr/share/locale/
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/upower.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/upower.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/upower.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/upower.mo
+var/
+var/lib/
+var/lib/upower/

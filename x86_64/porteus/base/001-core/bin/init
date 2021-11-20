@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Only root can run this"

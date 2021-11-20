@@ -1,0 +1,13 @@
+## Functions for CLI program dialog
+. gettext.sh
+
+#################################################################
+# mkyesno
+# Create a yes/no dialog box in dialog
+#################################################################
+yesno(){
+dialog --backtitle "$1" \
+--title "$2" \
+--yesno "$3" $4 $5 
+}
+

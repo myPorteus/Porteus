@@ -1,0 +1,47 @@
+PACKAGE NAME:     sysfsutils-2.1.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/sysfsutils-2.1.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+sysfsutils: sysfsutils (Utilities for the sysfs filesystem)
+sysfsutils:
+sysfsutils: The purpose of this package is to provide a set of utilities for
+sysfsutils: interfacing with sysfs, a virtual filesystem in Linux kernel versions
+sysfsutils: 2.6+ that provides a tree of system devices. While a filesystem is a
+sysfsutils: very useful interface, a library (libsysfs) is also included that
+sysfsutils: will hopefully make it easier for applications to query system
+sysfsutils: devices and their attributes.
+sysfsutils:
+sysfsutils:
+sysfsutils:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libsysfs.so.2.0.1
+usr/
+usr/bin/
+usr/bin/dlist_test
+usr/bin/get_device
+usr/bin/get_driver
+usr/bin/get_module
+usr/bin/systool
+usr/doc/
+usr/doc/sysfsutils-2.1.0/
+usr/doc/sysfsutils-2.1.0/AUTHORS
+usr/doc/sysfsutils-2.1.0/COPYING
+usr/doc/sysfsutils-2.1.0/CREDITS
+usr/doc/sysfsutils-2.1.0/NEWS
+usr/doc/sysfsutils-2.1.0/README
+usr/doc/sysfsutils-2.1.0/TODO
+usr/doc/sysfsutils-2.1.0/libsysfs.txt
+usr/include/
+usr/include/sysfs/
+usr/include/sysfs/dlist.h
+usr/include/sysfs/libsysfs.h
+usr/lib64/
+usr/man/
+usr/man/man1/
+usr/man/man1/systool.1.gz

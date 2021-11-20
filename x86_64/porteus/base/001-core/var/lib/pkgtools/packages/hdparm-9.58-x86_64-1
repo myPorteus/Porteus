@@ -1,0 +1,41 @@
+PACKAGE NAME:     hdparm-9.58-x86_64-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/hdparm-9.58-x86_64-1.txz
+PACKAGE DESCRIPTION:
+hdparm: hdparm (read/set hard drive parameters)
+hdparm:
+hdparm: hdparm provides a command line interface to various hard disk ioctls
+hdparm: supported by the Linux ATA/IDE device driver subsystem. This may be
+hdparm: required to enable higher-performing disk modes.
+hdparm:
+hdparm: hdparm was written by Mark Lord.
+hdparm:
+hdparm: Homepage: https://sourceforge.net/projects/hdparm/
+hdparm:
+hdparm:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/hdparm
+usr/
+usr/doc/
+usr/doc/hdparm-9.58/
+usr/doc/hdparm-9.58/LICENSE.TXT
+usr/doc/hdparm-9.58/README.acoustic
+usr/doc/hdparm-9.58/contrib/
+usr/doc/hdparm-9.58/contrib/README
+usr/doc/hdparm-9.58/contrib/buildit.empeg
+usr/doc/hdparm-9.58/contrib/fix_standby
+usr/doc/hdparm-9.58/contrib/idectl
+usr/doc/hdparm-9.58/contrib/make_bad_sector.c
+usr/doc/hdparm-9.58/contrib/ultrabayd
+usr/doc/hdparm-9.58/contrib/wdidle3_trace.txt
+usr/doc/hdparm-9.58/hdparm.lsm
+usr/man/
+usr/man/man8/
+usr/man/man8/hdparm.8.gz
+usr/sbin/

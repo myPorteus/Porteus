@@ -1,0 +1,23 @@
+PACKAGE NAME:     httpfs2-0.1.5-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/httpfs2-0.1.5-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+httpfs2: httpfs2 (Mount http servers)
+httpfs2:
+httpfs2: FUSE filesystem for mounting files from http servers.
+httpfs2: httpfs2 is a FUSE based filesystem for mounting http or https
+httpfs2: URLS as files in the filesystem. There is no notion of listable  
+httpfs2: directories in http so only a single URL can be mounted. 
+httpfs2: The server must be able to send byte ranges.
+httpfs2:
+httpfs2:
+httpfs2:
+httpfs2: https://sourceforge.net/projects/httpfs/files/httpfs2/
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/httpfs2

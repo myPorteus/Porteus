@@ -1,0 +1,41 @@
+PACKAGE NAME:     libvdpau-1.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libvdpau-1.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libvdpau: libvdpau (VDPAU wrapper library)
+libvdpau:
+libvdpau: This package contains the libvdpau wrapper library and the
+libvdpau: libvdpau_trace debugging library, along with the header files needed
+libvdpau: to build VDPAU applications. To actually use a VDPAU device, you need
+libvdpau: a vendor-specific implementation library, like the one shipped with
+libvdpau: Nvidia's binary graphics driver.
+libvdpau:
+libvdpau: Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+libvdpau:
+libvdpau:
+FILE LIST:
+./
+etc/
+etc/profile.d/
+etc/profile.d/vdpau.csh.new
+etc/profile.d/vdpau.sh.new
+etc/vdpau_wrapper.cfg.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libvdpau-1.4/
+usr/doc/libvdpau-1.4/AUTHORS
+usr/doc/libvdpau-1.4/COPYING
+usr/include/
+usr/include/vdpau/
+usr/include/vdpau/vdpau.h
+usr/include/vdpau/vdpau_x11.h
+usr/lib64/
+usr/lib64/libvdpau.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/vdpau.pc
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_trace.so.1.0.0

@@ -1,0 +1,13 @@
+#!/bin/bash
+# Start desktop linked to /etc/X11/xinit/xinitrc:
+
+login=`egrep -o " login=[^ ]+" /proc/cmdline | cut -d= -f2`
+if [ "$login" ]; then
+    while [ 1 ]; do
+	su $login - -c ". /etc/profile && /usr/bin/startx -- vt7 > /dev/null 2>&1"
+    done
+else
+    while [ 1 ]; do
+	su guest - -c ". /etc/profile && /usr/bin/startx -- vt7 > /dev/null 2>&1"
+    done
+fi

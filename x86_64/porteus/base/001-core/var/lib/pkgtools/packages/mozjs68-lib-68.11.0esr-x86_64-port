@@ -1,0 +1,14 @@
+PACKAGE NAME:     mozjs68-lib-68.11.0esr-x86_64-port
+COMPRESSED PACKAGE SIZE:     5.5M
+UNCOMPRESSED PACKAGE SIZE:     24M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/mozjs68-lib-68.11.0esr-x86_64-port.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/libmozjs-68.so
+usr/lib64/libmozjs-68.so.0
+usr/lib64/libmozjs-68.so.0.0.0

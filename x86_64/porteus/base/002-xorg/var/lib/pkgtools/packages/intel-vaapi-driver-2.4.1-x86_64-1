@@ -1,0 +1,32 @@
+PACKAGE NAME:     intel-vaapi-driver-2.4.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     904K
+UNCOMPRESSED PACKAGE SIZE:     7.8M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/intel-vaapi-driver-2.4.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+intel-vaapi-driver: intel-vaapi-driver (VA driver for Intel G45 & HD Graphics family)
+intel-vaapi-driver:
+intel-vaapi-driver: intel-vaapi-driver is the VA-API implementation for Intel G45
+intel-vaapi-driver: chipsets and Intel HD Graphics for Intel Core processor family.
+intel-vaapi-driver:
+intel-vaapi-driver: Homepage: https://01.org/linuxmedia/vaapi
+intel-vaapi-driver:
+intel-vaapi-driver:
+intel-vaapi-driver:
+intel-vaapi-driver:
+intel-vaapi-driver:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/intel-vaapi-driver-2.4.1/
+usr/doc/intel-vaapi-driver-2.4.1/AUTHORS
+usr/doc/intel-vaapi-driver-2.4.1/COPYING
+usr/doc/intel-vaapi-driver-2.4.1/NEWS
+usr/doc/intel-vaapi-driver-2.4.1/README
+usr/doc/intel-vaapi-driver-2.4.1/README.md
+usr/lib64/
+usr/lib64/dri/
+usr/lib64/dri/i965_drv_video.la
+usr/lib64/dri/i965_drv_video.so

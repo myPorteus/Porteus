@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Porteus GUI helper
+Comment=Porteus GUI helper
+Exec=/opt/porteus-scripts/xorg/gui-autostart
+

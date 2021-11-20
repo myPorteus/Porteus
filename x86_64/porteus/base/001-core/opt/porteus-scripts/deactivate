@@ -1,0 +1,5 @@
+#!/bin/sh
+# Deactivate modules on the fly.
+# Author: brokenman
+
+/opt/porteus-scripts/modules-activation deactivate "$@"

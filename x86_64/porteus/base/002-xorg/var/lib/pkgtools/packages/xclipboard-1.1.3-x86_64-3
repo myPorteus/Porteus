@@ -1,0 +1,38 @@
+PACKAGE NAME:     xclipboard-1.1.3-x86_64-3
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xclipboard-1.1.3-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xclipboard: xclipboard (X11 clipboard utility)
+xclipboard:
+xclipboard: xclipboard is used to collect and display text selections that are
+xclipboard: sent to the CLIPBOARD by other clients. It is typically used to
+xclipboard: save CLIPBOARD selections for later use. It stores each CLIPBOARD
+xclipboard: selection as a separate string, each of which can be selected.
+xclipboard:
+xclipboard:
+xclipboard:
+xclipboard:
+xclipboard:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/app-defaults/
+etc/X11/app-defaults/XClipboard
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xclipboard
+usr/bin/xcutsel
+usr/doc/
+usr/doc/xclipboard-1.1.3/
+usr/doc/xclipboard-1.1.3/COPYING
+usr/doc/xclipboard-1.1.3/ChangeLog
+usr/doc/xclipboard-1.1.3/INSTALL
+usr/doc/xclipboard-1.1.3/README
+usr/man/
+usr/man/man1/
+usr/man/man1/xclipboard.1.gz
+usr/man/man1/xcutsel.1.gz

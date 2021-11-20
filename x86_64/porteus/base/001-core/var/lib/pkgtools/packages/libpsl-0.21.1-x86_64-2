@@ -1,0 +1,64 @@
+PACKAGE NAME:     libpsl-0.21.1-x86_64-2
+COMPRESSED PACKAGE SIZE:     144K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/libpsl-0.21.1-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libpsl: libpsl (C library to handle the Public Suffix List)
+libpsl:
+libpsl: A Public Suffix List is a collection of Top Level Domains (TLDs)
+libpsl: suffixes. TLDs include Global Top Level Domains (gTLDs) like .com and
+libpsl: .net; Country Top Level Domains (ccTLDs) like .de and .cn; and Brand
+libpsl: Top Level Domains like .apple and .google. Brand TLDs allows users to
+libpsl: register their own top level domain that exist at the same level as
+libpsl: ICANN's gTLDs. Brand TLDs are sometimes referred to as Vanity Domains.
+libpsl:
+libpsl: Homepage: https://github.com/rockdaboot/libpsl
+libpsl:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/psl
+usr/bin/psl-make-dafsa
+usr/doc/
+usr/doc/libpsl-0.21.1/
+usr/doc/libpsl-0.21.1/AUTHORS
+usr/doc/libpsl-0.21.1/COPYING
+usr/doc/libpsl-0.21.1/LICENSE
+usr/doc/libpsl-0.21.1/NEWS
+usr/doc/libpsl-0.21.1/README
+usr/include/
+usr/include/libpsl.h
+usr/lib64/
+usr/lib64/libpsl.so.5.3.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libpsl.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/psl-make-dafsa.1.gz
+usr/man/man1/psl.1.gz
+usr/man/man3/
+usr/man/man3/libpsl.3.gz
+usr/share/
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libpsl/
+usr/share/gtk-doc/html/libpsl/api-index-full.html
+usr/share/gtk-doc/html/libpsl/home.png
+usr/share/gtk-doc/html/libpsl/index.html
+usr/share/gtk-doc/html/libpsl/left-insensitive.png
+usr/share/gtk-doc/html/libpsl/left.png
+usr/share/gtk-doc/html/libpsl/libpsl-Public-Suffix-List-functions.html
+usr/share/gtk-doc/html/libpsl/libpsl.devhelp2
+usr/share/gtk-doc/html/libpsl/libpsl.html
+usr/share/gtk-doc/html/libpsl/right-insensitive.png
+usr/share/gtk-doc/html/libpsl/right.png
+usr/share/gtk-doc/html/libpsl/style.css
+usr/share/gtk-doc/html/libpsl/up-insensitive.png
+usr/share/gtk-doc/html/libpsl/up.png
+usr/share/publicsuffix/
+usr/share/publicsuffix/public_suffix_list.dat
+usr/share/publicsuffix/test_psl.txt

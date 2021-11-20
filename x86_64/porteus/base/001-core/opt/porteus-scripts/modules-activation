@@ -1,0 +1,167 @@
+#!/bin/sh
+# Activate modules on the fly.
+# Author: brokenman
+
+# Check parameters
+for var in "$@"; do
+	if [ "$var" = "activate" ]; then
+		ACTIVATION="$var"
+		AUFSTYPE="insert"
+	elif [ "$var" = "deactivate" ]; then
+		ACTIVATION="$var"
+		AUFSTYPE="remove"				
+	elif [ "$var" = "-o" ]; then
+		RECURSIVEACTIVATION="-maxdepth 1"
+	fi
+done
+
+# Exit if no argument is provided:
+case $1 in
+	-h|--help|"")
+    echo "Usage:"
+    echo "$0 module.xzm"
+    echo "$0 module1.xzm module2.xzm module3.xzm"
+    echo "$0 /folder/with_modules"
+    echo
+    if [ "$ACTIVATION" = "activate" ]; then
+    	echo "To enable recursive activation of folders, run activate with '-o' flag:"
+    else
+    	echo "To disable recursive activation of folders, run deactivate with '-o' flag:"
+    fi
+    echo "$0 /folder/with_modules -o"
+    exit
+    ;;
+esac
+
+# Switch to root:
+if [ `whoami` != root ]; then
+    # Get full paths of the modules (needed after switching to root):
+    for x in "$@"; do
+		if [ "$x" = "activate" ] || [ "$x" = "deactivate" ] || [ "$x" = "-o" ]; then
+    		continue 
+		elif [ -d "$x" ]; then
+	    	for y in `find "$x" $RECURSIVEACTIVATION -name "*.xzm"`; do LIST="$LIST `readlink -f $y`"; done
+		else
+			CURRENTFILE=`readlink -f "$x"`			
+			if [ -z "$LIST" ]; then 
+				LIST="$CURRENTFILE"
+			else
+				LIST="$LIST $CURRENTFILE"
+			fi
+		fi
+    done
+
+    # Re-execute this script with super user privileges:
+    if [ "$DISPLAY" ]; then
+    	/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/modules-activation "$ACTIVATION" "$LIST"
+		exit
+	else
+		echo "Please enter root's password below:"
+		su -c "/opt/porteus-scripts/modules-activation $ACTIVATION '$LIST'"
+		exit
+    fi
+fi
+
+# Clear old cache files if exist:
+CACHES=/mnt/live/tmp/caches
+[ -d $CACHES ] && rm -r $CACHES
+mkdir $CACHES
+
+# Arch specific variables:
+if [ `uname -m|grep "x86_64"` ]; then
+    lib=lib64
+else
+    lib=lib
+fi
+
+# Insert module(s) to /union.
+for x in "$@"; do
+	if [ "$x" = "-o" ] || [ "$x" = "activate" ] || [ "$x" = "deactivate" ]; then
+		continue
+	fi
+	
+	targetmod=$(readlink -f "$x")
+		
+	#TODO: fix folder with spaces loading
+	# If we are in GUI then use 'xactivate' as a helper:
+	if [ "$DISPLAY" ] && [ -z $qmode ]; then
+		if [ -d "$x" ]; then
+			for y in `find "$x" $RECURSIVEACTIVATION -name "*.xzm"`; do /opt/porteus-scripts/xorg/x$ACTIVATION `readlink -f $y`; done
+		else						
+			/opt/porteus-scripts/xorg/x$ACTIVATION "$targetmod"
+		fi
+	else
+		if [ -d "$x" ]; then
+			for y in `find "$x" $RECURSIVEACTIVATION -name "*.xzm"`; do /opt/porteus-scripts/xorg/aufs-$AUFSTYPE `readlink -f $y`; done
+		else			
+			/opt/porteus-scripts/xorg/aufs-$AUFSTYPE "$targetmod"
+		fi		
+	fi	
+done
+
+# Rebuild the system configuration cache:
+if [ -e $CACHES/ldconfig ]; then
+    echo "Updating shared library links:  /sbin/ldconfig"
+    /sbin/ldconfig
+else
+    exit 0
+fi
+
+if [ -e $CACHES/mime ]; then
+    echo "Updating MIME database:  /usr/bin/update-mime-database /usr/share/mime"
+    /usr/bin/update-mime-database /usr/share/mime > /dev/null 2>&1
+fi
+
+for x in `cat $CACHES/icons 2>/dev/null`; do
+    echo "Updating icon-theme.cache: /usr/bin/gtk-update-icon-cache -t -f $x"
+    /usr/bin/gtk-update-icon-cache -t -f $x > /dev/null 2>&1
+done
+
+if [ -e $CACHES/fonts ]; then
+    echo "Updating X font indexes:  /usr/bin/fc-cache -f"
+    /usr/bin/fc-cache -f
+fi
+
+if [ -e $CACHES/schemas ]; then
+    echo "Updating glib schemas: /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas"
+    /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas
+fi
+
+if [ -e $CACHES/gio ]; then
+    echo "Updating GIO cache: /usr/bin/gio-querymodules /usr/$lib/gio/modules"
+    /usr/bin/gio-querymodules /usr/$lib/gio/modules
+fi
+
+if [ -e $CACHES/immodules ]; then
+    echo "Updating GTK immodules: /usr/bin/update-gtk-immodules"
+    [ -e /usr/bin/update-gtk-immodules-3.0 ] && /usr/bin/update-gtk-immodules-3.0
+	[ -e /usr/bin/update-gtk-immodules ] && /usr/bin/update-gtk-immodules
+fi
+
+if [ -e $CACHES/certs ]; then
+    echo "Updating certificates in /etc/ssl/certs: /usr/sbin/update-ca-certificates --fresh"
+    /usr/sbin/update-ca-certificates --fresh >/dev/null 2>&1
+fi
+
+# Multilib support for x86_64 arch:
+if [ $lib = lib64 ]; then
+    if [ -e $CACHES/pixbuf ]; then
+	echo "Updating GDK pixbuf loaders: /usr/bin/update-gdk-pixbuf-loaders"
+	/usr/bin/update-gdk-pixbuf-loaders
+    fi
+    if [ -e $CACHES/pango ]; then
+	echo "Updating Pango querymodules: /usr/bin/update-pango-querymodules"
+	/usr/bin/update-pango-querymodules
+    fi
+fi
+
+# Start services which may be provided by modules:
+for SCRIPT in `cat /mnt/live/tmp/caches/services 2>/dev/null`; do $SCRIPT start; done
+
+# Update desktop menu:
+if [ "$ACTIVATION" == "activate" ]; then
+	[ -e $CACHES/desktop-install ] && /opt/porteus-scripts/xorg/update-menu install 2>/dev/null
+fi
+[ -e $CACHES/desktop-uninstall ] && /opt/porteus-scripts/xorg/update-menu uninstall 2>/dev/null  # In case when we are deactivating through activation :)
+
+sleep 1

@@ -1,0 +1,60 @@
+PACKAGE NAME:     brotli-1.0.7-x86_64-1
+COMPRESSED PACKAGE SIZE:     376K
+UNCOMPRESSED PACKAGE SIZE:     2.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/brotli-1.0.7-x86_64-1.txz
+PACKAGE DESCRIPTION:
+brotli: brotli (Brotli compression format)
+brotli:
+brotli: Brotli is a general purpose lossless compression algorithm that
+brotli: compresses data using a combination of a modern variant of the LZ77
+brotli: algorithm, Huffman coding, and second order context modeling, with a
+brotli: compression ratio comparable to the best currently available general
+brotli: purpose compression methods. It is similar in speed with deflate but
+brotli: offers more dense compression.
+brotli:
+brotli: Homepage: https://github.com/google/brotli/
+brotli:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/brotli
+usr/doc/
+usr/doc/brotli-1.0.7/
+usr/doc/brotli-1.0.7/BUILD
+usr/doc/brotli-1.0.7/CONTRIBUTING.md
+usr/doc/brotli-1.0.7/LICENSE
+usr/doc/brotli-1.0.7/README
+usr/doc/brotli-1.0.7/README.md
+usr/doc/brotli-1.0.7/WORKSPACE
+usr/include/
+usr/include/brotli/
+usr/include/brotli/decode.h
+usr/include/brotli/encode.h
+usr/include/brotli/port.h
+usr/include/brotli/types.h
+usr/lib64/
+usr/lib64/libbrotlicommon.so.1.0.7
+usr/lib64/libbrotlidec.so.1.0.7
+usr/lib64/libbrotlienc.so.1.0.7
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libbrotlicommon.pc
+usr/lib64/pkgconfig/libbrotlidec.pc
+usr/lib64/pkgconfig/libbrotlienc.pc
+usr/lib64/python3.8/
+usr/lib64/python3.8/site-packages/
+usr/lib64/python3.8/site-packages/Brotli-1.0.7-py3.8.egg-info/
+usr/lib64/python3.8/site-packages/Brotli-1.0.7-py3.8.egg-info/PKG-INFO
+usr/lib64/python3.8/site-packages/Brotli-1.0.7-py3.8.egg-info/SOURCES.txt
+usr/lib64/python3.8/site-packages/Brotli-1.0.7-py3.8.egg-info/dependency_links.txt
+usr/lib64/python3.8/site-packages/Brotli-1.0.7-py3.8.egg-info/top_level.txt
+usr/lib64/python3.8/site-packages/__pycache__/
+usr/lib64/python3.8/site-packages/__pycache__/brotli.cpython-38.pyc
+usr/lib64/python3.8/site-packages/_brotli.cpython-38-x86_64-linux-gnu.so
+usr/lib64/python3.8/site-packages/brotli.py
+usr/man/
+usr/man/man1/
+usr/man/man1/brotli.1.gz

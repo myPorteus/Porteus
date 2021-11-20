@@ -1,0 +1,61 @@
+PACKAGE NAME:     fuse3-3.9.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     550K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/fuse3-3.9.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+fuse3: fuse3 (Filesystem in Userspace v3)
+fuse3:
+fuse3: FUSE is a simple interface for userspace programs to export a virtual
+fuse3: filesystem to the Linux kernel. FUSE also aims to provide a secure
+fuse3: method for non privileged users to create and mount their own
+fuse3: filesystem implementations.
+fuse3:
+fuse3: Homepage: https://github.com/libfuse/libfuse
+fuse3:
+fuse3:
+fuse3:
+FILE LIST:
+./
+bin/
+etc/
+etc/fuse.conf.new
+etc/rc.d/
+etc/rc.d/rc.fuse3.new
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/99-fuse3.rules
+sbin/
+usr/
+usr/bin/
+usr/bin/fusermount3
+usr/doc/
+usr/doc/fuse-3.9.2/
+usr/doc/fuse-3.9.2/AUTHORS
+usr/doc/fuse-3.9.2/ChangeLog.rst
+usr/doc/fuse-3.9.2/GPL2.txt
+usr/doc/fuse-3.9.2/LICENSE
+usr/doc/fuse-3.9.2/README.md
+usr/doc/fuse-3.9.2/kernel.txt
+usr/include/
+usr/include/fuse3/
+usr/include/fuse3/cuse_lowlevel.h
+usr/include/fuse3/fuse.h
+usr/include/fuse3/fuse_common.h
+usr/include/fuse3/fuse_log.h
+usr/include/fuse3/fuse_lowlevel.h
+usr/include/fuse3/fuse_opt.h
+usr/lib64/
+usr/lib64/libfuse3.so.3.9.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/fuse3.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/fusermount3.1.gz
+usr/man/man8/
+usr/man/man8/mount.fuse3.8.gz
+usr/sbin/
+usr/sbin/mount.fuse3

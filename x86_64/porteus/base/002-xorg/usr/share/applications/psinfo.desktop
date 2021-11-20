@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Porteus System Info
+Name[ru]=Системная информация Porteus
+Name[ru]=Системная информация Porteus
+Exec=psu /opt/porteus-scripts/xpsinfo
+Icon=dialog-information-symbolic
+Terminal=false
+Type=Application
+Categories=Application;System;
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+# find and export VDPAU_DRIVER for mpv
+export VDPAU_DRIVER="$(grep -i "vdpau" /var/log/Xorg.0.log | awk -F"driver: " '{print $2}')"
+## uncomment  the echos for debug purposes?
+if [ "$VDPAU_DRIVER" ]; then
+# 	echo "$VDPAU_DRIVER"
+	celluloid --mpv-options="--hwdec=auto --video-sync=display-resample --audio-file-auto=fuzzy" "$@" &
+	exit 0	
+else
+#	echo "No vdpau driver found for this card."
+	celluloid --mpv-options="--video-sync=display-resample --audio-file-auto=fuzzy" "$@" &
+	exit 0
+fi

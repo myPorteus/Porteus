@@ -1,0 +1,511 @@
+#!/bin/sh
+# tlp - adjust power settings
+#
+# Copyright (c) 2019 Thomas Koch <linrunner at gmx.net> and others.
+# This software is licensed under the GPL v2 or later.
+
+# shellcheck disable=SC2086
+
+# --- Source libraries
+
+for lib in /usr/share/tlp/tlp-func-base /usr/share/tlp/func.d/[0-9][0-9]*; do
+    # shellcheck disable=SC1090
+    . $lib || exit 70
+done
+
+# --- Constants
+
+readonly DEFAULT_USB_AUTOSUSPEND_DISABLE_ON_SHUTDOWN=0
+readonly DEFAULT_RESTORE_THRESHOLDS_ON_BAT=0
+
+# --- Subroutines
+
+apply_common_settings () { # apply settings common to all modes
+                           # $1: 0=ac mode, 1=battery mode
+    set_laptopmode $1
+    set_dirty_parms $1
+    set_scaling_governor $1
+    set_scaling_min_max_freq $1
+    set_cpu_hwp_pref $1
+    set_cpu_perf_pct $1
+    set_cpu_boost_all $1
+    set_sched_powersave $1
+    set_nmi_watchdog
+    set_phc_controls $1
+    set_energy_perf_policy $1
+    set_disk_apm_level $1
+    set_disk_spindown_timeout $1
+    set_disk_iosched
+    set_sata_link_power $1
+    set_ahci_runtime_pm $1
+    set_pcie_aspm $1
+    set_intel_gpu_min_max_boost_freq $1
+    set_radeon_profile $1
+    set_wifi_power_mode $1
+    disable_wake_on_lan
+    set_sound_power_mode $1
+    set_runtime_pm $1
+
+    return 0
+}
+
+show_usage () {
+    echo "Usage: tlp start|true|bat|false|ac|usb|bayoff|chargeonce|discharge|setcharge|fullcharge|recalibrate|diskid" 1>&2
+}
+
+parse_args () { # parse command-line arguments
+    # $@:       arguments to parse
+    # retval:   $_cmd:  command;
+    #           $_cmd2: subcommand;
+    #           $_carg1,
+    #           $_carg2,
+    #           $_carg3: command arguments
+
+    # parsing control: 'nil' means that the element is still expected
+    _cmd="nil"
+    _cmd2="nil"
+    _carg1="nil"
+    _carg2="nil"
+    _carg3="nil"
+
+    # iterate arguments until exhausted or delimiter '--' reached
+    while [ $# -gt 0 ]; do
+        if [ "$1" = "--" ]; then
+            break;
+
+        elif [ "$_cmd" = "nil" ]; then
+            # command
+            case $1 in
+                ac|auto|bat|bayoff|false|diskid|resume|suspend|start|true|usb)
+                    # commands without further arguments
+                    _cmd="$1"
+                    _cmd2=""
+                    _carg1=""
+                    _carg2=""
+                    _carg3=""
+                    ;;
+
+                chargeonce|discharge|fullcharge|recalibrate)
+                    # commands with one or no arguments
+                    _cmd="$1"
+                    _cmd2=""
+                    _carg2=""
+                    _carg3=""
+                    ;;
+
+                setcharge)
+                    # command with up to three arguments
+                    _cmd="$1"
+                    _cmd2=""
+                    ;;
+
+                init)
+                    # command with subcommand and no arguments
+                    _cmd="$1"
+                    _carg1=""
+                    _carg2=""
+                    _carg3=""
+                    ;;
+
+                stat)
+                    # unsupported command
+                    echo "Error: 'tlp stat' no longer supported, use 'tlp-stat' instead."  1>&2
+                    exit 3
+                    ;;
+
+                noop)
+                    # no operation
+                    _cmd="$1"
+                    _cmd2=""
+                    ;;
+
+                *)
+                    # unknown command
+                    echo "Error: unknown command \"$1\"."  1>&2
+                    show_usage
+                    exit 3
+                    ;;
+            esac
+
+        elif [ "$_cmd2" = "nil" ]; then
+            # subcommand
+            case $1 in
+                start|stop|restart|force-reload)
+                    _cmd2="$1"
+                    ;;
+
+                *) # unknown subcommand
+                    echo "Usage: tlp init {start|stop|restart|force-reload}" >&2
+                    exit 3
+                    ;;
+            esac
+
+        elif [ "$_carg1" = "nil" ]; then
+            # first command argument
+            _carg1="$1"
+
+        elif [ "$_carg2" = "nil" ]; then
+            # second command argument
+            _carg2="$1"
+
+        elif [ "$_carg3" = "nil" ]; then
+            # third command argument
+            _carg3="$1"
+
+        fi
+
+        shift # next argument
+    done # while arguments
+
+    if  [ "$_cmd" = "nil" ]; then
+        # no command parsed
+        show_usage
+        exit 3
+    fi
+
+    # clear missing arguments
+    [ "$_carg1" = "nil" ] && _carg1=""
+    [ "$_carg2" = "nil" ] && _carg2=""
+    [ "$_carg3" = "nil" ] && _carg3=""
+
+    return 0
+}
+
+# --- MAIN
+
+read_defaults
+parse_args "$@"
+parse_args4config "$@"
+check_tlp_enabled 1 || exit 1
+add_sbin2path
+
+check_laptop_mode_tools
+
+# get current power state
+get_power_state; pwrmode=$?
+get_manual_mode
+
+if [ -z "$_cmd2" ]; then
+    echo_debug "run" "+++ $_cmd ($TLPVER) ++++++++++++++++++++++++++++++++++++++++"
+else
+    echo_debug "run" "+++ $_cmd $_cmd2 ($TLPVER) ++++++++++++++++++++++++++++++++++++++++"
+fi
+
+# shellcheck disable=SC2154
+if [ -n "$_addpath" ]; then
+    # shellcheck disable=SC2154
+    echo_debug "path" "PATH=$_oldpath[$_addpath]"
+else
+    # shellcheck disable=SC2154
+    echo_debug "path" "PATH=$_oldpath"
+fi
+
+# determine new power state
+case "$_cmd" in
+    init|start)
+        # discard manual mode
+        clear_manual_mode
+        ;;
+
+    auto|resume)
+        # if manual mode is set, use instead of current power state
+        # shellcheck disable=SC2154
+        [ "$_manual_mode" != "none" ] && pwrmode=$_manual_mode
+        ;;
+
+    true|bat)
+        pwrmode=1
+        set_manual_mode 1
+        ;;
+
+    false|ac)
+        pwrmode=0
+        set_manual_mode 0
+        ;;
+esac
+
+# shellcheck disable=SC2154
+case "$_syspwr" in
+    0) echo_debug "run" "power_source=ac" ;;
+    1) echo_debug "run" "power_source=bat" ;;
+    *) echo_debug "run" "power_source=unknown ($_syspwr)" ;;
+esac
+
+case "$_manual_mode" in
+    0) echo_debug "run" "manual_mode=ac" ;;
+    1) echo_debug "run" "manual_mode=bat" ;;
+    *) echo_debug "run" "manual_mode=none" ;;
+esac
+
+case "$pwrmode" in
+    0) echo_debug "run" "power_mode=ac" ;;
+    1) echo_debug "run" "power_mode=bat" ;;
+    *) echo_debug "run" "power_mode=unknown ($pwrmode)" ;;
+esac
+
+exitcode=0
+
+case "$_cmd" in
+    init) # system initialization/shutdown: sysv, upstart, systemd, ...
+        check_root
+
+        # try to obtain lock (with timeout)
+        locked=0
+        if lock_tlp; then
+            locked=1
+        else
+            echo "Failed to get lock, continuing anyway." 1>&2
+        fi
+
+        # do init business ...
+        case $_cmd2 in
+            start)
+                # apply power save settings
+                compare_and_save_power_state $pwrmode
+                echo -n "Applying power save settings..."
+                apply_common_settings $pwrmode
+                poweroff_drivebay $pwrmode 0
+                [ "$X_TLP_USB_MODE" = "1" ] && set_usb_suspend 0 auto
+                echo "done."
+
+                # apply battery settings
+                echo -n "Setting battery charge thresholds..."
+                set_charge_thresholds
+                echo "done."
+
+                # apply radio states
+                set_radio_device_states start
+                ;;
+
+            restart|force-reload)
+                # apply power save settings
+                compare_and_save_power_state $pwrmode
+                echo -n "Applying power save settings..."
+                apply_common_settings $pwrmode
+                poweroff_drivebay $pwrmode 0
+                [ "$X_TLP_USB_MODE" = "1" ] && set_usb_suspend 0 auto
+                echo "done."
+
+                # apply battery settings
+                echo -n "Setting battery charge thresholds..."
+                set_charge_thresholds
+                echo "done."
+                ;;
+
+            stop)
+                # remove usb startup flag
+                [ -f $USB_DONE ] && rm $USB_DONE
+
+                # clear saved power state
+                clear_saved_power_state
+
+                # apply ac settings for faster shutdown
+                echo -n "Applying power save settings..."
+                apply_common_settings 0
+                poweroff_drivebay $pwrmode 0
+                echo "done."
+
+                # disable usb autosuspend if configured
+                if [ "${USB_AUTOSUSPEND_DISABLE_ON_SHUTDOWN:-${DEFAULT_USB_AUTOSUSPEND_DISABLE_ON_SHUTDOWN}}" = "1" ]; then
+                    echo -n "Disabling usb autosuspend..."
+                    set_usb_suspend 0 on
+                    echo "done."
+                fi
+
+                # apply radio states
+                set_radio_device_states stop
+                ;;
+
+            *)
+                echo "Usage: tlp init {start|stop|restart|force-reload}" >&2
+                exit 3
+                ;;
+        esac
+
+        # unlock if necessary
+        [ $locked -eq 0 ] || unlock_tlp
+        ;;
+
+    auto) # set mode depending on state (called by udev rule)
+          # -- but only if not previously run for the same power state
+          # rationale: filter out duplicate power_supply udev events
+        check_root
+        if lock_tlp_nb; then
+
+            if compare_and_save_power_state $pwrmode; then
+                apply_common_settings $pwrmode
+                poweroff_drivebay $pwrmode 0
+                set_radio_device_states $pwrmode
+                if [ "${RESTORE_THRESHOLDS_ON_BAT:-${DEFAULT_RESTORE_THRESHOLDS_ON_BAT}}" = "1" ] \
+                    && [ "$pwrmode" = "1" ]; then
+                    set_charge_thresholds
+                fi
+            fi
+            unlock_tlp
+        fi
+        ;;
+
+    start) # set mode depending on state (interactive mode)
+        check_root
+        if lock_tlp; then
+            compare_and_save_power_state $pwrmode
+            apply_common_settings $pwrmode
+            poweroff_drivebay $pwrmode 0
+            set_usb_suspend 0 auto
+            set_charge_thresholds
+            set_radio_device_states $pwrmode
+            unlock_tlp
+
+            echo_started_mode $pwrmode
+        else
+            echo_tlp_locked
+        fi
+        ;;
+
+    true|bat) # set battery power mode
+        check_root
+        if lock_tlp; then
+            compare_and_save_power_state 1
+            apply_common_settings 1
+            poweroff_drivebay $pwrmode 0
+            [ "$X_TLP_USB_MODE" = "1" ] && set_usb_suspend 0 auto
+            set_radio_device_states 1
+            unlock_tlp
+
+            echo_started_mode 1
+        else
+            echo_tlp_locked
+        fi
+        ;;
+
+    false|ac) # set ac power mode
+        check_root
+        if lock_tlp; then
+            compare_and_save_power_state 0
+            apply_common_settings 0
+            poweroff_drivebay $pwrmode 0
+            [ "$X_TLP_USB_MODE" = "1" ] && set_usb_suspend 0 auto
+            set_radio_device_states 0
+            unlock_tlp
+
+            echo_started_mode 0
+        else
+            echo_tlp_locked
+        fi
+        ;;
+
+    suspend) # handle suspend/hibernate
+        check_root
+        if lock_tlp; then
+            save_device_states "bluetooth wwan"
+
+            apply_common_settings 0
+            suspend_drivebay $pwrmode
+            unlock_tlp
+        fi
+        ;;
+
+    resume) # handle resume
+        check_root
+        if lock_tlp; then
+            restore_device_states
+
+            compare_and_save_power_state $pwrmode
+            apply_common_settings $pwrmode
+            resume_drivebay $pwrmode
+            unlock_tlp
+        fi
+        ;;
+
+    usb) # Enable usb autosuspend
+        check_root
+        set_usb_suspend 1 auto
+        ;;
+
+    bayoff) # power off drive bay
+        check_root
+        poweroff_drivebay $pwrmode 1
+        ;;
+
+    setcharge) # set charge thresholds (temporarily)
+        check_root
+        setcharge_battery $_carg1 $_carg2 $_carg3
+        exitcode=$?
+        ;;
+
+    fullcharge) # charge battery to 100% (temporarily)
+        if check_ac_power fullcharge; then
+            check_root
+            setcharge_battery 96 100 $_carg1
+            exitcode=$?
+            if [ $exitcode -eq 0 ]; then
+                echo "Charging starts now, keep AC connected."
+            fi
+        else
+            exitcode=2
+        fi
+        ;;
+
+    chargeonce) # charge battery to stop threshold once
+        if check_ac_power chargeonce; then
+            check_root
+            chargeonce_battery $_carg1
+            exitcode=$?
+            if [ $exitcode -eq 0 ]; then
+                echo "Charging starts now, keep AC connected."
+            fi
+        else
+            exitcode=2
+        fi
+        ;;
+
+    discharge) # discharge battery completely (to recalibrate)
+        if check_ac_power discharge; then
+            check_root
+            if lock_tlp_nb tlp_discharge; then
+                discharge_battery $_carg1
+                exitcode=$?
+                unlock_tlp tlp_discharge
+            else
+                echo_discharge_locked
+            fi
+        else
+            exitcode=2
+        fi
+        ;;
+
+    recalibrate) # recalibrate battery, i.e. discharge and charge to 100%
+        if check_ac_power recalibrate; then
+            check_root
+            if lock_tlp_nb tlp_discharge; then
+                setcharge_battery 96 100 $_carg1
+                sleep 1
+                discharge_battery $_carg1
+                exitcode=$?
+                if [ $exitcode -eq 0 ]; then
+                    echo "Charging starts now, for a complete recalibration"
+                    echo "keep AC connected until the battery is fully charged."
+                fi
+                unlock_tlp tlp_discharge
+            else
+                echo_discharge_locked
+            fi
+        else
+            exitcode=2
+        fi
+        ;;
+
+    diskid) # show disk id's
+        show_disk_ids
+        ;;
+
+    noop) # Debug: no operation
+        check_root
+        battery_present DEF
+        echo "Debug: no operation performed."
+        ;;
+esac
+
+exit $exitcode
+
+

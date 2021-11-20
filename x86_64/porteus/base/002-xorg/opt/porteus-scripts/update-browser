@@ -1,0 +1,215 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Author: brokenman@porteus.org
+#
+# This is a starter script to download a live script and update chrome or chromium or firefox or opera or palemoon or basilisk
+# version: 20200308
+
+. /usr/share/porteus/porteus-functions
+get_colors
+
+## Find out architecture
+case `uname -m` in
+	x86_64)
+	ARCH=x86_64
+	SUFFIX=64
+	SARCH=x86_64
+	;;
+	*)
+	ARCH=i686
+	SUFFIX=
+	SARCH=i586
+	;;
+esac
+
+show_help() {
+    echo
+    echo "Download live script from server to update a web browser."
+    echo "usage: $0 <option=-d,-h> <browser option=-g,-c,-f,-o,-p,-b,-n,-F,-P,-y>"
+    echo " options:"
+    echo "  -d : use current directory for build work. "
+    echo "   *note: this option is passed to the live script. "  
+    echo "  -g : google-chrome. "
+    echo "  -c : chromium. "
+    echo "  -f : firefox. "
+    echo "  -o : opera. "
+    echo "  -p : palemoon. "
+    echo "  -b : basilisk. "
+    echo "  -n : netsurf. "
+    echo "  -F : Flashplayer-plugin for firefox, palemoon, basilisk. " 
+    echo "  -P : Pepperflash-plugin for chromium, opera. " 
+    echo "  -y : youtube-dl, terminal program for downloading youtube(and other) videos. " 
+    echo "  -h : show this usage. "
+	echo	
+}
+## Options
+while getopts "dgcfopbnFPyh" opt; do
+case "$opt" in
+
+    d)
+        WD="-d"       
+        ;;
+
+    g)
+        LIVE="chrome"
+        shift "$(($OPTIND -1))"
+        ;;
+  
+    c)
+        LIVE="chromium"
+        shift "$(($OPTIND -1))"
+        ;;
+        
+    f)
+        LIVE="firefox"
+        shift "$(($OPTIND -1))"
+        ;;
+  
+    o)
+        LIVE="opera"
+        shift "$(($OPTIND -1))"
+        ;;
+        
+    p)
+        LIVE="palemoon"
+        shift "$(($OPTIND -1))"
+        ;;
+
+    b)
+        LIVE="basilisk"
+        shift "$(($OPTIND -1))"
+        ;;
+        
+    n)
+        LIVE="netsurf"
+        shift "$(($OPTIND -1))"
+        ;;
+                    
+    F)
+        LIVE="flash"
+        shift "$(($OPTIND -1))"
+        ;;
+                    
+    P)
+        LIVE="pepperflash"
+        shift "$(($OPTIND -1))"
+        ;;
+                    
+    y)
+        LIVE="youtube-dl"
+        shift "$(($OPTIND -1))"
+        ;;            
+
+    h)
+        show_help
+        exit 0
+        ;;
+      
+esac
+done
+
+# If no browser argument given
+if [ "$LIVE" = "" ]; then
+	show_help
+	exit 1
+fi
+
+# Get the server
+SERVER=`awk -F= '/SERVER=/{print$NF}' /etc/porteus.conf`
+LIVESCRIPT="update-$LIVE-live"
+LIVESCRIPTURL="$SERVER/i586/testing/live/$LIVESCRIPT"
+
+# Function to fetch netsurf from bundles
+get_netsurf() {
+	# get netsurf info
+	PKGINFO=$(find /var/lib/pkgtools/packages/netsurf* 2>/dev/null)
+	PKGVER="$(echo $PKGINFO cut -d/ -f6 | cut -d- -f2 )"
+	NETSURF="$(lynx -dump --nonumbers --listonly $SERVER/$SARCH/current/bundles | grep netsurf | cut -d/ -f7)"
+	NETSURL="current/bundles/$NETSURF"
+	SVER=$( echo $NETSURF | cut -d- -f2)
+	echo " Checking if Netsurf is installed."
+	if [ "$PKGINFO" ]; then
+		echo " Netsurf version $txtgreen$PKGVER$rst is installed."
+		if [ "$PKGVER" = "$SVER" ]; then
+			read -p " You may already have the latest version $txtgreen$SVER$rst. Do you still want to continue? [y/n]" -n 1 -r -s && echo
+			[[ $REPLY =~ ^[Nn]$ ]] && exit 0
+			read -p " The latest version in the server is $txtgreen$SVER$rst . Would you like to download it? [y/n]" -n 1 -r -s && echo
+			[[ $REPLY =~ ^[Nn]$ ]] && exit 0
+			download $SERVER/$SARCH/$NETSURL /tmp || { sayerror "Download failed."; exit; }
+			echo
+			echo " Netsurf module is in /tmp, please move it to $txtgreen$MODDIR$rst or somewhere safe outside the live filesystem to survive reboot."
+			echo
+		fi
+	else
+		read -p " The latest version in the server is $txtgreen$SVER$rst . Would you like to download it? [y/n]" -n 1 -r -s && echo
+		[[ $REPLY =~ ^[Nn]$ ]] && exit 0
+		download $SERVER/$SARCH/$NETSURL /tmp || { sayerror "Download failed."; exit; }
+		echo
+		echo " Netsurf module is in $txtgreen/tmp$rst, please move it to $txtgreen$MODDIR$rst "
+		echo " or somewhere safe outside the live filesystem to survive reboot."
+		echo
+	fi
+} 
+
+########## Start checks
+bold "Starting checks ..."
+
+# Root check
+if [ `whoami` != "root" ]; then
+	sayerror "You need to be root to run this script"
+	exit
+		else
+	sayok "User is root."
+fi
+
+# Check for porteus
+is_porteus && sayok "Distro is Porteus" || { sayerror "Distro is not Porteus."; exit; }
+
+# Check for 32bit
+if [ "$ARCH" != "x86_64" ]; then
+	if [ "$LIVE" = "chrome" ] || [ "$LIVE" = "basilisk" ]; then
+		sayerror "32bit is not supported"
+		echo
+		red " $LIVE does not support 32bit. Sorry."
+		exit
+	fi	
+fi
+
+# Check for connection
+is_online_url $SERVER || { red "No internet connection found."; exit; }
+
+# Download the live script unless it's netsurf
+if [ "$LIVE" = "netsurf" ]; then
+	get_netsurf
+else
+	echo "Downloading live script ..."
+	download $LIVESCRIPTURL /tmp || { red "Failed to download live script."; exit 1; }
+	chmod +x /tmp/$LIVESCRIPT
+	mv /tmp/$LIVESCRIPT /usr/local/bin
+	if [ "$LIVE" = "chrome" ] || [ "$LIVE" = "chromium" ]; then
+		/usr/local/bin/$LIVESCRIPT -- $WD
+	else
+		/usr/local/bin/$LIVESCRIPT $WD
+	fi
+fi	
+exit

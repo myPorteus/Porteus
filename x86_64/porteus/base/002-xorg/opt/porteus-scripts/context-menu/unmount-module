@@ -1,0 +1,34 @@
+#!/bin/bash
+# Script to unmount module mounted at /mnt/loop
+# This script is called by thunar service menu
+# Author: Brokenman <brokenman@porteus.org>
+# Modified for lxde by Ahau <ahau@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu "$0 $selection" &
+  exit
+fi
+
+fullpath=${1}
+path=${fullpath%/*}
+mod=`echo $fullpath | rev | cut -d/ -f1 | rev`
+
+if [ -d /mnt/loop ]; then
+	chk=`cut -d" " -f2 /proc/mounts | grep -w /mnt/loop`
+		if [ "$chk" == "" ]; then
+			/usr/share/porteus/gtkdialog.py -p "$mod is not mounted at /mnt/loop" -d warn
+			exit
+				else
+			umount /mnt/loop || /usr/share/porteus/gtkdialog.py -p "/mnt/loop was not unmounted, maybe because it's busy. perhaps a file is open. " -d warn && exit 1
+			/usr/share/porteus/gtkdialog.py -p "/mnt/loop was unmounted" -t 2000
+			exit
+		fi
+		else
+	/usr/share/porteus/gtkdialog.py -p "$mod is not mounted at /mnt/loop" -d warn
+fi
+exit

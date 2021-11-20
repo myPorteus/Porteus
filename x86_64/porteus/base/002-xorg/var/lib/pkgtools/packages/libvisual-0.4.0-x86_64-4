@@ -1,0 +1,89 @@
+PACKAGE NAME:     libvisual-0.4.0-x86_64-4
+COMPRESSED PACKAGE SIZE:     132K
+UNCOMPRESSED PACKAGE SIZE:     580K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libvisual-0.4.0-x86_64-4.txz
+PACKAGE DESCRIPTION:
+libvisual: libvisual (audio visualization library)
+libvisual:
+libvisual: Libvisual is an audio visualization library that acts as a middle
+libvisual: layer between audio visualization plugins and applications. Any
+libvisual: application written with libvisual support included will be able to
+libvisual: make use of all the plugins that are written for libvisual.
+libvisual: Libvisual also contains a whole set of facilities to ease the
+libvisual: development of plugins.
+libvisual:
+libvisual: Libvisual was written by Dennis Smit.
+libvisual:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libvisual-0.4.0/
+usr/doc/libvisual-0.4.0/AUTHORS
+usr/doc/libvisual-0.4.0/COPYING
+usr/doc/libvisual-0.4.0/NEWS
+usr/doc/libvisual-0.4.0/README
+usr/doc/libvisual-0.4.0/TODO
+usr/include/
+usr/include/libvisual-0.4/
+usr/include/libvisual-0.4/libvisual/
+usr/include/libvisual-0.4/libvisual/libvisual.h
+usr/include/libvisual-0.4/libvisual/lv_actor.h
+usr/include/libvisual-0.4/libvisual/lv_audio.h
+usr/include/libvisual-0.4/libvisual/lv_bin.h
+usr/include/libvisual-0.4/libvisual/lv_bits.h
+usr/include/libvisual-0.4/libvisual/lv_bmp.h
+usr/include/libvisual-0.4/libvisual/lv_buffer.h
+usr/include/libvisual-0.4/libvisual/lv_cache.h
+usr/include/libvisual-0.4/libvisual/lv_collection.h
+usr/include/libvisual-0.4/libvisual/lv_color.h
+usr/include/libvisual-0.4/libvisual/lv_common.h
+usr/include/libvisual-0.4/libvisual/lv_config.h
+usr/include/libvisual-0.4/libvisual/lv_cpu.h
+usr/include/libvisual-0.4/libvisual/lv_defines.h
+usr/include/libvisual-0.4/libvisual/lv_error.h
+usr/include/libvisual-0.4/libvisual/lv_event.h
+usr/include/libvisual-0.4/libvisual/lv_fourier.h
+usr/include/libvisual-0.4/libvisual/lv_gl.h
+usr/include/libvisual-0.4/libvisual/lv_hashlist.h
+usr/include/libvisual-0.4/libvisual/lv_hashmap.h
+usr/include/libvisual-0.4/libvisual/lv_input.h
+usr/include/libvisual-0.4/libvisual/lv_keysym.h
+usr/include/libvisual-0.4/libvisual/lv_libvisual.h
+usr/include/libvisual-0.4/libvisual/lv_list.h
+usr/include/libvisual-0.4/libvisual/lv_log.h
+usr/include/libvisual-0.4/libvisual/lv_math.h
+usr/include/libvisual-0.4/libvisual/lv_mem.h
+usr/include/libvisual-0.4/libvisual/lv_morph.h
+usr/include/libvisual-0.4/libvisual/lv_object.h
+usr/include/libvisual-0.4/libvisual/lv_os.h
+usr/include/libvisual-0.4/libvisual/lv_palette.h
+usr/include/libvisual-0.4/libvisual/lv_param.h
+usr/include/libvisual-0.4/libvisual/lv_plugin.h
+usr/include/libvisual-0.4/libvisual/lv_random.h
+usr/include/libvisual-0.4/libvisual/lv_rectangle.h
+usr/include/libvisual-0.4/libvisual/lv_ringbuffer.h
+usr/include/libvisual-0.4/libvisual/lv_songinfo.h
+usr/include/libvisual-0.4/libvisual/lv_thread.h
+usr/include/libvisual-0.4/libvisual/lv_time.h
+usr/include/libvisual-0.4/libvisual/lv_transform.h
+usr/include/libvisual-0.4/libvisual/lv_types.h
+usr/include/libvisual-0.4/libvisual/lv_ui.h
+usr/include/libvisual-0.4/libvisual/lv_utils.h
+usr/include/libvisual-0.4/libvisual/lv_video.h
+usr/include/libvisual-0.4/libvisual/lvconfig.h
+usr/lib64/
+usr/lib64/libvisual-0.4.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libvisual-0.4.pc
+usr/share/
+usr/share/locale/
+usr/share/locale/es_AR/
+usr/share/locale/es_AR/LC_MESSAGES/
+usr/share/locale/es_AR/LC_MESSAGES/libvisual-0.4.mo
+usr/share/locale/es_ES/
+usr/share/locale/es_ES/LC_MESSAGES/
+usr/share/locale/es_ES/LC_MESSAGES/libvisual-0.4.mo

@@ -1,0 +1,36 @@
+PACKAGE NAME:     libass-0.14.0-x86_64-1_SBo
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/libass-0.14.0-x86_64-1_SBo.tgz
+PACKAGE DESCRIPTION:
+libass: libass (Subtitle renderer for the ASS/SSA)
+libass:
+libass: libass is a portable subtitle renderer for the ASS/SSA (Advanced
+libass: Substation Alpha/Substation Alpha) subtitle format. It is mostly
+libass: compatible with VSFilter.
+libass:
+libass: Homepage: http://code.google.com/p/libass/
+libass:
+libass:
+libass:
+libass:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libass-0.14.0/
+usr/doc/libass-0.14.0/COPYING
+usr/doc/libass-0.14.0/Changelog
+usr/doc/libass-0.14.0/libass.SlackBuild
+usr/include/
+usr/include/ass/
+usr/include/ass/ass.h
+usr/include/ass/ass_types.h
+usr/lib64/
+usr/lib64/libass.la
+usr/lib64/libass.so.9.0.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libass.pc

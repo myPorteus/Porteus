@@ -1,0 +1,50 @@
+PACKAGE NAME:     libcdio-paranoia-10.2+2.0.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     270K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libcdio-paranoia-10.2+2.0.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libcdio-paranoia: libcdio-paranoia (CD paranoia libraries from libcdio)
+libcdio-paranoia:
+libcdio-paranoia: This CDDA reader distribution ('libcdio-cdparanoia') reads audio from
+libcdio-paranoia: the CDROM directly as data, with no analog step between, and writes
+libcdio-paranoia: the data to a file or pipe as .wav, .aifc or as raw 16 bit linear
+libcdio-paranoia: PCM.
+libcdio-paranoia:
+libcdio-paranoia:
+libcdio-paranoia:
+libcdio-paranoia:
+libcdio-paranoia:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cd-paranoia
+usr/doc/
+usr/doc/libcdio-paranoia-10.2+2.0.1/
+usr/doc/libcdio-paranoia-10.2+2.0.1/AUTHORS
+usr/doc/libcdio-paranoia-10.2+2.0.1/COPYING
+usr/doc/libcdio-paranoia-10.2+2.0.1/ChangeLog
+usr/doc/libcdio-paranoia-10.2+2.0.1/INSTALL
+usr/doc/libcdio-paranoia-10.2+2.0.1/NEWS.md
+usr/doc/libcdio-paranoia-10.2+2.0.1/README.md
+usr/include/
+usr/include/cdio/
+usr/include/cdio/paranoia/
+usr/include/cdio/paranoia/cdda.h
+usr/include/cdio/paranoia/paranoia.h
+usr/include/cdio/paranoia/toc.h
+usr/lib64/
+usr/lib64/libcdio_cdda.so.2.0.0
+usr/lib64/libcdio_paranoia.so.2.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcdio_cdda.pc
+usr/lib64/pkgconfig/libcdio_paranoia.pc
+usr/man/
+usr/man/jp/
+usr/man/jp/man1/
+usr/man/jp/man1/cd-paranoia.1.gz
+usr/man/man1/
+usr/man/man1/cd-paranoia.1.gz

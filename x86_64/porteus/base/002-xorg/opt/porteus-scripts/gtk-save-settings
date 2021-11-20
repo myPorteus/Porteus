@@ -1,0 +1,128 @@
+#!/usr/bin/python
+## firewall script in pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+import subprocess
+import tempfile
+import os
+import platform
+
+class GtkSaveSet(Gtk.Window):
+
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Settings Module", border_width = 15, height_request = 300, width_request = 450, icon_name = "security-high-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Porteus Settings Module</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("<span>It appears you are not using saved changes.\nPlease choose which settings you would like to \nadd to your settings module.\nBe sure to check the boxes of any previously saved settings too.\nThe module will be moved to you modules folder, if writable.\nIf not, it can be found in /tmp.</span>")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.checkbox = Gtk.CheckButton.new_with_label("Passwords")
+        self.checkbox.connect("toggled", self.on_checkbox_checked, "passw")
+        self.vb.add(self.checkbox)
+
+        self.checkbox2 = Gtk.CheckButton.new_with_label("Firewall")
+        self.checkbox2.connect("toggled", self.on_checkbox_checked, "firew")
+        self.vb.add(self.checkbox2)
+
+        self.checkbox3 = Gtk.CheckButton.new_with_label("Time")
+        self.checkbox3.connect("toggled", self.on_checkbox_checked, "time")
+        self.vb.add(self.checkbox3)
+
+        self.checkbox4 = Gtk.CheckButton.new_with_label("Bluetooth")
+        self.checkbox4.connect("toggled", self.on_checkbox_checked, "bluet")
+        self.vb.add(self.checkbox4)
+
+        self.checkbox5 = Gtk.CheckButton.new_with_label("Keymap")
+        self.checkbox5.connect("toggled", self.on_checkbox_checked, "keym")
+        self.vb.add(self.checkbox5)
+
+        self.checkbox6 = Gtk.CheckButton.new_with_label("Soundcard")
+        self.checkbox6.connect("toggled", self.on_checkbox_checked, "sndc")
+        self.vb.add(self.checkbox6)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+
+        self.add(self.vb)
+
+    def on_checkbox_checked(self, checkbox, name):
+        if checkbox.get_active():
+            state = "on"
+        else:
+            state = "off"
+        # ~ print(name, "checkbox was turned", state)
+        if state == "on":
+            if name == "firew":
+                print("saving firewall settings")
+                ## find a python way to do this?
+                # ~ os.system('[ !-e "/tmp/psc/etc/rc.d/rc.FireWall" ] && cp -a --parents /etc/rc.d/rc.FireWall /tmp/psc/')
+            if name == "passw":
+                print("saving password settings")
+                # ~ os.system('[ !-e"/tmp/psc/etc/shadow" ] && cp -a --parents /etc/shadow /tmp/psc/')
+            if name == "time":
+                print("saving time settings")
+                # ~ os.system('[ !-e "/tmp/psc/etc/{localtime,localtime-copied-from,hardwareclock}" ] && cp -a --parents /etc/{localtime,localtime-copied-from,hardwareclock} /tmp/psc/')
+            if name == "bluet":
+                print("saving bluetooth settings")
+                # ~ os.system('[ !-e "/tmp/psc/etc/rc.d/rc.bluetooth" ] && cp -a --parents /etc/rc.d/rc.bluetooth /tmp/psc/')
+            if name == "keym":
+                print("saving keymap settings")
+                ## or maybe not?
+                #os.system('[ !-e "/tmp/psc/etc/
+            if name == "sndc":
+                print("saving soundcard settings")
+                ## or maybe not?
+                # ~ os.system('[ !-e "/tmp/psc/etc/
+        ## what if i change  my mind?
+        if state == "off":
+            if name == "firew":
+                print("removing firewall settings")
+                # ~ os.system('[ -e "/tmp/psc/etc/rc.d/rc.FireWall" ] && rm /tmp/psc/etc/rc.d/rc.FireWall')
+            if name == "passw":
+                print("removing password settings")
+                # ~ os.system('[ !-e"/tmp/psc/etc/shadow" ] && rm /etc/shadow')
+            if name == "time":
+                print("removing time settings")
+                # ~ os.system('[ !-e "/tmp/psc/etc/{localtime,localtime-copied-from,hardwareclock}" ] && rm/tmp/psc/etc/{localtime,localtime-copied-from,hardwareclock}')
+            if name == "bluet":
+                print("removing bluetooth settings")
+                # ~ os.system('[ !-e "/tmp/psc/etc/rc.d/rc.bluetooth" ] && rm /tmp/psc/etc/rc.d/rc.bluetooth')
+            if name == "keym":
+                print("removing keymap settings")
+            if name == "sndc":
+                print("removing soundcard settings")
+
+    def on_ok_clicked(self, button):
+        print("do something")
+        # ~ subprocess.Popen('/usr/share/porteus/gtkdialog.py -p "Warning! This will overwrite any existing settings!" -s "Do you want to continue?" -d yesno', shell=True)
+        # ~ os.system('dir2xzm /tmp/psc /tmp/psc-settings.xzm')
+        # ~ os.system('mv -f /tmp/psc-settings.xzm $MODDIR && rm -rf /tmp/psc')
+        os.system('/usr/share/porteus/gtkdialog.py -p "This where you\'d get confirmation, if anything had happened" -s "But it hasn\'t. ..yet.." -d err')
+        Gtk.main_quit()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+win = GtkSaveSet()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

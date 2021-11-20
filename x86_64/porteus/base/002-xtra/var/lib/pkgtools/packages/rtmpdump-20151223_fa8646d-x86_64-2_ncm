@@ -1,0 +1,52 @@
+PACKAGE NAME:     rtmpdump-20151223_fa8646d-x86_64-2_ncm
+COMPRESSED PACKAGE SIZE:     192K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/rtmpdump-20151223_fa8646d-x86_64-2_ncm.tgz
+PACKAGE DESCRIPTION:
+rtmpdump: rtmpdump (RTMP streams toolkit)
+rtmpdump:
+rtmpdump: rtmpdump is a toolkit for RTMP streams.
+rtmpdump: All forms of RTMP are supported, including rtmp://, rtmpt://,
+rtmpdump: rtmpe://, rtmpte://, and rtmps://.
+rtmpdump: This package contains the library, librtmp, and the binaries rtmpdump,
+rtmpdump: rtmpgw, rtmpsrv and rtmpsuck.
+rtmpdump:
+rtmpdump: Homepage: http://rtmpdump.mplayerhq.hu/
+rtmpdump:
+rtmpdump:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rtmpdump
+usr/doc/
+usr/doc/rtmpdump-20151223_fa8646d/
+usr/doc/rtmpdump-20151223_fa8646d/COPYING
+usr/doc/rtmpdump-20151223_fa8646d/ChangeLog
+usr/doc/rtmpdump-20151223_fa8646d/README
+usr/doc/rtmpdump-20151223_fa8646d/rtmpdump.SlackBuild
+usr/include/
+usr/include/librtmp/
+usr/include/librtmp/amf.h
+usr/include/librtmp/http.h
+usr/include/librtmp/log.h
+usr/include/librtmp/rtmp.h
+usr/lib64/
+usr/lib64/librtmp.a
+usr/lib64/librtmp.so.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/librtmp.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/rtmpdump.1.gz
+usr/man/man3/
+usr/man/man3/librtmp.3.gz
+usr/man/man8/
+usr/man/man8/rtmpgw.8.gz
+usr/sbin/
+usr/sbin/rtmpgw
+usr/sbin/rtmpsrv
+usr/sbin/rtmpsuck

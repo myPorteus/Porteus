@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# mirror_test.sh
+# This script tests a list of porteus mirrors for speed
+#
+# AUTHOR: Lance Rushing <lance_rushing@hotmail.com>
+# Modified for Porteus by brokenman <brokenman@porteus.org>
+# This script is covered under the GNU Public License: http://www.gnu.org/licenses/gpl.txt
+
+. /usr/share/porteus/porteus-functions
+get_colors
+
+## Vars
+DUMP=/tmp/.fmr.tmp
+
+
+## Trap ctrl C exits
+cutandrun(){
+[ -e $DUMP ] && rm $DUMP
+exit
+}
+trap cutandrun SIGHUP SIGINT SIGTERM
+
+is_online_url http://porteus.org/porteus-mirrors.txt || { red "The porteus server appears to be offline."; exit; }
+
+## get list
+MIRRORS=$(curl -s http://porteus.org/porteus-mirrors.txt)
+
+## Number of seconds before the test is considered a failure
+TIMEOUT="4"
+
+## Sting to store results in
+RESULTS=""
+
+echo "Checking fastest mirror ..."
+for MIRROR in $MIRRORS ; do
+	
+	echo -n "Testing ${MIRROR} "
+	
+	URL="${MIRROR}%{FILE}"
+	
+	TIME=`curl --max-time $TIMEOUT --silent --output /dev/null --write-out %{time_total} $URL`
+	
+	if [ "$TIME" == "0.000" ] ; then
+		echo "Fail";
+	else 
+		echo $TIME
+		RESULTS="${RESULTS}${TIME}\t${MIRROR}\n";
+	fi
+
+done;
+
+echo -e "\nResults:"
+echo -e $RESULTS | sort -n | tee $DUMP
+FMIR=`sed '/^$/d' $DUMP | head -n1 | awk '{print$2}'`
+
+echo
+read -p "`gettext " Would you like to add $FMIR as your main Porteus server? [y/n]"`" -n 1 -r -s && echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	sed -i 's@^SERVER=.*@SERVER='$FMIR'@g' /etc/porteus.conf
+	green "Porteus server updated in /etc/porteus.conf"
+fi
+cutandrun

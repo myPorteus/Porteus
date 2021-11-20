@@ -1,0 +1,93 @@
+PACKAGE NAME:     lua-5.1.5-x86_64-1_SBo
+COMPRESSED PACKAGE SIZE:     436K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/lua-5.1.5-x86_64-1_SBo.tgz
+PACKAGE DESCRIPTION:
+lua: lua (a powerful, fast, light-weight, embeddable scripting language)
+lua:
+lua: Lua combines simple procedural syntax with powerful data description
+lua: constructs based on associative arrays and extensible semantics.
+lua: Lua is dynamically typed, runs by interpreting bytecode for a
+lua: register-based virtual machine, and has automatic memory management
+lua: with incremental garbage collection, making it ideal for
+lua: configuration, scripting, and rapid prototyping.
+lua:
+lua:
+lua:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lua
+usr/bin/luac
+usr/doc/
+usr/doc/lua-5.1.5/
+usr/doc/lua-5.1.5/COPYRIGHT
+usr/doc/lua-5.1.5/HISTORY
+usr/doc/lua-5.1.5/INSTALL
+usr/doc/lua-5.1.5/README
+usr/doc/lua-5.1.5/extras/
+usr/doc/lua-5.1.5/extras/etc/
+usr/doc/lua-5.1.5/extras/etc/Makefile
+usr/doc/lua-5.1.5/extras/etc/README
+usr/doc/lua-5.1.5/extras/etc/all.c
+usr/doc/lua-5.1.5/extras/etc/lua.hpp
+usr/doc/lua-5.1.5/extras/etc/lua.ico
+usr/doc/lua-5.1.5/extras/etc/lua.pc
+usr/doc/lua-5.1.5/extras/etc/luavs.bat
+usr/doc/lua-5.1.5/extras/etc/min.c
+usr/doc/lua-5.1.5/extras/etc/noparser.c
+usr/doc/lua-5.1.5/extras/etc/strict.lua
+usr/doc/lua-5.1.5/extras/test/
+usr/doc/lua-5.1.5/extras/test/README
+usr/doc/lua-5.1.5/extras/test/bisect.lua
+usr/doc/lua-5.1.5/extras/test/cf.lua
+usr/doc/lua-5.1.5/extras/test/echo.lua
+usr/doc/lua-5.1.5/extras/test/env.lua
+usr/doc/lua-5.1.5/extras/test/factorial.lua
+usr/doc/lua-5.1.5/extras/test/fib.lua
+usr/doc/lua-5.1.5/extras/test/fibfor.lua
+usr/doc/lua-5.1.5/extras/test/globals.lua
+usr/doc/lua-5.1.5/extras/test/hello.lua
+usr/doc/lua-5.1.5/extras/test/life.lua
+usr/doc/lua-5.1.5/extras/test/luac.lua
+usr/doc/lua-5.1.5/extras/test/printf.lua
+usr/doc/lua-5.1.5/extras/test/readonly.lua
+usr/doc/lua-5.1.5/extras/test/sieve.lua
+usr/doc/lua-5.1.5/extras/test/sort.lua
+usr/doc/lua-5.1.5/extras/test/table.lua
+usr/doc/lua-5.1.5/extras/test/trace-calls.lua
+usr/doc/lua-5.1.5/extras/test/trace-globals.lua
+usr/doc/lua-5.1.5/extras/test/xd.lua
+usr/doc/lua-5.1.5/html/
+usr/doc/lua-5.1.5/html/contents.html
+usr/doc/lua-5.1.5/html/logo.gif
+usr/doc/lua-5.1.5/html/lua.css
+usr/doc/lua-5.1.5/html/lua.html
+usr/doc/lua-5.1.5/html/luac.html
+usr/doc/lua-5.1.5/html/manual.html
+usr/doc/lua-5.1.5/html/readme.html
+usr/doc/lua-5.1.5/lua.SlackBuild
+usr/include/
+usr/include/lauxlib.h
+usr/include/lua.h
+usr/include/lua.hpp
+usr/include/luaconf.h
+usr/include/lualib.h
+usr/lib64/
+usr/lib64/liblua.a
+usr/lib64/liblua.so.5.1.5
+usr/lib64/lua/
+usr/lib64/lua/5.1/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/lua.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/lua.1.gz
+usr/man/man1/luac.1.gz
+usr/share/
+usr/share/lua/
+usr/share/lua/5.1/

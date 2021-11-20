@@ -1,0 +1,33 @@
+PACKAGE NAME:     xrandr-1.5.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xrandr-1.5.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xrandr: xrandr (X11 RandR utility)
+xrandr:
+xrandr: Primitive command line interface to the X11 Resize, Rotate, and
+xrandr: Reflect (RandR) extensions.
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+xrandr:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xkeystone
+usr/bin/xrandr
+usr/doc/
+usr/doc/xrandr-1.5.1/
+usr/doc/xrandr-1.5.1/COPYING
+usr/doc/xrandr-1.5.1/ChangeLog
+usr/doc/xrandr-1.5.1/INSTALL
+usr/doc/xrandr-1.5.1/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/xrandr.1.gz

@@ -1,0 +1,9 @@
+#!/bin/bash
+## script to find and use current vte-* binary and use some options: colors and keep open.
+VTE=$(find /usr/bin/vte-*)
+if [ $1 ]; then
+	$VTE --background-color=black --foreground-color=gray -k -- "$@" &
+else
+	$VTE --background-color=black --foreground-color=gray &
+fi
+exit 0

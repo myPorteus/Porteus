@@ -1,0 +1,74 @@
+#!/bin/bash
+# Service menu script to convert deb packages to xzm modules
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+COMP="-x"
+COMP_ZSTD="-z"
+
+while getopts "xz" opt; do
+case "$opt" in
+
+    x)
+        shift "$(($OPTIND -1))"
+        ;;
+
+    z)
+        COMP="$COMP_ZSTD"
+        shift "$(($OPTIND -1))"
+        ;;
+
+esac
+done
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu $0 $COMP $selection &
+  exit
+fi
+
+# Put up a dialog
+export STATE=MANUAL
+echo "Converting $package ..." > /tmp/.message
+manual_progress "Processing ..."
+
+# Convert the packages
+for package in $selection; do
+  path=${package%/*}
+  name=${package##*/}
+  dir=${name%.*}
+  echo "$name" >> /tmp/.extracted
+  echo "$name" > /tmp/.message
+  mkdir /tmp/deb2xzm$$
+  cp $path/$name /tmp/deb2xzm$$
+  cd /tmp/deb2xzm$$
+  dataname=`ar t * | grep data`
+  
+  case $dataname in
+data.tar.gz)
+  ar x * data.tar.gz
+;;
+data.tar.lzma)
+  ar x * data.tar.lzma && unxz data.tar.lzma && gzip data.tar
+;;
+data.tar.xz)
+  ar x * data.tar.xz && unxz data.tar.xz && gzip data.tar
+;;
+  esac
+  
+  mv data.tar.gz $dir.tgz
+  txz2xzm $COMP $dir.tgz
+  mv $dir.xzm $path/
+  rm -r /tmp/deb2xzm$$
+done
+
+kill_manual_progress
+
+# Give notification
+/usr/share/porteus/gtkdialog.py -p "Conversion complete!" -t 2000
+
+rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit

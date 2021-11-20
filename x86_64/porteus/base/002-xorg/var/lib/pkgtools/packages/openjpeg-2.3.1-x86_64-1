@@ -1,0 +1,77 @@
+PACKAGE NAME:     openjpeg-2.3.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     500K
+UNCOMPRESSED PACKAGE SIZE:     2.4M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/openjpeg-2.3.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+openjpeg: openjpeg (JPEG2000 Codec)
+openjpeg:
+openjpeg: The OpenJPEG library is an open-source JPEG 2000 codec.
+openjpeg:
+openjpeg: Homepage: http://www.openjpeg.org
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+openjpeg:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/opj_compress
+usr/bin/opj_dec_server
+usr/bin/opj_decompress
+usr/bin/opj_dump
+usr/bin/opj_jp3d_compress
+usr/bin/opj_jp3d_decompress
+usr/bin/opj_jpip_addxml
+usr/bin/opj_jpip_test
+usr/bin/opj_jpip_transcode
+usr/bin/opj_jpwl_compress
+usr/bin/opj_jpwl_decompress
+usr/bin/opj_mj2_compress
+usr/bin/opj_mj2_decompress
+usr/bin/opj_mj2_extract
+usr/bin/opj_mj2_wrap
+usr/doc/
+usr/doc/openjpeg-2.3.1/
+usr/doc/openjpeg-2.3.1/AUTHORS.md
+usr/doc/openjpeg-2.3.1/INSTALL.md
+usr/doc/openjpeg-2.3.1/LICENSE
+usr/doc/openjpeg-2.3.1/NEWS.md
+usr/doc/openjpeg-2.3.1/README.md
+usr/doc/openjpeg-2.3.1/THANKS.md
+usr/include/
+usr/include/openjpeg-2.3/
+usr/include/openjpeg-2.3/openjp3d.h
+usr/include/openjpeg-2.3/openjpeg.h
+usr/include/openjpeg-2.3/opj_config.h
+usr/include/openjpeg-2.3/opj_stdint.h
+usr/include/openmj2-2.1/
+usr/include/openmj2-2.1/openjpeg.h
+usr/lib64/
+usr/lib64/libopenjp2.a
+usr/lib64/libopenjp2.so.2.3.1
+usr/lib64/libopenjp3d.so.2.3.1
+usr/lib64/libopenjpip.so.2.3.1
+usr/lib64/libopenjpwl.so.2.3.1
+usr/lib64/libopenmj2.so.2.3.1
+usr/lib64/openjpeg-2.3/
+usr/lib64/openjpeg-2.3/OpenJPEGConfig.cmake
+usr/lib64/openjpeg-2.3/OpenJPEGTargets-noconfig.cmake
+usr/lib64/openjpeg-2.3/OpenJPEGTargets.cmake
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libopenjp2.pc
+usr/lib64/pkgconfig/libopenjp3d.pc
+usr/lib64/pkgconfig/libopenjpip.pc
+usr/lib64/pkgconfig/libopenjpwl.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/opj_compress.1.gz
+usr/man/man1/opj_decompress.1.gz
+usr/man/man1/opj_dump.1.gz
+usr/man/man3/
+usr/man/man3/libopenjp2.3.gz

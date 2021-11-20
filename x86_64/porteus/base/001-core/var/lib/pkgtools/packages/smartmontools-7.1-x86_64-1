@@ -1,0 +1,63 @@
+PACKAGE NAME:     smartmontools-7.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     452K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/smartmontools-7.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+smartmontools: smartmontools (hard drive monitoring utilities)
+smartmontools:
+smartmontools: SMARTMONTOOLS contains utilities that control and monitor storage
+smartmontools: devices using the Self-Monitoring, Analysis, and Reporting Technology
+smartmontools: (S.M.A.R.T.) system build into ATA and SCSI Hard Drives. This is used
+smartmontools: to check the reliability of the hard drive and to predict drive
+smartmontools: failures.
+smartmontools:
+smartmontools: Homepage: https://www.smartmontools.org/
+smartmontools:
+smartmontools:
+FILE LIST:
+./
+etc/
+etc/rc.d/
+etc/rc.d/rc.smartd.new
+etc/smartd.conf.new
+etc/smartd_warning.d/
+etc/smartd_warning.sh
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/smartmontools-7.1/
+usr/doc/smartmontools-7.1/AUTHORS
+usr/doc/smartmontools-7.1/COPYING
+usr/doc/smartmontools-7.1/ChangeLog
+usr/doc/smartmontools-7.1/ChangeLog-6.0-7.0
+usr/doc/smartmontools-7.1/INSTALL
+usr/doc/smartmontools-7.1/NEWS
+usr/doc/smartmontools-7.1/README
+usr/doc/smartmontools-7.1/TODO
+usr/doc/smartmontools-7.1/examplescripts/
+usr/doc/smartmontools-7.1/examplescripts/Example1
+usr/doc/smartmontools-7.1/examplescripts/Example2
+usr/doc/smartmontools-7.1/examplescripts/Example3
+usr/doc/smartmontools-7.1/examplescripts/Example4
+usr/doc/smartmontools-7.1/examplescripts/Example5
+usr/doc/smartmontools-7.1/examplescripts/Example6
+usr/doc/smartmontools-7.1/examplescripts/Example7
+usr/doc/smartmontools-7.1/examplescripts/Example8
+usr/doc/smartmontools-7.1/examplescripts/README
+usr/doc/smartmontools-7.1/smartd.conf
+usr/man/
+usr/man/man5/
+usr/man/man5/smartd.conf.5.gz
+usr/man/man8/
+usr/man/man8/smartctl.8.gz
+usr/man/man8/smartd.8.gz
+usr/man/man8/update-smart-drivedb.8.gz
+usr/sbin/
+usr/sbin/smartctl
+usr/sbin/smartd
+usr/sbin/update-smart-drivedb
+usr/share/
+usr/share/smartmontools/
+usr/share/smartmontools/drivedb.h

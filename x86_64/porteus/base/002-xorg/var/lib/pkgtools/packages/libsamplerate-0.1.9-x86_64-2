@@ -1,0 +1,52 @@
+PACKAGE NAME:     libsamplerate-0.1.9-x86_64-2
+COMPRESSED PACKAGE SIZE:     956K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libsamplerate-0.1.9-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libsamplerate: libsamplerate (a Sample Rate Converter for audio)
+libsamplerate:
+libsamplerate: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for
+libsamplerate: audio. One example of where such a thing would be useful is
+libsamplerate: converting audio from the CD sample rate of 44.1kHz to the 48kHz
+libsamplerate: sample rate used by DAT players. SRC is capable of arbitrary and time
+libsamplerate: varying conversions. SRC provides a small set of converters to allow
+libsamplerate: quality to be traded off against computation cost.
+libsamplerate:
+libsamplerate: libsamplerate home: http://www.mega-nerd.com/SRC/
+libsamplerate:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sndfile-resample
+usr/doc/
+usr/doc/libsamplerate-0.1.9/
+usr/doc/libsamplerate-0.1.9/AUTHORS
+usr/doc/libsamplerate-0.1.9/COPYING
+usr/doc/libsamplerate-0.1.9/NEWS
+usr/doc/libsamplerate-0.1.9/README
+usr/doc/libsamplerate-0.1.9/html/
+usr/doc/libsamplerate-0.1.9/html/SRC.css
+usr/doc/libsamplerate-0.1.9/html/SRC.png
+usr/doc/libsamplerate-0.1.9/html/api.html
+usr/doc/libsamplerate-0.1.9/html/api_callback.html
+usr/doc/libsamplerate-0.1.9/html/api_full.html
+usr/doc/libsamplerate-0.1.9/html/api_misc.html
+usr/doc/libsamplerate-0.1.9/html/api_simple.html
+usr/doc/libsamplerate-0.1.9/html/download.html
+usr/doc/libsamplerate-0.1.9/html/faq.html
+usr/doc/libsamplerate-0.1.9/html/history.html
+usr/doc/libsamplerate-0.1.9/html/index.html
+usr/doc/libsamplerate-0.1.9/html/license.html
+usr/doc/libsamplerate-0.1.9/html/lists.html
+usr/doc/libsamplerate-0.1.9/html/quality.html
+usr/doc/libsamplerate-0.1.9/html/win32.html
+usr/include/
+usr/include/samplerate.h
+usr/lib64/
+usr/lib64/libsamplerate.so.0.1.8
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/samplerate.pc

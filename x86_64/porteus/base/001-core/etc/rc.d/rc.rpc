@@ -1,0 +1,85 @@
+#!/bin/sh
+# rc.rpc:  start/stop/restart RPC daemons needed to use NFS.
+#
+# You must run these daemons in order to mount NFS partitions
+# (unless you use the mount option '-o nolock', which can
+# corrupt files and is not generally recommended unless you
+# are mounting the partition(s) as read-only).
+#
+# To run an NFS server, starting these is mandatory.
+#
+
+# Source default settings:
+if [ -r /etc/default/rpc ]; then
+  . /etc/default/rpc
+fi
+
+rpc_start() {
+  if [ -x /sbin/rpcbind -a -x /sbin/rpc.statd ]; then
+    # Set up port for lockd:
+    if [ -n "$LOCKD_TCP_PORT" ]; then
+      /sbin/sysctl -w "fs.nfs.nlm_tcpport=$LOCKD_TCP_PORT" >/dev/null 2>&1
+    fi
+    if [ -n "$LOCKD_UDP_PORT" ]; then
+      /sbin/sysctl -w "fs.nfs.nlm_udpport=$LOCKD_UDP_PORT" >/dev/null 2>&1
+    fi
+    if ! ps axc | grep -q rpcbind ; then
+      echo "Starting RPC portmapper:  /sbin/rpcbind -l $* $RPCBIND_OPTS"
+      /sbin/rpcbind -l "$@" $RPCBIND_OPTS
+    fi
+    if ! ps axc | grep -q rpc.statd ; then
+      if [ -n "$RPC_STATD_HOSTNAME" ]; then
+        RPC_STATD_OPTS="$RPC_STATD_OPTS -n $RPC_STATD_HOSTNAME"
+      fi
+      if [ -n "$RPC_STATD_PORT" ]; then
+        RPC_STATD_OPTS="$RPC_STATD_OPTS -p $RPC_STATD_PORT"
+      fi
+      if [ -n "$RPC_STATD_OUTGOING_PORT" ]; then
+        RPC_STATD_OPTS="$RPC_STATD_OPTS -o $RPC_STATD_OUTGOING_PORT"
+      fi
+      echo "Starting RPC NSM (Network Status Monitor):  /sbin/rpc.statd $RPC_STATD_OPTS"
+      /sbin/rpc.statd $RPC_STATD_OPTS
+    fi
+  else
+    echo "WARNING:  Cannot start RPC daemons needed for NFS.  One or more of"
+    echo "          these required daemons is not executable or is not present"
+    echo "          on your system:"
+    echo
+    echo "          /sbin/rpcbind or /sbin/rpc.statd"
+    echo
+  fi
+}
+
+rpc_stop() {
+  killall rpc.statd 2> /dev/null
+  sleep 1
+  killall rpcbind 2> /dev/null
+  sleep 1
+  killall -9 rpc.statd 2> /dev/null # make sure :)
+  sleep 1
+  killall -9 rpcbind 2> /dev/null # make sure :)
+  sleep 1
+}
+
+rpc_restart() {
+  rpc_stop
+  rpc_start
+}
+
+case "$1" in
+'start')
+  # Warm restart by default (see "man rpcbind" for details about the -w option)
+  rpc_start -w
+  ;;
+'cold_start') # Start without -w option
+  rpc_start
+  ;;
+'stop')
+  rpc_stop
+  ;;
+'restart')
+  rpc_restart
+  ;;
+*)
+  echo "usage $0 start|stop|restart"
+esac

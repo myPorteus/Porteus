@@ -1,0 +1,228 @@
+#!/usr/bin/python
+#
+# Author: jssouza
+#
+# Launcher for various Porteus GTK apps and settings
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GdkPixbuf
+import subprocess
+import tempfile
+import platform
+import os
+
+## Make sure we're in X
+display = os.getenv('DISPLAY')
+if display == None:
+    print("This program requires an X session!")
+    quit()
+
+## prompt root password(gui psu) and re-execute? probly a bit dirty..
+## using subprocess rather than os.system() to be script agnostic..
+user = os.getuid()
+if user != 0:
+    print("You must be root to run this!")
+    this_script = os.path.abspath(__file__)
+    subprocess.run(['psu', this_script])
+    quit()
+
+class PSC(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Porteus Settings Center", border_width = 5, default_height = 500, default_width = 550, icon_name = "cdr")
+
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+
+        self.main_notebook = Gtk.Notebook(show_tabs = False)
+
+        self.general_settings = self.init_page('General Settings')
+        self.system_settings = self.init_page('System Settings')
+        self.security_settings = self.init_page('Security Settings')
+        self.boot_settings = self.init_page('Boot Settings')
+        self.save_settings = self.init_page('Save Settings')
+
+        self.hb = Gtk.Box(homogeneous = False)
+        self.home_button = self.add_button("go-home-symbolic", "Show the home screen", 0)
+        self.settings_button = self.add_button("preferences-other-symbolic", "Show the system screen", 1)
+        self.security_button = self.add_button("network-wireless-encrypted-symbolic", "Show the security screen", 2)
+        self.boot_button = self.add_button("system-shutdown-symbolic", "Show the boot screen", 3)
+        self.save_button = self.add_button("document-save-symbolic", "Show the changes screen", 4)
+        self.save_button = self.add_button("dialog-information-symbolic", "Open the system information screen", None)
+        self.vb.pack_start(self.hb, False, False, 0)
+
+        self.add_to_page('Porteus Updater', "software-update-available-symbolic", "The update function will check for Porteus updates on the server that <b>do not</b> exist in your modules folder. \nYou can choose the updates to download. They should be put in the modules folder after downloading.", self.general_settings, "update")
+        self.add_to_page('Porteus Installer', "drive-harddisk-symbolic", "The installer will assist with installing Porteus to a fixed or removable drive. \nYou can prepare a partition using your partition manager.", self.general_settings, "install")
+        self.add_to_page('Porteus FAQ', "help-faq-symbolic", "Read the frequently asked questions about Porteus. \nFor more indepth information and tutorials about Porteus you can visit the Porteus website.", self.general_settings, "faq")
+        self.add_to_page('Porteus Tutorials', "emblem-documents-symbolic", "The Porteus website contains many useful tutorials, walkthroughs and video presentations \nabout the inner workings of Porteus. You may also join our forums.", self.general_settings, "tutorials")
+
+        self.add_to_page('Language Setup', "preferences-desktop-locale-symbolic", "Choose and download your chosen language file packs from the official Porteus server. \nPorteus provides language support for most languages.", self.system_settings, "language")
+        self.add_to_page('Time Config', "appointment-soon-symbolic", "Set yout timezone and clock settings including UTC or local time. \nThis is useful if you clock is showing incorrect time.", self.system_settings, "date")
+        self.add_to_page('Keyboard Settings', "input-keyboard-symbolic", "Change the keyboard layout for your existing window manager and current session. \nYou can also choose a variant of your layout.", self.system_settings, "keyboard")
+        self.add_to_page('Sound Settings', "audio-headphones-symbolic", "Choose which sound card you would like to use as your default. \nThis is useful if your system has more than one sound card", self.system_settings, "sound")
+        self.add_to_page('Bluetooth Settings', "bluetooth-active-symbolic", "Start or Stop the Bluetooth Daemon. With the option to start at boot.", self.system_settings, "bluetooth")
+
+        self.add_to_page('Porteus Firewall', "security-high-symbolic","Manage your firewall. Toggle the firewall on/off and set the desired protection level. \nYou can also choose to activate the firewall the next time Porteus starts.", self.security_settings, "firewall")
+        self.add_to_page('Porteus Password', "dialog-password-symbolic", "Change your current user password.", self.security_settings, "password")
+        self.add_to_page('Encrypt a chosen file or folder', "channel-secure-symbolic", "Select a file or folder and encrypt it. To decrypt the chosen file/folder you should use this tool again.", self.security_settings, "encrypt")
+        self.add_to_page('Decrypt a chosen file or folder', "channel-insecure-symbolic", "Select a file or folder and decrypt it. To encrypt the chosen file/folder you should use this tool again.", self.security_settings, "decrypt")
+
+        self.add_text_to_page('These options relate to the Porteus boot procedure. \nYou can browse the Porteus cheatcodes and then edit your porteus.cfg file to add your chosen cheatcode. \nYou may also choose to run a particular command or script automatically after you boot Porteus. \nYou will need to be using the <b>changes=</b> cheatcode for this to work. \nThe cheatcodes.txt file can be found in your boot/docs folder or by visiting our website.', self.boot_settings)
+        self.add_to_page('Porteus Cheatcodes',"dialog-information-symbolic", "Read the cheatcodes available. Read about the cheatcodes and \ndecide which ones you want to use before adding the chosen cheats to porteus.cfg.", self.boot_settings, "cheatcodes")
+        self.add_to_page('Startup Scripts', "application-x-executable-symbolic", "Run a command or a script when Porteus starts up.", self.boot_settings, "startup")
+
+        self.add_to_page('Porteus Magic Folders',"cdr", "Porteus can monitor changes to a chosen folder/s and save to a file or folder on your system. \nEncrypted save files are supported.", self.save_settings, "magic")
+        self.add_to_page('Save Porteus Changes',"cdr", "Save all of your Porteus changes to a file on your system or removable device. \nEncrypted save files are supported.", self.save_settings, "savef")
+        self.add_to_page('Save Your Current Porteus Session',"cdr", "Save your current Porteus session to a module, file or folder. Useful for setting up Porteus how you like it.", self.save_settings, "savem")
+        self.add_to_page('Edit your changes location in porteus.cfg',"cdr", "Edit the location of your changes file/folder in the file <b>porteus.cfg</b> for activation during your next boot.", self.save_settings, "cfg")
+
+        self.vb.pack_start(self.main_notebook, True, True, 0)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.exit_button = Gtk.Button.new_from_icon_name("application-exit-symbolic", Gtk.IconSize.BUTTON)
+        self.exit_button.connect("clicked", self.on_exit_button_clicked)
+        self.hb_bottom.pack_start(Gtk.Label(label = platform.release()), False, False, 2)
+        self.hb_bottom.pack_end(self.exit_button, False, False, 2)
+        self.vb.pack_start(self.hb_bottom, False, False, 6)
+
+        self.add(self.vb)
+        self.exit_button.grab_focus()
+
+        print(platform.release())
+
+    def init_page(self, header):
+        page = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, border_width = 10)
+        label = Gtk.Label()
+        label.set_markup("<span size=\"large\" weight=\"bold\">" + header + "</span>")
+        page.pack_start(label, False, False, 0)
+        self.main_notebook.append_page(page)
+        return page
+
+    def add_to_page(self, header, icon_name, text, page, command):
+        vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+
+        label = Gtk.Label(xalign = 0.0)
+        label.set_markup("<span size=\"medium\" weight=\"bold\">" + header + "</span>")
+        vb.pack_start(label, False, False, 0)
+        hb = Gtk.Box(spacing = 5, homogeneous = False)
+        vb.pack_start(hb, False, False, 0)
+
+        page_button = Gtk.Button.new_from_icon_name(icon_name, 5)
+        page_button.connect("clicked", self.on_page_button_clicked, command)
+        hb.pack_start(page_button, False, False, 2)
+        label = Gtk.Label(justify = Gtk.Justification.LEFT)
+
+        label.set_markup(text)
+        hb.pack_start(label, False, False, 2)
+
+        page.pack_start(vb, False, False, 15)
+
+    def add_text_to_page(self, text, page):
+        vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+
+        hb = Gtk.Box(spacing = 5, homogeneous = False)
+        vb.pack_start(hb, False, False, 0)
+        label = Gtk.Label(justify = Gtk.Justification.LEFT)
+        label.set_markup(text)
+        hb.pack_start(label, False, False, 2)
+        page.pack_start(vb, False, False, 15)
+
+    def add_button(self, icon_name, tooltip, page):
+        button = Gtk.Button.new_from_icon_name(icon_name, 5)
+        button.set_tooltip_text(tooltip)
+        button.set_relief(Gtk.ReliefStyle.NONE)
+        Gtk.Widget.set_focus_on_click(button, False)
+        button.connect("clicked", self.on_button_clicked, page)
+        self.hb.add(button)
+
+    def on_button_clicked(self, button, *data):
+        if data[0] is not None:
+            self.main_notebook.set_current_page(data[0])
+        else:
+            #subprocess.Popen(['/opt/porteus-scripts/xpsinfo'], stdin=None, stdout=None, stderr=None, close_fds=True)
+            os.system('/opt/porteus-scripts/xpsinfo')
+
+    def on_page_button_clicked(self, page_button, *data):
+        if data[0] == "update":
+            #subprocess.Popen(['/opt/porteus-scripts/gtk-update-porteus'], stdin=None, stdout=None, stderr=None, close_fds=True)
+            os.system('/opt/porteus-scripts/gtk-update-porteus')
+        elif data[0] == "install":
+########### not ported
+            os.system('/opt/porteus-scripts/pinstaller')
+        elif data[0] == "faq":
+            os.system('/usr/local/bin/phelp /usr/doc/Porteus-FAQ/index.html')
+        elif data[0] == "tutorials":
+            os.system('/usr/local/bin/phelp http://porteus.org/info/tutorials.html')
+        elif data[0] == "language":
+            os.system('/opt/porteus-scripts/gtk-language-selection-start')
+        elif data[0] == "date":
+            os.system('/opt/porteus-scripts/gtk-porteus-timeconfig')
+        elif data[0] == "keyboard":
+            os.system('/opt/porteus-scripts/gtk-xkb-select')
+        elif data[0] == "sound":
+########## not ported
+            os.system('/opt/porteus-scripts/gtk-soundcard-select')
+        elif data[0] == "bluetooth":
+########## not finished
+            os.system('/opt/porteus-scripts/gtk-bluetooth')
+        elif data[0] == "firewall":
+########## not finished
+            os.system('/opt/porteus-scripts/gtk-firewall')
+        elif data[0] == "password":
+########## not finished
+            os.system('/opt/porteus-scripts/gtk-password')
+        elif data[0] == "encrypt":
+########## not done
+            os.system('/opt/porteus-scripts/gtk-encrypt')
+        elif data[0] == "decrypt":
+########## not done
+            os.system('/opt/porteus-scripts/gtk-decrypt')
+        elif data[0] == "cheatcodes":
+            os.system('/opt/porteus-scripts/xorg/editor /usr/doc/porteus/cheatcodes.txt')
+        elif data[0] == "startup":
+            os.system('/opt/porteus-scripts/xorg/editor /etc/rc.d/rc.local')
+        elif data[0] == "magic":
+            os.system('/opt/porteus-scripts/magic-folders')
+        elif data[0] == "savef":
+            os.system('/opt/porteus-scripts/make-changes')
+        elif data[0] == "savem":
+            os.system('/opt/porteus-scripts/save-session')
+        elif data[0] == "cfg":
+            bootdev = os.getenv('BOOTDEV')
+            portcfg = bootdev + "/boot/syslinux/porteus.cfg"
+            bwritable = os.access(portcfg, os.W_OK)
+            if bwritable == True:
+                subprocess.run(['/opt/porteus-scripts/xorg/editor', portcfg])
+            else:
+                os.system('/usr/share/porteus/gtkdialog.py -p "It appears you are working from non writable media." -s "$BOOTDEV/boot/syslinux/porteus.cfg can only be edited when using writable media." -d err')
+                quit()
+
+    def on_exit_button_clicked(self, button):
+        ## check if changes are saved or system is live
+        bootdev = os.getenv('BOOTDEV')
+        portcfg = bootdev + "/boot/syslinux/porteus.cfg"
+        bwritable = os.access(portcfg, os.W_OK)
+        bootcmd = "/etc/bootcmd.cfg"
+        settings_changed = os.path.isdir('/tmp/psc')
+        if settings_changed == False:
+            print("settings unchanged")
+            Gtk.main_quit()
+        elif settings_changed == True:
+            with open(bootcmd, "r") as fd:
+                if "changes=" in fd.read():
+                    print("using changes")
+                    Gtk.main_quit()
+                elif bwritable  == False:
+                    print("iso")
+                    #os.system('/usr/share/porteus/gtkdialog.py -p "It appears you are not saving changes." -s "Somebody should make a way to save the settings!" -d info')
+                    os.system('/opt/porteus-scripts/gtk-save-settings')
+                    Gtk.main_quit()
+                else:
+                    print("installed")
+                    #os.system('/usr/share/porteus/gtkdialog.py -p "It appears you are not saving changes." -s "Somebody should make a way to save the settings!" -d info')
+                    os.system('/opt/porteus-scripts/gtk-save-settings')
+                    Gtk.main_quit()
+
+win = PSC()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

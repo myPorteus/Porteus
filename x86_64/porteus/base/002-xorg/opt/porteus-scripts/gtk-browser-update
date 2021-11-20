@@ -1,0 +1,210 @@
+#!/usr/bin/python
+#
+# Author: jssouza
+#
+# This gtkdialog script opens a window with some options to update some web browsers and plugins 
+# for Porteus Linux, it is a gui for some of brokenmans update-* scripts
+
+import gi
+import sys
+import os
+import subprocess
+import platform
+gi.require_version('Gtk', '3.0')
+gi.require_version('Vte', '2.91')
+from gi.repository import Gtk, Vte, GLib
+
+class GtkBrowserUpdate(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Porteus Browser Tool", border_width = 5, default_height = 580, default_width = 750, icon_name = "browser")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)        
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Choose a Browser to Install or to Update</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.vb_inner = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.vb_inner_br = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+        self.br_txt = Gtk.Label()
+        self.br_txt.set_markup("<span size=\"small\" weight=\"bold\">\tWeb Browsers:</span>")
+        self.br_txt.set_halign(Gtk.Align.START)
+        self.vb_inner_br.pack_start(self.br_txt, False, False, 5)
+        self.fb_br = Gtk.FlowBox(max_children_per_line = 5, row_spacing = 25, homogeneous = True)
+        self.add_button("Firefox", "firefox", "f", self.fb_br)
+        if platform.machine() == "x86_64":
+            self.add_button("Chrome", "chrome", "g", self.fb_br)
+        self.add_button("Chromium", "chromium", "c", self.fb_br)
+        self.add_button("Opera", "opera", "o", self.fb_br)
+        self.add_button("Palemoon", "pmoon", "p", self.fb_br)
+        self.add_button("Basilisk", "blisk", "b", self.fb_br)
+        self.add_button("Netsurf", "nsurf", "n", self.fb_br)
+        self.vb_inner_br.pack_start(self.fb_br, False, False, 5)
+
+        self.vb_inner_fl = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+        self.l_flash_txt = Gtk.Label()
+        self.l_flash_txt.set_markup("<span size=\"small\" weight=\"bold\">\tFlashplayer Plugins:</span>")
+        self.l_flash_txt.set_halign(Gtk.Align.START)
+        self.vb_inner_fl.pack_start(self.l_flash_txt, False, False, 5)
+        self.fb_fl = Gtk.FlowBox(max_children_per_line = 5, row_spacing = 25, homogeneous = True)
+        self.add_button("Flashplayer", "adobe-flash", "F", self.fb_fl)
+        self.add_button("PepperFlash", "chromium", "P", self.fb_fl)
+        self.vb_inner_fl.pack_start(self.fb_fl, False, False, 5)
+
+        self.vb_inner_xtra = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+        self.l_xtra_txt = Gtk.Label()
+        self.l_xtra_txt.set_markup("<span size=\"small\" weight=\"bold\">\tExtras:</span>")
+        self.l_xtra_txt.set_halign(Gtk.Align.START)
+        self.vb_inner_xtra.pack_start(self.l_xtra_txt, False, False, 5)
+        self.fb_xtra = Gtk.FlowBox(max_children_per_line = 5, row_spacing = 25, homogeneous = True)
+        self.add_button("Youtube-dl", "video", "y", self.fb_xtra)
+        self.vb_inner_xtra.pack_start(self.fb_xtra, False, False, 5)
+
+        self.vb_inner.pack_start(self.vb_inner_br, True, True, 5)
+        self.vb_inner.pack_start(self.vb_inner_fl, True, True, 5)
+        self.vb_inner.pack_start(self.vb_inner_xtra, True, True, 5)
+
+        self.scrolledwindow.add(self.vb_inner)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        #self.cancel_button.get_style_context().add_class("suggested-action")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        lynx_img = Gtk.Image.new_from_icon_name("browser", Gtk.IconSize.BUTTON)
+        help_img = Gtk.Image.new_from_icon_name("help-about", Gtk.IconSize.BUTTON)
+        file_img = Gtk.Image.new_from_icon_name("cdr", Gtk.IconSize.BUTTON)
+
+        self.lynx_button = Gtk.Button.new_with_label("Run Lynx")
+        self.lynx_button.set_image(lynx_img)
+        self.lynx_button.set_always_show_image(True)
+        self.lynx_button.connect("clicked", self.on_lynx_clicked)
+        self.hb_bottom.pack_end(self.lynx_button, False, False, 2)
+
+        self.help_button = Gtk.Button.new_with_label("Help")
+        self.help_button.set_image(help_img)
+        self.help_button.set_always_show_image(True)
+        self.help_button.connect("clicked", self.on_help_clicked)
+        self.hb_bottom.pack_end(self.help_button, False, False, 2)
+
+        self.file_button = Gtk.Button.new_with_label("File")
+        self.file_button.set_image(file_img)
+        self.file_button.set_always_show_image(True)
+        self.file_button.connect("clicked", self.on_file_clicked)
+        self.hb_bottom.pack_end(self.file_button, False, False, 2)
+
+        self.vb.pack_start(self.hb_bottom, False, False, 5)
+
+        self.add(self.vb)
+        self.help_button.grab_focus()
+
+    def add_button(self, button_text, icon_name, option, fb):
+        img = Gtk.Image.new_from_icon_name(icon_name, Gtk.IconSize.DND)
+        button = Gtk.Button.new_with_label(button_text)
+        button.set_image(img)
+        button.set_image_position(Gtk.PositionType.TOP)
+        button.set_always_show_image(True)
+        button.set_relief(Gtk.ReliefStyle.NONE)
+        Gtk.Widget.set_focus_on_click(button, False)
+        button.connect("clicked", self.on_button_clicked, button_text, option)
+        fb.add(button)
+
+    def on_button_clicked(self, button, *data):
+        gterm = GtkTerminal(self, "Updating " + data[0], data[1])
+        gterm.run()
+        gterm.destroy()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+    def on_lynx_clicked(self, button):
+        subprocess.Popen(['su', '--login', os.environ["USER"], 'vterm', '/usr/bin/lynx'], stdin=None, stdout=None, stderr=None, close_fds=True)
+
+    def on_help_clicked(self, button):
+        help_dialog = HelpDialog(self)
+        help_dialog.run()
+        help_dialog.destroy()
+
+    def on_file_clicked(self, button):
+        subprocess.Popen(['xdg-open', '/tmp'], stdin=None, stdout=None, stderr=None, close_fds=True)
+
+class GtkTerminal(Gtk.Dialog):
+    def __init__(self, parent, header_txt, option):
+        Gtk.Dialog.__init__(self, "Porteus Terminal", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(450, 550)
+
+        self.vb = self.get_content_area()
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">" + header_txt + "</span>")
+        self.vb.add(self.l_header_txt)
+
+        self.terminal = Vte.Terminal()
+        self.pty = Vte.Pty.new_sync(Vte.PtyFlags.DEFAULT)
+        self.terminal.set_pty(self.pty)
+        self.pty.spawn_async(None, ['/opt/porteus-scripts/update-browser', '-' + option], None, GLib.SpawnFlags.DO_NOT_REAP_CHILD, None, None, -1, None, self.ready)
+
+        self.scrolledwindow = Gtk.ScrolledWindow()
+        self.scrolledwindow.add(self.terminal)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.show_all()
+
+    def ready(self, pty, task):
+        # print('ready')
+        None
+
+class HelpDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Help", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(550, 500)
+
+        self.help_header_txt = "<span size=\"x-large\" weight=\"bold\">Porteus Browser Tool Help</span>"
+        self.help_txt = "Porteus Browser Tool is to help you get or update Web browsers and Flashplayer plugins. \nChoose by \
+clicking a button and follow the y/n prompts in the terminal window that opens. You have a choice, either to download a premade \
+module from our server or to build it from official packages. \
+\n\nIf you choose the latter, for Firefox, Chrome, Chromium, or Opera you can choose your preferred language and \
+set a custom homepage (the default homepage is the Porteus forum: https://forum.porteus.org).\
+\n\nAt the end, the chosen module(s) can be found in /tmp directory. Multiple modules can be chosen (one at a time).\
+\n\nThe Run Lynx button launches a terminal with the included Lynx text based Web browser.\
+\n\nYou can use the File button below to open a Privileged (Root user) Filemanager or you can use the normal (Guest user) Filemanager, \
+to move the module to your porteus modules directory or somewhere else outside the live filesystem to survive reboot. Don\'t forget \
+to activate it (double click). The last activated browser will become the icon visible on the toolbar.\
+\n\nFlashplayer plugin is for Firefox and Palemoon and PepperFlash plugin is for Chromium and Opera. Chrome automatically downloads \
+its own plugin when you try to play a video or run a webapp."
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.help_header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.textview = Gtk.TextView(border_width = 20, editable = False, wrap_mode = Gtk.WrapMode.WORD, justification = Gtk.Justification.FILL, cursor_visible = False)
+        self.textbuffer = self.textview.get_buffer()
+        self.textbuffer.set_text(self.help_txt)
+
+        self.scrolledwindow.add(self.textview)
+
+        self.show_all()
+
+
+win = GtkBrowserUpdate()
+win.connect("delete-event", Gtk.main_quit)
+win.show_all()
+Gtk.main()

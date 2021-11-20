@@ -1,0 +1,42 @@
+PACKAGE NAME:     libusbmuxd-20200615_c7d7d1a-x86_64-1
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/libusbmuxd-20200615_c7d7d1a-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libusbmuxd: libusbmuxd (iOS USB connection library) 
+libusbmuxd:
+libusbmuxd: A client library to multiplex connections from and to iOS devices.
+libusbmuxd: It is used by libgpod.
+libusbmuxd:
+libusbmuxd: The libusbmuxd homepage: http://www.libimobiledevice.org/
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+libusbmuxd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/inetcat
+usr/bin/iproxy
+usr/doc/
+usr/doc/libusbmuxd-20200615_c7d7d1a/
+usr/doc/libusbmuxd-20200615_c7d7d1a/AUTHORS
+usr/doc/libusbmuxd-20200615_c7d7d1a/COPYING
+usr/doc/libusbmuxd-20200615_c7d7d1a/NEWS
+usr/doc/libusbmuxd-20200615_c7d7d1a/README.md
+usr/include/
+usr/include/usbmuxd-proto.h
+usr/include/usbmuxd.h
+usr/lib64/
+usr/lib64/libusbmuxd-2.0.so.6.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libusbmuxd-2.0.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/inetcat.1.gz
+usr/man/man1/iproxy.1.gz

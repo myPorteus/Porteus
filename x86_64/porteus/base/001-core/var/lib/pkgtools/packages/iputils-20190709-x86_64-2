@@ -1,0 +1,49 @@
+PACKAGE NAME:     iputils-20190709-x86_64-2
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/iputils-20190709-x86_64-2.txz
+PACKAGE DESCRIPTION:
+iputils: iputils (a collection of common network tools)
+iputils:
+iputils: The iputils package contains network tools found on nearly all *NIX
+iputils: systems, along with an extra or two. Some of the utilities found
+iputils: here include arping, clockdiff, ping, ping6, rarpd, rdisc, tracepath,
+iputils: tracepath6, and traceroute6.
+iputils:
+iputils: iputils is maintained by YOSHIFUJI Hideaki.
+iputils:
+iputils:
+iputils:
+FILE LIST:
+./
+bin/
+bin/ping
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/arping
+usr/
+usr/bin/
+usr/bin/tracepath
+usr/bin/traceroute6
+usr/doc/
+usr/doc/iputils-s20190709/
+usr/doc/iputils-s20190709/COPYING
+usr/doc/iputils-s20190709/LICENSE
+usr/doc/iputils-s20190709/README.md
+usr/man/
+usr/man/man8/
+usr/man/man8/arping.8.gz
+usr/man/man8/clockdiff.8.gz
+usr/man/man8/ninfod.8.gz
+usr/man/man8/ping.8.gz
+usr/man/man8/rarpd.8.gz
+usr/man/man8/rdisc.8.gz
+usr/man/man8/tracepath.8.gz
+usr/man/man8/traceroute6.8.gz
+usr/sbin/
+usr/sbin/clockdiff
+usr/sbin/ninfod
+usr/sbin/rarpd
+usr/sbin/rdisc

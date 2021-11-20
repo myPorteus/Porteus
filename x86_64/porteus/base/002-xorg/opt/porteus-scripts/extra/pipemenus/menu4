@@ -1,0 +1,29 @@
+#!/bin/bash
+cat <<EOFMENU
+<openbox_pipe_menu>
+	     <separator label="Porteus 3ox" />
+	     <separator label="`date +%A\ \ %I\:%M\ %p`" />
+	     <separator label="`date +%B\ %d,\ %Y`" />
+	     <separator />
+             <item label="File Manager"> <action name="Execute">
+             <execute>/opt/porteus-scripts/xorg/fmanager</execute> 
+             <startupnotify><enabled>yes</enabled></startupnotify>
+             </action></item>
+             <item label="Terminal"> <action name="Execute">
+             <execute>/opt/porteus-scripts/xorg/terminal</execute> 
+             <startupnotify><enabled>yes</enabled></startupnotify>
+             </action></item>
+             <item label="Web Browser"> <action name="Execute">
+             <execute>/opt/porteus-scripts/xorg/browser</execute> 
+             <startupnotify><enabled>yes</enabled></startupnotify>
+             </action></item>
+	     <separator />
+             <menu id="desktop-app-menu"  />
+ 	     <separator />
+	         <menu id="openbox" />
+	     <separator />
+	         <item label="Exit"> <action name="Execute"> 
+	         <execute>/opt/porteus-scripts/extra/gtk-logout.py</execute>
+	         </action></item>
+</openbox_pipe_menu>
+EOFMENU

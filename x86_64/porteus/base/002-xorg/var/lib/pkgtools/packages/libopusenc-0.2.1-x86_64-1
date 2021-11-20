@@ -1,0 +1,107 @@
+PACKAGE NAME:     libopusenc-0.2.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     590K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libopusenc-0.2.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libopusenc: libopusenc (library for encoding .opus files)
+libopusenc:
+libopusenc: The libopusenc libraries provide a high-level API for encoding .opus
+libopusenc: files. libopusenc depends only on libopus.
+libopusenc:
+libopusenc: Homepage: https://libopusenc-codec.org/
+libopusenc:
+libopusenc:
+libopusenc:
+libopusenc:
+libopusenc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libopusenc-0.2.1/
+usr/doc/libopusenc-0.2.1/AUTHORS
+usr/doc/libopusenc-0.2.1/COPYING
+usr/doc/libopusenc-0.2.1/README.md
+usr/doc/libopusenc-0.2.1/html/
+usr/doc/libopusenc-0.2.1/html/annotated.html
+usr/doc/libopusenc-0.2.1/html/bc_s.png
+usr/doc/libopusenc-0.2.1/html/bdwn.png
+usr/doc/libopusenc-0.2.1/html/classes.html
+usr/doc/libopusenc-0.2.1/html/closed.png
+usr/doc/libopusenc-0.2.1/html/dir_d44c64559bbebec7f509842c48db8b23.html
+usr/doc/libopusenc-0.2.1/html/doc.png
+usr/doc/libopusenc-0.2.1/html/doxygen.css
+usr/doc/libopusenc-0.2.1/html/doxygen.png
+usr/doc/libopusenc-0.2.1/html/dynsections.js
+usr/doc/libopusenc-0.2.1/html/files.html
+usr/doc/libopusenc-0.2.1/html/folderclosed.png
+usr/doc/libopusenc-0.2.1/html/folderopen.png
+usr/doc/libopusenc-0.2.1/html/functions.html
+usr/doc/libopusenc-0.2.1/html/functions_vars.html
+usr/doc/libopusenc-0.2.1/html/group__callbacks.html
+usr/doc/libopusenc-0.2.1/html/group__comments.html
+usr/doc/libopusenc-0.2.1/html/group__encoder__ctl.html
+usr/doc/libopusenc-0.2.1/html/group__encoding.html
+usr/doc/libopusenc-0.2.1/html/group__error__codes.html
+usr/doc/libopusenc-0.2.1/html/index.html
+usr/doc/libopusenc-0.2.1/html/jquery.js
+usr/doc/libopusenc-0.2.1/html/menu.js
+usr/doc/libopusenc-0.2.1/html/menudata.js
+usr/doc/libopusenc-0.2.1/html/modules.html
+usr/doc/libopusenc-0.2.1/html/nav_f.png
+usr/doc/libopusenc-0.2.1/html/nav_g.png
+usr/doc/libopusenc-0.2.1/html/nav_h.png
+usr/doc/libopusenc-0.2.1/html/open.png
+usr/doc/libopusenc-0.2.1/html/opus_logo.svg
+usr/doc/libopusenc-0.2.1/html/opusenc_8h_source.html
+usr/doc/libopusenc-0.2.1/html/search/
+usr/doc/libopusenc-0.2.1/html/search/all_0.html
+usr/doc/libopusenc-0.2.1/html/search/all_0.js
+usr/doc/libopusenc-0.2.1/html/search/all_1.html
+usr/doc/libopusenc-0.2.1/html/search/all_1.js
+usr/doc/libopusenc-0.2.1/html/search/all_2.html
+usr/doc/libopusenc-0.2.1/html/search/all_2.js
+usr/doc/libopusenc-0.2.1/html/search/all_3.html
+usr/doc/libopusenc-0.2.1/html/search/all_3.js
+usr/doc/libopusenc-0.2.1/html/search/classes_0.html
+usr/doc/libopusenc-0.2.1/html/search/classes_0.js
+usr/doc/libopusenc-0.2.1/html/search/close.png
+usr/doc/libopusenc-0.2.1/html/search/functions_0.html
+usr/doc/libopusenc-0.2.1/html/search/functions_0.js
+usr/doc/libopusenc-0.2.1/html/search/groups_0.html
+usr/doc/libopusenc-0.2.1/html/search/groups_0.js
+usr/doc/libopusenc-0.2.1/html/search/groups_1.html
+usr/doc/libopusenc-0.2.1/html/search/groups_1.js
+usr/doc/libopusenc-0.2.1/html/search/mag_sel.png
+usr/doc/libopusenc-0.2.1/html/search/nomatches.html
+usr/doc/libopusenc-0.2.1/html/search/search.css
+usr/doc/libopusenc-0.2.1/html/search/search.js
+usr/doc/libopusenc-0.2.1/html/search/search_l.png
+usr/doc/libopusenc-0.2.1/html/search/search_m.png
+usr/doc/libopusenc-0.2.1/html/search/search_r.png
+usr/doc/libopusenc-0.2.1/html/search/searchdata.js
+usr/doc/libopusenc-0.2.1/html/search/typedefs_0.html
+usr/doc/libopusenc-0.2.1/html/search/typedefs_0.js
+usr/doc/libopusenc-0.2.1/html/search/variables_0.html
+usr/doc/libopusenc-0.2.1/html/search/variables_0.js
+usr/doc/libopusenc-0.2.1/html/search/variables_1.html
+usr/doc/libopusenc-0.2.1/html/search/variables_1.js
+usr/doc/libopusenc-0.2.1/html/splitbar.png
+usr/doc/libopusenc-0.2.1/html/structOpusEncCallbacks.html
+usr/doc/libopusenc-0.2.1/html/sync_off.png
+usr/doc/libopusenc-0.2.1/html/sync_on.png
+usr/doc/libopusenc-0.2.1/html/tab_a.png
+usr/doc/libopusenc-0.2.1/html/tab_b.png
+usr/doc/libopusenc-0.2.1/html/tab_h.png
+usr/doc/libopusenc-0.2.1/html/tab_s.png
+usr/doc/libopusenc-0.2.1/html/tabs.css
+usr/include/
+usr/include/opus/
+usr/include/opus/opusenc.h
+usr/lib64/
+usr/lib64/libopusenc.so.0.4.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libopusenc.pc

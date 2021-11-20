@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Copyright 2016-2020  Jay Flood, SP, Brasil
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Author: brokenman@porteus.org
+#
+# This is a starter script to download a live script and update bundles.
+
+# Get the server
+SERVER=`awk -F= '/SERVER=/{print$NF}' /etc/porteus.conf`
+LIVESCRIPT="$SERVER/i586/testing/live/gtk-bundles-live"
+SCRIPT=${LIVESCRIPT##*/}
+
+. /usr/share/porteus/porteus-functions
+get_colors
+
+########## Start checks
+bold "Starting checks ..."
+
+# Check for connection
+if ! is_online_url $SERVER; then
+	/usr/share/porteus/gtkdialog.py -p "There was a problem." -s "An internet conection is required." -t "err"
+	exit
+fi
+
+# Download the live script
+cd /tmp
+/usr/share/porteus/gtkdownload.py -u $LIVESCRIPT
+if [ ! -e gtk-bundles-live ]; then
+	/usr/share/porteus/gtkdialog.py -p "There was a problem." -s "Could not download the live script." -t "err"
+	exit
+fi
+
+chmod +x /tmp/$SCRIPT
+mv /tmp/$SCRIPT /usr/local/bin
+/usr/local/bin/$SCRIPT
+exit

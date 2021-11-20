@@ -1,0 +1,99 @@
+#!/usr/bin/python
+## soundcard script in pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+import subprocess
+import tempfile
+import os
+
+class GtkSoundC(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Porteus Sound Card Selector", border_width = 5, height_request = 450, width_request = 450, icon_name = "audio-headphones-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"large\" weight=\"bold\">Porteus Sound Card Selector</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.txt = Gtk.Label()
+        self.txt.set_markup("<span>Choose your default sound card</span>")
+        self.vb.pack_start(self.txt, False, False, 5)
+
+        self.help_txt = Gtk.Label()
+        self.help_txt.set_markup("<span>When more than one sound device is attached to your system, you may\n experience problems with the wrong device being used as the default for\n ALSA and applications that use sound.\n\nPlease select your desired default sound card from the list below and\n click '"'Apply'"' to set this card as the default for the current session.  You\n can also select '"'Build'"' to create a module that will force the system to use\n the specified device as the default card every time you start up the\n system.\n\nPlease close all programs that use sound, such as browsers, media\n players and mixers.</span>")
+        self.vb.pack_start(self.help_txt, False, False, 5)
+
+        self.hb1 = Gtk.Box(spacing = 5)
+        self.hb1.pack_start(Gtk.Label(label = "Default Card:  "), False, False, 5)
+
+        cards = [
+            "card1",
+            "card2",
+        ]
+
+        self.card_combo = Gtk.ComboBoxText()
+        self.card_combo.set_entry_text_column(0)
+        self.card_combo.connect("changed", self.on_card_combo_changed)
+        for card in cards:
+            self.card_combo.append_text(card)
+        self.hb1.pack_start(self.card_combo, False, False, 5)
+        self.vb.add(self.hb1)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.ok_button = Gtk.Button.new_with_label("Apply")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        # ~ self.ok_button.set_sensitive(False)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+
+        self.build_button = Gtk.Button.new_with_label("Build")
+        self.build_button.connect("clicked", self.on_build_clicked)
+        self.hb_bottom.pack_end(self.build_button, False, False, 2)
+
+        self.test_button = Gtk.Button.new_with_label("Test")
+        self.test_button.connect("clicked", self.on_test_clicked)
+        self.hb_bottom.pack_end(self.test_button, False, False, 2)
+        
+        self.cancel_button = Gtk.Button.new_with_label("Exit")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        self.add(self.vb)
+
+    def on_card_combo_changed(self, combo):
+        tree_iter = combo.get_active_iter()
+        if tree_iter is not None:
+            model = combo.get_model()
+            row_id, name = model[tree_iter][:2]
+            print("Selected: name=%s" % (name))
+        else:
+            entry = combo.get_child()
+            print("Entered: %s" % entry.get_text())
+
+    def on_test_clicked(self, button):
+        print("fixme")
+
+    def on_build_clicked(self, button):
+        print("fixme")
+
+    def on_ok_clicked(self, button):
+        # Dummy
+        # ~ subprocess.Popen(['some', 'commands'], %s)
+        dialog = Gtk.MessageDialog(parent = self, flags = 0, message_type = Gtk.MessageType.INFO, buttons = Gtk.ButtonsType.OK, text = "Sound Card")
+        dialog.format_secondary_text("Your default sound card is set.")
+        dialog.run()
+        dialog.destroy()
+        Gtk.main_quit()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+win = GtkSoundC()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

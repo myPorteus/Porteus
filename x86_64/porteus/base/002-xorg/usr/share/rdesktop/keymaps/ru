@@ -1,0 +1,80 @@
+include modifiers
+map 0x419
+#
+# Arrow keys
+#
+Left 0xcb localstate
+Up 0xc8 localstate
+Down 0xd0 localstate
+Right 0xcd localstate
+
+#
+# Numpad
+#
+Num_Lock 0x45
+KP_Divide 0xb5 localstate
+KP_Multiply 0x37 localstate
+KP_Subtract 0x4a localstate
+KP_Add 0x4e localstate
+KP_Enter 0x9c localstate
+
+KP_Decimal 0x53 numlock
+KP_Separator 0x53 numlock
+KP_Delete 0x53
+
+KP_0 0x52 numlock
+KP_Insert 0x52 localstate
+
+KP_1 0x4f numlock
+KP_End 0x4f localstate
+
+KP_2 0x50 numlock
+KP_Down 0x50 localstate
+
+KP_3 0x51 numlock
+KP_Next 0x51 localstate
+
+KP_4 0x4b numlock
+KP_Left 0x4b localstate
+
+KP_5 0x4c numlock
+KP_Begin 0x4c localstate
+
+KP_6 0x4d numlock
+KP_Right 0x4d localstate
+
+KP_7 0x47 numlock
+KP_Home 0x47 localstate
+
+KP_8 0x48 numlock
+KP_Up 0x48 localstate
+
+KP_9 0x49 numlock
+KP_Prior 0x49 localstate
+#
+# Esc and Function keys
+#
+Escape 0x1 localstate
+F1 0x3b localstate
+F2 0x3c localstate
+F3 0x3d localstate
+F4 0x3e localstate
+F5 0x3f localstate
+F6 0x40 localstate
+F7 0x41 localstate
+F8 0x42 localstate
+F9 0x43 localstate
+F10 0x44 localstate
+F11 0x57 localstate
+F12 0x58 localstate
+
+#
+# Insert - PgDown
+#
+Insert 0xd2 localstate
+Delete 0xd3 localstate
+Home 0xc7 localstate
+End 0xcf localstate
+Page_Up 0xc9 localstate
+Page_Down 0xd1 localstate
+

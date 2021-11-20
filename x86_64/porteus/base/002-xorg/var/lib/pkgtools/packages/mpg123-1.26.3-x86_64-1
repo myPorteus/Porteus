@@ -1,0 +1,91 @@
+PACKAGE NAME:     mpg123-1.26.3-x86_64-1
+COMPRESSED PACKAGE SIZE:     440K
+UNCOMPRESSED PACKAGE SIZE:     1.4M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/mpg123-1.26.3-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mpg123: mpg123 (a command-line mp3 player)
+mpg123:
+mpg123: mpg123 is a real time MPEG 1.0/2.0/2.5 audio player/decoder for 
+mpg123: layers 1, 2, and 3 (MPEG 1.0 layer 3 aka MP3 most commonly tested). 
+mpg123:
+mpg123: It is free software licensed under LGPL 2.1.
+mpg123:
+mpg123: Homepage: http://mpg123.org/
+mpg123:
+mpg123:
+mpg123:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mpg123
+usr/bin/mpg123-id3dump
+usr/bin/mpg123-strip
+usr/bin/out123
+usr/doc/
+usr/doc/mpg123-1.26.3/
+usr/doc/mpg123-1.26.3/AUTHORS
+usr/doc/mpg123-1.26.3/COPYING
+usr/doc/mpg123-1.26.3/ChangeLog
+usr/doc/mpg123-1.26.3/INSTALL
+usr/doc/mpg123-1.26.3/NEWS
+usr/doc/mpg123-1.26.3/NEWS.libmpg123
+usr/doc/mpg123-1.26.3/NEWS.libout123
+usr/doc/mpg123-1.26.3/NEWS.libsyn123
+usr/doc/mpg123-1.26.3/README
+usr/doc/mpg123-1.26.3/TODO
+usr/doc/mpg123-1.26.3/doc/
+usr/doc/mpg123-1.26.3/doc/ACCURACY
+usr/doc/mpg123-1.26.3/doc/BENCHMARKING
+usr/doc/mpg123-1.26.3/doc/BUGS
+usr/doc/mpg123-1.26.3/doc/CONTACT
+usr/doc/mpg123-1.26.3/doc/LARGEFILE
+usr/doc/mpg123-1.26.3/doc/LICENSE
+usr/doc/mpg123-1.26.3/doc/Makemodule.am
+usr/doc/mpg123-1.26.3/doc/PATENTS
+usr/doc/mpg123-1.26.3/doc/README.3DNOW
+usr/doc/mpg123-1.26.3/doc/README.gain
+usr/doc/mpg123-1.26.3/doc/README.remote
+usr/doc/mpg123-1.26.3/doc/ROAD_TO_LGPL
+usr/doc/mpg123-1.26.3/doc/THANKS
+usr/doc/mpg123-1.26.3/doc/TODO
+usr/doc/mpg123-1.26.3/doc/doxy_examples.c
+usr/doc/mpg123-1.26.3/doc/doxyfoot.xhtml
+usr/doc/mpg123-1.26.3/doc/doxygen.conf
+usr/doc/mpg123-1.26.3/doc/doxyhead.xhtml
+usr/doc/mpg123-1.26.3/doc/examples/
+usr/doc/mpg123-1.26.3/doc/examples/Makefile
+usr/doc/mpg123-1.26.3/doc/examples/dump_seekindex.c
+usr/doc/mpg123-1.26.3/doc/examples/extract_frames.c
+usr/doc/mpg123-1.26.3/doc/examples/feedseek.c
+usr/doc/mpg123-1.26.3/doc/examples/id3dump.c
+usr/doc/mpg123-1.26.3/doc/examples/mpg123_to_out123.c
+usr/doc/mpg123-1.26.3/doc/examples/mpglib.c
+usr/doc/mpg123-1.26.3/doc/examples/scan.c
+usr/doc/mpg123-1.26.3/doc/libmpg123_speed.txt
+usr/include/
+usr/include/fmt123.h
+usr/include/mpg123.h
+usr/include/out123.h
+usr/include/syn123.h
+usr/lib64/
+usr/lib64/libmpg123.so.0.45.2
+usr/lib64/libout123.so.0.3.0
+usr/lib64/libsyn123.so.0.1.1
+usr/lib64/mpg123/
+usr/lib64/mpg123/output_alsa.so
+usr/lib64/mpg123/output_dummy.so
+usr/lib64/mpg123/output_oss.so
+usr/lib64/mpg123/output_pulse.so
+usr/lib64/mpg123/output_sdl.so
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libmpg123.pc
+usr/lib64/pkgconfig/libout123.pc
+usr/lib64/pkgconfig/libsyn123.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/mpg123.1.gz
+usr/man/man1/out123.1.gz

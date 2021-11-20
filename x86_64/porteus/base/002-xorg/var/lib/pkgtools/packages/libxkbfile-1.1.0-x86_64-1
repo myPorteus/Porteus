@@ -1,0 +1,41 @@
+PACKAGE NAME:     libxkbfile-1.1.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     260K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libxkbfile-1.1.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libxkbfile: libxkbfile (X11 keyboard file manipulation library)
+libxkbfile:
+libxkbfile: libxkbfile is part of X11.
+libxkbfile:
+libxkbfile: For more information about the X.Org Foundation (the providers of the
+libxkbfile: X.Org implementation of the X Window System), see their website:
+libxkbfile:
+libxkbfile: http://www.x.org
+libxkbfile:
+libxkbfile:
+libxkbfile:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libxkbfile-1.1.0/
+usr/doc/libxkbfile-1.1.0/COPYING
+usr/doc/libxkbfile-1.1.0/ChangeLog
+usr/doc/libxkbfile-1.1.0/INSTALL
+usr/doc/libxkbfile-1.1.0/README.md
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/XKBbells.h
+usr/include/X11/extensions/XKBconfig.h
+usr/include/X11/extensions/XKBfile.h
+usr/include/X11/extensions/XKBrules.h
+usr/include/X11/extensions/XKM.h
+usr/include/X11/extensions/XKMformat.h
+usr/lib64/
+usr/lib64/libxkbfile.so.1.0.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xkbfile.pc

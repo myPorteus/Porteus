@@ -1,0 +1,38 @@
+PACKAGE NAME:     libXdamage-1.1.5-x86_64-1
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libXdamage-1.1.5-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libXdamage: libXdamage (client library for the X Damage Extension)
+libXdamage:
+libXdamage: libXdamage is part of X11.
+libXdamage:
+libXdamage: For more information about the X.Org Foundation (the providers of the
+libXdamage: X.Org implementation of the X Window System), see their website:
+libXdamage:
+libXdamage: http://www.x.org
+libXdamage:
+libXdamage:
+libXdamage:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXdamage-1.1.5/
+usr/doc/libXdamage-1.1.5/AUTHORS
+usr/doc/libXdamage-1.1.5/COPYING
+usr/doc/libXdamage-1.1.5/ChangeLog
+usr/doc/libXdamage-1.1.5/INSTALL
+usr/doc/libXdamage-1.1.5/NEWS
+usr/doc/libXdamage-1.1.5/README.md
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/Xdamage.h
+usr/lib64/
+usr/lib64/libXdamage.so.1.1.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xdamage.pc

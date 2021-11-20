@@ -1,0 +1,136 @@
+PACKAGE NAME:     libmp4v2-20191108_9084868-x86_64-1_SBo
+COMPRESSED PACKAGE SIZE:     1.4M
+UNCOMPRESSED PACKAGE SIZE:     6.0M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/libmp4v2-20191108_9084868-x86_64-1_SBo.tgz
+PACKAGE DESCRIPTION:
+libmp4v2: libmp4v2 (library to read, create, and modify mp4 files)
+libmp4v2:
+libmp4v2: This library provides functions to read, create, and modify mp4
+libmp4v2: files.  This is a standalone version of mp4v2 library.  It is
+libmp4v2: derived from the mpeg4ip source tree, but for licensing reasons
+libmp4v2: it has been adapted to this form.
+libmp4v2:
+libmp4v2: Homepage: https://github.com/sergiomb2/libmp4v2
+libmp4v2:
+libmp4v2:
+libmp4v2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/mp4art
+usr/bin/mp4chaps
+usr/bin/mp4extract
+usr/bin/mp4file
+usr/bin/mp4info
+usr/bin/mp4subtitle
+usr/bin/mp4tags
+usr/bin/mp4track
+usr/bin/mp4trackdump
+usr/doc/
+usr/doc/libmp4v2-20191108_9084868/
+usr/doc/libmp4v2-20191108_9084868/COPYING
+usr/doc/libmp4v2-20191108_9084868/README
+usr/doc/libmp4v2-20191108_9084868/libmp4v2.SlackBuild
+usr/include/
+usr/include/mp4v2/
+usr/include/mp4v2/chapter.h
+usr/include/mp4v2/file.h
+usr/include/mp4v2/file_prop.h
+usr/include/mp4v2/general.h
+usr/include/mp4v2/isma.h
+usr/include/mp4v2/itmf_generic.h
+usr/include/mp4v2/itmf_tags.h
+usr/include/mp4v2/mp4v2.h
+usr/include/mp4v2/platform.h
+usr/include/mp4v2/project.h
+usr/include/mp4v2/sample.h
+usr/include/mp4v2/streaming.h
+usr/include/mp4v2/track.h
+usr/include/mp4v2/track_prop.h
+usr/lib64/
+usr/lib64/libmp4v2.a
+usr/lib64/libmp4v2.la
+usr/lib64/libmp4v2.so.2.1.0
+usr/man/
+usr/man/man1/
+usr/man/man1/mp4art.1.gz
+usr/man/man1/mp4file.1.gz
+usr/man/man1/mp4subtitle.1.gz
+usr/man/man1/mp4track.1.gz
+usr/man/man3/
+usr/man/man3/MP4.3.gz
+usr/man/man3/MP4AddRtpESConfigurationPacket.3.gz
+usr/man/man3/MP4AddRtpHint.3.gz
+usr/man/man3/MP4AddRtpImmediateData.3.gz
+usr/man/man3/MP4AddRtpPacket.3.gz
+usr/man/man3/MP4AddRtpSampleData.3.gz
+usr/man/man3/MP4AddRtpVideoHint.3.gz
+usr/man/man3/MP4AddTrackEdit.3.gz
+usr/man/man3/MP4AppendHintTrackSdp.3.gz
+usr/man/man3/MP4AppendSessionSdp.3.gz
+usr/man/man3/MP4BinaryToBase16.3.gz
+usr/man/man3/MP4BinaryToBase64.3.gz
+usr/man/man3/MP4CloneTrack.3.gz
+usr/man/man3/MP4ConvertFromMovieDuration.3.gz
+usr/man/man3/MP4ConvertFromTrackTimestamp.3.gz
+usr/man/man3/MP4ConvertToTrackTimestamp.3.gz
+usr/man/man3/MP4CopyTrack.3.gz
+usr/man/man3/MP4DeleteTrack.3.gz
+usr/man/man3/MP4DeleteTrackEdit.3.gz
+usr/man/man3/MP4FindTrackId.3.gz
+usr/man/man3/MP4FindTrackIndex.3.gz
+usr/man/man3/MP4GetAudioProfileLevel.3.gz
+usr/man/man3/MP4GetDuration.3.gz
+usr/man/man3/MP4GetGraphicsProfileLevel.3.gz
+usr/man/man3/MP4GetHintTrackReferenceTrackId.3.gz
+usr/man/man3/MP4GetHintTrackRtpPayload.3.gz
+usr/man/man3/MP4GetHintTrackSdp.3.gz
+usr/man/man3/MP4GetNumberOfTracks.3.gz
+usr/man/man3/MP4GetODProfileLevel.3.gz
+usr/man/man3/MP4GetRtpHintNumberOfPackets.3.gz
+usr/man/man3/MP4GetRtpPacketBFrame.3.gz
+usr/man/man3/MP4GetRtpPacketTransmitOffset.3.gz
+usr/man/man3/MP4GetRtpTimestampStart.3.gz
+usr/man/man3/MP4GetSampleIdFromEditTime.3.gz
+usr/man/man3/MP4GetSceneProfileLevel.3.gz
+usr/man/man3/MP4GetSessionSdp.3.gz
+usr/man/man3/MP4GetTrackAudioMpeg4Type.3.gz
+usr/man/man3/MP4GetTrackAudioType.3.gz
+usr/man/man3/MP4GetTrackBitRate.3.gz
+usr/man/man3/MP4GetTrackDuration.3.gz
+usr/man/man3/MP4GetTrackESConfiguration.3.gz
+usr/man/man3/MP4GetTrackEditDuration.3.gz
+usr/man/man3/MP4GetTrackEditDwell.3.gz
+usr/man/man3/MP4GetTrackEditMediaStart.3.gz
+usr/man/man3/MP4GetTrackEditStart.3.gz
+usr/man/man3/MP4GetTrackEditTotalDuration.3.gz
+usr/man/man3/MP4GetTrackFixedSampleDuration.3.gz
+usr/man/man3/MP4GetTrackNumberOfEdits.3.gz
+usr/man/man3/MP4GetTrackNumberOfSamples.3.gz
+usr/man/man3/MP4GetTrackVideoFrameRate.3.gz
+usr/man/man3/MP4GetTrackVideoHeight.3.gz
+usr/man/man3/MP4GetTrackVideoType.3.gz
+usr/man/man3/MP4GetTrackVideoWidth.3.gz
+usr/man/man3/MP4GetVideoProfileLevel.3.gz
+usr/man/man3/MP4MakeIsmaCompliant.3.gz
+usr/man/man3/MP4ReadRtpHint.3.gz
+usr/man/man3/MP4ReadRtpPacket.3.gz
+usr/man/man3/MP4ReadSampleFromEditTime.3.gz
+usr/man/man3/MP4SetAudioProfileLevel.3.gz
+usr/man/man3/MP4SetGraphicsProfileLevel.3.gz
+usr/man/man3/MP4SetHintTrackRtpPayload.3.gz
+usr/man/man3/MP4SetHintTrackSdp.3.gz
+usr/man/man3/MP4SetODProfileLevel.3.gz
+usr/man/man3/MP4SetRtpTimestampStart.3.gz
+usr/man/man3/MP4SetSceneProfileLevel.3.gz
+usr/man/man3/MP4SetSessionSdp.3.gz
+usr/man/man3/MP4SetTrackESConfiguration.3.gz
+usr/man/man3/MP4SetTrackEditDuration.3.gz
+usr/man/man3/MP4SetTrackEditDwell.3.gz
+usr/man/man3/MP4SetTrackEditMediaStart.3.gz
+usr/man/man3/MP4SetVideoProfileLevel.3.gz
+usr/man/man3/MP4WriteRtpHint.3.gz

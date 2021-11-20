@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/opt/porteus-scripts/make-changes
+Icon=document-save-symbolic
+Name=Porteus save file manager
+Name[ru]=Менеджер сохранения изменений Porteus
+Type=Application
+Categories=Application;System;
