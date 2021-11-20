@@ -1,0 +1,60 @@
+PACKAGE NAME:     screengrab-0.17.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     196K
+UNCOMPRESSED PACKAGE SIZE:     970K
+PACKAGE LOCATION: screengrab-0.17.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/screengrab
+usr/lib64/
+usr/lib64/screengrab/
+usr/lib64/screengrab/libextedit.so.1.0.0
+usr/share/
+usr/share/applications/
+usr/share/applications/screengrab.desktop
+usr/share/doc/
+usr/share/doc/screengrab/
+usr/share/doc/screengrab/html/
+usr/share/doc/screengrab/html/default.css
+usr/share/doc/screengrab/html/en/
+usr/share/doc/screengrab/html/en/index.html
+usr/share/doc/screengrab/html/pt_BR/
+usr/share/doc/screengrab/html/pt_BR/index.html
+usr/share/doc/screengrab/html/ru/
+usr/share/doc/screengrab/html/ru/index.html
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/screengrab.png
+usr/share/screengrab/
+usr/share/screengrab/screengrab.conf
+usr/share/screengrab/translations/
+usr/share/screengrab/translations/screengrab_arn.qm
+usr/share/screengrab/translations/screengrab_ast.qm
+usr/share/screengrab/translations/screengrab_ca.qm
+usr/share/screengrab/translations/screengrab_cs.qm
+usr/share/screengrab/translations/screengrab_cy.qm
+usr/share/screengrab/translations/screengrab_de.qm
+usr/share/screengrab/translations/screengrab_el.qm
+usr/share/screengrab/translations/screengrab_es.qm
+usr/share/screengrab/translations/screengrab_fr.qm
+usr/share/screengrab/translations/screengrab_gl.qm
+usr/share/screengrab/translations/screengrab_he.qm
+usr/share/screengrab/translations/screengrab_hu.qm
+usr/share/screengrab/translations/screengrab_it.qm
+usr/share/screengrab/translations/screengrab_ja.qm
+usr/share/screengrab/translations/screengrab_lt.qm
+usr/share/screengrab/translations/screengrab_nb_NO.qm
+usr/share/screengrab/translations/screengrab_pl.qm
+usr/share/screengrab/translations/screengrab_pt.qm
+usr/share/screengrab/translations/screengrab_pt_BR.qm
+usr/share/screengrab/translations/screengrab_pt_PT.qm
+usr/share/screengrab/translations/screengrab_ru.qm
+usr/share/screengrab/translations/screengrab_sv.qm
+usr/share/screengrab/translations/screengrab_tr.qm
+usr/share/screengrab/translations/screengrab_uk.qm

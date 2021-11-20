@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=openRootDolphinHere;
+X-KDE-AuthorizeAction=shell_access
+
+[Desktop Action openRootDolphinHere]
+TryExec=kdesu
+Exec=kdesu dolphin %U
+Icon=folder-red
+
+Name=Open Root Dolphin Here
+Comment=Open folder as root
+Name[ru]=Открыть каталог с правами root
+Comment[ru]=Открыть текущий каталог в Dolphin с правами root

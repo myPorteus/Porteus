@@ -1,0 +1,43 @@
+[Desktop Entry]
+Name=FeatherPad
+GenericName=Text Editor
+GenericName[cs]=Textový editor
+GenericName[da]=Tekstredigering
+GenericName[es]=Editor de texto
+GenericName[eo]=Tekst-Redaktilo
+GenericName[hu]=Szövegszerkesztő
+GenericName[ja_JP]=テキストエディタ(Qt)
+GenericName[pl]=Edytor tekstu
+GenericName[pt]=Editor de texto
+GenericName[ru]=Текстовый редактор
+GenericName[tr]=Metin Düzenleyici
+GenericName[zh_CN]=文本编辑器
+Comment=Lightweight Qt5 text editor
+Comment[cs]=Nenáročný textový editor, založený na Qt5
+Comment[da]=Letvægts Qt5-tekstredigering
+Comment[es]=Editor de texto ligero basado en Qt5
+Comment[eo]=Malpeza tekst-redaktilo bazita sur Qt5
+Comment[hu]=Gyors szövegszerkesztő Qt5-ben
+Comment[ja_JP]=軽量 Qt5 テキストエディタ
+Comment[pl]=Lekki edytor tekstu oparty na Qt5
+Comment[pt]=Editor de texto em Qt5
+Comment[ru]=Лёгкий текстовый редактор на Qt5
+Comment[tr]=Hafif Qt5 tabanlı metin düzenleyici
+Comment[zh_CN]=轻量级 Qt5 文本编辑器
+Exec=featherpad %F
+Icon=featherpad
+Terminal=false
+Type=Application
+MimeType=text/plain;
+Categories=Qt;Utility;TextEditor;
+X-KDE-StartupNotify=false;
+Keywords=Text;Editor;Plaintext;
+Actions=new-window;
+
+[Desktop Action new-window]
+Name=New Window
+Name[cs]=Nové okno
+Name[de]=Neues Fenster
+Name[eo]=Nova Fenestro
+Name[hu]=Új ablak
+Exec=featherpad --win

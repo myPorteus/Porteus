@@ -1,0 +1,8 @@
+{
+ "uuid": "panel-launchers@cinnamon.org",
+ "name": "Panel launchers",
+ "description": "Launch applications from the panel",
+ "icon": "cinnamon-panel-launcher",
+ "role": "panellauncher",
+ "max-instances": -1
+}

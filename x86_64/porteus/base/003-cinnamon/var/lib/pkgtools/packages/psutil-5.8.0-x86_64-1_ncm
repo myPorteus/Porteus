@@ -1,0 +1,101 @@
+PACKAGE NAME:     psutil-5.8.0-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     336K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/psutil-5.8.0-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+psutil: psutil (python interface for process and system info)
+psutil:
+psutil: psutil is a module providing an interface for retrieving information
+psutil: on all running processes and system utilization (CPU, memory, disks,
+psutil: network, users) in a portable way by using Python, implementing many
+psutil: functionalities offered by command line tools such as: ps, top, df,
+psutil: kill, free, lsof, netstat, ifconfig, nice, ionice, iostat, iotop,
+psutil: uptime, pidof, tty, who, taskset, and pmap
+psutil:
+psutil: Homepage: https://github.com/giampaolo/psutil
+psutil:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/psutil-5.8.0/
+usr/doc/psutil-5.8.0/CREDITS
+usr/doc/psutil-5.8.0/HISTORY.rst
+usr/doc/psutil-5.8.0/INSTALL.rst
+usr/doc/psutil-5.8.0/LICENSE
+usr/doc/psutil-5.8.0/README.rst
+usr/doc/psutil-5.8.0/psutil.SlackBuild
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/PKG-INFO
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/SOURCES.txt
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/dependency_links.txt
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/not-zip-safe
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/requires.txt
+usr/lib64/python3.9/site-packages/psutil-5.8.0-py3.9.egg-info/top_level.txt
+usr/lib64/python3.9/site-packages/psutil/
+usr/lib64/python3.9/site-packages/psutil/__init__.py
+usr/lib64/python3.9/site-packages/psutil/__pycache__/
+usr/lib64/python3.9/site-packages/psutil/__pycache__/__init__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_common.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_compat.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_psaix.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_psbsd.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_pslinux.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_psosx.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_psposix.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_pssunos.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/__pycache__/_pswindows.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/_common.py
+usr/lib64/python3.9/site-packages/psutil/_compat.py
+usr/lib64/python3.9/site-packages/psutil/_psaix.py
+usr/lib64/python3.9/site-packages/psutil/_psbsd.py
+usr/lib64/python3.9/site-packages/psutil/_pslinux.py
+usr/lib64/python3.9/site-packages/psutil/_psosx.py
+usr/lib64/python3.9/site-packages/psutil/_psposix.py
+usr/lib64/python3.9/site-packages/psutil/_pssunos.py
+usr/lib64/python3.9/site-packages/psutil/_psutil_linux.cpython-39-x86_64-linux-gnu.so
+usr/lib64/python3.9/site-packages/psutil/_psutil_posix.cpython-39-x86_64-linux-gnu.so
+usr/lib64/python3.9/site-packages/psutil/_pswindows.py
+usr/lib64/python3.9/site-packages/psutil/tests/
+usr/lib64/python3.9/site-packages/psutil/tests/__init__.py
+usr/lib64/python3.9/site-packages/psutil/tests/__main__.py
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/__init__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/__main__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/runner.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_aix.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_bsd.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_connections.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_contracts.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_linux.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_memleaks.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_misc.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_osx.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_posix.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_process.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_sunos.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_system.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_testutils.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_unicode.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/__pycache__/test_windows.cpython-39.pyc
+usr/lib64/python3.9/site-packages/psutil/tests/runner.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_aix.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_bsd.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_connections.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_contracts.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_linux.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_memleaks.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_misc.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_osx.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_posix.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_process.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_sunos.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_system.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_testutils.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_unicode.py
+usr/lib64/python3.9/site-packages/psutil/tests/test_windows.py

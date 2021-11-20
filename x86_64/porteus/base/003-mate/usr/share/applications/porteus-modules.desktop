@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Porteus Modules
+Name[ru]=Модули Porteus
+Exec=/usr/bin/pauth dbus-launch --exit-with-session /usr/local/bin/lsmodules
+Icon=cdr
+Type=Application
+Categories=Application;System;
+

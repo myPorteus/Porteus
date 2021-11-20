@@ -1,0 +1,17 @@
+# Service menu to build Porteus modules ( *.xzm files )
+# Author: fanthom
+
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+X-KDE-Priority=TopLevel
+Actions=make_porteus_zstd_module;
+
+[Desktop Action make_porteus_zstd_module]
+Name=Build Porteus zstd xzm module
+Comment=Create a porteus zstd module from a folder
+Name[ru]=Создать zstd модуль
+Comment[ru]=Создать из папки модуль для Porteus zstd
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/create-module -z %f

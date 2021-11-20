@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.ktexteditor.katetextbuffer
+Exec=/usr/lib64/kauth/kauth_ktexteditor_helper
+User=root

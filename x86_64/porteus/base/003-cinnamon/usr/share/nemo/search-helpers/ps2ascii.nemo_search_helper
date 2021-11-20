@@ -1,0 +1,5 @@
+[Nemo Search Helper]
+TryExec=ps2ascii;
+Exec=ps2ascii %s
+MimeType=application/ps;
+Priority=100;

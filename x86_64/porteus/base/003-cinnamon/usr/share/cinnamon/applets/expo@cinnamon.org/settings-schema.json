@@ -1,0 +1,12 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "Behavior"
+    },
+    "activate-on-hover": {
+        "type": "switch",
+        "default" : false,
+        "description" : "Activate expo on hover"
+    }
+}
+

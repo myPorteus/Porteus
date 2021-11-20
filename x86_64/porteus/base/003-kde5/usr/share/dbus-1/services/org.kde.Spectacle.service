@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.Spectacle
+Exec=/usr/bin/spectacle --dbus
+SystemdService=app-org.kde.spectacle.service

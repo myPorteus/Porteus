@@ -1,0 +1,116 @@
+PACKAGE NAME:     libdbusmenu-16.04.0-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     140K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/libdbusmenu-16.04.0-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+libdbusmenu: libdbusmenu (dbusmenu)
+libdbusmenu:
+libdbusmenu: A small little library that was created by pulling out some comon
+libdbusmenu: code out of indicator-applet
+libdbusmenu:
+libdbusmenu:
+libdbusmenu: Project URL: https://launchpad.net/libdbusmenu
+libdbusmenu:
+libdbusmenu:
+libdbusmenu:
+libdbusmenu:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdbusmenu-16.04.0/
+usr/doc/libdbusmenu-16.04.0/AUTHORS
+usr/doc/libdbusmenu-16.04.0/COPYING
+usr/doc/libdbusmenu-16.04.0/COPYING-GPL3
+usr/doc/libdbusmenu-16.04.0/COPYING.2.1
+usr/doc/libdbusmenu-16.04.0/INSTALL
+usr/doc/libdbusmenu-16.04.0/NEWS
+usr/doc/libdbusmenu-16.04.0/README
+usr/doc/libdbusmenu-16.04.0/README.dbusmenu-bench
+usr/doc/libdbusmenu-16.04.0/libdbusmenu.SlackBuild
+usr/include/
+usr/include/libdbusmenu-glib-0.4/
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/client.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/dbusmenu-glib.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/enum-types.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/menuitem-proxy.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/menuitem.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/server.h
+usr/include/libdbusmenu-glib-0.4/libdbusmenu-glib/types.h
+usr/include/libdbusmenu-gtk3-0.4/
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/client.h
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/dbusmenu-gtk.h
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/menu.h
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/menuitem.h
+usr/include/libdbusmenu-gtk3-0.4/libdbusmenu-gtk/parser.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Dbusmenu-0.4.typelib
+usr/lib64/girepository-1.0/DbusmenuGtk3-0.4.typelib
+usr/lib64/libdbusmenu-glib.la
+usr/lib64/libdbusmenu-glib.so.4.0.12
+usr/lib64/libdbusmenu-gtk3.la
+usr/lib64/libdbusmenu-gtk3.so.4.0.12
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/dbusmenu-glib-0.4.pc
+usr/lib64/pkgconfig/dbusmenu-gtk3-0.4.pc
+usr/libexec/
+usr/libexec/dbusmenu-bench
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Dbusmenu-0.4.gir
+usr/share/gir-1.0/DbusmenuGtk3-0.4.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libdbusmenu-glib/
+usr/share/gtk-doc/html/libdbusmenu-glib/annotation-glossary.html
+usr/share/gtk-doc/html/libdbusmenu-glib/api-index-deprecated.html
+usr/share/gtk-doc/html/libdbusmenu-glib/api-index-full.html
+usr/share/gtk-doc/html/libdbusmenu-glib/ch01.html
+usr/share/gtk-doc/html/libdbusmenu-glib/home.png
+usr/share/gtk-doc/html/libdbusmenu-glib/index.html
+usr/share/gtk-doc/html/libdbusmenu-glib/index.sgml
+usr/share/gtk-doc/html/libdbusmenu-glib/left-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-glib/left.png
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib-DbusmenuClient.html
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib-DbusmenuMenuitem.html
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib-DbusmenuMenuitemProxy.html
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib-DbusmenuServer.html
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib-Types.html
+usr/share/gtk-doc/html/libdbusmenu-glib/libdbusmenu-glib.devhelp2
+usr/share/gtk-doc/html/libdbusmenu-glib/object-tree.html
+usr/share/gtk-doc/html/libdbusmenu-glib/right-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-glib/right.png
+usr/share/gtk-doc/html/libdbusmenu-glib/style.css
+usr/share/gtk-doc/html/libdbusmenu-glib/up-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-glib/up.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/
+usr/share/gtk-doc/html/libdbusmenu-gtk/annotation-glossary.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/api-index-deprecated.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/api-index-full.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/ch01.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/home.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/index.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/index.sgml
+usr/share/gtk-doc/html/libdbusmenu-gtk/left-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/left.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/libdbusmenu-gtk-DbusmenuGtkClient.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/libdbusmenu-gtk-DbusmenuGtkMenu.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/libdbusmenu-gtk-menuitem.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/libdbusmenu-gtk-parser.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/libdbusmenu-gtk.devhelp2
+usr/share/gtk-doc/html/libdbusmenu-gtk/object-tree.html
+usr/share/gtk-doc/html/libdbusmenu-gtk/right-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/right.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/style.css
+usr/share/gtk-doc/html/libdbusmenu-gtk/up-insensitive.png
+usr/share/gtk-doc/html/libdbusmenu-gtk/up.png
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/Dbusmenu-0.4.vapi
+usr/share/vala/vapi/DbusmenuGtk3-0.4.vapi

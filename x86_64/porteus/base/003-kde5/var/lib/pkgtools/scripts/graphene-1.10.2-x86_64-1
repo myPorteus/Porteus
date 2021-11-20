@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgraphene-1.0.so )
+( cd usr/lib64 ; ln -sf libgraphene-1.0.so.0 libgraphene-1.0.so )
+( cd usr/lib64 ; rm -rf libgraphene-1.0.so.0 )
+( cd usr/lib64 ; ln -sf libgraphene-1.0.so.0.1000.2 libgraphene-1.0.so.0 )

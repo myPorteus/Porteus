@@ -1,0 +1,58 @@
+PACKAGE NAME:     clutter-gtk-1.8.4-x86_64-2_ncm
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/clutter-gtk-1.8.4-x86_64-2_ncm.txz
+PACKAGE DESCRIPTION:
+clutter-gtk: clutter-gtk (GTK Clutter Widget)
+clutter-gtk:
+clutter-gtk: Clutter-GTK is a library providing facilities to integrate Clutter
+clutter-gtk: into GTK+ applications and vice versa.
+clutter-gtk:
+clutter-gtk:
+clutter-gtk:
+clutter-gtk: Project URL: https://github.com/GNOME/clutter-gtk
+clutter-gtk:
+clutter-gtk:
+clutter-gtk:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/clutter-gtk-1.8.4/
+usr/doc/clutter-gtk-1.8.4/ABOUT-NLS
+usr/doc/clutter-gtk-1.8.4/COPYING
+usr/doc/clutter-gtk-1.8.4/NEWS
+usr/doc/clutter-gtk-1.8.4/README
+usr/doc/clutter-gtk-1.8.4/clutter-gtk.SlackBuild
+usr/include/
+usr/include/clutter-gtk-1.0/
+usr/include/clutter-gtk-1.0/clutter-gtk/
+usr/include/clutter-gtk-1.0/clutter-gtk/clutter-gtk.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-actor.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-embed.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-texture.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-util.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-version.h
+usr/include/clutter-gtk-1.0/clutter-gtk/gtk-clutter-window.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/GtkClutter-1.0.typelib
+usr/lib64/libclutter-gtk-1.0.so.0.800.4
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/clutter-gtk-1.0.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/GtkClutter-1.0.gir
+usr/share/locale/
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/cluttergtk-1.0.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/cluttergtk-1.0.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/cluttergtk-1.0.mo

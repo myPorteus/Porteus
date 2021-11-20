@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libmousepad.so )
+( cd usr/lib64 ; ln -sf libmousepad.so.0.0.0 libmousepad.so )
+( cd usr/lib64 ; rm -rf libmousepad.so.0 )
+( cd usr/lib64 ; ln -sf libmousepad.so.0.0.0 libmousepad.so.0 )

@@ -1,0 +1,56 @@
+PACKAGE NAME:     libgxps-0.3.1-x86_64-2_ncm
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     480K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_mate/libgxps-0.3.1-x86_64-2_ncm.txz
+PACKAGE DESCRIPTION:
+libgxps: libgxps (XPS rendering library)
+libgxps:
+libgxps: libgxps is a GObject based library for handling and rendering
+libgxps: XPS documents.
+libgxps:
+libgxps:
+libgxps:
+libgxps: Project URL: https://github.com/GNOME/libgxps
+libgxps:
+libgxps:
+libgxps:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xpstojpeg
+usr/bin/xpstopdf
+usr/bin/xpstopng
+usr/bin/xpstops
+usr/bin/xpstosvg
+usr/doc/
+usr/doc/libgxps-0.3.1/
+usr/doc/libgxps-0.3.1/AUTHORS
+usr/doc/libgxps-0.3.1/COPYING
+usr/doc/libgxps-0.3.1/NEWS
+usr/doc/libgxps-0.3.1/README
+usr/doc/libgxps-0.3.1/TODO
+usr/doc/libgxps-0.3.1/libgxps.SlackBuild
+usr/include/
+usr/include/libgxps/
+usr/include/libgxps/gxps-core-properties.h
+usr/include/libgxps/gxps-document-structure.h
+usr/include/libgxps/gxps-document.h
+usr/include/libgxps/gxps-error.h
+usr/include/libgxps/gxps-file.h
+usr/include/libgxps/gxps-links.h
+usr/include/libgxps/gxps-page.h
+usr/include/libgxps/gxps-version.h
+usr/include/libgxps/gxps.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/GXPS-0.1.typelib
+usr/lib64/libgxps.so.2.2.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libgxps.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/GXPS-0.1.gir

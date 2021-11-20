@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 MATE team <mate-dev@ml.mate-desktop.org> -->
+<component type="desktop">
+  <id>mate-system-monitor.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>MATE System Monitor</name>
+  <name xml:lang="zh_TW">MATE 系統監控程式</name>
+  <name xml:lang="zh_CN">MATE 系统监视器</name>
+  <name xml:lang="uz">MATE Tizim Nazorati</name>
+  <name xml:lang="uk">Системний монітор MATE</name>
+  <name xml:lang="tr">MATE Sistem Gözlemcisi</name>
+  <name xml:lang="th">เครื่องมือเฝ้าสังเกตระบบของ MATE</name>
+  <name xml:lang="sv">Systemövervakare för MATE</name>
+  <name xml:lang="sr">Мејтов пратилац система</name>
+  <name xml:lang="sq">MATE Monitori i sistemit </name>
+  <name xml:lang="sl">MATE nadzornik sistema</name>
+  <name xml:lang="sk">Monitor systému prostredia MATE</name>
+  <name xml:lang="ru">Системный монитор MATE</name>
+  <name xml:lang="ro">Monitor sistem MATE</name>
+  <name xml:lang="pt_BR">Monitor do sistema MATE</name>
+  <name xml:lang="pt">Monitor do Sistema MATE</name>
+  <name xml:lang="pl">Monitor systemu MATE</name>
+  <name xml:lang="oc">Monitor sistèma MATE</name>
+  <name xml:lang="nl">MATE Systeembewaking</name>
+  <name xml:lang="nds">MATE System-Uppasser</name>
+  <name xml:lang="nb">MATE Systemovervåking</name>
+  <name xml:lang="ms">Pemantau Sistem MATE</name>
+  <name xml:lang="lt">MATE sistemos monitorius</name>
+  <name xml:lang="ko">마테 시스템 모니터</name>
+  <name xml:lang="kn">MATE ಗಣಕ ಮೇಲ್ವಿಚಾರಕ</name>
+  <name xml:lang="kk">MATE жүйелік бақылаушысы</name>
+  <name xml:lang="ja">MATE システムモニター</name>
+  <name xml:lang="it">Monitor di Sistema MATE</name>
+  <name xml:lang="ie">Monitor del sistema MATE</name>
+  <name xml:lang="id">MATE System Monitor</name>
+  <name xml:lang="hy">MATE Համակարգային Հսկում</name>
+  <name xml:lang="hu">MATE rendszerfigyelő</name>
+  <name xml:lang="hr">MATE nadzor sustava</name>
+  <name xml:lang="he">צג המערכת של MATE</name>
+  <name xml:lang="gl">Monitor do sistema do MATE</name>
+  <name xml:lang="fr">Moniteur système MATE</name>
+  <name xml:lang="fi">MATE Järjestelmän valvonta</name>
+  <name xml:lang="eu">MATE Sistemaren Monitorea</name>
+  <name xml:lang="et">MATE süsteemijälgija</name>
+  <name xml:lang="es_AR">Monitor del sistema de MATE</name>
+  <name xml:lang="es">Monitor del sistema de MATE</name>
+  <name xml:lang="en_GB">MATE System Monitor</name>
+  <name xml:lang="en_AU">MATE System Monitor</name>
+  <name xml:lang="el">Παρακολούθηση Συστήματος MATE</name>
+  <name xml:lang="de">MATE-Systemüberwachung</name>
+  <name xml:lang="da">MATE - systemovervågning</name>
+  <name xml:lang="cs">Sledování systému MATE</name>
+  <name xml:lang="ca@valencia">Monitor del sistema del MATE</name>
+  <name xml:lang="ca">Monitor del sistema de MATE</name>
+  <name xml:lang="bg">Наблюдение на системата на MATE</name>
+  <name xml:lang="be">Сістэмны назіральнік MATE</name>
+  <name xml:lang="ast">Monitor del sistema de MATE</name>
+  <name xml:lang="ar">مرقاب نظام متّة</name>
+  <name xml:lang="am">ሜት ስርአት መቆጣጠሪያ </name>
+  <summary>A Process and resource monitor for MATE Desktop</summary>
+  <summary xml:lang="zh_TW">適用於 MATE 桌面環境的處理程序及資源監視器</summary>
+  <summary xml:lang="zh_CN">用于 MATE 桌面的进程与资源监视器</summary>
+  <summary xml:lang="uz">MATE Ish stoli uchun Jarayon va resurs nazorati</summary>
+  <summary xml:lang="uk">Монітор процесів і ресурсів середовища MATE</summary>
+  <summary xml:lang="tr">MATE masaüstü için süreç ve kaynak gözlemcisi</summary>
+  <summary xml:lang="th">เฝ้าสังเกตโพรเซสและทรัพยากรสำหรับเดสก์ท็อป MATE</summary>
+  <summary xml:lang="sv">En process och resursövervakare för MATE-skrivbordet</summary>
+  <summary xml:lang="sr">Пратилац процеса и ресурса за Мејтову радну површ</summary>
+  <summary xml:lang="sl">Pregled procesov in sredstev MATE namizja</summary>
+  <summary xml:lang="sk">Monitor procesov a prostriedkov prostredia MATE</summary>
+  <summary xml:lang="sc">Unu monitor de protzessos e resursas pro MATE Desktop</summary>
+  <summary xml:lang="ru">Монитор процессов и ресурсов среды MATE</summary>
+  <summary xml:lang="ro">Un monitor de procese și resurse pentru desktopul MATE</summary>
+  <summary xml:lang="pt_BR">Um monitor de processo e recurso para desktop MATE</summary>
+  <summary xml:lang="pt">Um processo e monitor de recursos do Ambiente de Trabalho MATE</summary>
+  <summary xml:lang="pl">Monitor procesów i zasobów dla środowiska MATE</summary>
+  <summary xml:lang="oc">Un monitor de processus e ressorsas pel burèu MATE</summary>
+  <summary xml:lang="nl">Een proces- en systeembelastingbewaker voor de MATE-werkomgeving</summary>
+  <summary xml:lang="nds">Een Uppasser över Prozessen un Resourcen för de MATE Schrievdisk</summary>
+  <summary xml:lang="nb">Et prosess og ressursovervåknings-program for MATE-skrivebordsmiljøet</summary>
+  <summary xml:lang="ms">Pemantau proses dan sumber untuk Desktop MATE</summary>
+  <summary xml:lang="lt">Procesų ir išteklių monitorius MATE darbalaukiui</summary>
+  <summary xml:lang="ko">마테 데스크톱용 프로세스 및 자원 감시 프로그램</summary>
+  <summary xml:lang="ja">MATE Desktopのプロセスと資源をモニターします。</summary>
+  <summary xml:lang="it">Un monitor di processi e risorse per l'ambiente desktop MATE</summary>
+  <summary xml:lang="ie">Un monitor de processus e ressurses por ambientie MATE</summary>
+  <summary xml:lang="id">Monitor proses dan sumber daya untuk Desktop MATE</summary>
+  <summary xml:lang="hy">Գործընթացի և ռեսուրսի վերահսկում MATE  Աշխատանքային սեղանի համար</summary>
+  <summary xml:lang="hu">Egy folyamat- és erőforrásfigyelő a MATE asztali környezethez</summary>
+  <summary xml:lang="hr">Nadzor prosesa i resursa za MATE radno okruženje</summary>
+  <summary xml:lang="he">צג התהליכים והמשאבים של שולחן העבודה MATE</summary>
+  <summary xml:lang="gl">Un monitor de procesos e recursos para o escritorio MATE</summary>
+  <summary xml:lang="fr">Un moniteur de processus et ressources pour le bureau MATE</summary>
+  <summary xml:lang="fi">Prosessien ja resurssien valvonta MATE-työpöydälle</summary>
+  <summary xml:lang="eu">Prozesu eta baliabideen erabileraren monitorea MATE mahaigainerako</summary>
+  <summary xml:lang="et">Protsesside ja ressursside jälgimisprogramm MATE töölauale</summary>
+  <summary xml:lang="es_CO">Un monitor de recursos y procesos para el entorno de escritorio MATE</summary>
+  <summary xml:lang="es">Un monitor de procesos y recursos para MATE</summary>
+  <summary xml:lang="en_GB">A Process and resource monitor for MATE Desktop</summary>
+  <summary xml:lang="en_AU">A Process and resource monitor for MATE Desktop</summary>
+  <summary xml:lang="el">Ένα πρόγραμμα εποπτείας διεργασιών και πόρων για το MATE</summary>
+  <summary xml:lang="de">Eine Prozess- und Ressourcenüberwachung für die MATE-Arbeitsumgebung</summary>
+  <summary xml:lang="da">En proces- og ressourceovervåger for MATE-skrivebordet</summary>
+  <summary xml:lang="cs">Sledování procesů a systémových prostředků pro MATE</summary>
+  <summary xml:lang="ca@valencia">Un monitor de processos i de recursos per a l'escriptori MATE</summary>
+  <summary xml:lang="ca">Un monitor de processos i de recursos per a l'escriptori MATE</summary>
+  <summary xml:lang="bg">Програма за следене на процесите и ресурсите на MATE</summary>
+  <summary xml:lang="be">Назіральнік працэсаў і рэсурсаў асяроддзя MATE</summary>
+  <summary xml:lang="ast">Un monitor de procesos y recursos pa MATE</summary>
+  <summary xml:lang="ar">مراقب للعمليات و الموارد في سطح مكتب متّة</summary>
+  <summary xml:lang="am">ለ ሜት ዴስክቶፕ ሂደቶች እና ምንጮችን መቆጣጠሪያ</summary>
+  <description>
+    <p>
+   MATE System Monitor allows to graphically view and manipulate the running
+   processes on your system. It also provides an overview of available resources,
+   such as CPU and memory.
+  </p>
+    <p xml:lang="zh_TW">MATE 系統監控程式讓您可以圖形化檢視及管理執行中在您的系統上的處理程序。它也提供了可用資源的概覽，像是 CPU 及記憶體。</p>
+    <p xml:lang="zh_CN"> MATE 系统监视器，以图形化的方式来让用户浏览或操作当前进程。还提供了可用资源的概览, 如 CPU 和 内存状况。</p>
+    <p xml:lang="uk">MATE System Monitor дозволяє графічно переглядати та керувати запущеними процесами у вашій системі. Він також надає огляд доступних ресурсів, таких як центральний процесор і пам'ять.</p>
+    <p xml:lang="th">เครื่องมือเฝ้าสังเกตระบบของ MATE อนุญาตให้ดูแบบกราฟิกและจัดการโพรเซสที่กำลังทำงานในระบบของคุณ ยังให้ภาพรวมของทรัพยากรที่ใช้ได้ เช่น ซีพียูและหน่วยความจำ</p>
+    <p xml:lang="sr">Мејтов пратилац система омогућава да видите и да управљате покренутим процесима на вашем систему. Такође обезбеђује преглед доступних ресурса, као што је процесор и меморија.</p>
+    <p xml:lang="sl">MATE nadzornik sistema omogoča grafični prikaz in spreminjanje izvajanih procesov sistema. Poleg tega ponuja pregled virov, ki so na voljo, kot so CPE in pomnilnik.</p>
+    <p xml:lang="ru">Системный монитор MATE позволяет графически просматривать и управлять запущенными процессами на вашей системе. Он также предоставляет обзор доступных ресурсов, таких как как процессор и память.</p>
+    <p xml:lang="pl">Monitor systemu MATE umożliwia graficzne przeglądanie i manipulowanie działającymi procesami w systemie. Zawiera również przegląd dostępnych zasobów, takich jak procesor i pamięć.</p>
+    <p xml:lang="oc">Lo Monitor sistèma MATE permet d'afichar e de manipular graficament de processús en cors del sistèma. Provesís tanben un apercebut de las ressorsas disponiblas, coma lo CPU e la memòria.</p>
+    <p xml:lang="nl">MATE Systeembewaker stelt u in staat om grafisch de draaiende processen op uw systeem te zien en te bewerken. Hij biedt ook een overzicht van de beschikbare systeemhulpbronnen, zoals CPU en geheugen.</p>
+    <p xml:lang="nb">MATE Systemovervåkning lar deg vise og håndtere de prosessene som kjører på systemet. Programmet gir deg også et overblikk over tilgjengelige ressurser, som CPU og minne.</p>
+    <p xml:lang="ms">Pemantau Sistem MATE membolehkan paparan bergrafik dan manipulasi proses yang berjalan dalam sistem anda. Ia juga menyediakan selayang pandang sumber yang tersedia, seperti CPU dan ingatan.</p>
+    <p xml:lang="lt">MATE sistemos monitorius leidžia matyti ir valdyti jūsų sistemoje vykdomus procesus. Jis taip pat pateikia prieinamų išteklių, tokių kaip centrinis procesorius ir atmintis, apžvalgą. </p>
+    <p xml:lang="it">Il Monitor di Sistema MATE permette di visualizzare graficamente e agire sui processi in esecuzione nel sistema. Fornisce inoltre una panoramica delle risorse disponibili, come CPU e memoria.</p>
+    <p xml:lang="id">Pemantau Sistem MATE memiliki kemampuan untuk melihat dan memanipulasi proses yang berjalan pada sistem Anda secara visual. Aplikasi ini juga menyediakan gambaran tentang sumber daya yang tersedia, seperti CPU dan memori.</p>
+    <p xml:lang="gl">O Monitor do sistema do MATE permite ver e manipular graficamente os procesos que están a executarse no sistema. Tamén ofrece unha vista xeral dos recursos dispoñíbeis, como o procesador e a memoria do equipo.</p>
+    <p xml:lang="eu">MATE SIstemaren Monitoreak zure sisteman exekutatzen ari diren prozesuak grafikoki ikusi eta aldatzeko aukera ematen dizu. Era berean, eskuragarri dauden baliabideen ikuspegi orokor bat erakusten du, hala nola PUZ eta memoria.</p>
+    <p xml:lang="es">El monitor del sistema de MATE permite ver y manipular gráficamente los procesos en ejecución en el sistema. También proporciona una visión general de los recursos disponibles, como por ejemplo el procesador y la memoria.</p>
+    <p xml:lang="da">MATE System Monitor giver mulighed for grafisk at vise og manipulere de kørende processer på dit system. Det giver også et overblik over de tilgængelige ressourcer, såsom CPU og hukommelse.</p>
+    <p xml:lang="cs">Sledování systému MATE umožňuje graficky prohlížet a manipulovat se spuštěnými procesy ve vašem systému. Poskytuje také přehled o dostupných systémových prostředcích, jako jsou např. procesor a paměť.</p>
+    <p xml:lang="ca">El monitor del sistema de MATE permet visualitzar i manipular gràficament els processos en execució del vostre sistema. També proporciona una visió general dels recursos disponibles, com ara la CPU i la memòria.</p>
+    <p>
+   MATE System Monitor is a fork of GNOME System Monitor and part of the MATE
+   Desktop Environment. If you would like to know more about MATE and System Monitor,
+   please visit the project's home page.
+  </p>
+    <p xml:lang="zh_TW">MATE 系統監控程式是一個 GNOME 系統監控程式的分支，且為 MATE 桌面環境的一部份。如果您想要知道更多關於 MATE 及系統監控程式的詳細資訊，請參觀專案首頁。 </p>
+    <p xml:lang="zh_CN">MATE 系统监视器是 MATE 桌面环境的一部分，为 GNOME 系统监视器的复刻。想了解更多有关 MATE 及 MATE 系统监视器的信息，可访问项目主页。</p>
+    <p xml:lang="uk">MATE System Monitor є відгалуженням системного монітора GNOME та частиною робочого середовища MATE. Якщо ви волієте дізнатись більше про MATE та System Monitor, відвідайте домашню сторінку проєкту.</p>
+    <p xml:lang="th">เครื่องมือเฝ้าสังเกตระบบของ MATE แตกแขนงมาจากเครื่องมือเฝ้าสังเกตระบบของ GNOME และเป็นส่วนหนึ่งของสภาพแวดล้อมเดสก์ท็อป MATE ถ้าคุณต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับ MATE และเครื่องมือเฝ้าสังเกตระบบ กรุณาเยี่ยมชมโฮมเพจของโครงการ</p>
+    <p xml:lang="sr">Мејтов пратилац система је исцепак Гномовог пратиоца система и део Мејтовог окружења радне површи. Ако желите да сазнате више о Мејту и о Пратиоцу система, посетите матичну страницу пројекта.</p>
+    <p xml:lang="sl">MATE nadzornik sistema je predelava GNOME nadzornika sistema in del MATE namiznega okolja. Če bi radi izvedeli več o MATE in Nadzorniku sistema, obiščite spletno stran projekta.</p>
+    <p xml:lang="ru">MATE System Monitor – форк GNOME System Monitor и часть рабочей среды MATE. Если вы хотите узнать больше о MATE и системном мониторе, пожалуйста, посетите домашнюю страницу проекта.</p>
+    <p xml:lang="pl">Monitor systemu MATE jest forkiem Monitora systemu GNOME i częścią środowiska graficznego MATE. Jeśli chcesz dowiedzieć się więcej o MATE i Monitorze systemu, odwiedź stronę główną projektu.</p>
+    <p xml:lang="oc">Lo Monitor Sistèma de MATE es una derivacion de GNOME System Monitor e fa part de l’environament de burèu MATE. Se volètz ne saber mai a prepaus de MATE e del Monitor Sistèma MATE, consultatz lo site del projècte.</p>
+    <p xml:lang="nl">MATE Systeembewaker is een vork van GNOME System Monitor en maakt deel uit van de werkomgeving MATE. Als u meer wilt weten over MATE en Systeembewaker, bezoek dan a.u.b. de thuispagina van het project.</p>
+    <p xml:lang="nb">MATE Systemovervåkning er avledet av GNOME Systemovervåkning og er den del av skrivebordsmiljøet MATE. Besøk prosjektets hjemmeside hvis du vil vite mer om MATE og MATE Systemovervåkning.</p>
+    <p xml:lang="ms">Pemantau Sistem MATE merupakan cabang Pemantau Sistem GNOME dan sebahagian dari Persekitaran Desktop MATE. Jika anda mahu ketahui lebih lanjut mengenai MATE dan Pemantau Sistem, sila lawati laman sesawang projek.</p>
+    <p xml:lang="lt"> MATE sistemos monitorius yra GNOME sistemos monitoriaus atšaka ir MATE dabalaukio aplinkos dalis. Jei norite sužinoti daugiau apie MATE ir MATE sistemos monitorių, prašom apsilankyti projekto tinklalapyje. </p>
+    <p xml:lang="it">l Monitor di Sistema MATE è un fork del Monitor di Sistema GNOME ed è parte dell'ambiente desktop MATE. Se vuoi conoscere di più su MATE e Monitor di Sistema, visita l'home page del progetto.</p>
+    <p xml:lang="id">Pemantau Sistem MATE adalah fork dari GNOME System Monitor dan merupakan bagian dari Lingkungan Desktop MATE. Jika Anda hendak mengetahui lebih lanjut tentang MATE dan System Monitor, harap mengunjungi halaman home page proyek.</p>
+    <p xml:lang="gl">O Monitor do sistema do MATE é unha bifurcación do Monitor do sistema do GNOME é e parte do contorno de escritorio MATE. Se quere saber máis sobre MATE e o Monitor do sistema do MATE, visite a páxina do proxecto.</p>
+    <p xml:lang="eu">MATE Sistemaren Monitorea GNOME Sistemaren Monitorea aplikaziotik eratorria da eta MATE Mahaigain Ingurunearen partea da. MATE eta Sistemaren Monitoreari buruz gehiago jakiteko, mesedez ikusi proiektuaren webgunea.</p>
+    <p xml:lang="es">Monitor del sistema de MATE es una bifurcación de Monitor del sistema de GNOME y es parte del entorno de escritorio MATE. Si quiere saber más sobre MATE y Monitor del sistema, visite la página principal del proyecto.</p>
+    <p xml:lang="da">MATE System Monitor er en forgrening af GNOME System Monitor og en del af skrivebordsmiljøet MATE. Hvis du ønsker at vide mere om MATE og System Monitor så besøg projektets hjemmeside.</p>
+    <p xml:lang="cs">Aplikace Sledování systému MATE je forkem aplikace GNOME System Monitor a je součástí prostředí MATE. Pokud se chcete dozvědět více o MATE a Sledování systému, navštivte domovskou stránku projektu.</p>
+    <p xml:lang="ca">El monitor del sistema de MATE és una bifurcació del monitor del sistema de GNOME, i forma part de l'entorn d'escriptori MATE. Si voleu saber més sobre MATE i el monitor del sistema de MATE, visiteu la pàgina principal del projecte.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-system-monitor/screens/mate-system-monitor_01.png
+   </image>
+    </screenshot>
+    <screenshot>
+      <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-system-monitor/screens/mate-system-monitor_02.png
+   </image>
+    </screenshot>
+    <screenshot>
+      <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-system-monitor/screens/mate-system-monitor_03.png
+   </image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://mate-desktop.org</url>
+  <updatecontact>mate-dev@ml.mate-desktop.org</updatecontact>
+  <project_group>MATE</project_group>
+</component>

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libinput.so )
+( cd usr/lib64 ; ln -sf libinput.so.10 libinput.so )
+( cd usr/lib64 ; rm -rf libinput.so.10 )
+( cd usr/lib64 ; ln -sf libinput.so.10.13.0 libinput.so.10 )

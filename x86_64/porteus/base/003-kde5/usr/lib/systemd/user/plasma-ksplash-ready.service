@@ -1,0 +1,10 @@
+[Unit]
+Description=KSplash "ready" Stage
+Wants=plasma-core.target
+After=plasma-core.target
+PartOf=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=-/usr/lib64/qt5/bin/qdbus org.kde.KSplash /KSplash org.kde.KSplash.setStage ready
+Slice=session.slice

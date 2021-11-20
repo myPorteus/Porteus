@@ -1,0 +1,39 @@
+[KNewStuff3]
+Name=Plasma Themes
+Name[ast]=Estilos pa Plasma
+Name[az]=Plasma mövzuları
+Name[ca]=Temes del Plasma
+Name[cs]=Motivy Plasmy
+Name[de]=Plasma-Designs
+Name[en_GB]=Plasma Themes
+Name[es]=Temas de Plasma
+Name[fi]=Plasma-teemat
+Name[fr]=Thèmes Plasma
+Name[ia]=Themas de Plasma
+Name[it]=Temi di Plasma
+Name[ko]=Plasma 테마
+Name[nl]=Plasma-thema's
+Name[nn]=Plasma-tema
+Name[pa]=ਪਲਾਜ਼ਮਾ ਥੀਮ
+Name[pl]=Wyglądy Plazmy
+Name[pt]=Temas do Plasma
+Name[pt_BR]=Temas do Plasma
+Name[ro]=Tematici Plasma
+Name[ru]=Оформления Plasma
+Name[sk]=Plasma témy
+Name[sl]=Teme Plasme
+Name[sv]=Plasmateman
+Name[tr]=Plazma Temaları
+Name[uk]=Теми Плазми
+Name[vi]=Chủ đề Plasma
+Name[x-test]=xxPlasma Themesxx
+Name[zh_CN]=Plasma 主题
+
+ProvidersUrl=https://autoconfig.kde.org/ocs/providers.xml
+Categories=Plasma Theme
+StandardResource=tmp
+Uncompress=kpackage
+KPackageType=Plasma/Theme
+TagFilter=ghns_excluded!=1,plasma##version==5
+DownloadTagFilter=plasma##version==5
+AdoptionCommand=plasma-apply-desktoptheme %f

@@ -1,0 +1,7 @@
+#!/bin/sh
+# Update LXDE menu:
+
+echo "Updating LXDE menu: update-desktop-database"
+target=/mnt/live/tmp/caches/desktop-$1
+dest=`cut -d/ -f7- $target`
+for desktop in $dest; do touch /$desktop; rm /mnt/live/memory/changes/$desktop; done

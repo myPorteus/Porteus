@@ -1,0 +1,28 @@
+PACKAGE NAME:     muparser-2.3.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     144K
+UNCOMPRESSED PACKAGE SIZE:     610K
+PACKAGE LOCATION: ./muparser-2.3.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/muParser.h
+usr/include/muParserBase.h
+usr/include/muParserBytecode.h
+usr/include/muParserCallback.h
+usr/include/muParserDLL.h
+usr/include/muParserDef.h
+usr/include/muParserError.h
+usr/include/muParserFixes.h
+usr/include/muParserInt.h
+usr/include/muParserTemplateMagic.h
+usr/include/muParserTest.h
+usr/include/muParserToken.h
+usr/include/muParserTokenReader.h
+usr/lib64/
+usr/lib64/libmuparser.so.2.3.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/muparser.pc

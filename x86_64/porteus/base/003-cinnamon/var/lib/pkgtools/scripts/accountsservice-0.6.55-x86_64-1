@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libaccountsservice.so )
+( cd usr/lib64 ; ln -sf libaccountsservice.so.0 libaccountsservice.so )
+( cd usr/lib64 ; rm -rf libaccountsservice.so.0 )
+( cd usr/lib64 ; ln -sf libaccountsservice.so.0.0.0 libaccountsservice.so.0 )

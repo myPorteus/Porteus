@@ -1,0 +1,153 @@
+#!/bin/bash
+# [Pluma Tool]
+# Name[af]=Soek
+# Name[am]=መፈለጊያ
+# Name[ar]=ابحث
+# Name[as]=বিচাৰক
+# Name[ast]=Guetar
+# Name[az]=Axtar
+# Name[be]=Пошук
+# Name[bg]=Търсене
+# Name[bn]=সন্ধান
+# Name[bn_IN]=অনুসন্ধান
+# Name[br]=Klask
+# Name[bs]=Pretraga
+# Name[ca]=Cerca
+# Name[ca@valencia]=Cerca
+# Name[cmn]=搜尋
+# Name[crh]=Arama
+# Name[cs]=Hledat
+# Name[cy]=Chwilio
+# Name[da]=Søg
+# Name[de]=Suchen
+# Name[dz]=འཚོལ་ཞིབ།
+# Name[el]=Αναζήτηση
+# Name[en_AU]=Search
+# Name[en_CA]=Search
+# Name[en_GB]=Search
+# Name[eo]=Serĉi
+# Name[es]=Buscar
+# Name[es_CO]=Buscar
+# Name[es_MX]=Buscar
+# Name[et]=Otsing
+# Name[eu]=Bilatu
+# Name[fa]=جستجو
+# Name[fi]=Etsi
+# Name[fr]=Rechercher
+# Name[frp]=Chèrchér
+# Name[fur]=Cîr
+# Name[fy]=Sykje
+# Name[ga]=Cuardaigh
+# Name[gl]=Buscar
+# Name[gu]=શોધો
+# Name[he]=חיפוש
+# Name[hi]=खोजें
+# Name[hr]=Traži
+# Name[hu]=Keresés
+# Name[hy]=Որոնել
+# Name[ia]=Cercar
+# Name[id]=Pencarian
+# Name[ie]=Sercha
+# Name[is]=Leita
+# Name[it]=Ricerca
+# Name[ja]=検索
+# Name[ka]=ძებნა
+# Name[kk]=Іздеу
+# Name[kn]=ಹುಡುಕು
+# Name[ko]=검색
+# Name[ku]=Lê bigere
+# Name[ku_IQ]=گەڕان
+# Name[ky]=Табуу
+# Name[lt]=Ieškoti
+# Name[lv]=Meklēt
+# Name[mai]=खोजू
+# Name[mg]=Karohy
+# Name[mk]=Пребарувај
+# Name[ml]=തെരച്ചില്‍
+# Name[mn]=Хайх
+# Name[mr]=शोधा
+# Name[ms]=Gelintar
+# Name[nb]=Søk
+# Name[nds]=Sök
+# Name[ne]=खोज
+# Name[nl]=Zoeken
+# Name[nn]=Søk
+# Name[nso]=Nyakišiša
+# Name[oc]=Recercar
+# Name[or]=ଖୋଜନ୍ତୁ
+# Name[pa]=ਖੋਜ
+# Name[pl]=Szukaj
+# Name[ps]=پلټون
+# Name[pt]=Pesquisar
+# Name[pt_BR]=Pesquisar
+# Name[ro]=Caută
+# Name[ru]=Поиск
+# Name[rw]=Gushaka
+# Name[si]=සොයන්න
+# Name[sk]=Hľadať
+# Name[sl]=Iskanje
+# Name[sq]=Kërko
+# Name[sr]=Потражи
+# Name[sr@latin]=Pretraga
+# Name[sv]=Sök
+# Name[ta]=தேடுக
+# Name[te]=శోధించు
+# Name[th]=ค้นหา
+# Name[tr]=Ara
+# Name[ug]=ئىزدە
+# Name[uk]=Пошук
+# Name[ur]=تلاش کریں
+# Name[uz]=Qidirish
+# Name[vi]=Tìm kiếm
+# Name[xh]=Khangela
+# Name[zh_CN]=查找
+# Name[zh_HK]=搜尋
+# Name[zh_TW]=搜尋
+# Name[zu]=Hlola
+# Name=Search
+# Shortcut=<Primary><Shift>f
+# Languages=
+# Applicability=local
+# Input=document
+# Output=output-panel
+# Save-files=nothing
+# 
+
+# Copyright © 2011 Perberos
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as published by the
+# Free Software Foundation; either version 2.1 of the License, or (at your
+# option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+# General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+SEARCHTEXT=`zenity --entry --title="Search text on files" --text="Text to search"`
+
+if [ ! "${#SEARCHTEXT}" = 0 ]; then
+
+    OIFS=$IFS; IFS=$'\n'  # Backup and set new IFS
+
+    for LINE in `grep -nHIirF -- "$SEARCHTEXT" ./`; do
+        primer_indice=`expr index "$LINE" :`
+        tmp=${LINE:$primer_indice}
+        segundo_indice=`expr index "$tmp" :`
+        linea_codigo=${tmp:$segundo_indice}
+        
+        # lugar donde está la palabra
+        posicion=`expr index "$tmp" "$SEARCHTEXT"`
+
+        linea_archivo=${LINE:0:$primer_indice + $segundo_indice - 1}
+
+        echo "${linea_archivo}:  ${linea_codigo}"
+    done
+    
+    IFS=$OIFS  # Restore IFS
+fi

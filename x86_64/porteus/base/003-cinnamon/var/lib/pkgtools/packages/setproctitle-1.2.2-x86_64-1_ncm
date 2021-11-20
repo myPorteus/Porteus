@@ -1,0 +1,38 @@
+PACKAGE NAME:     setproctitle-1.2.2-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/setproctitle-1.2.2-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+setproctitle: setproctitle (library to customize process title)
+setproctitle:
+setproctitle: The library allows a process to change its title (as displayed by
+setproctitle: system tools such as ps and top).
+setproctitle:
+setproctitle:
+setproctitle:
+setproctitle: Homepage:  https://github.com/dvarrazzo/py-setproctitle
+setproctitle:
+setproctitle:
+setproctitle:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/setproctitle-1.2.2/
+usr/doc/setproctitle-1.2.2/COPYRIGHT
+usr/doc/setproctitle-1.2.2/HISTORY.rst
+usr/doc/setproctitle-1.2.2/PKG-INFO
+usr/doc/setproctitle-1.2.2/README.rst
+usr/doc/setproctitle-1.2.2/setproctitle.SlackBuild
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/PKG-INFO
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/SOURCES.txt
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/dependency_links.txt
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/requires.txt
+usr/lib64/python3.9/site-packages/setproctitle-1.2.2-py3.9.egg-info/top_level.txt
+usr/lib64/python3.9/site-packages/setproctitle.cpython-39-x86_64-linux-gnu.so

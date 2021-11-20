@@ -1,0 +1,50 @@
+PACKAGE NAME:     cfitsio-3.49-x86_64-3
+COMPRESSED PACKAGE SIZE:     724K
+UNCOMPRESSED PACKAGE SIZE:     2.7M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/cfitsio-3.49-x86_64-3.txz
+PACKAGE DESCRIPTION:
+cfitsio: cfitsio (FITS file subroutine library)
+cfitsio:
+cfitsio: cfitsio is a library of ANSI C routines for reading and writing FITS
+cfitsio: format data files. A set of Fortran-callable wrapper routines is also
+cfitsio: included.
+cfitsio:
+cfitsio: Homepage: http://heasarc.gsfc.nasa.gov/fitsio
+cfitsio:
+cfitsio:
+cfitsio:
+cfitsio:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cookbook
+usr/bin/fitscopy
+usr/bin/fpack
+usr/bin/funpack
+usr/bin/imcopy
+usr/bin/smem
+usr/bin/speed
+usr/bin/testprog
+usr/doc/
+usr/doc/cfitsio-3.49/
+usr/doc/cfitsio-3.49/License.txt
+usr/doc/cfitsio-3.49/README
+usr/doc/cfitsio-3.49/README.MacOS
+usr/doc/cfitsio-3.49/README.win
+usr/doc/cfitsio-3.49/README_OLD.win
+usr/doc/cfitsio-3.49/cfortran.doc
+usr/doc/cfitsio-3.49/changes.txt
+usr/doc/cfitsio-3.49/fitsio.doc
+usr/include/
+usr/include/drvrsmem.h
+usr/include/fitsio.h
+usr/include/fitsio2.h
+usr/include/longnam.h
+usr/lib64/
+usr/lib64/libcfitsio.so.9.3.49
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/cfitsio.pc

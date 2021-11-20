@@ -1,0 +1,53 @@
+PACKAGE NAME:     libkexiv2-21.04.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     140K
+UNCOMPRESSED PACKAGE SIZE:     500K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/libkexiv2-21.04.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libkexiv2: libkexiv2 (wrapper library for exiv2)
+libkexiv2:
+libkexiv2: Libkexiv2 is a KDE wrapper around the Exiv2 library to manipulate
+libkexiv2: image metadata.
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+libkexiv2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkexiv2-21.04.2/
+usr/doc/libkexiv2-21.04.2/AUTHORS
+usr/doc/libkexiv2-21.04.2/README
+usr/doc/libkexiv2-21.04.2/TODO
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KExiv2/
+usr/include/KF5/KExiv2/KExiv2/
+usr/include/KF5/KExiv2/KExiv2/KExiv2
+usr/include/KF5/KExiv2/KExiv2/KExiv2Data
+usr/include/KF5/KExiv2/KExiv2/KExiv2Previews
+usr/include/KF5/KExiv2/KExiv2/RotationMatrix
+usr/include/KF5/KExiv2/kexiv2/
+usr/include/KF5/KExiv2/kexiv2/kexiv2.h
+usr/include/KF5/KExiv2/kexiv2/kexiv2data.h
+usr/include/KF5/KExiv2/kexiv2/kexiv2previews.h
+usr/include/KF5/KExiv2/kexiv2/libkexiv2_export.h
+usr/include/KF5/KExiv2/kexiv2/rotationmatrix.h
+usr/include/KF5/libkexiv2_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5KExiv2/
+usr/lib64/cmake/KF5KExiv2/KF5KExiv2Config.cmake
+usr/lib64/cmake/KF5KExiv2/KF5KExiv2ConfigVersion.cmake
+usr/lib64/cmake/KF5KExiv2/KF5KExiv2Targets-release.cmake
+usr/lib64/cmake/KF5KExiv2/KF5KExiv2Targets.cmake
+usr/lib64/libKF5KExiv2.so.5.0.0
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/libkexiv2.categories

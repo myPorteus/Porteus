@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>Font Installer</vendor>
+<icon_name>preferences-desktop-font-installer</icon_name>
+   <action id="org.kde.fontinst.manage" >
+      <description xml:lang="az">Sistem şriftlərinin idarəsi.</description>
+      <description xml:lang="ca">Gestiona els tipus de lletra del sistema.</description>
+      <description xml:lang="cs">Spravovat systémová písma.</description>
+      <description xml:lang="da">Håndtér systemomfattende skrifttyper.</description>
+      <description xml:lang="de">Systemweite Schriften verwalten.</description>
+      <description>Manage system-wide fonts.</description>
+      <description xml:lang="en_GB">Manage system-wide fonts.</description>
+      <description xml:lang="es">Gestión de tipos de letra del sistema.</description>
+      <description xml:lang="et">Süsteemsete fontide haldamine.</description>
+      <description xml:lang="eu">Kudeatu sistema osorako letra-tipoak.</description>
+      <description xml:lang="fi">Hallitse järjestelmäfontteja.</description>
+      <description xml:lang="fr">Gérer les polices de caractères pour tout le système.</description>
+      <description xml:lang="hu">Rendszerszintű betűkészlet-kezelés.</description>
+      <description xml:lang="ia">Administra fontes de tote le systema.</description>
+      <description xml:lang="id">Kelola font system-wide.</description>
+      <description xml:lang="it">Gestisci i caratteri di sistema.</description>
+      <description xml:lang="ko">시스템 전역 글꼴을 관리합니다.</description>
+      <description xml:lang="lt">Tvarkyti sistemos masto šriftus.</description>
+      <description xml:lang="nl">Beheer van systeembrede lettertypen.</description>
+      <description xml:lang="nn">Handsam skrifter for heile systemet.</description>
+      <description xml:lang="pa">ਸਿਸਟਮ ਦੇ ਫੋਂਟਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ।</description>
+      <description xml:lang="pl">Zarządzanie czcionkami ogólnosystemowymi.</description>
+      <description xml:lang="pt">Faz a gestão dos tipos de letra a nível do sistema.</description>
+      <description xml:lang="pt_BR">Gerenciar as fontes do sistema.</description>
+      <description xml:lang="ro">Gestionează fonturile sistemului.</description>
+      <description xml:lang="ru">Управление системными шрифтами</description>
+      <description xml:lang="sk">Spravujte písma v celom systéme.</description>
+      <description xml:lang="sl">Upravljaj pisave celotnega sistema.</description>
+      <description xml:lang="sv">Hantera systemteckensnitt.</description>
+      <description xml:lang="ta">கணினி முழுவதற்குமான எழுத்துருக்களை கையாளுங்கள்.</description>
+      <description xml:lang="tr">Sistem genelinde yazı tiplerini yönetin.</description>
+      <description xml:lang="uk">Керування загальносистемними шрифтами.</description>
+      <description xml:lang="vi">Quản lí phông chữ toàn hệ thống.</description>
+      <description xml:lang="zh_CN">管理系统字体。</description>
+      <message xml:lang="az">Sistem şriftləri ayarlarını dəyişmək üçün imtiyazlar tələb olunur.</message>
+      <message xml:lang="ca">La modificació de la configuració dels tipus de lletra del sistema requereix privilegis.</message>
+      <message xml:lang="cs">Změna konfigurace systémových písem vyžaduje oprávnění.</message>
+      <message xml:lang="da">Ændring af systemomfattende konfiguration af skrifttyper kræver privilegier.</message>
+      <message xml:lang="de">Zum Ändern der systemweiten Schrift-Einstellungen sind besondere Berechtigungen nötig.</message>
+      <message>Modifying the system-wide font configuration requires privileges.</message>
+      <message xml:lang="en_GB">Modifying the system-wide font configuration requires privileges.</message>
+      <message xml:lang="es">La modificación de la configuración de los tipos de letra del sistema necesita privilegios.</message>
+      <message xml:lang="et">Süsteemsete fontide seadistuste muutmine nõuab vastavaid õigusi.</message>
+      <message xml:lang="eu">Sistema osorako letra-tipoen konfigurazioa aldatzeko pribilegioak behar dira.</message>
+      <message xml:lang="fi">Järjestelmäfonttien hallinta vaatii pääkäyttäjäoikeuksia.</message>
+      <message xml:lang="fr">La modification de la configuration des polices pour tout le système nécessite des privilèges.</message>
+      <message xml:lang="hu">A rendszerszintű betűkészletek beállításainak módosítása megfelelő jogosultságokat igényel.</message>
+      <message xml:lang="ia">Le modification de le configuration de tote le systema exige privilegios</message>
+      <message xml:lang="id">Memodifikasi konfigurasi font system-wide memerlukan hak akses.</message>
+      <message xml:lang="it">La modifica della configurazione dei caratteri di sistema richiede dei privilegi.</message>
+      <message xml:lang="ko">시스템 전역 글꼴 설정을 수정하려면 권한이 필요합니다.</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="nl">Wijzigen van de systeembrede lettertypen vereist rechten.</message>
+      <message xml:lang="nn">Du treng utvida løyve for å kunna endra innstillingane for skriftene på heile systemet.</message>
+      <message xml:lang="pa">ਪੂਰੀ ਸਿਸਟਮ ਲਈ ਫੋਂਟ ਸੰਰਚਨਾ ਬਦਲਣ ਲਈ ਅਧਿਕਾਰਾਂ ਦੀ ਲੋੜ ਹੈ।</message>
+      <message xml:lang="pl">Zmiana ustawień czcionek ogólnosystemowych wymaga uprawnień.</message>
+      <message xml:lang="pt">A modificação da configuração de tipos de letra do sistema necessita de privilégios.</message>
+      <message xml:lang="pt_BR">A modificação da configuração de fontes do sistema necessita de privilégios.</message>
+      <message xml:lang="ro">Modificarea configurației de fonturi a sistemului necesită privilegii.</message>
+      <message xml:lang="ru">Для изменения параметров системных шрифтов необходимы соответствующие привилегии.</message>
+      <message xml:lang="sk">Úprava konfigurácie písma v celom systéme vyžaduje oprávnenia.</message>
+      <message xml:lang="sl">Za spremembe nastavitev pisav na celotnem sistemu potrebujete dovoljenja.</message>
+      <message xml:lang="sv">Ändring av systemteckensnittens inställning kräver rättigheter.</message>
+      <message xml:lang="ta">கணினி முழுவதற்குமான எழுத்துரு அமைப்பை மாற்ற உயர்ந்த உரிமை தேவை.</message>
+      <message xml:lang="tr"></message>
+      <message xml:lang="uk">Для зміни параметрів загальносистемних шрифтів потрібні відповідні права доступу.</message>
+      <message xml:lang="vi">Việc chỉnh sửa cấu hình phông chữ toàn hệ thống đòi hỏi đặc quyền.</message>
+      <message xml:lang="zh_CN">修改系统字体配置需要权限。</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

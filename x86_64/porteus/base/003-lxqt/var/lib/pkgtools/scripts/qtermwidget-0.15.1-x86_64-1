@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libqtermwidget5.so )
+( cd usr/lib64 ; ln -sf libqtermwidget5.so.0 libqtermwidget5.so )
+( cd usr/lib64 ; rm -rf libqtermwidget5.so.0 )
+( cd usr/lib64 ; ln -sf libqtermwidget5.so.0.15.0 libqtermwidget5.so.0 )

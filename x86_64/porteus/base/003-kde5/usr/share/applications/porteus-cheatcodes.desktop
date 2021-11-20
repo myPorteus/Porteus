@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Porteus Cheat Codes
+Exec=/opt/porteus-scripts/xorg/editor "/usr/doc/porteus/cheatcodes.txt"
+Icon=/usr/share/pixmaps/porteus/porteus128.png
+Terminal=false
+Type=Application
+Categories=Application;System;

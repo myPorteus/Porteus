@@ -1,0 +1,80 @@
+PACKAGE NAME:     rofi-1.6.1-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     204K
+UNCOMPRESSED PACKAGE SIZE:     690K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/Porteus5.0/SpaceDE/BUILD-gtk3/PKG64/rofi-1.6.1-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+rofi: rofi (window switcher)
+rofi:
+rofi: Rofi is a window switcher, application launcher and dmenu replacement.
+rofi:
+rofi: Rofi, like dmenu, will provide the user with a textual list of options
+rofi: where one or more can be selected. This can either be running
+rofi: an application, selecting a window, or options provided by an external
+rofi: script.
+rofi:
+rofi: Homepage: https://github.com/DaveDavenport/rofi/
+rofi:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/rofi
+usr/bin/rofi-sensible-terminal
+usr/bin/rofi-theme-selector
+usr/doc/
+usr/doc/rofi-1.6.1/
+usr/doc/rofi-1.6.1/COPYING
+usr/doc/rofi-1.6.1/INSTALL.md
+usr/doc/rofi-1.6.1/README.md
+usr/doc/rofi-1.6.1/rofi.SlackBuild
+usr/include/
+usr/include/rofi/
+usr/include/rofi/helper.h
+usr/include/rofi/mode-private.h
+usr/include/rofi/mode.h
+usr/include/rofi/rofi-icon-fetcher.h
+usr/include/rofi/rofi-types.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/rofi.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/rofi-sensible-terminal.1.gz
+usr/man/man1/rofi-theme-selector.1.gz
+usr/man/man1/rofi.1.gz
+usr/man/man5/
+usr/man/man5/rofi-script.5.gz
+usr/man/man5/rofi-theme.5.gz
+usr/share/
+usr/share/rofi/
+usr/share/rofi/themes/
+usr/share/rofi/themes/Adapta-Nokto.rasi
+usr/share/rofi/themes/Arc-Dark.rasi
+usr/share/rofi/themes/Arc.rasi
+usr/share/rofi/themes/DarkBlue.rasi
+usr/share/rofi/themes/Indego.rasi
+usr/share/rofi/themes/Monokai.rasi
+usr/share/rofi/themes/Paper.rasi
+usr/share/rofi/themes/Pop-Dark.rasi
+usr/share/rofi/themes/android_notification.rasi
+usr/share/rofi/themes/arthur.rasi
+usr/share/rofi/themes/blue.rasi
+usr/share/rofi/themes/c64.rasi
+usr/share/rofi/themes/dmenu.rasi
+usr/share/rofi/themes/fancy.rasi
+usr/share/rofi/themes/glue_pro_blue.rasi
+usr/share/rofi/themes/gruvbox-common.rasi
+usr/share/rofi/themes/gruvbox-dark-hard.rasi
+usr/share/rofi/themes/gruvbox-dark-soft.rasi
+usr/share/rofi/themes/gruvbox-dark.rasi
+usr/share/rofi/themes/gruvbox-light-hard.rasi
+usr/share/rofi/themes/gruvbox-light-soft.rasi
+usr/share/rofi/themes/gruvbox-light.rasi
+usr/share/rofi/themes/lb.rasi
+usr/share/rofi/themes/paper-float.rasi
+usr/share/rofi/themes/purple.rasi
+usr/share/rofi/themes/sidebar.rasi
+usr/share/rofi/themes/solarized.rasi
+usr/share/rofi/themes/solarized_alternate.rasi

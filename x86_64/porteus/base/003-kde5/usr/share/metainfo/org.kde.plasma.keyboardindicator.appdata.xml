@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.keyboardindicator</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Lock Keys Status</name>
+    <name xml:lang="az">Düymələrin vəziyyətini kilidləyin</name>
+    <name xml:lang="ca">Estat de les tecles de bloqueig</name>
+    <name xml:lang="cs">Uzamknout stav kláves</name>
+    <name xml:lang="de">Sperrtastenstatus</name>
+    <name xml:lang="en_GB">Lock Keys Status</name>
+    <name xml:lang="es">Estado de las teclas de bloqueo</name>
+    <name xml:lang="fi">Lukitusnäppäimen tila</name>
+    <name xml:lang="fr">État du verrouillage des touches</name>
+    <name xml:lang="it">Stato della permanenza dei tasti</name>
+    <name xml:lang="ko">잠금 키 상태</name>
+    <name xml:lang="nl">Status van vergrendeltoetsen</name>
+    <name xml:lang="pl">Stan zablokowania klawiszy</name>
+    <name xml:lang="pt">Estado das Teclas Bloqueadas</name>
+    <name xml:lang="pt_BR">Status das teclas de bloqueio</name>
+    <name xml:lang="ro">Starea blocării tastelor</name>
+    <name xml:lang="ru">Состояние фиксации режимов клавиш</name>
+    <name xml:lang="sk">Stav zámku klávesov</name>
+    <name xml:lang="sl">Stanje zaklepa tipkovnice</name>
+    <name xml:lang="sv">Status för låstangenter</name>
+    <name xml:lang="tr">Kilit Tuşları Durumu</name>
+    <name xml:lang="uk">Стан клавіш блокування</name>
+    <name xml:lang="vi">Trạng thái các phím khoá</name>
+    <name xml:lang="x-test">xxLock Keys Statusxx</name>
+    <name xml:lang="zh_CN">锁定按键状态</name>
+    <summary>Shows whether Caps Lock or Num Lock are active</summary>
+    <summary xml:lang="az">Caps Lock və ya Num Lock'un aktivliyini göstərir</summary>
+    <summary xml:lang="ca">Mostra si està actiu el bloqueig de «Bloq Maj» o «Bloq Núm»</summary>
+    <summary xml:lang="cs">Zobrazit, zda je CapsLock nebo NumLock aktivní</summary>
+    <summary xml:lang="de">Zeigt an, ob die Feststelltaste oder die Nummernblocktaste aktiv ist</summary>
+    <summary xml:lang="en_GB">Shows whether Caps Lock or Num Lock are active</summary>
+    <summary xml:lang="es">Muestra si están activas «Bloqueo de mayúsculas» o «Bloqueo numérico»</summary>
+    <summary xml:lang="fi">Näyttää, onko vaihto- tai numerolukko käytössä</summary>
+    <summary xml:lang="fr">Affiche si le verrouillage des majuscules ou du pavé numérique est activé ou non</summary>
+    <summary xml:lang="it">Mostra se Bloc Maiusc o Bloc num sono attivi</summary>
+    <summary xml:lang="ko">Caps Lock이나 Num Lock 키 활성화 여부 표시</summary>
+    <summary xml:lang="nl">Toont of Caps Lock of Num Lock actief zijn</summary>
+    <summary xml:lang="pl">Pokazuje czy Caps Lock oraz Num Lock są włączone</summary>
+    <summary xml:lang="pt">Mostra se o Caps Lock ou o Num Lock estão activos</summary>
+    <summary xml:lang="pt_BR">Mostra quando o Caps Lock ou Num Lock estão ativos</summary>
+    <summary xml:lang="ro">Arată dacă Caps Lock sau Num Lock sunt active</summary>
+    <summary xml:lang="ru">Отображение состояние режимов Caps Lock и Num Lock</summary>
+    <summary xml:lang="sk">Zobrazuje, či sú aktívne klávesy Caps Lock alebo Num Lock</summary>
+    <summary xml:lang="sl">Kaže ali sta aktivna stanja Caps Lock ali Num Lock</summary>
+    <summary xml:lang="sv">Visar om Caps Lock eller Num Lock är aktiva</summary>
+    <summary xml:lang="tr">Caps Lock veya Num Lock'un etkin olup olmadığını gösterir</summary>
+    <summary xml:lang="uk">Показує, чи задіяно Caps Lock або Num Lock</summary>
+    <summary xml:lang="vi">Cho biết Caps Lock hay Num Lock có đang hoạt động không</summary>
+    <summary xml:lang="x-test">xxShows whether Caps Lock or Num Lock are activexx</summary>
+    <summary xml:lang="zh_CN">显示大写锁定或小键盘数字锁定是否激活</summary>
+    <url type="homepage">https://kde.org/plasma-desktop/</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.keyboardindicator</url>
+    <developer_name>Aleix Pol Gonzalez &lt;aleixpol@kde.org&gt;</developer_name>
+    <icon type="stock">input-keyboard</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

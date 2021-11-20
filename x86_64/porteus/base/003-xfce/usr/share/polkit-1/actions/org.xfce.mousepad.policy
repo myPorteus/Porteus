@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "https://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+  
+
+ <vendor>Mousepad</vendor>
+ <vendor_url>https://xfce.org/</vendor_url>
+ <icon_name>org.xfce.mousepad</icon_name>
+
+
+ <action id="org.xfce.mousepad">
+ 
+ <description>Run Mousepad as root</description>
+ <description xml:lang="be">Запусціць Mousepad ад імя суперкарыстальніка</description>
+ <description xml:lang="bg">Стартирай Mousepad, като администратор</description>
+ <description xml:lang="ca">Executa Mousepad com a root</description>
+ <description xml:lang="cs">Spustit Mousepad jako správce systému root</description>
+ <description xml:lang="da">Kør Mousepad som root</description>
+ <description xml:lang="de">Mousepad als Systemverwalter ausführen</description>
+ <description xml:lang="el">Εκτέλεση Mousepad ως root</description>
+ <description xml:lang="en_AU">Run Mousepad as root</description>
+ <description xml:lang="en_GB">Run Mousepad as root</description>
+ <description xml:lang="es">Ejecutar Mousepad como superusuario</description>
+ <description xml:lang="et">Käivita Mousepad juurkasutaja õigustes</description>
+ <description xml:lang="eu">Mousepad root bezala exekutatu</description>
+ <description xml:lang="fa_IR">اجرای Mousepad به عنوان root</description>
+ <description xml:lang="fi">Suorita Mousepad pääkäyttäjänä</description>
+ <description xml:lang="fr">Exécuter Mousepad en tant que root</description>
+ <description xml:lang="gl">Executar o Mousepad como superusuario</description>
+ <description xml:lang="he">הפעל משטח עכבר כמשתמש על</description>
+ <description xml:lang="hr">Pokreni Mousepad kao root korisnik</description>
+ <description xml:lang="hu">Mousepad futtatása rendszergazdaként</description>
+ <description xml:lang="hy_AM">Գործարկել Mousepad֊ը արմատային հաշուով</description>
+ <description xml:lang="hye">Գործարկել Mousepad֊ը արմատային հաշուով</description>
+ <description xml:lang="id">Jalankan Mousepad sebagai root</description>
+ <description xml:lang="ie">Lansar Mousepad quam li superusator</description>
+ <description xml:lang="is">Keyra Mousepad sem kerfisstjóri/root</description>
+ <description xml:lang="it">Esegui Mousepad con i permessi di amministratore</description>
+ <description xml:lang="ja">root として Mousepad を実行</description>
+ <description xml:lang="kk">Mousepad-ты root атынан жіберу</description>
+ <description xml:lang="ko">루트 권한으로 마우스패드 실행</description>
+ <description xml:lang="lt">Paleisti Mousepad administratoriaus teisėmis</description>
+ <description xml:lang="ms">Jalankan Pad Tetikus sebagai root</description>
+ <description xml:lang="nb">Kjør Mousepad som rot.</description>
+ <description xml:lang="nl">Mousepad als root draaien</description>
+ <description xml:lang="pl">Uruchom Mousepad jako użytkownik root</description>
+ <description xml:lang="pt">Executar mousepad como root</description>
+ <description xml:lang="pt_BR">Executar Mousepad como super usuário</description>
+ <description xml:lang="ru">Запустить Mousepad от суперпользователя</description>
+ <description xml:lang="sk">Spustenie aplikácie Mousepad ako správca</description>
+ <description xml:lang="sl">Zaženi Mousepad kot root uporabnik</description>
+ <description xml:lang="sq">Xhirojeni Mousepad-in si rrënjë</description>
+ <description xml:lang="sr">Покрени Мишоловку као корени корисник</description>
+ <description xml:lang="sv">Kör Mousepad som root</description>
+ <description xml:lang="th">เรียก Mousepad ในฐานะ root</description>
+ <description xml:lang="tr">Mousepad kök olarak çalışsın</description>
+ <description xml:lang="uk">Запустити Mousepad від імені суперкористувача</description>
+ <description xml:lang="zh_CN">以 root 身份运行 Mousepad</description>
+ <description xml:lang="zh_TW">以 root 身份執行 Mousepad</description>
+ <message>Authentication is required to run Mousepad as root.</message>
+ <message xml:lang="ar">التحقق مطلوب لتشغيل ماوس باد كـ root</message>
+ <message xml:lang="be">Для запуску Mousepad ад імя суперкарыстальніка патрэбна аўтэнтыфікавацца.</message>
+ <message xml:lang="bg">Изисква се удостоверяване, за да стартирате Mousepad, като администратор.</message>
+ <message xml:lang="ca">Es requereix autenticació per executar Mousepad com a root.</message>
+ <message xml:lang="cs">Ke spuštění aplikace Mousepad pod účtem správce systému root je vyžadováno ověření.</message>
+ <message xml:lang="da">Der kræves godkendelse for at køre Mousepad som root.</message>
+ <message xml:lang="de">Eine Authentifizierung ist notwendig, um Mousepad als Systemverwalter auszuführen.</message>
+ <message xml:lang="el">Απαιτείται πιστοποίηση για την εκτέλεση του Mousepad ως root.</message>
+ <message xml:lang="en_AU">Authentication is required to run Mousepad as root.</message>
+ <message xml:lang="en_GB">Authentication is required to run Mousepad as root.</message>
+ <message xml:lang="es">Se requiere autenticación para ejecutar Mousepad como superusuario.</message>
+ <message xml:lang="et">Mousepad'i käivitamine juurkasutaja õigustes eeldab täiendavat autentimist.</message>
+ <message xml:lang="eu">Autentifikazioa behar da Mousepad root bezala exekutatzeko. </message>
+ <message xml:lang="fa_IR">جهت اجرای Mousepad به عنوان root احراز هویت لازم است.</message>
+ <message xml:lang="fi">Tunnistautuminen vaaditaan Mousepadin suorittamiseksi pääkäyttäjänä.</message>
+ <message xml:lang="fr">Authentification nécessaire pour exécuter Mousepad en tant que root.</message>
+ <message xml:lang="gl">Requírese a autenticación para executar Mousepad como root.</message>
+ <message xml:lang="he">נדרש אימות כדי להפעיל משטח עכבר כמשתמש על.</message>
+ <message xml:lang="hr">Potrebna je autentikacija kako bi Mousepad pokrenuli kao root korisnik</message>
+ <message xml:lang="hu">Hitelesítés szükséges a Mousepad rendszergazdaként futtatásához.</message>
+ <message xml:lang="hy_AM">Հարկաւոր է վաւերացում Mousepad֊ն արմատային հաշուով գործարկելու համար։</message>
+ <message xml:lang="hye">Հարկաւոր է վաւերացում Mousepad֊ն արմատային հաշուով գործարկելու համար։</message>
+ <message xml:lang="id">Otentikasi dibutuhkan untuk menjalankan Mousepad sebagai root.</message>
+ <message xml:lang="ie">Autentification es besonat por lansar Mousepad quam li superusator.</message>
+ <message xml:lang="is">Auðkenningar er krafist til að keyra Mousepad sem kerfisstjóri (root)</message>
+ <message xml:lang="it">È necessaria l'autenticazione per eseguire Mousepad con i permessi di amministratore.</message>
+ <message xml:lang="ja">Mousepad を root として実行するには、認証を必要とします。</message>
+ <message xml:lang="kk">Mousepad-ты root атынан жіберу үшін аутентификация керек.</message>
+ <message xml:lang="ko">마우스패드를 루트 권한으로 실행하려면 인증이 필요합니다.</message>
+ <message xml:lang="lt">Norint paleisti Mousepad administratoriaus teisėmis, reikia nustatyti tapatybę</message>
+ <message xml:lang="ms">Pengesahihan diperlukan untuk jalankan Pad Tetikus sebagai root.</message>
+ <message xml:lang="nb">Autentisering er påkrevd for å kjøre Mousepad som rot.</message>
+ <message xml:lang="nl">Voor het draaien van Mousepad als root, is authenticatie vereist.</message>
+ <message xml:lang="pl">Uwierzytelnianie jest wymagane, aby uruchomić Mousepad jako użytkownik root.</message>
+ <message xml:lang="pt">Autenticação necessária para executar mousepad como root.</message>
+ <message xml:lang="pt_BR">Autenticação requerida para executar Mousepad como super usuário.</message>
+ <message xml:lang="ru">Для запуска Mousepad от суперпользователя требуется аутентификация.</message>
+ <message xml:lang="sk">Pre spustenie aplikácie Mousepad ako správca, je potrebné overenie totožnosti.</message>
+ <message xml:lang="sl">Za zagon kot root uporabnik je potrebna avtentifikacija.</message>
+ <message xml:lang="sq">Që të përdoret Mousepad-i si rrënjë, lypset mirëfilltësim.</message>
+ <message xml:lang="sr">Потребна је пријава ради покретања Мишоловке као корени корисник.</message>
+ <message xml:lang="sv">Autentisering krävs för att köra Mousepad som root.</message>
+ <message xml:lang="th">ต้องยืนยันตัวบุคคลก่อนเรียก Mousepad ในฐานะ root</message>
+ <message xml:lang="tr">Mousepad'i kök olarak çalıştırmak için kimlik doğrulaması gereklidir.</message>
+ <message xml:lang="uk">Вимагаються дані автентифікації для запуску Mousepad від імені суперкористувача. </message>
+ <message xml:lang="zh_CN">需要身份验证才能以 root 身份运行 Mousepad。</message>
+ <message xml:lang="zh_TW">要以 root 身份執行 Mousepad 必須通過驗證。</message>
+ <defaults>
+ <allow_any>no</allow_any>
+ <allow_inactive>auth_admin</allow_inactive>
+ <allow_active>auth_admin</allow_active>
+ </defaults>
+ <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/mousepad</annotate>
+ <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+ </action>
+
+</policyconfig>

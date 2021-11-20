@@ -1,0 +1,46 @@
+PACKAGE NAME:     kde-gtk-config-5.22.2.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     330K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kde-gtk-config-5.22.2.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kde-gtk-config: kde-gtk-config (configure GTK appearance)
+kde-gtk-config:
+kde-gtk-config: System settings kcm to set GTK application look and feel in KDE.
+kde-gtk-config:
+kde-gtk-config: Homepage: http://projects.kde.org/kde-gtk-config
+kde-gtk-config:
+kde-gtk-config:
+kde-gtk-config:
+kde-gtk-config:
+kde-gtk-config:
+kde-gtk-config:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kde-gtk-config-5.22.2.1/
+usr/doc/kde-gtk-config-5.22.2.1/README.md
+usr/lib64/
+usr/lib64/gtk-3.0/
+usr/lib64/gtk-3.0/modules/
+usr/lib64/gtk-3.0/modules/libcolorreload-gtk-module.so
+usr/lib64/gtk-3.0/modules/libwindow-decorations-gtk-module.so
+usr/lib64/gtk3_preview
+usr/lib64/kconf_update_bin/
+usr/lib64/kconf_update_bin/gtk_theme
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/kded/
+usr/lib64/qt5/plugins/kf5/kded/gtkconfig.so
+usr/share/
+usr/share/kcm-gtk-module/
+usr/share/kcm-gtk-module/preview.ui
+usr/share/kconf_update/
+usr/share/kconf_update/gtkconfig.upd
+usr/share/kconf_update/remove_window_decorations_from_gtk_css.sh
+usr/share/themes/
+usr/share/themes/Breeze/
+usr/share/themes/Breeze/window_decorations.css

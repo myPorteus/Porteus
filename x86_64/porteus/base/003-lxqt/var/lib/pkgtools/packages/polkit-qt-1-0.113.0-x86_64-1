@@ -1,0 +1,73 @@
+PACKAGE NAME:     polkit-qt-1-0.113.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     370K
+PACKAGE LOCATION: polkit-qt-1-0.113.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+polkit-qt-1: polkit-qt-1 (Qt polkit API wrapper)
+polkit-qt-1:
+polkit-qt-1: polkit-qt-1 aims to make it easy for Qt developers to take advantage
+polkit-qt-1: of the polkit API. It is a convenience wrapper around QAction and
+polkit-qt-1: QAbstractButton that lets you integrate those two components easily
+polkit-qt-1: with polkit.
+polkit-qt-1:
+polkit-qt-1: Homepage: https://projects.kde.org/projects/kdesupport/polkit-qt-1/
+polkit-qt-1:
+polkit-qt-1:
+polkit-qt-1:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/polkit-qt-1-0.113.0/
+usr/doc/polkit-qt-1-0.113.0/AUTHORS
+usr/doc/polkit-qt-1-0.113.0/COPYING
+usr/doc/polkit-qt-1-0.113.0/README
+usr/doc/polkit-qt-1-0.113.0/README.porting
+usr/doc/polkit-qt-1-0.113.0/TODO
+usr/include/
+usr/include/polkit-qt5-1/
+usr/include/polkit-qt5-1/PolkitQt1/
+usr/include/polkit-qt5-1/PolkitQt1/ActionDescription
+usr/include/polkit-qt5-1/PolkitQt1/Agent/
+usr/include/polkit-qt5-1/PolkitQt1/Agent/Listener
+usr/include/polkit-qt5-1/PolkitQt1/Agent/Session
+usr/include/polkit-qt5-1/PolkitQt1/Authority
+usr/include/polkit-qt5-1/PolkitQt1/Details
+usr/include/polkit-qt5-1/PolkitQt1/Gui/
+usr/include/polkit-qt5-1/PolkitQt1/Gui/Action
+usr/include/polkit-qt5-1/PolkitQt1/Gui/ActionButton
+usr/include/polkit-qt5-1/PolkitQt1/Gui/ActionButtons
+usr/include/polkit-qt5-1/PolkitQt1/Identity
+usr/include/polkit-qt5-1/PolkitQt1/Subject
+usr/include/polkit-qt5-1/PolkitQt1/TemporaryAuthorization
+usr/include/polkit-qt5-1/polkitqt1-actiondescription.h
+usr/include/polkit-qt5-1/polkitqt1-agent-listener.h
+usr/include/polkit-qt5-1/polkitqt1-agent-session.h
+usr/include/polkit-qt5-1/polkitqt1-authority.h
+usr/include/polkit-qt5-1/polkitqt1-details.h
+usr/include/polkit-qt5-1/polkitqt1-export.h
+usr/include/polkit-qt5-1/polkitqt1-gui-action.h
+usr/include/polkit-qt5-1/polkitqt1-gui-actionbutton.h
+usr/include/polkit-qt5-1/polkitqt1-gui-actionbuttons.h
+usr/include/polkit-qt5-1/polkitqt1-identity.h
+usr/include/polkit-qt5-1/polkitqt1-subject.h
+usr/include/polkit-qt5-1/polkitqt1-temporaryauthorization.h
+usr/include/polkit-qt5-1/polkitqt1-version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/PolkitQt5-1/
+usr/lib64/cmake/PolkitQt5-1/PolkitQt5-1Config.cmake
+usr/lib64/cmake/PolkitQt5-1/PolkitQt5-1ConfigVersion.cmake
+usr/lib64/cmake/PolkitQt5-1/PolkitQt5-1Targets-noconfig.cmake
+usr/lib64/cmake/PolkitQt5-1/PolkitQt5-1Targets.cmake
+usr/lib64/libpolkit-qt5-agent-1.so.1.113.0
+usr/lib64/libpolkit-qt5-core-1.so.1.113.0
+usr/lib64/libpolkit-qt5-gui-1.so.1.113.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/polkit-qt5-1.pc
+usr/lib64/pkgconfig/polkit-qt5-agent-1.pc
+usr/lib64/pkgconfig/polkit-qt5-core-1.pc
+usr/lib64/pkgconfig/polkit-qt5-gui-1.pc

@@ -1,0 +1,483 @@
+#!/bin/bash
+: <<COMMENT
+  Copyright (C) 2012 Tri Le <trile7 at gmail dot com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation version 3.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+COMMENT
+
+version="mnttools v0.4.5"
+blue='\e[1;34m\e[47m'; green='\e[0;32m'; red='\e[0;31m'; yellow='\e[0;33m'; bold='\e[1m';none='\e[0m'
+function menu {
+  n=0
+  choices=("$@")
+  echo -e "$blue$version - $menutitle$none"
+  for i in "${choices[@]}"; do
+    echo -e "$none$((n++)))   $yellow$i"
+  done
+  echo -en "${none}c|q) ${yellow}Cancel"
+  echo -e $green
+  read -p "Enter a choice from above menu: " i
+  echo -e $none
+  [[ $i =~ c|q ]] && exit 1
+  if test $i -lt $n 2>/dev/null; then
+    choice=${choices[i]}; return $i
+  else
+    echo -e "$red$i is an invalid entry...please try again!"
+    menu "${choices[@]}"
+  fi
+  }
+
+function yadtray() {
+  y=`which yad 2>/dev/null` || y=/usr/bin/yad
+  [[ -f $y && $DISPLAY ]] || return 1
+  pipe="/tmp/${0##*/}.pipe"
+  [[ -e $pipe ]] || (mkfifo $pipe && chmod 666 $pipe)
+  exec 3<> $pipe
+  for i in "$mntroot"/*; do
+    mount | grep -q "$i" && mntpoints=(${mntpoints[@]} "$i")
+  done
+  if [[ ! $mntpoints ]]; then
+    echo quit >&3
+    return
+  fi
+  pgrep -u ${USER:=$u} -f Mounted.*notification &>/dev/null || $y --text="Mounted Media" --image=gtk-harddisk --notification --command="$0 showmount" --listen <&3 &
+  }
+
+function showmount() {
+  pkill -f ${0##*/}.*mountpoints
+  for i in "$mntroot"/*; do
+    mount | grep -q "$i" && mntpoints=(${mntpoints[@]} "$i")
+  done
+  mntpoint=`yad --center --title ${0##*/} --window-icon=gtk-harddisk --timeout=30 --height=200 --button gtk-open:0 --button gtk-disconnect:2 --list --column mountpoints ${mntpoints[@]}`
+  case $? in
+    0) $open_cmd "${mntpoint%|}" ;;
+    2) unmount "${mntpoint%|}" | yad --on-top --center --no-buttons --skip-taskbar --undecorated --fixed --progress --pulsate --auto-close --progress-text "Unmounting ${mntpoint%|}...please wait..."
+    [[ -e ${mntpoint%|} ]] && yad --center --title ${0##*/} --window-icon=gtk-harddisk --button gtk-ok:0 --image gtk-stop --text "<b>${mntpoint%|}</b> is busy...DO NOT remove" || yad --center --title ${0##*/} --window-icon=gtk-harddisk --button gtk-ok:0 --image gtk-apply --text "<b>${mntpoint%|}</b> is unmounted" ;;
+  esac
+  }
+
+function udevmount() {
+  mntopts="-o $general_mntopts"
+  [[ $DEVNAME ]] || return 1
+  mount | grep -q $DEVNAME && return 1
+  if [[ $check_fstab = true ]]; then
+    grep -q -e $DEVNAME -e $ID_FS_UUID /etc/fstab && return 1
+  fi
+  label=${ID_FS_LABEL:=$ID_VENDOR}
+  [[ $label ]] || label=${DEVNAME##*/}
+  mntpoint=$mntroot/${label//[\\ ]/_}
+  [[ $ID_FS_TYPE =~ vfat|ntfs ]] && mntopts="$mntopts,$winfs_mntopts"
+  [[ $ID_FS_TYPE = ntfs ]] && fs="-t ntfs-3g" || fs="-t $ID_FS_TYPE"
+  _mount
+  }
+
+function udevunmount() {
+  [[ $DEVNAME ]] || return 1
+  i=(`mount | grep -w $DEVNAME`)
+  unmount "${i[2]}"
+  }
+
+function devicemenu {
+  mntopts="-o $general_mntopts"
+  if [[ $1 ]]; then
+    eval "`lsblk -P -o NAME,FSTYPE,LABEL $1`"
+    [[ $FSTYPE ]] || return
+  else
+    IFS=$'\n'
+    d=(`lsblk -P -o NAME,FSTYPE,LABEL,MOUNTPOINT | grep -e MOUNTPOINT=\"\" | grep -v -e FSTYPE=\"\" | cut -d' ' -f1-3`)
+    menutitle="Device Menu"
+    menu ${d[@]} "Main Menu"
+    IFS=$oIFS
+    if [[ $choice = "Main Menu" ]]; then mainmenu; return; fi
+    eval "$choice"
+  fi
+  DEVNAME=/dev/$NAME
+  [[ $FSTYPE = ntfs ]] && fs="-t ntfs-3g" || fs="-t $FSTYPE"
+  [[ $fs =~ vfat|ntfs ]] && mntopts="$mntopts,$winfs_mntopts"
+  label=${LABEL:=${DEVNAME##*/}}
+  mntpoint=$mntroot/$label
+  _mount
+  }
+
+function imagemenu {
+  mntopts="-o $general_mntopts,loop"
+  if [[ $# -eq 0 ]]; then
+    echo -ne $green
+    read -p "Enter image path: " image
+    if [[ ! -f $image ]]; then
+      echo -e "${red}Cannot locate $image $none"
+      mainmenu
+      return
+    fi
+  else
+    image=("$@")
+  fi
+  for DEVNAME in "${image[@]}"; do
+    mntpoint=$mntroot/${DEVNAME##*/}
+    _mount
+  done
+  }
+
+function sshmenu() {
+  mntopts="-o $sshfs_mntopts"
+  echo -e "Enter ${green}main menu$none any time (except password field) to return to menu"
+  echo -e $green
+  read -p "Enter server name/ip: " server
+  if [[ $server = "main menu" ]]; then server=; mainmenu; return; fi
+  read -p "Enter start directory: " folder
+  if [[ $folder = "main menu" ]]; then server=; mainmenu; return; fi
+  read -p "Enter port (default 22): " port
+  if [[ $port = "main menu" ]]; then server=; mainmenu; return; fi
+  [[ $port ]] && mntopts=$mntopts,port=$port
+  read -p "Enter username: " user
+  if [[ $user = "main menu" ]]; then server=; mainmenu; return; fi
+  [[ $user ]] && server=$user@$server
+  mntpoint=$mntroot/$server
+  DEVNAME=$server:$folder
+  fs="-t sshfs"
+  echo -e $none
+  _mount
+  }
+
+function ftpmenu() {
+  mntopts="-o $ftpfs_mntopts"
+  echo -e "Enter ${green}main menu$none any time (except password field) to return to menu"
+  echo -e $green
+  read -p "Enter server name/ip: " server
+  if [[ $server = "main menu" ]]; then server=; mainmenu; return; fi
+  read -p "Enter port (default 21): " port
+  if [[ $port = "main menu" ]]; then server=; mainmenu; return; fi
+  [[ $port ]] && mntopts=$mntopts,ftp_port=$port
+  read -p "Enter username: " user
+  if [[ $user = "main menu" ]]; then server=; mainmenu; return; fi
+  if [[ $user ]]; then
+    read -p "Enter password: " pass
+    [[ $pass ]] && mntopts=$mntopts,user=$user:$pass || mntopts=$mntopts,user=$user
+    mntpoint=$mntroot/$user@$server
+  else
+    mntpoint=$mntroot/$server
+  fi
+  DEVNAME=$server
+  fs="-t ftpfs"
+  echo -e $none
+  _mount
+  }
+
+function nfsmenu() {
+  mntopts="-o $nfs_mntopts"
+  echo -e "Enter ${green}main menu$none any time (except password field) to return to menu"
+  echo -e $green
+  read -p "Enter server name/ip: " server
+  if [[ $server = "main menu" ]]; then server=; mainmenu; return; fi
+  mntpoint=$mntroot/$server
+  DEVNAME=$server:/
+  echo -e $none
+  _mount
+  }
+
+function smbmenu {
+  menutitle="Samba Network"
+  menu "Browse network" "Manually enter computer name/ip and port" "Main menu"
+  case $choice in
+    Browse*) smbbrowse ;;
+    Manual*) smbbrowse manualentry ;;
+    Main*) mainmenu ;;
+  esac
+  }
+
+function smbbrowse {
+  mntopts="-o $cifs_mntopts"
+  echo -ne $green
+  read -p "username: " user
+  if [[ $user ]]; then
+    read -p "password: " pass
+    auth="-U $user%$pass"
+    mntopts="$mntopts,uid=$user,user=$user"
+    [[ $pass ]] && mntopts=$mntopts,password=$pass
+  else
+    auth="-N"
+  fi
+  IFS=$'\n'
+  if [[ $1 = manualentry ]]; then
+    read -p "Enter server name/ip: " server
+    read -p "Enter port (default 445/139): " port
+    [[ $port ]] && mntopts=$mntopts,port=$port
+  else
+    servers=$(eval smbtree $auth -S | grep '\\' | tr -d '\t\\')
+    menutitle="Samba Servers"
+    menu ${servers[@]} "Main Menu"
+    if [[ $choice = "Samba Menu" ]]; then smbmenu; return; fi
+    server=${choice%% *}
+  fi
+  shares=(`eval smbclient $auth -gL $server 2>/dev/null | grep Disk`)
+  if [[ $shares ]]; then
+    menutitle="Samba Shares on $server"
+    menu ${shares[@]} "Samba Menu"
+    if [[ $choice = "Samba Menu" ]]; then smbmenu; return; fi
+    share=${choice#Disk|}
+    DEVNAME=//$server/${share%|*}
+    mntpoint=$mntroot/$server-${share%|*}
+    fs="-t cifs"
+  else
+    echo -e "${red}Cannot detect any share on $server $none"
+    smbmenu; return
+  fi
+  IFS=$oIFS
+  _mount
+  }
+
+function histmenu {
+  recent=(`cat "$history_file" | cut -d'|' -f1`)
+  menutitle="Mount History"
+  menu ${recent[@]} "Edit history" "Main Menu"
+  l=$(($?+1))
+  case $choice in
+    Main*) mainmenu ;;
+    Edit*)
+      if [[ $EDITOR ]]; then
+        $EDITOR "$history_file"
+      else
+        echo "${red}EDITOR is not defined.$none  Below is the file path:"
+        echo "$history_file"
+      fi
+      histmenu ;;
+    *)
+      unset fs mntopts DEVNAME mntpoint
+      data=`grep -n $choice "$history_file" | grep ^$l:`
+      DEVNAME=$choice
+      mntpoint=`echo $data | cut -d'|' -f2`
+      fs=`echo $data | cut -d'|' -f3`
+      mntopts=`echo $data | cut -d'|' -f4`
+      _mount ;;
+  esac
+  }
+
+function histsave {
+  if [[ $save_history = true && $fs =~ cifs|sshfs|ftpfs ]]; then
+    mkdir -p "${history_file%/*}"
+    grep "$DEVNAME|$mntpoint|$fs|$mntopts" "$history_file" &>/dev/null || echo "$DEVNAME|$mntpoint|$fs|$mntopts" >>"$history_file"
+    chmod 600 "$history_file"
+  fi
+  }
+
+function mainmenu {
+  menutitle="Main Menu"
+  menu "Mount devices on this computer" "Mount image file" "Mount Samba share" "Mount SSH" "Mount FTP" "Mount NFS" "Mount from history" "Unmount" "Remove all entries from conkyrc" "Remount Device"
+  case $choice in
+    *devices*) devicemenu ;;
+    *image*) imagemenu ;;
+    *SSH) sshmenu ;;
+    *Samba*) smbmenu ;;
+    *FTP) ftpmenu ;;
+    *NFS) nfsmenu ;;
+    *history) histmenu ;;
+    Unmount) unmountmenu ;;
+    *conkyrc) modconkyrc removeall ;;
+    Remount*) remountmenu ;;
+  esac
+  }
+
+function unmountmenu {
+  if [[ $1 ]]; then
+    [[ $1 = $mntroot ]] && mntpoint=$1 || mntpoint=`mount | grep "$1" | cut -d' ' -f3`
+    unmount "$mntpoint"
+    return
+  fi
+  unset mntpoints
+  for i in "$mntroot"/*; do
+    mount | grep -q "$i" && mntpoints=(${mntpoints[@]} "$i")
+  done
+  if [[ $mntpoints ]]; then
+    menutitle="Unmount"
+    menu ${mntpoints[@]} "All"
+    if [[ $choice = All ]]; then
+      run=no
+      for i in "${mntpoints[@]}"; do unmount "$i"; done
+      $0 tray
+    else
+      unmount "$choice"
+    fi
+  else
+    echo -e "${red}Cannot find any mount in $mntroot $none"
+    read -t 5
+  fi
+  mainmenu
+  }
+
+function remountmenu {
+  if [[ $1 ]]; then
+    eval "`lsblk -P -o NAME,MOUNTPOINT | grep ${1##*/}`"
+  else
+    IFS=$'\n'
+    d=(`mount | grep $mntroot | cut -d' ' -f1-3`)
+    menutitle="Remount Device Menu"
+    menu ${d[@]} "Main Menu"
+    IFS=$oIFS
+    if [[ $choice = "Main Menu" ]]; then mainmenu; return; fi
+    eval "`lsblk -P -o NAME,MOUNTPOINT ${choice[0]}`"
+  fi
+  unmount "$MOUNTPOINT"
+  sleep 1
+  devicemenu "/dev/$NAME"
+  }
+
+function _mount() { #require: DEVNAME mntpoint mntopts
+  [[ $DEVNAME && $mntpoint ]] || return 1
+  if i=`mount | grep -q "$DEVNAME"`; then
+    echo -e "${red}$DEVNAME is already mounted $none"
+    echo $i
+    return 1
+  fi
+  n=1
+  while [[ `mount | grep -q "$mntpoint"` ]]; do mntpoint=$mntpoint-$((n++)); done
+  mkdir -p "$mntpoint" || return 1
+  case $fs in
+    -t*sshfs) sshfs "$DEVNAME" "$mntpoint" $mntopts; echo "mount command: sshfs $DEVNAME $mntpoint $mntopts" ;;
+    -t*ftpfs) curlftpfs "$DEVNAME" "$mntpoint" $mntopts; echo "mount command: curlftpfs $DEVNAME $mntpoint $mntopts" ;;
+    *) $runasroot mount $fs $mntopts "$DEVNAME" "$mntpoint"; echo "mount command: $runasroot mount $fs $mntopts $DEVNAME $mntpoint" ;;
+  esac
+  if mount | grep -q "$mntpoint"; then
+    histsave
+    modconkyrc add
+    echo "$DEVNAME is mounted at $mntpoint"
+  else
+    rmdir "$mntpoint"; return 1
+  fi
+  [[ $USER && $USER != root ]] && $0 tray || runasuser $0 tray
+  }
+
+function unmount {
+  [[ $1 ]] && mntpoint=$1 || return 1
+  echo -e "${yellow}Unmounting $mntpoint .... $none"
+  if mount | grep -q "$mntpoint"; then
+    fusermount -qu "$mntpoint" || $runasroot umount "$mntpoint"
+    if [[ $? -ne 0 ]]; then
+      echo "#fail to unmount $mntpoint"
+      lsof "$mntpoint" 2>/dev/null
+      return 1
+    fi
+  fi
+  echo 100
+  rmdir "$mntpoint"
+  modconkyrc remove
+  if [[ $run = yes ]]; then
+    [[ $USER && $USER != root ]] && $0 tray || runasuser $0 tray
+  fi
+  }
+
+function modconkyrc {
+  [[ $i = none ]] && return
+  for i in "${conkyrc[@]}"; do
+    [[ -f $i ]] || continue
+    if [[ $1 = add && $DEVNAME = /dev/* && !`grep "$mntpoint" "$i"` ]]; then
+      echo -e "\${color slate grey}${mntpoint##*/}:\${fs_size $mntpoint} \${color orange}U:\${fs_used $mntpoint} \${color}F:\${fs_free $mntpoint} \${if_empty mnttools_entry}\$endif" >>"$i"
+      echo -e "\$color\${fs_bar $mntpoint} \${color orange}\${diskio ${DEVNAME##*/}} \${if_empty mnttools_entry}\$endif" >>"$i"
+    elif [[ $1 = remove ]]; then
+      sed -i "/${mntpoint##*\/}.*mnttools/d" "$i"
+    elif [[ $1 = removeall ]]; then
+      sed -i "/mnttools_entry/d" "$i"
+    fi
+  done
+  }
+
+function runasuser {
+  IFS=$'\n'
+  for i in `ps -C xinit -o user,cmd | grep xinit`; do
+    u=${i%% *}
+    d=`echo $i | grep -wo :[0-9]`
+    IFS=$oIFS
+    sudo -u $u -b DISPLAY=$d $@
+  done
+  }
+
+function writecfg {
+cat <<EOF>$cfg
+# You must have write permission to mntroot and history_file
+mntroot="$mntroot"
+save_history="$save_history"
+history_file="$history_file"
+general_mntopts="$general_mntopts"
+winfs_mntopts="$winfs_mntopts"
+sshfs_mntopts="$sshfs_mntopts"
+ftpfs_mntopts="$ftpfs_mntopts"
+cifs_mntopts="$cifs_mntopts"
+open_cmd="$open_cmd"
+check_fstab="$check_fstab"
+# If you don't want to modify your ~/.conkyrc, enter "none" for "conkyrc" variable
+# conkyrc="none"
+EOF
+}
+
+function usage {
+cat <<EOF
+$version
+$0                                  #show main menu
+$0 image [file_paths]               #mount image file (iso,img,etc.)
+$0 sshfs                            #mount via sshfs
+$0 ftpfs                            #mount via curlftpfs
+$0 samba                            #mount  via samba
+$0 device [device name]             #mount devices on computer
+$0 hist                             #mount from history
+$0 unmount [mountpoint|device name] #unmount mountpoint in mount folder
+$0 editcfg                          #create/edit cfg
+$0 readme                           #show readme
+$0 tray                             #show trayicon
+$0 conkyrc_remove                   #remove all mnttools conkyrc entries
+$0 remount [mountpoint|device name] #remount device
+EOF
+exit
+}
+
+oIFS=$IFS
+if [[ $1 = --config ]]; then
+  cfg=$2; action=$3
+fi
+[[ -f ${cfg:=~/.mnttools} ]] && source "$cfg"
+gid=`cat /etc/group | grep ^users: | cut -d':' -f3`
+[[ $USER && $USER != root ]] && runasroot=sudo
+run=yes
+mntroot=${mntroot:=/media}
+save_history=${save_history:=true}
+history_file=${history_file:=~/.mnttools_history}
+general_mntopts=${general_mntopts:=noatime}
+winfs_mntopts=${winfs_mntopts:=gid=$gid,umask=002,flush}
+sshfs_mntopts=${sshfs_mntopts:=reconnect,compression=yes,workaround=rename,gid=$gid,umask=002}
+ftpfs_mntopts=${ftpfs_mntopts:=gid=$gid,umask=002}
+cifs_mntopts=${cifs_mntopts:=gid=$gid}
+nfs_mntopts=${nfs_mntopts:=rw,hard,intr}
+open_cmd=${open_cmd:=xdg-open}
+check_fstab=${check_fstab:=true}
+if [[ -z $conkyrc ]]; then
+  for i in /home/*/.conkyrc; do conkyrc=("$conkyrc" "$i"); done
+fi
+[[ $1 = --config && ! -f $cfg && $# -gt 2 ]] && writecfg
+[[ $action ]] || action=$1
+case $action in
+  udevmount) udevmount ;;
+  udevunmount) udevunmount ;;
+  tray) yadtray & ;;
+  showmount) showmount ;;
+  image) shift; imagemenu "$@" ;;
+  sshfs) sshmenu ;;
+  ftpfs) ftpmenu ;;
+  samba) smbmenu ;;
+  device) devicemenu "$2" ;;
+  remount) remountmenu "$2" ;;
+  hist) histmenu ;;
+  unmount) unmountmenu "$2";;
+  editcfg) [[ -f $cfg ]] || writecfg; xdg-open "$cfg" ;;
+  readme) readme=`readlink -f "$0"`.readme; cat "$readme" ;;
+  conkyrc_remove) modconkyrc removeall ;;
+  -h|*help) usage ;;
+  *) mainmenu ;;
+esac

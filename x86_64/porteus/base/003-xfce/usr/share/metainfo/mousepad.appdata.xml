@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>mousepad.desktop</id>
+  <metadata_license>CC-BY-3.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Mousepad</name>
+  <summary>Mousepad is a simple text editor for the Xfce desktop environment</summary>
+
+  <description>
+    <p>Mousepad aims to be an easy-to-use and fast editor. Our target is an editor for quickly editing text files, not a development environment or an editor with a huge bunch of plugins.</p>
+    <p xml:lang="be">Mousepad імкнецца быць зручным і хуткім. Нашай мэтай ёсць стварэнне рэдактара для хуткага рэдагавання тэкставых файлаў, а не працоўнага асяроддзя ці рэдактара з мноствам убудоў.</p>
+    <p xml:lang="bg">Mousepad има за цел да бъде лесен за използване и бърз редактор. Нашата цел е редактор за бързо редактиране на текстови файлове, а не среда за разработка или редактор с огромен куп приставки.</p>
+    <p xml:lang="ca">Mousepad vol ser un editor fàcil d’utilitzar i ràpid. El nostre objectiu és un editor per editar ràpidament fitxers de text, no un entorn de desenvolupament o un editor amb una gran quantitat de connectors.</p>
+    <p xml:lang="cs">Mousepad má za cíl být snadno použitelným a rychlým editorem. Naším cílem je editor pro rychlou úpravu souborů, ne vývojářské prostředí nebo editor s obrovským množstvím zásuvných modulů.</p>
+    <p xml:lang="da">Mousepad går efter at være et letanvendelig og hurtigt tekstredigeringsprogram. Vores mål er et tekstredigeringsprogram til hurtig redigering af tekstfiler, ikke et udviklingsmiljø eller et tekstredigeringsprogram med en stor bunke plugins.</p>
+    <p xml:lang="de">Mousepad soll ein einfach zu bedienender und schneller Editor sein. Unser Ziel ist ein Editor zur schnellen Bearbeitung von Textdateien, keine Entwicklungsumgebung oder ein Editor mit einer Vielzahl von Plugins.</p>
+    <p xml:lang="el">Το Mousepad αποσκοπεί στο να είναι ένας εύκολος στη χρήση και γρήγορος επεξεργαστής κειμένου. Στόχος μας είναι, ένας επεξεργαστής για την γρήγορη επεξεργασία αρχείων κειμένου και όχι ένα περιβάλλον ανάπτυξης ή ένας επεξεργαστής με τεράστιο αριθμό πρόσθετων.</p>
+    <p xml:lang="es">Mousepad pretende ser un editor rápido y fácil de usar. Nuestro objetivo es  un programa para la edición rápida de archivos de texto, no un entorno de desarrollo o un editor con una gran cantidad de complementos.</p>
+    <p xml:lang="et">Mouspad soovib olla lihtsalt kasutatav ja kiire tekstiredaktor. Meie eesmärgiks on luua tekstiredaktor, millega saaks kiiresti tekstifaile luua ja muuta, kuid mis poleks integreeritud arenduskeskkond või tekstiredaktor tohutu hulga pistikprogrammidega.</p>
+    <p xml:lang="eu">Mousepad editore erabilerraz eta azkar bat izan nahi du. Gure helburua testu fitxategiak azkar editatzeko editore bat da, ez garapen ingurumen bat edo plugin gehiegi dituen editore bat.</p>
+    <p xml:lang="fa_IR">Mousepad می‌خواهد یک ویرایشگر سریع برای استفاده آسان باشد. هدف ما یک ویرایشگر برای ویرایش سریع فایل‌های متنی است، نه یک محیط توسعه یا یک ویرایشگر با دسته‌ای از افزونه‌های فراوان.</p>
+    <p xml:lang="fr">Mousepad se veut être un éditeur rapide et facile à utiliser. Notre objectif est d’en faire un éditeur pour éditer rapidement des fichiers texte, et non pas un environnement de développement ou un éditeur avec un tas de greffons.</p>
+    <p xml:lang="gl">Mousepad pretende ser un editor doado de usar e rápido. O noso obxectivo é un editor para editar rapidamente ficheiros de texto, non un contorno de desenvolvemento ou un editor cun enorme conxunto de engadidos.</p>
+    <p xml:lang="he">Mousepad שואף להיות עורך מהיר וקל לשימוש. המטרה שלנו היא עורך לעריכה מהירה של קבצי טקסט, לא סביבת פיתוח או עורך עם רשימת תוספים לא נגמרת.</p>
+    <p xml:lang="hr">Mousepad cilja biti uređivač koji je brz i jednostavan za korištenje. Naš cilj je uređivač za brzo uređivanje, a ne cijelo okruženje za razvoj ili uređivač sa puno priključaka.</p>
+    <p xml:lang="hu">A mousepad egy könnyen használható és gyors szerkesztő szeretne lenni. Célunk egy olyan alkalmazás, mellyel gyorsan lehet szövegfájlokat szerkeszteni, nem pedig egy fejlesztői környezet vagy szerkesztő sok-sok bővítménnyel.</p>
+    <p xml:lang="hye">Mousepad- ը նպատակ ունի աւգտագործել պարզ եւ արագ խմբագիր: Մեր թիրախը տեքստային նիշքերն արագ խմբագրելն է, ոչ թէ զարգացման միջավայր կամ ներդրաւների հսկայական խումբ խմբագրելը:</p>
+    <p xml:lang="id">Mousepad adalah penyunting yang cepat dan mudah digunakan. Target kami adalah sebuah penyunting untuk menyunting berkas teks secara cepat, bukan sebuah lingkungan pengembangan atau sebuah penyunting dengan berbagai macam plugin.</p>
+    <p xml:lang="ie">Mousepad es intentet quam un facil e rapid redactor. Nor cible es un rapid redactor por textual files, e ne un redactor por developatores o un redactor con grand númere de plugines.</p>
+    <p xml:lang="it">Mousepad mira ad essere un editor facile da usare e veloce. L'obiettivo è quello di permettere di modificare rapidamente file di testo, non vuole essere un ambiente di sviluppo o un editor pieno di componenti aggiuntivi.</p>
+    <p xml:lang="ja">Mousepad は、使いやすく高速なエディターを目指しています。私たちのターゲットは開発環境や膨大な数のプラグインを持つエディターではなく、テキストファイルをすばやく編集するためのエディターです。</p>
+    <p xml:lang="kk">Mousepad қарапайым және жылдам редактор болуды мақсат етеді. Біздің мақсатымыз - мәтіндік файлдарды жылдам өңдеуге арналған редактор; өндіру ортасы немесе көптеген плагиндері бар редактор емес.</p>
+    <p xml:lang="ko">마우스패드는 쉽고 빠른 편집기를 지향합니다. 우리의 지향점은 텍스트 파일을 빠르게 편집하는 편집기를 만들어나가며, 개발 환경이나 다양한 플러그인을 크게 붙여두는 편집기를 만들려는 것이 아닙니다.</p>
+    <p xml:lang="lt">Mousepad siekia būti lengvu naudoti bei greitu redaktoriumi. Mūsų tikslas - greitam tekstinių failų redagavimui skirtas redaktorius, o ne kūrimo aplinka ar redaktorius su begale įskiepių.</p>
+    <p xml:lang="ms">Mousepad mensasarkan penyunting yang mudah-digunakan dan pantas. Kami mahukan sebuah penyunting untuk menyunting fail-fail teks dengan pantas, bukan persekitaran pembangunan atau penyunting yang dilengkapi dengan banyak pemalam.</p>
+    <p xml:lang="nb">Mousepad har som mål å være et enkelt og raskt redigeringsprogram. Mousepad er ment å være et program for rask redigering av tekstfiler, ikke et utviklingsmiljø eller et program med mange tillegg.</p>
+    <p xml:lang="nl">Mousepad beoogt een makkelijke en snelle tekstbewerker te zijn. Ons doel is een tekstbewerker voor het snel bewerken van teksten, niet een instrument voor ontwikkelaars noch een tekstbewerker met veel invoegsels.</p>
+    <p xml:lang="pl">Mousepad ma być łatwym w użyciu i szybkim edytorem. Naszym celem jest edytor do szybkiej edycji plików tekstowych, a nie środowisko programistyczne lub edytor z dużą liczbą wtyczek.</p>
+    <p xml:lang="pt">O Mousepad pretende ser um editor rápido e fácil de usar. O nosso objetivo é um editor para editar rapidamente ficheiros de texto, não um ambiente de desenvolvimento ou um editor com um monte de plugins.</p>
+    <p xml:lang="pt_BR">O Mousepad pretende ser um editor fácil de usar e rápido. Nosso alvo é um editor para editar rapidamente arquivos de texto, não um ambiente de desenvolvimento ou um editor com um monte de plugins.</p>
+    <p xml:lang="ru">Mousepad старается быть простым в использовании и быстрым редактором. Наша цель – это редактор для быстрой правки текстовых файлов, а не среда разработки или редактор с целой кучей плагинов.</p>
+    <p xml:lang="sl">Mousepad je enostaven in hiter urejevalnik. Namenjen je hitremu urejanju tekstov, ne pa tudi kot razvojno okolje ali nadomestek za z dodatki bogat urejevalnik.</p>
+    <p xml:lang="sq">Mousepad-i synon të jetë një përpunuesi i lehtë për t’u përdorur dhe i shpejtë. Objektivi ynë është një përpunues për përpunim të shpejtë kartelash tekst, jo një mjedis zhvillimi apo një përpunues me një thes të stërmadh me shtojca.</p>
+    <p xml:lang="sr">Мишоловка стреми да буде уређивач писања лак за употребу. Наш циљ је уредник за брзо уређивање писаних докумената, а не развојно окружење или уређивач са мноштвом прикључака.</p>
+    <p xml:lang="sv">Mousepad försöker var en lättanvänd och snabb editor. Vår ambition är en editor för snabb redigering av textfiler, inte en utvecklingsmiljö eller en editor med stora mängder insticksprogram.</p>
+    <p xml:lang="tr">Mousepad, kullanımı kolay ve hızlı düzenleyici olmayı amaçlar. Hedefimiz geliştirme ortamı sunmak veya epey büyük ve sayıca çok eklentili düzenleyici olmaktansa metin dosyalarını hızlıca düzenlemektir.</p>
+    <p xml:lang="zh_CN">Mousepad 旨在成为易用和快速的编辑器。 我们的目标是用于快捷编辑文本文件的编辑器，而不是用于开发环境或具有大量插件的编辑器。</p>
+    <p xml:lang="zh_TW">Mousepad 致力於成為易用且快速的編輯器。我們的目標是可以快速編輯文字檔的編輯器，不是開發環境或有大量外掛程式的編輯器。</p>
+   <p>On the other hand we try to use the latest Gtk+ features available, which means that if Gtk adds something new in a major release that is useful for the editor, we will likely bump the Gtk dependency and integrate this new feature in Mousepad.</p>
+   <p xml:lang="be">Але мы таксама намагаемся выкарыстоўваць апошнія даступныя функцыі Gtk +, таму калі Gtk дадасць у асноўны выпуск нешта карыснае для рэдактара, то, хутчэй за ўсё, мы задзейнічаем гэтую новую функцыю у Mousepad.</p>
+   <p xml:lang="bg">От друга страна се опитваме да използваме най-новите налични функции на GTK +, което означава, че ако GTK добави нещо ново в основна версия, която е полезно за редактора, най-вероятно ще добавим GTK зависимост и ще интегрираме тази нова функция в Mousepad.
+ </p>
+   <p xml:lang="ca">D’altra banda, intentem fer servir les últimes funcions de Gtk+ disponibles, cosa que significa que si Gtk afegeix alguna cosa nova en una versió important que sigui útil per a l’editor, probablement toparem amb la dependència de Gtk i integrem aquesta nova funció a Mousepad.</p>
+   <p xml:lang="cs">Na druhou stranu se snažíme využít nejnovější dostupné funkce knihoven Gtk+, což znamená, že pokud Gtk v hlavním vydání přidá novou užitečnou funkci pro editor, pravděpodobně ji do aplikace Mousepad integrujeme.</p>
+   <p xml:lang="da">På den anden side prøver vi at bruge de seneste Gtk+-funktionaliteter, hvilket betyder at hvis Gtk tilføjer noget nyt i en større udgivelse som er nyttigt i tekstredigeringsprogrammet, så hæver vi sandsynligvis Gtk-afhængigheden og integrerer den nye funktionalitet i Mousepad.</p>
+   <p xml:lang="de">Auf der anderen Seite versuchen wir, die neuesten verfügbaren Gtk+-Funktionen zu verwenden. Das bedeutet, dass wir wahrscheinlich die Gtk-Abhängigkeit anheben und neue Funktionen in Mousepad integrieren, wenn Gtk etwas Neues in einer Hauptversion hinzufügt, das für den Editor nützlich ist.</p>
+   <p xml:lang="el">Από την άλλη προσπαθούμε να χρησιμοποιήσουμε τα τελευταία διαθέσιμα χαρακτηριστικά του Gtk+ που σημαίνει ότι, όταν το Gtk προσθέτει κάτι νέο στη κύρια έκδοση του που είναι χρήσιμο για τον επεξεργαστή, πιθανά θα πάρουμε την εξάρτηση και θα την ενσωματώσουμε στο Mousepad.</p>
+   <p xml:lang="es">Por otro lado, intentamos usar las últimas características disponibles de GTK, lo que significa que, si GTK añade una nueva función que sea útil para el editor, es probable que modifiquemos la dependencia de GTK e integremos esta nueva característica en Mousepad.</p>
+   <p xml:lang="et">Teisalt me proovime kasutada uusimaid Gtk+ teegis leiduvaid võimalusi. See tähendab, et kui Gtk uude versiooni lisatakse midagi sellist, mis võiks Mousepadis kasulik olla, siis me võtame selle versiooni kasutusele ja proovime uued võimalused meie tekstitoimetisse lõimida.</p>
+   <p xml:lang="eu">Bestalde Gtk+ren ezaugarri berrienak erabiltzen saiatzen gara, modu horretan Gtk-k argitaratze nagusi batean editorearentzako erabilgarria den zerbait berria argitaratzen badu, ziurrenik Gtk menpekotasunak igoko ditugu eta ezaugarri berri hori Mousepad txertatu.</p>
+   <p xml:lang="fa_IR">از سویی دیگر ما تلاش میکنیم تا از آخرین ویژگی‌های در دسترس +Gtk استفاده کنیم، به این معنی که اگر Gtk چیز جدیدی را در یک نسخه اصلی اضافه کند که برای ویرایشگر مفید باشد، ما احتمالا به وابستگی Gtk دست‌اندازی کرده و این ویژگی جدید را در Mousepad ادغام خواهیم کرد.</p>
+   <p xml:lang="fr">D’un autre côté nous essayons d’utiliser les dernières fonctionnalités Gtk+ disponibles, ce qui signifie que si Gtk ajoute quelque chose de nouveau dans une version majeure qui est utile pour l’éditeur, nous mettrons probablement à jour la dépendance Gtk et intégrerons cette nouvelle fonctionnalité dans Mousepad.</p>
+   <p xml:lang="gl">Por outra banda, intentamos usar as últimas funcións de Gtk+ dispoñíbeis, o que significa que se Gtk engade algo novo nunha versión importante que é útil para o editor, é probable que engadamos esa dependencia de Gtk e integremos esta nova función no Mousepad.</p>
+   <p xml:lang="he">מצד שני אנחנו מנסים להשתמש במאפייני Gtk+ העדכניים ביותר הזמינים, זאת אומרת שאם Gtk מוסיפה משהו חדש בגרסה עיקרית שהוא שימושי לעורך, קרוב לוודאי שנעדכן את תלות Gtk ונשלב את המאפיין החדש הזה ב-Mousepad. </p>
+   <p xml:lang="hr">S druge strane, nastojimo koristiti zadnje dostupne mogućnosti koje nudi Gtk+. Ako smatramo da je neka od tih mogućnosti dobra za Mousepad, vjerojatno ćemo je iskoristiti i podignuti verziju Gtk+ ovisnosti.</p>
+   <p xml:lang="hu">Másrészről megpróbáljuk a Gtk+ legújabb lehetőségeit használni, ami azt jelenti, hogy ha Gtk egy nagyobb kiadásába bekerül valami a szerkesztő számára is hasznos dolog, akkor átváltunk arra a változatra és használjuk az új lehetőségeket a Mousepad-ban.</p>
+   <p xml:lang="hye">Միւս կողմից, մենք փորձում ենք աւգտագործել ամենավերջին Gtk+ հնարաւորութիւնները, ինչը նշանակում է, որ եթէ Gtk- ն մեծ թողարկումում նոր բան է աւելացնում, որը աւգտակար է խմբագրիչի համար, մենք ամենայն հաւանականութեամբ, կհարուածենք Gtk կախվածությեանը եւ այս նոր յուրահատկութիւնը կամբողացնենք Mousepad- ում:</p>
+   <p xml:lang="id">Di sisi lain, kami mencoba untuk menggunakan fitur-fitur Gtk+ terbaru yang tersedia, yang artinya jika Gtk menambahkan sesuatu yang baru pada rilis utama yang bermanfaat untuk penyunting ini, kami akan mengambil dependensi Gtk dan mengintegrasikan fitur baru ini pada Mousepad.</p>
+   <p xml:lang="ie">Ye altri látere, noi usa li max recent disponibil functiones de Gtk+. To significa que quande on adjunte alquó util in un majori version de Gtk, noi fórsan va acrescer li dependentie de Gtk e integrar ti nov function al Mousepad.</p>
+   <p xml:lang="it">Dall'altra parte Mousepad cerca di utilizzare le ultime funzionalità Gtk+ disponibili, questo significa che quando Gtk aggiunge qualcosa di nuovo che può tornare utile per l'editor, Mousepad integra le nuove funzionalità utilizzando la nuova versione di Gtk.</p>
+   <p xml:lang="ja">その一方で最新のGtk+の機能を使おうとしています。つまり、Gtkがメジャーリリースにおいてエディターに役立つ新しいものを追加した場合、古いGtkの依存関係を解消し、新しい機能を Mousepad に統合する可能性があります。</p>
+   <p xml:lang="kk">Екінші жағынан, біз қол жетімді Gtk+ ең жаңа мүмкіндіктерін қолдануға тырысамыз, яғни егер Gtk редактор үшін пайдалы болатын үлкен шығарылымға жаңа бір нәрсе қосса, біз Gtk тәуелділігін бұзып, осы жаңа мүмкіндікті Mousepad ішіне қосатын шығармыз.</p>
+   <p xml:lang="ko">그러나 늘 gtk+ 최신 기능을 접목하려고 합니다. gtk 주 버전 릴리스에 편집기에 필요한 새로운 무언가를 추가했다면 gtk의 기능에 따라 마우스패드에 새 기능을 넣습니다.</p>
+   <p xml:lang="lt">Kita vertus, mes stengiamės naudoti naujausias Gtk+ prieinamas ypatybes, o tai reiškia, kad jeigu Gtk pagrindinėje laidoje pridės kažką naudingo redaktoriui, tuomet mes, greičiausiai, padidinsime Gtk priklausomybę ir integruosime šią naują ypatybę į Mousepad. </p>
+   <p xml:lang="ms">Selain itu, kami cuba gunakan fitur-fitur Gtk+ terkini yang ada, iaitu jika Gtk menambah sesuatu yang baharu dalam keluaran besarnya dan berguna untuk penyunting, kami akan masukkan dependensi Gtk dan sepadukan fitur-fitur baharu ini ke dalam Mousepad.</p>
+   <p xml:lang="nb">På den andre siden forsøker vi å bruke de nyeste Gtk+-funksjonalitetene. Hvis Gtk legger til noe nytt i en hovedutgivelse som er nyttig for Mousepad vil vi sannsynligvis integrere det og dermed gjøre programmet avhengig av denne Gtk-versjonen. </p>
+   <p xml:lang="nl">Aan de andere kant proberen we om de nieuwste GTK+-functies te gebruiken, wat betekent dat indien GTK iets nieuws toevoegt in een belangrijke nieuwe versie die nuttig is voor de tekstbewerker, we waarschijnlijk de GTK-afhankelijkheden zullen opwaarderen en deze nieuwe functie in Mousepad zullen integreren.</p>
+   <p xml:lang="pl">Z drugiej strony staramy się korzystać z najnowszych dostępnych funkcji Gtk+, co oznacza, że jeśli Gtk doda coś nowego w głównym wydaniu, co będzie użyteczne dla edytora, prawdopodobnie podniesiemy zależność Gtk i zintegrujemy tę nową funkcję z Mousepad.</p>
+   <p xml:lang="pt">Por outro lado, tentamos usar os últimos recursos Gtk+ disponíveis, o que significa que se o Gtk adicionar algo novo numa versão principal que seja útil para o editor, provavelmente vamos acabar com a dependência do Gtk e integrar esse novo recurso no Mousepad.</p>
+   <p xml:lang="pt_BR">Por outro lado, tentamos usar as últimas funcionalidades Gtk+ disponíveis, o que significa que se Gtk acrescentar algo novo em um lançamento importante que seja útil para o editor, provavelmente vamos aumentar a dependência Gtk e integrar esta nova funcionalidade no Mousepad.</p>
+   <p xml:lang="ru">С другой стороны, мы стараемся использовать свежайшие фичи Gtk+, что означает, что если Gtk добавит что-то новое в мажорном релизе, что окажется полезным для редактора, мы, скорее всего, поднимем необходимую версию Gtk и добавим эту новую фичу в Mousepad.</p>
+   <p xml:lang="sl">Po drugi strani skušamo uporabljati zadnje funkcionalnosti, ki jih prinaša Gtk+, kar pomeni, da kadar Gtk nekaj doda v glavni izdaji in je to uporabno za naš urejevalnik, bomo to verjetno dodali v Mousepad in prilagodili namestitev.</p>
+   <p xml:lang="sq">Nga ana tjetër, provojmë të përdorim veçoritë Gtk+ më të reja të gatshme, që do të thotë se nëse Gtk-ja shton diçka të re në një hedhje të rëndësishme në qarkullim që është e dobishme për përpunuesin, gjasat janë që do ta kalojmë nën versionin e ri gjithçka të varur nga Gtk-ja dhe ta integrojmë këtë veçori të re në Mousepad.</p>
+   <p xml:lang="sr">Ипак, покушавамо  да користимо најновије доступне могућности ГТК+-а, што значи ако ГТК дода нешто ново у главном издању што је корисно за уредника писања, ми ћемо то вероватно банути у ГТК-ову зависност и укључити ту нову могућност у Мишоловку.</p>
+   <p xml:lang="sv">Å andra sidan försöker vi använda de senaste Gtk+-funktionerna, vilket innebär att om Gtk lägger till något nytt i en stor utgåva som vi kan använda till editorn så kommer vi sannolikt ändra beroendet och integrera den här nya funktionen i Mousepad.</p>
+   <p xml:lang="tr">Bunun yanında son Gtk+ yeniliklerini kullanmaya çalışıyoruz; yani, Gtk büyük güncellemelerle bizim için de yararlı yenilik eklerse, bu yeni özellikleri Mousepad'e eklemek için Gtk gereksinim sürümünü artırabiliriz.</p>
+   <p xml:lang="zh_CN">另一方面，我们尝试使用可用的最新 Gtk 功能，这意味着，如果 Gtk 在主要版本中添加了对编辑器有用的新功能，我们可能会突破 Gtk 依赖性并将此新功能集成到 Mousepad 中。</p>
+   <p xml:lang="zh_TW">另一方面，我們試著使用最新的 Gtk+ 功能，這代表了如果 Gtk 在新的主要版本中加入了某些可能對編輯器有用的新東西，我們可能會破壞 Gtk 的依賴關係來將此功能整合到 Mousepad 中。</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://docs.xfce.org/_media/apps/mousepad/mousepad_window.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://xfce.org</url>
+  <url type="bugtracker">https://gitlab.xfce.org/apps/mousepad/</url>
+  <url type="help">https://docs.xfce.org/apps/mousepad/start</url>
+
+  <project_group>Xfce</project_group>
+  <updatecontact>xfce4-dev@xfce.org</updatecontact>
+  <translation type="gettext">Mousepad</translation>
+
+  <provides>
+    <binary>mousepad</binary>
+  </provides>
+
+</component>

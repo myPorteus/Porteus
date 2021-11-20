@@ -1,0 +1,91 @@
+PACKAGE NAME:     libtimezonemap-0.4.6-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     2.0M
+UNCOMPRESSED PACKAGE SIZE:     5.7M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/libtimezonemap-0.4.6-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+libtimezonemap: libtimezonemap (GTK+3 timezone map widget)
+libtimezonemap:
+libtimezonemap: This package provides GTK+3 timezone map widget
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+libtimezonemap:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libtimezonemap-0.4.6/
+usr/doc/libtimezonemap-0.4.6/COPYING
+usr/doc/libtimezonemap-0.4.6/INSTALL
+usr/doc/libtimezonemap-0.4.6/README
+usr/doc/libtimezonemap-0.4.6/libtimezonemap.SlackBuild
+usr/include/
+usr/include/timezonemap/
+usr/include/timezonemap/timezonemap/
+usr/include/timezonemap/timezonemap/cc-timezone-location.h
+usr/include/timezonemap/timezonemap/cc-timezone-map.h
+usr/include/timezonemap/timezonemap/timezone-completion.h
+usr/include/timezonemap/timezonemap/tz.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/TimezoneMap-1.0.typelib
+usr/lib64/libtimezonemap.la
+usr/lib64/libtimezonemap.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/timezonemap.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/TimezoneMap-1.0.gir
+usr/share/libtimezonemap/
+usr/share/libtimezonemap/backward
+usr/share/libtimezonemap/ui/
+usr/share/libtimezonemap/ui/admin1Codes.txt
+usr/share/libtimezonemap/ui/bg.png
+usr/share/libtimezonemap/ui/cities15000.txt
+usr/share/libtimezonemap/ui/countryInfo.txt
+usr/share/libtimezonemap/ui/olsen_map.png
+usr/share/libtimezonemap/ui/pin.png
+usr/share/libtimezonemap/ui/timezone_-1.png
+usr/share/libtimezonemap/ui/timezone_-10.png
+usr/share/libtimezonemap/ui/timezone_-11.png
+usr/share/libtimezonemap/ui/timezone_-2.png
+usr/share/libtimezonemap/ui/timezone_-3.5.png
+usr/share/libtimezonemap/ui/timezone_-3.png
+usr/share/libtimezonemap/ui/timezone_-4.5.png
+usr/share/libtimezonemap/ui/timezone_-4.png
+usr/share/libtimezonemap/ui/timezone_-5.png
+usr/share/libtimezonemap/ui/timezone_-6.png
+usr/share/libtimezonemap/ui/timezone_-7.png
+usr/share/libtimezonemap/ui/timezone_-8.png
+usr/share/libtimezonemap/ui/timezone_-9.5.png
+usr/share/libtimezonemap/ui/timezone_-9.png
+usr/share/libtimezonemap/ui/timezone_0.png
+usr/share/libtimezonemap/ui/timezone_1.png
+usr/share/libtimezonemap/ui/timezone_10.5.png
+usr/share/libtimezonemap/ui/timezone_10.png
+usr/share/libtimezonemap/ui/timezone_11.png
+usr/share/libtimezonemap/ui/timezone_12.75.png
+usr/share/libtimezonemap/ui/timezone_12.png
+usr/share/libtimezonemap/ui/timezone_13.png
+usr/share/libtimezonemap/ui/timezone_2.png
+usr/share/libtimezonemap/ui/timezone_3.5.png
+usr/share/libtimezonemap/ui/timezone_3.png
+usr/share/libtimezonemap/ui/timezone_4.5.png
+usr/share/libtimezonemap/ui/timezone_4.png
+usr/share/libtimezonemap/ui/timezone_5.5.png
+usr/share/libtimezonemap/ui/timezone_5.75.png
+usr/share/libtimezonemap/ui/timezone_5.png
+usr/share/libtimezonemap/ui/timezone_6.5.png
+usr/share/libtimezonemap/ui/timezone_6.png
+usr/share/libtimezonemap/ui/timezone_7.png
+usr/share/libtimezonemap/ui/timezone_8.5.png
+usr/share/libtimezonemap/ui/timezone_8.png
+usr/share/libtimezonemap/ui/timezone_9.5.png
+usr/share/libtimezonemap/ui/timezone_9.png

@@ -1,0 +1,25 @@
+/*
+    SPDX-FileCopyrightText: 2020 Noah Davis <noahadvs@gmail.com>
+
+    SPDX-License-Identifier: LGPL-3.0-only OR GPL-2.0-or-later
+*/
+
+
+import QtQuick 2.6
+import QtQuick.Templates 2.15 as T
+import org.kde.kirigami 2.4 as Kirigami
+
+T.ToolSeparator {
+    id: controlRoot
+
+    implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
+                            implicitContentWidth + leftPadding + rightPadding)
+    implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
+                             implicitContentHeight + topPadding + bottomPadding)
+
+    contentItem: Kirigami.Separator {
+        // implicitHeight is the same as ToolBar implicitHeight minus ToolBar padding if not horizontal
+        implicitHeight: horizontal ? Math.floor(Kirigami.Units.devicePixelRatio) : 40 - (Kirigami.Units.smallSpacing * 2)
+        implicitWidth: horizontal ? 40 - (Kirigami.Units.smallSpacing * 2) : Math.floor(Kirigami.Units.devicePixelRatio)
+    }
+}

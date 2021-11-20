@@ -1,0 +1,8 @@
+[Unit]
+Description=KActivityManager Activity manager Service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/lib64/kactivitymanagerd
+BusName=org.kde.ActivityManager
+Slice=background.slice

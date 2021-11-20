@@ -1,0 +1,41 @@
+PACKAGE NAME:     python-distro-1.5.0-x86_64-4
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     140K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/python-distro-1.5.0-x86_64-4.txz
+PACKAGE DESCRIPTION:
+python-distro: python-distro (OS platform information API)
+python-distro:
+python-distro: distro provides information about the OS distribution it runs on, such
+python-distro: as a reliable machine-readable ID, or version information.
+python-distro:
+python-distro: Homepage: https://github.com/nir0s/distro
+python-distro:
+python-distro:
+python-distro:
+python-distro:
+python-distro:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/distro
+usr/doc/
+usr/doc/python-distro-1.5.0/
+usr/doc/python-distro-1.5.0/CHANGELOG.md
+usr/doc/python-distro-1.5.0/CONTRIBUTING.md
+usr/doc/python-distro-1.5.0/LICENSE
+usr/doc/python-distro-1.5.0/README.md
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/__pycache__/
+usr/lib64/python3.9/site-packages/__pycache__/distro.cpython-39.pyc
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/PKG-INFO
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/SOURCES.txt
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/dependency_links.txt
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/entry_points.txt
+usr/lib64/python3.9/site-packages/distro-1.5.0-py3.9.egg-info/top_level.txt
+usr/lib64/python3.9/site-packages/distro.py

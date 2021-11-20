@@ -1,0 +1,8 @@
+// Discarded CLASS_DECL on line 16 'QPixmap' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 17 'QPainter' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 18 'QMenu' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 19 'QStyleOptionToolButton' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 21 'KMultiTabBarInternal' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 37 'KMultiTabBar' (by rules_PyKF5.py:ContainerRuleDb[1],container_discard)
+// Discarded CLASS_DECL on line 184 'KMultiTabBarButton' (by rules_PyKF5.py:ContainerRuleDb[1],container_discard)
+// Discarded CLASS_DECL on line 232 'KMultiTabBarTab' (by rules_PyKF5.py:ContainerRuleDb[1],container_discard)

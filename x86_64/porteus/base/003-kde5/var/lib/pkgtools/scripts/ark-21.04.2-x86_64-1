@@ -1,0 +1,2 @@
+( cd usr/lib64 ; rm -rf libkerfuffle.so.21 )
+( cd usr/lib64 ; ln -sf libkerfuffle.so.21.4.2 libkerfuffle.so.21 )

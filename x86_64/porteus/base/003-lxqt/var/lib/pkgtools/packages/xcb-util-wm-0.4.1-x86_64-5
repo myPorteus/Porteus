@@ -1,0 +1,39 @@
+PACKAGE NAME:     xcb-util-wm-0.4.1-x86_64-5
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: ./xcb-util-wm-0.4.1-x86_64-5.txz
+PACKAGE DESCRIPTION:
+xcb-util-wm: xcb-util-wm (XCB libraries for EWMH and ICCCM)
+xcb-util-wm:
+xcb-util-wm: xcb-util-wm provides the XCB ewmh and iccm libraries, which include
+xcb-util-wm: client and window manager helpers for EWMH and ICCCM.
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+xcb-util-wm:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xcb-util-wm-0.4.1/
+usr/doc/xcb-util-wm-0.4.1/COPYING
+usr/doc/xcb-util-wm-0.4.1/ChangeLog
+usr/doc/xcb-util-wm-0.4.1/INSTALL
+usr/doc/xcb-util-wm-0.4.1/NEWS
+usr/doc/xcb-util-wm-0.4.1/README
+usr/include/
+usr/include/xcb/
+usr/include/xcb/xcb_ewmh.h
+usr/include/xcb/xcb_icccm.h
+usr/lib64/
+usr/lib64/libxcb-ewmh.so.2.0.0
+usr/lib64/libxcb-icccm.so.4.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xcb-ewmh.pc
+usr/lib64/pkgconfig/xcb-icccm.pc

@@ -1,0 +1,261 @@
+/*
+"Porteus (dark)" LXQt theme by Arleson Tonnera
+Based on the "Leech" LXQt theme
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+
+Wallpaper "lxqt-origami-light" extracted from the "frost" LXQt theme
+By Inti Alonso (intialonso@gmail.com)
+*/
+
+LXQtPanel #BackgroundWidget
+{
+	background-color: #353535;
+}
+
+QToolTip
+{
+    border: 1px solid #0c2d40;
+    background: #ffffdc;
+    padding: 0px;
+    margin: 0px;
+    color: #000000;
+}
+
+Plugin > QWidget, Plugin > QWidget > QWidget
+{
+	border: 0px;
+	color: #ffffff;
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
+LXQtPanelPlugin > QToolButton
+{
+	background: #353535;
+	margin: 0px;
+	padding: 2px;
+	qproperty-iconSize: 24px;
+	color: #ffffff;
+}
+
+Plugin > QToolButton:pressed,
+Plugin > QWidget > QToolButton:pressed,
+LXQtPanelPlugin > QToolButton:pressed
+{
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+/* Taskbar */
+#TaskBar QToolButton
+{
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+
+	padding: 1px;
+
+	background-color: #2d2d2d;
+	border: 1px solid #1a1a1a;
+	border-radius: 4px;
+	color: #ffffff;
+}
+
+#TaskBar QToolButton:on
+{
+	background-color: #1e1e1e;
+	color: #ffffff;
+	border: 1px solid #1a1a1a;
+	border-radius: 4px;
+}
+
+#TaskBar QToolButton:hover
+{
+	background-color: #4d4d4d;
+	color: #ffffff;
+	border: 1px solid #1a1a1a;
+	border-radius: 4px;
+}
+
+#TaskBar QToolButton:pressed
+{
+	background-color: #4d4d4d;
+	color: #ffffff;
+	border: 1px solid #1a1a1a;
+	border-radius: 4px;
+}
+
+#TaskBar QToolButton[urgent="true"]
+{
+	background-color: #555555;
+	color: #ffffff;
+	border: 1px solid #969696;
+	border-radius: 4px;
+}
+
+/* Quick Launch (Icon bar) */
+#QuickLaunch QToolButton
+{
+    margin: 2px;
+    padding: 1px;
+    border: none;
+}
+
+#QuickLaunch QToolButton:hover
+{
+    background: #1e1e1e;
+    border: 1px solid #2b2b29;
+    border-radius: 4px;
+}
+
+#QuickLaunch QToolButton:pressed
+{
+margin: 0px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#QuickLaunchPlaceHolder
+{
+    color: #eb7140;
+}
+
+/* Menu Icon */
+#MainMenu
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+
+	qproperty-icon: url(mainmenu.svg);
+	background-color: transparent;
+	color: #ffffff;
+}
+
+#MainMenu:pressed
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	background-color: transparent;
+	color: #ffffff;
+}
+
+#MainMenu:hover
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+
+	background-color: transparent;
+	color: #ffffff;
+}
+
+/* The actual menu... */
+#MainMenu QMenu
+{
+	background: #353535;
+	color: #ffffff;
+	border: 1px solid #1a1a1a;
+	padding: 1px;
+}
+
+#MainMenu QLineEdit
+{
+	color: #ffffff;
+	background: #000000;
+	border: 1px solid #8c8c8c;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+#MainMenu QMenu::icon
+{
+	padding-right: 3px;
+}
+
+#MainMenu QMenu::icon:selected
+{
+	padding-right: 2px;
+}
+
+#MainMenu QMenu::right-arrow
+{
+	image: url(arrow-right.svg);
+}
+
+#MainMenu QMenu::right-arrow:selected
+{
+	image: url(arrow-right.svg);
+}
+
+#MainMenu QMenu::item
+{
+	border: 1px solid transparent;
+	border-radius: 3px;
+
+	padding-left: 8px;
+	padding-right: 20px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#MainMenu QMenu::item:selected
+{
+	border: 1px solid #1a1a1a;
+	border-radius: 4px;
+	background-color: #15539e;
+	color: #ffffff;
+
+	margin-left: 1px;
+	margin-right: 1px;
+	padding-left: 7px;
+}
+
+/* System Tray */
+#Tray
+{
+	min-width: 0px;
+	padding: 2px;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+#TrayIcon
+{
+	background-color: transparent;
+
+	padding: 2px;
+
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+
+}
+
+/* WorldClock */
+#WorldClock
+{
+	padding: 2px;
+
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+#WorldClockContent
+{
+	padding: 2px;
+	color: #ffffff;
+}

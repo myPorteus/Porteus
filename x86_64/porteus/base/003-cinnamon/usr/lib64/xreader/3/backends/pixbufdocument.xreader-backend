@@ -1,0 +1,4 @@
+[Xreader Backend]
+Module=pixbufdocument
+TypeDescription=Images
+MimeType=image/*;

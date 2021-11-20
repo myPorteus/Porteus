@@ -1,0 +1,39 @@
+PACKAGE NAME:     python-pam-1.8.4-x86_64-4_ncm
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/python-pam-1.8.4-x86_64-4_ncm.txz
+PACKAGE DESCRIPTION:
+python-pam: python-pam (Authentication Module)
+python-pam:
+python-pam: This module provides an authenticate function that allows the caller
+python-pam: to authenticate a given username / password against the PAM system
+python-pam: on Linux.
+python-pam:
+python-pam:
+python-pam:
+python-pam:
+python-pam: Project URL: https://github.com/FirefighterBlu3/python-pam
+python-pam:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/python-pam-1.8.4/
+usr/doc/python-pam-1.8.4/ChangeLog
+usr/doc/python-pam-1.8.4/LICENSE
+usr/doc/python-pam-1.8.4/README.md
+usr/doc/python-pam-1.8.4/python-pam.SlackBuild
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/__pycache__/
+usr/lib64/python3.9/site-packages/__pycache__/pam.cpython-39.pyc
+usr/lib64/python3.9/site-packages/pam.py
+usr/lib64/python3.9/site-packages/python_pam-1.8.4-py3.9.egg-info/
+usr/lib64/python3.9/site-packages/python_pam-1.8.4-py3.9.egg-info/PKG-INFO
+usr/lib64/python3.9/site-packages/python_pam-1.8.4-py3.9.egg-info/SOURCES.txt
+usr/lib64/python3.9/site-packages/python_pam-1.8.4-py3.9.egg-info/dependency_links.txt
+usr/lib64/python3.9/site-packages/python_pam-1.8.4-py3.9.egg-info/top_level.txt

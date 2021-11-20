@@ -1,0 +1,49 @@
+PACKAGE NAME:     lxde-common-0.99.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     792K
+UNCOMPRESSED PACKAGE SIZE:     940K
+PACKAGE LOCATION: lxde-common-0.99.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+etc/
+etc/xdg/
+etc/xdg/lxpanel/
+etc/xdg/lxpanel/LXDE/
+etc/xdg/lxpanel/LXDE/config
+etc/xdg/lxpanel/LXDE/panels/
+etc/xdg/lxpanel/LXDE/panels/panel
+etc/xdg/lxsession/
+etc/xdg/lxsession/LXDE/
+etc/xdg/lxsession/LXDE/autostart
+etc/xdg/lxsession/LXDE/desktop.conf
+etc/xdg/openbox/
+etc/xdg/openbox/LXDE/
+etc/xdg/openbox/LXDE/menu.xml
+etc/xdg/openbox/LXDE/rc.xml
+etc/xdg/pcmanfm/
+etc/xdg/pcmanfm/LXDE/
+etc/xdg/pcmanfm/LXDE/pcmanfm.conf
+usr/
+usr/bin/
+usr/bin/lxde-logout
+usr/bin/openbox-lxde
+usr/bin/startlxde
+usr/share/
+usr/share/applications/
+usr/share/applications/lxde-logout.desktop
+usr/share/applications/lxde-screenlock.desktop
+usr/share/lxde/
+usr/share/lxde/images/
+usr/share/lxde/images/logout-banner.png
+usr/share/lxde/images/lxde-icon.png
+usr/share/lxde/wallpapers/
+usr/share/lxde/wallpapers/lxde_blue.jpg
+usr/share/lxde/wallpapers/lxde_green.jpg
+usr/share/lxde/wallpapers/lxde_red.jpg
+usr/share/man/
+usr/share/man/man1/
+usr/share/man/man1/lxde-logout.1
+usr/share/man/man1/openbox-lxde.1
+usr/share/man/man1/startlxde.1
+usr/share/xsessions/
+usr/share/xsessions/LXDE.desktop

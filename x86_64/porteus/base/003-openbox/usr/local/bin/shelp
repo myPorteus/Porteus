@@ -1,0 +1,9 @@
+#!/bin/sh
+# Find and run a web browser.
+
+where() { which $1 2>/dev/null; }
+browser=`where firefox || where google-chrome || where google-chrome-stable || where chromium || where opera || where midori || where konqueror || where palemoon || where basilisk || where xlynx`
+
+$browser $*
+
+

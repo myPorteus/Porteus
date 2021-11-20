@@ -1,0 +1,15 @@
+[Nemo Action]
+
+Name=Convert to xzm-zstd ↔ %N
+Name[ru]=Конвертировать в xzm-zstd ↔ %N
+
+Comment=Convert rpm package to xzm using Zstandard compression algorithm
+Comment[ru]=Конвертировать rpm пакет в xzm используя алгоритм сжатия Zstandard
+
+Exec=/opt/porteus-scripts/context-menu/convert_rpm -z "%F"
+
+Icon-Name=cdr
+
+Selection=s
+
+Extensions=rpm;

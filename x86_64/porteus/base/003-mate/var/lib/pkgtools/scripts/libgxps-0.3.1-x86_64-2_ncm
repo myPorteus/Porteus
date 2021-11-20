@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libgxps.so )
+( cd usr/lib64 ; ln -sf libgxps.so.2 libgxps.so )
+( cd usr/lib64 ; rm -rf libgxps.so.2 )
+( cd usr/lib64 ; ln -sf libgxps.so.2.2.3 libgxps.so.2 )

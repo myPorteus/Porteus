@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Porteus Modules
+Name[ru]=Модули Porteus
+Exec=psu /usr/bin/lsmodules
+Icon=cdr
+Type=Application
+Categories=Application;System;Settings;

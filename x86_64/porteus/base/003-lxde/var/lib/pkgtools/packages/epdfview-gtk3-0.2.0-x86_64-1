@@ -1,0 +1,33 @@
+PACKAGE NAME:     epdfview-gtk3-0.2.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: epdfview-gtk3-0.2.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/epdfview
+usr/share/
+usr/share/applications/
+usr/share/applications/epdfview.desktop
+usr/share/epdfview/
+usr/share/epdfview/pixmaps/
+usr/share/epdfview/pixmaps/stock_find_next_24.png
+usr/share/epdfview/pixmaps/stock_find_previous_24.png
+usr/share/epdfview/pixmaps/stock_rotate-270.png
+usr/share/epdfview/pixmaps/stock_rotate-90.png
+usr/share/epdfview/pixmaps/stock_zoom-page-width.png
+usr/share/epdfview/ui/
+usr/share/epdfview/ui/epdfview-ui.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/24x24/apps/
+usr/share/icons/hicolor/24x24/apps/epdfview.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/epdfview.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/epdfview.png

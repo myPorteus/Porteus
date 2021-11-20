@@ -1,0 +1,62 @@
+PACKAGE NAME:     lxqt-about-0.17.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     360K
+PACKAGE LOCATION: lxqt-about-0.17.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/bin/
+usr/bin/lxqt-about
+usr/share/
+usr/share/applications/
+usr/share/applications/lxqt-about.desktop
+usr/share/lxqt/
+usr/share/lxqt/translations/
+usr/share/lxqt/translations/lxqt-about/
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ar.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_arn.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ast.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_bg.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ca.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_cs.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_cy.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_da.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_de.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_el.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_en_GB.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_eo.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_es.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_es_VE.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_eu.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_fa.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_fi.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_fr.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_gl.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_he.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_hu.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ia.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_id.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_it.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ja.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ko.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_lt.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_lv.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_nb_NO.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_nl.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_pl.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_pt.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_pt_BR.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_pt_PT.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ro_RO.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_ru.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_sk_SK.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_sl.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_sr@latin.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_sr_RS.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_sv.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_th_TH.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_tr.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_uk.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_zh_CN.qm
+usr/share/lxqt/translations/lxqt-about/lxqt-about_zh_TW.qm

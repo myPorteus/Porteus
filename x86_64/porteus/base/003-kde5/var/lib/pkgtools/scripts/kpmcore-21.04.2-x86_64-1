@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libkpmcore.so )
+( cd usr/lib64 ; ln -sf libkpmcore.so.11 libkpmcore.so )
+( cd usr/lib64 ; rm -rf libkpmcore.so.11 )
+( cd usr/lib64 ; ln -sf libkpmcore.so.21.04.2 libkpmcore.so.11 )

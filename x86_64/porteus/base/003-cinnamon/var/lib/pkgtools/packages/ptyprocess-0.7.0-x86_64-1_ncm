@@ -1,0 +1,40 @@
+PACKAGE NAME:     ptyprocess-0.7.0-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     90K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/ptyprocess-0.7.0-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+ptyprocess: ptyprocess (python module)
+ptyprocess:
+ptyprocess: Launch a subprocess in a pseudo terminal (pty), and interact with
+ptyprocess: both the process and its pty.
+ptyprocess: Sometimes, piping stdin and stdout is not enough. There might be
+ptyprocess: a password prompt that doesn’t read from stdin, output that changes
+ptyprocess: when it’s going to a pipe rather than a terminal, or curses-style
+ptyprocess: interfaces that rely on a terminal.
+ptyprocess:
+ptyprocess: Project URL: https://pypi.python.org/pypi/ptyprocess
+ptyprocess:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/ptyprocess-0.7.0/
+usr/doc/ptyprocess-0.7.0/PKG-INFO
+usr/doc/ptyprocess-0.7.0/README.rst
+usr/doc/ptyprocess-0.7.0/ptyprocess.SlackBuild
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/ptyprocess-0.7.0-py3.9.egg-info
+usr/lib64/python3.9/site-packages/ptyprocess/
+usr/lib64/python3.9/site-packages/ptyprocess/__init__.py
+usr/lib64/python3.9/site-packages/ptyprocess/__pycache__/
+usr/lib64/python3.9/site-packages/ptyprocess/__pycache__/__init__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/ptyprocess/__pycache__/_fork_pty.cpython-39.pyc
+usr/lib64/python3.9/site-packages/ptyprocess/__pycache__/ptyprocess.cpython-39.pyc
+usr/lib64/python3.9/site-packages/ptyprocess/__pycache__/util.cpython-39.pyc
+usr/lib64/python3.9/site-packages/ptyprocess/_fork_pty.py
+usr/lib64/python3.9/site-packages/ptyprocess/ptyprocess.py
+usr/lib64/python3.9/site-packages/ptyprocess/util.py

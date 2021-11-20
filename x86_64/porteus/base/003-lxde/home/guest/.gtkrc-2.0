@@ -1,0 +1,8 @@
+
+gtk-theme-name = "Adwaita-dark"
+gtk-icon-theme-name = "korla"
+gtk-font-name = "DejaVu Sans 10"
+gtk-button-images = 0
+gtk-menu-images = 1
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+gtk-cursor-theme-name = Paper

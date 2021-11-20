@@ -1,0 +1,35 @@
+[MATE Settings Plugin]
+Module=rfkill
+IAge=0
+# Default Priority
+# Priority=100
+Name[ca]=RFKill
+Name[cs]=Rfkill
+Name[da]=Rfkill
+Name[es]=Rfkill
+Name[fr]=Rfkill
+Name[gl]=Rfkill
+Name[hu]=Rfkill
+Name[id]=Rfkill
+Name[ie]=Rfkill
+Name[it]=Rfkill
+Name[ko]=Rfkill
+Name[lt]=Rfkill
+Name[ms]=Rfkill
+Name[nb]=Rfkill
+Name[nl]=Rfkill
+Name[oc]=Rfkill
+Name[pl]=Rfkill
+Name[pt]=Rfkill
+Name[ru]=Rfkill
+Name[sr]=Рф-убиј
+Name[sv]=Rfkill
+Name[tr]=Rfkill
+Name[uk]=Rfkill
+Name[zh_CN]=Rfkill
+Name[zh_TW]=Rfkill
+Name=Rfkill
+Description=Rfkill plugin
+Authors=Bastien Nocera
+Copyright=Copyright © 2013
+Website=

@@ -1,0 +1,27 @@
+[Desktop Entry]
+Icon=system-shutdown
+Type=Directory
+
+Name=Leave
+Name[bg]=Напускане
+Name[cs]=Odejít
+Name[de]=Verlassen
+Name[el]=Έξοδος
+Name[es]=Salir
+Name[et]=Lahku
+Name[eu]=Irten
+Name[fr]=Quitter
+Name[gl]=Saír
+Name[he]=עזיבה
+Name[hr]=Napusti
+Name[hu]=Kilépés
+Name[it]=Esci
+Name[ja]=終了
+Name[lt]=Išeiti
+Name[nl]=Afsluiten
+Name[pl]=Opuść
+Name[pt]=Sair
+Name[ru]=Выйти
+Name[tr]=Çık
+Name[zh_CN]=离开
+Name[zh_TW]=離開

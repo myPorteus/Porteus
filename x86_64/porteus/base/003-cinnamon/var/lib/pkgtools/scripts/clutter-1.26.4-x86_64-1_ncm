@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libclutter-1.0.so )
+( cd usr/lib64 ; ln -sf libclutter-1.0.so.0.2600.4 libclutter-1.0.so )
+( cd usr/lib64 ; rm -rf libclutter-1.0.so.0 )
+( cd usr/lib64 ; ln -sf libclutter-1.0.so.0.2600.4 libclutter-1.0.so.0 )
+( cd usr/lib64 ; rm -rf libclutter-glx-1.0.so )
+( cd usr/lib64 ; ln -sf libclutter-1.0.so.0.2600.4 libclutter-glx-1.0.so )
+( cd usr/lib64 ; rm -rf libclutter-glx-1.0.so.0 )
+( cd usr/lib64 ; ln -sf libclutter-1.0.so.0.2600.4 libclutter-glx-1.0.so.0 )

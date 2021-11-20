@@ -1,0 +1,55 @@
+PACKAGE NAME:     kidletime-5.83.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kidletime-5.83.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kidletime: kidletime (report system/user idle time)
+kidletime:
+kidletime: KIdleTime is a singleton reporting information on idle time. It is
+kidletime: useful not only for finding out about the current idle time of the
+kidletime: system, but also for getting notified upon idle time events, such as
+kidletime: custom timeouts or user activity.
+kidletime:
+kidletime:
+kidletime:
+kidletime:
+kidletime:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kidletime-5.83.0/
+usr/doc/kidletime-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KIdleTime/
+usr/include/KF5/KIdleTime/KIdleTime
+usr/include/KF5/KIdleTime/kidletime.h
+usr/include/KF5/KIdleTime/kidletime_export.h
+usr/include/KF5/KIdleTime/private/
+usr/include/KF5/KIdleTime/private/abstractsystempoller.h
+usr/include/KF5/kidletime_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5IdleTime/
+usr/lib64/cmake/KF5IdleTime/KF5IdleTimeConfig.cmake
+usr/lib64/cmake/KF5IdleTime/KF5IdleTimeConfigVersion.cmake
+usr/lib64/cmake/KF5IdleTime/KF5IdleTimeTargets-release.cmake
+usr/lib64/cmake/KF5IdleTime/KF5IdleTimeTargets.cmake
+usr/lib64/libKF5IdleTime.so.5.83.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KIdleTime.pri
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/org.kde.kidletime.platforms/
+usr/lib64/qt5/plugins/kf5/org.kde.kidletime.platforms/KF5IdleTimeXcbPlugin0.so
+usr/lib64/qt5/plugins/kf5/org.kde.kidletime.platforms/KF5IdleTimeXcbPlugin1.so
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kidletime.categories
+usr/share/qlogging-categories5/kidletime.renamecategories

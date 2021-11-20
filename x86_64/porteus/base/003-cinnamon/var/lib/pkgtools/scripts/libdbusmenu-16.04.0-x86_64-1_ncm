@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libdbusmenu-glib.so )
+( cd usr/lib64 ; ln -sf libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so )
+( cd usr/lib64 ; rm -rf libdbusmenu-glib.so.4 )
+( cd usr/lib64 ; ln -sf libdbusmenu-glib.so.4.0.12 libdbusmenu-glib.so.4 )
+( cd usr/lib64 ; rm -rf libdbusmenu-gtk3.so )
+( cd usr/lib64 ; ln -sf libdbusmenu-gtk3.so.4.0.12 libdbusmenu-gtk3.so )
+( cd usr/lib64 ; rm -rf libdbusmenu-gtk3.so.4 )
+( cd usr/lib64 ; ln -sf libdbusmenu-gtk3.so.4.0.12 libdbusmenu-gtk3.so.4 )

@@ -1,0 +1,23 @@
+[org/x/editor/plugins]
+active-plugins=['time', 'textsize', 'sort', 'open-uri-context-menu', 'modelines', 'joinlines', 'filebrowser', 'docinfo']
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/plugins/filebrowser/on-load]
+tree-view=true
+root='file:///'
+virtual-root='file:///root'
+
+[org/nemo/window-state]
+sidebar-bookmark-breakpoint=0
+start-with-sidebar=true
+
+[org/nemo/preferences/menu-config]
+background-menu-open-as-root=false
+background-menu-open-in-terminal=false
+selection-menu-open-as-root=false
+selection-menu-open-in-terminal=false
+
+[org/nemo/preferences]
+show-hidden-files=false

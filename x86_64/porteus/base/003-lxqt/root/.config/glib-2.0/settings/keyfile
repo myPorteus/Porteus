@@ -1,0 +1,28 @@
+[io/github/celluloid-player/celluloid]
+settings-migrated=true
+
+csd-enable=false
+
+[io/github/celluloid-player/celluloid/window-state]
+maximized=false
+volume=1.0
+loop-playlist=false
+show-controls=true
+show-playlist=false
+width=640
+height=480
+playlist-width=250
+
+[org/gtk/settings/file-chooser]
+window-position=(598, 272)
+window-size=(679, 508)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=156
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'

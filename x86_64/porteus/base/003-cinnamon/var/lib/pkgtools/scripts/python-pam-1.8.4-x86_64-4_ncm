@@ -1,0 +1,2 @@
+( cd usr/doc/python-pam-1.8.4 ; rm -rf README.rst )
+( cd usr/doc/python-pam-1.8.4 ; ln -sf README.md README.rst )

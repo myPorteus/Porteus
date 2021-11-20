@@ -1,0 +1,25 @@
+# Service menu to mount .dat images
+# Author: fanthom
+
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-dat
+X-KDE-Priority=TopLevel
+Actions=mount_image;umount_image;
+
+[Desktop Action mount_image]
+Name=Mount .dat image
+Comment=Mount .dat image
+Name[ru]=Смонтировать .dat образ
+Comment[ru]=Смонтировать .dat образ
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/mount-module %f
+
+[Desktop Action umount_image]
+Name=Umount .dat image
+Comment=Umount .dat image
+Name[ru]=Размонтировать .dat образ
+Comment[ru]=Размонтировать .dat образ
+Icon=cdr
+Exec=/opt/porteus-scripts/context-menu/unmount-module %f

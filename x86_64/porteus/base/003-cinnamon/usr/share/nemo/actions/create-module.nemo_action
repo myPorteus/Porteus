@@ -1,0 +1,16 @@
+[Nemo Action]
+
+Name=Create xzm module
+Name[ru]=Создать xzm модуль
+
+Comment=Create xzm module from folder using LZMA2 compression algorithm
+Comment[ru]=Создать из папки xzm модуль, используя алгоритм сжатия LZMA2
+
+Exec=/opt/porteus-scripts/context-menu/create-module "%F"
+
+Icon-Name=cdr
+
+Selection=s
+
+Mimetypes=inode/directory
+

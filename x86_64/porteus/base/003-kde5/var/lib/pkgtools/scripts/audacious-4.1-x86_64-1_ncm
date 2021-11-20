@@ -1,0 +1,16 @@
+if [ -x /usr/bin/update-desktop-database ]; then
+  /usr/bin/update-desktop-database -q usr/share/applications >/dev/null 2>&1
+fi
+
+( cd usr/lib64 ; rm -rf libaudcore.so )
+( cd usr/lib64 ; ln -sf libaudcore.so.5 libaudcore.so )
+( cd usr/lib64 ; rm -rf libaudcore.so.5 )
+( cd usr/lib64 ; ln -sf libaudcore.so.5.3.0 libaudcore.so.5 )
+( cd usr/lib64 ; rm -rf libaudqt.so )
+( cd usr/lib64 ; ln -sf libaudqt.so.2 libaudqt.so )
+( cd usr/lib64 ; rm -rf libaudqt.so.2 )
+( cd usr/lib64 ; ln -sf libaudqt.so.2.3.0 libaudqt.so.2 )
+( cd usr/lib64 ; rm -rf libaudtag.so )
+( cd usr/lib64 ; ln -sf libaudtag.so.3 libaudtag.so )
+( cd usr/lib64 ; rm -rf libaudtag.so.3 )
+( cd usr/lib64 ; ln -sf libaudtag.so.3.0.0 libaudtag.so.3 )

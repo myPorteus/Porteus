@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 MATE team <mate-dev@ml.mate-desktop.org> -->
+<component type="desktop">
+  <id>mate-dictionary.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>MATE Dictionary</name>
+  <name xml:lang="zh_TW">MATE 字典</name>
+  <name xml:lang="zh_CN">MATE 字典</name>
+  <name xml:lang="uk">Словник MATE</name>
+  <name xml:lang="tr">MATE Sözlüğü</name>
+  <name xml:lang="th">พจนานุกรมของ MATE</name>
+  <name xml:lang="sv">Lexikon för MATE</name>
+  <name xml:lang="sr">Мејтов речник</name>
+  <name xml:lang="sl">MATE Slovar</name>
+  <name xml:lang="sk">Slovník MATE</name>
+  <name xml:lang="ru">Словарь MATE</name>
+  <name xml:lang="ro">Dicționar MATE</name>
+  <name xml:lang="pt_BR">Dicionário MATE</name>
+  <name xml:lang="pt">Dicionário MATE</name>
+  <name xml:lang="pl">Słownik MATE</name>
+  <name xml:lang="nl">MATE Woordenboek</name>
+  <name xml:lang="nb">MATE ordbok</name>
+  <name xml:lang="ms">Kamus MATE</name>
+  <name xml:lang="lv">MATE Vārdnīca</name>
+  <name xml:lang="lt">MATE žodynas</name>
+  <name xml:lang="ku_IQ">فەرهەنگی MATE</name>
+  <name xml:lang="ko">마테 사전</name>
+  <name xml:lang="kk">MATE сөздігі</name>
+  <name xml:lang="ja">MATE 辞書</name>
+  <name xml:lang="it">Dizionario di MATE</name>
+  <name xml:lang="ie">Dictionarium MATE</name>
+  <name xml:lang="id">Kamus MATE</name>
+  <name xml:lang="hy">MATE Բառարան</name>
+  <name xml:lang="hu">MATE szótár</name>
+  <name xml:lang="he">מילון MATE</name>
+  <name xml:lang="gl">Dicionario do MATE</name>
+  <name xml:lang="fr">Dictionnaire MATE</name>
+  <name xml:lang="fi">MATE Sanakirja</name>
+  <name xml:lang="et">MATE sõnastik</name>
+  <name xml:lang="es">Diccionario de MATE</name>
+  <name xml:lang="en_GB">MATE Dictionary</name>
+  <name xml:lang="en_AU">MATE Dictionary</name>
+  <name xml:lang="el">Λεξικό MATE</name>
+  <name xml:lang="de">MATE-Wörterbuch</name>
+  <name xml:lang="da">MATE-ordbog</name>
+  <name xml:lang="cs">Slovník pro MATE</name>
+  <name xml:lang="ca@valencia">Diccionari del MATE</name>
+  <name xml:lang="ca">Diccionari de MATE</name>
+  <name xml:lang="br">Geriadur MATE</name>
+  <name xml:lang="bg">Речник на МАТЕ</name>
+  <name xml:lang="be">Слоўнік MATE</name>
+  <name xml:lang="ast">Diccionariu de MATE</name>
+  <name xml:lang="ar">قاموس متّة</name>
+  <name xml:lang="am">የ ሜት መዝገበ ቃላት</name>
+  <summary>A dictionary for MATE Desktop</summary>
+  <summary xml:lang="zh_TW">適用於 MATE 桌面環境的字典</summary>
+  <summary xml:lang="zh_CN">MATE 桌面的词典</summary>
+  <summary xml:lang="uk">Словник для середовища MATE</summary>
+  <summary xml:lang="tr">MATE Masaüstü için sözlük</summary>
+  <summary xml:lang="th">โปรแกรมพจนานุกรมสำหรับเดสก์ท็อปของ MATE</summary>
+  <summary xml:lang="sv">Ett lexikon för MATE-skrivbordet</summary>
+  <summary xml:lang="sr">Речник за Мејтову радну површ</summary>
+  <summary xml:lang="sl">Slovar za MATE Namizje</summary>
+  <summary xml:lang="sk">Slovník pre prostredie MATE</summary>
+  <summary xml:lang="ru">Словарь для рабочего стола MATE</summary>
+  <summary xml:lang="ro">Un dicționar pentru desktopul MATE</summary>
+  <summary xml:lang="pt_BR">Um dicionário para o Ambiente de Trabalho MATE</summary>
+  <summary xml:lang="pt">Um dicionário para o Ambiente de Trabalho MATE</summary>
+  <summary xml:lang="pl">Słownik dla środowiska MATE</summary>
+  <summary xml:lang="nl">Een woordenboek voor de MATE-werkomgeving</summary>
+  <summary xml:lang="nb">Ei ordbok for MATE-skrivebordet</summary>
+  <summary xml:lang="ms">Kamus untuk Desktop MATE</summary>
+  <summary xml:lang="lv">Vārdnīca MATE darbvirsmai</summary>
+  <summary xml:lang="lt">Žodynas MATE darbalaukiui</summary>
+  <summary xml:lang="ko">마테 데스크톱 사전</summary>
+  <summary xml:lang="kk">MATE жұмыс үстелі үшін сөздігі</summary>
+  <summary xml:lang="ja">MATE デスクトップの辞書ツール</summary>
+  <summary xml:lang="it">Un dizioneario per l'ambiente desktop MATE</summary>
+  <summary xml:lang="ie">Un dictionarium por li ambientie MATE</summary>
+  <summary xml:lang="id">Kamus untuk Desktop MATE</summary>
+  <summary xml:lang="hy">MATE Աշխատասեղանի համար բառարանը</summary>
+  <summary xml:lang="hu">Szótár a MATE asztali környezethez</summary>
+  <summary xml:lang="he">מילון עבור שולחן העבודה MATE</summary>
+  <summary xml:lang="gl">Un dicionario para o escritorio MATE</summary>
+  <summary xml:lang="fr">Un dictionnaire pour le bureau MATE</summary>
+  <summary xml:lang="fi">Sanakirja MATE Työpöydälle</summary>
+  <summary xml:lang="et">MATE töölaua sõnastik</summary>
+  <summary xml:lang="es">Un diccionario para el escritorio MATE</summary>
+  <summary xml:lang="en_GB">A dictionary for MATE Desktop</summary>
+  <summary xml:lang="en_AU">A dictionary for MATE Desktop</summary>
+  <summary xml:lang="el">Ένα λεξικό για την επιφάνεια εργασίας MATE</summary>
+  <summary xml:lang="de">Ein Wörterbuch für die MATE-Arbeitsumgebung</summary>
+  <summary xml:lang="da">En ordbog for MATE-skrivebordet</summary>
+  <summary xml:lang="cs">Slovník pro MATE</summary>
+  <summary xml:lang="ca@valencia">Un diccionari per a l'escriptori MATE</summary>
+  <summary xml:lang="ca">Un diccionari per a l'escriptori MATE</summary>
+  <summary xml:lang="br">Ur geriadur evit burev MATE</summary>
+  <summary xml:lang="bg">Речник на графична среда MATE</summary>
+  <summary xml:lang="be">Слоўнік асяроддзя MATE</summary>
+  <summary xml:lang="ast">Un diccionariu pal escritoriu MATE</summary>
+  <summary xml:lang="ar">قاموس لسطح مكتب متّة</summary>
+  <summary xml:lang="am">መዝገበ ቃላት ለ ሜት ዴስክቶፕ </summary>
+  <description>
+    <p>
+   MATE Dictionary allows you to look up words in on-line dictionaries.
+   It comes preconfigured with a list of Dict servers (RFC 2229), to which
+   you can add your own sources, while you can select specific servers
+   for a specific query.
+  </p>
+    <p xml:lang="zh_TW">MATE 字典讓您可以線上查詢單字。它伴隨著一個預先設定好的字典伺服器清單 (RFC 2229)，您可以在其中加入您自己的來源，您也可以在特定的查詢中選取特定的伺服器。</p>
+    <p xml:lang="nl">Met MATE Woordenboek kunt u woorden opzoeken in internetwoordenboeken. Standaard bevat het een lijst van Dict-servers (RFC 2229), waaraan u uw eigen hulpbronnen kunt toevoegen. Tevens kunt u specifieke servers kiezen voor een specifieke zoekopdracht.</p>
+    <p xml:lang="nb">MATE Ordbok kan slå opp i ordbøker på nettet. Programmet har en forvalgt liste med Dict-tjenere (RFC 2229) der man også kan også legge til egne kilder. Man kan velge spesifikke tjenere når man søker.</p>
+    <p xml:lang="it">Dizionario di MATE consente di cercare le parole nei dizionari on-line. Viene fornito preconfigurato con una lista di server Dict (RFC 2229) a cui è possibile aggiungere le proprie fonti ed è anche possibile selezionare server specifici per una certa interrogazione.</p>
+    <p xml:lang="gl">o Dicionario do MATE permite buscar palabras en dicionarios en liña. Ven preconfigurado cunha lista de servidores Dict (RFC 2229) aos que pode engadir as súas propias fontes, mentres que pode seleccionar servidores específicos para unha consulta específica.</p>
+    <p xml:lang="es">Diccionario de MATE le permite buscar palabras en diccionarios en línea. Viene preconfigurado con una lista de servidores DICT (RFC 2229), a la que puede añadir sus propias fuentes, y además puede seleccionar servidores específicos para una consulta específica.</p>
+    <p xml:lang="da">MATE-ordbogen giver dig mulighed for at slå ord op i ordbøger på nettet. Den har en forudfyldt liste med Dict-servere (RFC 2229) hvortil du kan tilføje dine egne kilder, mens du kan vælge specifikke servere for en specifik forespørgsel.</p>
+    <p xml:lang="ca">El diccionari de MATE us permet consultar paraules als diccionaris en línia. Ve preconfigurat amb una llista de servidors de diccionaris (RFC 2229), als que podeu afegir les vostres pròpies fonts, mentre que podeu seleccionar els servidors específics per a una consulta específica.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image width="960" height="540">
+    https://alexpl.fedorapeople.org/AppData/mate-dictionary/screens/mate-dictionary_01.png
+   </image>
+    </screenshot>
+    <screenshot>
+      <image width="688" height="387">
+    https://alexpl.fedorapeople.org/AppData/mate-dictionary/screens/mate-dictionary_02.png
+   </image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://mate-desktop.org</url>
+  <updatecontact>mate-dev@ml.mate-desktop.org</updatecontact>
+  <project_group>MATE</project_group>
+</component>

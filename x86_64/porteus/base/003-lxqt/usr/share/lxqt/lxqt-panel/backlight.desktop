@@ -1,0 +1,35 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Icon=brightnesssettings
+
+Name=Backlight
+Comment=Sets display backlight
+Name[bg]=Осветеност на екрана
+Comment[bg]=Настройки осветеност на екрана LXQt
+Name[cs]=Podsvícení
+Comment[cs]=Nastavuje podsvícení displeje
+Name[es]=Brillo de la pantalla
+Comment[es]=Cambia el brillo de la pantalla
+Name[et]=Taustavalgus
+Comment[et]=Seadista ekraani taustavalgust
+Name[fr]=Rétroéclairage
+Comment[fr]=Définit le rétroéclairage de l'écran
+Name[he]=תאורה אחורית
+Comment[he]=הגדרת התאורה האחורית של התצוגה
+Name[hr]=Svjetlina ekrana
+Comment[hr]=Postavlja svjetlinu ekrana
+Name[it]=Retroilluminazione
+Comment[it]=Regola luminosità dello schermo
+Name[ja]=バックライト
+Comment[ja]=ディスプレイのバックライトを設定します
+Name[lt]=Foninis apšvietimas
+Comment[lt]=Nustato ekrano foninį apšvietimą
+Name[nl]=Achtergrondverlichting
+Comment[nl]=Stel de achtergrondverlichting in
+Name[pt]=Retro-iluminação
+Comment[pt]=Define a retro-iluminação do visor
+Name[ru]=Подсветка
+Comment[ru]=Регулировка яркости подсветки экрана
+Name[tr]=Arka ışık
+Comment[tr]=Görüntünün arka ışığını ayarlar

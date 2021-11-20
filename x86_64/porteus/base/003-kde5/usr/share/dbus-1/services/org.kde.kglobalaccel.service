@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.kglobalaccel
+Exec=/usr/bin/kglobalaccel5
+SystemdService=plasma-kglobalaccel.service

@@ -1,0 +1,6 @@
+// Discarded CLASS_DECL on line 24 'QObject' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 25 'QWidget' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 26 'QAction' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 27 'KToggleAction' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 28 'KToggleFullScreenAction' (by default forward declaration handling)
+// Discarded NAMESPACE on line 114 'KStandardAction' (by rules_PyKF5.py:ContainerRuleDb[0],container_discard)

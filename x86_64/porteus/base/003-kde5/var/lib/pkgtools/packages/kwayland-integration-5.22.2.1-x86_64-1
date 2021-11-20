@@ -1,0 +1,36 @@
+PACKAGE NAME:     kwayland-integration-5.22.2.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kwayland-integration-5.22.2.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kwayland-integration: kwayland-integration (wayland integration plugins for KDE Frameworks)
+kwayland-integration:
+kwayland-integration: Kwayland-integration provides integration plugins for various KDE
+kwayland-integration: Frameworks for Wayland.
+kwayland-integration:
+kwayland-integration:
+kwayland-integration:
+kwayland-integration:
+kwayland-integration:
+kwayland-integration:
+kwayland-integration:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/kguiaddons/
+usr/lib64/qt5/plugins/kf5/kguiaddons/kmodifierkey/
+usr/lib64/qt5/plugins/kf5/kguiaddons/kmodifierkey/kmodifierkey_wayland.so
+usr/lib64/qt5/plugins/kf5/kwindowsystem/
+usr/lib64/qt5/plugins/kf5/kwindowsystem/KF5WindowSystemKWaylandPlugin.so
+usr/lib64/qt5/plugins/kf5/org.kde.kidletime.platforms/
+usr/lib64/qt5/plugins/kf5/org.kde.kidletime.platforms/KF5IdleTimeKWaylandPlugin.so
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kwindowsystem.kwayland.categories

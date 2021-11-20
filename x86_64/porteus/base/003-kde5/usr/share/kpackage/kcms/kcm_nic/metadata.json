@@ -1,0 +1,57 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "carl@carlschwan.eu",
+                "Name": "Carl Schwan"
+            }
+        ],
+        "FormFactors": [
+            "desktop",
+            "tablet",
+            "handset"
+        ],
+        "Icon": "network-card",
+        "Id": "kcm_nic",
+        "License": "GPL",
+        "Name": "NIC",
+        "Name[az]": "NIC",
+        "Name[ca]": "NIC",
+        "Name[cs]": "NIC",
+        "Name[de]": "NIC",
+        "Name[el]": "NIC",
+        "Name[en_GB]": "NIC",
+        "Name[es]": "NIC",
+        "Name[et]": "NIC",
+        "Name[eu]": "NIC",
+        "Name[fi]": "Verkkokortti",
+        "Name[fr]": "NIC",
+        "Name[hu]": "NIC",
+        "Name[ia]": "NIC",
+        "Name[it]": "NIC",
+        "Name[ko]": "NIC",
+        "Name[nl]": "NIC",
+        "Name[nn]": "NIC",
+        "Name[pa]": "NIC",
+        "Name[pl]": "NIC",
+        "Name[pt]": "NIC",
+        "Name[pt_BR]": "NIC",
+        "Name[ro]": "NIC",
+        "Name[ru]": "Сетевые интерфейсы",
+        "Name[sk]": "NIC",
+        "Name[sl]": "NIC",
+        "Name[sv]": "NIC",
+        "Name[uk]": "NIC",
+        "Name[x-test]": "xxNICxx",
+        "Name[zh_CN]": "NIC",
+        "ServiceTypes": [
+            "KPackage/GenericQML"
+        ],
+        "Version": "1.0",
+        "Website": "https://kde.org"
+    },
+    "Keywords": "",
+    "X-KDE-ParentApp": "",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

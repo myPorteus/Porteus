@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libjson-glib-1.0.so )
+( cd usr/lib64 ; ln -sf libjson-glib-1.0.so.0 libjson-glib-1.0.so )
+( cd usr/lib64 ; rm -rf libjson-glib-1.0.so.0 )
+( cd usr/lib64 ; ln -sf libjson-glib-1.0.so.0.600.0 libjson-glib-1.0.so.0 )

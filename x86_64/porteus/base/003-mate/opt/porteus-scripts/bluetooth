@@ -1,0 +1,60 @@
+#!/bin/sh
+
+# /opt/porteus-scripts/bluetooth 
+
+# script for handling bluetooth to used with gtkdialog script
+#variables start(temporary) stop  enable(permanent) disable
+# to be adjusted for desktops without blueman(kde &?)
+
+# functions
+ 
+start() { 
+  /usr/bin/blueman-applet &
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /home/guest/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /home/guest/.local/share/applications/blueman-adapters.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /root/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /root/.local/share/applications/blueman-adapters.desktop
+}
+
+stop() {
+  killall /usr/bin/blueman-applet 
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' /home/guest/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' /home/guest/.local/share/applications/blueman-adapters.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /root/.local/share/applications/blueman-manager.desktop
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /root/.local/share/applications/blueman-adapters.desktop
+}
+
+enable() {
+  start
+  cp -a --parents /home/guest/.local/share/applications/blueman-manager.desktop $PSC_SETTINGS
+  cp -a --parents /home/guest/.local/share/applications/blueman-adapters.desktop $PSC_SETTINGS
+  cp -a --parents /root/.local/share/applications/blueman-manager.desktop $PSC_SETTINGS
+  cp -a --parents /root/.local/share/applications/blueman-adapters.desktop $PSC_SETTINGS
+}
+
+disable() {
+  stop
+  cp -a --parents /home/guest/.local/share/applications/blueman-manager.desktop $PSC_SETTINGS
+  cp -a --parents /home/guest/.local/share/applications/blueman-adapters.desktop $PSC_SETTINGS
+  cp -a --parents /root/.local/share/applications/blueman-manager.desktop $PSC_SETTINGS
+  cp -a --parents /root/.local/share/applications/blueman-adapters.desktop $PSC_SETTINGS
+}
+case "${1}" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  enable)
+    enable
+    ;;
+  disable)
+    disable
+    ;;
+  *)
+    echo "Usage: ${0} {start|stop|enable|disable}"
+    exit 1
+    ;;
+esac
+

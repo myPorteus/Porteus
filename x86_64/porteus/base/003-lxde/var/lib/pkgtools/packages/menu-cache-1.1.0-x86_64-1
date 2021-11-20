@@ -1,0 +1,22 @@
+PACKAGE NAME:     menu-cache-1.1.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     136K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: menu-cache-1.1.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/menu-cache/
+usr/include/menu-cache/menu-cache.h
+usr/lib64/
+usr/lib64/libmenu-cache.la
+usr/lib64/libmenu-cache.so.3.2.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libmenu-cache.pc
+usr/libexec/
+usr/libexec/menu-cache/
+usr/libexec/menu-cache/menu-cache-gen
+usr/libexec/menu-cache/menu-cached

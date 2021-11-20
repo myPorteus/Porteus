@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.blueman.Applet
+Exec=/usr/bin/blueman-applet
+SystemdService=blueman-applet.service

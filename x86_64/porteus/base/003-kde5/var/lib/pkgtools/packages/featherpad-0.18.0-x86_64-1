@@ -1,0 +1,55 @@
+PACKAGE NAME:     featherpad-0.18.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     716K
+UNCOMPRESSED PACKAGE SIZE:     3.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/featherpad-0.18.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/featherpad
+usr/share/
+usr/share/applications/
+usr/share/applications/featherpad.desktop
+usr/share/featherpad/
+usr/share/featherpad/help
+usr/share/featherpad/help_ja
+usr/share/featherpad/help_pt_BR
+usr/share/featherpad/translations/
+usr/share/featherpad/translations/featherpad_ar_DZ.qm
+usr/share/featherpad/translations/featherpad_bg.qm
+usr/share/featherpad/translations/featherpad_cs.qm
+usr/share/featherpad/translations/featherpad_cy.qm
+usr/share/featherpad/translations/featherpad_da.qm
+usr/share/featherpad/translations/featherpad_de.qm
+usr/share/featherpad/translations/featherpad_el.qm
+usr/share/featherpad/translations/featherpad_eo.qm
+usr/share/featherpad/translations/featherpad_es.qm
+usr/share/featherpad/translations/featherpad_fa.qm
+usr/share/featherpad/translations/featherpad_fi.qm
+usr/share/featherpad/translations/featherpad_fr.qm
+usr/share/featherpad/translations/featherpad_he.qm
+usr/share/featherpad/translations/featherpad_hu.qm
+usr/share/featherpad/translations/featherpad_id.qm
+usr/share/featherpad/translations/featherpad_it.qm
+usr/share/featherpad/translations/featherpad_ja.qm
+usr/share/featherpad/translations/featherpad_ko.qm
+usr/share/featherpad/translations/featherpad_lt.qm
+usr/share/featherpad/translations/featherpad_nb_NO.qm
+usr/share/featherpad/translations/featherpad_nl.qm
+usr/share/featherpad/translations/featherpad_pl.qm
+usr/share/featherpad/translations/featherpad_pt.qm
+usr/share/featherpad/translations/featherpad_pt_BR.qm
+usr/share/featherpad/translations/featherpad_ru.qm
+usr/share/featherpad/translations/featherpad_si.qm
+usr/share/featherpad/translations/featherpad_sk_SK.qm
+usr/share/featherpad/translations/featherpad_tr.qm
+usr/share/featherpad/translations/featherpad_zh_CN.qm
+usr/share/featherpad/translations/featherpad_zh_TW.qm
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/featherpad.svg

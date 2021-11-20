@@ -1,0 +1,53 @@
+PACKAGE NAME:     kplotting-5.83.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kplotting-5.83.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kplotting: kplotting (Data plotting)
+kplotting:
+kplotting: KPlotWidget is a QWidget-derived class that provides a virtual base
+kplotting: class for easy data-plotting. The idea behind KPlotWidget is that you
+kplotting: only have to specify information in data units; i.e., the natural
+kplotting: units of the data being plotted. KPlotWidget automatically converts
+kplotting: everything to screen pixel units. KPlotWidget draws X and Y axes with
+kplotting: tick marks and tick labels, and automatically determines how many tick
+kplotting: marks to use and where they should be, based on the data limits
+kplotting: specified for the plot.
+kplotting:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kplotting-5.83.0/
+usr/doc/kplotting-5.83.0/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KPlotting/
+usr/include/KF5/KPlotting/KPlotAxis
+usr/include/KF5/KPlotting/KPlotObject
+usr/include/KF5/KPlotting/KPlotPoint
+usr/include/KF5/KPlotting/KPlotWidget
+usr/include/KF5/KPlotting/kplotaxis.h
+usr/include/KF5/KPlotting/kplotobject.h
+usr/include/KF5/KPlotting/kplotpoint.h
+usr/include/KF5/KPlotting/kplotting_export.h
+usr/include/KF5/KPlotting/kplotwidget.h
+usr/include/KF5/kplotting_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Plotting/
+usr/lib64/cmake/KF5Plotting/KF5PlottingConfig.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingConfigVersion.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingTargets-release.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingTargets.cmake
+usr/lib64/libKF5Plotting.so.5.83.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KPlotting.pri
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/designer/
+usr/lib64/qt5/plugins/designer/kplotting5widgets.so

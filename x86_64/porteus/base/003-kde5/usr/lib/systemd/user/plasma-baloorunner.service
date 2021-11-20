@@ -1,0 +1,13 @@
+[Unit]
+Description=KRunner provider for baloo file indexer
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/lib64/baloorunner
+ExecCondition=/usr/bin/kde-systemd-start-condition --condition "baloofilerc:Basic Settings:Indexing-Enabled:true"
+Type=dbus
+BusName=org.kde.runners.baloo
+TimeoutSec=5sec
+Slice=background.slice
+# as we're dbus activated anyway
+Restart=no

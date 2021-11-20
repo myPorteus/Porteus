@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Autorun Prompt
+TryExec=/usr/bin/caja-autorun-software
+Exec=/usr/bin/caja-autorun-software %u
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=application-x-executable
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Type=Application
+MimeType=x-content/software;

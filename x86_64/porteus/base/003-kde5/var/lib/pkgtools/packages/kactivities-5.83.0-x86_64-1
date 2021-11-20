@@ -1,0 +1,74 @@
+PACKAGE NAME:     kactivities-5.83.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     104K
+UNCOMPRESSED PACKAGE SIZE:     480K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kactivities-5.83.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kactivities: kactivities (API for using Activities)
+kactivities:
+kactivities: API for using and interacting with Activities as a consumer,
+kactivities: application adding information to them, or as an activity manager.
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+kactivities:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kactivities-cli
+usr/doc/
+usr/doc/kactivities-5.83.0/
+usr/doc/kactivities-5.83.0/README
+usr/doc/kactivities-5.83.0/README.developers
+usr/doc/kactivities-5.83.0/README.md
+usr/doc/kactivities-5.83.0/README.packagers
+usr/doc/kactivities-5.83.0/TODO
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KActivities/
+usr/include/KF5/KActivities/KActivities/
+usr/include/KF5/KActivities/KActivities/ActivitiesModel
+usr/include/KF5/KActivities/KActivities/Consumer
+usr/include/KF5/KActivities/KActivities/Controller
+usr/include/KF5/KActivities/KActivities/Info
+usr/include/KF5/KActivities/KActivities/ResourceInstance
+usr/include/KF5/KActivities/KActivities/Version
+usr/include/KF5/KActivities/kactivities/
+usr/include/KF5/KActivities/kactivities/activitiesmodel.h
+usr/include/KF5/KActivities/kactivities/consumer.h
+usr/include/KF5/KActivities/kactivities/controller.h
+usr/include/KF5/KActivities/kactivities/info.h
+usr/include/KF5/KActivities/kactivities/kactivities_export.h
+usr/include/KF5/KActivities/kactivities/resourceinstance.h
+usr/include/KF5/KActivities/kactivities/version.h
+usr/include/KF5/kactivities_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Activities/
+usr/lib64/cmake/KF5Activities/KF5ActivitiesConfig.cmake
+usr/lib64/cmake/KF5Activities/KF5ActivitiesConfigVersion.cmake
+usr/lib64/cmake/KF5Activities/KF5ActivitiesLibraryTargets-release.cmake
+usr/lib64/cmake/KF5Activities/KF5ActivitiesLibraryTargets.cmake
+usr/lib64/libKF5Activities.so.5.83.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libKActivities.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KActivities.pri
+usr/lib64/qt5/qml/
+usr/lib64/qt5/qml/org/
+usr/lib64/qt5/qml/org/kde/
+usr/lib64/qt5/qml/org/kde/activities/
+usr/lib64/qt5/qml/org/kde/activities/libkactivitiesextensionplugin.so
+usr/lib64/qt5/qml/org/kde/activities/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kactivities.categories
+usr/share/qlogging-categories5/kactivities.renamecategories

@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libKF5KrossCore.so )
+( cd usr/lib64 ; ln -sf libKF5KrossCore.so.5 libKF5KrossCore.so )
+( cd usr/lib64 ; rm -rf libKF5KrossCore.so.5 )
+( cd usr/lib64 ; ln -sf libKF5KrossCore.so.5.83.0 libKF5KrossCore.so.5 )
+( cd usr/lib64 ; rm -rf libKF5KrossUi.so )
+( cd usr/lib64 ; ln -sf libKF5KrossUi.so.5 libKF5KrossUi.so )
+( cd usr/lib64 ; rm -rf libKF5KrossUi.so.5 )
+( cd usr/lib64 ; ln -sf libKF5KrossUi.so.5.83.0 libKF5KrossUi.so.5 )

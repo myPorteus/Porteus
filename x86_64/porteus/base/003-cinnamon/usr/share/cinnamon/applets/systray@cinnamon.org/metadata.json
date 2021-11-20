@@ -1,0 +1,7 @@
+{
+ "uuid": "systray@cinnamon.org",
+ "name": "System Tray",
+ "icon": "cs-applets",
+ "role": "tray",
+ "description": "An applet which hosts all the system tray icons"
+}

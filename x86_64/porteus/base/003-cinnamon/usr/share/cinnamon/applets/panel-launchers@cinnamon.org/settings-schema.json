@@ -1,0 +1,15 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "Behavior"
+    },
+    "launcherList": {
+        "type": "generic",
+        "default": ["firefox.desktop", "org.gnome.Terminal.desktop", "nemo.desktop"]
+    },
+    "allow-dragging": {
+        "type": "switch",
+        "default": true,
+        "description": "Allow dragging of launchers"
+    }
+}

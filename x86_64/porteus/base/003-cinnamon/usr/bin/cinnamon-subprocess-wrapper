@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+
+""" Runs a command and then passes the output to Cinnamon via DBus asynchronously
+
+Usage:  cinnamon-subprocess-wrapper ls ~/
+"""
+
+import subprocess
+import sys
+from setproctitle import setproctitle
+from gi.repository import GLib, Gio
+
+if __name__ == "__main__":
+    setproctitle("cinnamon-subprocess-wrapper")
+    process_id = int(sys.argv[1])
+    try:
+        result = subprocess.check_output(sys.argv[2:])
+        success = True
+    except Exception:
+        result = ""
+        success = False
+
+    try:
+        connection = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+
+        connection.call_sync("org.Cinnamon",
+                             "/org/Cinnamon",
+                             "org.Cinnamon",
+                             "PushSubprocessResult",
+                             GLib.Variant("(isb)", (process_id, result.decode(), success)),
+                             None,
+                             Gio.DBusCallFlags.NONE,
+                             2000,
+                             None)
+    except GLib.Error as e:
+        print("Could not play test sound: %s" % e.message)
+

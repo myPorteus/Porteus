@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.appmenu</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Global Menu</name>
+    <name xml:lang="ar">القائمة العموميّة</name>
+    <name xml:lang="ast">Menú global</name>
+    <name xml:lang="az">Qlobal menyu</name>
+    <name xml:lang="ca@valencia">Menú global</name>
+    <name xml:lang="ca">Menú global</name>
+    <name xml:lang="cs">Globální nabídka</name>
+    <name xml:lang="da">Global menu</name>
+    <name xml:lang="de">Globales Menü</name>
+    <name xml:lang="el">Καθολικό μενού</name>
+    <name xml:lang="en_GB">Global Menu</name>
+    <name xml:lang="es">Menú global</name>
+    <name xml:lang="et">Globaalne menüü</name>
+    <name xml:lang="eu">Menu orokorra</name>
+    <name xml:lang="fi">Yleisvalikko</name>
+    <name xml:lang="fr">Menu global</name>
+    <name xml:lang="gl">Menú global</name>
+    <name xml:lang="he">תפריט גלובלי</name>
+    <name xml:lang="hu">Globális menü</name>
+    <name xml:lang="ia">Menu  Global</name>
+    <name xml:lang="id">Menu Global</name>
+    <name xml:lang="it">Menu globale</name>
+    <name xml:lang="ko">전역 메뉴</name>
+    <name xml:lang="lt">Visuotinis meniu</name>
+    <name xml:lang="lv">Globālā izvēlne</name>
+    <name xml:lang="nl">Globaal menu</name>
+    <name xml:lang="nn">Global meny</name>
+    <name xml:lang="pa">ਗਲੋਬਲ ਮੇਨੂ</name>
+    <name xml:lang="pl">Menu globalne</name>
+    <name xml:lang="pt">Menu Global</name>
+    <name xml:lang="pt_BR">Menu global</name>
+    <name xml:lang="ro">Meniu global</name>
+    <name xml:lang="ru">Меню приложения</name>
+    <name xml:lang="sk">Globálna ponuka</name>
+    <name xml:lang="sl">Splošni meni</name>
+    <name xml:lang="sr@ijekavian">Глобални мени</name>
+    <name xml:lang="sr@ijekavianlatin">Globalni meni</name>
+    <name xml:lang="sr@latin">Globalni meni</name>
+    <name xml:lang="sr">Глобални мени</name>
+    <name xml:lang="sv">Global meny</name>
+    <name xml:lang="ta">பொதுவான பட்டி</name>
+    <name xml:lang="tg">Феҳристи умумӣ</name>
+    <name xml:lang="tr">Genel Menü</name>
+    <name xml:lang="uk">Загальне меню</name>
+    <name xml:lang="vi">Trình đơn toàn cục</name>
+    <name xml:lang="x-test">xxGlobal Menuxx</name>
+    <name xml:lang="zh_CN">全局菜单</name>
+    <name xml:lang="zh_TW">全域選單</name>
+    <summary>Global menubar in your Plasma Desktop</summary>
+    <summary xml:lang="az">Plasma İş Masanızın Qlobal Menyu Paneli</summary>
+    <summary xml:lang="ca">Barra de menús global a l'escriptori Plasma</summary>
+    <summary xml:lang="da">Global menulinje på dit Plasma-skrivebord</summary>
+    <summary xml:lang="de">Globale Menüleiste auf der Plasma-Arbeitsfläche</summary>
+    <summary xml:lang="en_GB">Global menubar in your Plasma Desktop</summary>
+    <summary xml:lang="es">Barra de menú global para el escritorio Plasma</summary>
+    <summary xml:lang="et">Globaalne menüüriba Plasma töölaual</summary>
+    <summary xml:lang="eu">Zure Plasma mahaigaineko menu-barra orokorra</summary>
+    <summary xml:lang="fi">Työpöydänlaajuinen valikkorivi Plasma-työpöydällä</summary>
+    <summary xml:lang="fr">Barre globale de menu de votre bureau Plasma</summary>
+    <summary xml:lang="hu">Globális menüsáv a Plasma asztalon</summary>
+    <summary xml:lang="ia">Barra de menu global in tu Scriptorio de Plasma</summary>
+    <summary xml:lang="id">Bilahmenu global di Plasma Desktop kamu</summary>
+    <summary xml:lang="it">Barra dei menu globale nel tuo desktop Plasma</summary>
+    <summary xml:lang="ko">Plasma 데스크톱에 전역 메뉴 표시줄 표시</summary>
+    <summary xml:lang="lt">Visuotinė meniu juosta jūsų Plasma darbalaukyje</summary>
+    <summary xml:lang="nl">Globale menubalk in uw Plasma-bureaublad</summary>
+    <summary xml:lang="nn">Global menylinje på Plasma-skrivebordet</summary>
+    <summary xml:lang="pa">ਤੁਹਾਡੇ ਪਲਾਜ਼ਮਾ ਡੈਸਕਟਾਪ ਵਿੱਚ ਗਲੋਬਲ ਮੇਨੂ-ਪੱਟੀ</summary>
+    <summary xml:lang="pl">Globalny pasek menu na pulpicie Plazmy</summary>
+    <summary xml:lang="pt">Menu global na sua área de trabalho do Plasma</summary>
+    <summary xml:lang="pt_BR">Barra de menu global na sua área de trabalho Plasma</summary>
+    <summary xml:lang="ro">Bară de meniu globală în biroul Plasma</summary>
+    <summary xml:lang="ru">Строка меню приложения на рабочем столе Plasma</summary>
+    <summary xml:lang="sk">Globálna ponuka na vašej Ploche Plasma</summary>
+    <summary xml:lang="sl">Splošna menijska vrstica v vašem namizju Plasma</summary>
+    <summary xml:lang="sv">Global menyrad på Plasmaskrivbordet</summary>
+    <summary xml:lang="ta">பிளாஸ்மா பணிமேடையிலேயே செயலிகளின் பட்டிகளைக் காட்டக்கூடிய ஒரு பிளாஸ்மாய்ட்</summary>
+    <summary xml:lang="tr">Plazma masaüstünüzde genel menü çubuğu</summary>
+    <summary xml:lang="uk">Загальна панель меню у вашій стільниці Плазми</summary>
+    <summary xml:lang="vi">Thanh trình đơn toàn cục ở bàn làm việc Plasma của bạn</summary>
+    <summary xml:lang="x-test">xxGlobal menubar in your Plasma Desktopxx</summary>
+    <summary xml:lang="zh_CN">Plasma 桌面上的全局菜单</summary>
+    <url type="homepage">https://kde.org/plasma-desktop</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.appmenu</url>
+    <developer_name>Kai Uwe Broulik &lt;kde@privat.broulik.de&gt;</developer_name>
+    <icon type="stock">show-menu</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

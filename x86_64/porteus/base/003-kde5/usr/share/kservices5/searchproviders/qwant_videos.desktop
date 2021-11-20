@@ -1,0 +1,81 @@
+[Desktop Entry]
+Keys=qwv
+Name=Qwant Videos
+Name[az]=Qwant Videolar
+Name[ca]=Vídeo de Qwant
+Name[ca@valencia]=Vídeo de Qwant
+Name[cs]=Videa Qwan
+Name[da]=Qwant Videos
+Name[de]=Qwant-Videos
+Name[el]=Qwant Βίντεο
+Name[en_GB]=Qwant Videos
+Name[eo]=Videoj de Qwant
+Name[es]=Qwant Vídeos
+Name[et]=Qwant Videos
+Name[eu]=Qwant Bideoak
+Name[fi]=Qwant-videohaku
+Name[fr]=Vidéos « Qwant »
+Name[gd]=Qwant Videos
+Name[gl]=Vídeos en Qwant
+Name[hu]=Qwant videók
+Name[ia]=Qwant Videos
+Name[id]=Qwant Video
+Name[it]=Video di Qwant
+Name[ko]=Qwant 동영상
+Name[lt]=Qwant vaizdo įrašai
+Name[mr]=क्वांट व्हिडीओ
+Name[nb]=Qwant videoer
+Name[nds]=Qwant-Videos
+Name[nl]=Qwant video's
+Name[nn]=Qwant videoar
+Name[pl]=Qwant - wideo
+Name[pt]=Vídeos do Qwant
+Name[pt_BR]=Vídeos do Qwant
+Name[ru]=Qwant: Видео
+Name[sk]=Qwant videá
+Name[sl]=Qwant - video
+Name[sr]=Квант-видео
+Name[sr@ijekavian]=Квант-видео
+Name[sr@ijekavianlatin]=Qwant-video
+Name[sr@latin]=Qwant-video
+Name[sv]=Qwant-videor
+Name[tg]=Видеоҳои Qwant
+Name[tr]=Qwant Videoları
+Name[uk]=Відео Qwant
+Name[vi]=Qwant Phim
+Name[x-test]=xxQwant Videosxx
+Name[zh_CN]=Qwant 视频
+Name[zh_TW]=Qwant Videos
+Query=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[ast]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[az]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[ca]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[cs]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[da]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[de]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[el]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[en_GB]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[es]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[et]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[eu]=https://www.qwant.com/single?q=\\{@}&client=kde&source=videos
+Query[fi]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[fr]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[hu]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[ia]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[it]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[ko]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[nl]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[nn]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[pl]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[pt]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[pt_BR]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[ru]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[sk]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[sl]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[sv]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[tg]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[uk]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[vi]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Query[x-test]=xxhttps://www.qwant.com/?q=\\{@}&client=kde&t=videosxx
+Query[zh_CN]=https://www.qwant.com/?q=\\{@}&client=kde&t=videos
+Type=Service

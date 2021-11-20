@@ -1,0 +1,48 @@
+PACKAGE NAME:     adwaita-qt-1.2.1-x86_64-1_SBo
+COMPRESSED PACKAGE SIZE:     288K
+UNCOMPRESSED PACKAGE SIZE:     910K
+PACKAGE LOCATION: adwaita-qt-1.2.1-x86_64-1_SBo.tgz
+PACKAGE DESCRIPTION:
+adwaita-qt: adwaita-qt (KDE/QT Theme)
+adwaita-qt:
+adwaita-qt: A QT style to make Qt applications look like they belong in GNOME
+adwaita-qt: Shell.
+adwaita-qt:
+adwaita-qt:
+adwaita-qt:
+adwaita-qt:
+adwaita-qt:
+adwaita-qt:
+adwaita-qt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/adwaita-qt-1.2.1/
+usr/doc/adwaita-qt-1.2.1/COPYING
+usr/doc/adwaita-qt-1.2.1/LICENSE.GPL2
+usr/doc/adwaita-qt-1.2.1/README.md
+usr/doc/adwaita-qt-1.2.1/adwaita-qt.SlackBuild
+usr/include/
+usr/include/AdwaitaQt/
+usr/include/AdwaitaQt/adwaita.h
+usr/include/AdwaitaQt/adwaitacolors.h
+usr/include/AdwaitaQt/adwaitaqt_export.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/AdwaitaQt/
+usr/lib64/cmake/AdwaitaQt/AdwaitaQtConfig.cmake
+usr/lib64/cmake/AdwaitaQt/AdwaitaQtConfigVersion.cmake
+usr/lib64/cmake/AdwaitaQt/AdwaitaQtTargets-release.cmake
+usr/lib64/cmake/AdwaitaQt/AdwaitaQtTargets.cmake
+usr/lib64/libadwaitaqt.so.1.2.1
+usr/lib64/libadwaitaqtpriv.so.1.2.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/adwaita-qt.pc
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/styles/
+usr/lib64/qt5/plugins/styles/adwaita.so

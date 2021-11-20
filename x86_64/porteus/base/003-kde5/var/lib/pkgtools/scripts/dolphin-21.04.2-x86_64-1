@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libdolphinprivate.so.5 )
+( cd usr/lib64 ; ln -sf libdolphinprivate.so.5.0.0 libdolphinprivate.so.5 )
+( cd usr/lib64 ; rm -rf libdolphinvcs.so )
+( cd usr/lib64 ; ln -sf libdolphinvcs.so.5 libdolphinvcs.so )
+( cd usr/lib64 ; rm -rf libdolphinvcs.so.5 )
+( cd usr/lib64 ; ln -sf libdolphinvcs.so.5.0.0 libdolphinvcs.so.5 )
+( cd usr/share/kglobalaccel ; rm -rf org.kde.dolphin.desktop )
+( cd usr/share/kglobalaccel ; ln -sf /usr/share/applications/org.kde.dolphin.desktop org.kde.dolphin.desktop )

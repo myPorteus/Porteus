@@ -1,0 +1,7 @@
+// Discarded CLASS_DECL on line 22 'KMessageBoxDontAskAgainInterface' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 23 'KMessageBoxNotifyInterface' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 24 'QDialog' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 25 'QDialogButtonBox' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 26 'QWidget' (by default forward declaration handling)
+// Discarded CLASS_DECL on line 27 'KConfig' (by default forward declaration handling)
+// Discarded NAMESPACE on line 43 'KMessageBox' (by rules_PyKF5.py:ContainerRuleDb[0],container_discard)

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libKF5Bookmarks.so )
+( cd usr/lib64 ; ln -sf libKF5Bookmarks.so.5 libKF5Bookmarks.so )
+( cd usr/lib64 ; rm -rf libKF5Bookmarks.so.5 )
+( cd usr/lib64 ; ln -sf libKF5Bookmarks.so.5.83.0 libKF5Bookmarks.so.5 )

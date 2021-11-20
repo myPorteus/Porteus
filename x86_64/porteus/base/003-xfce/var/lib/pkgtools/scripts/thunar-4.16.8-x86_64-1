@@ -1,0 +1,8 @@
+( cd usr/bin ; rm -rf Thunar )
+( cd usr/bin ; ln -sf thunar Thunar )
+( cd usr/doc/thunar-4.16.8 ; rm -rf html )
+( cd usr/doc/thunar-4.16.8 ; ln -sf /usr/share/gtk-doc/html/thunarx/ html )
+( cd usr/lib64 ; rm -rf libthunarx-3.so )
+( cd usr/lib64 ; ln -sf libthunarx-3.so.0.0.0 libthunarx-3.so )
+( cd usr/lib64 ; rm -rf libthunarx-3.so.0 )
+( cd usr/lib64 ; ln -sf libthunarx-3.so.0.0.0 libthunarx-3.so.0 )

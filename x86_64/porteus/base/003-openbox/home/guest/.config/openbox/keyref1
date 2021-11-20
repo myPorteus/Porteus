@@ -1,0 +1,118 @@
+<----------------OPENBOX---KEYBIND---REFERENCE----------------------->
+
+"W"= super or button with a logo ")
+"A"= Alt
+"S"= Shift
+"C"= Ctrl
+ 
+<!-- Keybindings for running applications --------------------------->
+
+    "W-space"      Main menu      (also "R mouse")
+
+    "W-r"          Rofi (run menu)                    
+
+    "W-f"          Filemanager
+          
+    "W-w"          Web Browser 
+                    
+    "W-t"          Terminal
+         
+    "W-e"          Text Editor
+      
+    "W-x"          Logout/ Shutdown dialog
+                  
+          
+<!-- Keybindings for utilities -------------------------------------->
+
+    If your keyboard/laptop has these media buttons:
+    "XF86AudioLowerVolume" 
+          <command>/opt/porteus-scripts/extra/pxf-sound down
+
+    "XF86AudioRaiseVolume"      
+        <command>/opt/porteus-scripts/extra/pxf-sound up
+
+    "XF86AudioMute"
+        <command>/opt/porteus-scripts/extra/pxf-sound toggle
+
+<!-- Keybindings for desktop switching ------------------------------>
+
+   "C-A-Left"     "GoToDesktop Left"
+      
+    "C-A-Right"   "GoToDesktop Right"
+      
+   "S-A-Left"      "SendToDesktop"
+      
+   "S-A-Right"     "SendToDesktop"
+      
+    "W-F1"         "GoToDesktop 1"
+   
+    "W-F2"         "GoToDesktop 2"
+ 
+    "W-F3"         "GoToDesktop 3"
+ 
+    "W-F4"         "GoToDesktop 4"
+ 
+    "A-d"        "ToggleShowDesktop"
+
+<!-- Keybindings for windows ---------------------------------------->
+
+    "A-Lmouse"    "Move Window"
+    
+    "A-Rmouse"    "Resize Window"    
+
+    "A-F4"        "Close"
+
+    "W-a"       "ToggleMaximize"
+
+    "A-t"       "ToggleAlwaysOnTop"
+
+    "A-u"        "ToggleDecorations"
+
+    "A-Escape"    "Lower""FocusToBottom""Unfocus" 
+                                       
+    "A-space"     "ShowMenu"   client-menu
+
+    "W-c"         "ToggleShade"
+
+<!-- Keybindings for window switching ------------------------------->
+
+    "A-Tab"      "NextWindow" "Focus" "Raise" "Unshade" for all desktops
+         
+    "C-A-Tab"      "NextWindow"  "Focus"  "Raise" "Unshade" for visible desktop
+ 
+<!-- Keybindings for window switching with the arrow keys ----------->
+
+    "W-S-Right"     "DirectionalCycleWindows"
+
+    "W-S-Left"     "DirectionalCycleWindows"
+
+    "W-S-Up"       "DirectionalCycleWindows"
+
+    "W-S-Down"     "DirectionalCycleWindows"
+
+<!-- Keybindings for window resize and move with the arrow keys ----->
+
+    "W-Up"             "MoveToEdgeNorth"
+
+    "W-Right"                   "MoveToEdgeEast"
+          
+    "W-Left"    "MoveToEdgeWest"  
+    
+    "W-Down"            "MoveToEdgeSouth"
+    
+    "W-h"         "ToggleMaximizeHorz"
+    
+    "W-v"         "ToggleMaximizeVert"
+    
+    "A-W-Up"            "GrowToEdgeNorth"
+    
+    "A-W-Right"                   "GrowToEdgeEast"
+
+    "A-W-Left"    "GrowToEdgeWest"    
+
+    "A-W-Down"           "GrowToEdgeSouth"
+
+    
+(these keybinds(and more) are configured in /home/guest/.config/openbox/rc.xml)
+    
+

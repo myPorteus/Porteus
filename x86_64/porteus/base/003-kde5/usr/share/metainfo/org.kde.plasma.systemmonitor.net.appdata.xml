@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.systemmonitor.net</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Network speed</name>
+    <name xml:lang="az">Şəbəkə sürəti</name>
+    <name xml:lang="ca">Velocitat de xarxa</name>
+    <name xml:lang="cs">Rychlost sítě</name>
+    <name xml:lang="da">Netværkshastighed</name>
+    <name xml:lang="de">Netzwerkgeschwindigkeit</name>
+    <name xml:lang="en_GB">Network speed</name>
+    <name xml:lang="es">Velocidad de la red</name>
+    <name xml:lang="et">Võrgukiirus</name>
+    <name xml:lang="eu">Sareko abiadura</name>
+    <name xml:lang="fi">Verkon nopeus</name>
+    <name xml:lang="fr">Débit du réseau</name>
+    <name xml:lang="hu">Hálózati sebesség</name>
+    <name xml:lang="ia">Velocitate de Rete</name>
+    <name xml:lang="id">Kecepatan Jaringan</name>
+    <name xml:lang="it">Velocità di rete</name>
+    <name xml:lang="ko">네트워크 속도</name>
+    <name xml:lang="lt">Tinklo greitis</name>
+    <name xml:lang="nl">Netwerksnelheid</name>
+    <name xml:lang="nn">Nettverksfart</name>
+    <name xml:lang="pa">ਨੈੱਟਵਰਕ ਸਪੀਡ</name>
+    <name xml:lang="pl">Szybkość sieci</name>
+    <name xml:lang="pt">Velocidade da rede</name>
+    <name xml:lang="pt_BR">Velocidade de rede</name>
+    <name xml:lang="ro">Viteza rețelei</name>
+    <name xml:lang="ru">Скорость передачи данных по сети</name>
+    <name xml:lang="sk">Rýchlosť siete</name>
+    <name xml:lang="sl">Hitrost omrežja</name>
+    <name xml:lang="sv">Nätverkshastighet</name>
+    <name xml:lang="ta">பிணைய வேகம்</name>
+    <name xml:lang="tg">Суръати шабака</name>
+    <name xml:lang="tr">Ağ hızı</name>
+    <name xml:lang="uk">Швидкість мережі</name>
+    <name xml:lang="vi">Tốc độ mạng</name>
+    <name xml:lang="x-test">xxNetwork speedxx</name>
+    <name xml:lang="zh_CN">网络速度</name>
+    <name xml:lang="zh_TW">網路速度</name>
+    <summary>System monitor Widget that shows the download and upload data rate</summary>
+    <summary xml:lang="az">Şəbəkə üzərindən verilənlərin yükləmə və ötürmə sürətini göstərir</summary>
+    <summary xml:lang="ca">Giny del monitor del sistema que mostra la velocitat de baixada i pujada de les dades</summary>
+    <summary xml:lang="da">Systemovervågning-widget som viser download- og uploadhastighed</summary>
+    <summary xml:lang="en_GB">System monitor Widget that shows the download and upload data rate</summary>
+    <summary xml:lang="es">Elemento gráfico del monitor del sistema que muestra las velocidades de subida y bajada de datos</summary>
+    <summary xml:lang="et">Süsteemi jälgija vidin, mis näitab alla- ja üleslaadimise kiirust</summary>
+    <summary xml:lang="eu">Zama-jaisteko eta -igotzeko datuen emaria erakusten duen sistema gainbegiratzeko trepeta</summary>
+    <summary xml:lang="fi">Lataus- ja lähetysnopeuden näyttävä järjestelmänvalvontasovelma</summary>
+    <summary xml:lang="fr">Composant graphique de surveillance du système, affichant le débit de transfert montant /descendant de données</summary>
+    <summary xml:lang="hu">A le- és feltöltési sebességet megjelenítő elem</summary>
+    <summary xml:lang="ia">Widget de supervision de systema que monstra le  velocitate de discargar e incargar datos</summary>
+    <summary xml:lang="it">Oggetto di monitoraggio del sistema che mostra la velocità di trasferimento e ricezione dei dati</summary>
+    <summary xml:lang="ko">데이터 다운로드 및 업로드 전송률을 표시하는 시스템 모니터 위젯</summary>
+    <summary xml:lang="lt">Sistemos prižiūryklės valdiklis, kuris rodo duomenų atsiuntimo ir išsiuntimo spartą</summary>
+    <summary xml:lang="nl">Systeemmonitorwidget die gegevenssnelheid van down- en uploaden toont</summary>
+    <summary xml:lang="nn">System­overvaking som viser ned- og opplastingsratar</summary>
+    <summary xml:lang="pl">Element interfejsu, który pokazuje szybkość wysyłania i pobierania danych</summary>
+    <summary xml:lang="pt">Elemento de monitorização do sistema que mostra a taxa de dados recebidos e enviados</summary>
+    <summary xml:lang="pt_BR">Widget monitor do sistema que mostra a taxa de download e upload</summary>
+    <summary xml:lang="ro">Control grafic de monitorizare a sistemului ce arată rata de încărcare și descărcare a datelor</summary>
+    <summary xml:lang="ru">Мониторинг скорости получения и передачи данных по сети</summary>
+    <summary xml:lang="sk">Miniaplikácia monitorovania systému, ktorá zobrazuje množstvo sťahovaných a odosielaných dát</summary>
+    <summary xml:lang="sl">Gradnik sistemskega monitorja, ki prikazuje podatke prenosa podatkov navznoter in navzven</summary>
+    <summary xml:lang="sv">Grafisk systemövervakningskomponent som visar nerladdnings- och uppladdningshastighet för data</summary>
+    <summary xml:lang="ta">பதிவிறக்க மற்றும் பதிவேற்ற வீதத்தைக் காட்டும் பிளாஸ்மாய்ட்</summary>
+    <summary xml:lang="tr">İndirme ve Yükleme veri hızını gösteren sistem monitörü gereci</summary>
+    <summary xml:lang="uk">Віджет нагляду за системою, який показує швидкість отримання та вивантаження даних</summary>
+    <summary xml:lang="vi">Phụ kiện giám sát hệ thống cho biết tốc độ tải dữ liệu về và lên</summary>
+    <summary xml:lang="x-test">xxSystem monitor Widget that shows the download and upload data ratexx</summary>
+    <summary xml:lang="zh_CN">显示下载和上传速率的系统监视部件</summary>
+    <summary xml:lang="zh_TW">顯示下載與上傳之資料速率的系統監視器元件</summary>
+    <url type="homepage">https://www.kde.org/plasma-desktop</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.systemmonitor.net</url>
+    <developer_name>Marco Martin &lt;mart@kde.org&gt;</developer_name>
+    <icon type="stock">network-workgroup</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

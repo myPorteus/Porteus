@@ -1,0 +1,2 @@
+( cd usr/share/kglobalaccel ; rm -rf org.kde.spectacle.desktop )
+( cd usr/share/kglobalaccel ; ln -sf /usr/share/applications/org.kde.spectacle.desktop org.kde.spectacle.desktop )

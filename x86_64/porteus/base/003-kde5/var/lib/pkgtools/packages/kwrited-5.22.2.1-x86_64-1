@@ -1,0 +1,31 @@
+PACKAGE NAME:     kwrited-5.22.2.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kwrited-5.22.2.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kwrited: kwrited (write daemon)
+kwrited:
+kwrited: Watch for messages from local users sent with write(1) or wall(1).
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+kwrited:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/kded/
+usr/lib64/qt5/plugins/kf5/kded/kwrited.so
+usr/share/
+usr/share/knotifications5/
+usr/share/knotifications5/kwrited.notifyrc

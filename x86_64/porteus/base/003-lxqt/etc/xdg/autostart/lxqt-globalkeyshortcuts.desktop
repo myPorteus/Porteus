@@ -1,0 +1,36 @@
+[Desktop Entry]
+Type=Application
+TryExec=lxqt-globalkeysd
+Exec=lxqt-globalkeysd
+OnlyShowIn=LXQt;
+X-LXQt-Module=true
+
+Name=Global Keyboard Shortcuts
+Name[bg]=Клавишни комбинации
+Name[cs]=Celkové klávesové zkratky
+Name[da]=Globale tastaturgenveje
+Name[de]=Globale Kurzbefehle
+Name[el]=Καθολικές συντομεύσεις πληκτρολογίου
+Name[es]=Atajos globales de teclado
+Name[es_VE]=Atajos de teclados de LXQt
+Name[et]=Üldised kiirklahvid
+Name[eu]=Teklatuko lasterbide orokorrak
+Name[fi]=Yleiset pikanäppäimet
+Name[fr]=Raccourcis clavier globaux
+Name[he]=קיצורי מקלדת גלובליים
+Name[hr]=Globalni tipkovnički prečaci
+Name[hu]=Globális gyorsbillentyűk
+Name[it]=Scorciatoie globali della tastiera
+Name[ja]=グローバル・ショートカットキー
+Name[lt]=Visuotiniai spartieji klavišai
+Name[oc]=Acorchis clavièr globals
+Name[pl]=Globalne Skróty Klawiszowe
+Name[pt]=Teclas de atalho globais
+Name[pt_BR]=Tecla de Atalhos Globais
+Name[ro]=Taste rapide globale
+Name[ru]=Глобальные сочетания клавиш
+Name[th]=ปุ่มลัดหลักต่างๆ
+Name[tr]=Genel Klavye Kısayolları
+Name[uk]=Глобальні клавіатурні скорочення
+Name[zh_CN]=全局键盘快捷键
+Name[zh_TW]=全域鍵盤快捷鍵

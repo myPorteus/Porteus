@@ -1,0 +1,34 @@
+PACKAGE NAME:     gsimplecal-2.2-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/Porteus5.0/SpaceDE/BUILD-gtk3/PKG64/gsimplecal-2.2-x86_64-1_ncm.tgz
+PACKAGE DESCRIPTION:
+gsimplecal: gsimplecal (Simple and lightweight GTK calendar)
+gsimplecal:
+gsimplecal: Gsimplecal is a lightweight calendar applet written in C++ using GTK.
+gsimplecal:
+gsimplecal: Homepage: https://github.com/dmedvinsky/gsimplecal
+gsimplecal:
+gsimplecal:
+gsimplecal:
+gsimplecal:
+gsimplecal:
+gsimplecal:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gsimplecal
+usr/doc/
+usr/doc/gsimplecal-2.2/
+usr/doc/gsimplecal-2.2/AUTHORS
+usr/doc/gsimplecal-2.2/COPYING
+usr/doc/gsimplecal-2.2/ChangeLog
+usr/doc/gsimplecal-2.2/README
+usr/doc/gsimplecal-2.2/README.rst
+usr/doc/gsimplecal-2.2/gsimplecal.SlackBuild
+usr/man/
+usr/man/man1/
+usr/man/man1/gsimplecal.1.gz

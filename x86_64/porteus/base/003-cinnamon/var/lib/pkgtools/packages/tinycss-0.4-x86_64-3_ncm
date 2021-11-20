@@ -1,0 +1,78 @@
+PACKAGE NAME:     tinycss-0.4-x86_64-3_ncm
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/tinycss-0.4-x86_64-3_ncm.txz
+PACKAGE DESCRIPTION:
+tinycss: tinycss (simple CSS parser for Python)
+tinycss:
+tinycss: tinycss is a complete yet simple CSS parser for Python. It supports
+tinycss: the full syntax and error handling for CSS 2.1 as well as some CSS
+tinycss: 3 modules: CSS Color 3, CSS Fonts 3, CSS Paged Media 3.
+tinycss:
+tinycss: Homepage: https://tinycss.readthedocs.io/en/latest/
+tinycss:
+tinycss:
+tinycss:
+tinycss:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/tinycss-0.4/
+usr/doc/tinycss-0.4/CHANGES
+usr/doc/tinycss-0.4/LICENSE
+usr/doc/tinycss-0.4/README.rst
+usr/doc/tinycss-0.4/tinycss.SlackBuild
+usr/lib64/
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/PKG-INFO
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/SOURCES.txt
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/dependency_links.txt
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/requires.txt
+usr/lib64/python3.9/site-packages/tinycss-0.4-py3.9.egg-info/top_level.txt
+usr/lib64/python3.9/site-packages/tinycss/
+usr/lib64/python3.9/site-packages/tinycss/__init__.py
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/__init__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/color3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/css21.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/decoding.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/fonts3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/page3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/parsing.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/token_data.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/tokenizer.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/__pycache__/version.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/color3.py
+usr/lib64/python3.9/site-packages/tinycss/css21.py
+usr/lib64/python3.9/site-packages/tinycss/decoding.py
+usr/lib64/python3.9/site-packages/tinycss/fonts3.py
+usr/lib64/python3.9/site-packages/tinycss/page3.py
+usr/lib64/python3.9/site-packages/tinycss/parsing.py
+usr/lib64/python3.9/site-packages/tinycss/tests/
+usr/lib64/python3.9/site-packages/tinycss/tests/__init__.py
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/__init__.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/speed.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_api.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_color3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_css21.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_decoding.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_fonts3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_page3.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/__pycache__/test_tokenizer.cpython-39.pyc
+usr/lib64/python3.9/site-packages/tinycss/tests/speed.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_api.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_color3.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_css21.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_decoding.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_fonts3.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_page3.py
+usr/lib64/python3.9/site-packages/tinycss/tests/test_tokenizer.py
+usr/lib64/python3.9/site-packages/tinycss/token_data.py
+usr/lib64/python3.9/site-packages/tinycss/tokenizer.py
+usr/lib64/python3.9/site-packages/tinycss/version.py

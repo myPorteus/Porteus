@@ -1,0 +1,29 @@
+PACKAGE NAME:     audacious-4.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     260K
+UNCOMPRESSED PACKAGE SIZE:     960K
+PACKAGE LOCATION: audacious-4.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/bin/
+usr/bin/audacious
+usr/bin/audtool
+usr/lib64/
+usr/lib64/libaudcore.so.5.2.0
+usr/lib64/libaudgui.so.5.1.0
+usr/lib64/libaudtag.so.3.0.0
+usr/share/
+usr/share/applications/
+usr/share/applications/audacious.desktop
+usr/share/audacious/
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/audacious.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/audacious.svg

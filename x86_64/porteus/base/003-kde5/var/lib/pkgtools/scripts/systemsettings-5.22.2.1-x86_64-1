@@ -1,0 +1,2 @@
+( cd usr/share/kglobalaccel ; rm -rf systemsettings.desktop )
+( cd usr/share/kglobalaccel ; ln -sf /usr/share/applications/systemsettings.desktop systemsettings.desktop )

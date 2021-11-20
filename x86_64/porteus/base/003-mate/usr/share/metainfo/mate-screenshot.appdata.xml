@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 MATE team <mate-dev@ml.mate-desktop.org> -->
+<component type="desktop">
+  <id>mate-screenshot.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>MATE Screenshot</name>
+  <name xml:lang="zh_TW">MATE 螢幕截圖</name>
+  <name xml:lang="nl">MATE Schermafdruk</name>
+  <name xml:lang="nb">MATE Skjermdump</name>
+  <name xml:lang="it">Cattura Schermata</name>
+  <name xml:lang="gl">Captura de pantalla do MATE</name>
+  <name xml:lang="es">Captura de pantalla de MATE</name>
+  <name xml:lang="de">MATE Bildschirmfoto</name>
+  <name xml:lang="da">MATE-skærmbillede</name>
+  <name xml:lang="ca">Captura de pantalla de MATE</name>
+  <summary>A screenshot utility for MATE Desktop</summary>
+  <summary xml:lang="zh_TW">適用於 MATE 桌面環境的螢幕截圖工具</summary>
+  <summary xml:lang="zh_CN">MATE 桌面的截屏工具</summary>
+  <summary xml:lang="uk">Засіб створення знятків екрану для середовища MATE</summary>
+  <summary xml:lang="tr">MATE Masaüstü için ekran fotoğrafı programı</summary>
+  <summary xml:lang="th">ความสามารถในการถ่ายภาพหน้าจอสำหรับเดสก์ท็อปของ MATE</summary>
+  <summary xml:lang="sv">Ett skärmbildsverktyg för MATE Skrivbord</summary>
+  <summary xml:lang="sr">Помагало за снимање екрана за Мејтову радну површ</summary>
+  <summary xml:lang="sl">Orodje za zajem zaslonskih slik v MATE Namizju</summary>
+  <summary xml:lang="sk">Nástroj na tvorbu snímok obrazovky prostredia MATE</summary>
+  <summary xml:lang="ru">Утилита для создания снимков экрана для рабочего стола MATE</summary>
+  <summary xml:lang="ro">O unealtă pentru capturi de ecran pentru desktopul MATE</summary>
+  <summary xml:lang="pt_BR">Um utilitário de captura de tela para o Ambiente de Trabalho MATE</summary>
+  <summary xml:lang="pt">Um utilitário de captura de ecrã para o Ambiente de Trabalho MATE</summary>
+  <summary xml:lang="pl">Narzędzie zrzutów ekranu dla środowiska MATE</summary>
+  <summary xml:lang="nl">Een schermafdruk-hulpprogramma voor de MATE-werkomgeving</summary>
+  <summary xml:lang="nb">Et skjermbilderedskap for MATE-skrivebordet</summary>
+  <summary xml:lang="ms">Utiliti cekupan skrin untuk Desktop MATE</summary>
+  <summary xml:lang="lt">Ekrano kopijų paslaugų programa MATE darbalaukiui</summary>
+  <summary xml:lang="ko">마테 데스크톱용 화면 촬영 도구</summary>
+  <summary xml:lang="kk">MATE жұмыс үстелі үшін скриншот утилитасы</summary>
+  <summary xml:lang="ja">MATE デスクトップのスクリーンショットユーティリティー</summary>
+  <summary xml:lang="it">Un'applicazione per screenshot per l'ambiente desktop MATE</summary>
+  <summary xml:lang="id">Utilitas screenshot Desktop MATE</summary>
+  <summary xml:lang="hy">Էկրանի նկարի օժանդակ ծրագիր MATE Աշխատանքային սեղանի համար</summary>
+  <summary xml:lang="hu">Képernyőkép készítő segédprogram a MATE asztali környezethez</summary>
+  <summary xml:lang="gl">Unha utilidade de captura de pantalla para o escritorio MATE</summary>
+  <summary xml:lang="fr">Un utilitaire de capture d'écran pour le bureau MATE</summary>
+  <summary xml:lang="fi">Kuvakaappausohjelma MATE Työpöydälle</summary>
+  <summary xml:lang="et">Ekraanitõmmise võtmise vahend MATE töölauale</summary>
+  <summary xml:lang="es">Una utilidad de captura de pantalla para el escritorio MATE</summary>
+  <summary xml:lang="en_GB">A screenshot utility for MATE Desktop</summary>
+  <summary xml:lang="en_AU">A screenshot utility for MATE Desktop</summary>
+  <summary xml:lang="el">Μιαεφαρμογή για λήψη στιγμιοτύπου οθόνης για το MATE</summary>
+  <summary xml:lang="de">Ein Werkzeug zur Anfertigung von Bildschirmfotos für die MATE-Arbeitsumgebung</summary>
+  <summary xml:lang="da">Et skærmbilledredskab for MATE-skrivebordet</summary>
+  <summary xml:lang="cs">Zachycení snímku obrazovky pro MATE</summary>
+  <summary xml:lang="ca@valencia">Una utilitat de captura de pantalla per a l'escriptori MATE</summary>
+  <summary xml:lang="ca">Una utilitat de captura de pantalla per a l'escriptori MATE</summary>
+  <summary xml:lang="br">Ur maveg da bakañ skrammadoù evit burev MATE</summary>
+  <summary xml:lang="bg">Инструмент за заснемане на екрана на MATE</summary>
+  <summary xml:lang="be">Утыліта здымання экрану асяроддзя MATE</summary>
+  <summary xml:lang="ast">Una utilidá de captura de pantalla pal escritoriu MATE</summary>
+  <summary xml:lang="ar">أداة التقاط صورة الشاشة لسطح مكتب متّة</summary>
+  <description>
+    <p>
+   MATE Screenshot is a simple utility that lets you capture screenshots
+   of your desktop or of application windows. You can select to copy them
+   to the system clipboard or save them in Portable Network Graphics (.png)
+   image format.
+  </p>
+    <p xml:lang="zh_TW">MATE 螢幕截圖是一個讓您可以擷取您的桌面或是應用程式視窗截圖的簡單小工具。您可以選取以將它們複製到系統剪貼簿中或是將它們儲存為可攜式網路圖形 (.png) 圖片格式。</p>
+    <p xml:lang="nl">MATE Schermafdruk is een eenvoudig gereedschapje waarmee u schermafdrukken kunt maken van uw bureaublad of toepassingsvensters. U kunt ervoor kiezen om hen naar het systeemklembord te kopiëren of om hen op te slaan als Portable Network Graphics (.png) bestanden.</p>
+    <p xml:lang="nb">MATE Skjermdump er en enkelt verktøy som kan ta skjermbilder av skrivebordet eller programvinduer. Bildene kan kopieres til utklippstavla eller lagres i bildeformatet PNG.</p>
+    <p xml:lang="it">Cattura Schermata è una semplice utility che permette di catturare screenshot del desktop o delle finestre delle applicazioni. È possibile copiarli negli appunti o salvarli in formato immagine Portable Network Graphics (.png).</p>
+    <p xml:lang="gl">O Captura de pantalla do MATE é unha utilidade sinxela que permite facer capturas de pantalla do escritorio ou das ventás da aplicación. Pode seleccionar copialos no portapapeis do sistema ou gardalos en formato de imaxe Portable Network Graphics (.png).</p>
+    <p xml:lang="es">Captura de pantalla de MATE es una sencilla utilidad que le permite obtener capturas de pantalla de su escritorio o de las ventanas de las aplicaciones. Puede seleccionar copiarlas al portapapeles del sistema o guardarlas en formato de imagen PNG (.png).</p>
+    <p xml:lang="da">MATE Screenshot (MATE-skærmbillede) er et simpelt redskab, hvor du kan tage skærmbilleder af dit skrivebord eller af programvinduet. Du kan vælge at kopiere dem til systemets udklipsholder eller gemme dem i Portable Network Graphics (.png)-billedformatet.</p>
+    <p xml:lang="ca">La captura de pantalla de MATE és una utilitat senzilla que us permet fer captures de pantalla del vostre escriptori o de les finestres de les aplicacions. Podeu seleccionar copiar-les al porta-retalls del sistema o desar-les amb el format d'imatge «Portable Network Graphics» (.png).</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image width="800" height="450">
+    https://alexpl.fedorapeople.org/AppData/mate-screenshot/screens/mate-screenshot_01.png
+   </image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://mate-desktop.org</url>
+  <updatecontact>mate-dev@ml.mate-desktop.org</updatecontact>
+  <project_group>MATE</project_group>
+</component>

@@ -1,0 +1,117 @@
+PACKAGE NAME:     cinnamon-screensaver-5.0.6-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     164K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/cinnamon-screensaver-5.0.6-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+cinnamon-screensaver: cinnamon-screensaver (screensaver for the Cinnamon desktop)
+cinnamon-screensaver:
+cinnamon-screensaver: cinnamon-screensaver is a screensaver and screen locker that aims
+cinnamon-screensaver: to have simple, sane, and secure defaults and be well integrated
+cinnamon-screensaver: with the CINNAMON desktop
+cinnamon-screensaver:
+cinnamon-screensaver: Project URL: https://github.com/linuxmint/cinnamon-screensaver
+cinnamon-screensaver:
+cinnamon-screensaver:
+cinnamon-screensaver:
+cinnamon-screensaver:
+FILE LIST:
+./
+etc/
+etc/pam.d/
+etc/pam.d/cinnamon-screensaver
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cinnamon-unlock-desktop
+usr/doc/
+usr/doc/cinnamon-screensaver-5.0.6/
+usr/doc/cinnamon-screensaver-5.0.6/COPYING
+usr/doc/cinnamon-screensaver-5.0.6/NEWS
+usr/doc/cinnamon-screensaver-5.0.6/cinnamon-screensaver.SlackBuild
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/CScreensaver-1.0.typelib
+usr/lib64/libcscreensaver.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/cscreensaver.pc
+usr/libexec/
+usr/libexec/cinnamon-screensaver-pam-helper
+usr/libexec/cs-backup-locker
+usr/share/
+usr/share/applications/
+usr/share/applications/org.cinnamon.ScreenSaver.desktop
+usr/share/cinnamon-screensaver/
+usr/share/cinnamon-screensaver/__init__.py
+usr/share/cinnamon-screensaver/albumArt.py
+usr/share/cinnamon-screensaver/audioPanel.py
+usr/share/cinnamon-screensaver/baseWindow.py
+usr/share/cinnamon-screensaver/cinnamon-screensaver-command.py
+usr/share/cinnamon-screensaver/cinnamon-screensaver-main.py
+usr/share/cinnamon-screensaver/cinnamon-screensaver.css
+usr/share/cinnamon-screensaver/clock.py
+usr/share/cinnamon-screensaver/config.py
+usr/share/cinnamon-screensaver/constants.py
+usr/share/cinnamon-screensaver/dbusdepot/
+usr/share/cinnamon-screensaver/dbusdepot/__init__.py
+usr/share/cinnamon-screensaver/dbusdepot/accountsServiceClient.py
+usr/share/cinnamon-screensaver/dbusdepot/baseClient.py
+usr/share/cinnamon-screensaver/dbusdepot/cinnamonClient.py
+usr/share/cinnamon-screensaver/dbusdepot/consoleKitClient.py
+usr/share/cinnamon-screensaver/dbusdepot/keybindingHandlerClient.py
+usr/share/cinnamon-screensaver/dbusdepot/loginInterface.py
+usr/share/cinnamon-screensaver/dbusdepot/logindClient.py
+usr/share/cinnamon-screensaver/dbusdepot/mediaPlayerWatcher.py
+usr/share/cinnamon-screensaver/dbusdepot/nameBlocker.py
+usr/share/cinnamon-screensaver/dbusdepot/sessionClient.py
+usr/share/cinnamon-screensaver/dbusdepot/uPowerClient.py
+usr/share/cinnamon-screensaver/floating.py
+usr/share/cinnamon-screensaver/infoPanel.py
+usr/share/cinnamon-screensaver/manager.py
+usr/share/cinnamon-screensaver/monitorView.py
+usr/share/cinnamon-screensaver/osk.py
+usr/share/cinnamon-screensaver/pamhelper/
+usr/share/cinnamon-screensaver/pamhelper/authClient.py
+usr/share/cinnamon-screensaver/passwordEntry.py
+usr/share/cinnamon-screensaver/playerControl.py
+usr/share/cinnamon-screensaver/service.py
+usr/share/cinnamon-screensaver/singletons.py
+usr/share/cinnamon-screensaver/stage.py
+usr/share/cinnamon-screensaver/status.py
+usr/share/cinnamon-screensaver/unlock.py
+usr/share/cinnamon-screensaver/util/
+usr/share/cinnamon-screensaver/util/__init__.py
+usr/share/cinnamon-screensaver/util/eventHandler.py
+usr/share/cinnamon-screensaver/util/fader.py
+usr/share/cinnamon-screensaver/util/focusNavigator.py
+usr/share/cinnamon-screensaver/util/grabHelper.py
+usr/share/cinnamon-screensaver/util/keybindings.py
+usr/share/cinnamon-screensaver/util/settings.py
+usr/share/cinnamon-screensaver/util/trackers.py
+usr/share/cinnamon-screensaver/util/utils.py
+usr/share/cinnamon-screensaver/volumeControl.py
+usr/share/cinnamon-screensaver/widgets/
+usr/share/cinnamon-screensaver/widgets/__init__.py
+usr/share/cinnamon-screensaver/widgets/framedImage.py
+usr/share/cinnamon-screensaver/widgets/marqueeLabel.py
+usr/share/cinnamon-screensaver/widgets/notificationWidget.py
+usr/share/cinnamon-screensaver/widgets/powerWidget.py
+usr/share/cinnamon-screensaver/widgets/transparentButton.py
+usr/share/cinnamon-screensaver/widgets/volumeSlider.py
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.cinnamon.ScreenSaver.service
+usr/share/gir-1.0/
+usr/share/gir-1.0/CScreensaver-1.0.gir
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/actions/
+usr/share/icons/hicolor/scalable/actions/screensaver-switch-users-symbolic.svg
+usr/share/icons/hicolor/scalable/actions/screensaver-unlock-symbolic.svg
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/csr-backup-locker-icon.svg
+usr/share/icons/hicolor/scalable/status/
+usr/share/icons/hicolor/scalable/status/screensaver-blank.svg
+usr/share/icons/hicolor/scalable/status/screensaver-notification-symbolic.svg

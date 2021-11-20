@@ -1,0 +1,71 @@
+PACKAGE NAME:     libxklavier-5.4-x86_64-4
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     460K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_mate/libxklavier-5.4-x86_64-4.txz
+PACKAGE DESCRIPTION:
+libxklavier: libxklavier (XKB Library)
+libxklavier:
+libxklavier: libxklavier is a utility library to make XKB stuff easier.
+libxklavier:
+libxklavier: Homepage: http://www.freedesktop.org/wiki/Software/LibXklavier
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+libxklavier:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libxklavier-5.4/
+usr/doc/libxklavier-5.4/AUTHORS
+usr/doc/libxklavier-5.4/COPYING.LIB
+usr/doc/libxklavier-5.4/CREDITS
+usr/doc/libxklavier-5.4/ChangeLog
+usr/doc/libxklavier-5.4/INSTALL
+usr/doc/libxklavier-5.4/NEWS
+usr/doc/libxklavier-5.4/README
+usr/include/
+usr/include/libxklavier/
+usr/include/libxklavier/xkl-enum-types.h
+usr/include/libxklavier/xkl_config_item.h
+usr/include/libxklavier/xkl_config_rec.h
+usr/include/libxklavier/xkl_config_registry.h
+usr/include/libxklavier/xkl_engine.h
+usr/include/libxklavier/xkl_engine_marshal.h
+usr/include/libxklavier/xklavier.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Xkl-1.0.typelib
+usr/lib64/libxklavier.so.16.4.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libxklavier.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Xkl-1.0.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libxklavier/
+usr/share/gtk-doc/html/libxklavier/XklConfigItem.html
+usr/share/gtk-doc/html/libxklavier/XklConfigRec.html
+usr/share/gtk-doc/html/libxklavier/XklConfigRegistry.html
+usr/share/gtk-doc/html/libxklavier/ch01.html
+usr/share/gtk-doc/html/libxklavier/ch02.html
+usr/share/gtk-doc/html/libxklavier/home.png
+usr/share/gtk-doc/html/libxklavier/index.html
+usr/share/gtk-doc/html/libxklavier/index.sgml
+usr/share/gtk-doc/html/libxklavier/left.png
+usr/share/gtk-doc/html/libxklavier/libxklavier-xkl-engine.html
+usr/share/gtk-doc/html/libxklavier/libxklavier-xklavier.html
+usr/share/gtk-doc/html/libxklavier/libxklavier.devhelp2
+usr/share/gtk-doc/html/libxklavier/right.png
+usr/share/gtk-doc/html/libxklavier/style.css
+usr/share/gtk-doc/html/libxklavier/up.png
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/libxklavier.deps
+usr/share/vala/vapi/libxklavier.vapi

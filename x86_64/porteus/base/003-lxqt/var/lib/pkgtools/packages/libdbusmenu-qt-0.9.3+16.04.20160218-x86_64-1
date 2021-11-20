@@ -1,0 +1,44 @@
+PACKAGE NAME:     libdbusmenu-qt-0.9.3+16.04.20160218-x86_64-1
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: libdbusmenu-qt-0.9.3+16.04.20160218-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libdbusmenu-qt: libdbusmenu-qt (Qt implementation of the DBusMenu spec)
+libdbusmenu-qt:
+libdbusmenu-qt: This library provides a Qt implementation of the DBusMenu protocol.
+libdbusmenu-qt: The DBusMenu protocol makes it possible for applications to export
+libdbusmenu-qt: and import their menus over DBus.
+libdbusmenu-qt:
+libdbusmenu-qt: Homepage: https://launchpad.net/libdbusmenu-qt
+libdbusmenu-qt:
+libdbusmenu-qt:
+libdbusmenu-qt:
+libdbusmenu-qt:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libdbusmenu-qt-0.9.3+16.04.20160218/
+usr/doc/libdbusmenu-qt-0.9.3+16.04.20160218/COPYING
+usr/doc/libdbusmenu-qt-0.9.3+16.04.20160218/NEWS
+usr/doc/libdbusmenu-qt-0.9.3+16.04.20160218/README
+usr/include/
+usr/include/dbusmenu-qt5/
+usr/include/dbusmenu-qt5/dbusmenu_export.h
+usr/include/dbusmenu-qt5/dbusmenu_version.h
+usr/include/dbusmenu-qt5/dbusmenuexporter.h
+usr/include/dbusmenu-qt5/dbusmenuimporter.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/dbusmenu-qt5/
+usr/lib64/cmake/dbusmenu-qt5/dbusmenu-qt5-config-version.cmake
+usr/lib64/cmake/dbusmenu-qt5/dbusmenu-qt5-config.cmake
+usr/lib64/cmake/dbusmenu-qt5/dbusmenu-qt5-targets-noconfig.cmake
+usr/lib64/cmake/dbusmenu-qt5/dbusmenu-qt5-targets.cmake
+usr/lib64/libdbusmenu-qt5.so.2.6.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/dbusmenu-qt5.pc
+usr/share/

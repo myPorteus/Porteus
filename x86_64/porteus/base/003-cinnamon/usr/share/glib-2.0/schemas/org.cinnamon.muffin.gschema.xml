@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="sync_method">
+    <value value="0" nick="none"/>
+    <value value="1" nick="fallback"/>
+    <value value="2" nick="swap_throttling"/>
+    <value value="3" nick="presentation_time"/>
+  </enum>
+
+  <enum id="placement_type">
+    <value value="0" nick="automatic"/>
+    <value value="1" nick="pointer"/>
+    <value value="2" nick="manual"/>
+    <value value="3" nick="center"/>
+  </enum>
+
+  <enum id="background_transition">
+    <value value="0" nick="none"/>
+    <value value="1" nick="fade-in"/>
+    <value value="2" nick="blend"/>
+  </enum>
+
+  <schema path="/org/cinnamon/muffin/" id="org.cinnamon.muffin" gettext-domain="@GETTEXT_DOMAIN">
+
+    <key type="b" name="attach-modal-dialogs">
+      <default>false</default>
+      <summary>Attach modal dialogs</summary>
+      <description>When true, instead of having independent titlebars, modal dialogs appear attached to the titlebar of the parent window and are moved together with the parent window.</description>
+    </key>
+
+    <key type="b" name="ignore-hide-titlebar-when-maximized">
+      <default>false</default>
+      <summary>Ignore client requests to hide the window's titlebar when maximized.</summary>
+      <description>If true, causes the _GTK_HIDE_TITLEBAR_WHEN_MAXIMIZED hint to be ignored by muffin. Most apps that utilize this should (one would hope) use the hint responsibly, but this will allow it to be overridden just in case.</description>
+    </key>
+
+    <key type="b" name="edge-tiling">
+      <default>true</default>
+      <summary>Enable edge tiling and snapping</summary>
+      <description>If enabled, allows you to drag windows to the screen edges to tile or snap them in place.</description>
+    </key>
+
+    <key type="b" name="edge-resistance-window">
+      <default>true</default>
+      <summary>Enable window edge resistance</summary>
+      <description>Determine whether there is tension along other window and screen/monitor edges when dragging a window.</description>
+    </key>
+
+    <key type="b" name="dynamic-workspaces">
+      <default>false</default>
+      <summary>Workspaces are managed dynamically</summary>
+      <description>Determines whether workspaces are managed dynamically or whether there's a static number of workspaces (determined by the num-workspaces key in org.cinnamon.desktop.wm.preferences).</description>
+    </key>
+
+    <key type="b" name="unredirect-fullscreen-windows">
+      <default>false</default>
+      <summary>Fullscreen windows are unredirected (i.e. they bypass compositing)</summary>
+      <description>Determines whether fullscreen windows bypass compositing. False is better for vsync/screen-tearing, True gives games and apps i</description>
+    </key>
+
+    <key type="b" name="sync-to-vblank">
+      <default>true</default>
+      <summary>Enable vertical blanking interval</summary>
+      <description>Determines whether or not VBLANK is enabled.</description>
+    </key>
+
+    <key name="sync-method" enum="sync_method">
+      <default>'presentation_time'</default>
+      <summary>Sync method</summary>
+      <description>The method used by Muffin to provide VSync.</description>
+    </key>
+
+    <key type="b" name="threaded-swap">
+      <default>true</default>
+      <summary>Enable threaded swap waiting</summary>
+      <description>Determines whether or not Cogl uses a threaded implementation for waiting for swap events.</description>
+    </key>
+
+    <key type="b" name="send-frame-timings">
+      <default>true</default>
+      <summary>Enable high-precision frame synchronization</summary>
+      <description>Sends a _NET_WM_FRAME_TIMINGS message to the X server after each frame rendered to help keep frames synchronized.</description>
+    </key>
+
+    <key type="b" name="workspace-cycle">
+      <default>false</default>
+      <summary>Allow cycling through workspaces</summary>
+      <description>Allows cycling through workspaces, going to the workspace at the other end if you are at the left-most or right-most one.</description>
+    </key>
+
+    <key type="b" name="workspaces-only-on-primary">
+      <default>false</default>
+      <summary>Workspaces only on primary</summary>
+      <description>Determines whether workspace switching should happen for windows on all monitors or only for windows on the primary monitor.</description>
+    </key>
+
+    <key type="i" name="draggable-border-width">
+      <default>10</default>
+      <range min="0" max="64"/>
+      <summary>Draggable border width</summary>
+      <description>The amount of total draggable borders. If the theme's visible borders are not enough, invisible borders will be added to meet this value.</description>
+    </key>
+
+    <key type="i" name="tile-hud-threshold">
+      <default>25</default>
+      <range min="1" max="400"/>
+      <summary>Window tile HUD threshold</summary>
+      <description>The distance from the edge of the screen you must be within before the tile/snap HUD appears</description>
+    </key>
+
+    <key type="i" name="resize-threshold">
+      <default>24</default>
+      <range min="1" max="400"/>
+      <summary>Window resize tension threshold</summary>
+      <description>The distance you have to move a resize grip before it's actually registered as a resize</description>
+    </key>
+
+    <key type="s" name="snap-modifier">
+      <default>'Control'</default>
+      <summary>Modifier for toggling between tile and snap mode</summary>
+      <description>When dragging a window, holding this key will engage snap mode.</description>
+    </key>
+
+    <key type="b" name="legacy-snap">
+      <default>false</default>
+      <summary>Enable legacy drag snapping</summary>
+      <description>Enables old-style snapping by holding the shift key while dragging a window</description>
+    </key>
+
+    <key type="s" name="button-layout">
+      <default>":minimize,maximize,close"</default>
+      <summary>Arrangement of buttons on the titlebar</summary>
+      <description>
+        Since Cinnamon 3.8, this key is obsolete and doesn't do anything anymore. The only reason it's still here is
+        because its absence makes Chromium crash at launch in Debian Stretch.
+      </description>
+    </key>
+
+    <key type="b" name="invert-workspace-flip-direction">
+      <default>false</default>
+      <summary>Inverts the direction the left and right arrows take you when you switch workspaces during a window drag</summary>
+      <description>Changes left-right arrow keys to window-centric directions rather than workspace-centric</description>
+    </key>
+
+    <key type="b" name="tile-maximize">
+      <default>false</default>
+      <summary>Sets maximize as the tile action for the top edge of the screen</summary>
+      <description>Makes tiling to the top maximize the window</description>
+    </key>
+
+    <key name="placement-mode" enum="placement_type">
+      <default>'center'</default>
+      <summary>Window placement mode</summary>
+      <description>The window placement mode indicates how new windows are positioned. "automatic" means the system chooses a location automatically based on the space available on the desktop, or by a simple cascade if there is no space; "pointer" means that new windows are placed according to the mouse pointer position; "manual" means that the user must manually place the new window with the mouse or keyboard; "center" means that the system places new windows in the center of the desktop.</description>
+    </key>
+
+    <key name="background-transition" enum="background_transition">
+      <default>'blend'</default>
+      <summary>Background transition</summary>
+      <description>The type of animation performed when changing background. "none" means no animation at all. "fade-in" means the old background switches to black and the new background appears with a fade-in effect. "blend" means the old background disappears as the new background appears with a fade-in effect.</description>
+    </key>
+
+    <key type="b" name="desktop-effects">
+      <default>true</default>
+      <summary>Enable desktop effects</summary>
+      <description>Whether to enable desktop effects and window animations.</description>
+    </key>
+
+    <child schema="org.cinnamon.muffin.keybindings" name="keybindings"/>
+  </schema>
+  <schema path="/org/cinnamon/muffin/keybindings/" id="org.cinnamon.muffin.keybindings">
+
+    <key type="as" name="toggle-recording">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-tile-left">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-tile-right">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-tile-up">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-tile-down">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-snap-left">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-snap-right">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-snap-up">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="push-snap-down">
+      <default>[]</default>
+    </key>
+
+    <key type="as" name="tab-popup-select">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+
+    <key type="as" name="tab-popup-cancel">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+
+    <key type="as" name="switch-to-workspace-1">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-2">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-3">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-4">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-5">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-6">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-7">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-8">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-9">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-10">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-11">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-12">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-left">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-right">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-up">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-to-workspace-down">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-group">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-group-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-windows">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-windows-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-panels">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="switch-panels-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-group">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-group-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-windows">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-windows-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-panels">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="cycle-panels-backward">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="show-desktop">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="panel-main-menu">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="panel-run-dialog">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="set-spew-mark">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="activate-window-menu">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="toggle-fullscreen">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="toggle-maximized">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="toggle-above">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="maximize">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="unmaximize">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="toggle-shaded">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="minimize">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="close">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="begin-move">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="begin-resize">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="toggle-on-all-workspaces">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-1">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-2">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-3">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-4">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-5">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-6">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-7">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-8">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-9">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-10">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-11">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-12">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-left">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-right">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-up">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-workspace-down">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="raise-or-lower">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="raise">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="lower">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="maximize-vertically">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="maximize-horizontally">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-corner-nw">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-corner-ne">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-corner-sw">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-corner-se">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-side-n">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-side-s">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-side-e">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-side-w">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="move-to-center">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="increase-opacity">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+    <key type="as" name="decrease-opacity">
+      <default>[]</default>
+      <summary>deprecated - moved to org.cinnamon.desktop.keybindings.wm</summary>
+    </key>
+  </schema>
+</schemalist>

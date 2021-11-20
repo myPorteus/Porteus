@@ -1,0 +1,12 @@
+[Unit]
+Description=KDE Session Management Server
+Wants=plasma-kcminit.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/ksmserver
+BusName=org.kde.ksmserver
+Slice=session.slice
+
+[Install]
+WantedBy=plasma-core.target

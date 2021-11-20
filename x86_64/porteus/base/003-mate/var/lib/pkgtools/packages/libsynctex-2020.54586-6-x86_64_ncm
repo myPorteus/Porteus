@@ -1,0 +1,19 @@
+PACKAGE NAME:     libsynctex-2020.54586-6-x86_64_ncm
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_mate/libsynctex-2020.54586-6-x86_64_ncm.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/include/
+usr/include/synctex/
+usr/include/synctex/synctex_parser.h
+usr/include/synctex/synctex_parser_utils.h
+usr/include/synctex/synctex_version.h
+usr/lib64/
+usr/lib64/libsynctex.so
+usr/lib64/libsynctex.so.2
+usr/lib64/libsynctex.so.2.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/synctex.pc

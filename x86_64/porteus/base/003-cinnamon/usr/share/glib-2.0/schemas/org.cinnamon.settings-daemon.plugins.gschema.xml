@@ -1,0 +1,10 @@
+<schemalist>
+  <schema gettext-domain="cinnamon-settings-daemon" id="org.cinnamon.settings-daemon.plugins" path="/org/cinnamon/settings-daemon/plugins/">
+    <child name="color" schema="org.cinnamon.settings-daemon.plugins.color"/>
+    <child name="housekeeping" schema="org.cinnamon.settings-daemon.plugins.housekeeping"/>
+    <child name="media-keys" schema="org.cinnamon.settings-daemon.plugins.media-keys"/>
+    <child name="power" schema="org.cinnamon.settings-daemon.plugins.power"/>
+    <child name="xrandr" schema="org.cinnamon.settings-daemon.plugins.xrandr"/>
+    <child name="xsettings" schema="org.cinnamon.settings-daemon.plugins.xsettings"/>
+  </schema>
+</schemalist>

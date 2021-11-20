@@ -1,0 +1,6 @@
+( cd usr/doc/xfconf-4.16.0 ; rm -rf html )
+( cd usr/doc/xfconf-4.16.0 ; ln -sf /usr/share/gtk-doc/html/xfconf/ html )
+( cd usr/lib64 ; rm -rf libxfconf-0.so )
+( cd usr/lib64 ; ln -sf libxfconf-0.so.3.0.0 libxfconf-0.so )
+( cd usr/lib64 ; rm -rf libxfconf-0.so.3 )
+( cd usr/lib64 ; ln -sf libxfconf-0.so.3.0.0 libxfconf-0.so.3 )

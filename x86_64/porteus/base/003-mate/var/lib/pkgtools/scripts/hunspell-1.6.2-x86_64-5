@@ -1,0 +1,6 @@
+( cd usr/doc/hunspell-1.6.2 ; rm -rf README )
+( cd usr/doc/hunspell-1.6.2 ; ln -sf README.md README )
+( cd usr/lib64 ; rm -rf libhunspell-1.6.so )
+( cd usr/lib64 ; ln -sf libhunspell-1.6.so.0.0.1 libhunspell-1.6.so )
+( cd usr/lib64 ; rm -rf libhunspell-1.6.so.0 )
+( cd usr/lib64 ; ln -sf libhunspell-1.6.so.0.0.1 libhunspell-1.6.so.0 )

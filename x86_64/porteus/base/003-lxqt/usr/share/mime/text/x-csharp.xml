@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-csharp">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment xml:lang="en">C# source</comment>
+  <comment xml:lang="zh_TW">C# 程式碼</comment>
+  <glob pattern="*.cs"/>
+</mime-type>

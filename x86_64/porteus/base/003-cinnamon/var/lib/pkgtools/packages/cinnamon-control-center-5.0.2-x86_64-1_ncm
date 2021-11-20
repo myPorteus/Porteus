@@ -1,0 +1,99 @@
+PACKAGE NAME:     cinnamon-control-center-5.0.2-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     1.3M
+UNCOMPRESSED PACKAGE SIZE:     7.7M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/mcbs/build/../x86_64/pkg/003_cinnamon/cinnamon-control-center-5.0.2-x86_64-1_ncm.txz
+PACKAGE DESCRIPTION:
+cinnamon-control-center: cinnamon-control-center (Control Center for the Cinnamon desktop)
+cinnamon-control-center:
+cinnamon-control-center: cinnamon-control-center is The Control Center for Cinnamon
+cinnamon-control-center:
+cinnamon-control-center:
+cinnamon-control-center:
+cinnamon-control-center: Project URL: https://github.com/linuxmint/cinnamon-control-center
+cinnamon-control-center:
+cinnamon-control-center:
+cinnamon-control-center:
+cinnamon-control-center:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cinnamon-control-center
+usr/doc/
+usr/doc/cinnamon-control-center-5.0.2/
+usr/doc/cinnamon-control-center-5.0.2/AUTHORS
+usr/doc/cinnamon-control-center-5.0.2/COPYING
+usr/doc/cinnamon-control-center-5.0.2/ChangeLog
+usr/doc/cinnamon-control-center-5.0.2/README
+usr/doc/cinnamon-control-center-5.0.2/cinnamon-control-center.SlackBuild
+usr/include/
+usr/include/cinnamon-control-center-1/
+usr/include/cinnamon-control-center-1/libcinnamon-control-center/
+usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-editable-entry.h
+usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-panel.h
+usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-shell.h
+usr/lib64/
+usr/lib64/cinnamon-control-center-1/
+usr/lib64/cinnamon-control-center-1/panels/
+usr/lib64/cinnamon-control-center-1/panels/libcolor.so
+usr/lib64/cinnamon-control-center-1/panels/libdisplay.so
+usr/lib64/cinnamon-control-center-1/panels/libnetwork.so
+usr/lib64/cinnamon-control-center-1/panels/libregion.so
+usr/lib64/cinnamon-control-center-1/panels/libwacom-properties.so
+usr/lib64/libcinnamon-control-center.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcinnamon-control-center.pc
+usr/share/
+usr/share/applications/
+usr/share/applications/cinnamon-color-panel.desktop
+usr/share/applications/cinnamon-display-panel.desktop
+usr/share/applications/cinnamon-network-panel.desktop
+usr/share/applications/cinnamon-region-panel.desktop
+usr/share/applications/cinnamon-wacom-panel.desktop
+usr/share/cinnamon-control-center/
+usr/share/cinnamon-control-center/ui/
+usr/share/cinnamon-control-center/ui/cinnamon-region-panel-layout-chooser.ui
+usr/share/cinnamon-control-center/ui/cinnamon-region-panel-options-dialog.ui
+usr/share/cinnamon-control-center/ui/cinnamon-region-panel.ui
+usr/share/cinnamon-control-center/ui/color.ui
+usr/share/cinnamon-control-center/ui/display-capplet.ui
+usr/share/cinnamon-control-center/ui/language-chooser.ui
+usr/share/cinnamon-control-center/ui/network.ui
+usr/share/cinnamon-control-center/ui/shell.ui
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.cinnamon.control-center.display.gschema.xml
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-desktop-display.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-desktop-display.png
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/24x24/apps/
+usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-desktop-display.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/256x256/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-desktop-display.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/64x64/
+usr/share/icons/hicolor/64x64/apps/
+usr/share/icons/hicolor/64x64/apps/cinnamon-preferences-color.png
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-color.svg
+usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-desktop-display.svg

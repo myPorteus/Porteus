@@ -1,0 +1,20 @@
+PACKAGE NAME:     libfm-extra-1.3.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: libfm-extra-1.3.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/libfm-1.0/
+usr/include/libfm-1.0/fm-extra.h
+usr/include/libfm-1.0/fm-version.h
+usr/include/libfm-1.0/fm-xml-file.h
+usr/lib64/
+usr/lib64/libfm-extra.la
+usr/lib64/libfm-extra.so.4.1.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libfm-extra.pc

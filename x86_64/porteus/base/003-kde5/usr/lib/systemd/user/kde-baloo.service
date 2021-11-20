@@ -1,0 +1,12 @@
+[Unit]
+Description=Baloo File Indexer Daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/lib64/baloo_file
+BusName=org.kde.baloo
+Slice=background.slice
+ExecCondition=/usr/bin/kde-systemd-start-condition --condition "baloofilerc:Basic Settings:Indexing-Enabled:true"
+
+[Install]
+WantedBy=graphical-session.target

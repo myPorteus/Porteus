@@ -1,0 +1,46 @@
+PACKAGE NAME:     kqtquickcharts-21.04.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/kqtquickcharts-21.04.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+kqtquickcharts: kqtquickcharts (chart rendering plugin)
+kqtquickcharts:
+kqtquickcharts: kqtquickcharts is a QtQuick plugin to render beautiful and interactive
+kqtquickcharts: charts.
+kqtquickcharts:
+kqtquickcharts:
+kqtquickcharts:
+kqtquickcharts:
+kqtquickcharts:
+kqtquickcharts:
+kqtquickcharts:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kqtquickcharts-21.04.2/
+usr/doc/kqtquickcharts-21.04.2/AUTHORS
+usr/doc/kqtquickcharts-21.04.2/COPYING
+usr/doc/kqtquickcharts-21.04.2/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/kqtquickcharts_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KQtQuickCharts/
+usr/lib64/cmake/KQtQuickCharts/KQtQuickChartsVersion.cmake
+usr/lib64/qt5/
+usr/lib64/qt5/qml/
+usr/lib64/qt5/qml/org/
+usr/lib64/qt5/qml/org/kde/
+usr/lib64/qt5/qml/org/kde/charts/
+usr/lib64/qt5/qml/org/kde/charts/BarChart.qml
+usr/lib64/qt5/qml/org/kde/charts/Label.qml
+usr/lib64/qt5/qml/org/kde/charts/LegendItem.qml
+usr/lib64/qt5/qml/org/kde/charts/LineChart.qml
+usr/lib64/qt5/qml/org/kde/charts/LineLabel.qml
+usr/lib64/qt5/qml/org/kde/charts/XYChart.qml
+usr/lib64/qt5/qml/org/kde/charts/libkqtquickcharts.so
+usr/lib64/qt5/qml/org/kde/charts/qmldir

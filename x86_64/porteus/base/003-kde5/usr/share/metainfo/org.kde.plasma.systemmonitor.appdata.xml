@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.systemmonitor</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>System monitor Sensor</name>
+    <name xml:lang="az">Sistem İzləməsi Sensoru</name>
+    <name xml:lang="ca">Sensor del monitor del sistema</name>
+    <name xml:lang="cs">Senzor monitoru systému</name>
+    <name xml:lang="da">Systemovervågning-sensor</name>
+    <name xml:lang="en_GB">System monitor Sensor</name>
+    <name xml:lang="es">Sensor del monitor del sistema</name>
+    <name xml:lang="et">Süsteemi jälgija sensor</name>
+    <name xml:lang="eu">Sistema gainbegiratzeko sentsorea</name>
+    <name xml:lang="fi">Järjestelmävalvonnan anturi</name>
+    <name xml:lang="fr">Senseur de surveillance du système</name>
+    <name xml:lang="hu">Rendszermonitor-szenzor</name>
+    <name xml:lang="ia">Sensor de Monitor (supervisor)  de systema</name>
+    <name xml:lang="id">Sensor Pemantau Sistem</name>
+    <name xml:lang="it">Sensore Monitor di sistema</name>
+    <name xml:lang="ko">시스템 모니터 센서</name>
+    <name xml:lang="lt">Sistemos prižiūryklės jutiklis</name>
+    <name xml:lang="nl">Systeemmonitorsensor</name>
+    <name xml:lang="nn">Systemovervakingssensor</name>
+    <name xml:lang="pa">ਸਿਸਟਮ ਮਾਨੀਟਰ ਸੈਂਸਰ</name>
+    <name xml:lang="pl">Miernik monitora systemowego</name>
+    <name xml:lang="pt">Sensor de monitorização do sistema</name>
+    <name xml:lang="pt_BR">Sensor do monitor do sistema</name>
+    <name xml:lang="ro">Senzor de monitorizare a sistemului</name>
+    <name xml:lang="ru">Датчик системного монитора</name>
+    <name xml:lang="sk">Senzor monitorovania systému</name>
+    <name xml:lang="sl">Sistemski nadzornik senzorja</name>
+    <name xml:lang="sv">Systemövervakningssensor</name>
+    <name xml:lang="ta">கணினி கண்காணிப்பு உணரி</name>
+    <name xml:lang="tg">Назорати низом - Эҳсосгар</name>
+    <name xml:lang="tr">Sistem izleme Sensörü</name>
+    <name xml:lang="uk">Датчик нагляду за системою</name>
+    <name xml:lang="vi">Cảm biến giám sát hệ thống</name>
+    <name xml:lang="x-test">xxSystem monitor Sensorxx</name>
+    <name xml:lang="zh_CN">系统监视传感器</name>
+    <name xml:lang="zh_TW">系統監視器感測器</name>
+    <summary>Displays a configurable chart of a system monitor sensor</summary>
+    <summary xml:lang="az">Sistem izləməsi sensorunun ayarlana bilən qrafiki</summary>
+    <summary xml:lang="ca">Mostra un diagrama configurable d'un sensor del monitor del sistema</summary>
+    <summary xml:lang="da">Viser et konfigurerbart diagram over en systemovervågning-sensor</summary>
+    <summary xml:lang="en_GB">Displays a configurable chart of a system monitor sensor</summary>
+    <summary xml:lang="es">Muestra un gráfico configurable de un sensor del monitor del sistema</summary>
+    <summary xml:lang="et">Süsteemi jälgija sensori seadistatava diagrammi näitamine</summary>
+    <summary xml:lang="eu">Sistema gainbegiratzeko sentsore baten diagrama konfiguragarri bat azaltzen du</summary>
+    <summary xml:lang="fi">Näyttää mukautettavissa olevan kaavion järjestelmänvalvonnan anturista</summary>
+    <summary xml:lang="fr">Affiche un graphique configurable du senseur de surveillance du système</summary>
+    <summary xml:lang="hu">Testre szabható szenzorokat megjelenítő elem</summary>
+    <summary xml:lang="ia">Monstra un graphico configurabile de un sensor de supervision de systema</summary>
+    <summary xml:lang="it">Visualizza un grafico configurabile di un sensore di monitoraggio del sistema</summary>
+    <summary xml:lang="ko">설정 가능한 시스템 모니터 센서 차트 표시</summary>
+    <summary xml:lang="lt">Rodo konfigūruojamą sistemos prižiūryklės jutiklio diagramą</summary>
+    <summary xml:lang="nl">Toont een te configureren grafiek van een systeemmonitorsensor</summary>
+    <summary xml:lang="nn">Vis eit tilpassbart diagram for ein systemovervakingssensor</summary>
+    <summary xml:lang="pa">ਸਿਸਟਮ ਮਾਨੀਟਰ ਸੈਂਸਰ ਦੀ ਸੰਰਚਨਾ-ਯੋਗ ਚਾਰਟ ਦਿਖਾਉਂਦਾ ਹੈ</summary>
+    <summary xml:lang="pl">Wyświetla wykres miernika monitora systemowego</summary>
+    <summary xml:lang="pt">Mostra um gráfico configurável de um sensor de monitorização do sistema</summary>
+    <summary xml:lang="pt_BR">Mostra um gráfico configurável do sensor do monitor do sistema</summary>
+    <summary xml:lang="ro">Afișează un grafic configurabil al unui senzor de monitorizare a sistemului</summary>
+    <summary xml:lang="ru">Настраиваемый график датчика системного монитора</summary>
+    <summary xml:lang="sk">Zobrazuje konfigurovateľný graf senzoru monitorovania systému</summary>
+    <summary xml:lang="sl">Prikaže nastavljiv grafikon sistemskega monitorja senzorja</summary>
+    <summary xml:lang="sv">Visar ett anpassningsbart diagram av en systemövervakningssensor</summary>
+    <summary xml:lang="ta">ஏதாவதொரு கணினி கண்காணிப்பு உணரியைக் காட்டும்</summary>
+    <summary xml:lang="tr">Sistem monitörü sensörünün yapılandırılabilir bir grafiğini görüntüler</summary>
+    <summary xml:lang="uk">Показує придатну до налаштовування діаграму на основі даних датчика нагляду за системою</summary>
+    <summary xml:lang="vi">Hiển thị một biểu đồ cấu hình được của một cảm biến giám sát hệ thống</summary>
+    <summary xml:lang="x-test">xxDisplays a configurable chart of a system monitor sensorxx</summary>
+    <summary xml:lang="zh_CN">显示系统监视器的可配置图表</summary>
+    <summary xml:lang="zh_TW">顯示可設定的系統監視器感測器圖表</summary>
+    <url type="homepage">https://www.kde.org/plasma-desktop</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.systemmonitor</url>
+    <developer_name>Marco Martin &lt;mart@kde.org&gt;</developer_name>
+    <icon type="stock">ksysguardd</icon>
+    <project_license>GPL-2.0</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

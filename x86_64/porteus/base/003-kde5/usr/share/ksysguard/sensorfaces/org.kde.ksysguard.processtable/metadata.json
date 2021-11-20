@@ -1,0 +1,50 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "ahiemstra@heimr.nl",
+                "Name": "Arjen Hiemstra"
+            }
+        ],
+        "Icon": "view-process-system",
+        "Id": "org.kde.ksysguard.processtable",
+        "License": "LGPLv2+",
+        "Name": "Process Table",
+        "Name[az]": "Proseslər Cədvəli",
+        "Name[ca@valencia]": "Taula de processos",
+        "Name[ca]": "Taula de processos",
+        "Name[cs]": "Seznam procesů",
+        "Name[da]": "Procestabel",
+        "Name[de]": "Prozesstabelle",
+        "Name[en_GB]": "Process Table",
+        "Name[es]": "Tabla de procesos",
+        "Name[eu]": "Prozesuen taula",
+        "Name[fi]": "Prosessitaulukko",
+        "Name[fr]": "Table des processus",
+        "Name[hu]": "Folyamattáblázat",
+        "Name[ia]": "Tabella de processo",
+        "Name[it]": "Tabella dei processi",
+        "Name[ja]": "プロセステーブル",
+        "Name[ko]": "프로세스 목록",
+        "Name[lt]": "Procesų lentelė",
+        "Name[nl]": "Processentabel",
+        "Name[nn]": "Prosesstabell",
+        "Name[pa]": "ਪਰੋਸੈਸ ਸਾਰਣੀ",
+        "Name[pl]": "Tablica procesów",
+        "Name[pt]": "Tabela de Processos",
+        "Name[pt_BR]": "Tabela de processos",
+        "Name[ro]": "Tabel de procese",
+        "Name[ru]": "Таблица процессов",
+        "Name[sk]": "Tabuľka procesov",
+        "Name[sl]": "Tabela procesov",
+        "Name[sv]": "Processtabell",
+        "Name[uk]": "Таблиця процесів",
+        "Name[x-test]": "xxProcess Tablexx",
+        "Name[zh_CN]": "进程列表",
+        "ServiceTypes": [
+            "KSysguard/SensorFace"
+        ],
+        "Version": "1.0",
+        "Website": "https://kde.org"
+    }
+}

@@ -1,0 +1,33 @@
+[Desktop Entry]
+Name[ca]=Muntador d'imatges de disc de MATE
+Name[cs]=Připojování obrazů disků pro MATE
+Name[da]=MATE - diskaftryksmontering
+Name[es]=Montador de imágenes de disco de MATE
+Name[gl]=Montador de imaxes de disco do MATE
+Name[it]=Montaggio dischi di MATE
+Name[ms]=Pelekap Imej Cakera MATE
+Name[nb]=MATE Montering av diskavtrykk
+Name[nl]=MATE Schijfkopie-aankoppelaar
+Name[zh_TW]=MATE 磁碟映像檔掛載程式
+Name=MATE Disk Image Mounter
+Comment[ca]=Adjunteu i munteu un o més fitxers d'imatge de disc
+Comment[cs]=Připojit jeden nebo více souborů s obrazem disku
+Comment[da]=Tilslut og monter en eller flere diske aftryksfiler
+Comment[es]=Conecte y monte uno o más archivos de imagen de disco
+Comment[gl]=Axunta e monta un ou varios ficheiros de imaxe de disco
+Comment[it]=Collega e monta una o più immagini disco
+Comment[ms]=Masuk dan lekapkan satu atau lebih fail imej cakera
+Comment[nb]=Monter ett eller flere diskavtrykksfiler
+Comment[nl]=Koppel één of meer schijfkopiebestanden aan
+Comment[zh_TW]=附加並掛載一個或更多磁碟映像檔
+Comment=Attach and mount one or more disk image files
+TryExec=mate-disk-image-mounter
+Exec=mate-disk-image-mounter %U
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=drive-removable-media
+MimeType=application/x-cd-image;application/x-raw-disk-image;
+Terminal=false
+StartupNotify=false
+Type=Application
+Categories=GTK;System;
+OnlyShowIn=MATE;

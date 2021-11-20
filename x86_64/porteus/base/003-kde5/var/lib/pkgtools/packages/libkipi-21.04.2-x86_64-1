@@ -1,0 +1,85 @@
+PACKAGE NAME:     libkipi-21.04.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     108K
+UNCOMPRESSED PACKAGE SIZE:     400K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/kbs/build/../x86_64/pkg/003_kde/libkipi-21.04.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libkipi: libkipi (KDE Image Plugin Interface)
+libkipi:
+libkipi: This package provides a generic KDE Image Plug-in Interface used by
+libkipi: some KDE image applications. Plug-ins for this interface are in the
+libkipi: kipi-plugins package.
+libkipi:
+libkipi: Homepage: https://github.com/KDE/libkipi
+libkipi:
+libkipi:
+libkipi:
+libkipi:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkipi-21.04.2/
+usr/doc/libkipi-21.04.2/AUTHORS
+usr/doc/libkipi-21.04.2/COPYING
+usr/doc/libkipi-21.04.2/COPYING-CMAKE-SCRIPTS
+usr/doc/libkipi-21.04.2/COPYING.LIB
+usr/doc/libkipi-21.04.2/README
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KIPI/
+usr/include/KF5/KIPI/KIPI/
+usr/include/KF5/KIPI/KIPI/ConfigWidget
+usr/include/KF5/KIPI/KIPI/ImageCollection
+usr/include/KF5/KIPI/KIPI/ImageCollectionSelector
+usr/include/KF5/KIPI/KIPI/ImageCollectionShared
+usr/include/KF5/KIPI/KIPI/ImageInfo
+usr/include/KF5/KIPI/KIPI/ImageInfoShared
+usr/include/KF5/KIPI/KIPI/Interface
+usr/include/KF5/KIPI/KIPI/Plugin
+usr/include/KF5/KIPI/KIPI/PluginLoader
+usr/include/KF5/KIPI/KIPI/UploadWidget
+usr/include/KF5/KIPI/kipi/
+usr/include/KF5/KIPI/kipi/configwidget.h
+usr/include/KF5/KIPI/kipi/imagecollection.h
+usr/include/KF5/KIPI/kipi/imagecollectionselector.h
+usr/include/KF5/KIPI/kipi/imagecollectionshared.h
+usr/include/KF5/KIPI/kipi/imageinfo.h
+usr/include/KF5/KIPI/kipi/imageinfoshared.h
+usr/include/KF5/KIPI/kipi/interface.h
+usr/include/KF5/KIPI/kipi/libkipi_config.h
+usr/include/KF5/KIPI/kipi/libkipi_export.h
+usr/include/KF5/KIPI/kipi/plugin.h
+usr/include/KF5/KIPI/kipi/pluginloader.h
+usr/include/KF5/KIPI/kipi/uploadwidget.h
+usr/include/KF5/libkipi_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Kipi/
+usr/lib64/cmake/KF5Kipi/KF5KipiConfig.cmake
+usr/lib64/cmake/KF5Kipi/KF5KipiConfigVersion.cmake
+usr/lib64/cmake/KF5Kipi/KF5KipiTargets-release.cmake
+usr/lib64/cmake/KF5Kipi/KF5KipiTargets.cmake
+usr/lib64/libKF5Kipi.so.5.2.0
+usr/share/
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/128x128/
+usr/share/icons/hicolor/128x128/apps/
+usr/share/icons/hicolor/128x128/apps/kipi.png
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/kipi.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/kipi.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/kipi.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/kipi.png
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/kipiplugin.desktop

@@ -1,0 +1,16 @@
+[Nemo Action]
+
+Name=Create xzm-zstd module
+Name[ru]=Создать xzm-zstd модуль
+
+Comment=Create xzm-zstd module from folder using Zstandard compression algorithm
+Comment[ru]=Создать из папки xzm--zstd модуль, используя алгоритм сжатия Zstandard
+
+Exec=/opt/porteus-scripts/context-menu/create-module -z "%F"
+
+Icon-Name=cdr
+
+Selection=s
+
+Mimetypes=inode/directory
+
