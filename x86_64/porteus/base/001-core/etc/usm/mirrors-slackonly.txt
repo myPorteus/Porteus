@@ -1,3 +1,0 @@
-# mirrors - List of Slackonly Linux mirrors
-
-http://packages.slackonly.com/pub/packages

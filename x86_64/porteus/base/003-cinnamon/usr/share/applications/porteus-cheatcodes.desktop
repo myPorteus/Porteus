@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Porteus Cheat Codes
-Exec=pview -f "/usr/doc/porteus/cheatcodes.txt"
-Icon=/usr/share/pixmaps/porteus/porteus-logo.svg
-Terminal=false
-Type=Application
-Categories=Application;System;

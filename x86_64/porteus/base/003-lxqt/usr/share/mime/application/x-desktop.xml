@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-desktop">
-  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
-  <comment xml:lang="zh_TW">應用程式捷徑</comment>
-  <glob pattern="*.directory"/>
-</mime-type>

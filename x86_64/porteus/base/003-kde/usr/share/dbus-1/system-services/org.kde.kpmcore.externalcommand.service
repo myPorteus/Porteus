@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kpmcore.externalcommand
-Exec=/usr/lib64/libexec/kauth/kpmcore_externalcommand
-User=root

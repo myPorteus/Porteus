@@ -1,2 +1,0 @@
-# pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $@
-pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY PATH=/usr/local/sbin:/usr/local/bin:/sbin:/usr/sbin:/bin:/usr/bin PORTDIR=$PORTDIR BOOTDEV=$BOOTDEV $@

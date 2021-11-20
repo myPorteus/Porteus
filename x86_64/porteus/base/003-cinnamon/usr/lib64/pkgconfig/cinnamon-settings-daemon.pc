@@ -1,8 +1,0 @@
-prefix=/usr
-includedir=${prefix}/include
-
-Name: cinnamon-settings-daemon
-Description: cinnamon-settings-daemon specific enumarations
-Requires: glib-2.0
-Version: 4.0.3
-Cflags: -I${includedir}/cinnamon-settings-daemon-3.0

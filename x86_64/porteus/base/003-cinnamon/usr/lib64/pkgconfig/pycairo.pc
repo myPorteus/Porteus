@@ -1,8 +1,0 @@
-prefix=/usr
-
-Name: Pycairo
-Description: Python 2 bindings for cairo
-Version: 1.18.1
-Requires: cairo
-Cflags: -I${prefix}/include/pycairo
-Libs:

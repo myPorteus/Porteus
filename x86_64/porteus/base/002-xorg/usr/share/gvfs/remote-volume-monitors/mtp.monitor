@@ -1,4 +1,0 @@
-[RemoteVolumeMonitor]
-Name=GProxyVolumeMonitorMTP
-DBusName=org.gtk.vfs.MTPVolumeMonitor
-IsNative=false

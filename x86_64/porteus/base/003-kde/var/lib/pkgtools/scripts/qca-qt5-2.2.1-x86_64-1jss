@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libqca-qt5.so )
-( cd usr/lib64 ; ln -sf libqca-qt5.so.2 libqca-qt5.so )
-( cd usr/lib64 ; rm -rf libqca-qt5.so.2 )
-( cd usr/lib64 ; ln -sf libqca-qt5.so.2.2.1 libqca-qt5.so.2 )

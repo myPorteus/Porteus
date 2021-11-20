@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libepub.so.0 )
-( cd usr/lib64 ; ln -sf libepub.so.0.2.1 libepub.so.0 )
-( cd usr/lib64 ; rm -rf libepub.so )
-( cd usr/lib64 ; ln -sf libepub.so.0 libepub.so )

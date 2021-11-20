@@ -1,6 +1,0 @@
-#!/bin/sh
-# Update openbox menu:
-
-echo "Updating  menu: update-desktop-database"
-#for x in `ps -C openbox -o user=`; do su --login $x -c "rm ~/.cache/menus/* >/dev/null 2>&1; /usr/libexec/menu-cache/menu-cached >/dev/null 2>&1"; done
-update-desktop-database

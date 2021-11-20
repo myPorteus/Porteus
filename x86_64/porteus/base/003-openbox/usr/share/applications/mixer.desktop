@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=uxterm -e alsamixer 
-Icon=applications-multimedia
-Name=Mixer
-Type=Application
-Categories=Multimedia

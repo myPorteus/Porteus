@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libXss.so.1 )
-( cd usr/lib64 ; ln -sf libXss.so.1.0.0 libXss.so.1 )
-( cd usr/lib64 ; rm -rf libXss.so )
-( cd usr/lib64 ; ln -sf libXss.so.1.0.0 libXss.so )

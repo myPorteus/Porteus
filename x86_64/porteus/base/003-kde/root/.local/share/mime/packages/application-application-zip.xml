@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/application/zip">
-        <icon name="application-zip"/>
-        <glob-deleteall/>
-        <glob pattern="*.zip"/>
-    </mime-type>
-</mime-info>

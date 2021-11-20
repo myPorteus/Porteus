@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Porteus Settings Centre
-Exec=/opt/porteus-scripts/xorg/psu porteus-settings-centre
-Icon=computer
-Type=Application
-Categories=Application;System;

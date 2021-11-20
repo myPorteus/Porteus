@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libexo-1.so )
-( cd usr/lib64 ; ln -sf libexo-1.so.0.1.0 libexo-1.so )
-( cd usr/lib64 ; rm -rf libexo-1.so.0 )
-( cd usr/lib64 ; ln -sf libexo-1.so.0.1.0 libexo-1.so.0 )
-( cd usr/lib64 ; rm -rf libexo-2.so )
-( cd usr/lib64 ; ln -sf libexo-2.so.0.1.0 libexo-2.so )
-( cd usr/lib64 ; rm -rf libexo-2.so.0 )
-( cd usr/lib64 ; ln -sf libexo-2.so.0.1.0 libexo-2.so.0 )

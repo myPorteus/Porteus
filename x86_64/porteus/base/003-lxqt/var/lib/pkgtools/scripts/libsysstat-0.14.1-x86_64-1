@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libsysstat-qt5.so )
-( cd usr/lib64 ; ln -sf libsysstat-qt5.so.0 libsysstat-qt5.so )
-( cd usr/lib64 ; rm -rf libsysstat-qt5.so.0 )
-( cd usr/lib64 ; ln -sf libsysstat-qt5.so.0.4.2 libsysstat-qt5.so.0 )

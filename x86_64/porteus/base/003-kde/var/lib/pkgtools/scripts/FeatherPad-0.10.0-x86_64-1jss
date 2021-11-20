@@ -1,2 +1,0 @@
-( cd usr/bin ; rm -rf fpad )
-( cd usr/bin ; ln -sf featherpad fpad )

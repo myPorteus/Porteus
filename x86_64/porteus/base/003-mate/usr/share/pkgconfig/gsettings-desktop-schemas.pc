@@ -1,6 +1,0 @@
-prefix=/usr
-
-Name: gsettings-desktop-schemas
-Description: Shared GSettings schemas for the desktop, including helper headers
-Version: 3.32.0
-Cflags: -I/usr/include/gsettings-desktop-schemas

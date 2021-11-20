@@ -1,6 +1,0 @@
-( cd usr/lib64 ; rm -rf libQt5XmlPatterns.so )
-( cd usr/lib64 ; ln -sf libQt5XmlPatterns.so.5.12.3 libQt5XmlPatterns.so )
-( cd usr/lib64 ; rm -rf libQt5XmlPatterns.so.5 )
-( cd usr/lib64 ; ln -sf libQt5XmlPatterns.so.5.12.3 libQt5XmlPatterns.so.5 )
-( cd usr/lib64 ; rm -rf libQt5XmlPatterns.so.5.12 )
-( cd usr/lib64 ; ln -sf libQt5XmlPatterns.so.5.12.3 libQt5XmlPatterns.so.5.12 )

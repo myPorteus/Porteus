@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libgtop-2.0.so )
-( cd usr/lib64 ; ln -sf libgtop-2.0.so.11.0.1 libgtop-2.0.so )
-( cd usr/lib64 ; rm -rf libgtop-2.0.so.11 )
-( cd usr/lib64 ; ln -sf libgtop-2.0.so.11.0.1 libgtop-2.0.so.11 )
