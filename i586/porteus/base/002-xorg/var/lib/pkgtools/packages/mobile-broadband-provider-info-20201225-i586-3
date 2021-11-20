@@ -1,0 +1,33 @@
+PACKAGE NAME:     mobile-broadband-provider-info-20201225-i586-3
+COMPRESSED PACKAGE SIZE:     60K
+UNCOMPRESSED PACKAGE SIZE:     510K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/mobile-broadband-provider-info-20201225-i586-3.txz
+PACKAGE DESCRIPTION:
+mobile-broadband-provider-info: mobile-broadband-provider-info (service provider settings)
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: This package contains mobile broadband settings for service providers
+mobile-broadband-provider-info: in various countries.
+mobile-broadband-provider-info:
+mobile-broadband-provider-info: For more info, see:
+mobile-broadband-provider-info: http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+mobile-broadband-provider-info:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/mobile-broadband-provider-info-20201225/
+usr/doc/mobile-broadband-provider-info-20201225/COPYING
+usr/doc/mobile-broadband-provider-info-20201225/README
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/mobile-broadband-provider-info.pc
+usr/share/
+usr/share/mobile-broadband-provider-info/
+usr/share/mobile-broadband-provider-info/apns-conf.xml
+usr/share/mobile-broadband-provider-info/serviceproviders.2.dtd
+usr/share/mobile-broadband-provider-info/serviceproviders.xml

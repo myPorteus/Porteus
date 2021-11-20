@@ -1,0 +1,38 @@
+PACKAGE NAME:     7-zip-21.02-x86_64-1ncm
+COMPRESSED PACKAGE SIZE:     864K
+UNCOMPRESSED PACKAGE SIZE:     2.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/7-zip-21.02-x86_64-1ncm.txz
+PACKAGE DESCRIPTION:
+7-zip: 7-zip (File archiver with a high compression ratio)  
+7-zip:  
+7-zip: File archiver with a high compression ratio 
+7-zip:   
+7-zip: 
+7-zip: 
+7-zip: 
+7-zip: 
+7-zip: 
+7-zip: 
+7-zip: https://www.7-zip.org
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/7zz
+usr/share/
+usr/share/doc/
+usr/share/doc/7-zip/
+usr/share/doc/7-zip/7zC.txt
+usr/share/doc/7-zip/7zFormat.txt
+usr/share/doc/7-zip/Methods.txt
+usr/share/doc/7-zip/lzma.txt
+usr/share/doc/7-zip/readme.txt
+usr/share/doc/7-zip/src-history.txt
+usr/share/licenses/
+usr/share/licenses/7-zip/
+usr/share/licenses/7-zip/License.txt
+usr/share/licenses/7-zip/copying.txt
+usr/share/licenses/7-zip/unRarLicense.txt

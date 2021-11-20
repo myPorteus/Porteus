@@ -1,0 +1,157 @@
+#!/usr/bin/perl
+# tlp-readconfs - read all of TLP's config files
+#
+# Copyright (c) 2020 Thomas Koch <linrunner at gmx.net> and others.
+# This software is licensed under the GPL v2 or later.
+
+# Cmdline options
+#   --outfile <FILE>: filepath to contain merged configuration
+#   --notrace: disable trace
+#
+# Return codes
+#   0: ok
+#   5: tlp.conf missing
+#   6: defaults.conf missing
+
+package tlp_readconfs;
+use strict;
+use warnings;
+
+# --- Modules
+use File::Basename;
+use Getopt::Long;
+
+# --- Constants
+use constant CONF_USR => "/etc/tlp.conf";
+use constant CONF_DIR => "/etc/tlp.d";
+use constant CONF_DEF => "/usr/share/tlp/defaults.conf";
+use constant CONF_OLD => "/etc/default/tlp";
+
+# --- Global vars
+my @config_val = (); # 2-dim array: parameter name, value, source
+my %config_idx = (); # hash: parameter name ==> index into the name-value array
+
+my $notrace = 0;
+my $debug   = 0;
+
+# --- Subroutines
+
+# Format and write debug message
+# @_: printf arguments including format string
+sub printf_debug {
+    if ( not $notrace and $debug ) {
+        open (my $logpipe, "|-", "logger -p debug -t \"tlp\" --id=\$\$ --") or return 1;
+        printf {$logpipe} @_;
+        close ($logpipe);
+    }
+
+    return 0;
+}
+
+# Store parameter name, value, source in array/hash
+# $_[0]: parameter name  (non-null string)
+# $_[1]: parameter value (maybe null string)
+# $_[2]: parameter source e.g. filepath + line no.
+# return: 0=new name/1=known name
+sub store_name_value_source {
+    my $name = $_[0];
+    my $value = $_[1];
+    my $source = $_[2];
+
+    $debug = 1 if ( $name eq "TLP_DEBUG" ) && ( $value =~ /\bcfg\b/ );
+
+    if ( defined $config_idx{$name} ) {
+        # existing name --> overwrite value, source only
+        $config_val[$config_idx{$name}][1] = $value;
+        $config_val[$config_idx{$name}][2] = $source;
+
+        printf_debug ("tlp-readconfs.replace [%s]: %s=\"%s\" %s\n", $config_idx{$name}, $name, $value, $source);
+    } else {
+        # new name --> store name, value, source and hash name
+        push(@config_val, [$name, $value, $source]);
+        $config_idx{$name} = $#config_val;
+
+        printf_debug ("tlp-readconfs.insert  [%s]: %s=\"%s\" %s\n", $#config_val, $name, $value, $source);
+    }
+
+    return 0;
+}
+
+# Parse whole config file and store parameters
+# $_[0]: filepath
+
+# return: 0=ok/1=file non-existent
+sub parse_configfile {
+    my $fname = $_[0];
+    my $source;
+    if ( $fname eq CONF_DEF ) {
+        $source = basename ($fname);
+    } else {
+        $source = $fname;
+    }
+
+    open (my $cf, "<", $fname) or return 1;
+
+    my $ln = 0;
+    while ( my $line = <$cf> ) {
+        chomp $line;
+        $ln += 1;
+        if ( $line =~ /^(?<name>[A-Z_]+[0-9]*)=(?:(?<val_bare>[0-9a-zA-Z_\-:\.]*)|"(?<val_dquoted>[0-9a-zA-Z _\-:\.]*)")\s*$/ ) {
+            my $name = $+{name};
+            my $value = $+{val_dquoted} // $+{val_bare};
+            store_name_value_source ($name, $value, $source . " L" . sprintf ("%04d", $ln) );
+        }
+    }
+    close ($cf);
+
+    return 0;
+}
+
+# Output all stored parameter name, value to a file
+# or parameter name, value, source to stdout
+# $_[0]: filepath (without argument the output will be written to stdout)
+# return: 0=ok/1=file open error
+sub write_runconf {
+    my $fname = $_[0];
+
+    my $runconf;
+    if ( not $fname ) {
+        $runconf = *STDOUT;
+    } else {
+        open ($runconf, ">", $fname) or return 1;
+    }
+
+    foreach ( @config_val ) {
+	my ($name, $value, $source) = @$_;
+        if ( $runconf eq *STDOUT ) {
+            printf {$runconf} "%s: %s=\"%s\"\n", $source, $name, $value;
+        } else  {
+            printf {$runconf} "%s=\"%s\"\n", $name, $value;
+        }
+    }
+    close ($runconf);
+
+    return 0
+}
+
+# --- MAIN
+my $outfile = '';
+
+# parse arguments
+GetOptions ('outfile=s' => \$outfile, 'notrace' => \$notrace);
+
+# 1. read intrinsic defaults
+parse_configfile (CONF_DEF) == 0 or exit 6;
+
+# 2. read customization
+foreach my $conffile ( grep { -f $_ } glob CONF_DIR . "/*.conf" ) {
+    parse_configfile ($conffile);
+}
+
+# 3. read user settings
+parse_configfile (CONF_USR) == 0 or parse_configfile (CONF_OLD) == 0 or exit 5;
+
+# save result
+write_runconf ($outfile);
+
+exit 0;

@@ -1,0 +1,130 @@
+#!/usr/bin/python
+## Script to check md5sum on clipboard against chosen file
+## Author: brokenman <brokenman@porteus.org>
+## ported to pygobject3 by ncmprhnsbl @forum.porteus.org
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+import subprocess
+import os
+import sys
+from pathlib import Path
+
+home = os.getenv('HOME')
+not_first = os.path.exists(home + '/.clipsum')
+
+class GtkClipsum(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Clipboard Checksum", border_width = 15, height_request = 300, width_request = 450, icon_name = "security-high-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Clipboard checksum checker</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("<span>When downloading file from the internet, there is often a \nchecksum included to verify the integrity of the downloaded file. \nSimply copy this checksum to your clipboard and then right click \non the downloaded file and choose the checksum option.\n\nThis application supports md5, sha1, sha224, sha256, sha384 &amp; \nsha512 checksums.</span>")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+        self.checkbox = Gtk.CheckButton.new_with_label("Do not show this window again.")
+        self.checkbox.connect("toggled", self.on_checkbox_checked)
+        self.vb.add(self.checkbox)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.add(self.vb)
+
+    def on_ok_clicked(self, button):
+        Clipsum()
+
+    def on_checkbox_checked(self, checkbox):
+        Path(home + '/.clipsum', exist_ok=True).touch()
+
+class Clipsum():
+    def __init__(self):
+        try:
+            the_file = sys.argv[1]
+            clipsum = subprocess.run(['xclip -o|tr -d [:punct:]|grep -v [g-z]'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            clip_length = len(clipsum)
+            if not clipsum:
+                self.error_message("There is no checksum in the clipboard.")
+                fsum = None
+                self.close_win()
+            elif clip_length < 33:
+                self.error_message("This is not a valid checksum.")
+                self.close_win()
+            elif clip_length == 33:
+                cbsum = "md5"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            elif clip_length == 41:
+                cbsum = "sha1"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            elif clip_length == 57:
+                cbsum = "sha224"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            elif clip_length == 65:
+                cbsum = "sha256"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            elif clip_length == 97:
+                cbsum = "sha384"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            elif clip_length == 129:
+                cbsum = "sha512"
+                fsum = subprocess.run([cbsum + 'sum ' + the_file + ' | ' + 'cut -d" " -f1'], shell=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
+            else:
+                self.error_message("Only md5, sha1, sha224, sha256, sha384 & sha512 checksums are supported.")
+                self.close_win()
+        except IndexError:
+            self.error_message("You must supply a file to check.")
+            fsum = None
+            self.close_win()
+
+        if fsum is not None:
+            if clipsum == fsum:
+                self.message("The " + cbsum + " checksum in the clipboard matches the chosen file.")
+                self.close_win()
+            else:
+                self.fail_message("The " + cbsum + " checksums do not match.")
+                self.close_win()
+
+    def error_message(self, message):
+        dialog = Gtk.MessageDialog(parent = None, flags = 0, message_type = Gtk.MessageType.ERROR, buttons = Gtk.ButtonsType.CLOSE, text = "Error")
+        dialog.format_secondary_text(message)
+        dialog.run()
+        dialog.destroy()
+        
+    def fail_message(self, message):
+        dialog = Gtk.MessageDialog(parent = None, flags = 0, message_type = Gtk.MessageType.ERROR, buttons = Gtk.ButtonsType.CLOSE, text = "Fail")
+        dialog.format_secondary_text(message)
+        dialog.run()
+        dialog.destroy()
+
+    def message(self, message):
+        dialog = Gtk.MessageDialog(parent = None, flags = 0, message_type = Gtk.MessageType.INFO, buttons = Gtk.ButtonsType.OK, text = "Success")
+        dialog.format_secondary_text(message)
+        dialog.run()
+        dialog.destroy()
+
+    def close_win(self):
+        if not_first is True:
+            quit()
+        else:
+            Gtk.main_quit()
+
+if not_first is True:
+    clip = Clipsum()
+    clip.__init__()
+else:
+    win = GtkClipsum()
+    win.connect("destroy", Gtk.main_quit)
+    win.show_all()
+    Gtk.main()
+

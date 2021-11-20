@@ -1,0 +1,41 @@
+PACKAGE NAME:     libXdmcp-1.1.3-i586-3
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     360K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libXdmcp-1.1.3-i586-3.txz
+PACKAGE DESCRIPTION:
+libXdmcp: libXdmcp (X Display Manager Control Protocol library)
+libXdmcp:
+libXdmcp: libXdmcp is part of X11.
+libXdmcp:
+libXdmcp: For more information about the X.Org Foundation (the providers of the
+libXdmcp: X.Org implementation of the X Window System), see their website:
+libXdmcp:
+libXdmcp: http://www.x.org
+libXdmcp:
+libXdmcp:
+libXdmcp:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXdmcp-1.1.3/
+usr/doc/libXdmcp-1.1.3/AUTHORS
+usr/doc/libXdmcp-1.1.3/COPYING
+usr/doc/libXdmcp-1.1.3/ChangeLog
+usr/doc/libXdmcp-1.1.3/INSTALL
+usr/doc/libXdmcp-1.1.3/README.md
+usr/doc/libXdmcp-1.1.3/xdmcp.html
+usr/doc/libXdmcp-1.1.3/xdmcp.html.db
+usr/doc/libXdmcp-1.1.3/xdmcp.pdf.db
+usr/doc/libXdmcp-1.1.3/xdmcp.txt
+usr/doc/libXdmcp-1.1.3/xdmcp.xml
+usr/include/
+usr/include/X11/
+usr/include/X11/Xdmcp.h
+usr/lib/
+usr/lib/libXdmcp.so.6.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xdmcp.pc

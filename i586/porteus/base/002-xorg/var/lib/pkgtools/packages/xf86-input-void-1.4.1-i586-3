@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-input-void-1.4.1-i586-3
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     80K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/xf86-input-void-1.4.1-i586-3.txz
+PACKAGE DESCRIPTION:
+xf86-input-void: xf86-input-void (null input driver for Xorg server)
+xf86-input-void:
+xf86-input-void: xf86-input-void is part of X11.
+xf86-input-void:
+xf86-input-void: For more information about the X.Org Foundation (the providers of the
+xf86-input-void: X.Org implementation of the X Window System), see their website:
+xf86-input-void:
+xf86-input-void: http://www.x.org
+xf86-input-void:
+xf86-input-void:
+xf86-input-void:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-void-1.4.1/
+usr/doc/xf86-input-void-1.4.1/COPYING
+usr/doc/xf86-input-void-1.4.1/ChangeLog
+usr/doc/xf86-input-void-1.4.1/INSTALL
+usr/doc/xf86-input-void-1.4.1/README
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/input/
+usr/lib/xorg/modules/input/void_drv.la
+usr/lib/xorg/modules/input/void_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/void.4.gz

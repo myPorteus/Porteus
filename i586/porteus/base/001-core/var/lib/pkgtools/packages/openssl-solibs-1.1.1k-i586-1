@@ -1,0 +1,54 @@
+PACKAGE NAME:     openssl-solibs-1.1.1k-i586-1
+COMPRESSED PACKAGE SIZE:     1.4M
+UNCOMPRESSED PACKAGE SIZE:     3.8M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/openssl-solibs-1.1.1k-i586-1.txz
+PACKAGE DESCRIPTION:
+openssl-solibs: openssl-solibs (OpenSSL shared libraries)
+openssl-solibs:
+openssl-solibs: These shared libraries provide encryption routines required by
+openssl-solibs: programs such as openssh, bind, sendmail, and many others.
+openssl-solibs:
+openssl-solibs: This product includes software developed by the OpenSSL Project for
+openssl-solibs: use in the OpenSSL Toolkit (http://www.openssl.org). This product
+openssl-solibs: includes cryptographic software written by Eric Young
+openssl-solibs: (eay@cryptsoft.com). This product includes software written by Tim
+openssl-solibs: Hudson (tjh@cryptsoft.com).
+openssl-solibs:
+FILE LIST:
+./
+etc/
+etc/ssl/
+etc/ssl/certs/
+etc/ssl/ct_log_list.cnf
+etc/ssl/ct_log_list.cnf.dist
+etc/ssl/misc/
+etc/ssl/misc/CA.pl
+etc/ssl/misc/tsget.pl
+etc/ssl/openssl.cnf.new
+etc/ssl/private/
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/libcrypto.so.1.1
+lib/libssl.so.1.1
+usr/
+usr/doc/
+usr/doc/openssl-1.1.1k/
+usr/doc/openssl-1.1.1k/ACKNOWLEDGEMENTS
+usr/doc/openssl-1.1.1k/AUTHORS
+usr/doc/openssl-1.1.1k/CHANGES
+usr/doc/openssl-1.1.1k/CONTRIBUTING
+usr/doc/openssl-1.1.1k/FAQ
+usr/doc/openssl-1.1.1k/INSTALL
+usr/doc/openssl-1.1.1k/LICENSE
+usr/doc/openssl-1.1.1k/NEWS
+usr/doc/openssl-1.1.1k/NOTES.ANDROID
+usr/doc/openssl-1.1.1k/NOTES.DJGPP
+usr/doc/openssl-1.1.1k/NOTES.PERL
+usr/doc/openssl-1.1.1k/NOTES.UNIX
+usr/doc/openssl-1.1.1k/NOTES.VMS
+usr/doc/openssl-1.1.1k/NOTES.WIN
+usr/doc/openssl-1.1.1k/README
+usr/doc/openssl-1.1.1k/README.ENGINE
+usr/doc/openssl-1.1.1k/README.FIPS

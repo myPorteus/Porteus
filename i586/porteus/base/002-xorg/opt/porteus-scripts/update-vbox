@@ -1,0 +1,180 @@
+#!/usr/bin/python
+
+## Easily compile VirtualBox and guest addons
+## Author: Brokenman
+## jssouza: ported to pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from subprocess import run, PIPE, Popen
+from tempfile import TemporaryDirectory
+from os import getuid, getenv, path, chmod
+import urllib.request
+
+## Make sure we're in X
+display = getenv('DISPLAY')
+if display == None:
+    print("This program requires an X session!")
+    quit()
+
+## prompt root password(gui psu) and re-execute? probly a bit dirty..
+## using subprocess rather than os.system() to be script agnostic..
+user = getuid()
+if user != 0:
+    print("You must be root to run this!")
+    this_script = path.abspath(__file__)
+    Popen(['psu', this_script])
+    quit()
+
+class GtkVbox(Gtk.Window):
+
+    def __init__(self):
+        self.DL_LINK = "/i586/testing/live/update-vbox-live"
+        self.curMirror = self.getCurrentMirror()
+        print("Current mirror: ", self.curMirror)
+        self.tmp_dir = TemporaryDirectory()
+        outfile = self.tmp_dir.name + "/vbox-choice"
+        with open(outfile, "w") as f:
+            f.write("vbox")
+
+        Gtk.Window.__init__(self, title = "Update Virtualbox", border_width = 5, height_request = 200, width_request = 500, icon_name = "virtualbox")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Porteus Virtualbox Builder</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.vb_inner = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+        self.label = Gtk.Label(xalign = 0.0)
+        self.label.set_markup("Choose an option:")
+        self.vb_inner.pack_start(self.label, False, False, 2)
+
+        self.rb_vbox = Gtk.RadioButton.new_with_label_from_widget(None, "Virtualbox")
+        self.rb_vbox.connect("toggled", self.on_rb_toggled, "vbox")
+        self.vb_inner.pack_start(self.rb_vbox, False, False, 0)
+
+        self.rb_vbox_guest = Gtk.RadioButton.new_with_label_from_widget(self.rb_vbox, "Virtualbox Guest Additions (to be built and used inside the VM)")
+        self.rb_vbox_guest.connect("toggled", self.on_rb_toggled, "guest")
+        self.vb_inner.pack_start(self.rb_vbox_guest, False, False, 0)
+
+        self.vb.pack_start(self.vb_inner, False, False, 10)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        #self.ok_button.get_style_context().add_class("suggested-action")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+
+        self.help_img = Gtk.Image.new_from_icon_name("help-about", Gtk.IconSize.BUTTON)
+        self.help_button = Gtk.Button.new_with_label("Help")
+        self.help_button.set_image(self.help_img)
+        self.help_button.set_always_show_image(True)
+        self.help_button.connect("clicked", self.on_help_clicked)
+        self.hb_bottom.pack_end(self.help_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+
+        self.add(self.vb)
+        self.help_button.grab_focus()
+
+    def on_rb_toggled(self, button, name):
+        if button.get_active():
+            state = "on"
+            print("current name is", name)
+            outfile = self.tmp_dir.name + "/vbox-choice"
+            with open(outfile, "w") as f:
+                f.write(name)
+        else:
+            state = "off"
+
+    def on_help_clicked(self, button):
+        help_dialog = HelpDialog(self)
+        help_dialog.run()
+        help_dialog.destroy()
+
+    def getCurrentMirror(self):
+        with open("/etc/porteus.conf", mode = "r", encoding = "utf-8") as fd:
+            for fline in fd:
+                if fline.startswith("SERVER="):
+                    break;
+            return fline[:-1].split('=')[1]
+    def startDownload(self, url, filename):
+        try:
+            urllib.request.urlretrieve(url, filename)
+
+        except Exception as e:
+            print(str(e))
+            dialog = Gtk.MessageDialog(parent = self, flags = 0, message_type = Gtk.MessageType.ERROR, buttons = Gtk.ButtonsType.OK, text = "Error")
+            dialog.format_secondary_text(str(e))
+            dialog.run()
+            dialog.destroy()
+            Gtk.main_quit()
+
+    def on_ok_clicked(self, button):
+        filename = "/usr/local/bin/update-vbox-live"
+        self.startDownload(self.curMirror + self.DL_LINK, filename)
+        chmod(filename, 0o755)
+        outfile = self.tmp_dir.name + "/vbox-choice"
+        with open(outfile, "r") as f:
+            choice = f.read()
+        print(choice)
+        if choice == "vbox":
+            run(['/usr/local/bin/update-vbox-live', 'vbox'])
+        else:
+            is_VM = run(['/usr/sbin/dmidecode', '-s', 'system-product-name'], stdout=PIPE).stdout.decode("utf-8").strip()
+            if is_VM == "VirtualBox":
+                run(['/usr/local/bin/update-vbox-live', 'vboxguest'])
+            else:
+                dialog = Gtk.MessageDialog(parent = self, flags = 0, message_type = Gtk.MessageType.ERROR, buttons = Gtk.ButtonsType.OK, text = "Error")
+                dialog.format_secondary_text("You need to be running in a VM for this.")
+                dialog.run()
+                dialog.destroy()
+                Gtk.main_quit()
+        Gtk.main_quit()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+class HelpDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Help", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(450, 230)
+
+        self.help_header_txt = "<span size=\"large\" weight=\"bold\">Virtualbox Builder Help</span>"
+        self.help_txt = "This applications compiles VirtualBox locally on your own computer for optimum compatibility.\n\n\
+You can choose a local file or download the required file from the internet.\n\n\
+Crippled kernel sources will be required for compilation. If you do not have these you will be prompted to download the file.\n\n\
+The Guest Additions must be built and used within a VirtualBox Virtual Machine."
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.help_header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.textview = Gtk.TextView(border_width = 20, editable = False, wrap_mode = Gtk.WrapMode.WORD, justification = Gtk.Justification.FILL, cursor_visible = False)
+        self.textbuffer = self.textview.get_buffer()
+        self.textbuffer.set_text(self.help_txt)
+
+        self.scrolledwindow.add(self.textview)
+
+        self.show_all()
+
+win = GtkVbox()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

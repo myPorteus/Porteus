@@ -1,0 +1,66 @@
+PACKAGE NAME:     pyxdg-0.27-i586-4
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/pyxdg-0.27-i586-4.txz
+PACKAGE DESCRIPTION:
+pyxdg: pyxdg (XDG Python implementation)
+pyxdg:
+pyxdg: PyXDG contains implementations of freedesktop.org standards in Python.
+pyxdg:
+pyxdg: Homepage: http://freedesktop.org/wiki/Software/pyxdg
+pyxdg:
+pyxdg:
+pyxdg:
+pyxdg:
+pyxdg:
+pyxdg:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/pyxdg-0.27/
+usr/doc/pyxdg-0.27/AUTHORS
+usr/doc/pyxdg-0.27/COPYING
+usr/doc/pyxdg-0.27/ChangeLog
+usr/doc/pyxdg-0.27/INSTALL
+usr/doc/pyxdg-0.27/PKG-INFO
+usr/doc/pyxdg-0.27/README
+usr/doc/pyxdg-0.27/TODO
+usr/lib/
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/pyxdg-0.27-py3.9.egg-info/
+usr/lib/python3.9/site-packages/pyxdg-0.27-py3.9.egg-info/PKG-INFO
+usr/lib/python3.9/site-packages/pyxdg-0.27-py3.9.egg-info/SOURCES.txt
+usr/lib/python3.9/site-packages/pyxdg-0.27-py3.9.egg-info/dependency_links.txt
+usr/lib/python3.9/site-packages/pyxdg-0.27-py3.9.egg-info/top_level.txt
+usr/lib/python3.9/site-packages/xdg/
+usr/lib/python3.9/site-packages/xdg/BaseDirectory.py
+usr/lib/python3.9/site-packages/xdg/Config.py
+usr/lib/python3.9/site-packages/xdg/DesktopEntry.py
+usr/lib/python3.9/site-packages/xdg/Exceptions.py
+usr/lib/python3.9/site-packages/xdg/IconTheme.py
+usr/lib/python3.9/site-packages/xdg/IniFile.py
+usr/lib/python3.9/site-packages/xdg/Locale.py
+usr/lib/python3.9/site-packages/xdg/Menu.py
+usr/lib/python3.9/site-packages/xdg/MenuEditor.py
+usr/lib/python3.9/site-packages/xdg/Mime.py
+usr/lib/python3.9/site-packages/xdg/RecentFiles.py
+usr/lib/python3.9/site-packages/xdg/__init__.py
+usr/lib/python3.9/site-packages/xdg/__pycache__/
+usr/lib/python3.9/site-packages/xdg/__pycache__/BaseDirectory.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/Config.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/DesktopEntry.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/Exceptions.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/IconTheme.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/IniFile.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/Locale.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/Menu.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/MenuEditor.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/Mime.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/RecentFiles.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/__init__.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/__pycache__/util.cpython-39.pyc
+usr/lib/python3.9/site-packages/xdg/util.py

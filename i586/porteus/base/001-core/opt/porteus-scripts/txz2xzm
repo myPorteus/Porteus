@@ -1,0 +1,94 @@
+#!/bin/bash
+# Convert Slackware's package(s) into .xzm module
+#
+# Author: Tomas M. <http://www.linux-live.org>
+# Modifications for Porteus by fanthom
+
+
+
+show_help() {
+    echo
+    echo "Convert Slackware's TXZ package into .xzm compressed module"
+    echo "usage:"
+    echo " options:  -x : use xz compression. "
+    echo " options:  -z : use zstd compression. "
+    echo " if no option is given xz is used. "
+    echo "           -h       : show this usage. "
+    echo
+    echo "$0 package.txz"
+    echo "$0 package1.txz package2.txz package3.txz"
+    echo "$0 /folder/with_packages/*"
+	echo
+}
+
+COMP="-x"
+COMP_ZSTD="-z"
+
+while getopts "xzh" opt; do
+case "$opt" in
+
+    x)
+        shift "$(($OPTIND -1))"
+        ;;
+
+    z)
+        COMP="$COMP_ZSTD"
+        shift "$(($OPTIND -1))"
+        ;;
+  
+    h)
+        show_help
+        exit 0
+        ;;
+    
+esac
+done
+
+# Exit if nothing is provided as an argument:
+if [ "$1" = "" ]; then
+    show_help
+    exit 1
+fi
+# Work only on txz/tgz packages:
+for a in $*; do
+    ext=`echo $a | rev | cut -d. -f1 | rev`
+    if [ "$ext" = txz -o "$ext" = tgz ]; then
+	mod=`readlink -f $a`
+	MOD=`echo $MOD $mod`
+    fi
+done
+
+# Switch to root:
+if [ "$DISPLAY" ]; then
+    if [ `whoami` != "root" ]; then
+	/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/txz2xzm $COMP $MOD
+	exit
+    fi
+else
+    if [ `whoami` != "root" ]; then
+	echo "Please enter root's password below"
+        su - -c "/opt/porteus-scripts/txz2xzm $COMP $MOD"
+        exit
+    fi
+fi
+
+# Create module:
+for y in $MOD; do
+    TMPDIR=/tmp/txz2xzm$$
+    XZM="`echo $y | rev | cut -d. -f2- | rev`.xzm"
+
+    installpkg -root $TMPDIR $y
+    if [ $? != 0 ]; then echo "error installing $y package"; exit; fi
+
+    # optimalization procedures, this doesn't hurt
+    find $TMPDIR/usr{/local/,/share/,/}{man,info} -type l -name "*.gz" 2>/dev/null | xargs -r gunzip -f
+    find $TMPDIR/usr{/local/,/share/,/}{man,info} -type f -name "*.gz" 2>/dev/null | xargs -r gunzip
+    cp -a $TMPDIR/usr/share/man $TMPDIR/usr 2>/dev/null; rm -rf $TMPDIR/usr/share/man
+    rm -f $TMPDIR/{usr,usr/local,var}/man/cat*/*
+
+    echo -e "Creating $XZM\n"
+    dir2xzm $COMP $TMPDIR $XZM >/dev/null
+    if [ $? != 0 ]; then echo "error building compressed image"; exit; fi
+
+    rm -Rf $TMPDIR
+done

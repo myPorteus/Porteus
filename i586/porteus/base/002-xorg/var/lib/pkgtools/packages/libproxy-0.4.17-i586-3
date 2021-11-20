@@ -1,0 +1,70 @@
+PACKAGE NAME:     libproxy-0.4.17-i586-3
+COMPRESSED PACKAGE SIZE:     100K
+UNCOMPRESSED PACKAGE SIZE:     420K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libproxy-0.4.17-i586-3.txz
+PACKAGE DESCRIPTION:
+libproxy: libproxy (proxy configuration library)
+libproxy:
+libproxy: libproxy exists to answer the question: Given a network resource, 
+libproxy: how do I reach it? It handles all the details, enabling you to get 
+libproxy: back to programming. Just ask libproxy what proxy to use: you get
+libproxy: simple code and your users get correct, consistent behavior and 
+libproxy: broad infrastructure compatibility. 
+libproxy:
+libproxy: Homepage: https://github.com/libproxy/libproxy
+libproxy:
+libproxy:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/proxy
+usr/doc/
+usr/doc/libproxy-0.4.17/
+usr/doc/libproxy-0.4.17/AUTHORS
+usr/doc/libproxy-0.4.17/COPYING
+usr/doc/libproxy-0.4.17/ChangeLog
+usr/doc/libproxy-0.4.17/INSTALL
+usr/doc/libproxy-0.4.17/NEWS
+usr/doc/libproxy-0.4.17/README
+usr/include/
+usr/include/proxy.h
+usr/lib/
+usr/lib/libproxy.so.1.0.0
+usr/lib/libproxy/
+usr/lib/libproxy/0.4.17/
+usr/lib/libproxy/0.4.17/modules/
+usr/lib/libproxy/0.4.17/modules/config_gnome3.so
+usr/lib/libproxy/0.4.17/modules/config_kde.so
+usr/lib/libproxy/0.4.17/modules/config_pacrunner.so
+usr/lib/libproxy/0.4.17/modules/network_networkmanager.so
+usr/lib/perl5/
+usr/lib/perl5/vendor_perl/
+usr/lib/perl5/vendor_perl/Net/
+usr/lib/perl5/vendor_perl/Net/Libproxy.pm
+usr/lib/perl5/vendor_perl/auto/
+usr/lib/perl5/vendor_perl/auto/Net/
+usr/lib/perl5/vendor_perl/auto/Net/Libproxy/
+usr/lib/perl5/vendor_perl/auto/Net/Libproxy/Libproxy.so
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libproxy-1.0.pc
+usr/lib/python2.7/
+usr/lib/python2.7/site-packages/
+usr/lib/python2.7/site-packages/libproxy.py
+usr/lib/python2.7/site-packages/libproxy.pyc
+usr/lib/python2.7/site-packages/libproxy.pyo
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/__pycache__/
+usr/lib/python3.9/site-packages/__pycache__/libproxy.cpython-39.opt-1.pyc
+usr/lib/python3.9/site-packages/__pycache__/libproxy.cpython-39.pyc
+usr/lib/python3.9/site-packages/libproxy.py
+usr/libexec/
+usr/libexec/pxgsettings
+usr/share/
+usr/share/cmake/
+usr/share/cmake/Modules/
+usr/share/cmake/Modules/Findlibproxy.cmake

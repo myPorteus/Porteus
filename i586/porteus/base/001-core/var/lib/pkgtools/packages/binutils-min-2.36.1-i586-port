@@ -1,0 +1,16 @@
+PACKAGE NAME:     binutils-min-2.36.1-i586-port
+COMPRESSED PACKAGE SIZE:     796K
+UNCOMPRESSED PACKAGE SIZE:     2.9M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/binutils-min-2.36.1-i586-port.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ar
+usr/lib/
+usr/lib/libbfd-2.36.1-slack15.so
+usr/lib/libbfd.a
+usr/lib/libbfd.so

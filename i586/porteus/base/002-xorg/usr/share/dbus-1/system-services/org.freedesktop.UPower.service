@@ -1,0 +1,6 @@
+[D-BUS Service]
+Name=org.freedesktop.UPower
+Exec=/usr/libexec/upowerd
+User=root
+SystemdService=upower.service
+

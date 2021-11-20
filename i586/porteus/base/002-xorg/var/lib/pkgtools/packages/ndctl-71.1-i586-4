@@ -1,0 +1,108 @@
+PACKAGE NAME:     ndctl-71.1-i586-4
+COMPRESSED PACKAGE SIZE:     264K
+UNCOMPRESSED PACKAGE SIZE:     730K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/ndctl-71.1-i586-4.txz
+PACKAGE DESCRIPTION:
+ndctl: ndctl (non-volatile memory device library)
+ndctl:
+ndctl: ndctl is a utility library for managing the LIBNVDIMM (non-volatile 
+ndctl: memory device) subsystem in the Linux kernel.
+ndctl:
+ndctl: Homepage: https://github.com/pmem/ndctl
+ndctl:
+ndctl:
+ndctl:
+ndctl:
+ndctl:
+FILE LIST:
+./
+etc/
+etc/ndctl/
+etc/ndctl/keys/
+etc/ndctl/keys/keys.readme
+etc/ndctl/monitor.conf.new
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/modprobe.d/
+lib/modprobe.d/nvdimm-security.conf
+usr/
+usr/bin/
+usr/bin/daxctl
+usr/bin/ndctl
+usr/doc/
+usr/doc/ndctl-71.1/
+usr/doc/ndctl-71.1/COPYING
+usr/doc/ndctl-71.1/LICENSES/
+usr/doc/ndctl-71.1/LICENSES/other/
+usr/doc/ndctl-71.1/LICENSES/other/CC0-1.0
+usr/doc/ndctl-71.1/LICENSES/other/MIT
+usr/doc/ndctl-71.1/LICENSES/preferred/
+usr/doc/ndctl-71.1/LICENSES/preferred/GPL-2.0
+usr/doc/ndctl-71.1/LICENSES/preferred/LGPL-2.1
+usr/doc/ndctl-71.1/README.md
+usr/include/
+usr/include/daxctl/
+usr/include/daxctl/libdaxctl.h
+usr/include/ndctl/
+usr/include/ndctl/libdaxctl.h
+usr/include/ndctl/libndctl.h
+usr/include/ndctl/ndctl.h
+usr/lib/
+usr/lib/libdaxctl.so.1.5.0
+usr/lib/libndctl.so.6.19.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libdaxctl.pc
+usr/lib/pkgconfig/libndctl.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/daxctl-create-device.1.gz
+usr/man/man1/daxctl-destroy-device.1.gz
+usr/man/man1/daxctl-disable-device.1.gz
+usr/man/man1/daxctl-enable-device.1.gz
+usr/man/man1/daxctl-list.1.gz
+usr/man/man1/daxctl-migrate-device-model.1.gz
+usr/man/man1/daxctl-offline-memory.1.gz
+usr/man/man1/daxctl-online-memory.1.gz
+usr/man/man1/daxctl-reconfigure-device.1.gz
+usr/man/man1/daxctl.1.gz
+usr/man/man1/ndctl-activate-firmware.1.gz
+usr/man/man1/ndctl-check-labels.1.gz
+usr/man/man1/ndctl-check-namespace.1.gz
+usr/man/man1/ndctl-clear-errors.1.gz
+usr/man/man1/ndctl-create-namespace.1.gz
+usr/man/man1/ndctl-destroy-namespace.1.gz
+usr/man/man1/ndctl-disable-dimm.1.gz
+usr/man/man1/ndctl-disable-namespace.1.gz
+usr/man/man1/ndctl-disable-region.1.gz
+usr/man/man1/ndctl-enable-dimm.1.gz
+usr/man/man1/ndctl-enable-namespace.1.gz
+usr/man/man1/ndctl-enable-region.1.gz
+usr/man/man1/ndctl-freeze-security.1.gz
+usr/man/man1/ndctl-init-labels.1.gz
+usr/man/man1/ndctl-inject-error.1.gz
+usr/man/man1/ndctl-inject-smart.1.gz
+usr/man/man1/ndctl-list.1.gz
+usr/man/man1/ndctl-load-keys.1.gz
+usr/man/man1/ndctl-monitor.1.gz
+usr/man/man1/ndctl-read-infoblock.1.gz
+usr/man/man1/ndctl-read-labels.1.gz
+usr/man/man1/ndctl-remove-passphrase.1.gz
+usr/man/man1/ndctl-sanitize-dimm.1.gz
+usr/man/man1/ndctl-setup-passphrase.1.gz
+usr/man/man1/ndctl-start-scrub.1.gz
+usr/man/man1/ndctl-update-firmware.1.gz
+usr/man/man1/ndctl-update-passphrase.1.gz
+usr/man/man1/ndctl-wait-overwrite.1.gz
+usr/man/man1/ndctl-wait-scrub.1.gz
+usr/man/man1/ndctl-write-infoblock.1.gz
+usr/man/man1/ndctl-write-labels.1.gz
+usr/man/man1/ndctl-zero-labels.1.gz
+usr/man/man1/ndctl.1.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/ndctl
+usr/share/daxctl/
+usr/share/daxctl/daxctl.conf

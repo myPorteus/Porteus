@@ -1,0 +1,43 @@
+PACKAGE NAME:     cdparanoia-III_10.2-i586-5
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     260K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/cdparanoia-III_10.2-i586-5.txz
+PACKAGE DESCRIPTION:
+cdparanoia: cdparanoia (digital audio extraction tool)
+cdparanoia:
+cdparanoia: cdparanoia is a Compact Disc Digital Audio (CDDA) extraction tool,
+cdparanoia: commonly known on the net as a 'ripper'. It reads digital audio data
+cdparanoia: from a Compact Disc and saves it to sound files. cdparanoia has been
+cdparanoia: designed to read correct audio data even using cheap CD-ROM drives
+cdparanoia: prone to misalignment, frame jitter and loss of streaming.
+cdparanoia: cdparanoia will also read and repair data from CDs that have been
+cdparanoia: damaged in some way.
+cdparanoia:
+cdparanoia:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cdparanoia
+usr/doc/
+usr/doc/cdparanoia-III-10.2/
+usr/doc/cdparanoia-III-10.2/COPYING-GPL
+usr/doc/cdparanoia-III-10.2/COPYING-LGPL
+usr/doc/cdparanoia-III-10.2/README
+usr/include/
+usr/include/cdda/
+usr/include/cdda/cdda_interface.h
+usr/include/cdda/cdda_paranoia.h
+usr/include/cdda/utils.h
+usr/lib/
+usr/lib/libcdda_interface.so.0.10.2
+usr/lib/libcdda_paranoia.so.0.10.2
+usr/man/
+usr/man/ja/
+usr/man/ja/man1/
+usr/man/ja/man1/cdparanoia.1.gz
+usr/man/man1/
+usr/man/man1/cdparanoia.1.gz

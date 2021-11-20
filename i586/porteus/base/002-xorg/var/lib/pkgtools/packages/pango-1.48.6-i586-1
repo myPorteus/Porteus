@@ -1,0 +1,100 @@
+PACKAGE NAME:     pango-1.48.6-i586-1
+COMPRESSED PACKAGE SIZE:     372K
+UNCOMPRESSED PACKAGE SIZE:     2.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/pango-1.48.6-i586-1.txz
+PACKAGE DESCRIPTION:
+pango: pango (library for layout and rendering of text)
+pango:
+pango: Pango is a library for layout and rendering of text, with an emphasis
+pango: on internationalization. Pango can be used anywhere that text layout
+pango: is needed; however, most of the work on Pango was done using the GTK+
+pango: widget toolkit as a test platform. Pango forms the core of text and
+pango: font handling for GTK.
+pango:
+pango:
+pango:
+pango:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/pango-list
+usr/bin/pango-segmentation
+usr/bin/pango-view
+usr/doc/
+usr/doc/pango-1.48.6/
+usr/doc/pango-1.48.6/COPYING
+usr/doc/pango-1.48.6/NEWS
+usr/doc/pango-1.48.6/README.md
+usr/doc/pango-1.48.6/README.win32
+usr/include/
+usr/include/pango-1.0/
+usr/include/pango-1.0/pango/
+usr/include/pango-1.0/pango/pango-attributes.h
+usr/include/pango-1.0/pango/pango-bidi-type.h
+usr/include/pango-1.0/pango/pango-break.h
+usr/include/pango-1.0/pango/pango-context.h
+usr/include/pango-1.0/pango/pango-coverage.h
+usr/include/pango-1.0/pango/pango-direction.h
+usr/include/pango-1.0/pango/pango-engine.h
+usr/include/pango-1.0/pango/pango-enum-types.h
+usr/include/pango-1.0/pango/pango-features.h
+usr/include/pango-1.0/pango/pango-font.h
+usr/include/pango-1.0/pango/pango-fontmap.h
+usr/include/pango-1.0/pango/pango-fontset.h
+usr/include/pango-1.0/pango/pango-glyph-item.h
+usr/include/pango-1.0/pango/pango-glyph.h
+usr/include/pango-1.0/pango/pango-gravity.h
+usr/include/pango-1.0/pango/pango-item.h
+usr/include/pango-1.0/pango/pango-language.h
+usr/include/pango-1.0/pango/pango-layout.h
+usr/include/pango-1.0/pango/pango-matrix.h
+usr/include/pango-1.0/pango/pango-modules.h
+usr/include/pango-1.0/pango/pango-ot.h
+usr/include/pango-1.0/pango/pango-renderer.h
+usr/include/pango-1.0/pango/pango-script.h
+usr/include/pango-1.0/pango/pango-tabs.h
+usr/include/pango-1.0/pango/pango-types.h
+usr/include/pango-1.0/pango/pango-utils.h
+usr/include/pango-1.0/pango/pango-version-macros.h
+usr/include/pango-1.0/pango/pango.h
+usr/include/pango-1.0/pango/pangocairo.h
+usr/include/pango-1.0/pango/pangofc-decoder.h
+usr/include/pango-1.0/pango/pangofc-font.h
+usr/include/pango-1.0/pango/pangofc-fontmap.h
+usr/include/pango-1.0/pango/pangoft2.h
+usr/include/pango-1.0/pango/pangoxft-render.h
+usr/include/pango-1.0/pango/pangoxft.h
+usr/lib/
+usr/lib/girepository-1.0/
+usr/lib/girepository-1.0/Pango-1.0.typelib
+usr/lib/girepository-1.0/PangoCairo-1.0.typelib
+usr/lib/girepository-1.0/PangoFT2-1.0.typelib
+usr/lib/girepository-1.0/PangoFc-1.0.typelib
+usr/lib/girepository-1.0/PangoOT-1.0.typelib
+usr/lib/girepository-1.0/PangoXft-1.0.typelib
+usr/lib/libpango-1.0.so.0.4800.6
+usr/lib/libpangocairo-1.0.so.0.4800.6
+usr/lib/libpangoft2-1.0.so.0.4800.6
+usr/lib/libpangoxft-1.0.so.0.4800.6
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/pango.pc
+usr/lib/pkgconfig/pangocairo.pc
+usr/lib/pkgconfig/pangofc.pc
+usr/lib/pkgconfig/pangoft2.pc
+usr/lib/pkgconfig/pangoot.pc
+usr/lib/pkgconfig/pangoxft.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/pango-view.1.gz
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Pango-1.0.gir
+usr/share/gir-1.0/PangoCairo-1.0.gir
+usr/share/gir-1.0/PangoFT2-1.0.gir
+usr/share/gir-1.0/PangoFc-1.0.gir
+usr/share/gir-1.0/PangoOT-1.0.gir
+usr/share/gir-1.0/PangoXft-1.0.gir

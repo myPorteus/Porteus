@@ -1,0 +1,50 @@
+PACKAGE NAME:     libsamplerate-0.2.1-i586-2
+COMPRESSED PACKAGE SIZE:     960K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libsamplerate-0.2.1-i586-2.txz
+PACKAGE DESCRIPTION:
+libsamplerate: libsamplerate (a Sample Rate Converter for audio)
+libsamplerate:
+libsamplerate: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for
+libsamplerate: audio. One example of where such a thing would be useful is
+libsamplerate: converting audio from the CD sample rate of 44.1kHz to the 48kHz
+libsamplerate: sample rate used by DAT players. SRC is capable of arbitrary and time
+libsamplerate: varying conversions. SRC provides a small set of converters to allow
+libsamplerate: quality to be traded off against computation cost.
+libsamplerate:
+libsamplerate: Homepage: http://www.mega-nerd.com/SRC/
+libsamplerate:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libsamplerate-0.2.1/
+usr/doc/libsamplerate-0.2.1/AUTHORS
+usr/doc/libsamplerate-0.2.1/COPYING
+usr/doc/libsamplerate-0.2.1/NEWS
+usr/doc/libsamplerate-0.2.1/README.md
+usr/doc/libsamplerate-0.2.1/SRC.css
+usr/doc/libsamplerate-0.2.1/SRC.png
+usr/doc/libsamplerate-0.2.1/api.md
+usr/doc/libsamplerate-0.2.1/api_callback.md
+usr/doc/libsamplerate-0.2.1/api_full.md
+usr/doc/libsamplerate-0.2.1/api_misc.md
+usr/doc/libsamplerate-0.2.1/api_simple.md
+usr/doc/libsamplerate-0.2.1/bugs.md
+usr/doc/libsamplerate-0.2.1/download.md
+usr/doc/libsamplerate-0.2.1/faq.md
+usr/doc/libsamplerate-0.2.1/history.md
+usr/doc/libsamplerate-0.2.1/index.md
+usr/doc/libsamplerate-0.2.1/license.md
+usr/doc/libsamplerate-0.2.1/lists.md
+usr/doc/libsamplerate-0.2.1/quality.md
+usr/doc/libsamplerate-0.2.1/win32.md
+usr/include/
+usr/include/samplerate.h
+usr/lib/
+usr/lib/libsamplerate.so.0.2.1
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/samplerate.pc

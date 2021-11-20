@@ -1,0 +1,60 @@
+PACKAGE NAME:     libXxf86dga-1.1.5-i586-3
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libXxf86dga-1.1.5-i586-3.txz
+PACKAGE DESCRIPTION:
+libXxf86dga: libXxf86dga (client library for the XFree86-DGA extension)
+libXxf86dga:
+libXxf86dga: libXxf86dga is part of X11.
+libXxf86dga:
+libXxf86dga: For more information about the X.Org Foundation (the providers of the
+libXxf86dga: X.Org implementation of the X Window System), see their website:
+libXxf86dga:
+libXxf86dga: http://www.x.org
+libXxf86dga:
+libXxf86dga:
+libXxf86dga:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXxf86dga-1.1.5/
+usr/doc/libXxf86dga-1.1.5/COPYING
+usr/doc/libXxf86dga-1.1.5/ChangeLog
+usr/doc/libXxf86dga-1.1.5/INSTALL
+usr/doc/libXxf86dga-1.1.5/README.md
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/Xxf86dga.h
+usr/include/X11/extensions/xf86dga1.h
+usr/lib/
+usr/lib/libXxf86dga.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xxf86dga.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/XDGA.3.gz
+usr/man/man3/XDGAChangePixmapMode.3.gz
+usr/man/man3/XDGACloseFramebuffer.3.gz
+usr/man/man3/XDGACopyArea.3.gz
+usr/man/man3/XDGACopyTransparentArea.3.gz
+usr/man/man3/XDGACreateColormap.3.gz
+usr/man/man3/XDGAFillRectangle.3.gz
+usr/man/man3/XDGAGetViewportStatus.3.gz
+usr/man/man3/XDGAInstallColormap.3.gz
+usr/man/man3/XDGAKeyEventToXKeyEvent.3.gz
+usr/man/man3/XDGAOpenFramebuffer.3.gz
+usr/man/man3/XDGAQueryExtension.3.gz
+usr/man/man3/XDGAQueryModes.3.gz
+usr/man/man3/XDGAQueryVersion.3.gz
+usr/man/man3/XDGASelectInput.3.gz
+usr/man/man3/XDGASetClientVersion.3.gz
+usr/man/man3/XDGASetMode.3.gz
+usr/man/man3/XDGASetViewport.3.gz
+usr/man/man3/XDGASync.3.gz
+usr/man/man3/XF86DGA.3.gz
+usr/man/man3/XFree86-DGA.3.gz

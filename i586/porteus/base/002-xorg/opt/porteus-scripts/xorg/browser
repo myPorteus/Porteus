@@ -1,0 +1,11 @@
+#!/bin/sh
+# Find and run a web browser.
+
+where() { which $1 2>/dev/null; }
+browser=`where firefox || where chromium || where chromium-ungoogled || where google-chrome || where google-chrome-stable || where opera || where midori || where konqueror || where palemoon || where basilisk || where vivaldi || where netsurf`
+
+if [ -e /usr/share/applications/browser.desktop ]; then
+	browser=`awk -F= '/Exec=/{print$NF}' /usr/share/applications/browser.desktop | head -n1 | cut -f 1 -d ' ' `
+fi
+
+$browser $*

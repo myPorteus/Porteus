@@ -1,0 +1,32 @@
+#!/bin/bash
+# Service menu script to mount iso on loop
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+file=$1
+name=${file##*/}
+script="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+echo "${file}" > /tmp/.mount
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu ${script} ${file} &
+  exit
+fi
+
+file=`</tmp/.mount`
+echo "Mounting: ${file}" > /tmp/out
+
+message_good(){
+/usr/share/porteus/gtkdialog.py -p "${name} was mounted" -s "${name} was successfully mounted at /mnt/loop" -t 2000 &
+}
+
+message_bad(){
+/usr/share/porteus/gtkdialog.py -p "${name} was NOT mounted" -s "There was an error mounting ${name} at /mnt/loop" -d err
+
+}
+
+mloop ${file} && message_good || message_bad
+rm /tmp/.message
+rm /tmp/.mount

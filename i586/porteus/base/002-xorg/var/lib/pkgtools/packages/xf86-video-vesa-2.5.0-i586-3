@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-vesa-2.5.0-i586-3
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/xf86-video-vesa-2.5.0-i586-3.txz
+PACKAGE DESCRIPTION:
+xf86-video-vesa: xf86-video-vesa (Generic VESA video driver for the Xorg X server)
+xf86-video-vesa:
+xf86-video-vesa: xf86-video-vesa is part of X11.
+xf86-video-vesa:
+xf86-video-vesa: For more information about the X.Org Foundation (the providers of the
+xf86-video-vesa: X.Org implementation of the X Window System), see their website:
+xf86-video-vesa:
+xf86-video-vesa: http://www.x.org
+xf86-video-vesa:
+xf86-video-vesa:
+xf86-video-vesa:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-vesa-2.5.0/
+usr/doc/xf86-video-vesa-2.5.0/COPYING
+usr/doc/xf86-video-vesa-2.5.0/ChangeLog
+usr/doc/xf86-video-vesa-2.5.0/INSTALL
+usr/doc/xf86-video-vesa-2.5.0/README.md
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/vesa_drv.la
+usr/lib/xorg/modules/drivers/vesa_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/vesa.4.gz

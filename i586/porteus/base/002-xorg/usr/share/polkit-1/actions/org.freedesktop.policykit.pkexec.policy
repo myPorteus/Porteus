@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>Examples for the PolicyKit Project</vendor>
+  <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
+
+  <action id="org.freedesktop.policykit.example.pkexec.run-frobnicate">
+    <description>Run the PolicyKit example program Frobnicate</description>
+    <description xml:lang="da">Kør PolicyKit eksemplet Frobnicate</description>
+    <message>Authentication is required to run the PolicyKit example program Frobnicate (user=$(user), program=$(program), command_line=$(command_line))</message>
+    <message xml:lang="da">Autorisering er påkrævet for at afvikle PolicyKit eksemplet Frobnicate (user=$(user), program=$(program), command_line=$(command_line))</message>
+    <icon_name>audio-x-generic</icon_name> 
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_self_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/pk-example-frobnicate</annotate>
+  </action>
+
+  <action id="org.freedesktop.policykit.pkexec.mousepad">
+    <description>Run mousepad</description>
+    <message>Authentication is required to run mousepad</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/mousepad</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+
+  <action id="org.freedesktop.policykit.pkexec.thunar">
+    <description>Run thunar</description>
+    <message>Authentication is required to run thunar</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/thunar</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+
+  <action id="org.freedesktop.policykit.pkexec./opt/porteus-scripts/power-saver">
+    <description>Run /opt/porteus-scripts/power-saver</description>
+    <message>Authentication is required to run /opt/porteus-scripts/power-saver</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/power-saver</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+
+  <action id="org.freedesktop.policykit.pkexec./usr/bin/usmgui">
+    <description>Run /usr/bin/usmgui</description>
+    <message>Authentication is required to run /usr/bin/usmgui</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/usmgui</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+
+  <action id="org.freedesktop.policykit.pkexec./opt/porteus-scripts/pinstaller">
+    <description>Run /opt/porteus-scripts/pinstaller</description>
+    <message>Authentication is required to run /opt/porteus-scripts/pinstaller</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/pinstaller</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+
+  <action id="org.freedesktop.policykit.pkexec./opt/porteus-scripts/porteus-settings-centre">
+    <description>Run /opt/porteus-scripts/porteus-settings-centre</description>
+    <message>Authentication is required to run /opt/porteus-scripts/porteus-settings-centre</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/porteus-settings-centre</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+  <action id="org.freedesktop.policykit.pkexec.nemo">
+    <description>Run nemo</description>
+    <message>Authentication is required to run nemo</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/nemo</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+ 
+   <action id="org.freedesktop.policykit.pkexec.caja">
+    <description>Run caja</description>
+    <message>Authentication is required to run caja</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/caja</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+  
+  <action id="org.freedesktop.policykit.pkexec.dbus-launch">
+    <description>Run dbus-launch</description>
+    <message>Authentication is required to run dbus-launch</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/dbus-launch</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action> 
+
+</policyconfig>

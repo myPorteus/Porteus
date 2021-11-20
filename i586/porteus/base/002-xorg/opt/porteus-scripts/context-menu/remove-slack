@@ -1,0 +1,36 @@
+#!/bin/bash
+# Service menu script to unistall slackware packages
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu $0 $selection &
+  exit
+fi
+
+# Remove the packages
+for package in $selection; do
+  path=${package%/*}
+  name=${package##*/}
+  dir=${name%.*}
+  # start progress
+  /usr/share/porteus/gtkprogress.py -w "Package Removal" -m "Removing ${name}..." -t "Processing..." &
+  #sleep 2
+  echo "$name" >> /tmp/.extracted
+  echo "$name" > /tmp/.message
+  removepkg $package
+  # kill progress
+  prog=`ps ax|grep gtkprogress.py |awk '{print$1}'|head -n1`
+  kill $prog
+done
+
+# Give notification
+/usr/share/porteus/gtkdialog.py -p "Package removal complete" -t 2000 &
+
+#rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit
+

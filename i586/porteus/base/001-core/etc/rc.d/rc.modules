@@ -1,0 +1,22 @@
+#!/bin/sh
+# rc.modules 12.3456789  Sun May 10 05:31:26 UTC 2009  pp (rb), pjv, rlw
+#
+# This file loads extra drivers into the Linux kernel.
+#
+# The modules will be looked for under /lib/modules/<kernel version number>
+# On systems using udev, this file should remain mostly commented out.
+# Nearly all hardware device modules will be loaded automatically on such
+# systems.  This file should only be used when udev is not loading a module
+# that you require, or if you are not using udev (which is going to become
+# increasingly impossible...), or if you want to force a particular module
+# to be loaded where alternatives exist.
+#
+# Many Linux kernel modules will accept extra options.  The Linux kernel
+# source is the best place to look for extra documentation for the various
+# modules.  This can be found under /usr/src/linux/Documentation if you've
+# the installed the kernel sources.
+#
+# You need to make this file executable before using.
+#
+# Example:
+# modprobe kvm-amd

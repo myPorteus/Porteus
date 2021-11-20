@@ -1,0 +1,172 @@
+#!/usr/bin/python
+## firewall script in pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from subprocess import Popen, run, PIPE
+from tempfile import TemporaryDirectory
+from os import access, X_OK, chmod
+
+class GtkFireW(Gtk.Window):
+
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Firewall", border_width = 15, height_request = 300, width_request = 450, icon_name = "security-high-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Porteus Firewall Manager</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("<span>Use the options below to toggle your firewall on/off and set the desired\n security levels.These actions take place in real time. Setting the firewall\n to activate during boot will take place the next time you boot Porteus.</span>")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.checkbox = Gtk.CheckButton.new_with_label("Activate firewall when Porteus starts")
+        self.checkbox.connect("toggled", self.on_checkbox_checked)
+        self.checkbox.set_active(self.checkbox_state())
+        self.vb.add(self.checkbox)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.HORIZONTAL)
+
+        self.button1 = Gtk.Button.new_with_label("Information")
+        self.button1.connect("clicked", self.on_button1_clicked)
+        self.hb.add(self.button1)
+
+        self.button2 = Gtk.Button.new_with_label("Blockall")
+        self.button2.connect("clicked", self.on_button2_clicked)
+        self.hb.add(self.button2)
+
+        self.button3 = Gtk.Button.new_with_label("Strict")
+        self.button3.connect("clicked", self.on_button3_clicked)
+        self.hb.add(self.button3)
+
+        self.button4 = Gtk.Button.new_with_label("Normal")
+        self.button4.connect("clicked", self.on_button4_clicked)
+        self.hb.add(self.button4)
+
+        self.button5 = Gtk.ToggleButton.new_with_label("Toggle Firewall")
+        self.button5.connect("toggled", self.on_button5_toggled, "TF")
+        self.button5.set_active(self.fw_status())
+        self.hb.add(self.button5)
+
+        self.vb.add(self.hb)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.cancel_button = Gtk.Button.new_with_label("Exit")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        
+        self.status_bar = Gtk.Statusbar.new()
+        self.status_bar.remove_all(1)
+        if self.fw_status() is True:
+            self.status_bar_on()
+        else:
+            self.status_bar_off()
+        self.vb.pack_end(self.status_bar, False, False, 5)
+        self.add(self.vb)
+
+    def fw_status(self):
+        p1 = Popen(['sh', '/etc/rc.d/rc.FireWall', 'status'], stdout=PIPE)
+        p2 = Popen(['grep', '-o', 'LOG_DROP'], stdin=p1.stdout, stdout=PIPE)
+        p3 = run(['head', '--lines=1'], stdin=p2.stdout, stdout=PIPE).stdout.decode('utf-8')
+        if p3:
+            return True
+        else:
+            return False
+
+    def status_bar_on(self):
+        return self.status_bar.push(1, "FIREWALL STATUS: ON | MODE: " + self.fw_mode())
+
+    def status_bar_off(self):
+        return self.status_bar.push(1, "FIREWALL STATUS: OFF")
+
+    def fw_mode(self):
+        mode = run(['grep ALLOWED_PORTS= /etc/rc.d/rc.FireWall | wc -w'], shell=True, stdout=PIPE).stdout.decode('utf-8')
+        if mode:
+            if int(mode) == 8:
+                fmode = 'NORMAL'
+            elif int(mode) == 5:
+                fmode = 'STRICT'
+            elif int(mode) == 2:
+                fmode = 'BLOCKALL'
+        else:
+            fmode = ' '
+        return fmode
+
+    def checkbox_state(self):
+        check = access('/etc/rc.d/rc.FireWall', X_OK)
+        return check
+
+    def on_checkbox_checked(self, checkbox):
+        if checkbox.get_active():
+            chmod('/etc/rc.d/rc.FireWall', 0o755)
+            state = "on"
+        else:
+            chmod('/etc/rc.d/rc.FireWall', 0o644)
+            state = "off"
+        print("checkbox was turned", state)
+
+    def on_button1_clicked(self, button):
+        self.tmp_dir = TemporaryDirectory()
+        outfile = self.tmp_dir.name + "/fwinfo.txt"
+        with open(outfile, "w") as f:
+            Popen(['sh', '/etc/rc.d/rc.FireWall', 'status'], stdout = f)
+        with open(outfile, "r") as f:
+            Popen(['/opt/porteus-scripts/xorg/editor', outfile])
+
+    def on_button2_clicked(self, button):
+        run(['sh', '/etc/rc.d/rc.FireWall', 'stop'])
+        allowedp = run(['grep "ALLOWED_PORTS=" /etc/rc.d/rc.FireWall'], shell=True, stdout=PIPE).stdout.decode('utf-8').strip()
+        strictp = 'ALLOWED_PORTS="80 443"'
+        run(['iptables', '-F'])
+        run(['iptables', '-P', 'INPUT', 'DROP'])
+        run(['iptables', '-P', 'OUTPUT', 'DROP'])
+        run(['iptables', '-P', 'FORWARD', 'DROP'])
+        run(['sed', '-i', 's/' + allowedp + '/' + strictp + '/g', '/etc/rc.d/rc.FireWall'])
+        run(['sh', '/etc/rc.d/rc.FireWall', 'start'])
+        self.status_bar_on()
+
+    def on_button3_clicked(self, button):
+        run(['sh', '/etc/rc.d/rc.FireWall', 'stop'])
+        allowedp = run(['grep "ALLOWED_PORTS=" /etc/rc.d/rc.FireWall'], shell=True, stdout=PIPE).stdout.decode('utf-8').strip()
+        strictp = 'ALLOWED_PORTS="21 80 110 143 443"'
+        run(['sed', '-i', 's/' + allowedp + '/' + strictp + '/g', '/etc/rc.d/rc.FireWall'])
+        run(['sh', '/etc/rc.d/rc.FireWall', 'start'])
+        self.status_bar_on()
+
+    def on_button4_clicked(self, button):
+        run(['sh', '/etc/rc.d/rc.FireWall', 'stop'])
+        allowedp = run(['grep "ALLOWED_PORTS=" /etc/rc.d/rc.FireWall'], shell=True, stdout=PIPE).stdout.decode('utf-8').strip()
+        normalp = 'ALLOWED_PORTS="20 21 22 25 80 110 143 443"'
+        run(['sed', '-i', 's/' + allowedp + '/' + normalp + '/g', '/etc/rc.d/rc.FireWall'])
+        run(['sh', '/etc/rc.d/rc.FireWall', 'start'])
+        self.status_bar_on()
+
+    def on_button5_toggled(self, button, name):
+        if button.get_active():
+            state = "on"
+            run(['sh', '/etc/rc.d/rc.FireWall', 'start'])
+            self.status_bar_on()
+        else:
+            state = "off"
+            run(['sh', '/etc/rc.d/rc.FireWall', 'stop'])
+            self.status_bar_off()
+        print("Button", name, "was turned", state)
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+win = GtkFireW()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

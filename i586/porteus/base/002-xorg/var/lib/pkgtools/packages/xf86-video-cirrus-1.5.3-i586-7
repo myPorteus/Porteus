@@ -1,0 +1,41 @@
+PACKAGE NAME:     xf86-video-cirrus-1.5.3-i586-7
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/xf86-video-cirrus-1.5.3-i586-7.txz
+PACKAGE DESCRIPTION:
+xf86-video-cirrus: xf86-video-cirrus (Cirrus Logic video driver for the Xorg X server)
+xf86-video-cirrus:
+xf86-video-cirrus: xf86-video-cirrus is part of X11.
+xf86-video-cirrus:
+xf86-video-cirrus: For more information about the X.Org Foundation (the providers of the
+xf86-video-cirrus: X.Org implementation of the X Window System), see their website:
+xf86-video-cirrus:
+xf86-video-cirrus: http://www.x.org
+xf86-video-cirrus:
+xf86-video-cirrus:
+xf86-video-cirrus:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-cirrus-1.5.3/
+usr/doc/xf86-video-cirrus-1.5.3/COPYING
+usr/doc/xf86-video-cirrus-1.5.3/ChangeLog
+usr/doc/xf86-video-cirrus-1.5.3/INSTALL
+usr/doc/xf86-video-cirrus-1.5.3/README
+usr/doc/xf86-video-cirrus-1.5.3/README.multihead
+usr/lib/
+usr/lib/xorg/
+usr/lib/xorg/modules/
+usr/lib/xorg/modules/drivers/
+usr/lib/xorg/modules/drivers/cirrus_alpine.la
+usr/lib/xorg/modules/drivers/cirrus_alpine.so
+usr/lib/xorg/modules/drivers/cirrus_drv.la
+usr/lib/xorg/modules/drivers/cirrus_drv.so
+usr/lib/xorg/modules/drivers/cirrus_laguna.la
+usr/lib/xorg/modules/drivers/cirrus_laguna.so
+usr/man/
+usr/man/man4/
+usr/man/man4/cirrus.4.gz

@@ -1,0 +1,155 @@
+#!/bin/sh
+# Convert .deb. packages to .xzm modules.
+
+# Variables
+c='\e[36m'
+r='\e[31m'
+e=`tput sgr0`
+
+. /usr/share/porteus/porteus-functions
+. /usr/share/porteus/gtkdialog-functions
+PATH=$PATH:/usr/share/porteus/
+
+get_colors
+function chklibs(){
+echo "Checking required libraries ..."
+echo
+if [[ ! `ldconfig -p | grep libbfd` ]]; then
+	bold "#############################"
+	bold "#     Missing library       #"
+	bold "#############################"
+	echo
+	echo "You are missing libbfd. Please"
+	echo "activate 05_devel or run the"
+	bold "command: getpkg binutils"
+	echo "and installpkg the file."
+	echo
+	exit
+fi
+}
+
+show_help() {
+    echo
+    echo "Convert Debian's DEB package into .xzm compressed module"
+    echo "usage: $0 <option> <argument> "
+    echo " options:  -x : use xz compression. "
+    echo " options:  -z : use zstd compression. "
+    echo " if no option is given xz is used. "
+    echo "           -h       : show this usage. "
+    echo
+    echo "example: $0 /mnt/sda2/debian_packages/package.deb"
+	echo
+}
+
+COMP="-x"
+COMP_ZSTD="-z"
+
+while getopts "xzh" opt; do
+case "$opt" in
+
+    x)
+        shift "$(($OPTIND -1))"
+        ;;
+
+    z)
+        COMP="$COMP_ZSTD"
+        shift "$(($OPTIND -1))"
+        ;;
+  
+    h)
+        show_help
+        exit 0
+        ;;
+    
+esac
+done
+
+if [ "$1" = "" ]; then
+    show_help
+    exit 1
+fi
+
+# Let's start
+chklibs
+
+# Work only on deb packages:
+for x in $*; do
+    ext=`echo $x | rev | cut -d. -f1 | rev`
+    if [ "$ext" = deb ]; then
+        mod=`readlink -f $x`
+        MOD=`echo $MOD $mod`
+    fi
+done
+
+# Switch to root
+if [ "$DISPLAY" ]; then
+   if [ `whoami` != "root" ]; then
+      /opt/porteus-scripts/xorg/psu /opt/porteus-scripts/deb2xzm $COMP $MOD
+      exit
+   fi
+else
+   if [ `whoami` != "root" ]; then
+      echo "Please enter root's password below"
+      su -c "/opt/porteus-scripts/deb2xzm $COMP $MOD"
+      exit
+   fi
+fi
+
+# Create module:
+for y in $MOD; do
+    mod=`readlink -f $y | sed s/.deb$/.xzm/`
+    pkg=`echo $mod | awk -F/ '{print$NF}' | sed s/.xzm//g`
+    dataname=`ar t $y | grep data`
+    if [ "$DISPLAY" ]; then
+	case $dataname in
+	data.tar.bz2)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.gz && bzip2 -d data.tar.bz2 && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod
+	if [ $? -eq 0 ]; then
+	    gtkdialog.py -p "Success! Module created as $mod" -t 2000
+	else
+	    gtkdialog.py -p "Error , $mod creation failed." -d err
+	fi
+	;;
+	data.tar.gz)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.gz && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod
+	if [ $? -eq 0 ]; then
+	    gtkdialog.py -p "Success!  Module created as $mod" -t 2000
+	else
+	    gtkdialog.py -p "Error , $mod creation failed." -d err
+	fi
+	;;
+	data.tar.lzma)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.lzma && unxz data.tar.lzma && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod
+	if [ $? -eq 0 ]; then
+	    gtkdialog.py -p "Success! Module created as $mod" -t 2000
+	else
+	    gtkdialog.py -p "Error , $mod creation failed." -d err
+	fi
+	;;
+	data.tar.xz)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.xz && unxz data.tar.xz && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod
+	if [ $? -eq 0 ]; then
+	    gtkdialog.py -p "Success! Module created as $mod" -t 2000
+	else
+	    gtkdialog.py -p "Error , $mod creation failed." -d err
+	fi
+	;;
+	esac
+    else
+	case $dataname in
+	data.tar.bz2)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.gz && bzip2 -d data.tar.bz2 && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod && echo && echo -e "${c}Module created as $mod"$e || echo -e ''${r}$mod' creation failed!'$e
+	;;
+	data.tar.gz)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.gz && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod && echo && echo -e "${c}Module created as $mod"$e || echo -e ''${r}$mod' creation failed!'$e
+	;;
+	data.tar.lzma)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.lzma && unxz data.tar.lzma && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod && echo && echo -e "${c}Module created as $mod"$e || echo -e ''${r}$mod' creation failed!'$e
+	;;
+	data.tar.xz)
+	mkdir /tmp/deb2xzm$$ && cp $y /tmp/deb2xzm$$ && cd /tmp/deb2xzm$$ && /usr/bin/ar x * data.tar.xz && unxz data.tar.xz && gzip data.tar && mv data.tar.gz $pkg.tgz && txz2xzm $COMP /tmp/deb2xzm$$/$pkg.tgz && mv /tmp/deb2xzm$$/$pkg.xzm $mod && echo && echo -e "${c}Module created as $mod"$e || echo -e ''${r}$mod' creation failed!'$e
+	;;
+	esac
+    fi
+    rm -rf /tmp/deb2xzm$$
+done

@@ -1,0 +1,36 @@
+PACKAGE NAME:     libfontenc-1.1.4-i586-3
+COMPRESSED PACKAGE SIZE:     28K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libfontenc-1.1.4-i586-3.txz
+PACKAGE DESCRIPTION:
+libfontenc: libfontenc (font encoding library)
+libfontenc:
+libfontenc: libfontenc is part of X11.
+libfontenc:
+libfontenc: For more information about the X.Org Foundation (the providers of the
+libfontenc: X.Org implementation of the X Window System), see their website:
+libfontenc:
+libfontenc: http://www.x.org
+libfontenc:
+libfontenc:
+libfontenc:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libfontenc-1.1.4/
+usr/doc/libfontenc-1.1.4/COPYING
+usr/doc/libfontenc-1.1.4/ChangeLog
+usr/doc/libfontenc-1.1.4/INSTALL
+usr/doc/libfontenc-1.1.4/README.md
+usr/include/
+usr/include/X11/
+usr/include/X11/fonts/
+usr/include/X11/fonts/fontenc.h
+usr/lib/
+usr/lib/libfontenc.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/fontenc.pc

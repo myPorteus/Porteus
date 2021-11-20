@@ -1,0 +1,28 @@
+PACKAGE NAME:     tofrodos-1.7.13-i686-3ncm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/tofrodos-1.7.13-i686-3ncm.txz
+PACKAGE DESCRIPTION:
+tofrodos: tofrodos (Convert to and from dos)
+tofrodos:
+tofrodos: Text file conversion utility that converts ASCII files between the MSDOS
+tofrodos: format, which traditionally have CR/LF (carriage return/line feed) pairs as
+tofrodos: their new line delimiters, and the Unix format, which usually have LFs
+tofrodos: (line feeds) to terminate each line.
+tofrodos:
+tofrodos:
+tofrodos: http://www.thefreecountry.com/tofrodos/
+tofrodos:
+tofrodos:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/fromdos
+usr/bin/todos
+usr/man/
+usr/man/man1/
+usr/man/man1/fromdos.1
+usr/man/man1/todos.1

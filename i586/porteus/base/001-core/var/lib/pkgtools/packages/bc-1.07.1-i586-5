@@ -1,0 +1,67 @@
+PACKAGE NAME:     bc-1.07.1-i586-5
+COMPRESSED PACKAGE SIZE:     116K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/bc-1.07.1-i586-5.txz
+PACKAGE DESCRIPTION:
+bc: bc (An arbitrary precision calculator language)
+bc:
+bc: bc is an arbitrary precision numeric processing language. Syntax is
+bc: similar to C, but differs in many substantial areas. It supports
+bc: interactive execution of statements. bc is a utility included in the
+bc: POSIX P1003.2/D11 draft standard.
+bc:
+bc: The GNU version of bc was written by Philip A. Nelson.
+bc:
+bc:
+bc:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/bc
+usr/bin/dc
+usr/doc/
+usr/doc/bc-1.07.1/
+usr/doc/bc-1.07.1/AUTHORS
+usr/doc/bc-1.07.1/COPYING
+usr/doc/bc-1.07.1/COPYING.LIB
+usr/doc/bc-1.07.1/ChangeLog
+usr/doc/bc-1.07.1/Examples/
+usr/doc/bc-1.07.1/Examples/ckbook.b
+usr/doc/bc-1.07.1/Examples/pi.b
+usr/doc/bc-1.07.1/Examples/primes.b
+usr/doc/bc-1.07.1/Examples/twins.b
+usr/doc/bc-1.07.1/FAQ
+usr/doc/bc-1.07.1/INSTALL
+usr/doc/bc-1.07.1/NEWS
+usr/doc/bc-1.07.1/README
+usr/doc/bc-1.07.1/Test/
+usr/doc/bc-1.07.1/Test/BUG.bc
+usr/doc/bc-1.07.1/Test/array.b
+usr/doc/bc-1.07.1/Test/arrayp.b
+usr/doc/bc-1.07.1/Test/aryprm.b
+usr/doc/bc-1.07.1/Test/atan.b
+usr/doc/bc-1.07.1/Test/checklib.b
+usr/doc/bc-1.07.1/Test/div.b
+usr/doc/bc-1.07.1/Test/exp.b
+usr/doc/bc-1.07.1/Test/fact.b
+usr/doc/bc-1.07.1/Test/jn.b
+usr/doc/bc-1.07.1/Test/ln.b
+usr/doc/bc-1.07.1/Test/mul.b
+usr/doc/bc-1.07.1/Test/raise.b
+usr/doc/bc-1.07.1/Test/signum
+usr/doc/bc-1.07.1/Test/sine.b
+usr/doc/bc-1.07.1/Test/sqrt.b
+usr/doc/bc-1.07.1/Test/sqrt1.b
+usr/doc/bc-1.07.1/Test/sqrt2.b
+usr/doc/bc-1.07.1/Test/testfn.b
+usr/doc/bc-1.07.1/Test/timetest
+usr/info/
+usr/info/bc.info.gz
+usr/info/dc.info.gz
+usr/man/
+usr/man/man1/
+usr/man/man1/bc.1.gz
+usr/man/man1/dc.1.gz

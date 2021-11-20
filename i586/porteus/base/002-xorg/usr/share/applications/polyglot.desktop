@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Polyglot
+Comment=Translation
+GenericName=polyglot
+Exec=polyglot
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/pixmaps/porteus/globe.png
+Categories=Application;Network;

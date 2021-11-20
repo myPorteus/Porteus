@@ -1,0 +1,39 @@
+PACKAGE NAME:     xinit-1.4.1-i586-4
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     100K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/xinit-1.4.1-i586-4.txz
+PACKAGE DESCRIPTION:
+xinit: xinit (scripts to start X11 servers)
+xinit:
+xinit: xinit is not intended for naive users. Instead, site administrators 
+xinit: should design user-friendly scripts that present the desired interface
+xinit: when starting up X. The startx script is one such example.
+xinit:
+xinit:
+xinit:
+xinit:
+xinit:
+xinit:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/xinit/
+etc/X11/xinit/README.Xmodmap
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/startx
+usr/bin/xinit
+usr/doc/
+usr/doc/xinit-1.4.1/
+usr/doc/xinit-1.4.1/COPYING
+usr/doc/xinit-1.4.1/ChangeLog
+usr/doc/xinit-1.4.1/INSTALL
+usr/doc/xinit-1.4.1/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/startx.1.gz
+usr/man/man1/xinit.1.gz

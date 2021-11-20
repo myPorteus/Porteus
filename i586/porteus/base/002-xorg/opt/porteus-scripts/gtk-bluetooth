@@ -1,0 +1,137 @@
+#!/usr/bin/python
+## bluetooth script in pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+import subprocess
+import tempfile
+import os
+
+class GtkBlueT(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Bluetooth", border_width = 10, height_request = 250, width_request = 400, icon_name = "bluetooth-active-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Bluetooth Daemon Control</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.toggle_button = Gtk.ToggleButton.new_with_label("Toggle Bluetooth Daemon")
+        self.toggle_button.connect("toggled", self.on_toggle_button_toggled, "BT")
+        p1 = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+        p2 = subprocess.run(['grep', '-o', 'bluetoothd'], stdin=p1.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8')
+        if p2:
+            self.toggle_button.set_active(True)
+        else:
+            self.toggle_button.set_active(False)
+        self.vb.add(self.toggle_button)
+        self.vb.pack_start(self.toggle_button, False, False, 10)
+
+        self.checkbox = Gtk.CheckButton.new_with_label("Activate bluetooth daemon when Porteus starts")
+        self.checkbox.connect("toggled", self.on_checkbox_checked)
+        self.vb.pack_start(self.checkbox, False, False, 10)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.cancel_button = Gtk.Button.new_with_label("Exit")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.help_img = Gtk.Image.new_from_icon_name("help-about", Gtk.IconSize.BUTTON)
+        self.help_button = Gtk.Button.new_with_label("Help")
+        self.help_button.set_image(self.help_img)
+        self.help_button.set_always_show_image(True)
+        self.help_button.connect("clicked", self.on_help_clicked)
+        self.hb_bottom.pack_start(self.help_button, False, False, 2)
+
+        self.add(self.vb)
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        self.status_bar = Gtk.Statusbar.new()
+        if p2:
+            self.status_bar_on()
+        else:
+            self.status_bar_off()
+        self.vb.pack_end(self.status_bar, False, False, 5)
+
+        # ~ self.vb.pack_start(self.hb_bottom, False, False, 5)
+
+    def status_bar_on(self):
+        status_bar = Gtk.Statusbar.new()
+        status_bar.remove_all(1)
+        self.status_bar.push(1, "Bluetooth daemon is RUNNING")
+
+    def status_bar_off(self):
+        status_bar = Gtk.Statusbar.new()
+        status_bar.remove_all(1)
+        self.status_bar.push(1, "Bluetooth daemon is NOT RUNNING")
+
+    def on_toggle_button_toggled(self, toggle_button, name):
+        # ~ print("fixme")
+        if toggle_button.get_active():
+            state = "on"
+            subprocess.run(['sh', '/etc/rc.d/rc.bluetooth', 'start'])
+            self.status_bar_on()
+        else:
+            state = "off"
+            subprocess.run(['sh', '/etc/rc.d/rc.bluetooth', 'stop'])
+            self.status_bar_off()
+        print("Button", name, "was turned", state)
+
+    def on_checkbox_checked(self, checkbox):
+        # ~ print("fixme")
+        if checkbox.get_active():
+            os.chmod('/etc/rc.d/rc.bluetooth', 0o755)
+            state = "on"
+        else:
+            os.chmod('/etc/rc.d/rc.bluetooth', 0o644)
+            state = "off"
+        print("checkbox was turned", state)
+
+    def on_help_clicked(self, button):
+        help_dialog = HelpDialog(self)
+        help_dialog.run()
+        help_dialog.destroy()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+class HelpDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Help", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(550, 250)
+
+        self.help_header_txt = "<span size=\"large\" weight=\"bold\">Starting The Bluetooth Daemon</span>"
+        self.help_txt = "This Dialog is to help start the bluetooth daemon temporarily or have it start at boot every time. \
+\nThe bluetooth daemon is not running by default in Porteus and must be started if you \
+want to use Blueman to enable your bluetooth device or pair with a phone. \
+\nYou can also use the cheatcode 'bluetooth' to start it at boot. \
+\nNote if are using changes, bluetooth will enabled after this without the cheatcode."
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.help_header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.textview = Gtk.TextView(border_width = 20, editable = False, wrap_mode = Gtk.WrapMode.WORD, justification = Gtk.Justification.FILL, cursor_visible = False)
+        self.textbuffer = self.textview.get_buffer()
+        self.textbuffer.set_text(self.help_txt)
+
+        self.scrolledwindow.add(self.textview)
+
+        self.show_all()
+
+win = GtkBlueT()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

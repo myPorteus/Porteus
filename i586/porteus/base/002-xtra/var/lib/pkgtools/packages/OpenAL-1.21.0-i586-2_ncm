@@ -1,0 +1,57 @@
+PACKAGE NAME:     OpenAL-1.21.0-i586-2_ncm
+COMPRESSED PACKAGE SIZE:     580K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xtra/OpenAL-1.21.0-i586-2_ncm.tgz
+PACKAGE DESCRIPTION:
+OpenAL: OpenAL (a cross-platform 3D audio API)
+OpenAL:
+OpenAL: OpenAL is a cross-platform 3D audio API appropriate for use with
+OpenAL: gaming applications and many other types of audio applications.
+OpenAL:
+OpenAL: https://www.openal-soft.org/
+OpenAL:
+OpenAL:
+OpenAL:
+OpenAL:
+OpenAL:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/openal-info
+usr/doc/
+usr/doc/OpenAL-1.21.0/
+usr/doc/OpenAL-1.21.0/COPYING
+usr/doc/OpenAL-1.21.0/OpenAL.SlackBuild
+usr/include/
+usr/include/AL/
+usr/include/AL/al.h
+usr/include/AL/alc.h
+usr/include/AL/alext.h
+usr/include/AL/efx-creative.h
+usr/include/AL/efx-presets.h
+usr/include/AL/efx.h
+usr/lib/
+usr/lib/cmake/
+usr/lib/cmake/OpenAL/
+usr/lib/cmake/OpenAL/OpenALConfig-release.cmake
+usr/lib/cmake/OpenAL/OpenALConfig.cmake
+usr/lib/libopenal.so.1.21.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/openal.pc
+usr/share/
+usr/share/openal/
+usr/share/openal/alsoftrc.sample
+usr/share/openal/hrtf/
+usr/share/openal/hrtf/Default HRTF.mhr
+usr/share/openal/presets/
+usr/share/openal/presets/3D7.1.ambdec
+usr/share/openal/presets/hexagon.ambdec
+usr/share/openal/presets/itu5.1-nocenter.ambdec
+usr/share/openal/presets/itu5.1.ambdec
+usr/share/openal/presets/presets.txt
+usr/share/openal/presets/rectangle.ambdec
+usr/share/openal/presets/square.ambdec

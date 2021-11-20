@@ -1,0 +1,35 @@
+PACKAGE NAME:     xkbcomp-1.4.5-i586-1
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/xkbcomp-1.4.5-i586-1.txz
+PACKAGE DESCRIPTION:
+xkbcomp: xkbcomp (X Keyboard Extension)
+xkbcomp:
+xkbcomp: xkbcomp is part of X11.
+xkbcomp:
+xkbcomp: For more information about the X.Org Foundation (the providers of the
+xkbcomp: X.Org implementation of the X Window System), see their website:
+xkbcomp:
+xkbcomp: http://www.x.org
+xkbcomp:
+xkbcomp:
+xkbcomp:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xkbcomp
+usr/doc/
+usr/doc/xkbcomp-1.4.5/
+usr/doc/xkbcomp-1.4.5/COPYING
+usr/doc/xkbcomp-1.4.5/ChangeLog
+usr/doc/xkbcomp-1.4.5/INSTALL
+usr/doc/xkbcomp-1.4.5/README
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xkbcomp.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/xkbcomp.1.gz

@@ -1,0 +1,60 @@
+PACKAGE NAME:     brotli-1.0.9-i586-5
+COMPRESSED PACKAGE SIZE:     412K
+UNCOMPRESSED PACKAGE SIZE:     2.4M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/brotli-1.0.9-i586-5.txz
+PACKAGE DESCRIPTION:
+brotli: brotli (Brotli compression format)
+brotli:
+brotli: Brotli is a general purpose lossless compression algorithm that
+brotli: compresses data using a combination of a modern variant of the LZ77
+brotli: algorithm, Huffman coding, and second order context modeling, with a
+brotli: compression ratio comparable to the best currently available general
+brotli: purpose compression methods. It is similar in speed with deflate but
+brotli: offers more dense compression.
+brotli:
+brotli: Homepage: https://github.com/google/brotli/
+brotli:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/brotli
+usr/doc/
+usr/doc/brotli-1.0.9/
+usr/doc/brotli-1.0.9/BUILD
+usr/doc/brotli-1.0.9/CONTRIBUTING.md
+usr/doc/brotli-1.0.9/LICENSE
+usr/doc/brotli-1.0.9/README
+usr/doc/brotli-1.0.9/README.md
+usr/doc/brotli-1.0.9/WORKSPACE
+usr/include/
+usr/include/brotli/
+usr/include/brotli/decode.h
+usr/include/brotli/encode.h
+usr/include/brotli/port.h
+usr/include/brotli/types.h
+usr/lib/
+usr/lib/libbrotlicommon.so.1.0.9
+usr/lib/libbrotlidec.so.1.0.9
+usr/lib/libbrotlienc.so.1.0.9
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libbrotlicommon.pc
+usr/lib/pkgconfig/libbrotlidec.pc
+usr/lib/pkgconfig/libbrotlienc.pc
+usr/lib/python3.9/
+usr/lib/python3.9/site-packages/
+usr/lib/python3.9/site-packages/Brotli-1.0.9-py3.9.egg-info/
+usr/lib/python3.9/site-packages/Brotli-1.0.9-py3.9.egg-info/PKG-INFO
+usr/lib/python3.9/site-packages/Brotli-1.0.9-py3.9.egg-info/SOURCES.txt
+usr/lib/python3.9/site-packages/Brotli-1.0.9-py3.9.egg-info/dependency_links.txt
+usr/lib/python3.9/site-packages/Brotli-1.0.9-py3.9.egg-info/top_level.txt
+usr/lib/python3.9/site-packages/__pycache__/
+usr/lib/python3.9/site-packages/__pycache__/brotli.cpython-39.pyc
+usr/lib/python3.9/site-packages/_brotli.cpython-39-i386-linux-gnu.so
+usr/lib/python3.9/site-packages/brotli.py
+usr/man/
+usr/man/man1/
+usr/man/man1/brotli.1.gz

@@ -1,0 +1,99 @@
+#!/usr/bin/python
+#
+# Author: ncmprhnsbl
+#
+# This is a script to get super powers.
+# It is quite stupid, and will simply exit if you get the password wrong and can only handle five arguments.
+# Mainly meant just to open PSC or activate/deactivate single/small numbers of modules in a minimal setup with a polkit agent running.
+# Use at your own risk.
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk, GLib, Gio
+from subprocess import Popen, PIPE
+from sys import argv
+from os import path
+
+this_script=this_script = path.abspath(__file__)
+
+class MainWindow(Gtk.Window):
+
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Pass", border_width = 5, height_request = 150, width_request = 350, icon_name = "security-high", window_position = 1, type = 0)
+
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+        self.vb.set_homogeneous(False)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"large\" weight=\"bold\">Please enter Root password</span>")
+        self.l_header_txt.set_justify(Gtk.Justification.CENTER)
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.entry = Gtk.Entry()
+        self.entry.set_visibility(0)
+        self.entry.connect("activate", self.on_ok_button_clicked)
+        self.vb.pack_start(self.entry, True, True, 0)
+
+        self.hb_bottom = Gtk.Box(spacing = 5)
+        self.hb_bottom.set_homogeneous(False)
+
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        self.ok_button.connect("clicked", self.on_ok_button_clicked)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 6)
+
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_button_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 6)
+
+        self.vb.pack_start(self.hb_bottom, False, False, 6)
+        self.add(self.vb)
+
+    def on_ok_button_clicked(self, button):
+        self.text = Gtk.Entry.get_text(self.entry)
+        try:
+            target1 = argv[1]
+            target2 = argv[2]
+            target3 = argv[3]
+            target4 = argv[4]
+            target5 = argv[5]
+            #sys.stdout(self.text)
+            #Popen(['sudo', '-S', target1, target2, target3, target4, target5], stdin = sys.stdout)
+            p1 = Popen(['echo', self.text], stdout=PIPE)
+            Popen(['sudo', '-Sk', target1, target2, target3, target4, target5], stdin = p1.stdout)
+            Gtk.main_quit()
+        except IndexError:
+            try:
+                target1 = argv[1]
+                target2 = argv[2]
+                target3 = argv[3]
+                target4 = argv[4]
+                p1 = Popen(['echo', self.text], stdout=PIPE)
+                Popen(['sudo', '-Sk', target1, target2, target3, target4], stdin = p1.stdout)
+                Gtk.main_quit()
+            except IndexError:
+                try:
+                    target1 = argv[1]
+                    target2 = argv[2]
+                    target3 = argv[3]
+                    p1 = Popen(['echo', self.text], stdout=PIPE)
+                    Popen(['sudo', '-Sk', target1, target2, target3], stdin = p1.stdout)
+                    Gtk.main_quit()
+                except IndexError:
+                    try:
+                        target1 = argv[1]
+                        target2 = argv[2]
+                        p1 = Popen(['echo', self.text], stdout=PIPE)
+                        Popen(['sudo', '-Sk', target1, target2], stdin= p1.stdout)
+                        Gtk.main_quit()
+                    except IndexError:
+                        p1 = Popen(['echo', self.text], stdout=PIPE)
+                        Popen(['sudo', '-Sk', target1], stdin = p1.stdout)
+                        Gtk.main_quit()
+
+    def on_cancel_button_clicked(self, button):
+        Gtk.main_quit()
+
+win = MainWindow()
+win.connect("delete-event", Gtk.main_quit)
+win.show_all()
+Gtk.main()

@@ -1,0 +1,23 @@
+#!/bin/bash
+# Service menu script to upload to pastebin and display link
+# Requires wgetpaste and xclip
+# Author: Brokenman <brokenman@porteus.org>
+
+file=$1
+script="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+name=${file##*/}
+
+. /usr/lib/librokenman
+
+message_good(){
+/usr/share/porteus/gtkdialog.py -p "Uploaded successfully" -t 2000
+}
+
+message_bad(){
+/usr/share/porteus/gtkdialog.py -p "$name was NOT uploaded" -s "There was an error uploading $name" -d err
+}
+
+cat $file | wgetpaste > /tmp/pastebin-link.tmp && message_good `cat /tmp/pastebin-link.tmp` \
+|| message_bad
+
+rm /tmp/.message /tmp/pastebin-link.tmp 2>/dev/null

@@ -1,0 +1,71 @@
+#!/bin/bash
+# Service menu script to extract module to folder
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+COMP="-comp xz -b 256K -Xbcj x86"
+COMP_ZSTD="-comp zstd -b 256K -Xcompression-level 22"
+PATH=$PATH:/usr/share/porteus/
+
+while getopts "xz" opt; do
+case "$opt" in
+
+    x)
+        shift "$(($OPTIND -1))"
+        ;;
+
+    z)
+        COMP="$COMP_ZSTD"
+        shift "$(($OPTIND -1))"
+        ;;
+
+esac
+done
+
+if [ `grep "/" <<<$PWD` ]; then
+path=${1%/*}
+dir=${1##*/}
+module=${dir}.xzm
+  else
+dir=${1}
+path=`pwd`
+module=${dir}.xzm
+fi
+script="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+
+# Root check
+#if [ "`whoami`" != "root" ]; then
+#  /opt/porteus-scripts/xorg/psu "$script $1" &
+#  unset dir module path
+#  exit
+#fi
+
+if [ ! -w $path ]; then
+	gtkdialog.py -p "Sorry, ${path} is not writable!" -d warn
+	exit
+fi
+
+# Check for module
+if [ -f "${path}/${module}" ]; then
+  gtkdialog.py -p "Sorry, ${module} already exists!" -d warn
+  exit
+fi
+#start progress
+gtkprogress.py -w "Module Creation" -m "Creating ${module}..." -t "Processing..." &
+#sleep 2
+mksquashfs "${path}/${dir}" "${path}/${module}" $COMP -noappend || err=0
+#kill progress
+prog=`ps ax|grep gtkprogress.py |awk '{print$1}'|head -n1`
+kill ${prog}
+
+if [ $err ]; then
+	gtkdialog.py -p "Sorry, could not create ${module}!" -d warn
+	exit
+fi
+
+# Give notification
+gtkdialog.py -p "${module} was created." -t 2000 &
+
+#rm /tmp/.messsage 2>/dev/null
+exit

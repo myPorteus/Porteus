@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The Udisks Project</vendor>
+  <vendor_url>https://github.com/storaged-project/udisks</vendor_url>
+  <icon_name>drive-removable-media</icon_name>
+  <!-- ###################################################################### -->
+  <!-- Manage BTRFS -->
+  <action id="org.freedesktop.udisks2.btrfs.manage-btrfs">
+    <description>Manage BTRFS</description>
+    <description xml:lang="zh_TW">管理 BTRFS</description>
+    <description xml:lang="zh_CN">管理 BTRFS</description>
+    <description xml:lang="uk">Керування BTRFS</description>
+    <description xml:lang="tr">BTRFS'i yönet</description>
+    <description xml:lang="sv">Hantera BTRFS</description>
+    <description xml:lang="sk">Spravovať BTRFS</description>
+    <description xml:lang="pt_BR">Gerenciar Btrfs</description>
+    <description xml:lang="pl">Zarządzanie btrfs</description>
+    <description xml:lang="nl">Beheer BTRFS</description>
+    <description xml:lang="lt">Tvarkyti BTRFS</description>
+    <description xml:lang="kk">BTRFS басқару</description>
+    <description xml:lang="it">Gestisci BTRFS</description>
+    <description xml:lang="id">Kelola BTRFS</description>
+    <description xml:lang="hu">BTRFS kezelése</description>
+    <description xml:lang="fur">Gjestìs BTRFS</description>
+    <description xml:lang="fr">Gérer un BTRFS</description>
+    <description xml:lang="fi">BTRFS hallinta</description>
+    <description xml:lang="es">Administrar BTRFS</description>
+    <description xml:lang="de">Btrfs verwalten</description>
+    <description xml:lang="da">Håndter BTRFS</description>
+    <description xml:lang="cs">Spravovat BTRFS</description>
+    <description xml:lang="ca">Gestiona el BTRFS</description>
+    <description xml:lang="af">Bestuur BTRFS</description>
+    <message>Authentication is required to manage BTRFS</message>
+    <message xml:lang="zh_CN">管理 BRTFS 需要身份验证</message>
+    <message xml:lang="uk">Щоб отримати доступ до керування BTRFS, слід пройти розпізнавання</message>
+    <message xml:lang="tr">BTRFS'i yönetmek için kimlik doğrulaması gerekli</message>
+    <message xml:lang="sv">Autentisering krävs för att hantera BTRFS</message>
+    <message xml:lang="sk">Spravovanie BTRFS vyžaduje overenie totožnosti</message>
+    <message xml:lang="pt_BR">A autenticação é necessária para gerenciar BTRFS</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zarządzać btrfs</message>
+    <message xml:lang="nl">Authenticatie is vereist om BTRFS te beheren</message>
+    <message xml:lang="lt">Norint tvarkyti BTRFS, reikia patvirtinti tapatybę</message>
+    <message xml:lang="kk">BTRFS басқару үшін аутентификация керек</message>
+    <message xml:lang="it">È richiesto autenticarsi per gestire BTRFS</message>
+    <message xml:lang="id">Perlu otentikasi untuk mengelola BTRFS</message>
+    <message xml:lang="hu">Hitelesítés szükséges a BTRFS kezeléséhez</message>
+    <message xml:lang="fur">La auteticazion e je necessarie par gjestî BTRFS</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour gérer un BTRFS</message>
+    <message xml:lang="es">Se requiere autenticación para gestionar BTRFS</message>
+    <message xml:lang="de">Legitimation ist zum Verwalten von BTRFS erforderlich</message>
+    <message xml:lang="da">Der kræves godkendelse for at håndtere BTRFS</message>
+    <message xml:lang="cs">Pro správu BTRFS je nutné ověření</message>
+    <message xml:lang="ca">Es requereix autenticació per gestionar el BTRFS</message>
+    <message xml:lang="af">Verifiëring is nodig om BTRFS te bestuur</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

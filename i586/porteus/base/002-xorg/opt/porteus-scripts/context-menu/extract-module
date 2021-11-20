@@ -1,0 +1,47 @@
+#!/bin/bash
+# Service menu script to extract module/s to folder
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+IFS=$'\n'
+selection=$*
+script="$(cd "${0%/*}" 2>/dev/null; echo "$PWD"/"${0##*/}")"
+# Root check
+#if [ "`whoami`" != "root" ]; then
+#  /opt/porteus-scripts/xorg/psu "$script $selection" &
+#  exit
+#fi
+
+error(){
+/usr/share/porteuse/gtkdialog.py -p "An error ocurred" -d err
+exit
+}
+
+p=${1%/*}
+if [ ! -w $p ]; then
+	error
+	exit
+fi
+
+# Extract the modules
+for module in $selection; do
+  path=${module%/*}
+  name=${module##*/}
+  dir=${name%.*}
+  echo $name >> /tmp/.extracted
+  /usr/share/porteus/gtkprogress.py -w "Module Extraction" -m "Extracting ${name}..." -t "Processing..." &
+  [ ! -d "${path}/${dir}" ] && mkdir "${path}/${dir}"
+  unsquashfs -f -dest "${path}/${dir}" $module
+  #echo "$name" > /tmp/.message
+  prog=`ps ax|grep gtkprogress.py |awk '{print$1}'|head -n1`
+  kill ${prog}
+done
+
+export ext=`cat /tmp/.extracted`
+
+# Give notification
+/usr/share/porteus/gtkdialog.py -p "Extraction was completed" -t 2000 &
+
+rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit
+

@@ -1,0 +1,36 @@
+PACKAGE NAME:     inih-53-i586-2
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/inih-53-i586-2.txz
+PACKAGE DESCRIPTION:
+inih: inih (INI Not Invented Here)
+inih:
+inih: inih (INI Not Invented Here)** is a simple .INI file parser written in
+inih: C. It's only a couple of pages of code, and it was designed to be
+inih: small and simple, so it's good for embedded systems. It's also more or
+inih: less compatible with Python's ConfigParser style of .INI files,
+inih: including RFC 822-style multi-line syntax and `name: value` entries.
+inih:
+inih: Homepage: https://github.com/benhoyt/inih
+inih:
+inih:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/libINIReader.so.0
+lib/libinih.so.0
+usr/
+usr/doc/
+usr/doc/inih-53/
+usr/doc/inih-53/LICENSE.txt
+usr/doc/inih-53/README.md
+usr/include/
+usr/include/INIReader.h
+usr/include/ini.h
+usr/lib/
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/INIReader.pc
+usr/lib/pkgconfig/inih.pc

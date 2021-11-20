@@ -1,0 +1,32 @@
+#!/bin/bash
+# Script to unmount module at /mnt/loop
+# Author: Brokenman <brokenman@porteus.org>
+
+FULLPATHFILE=$(readlink -f "$1")
+BASE=$(basename "$1")
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+	/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/context-menu/unmount-module "$FULLPATHFILE"
+	exit
+fi
+
+not_mounted(){
+	/usr/share/porteus/gtkdialog.py -p "$BASE is not mounted at /mnt/loop" -d warn
+}
+
+in_use(){
+	/usr/share/porteus/gtkdialog.py -p "/mnt/loop was not unmounted, maybe because some file is in use" -d warn
+}
+
+success(){
+	/usr/share/porteus/gtkdialog.py -p "/mnt/loop was unmounted" -t 2000
+}
+
+if [ "$(ls -A /mnt/loop)" ]; then
+	umount /mnt/loop -f -R && success || in_use
+	rmdir --ignore-fail-on-non-empty /mnt/loop
+else
+	not_mounted		
+fi
+

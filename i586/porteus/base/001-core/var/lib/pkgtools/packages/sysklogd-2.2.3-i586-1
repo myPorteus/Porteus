@@ -1,0 +1,65 @@
+PACKAGE NAME:     sysklogd-2.2.3-i586-1
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/sysklogd-2.2.3-i586-1.txz
+PACKAGE DESCRIPTION:
+sysklogd: sysklogd (Linux system logging utilities)
+sysklogd:
+sysklogd: The syslogd utility reads and logs messages to the system console, log
+sysklogd: files, other machines and/or users as specified by its configuration
+sysklogd: file. It was originally ported to Linux by Dr. Greg Wettstein, Stephen
+sysklogd: Tweedie, Juha Virtanen, Shane Alderton, and Martin Schulze, and is
+sysklogd: currently maintained by Joachim Wiberg.
+sysklogd:
+sysklogd: Homepage: https://github.com/troglobit/sysklogd
+sysklogd:
+sysklogd:
+FILE LIST:
+./
+etc/
+etc/default/
+etc/default/syslogd.new
+etc/logrotate.d/
+etc/logrotate.d/syslog.new
+etc/rc.d/
+etc/rc.d/rc.syslog.new
+etc/syslog.conf.new
+etc/syslog.d/
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/sysklogd-2.2.3/
+usr/doc/sysklogd-2.2.3/ChangeLog.md
+usr/doc/sysklogd-2.2.3/LICENSE
+usr/doc/sysklogd-2.2.3/README.md
+usr/doc/sysklogd-2.2.3/example/
+usr/doc/sysklogd-2.2.3/example/README.md
+usr/doc/sysklogd-2.2.3/example/example.c
+usr/doc/sysklogd-2.2.3/example/example.mk
+usr/doc/sysklogd-2.2.3/syslog.conf
+usr/include/
+usr/include/syslog/
+usr/include/syslog/syslog.h
+usr/lib/
+usr/lib/libsyslog.so.0.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libsyslog.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/syslogp.3.gz
+usr/man/man5/
+usr/man/man5/syslog.conf.5.gz
+usr/man/man8/
+usr/man/man8/syslogd.8.gz
+usr/sbin/
+usr/sbin/syslogd
+var/
+var/log/
+var/log/cron.new
+var/log/debug.new
+var/log/maillog.new
+var/log/messages.new
+var/log/secure.new
+var/log/syslog.new

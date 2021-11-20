@@ -1,0 +1,1080 @@
+#!/bin/bash
+# A script to do basic network configuration.
+# Mostly written by Patrick Volkerding <volkerdi@slackware.com>.
+# Modified to use /etc/rc.d/rc.inet1.conf Tue Aug 26 16:51:48 PDT 2003 <pjv>
+
+write_config_files() {
+#
+############################################################################
+#			  The rc.inet1.conf file.
+############################################################################
+#
+
+# If we're doing loopback, we don't want 127.0.0.1 and 255.255.255.0 in
+# rc.inet1.conf... it's better to leave the values null. However, since
+# we use the IP in other places, we need to make a copy for here.
+RCIPCOPY=("${IPADDRS[@]}")
+RCIP6COPY=("${IP6ADDRS[@]}")
+if [ "${RCIPCOPY[0]}" = "127.0.0.1/8" ]; then
+  RCIPCOPY=()
+fi
+if [ "${RCIP6COPY[0]}" = "::1/128" ]; then
+  RCIP6COPY=()
+fi
+
+# echo "Creating /$RC..."
+/bin/cat << ENDFILE > $RC
+# /etc/rc.d/rc.inet1.conf
+#
+# This file contains the configuration settings for network interfaces.
+#
+# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
+# If you don't have an interface, leave the settings null ("").
+#
+# You can configure network interfaces other than eth0,eth1... by setting
+# IFNAME[interface] to the interface's name. If IFNAME[interface] is unset
+# or empty, it is assumed you're configuring eth<interface>.
+#
+# Several other parameters are available; the end of this file contains a
+# comprehensive set of examples.
+#
+# Important note for IPv6 stateless auto configuration (SLAAC) users:
+# From Slackware 15.0 onwards, you need to set USE_SLAAC[0]="yes" below.
+
+# =============================================================================
+
+ENDFILE
+
+if [ -n "$VLAN" ]; then
+  VLAN=".$(( 10#$VLAN ))"
+  echo "IFNAME[0]=\"eth0$VLAN\"" >>$RC
+fi
+
+/bin/cat << ENDFILE >> $RC
+# IPv4 config options for eth0$VLAN:
+IPADDRS[0]="${RCIPCOPY[@]}"
+USE_DHCP[0]="$USE_DHCP"
+# IPv6 config options for eth0$VLAN:
+IP6ADDRS[0]="${RCIP6COPY[@]}"
+USE_SLAAC[0]="$USE_SLAAC"
+USE_DHCP6[0]="$USE_DHCP6"
+# Generic options for eth0$VLAN:
+DHCP_HOSTNAME[0]="$DHCP_HOSTNAME"
+
+# IPv4 config options for eth1:
+IPADDRS[1]=""
+USE_DHCP[1]=""
+# IPv6 config options for eth1:
+IP6ADDRS[1]=""
+USE_SLAAC[1]=""
+USE_DHCP6[1]=""
+# Generic options for eth1:
+DHCP_HOSTNAME[1]=""
+
+# IPv4 config options for eth2:
+IPADDRS[2]=""
+USE_DHCP[2]=""
+# IPv6 config options for eth2:
+IP6ADDRS[2]=""
+USE_SLAAC[2]=""
+USE_DHCP6[2]=""
+# Generic options for eth2:
+DHCP_HOSTNAME[2]=""
+
+# IPv4 config options for eth3:
+IPADDRS[3]=""
+USE_DHCP[3]=""
+# IPv6 config options for eth3:
+IP6ADDRS[3]=""
+USE_SLAAC[3]=""
+USE_DHCP6[3]=""
+# Generic options for eth3:
+DHCP_HOSTNAME[3]=""
+
+# IPv4 default gateway IP address:
+GATEWAY="$GATEWAY"
+# IPv6 default gateway IP address:
+GATEWAY6="$GATEWAY6"
+
+# =============================================================================
+
+# Example of how to configure a bond (link aggregation) interface.
+# Note the addition of the BONDNICS and BONDMODE parameters.
+# BONDNICS is a space delimited list of interfaces to add to this bond.  The
+# BONDNICS interfaces will be brought up and configured while bringing up the
+# bond interface, so do not need to be previously defined in rc.inet1.conf.
+# BONDMODE sets the bonding mode for this interface.  If not specified when
+# BONDNICS has been used, the default is 'balance-rr'.
+# IFOPTS is a pipe (|) delimited list of bonding module specific settings to be
+# applied to the interface, and should always include the 'miimon' option when
+# configuring bonding - not using this option will result in network
+# degradation.  In 'active-backup' mode, the 'primary' option should also be
+# supplied.  When using '802.3ad' mode, set "lacp_rate fast" for faster
+# recovery from an interface failure.  In other modes, the 'xmit_hash_policy'
+# should be set.  See the /usr/src/linux/Documentation/networking/bonding.txt
+# file (search for "Bonding Driver Options") for the full set of options.
+#IFNAME[0]="bond0"
+#BONDNICS[0]="eth0 eth1"
+#BONDMODE[0]="balance-rr"
+#IFOPTS[0]="xmit_hash_policy layer2+3 | miimon 100"
+#IPADDRS[0]="192.168.0.1/24"
+#USE_DHCP[0]=""
+#DHCP_HOSTNAME[0]=""
+#IP6ADDRS[0]=""
+#USE_SLAAC[0]=""
+#USE_DHCP6[0]=""
+
+# =============================================================================
+
+# Example of how to configure a VLAN interface:
+# The VLAN ID is taken from the full interface name, which is comprised of the
+# underlying interface name, a period (.) and then the VLAN ID.
+# IFOPTS is a pipe (|) delimited list of VLAN module specific settings to be
+# applied to the interface.  See the ip-link(8) man page (search for "VLAN Type
+# Support") for details of the options available.  This option is not required
+# for a standard VLAN to be configured.
+#IFNAME[0]="eth0.10"
+#IFOPTS[0]=""
+#IPADDRS[0]="192.168.10.1/24"
+#USE_DHCP[0]=""
+#DHCP_HOSTNAME[0]=""
+#IP6ADDRS[0]=""
+#USE_SLAAC[0]=""
+#USE_DHCP6[0]=""
+
+# =============================================================================
+
+# Example of how to configure a bridge:
+# Note the added "BRNICS" variable which contains a space-separated list
+# of the physical or virtual network interfaces you want to add to the bridge.
+# IFOPTS is a pipe (|) delimited list of bridge module specific settings to be
+# applied to the interface.  See the ip-link(8) man page (search for "BRIDGE
+# Type Support") for details of the options available.  This option is not
+# required for a standard bridge to be configured.
+#IFNAME[0]="br0"
+#BRNICS[0]="eth0"
+#IFOPTS[0]=""
+#IPADDRS[0]="192.168.0.1/24"
+#USE_DHCP[0]=""
+#DHCP_HOSTNAME[0]=""
+
+# =============================================================================
+
+# Virtual interfaces to create - these are created before any address
+# configuration or bridge setup is done, so you may use these interfaces
+# as IFNAME or BRNICS values. These can be tun or tap interfaces:
+# adjust VIRTIFNAME and VIRTIFTYPE accordingly.
+# Starting with VIRTIFNAME[0] is mandatory, and each next one must be
+# incremented by one, so VIRTIFNAME[1], VIRTIFNAME[2], and so on.
+# Virtual tap interface example
+#VIRTIFNAME[0]="tap0"
+#VIRTIFTYPE[0]="tap"
+#VIRTIFUSER[0]="root"
+#VIRTIFGROUP[0]="root"
+
+# Virtual tun interface example
+#VIRTIFNAME[1]="tun0"
+#VIRTIFTYPE[1]="tun"
+#VIRTIFUSER[1]="someuser"
+#VIRTIFGROUP[1]="somegroup"
+
+# =============================================================================
+
+# Example config information for wlan0:
+# Uncomment the lines you need and fill in your data.  You may not need all of
+# these for your wireless network.
+#IFNAME[4]="wlan0"
+#IPADDRS[4]=""
+#USE_DHCP[4]="yes"
+#DHCP_HOSTNAME[4]="icculus-wireless"
+#DHCP_KEEPRESOLV[4]="yes"
+#DHCP_KEEPNTP[4]="yes"
+#DHCP_KEEPGW[4]="yes"
+#DHCP_IPADDR[4]=""
+#WLAN_ESSID[4]=DARKSTAR
+#WLAN_MODE[4]=Managed
+#WLAN_RATE[4]="54M auto"
+#WLAN_CHANNEL[4]="auto"
+#WLAN_KEY[4]="D5A31F54ACF0487C2D0B1C10D2"
+#WLAN_IWPRIV[4]="set AuthMode=WPAPSK | set EncrypType=TKIP | set WPAPSK=96389dc66eaf7e6efd5b5523ae43c7925ff4df2f8b7099495192d44a774fda16"
+#WLAN_WPA[4]="wpa_supplicant"
+#WLAN_WPADRIVER[4]="wext"
+#WLAN_WPAWAIT[4]=30
+
+# =============================================================================
+
+# Some examples of additional network parameters that you can use.
+#IFNAME[4]="wlan0"              # Use a different interface name instead of
+                                # the default 'eth4'
+#IFOPTS[4]=""                   # A pipe (|) delimited list of interface type
+                                # specific options to apply.  These options
+                                # can be found in the ip-link(8) man page in
+                                # the approprite section for the interface
+                                # type being configured.
+#HWADDR[4]="00:01:23:45:67:89"  # Overrule the card's hardware MAC address
+#MTU[4]=""                      # The default MTU is 1500, but you might need
+                                # 1360 when you use NAT'ed IPSec traffic.
+#PROMISCUOUS[4]="yes"           # Set promiscuous mode on the interface.
+#DHCP_TIMEOUT[4]="15"           # The default timeout for the DHCP client to
+                                # wait for server resonse is 15 seconds, but
+                                # you might want a shorter or longer wait.
+#DHCP_KEEPRESOLV[4]="yes"       # If you don't want /etc/resolv.conf overwritten
+#DHCP_KEEPNTP[4]="yes"          # If you don't want ntp.conf overwritten
+#DHCP_KEEPGW[4]="yes"           # If you don't want the DHCP server to change
+                                # your default gateway
+#DHCP_IPADDR[4]=""              # Request a specific IP address from the DHCP
+                                # server
+#DHCP_DEBUG[4]="yes"            # Make dhcpcd show verbose diagnostics
+#DHCP_NOIPV4LL[4]="yes"         # Do not assign an ipv4ll address when a DHCP
+                                # server is not found (ipv4ll link-local
+                                # adresses in the IP range 169.254.0.0/16 are
+                                # also known as "zeroconf" addresses)
+#SLAAC_TIMEOUT[4]="15"          # The default timeout for auto configuration to
+                                # wait for the interface to come up is 15 sec.
+                                # Increase the timeout if required.
+#SLAAC_PRIVIPGEN[4]="yes"       # When assigning addresses via SLAAC, use the
+                                # 'private' (RFC7217) address generation method.
+                                # It is advisable to also set SLAAC_SECRET[x].
+#SLAAC_SECRET[4]="xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx"
+                                # When SLAAC_PRIVIPGEN[x]="yes" is set, this is
+                                # the secret to be used.  This must be in the
+                                # form of an IPv6 address.  When left unset, a
+                                # random secret is used (this is the default).
+#SLAAC_TEMPADDR[4]="yes"        # Use a temporary address with SLAAC to enhance
+                                # security.
+#USE_RA[4]="yes"                # Accept router advertisements even when SLAAC
+                                # is disabled on the interface.
+#WLAN_ESSID[4]="DARKSTAR"       # An example of how you can override _any_
+                                # parameter defined in rc.wireless.conf, by
+                                # prepending 'WLAN_' to the parameter's name.
+                                # Useful with multiple wireless interfaces.
+#WLAN_IWPRIV[4]="set AuthMode=WPAPSK | set EncrypType=TKIP | set WPAPSK=thekey"
+                                # Some drivers require a private ioctl to be
+                                # set through the iwpriv command. If more than
+                                # one is required, you can place them in the
+                                # IWPRIV parameter (separated with the pipe (|)
+                                # character, see the example).
+#WLAN_WPA[4]="wpa_supplicant"   # Run wpa_supplicant for WPA support
+#WLAN_WPADRIVER[4]="ndiswrapper"# Tell wpa_supplicant to specifically use the
+                                # ndiswrapper driver (if you leave this empty
+                                # the 'wext' driver is used by default)
+#WLAN_WPAWAIT[4]="30"           # In case it takes long for the WPA association
+                                # to finish, you can increase the wait time
+                                # (defaults to 10 seconds)
+
+# =============================================================================
+
+# Change this to "yes" for debugging output to syslog (if available, stdout if
+# not).
+DEBUG_ETH_UP="no"
+
+# MAXNICS is the maximum number of interfaces that will be configured.
+# You may need to increase the MAXNICS value if you have many interfaces, or
+# you use multiple VLANs and/or bridges.  The default is 6.
+#MAXNICS="6"
+ENDFILE
+#
+############################################################################
+#			  The networks file.
+############################################################################
+#
+#echo "Creating /$ETCNETWORKS..."
+/bin/cat <<EOF >$ETCNETWORKS
+#
+# networks	This file describes a number of netname-to-address
+#		mappings for the TCP/IP subsystem. It is mostly
+#		used at boot time, when no name servers are running.
+#
+
+loopback	127.0.0.0
+localnet	$NETWORK
+
+# End of networks.
+EOF
+chmod 644 $ETCNETWORKS
+#
+############################################################################
+#			   The hosts file.
+############################################################################
+#
+#echo "Creating /$HOSTS..."
+/bin/cat << EOF > $HOSTS
+#
+# hosts		This file describes a number of hostname-to-address
+#		mappings for the TCP/IP subsystem. It is mostly
+#		used at boot time, when no name servers are running.
+#		On small systems, this file can be used instead of a
+#		"named" name server.  Just add the names, addresses
+#		and any aliases to this file...
+#
+
+# For loopbacking.
+127.0.0.1		localhost
+::1			localhost
+EOF
+[ -n "${IPADDRS[0]}" ] && echo -e "${IPADDRS[0]%%/*}\t\t$HOSTNM.$DOMAIN $HOSTNM" >>$HOSTS
+[ -n "${IP6ADDRS[0]}" ] && echo -e "${IP6ADDRS[0]%%/*}\t\t\t$HOSTNM.$DOMAIN $HOSTNM" >>$HOSTS
+chmod 644 $HOSTS
+#
+############################################################################
+#			The resolv.conf file.
+############################################################################
+#
+if [ ! "$NAMESERVER" = "" ]; then
+  echo "search $DOMAIN" >$RESOLV
+  echo "nameserver $NAMESERVER" >>$RESOLV
+else
+  echo "search $DOMAIN" >$RESOLV
+fi
+if [ -f $RESOLV ]; then
+  chmod 644 $RESOLV
+fi
+#
+############################################################################
+#			The rc.netdevice file.
+############################################################################
+#
+if [ -r /cardfound ]; then
+  if [ ! "`cat /cardfound`" = "" ]; then
+    cat << EOF > etc/rc.d/rc.netdevice
+# Load module for network device.
+# This script is automatically generated during the installation.
+
+/sbin/modprobe `cat /cardfound`
+
+EOF
+    chmod 755 etc/rc.d/rc.netdevice
+  fi
+fi
+rm -f $TMP/tempmsg /cardfound
+} # end write_config_files
+
+# Covert CIDR notation masks to old style dotted quad.
+cidr2mask() {
+  # https://forum.archive.openwrt.org/viewtopic.php?id=47986&p=1#p220781
+  set -- $(( 5 - ($1 / 8) )) 255 255 255 255 $(( (255 << (8 - ($1 % 8))) & 255 )) 0 0 0
+  [ $1 -gt 1 ] && shift $1 || shift
+  echo "${1-0}.${2-0}.${3-0}.${4-0}"
+}
+
+# This checks IPv4 address syntax.
+# usage: syntax_check_v4 ADDRESS #-OF-EXPECTED-SEGMENTS (up to 4)
+# example: syntax_check_v4 123.22.43.1 4
+# returns: 0=found correct  1=too many fields  2=non numeric field found
+syntax_check_v4() {
+  RET_CODE=0
+  SCRATCH=$1
+  SCRATCH=`echo $SCRATCH | tr "." "/"`
+  INDEX=$2
+  while [ ! "$INDEX" = "0" ]; do
+    # OK, so I'm a LISP-head :^)
+    FIELD=`basename $SCRATCH`
+    SCRATCH=`dirname $SCRATCH`
+    if expr $FIELD + 1 1> /dev/null 2> /dev/null; then
+      true
+    else
+      RET_CODE=2; # non-numeric field
+    fi
+    INDEX=`expr $INDEX - 1`
+  done
+  if [ ! "$SCRATCH" = "." ]; then
+    RET_CODE=1; # too many arguments
+  fi
+  if [ "$3" = "WARN" -a ! "$RET_CODE" = "0" ]; then
+    cat << EOF > $TMP/tempmsg
+The IP address you entered:
+  $1
+is not valid.
+
+There should be $2 groups of numbers seperated by dots, for example:
+  192.168.1.1
+
+Please correct any mistakes in the IP.
+EOF
+    dialog --title "INVALID IP" --ok-button "Back" --msgbox \
+        "`cat $TMP/tempmsg`" 12 72
+    rm -r $TMP/tempmsg
+  else
+    if [ "$3" = "ECHO" ]; then
+      echo $RET_CODE;
+    fi
+  fi
+  return $RET_CODE;
+}
+
+# This does cursary checks to validate an IPv6 address.
+syntax_check_v6() {
+  # We can only do a basic validation of the entered address
+  # as regexes for IPv6 addresses are very complex.
+  if [[ "$1" =~ ^[0-9a-fA-F:]+$ ]] && [[ "$1" =~ :[0-9a-fA-F]{1,4}$ ]]; then
+    return 0
+  else
+    dialog --title "INVALID IP" --ok-button "Back" --msgbox \
+"The IP address you entered:
+  $1
+is not valid.
+
+Please enter a valid IPv6 address." 9 72
+  fi
+  return 1
+}
+
+TMP=/var/log/setup/tmp
+if [ ! -d $TMP ]; then
+ mkdir -p $TMP
+ chmod 700 $TMP
+fi
+
+# Figure out where we are...  cheap hack.
+if [ ! -e etc/slackware-version -a ! -e /etc/installer -a ! -e bin/bash ]; then
+  cd /
+fi;
+
+# IMPORTANT!!! NO LEADING '/' in the paths below, or this script will not
+# function from the bootdisk.
+RC=etc/rc.d/rc.inet1.conf		# Where rc.inet1.conf file is.
+RESOLV=etc/resolv.conf			# Where resolv.conf file is.
+HOSTS=etc/hosts			 	# Where hosts file is.
+ETCNETWORKS=etc/networks		# Where networks file is.
+#
+# defaults:
+IPADDRS=()
+IP6ADDRS=()
+USE_DHCP=""                             # Use DHCP?  "" == no.
+USE_DHCP6=""
+DHCP_HOSTNAME=""                        # This is our DHCP hostname.
+NETWORK=127.0.0.0
+
+while [ 0 ]; do
+  cat << EOF > $TMP/tempmsg
+First, we'll need the name you'd like to give your host.
+Only the base hostname is needed right now - not the domain.
+For example:  darkstar
+
+Enter hostname:
+EOF
+  dialog --title "ENTER HOSTNAME" --cancel-label "Exit" --inputbox \
+      "`cat $TMP/tempmsg`" 12 64 "$HOSTNM" 2> $TMP/SeThost
+  if [ $? = 1 -o $? = 255 ]; then
+    rm -f $TMP/SeThost $TMP/tempmsg
+    exit
+  fi
+  HOSTNM="`cat $TMP/SeThost`"
+  rm -f $TMP/SeThost $TMP/tempmsg
+  if [ ! "$HOSTNM" = "" ]; then
+    break;
+  fi
+done
+
+while [ 0 ]; do
+  cat << EOF > $TMP/tempmsg
+Now, we need the domain name for this machine, such as:
+  example.org
+Do not supply a leading '.'
+
+Enter domain name for $HOSTNM:
+EOF
+  dialog --title "ENTER DOMAINNAME FOR '$HOSTNM'" --cancel-label "Exit" \
+      --inputbox "`cat $TMP/tempmsg`" 12 59 "$DOMAIN" 2> $TMP/SeTdom
+  if [ $? = 1 -o $? = 255 ]; then
+    rm -f $TMP/SeTdom $TMP/tempmsg
+    exit
+  fi
+  DOMAIN="`cat $TMP/SeTdom`"
+  rm -f $TMP/SeTdom $TMP/tempmsg
+  if [ ! "$DOMAIN" = "" ]; then
+    break;
+  fi
+done
+
+dialog --title "CONNECT VIA VLAN" --defaultno --yesno \
+"Some advanced networking set ups require a VLAN ID in order to \
+connect to the network.  Do you wish to configure a VLAN ID now?\n\n\
+Unless you are sure you require a VLAN ID, select 'No'." 8 68
+ERRNO="$?"
+if [ "$ERRNO" = "255" ]; then
+  exit
+elif [ "$ERRNO" = "1" ]; then
+  true
+else
+  while true; do
+    [ -r $TMP/SeTVLAN ] && VLAN="$(cat $TMP/SeTVLAN)"
+    dialog --title "VLAN ID" --cancel-label "Skip" --inputbox \
+        "Enter the VLAN ID used on this network:" 8 45 "$VLAN" 2>$TMP/reply
+    ERRNO="$?"
+    if [ "$ERRNO" = "255" ]; then
+      rm -f $TMP/SeTVLAN
+      exit
+    elif [ "$ERRNO" = "1" ]; then
+      unset VLAN
+      rm -f $TMP/SeTVLAN
+      break
+    else
+      VLAN="$(cat $TMP/reply)"
+      echo "$VLAN" >$TMP/SeTVLAN
+      if [[ ! "$VLAN" =~ ^[0-9]+$ ]]; then
+        dialog --title "VLAN ID" --ok-button "Back" --msgbox \
+            "That doesn't appear to be a valid VLAN ID." 5 46
+        if [ "$?" = "255" ]; then
+          exit
+        fi
+        continue
+      else
+        rm -f $TMP/SeTVLAN
+        break
+      fi
+    fi
+  done
+fi
+
+dialog --title "CONFIGURATION TYPE FOR '$HOSTNM.$DOMAIN'" \
+--default-item NetworkManager --cancel-button "Exit" \
+--menu \
+"Now we need to know how your machine connects to the network.\n\
+If you have an internal network card and an assigned IP address, gateway, \
+and DNS, use the 'static IP' choice to enter these values. If your IP \
+address is assigned by a DHCP server (commonly used by cable modem and DSL \
+services), select 'DHCP'. Select 'NetworkManager' if you would like to \
+have the NetworkManager daemon automatically handle your wired and \
+wireless network interfaces (this is simple and usually works). \
+IPv6 networks may also use SLAAC (Stateless Address Autoconfiguration) to \
+assign an address based on Router Advertisments. If you do not have a \
+network card, select the 'loopback' choice. \n\
+Which type of network setup would you like?"  22 77 5 \
+"static IP" "Use a static IPv4 or IPv6 address to configure ethernet" \
+"DHCP" "Use a DHCP (IPv4 or IPv6) server to configure ethernet" \
+"NetworkManager" "Autoconfigure network using NetworkManager" \
+"SLAAC" "Use SLAAC to configure ethernet (IPv6 only)" \
+"loopback" "Set up a loopback connection (modem or no net)" 2> $TMP/reply
+if [ $? = 1 -o $? = 255 ]; then
+  rm -f $TMP/reply
+  exit
+fi
+REPLY=`cat $TMP/reply`
+rm -f $TMP/reply
+
+if [ "$REPLY" = "DHCP" ]; then
+  dialog --title "SELECT DHCP TYPE" --default-item "DHCPv4" \
+      --cancel-button "Exit" --menu \
+"Please select the type of DHCP to use to configure your networking.
+Select 'DHCPv4' to configure for an IPv4 network (this is the most
+common type of network, and the safe choice).  Select 'DHCPv6' for a
+pure IPv6 network, or 'Both' to try and set up both types of network." 13 73 3 \
+"DHCPv4" "An IPv4 based network, with no IPv6 configuration" \
+"DHCPv6" "An IPv6 based network, with no IPv4 configuration" \
+"Both"   "A combination of IPv4 and IPv6 networks" 2>$TMP/reply
+  if [ $? = 1 -o $? = 255 ]; then
+    rm -f $TMP/reply
+    exit
+  fi
+  TYPE=`cat $TMP/reply`
+  if [ "$TYPE" = "DHCPv4" ]; then
+    USE_DHCP="yes"
+  elif [ "$TYPE" = "DHCPv6" ]; then
+    USE_DHCP6="yes"
+  else
+    USE_DHCP="yes"
+    USE_DHCP6="yes"
+  fi
+  dialog --title "SET DHCP HOSTNAME"  --cancel-label "Skip" \
+      --inputbox "Some network providers require \
+that the DHCP hostname be set in order to connect. If so, they'll have assigned \
+a hostname to your machine, which may look something like CC-NUMBER-A (this \
+depends on your ISP). If you were assigned a DHCP hostname, please enter it \
+below. If you do not have a DHCP hostname, just leave it blank or select 'Skip'." 13 67 \
+      2> $TMP/SeTDHCPHOST
+  ERRNO="$?"
+  if [ "$ERRNO" = "255" ]; then
+    rm -f $TMP/SeTDHCPHOST
+    exit
+  elif [ "$ERRNO" = "0" ]; then
+    # OK, if we actually got something, use it.
+    DHCP_HOSTNAME="$(cat $TMP/SeTDHCPHOST)"
+  fi
+  rm -f $TMP/SeTDHCPHOST
+elif [ "$REPLY" = "loopback" ]; then
+  LOOPBACK="yes"
+elif [ "$REPLY" = "NetworkManager" ]; then
+  LOOPBACK="yes"
+  NETWORKMANAGER="yes"
+elif [ "$REPLY" = "SLAAC" ]; then
+  LOOPBACK="no"
+  USE_SLAAC="yes"
+else
+  LOOPBACK="no"
+fi
+
+if [ "$LOOPBACK" = "no" -a ! "$USE_DHCP" = "yes" -a ! "$USE_SLAAC" = "yes" ]; then
+  while [ 0 ]; do
+    while [ 0 ]; do
+      if [ -r $TMP/SeTIPSv4 ]; then
+        IPADDRS=($(cat $TMP/SeTIPSv4))
+      fi
+      dialog --title "ENTER IPv4 ADDRESSES" --cancel-label "Skip" \
+          --colors --inputbox \
+"Enter the \Z1IPv4\Zn addresses for this host.  You may list one or more,
+space delimited, IPv4 addresses with netmasks in the format:
+  <IP address>/<CIDR netmask>
+For example:
+  111.112.113.114/24  or  111.112.113.114/24 10.0.1.114/8
+Old style netmask 255.255.255.0 is equivalent of 24 in CIDR style.
+If a netmask is not specified a default of 24 will be used.
+
+The first address entered will become the primary IPv4 address
+of this host.  If you do not want to configure a static IPv4
+address, just leave it blank or select 'Skip'." \
+          18 71 "${IPADDRS[*]}" 2> $TMP/SeTIPSv4
+      ERRNO="$?"
+      if [ "$ERRNO" = "1" ]; then
+        IPADDRS=()
+        rm -f $TMP/SeTIPSv4
+        break
+      elif [ "$ERRNO" = "255" ]; then
+        rm -f $TMP/SeTIPSv4
+        exit
+      fi
+      IPADDRS=($(cat $TMP/SeTIPSv4))
+      rm -f $TMP/SeTIPSv4
+      if [ "${IPADDRS[*]}" = "" ]; then
+        break
+      fi
+      for ((I=0; I < ${#IPADDRS[@]}; I++)); do
+        IP="${IPADDRS[$I]%/*}"
+        MASK="${IPADDRS[$I]#*/}"
+        if [ "$IP" = "" ]; then
+          dialog --title "NO IPv4 ADDRESSES" --ok-button "Back" --msgbox \
+              "No IP specified in entry: ${IPADDRS[$I]}." 5 55
+          if [ "$?" = "255" ]; then
+            rm -f $TMP/SeTIPSv4
+            exit
+          fi
+          continue 2
+        fi
+        syntax_check_v4 "$IP" 4 WARN || continue 2
+        if [ "$MASK" = "" ] || [ "$IP" = "$MASK" ]; then
+          IPADDRS[$I]="$IP/24"
+          MASK="24"
+        fi
+        if [[ ! "$MASK" =~ ^[0-9]+$ ]] || (($MASK <= 0)) || (($MASK > 32)); then
+          dialog --title "INVALID NETMASK" --msgbox \
+"Invalid netmask specified for entry: ${IPADDRS[$I]}.
+Valid netmasks will be in the range 1-32." 6 65
+          if [ "$?" = "255" ]; then
+            rm -f $TMP/SeTIPSv4
+            exit
+          fi
+          echo "${IPADDRS[@]}" >$TMP/SeTIPSv4
+          continue 2
+        fi
+      done
+      rm -f $TMP/SeTIPSv4
+      break
+    done
+
+    if [ ! "${IPADDRS[*]}" = "" ]; then
+      while [ 0 ]; do
+        if [ -r $TMP/SeTgateway4 ]; then
+          GATEWAY="`cat $TMP/SeTgateway4`"
+        fi
+        dialog --title "ENTER IPv4 GATEWAY ADDRESS" --cancel-label "Skip" --inputbox \
+"Enter the address for the IPv4 gateway on your network, such as:
+  `echo ${IPADDRS[0]} | cut -f 1-3 -d .`.1
+
+If you don't have an IPv4 gateway on your network, leave it blank
+or select 'Skip'.
+
+Enter IPv4 gateway address:" 14 69 "$GATEWAY" 2> $TMP/SeTgateway4
+        ERRNO="$?"
+        if [ "$ERRNO" = "1" ]; then
+          GATEWAY=""
+          rm -f $TMP/SeTgateway4
+          break
+        elif [ "$ERRNO" = "255" ]; then
+          rm -f $TMP/SeTgateway4
+          exit
+        fi
+        GATEWAY="`cat $TMP/SeTgateway4`"
+        rm -f $TMP/SeTgateway4
+        if [ "$GATEWAY" = "" ]; then
+          break
+        fi
+        syntax_check_v4 "$GATEWAY" 4 WARN
+        if [ $? = 0 ]; then
+          break
+        fi
+      done
+      rm -f $TMP/SeTgateway4
+    fi
+
+    while [ 0 ]; do
+      if [ -r $TMP/SeTIPSv6 ]; then
+        IP6ADDRS=($(cat $TMP/SeTIPSv6))
+      fi
+      dialog --title "ENTER IPv6 ADDRESSES" --cancel-label "Skip" \
+          --colors --inputbox \
+"Enter the \Z1IPv6\Zn addresses for this host.  You may list one or more,
+space delimited, IPv6 addresses with their prefixes in the format:
+  <IP address>/<prefix>
+For example:
+  1a:1b:1c:1d::abc/64  or  1a:1b:1c:1d::abc/64 2b2c::2:3:4:abc/64
+If a prefix is not specified a default of 64 will be used.
+
+If you do not want to configure a static IPv6 address or don't
+know what to put, just leave it blank or select 'Skip'." \
+          16 70 "${IP6ADDRS[*]}" 2> $TMP/SeTIPSv6
+      ERRNO="$?"
+      if [ "$ERRNO" = "1" ]; then
+        IP6ADDRS=()
+        rm -f $TMP/SeTIPSv6
+        break
+      elif [ "$ERRNO" = "255" ]; then
+        rm -f $TMP/SeTIPSv6
+        exit
+      fi
+      IP6ADDRS=($(cat $TMP/SeTIPSv6))
+      rm -f $TMP/SeTIPSv6
+      if [ "${IP6ADDRS[*]}" = "" ]; then
+        break
+      fi
+      for ((I=0; I < ${#IP6ADDRS[@]}; I++)); do
+        IP="${IP6ADDRS[$I]%/*}"
+        PREFIX="${IP6ADDRS[$I]#*/}"
+        if [ "$IP" = "" ]; then
+          dialog --title "NO IPv6 ADDRESSES" --ok-button "Back" --msgbox \
+              "No IP specified in entry: ${IP6ADDRS[$I]}." 5 60
+          if [ "$?" = "255" ]; then
+            rm -f $TMP/SeTIPSv6
+            exit
+          fi
+          continue 2
+        fi
+        syntax_check_v6 "$IP" || continue 2
+        if [ "$PREFIX" = "" ] || [ "$IP" == "$PREFIX" ]; then
+          IP6ADDRS[$I]="$IP/64"
+          PREFIX="64"
+        fi
+        if [[ ! "$PREFIX" =~ ^[0-9]+$ ]] || (($PREFIX <= 0)) || (($PREFIX > 128)); then
+          dialog --title "INVALID PREFIX" --msgbox \
+"Invalid prefix specified for entry: ${IP6ADDRS[$I]}.
+Valid prefixes will be in the range 1-128." 6 70
+          if [ "$?" = "255" ]; then
+            rm -f $TMP/SeTIPSv6
+            exit
+          fi
+          echo "${IP6ADDRS[@]}" >$TMP/SeTIPSv6
+          continue 2
+        fi
+      done
+      rm -f $TMP/SeTIPSv6
+      break
+    done
+
+    if [ ! "${IP6ADDRS[*]}" = "" ]; then
+      while [ 0 ]; do
+        if [ -r $TMP/SeTgateway6 ]; then
+          GATEWAY6="`cat $TMP/SeTgateway6`"
+        fi
+        dialog --title "ENTER IPv6 GATEWAY ADDRESS" --cancel-label "Skip" --inputbox \
+"Enter the address for the IPv6 gateway on your network, such as:
+  fe80:426c:ffff::1
+
+If you don't have an IPv6 gateway on your network, leave it blank
+or select 'Skip'.
+
+Enter IPv6 gateway address:" 14 69 "$GATEWAY6" 2> $TMP/SeTgateway6
+        ERRNO="$?"
+        if [ "$ERRNO" = "1" ]; then
+          GATEWAY6=""
+          rm -f $TMP/SeTgateway6
+          break
+        elif [ "$ERRNO" = "255" ]; then
+          rm -f $TMP/SeTgateway6
+          exit
+        fi
+        GATEWAY6="`cat $TMP/SeTgateway6`"
+        rm -f $TMP/SeTgateway6
+        if [ "$GATEWAY6" = "" ]; then
+          break
+        fi
+        syntax_check_v6 "$GATEWAY6"
+        if [ $? = 0 ]; then
+          break
+        fi
+      done
+      rm -f $TMP/SeTgateway6
+    fi
+
+    if [ "${IPADDRS[*]}" = "" ] && [ "${IP6ADDRS[*]}" = "" ]; then
+      dialog --title "NO IP ADDRESSES" --colors --defaultno --yesno \
+"\Z1You have not configured any IP addresses for this host.
+Are you sure you want to proceed with no IPs?\Zn" 6 59
+      ERRNO="$?"
+      if [ "$ERRNO" = "255" ]; then
+        exit
+      elif [ "$ERRNO" = "1" ]; then
+        continue
+      fi
+    fi
+    break
+  done
+fi
+
+if [ "$LOOPBACK" = "no" ]; then
+ dialog --title "USE A NAMESERVER?" --yesno "Do you wish to configure \
+a nameserver?" 5 42
+ if [ $? = 0 ]; then
+  if [ ! "${IPADDRS[*]}" = "" ]; then
+    if [ ! "$GATEWAY" = "" ]; then
+      DNSSAMPLE="$GATEWAY"
+      DNSDEFAULT="$GATEWAY"
+    else
+      DNSSAMPLE="`echo ${IPADDRS[0]} | cut -f 1-3 -d .`.1"
+      DNSDEFAULT="${DNSSAMPLE%.1}."
+    fi
+  fi
+  if [ ! "${IP6ADDRS[*]}" = "" ]; then
+    if [ ! "$GATEWAY6" = "" ]; then
+      DNSSAMPLE="${DNSSAMPLE:+$DNSSAMPLE or }$GATEWAY6"
+      # Keep the v4 nameserver the default, for now.
+      DNSDEFAULT="${DNSDEFAULT:-$GATEWAY6}"
+    else
+      DNSSAMPLE="${DNSSAMPLE:+$DNSSAMPLE or }${IP6ADDRS[0]%:*}:1"
+      DNSDEFAULT="${DNSSAMPLE:-${IP6ADDRS[0]%:*}}:"
+    fi
+  fi
+  while [ "$NAMESERVER" = "" ]; do
+   dialog --title "ENTER NAMESERVER IP ADDRESS" --cancel-label "Skip" \
+       --inputbox \
+"Please give the IP address of the name server to use, such as
+  ${DNSSAMPLE:-1:2:3:4::1}
+You can add more Domain Name Servers later by editing
+  /$RESOLV.
+
+Primary name server to use:"  13 65 "$DNSDEFAULT" 2> $TMP/SeTns
+   ERRNO="$?"
+   if [ $ERRNO = 255 ]; then
+     rm -f $TMP/SeTns
+     exit
+   elif [ $ERRNO = 1 ]; then
+     rm -f $TMP/SeTns
+     NAMESERVER=""
+     break
+   else
+     NAMESERVER="`cat $TMP/SeTns`"
+     rm -f $TMP/SeTns
+     if [[ "$NAMESERVER" =~ ^.*:.*$ ]]; then
+       syntax_check_v6 "$NAMESERVER"
+       if [ ! $? = 0 ]; then
+         DNSDEFAULT="$NAMESERVER"
+         NAMESERVER=""
+         continue
+       fi
+     else
+       syntax_check_v4 "$NAMESERVER" 4 WARN
+       if [ ! $? = 0 ]; then
+         DNSDEFAULT="$NAMESERVER"
+         NAMESERVER=""
+         continue
+       fi
+     fi
+     break
+   fi
+  done
+ fi
+elif [ "$LOOPBACK" = "yes" ]; then
+  IPADDRS=(127.0.0.1/8)
+  IP6ADDRS=(::1/128)
+  VLAN=""
+fi
+
+# Check for existing network driver:
+unset DONOTPROBE
+if cat /proc/net/dev | grep eth0 1> /dev/null 2> /dev/null ; then
+  DONOTPROBE=true
+fi
+
+# Really, this rc.netdevice thing is mostly obsolete except for
+# handmade local scripts anyway, these days with udev...
+# So, we'll skip it:
+DONOTPROBE=true
+
+if [ -d lib/modules/`uname -r` \
+     -a ! "$LOOPBACK" = "yes" \
+     -a ! -x etc/rc.d/rc.hotplug \
+     -a ! "$DONOTPROBE" = "true" \
+     -a ! -r /cardfound ]; then
+  dialog --title "PROBE FOR NETWORK CARD?" --menu "If you like, we \
+can look to see what kind of network card you have in your machine, and \
+if we find one create an /etc/rc.d/rc.netdevice script to load the module \
+for it at boot time. There's a slight bit of danger that the probing \
+can cause problems, but it almost always works. If you'd rather configure \
+your system manually, you can skip the probing process and edit \
+/etc/rc.d/rc.modules or /etc/modules.conf later to have it load the right module." \
+16 68 2 \
+"probe" "look for network cards to set up" \
+"skip" "skip probe;  edit /etc/rc.d/rc.modules later" 2> $TMP/reply
+  if [ $? = 1 -o $? = 255 ]; then
+    rm -f $TMP/reply
+    exit
+  fi
+  REPLY=`cat $TMP/reply`
+  rm -f $TMP/reply
+  if [ ! "$REPLY" = "skip" ]; then
+    for card in 3c59x 82596 dgrs eepro100 e1000 epic100 hp100 lance \
+    ne2k-pci olympic pcnet32 rcpci 8139too 8139cp tlan tulip via-rhine \
+    yellowfin natsemi ; do
+      chroot . /sbin/modprobe $card 2> /dev/null
+      if [ $? = 0 ]; then
+        dialog --title "CARD DETECTED" --msgbox "A networking card using \
+the $card.o module has been detected." 5 72
+        echo "$card" > /cardfound
+        break;
+      fi
+     done
+     if [ ! -r /cardfound ]; then
+       # Don't probe for com20020, because it doesn't check and will always load.
+       # Don't probe for arlan, because it needs irq= to work.
+       # Don't probe for com90io or com90xx because they taint the kernel.
+       for card in depca ibmtr 3c359 3c501 3c503 3c505 3c507 3c509 3c515 ac3200 \
+         abyss acenic at1700 cosa cs89x0 de4x5 de600 \
+         de620 dmfe dl2k e2100 eepro eexpress eth16i ewrk3 fealnx hamachi hostess_sv11 \
+         hp-plus hp lanstreamer ni5010 ni52 ni65 ns83820 sb1000 sealevel sis900 sk98lin skfp smc-ultra \
+         smc9194 smctr starfire sungem sunhme tg3 wd e100 iph5526 lp486e tmspci winbond-840 ; do
+         chroot . /sbin/modprobe $card 2> /dev/null
+         if [ $? = 0 ]; then
+           dialog --title "CARD DETECTED" --msgbox "A networking card using \
+the $card.o module has been detected." 5 72
+           echo "$card" > /cardfound
+           break
+         fi
+       done
+     fi
+     if [ ! -r /cardfound ]; then
+       dialog --title "NO CARD DETECTED" --msgbox "Sorry, but no network \
+card could be probed for on your system. Some cards (like non-PCI NE2000s) \
+must be supplied with the I/O address to use and can't be probed for safely. \
+You'll have to try to configure the card later by editing \
+/etc/rc.d/rc.modules or recompiling your kernel." 9 70
+     fi
+  fi
+fi
+
+if [ "$LOOPBACK" = "yes" -a ! "$NETWORKMANAGER" = "yes" ]; then
+  dialog --title "NETWORK SETUP COMPLETE" --yesno "Your networking \
+system is now configured to use loopback:
+
+IP addresses: 127.0.0.1/8 ::1/128
+
+Is this correct?  Press 'Yes' to continue, or 'No' to abandon." 9 70
+  RETVAL=$?
+  if [ "$RETVAL" = "255" ]; then
+    exit
+  fi
+elif [ "$LOOPBACK" = "yes" -a "$NETWORKMANAGER" = "yes" ]; then
+  dialog --title "NETWORK SETUP COMPLETE" --yesno "Your networking \
+system is now configured to use NetworkManager for
+wired and wireless network management. To set up wireless networks
+and view status, add the Network Management control panel widget to
+your desktop.
+
+Is this correct? Press 'Yes' to confirm, or 'No' to abandon." 10 71
+  RETVAL=$?
+  if [ "$RETVAL" = "255" ]; then
+    exit
+  fi
+elif [ "$USE_SLAAC" = "yes" ]; then
+  dialog --title "NETWORK SETUP COMPLETE" --yesno \
+"Your system is now set up to autoconfigure an IPv6 IP address:
+  Hostname:  $HOSTNM
+  Domain name:  $DOMAIN
+  VLAN ID:   ${VLAN:-(none)}
+  IP addresses:  (use IPv6 SLAAC)
+  Nameserver:   ${NAMESERVER:-(none)}
+
+If this is correct, hit 'Yes' to confirm, or 'No' to abandon." 12 66
+  RETVAL=$?
+  if [ "$RETVAL" = "255" ]; then
+    exit
+  fi
+elif [ "$USE_DHCP" = "" -a "$USE_DHCP6" = "" ]; then
+  while [ 0 ]; do
+    dialog --title "CONFIRM NETWORK SETUP" \
+--ok-label Accept --extra-label Edit --cancel-label Abandon --inputmenu \
+"These are the settings you have entered. To accept them and complete \
+the networking setup, press ENTER. If you need to make any changes, you \
+can do that now using 'Edit' (or reconfigure later using 'netconfig')." \
+24 75 15 \
+"Hostname:" "$HOSTNM" \
+"Domain Name:" "$DOMAIN" \
+"VLAN ID:" "$VLAN" \
+"IPv4 Addresses:" "${IPADDRS[*]}" \
+"IPv4 Gateway:" "$GATEWAY" \
+"IPv6 Addresses:" "${IP6ADDRS[*]}" \
+"IPv6 Gateway:" "$GATEWAY6" \
+"Nameserver:" "$NAMESERVER" 2> $TMP/tempmsg
+    RETVAL=$?
+    if [ "$RETVAL" = "3" ]; then
+      FIELD=`cat $TMP/tempmsg | cut -f 1 -d : | cut -f 2- -d ' '`
+      NEWVAL=`cat $TMP/tempmsg | cut -f 2 -d : | cut -f 2- -d ' '`
+      if [ "$FIELD" = "Hostname" ]; then
+        HOSTNM=$NEWVAL
+      elif [ "$FIELD" = "Domain Name" ]; then
+        DOMAIN=$NEWVAL
+      elif [ "$FIELD" = "VLAN ID" ]; then
+        VLAN=$NEWVAL
+      elif [ "$FIELD" = "IPv4 Addresses" ]; then
+        IPADDRS=( $NEWVAL )
+      elif [ "$FIELD" = "IPv4 Gateway" ]; then
+        GATEWAY=$NEWVAL
+      elif [ "$FIELD" = "IPv6 Addresses" ]; then
+        IP6ADDRS=( $NEWVAL )
+      elif [ "$FIELD" = "IPv6 Gateway" ]; then
+        GATEWAY6=$NEWVAL
+      elif [ "$FIELD" = "Nameserver" ]; then
+        NAMESERVER=$NEWVAL
+      fi
+    elif [ "$RETVAL" = "255" ]; then
+      exit
+    else
+      break
+    fi
+  done
+  if [ ! "${IPADDRS[0]}" = "" ]; then
+    NM="$(cidr2mask "${IPADDRS[0]#*/}")"
+    BROADCAST="$(ipmask "$NM" "${IPADDRS[0]%/*}" | cut -f 1 -d ' ')"
+    NETWORK="$(ipmask "$NM" "${IPADDRS[0]%/*}" | cut -f 2 -d ' ')"
+  fi
+else # DHCP was used
+  dialog --title "CONFIRM NETWORK SETUP" \
+--yesno "Your networking system is now configured to use DHCP:
+
+  Hostname:  $HOSTNM
+  Domain name:  $DOMAIN
+  VLAN ID:  ${VLAN:-(none)}
+  DHCP hostname:  ${DHCP_HOSTNAME:-(none)}
+  IP addresses:  (use DHCP server)
+  Netmask & Prefix:  (use DHCP server)
+  Gateways:  (use DHCP server)
+  Nameserver:  (use DHCP server)
+
+Is this correct?  Press 'Yes' to continue, or 'No' to reconfigure." 16 76
+  RETVAL=$?
+fi
+
+if [ "$RETVAL" = "0" ]; then
+  # Write the hostname with domain to /etc/HOSTNAME:
+  echo $HOSTNM.$DOMAIN > etc/HOSTNAME
+  # Also make sure the hostname is written to /etc/NetworkManager/NetworkManager.conf:
+  if [ -w etc/NetworkManager/NetworkManager.conf ]; then
+    sed -i "s/^hostname=.*$/hostname=$HOSTNM/g" etc/NetworkManager/NetworkManager.conf
+  fi
+  write_config_files
+  if [ "$NETWORKMANAGER" = "yes" -a -r etc/rc.d/rc.networkmanager ]; then
+    chmod 755 etc/rc.d/rc.networkmanager
+  fi
+  dialog --msgbox "Settings accepted. Basic network configuration is complete." 6 40
+else
+  dialog --msgbox "Settings discarded. Run the 'netconfig' command again if you need to reconfigure your network settings." 6 60
+fi
+
+exit $RETVAL

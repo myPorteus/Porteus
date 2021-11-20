@@ -1,0 +1,116 @@
+PACKAGE NAME:     libidn2-2.3.1-i586-1
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     600K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/001/libidn2-2.3.1-i586-1.txz
+PACKAGE DESCRIPTION:
+libidn2: libidn2 (GNU Internationalized Domain Name library version 2)
+libidn2:
+libidn2: GNU Libidn is an implementation of the Stringprep, Punycode and IDNA
+libidn2: specifications defined by the IETF Internationalized Domain Names
+libidn2: (IDN) working group, used for internationalized domain names.
+libidn2:
+libidn2:
+libidn2:
+libidn2:
+libidn2:
+libidn2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/idn2
+usr/doc/
+usr/doc/libidn2-2.3.1/
+usr/doc/libidn2-2.3.1/ABOUT-NLS
+usr/doc/libidn2-2.3.1/AUTHORS
+usr/doc/libidn2-2.3.1/CONTRIBUTING.md
+usr/doc/libidn2-2.3.1/COPYING
+usr/doc/libidn2-2.3.1/COPYING.LESSERv3
+usr/doc/libidn2-2.3.1/COPYING.unicode
+usr/doc/libidn2-2.3.1/COPYINGv2
+usr/doc/libidn2-2.3.1/ChangeLog
+usr/doc/libidn2-2.3.1/INSTALL
+usr/doc/libidn2-2.3.1/NEWS
+usr/doc/libidn2-2.3.1/README
+usr/doc/libidn2-2.3.1/README.md
+usr/doc/libidn2-2.3.1/libidn2.html
+usr/include/
+usr/include/idn2.h
+usr/lib/
+usr/lib/libidn2.so.0.3.7
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/libidn2.pc
+usr/share/
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libidn2.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libidn2.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libidn2.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libidn2.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libidn2.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libidn2.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libidn2.mo
+usr/share/locale/fur/
+usr/share/locale/fur/LC_MESSAGES/
+usr/share/locale/fur/LC_MESSAGES/libidn2.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/libidn2.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libidn2.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/libidn2.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libidn2.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libidn2.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libidn2.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libidn2.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libidn2.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libidn2.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libidn2.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libidn2.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libidn2.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libidn2.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/libidn2.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libidn2.mo

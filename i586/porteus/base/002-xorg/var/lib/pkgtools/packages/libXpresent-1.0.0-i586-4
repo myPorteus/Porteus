@@ -1,0 +1,40 @@
+PACKAGE NAME:     libXpresent-1.0.0-i586-4
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libXpresent-1.0.0-i586-4.txz
+PACKAGE DESCRIPTION:
+libXpresent: libXpresent (library for the Present extension to the X11 protocol)
+libXpresent:
+libXpresent: libXpresent is part of X11.
+libXpresent:
+libXpresent: For more information about the X.Org Foundation (the providers of the
+libXpresent: X.Org implementation of the X Window System), see their website:
+libXpresent:
+libXpresent: http://www.x.org
+libXpresent:
+libXpresent:
+libXpresent:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXpresent-1.0.0/
+usr/doc/libXpresent-1.0.0/AUTHORS
+usr/doc/libXpresent-1.0.0/COPYING
+usr/doc/libXpresent-1.0.0/ChangeLog
+usr/doc/libXpresent-1.0.0/INSTALL
+usr/doc/libXpresent-1.0.0/README
+usr/include/
+usr/include/X11/
+usr/include/X11/extensions/
+usr/include/X11/extensions/Xpresent.h
+usr/lib/
+usr/lib/libXpresent.so.1.0.0
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xpresent.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/Xpresent.3.gz

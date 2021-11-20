@@ -1,0 +1,111 @@
+PACKAGE NAME:     bluez-5.59-i586-1
+COMPRESSED PACKAGE SIZE:     1.2M
+UNCOMPRESSED PACKAGE SIZE:     5.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/bluez-5.59-i586-1.txz
+PACKAGE DESCRIPTION:
+bluez: bluez (Bluetooth libraries and utilities)
+bluez:
+bluez: Bluez is the Bluetooth stack for Linux, allowing Bluetooth adaptors
+bluez: and devices to be used with Linux. This package contains the Bluez
+bluez: libraries, utilities, and other support files.
+bluez: 
+bluez: Homepage: http://www.bluez.org
+bluez:
+bluez:
+bluez:
+bluez:
+FILE LIST:
+./
+etc/
+etc/bluetooth/
+etc/bluetooth/input.conf.new
+etc/bluetooth/main.conf.new
+etc/bluetooth/network.conf.new
+etc/bluetooth/uart.conf.new
+etc/default/
+etc/default/bluetooth.new
+etc/rc.d/
+etc/rc.d/rc.bluetooth.new
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/modprobe.d/
+lib/modprobe.d/btusb.conf
+usr/
+usr/bin/
+usr/bin/bluemoon
+usr/bin/bluetoothctl
+usr/bin/btattach
+usr/bin/btmon
+usr/bin/ciptool
+usr/bin/gatttool
+usr/bin/hciattach
+usr/bin/hciconfig
+usr/bin/hcidump
+usr/bin/hcitool
+usr/bin/hex2hcd
+usr/bin/l2ping
+usr/bin/l2test
+usr/bin/mpris-proxy
+usr/bin/rctest
+usr/bin/rfcomm
+usr/bin/sdptool
+usr/doc/
+usr/doc/bluez-5.59/
+usr/doc/bluez-5.59/AUTHORS
+usr/doc/bluez-5.59/COPYING
+usr/doc/bluez-5.59/COPYING.LIB
+usr/doc/bluez-5.59/ChangeLog
+usr/doc/bluez-5.59/INSTALL
+usr/doc/bluez-5.59/README
+usr/doc/bluez-5.59/TODO
+usr/include/
+usr/include/bluetooth/
+usr/include/bluetooth/bluetooth.h
+usr/include/bluetooth/bnep.h
+usr/include/bluetooth/cmtp.h
+usr/include/bluetooth/hci.h
+usr/include/bluetooth/hci_lib.h
+usr/include/bluetooth/hidp.h
+usr/include/bluetooth/l2cap.h
+usr/include/bluetooth/rfcomm.h
+usr/include/bluetooth/sco.h
+usr/include/bluetooth/sdp.h
+usr/include/bluetooth/sdp_lib.h
+usr/lib/
+usr/lib/cups/
+usr/lib/cups/backend/
+usr/lib/cups/backend/bluetooth
+usr/lib/libbluetooth.so.3.19.5
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/bluez.pc
+usr/libexec/
+usr/libexec/bluetooth/
+usr/libexec/bluetooth/bluetoothd
+usr/libexec/bluetooth/obexd
+usr/man/
+usr/man/man1/
+usr/man/man1/btattach.1.gz
+usr/man/man1/btmon.1.gz
+usr/man/man1/ciptool.1.gz
+usr/man/man1/hciattach.1.gz
+usr/man/man1/hciconfig.1.gz
+usr/man/man1/hcidump.1.gz
+usr/man/man1/hcitool.1.gz
+usr/man/man1/l2ping.1.gz
+usr/man/man1/rctest.1.gz
+usr/man/man1/rfcomm.1.gz
+usr/man/man1/sdptool.1.gz
+usr/man/man8/
+usr/man/man8/bluetoothd.8.gz
+usr/sbin/
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.bluez.obex.service
+usr/share/dbus-1/system.d/
+usr/share/dbus-1/system.d/bluetooth.conf
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_bluetoothctl

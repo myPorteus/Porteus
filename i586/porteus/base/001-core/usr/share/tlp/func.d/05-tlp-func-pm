@@ -1,0 +1,230 @@
+#!/bin/sh
+# tlp-func-pm - Device Power Management Functions
+#
+# Copyright (c) 2020 Thomas Koch <linrunner at gmx.net> and others.
+# This software is licensed under the GPL v2 or later.
+
+# Needs: tlp-func-base
+
+# shellcheck disable=SC2086
+
+# ----------------------------------------------------------------------------
+# Constants
+
+readonly ETHTOOL=ethtool
+
+readonly PCID=/sys/bus/pci/devices
+readonly PCIDRV=/sys/bus/pci/drivers
+
+# ----------------------------------------------------------------------------
+# Functions
+
+# --- PCI(e) Devices
+
+set_runtime_pm () { # set runtime power management
+    # $1: 0=ac mode, 1=battery mode
+
+    local address class ccontrol control device driver drv_bl
+    local pci_bl_adr pci_bl_drv type vendor
+
+    if [ "$1" = "1" ]; then
+        ccontrol=${RUNTIME_PM_ON_BAT:-}
+    else
+        ccontrol=${RUNTIME_PM_ON_AC:-}
+    fi
+
+    if [ -z "$ccontrol" ]; then
+        # do nothing if unconfigured
+        echo_debug "pm" "set_runtime_pm($1).not_configured"
+        return 0
+    fi
+
+    # driver specific blacklist:
+    # - undefined = use intrinsic default from /usr/share/tlp/defaults.conf
+    # - empty     = disable feature
+    drv_bl="$RUNTIME_PM_DRIVER_BLACKLIST"
+
+    # pci address blacklisting
+    pci_bl_adr=${RUNTIME_PM_BLACKLIST:-}
+
+    # pci driver blacklisting: corresponding pci addresses
+    pci_bl_drv=""
+
+    # cumulate pci addresses for devices with blacklisted drivers
+    for driver in $drv_bl; do # iterate list
+        if [ -n "$driver" ] && [ -d $PCIDRV/$driver ]; then
+            # driver is active --> iterate over assigned devices
+            for device in $PCIDRV/$driver/0000:*; do
+                # get short device address
+                address=${device##/*/0000:}
+
+                # add to list when not already contained
+                if ! wordinlist "$address" "$pci_bl_drv"; then
+                    pci_bl_drv="$pci_bl_drv $address"
+                fi
+            done # for device
+        fi # if driver
+    done # for driver
+
+    # iterate pci(e) devices
+    for type in $PCID; do
+        for device in $type/*; do
+            if [ -f $device/power/control ]; then
+                # get short device address, class
+                address=${device##/*/0000:}
+                class=$(read_sysf $device/class)
+
+                if wordinlist "$address" "$pci_bl_adr"; then
+                    # device is in address blacklist
+                    echo_debug "pm" "set_runtime_pm($1).bloack_address: $device [$class]"
+                elif wordinlist "$address" "$pci_bl_drv"; then
+                    # device is in driver blacklist
+                    echo_debug "pm" "set_runtime_pm($1).black_driver: $device [$class]"
+                else
+                    control=$ccontrol
+
+                    # check for Nvidia gpu's
+                    if wordinlist "nouveau" "$drv_bl" || wordinlist "nvidia" "$drv_bl"; then
+                        # driver nouveau or nvidia is in blacklist
+                        # --> blacklist depending on vendor and class
+                        vendor=$(read_sysf $device/vendor)
+
+                        if [ "$vendor" = "0x10de" ]; then
+                            # vendor nvidia
+                            # --> check for display or 3d controller class
+                            case $class in
+                                "0x030000"|"0x030200") control="black_nvgpu" ;;
+                            esac
+                        fi
+                    fi # if nouveau | nvidia blacklisted
+
+                    case $control in
+                        auto|on)
+                            write_sysf $control $device/power/control
+                            echo_debug "pm" "set_runtime_pm($1).$control: $device [$class]; rc=$?"
+                            ;;
+
+                        *) # black_* --> do nothing
+                            echo_debug "pm" "set_runtime_pm($1).$control: $device [$class]"
+                            ;;
+                    esac
+                fi # if blacklist
+            fi # if control
+        done # for device
+    done # for type
+
+    return 0
+}
+
+set_pcie_aspm () { # set pcie active state power management
+    # $1: 0=ac mode, 1=battery mode
+
+    local pwr
+
+    if [ "$1" = "1" ]; then
+        pwr=${PCIE_ASPM_ON_BAT:-}
+    else
+        pwr=${PCIE_ASPM_ON_AC:-}
+    fi
+
+    if [ -z "$pwr" ]; then
+        # do nothing if unconfigured
+        echo_debug "pm" "set_pcie_aspm($1).not_configured"
+        return 0
+    fi
+
+    if [ -f /sys/module/pcie_aspm/parameters/policy ]; then
+        if write_sysf "$pwr" /sys/module/pcie_aspm/parameters/policy; then
+            echo_debug "pm" "set_pcie_aspm($1): $pwr"
+        else
+            echo_debug "pm" "set_pcie_aspm($1).disabled_by_kernel"
+        fi
+    else
+        echo_debug "pm" "set_pcie_aspm($1).not_available"
+    fi
+
+    return 0
+}
+
+# -- Audio Devices
+
+set_sound_power_mode () { # set sound chip power modes
+    # $1: 0=ac mode, 1=battery mode
+
+    local pwr cpwr
+
+    # new config param
+    if [ "$1" = "1" ]; then
+        pwr=${SOUND_POWER_SAVE_ON_BAT:-}
+    else
+        pwr=${SOUND_POWER_SAVE_ON_AC:-}
+    fi
+
+    # when unconfigured consider legacy config param
+    [ -z "$pwr" ] && pwr=${SOUND_POWER_SAVE:-}
+
+    if [ -z "$pwr" ]; then
+        # do nothing if unconfigured
+        echo_debug "pm" "set_sound_power_mode($1).not_configured"
+        return 0
+    fi
+
+    cpwr="$SOUND_POWER_SAVE_CONTROLLER"
+
+    check_sysfs "set_sound_power_mode" "/sys/module"
+
+    if [ -d /sys/module/snd_hda_intel ]; then
+        write_sysf "$pwr" /sys/module/snd_hda_intel/parameters/power_save
+        echo_debug "pm" "set_sound_power_mode($1).hda: $pwr; rc=$?"
+
+        if [ "$pwr" = "0" ]; then
+            write_sysf "N" /sys/module/snd_hda_intel/parameters/power_save_controller
+            echo_debug "pm" "set_sound_power_mode($1).hda_controller: N controller=$cpwr; rc=$?"
+        else
+            write_sysf "$cpwr" /sys/module/snd_hda_intel/parameters/power_save_controller
+            echo_debug "pm" "set_sound_power_mode($1).hda_controller: $cpwr; rc=$?"
+        fi
+    fi
+
+    if [ -d /sys/module/snd_ac97_codec ]; then
+        write_sysf "$pwr" /sys/module/snd_ac97_codec/parameters/power_save
+        echo_debug "pm" "set_sound_power_mode($1).ac97: $pwr; rc=$?"
+    fi
+
+    return 0
+}
+
+# --- LAN Devices
+
+get_ethifaces () { # get all eth devices -- retval: $_ethifaces
+    local ei eic
+    _ethifaces=""
+
+    for eic in $NETD/*/device/class; do
+        if [ "$(read_sysf $eic)" = "0x020000" ] \
+            && [ ! -d "${eic%/class}/ieee80211" ]; then
+
+            ei=${eic%/device/class}; ei=${ei##*/}
+            _ethifaces="$_ethifaces $ei"
+        fi
+    done
+
+    _ethifaces="${_ethifaces# }"
+    return 0
+}
+
+disable_wake_on_lan () {  # disable WOL
+    local ei
+
+    if [ "$WOL_DISABLE" = "Y" ]; then
+        get_ethifaces
+        for ei in $_ethifaces; do
+            $ETHTOOL -s "$ei" wol d > /dev/null 2>&1
+            echo_debug "pm" "disable_wake_on_lan: $ei; rc=$?"
+        done
+    else
+        echo_debug "pm" "disable_wake_on_lan.not_configured"
+    fi
+
+    return 0
+}

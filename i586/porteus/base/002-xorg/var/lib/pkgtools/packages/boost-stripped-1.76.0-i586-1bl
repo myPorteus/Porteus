@@ -1,0 +1,13 @@
+PACKAGE NAME:     boost-stripped-1.76.0-i586-1bl
+COMPRESSED PACKAGE SIZE:     100K
+UNCOMPRESSED PACKAGE SIZE:     330K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/boost-stripped-1.76.0-i586-1bl.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/lib/
+usr/lib/libboost_atomic.so.1.76.0
+usr/lib/libboost_program_options.so.1.76.0

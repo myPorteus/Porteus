@@ -1,0 +1,71 @@
+PACKAGE NAME:     libXcursor-1.2.0-i586-3
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../i586/pkg/002_xorg/libXcursor-1.2.0-i586-3.txz
+PACKAGE DESCRIPTION:
+libXcursor: libXcursor (X Window System Cursor management library)
+libXcursor:
+libXcursor: libXcursor is part of X11.
+libXcursor:
+libXcursor: For more information about the X.Org Foundation (the providers of the
+libXcursor: X.Org implementation of the X Window System), see their website:
+libXcursor:
+libXcursor: http://www.x.org
+libXcursor:
+libXcursor:
+libXcursor:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXcursor-1.2.0/
+usr/doc/libXcursor-1.2.0/AUTHORS
+usr/doc/libXcursor-1.2.0/COPYING
+usr/doc/libXcursor-1.2.0/ChangeLog
+usr/doc/libXcursor-1.2.0/INSTALL
+usr/doc/libXcursor-1.2.0/README.md
+usr/include/
+usr/include/X11/
+usr/include/X11/Xcursor/
+usr/include/X11/Xcursor/Xcursor.h
+usr/lib/
+usr/lib/libXcursor.so.1.0.2
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/xcursor.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/Xcursor.3.gz
+usr/man/man3/XcursorCursorsCreate.3.gz
+usr/man/man3/XcursorCursorsDestroy.3.gz
+usr/man/man3/XcursorFilenameLoad.3.gz
+usr/man/man3/XcursorFilenameLoadAllImages.3.gz
+usr/man/man3/XcursorFilenameLoadCursor.3.gz
+usr/man/man3/XcursorFilenameLoadImage.3.gz
+usr/man/man3/XcursorFilenameLoadImages.3.gz
+usr/man/man3/XcursorFilenameSave.3.gz
+usr/man/man3/XcursorFilenameSaveImages.3.gz
+usr/man/man3/XcursorGetDefaultSize.3.gz
+usr/man/man3/XcursorGetTheme.3.gz
+usr/man/man3/XcursorImageCreate.3.gz
+usr/man/man3/XcursorImageDestroy.3.gz
+usr/man/man3/XcursorImagesCreate.3.gz
+usr/man/man3/XcursorImagesDestroy.3.gz
+usr/man/man3/XcursorLibraryLoadCursor.3.gz
+usr/man/man3/XcursorLibraryLoadCursors.3.gz
+usr/man/man3/XcursorLibraryLoadImage.3.gz
+usr/man/man3/XcursorLibraryLoadImages.3.gz
+usr/man/man3/XcursorSetDefaultSize.3.gz
+usr/man/man3/XcursorSetTheme.3.gz
+usr/man/man3/XcursorShapeLoadCursor.3.gz
+usr/man/man3/XcursorShapeLoadCursors.3.gz
+usr/man/man3/XcursorShapeLoadImage.3.gz
+usr/man/man3/XcursorShapeLoadImages.3.gz
+usr/man/man3/XcursorSupportsARGB.3.gz
+usr/man/man3/XcursorXcFileLoad.3.gz
+usr/man/man3/XcursorXcFileLoadAllImages.3.gz
+usr/man/man3/XcursorXcFileLoadImage.3.gz
+usr/man/man3/XcursorXcFileLoadImages.3.gz
+usr/man/man3/XcursorXcFileSave.3.gz

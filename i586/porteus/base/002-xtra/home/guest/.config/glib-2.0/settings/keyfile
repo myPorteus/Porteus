@@ -1,0 +1,14 @@
+[io/github/celluloid-player/celluloid]
+settings-migrated=true
+
+csd-enable=false
+
+[io/github/celluloid-player/celluloid/window-state]
+maximized=false
+volume=1.0
+loop-playlist=false
+show-controls=true
+show-playlist=false
+width=640
+height=480
+playlist-width=250
