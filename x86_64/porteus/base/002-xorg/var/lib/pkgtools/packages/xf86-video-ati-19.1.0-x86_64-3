@@ -1,0 +1,43 @@
+PACKAGE NAME:     xf86-video-ati-19.1.0-x86_64-3
+COMPRESSED PACKAGE SIZE:     164K
+UNCOMPRESSED PACKAGE SIZE:     590K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xf86-video-ati-19.1.0-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xf86-video-ati: xf86-video-ati (ATI Radeon video driver for the Xorg X server)
+xf86-video-ati:
+xf86-video-ati: xf86-video-ati is part of X11.
+xf86-video-ati:
+xf86-video-ati: For more information about the X.Org Foundation (the providers of the
+xf86-video-ati: X.Org implementation of the X Window System), see their website:
+xf86-video-ati:
+xf86-video-ati: http://www.x.org
+xf86-video-ati:
+xf86-video-ati:
+xf86-video-ati:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-ati-19.1.0/
+usr/doc/xf86-video-ati-19.1.0/COPYING
+usr/doc/xf86-video-ati-19.1.0/ChangeLog
+usr/doc/xf86-video-ati-19.1.0/INSTALL
+usr/doc/xf86-video-ati-19.1.0/README.md
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/ati_drv.la
+usr/lib64/xorg/modules/drivers/ati_drv.so
+usr/lib64/xorg/modules/drivers/radeon_drv.la
+usr/lib64/xorg/modules/drivers/radeon_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/ati.4.gz
+usr/man/man4/radeon.4.gz
+usr/share/
+usr/share/X11/
+usr/share/X11/xorg.conf.d/
+usr/share/X11/xorg.conf.d/10-radeon.conf

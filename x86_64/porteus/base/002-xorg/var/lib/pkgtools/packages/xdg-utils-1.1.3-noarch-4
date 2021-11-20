@@ -1,0 +1,48 @@
+PACKAGE NAME:     xdg-utils-1.1.3-noarch-4
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xdg-utils-1.1.3-noarch-4.txz
+PACKAGE DESCRIPTION:
+xdg-utils: xdg-utils (command line tools that assist applications)
+xdg-utils: 
+xdg-utils: Xdg-utils is a set of command line tools that assist applications
+xdg-utils: with a variety of desktop integration tasks. About half of the
+xdg-utils: tools focus on tasks commonly required during the installation of
+xdg-utils: a desktop application and the other half focuses on integration
+xdg-utils: with the desktop environment while the application is running.
+xdg-utils:
+xdg-utils: Homepage: http://portland.freedesktop.org/wiki/
+xdg-utils:
+xdg-utils:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xdg-desktop-icon
+usr/bin/xdg-desktop-menu
+usr/bin/xdg-email
+usr/bin/xdg-icon-resource
+usr/bin/xdg-mime
+usr/bin/xdg-open
+usr/bin/xdg-screensaver
+usr/bin/xdg-settings
+usr/doc/
+usr/doc/xdg-utils-1.1.3/
+usr/doc/xdg-utils-1.1.3/ChangeLog
+usr/doc/xdg-utils-1.1.3/LICENSE
+usr/doc/xdg-utils-1.1.3/README
+usr/doc/xdg-utils-1.1.3/RELEASE_NOTES
+usr/doc/xdg-utils-1.1.3/TODO
+usr/man/
+usr/man/man1/
+usr/man/man1/xdg-desktop-icon.1.gz
+usr/man/man1/xdg-desktop-menu.1.gz
+usr/man/man1/xdg-email.1.gz
+usr/man/man1/xdg-icon-resource.1.gz
+usr/man/man1/xdg-mime.1.gz
+usr/man/man1/xdg-open.1.gz
+usr/man/man1/xdg-screensaver.1.gz
+usr/man/man1/xdg-settings.1.gz

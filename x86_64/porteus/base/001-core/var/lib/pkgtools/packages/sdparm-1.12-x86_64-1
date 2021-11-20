@@ -1,0 +1,40 @@
+PACKAGE NAME:     sdparm-1.12-x86_64-1
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/sdparm-1.12-x86_64-1.txz
+PACKAGE DESCRIPTION:
+sdparm: sdparm (fetch and change SCSI attributes)
+sdparm:
+sdparm: sdparm is a utility for listing and potentially changing SCSI disk
+sdparm: parameters. More generally it can be used on any device that uses
+sdparm: a SCSI command set. Apart from SCSI disks, examples of devices that
+sdparm: use SCSI command sets are ATAPI CD/DVD drives, SCSI and ATAPI tape
+sdparm: drives and SCSI enclosures.
+sdparm:
+sdparm: sdparm was written by Douglas Gilbert.
+sdparm:
+sdparm:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/sdparm-1.12/
+usr/doc/sdparm-1.12/AUTHORS
+usr/doc/sdparm-1.12/COPYING
+usr/doc/sdparm-1.12/CREDITS
+usr/doc/sdparm-1.12/ChangeLog
+usr/doc/sdparm-1.12/INSTALL
+usr/doc/sdparm-1.12/NEWS
+usr/doc/sdparm-1.12/README
+usr/doc/sdparm-1.12/notes.txt
+usr/man/
+usr/man/man8/
+usr/man/man8/sas_disk_blink.8.gz
+usr/man/man8/scsi_ch_swp.8.gz
+usr/man/man8/sdparm.8.gz
+usr/sbin/
+usr/sbin/sas_disk_blink
+usr/sbin/scsi_ch_swp
+usr/sbin/sdparm

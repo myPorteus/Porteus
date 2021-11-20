@@ -1,0 +1,30 @@
+PACKAGE NAME:     iw-5.9-x86_64-3
+COMPRESSED PACKAGE SIZE:     88K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/iw-5.9-x86_64-3.txz
+PACKAGE DESCRIPTION:
+iw: iw (tool for configuring Linux wireless devices)
+iw:
+iw: This package contains the `iw' tool which allows you to configure and
+iw: show information about wireless networking. The tool is currently used
+iw: for drivers based on the mac80211 stack, but work is under way to make
+iw: it useful for other wireless drivers as well.
+iw: 
+iw: Homepage: http://wireless.kernel.org/en/users/Documentation/iw 
+iw:  
+iw:  
+iw:  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/iw-5.9/
+usr/doc/iw-5.9/COPYING
+usr/doc/iw-5.9/README
+usr/man/
+usr/man/man8/
+usr/man/man8/iw.8.gz
+usr/sbin/
+usr/sbin/iw

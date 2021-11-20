@@ -1,0 +1,71 @@
+PACKAGE NAME:     porteus-scripts-core-20210530-noarch
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     330K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/porteus-scripts-core-20210530-noarch.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+opt/
+opt/porteus-scripts/
+opt/porteus-scripts/activate
+opt/porteus-scripts/add-loop-devices
+opt/porteus-scripts/changes-time
+opt/porteus-scripts/deactivate
+opt/porteus-scripts/dir2xzm
+opt/porteus-scripts/dump-session
+opt/porteus-scripts/lsxzm
+opt/porteus-scripts/makeinitrd
+opt/porteus-scripts/mkfileswap
+opt/porteus-scripts/mloop
+opt/porteus-scripts/modules-activation
+opt/porteus-scripts/pns-tool
+opt/porteus-scripts/psinfo
+opt/porteus-scripts/pxe-server
+opt/porteus-scripts/save-changes
+opt/porteus-scripts/tgz2xzm
+opt/porteus-scripts/txz2dir
+opt/porteus-scripts/txz2xzm
+opt/porteus-scripts/uloop
+opt/porteus-scripts/update-module
+opt/porteus-scripts/update-porteus
+opt/porteus-scripts/xorg/
+opt/porteus-scripts/xorg/aufs-insert
+opt/porteus-scripts/xorg/aufs-remove
+opt/porteus-scripts/xzm2dir
+usr/
+usr/bin/
+usr/bin/activate
+usr/bin/bash
+usr/bin/changes-time
+usr/bin/deactivate
+usr/bin/deb2xzm
+usr/bin/dir2xzm
+usr/bin/env
+usr/bin/lsxzm
+usr/bin/make
+usr/bin/mkfileswap
+usr/bin/mloop
+usr/bin/pns-tool
+usr/bin/psinfo
+usr/bin/rpm2xzm
+usr/bin/txz2dir
+usr/bin/txz2xzm
+usr/bin/uloop
+usr/bin/vi
+usr/bin/xzm2dir
+usr/lib/
+usr/lib/librokenman
+usr/local/
+usr/local/bin/
+usr/local/bin/check-kernel
+usr/local/bin/fastest-mirror
+usr/local/bin/getpkg
+usr/local/bin/man
+usr/local/bin/transfer
+usr/sbin/
+usr/sbin/ntpdate
+usr/sbin/ntpdate32
+usr/share/
+usr/share/porteus/
+usr/share/porteus/dialog-functions
+usr/share/porteus/porteus-functions

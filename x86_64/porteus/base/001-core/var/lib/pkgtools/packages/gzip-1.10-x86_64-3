@@ -1,0 +1,61 @@
+PACKAGE NAME:     gzip-1.10-x86_64-3
+COMPRESSED PACKAGE SIZE:     108K
+UNCOMPRESSED PACKAGE SIZE:     300K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/gzip-1.10-x86_64-3.txz
+PACKAGE DESCRIPTION:
+gzip: gzip (file compression utility)
+gzip:
+gzip: Gzip reduces the size of the named files using Lempel-Ziv coding
+gzip: (LZ77). Whenever possible, each file is replaced by one with the
+gzip: extension .gz, while keeping the same ownership modes, access and
+gzip: modification times.
+gzip:
+gzip:
+gzip:
+gzip:
+gzip:
+FILE LIST:
+./
+bin/
+bin/gunzip
+bin/gzexe
+bin/gzip
+bin/zcat
+bin/zcmp
+bin/zdiff
+bin/zegrep
+bin/zfgrep
+bin/zforce
+bin/zgrep
+bin/zless
+bin/zmore
+bin/znew
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/doc/
+usr/doc/gzip-1.10/
+usr/doc/gzip-1.10/AUTHORS
+usr/doc/gzip-1.10/COPYING
+usr/doc/gzip-1.10/ChangeLog
+usr/doc/gzip-1.10/NEWS
+usr/doc/gzip-1.10/README
+usr/doc/gzip-1.10/THANKS
+usr/doc/gzip-1.10/TODO
+usr/info/
+usr/info/gzip.info.gz
+usr/man/
+usr/man/man1/
+usr/man/man1/gunzip.1.gz
+usr/man/man1/gzexe.1.gz
+usr/man/man1/gzip.1.gz
+usr/man/man1/zcat.1.gz
+usr/man/man1/zcmp.1.gz
+usr/man/man1/zdiff.1.gz
+usr/man/man1/zforce.1.gz
+usr/man/man1/zgrep.1.gz
+usr/man/man1/zless.1.gz
+usr/man/man1/zmore.1.gz
+usr/man/man1/znew.1.gz

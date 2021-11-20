@@ -1,0 +1,102 @@
+#!/usr/bin/python
+#
+# Author: jssouza
+#
+# This is a script to download the porteus language setup tool
+
+import gi
+import sys, os
+import threading
+import urllib.request
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GLib
+
+class GtkLangSelect(Gtk.Window):
+    def __init__(self):
+        self.progress = 0.0
+        self.DL_LINK = "/i586/testing/live/gtk-language-selection"
+        self.curMirror = self.getCurrentMirror()
+        print("Current mirror: ", self.curMirror)
+
+
+        Gtk.Window.__init__(self, title = "Language Selection Tool", border_width = 5, default_height = 100, default_width = 600, icon_name = "preferences-desktop-locale")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Porteus Language Selection Tool</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.label = Gtk.Label()
+        self.label.set_text("This tool will download language packs so you can use your native language in various desktops and applications.")
+        self.vb.pack_start(self.label, False, False, 5)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+
+        self.add(self.vb)
+
+        self.timeout_id = GLib.timeout_add(50, self.on_timeout, None)
+
+    def on_ok_clicked(self, button):
+        self.startDownload(self.curMirror + self.DL_LINK, "/tmp/gtk-language-selection")
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+    def getCurrentMirror(self):
+        with open("/etc/porteus.conf", mode = "r", encoding = "utf-8") as fd:
+            for fline in fd:
+                if fline.startswith("SERVER="):
+                    break;
+            return fline[:-1].split('=')[1]
+
+    def startDownload(self, url, filename):
+        try:
+            urllib.request.urlretrieve(url, filename, self.reporthook)
+
+        except Exception as e:
+            print(str(e))
+            dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, "Error")
+            dialog.format_secondary_text(str(e))
+            dialog.run()
+            dialog.destroy()
+            Gtk.main_quit()
+
+    def reporthook(self, count, blockSize, totalSize):
+        downloaded = count * blockSize
+        if downloaded < totalSize:
+            self.progress = downloaded/totalSize
+            sys.stdout.write('\rDownloading %.2f%%' % (float(count * blockSize) / float(totalSize) * 100.0))
+            sys.stdout.flush()
+        else:
+            sys.stdout.write('\rDownloading 100%  \n')
+            sys.stdout.flush()
+            self.progress = 1.0
+
+    def on_timeout(self, user_data):
+        if self.progress == 2.0:
+            Gtk.main_quit()
+        if self.progress == 1.0:
+            os.system('chmod +x /tmp/gtk-language-selection')
+            os.system('mv /tmp/gtk-language-selection /opt/porteus-scripts/')
+            os.system('ln -sf /opt/porteus-scripts/gtk-language-selection /usr/bin/gtk-language-selection')
+            os.system('/usr/bin/gtk-language-selection')
+            self.progress = 2.0
+        return True
+
+win = GtkLangSelect()
+win.connect("delete-event", Gtk.main_quit)
+win.show_all()
+Gtk.main()
+
+

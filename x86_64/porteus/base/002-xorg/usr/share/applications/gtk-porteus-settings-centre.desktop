@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Porteus Settings Centre
+Name[ru]=Центр настроек Porteus
+Exec=porteus-settings-centre
+Icon=computer
+Type=Application
+Categories=Application;System;

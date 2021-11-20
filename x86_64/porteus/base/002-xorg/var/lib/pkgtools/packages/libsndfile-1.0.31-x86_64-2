@@ -1,0 +1,75 @@
+PACKAGE NAME:     libsndfile-1.0.31-x86_64-2
+COMPRESSED PACKAGE SIZE:     288K
+UNCOMPRESSED PACKAGE SIZE:     1.1M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libsndfile-1.0.31-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libsndfile: libsndfile (C library for reading and writing wav files)
+libsndfile:
+libsndfile: Libsndfile is a C library for reading and writing files containing
+libsndfile: sampled sound (such as MS Windows WAV and Apple/SGI AIFF format).
+libsndfile:
+libsndfile: Homepage: http://www.mega-nerd.com/libsndfile/
+libsndfile:
+libsndfile:
+libsndfile:
+libsndfile:
+libsndfile:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sndfile-cmp
+usr/bin/sndfile-concat
+usr/bin/sndfile-convert
+usr/bin/sndfile-deinterleave
+usr/bin/sndfile-info
+usr/bin/sndfile-interleave
+usr/bin/sndfile-metadata-get
+usr/bin/sndfile-metadata-set
+usr/bin/sndfile-play
+usr/bin/sndfile-salvage
+usr/doc/
+usr/doc/libsndfile-1.0.31/
+usr/doc/libsndfile-1.0.31/AUTHORS
+usr/doc/libsndfile-1.0.31/COPYING
+usr/doc/libsndfile-1.0.31/ChangeLog
+usr/doc/libsndfile-1.0.31/FAQ.md
+usr/doc/libsndfile-1.0.31/NEWS
+usr/doc/libsndfile-1.0.31/README
+usr/doc/libsndfile-1.0.31/api.md
+usr/doc/libsndfile-1.0.31/bugs.md
+usr/doc/libsndfile-1.0.31/command.md
+usr/doc/libsndfile-1.0.31/embedded_files.md
+usr/doc/libsndfile-1.0.31/formats.md
+usr/doc/libsndfile-1.0.31/index.md
+usr/doc/libsndfile-1.0.31/libsndfile.css
+usr/doc/libsndfile-1.0.31/libsndfile.jpg
+usr/doc/libsndfile-1.0.31/lists.md
+usr/doc/libsndfile-1.0.31/new_file_type_howto.md
+usr/doc/libsndfile-1.0.31/octave.md
+usr/doc/libsndfile-1.0.31/print.css
+usr/doc/libsndfile-1.0.31/sndfile_info.md
+usr/doc/libsndfile-1.0.31/tutorial.md
+usr/doc/libsndfile-1.0.31/win32.md
+usr/include/
+usr/include/sndfile.h
+usr/include/sndfile.hh
+usr/lib64/
+usr/lib64/libsndfile.so.1.0.31
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/sndfile.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/sndfile-cmp.1.gz
+usr/man/man1/sndfile-concat.1.gz
+usr/man/man1/sndfile-convert.1.gz
+usr/man/man1/sndfile-deinterleave.1.gz
+usr/man/man1/sndfile-info.1.gz
+usr/man/man1/sndfile-interleave.1.gz
+usr/man/man1/sndfile-metadata-get.1.gz
+usr/man/man1/sndfile-metadata-set.1.gz
+usr/man/man1/sndfile-play.1.gz
+usr/man/man1/sndfile-salvage.1.gz

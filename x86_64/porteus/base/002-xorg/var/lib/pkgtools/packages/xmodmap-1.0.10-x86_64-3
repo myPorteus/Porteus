@@ -1,0 +1,33 @@
+PACKAGE NAME:     xmodmap-1.0.10-x86_64-3
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     110K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xmodmap-1.0.10-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xmodmap: xmodmap (X11 keyboard utility)
+xmodmap:
+xmodmap: The xmodmap program is used to edit and display the keyboard modifier
+xmodmap: map and keymap table that are used by client applications to convert
+xmodmap: event keycodes into keysyms. It is usually run from a user's session
+xmodmap: startup script to configure the keyboard according to personal tastes.
+xmodmap:
+xmodmap:
+xmodmap:
+xmodmap:
+xmodmap:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xmodmap
+usr/doc/
+usr/doc/xmodmap-1.0.10/
+usr/doc/xmodmap-1.0.10/AUTHORS
+usr/doc/xmodmap-1.0.10/COPYING
+usr/doc/xmodmap-1.0.10/ChangeLog
+usr/doc/xmodmap-1.0.10/INSTALL
+usr/doc/xmodmap-1.0.10/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/xmodmap.1.gz

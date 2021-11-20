@@ -1,0 +1,27 @@
+PACKAGE NAME:     mozjs78-lib-78.11.0esr-x86_64-port
+COMPRESSED PACKAGE SIZE:     6.5M
+UNCOMPRESSED PACKAGE SIZE:     28M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/mozjs78-lib-78.11.0esr-x86_64-port.txz
+PACKAGE DESCRIPTION:
+mozjs78-lib: mozjs78-lib (Mozilla's JavaScript Engine)
+mozjs78-lib:
+mozjs78-lib: SpiderMonkey is Mozilla's JavaScript engine written in C/C++. It is
+mozjs78-lib: used in various Mozilla products (including Firefox) and is available
+mozjs78-lib: under MPL/GPL/LGPL tri-license.
+mozjs78-lib: This is a custom split package for Porteus, containing the libs only.
+mozjs78-lib:
+mozjs78-lib: Homepage:
+mozjs78-lib: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
+mozjs78-lib:
+mozjs78-lib:
+mozjs78-lib:
+mozjs78-lib:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/libmozjs-78.so
+usr/lib64/libmozjs-78.so.0
+usr/lib64/libmozjs-78.so.0.0.0

@@ -1,0 +1,85 @@
+PACKAGE NAME:     libunistring-0.9.10-x86_64-3
+COMPRESSED PACKAGE SIZE:     520K
+UNCOMPRESSED PACKAGE SIZE:     2.5M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/libunistring-0.9.10-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libunistring: libunistring (GNU Unicode string library)
+libunistring:
+libunistring: This library provides functions for manipulating Unicode strings and
+libunistring: for manipulating C strings according to the Unicode standard.
+libunistring:
+libunistring: Homepage: http://www.gnu.org/s/libunistring
+libunistring:
+libunistring:
+libunistring:
+libunistring:
+libunistring:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libunistring-0.9.10/
+usr/doc/libunistring-0.9.10/AUTHORS
+usr/doc/libunistring-0.9.10/BUGS
+usr/doc/libunistring-0.9.10/COPYING
+usr/doc/libunistring-0.9.10/COPYING.LIB
+usr/doc/libunistring-0.9.10/ChangeLog
+usr/doc/libunistring-0.9.10/DEPENDENCIES
+usr/doc/libunistring-0.9.10/HACKING
+usr/doc/libunistring-0.9.10/INSTALL
+usr/doc/libunistring-0.9.10/NEWS
+usr/doc/libunistring-0.9.10/README
+usr/doc/libunistring-0.9.10/THANKS
+usr/doc/libunistring-0.9.10/html/
+usr/doc/libunistring-0.9.10/html/libunistring_1.html
+usr/doc/libunistring-0.9.10/html/libunistring_10.html
+usr/doc/libunistring-0.9.10/html/libunistring_11.html
+usr/doc/libunistring-0.9.10/html/libunistring_12.html
+usr/doc/libunistring-0.9.10/html/libunistring_13.html
+usr/doc/libunistring-0.9.10/html/libunistring_14.html
+usr/doc/libunistring-0.9.10/html/libunistring_15.html
+usr/doc/libunistring-0.9.10/html/libunistring_16.html
+usr/doc/libunistring-0.9.10/html/libunistring_17.html
+usr/doc/libunistring-0.9.10/html/libunistring_18.html
+usr/doc/libunistring-0.9.10/html/libunistring_19.html
+usr/doc/libunistring-0.9.10/html/libunistring_2.html
+usr/doc/libunistring-0.9.10/html/libunistring_20.html
+usr/doc/libunistring-0.9.10/html/libunistring_21.html
+usr/doc/libunistring-0.9.10/html/libunistring_3.html
+usr/doc/libunistring-0.9.10/html/libunistring_4.html
+usr/doc/libunistring-0.9.10/html/libunistring_5.html
+usr/doc/libunistring-0.9.10/html/libunistring_6.html
+usr/doc/libunistring-0.9.10/html/libunistring_7.html
+usr/doc/libunistring-0.9.10/html/libunistring_8.html
+usr/doc/libunistring-0.9.10/html/libunistring_9.html
+usr/doc/libunistring-0.9.10/html/libunistring_abt.html
+usr/doc/libunistring-0.9.10/html/libunistring_toc.html
+usr/include/
+usr/include/unicase.h
+usr/include/uniconv.h
+usr/include/unictype.h
+usr/include/unigbrk.h
+usr/include/unilbrk.h
+usr/include/uniname.h
+usr/include/uninorm.h
+usr/include/unistdio.h
+usr/include/unistr.h
+usr/include/unistring/
+usr/include/unistring/cdefs.h
+usr/include/unistring/iconveh.h
+usr/include/unistring/inline.h
+usr/include/unistring/localcharset.h
+usr/include/unistring/stdbool.h
+usr/include/unistring/stdint.h
+usr/include/unistring/version.h
+usr/include/unistring/woe32dll.h
+usr/include/unitypes.h
+usr/include/uniwbrk.h
+usr/include/uniwidth.h
+usr/info/
+usr/info/libunistring.info.gz
+usr/lib64/
+usr/lib64/libunistring.so.2.1.0

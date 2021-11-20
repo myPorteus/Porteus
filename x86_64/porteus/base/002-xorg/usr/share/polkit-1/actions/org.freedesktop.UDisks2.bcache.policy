@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The Udisks Project</vendor>
+  <vendor_url>https://github.com/storaged-project/udisks</vendor_url>
+  <icon_name>drive-removable-media</icon_name>
+  <action id="org.freedesktop.udisks2.bcache.manage-bcache">
+    <description>Manage Bcache</description>
+    <description xml:lang="zh_TW">管理 Bcache</description>
+    <description xml:lang="zh_CN">管理 Bcache</description>
+    <description xml:lang="uk">Керування Bcache</description>
+    <description xml:lang="tr">Bcache'i Yönet</description>
+    <description xml:lang="sv">Hantera Bcache</description>
+    <description xml:lang="sk">Spravovať Bcache</description>
+    <description xml:lang="pt_BR">Gerenciar Bcache</description>
+    <description xml:lang="pl">Zarządzanie Bcache</description>
+    <description xml:lang="nl">Beheer Bcache</description>
+    <description xml:lang="lt">Tvarkyti Bcache</description>
+    <description xml:lang="kk">Bcache басқару</description>
+    <description xml:lang="it">Gestisce Bcache</description>
+    <description xml:lang="id">Kelola Bcache</description>
+    <description xml:lang="hu">Bcache kezelése</description>
+    <description xml:lang="fur">Gjestìs Bcache</description>
+    <description xml:lang="fr">Gérer le Bcache</description>
+    <description xml:lang="es">Administrar Bcaché</description>
+    <description xml:lang="de">Bcache verwalten</description>
+    <description xml:lang="da">Håndter bcache</description>
+    <description xml:lang="cs">Spravovat Bcache</description>
+    <description xml:lang="ca">Gestiona Bcache</description>
+    <description xml:lang="af">Bestuur Bcache</description>
+    <message>Authentication is required to manage Bcache</message>
+    <message xml:lang="zh_TW">要管理 Bcache 需要先核對身分</message>
+    <message xml:lang="zh_CN">管理 Bcache 需要身份验证</message>
+    <message xml:lang="uk">Щоб отримати доступ до керування Bcache, слід пройти розпізнавання</message>
+    <message xml:lang="tr">Bcache'i yönetmek için kimlik doğrulaması gerekli</message>
+    <message xml:lang="sv">Autentisering krävs för att hantera Bcache</message>
+    <message xml:lang="sk">Spravovanie Bcache vyžaduje overenie totožnosti</message>
+    <message xml:lang="pt_BR">Autenticação é necessária para gerenciar Bcache</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby zarządzać Bcache</message>
+    <message xml:lang="nl">Authenticatie is vereist om Bcache te beheren</message>
+    <message xml:lang="lt">Norint tvarkyti Bcache, reikia patvirtinti tapatybę</message>
+    <message xml:lang="kk">Bcache басқару үшін аутентификация керек</message>
+    <message xml:lang="it">È richiesto autenticarsi per gestire un volume Bcache</message>
+    <message xml:lang="id">Otentikasi diperlukan untuk mengelola Bcache</message>
+    <message xml:lang="hu">Hitelesítés szükséges a Bcache kezeléséhez</message>
+    <message xml:lang="fur">La autenticazion e je necessarie par gjestî la Bcache</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour gérer le Bcache</message>
+    <message xml:lang="es">Se requiere autenticación para gestionar Bcaché</message>
+    <message xml:lang="de">Legitimation ist zum Verwalten von Bcache erforderlich</message>
+    <message xml:lang="da">Der kræves godkendelse for at håndtere bcache</message>
+    <message xml:lang="cs">Pro správu Bcache je nutné ověření</message>
+    <message xml:lang="ca">Es requereix autenticació per gestionar Bcache</message>
+    <message xml:lang="af">Verifiëring is nodig om Bcache te bestuur</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

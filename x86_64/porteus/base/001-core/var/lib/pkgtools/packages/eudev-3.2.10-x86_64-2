@@ -1,0 +1,134 @@
+PACKAGE NAME:     eudev-3.2.10-x86_64-2
+COMPRESSED PACKAGE SIZE:     1020K
+UNCOMPRESSED PACKAGE SIZE:     7.8M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/eudev-3.2.10-x86_64-2.txz
+PACKAGE DESCRIPTION:
+eudev: eudev (dynamic device directory system)
+eudev:
+eudev: eudev provides a dynamic device directory containing only the files
+eudev: for the devices which are actually present. It creates or removes
+eudev: device node files usually located in the /dev directory. eudev is a
+eudev: fork of git://anongit.freedesktop.org/systemd/systemd with the aim of
+eudev: isolating udev from any particular flavor of system initialization.
+eudev:
+eudev: Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
+eudev:
+eudev:
+FILE LIST:
+./
+etc/
+etc/modprobe.d/
+etc/modprobe.d/README
+etc/rc.d/
+etc/rc.d/rc.udev.new
+etc/udev/
+etc/udev/devices/
+etc/udev/hwdb.d/
+etc/udev/rules.d/
+etc/udev/udev.conf
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/firmware/
+lib/modprobe.d/
+lib/modprobe.d/8139cp.conf
+lib/modprobe.d/bcm43xx.conf
+lib/modprobe.d/edac.conf
+lib/modprobe.d/eepro100.conf
+lib/modprobe.d/eth1394.conf
+lib/modprobe.d/evbug.conf
+lib/modprobe.d/framebuffers.conf
+lib/modprobe.d/hostap.conf
+lib/modprobe.d/isapnp.conf
+lib/modprobe.d/isdn.conf
+lib/modprobe.d/oss.conf
+lib/modprobe.d/pcspkr.conf
+lib/modprobe.d/psmouse.conf
+lib/modprobe.d/scsi-sata-controllers.conf
+lib/modprobe.d/snd-pcsp.conf
+lib/modprobe.d/sound-modems.conf
+lib/modprobe.d/tulip.conf
+lib/modprobe.d/usb-controller.conf
+lib/modprobe.d/via-ircc.conf
+lib/modprobe.d/watchdog.conf
+lib/udev/
+lib/udev/ata_id
+lib/udev/cdrom_id
+lib/udev/collect
+lib/udev/devices/
+lib/udev/hwdb.d/
+lib/udev/hwdb.d/20-OUI.hwdb
+lib/udev/hwdb.d/20-acpi-vendor.hwdb
+lib/udev/hwdb.d/20-bluetooth-vendor-product.hwdb
+lib/udev/hwdb.d/20-net-ifname.hwdb
+lib/udev/hwdb.d/20-pci-classes.hwdb
+lib/udev/hwdb.d/20-pci-vendor-model.hwdb
+lib/udev/hwdb.d/20-sdio-classes.hwdb
+lib/udev/hwdb.d/20-sdio-vendor-model.hwdb
+lib/udev/hwdb.d/20-usb-classes.hwdb
+lib/udev/hwdb.d/20-usb-vendor-model.hwdb
+lib/udev/hwdb.d/20-vmbus-class.hwdb
+lib/udev/hwdb.d/60-evdev.hwdb
+lib/udev/hwdb.d/60-keyboard.hwdb
+lib/udev/hwdb.d/60-sensor.hwdb
+lib/udev/hwdb.d/70-mouse.hwdb
+lib/udev/hwdb.d/70-pointingstick.hwdb
+lib/udev/hwdb.d/70-touchpad.hwdb
+lib/udev/mtd_probe
+lib/udev/rule_generator.functions
+lib/udev/rules.d/
+lib/udev/rules.d/40-slackware.rules
+lib/udev/rules.d/50-udev-default.rules
+lib/udev/rules.d/60-block.rules
+lib/udev/rules.d/60-cdrom_id.rules
+lib/udev/rules.d/60-drm.rules
+lib/udev/rules.d/60-evdev.rules
+lib/udev/rules.d/60-input-id.rules
+lib/udev/rules.d/60-persistent-alsa.rules
+lib/udev/rules.d/60-persistent-input.rules
+lib/udev/rules.d/60-persistent-storage-tape.rules
+lib/udev/rules.d/60-persistent-storage.rules
+lib/udev/rules.d/60-persistent-v4l.rules
+lib/udev/rules.d/60-sensor.rules
+lib/udev/rules.d/60-serial.rules
+lib/udev/rules.d/64-btrfs.rules
+lib/udev/rules.d/65-permissions.rules
+lib/udev/rules.d/70-joystick.rules
+lib/udev/rules.d/70-mouse.rules
+lib/udev/rules.d/70-touchpad.rules
+lib/udev/rules.d/75-net-description.rules
+lib/udev/rules.d/75-persistent-net-generator.rules
+lib/udev/rules.d/75-probe_mtd.rules
+lib/udev/rules.d/78-sound-card.rules
+lib/udev/rules.d/80-drivers.rules
+lib/udev/scsi_id
+lib/udev/v4l_id
+lib/udev/write_net_rules
+lib64/
+lib64/libudev.so.1.6.3
+run/
+sbin/
+sbin/udevadm
+sbin/udevd
+usr/
+usr/doc/
+usr/doc/eudev-3.2.10/
+usr/doc/eudev-3.2.10/COPYING
+usr/include/
+usr/include/libudev.h
+usr/include/udev.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libudev.pc
+usr/man/
+usr/man/man5/
+usr/man/man5/udev.conf.5.gz
+usr/man/man7/
+usr/man/man7/udev.7.gz
+usr/man/man8/
+usr/man/man8/udevadm.8.gz
+usr/man/man8/udevd.8.gz
+usr/share/
+usr/share/pkgconfig/
+usr/share/pkgconfig/udev.pc

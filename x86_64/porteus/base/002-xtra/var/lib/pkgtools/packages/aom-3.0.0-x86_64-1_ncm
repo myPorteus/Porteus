@@ -1,0 +1,49 @@
+PACKAGE NAME:     aom-3.0.0-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     5.8M
+UNCOMPRESSED PACKAGE SIZE:     18M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/aom-3.0.0-x86_64-1_ncm.tgz
+PACKAGE DESCRIPTION:
+aom: aom (Open Source Video Codec)
+aom:
+aom: AOMedia Video 1 (AV1) is designed to be the successor to VP9 and
+aom: also to eventually be a direct competitor for HEVC/H.265.
+aom: This Slackbuild builds the 'reference' encoder aomenc as well as
+aom: the 'reference' decoder aomdec.
+aom:
+aom: Homepage: https://aomedia.googlesource.com/aom
+aom:
+aom:
+aom:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/aomdec
+usr/bin/aomenc
+usr/doc/
+usr/doc/aom-3.0.0/
+usr/doc/aom-3.0.0/AUTHORS
+usr/doc/aom-3.0.0/CHANGELOG
+usr/doc/aom-3.0.0/LICENSE
+usr/doc/aom-3.0.0/PATENTS
+usr/doc/aom-3.0.0/README.md
+usr/doc/aom-3.0.0/aom.SlackBuild
+usr/include/
+usr/include/aom/
+usr/include/aom/aom.h
+usr/include/aom/aom_codec.h
+usr/include/aom/aom_decoder.h
+usr/include/aom/aom_encoder.h
+usr/include/aom/aom_frame_buffer.h
+usr/include/aom/aom_image.h
+usr/include/aom/aom_integer.h
+usr/include/aom/aomcx.h
+usr/include/aom/aomdx.h
+usr/lib64/
+usr/lib64/libaom.a
+usr/lib64/libaom.so.3.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/aom.pc

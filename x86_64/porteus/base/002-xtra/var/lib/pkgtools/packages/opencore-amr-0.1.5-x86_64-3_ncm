@@ -1,0 +1,46 @@
+PACKAGE NAME:     opencore-amr-0.1.5-x86_64-3_ncm
+COMPRESSED PACKAGE SIZE:     180K
+UNCOMPRESSED PACKAGE SIZE:     370K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/opencore-amr-0.1.5-x86_64-3_ncm.tgz
+PACKAGE DESCRIPTION:
+opencore-amr: opencore-amr (AMRNB and AMRWB speech codec)
+opencore-amr:
+opencore-amr: Library of OpenCORE Framework implementation of Adaptive Multi Rate
+opencore-amr: Narrowband and Wideband speech codec
+opencore-amr:
+opencore-amr: opencore-amr home: http://opencore-amr.sourceforge.net/
+opencore-amr:
+opencore-amr:
+opencore-amr:
+opencore-amr:
+opencore-amr:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/opencore-amr-0.1.5/
+usr/doc/opencore-amr-0.1.5/ChangeLog
+usr/doc/opencore-amr-0.1.5/LICENSE
+usr/doc/opencore-amr-0.1.5/README
+usr/doc/opencore-amr-0.1.5/opencore-amr.SlackBuild
+usr/doc/opencore-amr-0.1.5/opencore/
+usr/doc/opencore-amr-0.1.5/opencore/ChangeLog
+usr/doc/opencore-amr-0.1.5/opencore/NOTICE
+usr/include/
+usr/include/opencore-amrnb/
+usr/include/opencore-amrnb/interf_dec.h
+usr/include/opencore-amrnb/interf_enc.h
+usr/include/opencore-amrwb/
+usr/include/opencore-amrwb/dec_if.h
+usr/include/opencore-amrwb/if_rom.h
+usr/lib64/
+usr/lib64/libopencore-amrnb.la
+usr/lib64/libopencore-amrnb.so.0.0.3
+usr/lib64/libopencore-amrwb.la
+usr/lib64/libopencore-amrwb.so.0.0.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/opencore-amrnb.pc
+usr/lib64/pkgconfig/opencore-amrwb.pc

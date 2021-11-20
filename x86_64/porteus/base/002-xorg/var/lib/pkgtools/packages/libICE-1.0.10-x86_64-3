@@ -1,0 +1,52 @@
+PACKAGE NAME:     libICE-1.0.10-x86_64-3
+COMPRESSED PACKAGE SIZE:     120K
+UNCOMPRESSED PACKAGE SIZE:     900K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libICE-1.0.10-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libICE: libICE (X Inter-Client Exchange Library)
+libICE:
+libICE: libICE is part of X11.
+libICE:
+libICE: For more information about the X.Org Foundation (the providers of the
+libICE: X.Org implementation of the X Window System), see their website:
+libICE:
+libICE: http://www.x.org
+libICE:
+libICE:
+libICE:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libICE-1.0.10/
+usr/doc/libICE-1.0.10/AUTHORS
+usr/doc/libICE-1.0.10/COPYING
+usr/doc/libICE-1.0.10/ChangeLog
+usr/doc/libICE-1.0.10/ICElib.html
+usr/doc/libICE-1.0.10/ICElib.html.db
+usr/doc/libICE-1.0.10/ICElib.pdf.db
+usr/doc/libICE-1.0.10/ICElib.txt
+usr/doc/libICE-1.0.10/ICElib.xml
+usr/doc/libICE-1.0.10/INSTALL
+usr/doc/libICE-1.0.10/README.md
+usr/doc/libICE-1.0.10/ice.html
+usr/doc/libICE-1.0.10/ice.html.db
+usr/doc/libICE-1.0.10/ice.pdf.db
+usr/doc/libICE-1.0.10/ice.txt
+usr/doc/libICE-1.0.10/ice.xml
+usr/include/
+usr/include/X11/
+usr/include/X11/ICE/
+usr/include/X11/ICE/ICE.h
+usr/include/X11/ICE/ICEconn.h
+usr/include/X11/ICE/ICElib.h
+usr/include/X11/ICE/ICEmsg.h
+usr/include/X11/ICE/ICEproto.h
+usr/include/X11/ICE/ICEutil.h
+usr/lib64/
+usr/lib64/libICE.so.6.3.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/ice.pc

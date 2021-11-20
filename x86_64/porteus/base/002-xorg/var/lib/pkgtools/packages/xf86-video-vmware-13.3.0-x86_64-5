@@ -1,0 +1,36 @@
+PACKAGE NAME:     xf86-video-vmware-13.3.0-x86_64-5
+COMPRESSED PACKAGE SIZE:     84K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xf86-video-vmware-13.3.0-x86_64-5.txz
+PACKAGE DESCRIPTION:
+xf86-video-vmware: xf86-video-vmware (VMWare SVGA video driver for the Xorg X server)
+xf86-video-vmware:
+xf86-video-vmware: xf86-video-vmware is part of X11.
+xf86-video-vmware:
+xf86-video-vmware: For more information about the X.Org Foundation (the providers of the
+xf86-video-vmware: X.Org implementation of the X Window System), see their website:
+xf86-video-vmware:
+xf86-video-vmware: http://www.x.org
+xf86-video-vmware:
+xf86-video-vmware:
+xf86-video-vmware:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-video-vmware-13.3.0/
+usr/doc/xf86-video-vmware-13.3.0/COPYING
+usr/doc/xf86-video-vmware-13.3.0/ChangeLog
+usr/doc/xf86-video-vmware-13.3.0/INSTALL
+usr/doc/xf86-video-vmware-13.3.0/README
+usr/lib64/
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/drivers/
+usr/lib64/xorg/modules/drivers/vmware_drv.la
+usr/lib64/xorg/modules/drivers/vmware_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/vmware.4.gz

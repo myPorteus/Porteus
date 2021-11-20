@@ -1,0 +1,40 @@
+PACKAGE NAME:     xvidcore-1.3.7-x86_64-2_ncm
+COMPRESSED PACKAGE SIZE:     608K
+UNCOMPRESSED PACKAGE SIZE:     2.2M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xtra/xvidcore-1.3.7-x86_64-2_ncm.tgz
+PACKAGE DESCRIPTION:
+xvidcore: xvidcore (MPEG-4 Compliant Video Codec)
+xvidcore:
+xvidcore: Xvid is an ISO MPEG-4 compliant video codec. It is an open source
+xvidcore: project that is developed and maintained by people from all over
+xvidcore: the world. Xvid claims to be the best currently available MPEG-4
+xvidcore: video codec solution, and it is free software.
+xvidcore:
+xvidcore: Homepage: https://labs.xvid.com/project/
+xvidcore:
+xvidcore:
+xvidcore:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xvidcore-1.3.7/
+usr/doc/xvidcore-1.3.7/AUTHORS
+usr/doc/xvidcore-1.3.7/ChangeLog
+usr/doc/xvidcore-1.3.7/ChangeLog-1.0
+usr/doc/xvidcore-1.3.7/CodingStyle
+usr/doc/xvidcore-1.3.7/LICENSE
+usr/doc/xvidcore-1.3.7/README
+usr/doc/xvidcore-1.3.7/TODO
+usr/doc/xvidcore-1.3.7/doc/
+usr/doc/xvidcore-1.3.7/doc/INSTALL
+usr/doc/xvidcore-1.3.7/doc/README
+usr/doc/xvidcore-1.3.7/xvidcore.SlackBuild
+usr/include/
+usr/include/xvid.h
+usr/lib64/
+usr/lib64/libxvidcore.a
+usr/lib64/libxvidcore.so.4.3

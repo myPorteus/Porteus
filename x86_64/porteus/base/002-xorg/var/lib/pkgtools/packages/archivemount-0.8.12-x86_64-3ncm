@@ -1,0 +1,26 @@
+PACKAGE NAME:     archivemount-0.8.12-x86_64-3ncm
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/archivemount-0.8.12-x86_64-3ncm.txz
+PACKAGE DESCRIPTION:
+archivemount: archivemount
+archivemount:
+archivemount: archivemount is a FUSE-based file system mounter for Unix/Linux
+archivemount: that can mount tar and compressed tar archives.
+archivemount: 
+archivemount: 
+archivemount: 
+archivemount: 
+archivemount:
+archivemount:
+archivemount: Home: http://www.cybernoia.de/software
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/archivemount
+usr/man/
+usr/man/man1/
+usr/man/man1/archivemount.1

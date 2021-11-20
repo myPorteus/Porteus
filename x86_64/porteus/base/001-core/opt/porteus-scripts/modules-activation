@@ -1,0 +1,175 @@
+#!/bin/bash
+# Activate modules on the fly.
+# Author: brokenman
+
+# Exit if no argument is provided:
+case $2 in
+	-h|--help|"")
+    echo "Usage:"
+    echo "$ACTIVATION module.xzm"
+    echo "$ACTIVATION module1.xzm module2.xzm module3.xzm"
+    echo "$ACTIVATION *.xzm"
+    echo "$ACTIVATION /path/folder_with_subfolders"
+    echo
+    echo "To disable UI messages use '-q':"
+    echo "$ACTIVATION module.xzm -q"
+    echo
+	echo "To enable folder recursion use '-o':"
+    echo "$ACTIVATION /path/folder_with_subfolders -o"
+    exit
+    ;;
+esac
+
+# Check parameters
+for var in "$@"; do
+	if [ "$var" = "activate" ]; then
+		ACTIVATION="$var"
+		AUFSTYPE="insert"
+	elif [ "$var" = "deactivate" ]; then
+		ACTIVATION="$var"
+		AUFSTYPE="remove"
+	elif [ "$var" = "-o" ]; then
+		RECURSIVEACTIVATION="-o"
+	elif [ "$var" = "-q" ]; then
+		QUIETMODE="-q"
+	elif [[ "$var" = "-current"* ]]; then
+		CURRENTPATH=${var#*=}
+	fi
+done
+
+# Switch to root:
+if [ `whoami` != root ]; then
+    for x in "$@"; do
+		LIST+=("$x")
+    done
+
+    CURRENTPATH="-current=$PWD"
+    LIST+=("$CURRENTPATH")
+
+    # Re-execute this script with super user privileges:
+    if [ "$DISPLAY" ] && [ "$QUIETMODE" != "-q" ]; then
+    	/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/modules-activation "${LIST[@]}"
+	else
+		echo "Please enter root's password below:"
+		ROOTCOMMAND="/opt/porteus-scripts/modules-activation"$(printf ' %q' "${LIST[@]}")
+		su -c "$ROOTCOMMAND"
+    fi
+    exit
+fi
+
+# Arch specific variables:
+if [ `uname -m|grep "x86_64"` ]; then
+    lib=lib64
+else
+    lib=lib
+fi
+
+# Create cache dir:
+CACHES=/mnt/live/tmp/caches
+[ -d $CACHES ] && rm -r $CACHES
+mkdir $CACHES
+
+if [ ! -z "$CURRENTPATH" ]; then
+	cd "$CURRENTPATH"
+fi
+
+# Insert module(s) to /union.
+for x in "$@"; do
+	if [ "$x" = "activate" ] || [ "$x" = "deactivate" ] || [ "$x" = "-o" ] || [ "$x" = "-q" ] || [[ "$x" == "-current"* ]]; then
+		continue
+	fi
+
+	targetmod=$(readlink -f "$x")
+
+	# If we are in GUI then use 'xactivate' as a helper:
+	if [ "$DISPLAY" ] && [ "$QUIETMODE" != "-q" ]; then
+		if [ -d "$x" ]; then
+			MAXDEPTH=$([ -z "$RECURSIVEACTIVATION" ] && echo "-maxdepth 1")
+			readarray -d '' LIST < <(find "$x" $MAXDEPTH -name "*.xzm" -print0)
+			for y in "${LIST[@]}"; do
+				targetfolder=$(readlink -f "$y")
+				/opt/porteus-scripts/xorg/x$ACTIVATION "$targetfolder"
+			done
+		else
+			/opt/porteus-scripts/xorg/x$ACTIVATION "$targetmod"
+		fi
+	else
+		if [ -d "$x" ]; then
+			MAXDEPTH=$([ -z "$RECURSIVEACTIVATION" ] && echo "-maxdepth 1")
+			readarray -d '' LIST < <(find "$x" $MAXDEPTH -name "*.xzm" -print0)
+			for y in "${LIST[@]}"; do
+				targetfolder=$(readlink -f "$y")
+				/opt/porteus-scripts/xorg/aufs-$AUFSTYPE "$targetfolder"
+			done
+		else
+			/opt/porteus-scripts/xorg/aufs-$AUFSTYPE "$targetmod"
+		fi
+	fi
+done
+
+#exit
+
+# Rebuild the system configuration cache:
+if [ -e $CACHES/ldconfig ]; then
+    echo "Updating shared library links:  /sbin/ldconfig"
+    /sbin/ldconfig 2>/dev/null
+fi
+
+if [ -e $CACHES/mime ]; then
+    echo "Updating MIME database:  /usr/bin/update-mime-database /usr/share/mime"
+    /usr/bin/update-mime-database /usr/share/mime 2>/dev/null
+fi
+
+for x in `cat $CACHES/icons 2>/dev/null`; do
+    echo "Updating icon-theme.cache: /usr/bin/gtk-update-icon-cache -t -f $x"
+    /usr/bin/gtk-update-icon-cache -t -f $x 2>/dev/null
+done
+
+if [ -e $CACHES/fonts ]; then
+    echo "Updating X font indexes:  /usr/bin/fc-cache -f"
+    /usr/bin/fc-cache -f 2>/dev/null
+fi
+
+if [ -e $CACHES/schemas ]; then
+    echo "Updating glib schemas: /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas"
+    /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
+fi
+
+if [ -e $CACHES/gio ]; then
+    echo "Updating GIO cache: /usr/bin/gio-querymodules /usr/$lib/gio/modules"
+    /usr/bin/gio-querymodules /usr/$lib/gio/modules 2>/dev/null
+fi
+
+if [ -e $CACHES/immodules ]; then
+    echo "Updating GTK immodules: /usr/bin/update-gtk-immodules"
+    [ -e /usr/bin/update-gtk-immodules-3.0 ] && /usr/bin/update-gtk-immodules-3.0 2>/dev/null
+	[ -e /usr/bin/update-gtk-immodules ] && /usr/bin/update-gtk-immodules 2>/dev/null
+fi
+
+if [ -e $CACHES/certs ]; then
+    echo "Updating certificates in /etc/ssl/certs: /usr/sbin/update-ca-certificates --fresh"
+    /usr/sbin/update-ca-certificates --fresh 2>/dev/null
+fi
+
+# Multilib support for x86_64 arch:
+if [ $lib = lib64 ]; then
+    if [ -e $CACHES/pixbuf ]; then
+		echo "Updating GDK pixbuf loaders: /usr/bin/update-gdk-pixbuf-loaders"
+		/usr/bin/update-gdk-pixbuf-loaders 2>/dev/null
+    fi
+    if [ -e $CACHES/pango ]; then
+		echo "Updating Pango querymodules: /usr/bin/update-pango-querymodules"
+		/usr/bin/update-pango-querymodules 2>/dev/null
+    fi
+fi
+
+# Start services which may be provided by modules:
+if [ -e $CACHES/services ]; then
+	for SCRIPT in `cat $CACHES/services 2>/dev/null`; do $SCRIPT start; done
+fi
+
+# Update desktop menu:
+[ -e $CACHES/desktop-install ] && /opt/porteus-scripts/xorg/update-menu install 2>/dev/null
+[ -e $CACHES/desktop-uninstall ] && /opt/porteus-scripts/xorg/update-menu uninstall 2>/dev/null
+
+rm -r $CACHES

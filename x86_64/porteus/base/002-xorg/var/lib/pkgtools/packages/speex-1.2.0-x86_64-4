@@ -1,0 +1,57 @@
+PACKAGE NAME:     speex-1.2.0-x86_64-4
+COMPRESSED PACKAGE SIZE:     480K
+UNCOMPRESSED PACKAGE SIZE:     680K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/speex-1.2.0-x86_64-4.txz
+PACKAGE DESCRIPTION:
+speex: speex (low-bitrate voice audio codec)
+speex:
+speex: Speex is a patent-free, Open Source/Free Software voice codec. Unlike
+speex: other codecs like MP3 and Ogg Vorbis, Speex is designed to compress
+speex: voice at bitrates in the 2-45 kbps range. Possible applications
+speex: include VoIP, internet audio streaming, archiving of speech data
+speex: (e.g. voice mail), and audio books. It is meant to be complementary
+speex: to the Ogg Vorbis codec.
+speex:
+speex: Homepage: https://www.speex.org/
+speex:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/speexdec
+usr/bin/speexenc
+usr/doc/
+usr/doc/speex-1.2.0/
+usr/doc/speex-1.2.0/AUTHORS
+usr/doc/speex-1.2.0/COPYING
+usr/doc/speex-1.2.0/ChangeLog
+usr/doc/speex-1.2.0/NEWS
+usr/doc/speex-1.2.0/README
+usr/doc/speex-1.2.0/README.TI-DSP
+usr/doc/speex-1.2.0/README.blackfin
+usr/doc/speex-1.2.0/README.symbian
+usr/doc/speex-1.2.0/TODO
+usr/doc/speex-1.2.0/manual.pdf
+usr/include/
+usr/include/speex/
+usr/include/speex/speex.h
+usr/include/speex/speex_bits.h
+usr/include/speex/speex_callbacks.h
+usr/include/speex/speex_config_types.h
+usr/include/speex/speex_header.h
+usr/include/speex/speex_stereo.h
+usr/include/speex/speex_types.h
+usr/lib64/
+usr/lib64/libspeex.so.1.5.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/speex.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/speexdec.1.gz
+usr/man/man1/speexenc.1.gz
+usr/share/
+usr/share/aclocal/
+usr/share/aclocal/speex.m4

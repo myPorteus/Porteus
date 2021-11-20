@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=Find Files and Directories
+Name[ru]=Поиск файлов и каталогов
+Name[ru]=Поиск файлов и каталогов
+Name[ru]=Поиск файлов и каталогов
+Comment=File search
+Comment[de]=Dateisuche
+Comment[es]=Buscador de archivos
+Comment[fi]=Etsi tiedostoja
+Comment[fr]=Recherche de fichiers
+Categories=GTK;Filesystem;Utility;
+Exec=pfilesearch
+Icon=edit-find-symbolic
+Terminal=false
+StartupNotify=true
+NotShowIn=KDE;

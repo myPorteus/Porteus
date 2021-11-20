@@ -1,0 +1,33 @@
+PACKAGE NAME:     sshfs-3.7.2-x86_64-1
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/sshfs-3.7.2-x86_64-1.txz
+PACKAGE DESCRIPTION:
+sshfs: sshfs (SSH filesystem client)
+sshfs:
+sshfs: This is a filesystem client based on the SSH File Transfer Protocol.
+sshfs: Since most SSH servers already support this protocol it is very easy
+sshfs: to set up: i.e. on the server side there's nothing to do. On the
+sshfs: client side mounting the filesystem is as easy as logging into the
+sshfs: server with ssh.
+sshfs:
+sshfs: Homepage: https://github.com/libfuse/sshfs
+sshfs:
+sshfs:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sshfs
+usr/doc/
+usr/doc/sshfs-3.7.2/
+usr/doc/sshfs-3.7.2/AUTHORS
+usr/doc/sshfs-3.7.2/COPYING
+usr/doc/sshfs-3.7.2/README.rst
+usr/man/
+usr/man/man1/
+usr/man/man1/sshfs.1.gz
+usr/sbin/

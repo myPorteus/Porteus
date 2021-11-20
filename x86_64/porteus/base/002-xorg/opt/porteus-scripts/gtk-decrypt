@@ -1,0 +1,209 @@
+#!/usr/bin/python
+## decrypt script in pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from subprocess import run, Popen, PIPE
+from os import path, remove
+
+class GtkDecrypt(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Decrypt", border_width = 15, height_request = 250, width_request = 250, icon_name = "channel-insecure-symbolic")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Select a file/folder to decrypt</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("<span>The file that you choose will be decrypted and then the\n encrypted version will then removed from the system.</span>")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb = Gtk.Box(spacing = 5, homogeneous = False)
+        self.hb.pack_start(Gtk.Label(label = "File:      "), False, False, 5)
+        self.entry = Gtk.Entry()
+        self.hb.pack_start(self.entry, False, False, 5)
+        self.add_file_button = Gtk.Button.new_from_icon_name("text-x-generic-symbolic", Gtk.IconSize.BUTTON)
+        self.add_file_button.connect("clicked", self.on_add_file_button_clicked)
+        self.hb.pack_start(self.add_file_button, False, False, 5)
+        self.vb.add(self.hb)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.ok_button = Gtk.Button.new_with_label("OK")
+        self.ok_button.connect("clicked", self.on_ok_clicked)
+        # ~ self.ok_button.set_sensitive(False)
+        self.hb_bottom.pack_end(self.ok_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        self.add(self.vb)
+
+    def is_encrypted(self):
+        p1 = Popen(['file', self.tgt_file_entry.get_text()], stdout=PIPE)
+        if run(['grep', '-o', 'LUKS'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip() == "LUKS":
+            return True
+        return False
+        
+    def on_add_file_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to decrypt", parent = self, action = Gtk.FileChooserAction.OPEN)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.file = dialog.get_filename()
+            self.entry.set_text(self.file)
+        dialog.destroy()
+
+    def on_ok_clicked(self, button):
+        dfile = self.entry.get_text()
+        dfile_name = path.basename(dfile)
+        dfile_path = path.dirname(dfile)
+        if dfile == "":
+            GtkDialog("Error", "You must select a file!", Gtk.MessageType.ERROR, 0)
+        else:
+            d = { ".enc" : "", ".dir" : "" }
+            tfile = self.replace_all(dfile, d)
+            if self.is_writable(dfile_path) is False:
+                GtkDialog("Error", "This path is not writable!", Gtk.MessageType.ERROR, 0)
+            pw_dialog = PasswordDialog(self)
+            response = pw_dialog.run()
+            if response == Gtk.ResponseType.OK:
+                passwd = pw_dialog.pentry.get_text()
+                if not passwd:
+                    self.error_message("Password cannot be empty")
+                    pw_dialog.destroy()
+            elif response == Gtk.ResponseType.CANCEL:
+                print("Cancelled. Clear entries")
+                passwd = None
+                pw_dialog.destroy()
+            #print(passwd)
+            if passwd is not None:
+                folder = dfile_name.endswith('.dir.enc')
+                if folder is True:
+                    tfile = tfile + '.tar.gz'
+                run(['openssl', 'aes-256-cbc', '-d', '-in', dfile,'-out', tfile, '-iter', '29', '-pass', 'pass:' + passwd])
+                if folder is True:
+                    run(['tar', 'zxvf', tfile])
+                    remove(tfile)
+                remove(dfile)
+                GtkDialog("Success.", "Your file has been decrypted and is now in the same path as the source.", Gtk.MessageType.INFO, 0) 
+                pw_dialog.destroy()
+                Gtk.main_quit()
+            else:
+                pw_dialog.destroy()
+
+    def replace_all(self, text, dic):
+        for i, j in dic.items():
+                text = text.replace(i, j)
+        return text
+
+    def is_writable(self, path):
+        try:
+            tmp_prefix = "write_tester"
+            count = 0
+            filename = path.join(path, tmp_prefix)
+            while(path.exists(filename)):
+                filename = "{}.{}".format(path.join(path, tmp_prefix),count)
+                count = count + 1
+            f = open(filename,"w")
+            f.close()
+            remove(filename)
+            return True
+        except Exception: #as e:
+            #print "{}".format(e)
+            return False
+
+    def error_message(self, message):
+        dialog = Gtk.MessageDialog(parent = self, flags = 0, message_type = Gtk.MessageType.ERROR, buttons = Gtk.ButtonsType.OK, text = "Decrypt")
+        dialog.format_secondary_text(message)
+        dialog.run()
+        dialog.destroy()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+class PasswordDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Passphrase", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK, Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(450, 180)
+        self.set_border_width(20)
+
+        self.vb = self.get_content_area()
+        self.vb.pack_start(Gtk.Label(label = "Please provide the passphrase to decrypt your file."), False, False, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10)
+        self.l_p1 = Gtk.Label(xalign = 0.0)
+        self.l_p1.set_markup("\tPassphrase:")
+        self.grid.attach(self.l_p1, 0, 2, 1, 1)
+        self.pentry = Gtk.Entry(visibility = False, invisible_char = '*')
+        self.grid.attach(self.pentry, 1, 2, 1, 1)
+        self.vb.pack_start(self.grid, False, False, 15)
+
+        self.show_all()
+        
+class GtkDialog():
+    def __init__(self, primary_text = "Message Header", secondary_text = "Message Text", dtype = Gtk.MessageType.INFO, timeout = 0):
+
+        if timeout > 0 and dtype == Gtk.MessageType.INFO:
+            self.timeout_id = GLib.timeout_add(timeout, self.on_timeout, None)
+        self.dialog = PorteusDialog(primary_text, secondary_text, dtype, timeout)
+        response = self.dialog.run()
+        self.dialog.destroy()
+
+    def on_timeout(self, *args, **kwargs):
+        if self.dialog is not None:
+            self.dialog.destroy()
+            # ~ exit(0)
+
+class PorteusDialog(Gtk.Dialog):
+    def __init__(self, primary_text, secondary_text, dtype, timeout):
+        Gtk.Dialog.__init__(self, "Porteus Message", None, 0)
+
+        self.set_default_size(250, 100)
+
+        icon_name = "dialog-information"
+        if timeout == 0:
+            self.add_button(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+            self.set_default_size(250, 120)
+
+        if dtype == Gtk.MessageType.QUESTION:
+            self.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+            icon_name = "dialog-question"
+        elif dtype == Gtk.MessageType.ERROR:
+            icon_name = "dialog-error"
+        elif dtype == Gtk.MessageType.WARNING:
+            icon_name = "dialog-warning"
+
+        self.vb = self.get_content_area()
+
+        self.hb = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.grid = Gtk.Grid(row_spacing = 5, column_spacing = 10)
+        self.img =  Gtk.Image.new_from_icon_name(icon_name, Gtk.IconSize.DIALOG)
+        self.grid.attach(self.img, 0, 0, 1, 2)
+        self.l_header = Gtk.Label(xalign = 0.0)
+        self.l_header.set_markup("<span size=\"medium\" weight=\"bold\">" + primary_text + "</span>")
+        self.grid.attach(self.l_header, 1, 0, 1, 1)
+        self.l_txt = Gtk.Label(xalign = 0.0, label = secondary_text)
+
+        self.grid.attach(self.l_txt, 1, 1, 1, 1)
+        self.hb.pack_start(self.grid, False, False, 10)
+
+        self.vb.pack_start(self.hb, False, False, 15)
+
+        self.show_all()
+
+win = GtkDecrypt()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

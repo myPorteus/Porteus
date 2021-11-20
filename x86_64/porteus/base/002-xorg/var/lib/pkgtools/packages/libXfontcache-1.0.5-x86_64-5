@@ -1,0 +1,40 @@
+PACKAGE NAME:     libXfontcache-1.0.5-x86_64-5
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     60K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libXfontcache-1.0.5-x86_64-5.txz
+PACKAGE DESCRIPTION:
+libXfontcache: libXfontcache (X-TrueType font cache extension client library)
+libXfontcache:
+libXfontcache: libXfontcache is part of X11.
+libXfontcache:
+libXfontcache: For more information about the X.Org Foundation (the providers of the
+libXfontcache: X.Org implementation of the X Window System), see their website:
+libXfontcache:
+libXfontcache: http://www.x.org
+libXfontcache:
+libXfontcache:
+libXfontcache:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libXfontcache-1.0.5/
+usr/doc/libXfontcache-1.0.5/COPYING
+usr/doc/libXfontcache-1.0.5/ChangeLog
+usr/doc/libXfontcache-1.0.5/INSTALL
+usr/doc/libXfontcache-1.0.5/README
+usr/lib64/
+usr/lib64/libXfontcache.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xfontcache.pc
+usr/man/
+usr/man/man3/
+usr/man/man3/FontCacheChangeCacheSettings.3.gz
+usr/man/man3/FontCacheGetCacheSettings.3.gz
+usr/man/man3/FontCacheGetCacheStatistics.3.gz
+usr/man/man3/FontCacheQueryExtension.3.gz
+usr/man/man3/FontCacheQueryVersion.3.gz
+usr/man/man3/Xfontcache.3.gz

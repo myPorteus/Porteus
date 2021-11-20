@@ -1,0 +1,113 @@
+PACKAGE NAME:     libcdio-2.1.0-x86_64-3
+COMPRESSED PACKAGE SIZE:     276K
+UNCOMPRESSED PACKAGE SIZE:     1.2M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libcdio-2.1.0-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libcdio: libcdio (GNU CD access library)
+libcdio:
+libcdio: The libcdio package contains a library for CD-ROM and CD image access.
+libcdio: Applications wishing to be oblivious of the OS and device-dependent
+libcdio: properties of a CD-ROM or of the specific details of various CD-image
+libcdio: formats may benefit from using this library. A library for working
+libcdio: with ISO-9660 filesystems libiso9660 is included. A generic interface
+libcdio: for issuing MMC (multimedia commands) is also part of the libcdio
+libcdio: library.
+libcdio:
+libcdio:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cd-drive
+usr/bin/cd-info
+usr/bin/cd-read
+usr/bin/cdda-player
+usr/bin/iso-info
+usr/bin/iso-read
+usr/bin/mmc-tool
+usr/doc/
+usr/doc/libcdio-2.1.0/
+usr/doc/libcdio-2.1.0/AUTHORS
+usr/doc/libcdio-2.1.0/COPYING
+usr/doc/libcdio-2.1.0/ChangeLog
+usr/doc/libcdio-2.1.0/INSTALL
+usr/doc/libcdio-2.1.0/MSVC/
+usr/doc/libcdio-2.1.0/MSVC/README
+usr/doc/libcdio-2.1.0/MSVC/cd-info.vcproj
+usr/doc/libcdio-2.1.0/MSVC/config.h
+usr/doc/libcdio-2.1.0/MSVC/libcdio.sln
+usr/doc/libcdio-2.1.0/MSVC/libcdio.vcproj
+usr/doc/libcdio-2.1.0/README
+usr/doc/libcdio-2.1.0/README.libcdio
+usr/doc/libcdio-2.1.0/THANKS
+usr/doc/libcdio-2.1.0/TODO
+usr/include/
+usr/include/cdio++/
+usr/include/cdio++/cdio.hpp
+usr/include/cdio++/cdtext.hpp
+usr/include/cdio++/device.hpp
+usr/include/cdio++/devices.hpp
+usr/include/cdio++/disc.hpp
+usr/include/cdio++/enum.hpp
+usr/include/cdio++/iso9660.hpp
+usr/include/cdio++/mmc.hpp
+usr/include/cdio++/read.hpp
+usr/include/cdio++/track.hpp
+usr/include/cdio/
+usr/include/cdio/audio.h
+usr/include/cdio/bytesex.h
+usr/include/cdio/bytesex_asm.h
+usr/include/cdio/cd_types.h
+usr/include/cdio/cdio.h
+usr/include/cdio/cdio_config.h
+usr/include/cdio/cdtext.h
+usr/include/cdio/device.h
+usr/include/cdio/disc.h
+usr/include/cdio/ds.h
+usr/include/cdio/dvd.h
+usr/include/cdio/ecma_167.h
+usr/include/cdio/iso9660.h
+usr/include/cdio/logging.h
+usr/include/cdio/memory.h
+usr/include/cdio/mmc.h
+usr/include/cdio/mmc_cmds.h
+usr/include/cdio/mmc_hl_cmds.h
+usr/include/cdio/mmc_ll_cmds.h
+usr/include/cdio/mmc_util.h
+usr/include/cdio/posix.h
+usr/include/cdio/read.h
+usr/include/cdio/rock.h
+usr/include/cdio/sector.h
+usr/include/cdio/track.h
+usr/include/cdio/types.h
+usr/include/cdio/udf.h
+usr/include/cdio/udf_file.h
+usr/include/cdio/udf_time.h
+usr/include/cdio/utf8.h
+usr/include/cdio/util.h
+usr/include/cdio/version.h
+usr/include/cdio/xa.h
+usr/info/
+usr/info/libcdio.info.gz
+usr/lib64/
+usr/lib64/libcdio++.so.1.0.0
+usr/lib64/libcdio.so.19.0.0
+usr/lib64/libiso9660++.so.0.0.0
+usr/lib64/libiso9660.so.11.0.0
+usr/lib64/libudf.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcdio++.pc
+usr/lib64/pkgconfig/libcdio.pc
+usr/lib64/pkgconfig/libiso9660++.pc
+usr/lib64/pkgconfig/libiso9660.pc
+usr/lib64/pkgconfig/libudf.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cd-drive.1.gz
+usr/man/man1/cd-info.1.gz
+usr/man/man1/cd-read.1.gz
+usr/man/man1/iso-info.1.gz
+usr/man/man1/iso-read.1.gz

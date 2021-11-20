@@ -1,0 +1,133 @@
+PACKAGE NAME:     mesa-21.1.4-x86_64-1
+COMPRESSED PACKAGE SIZE:     20M
+UNCOMPRESSED PACKAGE SIZE:     194M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/mesa-21.1.4-x86_64-1.txz
+PACKAGE DESCRIPTION:
+mesa: mesa (a 3-D graphics library)
+mesa:
+mesa: Mesa is a 3-D graphics library with an API very similar to that of
+mesa: another well-known 3-D graphics library. The Mesa libraries are used
+mesa: by X to provide both software and hardware accelerated graphics.
+mesa:
+mesa: Mesa was written by Brian Paul.
+mesa:
+mesa: Homepage: https://www.mesa3d.org
+mesa:
+mesa:
+FILE LIST:
+./
+etc/
+etc/OpenCL/
+etc/OpenCL/vendors/
+etc/OpenCL/vendors/mesa.icd
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gears
+usr/bin/glinfo
+usr/bin/glthreads
+usr/bin/glxcontexts
+usr/bin/glxdemo
+usr/bin/glxgears
+usr/bin/glxgears_fbconfig
+usr/bin/glxheads
+usr/bin/glxinfo
+usr/bin/glxpbdemo
+usr/bin/glxpixmap
+usr/bin/mesa-overlay-control.py
+usr/doc/
+usr/doc/mesa-21.1.4/
+usr/doc/mesa-21.1.4/README.UVD
+usr/doc/mesa-21.1.4/README.VCE
+usr/doc/mesa-21.1.4/html/
+usr/include/
+usr/include/EGL/
+usr/include/EGL/eglextchromium.h
+usr/include/EGL/eglmesaext.h
+usr/include/GL/
+usr/include/GL/internal/
+usr/include/GL/internal/dri_interface.h
+usr/include/GL/osmesa.h
+usr/include/d3dadapter/
+usr/include/d3dadapter/d3dadapter9.h
+usr/include/d3dadapter/drm.h
+usr/include/d3dadapter/present.h
+usr/include/gbm.h
+usr/include/xa_composite.h
+usr/include/xa_context.h
+usr/include/xa_tracker.h
+usr/lib64/
+usr/lib64/d3d/
+usr/lib64/d3d/d3dadapter9.so.1.0.0
+usr/lib64/dri/
+usr/lib64/dri/i915_dri.so
+usr/lib64/dri/i965_dri.so
+usr/lib64/dri/iris_dri.so
+usr/lib64/dri/kms_swrast_dri.so
+usr/lib64/dri/nouveau_dri.so
+usr/lib64/dri/nouveau_drv_video.so
+usr/lib64/dri/nouveau_vieux_dri.so
+usr/lib64/dri/r200_dri.so
+usr/lib64/dri/r300_dri.so
+usr/lib64/dri/r600_dri.so
+usr/lib64/dri/r600_drv_video.so
+usr/lib64/dri/radeon_dri.so
+usr/lib64/dri/radeonsi_dri.so
+usr/lib64/dri/radeonsi_drv_video.so
+usr/lib64/dri/swrast_dri.so
+usr/lib64/dri/virtio_gpu_dri.so
+usr/lib64/dri/vmwgfx_dri.so
+usr/lib64/gallium-pipe/
+usr/lib64/gallium-pipe/pipe_iris.so
+usr/lib64/gallium-pipe/pipe_nouveau.so
+usr/lib64/gallium-pipe/pipe_r300.so
+usr/lib64/gallium-pipe/pipe_r600.so
+usr/lib64/gallium-pipe/pipe_radeonsi.so
+usr/lib64/gallium-pipe/pipe_swrast.so
+usr/lib64/gallium-pipe/pipe_vmwgfx.so
+usr/lib64/libEGL_mesa.so.0.0.0
+usr/lib64/libGLX_mesa.so.0.0.0
+usr/lib64/libMesaOpenCL.so.1.0.0
+usr/lib64/libOSMesa.so.8.0.0
+usr/lib64/libVkLayer_INTEL_nullhw.so
+usr/lib64/libVkLayer_MESA_device_select.so
+usr/lib64/libVkLayer_MESA_overlay.so
+usr/lib64/libXvMCnouveau.so.1.0.0
+usr/lib64/libXvMCr600.so.1.0.0
+usr/lib64/libgbm.so.1.0.0
+usr/lib64/libglapi.so.0.0.0
+usr/lib64/libswrAVX.so.0.0.0
+usr/lib64/libswrAVX2.so.0.0.0
+usr/lib64/libvulkan_intel.so
+usr/lib64/libvulkan_lvp.so
+usr/lib64/libvulkan_radeon.so
+usr/lib64/libxatracker.so.2.5.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/d3d.pc
+usr/lib64/pkgconfig/dri.pc
+usr/lib64/pkgconfig/gbm.pc
+usr/lib64/pkgconfig/osmesa.pc
+usr/lib64/pkgconfig/xatracker.pc
+usr/lib64/vdpau/
+usr/lib64/vdpau/libvdpau_nouveau.so.1.0.0
+usr/lib64/vdpau/libvdpau_r300.so.1.0.0
+usr/lib64/vdpau/libvdpau_r600.so.1.0.0
+usr/lib64/vdpau/libvdpau_radeonsi.so.1.0.0
+usr/share/
+usr/share/drirc.d/
+usr/share/drirc.d/00-mesa-defaults.conf
+usr/share/glvnd/
+usr/share/glvnd/egl_vendor.d/
+usr/share/glvnd/egl_vendor.d/50_mesa.json
+usr/share/vulkan/
+usr/share/vulkan/explicit_layer.d/
+usr/share/vulkan/explicit_layer.d/VkLayer_INTEL_nullhw.json
+usr/share/vulkan/explicit_layer.d/VkLayer_MESA_overlay.json
+usr/share/vulkan/icd.d/
+usr/share/vulkan/icd.d/intel_icd.x86_64.json
+usr/share/vulkan/icd.d/lvp_icd.x86_64.json
+usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+usr/share/vulkan/implicit_layer.d/
+usr/share/vulkan/implicit_layer.d/VkLayer_MESA_device_select.json

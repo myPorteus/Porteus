@@ -1,0 +1,23 @@
+#!/bin/bash
+## A script to pass some nice options to mpv
+## uncomment  the echos for debug purposes?
+## Do we have vdpau env varible already set? if so skip export.
+if [ ! "$VDPAU_DRIVER" ]; then
+	# find and export VDPAU_DRIVER for mpv
+	export VDPAU_DRIVER="$(grep -i "vdpau" /var/log/Xorg.0.log | awk -F"driver: " '{print $2}')"
+fi
+##  are we using nouveau? if so, keep it simple.
+is_nouveau="$(lsmod | grep -o nouveau | head -n 1)"
+if [ "$is_nouveau" ]; then
+    #echo "nouveau can be a problem for some options."
+	celluloid --mpv-audio-file-auto=fuzzy "$@" &
+	exit 0
+elif [ "$VDPAU_DRIVER" ]; then
+ 	#echo "$VDPAU_DRIVER"
+	celluloid --mpv-hwdec=auto --mpv-video-sync=display-resample --mpv-audio-file-auto=fuzzy "$@" &
+	exit 0	
+else
+	#echo "No vdpau driver found for this card."
+	celluloid --mpv-video-sync=display-resample --mpv-audio-file-auto=fuzzy "$@" &
+	exit 0
+fi

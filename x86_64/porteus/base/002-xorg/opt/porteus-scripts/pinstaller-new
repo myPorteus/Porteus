@@ -1,0 +1,385 @@
+#!/usr/bin/python
+#
+# Author: jssouza
+#
+# Launcher for various Porteus GTK apps and settings
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GdkPixbuf
+import subprocess
+import tempfile
+import platform
+import os
+
+## Make sure we're in X and root
+display = os.getenv('DISPLAY')
+user = os.getuid()
+
+
+class Pinstaller(Gtk.Window):
+    def __init__(self):
+        if user != 0:
+            if display != None:
+                GtkDialog("", "You must be root to run the Porteus installer application!", Gtk.MessageType.ERROR, 0)
+                this_script = os.path.abspath(__file__)
+                subprocess.run(['psu', this_script])
+                quit()
+            else:
+                print("This program requires an X session!")
+                quit()
+        Gtk.Window.__init__(self, title = "Porteus Installer", border_width = 5, default_width = 550, icon_name = "cdr")
+
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+
+        self.main_notebook = Gtk.Notebook(show_tabs = False)
+
+        self.first_page = self.init_page('Welcome to the Porteus Installer')
+        self.second_page = self.init_page('Target Drive Information')
+
+        self.add_to_page1('Plug in your USB device and refresh.', "The porteus installer allows you to install Porteus to \
+a USB or fixed drive. \nYou must have a partition prepared to copy porteus onto. \nPlease make a choice from the menu below.\
+", "Select your target drive and click next.", self.first_page)
+        self.add_to_page2('Important Information to read!', "Porteus will now be installed to the drive shown above. Any \
+existing data on \nthe drive will remain intact, however if you choose the option below to run \nthe boot loader then ONLY \
+PORTEUS WILL BOOT FROM THIS DEVICE.", "By default this installer will simply copy the Porteus files onto your target device. \
+\nYou must tick the bootloader option in order to have a bootable Porteus. If you do not select \nthis option, you must run the \
+file on the target device called Porteus-installer-for-Linux.com \nin order for Porteus to boot.", self.second_page)
+
+        self.vb.pack_start(self.main_notebook, True, True, 0)
+        self.add(self.vb)
+
+    def init_page(self, header):
+        page = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, border_width = 10)
+        label = Gtk.Label()
+        label.set_markup("<span size=\"large\" weight=\"bold\">" + header + "</span>")
+        page.pack_start(label, False, False, 0)
+        self.main_notebook.append_page(page)
+        return page
+
+    def add_to_page1(self, header, text, text2, page):
+        def on_row_activated(widget, column, row):
+            print("next sensitive")
+            next_button.set_sensitive(True)
+
+        vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+        label1 = Gtk.Label()
+        label1.set_markup(text)
+        vb.pack_start(label1, False, False, 0)
+        label2 = Gtk.Label()
+        label2.set_markup("<span size=\"large\" weight=\"bold\">" + header + "</span>")
+        vb.pack_start(label2, False, False, 0)
+
+        self.setup_tree_view()
+        self.tree_view.connect("row-activated", on_row_activated)
+
+        self.scrolled_win = Gtk.ScrolledWindow()
+        self.scrolled_win.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        self.scrolled_win.add(self.tree_view)
+        vb.pack_start(self.scrolled_win, True, True, 0)
+
+        label3 = Gtk.Label()
+        label3.set_markup(text2)
+        vb.pack_start(label3, False, False, 0)
+
+        hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        partman_button = Gtk.Button.new_with_label("Partition Manager")
+        partman_button.connect("clicked", self.on_partman_button_clicked)
+        hb_bottom.pack_start(partman_button, False, False, 2)
+        refresh_button = Gtk.Button.new_with_label("Refresh list")
+        refresh_button.connect("clicked", self.on_refresh_button_clicked)
+        hb_bottom.pack_start(refresh_button, False, False, 2)
+        mount_button = Gtk.Button.new_with_label("Mount a partition")
+        mount_button.connect("clicked", self.on_mount_button_clicked)
+        hb_bottom.pack_start(mount_button, False, False, 2)
+        next_button = Gtk.Button.new_with_label("Next")
+        next_button.set_sensitive(False)
+        next_button.connect("clicked", self.on_next_button_clicked)
+        hb_bottom.pack_end(next_button, False, False, 2)
+        cancel_button = Gtk.Button.new_with_label("Cancel")
+        cancel_button.connect("clicked", self.on_cancel_button_clicked)
+        hb_bottom.pack_end(cancel_button, False, False, 2)
+        vb.pack_start(hb_bottom, False, False, 6)
+
+        page.pack_start(vb, False, False, 15)
+
+
+    def add_to_page2(self, header, text, text2, page):
+        def on_checkbox_1_checked(button):
+            print("next sensitive")
+            next_button2.set_sensitive(True)
+        vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+        self.setup_tree_view()
+        vb.pack_start(self.tree_view, True, True, 0)
+
+        label1 = Gtk.Label()
+        label1.set_markup("<span size=\"large\" weight=\"bold\">" + header + "</span>")
+        vb.pack_start(label1, False, False, 0)
+
+        label2 = Gtk.Label()
+        label2.set_markup(text)
+        vb.pack_start(label2, False, False, 0)
+
+        checkbox_1 = Gtk.CheckButton.new_with_label("I understand and accept the warning above.")
+        checkbox_1.connect("toggled", on_checkbox_1_checked)
+        vb.pack_start(checkbox_1, False, False, 0)
+
+        label3 = Gtk.Label()
+        label3.set_markup(text2)
+        vb.pack_start(label3, False, False, 0)
+
+        checkbox_2 = Gtk.CheckButton.new_with_label("Install bootloader.")
+        checkbox_2.connect("toggled", self.on_checkbox_2_checked)
+        vb.pack_start(checkbox_2, False, False, 0)
+
+        hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+
+        next_button2 = Gtk.Button.new_with_label("Next")
+        next_button2.set_sensitive(False)
+        next_button2.connect("clicked", self.on_next_button2_clicked)
+        hb_bottom.pack_end(next_button2, False, False, 2)
+        cancel_button = Gtk.Button.new_with_label("Cancel")
+        cancel_button.connect("clicked", self.on_cancel_button_clicked)
+        hb_bottom.pack_end(cancel_button, False, False, 2)
+        back_button = Gtk.Button.new_with_label("Back")
+        back_button.connect("clicked", self.on_back_button_clicked)
+        hb_bottom.pack_end(back_button, False, False, 2)
+        vb.pack_start(hb_bottom, False, False, 6)
+
+        page.pack_start(vb, False, False, 15)
+
+    def get_drive_info(self):
+        self.tmp_dir = tempfile.TemporaryDirectory()
+        outfile = self.tmp_dir.name + "/dump"
+        with open(outfile, "w") as fd:
+            p1 = subprocess.Popen(['df', '-TH'], stdout=subprocess.PIPE)
+            p2 = subprocess.Popen(['sed', '-e', '/Filesystem/d', '-e', '/aufs/d'], stdin = p1.stdout, stdout=subprocess.PIPE)
+            p3 = subprocess.Popen(['sed', '-e', 's/fuseblk/NTFS/g', '-e', 's/vfat/FAT/g'], stdin = p2.stdout, stdout=subprocess.PIPE)
+            p4 = subprocess.Popen(['awk', 'BEGIN{FS=OFS=" "}{$5=$6="";gsub(FS"+",FS)}1'], stdin = p3.stdout, stdout = fd)
+            p4.communicate()
+        #subprocess.Popen(['sed', '-i', 's/ /|/g', outfile])
+        with open(outfile, "r") as fd:
+            read_dump = fd.readlines()
+            read_dump = [x.strip() for x in read_dump]
+            for line in read_dump:
+                p1 = subprocess.Popen(['echo', line], stdout=subprocess.PIPE)
+                p2 = subprocess.Popen(['cut -d"/" -f3'], shell=True, stdin = p1.stdout, stdout=subprocess.PIPE)
+                d = subprocess.run(['cut -d" " -f1'], shell=True, stdin = p2.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                p1 = subprocess.Popen(['echo', line], stdout=subprocess.PIPE)
+                c = subprocess.run(['awk', '-F/', '{print $(NF-1)}'], stdin = p1.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                p1 = subprocess.Popen(['echo', d], stdout=subprocess.PIPE)
+                dev = subprocess.run(["tr -d '[:digit:]'"], shell=True, stdin = p1.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                p1 = subprocess.Popen(['echo', c], stdout=subprocess.PIPE)
+                ismedia = subprocess.run(['grep', 'media'], stdin = p1.stdout, stdout=subprocess.PIPE).returncode
+                p1 = subprocess.Popen(['echo', d], stdout=subprocess.PIPE)
+                p2 = subprocess.Popen(['grep', '-'], stdin = p1.stdout, stdout=subprocess.PIPE)
+                israndom = subprocess.run(['grep', '[0-9]'], stdin = p1.stdout, stdout=subprocess.PIPE).returncode
+                if int(ismedia) == 0 and int(israndom) == 0:
+                    p1 = subprocess.Popen(['echo', line], stdout=subprocess.PIPE)
+                    p2 = subprocess.Popen(['awk', '-F|', '{print $1}'], stdin = p1.stdout, stdout=subprocess.PIPE)
+                    d = subprocess.run(['cut -d" " -f3'], shell=True, stdin = p2.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                    p1 = subprocess.Popen(['echo', d], stdout=subprocess.PIPE)
+                    dev = subprocess.run(["tr -d '[:digit:]'"], shell=True, stdin = p1.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                p1 = subprocess.Popen(['echo', d], stdout=subprocess.PIPE)
+                disk = subprocess.run(['grep', 'disk'], stdin = p1.stdout, stdout=subprocess.PIPE).returncode
+                if int(disk) == 0:
+                    p1 = subprocess.Popen(['mount'], stdout=subprocess.PIPE)
+                    p2 = subprocess.Popen(['grep', d], stdin = p1.stdout, stdout=subprocess.PIPE)
+                    p3 = subprocess.Popen(['awk', '{print$1}'], stdin = p2.stdout, stdout=subprocess.PIPE)
+                    p4 = subprocess.Popen(['awk', '-F/', '{print$NF}'], stdin = p3.stdout, stdout=subprocess.PIPE)
+                    dev = subprocess.run(["tr -d '[:digit:]'"], shell=True, stdin = p4.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                fixrem = subprocess.run(['cat', '/sys/block/' + dev + '/removable'], stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                if os.path.isdir('/dev/disk/by-label') is True:
+                    p1 = subprocess.Popen(['ls', '-l', '/dev/disk/by-label'], stdout=subprocess.PIPE)
+                    query = subprocess.run(['grep', d], stdin = p1.stdout, stdout=subprocess.DEVNULL).returncode
+                    if int(query) == 0:
+                        p1 = subprocess.Popen(['ls', '-l', '/dev/disk/by-label'], stdout=subprocess.PIPE)
+                        p2 = subprocess.Popen(['grep', d], stdin = p1.stdout, stdout=subprocess.PIPE)
+                        label = subprocess.run(['awk', '{print$9}'], stdin = p2.stdout, stdout=subprocess.PIPE).stdout.decode('utf-8').strip()
+                    else:
+                        label = "unknown"
+                outfile2 = self.tmp_dir.name + "/partinfo"
+                with open(outfile2, "a") as fd:
+                    if fixrem == "1":
+                        fd.write(line + "|removable|" + label + "\n")
+                    elif fixrem == "0":
+                        fd.write(line + "|internal|" + label + "\n")
+                    subprocess.Popen(['sed', '-i', 's/ /|/g', outfile2])
+
+    def setup_tree_view(self):
+        # ~ self.get_drive_info()
+        # ~ outfile2 = "/tmp/partinfo"
+        #outfile2 = self.tmp_dir.name + "/partinfo"
+        # ~ with open(outfile2, "r") as fd:
+            # ~ print("(" + fd.readlines() + "),")
+            # ~ drive_list = fd.readlines()
+            # ~ drive_list = [x.strip('\n') for x in drive_list]
+            # ~ drive_list = fd.read().splitlines()
+            # ~ print(drive_list)
+            # ~ ]
+            
+        device = "/dev/sdb1"
+        fs_type = "ext2"
+        size = "1.6G"
+        used = "882M"
+        mount = "/mnt/sdb2"
+        d_type = "removable"
+        d_label = "unknown"
+        drive_list = [
+        (device, fs_type, size, used, mount, d_type, d_label)
+        # ~ #("dev/sdb1", "ext2", "1.6G", "884M", "/mnt/live/mnt/sdb1", "removable", "porteus_beta"),
+        ]
+        self.drive_liststore = Gtk.ListStore(str, str, str, str, str, str, str)
+        for drive_ref in drive_list:
+            self.drive_liststore.append(list(drive_ref))
+        self.tree_view = Gtk.TreeView.new_with_model(self.drive_liststore)
+        for i, column_title in enumerate(["Device", "Type", "Size", "Used", "Mounted On", "Type", "Label"]):
+            renderer = Gtk.CellRendererText()
+            column = Gtk.TreeViewColumn(column_title, renderer, text=i)
+            self.tree_view.append_column(column)
+
+    def on_partman_button_clicked(self, button):
+        os.system("/usr/bin/gparted")
+
+    def on_refresh_button_clicked(self, button):
+        print("refresh")
+
+    def on_mount_button_clicked(self, button):
+        print("mount")
+        mount_dialog = GtkMount(self)
+        mount_dialog.run()
+        mount_dialog.destroy()
+
+    def on_next_button_clicked(self, button):
+        self.main_notebook.set_current_page(1)
+
+    # ~ def on_checkbox_1_checked(self, button):
+        # ~ print("unnerstood")
+
+    def on_checkbox_2_checked(self, button):
+        print("bootloader")
+
+    def on_back_button_clicked(self, button):
+        self.main_notebook.set_current_page(0)
+
+    def on_next_button2_clicked(self, button):
+        print("do install")
+
+    def on_cancel_button_clicked(self, button):
+        Gtk.main_quit()
+
+class GtkMount(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Mount Drive", parent, 0)
+        #self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(400, 280)
+        self.set_border_width(20)        #Gtk.Window.__init__(self, title = "Mount Drive", border_width = 5, default_width = 550, icon_name = "cdr")
+        self.vb = self.get_content_area() #Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL, homogeneous = False)
+        self.label = Gtk.Label()
+        self.label.set_markup("<span size=\"large\" weight=\"bold\">Mount Your Partition</span>")
+        self.vb.pack_start(self.label, False, False, 0)
+        self.label2 = Gtk.Label()
+        self.label2.set_markup("After selecting your partition click the mount button and wait a \nshort time. Your partition should be added to the list. If not then \nrestart the application with your partition already mounted.")
+        self.vb.pack_start(self.label2, False, False, 0)
+        self.label3 = Gtk.Label()
+        self.label3.set_markup("<span weight=\"bold\">Choose a partition to mount</span>")
+        self.vb.pack_start(self.label3, False, False, 0)
+        self.setup_tree_view()
+        # ~ self.tree_view.connect("row-activated", on_row_activated)
+
+        self.scrolled_win = Gtk.ScrolledWindow()
+        self.scrolled_win.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        self.scrolled_win.add(self.tree_view)
+        self.vb.pack_start(self.scrolled_win, True, True, 0)
+
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_button_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+        self.mount_button = Gtk.Button.new_with_label("Mount Now")
+        self.mount_button.connect("clicked", self.on_mount_button_clicked)
+        self.hb_bottom.pack_start(self.mount_button, False, False, 2)
+        self.vb.pack_start(self.hb_bottom, False, False, 6)
+        self.show_all()
+
+    def on_cancel_button_clicked(self, button):
+        Gtk.Dialog.destroy(self)
+
+    def on_mount_button_clicked(self, button):
+        print("mount")
+
+    def setup_tree_view(self):
+        d_type = "/dev/sdb1"
+        fs_type = "Linux"
+        size = "1.66G"
+        used = "882M"
+        state = ""
+        drive_list = [
+        (d_type, fs_type, size, used, state)
+        #("dev/sdb1", "Linux", "1.6G", "884M", ""),
+        ]
+        self.drive_liststore = Gtk.ListStore(str, str, str, str, str)
+        for drive_ref in drive_list:
+            self.drive_liststore.append(list(drive_ref))
+        self.tree_view = Gtk.TreeView.new_with_model(self.drive_liststore)
+        for i, column_title in enumerate(["File System", "Type", "Size", "Used", "State"]):
+            renderer = Gtk.CellRendererText()
+            column = Gtk.TreeViewColumn(column_title, renderer, text=i)
+            self.tree_view.append_column(column)
+
+class GtkDialog():
+    def __init__(self, primary_text = "Message Header", secondary_text = "Message Text", dtype = Gtk.MessageType.INFO, timeout = 0):
+
+        if timeout > 0 and dtype == Gtk.MessageType.INFO:
+            self.timeout_id = GLib.timeout_add(timeout, self.on_timeout, None)
+        self.dialog = PorteusDialog(primary_text, secondary_text, dtype, timeout)
+        response = self.dialog.run()
+        self.dialog.destroy()
+
+    def on_timeout(self, *args, **kwargs):
+        if self.dialog is not None:
+            self.dialog.destroy()
+
+class PorteusDialog(Gtk.Dialog):
+    def __init__(self, primary_text, secondary_text, dtype, timeout):
+        Gtk.Dialog.__init__(self, "Porteus Message", None, 0)
+
+        self.set_default_size(250, 100)
+
+        icon_name = "dialog-information"
+        if timeout == 0:
+            self.add_button(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+            self.set_default_size(250, 120)
+
+        if dtype == Gtk.MessageType.QUESTION:
+            self.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+            icon_name = "dialog-question"
+        elif dtype == Gtk.MessageType.ERROR:
+            icon_name = "dialog-error"
+        elif dtype == Gtk.MessageType.WARNING:
+            icon_name = "dialog-warning"
+
+        self.vb = self.get_content_area()
+
+        self.hb = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.grid = Gtk.Grid(row_spacing = 5, column_spacing = 10)
+        self.img =  Gtk.Image.new_from_icon_name(icon_name, Gtk.IconSize.DIALOG)
+        self.grid.attach(self.img, 0, 0, 1, 2)
+        self.l_header = Gtk.Label(xalign = 0.0)
+        self.l_header.set_markup("<span size=\"medium\" weight=\"bold\">" + primary_text + "</span>")
+        self.grid.attach(self.l_header, 1, 0, 1, 1)
+        self.l_txt = Gtk.Label(xalign = 0.0, label = secondary_text)
+
+        self.grid.attach(self.l_txt, 1, 1, 1, 1)
+        self.hb.pack_start(self.grid, False, False, 10)
+
+        self.vb.pack_start(self.hb, False, False, 15)
+
+        self.show_all()
+
+win = Pinstaller()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

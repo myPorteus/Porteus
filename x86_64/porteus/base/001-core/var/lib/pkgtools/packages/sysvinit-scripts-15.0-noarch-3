@@ -1,0 +1,37 @@
+PACKAGE NAME:     sysvinit-scripts-15.0-noarch-3
+COMPRESSED PACKAGE SIZE:     16K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/sysvinit-scripts-15.0-noarch-3.txz
+PACKAGE DESCRIPTION:
+sysvinit-scripts: sysvinit-scripts (the basic scripts used to boot your machine)
+sysvinit-scripts:
+sysvinit-scripts: These are the Slackware boot scripts, which are needed to start the
+sysvinit-scripts: machine. Sysvinit looks for these in /etc/rc.d/.
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+sysvinit-scripts:
+FILE LIST:
+./
+etc/
+etc/default/
+etc/default/cpufreq.new
+etc/inittab.new
+etc/rc.d/
+etc/rc.d/rc.4.new
+etc/rc.d/rc.6.new
+etc/rc.d/rc.K.new
+etc/rc.d/rc.M.new
+etc/rc.d/rc.S.new
+etc/rc.d/rc.cpufreq.new
+etc/rc.d/rc.local.new
+etc/rc.d/rc.loop.new
+etc/rc.d/rc.modules.local.new
+etc/rc.d/rc.modules.new
+etc/rc.d/rc.sysvinit.new
+install/
+install/doinst.sh
+install/slack-desc

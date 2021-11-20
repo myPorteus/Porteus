@@ -1,0 +1,40 @@
+#!/bin/bash
+# This script is used to provide a GUI messages for 'aufs-insert' script.
+
+. /usr/share/porteus/gtkdialog-functions
+
+BASE=$(basename "$1")
+MOD=/mnt/live/memory/images/"$BASE"
+PATH=$PATH:/usr/share/porteus/
+
+# If the module is already activated, suggest deactivation:
+LOADEDMODULES=$(cat /proc/mounts | cut -d" " -f2)
+LOADEDMODULES=${LOADEDMODULES//040/}
+LOADEDMODULES=${LOADEDMODULES//\\/ } 
+
+if [[ "$LOADEDMODULES" =~ "$MOD" ]]; then
+	$(gtkdialog.py  -p "$BASE: module is already activated." -s "Deactivate?" -d "yesno") && /opt/porteus-scripts/xorg/xdeactivate "$BASE"; exit
+fi
+
+# 'Stale NFS' workaround:
+cd /usr/share/applications
+
+# Insert the module to live filesystem:
+/opt/porteus-scripts/xorg/aufs-insert "$1"
+err=$?
+
+if [ $err -eq 0 ]; then
+    gtkdialog.py -p "Well done!" -s "$BASE: module activated successfully." -t 2000 &
+elif [ $err -eq 1 ]; then
+    gtkdialog.py  -p "$BASE:" -s "Module must end with .xzm" -d err
+elif [ $err -eq 2 ]; then
+    gtkdialog.py -p "Not in the live mode, can't continue. Try xzm2dir $1 /" -d err
+elif [ $err -eq 3 ]; then
+    gtkdialog.py -p "$BASE:" -s "This is not a valid module" -d err
+elif [ $err -eq 4 ]; then
+    gtkdialog.py -p "$BASE:" -s "Cannot read module data. Corrupted download?" -d err
+else
+    gtkdialog.py -p "$BASE:" -s "Can't insert module to union, error $err" -d err
+fi
+
+exit $err

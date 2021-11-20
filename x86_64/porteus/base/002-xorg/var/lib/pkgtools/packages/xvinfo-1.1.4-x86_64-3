@@ -1,0 +1,32 @@
+PACKAGE NAME:     xvinfo-1.1.4-x86_64-3
+COMPRESSED PACKAGE SIZE:     20K
+UNCOMPRESSED PACKAGE SIZE:     70K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/xvinfo-1.1.4-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xvinfo: xvinfo (X11 X-Video utility)
+xvinfo:
+xvinfo: xvinfo prints out the capabilities of any video adaptors associated
+xvinfo: with the display that are accessible through the X-Video extension.
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+xvinfo:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xvinfo
+usr/doc/
+usr/doc/xvinfo-1.1.4/
+usr/doc/xvinfo-1.1.4/COPYING
+usr/doc/xvinfo-1.1.4/ChangeLog
+usr/doc/xvinfo-1.1.4/INSTALL
+usr/doc/xvinfo-1.1.4/README.md
+usr/man/
+usr/man/man1/
+usr/man/man1/xvinfo.1.gz

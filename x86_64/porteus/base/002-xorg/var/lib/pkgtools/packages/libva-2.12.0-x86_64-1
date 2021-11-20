@@ -1,0 +1,75 @@
+PACKAGE NAME:     libva-2.12.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     172K
+UNCOMPRESSED PACKAGE SIZE:     920K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libva-2.12.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libva: libva (Video Acceleration API)
+libva:
+libva: The main motivation for VAAPI (Video Acceleration API) is to enable
+libva: hardware accelerated video decode/encode at various entry-points (VLD,
+libva: IDCT, Motion Compensation etc.) for the prevailing coding standards
+libva: today (MPEG-2, MPEG-4 ASP/H.263, MPEG-4 AVC/H.264, and VC-1/VMW3)
+libva:
+libva: Homepage: https://01.org/linuxmedia/vaapi
+libva:
+libva:
+libva:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libva-2.12.0/
+usr/doc/libva-2.12.0/COPYING
+usr/doc/libva-2.12.0/NEWS
+usr/doc/libva-2.12.0/README.md
+usr/include/
+usr/include/va/
+usr/include/va/va.h
+usr/include/va/va_backend.h
+usr/include/va/va_backend_glx.h
+usr/include/va/va_backend_prot.h
+usr/include/va/va_backend_vpp.h
+usr/include/va/va_backend_wayland.h
+usr/include/va/va_compat.h
+usr/include/va/va_dec_av1.h
+usr/include/va/va_dec_hevc.h
+usr/include/va/va_dec_jpeg.h
+usr/include/va/va_dec_vp8.h
+usr/include/va/va_dec_vp9.h
+usr/include/va/va_dri2.h
+usr/include/va/va_dricommon.h
+usr/include/va/va_drm.h
+usr/include/va/va_drmcommon.h
+usr/include/va/va_egl.h
+usr/include/va/va_enc_h264.h
+usr/include/va/va_enc_hevc.h
+usr/include/va/va_enc_jpeg.h
+usr/include/va/va_enc_mpeg2.h
+usr/include/va/va_enc_vp8.h
+usr/include/va/va_enc_vp9.h
+usr/include/va/va_fei.h
+usr/include/va/va_fei_h264.h
+usr/include/va/va_fei_hevc.h
+usr/include/va/va_glx.h
+usr/include/va/va_prot.h
+usr/include/va/va_str.h
+usr/include/va/va_tpi.h
+usr/include/va/va_version.h
+usr/include/va/va_vpp.h
+usr/include/va/va_wayland.h
+usr/include/va/va_x11.h
+usr/lib64/
+usr/lib64/libva-drm.so.2.1200.0
+usr/lib64/libva-glx.so.2.1200.0
+usr/lib64/libva-wayland.so.2.1200.0
+usr/lib64/libva-x11.so.2.1200.0
+usr/lib64/libva.so.2.1200.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libva-drm.pc
+usr/lib64/pkgconfig/libva-glx.pc
+usr/lib64/pkgconfig/libva-wayland.pc
+usr/lib64/pkgconfig/libva-x11.pc
+usr/lib64/pkgconfig/libva.pc

@@ -1,0 +1,45 @@
+PACKAGE NAME:     lz4-1.9.3-x86_64-3
+COMPRESSED PACKAGE SIZE:     160K
+UNCOMPRESSED PACKAGE SIZE:     670K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/lz4-1.9.3-x86_64-3.txz
+PACKAGE DESCRIPTION:
+lz4: lz4 (fast lossless compression algorithm)
+lz4:
+lz4: LZ4 is a lossless compression algorithm, providing compression speed
+lz4: > 500 MB/s per core, scalable with multi-cores CPU. It features an
+lz4: extremely fast decoder, with speed in multiple GB/s per core,
+lz4: typically reaching RAM speed limits on multi-core systems.
+lz4:
+lz4: Homepage: https://lz4.github.io/lz4
+lz4:
+lz4:
+lz4:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/lz4
+usr/doc/
+usr/doc/lz4-1.9.3/
+usr/doc/lz4-1.9.3/INSTALL
+usr/doc/lz4-1.9.3/LICENSE
+usr/doc/lz4-1.9.3/NEWS
+usr/doc/lz4-1.9.3/README.md
+usr/doc/lz4-1.9.3/lz4_Block_format.md
+usr/doc/lz4-1.9.3/lz4_Frame_format.md
+usr/doc/lz4-1.9.3/lz4_manual.html
+usr/doc/lz4-1.9.3/lz4frame_manual.html
+usr/include/
+usr/include/lz4.h
+usr/include/lz4frame.h
+usr/include/lz4hc.h
+usr/lib64/
+usr/lib64/liblz4.so.1.9.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/liblz4.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/lz4.1.gz

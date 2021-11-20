@@ -1,0 +1,63 @@
+PACKAGE NAME:     cifs-utils-6.13-x86_64-1
+COMPRESSED PACKAGE SIZE:     216K
+UNCOMPRESSED PACKAGE SIZE:     470K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/cifs-utils-6.13-x86_64-1.txz
+PACKAGE DESCRIPTION:
+cifs-utils: cifs-utils (CIFS filesystem utilities)
+cifs-utils:
+cifs-utils: This is the release version of cifs-utils, a package of utilities for
+cifs-utils: doing and managing mounts of the Linux CIFS filesystem. The in-kernel
+cifs-utils: CIFS filesystem is generally the preferred method for mounting
+cifs-utils: SMB/CIFS shares on Linux. This filesystem relies on a set of
+cifs-utils: user-space tools that were originally part of Samba, but have now been
+cifs-utils: split off into this separate package.
+cifs-utils:
+cifs-utils: Home page: http://wiki.samba.org/index.php/LinuxCIFS_utils
+cifs-utils:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/security/
+lib64/security/pam_cifscreds.so
+sbin/
+sbin/mount.cifs
+usr/
+usr/bin/
+usr/bin/cifscreds
+usr/bin/getcifsacl
+usr/bin/setcifsacl
+usr/bin/smb2-quota
+usr/bin/smbinfo
+usr/doc/
+usr/doc/cifs-utils-6.13/
+usr/doc/cifs-utils-6.13/AUTHORS
+usr/doc/cifs-utils-6.13/COPYING
+usr/doc/cifs-utils-6.13/ChangeLog
+usr/doc/cifs-utils-6.13/INSTALL
+usr/doc/cifs-utils-6.13/NEWS
+usr/doc/cifs-utils-6.13/README
+usr/doc/cifs-utils-6.13/linux-cifs-client-guide.odt
+usr/include/
+usr/include/cifsidmap.h
+usr/lib64/
+usr/lib64/cifs-utils/
+usr/lib64/cifs-utils/idmapwb.so
+usr/man/
+usr/man/man1/
+usr/man/man1/cifscreds.1.gz
+usr/man/man1/getcifsacl.1.gz
+usr/man/man1/setcifsacl.1.gz
+usr/man/man1/smb2-quota.1.gz
+usr/man/man1/smbinfo.1.gz
+usr/man/man8/
+usr/man/man8/cifs.idmap.8.gz
+usr/man/man8/cifs.upcall.8.gz
+usr/man/man8/idmapwb.8.gz
+usr/man/man8/mount.cifs.8.gz
+usr/man/man8/pam_cifscreds.8.gz
+usr/sbin/
+usr/sbin/cifs.idmap
+usr/sbin/cifs.upcall

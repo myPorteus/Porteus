@@ -1,0 +1,42 @@
+PACKAGE NAME:     ocl-icd-2.3.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     200K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/ocl-icd-2.3.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+ocl-icd: ocl-icd (OpenCL ICD bindings)
+ocl-icd:
+ocl-icd: OpenCL implementations are provided as ICD (Installable Client
+ocl-icd: Driver). An OpenCL program can use several ICD thanks to the use of
+ocl-icd: an ICD Loader as provided by this project. This free ICD Loader can
+ocl-icd: load any (free or non free) ICD.
+ocl-icd:
+ocl-icd: Homepage: https://github.com/OCL-dev/ocl-icd
+ocl-icd:
+ocl-icd:
+ocl-icd:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/ocl-icd-2.3.0/
+usr/doc/ocl-icd-2.3.0/COPYING
+usr/doc/ocl-icd-2.3.0/NEWS
+usr/doc/ocl-icd-2.3.0/README
+usr/doc/ocl-icd-2.3.0/examples/
+usr/doc/ocl-icd-2.3.0/examples/ocl_icd_bindings.c
+usr/doc/ocl-icd-2.3.0/html/
+usr/doc/ocl-icd-2.3.0/html/libOpenCL.html
+usr/include/
+usr/include/ocl_icd.h
+usr/lib64/
+usr/lib64/libOpenCL.so.1.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/OpenCL.pc
+usr/lib64/pkgconfig/ocl-icd.pc
+usr/man/
+usr/man/man7/
+usr/man/man7/libOpenCL.7.gz
+usr/man/man7/libOpenCL.so.7.gz

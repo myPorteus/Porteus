@@ -1,0 +1,49 @@
+PACKAGE NAME:     libnsl-1.3.0-x86_64-3
+COMPRESSED PACKAGE SIZE:     64K
+UNCOMPRESSED PACKAGE SIZE:     250K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/libnsl-1.3.0-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libnsl: libnsl (NIS/YP and NIS+ library)
+libnsl:
+libnsl: This package contains the libnsl library. This library contains the
+libnsl: public client interface for NIS(YP) and NIS+. This code was formerly
+libnsl: part of glibc, but is now standalone to be able to link against TI-RPC
+libnsl: for IPv6 support.
+libnsl:
+libnsl: Homepage: https://github.com/thkukuk/libnsl
+libnsl:
+libnsl:
+libnsl:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libnsl.so.2.0.1
+usr/
+usr/doc/
+usr/doc/libnsl-1.3.0/
+usr/doc/libnsl-1.3.0/AUTHORS
+usr/doc/libnsl-1.3.0/COPYING
+usr/doc/libnsl-1.3.0/NEWS
+usr/doc/libnsl-1.3.0/README
+usr/include/
+usr/include/rpcsvc/
+usr/include/rpcsvc/nis.h
+usr/include/rpcsvc/nis.x
+usr/include/rpcsvc/nis_callback.h
+usr/include/rpcsvc/nis_callback.x
+usr/include/rpcsvc/nis_object.x
+usr/include/rpcsvc/nis_tags.h
+usr/include/rpcsvc/nislib.h
+usr/include/rpcsvc/yp.h
+usr/include/rpcsvc/yp.x
+usr/include/rpcsvc/yp_prot.h
+usr/include/rpcsvc/ypclnt.h
+usr/include/rpcsvc/yppasswd.h
+usr/include/rpcsvc/yppasswd.x
+usr/include/rpcsvc/ypupd.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libnsl.pc

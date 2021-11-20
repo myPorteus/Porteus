@@ -1,0 +1,34 @@
+PACKAGE NAME:     webp-pixbuf-loader-0.0.2-x86_64-3_ncm
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     40K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/webp-pixbuf-loader-0.0.2-x86_64-3_ncm.txz
+PACKAGE DESCRIPTION:
+webp-pixbuf-loader: webp-pixbuf-loader (WEBP loader for gdk-pixbuf2)
+webp-pixbuf-loader:
+webp-pixbuf-loader: This allows gdk-pixbuf2 (and software using it) to load WebP images.
+webp-pixbuf-loader: In particular it allows qiv and geeqie to display WebP images.
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+webp-pixbuf-loader:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/webp-pixbuf-loader-0.0.2/
+usr/doc/webp-pixbuf-loader-0.0.2/README
+usr/doc/webp-pixbuf-loader-0.0.2/webp-pixbuf-loader.SlackBuild
+usr/lib64/
+usr/lib64/gdk-pixbuf-2.0/
+usr/lib64/gdk-pixbuf-2.0/2.10.0/
+usr/lib64/gdk-pixbuf-2.0/2.10.0/loaders/
+usr/lib64/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-webp.so
+usr/share/
+usr/share/thumbnailers/
+usr/share/thumbnailers/webp-pixbuf.thumbnailer

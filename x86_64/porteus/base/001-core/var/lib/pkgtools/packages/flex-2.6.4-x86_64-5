@@ -1,0 +1,115 @@
+PACKAGE NAME:     flex-2.6.4-x86_64-5
+COMPRESSED PACKAGE SIZE:     276K
+UNCOMPRESSED PACKAGE SIZE:     990K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/flex-2.6.4-x86_64-5.txz
+PACKAGE DESCRIPTION:
+flex: flex (fast lexical analyzer generator)
+flex:
+flex: flex is a tool for generating programs that perform pattern matching
+flex: on text. flex is a rewrite of the AT&T Unix lex tool (the two
+flex: implementations do not share any code, though), with some extensions
+flex: (and incompatibilities).
+flex:
+flex: Homepage: https://github.com/westes/flex
+flex:
+flex:
+flex:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/flex
+usr/doc/
+usr/doc/flex-2.6.4/
+usr/doc/flex-2.6.4/ABOUT-NLS
+usr/doc/flex-2.6.4/AUTHORS
+usr/doc/flex-2.6.4/COPYING
+usr/doc/flex-2.6.4/NEWS
+usr/doc/flex-2.6.4/README.md
+usr/doc/flex-2.6.4/THANKS
+usr/include/
+usr/include/FlexLexer.h
+usr/info/
+usr/info/flex.info-1.gz
+usr/info/flex.info-2.gz
+usr/info/flex.info.gz
+usr/lib64/
+usr/lib64/libfl.a
+usr/lib64/libfl.so.2.0.0
+usr/man/
+usr/man/man1/
+usr/man/man1/flex.1.gz
+usr/share/
+usr/share/locale/
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/flex.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/flex.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/flex.mo
+usr/share/locale/en@boldquot/
+usr/share/locale/en@boldquot/LC_MESSAGES/
+usr/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+usr/share/locale/en@quot/
+usr/share/locale/en@quot/LC_MESSAGES/
+usr/share/locale/en@quot/LC_MESSAGES/flex.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/flex.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/flex.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/flex.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/flex.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/flex.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/flex.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/flex.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/flex.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/flex.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/flex.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/flex.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/flex.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/flex.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/flex.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/flex.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/flex.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/flex.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/flex.mo

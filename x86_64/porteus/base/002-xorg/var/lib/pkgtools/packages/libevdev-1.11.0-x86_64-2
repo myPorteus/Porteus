@@ -1,0 +1,44 @@
+PACKAGE NAME:     libevdev-1.11.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     56K
+UNCOMPRESSED PACKAGE SIZE:     280K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libevdev-1.11.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libevdev: libevdev (wrapper library for evdev devices)
+libevdev:
+libevdev: libevdev is a wrapper library for evdev devices. It moves the common
+libevdev: tasks when dealing with evdev devices into a library and provides a 
+libevdev: library interface to the callers, thus avoiding erroneous ioctls, etc.
+libevdev:
+libevdev: Homepage: http://www.freedesktop.org/wiki/Software/libevdev/
+libevdev:
+libevdev:
+libevdev:
+libevdev:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/libevdev-tweak-device
+usr/bin/mouse-dpi-tool
+usr/bin/touchpad-edge-detector
+usr/doc/
+usr/doc/libevdev-1.11.0/
+usr/doc/libevdev-1.11.0/COPYING
+usr/include/
+usr/include/libevdev-1.0/
+usr/include/libevdev-1.0/libevdev/
+usr/include/libevdev-1.0/libevdev/libevdev-uinput.h
+usr/include/libevdev-1.0/libevdev/libevdev.h
+usr/lib64/
+usr/lib64/libevdev.so.2.3.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libevdev.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/libevdev-tweak-device.1.gz
+usr/man/man1/touchpad-edge-detector.1.gz
+usr/man/man3/
+usr/man/man3/libevdev.3.gz

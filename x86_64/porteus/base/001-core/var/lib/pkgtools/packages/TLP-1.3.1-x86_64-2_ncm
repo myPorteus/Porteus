@@ -1,0 +1,97 @@
+PACKAGE NAME:     TLP-1.3.1-x86_64-2_ncm
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     350K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/TLP-1.3.1-x86_64-2_ncm.tgz
+PACKAGE DESCRIPTION:
+TLP: TLP (Advanced Power Management Tool)
+TLP:
+TLP: TLP brings you the benefits of advanced power management for Linux
+TLP: without the need to understand every technical detail.
+TLP: TLP comes with a default configuration already optimized for battery
+TLP: life, so you may just install and forget it.
+TLP: Nevertheless TLP is highly customizable to fulfil your specific
+TLP: requirements.
+TLP:
+TLP: Website - https://linrunner.de/en/tlp/tlp.html
+TLP:
+FILE LIST:
+./
+etc/
+etc/rc.d/
+etc/rc.d/rc.tlp.new
+etc/tlp.conf.new
+etc/tlp.d/
+etc/tlp.d/00-template.conf
+etc/tlp.d/README
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/elogind/
+lib/elogind/system-sleep/
+lib/elogind/system-sleep/49-tlp-sleep
+lib/systemd/
+lib/systemd/system-sleep/
+lib/systemd/system-sleep/tlp
+lib/systemd/system/
+lib/systemd/system/tlp.service
+lib/udev/
+lib/udev/rules.d/
+lib/udev/rules.d/85-tlp.rules
+lib/udev/tlp-usb-udev
+usr/
+usr/bin/
+usr/bin/bluetooth
+usr/bin/run-on-ac
+usr/bin/tlp-stat
+usr/doc/
+usr/doc/TLP-1.3.1/
+usr/doc/TLP-1.3.1/COPYING
+usr/doc/TLP-1.3.1/LICENSE
+usr/doc/TLP-1.3.1/README.md
+usr/doc/TLP-1.3.1/TLP.SlackBuild
+usr/lib64/
+usr/lib64/pm-utils/
+usr/lib64/pm-utils/sleep.d/
+usr/lib64/pm-utils/sleep.d/49tlp
+usr/man/
+usr/man/man1/
+usr/man/man1/bluetooth.1.gz
+usr/man/man1/run-on-ac.1.gz
+usr/man/man1/run-on-bat.1.gz
+usr/man/man1/wifi.1.gz
+usr/man/man1/wwan.1.gz
+usr/man/man8/
+usr/man/man8/tlp-rdw.8.gz
+usr/man/man8/tlp-stat.8.gz
+usr/man/man8/tlp.8.gz
+usr/man/man8/tlp.service.8.gz
+usr/sbin/
+usr/sbin/tlp
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/tlp
+usr/share/metainfo/
+usr/share/metainfo/de.linrunner.tlp.metainfo.xml
+usr/share/tlp/
+usr/share/tlp/defaults.conf
+usr/share/tlp/func.d/
+usr/share/tlp/func.d/05-tlp-func-pm
+usr/share/tlp/func.d/10-tlp-func-cpu
+usr/share/tlp/func.d/15-tlp-func-disk
+usr/share/tlp/func.d/20-tlp-func-usb
+usr/share/tlp/func.d/25-tlp-func-rf
+usr/share/tlp/func.d/30-tlp-func-rf-sw
+usr/share/tlp/func.d/35-tlp-func-batt
+usr/share/tlp/func.d/40-tlp-func-bay
+usr/share/tlp/func.d/45-tlp-func-gpu
+usr/share/tlp/func.d/tlp-func-stat
+usr/share/tlp/tlp-func-base
+usr/share/tlp/tlp-pcilist
+usr/share/tlp/tlp-readconfs
+usr/share/tlp/tlp-usblist
+usr/share/tlp/tpacpi-bat
+var/
+var/lib/
+var/lib/tlp/

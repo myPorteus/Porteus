@@ -1,0 +1,43 @@
+Porteus can be installed to a flash drive or hard 
+drive in several ways.
+
+FOR EFI SYSTEMS:
+Ensure the first partition is of type FAT32.
+a) Copy the EFI, boot and porteus folders onto the FAT32 partition.
+You may create a second partition with a linux filesystem for the porteus folder.
+If you do so, you need to add the from=/mnt/sdb2 cheatcode to the porteus-v4.0-x86_64.cfg file.
+This file is located in the porteus folder.
+
+FOR BIOS SYSTEMS:
+From Windows:
+a) copy the contents of the ISO image to your drive
+b) navigate to the \boot folder and launch the 
+'Porteus-installer-for-Windows.exe' script
+c) verify you are installing to the correct drive and press 'Enter' to 
+complete the installation
+
+From any Linux Distribution other than Porteus:
+a) copy the contents of the ISO image to your drive
+b) navigate to the /boot folder and launch the installer
+'bash Porteus-installer-for-Linux.com'
+c) verify you are installing to the correct drive and press 'Enter' to
+complete the installation
+
+From Porteus itself (booted from CD):
+a) launch 'Porteus Installer' from the desktop menu,
+ under the 'System' heading (if you are
+prompted for the root password, it is toor)
+b) plug in your usb drive or select a partition
+on a hard drive
+c) follow the on-screen instructions 
+
+video presentations:
+http://goo.gl/lB9uL
+http://goo.gl/2noje
+
+If you run into trouble please refer to the more 
+detailed installation guide which can be found at
+/boot/docs/install.txt or our website at 
+http://goo.gl/ci4EE
+
+Porteus Team

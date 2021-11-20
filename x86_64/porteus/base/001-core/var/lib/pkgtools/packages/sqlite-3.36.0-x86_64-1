@@ -1,0 +1,43 @@
+PACKAGE NAME:     sqlite-3.36.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     996K
+UNCOMPRESSED PACKAGE SIZE:     3.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/sqlite-3.36.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+sqlite: sqlite (simple, self contained database engine)
+sqlite:
+sqlite: SQLite is a small C library that implements a self-contained,
+sqlite: embeddable, zero-configuration SQL database engine.
+sqlite:
+sqlite: The SQLite distribution comes with a standalone command-line access
+sqlite: program (sqlite) that can be used to administer an SQLite database
+sqlite: and which serves as an example of how to use the SQLite library.
+sqlite:
+sqlite: Homepage: http://www.sqlite.org/
+sqlite:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/sqlite3
+usr/doc/
+usr/doc/sqlite-3.36.0/
+usr/doc/sqlite-3.36.0/COPYRIGHT
+usr/doc/sqlite-3.36.0/README.md
+usr/doc/sqlite-3.36.0/VERSION
+usr/include/
+usr/include/sqlite3.h
+usr/include/sqlite3ext.h
+usr/lib64/
+usr/lib64/libsqlite3.so.0.8.6
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/sqlite3.pc
+usr/lib64/tcl8.6/
+usr/lib64/tcl8.6/sqlite3/
+usr/lib64/tcl8.6/sqlite3/libtclsqlite3.so
+usr/lib64/tcl8.6/sqlite3/pkgIndex.tcl
+usr/man/
+usr/man/man1/
+usr/man/man1/sqlite3.1.gz

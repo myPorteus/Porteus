@@ -1,0 +1,27 @@
+PACKAGE NAME:     pamixer-1.4-x86_64-10
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     150K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/pamixer-1.4-x86_64-10.txz
+PACKAGE DESCRIPTION:
+pamixer: pamixer (pulseaudio command line mixer)
+pamixer:
+pamixer: pamixer is a console based mixer for pulseaudio. It can adjust the
+pamixer: volume levels of the audio sinks.
+pamixer:
+pamixer: Homepage: https://github.com/cdemoulins/pamixer
+pamixer:
+pamixer:
+pamixer:
+pamixer:
+pamixer:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/pamixer
+usr/doc/
+usr/doc/pamixer-1.4/
+usr/doc/pamixer-1.4/COPYING
+usr/doc/pamixer-1.4/README.rst

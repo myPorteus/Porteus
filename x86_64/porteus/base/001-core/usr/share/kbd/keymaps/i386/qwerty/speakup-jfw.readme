@@ -1,0 +1,73 @@
+Speakup JFW Read me file.
+
+This READ ME and JFW key-map was written by Thomas Ward.
+
+
+Hello, user. By downloading this key-map I am going to assume that you are 
+somewhat familiar with the JFW screen reader made by freedom Scientific. 
+This key-map attempts to use  Jaws commands to the best of Speakup's 
+ability, but there are some slight changes.While not exact it will make 
+your use of Speakup much easier if you are a heavy Jaws user and like me 
+found it difficult remembering Speakup's default key-map.
+
+(Note, the command insert below refers to the 0 key on the numpad. All 
+number commands are also on the numpad.)
+
+Overview of navigation commands.
+
+say current character = 5.
+say prier character = 4.
+Say next character = 6.
+say current line = insert+8.
+Say prier line = 8.
+Say next line = 2.
+say current word = insert+5.
+say prier word = insert+4.
+say next word = insert+6.
+Left edge of screen = 7.
+Right edge of screen = 1.
+Read from left edge = insert+7.
+Read from right edge = insert+1.
+Read to bottom = insert+2.
+Read bottom line = insert+3.
+Read from top = insert+9.
+Top edge of screen = 9.
+Toggle cursor = plus.
+Spell word = insert+plus.
+Park cursor = minus.
+Say hex code = star.
+Mark/cut = slash.
+paste = insert+slash.
+
+Installing the key-map.
+
+There are a couple options for installing. One way is to manually load it 
+using loadkeys.The second is by building a kernel, and making this key-map 
+the default key-map.
+
+If you choose loadkeys copy this file somewhere such as your home 
+directory, and type:
+
+loadkeys speakup-JFW.map
+
+You can also make Linux do this for you automatically by adding it to your 
+profile.
+To do this login as root, and copy the file to /boot.
+Next use your favorite text editor, and open /etc/profile.
+At the end of that file do a return with the enter key, and enter:
+
+loadkeys /boot/speakup-jfw.map
+
+Save and when you restart Linux will load that map upon login.
+
+If you wish to compile patch a kernel with speakup, and rename this file 
+to speakupmap.map and copy it to /usr/src/linux/drivers/char/speakup/.
+
+
+I hope this was enough to get you started. Enjoy your new keymap. To send 
+me bug reports, comments, etc write to:
+
+slingshooter@valkyrie.net
+
+
+

@@ -1,0 +1,42 @@
+PACKAGE NAME:     startup-notification-0.12-x86_64-5
+COMPRESSED PACKAGE SIZE:     32K
+UNCOMPRESSED PACKAGE SIZE:     120K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/startup-notification-0.12-x86_64-5.txz
+PACKAGE DESCRIPTION:
+startup-notification: startup-notification ("busy" cursors support)
+startup-notification:
+startup-notification: Adds support for applications to use "busy" cursors while starting up.
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+startup-notification:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/startup-notification-0.12/
+usr/doc/startup-notification-0.12/AUTHORS
+usr/doc/startup-notification-0.12/COPYING
+usr/doc/startup-notification-0.12/NEWS
+usr/doc/startup-notification-0.12/README
+usr/doc/startup-notification-0.12/startup-notification.txt
+usr/include/
+usr/include/startup-notification-1.0/
+usr/include/startup-notification-1.0/libsn/
+usr/include/startup-notification-1.0/libsn/sn-common.h
+usr/include/startup-notification-1.0/libsn/sn-launchee.h
+usr/include/startup-notification-1.0/libsn/sn-launcher.h
+usr/include/startup-notification-1.0/libsn/sn-monitor.h
+usr/include/startup-notification-1.0/libsn/sn-util.h
+usr/include/startup-notification-1.0/libsn/sn.h
+usr/lib64/
+usr/lib64/libstartup-notification-1.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libstartup-notification-1.0.pc

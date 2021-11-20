@@ -1,0 +1,643 @@
+#! /usr/bin/python
+##
+## Script to save current Porteus changes to module
+## or save file container
+## Author: Brokenman <brokenman@porteus.org>
+##
+## ported to pygobject by ncmprhnsbl forum.porteus.org
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GLib
+from subprocess import run, DEVNULL, Popen, PIPE
+from tempfile import TemporaryDirectory
+from os import getenv, getuid, path, stat, chmod, remove, mkdir, makedirs, system
+from datetime import date
+from shutil import rmtree
+
+## Make sure we're in X
+display = getenv('DISPLAY')
+if display == None:
+    print("This program requires an X session!")
+    quit()
+
+## prompt root password(gui psu) and re-execute? probly a bit dirty..
+## using subprocess rather than os.system() to be script agnostic..
+user = getuid()
+if user != 0:
+    print("You must be root to run this!")
+    this_script = path.abspath(__file__)
+    Popen(['psu', this_script])
+    quit()
+
+today = date.today().isoformat()
+cmod = "/changes-" + today + ".xzm"
+bootdev = getenv('BOOTDEV')
+moddir = bootdev + "/porteus/modules"
+tmp_dir = TemporaryDirectory()
+exclude = tmp_dir.name + "/exclude"
+mountpoint = "/mnt/loopsave"
+cdir = "/mnt/live/memory/changes"
+with open(exclude, "w") as fd:
+    fd.write("tmp\ndev\nsys\nvar")
+
+class GtkSaveSess(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Porteus Save Session", border_width = 10, height_request = 300, width_request = 460, icon_name = "cdr")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Porteus Save Session</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("<span>This application can save your current Porteus session into a \nsingle module, save file or folder  that can be loaded everytime \nyou boot. You can create a new save file or use an existing one. \nEncrypted save files are supported which will require a password \nat boot time.</span>")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.hb = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.HORIZONTAL, homogeneous = True)
+
+        self.button1 = Gtk.Button.new_with_label("Save to module")
+        self.button1.connect("clicked", self.on_button1_clicked)
+        self.hb.add(self.button1)
+
+        self.button2 = Gtk.Button.new_with_label("Save to a file")
+        self.button2.connect("clicked", self.on_button2_clicked)
+        self.hb.add(self.button2)
+
+        self.button3 = Gtk.Button.new_with_label("Save to a folder")
+        self.button3.connect("clicked", self.on_button3_clicked)
+        self.hb.add(self.button3)
+
+        self.vb.add(self.hb)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+        self.help_button = Gtk.Button.new_with_label("Help")
+        self.help_button.connect("clicked", self.on_help_clicked)
+        self.hb_bottom.pack_start(self.help_button, False, False, 2)
+
+        self.cancel_button = Gtk.Button.new_with_label("Exit")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        self.add(self.vb)
+
+    def on_button1_clicked(self, button):
+        print('Save to module')
+        smod_dialog = SaveModule(self)
+        response = smod_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            smodir = smod_dialog.entry.get_text()
+            if smodir == "":
+                smodir = moddir
+            if self.is_file_in_aufs(smodir) is True:
+                GtkDialog("Error", "Sorry, " + smodir + " is inside the live filesystem. You must save your changes module outside of aufs.", Gtk.MessageType.ERROR, 0)
+            elif self.is_writable(smodir) is False:
+                GtkDialog("Error", "Sorry, " + smodir + " is not writable. You must save your changes module some place that's writable.", Gtk.MessageType.ERROR, 0)
+            #print(smodir)
+            else:
+                run(['mksquashfs', cdir, smodir + cmod, '-noappend', '-ef', exclude])
+                GtkDialog("Success", "Your changes have been saved to " + smodir + cmod, Gtk.MessageType.INFO, 0)
+        smod_dialog.destroy()
+
+    def on_button2_clicked(self, button):
+        print('Save to file')
+        sfile1_dialog = SaveFile1(self)
+        sfile1_dialog.run()
+        sfile1_dialog.destroy()
+
+    def on_button3_clicked(self, button):
+        sfold_dialog = SaveFolder(self)
+        response = sfold_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            sfold = sfold_dialog.entry.get_text()
+            if sfold == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            elif self.is_writable(sfold) is False:
+                GtkDialog("Error", "Sorry, " + sfold + " is not writable. Your changes folder must be some place that's writable.", Gtk.MessageType.ERROR, 0)
+            elif self.is_posix(sfold) is False:
+                GtkDialog("Error", "This is not a POSIX compatible file system. \nYou should choose a save file for this location instead.", Gtk.MessageType.ERROR, 0)
+            elif self.is_file_in_aufs(sfold) is True:
+                GtkDialog("Error", "Sorry, " + sfold + " is inside the live filesystem. Your changes folder must be outside of aufs.", Gtk.MessageType.ERROR, 0)
+            elif self.has_space(sfold) is False:
+                GtkDialog("Error", "There is not sufficient space on this partition!", Gtk.MessageType.ERROR, 0)
+            else:
+                remove_old_changes = sfold_dialog.rem_changes.get_active()
+                if remove_old_changes == 1:
+                    self.remove_dirs(sfold + "/changes")
+                    GtkDialog(":)", "Old changes removed.", Gtk.MessageType.INFO, 1000)
+                targ_sfold = sfold + "/changes"
+                self.make_dir(targ_sfold)
+                GtkDialog(":)", "Copying files..", Gtk.MessageType.INFO, 1000)
+                run(['cp', '-a', cdir + '/.', targ_sfold], stdout=DEVNULL)
+                run(['rm', '-rf', 'sys', 'dev', 'mnt', 'tmp'], cwd=targ_sfold)
+                GtkDialog("Your files have been copied.", "You will need to open your porteus.cfg file \nand add: changes=" + sfold + "\nto your boot line.", Gtk.MessageType.INFO, 0)
+        sfold_dialog.destroy()
+
+    def on_help_clicked(self, button):
+        print('Help')
+        help_dialog = HelpDialog(self)
+        help_dialog.run()
+        help_dialog.destroy()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+    def is_file_in_aufs(self, filepath):
+        p1 = Popen(['df', '-T', filepath], stdout=PIPE)
+        p2 = Popen(['tail', '-n1'], stdin = p1.stdout, stdout=PIPE)
+        if run(['awk', '{print$1}'], stdin = p2.stdout, stdout=PIPE).stdout.decode('utf-8').strip() == "aufs":
+            return True
+        return False
+
+    def is_posix(self, path):
+        tmp_prefix = "write_tester"
+        count = 0
+        filename = path.join(path, tmp_prefix)
+        f = open(filename,"w")
+        f.close()
+        p1 = stat(filename).st_mode
+        chmod(filename, mode=0o400)
+        p2 = stat(filename).st_mode
+        if p1 == p2:
+            return False
+        remove(filename)
+        return True
+
+    def is_writable(self, path):
+        try:
+            tmp_prefix = "write_tester"
+            count = 0
+            filename = path.join(path, tmp_prefix)
+            while(path.exists(filename)):
+                filename = "{}.{}".format(path.join(path, tmp_prefix),count)
+                count = count + 1
+            f = open(filename,"w")
+            f.close()
+            remove(filename)
+            return True
+        except Exception: #as e:
+            #print "{}".format(e)
+            return False
+
+    def has_space(self, path):
+        p1 = Popen(['du', '-s', '-X', exclude, cdir], stdout=PIPE)
+        sess_size = run(['awk', '{print$1}'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        p1 = Popen(['df', path], stdout=PIPE)
+        p2 = Popen(['tail', '-n1'], stdin = p1.stdout, stdout=PIPE)
+        targ_size = run(['awk', '{print$4}'], stdin = p2.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        if int(sess_size) > int(targ_size):
+            return False
+        return True
+
+    def remove_dirs(self, path):
+        if path.exists(path):
+            rmtree(path)
+        else:
+            raise XXError("some exception")
+        ## or simply:
+        ##run(['rm', '-rf', path])
+
+    def make_dir(self, path):
+        if path.exists(path) is False:
+            mkdir(path)
+
+class SaveModule(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Save to Module", parent, 0)
+        self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(400, 280)
+        self.set_border_width(20)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Choose a destination folder</span>")
+        self.vb = self.get_content_area()
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("Your save session module will be saved to:\n\n" + moddir + " \n\nClick OK or choose a different folder.")
+        self.vb.add(self.text)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 10)
+
+        self.grid = Gtk.Grid(column_spacing = 20)
+        self.label = Gtk.Label(xalign = 0.0)
+        self.label.set_markup("\tFolder:")
+        self.grid.attach(self.label, 3, 0, 1, 1)
+        self.entry = Gtk.Entry()
+        self.grid.attach(self.entry, 4, 0, 4, 1)
+        self.add_folder_button = Gtk.Button.new_from_icon_name("folder-new-symbolic", Gtk.IconSize.BUTTON)
+        self.add_folder_button.connect("clicked", self.on_add_folder_button_clicked)
+        self.grid.attach(self.add_folder_button, 8, 0, 1, 1)
+        self.vb.add(self.grid)
+
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+        self.show_all()
+
+    def on_add_folder_button_clicked(self, button):
+        dir_dialog = Gtk.FileChooserDialog(title = "Choose a folder to save your module to", parent = self, action = Gtk.FileChooserAction.SELECT_FOLDER)
+        dir_dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dir_dialog.set_default_size(400, 280)
+        response = dir_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.src_dir = dir_dialog.get_filename()
+            self.entry.set_text(self.src_dir)
+        dir_dialog.destroy()
+
+class SaveFile1(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Save File", parent, 0)
+        self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+
+        self.set_default_size(400, 280)
+        self.set_border_width(20)
+        self.header_txt = "<span size=\"large\" weight=\"bold\">Choose a save file option</span>"
+        self.help_txt = "You may choose to save your current Porteus session to an \nexisting save file <i>(with option to empty it first)</i> or you can \ncreate a new save file container for your changes. \nEncrypted save files are supported."
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.l_help_txt = Gtk.Label()
+        self.l_help_txt.set_markup(self.help_txt)
+        self.vb.pack_start(self.l_help_txt, True, True, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.hb = Gtk.Box(spacing = 10, orientation = Gtk.Orientation.HORIZONTAL, homogeneous = True)
+        self.button1 = Gtk.Button.new_with_label("Save to existing file")
+        self.button1.connect("clicked", self.on_button1_clicked)
+        self.hb.add(self.button1)
+
+        self.button2 = Gtk.Button.new_with_label("Create a new file")
+        self.button2.connect("clicked", self.on_button2_clicked)
+        self.hb.add(self.button2)
+        self.vb.add(self.hb)
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+        self.show_all()
+
+    def on_button1_clicked(self, button):
+        print('Use existing file')
+        sfile2_dialog = SaveFileEx(self)
+        response = sfile2_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            xfile = sfile2_dialog.entry.get_text()
+            mpoint = "/mnt/vault"
+            if xfile == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            else:
+                makedirs(mpoint, exist_ok=True)
+                loop = self.check_loop()
+                no_keep = sfile2_dialog.button2.get_active()
+                if self.is_encrypted(xfile) is True:
+                    pass_dialog = Passphrase(self)
+                    response = pass_dialog.run()
+                    if Gtk.ResponseType.OK == response:
+                        passp1 = pass_dialog.pass_1_entry.get_text()
+                        passp2 = pass_dialog.pass_2_entry.get_text()
+                        if passp1 != passp2:
+                            GtkDialog("Error", "Passwords do not match!", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                        elif passp1 == "" or passp2 == "":
+                            GtkDialog("Error", "Blank passwords not allowed!", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                        else:
+                            loop = self.check_loop()
+                            run(['/sbin/losetup', loop, xfile])
+                            try:
+                                run(['cryptsetup', 'luksOpen', loop, 'crypt', '<<<', passp2])
+                                run(['mount', '/dev/mapper/crypt', mpoint])
+                                if no_keep is True:
+                                    run(['rm -rf ' + mpoint +'/*'],shell=True)
+                                has_space = GtkSaveSess.has_space(mpoint)
+                                if has_space is False:
+                                    run(['umount', mpoint])
+                                    run(['cryptsetup', 'luksClose', 'crypt'])
+                                    run(['losetup', '-d', loop])
+                                    GtkDialog("Error", "Your save file does not have sufficient space!", Gtk.MessageType.ERROR, 0)
+                                else:
+                                    GtkDialog("", "Copying session to file", Gtk.MessageType.INFO, 2000)
+                                    run(['cp', '-a', cdir + '/.', mpoint + '/'])
+                                    run(['rm', '-rf', 'sys', 'dev', 'mnt', 'tmp'], cwd=mpoint)
+                                    GtkDialog("", "Unmounting savefile", Gtk.MessageType.INFO, 2000)
+                                    run(['umount', mpoint])
+                                    run(['cryptsetup', 'luksClose', 'crypt'])
+                                    run(['losetup', '-d', loop])
+                                    GtkDialog("Success", "Your session has been saved to " + xfile, Gtk.MessageType.INFO, 3000)
+                            except Exception:
+                                GtkDialog("Error", "No key available with this passphrase.", Gtk.MessageType.ERROR, 0)
+                                response = pass_dialog.run()
+                    pass_dialog.destroy()
+                    print("do encrypted stuff")
+                else:
+                    run(['mount', '-t', 'auto', '-o', 'loop', xfile, mpoint])
+                    if no_keep is True:
+                        run(['rm -rf ' + mpoint +'/*'],shell=True)
+                    if has_space is False:
+                        run(['umount', mpoint])
+                        GtkDialog("Error", "Your save file does not have sufficient space!", Gtk.MessageType.ERROR, 0)
+                    else:
+                        GtkDialog("", "Copying session to file", Gtk.MessageType.INFO, 2000)
+                        run(['cp', '-a', cdir + '/.', mpoint + '/'])
+                        run(['rm', '-rf', 'sys', 'dev', 'mnt', 'tmp'], cwd=mpoint)
+                        GtkDialog("", "Unmounting savefile", Gtk.MessageType.INFO, 2000)
+                        run(['umount', mpoint])
+                        GtkDialog("Success", "Your session has been saved to " + xfile, Gtk.MessageType.INFO, 3000)
+                    print("mount,check space,copy changes minus excludes, unmount")
+
+        sfile2_dialog.destroy()
+
+    def is_encrypted(self, filepath):
+        p1 = Popen(['/sbin/blkid', filepath], stdout=PIPE)
+        p2 = run(['grep', '-o', '_LUKS'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        if p2 == "":
+            return False
+        else:
+            return True
+        print(p2)
+
+    def check_loop(self):
+        p1 = Popen(['ls -1 /dev/loop*'], shell=True, stdout=PIPE)
+        p2 = Popen(['tr', '-d', '[:alpha:][:punct:]'], stdin = p1.stdout, stdout=PIPE)
+        p3 = Popen(['sort', '-g'], stdin = p2.stdout, stdout=PIPE)
+        x = run(['tail', '-n1'],  stdin = p3.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        print("x is " + x)
+        if x != "":
+            y = str(int(x) + 1)
+            print(y)
+            loop = "/dev/loop" + y
+            print("loop=", loop)
+            if not path.exists(loop):
+                run(['mknod', loop, 'b', '7', y])
+                return loop
+        else:
+            return False
+
+    def on_button2_clicked(self, button):
+        print('Create a file')
+        system('/opt/porteus-scripts/make-changes')
+
+class SaveFileEx(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Save to Existing File", parent, 0)
+        self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(400, 280)
+        self.set_border_width(20)
+
+        self.header_txt = "<span size=\"large\" weight=\"bold\">Choose an Existing save file</span>"
+        self.help_txt = "Select an existing save file container in which you will \nsave your current session. Choose whether to add to \nchanges or remove all previous changes first."
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.l_help_txt = Gtk.Label()
+        self.l_help_txt.set_markup(self.help_txt)
+        self.vb.pack_start(self.l_help_txt, True, True, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10)
+        self.button1 = Gtk.RadioButton.new_with_label(None, "Add to changes file")
+        self.button1.connect("clicked", self.on_button_toggled, "add")
+        self.grid.attach(self.button1, 0, 0, 2, 1)
+
+        self.button2 = Gtk.RadioButton.new_with_label_from_widget(self.button1, "Remove previous changes")
+        self.button2.connect("clicked", self.on_button_toggled, "remove")
+        self.grid.attach(self.button2, 3, 0, 1, 1)
+
+        self.hb1 = Gtk.Box(spacing = 10, homogeneous = False)
+        self.hb1.pack_start(Gtk.Label(label = "Folder: "), False, False, 5)
+        self.label = Gtk.Label(xalign = 0.0)
+        self.label.set_markup("\tFolder:")
+        self.grid.attach(self.label, 0, 3, 1, 1)
+        self.entry = Gtk.Entry()
+        self.grid.attach(self.entry, 1, 3, 3, 1)
+        self.add_folder_button = Gtk.Button.new_from_icon_name("folder-new-symbolic", Gtk.IconSize.BUTTON)
+        self.add_folder_button.connect("clicked", self.on_add_folder_button_clicked)
+        self.grid.attach(self.add_folder_button, 4, 3, 1, 1)
+        self.vb.add(self.grid)
+
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+        self.show_all()
+
+    def on_button_toggled(self, button, name):
+        if button.get_active():
+            state = "on"
+        else:
+            state = "off"
+        print("Button", name, "was turned", state)
+
+    def on_add_folder_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to save your session to", parent = self)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.src_file = dialog.get_filename()
+            self.entry.set_text(self.src_file)
+        dialog.destroy()
+
+class SaveFolder(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Save to Folder", parent, 0)
+        self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(400, 280)
+        self.set_border_width(20)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Choose a destination folder</span>")
+        self.vb = self.get_content_area()
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.text = Gtk.Label()
+        self.text.set_markup("You may choose to save your current Porteus session to \nan existing folder. \
+\nA subfolder called <b>changes</b> will be created in your chosen \nfolder. \nAfter the process you will \
+need to open your porteus.cfg \nfile and change the <b>changes=</b> section to point to your \ntarget folder.")
+        self.vb.add(self.text)
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.grid = Gtk.Grid(column_spacing = 20, row_spacing = 20)
+        self.rem_changes = Gtk.CheckButton(label = "Remove previous changes")
+        self.rem_changes.connect("toggled", self.on_rem_change_checked, "1")
+        self.grid.attach(self.rem_changes, 1, 0, 1, 1)
+        self.label = Gtk.Label(xalign = 0.0)
+        self.label.set_markup("\tFolder:")
+        self.grid.attach(self.label, 0, 2, 1, 1)
+        self.entry = Gtk.Entry()
+        self.grid.attach(self.entry, 1, 2, 1, 1)
+        self.add_folder_button = Gtk.Button.new_from_icon_name("folder-new-symbolic", Gtk.IconSize.BUTTON)
+        self.add_folder_button.connect("clicked", self.on_add_folder_button_clicked)
+        self.grid.attach(self.add_folder_button, 4, 2, 1, 1)
+        self.vb.add(self.grid)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+        self.show_all()
+
+    def on_rem_change_checked(self, button, name):
+        None
+
+    def on_add_folder_button_clicked(self, button):
+        dir_dialog = Gtk.FileChooserDialog(title = "Choose a folder to save your session to", parent = self, action = Gtk.FileChooserAction.SELECT_FOLDER)
+        dir_dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dir_dialog.set_default_size(400, 280)
+        response = dir_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.src_dir = dir_dialog.get_filename()
+            self.entry.set_text(self.src_dir)
+        dir_dialog.destroy()
+
+class HelpDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Help", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(400, 280)
+
+        self.help_header_txt = "<span size=\"large\" weight=\"bold\">Save Session Help</span>"
+        self.help_txt = "This application enables you to save your current \nporteus session to a module, \
+save file container or folder. \n\nIf a module is chosen it should be placed into your \n<i>modules</i> folder \
+for activation at boot time. \n\nIf a save file is chosen then your <i>porteus.cfg</i> file will need \nto be \
+edited to point to the save file using the \n<b>changes=</b> cheatcode."
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.help_header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.l_help_txt = Gtk.Label()
+        self.l_help_txt.set_markup(self.help_txt)
+
+        self.scrolledwindow.add(self.l_help_txt)
+
+        self.show_all()
+
+class Passphrase(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Password", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK, Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 200)
+        self.set_border_width(20)
+
+        self.vb = self.get_content_area()
+
+        self.pass_txt =Gtk.Label(xalign = 0.0)
+        self.pass_txt.set_markup("<span>Please provide a passphrase which be used to decrypt your savefile container</span>")
+
+        self.vb.pack_start(self.pass_txt, False, False, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10, column_homogeneous = True)
+        self.pass_1= Gtk.Label(xalign = 0.0)
+        self.pass_1.set_markup("\tPassphrase:")
+        self.grid.attach(self.pass_1, 1, 0, 1, 1)
+        self.pass_1_entry = Gtk.Entry()
+        self.pass_1_entry.set_visibility(0)
+        self.grid.attach(self.pass_1_entry, 2, 0, 3, 1)
+        self.pass_2 = Gtk.Label(xalign = 0.0)
+        self.pass_2.set_markup("\tRepeat:")
+        self.grid.attach(self.pass_2, 1, 2, 1, 1)
+        self.pass_2_entry = Gtk.Entry()
+        self.pass_2_entry.set_visibility(0)
+        self.grid.attach(self.pass_2_entry, 2, 2, 3, 1)
+        self.vb.pack_start(self.grid, False, False, 15)
+
+        self.show_all()
+
+class GtkDialog():
+    def __init__(self, primary_text = "Message Header", secondary_text = "Message Text", dtype = Gtk.MessageType.INFO, timeout = 0):
+
+        if timeout > 0 and dtype == Gtk.MessageType.INFO:
+            self.timeout_id = GLib.timeout_add(timeout, self.on_timeout, None)
+        self.dialog = PorteusDialog(primary_text, secondary_text, dtype, timeout)
+        response = self.dialog.run()
+        self.dialog.destroy()
+
+    def on_timeout(self, *args, **kwargs):
+        if self.dialog is not None:
+            self.dialog.destroy()
+
+class PorteusDialog(Gtk.Dialog):
+    def __init__(self, primary_text, secondary_text, dtype, timeout):
+        Gtk.Dialog.__init__(self, "Porteus Message", None, 0)
+
+        self.set_default_size(250, 100)
+
+        icon_name = "dialog-information"
+        if timeout == 0:
+            self.add_button(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+            self.set_default_size(250, 120)
+
+        if dtype == Gtk.MessageType.QUESTION:
+            self.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+            icon_name = "dialog-question"
+        elif dtype == Gtk.MessageType.ERROR:
+            icon_name = "dialog-error"
+        elif dtype == Gtk.MessageType.WARNING:
+            icon_name = "dialog-warning"
+
+        self.vb = self.get_content_area()
+
+        self.hb = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.grid = Gtk.Grid(row_spacing = 5, column_spacing = 10)
+        self.img =  Gtk.Image.new_from_icon_name(icon_name, Gtk.IconSize.DIALOG)
+        self.grid.attach(self.img, 0, 0, 1, 2)
+        self.l_header = Gtk.Label(xalign = 0.0)
+        self.l_header.set_markup("<span size=\"medium\" weight=\"bold\">" + primary_text + "</span>")
+        self.grid.attach(self.l_header, 1, 0, 1, 1)
+        self.l_txt = Gtk.Label(xalign = 0.0, label = secondary_text)
+
+        self.grid.attach(self.l_txt, 1, 1, 1, 1)
+        self.hb.pack_start(self.grid, False, False, 10)
+
+        self.vb.pack_start(self.hb, False, False, 15)
+
+        self.show_all()
+
+class ProgressDialog(Gtk.Window):
+    def __init__(self, header_text, text):
+        Gtk.Window.__init__(self, type = 0, decorated = 1, skip_taskbar_hint = 1, window_position = 1, border_width = 20, default_width = 250)
+
+        self.set_border_width(20)
+        self.progress = 0.0
+
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        self.add(vbox)
+
+        self.header = Gtk.Label()
+        self.header.set_markup("<span size=\"medium\" weight=\"bold\">" + header_text + "</span>")
+        vbox.pack_start(self.header, True, True, 0)
+
+        timeout_id = GLib.timeout_add(50, self.on_timeout, None)
+        self.progressbar = Gtk.ProgressBar()
+        self.progressbar.set_text(text)
+        self.progressbar.set_show_text("show_text")
+        vbox.pack_start(self.progressbar, True, True, 0)
+
+        self.show_all()
+
+    def on_timeout(self, user_data):
+        self.progressbar.pulse()
+        return True
+
+win = GtkSaveSess()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()
+

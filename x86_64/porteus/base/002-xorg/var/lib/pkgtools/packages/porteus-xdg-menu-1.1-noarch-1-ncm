@@ -1,0 +1,33 @@
+PACKAGE NAME:     porteus-xdg-menu-1.1-noarch-1-ncm
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     160K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/porteus-xdg-menu-1.1-noarch-1-ncm.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+etc/
+etc/update-menus.conf
+etc/xdg/
+etc/xdg/menus/
+etc/xdg/menus/applications.menu
+usr/
+usr/bin/
+usr/bin/update-menus
+usr/bin/xdg_menu
+usr/bin/xdg_menu_su
+usr/share/
+usr/share/desktop-directories/
+usr/share/desktop-directories/Accessibility.directory
+usr/share/desktop-directories/Accessories.directory
+usr/share/desktop-directories/Applications.directory
+usr/share/desktop-directories/Development.directory
+usr/share/desktop-directories/Education.directory
+usr/share/desktop-directories/Games.directory
+usr/share/desktop-directories/Graphics.directory
+usr/share/desktop-directories/Internet.directory
+usr/share/desktop-directories/Multimedia.directory
+usr/share/desktop-directories/Office.directory
+usr/share/desktop-directories/Other.directory
+usr/share/desktop-directories/Science.directory
+usr/share/desktop-directories/Settings.directory
+usr/share/desktop-directories/System-Tools.directory

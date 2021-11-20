@@ -1,0 +1,50 @@
+PACKAGE NAME:     tdb-1.4.3-x86_64-6
+COMPRESSED PACKAGE SIZE:     72K
+UNCOMPRESSED PACKAGE SIZE:     290K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/tdb-1.4.3-x86_64-6.txz
+PACKAGE DESCRIPTION:
+tdb: tdb (a trivial database library)
+tdb:
+tdb: Tdb is a simple database API. It was inspired by the realisation that
+tdb: in Samba there were several ad-hoc bits of code that essentially
+tdb: implement small databases for sharing structures.
+tdb:
+tdb: Homepage: https://tdb.samba.org
+tdb:
+tdb:
+tdb:
+tdb:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/tdbbackup
+usr/bin/tdbdump
+usr/bin/tdbrestore
+usr/bin/tdbtool
+usr/doc/
+usr/doc/tdb-1.4.3/
+usr/doc/tdb-1.4.3/README
+usr/doc/tdb-1.4.3/mainpage.dox
+usr/doc/tdb-1.4.3/mutex.txt
+usr/doc/tdb-1.4.3/tdb.magic
+usr/doc/tdb-1.4.3/tracing.txt
+usr/include/
+usr/include/tdb.h
+usr/lib64/
+usr/lib64/libtdb.so.1.4.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/tdb.pc
+usr/lib64/python3.9/
+usr/lib64/python3.9/site-packages/
+usr/lib64/python3.9/site-packages/_tdb_text.py
+usr/lib64/python3.9/site-packages/tdb.cpython-39-x86_64-linux-gnu.so
+usr/man/
+usr/man/man8/
+usr/man/man8/tdbbackup.8.gz
+usr/man/man8/tdbdump.8.gz
+usr/man/man8/tdbrestore.8.gz
+usr/man/man8/tdbtool.8.gz

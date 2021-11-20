@@ -1,0 +1,39 @@
+PACKAGE NAME:     libepoxy-1.5.8-x86_64-1
+COMPRESSED PACKAGE SIZE:     296K
+UNCOMPRESSED PACKAGE SIZE:     2.9M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libepoxy-1.5.8-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libepoxy: libepoxy (OpenGL function pointer management library)
+libepoxy:
+libepoxy: Epoxy is a library for handling OpenGL function pointer management.
+libepoxy:
+libepoxy: Homepage: https://github.com/anholt/libepoxy
+libepoxy:
+libepoxy:
+libepoxy:
+libepoxy:
+libepoxy:
+libepoxy:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libepoxy-1.5.8/
+usr/doc/libepoxy-1.5.8/COPYING
+usr/doc/libepoxy-1.5.8/README.md
+usr/include/
+usr/include/epoxy/
+usr/include/epoxy/common.h
+usr/include/epoxy/egl.h
+usr/include/epoxy/egl_generated.h
+usr/include/epoxy/gl.h
+usr/include/epoxy/gl_generated.h
+usr/include/epoxy/glx.h
+usr/include/epoxy/glx_generated.h
+usr/lib64/
+usr/lib64/libepoxy.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/epoxy.pc

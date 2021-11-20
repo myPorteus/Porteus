@@ -1,0 +1,46 @@
+PACKAGE NAME:     dosfstools-4.2-x86_64-2
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     320K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/dosfstools-4.2-x86_64-2.txz
+PACKAGE DESCRIPTION:
+dosfstools: dosfstools (tools for working with FAT filesystems)
+dosfstools:
+dosfstools: Utilities for creating FAT filesystems (mkdosfs), and for checking
+dosfstools: and repairing them (dosfsck).
+dosfstools:
+dosfstools: Homepage: http://daniel-baumann.ch/software/dosfstools
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+dosfstools:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+sbin/
+sbin/fatlabel
+sbin/fsck.fat
+sbin/mkfs.fat
+usr/
+usr/doc/
+usr/doc/dosfstools-4.2/
+usr/doc/dosfstools-4.2/ANNOUNCE.mkdosfs
+usr/doc/dosfstools-4.2/COPYING
+usr/doc/dosfstools-4.2/ChangeLog
+usr/doc/dosfstools-4.2/ChangeLog.dosfsck
+usr/doc/dosfstools-4.2/ChangeLog.dosfstools-2.x
+usr/doc/dosfstools-4.2/ChangeLog.mkdosfs
+usr/doc/dosfstools-4.2/NEWS
+usr/doc/dosfstools-4.2/README
+usr/doc/dosfstools-4.2/README.dosfsck
+usr/doc/dosfstools-4.2/README.dosfstools-2.x
+usr/doc/dosfstools-4.2/README.md
+usr/doc/dosfstools-4.2/README.mkdosfs
+usr/doc/dosfstools-4.2/TODO.dosfstools-2.x
+usr/man/
+usr/man/man8/
+usr/man/man8/fatlabel.8.gz
+usr/man/man8/fsck.fat.8.gz
+usr/man/man8/mkfs.fat.8.gz

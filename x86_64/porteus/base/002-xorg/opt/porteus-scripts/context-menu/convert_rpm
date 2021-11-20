@@ -1,0 +1,67 @@
+#!/bin/bash
+# Service menu script to convert rpm packages to xzm modules
+# Author: Brokenman <brokenman@porteus.org>
+
+. /usr/lib/librokenman
+
+selection=$*
+
+COMP="-x"
+COMP_ZSTD="-z"
+
+while getopts "xz" opt; do
+case "$opt" in
+
+    x)
+        shift "$(($OPTIND -1))"
+        ;;
+
+    z)
+        COMP="$COMP_ZSTD"
+        shift "$(($OPTIND -1))"
+        ;;
+
+esac
+done
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+  /opt/porteus-scripts/xorg/psu $0 $COMP $selection &
+  exit
+fi
+
+# Put up a dialog
+#export STATE=MANUAL
+#echo "Converting $package ..." > /tmp/.message
+#manual_progress "Processing ..."
+#/usr/share/porteus/gtkprogress.py -m "Converting $package ..." -t "Processing ..." &
+#sleep 2
+
+# Convert the packages
+for package in $selection; do
+  path=${package%/*}
+  name=${package##*/}
+  dir=${name%.*}
+  #echo "$name" >> /tmp/.extracted
+  #echo "$name" > /tmp/.message
+  # start progress
+  /usr/share/porteus/gtkprogress.py -w "RPM Conversion" -m "Converting ${name}..." -t "Processing..." &
+  #sleep 2
+  mkdir /tmp/rpm2xzm$$
+  cp $path/$name /tmp/rpm2xzm$$
+  cd /tmp/rpm2xzm$$
+  rpm2txz $name
+  txz2xzm $COMP $dir.txz
+  mv $dir.xzm $path/
+  rm -r /tmp/rpm2xzm$$
+  # kill progress
+  prog=`ps ax|grep gtkprogress.py |awk '{print$1}'|head -n1`
+  kill $prog
+done
+
+# Give notification
+/usr/share/porteus/gtkdialog.py -p "Conversion complete!" -t 2000 &
+
+#rm /tmp/.message /tmp/.extracted 2>/dev/null
+exit
+

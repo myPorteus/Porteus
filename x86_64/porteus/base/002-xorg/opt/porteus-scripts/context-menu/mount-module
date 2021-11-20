@@ -1,0 +1,24 @@
+#!/bin/bash
+# Script to mount module at /mnt/loop
+# Author: Brokenman <brokenman@porteus.org>
+
+FULLPATHFILE=$(readlink -f "$1")
+BASE=$(basename "$1")
+
+# Root check
+if [ "`whoami`" != "root" ]; then
+	/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/context-menu/mount-module "$FULLPATHFILE"
+	exit
+fi
+
+success(){
+	/usr/share/porteus/gtkdialog.py -p "$BASE was mounted" -s "$BASE was successfully mounted at /mnt/loop" -t 2000	&
+}
+
+fail(){
+	/usr/share/porteus/gtkdialog.py -p "$BASE was NOT mounted" -s "There was an error mounting $BASE at /mnt/loop" -d err
+}
+
+mkdir -p /mnt/loop
+mount -t auto -o loop "$FULLPATHFILE" /mnt/loop && success || fail
+

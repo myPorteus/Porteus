@@ -1,0 +1,35 @@
+PACKAGE NAME:     libpciaccess-0.16-x86_64-3
+COMPRESSED PACKAGE SIZE:     36K
+UNCOMPRESSED PACKAGE SIZE:     130K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libpciaccess-0.16-x86_64-3.txz
+PACKAGE DESCRIPTION:
+libpciaccess: libpciaccess (Generic PCI access library)
+libpciaccess:
+libpciaccess: libpciaccess is part of X11.
+libpciaccess:
+libpciaccess: For more information about the X.Org Foundation (the providers of the
+libpciaccess: X.Org implementation of the X Window System), see their website:
+libpciaccess:
+libpciaccess: http://www.x.org
+libpciaccess:
+libpciaccess:
+libpciaccess:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libpciaccess-0.16/
+usr/doc/libpciaccess-0.16/AUTHORS
+usr/doc/libpciaccess-0.16/COPYING
+usr/doc/libpciaccess-0.16/ChangeLog
+usr/doc/libpciaccess-0.16/INSTALL
+usr/doc/libpciaccess-0.16/README.md
+usr/include/
+usr/include/pciaccess.h
+usr/lib64/
+usr/lib64/libpciaccess.so.0.11.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/pciaccess.pc

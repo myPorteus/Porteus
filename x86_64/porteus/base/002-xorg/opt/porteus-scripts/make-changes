@@ -1,0 +1,949 @@
+#!/usr/bin/python
+
+## A Porteus savefile container manager.
+## Occasionally people experience corruption of their change files
+## when using FAT or NTFS file systems. This is due to POSIX overlay
+## mismatches. Using a savefile container formated with an xfs file
+## system will help towards keeping safe from corruption.
+
+## This program is offered without any guarantee. Use it at your own
+## risk. I will not be held responsible for any loss of data or corruption
+## caused through the use of this tool. In short, be smart ... backup.
+## No guarantee is given, hinted at, implied or inferred in any way
+## shape or manner. If you hear voices telling you anything different
+## then it's time to change your meds.
+
+## Author: Brokenman <brokenman@porteus.org>
+## jssouza: ported to pygobject3
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, GLib
+from subprocess import run, DEVNULL, Popen, PIPE
+from os import path, getenv, getuid, makedirs, rmdir, remove
+from re import sub
+
+## Make sure we're in X
+display = getenv('DISPLAY')
+if display == None:
+    print("This program requires an X session!")
+    quit()
+
+## prompt root password(gui psu) and re-execute? probly a bit dirty..
+## using subprocess rather than os.system() to be script agnostic..
+user = getuid()
+if user != 0:
+    print("You must be root to run this!")
+    this_script = path.abspath(__file__)
+    run(['psu', this_script])
+    quit()
+
+bootdev = getenv('BOOTDEV')
+bootcfg = bootdev + '/boot/syslinux/porteus.cfg'
+
+class GtkChanges(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title = "Savefile Manager", border_width = 5, height_request = 350, width_request = 480, icon_name = "gtk-save")
+        self.vb = Gtk.Box(spacing = 5, orientation = Gtk.Orientation.VERTICAL)
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup("<span size=\"x-large\" weight=\"bold\">Manage your savefile</span>")
+        self.vb.pack_start(self.l_header_txt, False, False, 5)
+        self.info_txt = Gtk.Label(label = "Required only for saving changes on FATx or NTFS filesystems")
+        self.info_txt.get_style_context().add_class("dim-label")
+        self.vb.pack_start(self.info_txt, False, False, 0)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.create_button = self.add_section("list-add-symbolic", " Create ", "<span weight=\"bold\" size=\"large\">I want to create a new savefile</span>\n\
+Create a savefile for Porteus")
+        self.create_button.connect("clicked", self.on_create_clicked)
+        self.resize_button = self.add_section("go-top-symbolic", "  Resize ", "<span weight=\"bold\" size=\"large\">I want to resize a savefile</span>\n\
+Resize an existing savefile")
+        self.resize_button.connect("clicked", self.on_resize_clicked)
+        self.encrypt_button = self.add_section("system-lock-screen-symbolic", "Encrypt", "<span weight=\"bold\" size=\"large\">I want to encrypt a savefile</span>\n\
+Encrypt an existing savefile (requires password during boot)")
+        self.encrypt_button.connect("clicked", self.on_encrypt_clicked)
+        self.repair_button = self.add_section("document-revert-symbolic", "  Repair ", "<span weight=\"bold\" size=\"large\">I want to recover a savefile</span>\n\
+Recover an existing savefile after corruption")
+        self.repair_button.connect("clicked", self.on_repair_clicked)
+
+        self.hb_bottom = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.cancel_button = Gtk.Button.new_with_label("Cancel")
+        self.cancel_button.connect("clicked", self.on_cancel_clicked)
+        self.hb_bottom.pack_end(self.cancel_button, False, False, 2)
+
+        self.help_img = Gtk.Image.new_from_icon_name("help-about", Gtk.IconSize.BUTTON)
+        self.help_button = Gtk.Button.new_with_label("Help")
+        self.help_button.set_image(self.help_img)
+        self.help_button.set_always_show_image(True)
+        self.help_button.connect("clicked", self.on_help_clicked)
+        self.hb_bottom.pack_end(self.help_button, False, False, 2)
+
+        self.vb.pack_end(self.hb_bottom, False, False, 5)
+        self.vb.pack_end(Gtk.Separator(), False, False, 10)
+
+        self.add(self.vb)
+        self.help_button.grab_focus()
+
+    def add_section(self, icon, label, text):
+        hb = Gtk.Box(spacing = 5, homogeneous = False)
+
+        img = Gtk.Image.new_from_icon_name(icon, Gtk.IconSize.BUTTON)
+        button = Gtk.Button.new_with_label(label)
+        button.set_image(img)
+        button.set_always_show_image(True)
+        button.set_image_position(Gtk.PositionType.BOTTOM)
+
+        hb.pack_start(button, False, False, 2)
+
+        l_desc = Gtk.Label()
+        l_desc.set_markup(text)
+        hb.pack_start(l_desc, False, False, 2)
+        self.vb.pack_start(hb, False, False, 5)
+
+        return button
+
+    def on_create_clicked(self, button):
+        create_dialog = CreateDialog(self)
+        response = create_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            name = create_dialog.name_entry.get_text()
+            size = create_dialog.size_entry.get_text()
+            #byte_size = (int(size)*1024)
+            fpath = create_dialog.loc_entry.get_text()
+            targ = fpath + "/" + name
+            dat = targ + ".dat"
+            encrypt = create_dialog.enc.get_active()
+            fsys = create_dialog.fs_combo.get_active()
+            if fsys == 0:
+                fs = "xfs"
+            elif fsys == 1:
+                fs = "ext2fs"
+            elif fsys == 2:
+                fs = "ext3fs"
+            elif fsys == 3:
+                fs = "reiserfs"
+            if name == "" or size == "" or fpath == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            elif self.space_available(fpath, int(size)*1024) is False:
+                GtkDialog("Error", "Sorry, there is not enough space at: " + fpath, Gtk.MessageType.ERROR, 0)
+            elif self.is_file_in_aufs(fpath) is True:
+                GtkDialog("Error", "Sorry, " + fpath + " is inside the live filesystem. You must store your change file outside of aufs.", Gtk.MessageType.ERROR, 0)
+            elif self.is_writable(fpath) is not True:
+                GtkDialog("Error", "Sorry, your target directory is NOT writable!", Gtk.MessageType.ERROR, 0)
+            elif encrypt == 1:
+                print("encrypt")
+                byte_size = (int(size)*1024)
+                print(name, size, byte_size, fpath, fsys, dat)
+                #GtkDialog("Error", "Finish the job, mate!", Gtk.MessageType.ERROR, 0)
+                pass_dialog = Passphrase(self)
+                response = pass_dialog.run()
+                if Gtk.ResponseType.OK == response:
+                    passp1 = pass_dialog.pass_1_entry.get_text()
+                    passp2 = pass_dialog.pass_2_entry.get_text()
+                    if passp1 != passp2:
+                        GtkDialog("Error", "Passwords do not match!", Gtk.MessageType.ERROR, 0)
+                        response = pass_dialog.run()
+                    elif passp1 == "" or passp2 == "":
+                        GtkDialog("Error", "Blank passwords not allowed!", Gtk.MessageType.ERROR, 0)
+                        response = pass_dialog.run()
+                    else:
+                        run(["dd if=/dev/zero of=" + dat + " bs=1024 count=" + str(byte_size)], shell=True, stdout=DEVNULL)
+                        loop = self.check_loop()
+                        run(['/sbin/losetup', loop, dat])
+                        try:
+                            GtkDialog("", "Creating " + dat + "...", Gtk.MessageType.INFO, 2000)
+                            run(['/sbin/cryptsetup', '-y', '-s', '256', 'luksFormat', loop, '<<<', passp2])
+                            run(['/sbin/cryptsetup', 'luksOpen', loop, '<<<', passp2])
+                            dmc = '/dev/mapper/crypt'
+                            if fs == "xfs" or fs == "ext2fs" or fs == "ext4fs":
+                                run(['/sbin/mkfs.' + fs, dmc])
+                            elif fs == "reiserfs":
+                                run(['/sbin/mkfs.reiserfs', '-f', dat])
+                            run(['/sbin/cryptsetup', 'luksClose', 'crypt'])
+                            run(['/sbin/losetup', '-d', loop])
+                            GtkDialog("", "Your savefile has been created at\n" + dat + "\nWe will now open the porteus config file. \nPlease edit the APPEND line with: changes=" + dat + ".", Gtk.MessageType.INFO, 0)
+                            try:
+                                run(['/opt/porteus-scripts/xorg/editor', bootcfg])
+                            except Exception:
+                                GtkDialog("", "Can not open porteus.cfg. Perhaps you are booting an ISO or using a non standard boot method.\nWe trust you know what you're doing.", Gtk.MessageType.INFO, 0)
+                        except Exception:
+                            GtkDialog("Error", "No key available with this passphrase.", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                pass_dialog.destroy()
+            else:
+                print("no encrypt")
+                byte_size = (int(size)*1024)
+                GtkDialog("", "Creating " + dat + "...", Gtk.MessageType.INFO, 2000)
+                run(["dd if=/dev/zero of=" + dat + " bs=1024 count=" + str(byte_size)], shell=True, stdout=DEVNULL)
+                if fs == "xfs" or fs == "ext2fs" or fs == "ext4fs":
+                    run(['/sbin/mkfs.' + fs, dat])
+                elif fs == "reiserfs":
+                    run(['/sbin/mkfs.reiserfs', '-f', dat])
+                GtkDialog("", "Your savefile has been created at\n" + dat + "\nWe will now open the porteus config file. \nPlease edit the APPEND line with: changes=" + dat + ".", Gtk.MessageType.INFO, 0)
+                try:
+                    run(['/opt/porteus-scripts/xorg/editor', bootcfg])
+                except Exception:
+                    GtkDialog("", "Can not open porteus.cfg. Perhaps you are booting an ISO or using a non standard boot method.\nWe trust you know what you're doing.", Gtk.MessageType.INFO, 0)
+        create_dialog.destroy()
+
+    def on_resize_clicked(self, button):
+        resize_dialog = ResizeDialog(self)
+        response = resize_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            oldat = resize_dialog.file_entry.get_text()
+            tdir = resize_dialog.tgt_dir_entry.get_text()
+            nsize = resize_dialog.size_entry.get_text()
+            delete_old = resize_dialog.del_old.get_active()
+            mpoint = "/mnt/vault"
+            nmpoint = "/mnt/vault2"
+            if oldat == "" or nsize == "" or tdir == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            elif self.is_in_use(oldat) is True:
+                GtkDialog("Error", "Sorry. This action is only possible in always fresh mode as Porteus needs to access the file being used.", Gtk.MessageType.ERROR, 0)
+            else:
+                byte_size = (int(nsize)*1024)
+                newdat = tdir + "/" + path.basename(oldat)
+                makedirs(mpoint, exist_ok=True)
+                makedirs(nmpoint, exist_ok=True)
+                self.check_loop()
+                if self.space_available(tdir, int(nsize)) is False:
+                    GtkDialog("Error","Sorry. The location you chose is smaller than " + nsize + " Mb", Gtk.MessageType.ERROR, 0)
+                if self.is_encrypted(oldat) is True:
+                    pass_dialog = Passphrase(self)
+                    response = pass_dialog.run()
+                    if Gtk.ResponseType.OK == response:
+                        passp1 = pass_dialog.pass_1_entry.get_text()
+                        passp2 = pass_dialog.pass_2_entry.get_text()
+                        if passp1 != passp2:
+                            GtkDialog("Error", "Passwords do not match!", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                        elif passp1 == "" or passp2 == "":
+                            GtkDialog("Error", "Blank passwords not allowed!", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                        else:
+                            loop = self.check_loop()
+                            run(['/sbin/losetup', loop, oldat])
+                            run(['cryptsetup', 'luksOpen', mpoint, 'crypt', '<<<', passp1])
+                            try:
+                                run(['mount', '/dev/mapper/crypt', mpoint])
+                            except Exception:
+                                run(['mount', '-t', 'auto', '-o', 'loop', oldat, mpoint])
+                            oldfsys = run(['egrep', '-o', 'reiserfs|xfs|ext4|ext2'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+                            print("fs= " + oldfsys)
+                            run(["dd if=/dev/zero of=" + newdat + " bs=1024 count=" + str(byte_size)], shell=True, stdout=DEVNULL)
+                            if oldfsys == "xfs":
+                                run(['/sbin/mkfs.xfs', newdat])
+                            elif oldfsys == "ext2":
+                                run(['/sbin/mkfs.ext2fs', newdat])
+                            elif oldfsys == "ext4":
+                                run(['/sbin/mkfs.ext4fs', newdat])
+                            elif oldfsys == "reiserfs":
+                                run(['/sbin/mkfs.reiserfs', '-f', newdat])
+                            run(['mount', '-t', 'auto', '-o', 'loop', newdat, nmpoint])
+                            GtkDialog("", "Tranfering data to vault...", Gtk.MessageType.INFO, 2000)
+                            run(['cp', '-a', mpoint + '/.', nmpoint + '/'])
+                            run(['umount', mpoint])
+                            try:
+                                run(['/sbin/cryptsetup', 'luksClose', 'crypt'])
+                                run(['/sbin/losetup', '-d', loop])
+                                if delete_old == "1":
+                                    remove(oldat)
+                                GtkDialog("", "Your encrypted savefile has been created at:\n\n  " + newdat, "\nTo have the changes stored in this file you will\n need to edit a line in your porteus.cfg file.", Gtk.MessageType.INFO, 0)
+                                try:
+                                    run(['/opt/porteus-scripts/xorg/editor', bootcfg])
+                                except Exception:
+                                    GtkDialog("", "Can not open porteus.cfg. Perhaps you are booting an ISO or using a non standard boot method.\nWe trust you know what you're doing.", Gtk.MessageType.INFO, 0)
+                            except Exception:
+                                GtkDialog("Error", "No key available with this passphrase.", Gtk.MessageType.ERROR, 0)
+                                response = pass_dialog.run()
+                    pass_dialog.destroy()
+                    print("do encrypt stuff")
+                    GtkDialog("Error","Fix me!", Gtk.MessageType.ERROR, 0)
+                else:
+                    run(["dd if=/dev/zero of=" + newdat + " bs=1024 count=" + str(byte_size)], shell=True, stdout=DEVNULL)
+                    run(['mount', '-t', 'auto', '-o', 'loop', oldat, mpoint])
+                    p1 = Popen(['/sbin/blkid', oldat], stdout=PIPE)
+                    oldfsys = run(['egrep', '-o', 'reiserfs|xfs|ext4|ext2'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+                    print("fs= " + oldfsys)
+                    if oldfsys == "xfs":
+                        run(['/sbin/mkfs.xfs', newdat])
+                    elif oldfsys == "ext2":
+                        run(['/sbin/mkfs.ext2fs', newdat])
+                    elif oldfsys == "ext4":
+                        run(['/sbin/mkfs.ext4fs', newdat])
+                    elif oldfsys == "reiserfs":
+                        run(['/sbin/mkfs.reiserfs', '-f', newdat])
+                    run(['mount', '-t', 'auto', '-o', 'loop', newdat, nmpoint])
+                    run(['cp', '-a', mpoint + '/.', nmpoint + '/'])
+                    run(['umount', mpoint])
+                    run(['umount', nmpoint])
+                    rmdir(mpoint)
+                    rmdir(nmpoint)
+                    if delete_old == "1":
+                        remove(oldat)
+
+                    GtkDialog("Your savefile has been created at:\n\n  " + newdat, "\nTo have the changes stored in this file you will\n need to edit a line in your porteus.cfg file.", Gtk.MessageType.INFO, 0)
+                    try:
+                        run(['/opt/porteus-scripts/xorg/editor', bootcfg])
+                    except Exception:
+                        GtkDialog("", "Can not open porteus.cfg. Perhaps you are booting an ISO or using a non standard boot method.\nWe trust you know what you're doing.", Gtk.MessageType.INFO, 0)
+            print(oldat, tdir, nsize, delete_old)
+        resize_dialog.destroy()
+
+    def on_encrypt_clicked(self, button):
+        encrypt_dialog = EncryptDialog(self)
+        response = encrypt_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            exfile = encrypt_dialog.file_entry.get_text()
+            exname = path.basename(exfile)
+            newname = sub(".dat", "-enc.dat", exname)
+            new_loc = encrypt_dialog.tgt_dir_entry.get_text()
+            newdat = new_loc + "/" + newname
+            size_ex = self.get_size_ex(exfile)
+            mpoint = "/mnt/vault"
+            nmpoint = mpoint + "2"
+            del_old = encrypt_dialog.del_old.get_active()
+            if self.space_availble(exfile, size_ex) is False:
+                GtkDialog("Sorry", "The location you chose requires at least" + size_ex + " Mb of free space.", Gtk.MessageType.ERROR, 0)
+            elif self.is_in_use(exfile) is True:
+                GtkDialog("Sorry", "This action is only possible in always fresh mode \nas Porteus needs to access the file being used.", Gtk.MessageType.ERROR, 0)
+            elif exfile == "" or new_loc == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            elif self.is_encrypted(exfile) is True:
+                GtkDialog("!", exfile + " is already encrypted!", Gtk.MessageType.WARNING, 0)
+            else:
+                makedirs(mpoint, exist_ok=True)
+                makedirs(nmpoint, exist_ok=True)
+                pass_dialog = Passphrase(self)
+                response = pass_dialog.run()
+                if Gtk.ResponseType.OK == response:
+                    passp1 = pass_dialog.pass_1_entry.get_text()
+                    passp2 = pass_dialog.pass_2_entry.get_text()
+                    if passp1 != passp2:
+                        GtkDialog("Error", "Passwords do not match!", Gtk.MessageType.ERROR, 0)
+                        response = pass_dialog.run()
+                    elif passp1 == "" or passp2 == "":
+                        GtkDialog("Error", "Blank passwords not allowed!", Gtk.MessageType.ERROR, 0)
+                        response = pass_dialog.run()
+                    else:
+                        loop = self.check_loop()
+                        run(['/sbin/losetup', loop, exfile])
+                        run(['mount', '-t', 'auto', '-o', 'loop', xfile, mpoint])
+                        p1 = Popen(['/sbin/blkid', exfile], stdout=PIPE)
+                        oldfsys = run(['egrep', '-o', 'reiserfs|xfs|ext4|ext2'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+                        print("fs= " + oldfs)
+                        GtkDialog("", "Creating " + newname + "...", Gtk.MessageType.INFO, 2000)
+                        run(['dd', 'if=/dev/urandom', 'of=' + newdat, 'bs=1024', 'count=' + size_ex])
+                        run(['/sbin/losetup', loop, newdat])
+                        run(['/sbin/cryptsetup', '-y', '-s', '256', 'luksFormat', loop, '<<<', passp2])
+                        try:
+                            run(['/sbin/cryptsetup', 'luksOpen', loop, 'crypt', '<<<', passp2])
+                            if oldfsys == "xfs":
+                                run(['/sbin/mkfs.xfs', '/dev/mapper/crypt'])
+                            elif oldfsys == "ext2":
+                                run(['/sbin/mkfs.ext2fs', '/dev/mapper/crypt'])
+                            elif oldfsys == "ext4":
+                                run(['/sbin/mkfs.ext4fs', '/dev/mapper/crypt'])
+                            elif oldfsys == "reiserfs":
+                                run(['/sbin/mkfs.reiserfs', '-f', '/dev/mapper/crypt'])
+                            run(['mount', '/dev/mapper/crypt', nmpoint])
+                            GtkDialog("", "Tranfering data to vault...", Gtk.MessageType.INFO, 2000)
+                            run(['cp', '-a', mpoint + '/.', nmpoint])
+                            run(['umount', mpoint])
+                            if del_old is True:
+                                run(['rm', exfile])
+                            run(['umount', nmpoint])
+                            run(['/sbin//sbin/cryptsetup', 'luksClose', 'crypt'])
+                            run(['/sbin/losetup', '-d', loop])
+                            GtkDialog("", "Your savefile has been created at:" + newdat + "\nTo have the changes stored in this file you will need \nto edit a line in your porteus.cfg file.", Gtk.MessageType.INFO, 0)
+                            try:
+                                run(['/opt/porteus-scripts/xorg/editor', bootcfg])
+                            except Exception:
+                                GtkDialog("", "Can not open porteus.cfg. Perhaps you are booting an ISO or using a non standard boot method.\nWe trust you know what you're doing.", Gtk.MessageType.INFO, 0)
+                        except Exception:
+                            GtkDialog("Error", "No key available with this passphrase.", Gtk.MessageType.ERROR, 0)
+                            response = pass_dialog.run()
+                pass_dialog.destroy()
+        encrypt_dialog.destroy()
+
+    def on_repair_clicked(self, button):
+        repair_dialog = RepairDialog(self)
+        response = repair_dialog.run()
+        if Gtk.ResponseType.OK == response:
+            exfile = repair_dialog.file_entry.get_text()
+            if exfile == "":
+                GtkDialog("Error", "You seem to have missed a setting. Start again.", Gtk.MessageType.ERROR, 0)
+            elif is_encrypted(exfile) is True:
+                GtkDialog("Sorry, your savefile has been encrypted and recovery is not possible using this tool.", Gtk.MessageType.WARNING, 0)
+            else:
+                p1 = Popen(['/sbin/blkid', exfile], stdout=PIPE)
+                exfile_fs = Popen(['egrep', '-o', "reiserfs|xfs|ext4|ext2"],  stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+                prog_dialog = ProgressDialog("Attempting " + exfile_fs + " repair now ...", "Recovery")
+                with open('/tmp/savefile-recovery.log', "w") as fd:
+                    if exfile_fs == "xfs":
+                        prog_dialog.run()
+                        run(['/sbin/xfs_repair', '-f', exfile], stdout = fd.decode('utf-8'))
+                        prog_dialog.destroy()
+                        recovery_log_mes()
+                    elif exfile_fs == "ext2" or exfile_fs == "ext4":
+                        prog_dialog.run()
+                        run(['/sbin/fsck.' + exfile_fs, '-p', '-f', '-v', exfile], stdout = fd.decode('utf-8'))
+                        prog_dialog.destroy()
+                        recovery_log_mes()
+                    elif exfile_fs == "reiserfs":
+                        prog_dialog.run()
+                        run(['/sbin/fsck.reiserfs', '--fix-fixable', '-y', exfile], stdout = fd.decode('utf-8'))
+                        prog_dialog.destroy()
+                        recovery_log_mes()
+                    else:
+                        GtkDialog("Error", "Could not determine fs type", Gtk.MessageType.ERROR, 0)
+        def recovery_log_mes():
+            GtkDialog("Done", "Please read log file in /tmp/savefile-recovery.log", Gtk.MessageType.INFO, 0)
+        repair_dialog.destroy()
+
+    def create_savefile(self):
+        print("create")
+
+    def create_encrytped(self):
+        print("create encrypted")
+
+    def get_size_ex(self, filepath):
+        p1 = run(['du', filepath], stdout=PIPE)
+        size_ex = run(['awk', '{print$1}'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        return size_ex
+
+    def is_encrypted(self, filepath):
+        p1 = Popen(['/sbin/blkid', filepath], stdout=PIPE)
+        p2 = run(['grep', '-o', '_LUKS'], stdin = p1.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        if p2 == "":
+            return False
+        else:
+            return True
+        print(p2)
+
+    def on_help_clicked(self, button):
+        help_dialog = HelpDialog(self)
+        help_dialog.run()
+        help_dialog.destroy()
+
+    def on_cancel_clicked(self, button):
+        Gtk.main_quit()
+
+    def is_file_in_aufs(self, filepath):
+        p1 = Popen(['df', '-T', filepath], stdout=PIPE)
+        p2 = Popen(['tail', '-n1'], stdin = p1.stdout, stdout=PIPE)
+        if run(['awk', '{print$1}'], stdin = p2.stdout, stdout=PIPE).stdout.decode('utf-8').strip() == "aufs":
+            return True
+        return False
+
+    def space_available(self, fpath, bytes_needed):
+        p1 = Popen(['df', fpath], stdout=PIPE)
+        p2 = Popen(['tail', '-n1'], stdin = p1.stdout, stdout=PIPE)
+        p3 = run(['awk', '{print$4}'], stdin = p2.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        fs_space = int(p3)
+        print("space= " + p3)
+        print(bytes_needed)
+        if bytes_needed > fs_space:
+            return False
+        return True
+
+    def is_writable(self, fpath):
+        try:
+            tmp_prefix = "write_tester"
+            count = 0
+            filename = path.join(fpath, tmp_prefix)
+            while(path.exists(filename)):
+                filename = "{}.{}".format(path.join(fpath, tmp_prefix),count)
+                count = count + 1
+            f = open(filename,"w")
+            f.close()
+            remove(filename)
+            return True
+        except Exception: #as e:
+            #print "{}".format(e)
+            return False
+
+    def check_loop(self):
+        p1 = Popen(['ls -1 /dev/loop*'], shell=True, stdout=PIPE)
+        p2 = Popen(['tr', '-d', '[:alpha:][:punct:]'], stdin = p1.stdout, stdout=PIPE)
+        p3 = Popen(['sort', '-g'], stdin = p2.stdout, stdout=PIPE)
+        x = run(['tail', '-n1'],  stdin = p3.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        print("x is " + x)
+        if x != "":
+            y = str(int(x) + 1)
+            loop = "/dev/loop" + y
+            if not path.exists(loop):
+                run(['mknod', loop, 'b', '7', 'x'])
+                return loop
+        else:
+            return False
+
+    def make_loop(self):
+        p1 = Popen(['/sbin/losetup', '-an', '--output', 'name'], stdout=PIPE)
+        p2 = Popen(['tail', '-n1'], stdin = p1.stdout, stdout=PIPE)
+        x = run(['sed', 's^/dev/loop^^'], stdin = p2.stdout, stdout=PIPE).stdout.decode('utf-8').strip()
+        if not path.exists('/dev/loop' + x):
+            run(['mknod', '/dev/loop' + x, 'b', '7', 'x'])
+        self.loop_device = '/dev/loop' + x
+
+    def is_in_use(self, changes_file):
+        with open("/etc/bootcmd.cfg", mode = "r", encoding = "utf-8") as fd:
+            for fline in fd:
+                if fline.startswith("changes="):
+                    if fline[:-1].split('=')[1] == changes_file:
+                        return True
+        return False
+
+class CreateDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        self.fs_type = ['xfs', 'ext2', 'ext4', 'reiserfs']
+
+        Gtk.Dialog.__init__(self, "Create", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK,
+        Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 500)
+
+        self.vb = self.get_content_area()
+
+        self.l_header = Gtk.Label()
+        self.l_header.set_markup("<span size=\"large\" weight=\"bold\">Create new save container</span>")
+        self.vb.pack_start(self.l_header, False, False, 5)
+
+        self.l_steps = Gtk.Label(xalign = 0.0)
+        self.l_steps.set_markup("\t1) Enter the preferred name of your savefile.\n\n\
+\t2) Type the desired size for your savefile. <b>(Mb)</b>\n\n\
+\t3) Choose the directory where you would like to keep your save file.\n\n\
+\t4) Choose if you would like an encrypted savefile. <i>(requires password at boot)</i>")
+
+        self.vb.pack_start(self.l_steps, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10)
+        self.l_name = Gtk.Label(xalign = 0.0)
+        self.l_name.set_markup("\tSavefile name:")
+        self.grid.attach(self.l_name, 0, 0, 1, 1)
+        self.name_entry = Gtk.Entry()
+        self.grid.attach(self.name_entry, 1, 0, 1, 1)
+        self.l_size = Gtk.Label(xalign = 0.0)
+        self.l_size.set_markup("\tSavefile size:")
+        self.grid.attach(self.l_size, 0, 1, 1, 1)
+        self.size_entry = Gtk.Entry()
+        self.grid.attach(self.size_entry, 1, 1, 1, 1)
+        self.grid.attach(Gtk.Label(label = "(Mb)"), 2, 1, 1, 1)
+        self.l_loc = Gtk.Label(xalign = 0.0)
+        self.l_loc.set_markup("\tLocation:")
+        self.grid.attach(self.l_loc, 0, 2, 1, 1)
+        self.loc_entry = Gtk.Entry(editable = False)
+        self.grid.attach(self.loc_entry, 1, 2, 10, 1)
+        self.loc_dir_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.loc_dir_button.connect("clicked", self.loc_dir_button_clicked)
+        self.grid.attach(self.loc_dir_button, 11, 2, 1, 1)
+
+        self.vb.pack_start(self.grid, False, False, 10)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.l_adv_header = Gtk.Label()
+        self.l_adv_header.set_markup("<span weight=\"bold\">For advanced users only</span>")
+        self.vb.pack_start(self.l_adv_header, False, False, 5)
+
+        self.grid2 = Gtk.Grid(row_spacing = 10, column_spacing = 10)
+        self.l_fs = Gtk.Label(xalign = 0.0)
+        self.l_fs.set_markup("\tPreferred linux file system for the savefile:")
+        self.grid2.attach(self.l_fs, 0, 0, 2, 1)
+        self.fs_combo = Gtk.ComboBoxText()
+        self.fs_combo.set_entry_text_column(0)
+        for fs_type in self.fs_type:
+            self.fs_combo.append_text(fs_type)
+        self.fs_combo.set_active(0)
+        self.fs_combo.connect("changed", self.on_fs_combo_changed)
+        self.grid2.attach(self.fs_combo, 2, 0, 1, 1)
+        self.enc = Gtk.CheckButton(label = "Encrypt my savefile (requires a password during boot)")
+        self.enc.connect("toggled", self.on_enc_toggled, "1")
+        self.grid2.attach(self.enc, 1, 1, 2, 1)
+        self.vb.pack_start(self.grid2, False, False, 10)
+        self.show_all()
+
+    def loc_dir_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to save your changes to", parent = self, action = Gtk.FileChooserAction.SELECT_FOLDER)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_file = dialog.get_filename()
+            self.loc_entry.set_text(self.tgt_file)
+        dialog.destroy()
+
+    def on_fs_combo_changed(self, combo):
+        None
+
+    def on_enc_toggled(self, button, name):
+        None
+
+class ResizeDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Resize", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK,
+        Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 450)
+
+        self.vb = self.get_content_area()
+
+        self.l_header = Gtk.Label()
+        self.l_header.set_markup("<span size=\"large\" weight=\"bold\">Resize existing savefile</span>")
+        self.vb.pack_start(self.l_header, False, False, 5)
+
+        self.l_steps = Gtk.Label(xalign = 0.0)
+        self.l_steps.set_markup("\tResize an existing savefile (encrypted or unencrypted) when you are\n\
+\trunning out of space in your existing savefile and need to enlarge it.\n\n\
+\tThis function could be also used to shrink existing container if needed.\n\
+\tExisting changes will not be lost during this process.\n\n\
+\t1) Choose the location of your existing savefile.\n\n\
+\t2) Choose the new size of your savefile.\n\n\
+\t3) Press OK.")
+
+        self.vb.pack_start(self.l_steps, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.hb = Gtk.Box(spacing = 5)
+        self.hb.pack_start(Gtk.Label(label = "Existing file:  "), False, False, 5)
+        self.file_entry = Gtk.Entry(editable = False)
+        self.hb.pack_start(self.file_entry, True, True, 5)
+        self.file_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.file_button.connect("clicked", self.file_button_clicked)
+        self.hb.pack_start(self.file_button, False, False, 2)
+        self.vb.pack_start(self.hb, False, False, 5)
+
+        self.hb2 = Gtk.Box(spacing = 5)
+        self.hb2.pack_start(Gtk.Label(label = "New location:"), False, False, 5)
+        self.tgt_dir_entry = Gtk.Entry(editable = False)
+        self.hb2.pack_start(self.tgt_dir_entry, True, True, 5)
+        self.tgt_dir_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.tgt_dir_button.connect("clicked", self.tgt_dir_button_clicked)
+        self.hb2.pack_start(self.tgt_dir_button, False, False, 2)
+        self.vb.pack_start(self.hb2, False, False, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10)
+        self.l_csize = Gtk.Label(xalign = 0.0)
+        self.l_csize.set_markup("\tCurrent size:")
+        self.grid.attach(self.l_csize, 0, 0, 1, 1)
+        self.l_csize_val = Gtk.Label(xalign = 0.0, sensitive = False)
+        self.l_csize_val.set_markup(self.get_csize())
+        self.grid.attach(self.l_csize_val, 1, 0, 1, 1)
+        self.l_nsize = Gtk.Label(xalign = 0.0)
+        self.l_nsize.set_markup("\tNew size:")
+        self.grid.attach(self.l_nsize, 0, 1, 1, 1)
+        self.size_entry = Gtk.Entry()
+        self.grid.attach(self.size_entry, 1, 1, 1, 1)
+        self.grid.attach(Gtk.Label(label = "(Mb)"), 2, 1, 1, 1)
+
+        self.del_old = Gtk.CheckButton(label = "Delete existing savefile when done")
+        self.del_old.connect("toggled", self.on_del_old_toggled, "1")
+        self.grid.attach(self.del_old, 1, 2, 2, 1)
+        self.vb.pack_start(self.grid, False, False, 15)
+
+        self.show_all()
+
+    def file_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to resize", parent = self)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_file = dialog.get_filename()
+            self.file_entry.set_text(self.tgt_file)
+            self.l_csize_val.set_markup(self.get_csize())
+        dialog.destroy()
+
+    def tgt_dir_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a new location", parent = self, action = Gtk.FileChooserAction.SELECT_FOLDER)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_dir = dialog.get_filename()
+            self.tgt_dir_entry.set_text(self.tgt_dir)
+        dialog.destroy()
+
+    def on_del_old_toggled(self, button, name):
+        None
+
+    def get_csize(self):
+        cfile = self.file_entry.get_text()
+        print(cfile)
+        if cfile == "":
+            return "Unknown"
+        else:
+            csize_b = path.getsize(cfile)
+            csize = int(csize_b/1048576)
+            if csize:
+                return str(csize) + " Mb"
+
+class EncryptDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Encrypt", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK,
+        Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 400)
+
+        self.vb = self.get_content_area()
+
+        self.l_header = Gtk.Label()
+        self.l_header.set_markup("<span size=\"large\" weight=\"bold\">Encrypt an existing savefile</span>")
+        self.vb.pack_start(self.l_header, False, False, 5)
+
+        self.l_steps = Gtk.Label(xalign = 0.0)
+        self.l_steps.set_markup("\tEncrypt an existing savefile to help protect your Porteus files.\n\n\
+\tUseful if you carry Porteus on portable media, and it falls into the wrong hands.\n\
+\tA password is required during boot in order to decrypt the changes savefile.\n\n\
+\tIf an incorrect password is entered Porteus will boot into Always Fresh Mode.\n\n\
+\t1) Choose the location of your existing savefile.\n\n\
+\t2) Choose the location of your new savefile.\n\n\
+\t3) Press OK.")
+
+        self.vb.pack_start(self.l_steps, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.hb = Gtk.Box(spacing = 5)
+        self.hb.pack_start(Gtk.Label(label = "Existing file:  "), False, False, 5)
+        self.file_entry = Gtk.Entry(editable = False)
+        self.hb.pack_start(self.file_entry, True, True, 5)
+        self.file_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.file_button.connect("clicked", self.file_button_clicked)
+        self.hb.pack_start(self.file_button, False, False, 2)
+        self.vb.pack_start(self.hb, False, False, 5)
+
+        self.hb2 = Gtk.Box(spacing = 5)
+        self.hb2.pack_start(Gtk.Label(label = "New location:"), False, False, 5)
+        self.tgt_dir_entry = Gtk.Entry(editable = False)
+        self.hb2.pack_start(self.tgt_dir_entry, True, True, 5)
+        self.tgt_dir_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.tgt_dir_button.connect("clicked", self.tgt_dir_button_clicked)
+        self.hb2.pack_start(self.tgt_dir_button, False, False, 2)
+        self.vb.pack_start(self.hb2, False, False, 5)
+
+        self.del_old = Gtk.CheckButton(label = "Delete existing savefile when done")
+        #self.del_old.connect("toggled", self.on_del_old_toggled, "1")
+        self.vb.pack_start(self.del_old, False, False, 10)
+
+        self.show_all()
+
+    def file_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to encrypt", parent = self)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_file = dialog.get_filename()
+            self.file_entry.set_text(self.tgt_file)
+        dialog.destroy()
+
+    def tgt_dir_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a new location", parent = self, action = Gtk.FileChooserAction.SELECT_FOLDER)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_dir = dialog.get_filename()
+            self.tgt_dir_entry.set_text(self.tgt_dir)
+        dialog.destroy()
+
+class RepairDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Repair", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK,
+        Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 300)
+
+        self.vb = self.get_content_area()
+
+        self.l_header = Gtk.Label()
+        self.l_header.set_markup("<span size=\"large\" weight=\"bold\">Repair a corrupt savefile</span>")
+        self.vb.pack_start(self.l_header, False, False, 5)
+
+        self.l_steps = Gtk.Label(xalign = 0.0)
+        self.l_steps.set_markup("\tAttempt a recovery of a corrupt savefile.\n\n\
+\tAn appropriate repair executable is used depending on which file system\n\
+\tyou have for your savefile container. The recovery process is not always successful\n\
+\tand a log will be left at <i>/tmp/savefile-recovery.log</i>.\n\n\
+\t1) Choose the location of your existing savefile.\n\n\
+\t2) Click recover.")
+
+        self.vb.pack_start(self.l_steps, False, False, 5)
+
+        self.vb.pack_start(Gtk.Separator(), False, False, 5)
+
+        self.hb = Gtk.Box(spacing = 5)
+        self.hb.pack_start(Gtk.Label(label = "Existing savefile:  "), False, False, 5)
+        self.file_entry = Gtk.Entry(editable = False)
+        self.hb.pack_start(self.file_entry, True, True, 5)
+        self.file_button = Gtk.Button.new_from_icon_name("gtk-directory", Gtk.IconSize.BUTTON)
+        self.file_button.connect("clicked", self.file_button_clicked)
+        self.hb.pack_start(self.file_button, False, False, 2)
+        self.vb.pack_start(self.hb, False, False, 5)
+
+        self.show_all()
+
+    def file_button_clicked(self, button):
+        dialog = Gtk.FileChooserDialog(title = "Choose a file to repair", parent = self)
+        dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Select", Gtk.ResponseType.OK)
+        dialog.set_default_size(400, 280)
+        response = dialog.run()
+        if Gtk.ResponseType.OK == response:
+            self.tgt_file = dialog.get_filename()
+            self.file_entry.set_text(self.tgt_file)
+        dialog.destroy()
+
+class HelpDialog(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Help", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+
+        self.set_default_size(450, 380)
+
+        self.help_header_txt = "<span size=\"large\" weight=\"bold\">Savefile Help</span>"
+        self.help_txt = "By default Porteus will save changes when started. If you are using Porteus on a FAT or NTFS filesystem, \
+then you should create a savefile  to store your changes. This is simply a file that acts as a container (formatted with a native linux filesystem) \
+to hold your changes.\
+\n\nIf you do not create this container you may experience corruption due to POSIX overlay mismatches. Using the container negates the need \
+for POSIX and your changes will be mounted into the live filesystem during boot. You have the option to encrypt your savefile container which adds a layer of security. \
+You will be required to enter a password during boot in order to inject the changes into the system.\
+\n\nThis application contains a savefile recovery option which can be \
+used if your savefile container becomes corrupt. Keep in mind that an encrypted container CAN NOT be recovered using this tool."
+
+        self.l_header_txt = Gtk.Label()
+        self.l_header_txt.set_markup(self.help_header_txt)
+
+        self.vb = self.get_content_area()
+        self.vb.add(self.l_header_txt)
+
+        self.scrolledwindow = Gtk.ScrolledWindow(hexpand = True, vexpand = True)
+        self.vb.pack_start(self.scrolledwindow, True, True, 5)
+
+        self.textview = Gtk.TextView(border_width = 20, editable = False, wrap_mode = Gtk.WrapMode.WORD, justification = Gtk.Justification.FILL, cursor_visible = False)
+        self.textbuffer = self.textview.get_buffer()
+        self.textbuffer.set_text(self.help_txt)
+
+        self.scrolledwindow.add(self.textview)
+
+        self.show_all()
+
+class Passphrase(Gtk.Dialog):
+    def __init__(self, parent):
+        Gtk.Dialog.__init__(self, "Password", parent, 0)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK, Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.set_default_size(550, 200)
+        self.set_border_width(20)
+
+        self.vb = self.get_content_area()
+
+        self.pass_txt =Gtk.Label(xalign = 0.0)
+        self.pass_txt.set_markup("<span>Please provide a passphrase which be used to decrypt your savefile container</span>")
+
+        self.vb.pack_start(self.pass_txt, False, False, 5)
+
+        self.grid = Gtk.Grid(row_spacing = 10, column_spacing = 10, column_homogeneous = True)
+        self.pass_1= Gtk.Label(xalign = 0.0)
+        self.pass_1.set_markup("\tPassphrase:")
+        self.grid.attach(self.pass_1, 1, 0, 1, 1)
+        self.pass_1_entry = Gtk.Entry()
+        self.pass_1_entry.set_visibility(0)
+        self.grid.attach(self.pass_1_entry, 2, 0, 3, 1)
+        self.pass_2 = Gtk.Label(xalign = 0.0)
+        self.pass_2.set_markup("\tRepeat:")
+        self.grid.attach(self.pass_2, 1, 2, 1, 1)
+        self.pass_2_entry = Gtk.Entry()
+        self.pass_2_entry.set_visibility(0)
+        self.grid.attach(self.pass_2_entry, 2, 2, 3, 1)
+        self.vb.pack_start(self.grid, False, False, 15)
+
+        self.show_all()
+
+class GtkDialog():
+    def __init__(self, primary_text = "Message Header", secondary_text = "Message Text", dtype = Gtk.MessageType.INFO, timeout = 0):
+
+        if timeout > 0 and dtype == Gtk.MessageType.INFO:
+            self.timeout_id = GLib.timeout_add(timeout, self.on_timeout, None)
+        self.dialog = PorteusDialog(primary_text, secondary_text, dtype, timeout)
+        response = self.dialog.run()
+        self.dialog.destroy()
+
+    def on_timeout(self, *args, **kwargs):
+        if self.dialog is not None:
+            self.dialog.destroy()
+            # ~ exit(0)
+
+class PorteusDialog(Gtk.Dialog):
+    def __init__(self, primary_text, secondary_text, dtype, timeout):
+        Gtk.Dialog.__init__(self, "Porteus Message", None, 0)
+
+        self.set_default_size(250, 100)
+
+        icon_name = "dialog-information"
+        if timeout == 0:
+            self.add_button(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+            self.set_default_size(250, 120)
+
+        if dtype == Gtk.MessageType.QUESTION:
+            self.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+            icon_name = "dialog-question"
+        elif dtype == Gtk.MessageType.ERROR:
+            icon_name = "dialog-error"
+        elif dtype == Gtk.MessageType.WARNING:
+            icon_name = "dialog-warning"
+
+        self.vb = self.get_content_area()
+
+        self.hb = Gtk.Box(spacing = 5, homogeneous = False)
+
+        self.grid = Gtk.Grid(row_spacing = 5, column_spacing = 10)
+        self.img =  Gtk.Image.new_from_icon_name(icon_name, Gtk.IconSize.DIALOG)
+        self.grid.attach(self.img, 0, 0, 1, 2)
+        self.l_header = Gtk.Label(xalign = 0.0)
+        self.l_header.set_markup("<span size=\"medium\" weight=\"bold\">" + primary_text + "</span>")
+        self.grid.attach(self.l_header, 1, 0, 1, 1)
+        self.l_txt = Gtk.Label(xalign = 0.0, label = secondary_text)
+
+        self.grid.attach(self.l_txt, 1, 1, 1, 1)
+        self.hb.pack_start(self.grid, False, False, 10)
+
+        self.vb.pack_start(self.hb, False, False, 15)
+
+        self.show_all()
+
+class ProgressDialog(Gtk.Window):
+    def __init__(self, header_text, text):
+        Gtk.Window.__init__(self, type = 0, decorated = 1, skip_taskbar_hint = 1, window_position = 1, border_width = 20, default_width = 250)
+
+        self.set_border_width(20)
+        self.progress = 0.0
+
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        self.add(vbox)
+
+        self.header = Gtk.Label()
+        self.header.set_markup("<span size=\"medium\" weight=\"bold\">" + header_text + "</span>")
+        vbox.pack_start(self.header, True, True, 0)
+
+        timeout_id = GLib.timeout_add(50, self.on_timeout, None)
+        self.progressbar = Gtk.ProgressBar()
+        self.progressbar.set_text(text)
+        self.progressbar.set_show_text("show_text")
+        vbox.pack_start(self.progressbar, True, True, 0)
+
+        self.show_all()
+
+    def on_timeout(self, user_data):
+        self.progressbar.pulse()
+        return True
+
+win = GtkChanges()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()

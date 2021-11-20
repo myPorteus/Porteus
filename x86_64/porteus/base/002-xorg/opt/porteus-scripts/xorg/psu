@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# Script to find the graphical su client and use it.
+if [ "`whoami`" = "root" ]; then
+	"$@"
+	exit
+fi
+
+suapps="gksu kdesu psu"
+ENVARS="DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY PATH=/usr/local/sbin:/usr/local/bin:/sbin:/usr/sbin:/bin:/usr/bin PORTDIR=$PORTDIR BOOTDEV=$BOOTDEV XDG_DESKTOP_SESSION=$XDG_DESKTOP_SESSION"
+
+for a in $suapps; do
+    gsu=`command -v $a`
+    [ "$gsu" ] && break
+done
+
+[ -z "$gsu" ] && { xmessage "No graphical su client found"; exit; }
+
+suclient=${gsu##*/}
+case $suclient in
+    gksu)
+    gksu --message "Please enter the root password." "$@"
+    exit
+    ;;
+    kdesu)
+    kdesu -c "$@"
+    exit
+    ;;
+    psu)
+	if [ `pidof lxpolkit` ] || [ `pidof polkit-gnome-authentication-agent-1` ] || [ `pidof polkit-mate-authentication-agent-1` ]; then
+		pkexec env $ENVARS "$@"
+	elif [ `pidof lxqt-policykit-agent` ]; then
+		pkexec env QT_QPA_PLATFORMTHEME=lxqt $ENVARS "$@"
+	else
+		gtk-sudo "$@"
+	fi
+    exit
+    ;;
+esac

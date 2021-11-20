@@ -1,0 +1,67 @@
+PACKAGE NAME:     libjpeg-turbo-2.1.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     392K
+UNCOMPRESSED PACKAGE SIZE:     2.3M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/002_xorg/libjpeg-turbo-2.1.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+libjpeg-turbo: libjpeg-turbo (high-speed version of libjpeg)
+libjpeg-turbo:
+libjpeg-turbo: libjpeg-turbo is a high-speed version of libjpeg for x86 and x86-64
+libjpeg-turbo: processors which uses SIMD instructions to accelerate baseline JPEG
+libjpeg-turbo: compression and decompression. libjpeg-turbo is generally 2-4x as
+libjpeg-turbo: fast as the unmodified version of libjpeg, all else being equal.
+libjpeg-turbo:
+libjpeg-turbo: Homepage: https://libjpeg-turbo.org
+libjpeg-turbo:
+libjpeg-turbo:
+libjpeg-turbo:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/cjpeg
+usr/bin/djpeg
+usr/bin/jpegtran
+usr/bin/rdjpgcom
+usr/bin/tjbench
+usr/bin/wrjpgcom
+usr/doc/
+usr/doc/libjpeg-turbo-2.1.0/
+usr/doc/libjpeg-turbo-2.1.0/BUILDING.md
+usr/doc/libjpeg-turbo-2.1.0/ChangeLog.md
+usr/doc/libjpeg-turbo-2.1.0/LICENSE.md
+usr/doc/libjpeg-turbo-2.1.0/README.ijg
+usr/doc/libjpeg-turbo-2.1.0/README.md
+usr/doc/libjpeg-turbo-2.1.0/example.txt
+usr/doc/libjpeg-turbo-2.1.0/libjpeg.txt
+usr/doc/libjpeg-turbo-2.1.0/structure.txt
+usr/doc/libjpeg-turbo-2.1.0/tjexample.c
+usr/doc/libjpeg-turbo-2.1.0/usage.txt
+usr/doc/libjpeg-turbo-2.1.0/wizard.txt
+usr/include/
+usr/include/jconfig.h
+usr/include/jerror.h
+usr/include/jmorecfg.h
+usr/include/jpeglib.h
+usr/include/turbojpeg.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/libjpeg-turbo/
+usr/lib64/cmake/libjpeg-turbo/libjpeg-turboConfig.cmake
+usr/lib64/cmake/libjpeg-turbo/libjpeg-turboConfigVersion.cmake
+usr/lib64/cmake/libjpeg-turbo/libjpeg-turboTargets-release.cmake
+usr/lib64/cmake/libjpeg-turbo/libjpeg-turboTargets.cmake
+usr/lib64/libjpeg.so.62.3.0
+usr/lib64/libturbojpeg.so.0.2.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libjpeg.pc
+usr/lib64/pkgconfig/libturbojpeg.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/cjpeg.1.gz
+usr/man/man1/djpeg.1.gz
+usr/man/man1/jpegtran.1.gz
+usr/man/man1/rdjpgcom.1.gz
+usr/man/man1/wrjpgcom.1.gz

@@ -1,0 +1,62 @@
+#!/bin/bash
+# Save live session ...
+# Script takes action only when 'changes=EXIT' cheatcode is used.
+# Author: fanthom <fanthom@porteus.org>
+# Modifications proposed by: abelM -- forum.porteus.org
+
+# Check if 'changes=EXIT' cheatcode is active:
+test -f /mnt/live/tmp/changes-exit || { echo "'changes=EXIT:' cheatcode is not active - exiting..."; exit; }
+
+## Variables:
+DEST="$(cat /mnt/live/tmp/changes-exit)"; NAME="$(basename $DEST)"
+MNAME=/mnt/live/memory/images/changes   ; INAME=/mnt/live/memory/images
+CHNEXIT_CONF=/etc/changes-exit.conf     ; EXCL=/tmp/save.excl.tmp
+SFILES=/tmp/save.sfiles.tmp             ; UPDATE=/tmp/save.update.tmp
+
+# Fix folder names and make `egrep' interpret wildcards
+fixdir() { sed -e 's_\._\\._g' -e 's_?_._g' -e 's_*_.*_g' -e 's@..@^@'; }
+
+# Fix whiteout names so `egrep' doesn't interpret special characters as regex
+fixwh() { sed -e 's_\._\\._g' -e 's_?_\\?_g' -e 's_+_\\+_g' -e '_*_\\*_g' -e 's_\$_\\$_g' -e 's_\[_\\[_g' -e 's_(_\\(_g'  -e 's_\&_\\&_g' -e 's@^@^@'; }
+
+# Folders to save: argument for `find'
+FOLDERS="$(grep ^/ $CHNEXIT_CONF | sed s/.//)"
+
+# Folders to exclude: argument for `egrep'
+grep ^!/ $CHNEXIT_CONF | fixdir > $EXCL 
+
+## Save session:
+echo "syncing what's left in buffers"
+sync
+
+# Remount aufs with 'udba=notify' flag: 
+mount -o remount,udba=notify / 
+echo "saving changes to $DEST - this may take a while..."
+cd /mnt/live/memory/changes
+
+# Handle filenames with spaces.
+IFS="
+"
+
+# Remove deleted files and non matching whiteouts
+for y in $(find $FOLDERS -name ".wh.*"); do 
+  f="$(echo $y | sed 's@\.wh\.@@g')" 
+  test -e "$MNAME/$f" && rm -rf "$MNAME/$f"; 
+  test -e "$INAME/"*"/$f" || { echo "$y" | fixwh >> $EXCL; test -e "$MNAME/$y" && rm -f "$MNAME/$y"; }
+done
+
+# Copy new and modified files -- skip excluded whiteouts and folders
+{ test -s "$EXCL" && find $FOLDERS -not -type d | egrep -vf $EXCL || find $FOLDERS -not -type d; } > $SFILES
+cp -uafv --parents $(cat $SFILES) $MNAME > $UPDATE
+
+# Remove conflicting whiteouts 
+for y in $(find $MNAME -name ".wh.*"); do 
+	f="$(echo $y | sed -e 's^$MNAME^^g' -e 's^\.wh\.^^g')"; 
+	test -e "$f" && rm "$y"; 
+done
+
+# Reset IFS to default 
+unset IFS
+# Remount aufs with 'udba=none' flag: 
+mount -o remount,udba=none / 
+echo "session saved"

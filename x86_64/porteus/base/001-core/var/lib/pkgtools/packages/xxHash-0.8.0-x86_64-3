@@ -1,0 +1,40 @@
+PACKAGE NAME:     xxHash-0.8.0-x86_64-3
+COMPRESSED PACKAGE SIZE:     76K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/BUILD3/build/../x86_64/pkg/001/xxHash-0.8.0-x86_64-3.txz
+PACKAGE DESCRIPTION:
+xxHash: xxHash (Extremely fast Hash algorithm)
+xxHash:
+xxHash: xxHash is an Extremely fast Hash algorithm, running at RAM speed
+xxHash: limits. It successfully completes the [SMHasher]
+xxHash: (https://code.google.com/p/smhasher/wiki/SMHasher) test suite which
+xxHash: evaluates collision, dispersion and randomness qualities of hash
+xxHash: functions. Code is highly portable, and hashes are identical on all
+xxHash: platforms (little / big endian).
+xxHash:
+xxHash: Homepage: https://github.com/Cyan4973/xxHash
+xxHash:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/xxhsum
+usr/doc/
+usr/doc/xxHash-0.8.0/
+usr/doc/xxHash-0.8.0/CHANGELOG
+usr/doc/xxHash-0.8.0/LICENSE
+usr/doc/xxHash-0.8.0/README.md
+usr/doc/xxHash-0.8.0/xxhash_spec.md
+usr/include/
+usr/include/xxh3.h
+usr/include/xxhash.h
+usr/lib64/
+usr/lib64/libxxhash.so.0.8.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libxxhash.pc
+usr/man/
+usr/man/man1/
+usr/man/man1/xxhsum.1.gz
