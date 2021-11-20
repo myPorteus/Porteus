@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.mediaframe</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Media Frame</name>
+    <name xml:lang="ca@valencia">Marc multimèdia</name>
+    <name xml:lang="ca">Marc multimèdia</name>
+    <name xml:lang="cs">Rámec médií</name>
+    <name xml:lang="da">Medieramme</name>
+    <name xml:lang="de">Medien-Rahmen</name>
+    <name xml:lang="el">Πλαίσιο Μέσου</name>
+    <name xml:lang="en_GB">Media Frame</name>
+    <name xml:lang="es">Marco multimedia</name>
+    <name xml:lang="eu">Multimedia markoa</name>
+    <name xml:lang="fi">Mediakehys</name>
+    <name xml:lang="fr">Cadre du lecteur de média</name>
+    <name xml:lang="gl">Marco de contido</name>
+    <name xml:lang="hu">Médiakeret</name>
+    <name xml:lang="id">Media Frame</name>
+    <name xml:lang="it">Cornice media</name>
+    <name xml:lang="ko">미디어 프레임</name>
+    <name xml:lang="lt">Medijos rėmelis</name>
+    <name xml:lang="nl">Mediaframe</name>
+    <name xml:lang="nn">Medieramme</name>
+    <name xml:lang="pl">Ramka multimedialna</name>
+    <name xml:lang="pt">Moldura Multimédia</name>
+    <name xml:lang="pt_BR">Quadro multimídia</name>
+    <name xml:lang="ru">Фоторамка</name>
+    <name xml:lang="sk">Rámik médií</name>
+    <name xml:lang="sv">Mediaram</name>
+    <name xml:lang="uk">Медіарамка</name>
+    <name xml:lang="x-test">xxMedia Framexx</name>
+    <name xml:lang="zh_CN">媒体相框</name>
+    <name xml:lang="zh_TW">媒體框架</name>
+    <summary>(Picture) Frame</summary>
+    <summary xml:lang="ca@valencia">Marc (fotografies)</summary>
+    <summary xml:lang="ca">Marc (fotografies)</summary>
+    <summary xml:lang="cs">Rámeček (obrázku)</summary>
+    <summary xml:lang="da">(Billed)ramme</summary>
+    <summary xml:lang="de">(Bilder)-Rahmen</summary>
+    <summary xml:lang="el">Πλαίσιο (εικόνας)</summary>
+    <summary xml:lang="en_GB">(Picture) Frame</summary>
+    <summary xml:lang="es">Marco (de retrato)</summary>
+    <summary xml:lang="et">(Pildi)raam</summary>
+    <summary xml:lang="eu">(Irudi) markoa</summary>
+    <summary xml:lang="fi">Kehys kuville ja muulle</summary>
+    <summary xml:lang="fr">Cadre de photos</summary>
+    <summary xml:lang="gl">Portarretratos</summary>
+    <summary xml:lang="he">מסגרת (תמונה)</summary>
+    <summary xml:lang="hu">(Kép)keret</summary>
+    <summary xml:lang="id">Bingkai (Gambar)</summary>
+    <summary xml:lang="it">(Immagine) Cornice</summary>
+    <summary xml:lang="ko">(사진) 프레임</summary>
+    <summary xml:lang="lt">Paveiksliukų rėmelis</summary>
+    <summary xml:lang="nl">(Afbeelding) frame</summary>
+    <summary xml:lang="nn">Biletramme</summary>
+    <summary xml:lang="pl">(Zdjęcie) Ramka</summary>
+    <summary xml:lang="pt">Moldura (de Imagens)</summary>
+    <summary xml:lang="pt_BR">Quadro (Imagens)</summary>
+    <summary xml:lang="ru">Слайд-шоу из любимых изображений</summary>
+    <summary xml:lang="sk">Snímka obrázku</summary>
+    <summary xml:lang="sl">Okvir s sliko</summary>
+    <summary xml:lang="sr@ijekavian">Рам за слике</summary>
+    <summary xml:lang="sr@ijekavianlatin">Ram za slike</summary>
+    <summary xml:lang="sr@latin">Ram za slike</summary>
+    <summary xml:lang="sr">Рам за слике</summary>
+    <summary xml:lang="sv">Bildram</summary>
+    <summary xml:lang="tr">(Resim) Karesi</summary>
+    <summary xml:lang="uk">(Картинна) рамка</summary>
+    <summary xml:lang="x-test">xx(Picture) Framexx</summary>
+    <summary xml:lang="zh_CN">(图片) 像框</summary>
+    <summary xml:lang="zh_TW">（圖片）框架</summary>
+    <url type="homepage">http://plasma.kde.org/</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.mediaframe</url>
+    <developer_name>Lars Pontoppidan &lt;dev.larpon@gmail.com&gt;</developer_name>
+    <icon type="stock">image-x-generic</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

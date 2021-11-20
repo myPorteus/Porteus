@@ -1,0 +1,26 @@
+#!/usr/bin/python3.7
+
+from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
+from __future__ import unicode_literals
+
+from gi.repository import Gio
+from gi.repository import GLib
+import os
+import sys
+
+from blueman.Functions import set_proc_title
+
+def on_file_changed(monitor, file, other_file, event_type):
+    if event_type == Gio.FileMonitorEvent.DELETED:
+        loop.quit()
+
+mon = Gio.File.new_for_path(sys.argv[1]).monitor_file(Gio.FileMonitorFlags.NONE)
+mon.connect('changed', on_file_changed)
+
+fd = os.open(sys.argv[1], os.O_RDONLY | os.O_NONBLOCK)
+
+set_proc_title()
+loop = GLib.MainLoop()
+loop.run()

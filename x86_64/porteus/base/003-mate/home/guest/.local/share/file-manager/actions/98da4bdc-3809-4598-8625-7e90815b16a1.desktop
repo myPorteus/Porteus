@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Action
+Icon[en_US]=slackware
+Icon[en]=slackware
+Icon[C]=slackware
+Tooltip[en_US]=Installpkg slackware package
+Tooltip[en]=Installpkg slackware package
+Tooltip[ru]=Установить пакет Slackware
+Tooltip[C]=Installpkg slackware package
+ToolbarLabel[en_US]=Install txz/tgz
+ToolbarLabel[en]=Install txz/tgz
+ToolbarLabel[ru]=Установить пакет Slackware
+ToolbarLabel[C]=Install txz/tgz
+Name[en_US]=Install txz/tgz
+Name[en]=Install txz/tgz
+Name[ru]=Установить пакет Slackware
+Name[C]=Install txz/tgz
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.txz;*.tgz;
+Exec=/opt/porteus-scripts/context-menu/install-slack %f
+Name[en_US]=Default profile
+Name[en]=Default profile
+Name[C]=Default profile

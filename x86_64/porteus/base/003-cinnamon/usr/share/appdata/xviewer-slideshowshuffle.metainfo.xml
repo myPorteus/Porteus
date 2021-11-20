@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>xviewer-slideshowshuffle</id>
+  <extends>xviewer.desktop</extends>
+  <name>Slideshow Shuffle</name>
+  <name xml:lang="ar">خلط عرض الشرائح</name>
+  <name xml:lang="as">স্লাইডশো মিহলোৱা</name>
+  <name xml:lang="bg">Прожекция</name>
+  <name xml:lang="bn_IN">অনির্দিষ্ট ক্রমে স্লাইড-শো</name>
+  <name xml:lang="ca">Projecció de diapositives mesclades</name>
+  <name xml:lang="ca@valencia">Presentació amb diapositives mesclades</name>
+  <name xml:lang="cs">Náhodné promítání snímků</name>
+  <name xml:lang="da">Bland diasshow</name>
+  <name xml:lang="de">Diaschau-Mischer</name>
+  <name xml:lang="el">Ανάμιξη για παρουσίαση</name>
+  <name xml:lang="en_GB">Slideshow Shuffle</name>
+  <name xml:lang="es">Diapositivas aleatorias</name>
+  <name xml:lang="eu">Ausazko diapositiba-aurkezpena</name>
+  <name xml:lang="fi">Diaesitys-sekoitus</name>
+  <name xml:lang="fr">Diaporama aléatoire</name>
+  <name xml:lang="gl">Presentación barallada</name>
+  <name xml:lang="gu">તકતીપૂર્વરદર્શનની અદલાબદલી કરો</name>
+  <name xml:lang="he">ערבוב מצגת התמונות</name>
+  <name xml:lang="hr">Naizmjenična prezentacija</name>
+  <name xml:lang="hu">Diavetítés véletlenszerűen</name>
+  <name xml:lang="id">Acak Pertunjukan Slide</name>
+  <name xml:lang="it">Mischia diapositive</name>
+  <name xml:lang="ja">スライドショーシャッフル</name>
+  <name xml:lang="kn">ಜಾರುಫಲಕ ಪ್ರದರ್ಶನದ ಕಲೆಸುವಿಕೆ</name>
+  <name xml:lang="ko">슬라이드 쇼 임의 모드</name>
+  <name xml:lang="lt">Skaidrių maišymas</name>
+  <name xml:lang="lv">Slaidrādes maisītājs</name>
+  <name xml:lang="ml">സ്ലൈഡ്ഷോ ഷഫിള്‍ ചെയ്യുക</name>
+  <name xml:lang="mr">Slideshow Shuffle</name>
+  <name xml:lang="or">ସ୍ଲାଇଡ ଦୃଶ୍ୟ ମିଶ୍ରଣ</name>
+  <name xml:lang="pa">ਰਲਵਾਂ ਸਲਾਈਡ-ਸ਼ੋ</name>
+  <name xml:lang="pl">Tryb losowy pokazu slajdów</name>
+  <name xml:lang="pt">Baralhar Apresentação</name>
+  <name xml:lang="pt_BR">Modo de apresentação</name>
+  <name xml:lang="ro">Succesiune automată a imaginilor în ordine aleatoare</name>
+  <name xml:lang="ru">Случайное слайд-шоу</name>
+  <name xml:lang="sk">Premiešanie prezentácie</name>
+  <name xml:lang="sl">Premešaj slike med predstavitvijo</name>
+  <name xml:lang="sr">Мешање покретног приказа</name>
+  <name xml:lang="sr@latin">Mešanje pokretnog prikaza</name>
+  <name xml:lang="sv">Blandat bildspel</name>
+  <name xml:lang="ta">ஸ்லைடு காட்சி கலைத்தல்</name>
+  <name xml:lang="te">కలగలిపిన పలకప్రదర్శన</name>
+  <name xml:lang="uk">Перемішати слайдшоу</name>
+  <name xml:lang="zh_CN">幻灯片随机播放</name>
+  <summary>Shuffles the photos in slideshow mode</summary>
+  <summary xml:lang="cs">Promíchání fotografií v režimu promítání</summary>
+  <summary xml:lang="es">Mezcla las fotos en el modo diapositiva</summary>
+  <summary xml:lang="hr">Naizmjenično prikazuje  fotografije u prezentacijskom načinu</summary>
+  <summary xml:lang="hu">Megkeveri a fényképeket diavetítés módban</summary>
+  <summary xml:lang="id">Acak foto pada moda pertunjukan salindia</summary>
+  <summary xml:lang="ko">슬라이드쇼 모드에서 임의 순서로 사진 보기</summary>
+  <summary xml:lang="pl">Losuje zdjęcia w trybie pokazu slajdów</summary>
+  <url type="homepage">https://github.com/linuxmint/xviewer-plugins</url>
+  <url type="bugtracker">https://github.com/linuxmint/xviewer-plugins/issues</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <updatecontact>i.gnatenko.brain@gmail.com</updatecontact>
+</component>

@@ -1,0 +1,34 @@
+PACKAGE NAME:     libxdg-basedir-1.2.0-x86_64-1_slonly
+COMPRESSED PACKAGE SIZE:     12K
+UNCOMPRESSED PACKAGE SIZE:     50K
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/Porteus5.0/SpaceDE/BUILD-gtk3/PKG64/libxdg-basedir-1.2.0-x86_64-1_slonly.txz
+PACKAGE DESCRIPTION:
+libxdg-basedir: libxdg-basedir (XDG Base Directory implementation)
+libxdg-basedir:
+libxdg-basedir: The XDG Base Directory Specification defines where should user files
+libxdg-basedir: be looked for by defining one or more base directories relative in
+libxdg-basedir: with they should be located.
+libxdg-basedir:
+libxdg-basedir: This library implements functions to list the directories according
+libxdg-basedir: to the specification and provides a few higher-level functions.
+libxdg-basedir:
+libxdg-basedir: homepage: http://www.ohloh.net/p/libxdg-basedir
+libxdg-basedir:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libxdg-basedir-1.2.0/
+usr/doc/libxdg-basedir-1.2.0/COPYING
+usr/doc/libxdg-basedir-1.2.0/libxdg-basedir.SlackBuild
+usr/include/
+usr/include/basedir.h
+usr/include/basedir_fs.h
+usr/lib64/
+usr/lib64/libxdg-basedir.la
+usr/lib64/libxdg-basedir.so.1.2.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libxdg-basedir.pc

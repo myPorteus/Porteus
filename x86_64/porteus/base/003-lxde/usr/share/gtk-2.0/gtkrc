@@ -1,0 +1,3 @@
+gtk-theme-name="GTK+"
+gtk-icon-theme-name="Adwaita"
+gtk-fallback-icon-theme = "Tango"

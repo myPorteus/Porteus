@@ -1,0 +1,38 @@
+PACKAGE NAME:     libgee-0.20.2-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     284K
+UNCOMPRESSED PACKAGE SIZE:     1.8M
+PACKAGE LOCATION: /mnt/sda3/build/repos/mcbs/build/../x86_64/pkg/003_cinnamon/libgee-0.20.2-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+libgee: libgee (GObject collection library)
+libgee:
+libgee: libgee is a utility library providing GObject-based interfaces and
+libgee: classes for commonly used data structures.
+libgee:
+libgee: 
+libgee:
+libgee:
+libgee:
+libgee: https://download.gnome.org/sources/libgee/
+libgee:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/gee-0.8/
+usr/include/gee-0.8/gee.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Gee-0.8.typelib
+usr/lib64/libgee-0.8.la
+usr/lib64/libgee-0.8.so.2.6.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/gee-0.8.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Gee-0.8.gir
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/gee-0.8.vapi

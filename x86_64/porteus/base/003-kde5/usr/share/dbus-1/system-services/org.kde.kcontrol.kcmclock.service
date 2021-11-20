@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.kcontrol.kcmclock
+Exec=/usr/lib64/libexec/kauth/kcmdatetimehelper
+User=root

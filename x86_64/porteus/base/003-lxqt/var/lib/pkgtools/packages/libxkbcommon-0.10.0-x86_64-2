@@ -1,0 +1,108 @@
+PACKAGE NAME:     libxkbcommon-0.10.0-x86_64-2
+COMPRESSED PACKAGE SIZE:     248K
+UNCOMPRESSED PACKAGE SIZE:     1.5M
+PACKAGE LOCATION: libxkbcommon-0.10.0-x86_64-2.txz
+PACKAGE DESCRIPTION:
+libxkbcommon: libxkbcommon (keyboard description library)
+libxkbcommon:
+libxkbcommon: xkbcommon is a library to handle keyboard descriptions, including
+libxkbcommon: loading them from disk, parsing them and handling their state. It's
+libxkbcommon: mainly meant for client toolkits, window systems, and other system
+libxkbcommon: applications; currently that includes Wayland, kmscon, GTK+, Qt,
+libxkbcommon: Clutter, and more. It is also used by some XCB applications for proper
+libxkbcommon: keyboard support.
+libxkbcommon:
+libxkbcommon: Home page: http://xkbcommon.org/
+libxkbcommon:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libxkbcommon-0.10.0/
+usr/doc/libxkbcommon-0.10.0/LICENSE
+usr/doc/libxkbcommon-0.10.0/NEWS
+usr/doc/libxkbcommon-0.10.0/PACKAGING
+usr/doc/libxkbcommon-0.10.0/README.md
+usr/doc/libxkbcommon-0.10.0/html/
+usr/doc/libxkbcommon-0.10.0/html/annotated.html
+usr/doc/libxkbcommon-0.10.0/html/bc_s.png
+usr/doc/libxkbcommon-0.10.0/html/bdwn.png
+usr/doc/libxkbcommon-0.10.0/html/classes.html
+usr/doc/libxkbcommon-0.10.0/html/closed.png
+usr/doc/libxkbcommon-0.10.0/html/deprecated.html
+usr/doc/libxkbcommon-0.10.0/html/dir_34c01ee884f305be60d2204fef47a48f.html
+usr/doc/libxkbcommon-0.10.0/html/dir_e68e8157741866f444e17edd764ebbae.html
+usr/doc/libxkbcommon-0.10.0/html/doc.png
+usr/doc/libxkbcommon-0.10.0/html/doxygen-extra.css
+usr/doc/libxkbcommon-0.10.0/html/doxygen.css
+usr/doc/libxkbcommon-0.10.0/html/doxygen.png
+usr/doc/libxkbcommon-0.10.0/html/dynsections.js
+usr/doc/libxkbcommon-0.10.0/html/files.html
+usr/doc/libxkbcommon-0.10.0/html/folderclosed.png
+usr/doc/libxkbcommon-0.10.0/html/folderopen.png
+usr/doc/libxkbcommon-0.10.0/html/functions.html
+usr/doc/libxkbcommon-0.10.0/html/functions_func.html
+usr/doc/libxkbcommon-0.10.0/html/functions_type.html
+usr/doc/libxkbcommon-0.10.0/html/functions_vars.html
+usr/doc/libxkbcommon-0.10.0/html/globals.html
+usr/doc/libxkbcommon-0.10.0/html/globals_defs.html
+usr/doc/libxkbcommon-0.10.0/html/globals_enum.html
+usr/doc/libxkbcommon-0.10.0/html/globals_eval.html
+usr/doc/libxkbcommon-0.10.0/html/globals_func.html
+usr/doc/libxkbcommon-0.10.0/html/globals_type.html
+usr/doc/libxkbcommon-0.10.0/html/group__components.html
+usr/doc/libxkbcommon-0.10.0/html/group__compose.html
+usr/doc/libxkbcommon-0.10.0/html/group__context.html
+usr/doc/libxkbcommon-0.10.0/html/group__include-path.html
+usr/doc/libxkbcommon-0.10.0/html/group__keymap.html
+usr/doc/libxkbcommon-0.10.0/html/group__keysyms.html
+usr/doc/libxkbcommon-0.10.0/html/group__logging.html
+usr/doc/libxkbcommon-0.10.0/html/group__state.html
+usr/doc/libxkbcommon-0.10.0/html/group__x11.html
+usr/doc/libxkbcommon-0.10.0/html/index.html
+usr/doc/libxkbcommon-0.10.0/html/jquery.js
+usr/doc/libxkbcommon-0.10.0/html/md_doc_compat.html
+usr/doc/libxkbcommon-0.10.0/html/md_doc_quick-guide.html
+usr/doc/libxkbcommon-0.10.0/html/menu.js
+usr/doc/libxkbcommon-0.10.0/html/menudata.js
+usr/doc/libxkbcommon-0.10.0/html/modules.html
+usr/doc/libxkbcommon-0.10.0/html/nav_f.png
+usr/doc/libxkbcommon-0.10.0/html/nav_g.png
+usr/doc/libxkbcommon-0.10.0/html/nav_h.png
+usr/doc/libxkbcommon-0.10.0/html/open.png
+usr/doc/libxkbcommon-0.10.0/html/pages.html
+usr/doc/libxkbcommon-0.10.0/html/splitbar.png
+usr/doc/libxkbcommon-0.10.0/html/structxkb__compose__state.html
+usr/doc/libxkbcommon-0.10.0/html/structxkb__compose__table.html
+usr/doc/libxkbcommon-0.10.0/html/structxkb__context.html
+usr/doc/libxkbcommon-0.10.0/html/structxkb__keymap.html
+usr/doc/libxkbcommon-0.10.0/html/structxkb__rule__names.html
+usr/doc/libxkbcommon-0.10.0/html/structxkb__state.html
+usr/doc/libxkbcommon-0.10.0/html/sync_off.png
+usr/doc/libxkbcommon-0.10.0/html/sync_on.png
+usr/doc/libxkbcommon-0.10.0/html/tab_a.png
+usr/doc/libxkbcommon-0.10.0/html/tab_b.png
+usr/doc/libxkbcommon-0.10.0/html/tab_h.png
+usr/doc/libxkbcommon-0.10.0/html/tab_s.png
+usr/doc/libxkbcommon-0.10.0/html/tabs.css
+usr/doc/libxkbcommon-0.10.0/html/xkbcommon-compose_8h.html
+usr/doc/libxkbcommon-0.10.0/html/xkbcommon-names_8h.html
+usr/doc/libxkbcommon-0.10.0/html/xkbcommon-x11_8h.html
+usr/doc/libxkbcommon-0.10.0/html/xkbcommon_8h.html
+usr/include/
+usr/include/xkbcommon/
+usr/include/xkbcommon/xkbcommon-compat.h
+usr/include/xkbcommon/xkbcommon-compose.h
+usr/include/xkbcommon/xkbcommon-keysyms.h
+usr/include/xkbcommon/xkbcommon-names.h
+usr/include/xkbcommon/xkbcommon-x11.h
+usr/include/xkbcommon/xkbcommon.h
+usr/lib64/
+usr/lib64/libxkbcommon-x11.so.0.0.0
+usr/lib64/libxkbcommon.so.0.0.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xkbcommon-x11.pc
+usr/lib64/pkgconfig/xkbcommon.pc

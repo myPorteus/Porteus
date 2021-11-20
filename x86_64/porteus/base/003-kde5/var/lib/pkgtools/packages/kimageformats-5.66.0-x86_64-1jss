@@ -1,0 +1,54 @@
+PACKAGE NAME:     kimageformats-5.66.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     80K
+UNCOMPRESSED PACKAGE SIZE:     430K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/kimageformats-5.66.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kimageformats: kimageformats (a kde5 framework)  
+kimageformats:  
+kimageformats: kimageformats is a kde5 framework  
+kimageformats: 
+kimageformats: 
+kimageformats: 
+kimageformats: 
+kimageformats: 
+kimageformats: 
+kimageformats: 
+kimageformats: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/imageformats/
+usr/lib64/qt5/plugins/imageformats/kimg_eps.so
+usr/lib64/qt5/plugins/imageformats/kimg_exr.so
+usr/lib64/qt5/plugins/imageformats/kimg_hdr.so
+usr/lib64/qt5/plugins/imageformats/kimg_kra.so
+usr/lib64/qt5/plugins/imageformats/kimg_ora.so
+usr/lib64/qt5/plugins/imageformats/kimg_pcx.so
+usr/lib64/qt5/plugins/imageformats/kimg_pic.so
+usr/lib64/qt5/plugins/imageformats/kimg_psd.so
+usr/lib64/qt5/plugins/imageformats/kimg_ras.so
+usr/lib64/qt5/plugins/imageformats/kimg_rgb.so
+usr/lib64/qt5/plugins/imageformats/kimg_tga.so
+usr/lib64/qt5/plugins/imageformats/kimg_xcf.so
+usr/share/
+usr/share/kservices5/
+usr/share/kservices5/qimageioplugins/
+usr/share/kservices5/qimageioplugins/dds.desktop
+usr/share/kservices5/qimageioplugins/eps.desktop
+usr/share/kservices5/qimageioplugins/exr.desktop
+usr/share/kservices5/qimageioplugins/hdr.desktop
+usr/share/kservices5/qimageioplugins/jp2.desktop
+usr/share/kservices5/qimageioplugins/kra.desktop
+usr/share/kservices5/qimageioplugins/ora.desktop
+usr/share/kservices5/qimageioplugins/pcx.desktop
+usr/share/kservices5/qimageioplugins/pic.desktop
+usr/share/kservices5/qimageioplugins/psd.desktop
+usr/share/kservices5/qimageioplugins/ras.desktop
+usr/share/kservices5/qimageioplugins/rgb.desktop
+usr/share/kservices5/qimageioplugins/tga.desktop
+usr/share/kservices5/qimageioplugins/xcf.desktop

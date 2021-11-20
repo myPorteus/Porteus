@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libspectre.so.1 )
+( cd usr/lib64 ; ln -sf libspectre.so.1.1.8 libspectre.so.1 )
+( cd usr/lib64 ; rm -rf libspectre.so )
+( cd usr/lib64 ; ln -sf libspectre.so.1.1.8 libspectre.so )

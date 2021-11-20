@@ -1,0 +1,4 @@
+#!/bin/sh
+PATH=/usr/lib64/aspell:$PATH
+export PATH
+exec $@

@@ -1,0 +1,58 @@
+PACKAGE NAME:     qtserialport-5.14.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/qtserialport-5.14.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+qtserialport: qtserialport (Serialport submodule for Qt5)
+qtserialport:
+qtserialport: Qt5 serialport submodule.
+qtserialport: 
+qtserialport:
+qtserialport: Homepage: qt.io
+qtserialport:
+qtserialport:
+qtserialport:
+qtserialport:
+qtserialport:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/qt5/
+usr/include/qt5/QtSerialPort/
+usr/include/qt5/QtSerialPort/5.14.0/
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/qserialport_p.h
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/qserialportinfo_p.h
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/qtntdll_p.h
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/qtserialport-config_p.h
+usr/include/qt5/QtSerialPort/5.14.0/QtSerialPort/private/qtudev_p.h
+usr/include/qt5/QtSerialPort/QSerialPort
+usr/include/qt5/QtSerialPort/QSerialPortInfo
+usr/include/qt5/QtSerialPort/QtSerialPort
+usr/include/qt5/QtSerialPort/QtSerialPortDepends
+usr/include/qt5/QtSerialPort/QtSerialPortVersion
+usr/include/qt5/QtSerialPort/qserialport.h
+usr/include/qt5/QtSerialPort/qserialportglobal.h
+usr/include/qt5/QtSerialPort/qserialportinfo.h
+usr/include/qt5/QtSerialPort/qtserialport-config.h
+usr/include/qt5/QtSerialPort/qtserialportversion.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/Qt5SerialPort/
+usr/lib64/cmake/Qt5SerialPort/Qt5SerialPortConfig.cmake
+usr/lib64/cmake/Qt5SerialPort/Qt5SerialPortConfigVersion.cmake
+usr/lib64/libQt5SerialPort.la
+usr/lib64/libQt5SerialPort.prl
+usr/lib64/libQt5SerialPort.so.5.14.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/Qt5SerialPort.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_lib_serialport.pri
+usr/lib64/qt5/mkspecs/modules/qt_lib_serialport_private.pri

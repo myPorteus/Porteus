@@ -1,0 +1,34 @@
+PACKAGE NAME:     cinnamon-menus-4.4.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     48K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: /mnt/sda3/build/repos/mcbs/build/../x86_64/pkg/003_cinnamon/cinnamon-menus-4.4.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+cinnamon-menus: cinnamon-menus (the cinnamon-menu library)
+cinnamon-menus:
+cinnamon-menus: cinnamon-menus contains the libgnome-menu library, the layout 
+cinnamon-menus: configuration files for the GNOME menu, as well as a simple menu 
+cinnamon-menus: editor.
+cinnamon-menus:
+cinnamon-menus: 
+cinnamon-menus:
+cinnamon-menus:
+cinnamon-menus: https://github.com/linuxmint/cinnamon-menus
+cinnamon-menus:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/cinnamon-menus-3.0/
+usr/include/cinnamon-menus-3.0/gmenu-tree.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/CMenu-3.0.typelib
+usr/lib64/libcinnamon-menu-3.so.0.0.1
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libcinnamon-menu-3.0.pc
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/CMenu-3.0.gir

@@ -1,0 +1,50 @@
+PACKAGE NAME:     libconfig-1.7.2-x86_64-2cf
+COMPRESSED PACKAGE SIZE:     96K
+UNCOMPRESSED PACKAGE SIZE:     340K
+PACKAGE LOCATION: libconfig-1.7.2-x86_64-2cf.txz
+PACKAGE DESCRIPTION:
+libconfig: libconfig (C/C++ Configuration File Library)
+libconfig:
+libconfig: Libconfig is a simple library for processing structured configuration
+libconfig: files, like this one: test.cfg.
+libconfig: This file format is more compact and more readable than XML.
+libconfig: And unlike XML, it is type-aware, so it is not necessary to do string
+libconfig: parsing in application code.
+libconfig:
+libconfig:
+libconfig:
+libconfig:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libconfig-1.7.2/
+usr/doc/libconfig-1.7.2/AUTHORS
+usr/doc/libconfig-1.7.2/COPYING.LIB
+usr/doc/libconfig-1.7.2/ChangeLog
+usr/doc/libconfig-1.7.2/INSTALL
+usr/doc/libconfig-1.7.2/LICENSE
+usr/doc/libconfig-1.7.2/NEWS
+usr/doc/libconfig-1.7.2/README
+usr/doc/libconfig-1.7.2/README.md
+usr/doc/libconfig-1.7.2/TODO
+usr/doc/libconfig-1.7.2/libconfig.SlackBuild
+usr/include/
+usr/include/libconfig.h
+usr/include/libconfig.h++
+usr/info/
+usr/info/libconfig.info.gz
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/libconfig++/
+usr/lib64/cmake/libconfig++/libconfig++Config.cmake
+usr/lib64/cmake/libconfig/
+usr/lib64/cmake/libconfig/libconfigConfig.cmake
+usr/lib64/libconfig++.so.11.0.2
+usr/lib64/libconfig.so.11.0.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libconfig++.pc
+usr/lib64/pkgconfig/libconfig.pc

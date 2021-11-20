@@ -1,0 +1,72 @@
+PACKAGE NAME:     kitemmodels-5.66.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     470K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/kitemmodels-5.66.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kitemmodels: kitemmodels (a kde5 framework)  
+kitemmodels:  
+kitemmodels: kitemmodels is a kde5 framework  
+kitemmodels: 
+kitemmodels: 
+kitemmodels: 
+kitemmodels: 
+kitemmodels: 
+kitemmodels: 
+kitemmodels: 
+kitemmodels: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KItemModels/
+usr/include/KF5/KItemModels/KBreadcrumbSelectionModel
+usr/include/KF5/KItemModels/KCheckableProxyModel
+usr/include/KF5/KItemModels/KColumnHeadersModel
+usr/include/KF5/KItemModels/KConcatenateRowsProxyModel
+usr/include/KF5/KItemModels/KDescendantsProxyModel
+usr/include/KF5/KItemModels/KExtraColumnsProxyModel
+usr/include/KF5/KItemModels/KLinkItemSelectionModel
+usr/include/KF5/KItemModels/KModelIndexProxyMapper
+usr/include/KF5/KItemModels/KNumberModel
+usr/include/KF5/KItemModels/KRearrangeColumnsProxyModel
+usr/include/KF5/KItemModels/KRecursiveFilterProxyModel
+usr/include/KF5/KItemModels/KSelectionProxyModel
+usr/include/KF5/KItemModels/kbreadcrumbselectionmodel.h
+usr/include/KF5/KItemModels/kcheckableproxymodel.h
+usr/include/KF5/KItemModels/kcolumnheadersmodel.h
+usr/include/KF5/KItemModels/kconcatenaterowsproxymodel.h
+usr/include/KF5/KItemModels/kdescendantsproxymodel.h
+usr/include/KF5/KItemModels/kextracolumnsproxymodel.h
+usr/include/KF5/KItemModels/kitemmodels_export.h
+usr/include/KF5/KItemModels/klinkitemselectionmodel.h
+usr/include/KF5/KItemModels/kmodelindexproxymapper.h
+usr/include/KF5/KItemModels/knumbermodel.h
+usr/include/KF5/KItemModels/krearrangecolumnsproxymodel.h
+usr/include/KF5/KItemModels/krecursivefilterproxymodel.h
+usr/include/KF5/KItemModels/kselectionproxymodel.h
+usr/include/KF5/kitemmodels_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5ItemModels/
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsConfig.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsConfigVersion.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsTargets-release.cmake
+usr/lib64/cmake/KF5ItemModels/KF5ItemModelsTargets.cmake
+usr/lib64/libKF5ItemModels.so.5.66.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KItemModels.pri
+usr/lib64/qt5/qml/
+usr/lib64/qt5/qml/org/
+usr/lib64/qt5/qml/org/kde/
+usr/lib64/qt5/qml/org/kde/kitemmodels/
+usr/lib64/qt5/qml/org/kde/kitemmodels/libitemmodelsplugin.so
+usr/lib64/qt5/qml/org/kde/kitemmodels/qmldir
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kitemmodels.categories

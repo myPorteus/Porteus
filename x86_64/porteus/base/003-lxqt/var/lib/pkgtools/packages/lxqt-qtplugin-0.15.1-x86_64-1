@@ -1,0 +1,13 @@
+PACKAGE NAME:     lxqt-qtplugin-0.15.1-x86_64-1
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: lxqt-qtplugin-0.15.1-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+usr/
+usr/lib64/
+usr/lib64/qt5/
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/platformthemes/
+usr/lib64/qt5/plugins/platformthemes/libqtlxqt.so

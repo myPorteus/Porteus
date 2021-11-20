@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf liblxqt-globalkeys-ui.so )
+( cd usr/lib64 ; ln -sf liblxqt-globalkeys-ui.so.0 liblxqt-globalkeys-ui.so )
+( cd usr/lib64 ; rm -rf liblxqt-globalkeys-ui.so.0 )
+( cd usr/lib64 ; ln -sf liblxqt-globalkeys-ui.so.0.15.1 liblxqt-globalkeys-ui.so.0 )
+( cd usr/lib64 ; rm -rf liblxqt-globalkeys.so )
+( cd usr/lib64 ; ln -sf liblxqt-globalkeys.so.0 liblxqt-globalkeys.so )
+( cd usr/lib64 ; rm -rf liblxqt-globalkeys.so.0 )
+( cd usr/lib64 ; ln -sf liblxqt-globalkeys.so.0.15.1 liblxqt-globalkeys.so.0 )

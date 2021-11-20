@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libneon.so )
+( cd usr/lib64 ; ln -sf libneon.so.27.3.2 libneon.so )
+( cd usr/lib64 ; rm -rf libneon.so.27 )
+( cd usr/lib64 ; ln -sf libneon.so.27.3.2 libneon.so.27 )

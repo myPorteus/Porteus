@@ -1,0 +1,40 @@
+#!/bin/bash
+cat <<EOFMENU
+<openbox_pipe_menu>
+<menu id="client-list-menu" />
+<separator/>
+<menu id="date-menu" />
+<separator/>
+<menu id="modpipe" />
+<separator/>
+<menu id="sysinfo-menu" />
+<separator/>
+<item label="Configure Openbox"> <action name="Execute">                         
+<execute>obconf</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<item label="Lxappearance"> <action name="Execute">              
+<execute>lxappearance</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<item label="Edit Autostart"> <action name="Execute">              
+<execute>/opt/porteus-scripts/xorg/editor ~/.config/openbox/autostart</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<item label="Edit Menu"> <action name="Execute">              
+<execute>/opt/porteus-scripts/xorg/editor ~/.config/openbox/menu.xml</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<item label="Edit Keybinds etc"> <action name="Execute">              
+<execute>/opt/porteus-scripts/xorg/editor ~/.config/openbox/rc.xml</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<item label="Keybinds Reference"> <action name="Execute">              
+<execute>spacefm -g --title "Key Reference" --viewer ~/.config/openbox/keyref1</execute>
+<startupnotify><enabled>yes</enabled></startupnotify>
+</action></item>
+<separator/>
+<item label="Reconfigure"> <action name="Reconfigure"/> </item>
+<item label="Restart"> <action name="Restart"/> </item>
+</openbox_pipe_menu>
+EOFMENU

@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.blueman.Mechanism
+Exec=/usr/libexec/blueman-mechanism
+User=root
+SystemdService=blueman-mechanism.service

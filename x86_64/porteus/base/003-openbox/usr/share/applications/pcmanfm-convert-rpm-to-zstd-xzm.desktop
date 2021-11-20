@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1
+Type=Application
+Encoding=UTF-8
+Name=Convert rpm to zstd xzm...
+Name[ru]=Конвертировать rpm в zstd xzm модуль...
+Icon=cdr
+Author=Brokenman
+MimeType=application/x-rpm
+OnlyShowIn=pcmanfm
+NoDisplay=true
+Exec=/opt/porteus-scripts/context-menu/convert_rpm -z %F

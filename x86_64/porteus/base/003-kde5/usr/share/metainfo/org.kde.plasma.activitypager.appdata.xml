@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.activitypager</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Activity Pager</name>
+    <name xml:lang="ca@valencia">Paginador d'activitats</name>
+    <name xml:lang="ca">Paginador d'activitats</name>
+    <name xml:lang="cs">Prohlížeč aktivit</name>
+    <name xml:lang="da">Aktivitetsvælger</name>
+    <name xml:lang="de">Aktivitätenübersicht</name>
+    <name xml:lang="el">Πίνακας δραστηριοτήτων</name>
+    <name xml:lang="en_GB">Activity Pager</name>
+    <name xml:lang="es">Paginador de actividades</name>
+    <name xml:lang="et">Tegevuste lülitaja</name>
+    <name xml:lang="eu">Jardueren orrialdekatzailea</name>
+    <name xml:lang="fi">Aktiviteettisivutin</name>
+    <name xml:lang="fr">Gestionnaire d'activité</name>
+    <name xml:lang="gl">Paxinador de actividades</name>
+    <name xml:lang="he">מחליף פעילויות</name>
+    <name xml:lang="hu">Aktivitáslapozó</name>
+    <name xml:lang="id">Pager Aktivitas</name>
+    <name xml:lang="it">Paginatore attività</name>
+    <name xml:lang="ko">활동 호출기</name>
+    <name xml:lang="lt">Veiklų perjungiklis</name>
+    <name xml:lang="nl">Pager van activiteiten</name>
+    <name xml:lang="nn">Aktivitetsbytar</name>
+    <name xml:lang="pl">Przełącznik aktywności</name>
+    <name xml:lang="pt">Paginador de Actividades</name>
+    <name xml:lang="pt_BR">Paginador de atividades</name>
+    <name xml:lang="ru">Переключение комнат</name>
+    <name xml:lang="sk">Stránkovač aktivít</name>
+    <name xml:lang="sl">Pozivnik za dejavnosti</name>
+    <name xml:lang="sr@ijekavian">Листач активности</name>
+    <name xml:lang="sr@ijekavianlatin">Listač aktivnosti</name>
+    <name xml:lang="sr@latin">Listač aktivnosti</name>
+    <name xml:lang="sr">Листач активности</name>
+    <name xml:lang="sv">Aktivitetsbytare</name>
+    <name xml:lang="tr">Etkinlik Sayfalayıcı</name>
+    <name xml:lang="uk">Пейджер просторів дій</name>
+    <name xml:lang="x-test">xxActivity Pagerxx</name>
+    <name xml:lang="zh_CN">活动分页器</name>
+    <name xml:lang="zh_TW">活動分頁</name>
+    <summary>Switch between activities</summary>
+    <summary xml:lang="ca@valencia">Commuta entre activitats</summary>
+    <summary xml:lang="ca">Commuta entre activitats</summary>
+    <summary xml:lang="cs">Přepnout mezi aktivitami</summary>
+    <summary xml:lang="da">Skift mellem aktiviteter</summary>
+    <summary xml:lang="de">Zwischen Aktivitäten wechseln</summary>
+    <summary xml:lang="el">Εναλλαγή μεταξύ των δραστηριοτήτων</summary>
+    <summary xml:lang="en_GB">Switch between activities</summary>
+    <summary xml:lang="es">Cambiar entre actividades</summary>
+    <summary xml:lang="et">Lülitumine tegevuste vahel</summary>
+    <summary xml:lang="eu">Jardueren artean trukatu</summary>
+    <summary xml:lang="fi">Vaihda aktiviteettien välillä</summary>
+    <summary xml:lang="fr">Basculer entre les activités</summary>
+    <summary xml:lang="gl">Cambia de actividade</summary>
+    <summary xml:lang="he">החלפה בין פעילויות</summary>
+    <summary xml:lang="hu">Váltás aktivitások között</summary>
+    <summary xml:lang="id">Beralih antara aktivitas</summary>
+    <summary xml:lang="it">Passa da un'attività all'altra</summary>
+    <summary xml:lang="ko">활동간 전환</summary>
+    <summary xml:lang="lt">Persijungimas tarp veiklų</summary>
+    <summary xml:lang="nl">Tussen activiteiten schakelen</summary>
+    <summary xml:lang="nn">Byt mellom aktiviteter</summary>
+    <summary xml:lang="pl">Przełącza między aktywnościami</summary>
+    <summary xml:lang="pt">Mudar de actividades</summary>
+    <summary xml:lang="pt_BR">Alterna entre as atividades</summary>
+    <summary xml:lang="ru">Переключение между комнатами</summary>
+    <summary xml:lang="sk">Prepnúť medzi aktivitami</summary>
+    <summary xml:lang="sl">Preklopite med dejavnostmi</summary>
+    <summary xml:lang="sr@ijekavian">Пребацивање између активности</summary>
+    <summary xml:lang="sr@ijekavianlatin">Prebacivanje između aktivnosti</summary>
+    <summary xml:lang="sr@latin">Prebacivanje između aktivnosti</summary>
+    <summary xml:lang="sr">Пребацивање између активности</summary>
+    <summary xml:lang="sv">Byt mellan aktiviteter</summary>
+    <summary xml:lang="tr">Etkinlikler arasında geçiş yap</summary>
+    <summary xml:lang="uk">Перемикання між просторами дій</summary>
+    <summary xml:lang="x-test">xxSwitch between activitiesxx</summary>
+    <summary xml:lang="zh_CN">在活动间切换</summary>
+    <summary xml:lang="zh_TW">在活動間切換</summary>
+    <url type="homepage">http://userbase.kde.org</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.activitypager</url>
+    <developer_name>The Plasma Team &lt;plasma-devel@kde.org&gt;</developer_name>
+    <icon type="stock">org.kde.plasma.pager</icon>
+    <project_license>GPL-2.0+</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>

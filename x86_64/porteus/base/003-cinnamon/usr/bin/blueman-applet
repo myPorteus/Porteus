@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+# coding=utf-8
+
+import sys
+import os
+import signal
+import logging
+
+# support running uninstalled
+_dirname = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if 'BLUEMAN_SOURCE' in os.environ:
+    sys.path = [_dirname, os.path.join(_dirname, 'module', '.libs')] + sys.path
+    os.environ["GSETTINGS_SCHEMA_DIR"] = os.path.join(_dirname, "data")
+
+from blueman.Functions import create_logger, create_parser, set_proc_title
+from blueman.main.Applet import BluemanApplet
+
+# Workaround introspection bug, gnome bug 622084
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+signal.signal(signal.SIGTERM, signal.SIG_DFL)
+
+if __name__ == '__main__':
+    parser = create_parser()
+    args = parser.parse_args()
+
+    if args.LEVEL.upper() == "DEBUG":
+        log_level = logging.DEBUG
+    elif args.LEVEL.upper() == "INFO":
+        log_level = logging.INFO
+    elif args.LEVEL.upper() == "WARNING":
+        log_level = logging.WARNING
+    elif args.LEVEL.upper() == "ERROR":
+        log_level = logging.ERROR
+    elif args.LEVEL.upper() == "CRITICAL":
+        log_level = logging.CRITICAL
+    else:
+        log_level = logging.WARNING
+
+    create_logger(log_level, "blueman-applet", syslog=args.syslog)
+
+    set_proc_title()
+    BluemanApplet()

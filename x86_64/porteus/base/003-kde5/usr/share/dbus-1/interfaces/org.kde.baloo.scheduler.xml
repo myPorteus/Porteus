@@ -1,0 +1,23 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.kde.baloo.scheduler">
+    <property name="state" type="i" access="read"/>
+    <signal name="stateChanged">
+      <arg name="state" type="i" direction="out"/>
+    </signal>
+    <method name="suspend">
+    </method>
+    <method name="resume">
+    </method>
+    <method name="getRemainingTime">
+      <arg type="u" direction="out"/>
+    </method>
+    <method name="checkUnindexedFiles">
+    </method>
+    <method name="checkStaleIndexEntries">
+    </method>
+    <method name="getBatchSize">
+      <arg type="u" direction="out"/>
+    </method>
+  </interface>
+</node>

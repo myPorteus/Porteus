@@ -1,0 +1,59 @@
+2019-12-12
+renamed Adwaita icons to Paper, because that's what it is, mostly and fixed references to it.
+added /opt/porteus-scripts/extra/openbox-autostart
+added this changelog
+rebuilt porteus-xdg-menu to use lxmenu-data
+unified menu.xml in /etc/xdg/openbox/menu.xml
+2019-12-18
+added dconf and gsettings-desktop-schemas json-glib
+updated(rebuilt) file-roller
+updated ffmpegthumbnailer (from slackware-current)
+2020-01-10
+updated:pyxdg, gobject-introspection, pygobject3
+removed gsettings-desktop-schemas(now in 002)
+2020-01-16
+removed gtk+3 and replaced gtk+2 app vers with gtk+3 vers for experimental base
+removed epdfview(will not build with gtk+3)
+2020-01-18
+added pqiv(a lightweight image viewer which can also view pdfs and video(but no sound :p)
+removed gxkb(will not build with gtk+3) no replacement yet
+rebuilt slim 
+removed mountshare-spacefm-plugin
+added mount tools spacefm plugin
+2020-02-27
+added gtk+2
+readded gxkb (gtk+2)
+added gftp (gtk+2)
+restripped paper icons from scratch
+minor tweek to logout script
+2020-03-05
+removed scrot,giblib and gtk-scrot script
+added gnome-screenshot and libcanberra
+replaced logoutscript with gtk-logout.py
+various menu/keybind adjustments referencing those
+added "darkmode" cheatcode support
+2020-03-13
+updated paper icons
+stripped nm-applet and larger l3afpad hicolor icons
+2020-03-22
+removed: paper icons, porteus-xdg-menu, lxmenu-data, pygobject3, gobject-introspection, pyxdg, libxkbcommon, slim
+added libnma
+2020-04-20
+removed: gnome-keyring, libgnome-keyring, 
+changed spacefm m5sum menu action to use multiple file names 
+added "open in here" menu action that opens in selected folder for terminal and root filemanager
+2020-07-15
+added pavucontrol(pulseaudio gui) and set volume icon 'open mixer' to it
+pxf-sound now uses pamixer(instead of amixer)
+added "cp /etc/asound.conf ~/.asoundrc" : volumeicon sets it's default from alsa and for some reason the global setting is not being read..
+moved gtk* theme settings to /etc (lxappearance will still create user settings in ~)
+adjusted 'dark mode' cheat to reflect this^ (note this cheat should only be used when NOT using changes: otherwise unexpected things might occur)
+2020-07-17
+removed "cp /etc/asound.conf ~/.asoundrc" from autostart: fixed this xorg
+fixed an xml parsing error
+2020-07-23
+removed  pqiv
+added epdfview-gtk3 and updated poppler(newer than slkw current)
+2020-08-06
+reverted to gtk2 build of gpicview
+updated sakura to 3.7.1

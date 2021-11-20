@@ -1,0 +1,50 @@
+PACKAGE NAME:     kplotting-5.66.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     40K
+UNCOMPRESSED PACKAGE SIZE:     180K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/kplotting-5.66.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kplotting: kplotting (a kde5 framework)  
+kplotting:  
+kplotting: kplotting is a kde5 framework  
+kplotting: 
+kplotting: 
+kplotting: 
+kplotting: 
+kplotting: 
+kplotting: 
+kplotting: 
+kplotting: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KPlotting/
+usr/include/KF5/KPlotting/KPlotAxis
+usr/include/KF5/KPlotting/KPlotObject
+usr/include/KF5/KPlotting/KPlotPoint
+usr/include/KF5/KPlotting/KPlotWidget
+usr/include/KF5/KPlotting/kplotaxis.h
+usr/include/KF5/KPlotting/kplotobject.h
+usr/include/KF5/KPlotting/kplotpoint.h
+usr/include/KF5/KPlotting/kplotting_export.h
+usr/include/KF5/KPlotting/kplotwidget.h
+usr/include/KF5/kplotting_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Plotting/
+usr/lib64/cmake/KF5Plotting/KF5PlottingConfig.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingConfigVersion.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingTargets-release.cmake
+usr/lib64/cmake/KF5Plotting/KF5PlottingTargets.cmake
+usr/lib64/libKF5Plotting.so.5.66.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KPlotting.pri
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/designer/
+usr/lib64/qt5/plugins/designer/kplotting5widgets.so

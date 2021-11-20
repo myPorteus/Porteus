@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Backlight
+Comment=Sets display backlight
+Icon=brightnesssettings
+
+Name[cs]=Podsvícení
+Comment[cs]=Nastavuje podsvícení displeje
+Name[es]=Brillo de la pantalla
+Comment[es]=Cambia el brillo de la pantalla
+Name[hr]=Svjetlina ekrana
+Comment[hr]=Postavlja svjetlinu ekrana
+Name[ja]=バックライト
+Comment[ja]=ディスプレイのバックライトを設定します
+Name[nl]=Achtergrondverlichting
+Comment[nl]=Achtergrondverlichting instellen
+Name[tr]=Arka ışık
+Comment[tr]=Görüntünün arka ışığını ayarlar

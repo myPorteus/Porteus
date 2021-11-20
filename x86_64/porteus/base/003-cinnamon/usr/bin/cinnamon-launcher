@@ -1,0 +1,78 @@
+#!/usr/bin/python3
+#
+""" Launches or restarts cinnamon
+"""
+
+import os
+import sys
+import gettext
+from setproctitle import setproctitle
+
+import gi
+gi.require_version('Gtk', '3.0')  # noqa
+from gi.repository import Gtk
+
+FALLBACK_COMMAND = "metacity"
+FALLBACK_ARGS = ("--replace",)
+
+gettext.install("cinnamon", "/usr/share/locale")
+
+panel_process_name = None
+panel_cmd = None
+if os.path.exists("/usr/bin/mate-panel"):
+    panel_process_name = "mate-panel"
+    panel_cmd = "mate-panel --replace &"
+elif os.path.exists("/usr/bin/gnome-panel"):
+    panel_process_name = "gnome-panel"
+    panel_cmd = "gnome-panel --replace &"
+elif os.path.exists("/usr/bin/tint2"):
+    panel_process_name = "tint2"
+    panel_cmd = "killall tint2; tint2 &"
+
+
+def confirm_restart():
+    d = Gtk.MessageDialog(title=None, parent=None, flags=0, message_type=Gtk.MessageType.WARNING)
+    d.add_buttons(_("No"),  Gtk.ResponseType.NO,
+                  _("Yes"), Gtk.ResponseType.YES)
+    d.set_keep_above(True)
+    d.set_position(Gtk.WindowPosition.CENTER)
+    d.set_title(_("Cinnamon just crashed"))
+    box = d.get_content_area()
+    checkbutton = Gtk.CheckButton(label=_("Disable downloaded applets, desklets and extensions"))
+    d.set_markup("<span size='large'><b>%s</b></span>\n\n%s\n\n%s\n\n" %
+            (
+                _("You are currently running in fallback mode."),
+                _("If you suspect the source of the crash is a local extension, applet or desklet, you can disable downloaded add-ons using the checkbox below."),
+                _("Do you want to restart Cinnamon?"),
+            ))
+    box.set_border_width(20)
+    box.add(checkbutton)
+    checkbutton.show_all()
+    resp = d.run()
+    d.destroy()
+    if resp == Gtk.ResponseType.YES:
+        if checkbutton.get_active():
+            os.environ["CINNAMON_TROUBLESHOOT"] = "1"
+        return(True)
+    return(False)
+
+if __name__ == "__main__":
+    setproctitle("cinnamon-launcher")
+    cinnamon_pid = os.fork()
+    if cinnamon_pid == 0:
+        os.execvp("cinnamon", ("cinnamon", "--replace", ) + tuple(sys.argv[1:]))
+    else:
+        exit_status = os.waitpid(cinnamon_pid, 0)[1]
+        if exit_status != 0:
+            if os.fork() == 0:
+                # Start the fallback panel
+                if panel_cmd is not None:
+                    os.system(panel_cmd)
+                # Start the fallback window manager
+                os.execvp(FALLBACK_COMMAND, (FALLBACK_COMMAND,) + FALLBACK_ARGS)
+            else:
+                if confirm_restart():
+                    # Kill the fallback panel
+                    os.system("killall %s" % panel_process_name)
+                    # Restart Cinnamon
+                    os.execvp(sys.argv[0], (sys.argv[0], "--replace"))

@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libxfconf-0.so )
+( cd usr/lib64 ; ln -sf libxfconf-0.so.3.0.0 libxfconf-0.so )
+( cd usr/lib64 ; rm -rf libxfconf-0.so.3 )
+( cd usr/lib64 ; ln -sf libxfconf-0.so.3.0.0 libxfconf-0.so.3 )

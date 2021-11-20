@@ -1,0 +1,49 @@
+PACKAGE NAME:     xf86-input-libinput-0.29.0-x86_64-1
+COMPRESSED PACKAGE SIZE:     52K
+UNCOMPRESSED PACKAGE SIZE:     170K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/xf86-input-libinput-0.29.0-x86_64-1.txz
+PACKAGE DESCRIPTION:
+xf86-input-libinput: xf86-input-libinput (libinput-based X driver)
+xf86-input-libinput:
+xf86-input-libinput: This is an X driver based on libinput.
+xf86-input-libinput:
+xf86-input-libinput: For more information about the X.Org Foundation (the providers of the
+xf86-input-libinput: X.Org implementation of the X Window System), see their website:
+xf86-input-libinput:
+xf86-input-libinput: http://www.x.org
+xf86-input-libinput:
+xf86-input-libinput:
+xf86-input-libinput:
+FILE LIST:
+./
+etc/
+etc/X11/
+etc/X11/xorg.conf.d/
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xf86-input-libinput-0.29.0/
+usr/doc/xf86-input-libinput-0.29.0/COPYING
+usr/doc/xf86-input-libinput-0.29.0/ChangeLog
+usr/doc/xf86-input-libinput-0.29.0/INSTALL
+usr/doc/xf86-input-libinput-0.29.0/README.md
+usr/include/
+usr/include/xorg/
+usr/include/xorg/libinput-properties.h
+usr/lib64/
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/xorg-libinput.pc
+usr/lib64/xorg/
+usr/lib64/xorg/modules/
+usr/lib64/xorg/modules/input/
+usr/lib64/xorg/modules/input/libinput_drv.la
+usr/lib64/xorg/modules/input/libinput_drv.so
+usr/man/
+usr/man/man4/
+usr/man/man4/libinput.4.gz
+usr/share/
+usr/share/X11/
+usr/share/X11/xorg.conf.d/
+usr/share/X11/xorg.conf.d/40-libinput.conf
+usr/share/X11/xorg.conf.d/91-keyboard-layout-libinput.conf

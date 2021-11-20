@@ -1,0 +1,73 @@
+PACKAGE NAME:     kded-5.66.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     44K
+UNCOMPRESSED PACKAGE SIZE:     190K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/kded-5.66.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+kded: kded (a kde5 framework)  
+kded:  
+kded: kded is a kde5 framework  
+kded: 
+kded: 
+kded: 
+kded: 
+kded: 
+kded: 
+kded: 
+kded: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kded5
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KDED/
+usr/lib64/cmake/KDED/KDEDConfig.cmake
+usr/lib64/cmake/KDED/KDEDConfigVersion.cmake
+usr/man/
+usr/man/ca/
+usr/man/ca/man8/
+usr/man/ca/man8/kded5.8
+usr/man/de/
+usr/man/de/man8/
+usr/man/de/man8/kded5.8
+usr/man/es/
+usr/man/es/man8/
+usr/man/es/man8/kded5.8
+usr/man/it/
+usr/man/it/man8/
+usr/man/it/man8/kded5.8
+usr/man/man8/
+usr/man/man8/kded5.8
+usr/man/nl/
+usr/man/nl/man8/
+usr/man/nl/man8/kded5.8
+usr/man/pt/
+usr/man/pt/man8/
+usr/man/pt/man8/kded5.8
+usr/man/pt_BR/
+usr/man/pt_BR/man8/
+usr/man/pt_BR/man8/kded5.8
+usr/man/ru/
+usr/man/ru/man8/
+usr/man/ru/man8/kded5.8
+usr/man/sv/
+usr/man/sv/man8/
+usr/man/sv/man8/kded5.8
+usr/man/uk/
+usr/man/uk/man8/
+usr/man/uk/man8/kded5.8
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.kded5.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/org.kde.kded5.xml
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.kded5.service
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/kdedmodule.desktop
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kded.categories

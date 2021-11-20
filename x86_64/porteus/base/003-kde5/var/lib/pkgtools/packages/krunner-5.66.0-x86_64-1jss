@@ -1,0 +1,68 @@
+PACKAGE NAME:     krunner-5.66.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     124K
+UNCOMPRESSED PACKAGE SIZE:     440K
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/krunner-5.66.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+krunner: krunner (a kde5 framework)  
+krunner:  
+krunner: krunner is a kde5 framework  
+krunner: 
+krunner: 
+krunner: 
+krunner: 
+krunner: 
+krunner: 
+krunner: 
+krunner: http://download.kde.org/stable/frameworks  
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KRunner/
+usr/include/KF5/KRunner/KRunner/
+usr/include/KF5/KRunner/KRunner/AbstractRunner
+usr/include/KF5/KRunner/KRunner/QueryMatch
+usr/include/KF5/KRunner/KRunner/RunnerContext
+usr/include/KF5/KRunner/KRunner/RunnerManager
+usr/include/KF5/KRunner/KRunner/RunnerSyntax
+usr/include/KF5/KRunner/krunner/
+usr/include/KF5/KRunner/krunner/abstractrunner.h
+usr/include/KF5/KRunner/krunner/krunner_export.h
+usr/include/KF5/KRunner/krunner/querymatch.h
+usr/include/KF5/KRunner/krunner/runnercontext.h
+usr/include/KF5/KRunner/krunner/runnermanager.h
+usr/include/KF5/KRunner/krunner/runnersyntax.h
+usr/include/KF5/krunner_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Runner/
+usr/lib64/cmake/KF5Runner/KF5RunnerConfig.cmake
+usr/lib64/cmake/KF5Runner/KF5RunnerConfigVersion.cmake
+usr/lib64/cmake/KF5Runner/KF5RunnerTargets-release.cmake
+usr/lib64/cmake/KF5Runner/KF5RunnerTargets.cmake
+usr/lib64/libKF5Runner.so.5.66.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KRunner.pri
+usr/lib64/qt5/qml/
+usr/lib64/qt5/qml/org/
+usr/lib64/qt5/qml/org/kde/
+usr/lib64/qt5/qml/org/kde/runnermodel/
+usr/lib64/qt5/qml/org/kde/runnermodel/librunnermodelplugin.so
+usr/lib64/qt5/qml/org/kde/runnermodel/qmldir
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/kf5_org.kde.krunner1.xml
+usr/share/kdevappwizard/
+usr/share/kdevappwizard/templates/
+usr/share/kdevappwizard/templates/runner.tar.bz2
+usr/share/kservicetypes5/
+usr/share/kservicetypes5/plasma-runner.desktop
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/krunner.categories

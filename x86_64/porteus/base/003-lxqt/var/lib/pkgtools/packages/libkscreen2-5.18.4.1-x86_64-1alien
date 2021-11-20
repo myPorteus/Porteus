@@ -1,0 +1,90 @@
+PACKAGE NAME:     libkscreen2-5.18.4.1-x86_64-1alien
+COMPRESSED PACKAGE SIZE:     256K
+UNCOMPRESSED PACKAGE SIZE:     1.3M
+PACKAGE LOCATION: libkscreen2-5.18.4.1-x86_64-1alien.txz
+PACKAGE DESCRIPTION:
+libkscreen2: libkscreen2 (KDE screen management library)
+libkscreen2:
+libkscreen2: LibKScreen2 is a library that provides access to current
+libkscreen2: configuration of connected displays and ways to change
+libkscreen2: the configuration.
+libkscreen2:
+libkscreen2:
+libkscreen2:
+libkscreen2: For more information, visit:
+libkscreen2:   http://community.kde.org/Solid/Projects/ScreenManagement
+libkscreen2:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kscreen-doctor
+usr/doc/
+usr/doc/libkscreen2-5.18.4.1/
+usr/doc/libkscreen2-5.18.4.1/CONTRIBUTING.md
+usr/doc/libkscreen2-5.18.4.1/COPYING
+usr/doc/libkscreen2-5.18.4.1/COPYING.LIB
+usr/doc/libkscreen2-5.18.4.1/README.md
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KScreen/
+usr/include/KF5/KScreen/KScreen/
+usr/include/KF5/KScreen/KScreen/Config
+usr/include/KF5/KScreen/KScreen/ConfigMonitor
+usr/include/KF5/KScreen/KScreen/ConfigOperation
+usr/include/KF5/KScreen/KScreen/EDID
+usr/include/KF5/KScreen/KScreen/GetConfigOperation
+usr/include/KF5/KScreen/KScreen/Log
+usr/include/KF5/KScreen/KScreen/Mode
+usr/include/KF5/KScreen/KScreen/Output
+usr/include/KF5/KScreen/KScreen/Screen
+usr/include/KF5/KScreen/KScreen/SetConfigOperation
+usr/include/KF5/KScreen/KScreen/Types
+usr/include/KF5/KScreen/kscreen/
+usr/include/KF5/KScreen/kscreen/backendmanager_p.h
+usr/include/KF5/KScreen/kscreen/config.h
+usr/include/KF5/KScreen/kscreen/configmonitor.h
+usr/include/KF5/KScreen/kscreen/configoperation.h
+usr/include/KF5/KScreen/kscreen/edid.h
+usr/include/KF5/KScreen/kscreen/getconfigoperation.h
+usr/include/KF5/KScreen/kscreen/kscreen_export.h
+usr/include/KF5/KScreen/kscreen/log.h
+usr/include/KF5/KScreen/kscreen/mode.h
+usr/include/KF5/KScreen/kscreen/output.h
+usr/include/KF5/KScreen/kscreen/screen.h
+usr/include/KF5/KScreen/kscreen/setconfigoperation.h
+usr/include/KF5/KScreen/kscreen/types.h
+usr/include/KF5/kscreen_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Screen/
+usr/lib64/cmake/KF5Screen/KF5ScreenConfig.cmake
+usr/lib64/cmake/KF5Screen/KF5ScreenConfigVersion.cmake
+usr/lib64/cmake/KF5Screen/KF5ScreenTargets-release.cmake
+usr/lib64/cmake/KF5Screen/KF5ScreenTargets.cmake
+usr/lib64/kf5/
+usr/lib64/kf5/kscreen_backend_launcher
+usr/lib64/libKF5Screen.so.5.18.4
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/kscreen2.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KScreen.pri
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/kf5/
+usr/lib64/qt5/plugins/kf5/kscreen/
+usr/lib64/qt5/plugins/kf5/kscreen/KSC_Fake.so
+usr/lib64/qt5/plugins/kf5/kscreen/KSC_KWayland.so
+usr/lib64/qt5/plugins/kf5/kscreen/KSC_QScreen.so
+usr/lib64/qt5/plugins/kf5/kscreen/KSC_XRandR.so
+usr/lib64/qt5/plugins/kf5/kscreen/KSC_XRandR11.so
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.kscreen.service
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/libkscreen.categories

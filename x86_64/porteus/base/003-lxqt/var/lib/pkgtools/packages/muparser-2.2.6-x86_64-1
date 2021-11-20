@@ -1,0 +1,70 @@
+PACKAGE NAME:     muparser-2.2.6-x86_64-1
+COMPRESSED PACKAGE SIZE:     112K
+UNCOMPRESSED PACKAGE SIZE:     490K
+PACKAGE LOCATION: /tmp/txz2xzm11964/muparser-2.2.6-x86_64-1.txz
+PACKAGE DESCRIPTION:
+FILE LIST:
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/muParser.h
+usr/include/muParserBase.h
+usr/include/muParserBytecode.h
+usr/include/muParserCallback.h
+usr/include/muParserDLL.h
+usr/include/muParserDef.h
+usr/include/muParserError.h
+usr/include/muParserFixes.h
+usr/include/muParserInt.h
+usr/include/muParserStack.h
+usr/include/muParserTemplateMagic.h
+usr/include/muParserTest.h
+usr/include/muParserToken.h
+usr/include/muParserTokenReader.h
+usr/lib64/
+usr/lib64/libmuparser.so.2.2.4
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/muparser.pc
+usr/share/
+usr/share/licenses/
+usr/share/licenses/muparser/
+usr/share/licenses/muparser/LICENSE
+./
+install/
+install/doinst.sh
+usr/
+usr/include/
+usr/include/muParser.h
+usr/include/muParserBase.h
+usr/include/muParserBytecode.h
+usr/include/muParserCallback.h
+usr/include/muParserDLL.h
+usr/include/muParserDef.h
+usr/include/muParserError.h
+usr/include/muParserFixes.h
+usr/include/muParserInt.h
+usr/include/muParserStack.h
+usr/include/muParserTemplateMagic.h
+usr/include/muParserTest.h
+usr/include/muParserToken.h
+usr/include/muParserTokenReader.h
+usr/lib64/
+usr/lib64/libmuparser.so.2.2.4
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/muparser.pc
+usr/share/
+usr/share/licenses/
+usr/share/licenses/muparser/
+usr/share/licenses/muparser/LICENSE
+var/
+var/log/
+var/log/packages/
+var/log/packages/muparser-2.2.6-x86_64-1
+var/log/removed_packages/
+var/log/removed_scripts/
+var/log/scripts/
+var/log/scripts/muparser-2.2.6-x86_64-1
+var/log/setup/
+var/log/setup/tmp/

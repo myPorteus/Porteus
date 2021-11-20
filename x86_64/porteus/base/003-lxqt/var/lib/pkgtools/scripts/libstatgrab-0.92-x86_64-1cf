@@ -1,0 +1,4 @@
+( cd usr/lib64 ; rm -rf libstatgrab.so )
+( cd usr/lib64 ; ln -sf libstatgrab.so.10.0.1 libstatgrab.so )
+( cd usr/lib64 ; rm -rf libstatgrab.so.10 )
+( cd usr/lib64 ; ln -sf libstatgrab.so.10.0.1 libstatgrab.so.10 )

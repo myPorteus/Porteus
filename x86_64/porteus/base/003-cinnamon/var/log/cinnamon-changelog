@@ -1,0 +1,6 @@
+2020-03-25
+removed Paper icon theme, pygobject3, gobject-introspection, slim
+upgraded network-manager-applet
+added libnma
+added nemo actions for zstd xzm option
+changed txz action icons to "package-x-generic"

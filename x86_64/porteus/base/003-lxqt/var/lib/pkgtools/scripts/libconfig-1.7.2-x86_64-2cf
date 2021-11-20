@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libconfig++.so.11 )
+( cd usr/lib64 ; ln -sf libconfig++.so.11.0.2 libconfig++.so.11 )
+( cd usr/lib64 ; rm -rf libconfig.so )
+( cd usr/lib64 ; ln -sf libconfig.so.11.0.2 libconfig.so )
+( cd usr/lib64 ; rm -rf libconfig++.so )
+( cd usr/lib64 ; ln -sf libconfig++.so.11.0.2 libconfig++.so )
+( cd usr/lib64 ; rm -rf libconfig.so.11 )
+( cd usr/lib64 ; ln -sf libconfig.so.11.0.2 libconfig.so.11 )

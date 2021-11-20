@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=xfce4 GUI helper
+Comment=xfce4 GUI helper
+Exec=/opt/porteus-scripts/xfce/xfce4-autostart
+

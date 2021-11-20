@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.SettingsDaemon
+Exec=/usr/bin/mate-settings-daemon

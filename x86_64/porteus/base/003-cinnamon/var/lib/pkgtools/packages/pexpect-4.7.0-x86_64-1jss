@@ -1,0 +1,92 @@
+PACKAGE NAME:     pexpect-4.7.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     92K
+UNCOMPRESSED PACKAGE SIZE:     700K
+PACKAGE LOCATION: /mnt/sda3/build/repos/mcbs/build/../x86_64/pkg/003_cinnamon/pexpect-4.7.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+pexpect: pexpect (controlling interactive programs)
+pexpect:
+pexpect: Pexpect is a Python module for spawning child applications,
+pexpect: controlling them, and responding to expected patterns in their
+pexpect: output.
+pexpect: 
+pexpect: 
+pexpect:
+pexpect:
+pexpect: https://github.com/pexpect/pexpect
+pexpect:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/python2.7/
+usr/lib64/python2.7/site-packages/
+usr/lib64/python2.7/site-packages/pexpect-4.7.0-py2.7.egg-info
+usr/lib64/python2.7/site-packages/pexpect/
+usr/lib64/python2.7/site-packages/pexpect/ANSI.py
+usr/lib64/python2.7/site-packages/pexpect/ANSI.pyc
+usr/lib64/python2.7/site-packages/pexpect/FSM.py
+usr/lib64/python2.7/site-packages/pexpect/FSM.pyc
+usr/lib64/python2.7/site-packages/pexpect/__init__.py
+usr/lib64/python2.7/site-packages/pexpect/__init__.pyc
+usr/lib64/python2.7/site-packages/pexpect/_async.py
+usr/lib64/python2.7/site-packages/pexpect/bashrc.sh
+usr/lib64/python2.7/site-packages/pexpect/exceptions.py
+usr/lib64/python2.7/site-packages/pexpect/exceptions.pyc
+usr/lib64/python2.7/site-packages/pexpect/expect.py
+usr/lib64/python2.7/site-packages/pexpect/expect.pyc
+usr/lib64/python2.7/site-packages/pexpect/fdpexpect.py
+usr/lib64/python2.7/site-packages/pexpect/fdpexpect.pyc
+usr/lib64/python2.7/site-packages/pexpect/popen_spawn.py
+usr/lib64/python2.7/site-packages/pexpect/popen_spawn.pyc
+usr/lib64/python2.7/site-packages/pexpect/pty_spawn.py
+usr/lib64/python2.7/site-packages/pexpect/pty_spawn.pyc
+usr/lib64/python2.7/site-packages/pexpect/pxssh.py
+usr/lib64/python2.7/site-packages/pexpect/pxssh.pyc
+usr/lib64/python2.7/site-packages/pexpect/replwrap.py
+usr/lib64/python2.7/site-packages/pexpect/replwrap.pyc
+usr/lib64/python2.7/site-packages/pexpect/run.py
+usr/lib64/python2.7/site-packages/pexpect/run.pyc
+usr/lib64/python2.7/site-packages/pexpect/screen.py
+usr/lib64/python2.7/site-packages/pexpect/screen.pyc
+usr/lib64/python2.7/site-packages/pexpect/spawnbase.py
+usr/lib64/python2.7/site-packages/pexpect/spawnbase.pyc
+usr/lib64/python2.7/site-packages/pexpect/utils.py
+usr/lib64/python2.7/site-packages/pexpect/utils.pyc
+usr/lib64/python3.8/
+usr/lib64/python3.8/site-packages/
+usr/lib64/python3.8/site-packages/pexpect-4.7.0-py3.8.egg-info
+usr/lib64/python3.8/site-packages/pexpect/
+usr/lib64/python3.8/site-packages/pexpect/ANSI.py
+usr/lib64/python3.8/site-packages/pexpect/FSM.py
+usr/lib64/python3.8/site-packages/pexpect/__init__.py
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/ANSI.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/FSM.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/__init__.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/_async.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/exceptions.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/expect.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/fdpexpect.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/popen_spawn.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/pty_spawn.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/pxssh.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/replwrap.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/run.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/screen.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/spawnbase.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/__pycache__/utils.cpython-38.pyc
+usr/lib64/python3.8/site-packages/pexpect/_async.py
+usr/lib64/python3.8/site-packages/pexpect/bashrc.sh
+usr/lib64/python3.8/site-packages/pexpect/exceptions.py
+usr/lib64/python3.8/site-packages/pexpect/expect.py
+usr/lib64/python3.8/site-packages/pexpect/fdpexpect.py
+usr/lib64/python3.8/site-packages/pexpect/popen_spawn.py
+usr/lib64/python3.8/site-packages/pexpect/pty_spawn.py
+usr/lib64/python3.8/site-packages/pexpect/pxssh.py
+usr/lib64/python3.8/site-packages/pexpect/replwrap.py
+usr/lib64/python3.8/site-packages/pexpect/run.py
+usr/lib64/python3.8/site-packages/pexpect/screen.py
+usr/lib64/python3.8/site-packages/pexpect/spawnbase.py
+usr/lib64/python3.8/site-packages/pexpect/utils.py

@@ -1,0 +1,8 @@
+( cd usr/lib64 ; rm -rf libxreaderdocument.so )
+( cd usr/lib64 ; ln -sf libxreaderdocument.so.3 libxreaderdocument.so )
+( cd usr/lib64 ; rm -rf libxreaderdocument.so.3 )
+( cd usr/lib64 ; ln -sf libxreaderdocument.so.3.0.0 libxreaderdocument.so.3 )
+( cd usr/lib64 ; rm -rf libxreaderview.so )
+( cd usr/lib64 ; ln -sf libxreaderview.so.3 libxreaderview.so )
+( cd usr/lib64 ; rm -rf libxreaderview.so.3 )
+( cd usr/lib64 ; ln -sf libxreaderview.so.3.0.0 libxreaderview.so.3 )

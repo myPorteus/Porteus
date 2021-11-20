@@ -1,0 +1,135 @@
+PACKAGE NAME:     openssl10-1.0.2u-x86_64-1
+COMPRESSED PACKAGE SIZE:     1.5M
+UNCOMPRESSED PACKAGE SIZE:     5.7M
+PACKAGE LOCATION: /mnt/sda3/build/repos/kbs/build/../x86_64/pkg/003_kde/openssl10-1.0.2u-x86_64-1.txz
+PACKAGE DESCRIPTION:
+openssl10: openssl10 (SSL toolkit version 1.0.x)
+openssl10:
+openssl10: The OpenSSL certificate management tool and the shared libraries that
+openssl10: provide various encryption and decryption algorithms and protocols.
+openssl10:
+openssl10: This product includes software developed by the OpenSSL Project for
+openssl10: use in the OpenSSL Toolkit (http://www.openssl102.org). This product
+openssl10: includes cryptographic software written by Eric Young
+openssl10: (eay@cryptsoft.com). This product includes software written by Tim
+openssl10: Hudson (tjh@cryptsoft.com).
+openssl10:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib64/
+lib64/libcrypto.so.1.0.0
+lib64/libssl.so.1.0.0
+usr/
+usr/bin/
+usr/bin/openssl-1.0
+usr/doc/
+usr/doc/openssl-1.0.2u/
+usr/doc/openssl-1.0.2u/CHANGES
+usr/doc/openssl-1.0.2u/CHANGES.SSLeay
+usr/doc/openssl-1.0.2u/FAQ
+usr/doc/openssl-1.0.2u/INSTALL
+usr/doc/openssl-1.0.2u/INSTALL.MacOS
+usr/doc/openssl-1.0.2u/INSTALL.VMS
+usr/doc/openssl-1.0.2u/INSTALL.W32
+usr/doc/openssl-1.0.2u/LICENSE
+usr/doc/openssl-1.0.2u/NEWS
+usr/doc/openssl-1.0.2u/README
+usr/doc/openssl-1.0.2u/README.ENGINE
+usr/include/
+usr/include/openssl-1.0/
+usr/include/openssl-1.0/openssl/
+usr/include/openssl-1.0/openssl/aes.h
+usr/include/openssl-1.0/openssl/asn1.h
+usr/include/openssl-1.0/openssl/asn1_mac.h
+usr/include/openssl-1.0/openssl/asn1t.h
+usr/include/openssl-1.0/openssl/bio.h
+usr/include/openssl-1.0/openssl/blowfish.h
+usr/include/openssl-1.0/openssl/bn.h
+usr/include/openssl-1.0/openssl/buffer.h
+usr/include/openssl-1.0/openssl/camellia.h
+usr/include/openssl-1.0/openssl/cast.h
+usr/include/openssl-1.0/openssl/cmac.h
+usr/include/openssl-1.0/openssl/cms.h
+usr/include/openssl-1.0/openssl/comp.h
+usr/include/openssl-1.0/openssl/conf.h
+usr/include/openssl-1.0/openssl/conf_api.h
+usr/include/openssl-1.0/openssl/crypto.h
+usr/include/openssl-1.0/openssl/des.h
+usr/include/openssl-1.0/openssl/des_old.h
+usr/include/openssl-1.0/openssl/dh.h
+usr/include/openssl-1.0/openssl/dsa.h
+usr/include/openssl-1.0/openssl/dso.h
+usr/include/openssl-1.0/openssl/dtls1.h
+usr/include/openssl-1.0/openssl/e_os2.h
+usr/include/openssl-1.0/openssl/ebcdic.h
+usr/include/openssl-1.0/openssl/ec.h
+usr/include/openssl-1.0/openssl/ecdh.h
+usr/include/openssl-1.0/openssl/ecdsa.h
+usr/include/openssl-1.0/openssl/engine.h
+usr/include/openssl-1.0/openssl/err.h
+usr/include/openssl-1.0/openssl/evp.h
+usr/include/openssl-1.0/openssl/hmac.h
+usr/include/openssl-1.0/openssl/krb5_asn.h
+usr/include/openssl-1.0/openssl/kssl.h
+usr/include/openssl-1.0/openssl/lhash.h
+usr/include/openssl-1.0/openssl/md4.h
+usr/include/openssl-1.0/openssl/md5.h
+usr/include/openssl-1.0/openssl/modes.h
+usr/include/openssl-1.0/openssl/obj_mac.h
+usr/include/openssl-1.0/openssl/objects.h
+usr/include/openssl-1.0/openssl/ocsp.h
+usr/include/openssl-1.0/openssl/opensslconf.h
+usr/include/openssl-1.0/openssl/opensslv.h
+usr/include/openssl-1.0/openssl/ossl_typ.h
+usr/include/openssl-1.0/openssl/pem.h
+usr/include/openssl-1.0/openssl/pem2.h
+usr/include/openssl-1.0/openssl/pkcs12.h
+usr/include/openssl-1.0/openssl/pkcs7.h
+usr/include/openssl-1.0/openssl/pqueue.h
+usr/include/openssl-1.0/openssl/rand.h
+usr/include/openssl-1.0/openssl/rc2.h
+usr/include/openssl-1.0/openssl/rc4.h
+usr/include/openssl-1.0/openssl/ripemd.h
+usr/include/openssl-1.0/openssl/rsa.h
+usr/include/openssl-1.0/openssl/safestack.h
+usr/include/openssl-1.0/openssl/seed.h
+usr/include/openssl-1.0/openssl/sha.h
+usr/include/openssl-1.0/openssl/srp.h
+usr/include/openssl-1.0/openssl/srtp.h
+usr/include/openssl-1.0/openssl/ssl.h
+usr/include/openssl-1.0/openssl/ssl2.h
+usr/include/openssl-1.0/openssl/ssl23.h
+usr/include/openssl-1.0/openssl/ssl3.h
+usr/include/openssl-1.0/openssl/stack.h
+usr/include/openssl-1.0/openssl/symhacks.h
+usr/include/openssl-1.0/openssl/tls1.h
+usr/include/openssl-1.0/openssl/ts.h
+usr/include/openssl-1.0/openssl/txt_db.h
+usr/include/openssl-1.0/openssl/ui.h
+usr/include/openssl-1.0/openssl/ui_compat.h
+usr/include/openssl-1.0/openssl/whrlpool.h
+usr/include/openssl-1.0/openssl/x509.h
+usr/include/openssl-1.0/openssl/x509_vfy.h
+usr/include/openssl-1.0/openssl/x509v3.h
+usr/lib64/
+usr/lib64/openssl-1.0/
+usr/lib64/openssl-1.0/engines/
+usr/lib64/openssl-1.0/engines/lib4758cca.so
+usr/lib64/openssl-1.0/engines/libaep.so
+usr/lib64/openssl-1.0/engines/libatalla.so
+usr/lib64/openssl-1.0/engines/libcapi.so
+usr/lib64/openssl-1.0/engines/libchil.so
+usr/lib64/openssl-1.0/engines/libcswift.so
+usr/lib64/openssl-1.0/engines/libgmp.so
+usr/lib64/openssl-1.0/engines/libgost.so
+usr/lib64/openssl-1.0/engines/libnuron.so
+usr/lib64/openssl-1.0/engines/libpadlock.so
+usr/lib64/openssl-1.0/engines/libsureware.so
+usr/lib64/openssl-1.0/engines/libubsec.so
+usr/lib64/openssl-1.0/pkgconfig/
+usr/lib64/openssl-1.0/pkgconfig/libcrypto.pc
+usr/lib64/openssl-1.0/pkgconfig/libssl.pc
+usr/lib64/openssl-1.0/pkgconfig/openssl.pc

@@ -1,0 +1,6 @@
+( cd usr/doc/libxklavier-5.4 ; rm -rf html )
+( cd usr/doc/libxklavier-5.4 ; ln -sf /usr/share/gtk-doc/html/libxklavier html )
+( cd usr/lib64 ; rm -rf libxklavier.so )
+( cd usr/lib64 ; ln -sf libxklavier.so.16.4.0 libxklavier.so )
+( cd usr/lib64 ; rm -rf libxklavier.so.16 )
+( cd usr/lib64 ; ln -sf libxklavier.so.16.4.0 libxklavier.so.16 )

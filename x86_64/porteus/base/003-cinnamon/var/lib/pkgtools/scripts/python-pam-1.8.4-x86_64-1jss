@@ -1,0 +1,4 @@
+( cd usr/lib64/python3.8/site-packages ; rm -rf PAM.py )
+( cd usr/lib64/python3.8/site-packages ; ln -sf pam.py PAM.py )
+( cd usr/lib64/python3.8/site-packages ; rm -rf PAM.pyc )
+( cd usr/lib64/python3.8/site-packages ; ln -sf pam.pyc PAM.pyc )

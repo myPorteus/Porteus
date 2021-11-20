@@ -1,0 +1,95 @@
+PACKAGE NAME:     tint2-16.6-x86_64-1_ncm
+COMPRESSED PACKAGE SIZE:     540K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /mnt/sda5/Porteus-dev/Porteus5.0/SpaceDE/BUILD-gtk3/PKG64/tint2-16.6-x86_64-1_ncm.tgz
+PACKAGE DESCRIPTION:
+tint2: tint2 (panel/taskbar for openbox3 and other window managers)
+tint2:
+tint2: tint2 is a simple panel/taskbar intentionally made for openbox3, but
+tint2: should also work with other window managers. It's based off ttm code.
+tint2:
+tint2: The goal is to keep a clean and unintrusive look with code
+tint2: lightweight and compliance with freedesktop specifications.
+tint2:
+tint2: Homepage: https://gitlab.com/o9000/tint2
+tint2:
+tint2:
+FILE LIST:
+./
+etc/
+etc/xdg/
+etc/xdg/tint2/
+etc/xdg/tint2/tint2rc.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/tint2
+usr/bin/tint2conf
+usr/doc/
+usr/doc/tint2-16.6/
+usr/doc/tint2-16.6/AUTHORS
+usr/doc/tint2-16.6/ChangeLog
+usr/doc/tint2-16.6/README.md
+usr/doc/tint2-16.6/html/
+usr/doc/tint2-16.6/html/images/
+usr/doc/tint2-16.6/html/images/panel_padding.jpg
+usr/doc/tint2-16.6/html/images/panel_size_margin.jpg
+usr/doc/tint2-16.6/html/images/task_padding.jpg
+usr/doc/tint2-16.6/html/images/taskbar_padding.jpg
+usr/doc/tint2-16.6/html/manual.html
+usr/doc/tint2-16.6/html/readme.html
+usr/doc/tint2-16.6/tint2.SlackBuild
+usr/doc/tint2-16.6/tint2.md
+usr/man/
+usr/man/man1/
+usr/man/man1/tint2.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/tint2.desktop
+usr/share/applications/tint2conf.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/tint2.svg
+usr/share/icons/hicolor/scalable/apps/tint2conf.svg
+usr/share/locale/
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/tint2conf.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/tint2conf.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/tint2conf.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/tint2conf.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/tint2conf.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/tint2conf.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/tint2conf.mo
+usr/share/mime/
+usr/share/mime/packages/
+usr/share/mime/packages/tint2conf.xml
+usr/share/tint2/
+usr/share/tint2/default_icon.png
+usr/share/tint2/horizontal-dark-opaque.tint2rc
+usr/share/tint2/horizontal-dark-transparent.tint2rc
+usr/share/tint2/horizontal-icon-only.tint2rc
+usr/share/tint2/horizontal-light-opaque.tint2rc
+usr/share/tint2/horizontal-light-transparent.tint2rc
+usr/share/tint2/horizontal-text-only.tint2rc
+usr/share/tint2/vertical-dark-opaque.tint2rc
+usr/share/tint2/vertical-dark-transparent.tint2rc
+usr/share/tint2/vertical-light-opaque.tint2rc
+usr/share/tint2/vertical-light-transparent.tint2rc
+usr/share/tint2/vertical-neutral-icons.tint2rc

@@ -1,0 +1,22 @@
+[
+    {
+        "enabled": true,
+        "id": "default",
+        "metadata": {
+            "name": "default"
+        },
+        "mode": {
+            "refresh": 61,
+            "size": {
+                "height": 768,
+                "width": 1024
+            }
+        },
+        "pos": {
+            "x": 0,
+            "y": 0
+        },
+        "primary": true,
+        "rotation": 1
+    }
+]

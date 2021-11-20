@@ -1,0 +1,106 @@
+PACKAGE NAME:     libgpod-0.8.3-x86_64-5
+COMPRESSED PACKAGE SIZE:     296K
+UNCOMPRESSED PACKAGE SIZE:     1.6M
+PACKAGE LOCATION: /mnt/sda3/build/repos/mcbs/build/../x86_64/pkg/003_cinnamon/libgpod-0.8.3-x86_64-5.txz
+PACKAGE DESCRIPTION:
+libgpod: libgpod (A library for connecting to some sort of media device ;-)
+libgpod:
+libgpod: libgpod for accessing iPod content. It provides an easy to use way
+libgpod: to retrieve the list of files and playlist stored on an iPod, to
+libgpod: modify them and to save them back to the iPod.
+libgpod:
+libgpod: If you decide to make improvements please contact us so we can work
+libgpod: together. Just drop a mail to: Gtkpod-devel@lists.sourceforge.net
+libgpod: (you may ask to be CC in the answer).
+libgpod:
+libgpod:
+FILE LIST:
+./
+install/
+install/doinst.sh
+install/slack-desc
+lib/
+lib/udev/
+lib/udev/iphone-set-info
+lib/udev/ipod-set-info
+lib/udev/rules.d/
+lib/udev/rules.d/90-libgpod.rules
+run/
+run/libgpod/
+usr/
+usr/bin/
+usr/bin/ipod-read-sysinfo-extended
+usr/doc/
+usr/doc/libgpod-0.8.3/
+usr/doc/libgpod-0.8.3/AUTHORS
+usr/doc/libgpod-0.8.3/COPYING
+usr/doc/libgpod-0.8.3/ChangeLog
+usr/doc/libgpod-0.8.3/INSTALL
+usr/doc/libgpod-0.8.3/NEWS
+usr/doc/libgpod-0.8.3/README
+usr/doc/libgpod-0.8.3/README.SysInfo
+usr/doc/libgpod-0.8.3/README.overview
+usr/doc/libgpod-0.8.3/README.sqlite
+usr/include/
+usr/include/gpod-1.0/
+usr/include/gpod-1.0/gpod/
+usr/include/gpod-1.0/gpod/itdb.h
+usr/lib64/
+usr/lib64/libgpod.so.4.3.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libgpod-1.0.pc
+usr/lib64/pkgconfig/libgpod-sharp.pc
+usr/share/
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libgpod/
+usr/share/gtk-doc/html/libgpod/ch01.html
+usr/share/gtk-doc/html/libgpod/home.png
+usr/share/gtk-doc/html/libgpod/index.html
+usr/share/gtk-doc/html/libgpod/index.sgml
+usr/share/gtk-doc/html/libgpod/itunesdb.html
+usr/share/gtk-doc/html/libgpod/left.png
+usr/share/gtk-doc/html/libgpod/libgpod-Artwork.html
+usr/share/gtk-doc/html/libgpod/libgpod-Chapter-Data.html
+usr/share/gtk-doc/html/libgpod/libgpod-Device.html
+usr/share/gtk-doc/html/libgpod/libgpod-File-handling-functions.html
+usr/share/gtk-doc/html/libgpod/libgpod-Low-level-functions.html
+usr/share/gtk-doc/html/libgpod/libgpod-Photo-database.html
+usr/share/gtk-doc/html/libgpod/libgpod-Playlists.html
+usr/share/gtk-doc/html/libgpod/libgpod-Smart-Playlists.html
+usr/share/gtk-doc/html/libgpod/libgpod-The-Itdb-iTunesDB-structure.html
+usr/share/gtk-doc/html/libgpod/libgpod-Time-handling.html
+usr/share/gtk-doc/html/libgpod/libgpod-Tracks.html
+usr/share/gtk-doc/html/libgpod/libgpod.devhelp2
+usr/share/gtk-doc/html/libgpod/photodb.html
+usr/share/gtk-doc/html/libgpod/right.png
+usr/share/gtk-doc/html/libgpod/style.css
+usr/share/gtk-doc/html/libgpod/up.png
+usr/share/locale/
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libgpod.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libgpod.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libgpod.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libgpod.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libgpod.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libgpod.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libgpod.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libgpod.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libgpod.mo

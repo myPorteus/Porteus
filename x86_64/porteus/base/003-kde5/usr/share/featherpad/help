@@ -1,0 +1,221 @@
+*********************
+*   Drag-and-Drop   *
+*********************
+
+Files can be dragged and dropped into FeatherPad windows.
+
+Also, tabs can be dragged from a window and dropped into another window or outside all FeatherPad windows. In the first case, the dropped tab will appear after the previously active tab; in the second case, a new window containing the dropped tab will be created, i.e. the tab will be detached.
+
+NOTE: Tab DND is enabled only under X11 because, at least, Wayland has a serious issue related to DND.
+
+************
+*   Tabs   *
+************
+
+Tabs can be reordered or detached by the mouse.
+
+If there is more than one tab, each one will have a right-click menu for closing its right or left tabs. With more than one tab, it is also possible to detach the active tab by clicking the related item on the File menu or with Ctrl+T.
+
+If a file is opened in a tab, the right-click menu of that tab will also contain two items for copying the name and path of the file.
+
+For users' comfort, double clicking on an empty area of the tab-bar creates a new tab.
+
+***********************
+*   File Management   *
+***********************
+
+If there is a FeatherPad window on the current virtual desktop or viewport, so that more than half of its width as well as its height is visible, files will be opened as new tabs in it; otherwise, a new window will be created. Also, when the window on the current desktop/viewport has a modal dialog, another window is created.
+
+In this way, FeatherPad is aware of virtual desktops under most Linux desktop environments. However, there are exceptions (like non-X11 environments or Enlightenment).
+
+Files are always opened after the active tab unless it is empty, in which case the first file will be opened in it. If a single file is opened, its tab will be activated but in the case of multiple files, the active tab will not change.
+
+If a file is opened multiple times, its second (third, ... ) instance will be uneditable by default and will have a light yellow or dark red background, depending on whether the default or the dark color scheme is used. To make it editable, click on the newly created 'Edit' button on the toolbar or the 'Edit' menu. After that, these two buttons will disappear again.
+
+If the opened file is a symbolic link (symlink), the context menu of its tab will have two extra items for copying its target path and opening its target inside the current window.
+
+Executable script files could be run from inside FeatherPad if the corresponding option is enabled in the Preferences dialog. Then also a Run button will appear on the toolbar and the File menu whenever needed. If no terminal command is used to run them, their output and error messages will be shown by a popup dialog.
+
+FeatherPad remembers recently modified or opened files, depending on which option is enabled in the Preferences dialog. It can also open the files of the last window on a session startup. However, it has a more advanced session manager, which provides the user with options for saving a session and restoring or removing saved sessions at any time and without limit.
+
+***********************************
+*   Sessions and Side-Pane Mode   *
+***********************************
+
+Sessions can be saved and opened by using the Session Manager dialog. As mentioned above, there is no limit to the number of stored sessions. Each session can have any name and consist of any number of files. All files of a session are opened in the current FeatherPad window and their cursor positions are remembered.
+
+FeatherPad also has a side-pane mode, which can be enabled either temporarily or with startup. It is most suitable for working with sessions because its file list is alphabetically ordered and can be filtered. Each pane item has a right-click menu, which contains menu-items for various jobs when there is more than one page. Items can also be removed by middle-clicking without being selected.
+
+The side-pane mode does not have features provided by tabs -- for example, tab drag-and-drop is missing from it -- and conversely -- for example, tabs are not sorted and cannot be filtered -- but the side-pane and tab modes can be used interchangeably through the Side-Pane menu-item or its shortcut and also by middle-clicking an empty space inside the tab-bar or side-pane.
+
+*****************
+*   Encodings   *
+*****************
+
+FeatherPad tries to guess encodings when opening files. Although it often guesses them right, there is no exact way for that. Therefore, there are some encodings in the Options menu. If you choose one, the text could be saved with it by using the item "Save with Encoding" on the File menu. By default, all texts are saved with UTF-8, which covers all alphabets.
+
+Usually, you do not need to worry about encodings; nowadays, UTF-8 is the standard and is used everywhere.
+
+*****************************
+*   Programming Languages   *
+*****************************
+
+The programming language of a file is detected based on its mime type or name and its syntax will be highlighted if the syntax highlighting is enabled and supports the language in question.
+
+If a text has no programming language or its syntax is not supported, only its hyperlinks/URLs will be highlighted and it will be possible to open them by right clicking them and activating the related menu-item or by pressing the Control key, moving the cursor over them, and clicking them while the cursor is like a pointing hand.
+
+If the option "Preferences → Text → Support syntax override" is enabled and checked, a language button will be added to the status bar for overriding the original syntax or lack of it. Reloading a document restores its original syntax.
+
+There are also options in the Preferences dialog for showing whitespaces (spaces, tabs), line and document ends, and vertical position lines when syntax highlighting is enabled (by default or temporarily).
+
+The colors of syntax highlighting can be customized in "Preferences → Syntax Colors". Each syntax color may have different meanings in different programming languages but only the most important meanings are mentioned. The color value of whitespaces can be changed in the same place.
+
+*******************************
+*   Searching and Replacing   *
+*******************************
+
+In FeatherPad, searching and replacing are done by separate widgets for the user to be able to search one string and replace another. Moreover, a separate replacement widget removes the danger of an unintentional replacement.
+
+To remove the yellow highlights after finishing a search, you could
+
+* Click on the 'Clear' icon of the search entry, or
+* Press Ctrl+K while the search entry has focus, or
+* Empty the search entry and press Enter or F3 in it, or
+* Hide the search bar by focusing it and then, pressing Ctrl+F.
+
+Each search entry has a search history that can be shown as a popup list by clicking its arrow or by pressing Ctrl+Up/Down when it has focus. The topmost item shows the most recent searched text. When the entry has focus, up and down arrow keys can be used for selecting history items without showing the popup list.
+
+The 'Replace' docked window respects the settings for 'Match Case', 'Whole Word' and 'Regular Expression' on the search bar (in the last case, the matching text should be a regular expression, while the replacing text is always an ordinary string). It can be detached from and reattached to the main window at top or bottom. To remove the green highlights after replacing text, you could either hide/close the 'Replace' docked window or do as in the case of removing yellow search highlights (without closing the dock).
+
+******************************
+*   Selection Highlighting   *
+******************************
+
+If "Preferences → Text → Selection highlighting" is checked, all case-sensitive and whole matches of the selected text will be highlighted by a light blue color (or dark blue when the dark color scheme is used). The selected text does not need to be a whole string but the highlighted matches are always whole strings.
+
+The selection highlighting can be used for finding nearby whole strings quickly. It is separate from the (yellow) search highlighting and can be used besides it.
+
+***********************
+*   Going to A Line   *
+***********************
+
+The Jump bar can be shown by clicking its item on the toolbar or the Search menu. Jumping will happen after pressing Enter while the Jump spinbox is active. If the checkbox beside it is checked, all the text between the text cursor and the target line will be selected.
+
+******************
+*   Status Bar   *
+******************
+
+The status bar not only shows information about the opened file but can also contain other widgets when certain properties are enabled in the Preferences dialog. You could also hide it in the Preferences dialog, in which case, the item "Document Properties" will appear on the File menu and could show it temporarily.
+
+***********************
+*   Wheel Scrolling   *
+***********************
+
+For fast mouse wheel scrolling, put the cursor on the scrollbar. If it is inside the text view, the speed of wheel scrolling will be normal. If, in addition, the Shift key is pressed, the text will scroll one line per wheel turn.
+
+"Inertial" scrolling can be enabled in the Text section of the Preferences dialog. It creates a kind of inertia with wheel scrolling when the cursor is inside the text view.
+
+********************
+*   Text Tabbing   *
+********************
+
+The (selected multi-line) text can be tabbed by the Tab key and untabbed by Shift+Tab.
+
+If Ctrl+Tab is used, the tabulation will be done by 4 spaces instead of a tab (the number of spaces can be changed in the Preferences dialog). This is sometimes called "soft tab".
+
+In FeatherPad, "hard" and "soft" tabs are not mutually exclusive because some texts may need one and some the other.
+
+With Ctrl+Meta+Tab, the text will be tabbed by 2 spaces, while Shift+Meta+Tab is for 2-space untabbing as far as possible.
+
+********************
+*   Auto-Bracket   *
+********************
+
+With "auto-bracketing" enabled in Preferences, if a left parenthesis, brace, square bracket or double-quote is typed, a right parenthesis, brace, square bracket or double-quote will respectively be inserted after it and the cursor will be moved between them, provided that the next character is not a letter or number. (Although double-quote is not a bracket and has identical left and right signs, it is included in this.)
+
+Also, if any part of the text is selected from end to start, typing of a left parenthesis, brace, etc. will add a right one after the selection end, so that the selection will be put inside parentheses, braces, etc.
+
+For user convenience, if Enter/Return is pressed after a text selection is auto-bracketed by parentheses "(...)" or braces "{...}", the bracketed text will be put below the left bracket and above the right one.
+
+The same holds for RTL (right-to-left) texts but with right and left reversed.
+
+****************************
+*   Ellipsis and Em Dash   *
+****************************
+
+With the corresponding option enabled in Preferences and under proper circumstances, a triple period is replaced by an ellipsis and a double hyphen by an em dash (long dash) while the user is typing.
+
+The proper circumstances depend on the pressed key and, maybe, what comes before those characters. For example, in the case of a triple period, the Space or Enter/Return key should be pressed and the triple period should not follow a period. Double hyphens are not replaced in programming languages because they may have special meanings.
+
+Some other strings may also be replaced appropriately in non-programming languages, e.g., "->" and ">=".
+
+**********************
+*   Spell Checking   *
+**********************
+
+For spell checking, a Hunspell dictionary should be first added to Preferences → Text → Hunspell dictionary path (a Hunspell dictionary has the suffix ".dic" and should be accompanied by an affix file with the suffix ".aff"). Spell checking can be done by F2 but the shortcut can be customized.
+
+If "Ignore All" is clicked, all instances of the word will be ignored during the current check. If you know that the word is correct, you could click "Add To Dictionary" and it will be saved for all checks. If "Correct All" is clicked, other instances of the word will be corrected in the same way when reached during the current check.
+
+**************************
+*   Keyboard Shortcuts   *
+**************************
+
+To change a customizable shortcut, double click it and press your chosen shortcut inside the shortcut editor of the Preferences dialog. To clear a shortcut, use a modifier key (like Shift). To cancel, press the Escape key before the shortcut loses focus.
+
+All shortcuts, except for the extra ones below, can be found on menus or as tooltips and many of them can be customized in the Preferences dialog.
+
+Useful Extra (Hidden) Shortcuts:
+=================================
+
+Window:
+*********
+F11                 (Un-)Fullscreen
+Ctrl+Shift+W        Resize window to fixed size (700x500 by default but can be set in Preferences)
+
+Zooming:
+**********
+Ctrl+=              Zoom in (also Ctrl++ or Ctrl + mouse wheel)
+Ctrl+-              Zoom out (also Ctrl + mouse wheel)
+Ctrl+0              Reset zooming
+
+Running a process:
+********************
+Ctrl+E              Run the executable file opened in this tab (only if enabled in Preferences)
+Ctrl+Alt+E          Exit (kill) the above process immediately
+
+Scrolling:
+***********
+Shift+Mouse Wheel   Scroll up/down by one wrapped line with mouse wheel
+Ctrl+Up/Down        Scroll up/down by one wrapped line without moving text cursor
+
+Moving text cursor:
+********************
+Home                Go to to the line start plus the indentation
+End                 Go to to the line end
+Ctrl+Home           Go to to the text start
+Ctrl+End            Go to to the text end
+Right/Left          Move the cursor one character to the right/left
+Ctrl+Right/Left     Move the cursor one word to the right/left
+Up/Down             Go to the same position in the previous/next wrapped line
+Shift+Up/Down       Go to the same position in the previous/next wrapped line while selecting text
+Meta+Up/Down        Go to the same position in the previous/next (real) line
+Meta+Shift+Up/Down  Go to the same position in the previous/next (real) line while selecting text
+
+Text tabulation:
+*****************
+Tab                 Ordinary text tabulation (its length can be changed in Preferences)
+Shift+Tab           BackTab (the reverse of Tab)
+Ctrl+Tab            4-space text tabulation (can be changed in Preferences)
+Ctrl+Meta+Tab       2-space text tabulation
+Shift+Meta+Tab      2-space BackTab, as far as possible
+
+Text editing:
+**************
+Insert              Toggle overwrite mode
+Backspace           Delete to the left of the text cursor
+Delete              Delete to the right of the text cursor (the opposite of Backspace)
+Ctrl+K              Delete to the end of the line (when the editor has focus)
+Ctrl+Shift+Up/Down  Move the current line or selected lines upward/downward
+Shift+Enter         Insert newline with the non-letter prefix of the current line
+                    (to write code comments or lists easily, for example)

@@ -1,0 +1,26 @@
+PACKAGE NAME:     nemo-fileroller-4.4.0-x86_64-1jss
+COMPRESSED PACKAGE SIZE:     8.0K
+UNCOMPRESSED PACKAGE SIZE:     30K
+PACKAGE LOCATION: /mnt/sda3/build/repos/mcbs/build/../x86_64/pkg/003_cinnamon/nemo-fileroller-4.4.0-x86_64-1jss.txz
+PACKAGE DESCRIPTION:
+nemo-fileroller: nemo-fileroller (file roller plugin)
+nemo-fileroller:
+nemo-fileroller: File roller plugin for Nemo.
+nemo-fileroller: 
+nemo-fileroller: 
+nemo-fileroller:
+nemo-fileroller: 
+nemo-fileroller:
+nemo-fileroller:
+nemo-fileroller: https://github.com/linuxmint/nemo-extensions/
+nemo-fileroller:
+FILE LIST:
+./
+install/
+install/slack-desc
+usr/
+usr/lib64/
+usr/lib64/nemo/
+usr/lib64/nemo/extensions-3.0/
+usr/lib64/nemo/extensions-3.0/libnemo-fileroller.la
+usr/lib64/nemo/extensions-3.0/libnemo-fileroller.so

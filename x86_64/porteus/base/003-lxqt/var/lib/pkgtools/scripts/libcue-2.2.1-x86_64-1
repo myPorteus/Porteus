@@ -1,0 +1,6 @@
+( cd usr/include/libcue ; rm -rf libcue.h )
+( cd usr/include/libcue ; ln -sf ../libcue.h libcue.h )
+( cd usr/lib64 ; rm -rf libcue.so )
+( cd usr/lib64 ; ln -sf libcue.so.2 libcue.so )
+( cd usr/lib64 ; rm -rf libcue.so.2 )
+( cd usr/lib64 ; ln -sf libcue.so.2.2.1 libcue.so.2 )

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>xviewer-light-theme</id>
+  <extends>xviewer.desktop</extends>
+  <name>Disable Dark Theme</name>
+  <name xml:lang="cs">Vypnout tmavý motiv</name>
+  <name xml:lang="es">Desactivar el tema oscuro</name>
+  <name xml:lang="hr">Onemogući tamnu temu</name>
+  <name xml:lang="hu">Sötét téma tiltása</name>
+  <name xml:lang="id">Nonaktifkan Tema Gelap</name>
+  <name xml:lang="ko">어두운 테마 비활성화</name>
+  <name xml:lang="pl">Wyłączenie ciemnego motywu</name>
+  <summary>Disables dark theme</summary>
+  <summary xml:lang="cs">Vypne tmavý motiv</summary>
+  <summary xml:lang="es">Desactiva el tema oscuro</summary>
+  <summary xml:lang="hr">Onemogući tamnu temu</summary>
+  <summary xml:lang="hu">Letiltja a sötét témát</summary>
+  <summary xml:lang="id">Nonaktifkan tema gelap</summary>
+  <summary xml:lang="ko">어두운 테마 비활성화</summary>
+  <summary xml:lang="pl">Wyłącza ciemny motyw</summary>
+  <url type="homepage">https://github.com/linuxmint/xviewer-plugins</url>
+  <url type="bugtracker">https://github.com/linuxmint/xviewer-plugins/issues</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <updatecontact>i.gnatenko.brain@gmail.com</updatecontact>
+</component>

@@ -1,0 +1,2 @@
+#!/bin/sh
+pluma $CAJA_SCRIPT_SELECTED_URIS

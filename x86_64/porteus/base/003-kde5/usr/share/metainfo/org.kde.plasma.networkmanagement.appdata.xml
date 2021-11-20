@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+    <id>org.kde.plasma.networkmanagement</id>
+    <extends>org.kde.plasmashell</extends>
+    <name>Networks</name>
+    <name xml:lang="ar">الشّبكات</name>
+    <name xml:lang="ast">Redes</name>
+    <name xml:lang="bs">Mreže</name>
+    <name xml:lang="ca@valencia">Xarxes</name>
+    <name xml:lang="ca">Xarxes</name>
+    <name xml:lang="cs">Sítě</name>
+    <name xml:lang="da">Netværk</name>
+    <name xml:lang="de">Netzwerke</name>
+    <name xml:lang="el">Δίκτυα</name>
+    <name xml:lang="en_GB">Networks</name>
+    <name xml:lang="es">Redes</name>
+    <name xml:lang="et">Võrgud</name>
+    <name xml:lang="eu">Sareak</name>
+    <name xml:lang="fi">Verkot</name>
+    <name xml:lang="fr">Réseaux</name>
+    <name xml:lang="gl">Redes</name>
+    <name xml:lang="he">רשתות</name>
+    <name xml:lang="hu">Hálózatok</name>
+    <name xml:lang="ia">Retes</name>
+    <name xml:lang="id">Jaringan</name>
+    <name xml:lang="it">Reti</name>
+    <name xml:lang="ja">ネットワーク</name>
+    <name xml:lang="ko">네트워크</name>
+    <name xml:lang="lt">Tinklai</name>
+    <name xml:lang="nb">Nettverk</name>
+    <name xml:lang="nds">Nettwarken</name>
+    <name xml:lang="nl">Netwerken</name>
+    <name xml:lang="nn">Nettverk</name>
+    <name xml:lang="pa">ਨੈੱਟਵਰਕ</name>
+    <name xml:lang="pl">Sieci</name>
+    <name xml:lang="pt">Redes</name>
+    <name xml:lang="pt_BR">Redes</name>
+    <name xml:lang="ru">Сети</name>
+    <name xml:lang="sk">Siete</name>
+    <name xml:lang="sl">Omrežja</name>
+    <name xml:lang="sr@ijekavian">Мреже</name>
+    <name xml:lang="sr@ijekavianlatin">Mreže</name>
+    <name xml:lang="sr@latin">Mreže</name>
+    <name xml:lang="sr">Мреже</name>
+    <name xml:lang="sv">Nätverk</name>
+    <name xml:lang="tr">Ağlar</name>
+    <name xml:lang="uk">Мережі</name>
+    <name xml:lang="x-test">xxNetworksxx</name>
+    <name xml:lang="zh_CN">网络</name>
+    <name xml:lang="zh_TW">網路</name>
+    <summary>Network status and control</summary>
+    <summary xml:lang="ar">حالة الشّبكة والتّحكّم بها</summary>
+    <summary xml:lang="bg">Състояние и контрол на мрежата</summary>
+    <summary xml:lang="bs">Kontrola i status mreže</summary>
+    <summary xml:lang="ca@valencia">Control i estat de la xarxa</summary>
+    <summary xml:lang="ca">Control i estat de la xarxa</summary>
+    <summary xml:lang="cs">Stav a ovládání sítě</summary>
+    <summary xml:lang="da">Status og kontrol over netværk</summary>
+    <summary xml:lang="de">Netzwerkstatus und -steuerung</summary>
+    <summary xml:lang="el">Κατάσταση δικτύου και έλεγχος</summary>
+    <summary xml:lang="en_GB">Network status and control</summary>
+    <summary xml:lang="es">Estado y control de redes</summary>
+    <summary xml:lang="et">Võrgu olek ja juhtimine</summary>
+    <summary xml:lang="eu">Sareen egoera eta kontrola</summary>
+    <summary xml:lang="fi">Verkon tila ja hallinta</summary>
+    <summary xml:lang="fr">État et contrôle du réseau</summary>
+    <summary xml:lang="gl">Monitorización e control da rede</summary>
+    <summary xml:lang="he">מצב ושליטה על הרשת</summary>
+    <summary xml:lang="hu">Hálózatállapot és vezérlés</summary>
+    <summary xml:lang="ia">Stato e controlo de rete</summary>
+    <summary xml:lang="id">Kendali dan status jaringan</summary>
+    <summary xml:lang="it">Stato e controllo della rete</summary>
+    <summary xml:lang="ja">ネットワークの状態と管理</summary>
+    <summary xml:lang="ko">네트워크 상태 및 제어</summary>
+    <summary xml:lang="lt">Tinklo būsena ir valdymas</summary>
+    <summary xml:lang="nb">Nettverksstatus og styring</summary>
+    <summary xml:lang="nds">Nettwarkstatus un -stüern</summary>
+    <summary xml:lang="nl">Netwerkstatus en besturing</summary>
+    <summary xml:lang="nn">Nettverksstatus og -styring</summary>
+    <summary xml:lang="pa">ਨੈੱਟਵਰਕ ਹਾਲਤ ਅਤੇ ਕੰਟਰੋਲ</summary>
+    <summary xml:lang="pl">Stan i obsługa sieci</summary>
+    <summary xml:lang="pt">Estado e controlo da rede</summary>
+    <summary xml:lang="pt_BR">Estado e controle da rede</summary>
+    <summary xml:lang="ro">Starea și controlul rețelei</summary>
+    <summary xml:lang="ru">Состояние и управление сетью</summary>
+    <summary xml:lang="sk">Správa a ovládanie siete</summary>
+    <summary xml:lang="sl">Stanje omrežja in nadzor</summary>
+    <summary xml:lang="sr@ijekavian">Стање и управљање мрежом</summary>
+    <summary xml:lang="sr@ijekavianlatin">Stanje i upravljanje mrežom</summary>
+    <summary xml:lang="sr@latin">Stanje i upravljanje mrežom</summary>
+    <summary xml:lang="sr">Стање и управљање мрежом</summary>
+    <summary xml:lang="sv">Nätverksstatus och kontroll</summary>
+    <summary xml:lang="tr">Ağ denetim ve durum izleme</summary>
+    <summary xml:lang="uk">Стеження за станом і керування мережею</summary>
+    <summary xml:lang="x-test">xxNetwork status and controlxx</summary>
+    <summary xml:lang="zh_CN">网络状态和控制</summary>
+    <summary xml:lang="zh_TW">網路狀態與控制</summary>
+    <url type="homepage">https://projects.kde.org/projects/kde/workspace/plasma-nm</url>
+    <url type="donation">https://www.kde.org/donate.php?app=org.kde.plasma.networkmanagement</url>
+    <developer_name>Jan Grulich,Lukáš Tinkl &lt;jgrulich@redhat.com,ltinkl@redhat.com&gt;</developer_name>
+    <icon type="stock">preferences-system-network</icon>
+    <project_license>GPL-2.0</project_license>
+    <metadata_license>CC0-1.0</metadata_license>
+</component>
