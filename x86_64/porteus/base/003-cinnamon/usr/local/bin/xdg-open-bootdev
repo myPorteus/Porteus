@@ -1,4 +1,0 @@
-#! /bin/bash
-# A wrapper to open $BOOTDEV in filemanger
-# jssouza
-xdg-open "$BOOTDEV"

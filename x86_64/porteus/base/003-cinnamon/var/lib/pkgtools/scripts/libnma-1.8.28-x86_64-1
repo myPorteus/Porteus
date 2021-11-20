@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libnma.so )
-( cd usr/lib64 ; ln -sf libnma.so.0 libnma.so )
-( cd usr/lib64 ; rm -rf libnma.so.0 )
-( cd usr/lib64 ; ln -sf libnma.so.0.0.0 libnma.so.0 )

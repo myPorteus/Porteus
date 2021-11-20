@@ -1,6 +1,0 @@
-#!/bin/sh
-# Update openbox app menu:
-
-echo "Updating  menu: update-desktop-database"
-update-desktop-database
-

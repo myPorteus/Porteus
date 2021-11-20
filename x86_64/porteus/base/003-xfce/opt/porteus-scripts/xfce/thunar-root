@@ -1,2 +1,0 @@
-#!/bin/bash
-/opt/porteus-scripts/xorg/psu dbus-launch --exit-with-session thunar "$1"

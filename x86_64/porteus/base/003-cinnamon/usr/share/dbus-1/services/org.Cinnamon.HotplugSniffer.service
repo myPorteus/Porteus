@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.Cinnamon.HotplugSniffer
-Exec=/usr/libexec/cinnamon/cinnamon-hotplug-sniffer

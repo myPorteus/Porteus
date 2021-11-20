@@ -1,5 +1,0 @@
-#%PAM-1.0
-
-auth		required	pam_securetty.so debug
-auth		include		system-auth
-

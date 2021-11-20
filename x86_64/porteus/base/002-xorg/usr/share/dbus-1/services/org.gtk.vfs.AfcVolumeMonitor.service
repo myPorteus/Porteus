@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.gtk.vfs.AfcVolumeMonitor
-Exec=/usr/libexec/gvfs-afc-volume-monitor
-

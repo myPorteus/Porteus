@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.ArchiveManager1
-Exec=/usr/bin/file-roller --service

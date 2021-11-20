@@ -1,7 +1,0 @@
-#!/bin/sh
-# Update KDE menu:
-
-echo "Updating KDE menu: update-desktop-database"
-for x in `ps -C startkde -o user=`; do echo "Updating menu"; kbuildsycoca5; done
-update-desktop-database
-xdg-desktop-menu forceupdate

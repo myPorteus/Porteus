@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=nm-tray
-Comment=NetworkManager frontend (tray icon)
-Icon=network-transmit
-TryExec=nm-tray
-Exec=nm-tray
-Categories=System;Monitor;Qt;

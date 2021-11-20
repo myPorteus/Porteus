@@ -1,4 +1,0 @@
-( cd usr/lib64 ; rm -rf libfm-qt.so )
-( cd usr/lib64 ; ln -sf libfm-qt.so.7 libfm-qt.so )
-( cd usr/lib64 ; rm -rf libfm-qt.so.7 )
-( cd usr/lib64 ; ln -sf libfm-qt.so.7.0.0 libfm-qt.so.7 )

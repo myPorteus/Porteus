@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.FileRoller
-Exec=/usr/bin/file-roller --service

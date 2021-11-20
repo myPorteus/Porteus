@@ -1,8 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/deactivate %F
-MimeType=application/x-xzm;
-Name=Deactivate...
-Name[ru]=Деактивировать модуль...
-NoDisplay=true
-Icon=cdr
-Type=Application

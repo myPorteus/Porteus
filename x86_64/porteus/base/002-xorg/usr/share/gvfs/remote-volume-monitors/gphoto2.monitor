@@ -1,4 +1,0 @@
-[RemoteVolumeMonitor]
-Name=GProxyVolumeMonitorGPhoto2
-DBusName=org.gtk.vfs.GPhoto2VolumeMonitor
-IsNative=false

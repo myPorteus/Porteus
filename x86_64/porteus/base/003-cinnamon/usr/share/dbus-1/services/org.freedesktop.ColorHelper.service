@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.ColorHelper
-Exec=/usr/lib64/colord/colord-session
-SystemdService=colord-session.service

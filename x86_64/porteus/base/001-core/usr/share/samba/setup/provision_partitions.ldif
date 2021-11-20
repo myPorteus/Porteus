@@ -1,7 +1,0 @@
-dn: @PARTITION
-replicateEntries: @ATTRIBUTES
-replicateEntries: @INDEXLIST
-replicateEntries: @OPTIONS
-${BACKEND_STORE}
-${LDAP_BACKEND_LINE}
-

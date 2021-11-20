@@ -1,5 +1,0 @@
-spacefm --desktop &
-tint2 &
-gxkb &
-/opt/porteus-scripts/extra/openbox-autostart &
-sleep 5 && volumeicon &

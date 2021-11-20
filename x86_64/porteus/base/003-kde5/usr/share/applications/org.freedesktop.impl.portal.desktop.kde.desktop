@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/usr/lib64/libexec/xdg-desktop-portal-kde
-X-KDE-Wayland-Interfaces=org_kde_kwin_fake_input,org_kde_kwin_remote_access_manager
-NoDisplay=true
-Icon=kde

@@ -1,5 +1,0 @@
-#!/bin/sh
-# Activate modules on the fly.
-# Author: brokenman
-
-/opt/porteus-scripts/modules-activation activate "$@"

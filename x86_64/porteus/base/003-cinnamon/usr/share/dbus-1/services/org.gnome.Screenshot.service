@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.Screenshot
-Exec=/usr/bin/gnome-screenshot --gapplication-service

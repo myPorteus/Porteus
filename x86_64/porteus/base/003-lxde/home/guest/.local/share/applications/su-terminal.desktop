@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=/opt/porteus-scripts/xorg/psu lxterminal
-Icon=utilities-root-terminal
-Name=LXTerminal (root)
-Type=Application
-Categories=Application;System;

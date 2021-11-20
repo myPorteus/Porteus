@@ -1,4 +1,0 @@
-( cd usr/lib64/lxpanel ; rm -rf liblxpanel.so )
-( cd usr/lib64/lxpanel ; ln -sf liblxpanel.so.0.0.0 liblxpanel.so )
-( cd usr/lib64/lxpanel ; rm -rf liblxpanel.so.0 )
-( cd usr/lib64/lxpanel ; ln -sf liblxpanel.so.0.0.0 liblxpanel.so.0 )

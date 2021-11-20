@@ -1,8 +1,0 @@
-( cd usr/lib64 ; rm -rf libgnomekbd.so )
-( cd usr/lib64 ; ln -sf libgnomekbd.so.8.0.0 libgnomekbd.so )
-( cd usr/lib64 ; rm -rf libgnomekbd.so.8 )
-( cd usr/lib64 ; ln -sf libgnomekbd.so.8.0.0 libgnomekbd.so.8 )
-( cd usr/lib64 ; rm -rf libgnomekbdui.so )
-( cd usr/lib64 ; ln -sf libgnomekbdui.so.8.0.0 libgnomekbdui.so )
-( cd usr/lib64 ; rm -rf libgnomekbdui.so.8 )
-( cd usr/lib64 ; ln -sf libgnomekbdui.so.8.0.0 libgnomekbdui.so.8 )
